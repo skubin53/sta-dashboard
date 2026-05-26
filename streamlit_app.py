@@ -28,6 +28,87 @@ def push_contact_to_workflow(contact_id, workflow_id):
         return False, str(e)[:120]
 
 
+def _first(s, n=80):
+    """Truncate to n chars at a word boundary."""
+    if not s or pd.isna(s): return ""
+    s = str(s).strip()
+    if len(s) <= n: return s
+    cut = s[:n].rsplit(" ", 1)[0]
+    return cut.rstrip(".,;:") + "…"
+
+
+def draft_sms(row):
+    """Build a personalized SMS draft (<200 chars) from a contact row.
+    Branches on the strongest available signal: mission > convo > tags >
+    video watch % > interest level > stage > stale-reactivation.
+    """
+    name = (row.get("first_name") or "").strip().title() or "there"
+    convo = (row.get("convo_summary") or "").strip()
+    mission = (row.get("mission") or "").strip()
+    interest = (row.get("interest_level") or "").strip().lower()
+    video = (row.get("video_watched") or "").strip().lower()
+    fin = (row.get("fin_importance") or "").strip().lower()
+    days_first = row.get("days_since_first_seen")
+    days_active = row.get("days_since_activity")
+    stage = (row.get("pipeline_stage_name") or "").strip().lower()
+    # Parse tags
+    try:
+        tags = [str(t).lower() for t in (json.loads(row.get("tags_json") or "[]") or [])]
+    except Exception:
+        tags = []
+    has = lambda *needles: any(any(n in t for n in needles) for t in tags)
+    try:
+        days_first = int(days_first) if pd.notna(days_first) else None
+        days_active = int(days_active) if pd.notna(days_active) else None
+    except Exception:
+        days_first, days_active = None, None
+
+    # Strongest signal first — custom-field signals beat tags
+    if mission:
+        m_short = _first(mission, 70)
+        return f"Hey {name}! You mentioned wanting {m_short.lower()}. I think we can actually help with that — got 10 min this week to chat? — Shannon"
+    if convo and len(convo) > 15:
+        c_short = _first(convo, 90)
+        return f"Hi {name}, was just looking back at where we left off: {c_short} — want to pick that up? Free for a quick call? — Shannon"
+
+    # Tag-based signals (these are populated for most contacts)
+    if has("hot lead"):
+        return f"Hey {name}! Looks like you're ready to take the next step — want to grab 10 min this week to make it happen? — Shannon"
+    if has("not shopped") and has("booked"):
+        return f"Hi {name}! You booked a call but we never connected — bad timing? Let's get you re-booked at a time that actually works. — Shannon"
+    if has("livevideo"):
+        return f"Hi {name}! Thanks for joining the live — wanted to check in personally and see what questions came up after. Free for a quick call? — Shannon"
+    if has("business builder"):
+        return f"Hey {name}! Saw you flagged interest in the business builder side — want to hop on a quick call to see if it's a fit? — Shannon"
+    if has("can't afford"):
+        return f"Hi {name}, I remember pricing felt steep — there's a Cat 1 option I haven't fully walked you through that might change things. Open to chat? — Shannon"
+    if has("lost on first text"):
+        return f"Hey {name}, my first message back must've gotten lost. Trying again personally — would 10 min on a call be useful? — Shannon"
+    if has("no show", "appt cancelled"):
+        return f"Hi {name}! Looks like our last call got missed — want to grab a new time? Happy to keep it short. — Shannon"
+    if has("daily-prospect"):
+        return f"Hey {name}! Wanted to follow up personally — where are you at with everything we talked about? Free for a quick call? — Shannon"
+
+    # Video / interest / financial signals (less populated but high quality when present)
+    if "75" in video or "100" in video or "complete" in video or "finished" in video:
+        return f"Hi {name}! Saw you watched a good chunk of the video. Curious what stood out — and what's holding you back from the next step? — Shannon"
+    if "50" in video:
+        return f"Hey {name}, noticed you got halfway through the video. Anything specific I can answer that would help you decide? — Shannon"
+    if interest in ("very high", "high", "extremely high"):
+        return f"Hey {name}! Your responses said you're really aligned with what we do. Want to jump on a 10-min call this week and dig in? — Shannon"
+    if "extreme" in fin or "very important" in fin or "important" in fin:
+        return f"Hi {name}, you flagged financial security as important — that's exactly what STA helps families lock in. Free for a quick call? — Shannon"
+
+    # Stage / recency
+    if "hot" in stage or "booked" in stage:
+        return f"Hey {name}! Wanted to reach out personally — looks like you're ready to take the next step. Quick call this week? — Shannon"
+    if days_active is not None and days_active > 30:
+        return f"{name}, it's been a minute! Just thinking of you — wanted to check in and see where you're at. Still curious about STA? — Shannon"
+
+    # Generic fallback
+    return f"Hi {name}! Wanted to circle back personally — what would be most helpful for you right now: a quick call, more info, or something else? — Shannon"
+
+
 def creative_key(name):
     """Roll up audience/phase prefixes so 'Best Post #1' and 'Interest: Open (Best Posts #1)'
     are recognized as the same creative concept across years of FB ad-ID churn."""
@@ -757,84 +838,74 @@ elif view == "Hot list (call these)":
     if not_touched_days > 0:
         df = df[(df["days_since_activity"].fillna(99999) >= not_touched_days)]
     df = df.sort_values("smart_score", ascending=False).head(500).copy()
-    # "select" column for batch push to GHL workflow
-    df.insert(0, "select", False)
-    show_cols = ["select","smart_score","first_name","last_name","phone","email","timezone",
+    show_cols = ["smart_score","first_name","last_name","phone","email","timezone",
         "days_since_activity","days_since_first_seen","pipeline_stage_name",
         "interest_level","fin_importance","video_watched","convo_summary",
         "mission","first_utm_campaign","smart_reason"]
     show_cols = [c for c in show_cols if c in df.columns]
-    # id needs to ride along (hidden) so we can push the right contact
-    if "id" in df.columns:
-        df_editor = df[show_cols + ["id"]].copy()
-    else:
-        df_editor = df[show_cols].copy()
     pool = contacts[(contacts["in_scope"]) & (contacts["date_added"] >= date_cutoff)]
     st.write(f"Top **{len(df):,}** of {len(pool):,} contacts in last {window_days} days at score >= {min_score}")
-    edited = st.data_editor(
-        df_editor, use_container_width=True, hide_index=True, num_rows="fixed",
-        column_config={
-            "select": st.column_config.CheckboxColumn("✓", width="small", help="Tick the contacts you want to push to a workflow"),
-            "smart_score": st.column_config.ProgressColumn("Score", min_value=0, max_value=100),
+    st.dataframe(df[show_cols], use_container_width=True, hide_index=True,
+        column_config={"smart_score": st.column_config.ProgressColumn("Score", min_value=0, max_value=100),
             "convo_summary": st.column_config.TextColumn("Last AI Convo Summary", width="medium"),
             "mission": st.column_config.TextColumn("Their mission/purpose", width="medium"),
-            "smart_reason": st.column_config.TextColumn("Why hot", width="medium"),
-            "id": None,  # hidden
-        },
-        disabled=[c for c in df_editor.columns if c != "select"],  # only the checkbox is editable
-        key="hot_list_editor",
-    )
-    selected = edited[edited["select"]] if "select" in edited.columns else edited.iloc[0:0]
-    n_selected = len(selected)
-
-    # --- Push to workflow controls ---
-    st.markdown("<div style='margin-top:0.8rem; padding-top:0.8rem; border-top:2px solid #eee;'></div>", unsafe_allow_html=True)
-    pc1, pc2, pc3 = st.columns([2, 2, 1])
-    wf_choice = pc1.selectbox("Push to workflow", list(PUSH_WORKFLOWS.keys()),
-                              help="Adds each selected contact to this GHL workflow.")
-    pc2.markdown(f"<div style='padding-top:1.9rem; font-weight:600; color:{BLUE};'>{n_selected:,} contact{'s' if n_selected != 1 else ''} selected</div>", unsafe_allow_html=True)
-    push_clicked = pc3.button(f"🚀 Push {n_selected}", type="primary", disabled=(n_selected == 0))
-
-    if push_clicked and n_selected > 0:
-        st.session_state["pending_push"] = {
-            "ids": selected["id"].tolist() if "id" in selected.columns else [],
-            "names": (selected["first_name"].fillna("") + " " + selected["last_name"].fillna("")).tolist() if "first_name" in selected.columns else [],
-            "workflow_name": wf_choice,
-            "workflow_id": PUSH_WORKFLOWS[wf_choice],
-        }
-
-    pp = st.session_state.get("pending_push")
-    if pp and pp.get("ids"):
-        with st.container():
-            st.markdown(f"""<div style='background:#fff8e6; border:2px solid {GOLD}; border-radius:10px; padding:1rem; margin:0.5rem 0;'>
-<div style='font-weight:800; color:{DARK_RED}; font-size:1.1rem;'>Confirm push: {len(pp['ids'])} contact{'s' if len(pp['ids'])!=1 else ''} → "{pp['workflow_name']}"</div>
-<div style='font-size:0.85rem; color:#555; margin-top:0.3rem;'>This will add each contact to the GHL workflow. The workflow will run its enroll-from-anywhere triggers.</div>
-</div>""", unsafe_allow_html=True)
-            sample = ", ".join(pp["names"][:5]) + (f" + {len(pp['ids']) - 5} more" if len(pp['ids']) > 5 else "")
-            st.caption(f"Contacts: {sample}")
-            cc1, cc2, _ = st.columns([1, 1, 4])
-            if cc1.button("✅ Yes, push them", type="primary", key="confirm_push"):
-                prog = st.progress(0.0)
-                ok, fail, failures = 0, 0, []
-                for i, (cid, cname) in enumerate(zip(pp["ids"], pp["names"]), 1):
-                    success, msg = push_contact_to_workflow(cid, pp["workflow_id"])
-                    if success:
-                        ok += 1
-                    else:
-                        fail += 1
-                        failures.append(f"{cname or cid}: {msg}")
-                    prog.progress(i / len(pp["ids"]))
-                if ok:
-                    st.success(f"✅ Pushed {ok} contact{'s' if ok != 1 else ''} to '{pp['workflow_name']}'")
-                if fail:
-                    st.error(f"❌ {fail} failed:\n" + "\n".join(failures[:10]))
-                st.session_state["pending_push"] = None
-            if cc2.button("Cancel", key="cancel_push"):
-                st.session_state["pending_push"] = None
-                st.rerun()
-
+            "smart_reason": st.column_config.TextColumn("Why hot", width="medium")})
     st.download_button("Download CSV", data=df[show_cols].to_csv(index=False).encode("utf-8"),
         file_name=f"hot_list_{pd.Timestamp.now().strftime('%Y%m%d_%H%M')}.csv", mime="text/csv")
+
+    # --- SMS draft generator: top N hot contacts ---
+    st.markdown(f"<h2 style='color:{BLUE}; margin-top:1.8rem;'>📱 SMS drafts — call/text these today</h2>", unsafe_allow_html=True)
+    st.caption("Personalized text drafts generated from each contact's GHL fields (mission, last AI convo, video watch %, interest level). Edit in place, then copy. Drafts are crafted under 200 characters so they fit one SMS.")
+
+    n_drafts = st.slider("How many drafts to generate", min_value=3, max_value=25, value=8, step=1, key="n_drafts")
+    draft_pool = df.head(n_drafts).to_dict("records")
+
+    if not draft_pool:
+        st.info("No contacts match your filters above — adjust to see drafts.")
+    else:
+        for i, row in enumerate(draft_pool):
+            name = ((row.get("first_name") or "") + " " + (row.get("last_name") or "")).strip().title() or "(no name)"
+            phone = row.get("phone") or ""
+            email = row.get("email") or ""
+            score = int(row.get("smart_score") or 0)
+            stage = row.get("pipeline_stage_name") or ""
+            tz = row.get("timezone") or ""
+            convo = row.get("convo_summary") or ""
+            mission = row.get("mission") or ""
+            interest = row.get("interest_level") or ""
+            video = row.get("video_watched") or ""
+            fin = row.get("fin_importance") or ""
+
+            draft = draft_sms(row)
+            # Score-colored chip
+            chip_color = GREEN if score >= 75 else (GOLD if score >= 50 else "#888")
+            ctx_bits = []
+            if stage: ctx_bits.append(f"<b>Stage:</b> {stage}")
+            if interest: ctx_bits.append(f"<b>Interest:</b> {interest}")
+            if video: ctx_bits.append(f"<b>Video:</b> {video}")
+            if fin: ctx_bits.append(f"<b>Fin importance:</b> {fin}")
+            if tz: ctx_bits.append(f"<b>TZ:</b> {tz}")
+            ctx_html = " · ".join(ctx_bits) if ctx_bits else "<span style='color:#aaa'>no extra context</span>"
+
+            with st.expander(f"#{i+1}  {name}  ·  score {score}  ·  {phone or email or '(no contact info)'}", expanded=(i < 3)):
+                # Context block
+                st.markdown(f"""
+<div style='background:#fafafa; border-left:3px solid {chip_color}; padding:0.5rem 0.8rem; margin-bottom:0.6rem; font-size:0.85rem;'>
+  <div style='color:#555; margin-bottom:0.3rem;'>{ctx_html}</div>
+  {"<div style='color:#333;'><b>Mission:</b> " + mission + "</div>" if mission else ""}
+  {"<div style='color:#333; margin-top:0.2rem;'><b>Last AI convo:</b> " + convo[:280] + ("…" if len(convo) > 280 else "") + "</div>" if convo else ""}
+</div>
+""", unsafe_allow_html=True)
+                edited = st.text_area(
+                    f"SMS draft ({len(draft)} chars)",
+                    value=draft, height=90, key=f"sms_draft_{row.get('id', i)}",
+                    help="Edit freely. SMS is ideally <160 chars (1 message) or <320 chars (2 messages). Click the field and Ctrl+A → Ctrl+C to copy."
+                )
+                # Live char-count + phone
+                cc1, cc2 = st.columns([1, 3])
+                cc1.markdown(f"<div style='font-size:0.75rem; color:#888;'>{len(edited)} chars</div>", unsafe_allow_html=True)
+                if phone:
+                    cc2.markdown(f"<div style='font-size:0.85rem; color:{BLUE}; font-weight:600;'>📱 {phone}</div>", unsafe_allow_html=True)
 
 elif view == "Sales Funnel":
     st.markdown(f"<h1 style='color:{BLUE};'>Sales Funnel - last 90 days</h1>", unsafe_allow_html=True)
