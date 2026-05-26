@@ -556,7 +556,7 @@ elif view == "Cost per Customer":
     now_naive = pd.Timestamp.utcnow().tz_localize(None)
 
     st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Inside <span style='color:{RED}'>MM - Switch To America - Conversions</span>: by ad set</h3>", unsafe_allow_html=True)
-    st.caption("3 ad sets currently running. Spend = last 30/60/90 days. Leads and Shoppers are lifetime — rolled up across every historic ad ID Meta has ever assigned to ads in this ad set.")
+    st.caption("3 ad sets currently running. Everything below is in matched 30 / 60 / 90 day windows — the 30D sum across all 3 cards equals the 30D number on the MM Conversions card above (same for 60D and 90D).")
 
     now_utc = pd.Timestamp.utcnow()
     adset_cards = []
@@ -584,9 +584,6 @@ elif view == "Cost per Customer":
             shoppers = int(win_c["is_shopper"].sum()) if leads else 0
             cpc = (sp / shoppers) if shoppers else 0
             windows[days] = {"spend": sp, "leads": leads, "shoppers": shoppers, "cpc": cpc}
-        # Lifetime totals (still useful as a footnote)
-        life_leads = len(in_set)
-        life_shoppers = int(in_set["is_shopper"].sum()) if life_leads else 0
         # Inner ads (the actual creatives running in this adset right now)
         inner_ads = (adset_ads[adset_ads["spend_cad"] > 0]
                      .groupby("ad_name", as_index=False)["spend_cad"].sum()
@@ -594,7 +591,7 @@ elif view == "Cost per Customer":
 
         adset_cards.append({
             "adset": adset, "days_since": days_since, "windows": windows,
-            "life_leads": life_leads, "life_shoppers": life_shoppers, "inner_ads": inner_ads,
+            "inner_ads": inner_ads,
         })
 
     # Render 3 side-by-side adset cards
@@ -644,9 +641,6 @@ elif view == "Cost per Customer":
     </thead>
     <tbody>{win_rows_html}</tbody>
   </table>
-  <div style="font-size:0.75rem; color:#777; padding:0.3rem 0; border-top:1px solid #eee;">
-    Lifetime: <b>{card['life_leads']:,}</b> leads · <b style="color:{GREEN}">{card['life_shoppers']:,}</b> shoppers
-  </div>
   <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-top:0.7rem;">Ads in this set</div>
   {inner_lines if inner_lines else '<div style="font-size:0.85rem; color:#888; padding:0.2rem 0;">No recent spend.</div>'}
 </div>
