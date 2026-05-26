@@ -1,10 +1,37 @@
 """STA Dashboard - Cloud version. Reads from data/dashboard.db committed to repo."""
-import json, sqlite3
+import json, re, sqlite3
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
+
+
+def creative_key(name):
+    """Roll up audience/phase prefixes so 'Best Post #1' and 'Interest: Open (Best Posts #1)'
+    are recognized as the same creative concept across years of FB ad-ID churn."""
+    if not name or pd.isna(name): return "(unattributed)"
+    n = str(name).lower()
+    rules = [
+        (r'best\s*posts?\s*#?\s*(\d+)', lambda m: f'Best Post #{m.group(1)}'),
+        (r'original\s*posts?\s*pt\s*(\d+)', lambda m: f'Original Posts PT{m.group(1)}'),
+        (r'reel\s*0?(\d+)', lambda m: f'Reel {int(m.group(1)):02d}'),
+        (r'(truth|save|shift|switch|detox|tour)\s*reel', lambda m: f'{m.group(1).upper()} Reel'),
+        (r'post\s*#\s*(\d+)', lambda m: f'Post #{m.group(1)}'),
+        (r'new\s*video\s*#\s*(\d+)', lambda m: f'Video #{m.group(1)}'),
+        (r'new\s*image\s*#\s*(\d+)', lambda m: f'Image #{m.group(1)}'),
+        (r'phase\s*2\s*-?\s*retarget', lambda m: 'Phase 2 Retarget'),
+        (r'patriot\s*pride', lambda m: 'Patriot Pride'),
+        (r'homesteading', lambda m: 'Homesteading'),
+        (r'former\s*networkers', lambda m: 'Former Networkers'),
+        (r'group\s*funnel', lambda m: 'Group Funnel Videos'),
+        (r'new\s*videos', lambda m: 'NEW VIDEOS audience'),
+        (r'beef', lambda m: 'Beef'),
+    ]
+    for pat, fn in rules:
+        m = re.search(pat, n)
+        if m: return fn(m)
+    return str(name).strip()
 
 DB_PATH = Path(__file__).resolve().parent / "data" / "dashboard.db"
 
@@ -206,6 +233,19 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 @st.cache_data(ttl=300)
+def load_ad_lookup():
+    """ad_id -> {ad_name, creative_key}. Built offline by resolving every distinct
+    first_utm_term against Meta Graph API; lets us match historic shoppers to current
+    creatives even though FB reissues ad IDs."""
+    if not DB_PATH.exists(): return {}
+    try:
+        with sqlite3.connect(DB_PATH) as cx:
+            rows = cx.execute("SELECT ad_id, ad_name FROM ad_lookup").fetchall()
+    except sqlite3.OperationalError:
+        return {}
+    return {aid: {"ad_name": nm, "creative_key": creative_key(nm)} for aid, nm in rows}
+
+@st.cache_data(ttl=300)
 def load_contacts():
     if not DB_PATH.exists(): return pd.DataFrame()
     with sqlite3.connect(DB_PATH) as cx:
@@ -213,6 +253,9 @@ def load_contacts():
     if df.empty: return df
     df["date_updated"] = pd.to_datetime(df["date_updated"], errors="coerce", utc=True)
     df["date_added"] = pd.to_datetime(df["date_added"], errors="coerce", utc=True)
+    lookup = load_ad_lookup()
+    df["ad_name_attrib"] = df["first_utm_term"].map(lambda t: (lookup.get(t) or {}).get("ad_name") or (t if t else None))
+    df["creative_key_attrib"] = df["ad_name_attrib"].map(creative_key)
     results = df.apply(lambda r: smart_score(dict(r)), axis=1)
     df["smart_score"] = [r[0] for r in results]
     df["smart_reason"] = [" | ".join(r[1]) if r[1] else "(no signals)" for r in results]
@@ -238,6 +281,8 @@ def load_ads():
     with sqlite3.connect(DB_PATH) as cx:
         df = pd.read_sql_query("SELECT * FROM ad_insights", cx)
     if "date" in df.columns: df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    if "ad_name" in df.columns:
+        df["creative_key"] = df["ad_name"].map(creative_key)
     return df
 
 @st.cache_data(ttl=300)
@@ -467,61 +512,92 @@ elif view == "Cost per Customer":
         with cols[i]:
             st.markdown(html, unsafe_allow_html=True)
 
-    # Per-ad 30/60/90 day windowed table
-    st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Per-ad breakdown (30 / 60 / 90 day windows)</h3>", unsafe_allow_html=True)
-    st.caption("Currently-running ads only. Pattern: 30d=0 + 60d/90d>0 = fading (kill it). 30d growing = scaling well (push budget).")
+    # Per-creative breakdown (rolls up audience/phase prefixes so "Best Post #1" and
+    # "Interest: Open (Best Posts #1)" count together — works around FB reissuing ad IDs)
+    st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Per-creative breakdown</h3>", unsafe_allow_html=True)
+    st.caption("Spend windows = last 30 / 60 / 90 days. Leads and Shoppers are lifetime (since FB reissues ad IDs on every duplication, lifetime is the honest attribution).")
     f1, f2, f3 = st.columns([2, 1, 1])
-    search = f1.text_input("Search by ad name", value="", placeholder="e.g. Reel 03, Best Post")
-    active_within = f2.number_input("Currently running (spend in last N days)", min_value=1, value=14, step=1)
-    sort_metric = f3.selectbox("Sort by", ["30d shoppers", "30d spend", "30d $/customer (cheapest)", "30d leads"])
-    running_ad_ids = currently_running_ads(ads, active_within)
-    if not running_ad_ids:
-        st.warning(f"No ads with spend in the last {active_within} days.")
+    search = f1.text_input("Search creative", value="", placeholder="e.g. Reel 03, Best Post")
+    active_within = f2.number_input("Treat as 'active' if spend in last N days", min_value=1, value=14, step=1)
+    show_mode = f3.selectbox("Show", ["Active now", "All (active + retired)", "Retired only"])
+
+    now_naive = pd.Timestamp.utcnow().tz_localize(None)
+    # Spend by creative_key in each window
+    spend_rows = []
+    for label, days in [("spend_30", 30), ("spend_60", 60), ("spend_90", 90), ("spend_active", active_within)]:
+        cutoff = now_naive - pd.Timedelta(days=days)
+        win = ads[ads["date"] >= cutoff].groupby("creative_key", as_index=False)["spend_cad"].sum().rename(columns={"spend_cad": label})
+        spend_rows.append(win)
+    spend_total = ads.groupby("creative_key", as_index=False)["spend_cad"].sum().rename(columns={"spend_cad": "spend_lifetime"})
+    # Best display name per creative_key — prefer the most-recent ad_name we've seen
+    name_per_key = (ads.dropna(subset=["ad_name"]).sort_values("date", ascending=False)
+                    .drop_duplicates(subset=["creative_key"])[["creative_key", "ad_name", "campaign_name"]])
+
+    # Contacts: leads + shoppers by creative_key (lifetime)
+    attrib = contacts[contacts["creative_key_attrib"].notna() & (contacts["creative_key_attrib"] != "(unattributed)")]
+    by_key_c = attrib.groupby("creative_key_attrib", as_index=False).agg(
+        leads=("id", "count"), shoppers=("is_shopper", "sum")
+    ).rename(columns={"creative_key_attrib": "creative_key"})
+    by_key_c["shoppers"] = by_key_c["shoppers"].astype(int)
+
+    # If a contact's creative_key never appeared in ad_insights (retired ad), we still want a display name
+    contact_name_per_key = (attrib.dropna(subset=["ad_name_attrib"])
+                            .drop_duplicates(subset=["creative_key_attrib"])
+                            [["creative_key_attrib", "ad_name_attrib"]]
+                            .rename(columns={"creative_key_attrib": "creative_key", "ad_name_attrib": "fallback_name"}))
+
+    merged = name_per_key.merge(contact_name_per_key, on="creative_key", how="outer")
+    merged["display_name"] = merged["creative_key"]  # creative_key itself is already a clean human name
+    merged["campaign_name"] = merged["campaign_name"].fillna("(retired)")
+    for s in spend_rows: merged = merged.merge(s, on="creative_key", how="left")
+    merged = merged.merge(spend_total, on="creative_key", how="left")
+    merged = merged.merge(by_key_c, on="creative_key", how="left")
+    for col in ["spend_30","spend_60","spend_90","spend_active","spend_lifetime","leads","shoppers"]:
+        merged[col] = merged[col].fillna(0)
+    merged["shoppers"] = merged["shoppers"].astype(int)
+    merged["leads"] = merged["leads"].astype(int)
+    merged["cost_per_customer"] = merged.apply(
+        lambda r: (r["spend_lifetime"] / r["shoppers"]) if r["shoppers"] else 0, axis=1)
+    merged["is_active"] = merged["spend_active"] > 0
+
+    if show_mode == "Active now":
+        merged = merged[merged["is_active"]]
+    elif show_mode == "Retired only":
+        merged = merged[~merged["is_active"]]
+
+    if search:
+        s = search.lower()
+        merged = merged[merged["display_name"].astype(str).str.lower().str.contains(s, na=False)]
+
+    merged = merged.sort_values(["shoppers", "spend_30"], ascending=[False, False])
+
+    active_n = int(merged["is_active"].sum())
+    retired_n = int((~merged["is_active"]).sum())
+    st.write(f"**{len(merged):,} creatives**  ·  {active_n} active now (spend in last {active_within}d)  ·  {retired_n} retired but produced leads/shoppers")
+    if merged.empty:
+        st.info("Nothing to show with current filters.")
     else:
-        s30 = window_stats(contacts, ads, 30); s60 = window_stats(contacts, ads, 60); s90 = window_stats(contacts, ads, 90)
-        s30 = s30[s30["ad_id"].isin(running_ad_ids)]
-        s60 = s60[s60["ad_id"].isin(running_ad_ids)]
-        s90 = s90[s90["ad_id"].isin(running_ad_ids)]
-        all_names = pd.concat([s30[["ad_id","ad_name","campaign_name"]], s60[["ad_id","ad_name","campaign_name"]], s90[["ad_id","ad_name","campaign_name"]]]).drop_duplicates(subset=["ad_id"])
-        s30_r = s30[["ad_id","spend_cad","leads","shoppers","cpc","cpl"]].rename(columns={"spend_cad":"spend_30","leads":"leads_30","shoppers":"shoppers_30","cpc":"cpc_30","cpl":"cpl_30"})
-        s60_r = s60[["ad_id","spend_cad","leads","shoppers","cpc","cpl"]].rename(columns={"spend_cad":"spend_60","leads":"leads_60","shoppers":"shoppers_60","cpc":"cpc_60","cpl":"cpl_60"})
-        s90_r = s90[["ad_id","spend_cad","leads","shoppers","cpc","cpl"]].rename(columns={"spend_cad":"spend_90","leads":"leads_90","shoppers":"shoppers_90","cpc":"cpc_90","cpl":"cpl_90"})
-        merged_ads = all_names.merge(s30_r, on="ad_id", how="left").merge(s60_r, on="ad_id", how="left").merge(s90_r, on="ad_id", how="left")
-        for c in ["spend_30","leads_30","shoppers_30","cpc_30","cpl_30","spend_60","leads_60","shoppers_60","cpc_60","cpl_60","spend_90","leads_90","shoppers_90","cpc_90","cpl_90"]:
-            merged_ads[c] = merged_ads[c].fillna(0)
-        if search:
-            s = search.lower()
-            mask_name = merged_ads["ad_name"].astype(str).str.lower().str.contains(s, na=False)
-            mask_camp = merged_ads["campaign_name"].astype(str).str.lower().str.contains(s, na=False)
-            merged_ads = merged_ads[mask_name | mask_camp]
-        if sort_metric == "30d shoppers":
-            merged_ads = merged_ads.sort_values("shoppers_30", ascending=False)
-        elif sort_metric == "30d $/customer (cheapest)":
-            only_with_cust = merged_ads[merged_ads["cpc_30"] > 0].sort_values("cpc_30", ascending=True)
-            no_cust = merged_ads[merged_ads["cpc_30"] == 0].sort_values("spend_30", ascending=False)
-            merged_ads = pd.concat([only_with_cust, no_cust])
-        elif sort_metric == "30d spend":
-            merged_ads = merged_ads.sort_values("spend_30", ascending=False)
-        else:
-            merged_ads = merged_ads.sort_values("leads_30", ascending=False)
-        st.write(f"**{len(merged_ads):,}** currently-running ads (spend in last {active_within}d).")
-        disp = merged_ads.copy()
-        for d in ["30","60","90"]:
-            disp[f"spend_{d}"] = disp[f"spend_{d}"].apply(lambda v: f"${v:,.2f}" if v else "-")
-            disp[f"cpc_{d}"] = disp[f"cpc_{d}"].apply(lambda v: f"${v:,.2f}" if v else "-")
-            disp[f"leads_{d}"] = disp[f"leads_{d}"].apply(lambda v: f"{int(v):,}")
-            disp[f"shoppers_{d}"] = disp[f"shoppers_{d}"].apply(lambda v: f"{int(v):,}")
-        cols_to_show = ["ad_name","campaign_name",
-            "spend_30","leads_30","shoppers_30","cpc_30",
-            "spend_60","leads_60","shoppers_60","cpc_60",
-            "spend_90","leads_90","shoppers_90","cpc_90"]
-        st.dataframe(disp[cols_to_show].head(100), use_container_width=True, hide_index=True,
+        disp = merged.copy()
+        disp["status"] = disp["is_active"].map(lambda b: "ACTIVE" if b else "retired")
+        for c in ["spend_30","spend_60","spend_90","spend_lifetime","cost_per_customer"]:
+            disp[c] = disp[c].apply(lambda v: f"${v:,.2f}" if v else "-")
+        cols_to_show = ["display_name","status","campaign_name",
+                        "spend_30","spend_60","spend_90","spend_lifetime",
+                        "leads","shoppers","cost_per_customer"]
+        st.dataframe(disp[cols_to_show].head(200), use_container_width=True, hide_index=True,
             column_config={
-                "ad_name": "Ad", "campaign_name": "Campaign",
-                "spend_30": "Spend (30d)", "leads_30": "Leads (30d)", "shoppers_30": "Cust (30d)", "cpc_30": "Cost/Cust (30d)",
-                "spend_60": "Spend (60d)", "leads_60": "Leads (60d)", "shoppers_60": "Cust (60d)", "cpc_60": "Cost/Cust (60d)",
-                "spend_90": "Spend (90d)", "leads_90": "Leads (90d)", "shoppers_90": "Cust (90d)", "cpc_90": "Cost/Cust (90d)",
+                "display_name": "Creative",
+                "status": "Status",
+                "campaign_name": "Current Campaign",
+                "spend_30": "Spend (30d)",
+                "spend_60": "Spend (60d)",
+                "spend_90": "Spend (90d)",
+                "spend_lifetime": "Spend (lifetime in DB)",
+                "leads": "Leads (lifetime)",
+                "shoppers": "Shoppers (lifetime)",
+                "cost_per_customer": "Lifetime $/Shopper",
             })
+        st.caption("Note: spend columns reflect what's in our 30-day Meta sync window. Lifetime spend will be more complete once we pull historical Meta data — a future bite-size step.")
 
 elif view == "Hot list (call these)":
     st.markdown(f"<h1 style='color:{BLUE};'>Hot list - call these next</h1>", unsafe_allow_html=True)
