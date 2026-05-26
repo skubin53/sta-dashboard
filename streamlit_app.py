@@ -530,40 +530,43 @@ elif view == "Cost per Customer":
     st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Inside <span style='color:{RED}'>MM - Switch To America - Conversions</span>: by ad set</h3>", unsafe_allow_html=True)
     st.caption("3 ad sets currently running. Spend = last 30/60/90 days. Leads and Shoppers are lifetime — rolled up across every historic ad ID Meta has ever assigned to ads in this ad set.")
 
+    now_utc = pd.Timestamp.utcnow()
     adset_cards = []
     for adset in MM_ADSETS:
         adset_ads = ads[(ads["campaign_name"] == mm_name) & (ads["adset_name"] == adset)]
         current_ad_ids = set(adset_ads["ad_id"].dropna().astype(str).unique())
-        # Spend in each window
-        def _spend(days):
-            cutoff = now_naive - pd.Timedelta(days=days)
-            return float(adset_ads[adset_ads["date"] >= cutoff]["spend_cad"].sum())
-        sp30, sp60, sp90 = _spend(30), _spend(60), _spend(90)
         # Last active day
         last_day = adset_ads[adset_ads["spend_cad"] > 0]["date"].max() if not adset_ads.empty else None
         days_since = (now_naive - last_day).days if pd.notna(last_day) else None
         # Contacts attributed to this adset:
         #   (a) first_utm_term in this adset's current ad_ids, OR
         #   (b) resolved ad_name_attrib equals or starts with this adset name
-        #       (handles historic ad IDs Meta now returns under the adset name)
         attrib_mask = (
             contacts["first_utm_term"].astype(str).isin(current_ad_ids)
             | (contacts["ad_name_attrib"] == adset)
             | (contacts["ad_name_attrib"].astype(str).str.startswith(adset, na=False))
         )
         in_set = contacts[attrib_mask]
-        leads = len(in_set)
-        shoppers = int(in_set["is_shopper"].sum()) if leads else 0
-        cpc = (sp30 / shoppers) if shoppers else 0
+        # Per-window: spend (ad insights date) AND leads/shoppers (contacts.date_added)
+        windows = {}
+        for days in (30, 60, 90):
+            sp = float(adset_ads[adset_ads["date"] >= now_naive - pd.Timedelta(days=days)]["spend_cad"].sum())
+            win_c = in_set[in_set["date_added"] >= now_utc - pd.Timedelta(days=days)]
+            leads = len(win_c)
+            shoppers = int(win_c["is_shopper"].sum()) if leads else 0
+            cpc = (sp / shoppers) if shoppers else 0
+            windows[days] = {"spend": sp, "leads": leads, "shoppers": shoppers, "cpc": cpc}
+        # Lifetime totals (still useful as a footnote)
+        life_leads = len(in_set)
+        life_shoppers = int(in_set["is_shopper"].sum()) if life_leads else 0
         # Inner ads (the actual creatives running in this adset right now)
         inner_ads = (adset_ads[adset_ads["spend_cad"] > 0]
                      .groupby("ad_name", as_index=False)["spend_cad"].sum()
                      .sort_values("spend_cad", ascending=False))
 
         adset_cards.append({
-            "adset": adset, "sp30": sp30, "sp60": sp60, "sp90": sp90,
-            "days_since": days_since, "leads": leads, "shoppers": shoppers,
-            "cpc": cpc, "inner_ads": inner_ads,
+            "adset": adset, "days_since": days_since, "windows": windows,
+            "life_leads": life_leads, "life_shoppers": life_shoppers, "inner_ads": inner_ads,
         })
 
     # Render 3 side-by-side adset cards
@@ -571,31 +574,56 @@ elif view == "Cost per Customer":
     for col, card in zip(cols, adset_cards):
         last_txt = ("running today" if card["days_since"] is not None and card["days_since"] <= 1
                     else (f"{card['days_since']}d since last spend" if card["days_since"] is not None else "no recent spend"))
-        cpc_txt = f"${card['cpc']:,.2f}" if card["cpc"] else "—"
         inner_lines = "".join(
             f'<div style="display:flex; justify-content:space-between; padding:0.2rem 0; border-top:1px solid #eee; font-size:0.85rem;">'
             f'<span>{r["ad_name"]}</span><span style="font-weight:600;">${r["spend_cad"]:,.0f}</span></div>'
             for _, r in card["inner_ads"].iterrows()
         )
-        border = BLUE if card["shoppers"] > 0 else "#888"
+        # Pick header border color based on whether ANY window has shoppers
+        any_shoppers = any(w["shoppers"] > 0 for w in card["windows"].values())
+        border = BLUE if any_shoppers else "#888"
+        # Build the 30/60/90 windowed table
+        def _cell(v, kind):
+            if kind == "money": return f'<b>${v:,.0f}</b>' if v else '<span style="color:#bbb;">—</span>'
+            if kind == "num": return f'<b>{v:,}</b>' if v else '<span style="color:#bbb;">0</span>'
+            if kind == "cpc": return f'<b style="color:{GOLD}">${v:,.0f}</b>' if v else '<span style="color:#bbb;">—</span>'
+            return str(v)
+        win_rows_html = ""
+        for days in (30, 60, 90):
+            w = card["windows"][days]
+            win_rows_html += f"""
+<tr>
+  <td style="padding:0.35rem 0.4rem; font-size:0.7rem; font-weight:700; color:{BLUE}; background:#f5f5f9; text-align:left;">{days}D</td>
+  <td style="padding:0.35rem 0.4rem; text-align:right; font-size:0.9rem;">{_cell(w['spend'], 'money')}</td>
+  <td style="padding:0.35rem 0.4rem; text-align:right; font-size:0.9rem; color:{RED};">{_cell(w['leads'], 'num')}</td>
+  <td style="padding:0.35rem 0.4rem; text-align:right; font-size:0.9rem; color:{GREEN};">{_cell(w['shoppers'], 'num')}</td>
+  <td style="padding:0.35rem 0.4rem; text-align:right; font-size:0.85rem;">{_cell(w['cpc'], 'cpc')}</td>
+</tr>"""
         with col:
             st.markdown(f"""
 <div style="background:{WHITE}; border:2px solid {border}; border-radius:12px; padding:1.1rem 1.2rem; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
   <div style="font-weight:800; color:{BLUE}; font-size:1rem; line-height:1.2;">{card['adset']}</div>
-  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.8rem;">{last_txt}</div>
-  <div style="display:flex; gap:0.8rem; margin-bottom:0.6rem;">
-    <div><div style="font-size:1.5rem; font-weight:800; color:{BLUE};">${card['sp30']:,.0f}</div><div style="font-size:0.65rem; color:#888;">SPEND 30D</div></div>
-    <div><div style="font-size:1.5rem; font-weight:800; color:{RED};">{card['leads']:,}</div><div style="font-size:0.65rem; color:#888;">LEADS</div></div>
-    <div><div style="font-size:1.5rem; font-weight:800; color:{GREEN};">{card['shoppers']:,}</div><div style="font-size:0.65rem; color:#888;">SHOPPERS</div></div>
+  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.6rem;">{last_txt}</div>
+  <table style="width:100%; border-collapse:collapse; margin-bottom:0.6rem;">
+    <thead>
+      <tr style="background:{BLUE}; color:{WHITE};">
+        <th style="padding:0.3rem 0.4rem; font-size:0.65rem; text-align:left; letter-spacing:0.5px;">Window</th>
+        <th style="padding:0.3rem 0.4rem; font-size:0.65rem; text-align:right; letter-spacing:0.5px;">Spend</th>
+        <th style="padding:0.3rem 0.4rem; font-size:0.65rem; text-align:right; letter-spacing:0.5px;">Leads</th>
+        <th style="padding:0.3rem 0.4rem; font-size:0.65rem; text-align:right; letter-spacing:0.5px;">Shoppers</th>
+        <th style="padding:0.3rem 0.4rem; font-size:0.65rem; text-align:right; letter-spacing:0.5px;">$/Shop</th>
+      </tr>
+    </thead>
+    <tbody>{win_rows_html}</tbody>
+  </table>
+  <div style="font-size:0.75rem; color:#777; padding:0.3rem 0; border-top:1px solid #eee;">
+    Lifetime: <b>{card['life_leads']:,}</b> leads · <b style="color:{GREEN}">{card['life_shoppers']:,}</b> shoppers
   </div>
-  <div style="font-size:0.8rem; color:#555; margin-bottom:0.5rem;">Spend 60d <b>${card['sp60']:,.0f}</b> · Spend 90d <b>${card['sp90']:,.0f}</b></div>
-  <div style="font-size:0.85rem; color:#555; padding:0.4rem 0; border-top:2px solid #eee; margin-top:0.4rem;">
-    Cost / shopper (30d spend): <b style="color:{GOLD}">{cpc_txt}</b>
-  </div>
-  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-top:0.8rem;">Ads in this set</div>
+  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-top:0.7rem;">Ads in this set</div>
   {inner_lines if inner_lines else '<div style="font-size:0.85rem; color:#888; padding:0.2rem 0;">No recent spend.</div>'}
 </div>
 """, unsafe_allow_html=True)
+    st.caption("Leads/Shoppers per window = contacts whose first-touch was in that timeframe (by date added to GHL). Shoppers typically convert weeks after first touch, so 30D shopper counts will be smaller than 90D.")
 
     # --- All creatives (everything, retired included) — collapsed by default ---
     with st.expander("All creatives across every campaign (retired + active)", expanded=False):
