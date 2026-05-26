@@ -512,103 +512,90 @@ elif view == "Cost per Customer":
         with cols[i]:
             st.markdown(html, unsafe_allow_html=True)
 
-    # --- Creative breakdown inside MM - Switch To America - Conversions ---
-    # Goal: under the MM Conversions card, show each ad (Reel 03, Best Post #1, etc.)
-    # with its lifetime leads/shoppers. Uses creative_key rollup so "Best Post #1"
-    # picks up shoppers from old ad IDs Meta has since retired.
+    # --- MM Conversions breakdown by ad set ---
+    # Shannon's 3 ad sets inside MM - Switch To America - Conversions.
+    # For each ad set: sum spend across all ads in that adset, count lifetime
+    # leads/shoppers across every contact attributed to either (a) a current
+    # ad inside this adset, or (b) the adset name directly (historic attributions
+    # where Meta returned the adset name as the "ad" name after the original
+    # ad was deleted).
     mm_name = "MM - Switch To America - Conversions"
+    MM_ADSETS = [
+        "Interest: Open (Original Posts PT1)",
+        "Interest: Open (Best Posts #1)",
+        "Interest: Open (Original Posts PT2)",
+    ]
     now_naive = pd.Timestamp.utcnow().tz_localize(None)
 
-    def _spend_by_key_in_window(days, in_campaign=None):
-        cutoff = now_naive - pd.Timedelta(days=days)
-        df = ads[ads["date"] >= cutoff]
-        if in_campaign is not None:
-            df = df[df["campaign_name"] == in_campaign]
-        return df.groupby("creative_key", as_index=False)["spend_cad"].sum()
+    st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Inside <span style='color:{RED}'>MM - Switch To America - Conversions</span>: by ad set</h3>", unsafe_allow_html=True)
+    st.caption("3 ad sets currently running. Spend = last 30/60/90 days. Leads and Shoppers are lifetime — rolled up across every historic ad ID Meta has ever assigned to ads in this ad set.")
 
-    # Creative keys currently running in MM Conversions = any ad in MM Conversions
-    # that had spend in our 30-day window
-    mm_keys = sorted(ads[(ads["campaign_name"] == mm_name) & (ads["spend_cad"] > 0)]
-                     ["creative_key"].dropna().unique().tolist())
+    adset_cards = []
+    for adset in MM_ADSETS:
+        adset_ads = ads[(ads["campaign_name"] == mm_name) & (ads["adset_name"] == adset)]
+        current_ad_ids = set(adset_ads["ad_id"].dropna().astype(str).unique())
+        # Spend in each window
+        def _spend(days):
+            cutoff = now_naive - pd.Timedelta(days=days)
+            return float(adset_ads[adset_ads["date"] >= cutoff]["spend_cad"].sum())
+        sp30, sp60, sp90 = _spend(30), _spend(60), _spend(90)
+        # Last active day
+        last_day = adset_ads[adset_ads["spend_cad"] > 0]["date"].max() if not adset_ads.empty else None
+        days_since = (now_naive - last_day).days if pd.notna(last_day) else None
+        # Contacts attributed to this adset:
+        #   (a) first_utm_term in this adset's current ad_ids, OR
+        #   (b) resolved ad_name_attrib equals or starts with this adset name
+        #       (handles historic ad IDs Meta now returns under the adset name)
+        attrib_mask = (
+            contacts["first_utm_term"].astype(str).isin(current_ad_ids)
+            | (contacts["ad_name_attrib"] == adset)
+            | (contacts["ad_name_attrib"].astype(str).str.startswith(adset, na=False))
+        )
+        in_set = contacts[attrib_mask]
+        leads = len(in_set)
+        shoppers = int(in_set["is_shopper"].sum()) if leads else 0
+        cpc = (sp30 / shoppers) if shoppers else 0
+        # Inner ads (the actual creatives running in this adset right now)
+        inner_ads = (adset_ads[adset_ads["spend_cad"] > 0]
+                     .groupby("ad_name", as_index=False)["spend_cad"].sum()
+                     .sort_values("spend_cad", ascending=False))
 
-    # Lifetime leads + shoppers per creative_key (across ALL of that creative's historic
-    # ad IDs, regardless of which campaign attributed the lead)
-    attrib = contacts[contacts["creative_key_attrib"].notna() & (contacts["creative_key_attrib"] != "(unattributed)")]
-    lifetime = (attrib.groupby("creative_key_attrib", as_index=False)
-                .agg(leads=("id", "count"), shoppers=("is_shopper", "sum"))
-                .rename(columns={"creative_key_attrib": "creative_key"}))
-    lifetime["shoppers"] = lifetime["shoppers"].astype(int)
+        adset_cards.append({
+            "adset": adset, "sp30": sp30, "sp60": sp60, "sp90": sp90,
+            "days_since": days_since, "leads": leads, "shoppers": shoppers,
+            "cpc": cpc, "inner_ads": inner_ads,
+        })
 
-    # Build per-creative table for MM Conversions
-    if not mm_keys:
-        st.info("No ads currently running in MM - Switch To America - Conversions.")
-    else:
-        st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Inside <span style='color:{RED}'>MM - Switch To America - Conversions</span>: per ad</h3>", unsafe_allow_html=True)
-        st.caption("Each currently-running ad in this campaign, with its lifetime shopper count rolled up across every ad ID that creative has ever had. Best Post #1 picks up its 396 lifetime leads and 6 shoppers from older versions of the same creative.")
-
-        sp30 = _spend_by_key_in_window(30, in_campaign=mm_name).rename(columns={"spend_cad": "spend_30"})
-        sp60 = _spend_by_key_in_window(60, in_campaign=mm_name).rename(columns={"spend_cad": "spend_60"})
-        sp90 = _spend_by_key_in_window(90, in_campaign=mm_name).rename(columns={"spend_cad": "spend_90"})
-        last_day = (ads[(ads["campaign_name"] == mm_name) & (ads["spend_cad"] > 0)]
-                    .groupby("creative_key", as_index=False)["date"].max()
-                    .rename(columns={"date": "last_active"}))
-
-        mm_df = pd.DataFrame({"creative_key": mm_keys})
-        mm_df = (mm_df.merge(sp30, on="creative_key", how="left")
-                       .merge(sp60, on="creative_key", how="left")
-                       .merge(sp90, on="creative_key", how="left")
-                       .merge(last_day, on="creative_key", how="left")
-                       .merge(lifetime, on="creative_key", how="left"))
-        for c in ["spend_30","spend_60","spend_90","leads","shoppers"]:
-            mm_df[c] = mm_df[c].fillna(0)
-        mm_df["leads"] = mm_df["leads"].astype(int)
-        mm_df["shoppers"] = mm_df["shoppers"].astype(int)
-        mm_df["cost_per_customer"] = mm_df.apply(
-            lambda r: (r["spend_30"] / r["shoppers"]) if r["shoppers"] else 0, axis=1)
-        # Days since last spend (so Best Post #1 shows e.g. "14 days ago")
-        mm_df["last_active_disp"] = mm_df["last_active"].apply(
-            lambda d: ((now_naive - d).days if pd.notna(d) else "-"))
-        mm_df = mm_df.sort_values("spend_30", ascending=False)
-
-        # Render as styled cards-in-a-row + a detail table
-        st.markdown('<div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.6rem;">', unsafe_allow_html=True)
-        for _, r in mm_df.head(6).iterrows():
-            card_color = BLUE if r["shoppers"] > 0 else "#888"
-            last = r["last_active_disp"]
-            last_txt = "running" if isinstance(last, int) and last <= 1 else (f"{last}d since last spend" if isinstance(last, int) else "—")
-            cpc_txt = f"${r['cost_per_customer']:,.2f}" if r["cost_per_customer"] else "—"
+    # Render 3 side-by-side adset cards
+    cols = st.columns(3)
+    for col, card in zip(cols, adset_cards):
+        last_txt = ("running today" if card["days_since"] is not None and card["days_since"] <= 1
+                    else (f"{card['days_since']}d since last spend" if card["days_since"] is not None else "no recent spend"))
+        cpc_txt = f"${card['cpc']:,.2f}" if card["cpc"] else "—"
+        inner_lines = "".join(
+            f'<div style="display:flex; justify-content:space-between; padding:0.2rem 0; border-top:1px solid #eee; font-size:0.85rem;">'
+            f'<span>{r["ad_name"]}</span><span style="font-weight:600;">${r["spend_cad"]:,.0f}</span></div>'
+            for _, r in card["inner_ads"].iterrows()
+        )
+        border = BLUE if card["shoppers"] > 0 else "#888"
+        with col:
             st.markdown(f"""
-<div style="flex:1; min-width:240px; background:{WHITE}; border:2px solid {card_color}; border-radius:10px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-  <div style="font-weight:800; color:{BLUE}; font-size:1.05rem;">{r['creative_key']}</div>
-  <div style="font-size:0.75rem; color:#888; text-transform:uppercase; margin-bottom:0.6rem;">{last_txt}</div>
-  <div style="display:flex; gap:0.8rem; margin-bottom:0.4rem;">
-    <div><div style="font-size:1.4rem; font-weight:800; color:{BLUE};">${r['spend_30']:,.0f}</div><div style="font-size:0.7rem; color:#888;">SPEND 30D</div></div>
-    <div><div style="font-size:1.4rem; font-weight:800; color:{RED};">{r['leads']:,}</div><div style="font-size:0.7rem; color:#888;">LEADS (lifetime)</div></div>
-    <div><div style="font-size:1.4rem; font-weight:800; color:{GREEN};">{r['shoppers']:,}</div><div style="font-size:0.7rem; color:#888;">SHOPPERS (lifetime)</div></div>
+<div style="background:{WHITE}; border:2px solid {border}; border-radius:12px; padding:1.1rem 1.2rem; box-shadow:0 2px 10px rgba(0,0,0,0.06);">
+  <div style="font-weight:800; color:{BLUE}; font-size:1rem; line-height:1.2;">{card['adset']}</div>
+  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:0.8rem;">{last_txt}</div>
+  <div style="display:flex; gap:0.8rem; margin-bottom:0.6rem;">
+    <div><div style="font-size:1.5rem; font-weight:800; color:{BLUE};">${card['sp30']:,.0f}</div><div style="font-size:0.65rem; color:#888;">SPEND 30D</div></div>
+    <div><div style="font-size:1.5rem; font-weight:800; color:{RED};">{card['leads']:,}</div><div style="font-size:0.65rem; color:#888;">LEADS</div></div>
+    <div><div style="font-size:1.5rem; font-weight:800; color:{GREEN};">{card['shoppers']:,}</div><div style="font-size:0.65rem; color:#888;">SHOPPERS</div></div>
   </div>
-  <div style="font-size:0.85rem; color:#555;">Cost / shopper (30d spend): <b style="color:{GOLD}">{cpc_txt}</b></div>
+  <div style="font-size:0.8rem; color:#555; margin-bottom:0.5rem;">Spend 60d <b>${card['sp60']:,.0f}</b> · Spend 90d <b>${card['sp90']:,.0f}</b></div>
+  <div style="font-size:0.85rem; color:#555; padding:0.4rem 0; border-top:2px solid #eee; margin-top:0.4rem;">
+    Cost / shopper (30d spend): <b style="color:{GOLD}">{cpc_txt}</b>
+  </div>
+  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-top:0.8rem;">Ads in this set</div>
+  {inner_lines if inner_lines else '<div style="font-size:0.85rem; color:#888; padding:0.2rem 0;">No recent spend.</div>'}
 </div>
 """, unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
-
-        # Detail table below the cards
-        with st.expander("Show as table", expanded=False):
-            disp = mm_df.copy()
-            disp["spend_30"] = disp["spend_30"].apply(lambda v: f"${v:,.2f}" if v else "-")
-            disp["spend_60"] = disp["spend_60"].apply(lambda v: f"${v:,.2f}" if v else "-")
-            disp["spend_90"] = disp["spend_90"].apply(lambda v: f"${v:,.2f}" if v else "-")
-            disp["cost_per_customer"] = disp["cost_per_customer"].apply(lambda v: f"${v:,.2f}" if v else "-")
-            disp["last_active_disp"] = disp["last_active_disp"].apply(lambda v: f"{v}d ago" if isinstance(v, int) else "-")
-            st.dataframe(
-                disp[["creative_key","last_active_disp","spend_30","spend_60","spend_90","leads","shoppers","cost_per_customer"]],
-                use_container_width=True, hide_index=True,
-                column_config={
-                    "creative_key": "Creative",
-                    "last_active_disp": "Last spend",
-                    "spend_30": "Spend (30d)", "spend_60": "Spend (60d)", "spend_90": "Spend (90d)",
-                    "leads": "Leads (lifetime)", "shoppers": "Shoppers (lifetime)",
-                    "cost_per_customer": "$/Shopper (30d spend)",
-                })
 
     # --- All creatives (everything, retired included) — collapsed by default ---
     with st.expander("All creatives across every campaign (retired + active)", expanded=False):
