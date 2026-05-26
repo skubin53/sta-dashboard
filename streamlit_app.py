@@ -584,14 +584,30 @@ elif view == "Cost per Customer":
             shoppers = int(win_c["is_shopper"].sum()) if leads else 0
             cpc = (sp / shoppers) if shoppers else 0
             windows[days] = {"spend": sp, "leads": leads, "shoppers": shoppers, "cpc": cpc}
-        # Inner ads (the actual creatives running in this adset right now)
-        inner_ads = (adset_ads[adset_ads["spend_cad"] > 0]
-                     .groupby("ad_name", as_index=False)["spend_cad"].sum()
-                     .sort_values("spend_cad", ascending=False))
+        # Inner ads (the actual creatives running in this adset right now).
+        # Per-ad attribution uses first_utm_content (the ad-level ID) — different
+        # from first_utm_term which we discovered is the ADSET ID.
+        inner_ad_list = []
+        ad_groups = (adset_ads[adset_ads["spend_cad"] > 0]
+                     .groupby(["ad_id", "ad_name"], as_index=False).agg(
+                         spend_total=("spend_cad", "sum"),
+                         first_date=("date", "min"),
+                         last_date=("date", "max")
+                     ).sort_values("spend_total", ascending=False))
+        for _, ad_row in ad_groups.iterrows():
+            ad_id = str(ad_row["ad_id"])
+            ad_spend_df = adset_ads[adset_ads["ad_id"] == ad_row["ad_id"]]
+            ad_contacts = contacts[contacts["first_utm_content"].astype(str) == ad_id]
+            ad_w = {}
+            for d in (30, 60, 90):
+                sp = float(ad_spend_df[ad_spend_df["date"] >= now_naive - pd.Timedelta(days=d)]["spend_cad"].sum())
+                wc = ad_contacts[ad_contacts["date_added"] >= now_utc - pd.Timedelta(days=d)]
+                ad_w[d] = {"spend": sp, "leads": len(wc), "shoppers": int(wc["is_shopper"].sum()) if len(wc) else 0}
+            inner_ad_list.append({"ad_name": ad_row["ad_name"], "windows": ad_w})
 
         adset_cards.append({
             "adset": adset, "days_since": days_since, "windows": windows,
-            "inner_ads": inner_ads,
+            "inner_ads": inner_ad_list,
         })
 
     # Render 3 side-by-side adset cards
@@ -599,11 +615,33 @@ elif view == "Cost per Customer":
     for col, card in zip(cols, adset_cards):
         last_txt = ("running today" if card["days_since"] is not None and card["days_since"] <= 1
                     else (f"{card['days_since']}d since last spend" if card["days_since"] is not None else "no recent spend"))
-        inner_lines = "".join(
-            f'<div style="display:flex; justify-content:space-between; padding:0.2rem 0; border-top:1px solid #eee; font-size:0.85rem;">'
-            f'<span>{r["ad_name"]}</span><span style="font-weight:600;">${r["spend_cad"]:,.0f}</span></div>'
-            for _, r in card["inner_ads"].iterrows()
-        )
+        # Per-ad breakdown: one mini-block per ad inside this adset showing 30/60/90 leads + shoppers
+        inner_blocks = []
+        for ad in card["inner_ads"]:
+            rows_html = ""
+            for d in (30, 60, 90):
+                w = ad["windows"][d]
+                sp_txt = f'${w["spend"]:,.0f}' if w["spend"] else '<span style="color:#bbb">—</span>'
+                ld_txt = f'{w["leads"]:,}' if w["leads"] else '<span style="color:#bbb">0</span>'
+                sh_txt = f'<b style="color:{GREEN}">{w["shoppers"]:,}</b>' if w["shoppers"] else '<span style="color:#bbb">0</span>'
+                rows_html += f'<tr><td style="padding:0.15rem 0.3rem; font-size:0.65rem; color:#555; font-weight:600;">{d}D</td>' \
+                             f'<td style="padding:0.15rem 0.3rem; text-align:right; font-size:0.75rem;">{sp_txt}</td>' \
+                             f'<td style="padding:0.15rem 0.3rem; text-align:right; font-size:0.75rem; color:{RED};">{ld_txt}</td>' \
+                             f'<td style="padding:0.15rem 0.3rem; text-align:right; font-size:0.75rem;">{sh_txt}</td></tr>'
+            inner_blocks.append(f"""
+<div style="border-top:1px solid #eee; padding:0.4rem 0; margin-top:0.3rem;">
+  <div style="font-weight:700; color:{BLUE}; font-size:0.85rem; margin-bottom:0.2rem;">{ad['ad_name']}</div>
+  <table style="width:100%; border-collapse:collapse;">
+    <thead><tr style="background:#f5f5f9;">
+      <th style="padding:0.15rem 0.3rem; text-align:left; font-size:0.6rem; color:#888; letter-spacing:0.4px;">WIN</th>
+      <th style="padding:0.15rem 0.3rem; text-align:right; font-size:0.6rem; color:#888; letter-spacing:0.4px;">SPEND</th>
+      <th style="padding:0.15rem 0.3rem; text-align:right; font-size:0.6rem; color:#888; letter-spacing:0.4px;">LEADS</th>
+      <th style="padding:0.15rem 0.3rem; text-align:right; font-size:0.6rem; color:#888; letter-spacing:0.4px;">SHOP</th>
+    </tr></thead>
+    <tbody>{rows_html}</tbody>
+  </table>
+</div>""")
+        inner_lines = "".join(inner_blocks) if inner_blocks else '<div style="font-size:0.85rem; color:#888; padding:0.2rem 0;">No recent spend.</div>'
         # Pick header border color based on whether ANY window has shoppers
         any_shoppers = any(w["shoppers"] > 0 for w in card["windows"].values())
         border = BLUE if any_shoppers else "#888"
@@ -641,8 +679,8 @@ elif view == "Cost per Customer":
     </thead>
     <tbody>{win_rows_html}</tbody>
   </table>
-  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-top:0.7rem;">Ads in this set</div>
-  {inner_lines if inner_lines else '<div style="font-size:0.85rem; color:#888; padding:0.2rem 0;">No recent spend.</div>'}
+  <div style="font-size:0.7rem; color:#888; text-transform:uppercase; letter-spacing:0.5px; margin-top:0.7rem; padding-top:0.5rem; border-top:2px solid #eee;">Ads in this set</div>
+  {inner_lines}
 </div>
 """, unsafe_allow_html=True)
     st.caption("Leads/Shoppers per window = contacts whose first-touch was in that timeframe (by date added to GHL). Shoppers typically convert weeks after first touch, so 30D shopper counts will be smaller than 90D.")
