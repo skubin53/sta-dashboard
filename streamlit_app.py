@@ -5,6 +5,27 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
+import requests
+
+# GHL push config — token can be overridden via Streamlit Cloud secrets
+GHL_PIT_TOKEN = st.secrets.get("GHL_PIT_TOKEN", "pit-04c7dc76-1b6e-450c-a726-68928a8c3a91") if hasattr(st, "secrets") else "pit-04c7dc76-1b6e-450c-a726-68928a8c3a91"
+GHL_HEADERS = {"Authorization": f"Bearer {GHL_PIT_TOKEN}", "Version": "2021-07-28",
+               "Accept": "application/json", "Content-Type": "application/json"}
+GHL_BASE = "https://services.leadconnectorhq.com"
+PUSH_WORKFLOWS = {
+    "Follow-Up in 2 weeks": "0697de52-a9c1-4a56-a6e8-af47c1f2aa51",
+}
+
+def push_contact_to_workflow(contact_id, workflow_id):
+    """POST /contacts/{contactId}/workflow/{workflowId}. Returns (ok, message)."""
+    try:
+        r = requests.post(f"{GHL_BASE}/contacts/{contact_id}/workflow/{workflow_id}",
+                          headers=GHL_HEADERS, timeout=15)
+        if r.status_code in (200, 201):
+            return True, "ok"
+        return False, f"HTTP {r.status_code}: {r.text[:120]}"
+    except Exception as e:
+        return False, str(e)[:120]
 
 
 def creative_key(name):
@@ -735,19 +756,83 @@ elif view == "Hot list (call these)":
         df = df[df["timezone"].isin(tz_filter)]
     if not_touched_days > 0:
         df = df[(df["days_since_activity"].fillna(99999) >= not_touched_days)]
-    df = df.sort_values("smart_score", ascending=False).head(500)
-    show_cols = ["smart_score","first_name","last_name","phone","email","timezone",
+    df = df.sort_values("smart_score", ascending=False).head(500).copy()
+    # "select" column for batch push to GHL workflow
+    df.insert(0, "select", False)
+    show_cols = ["select","smart_score","first_name","last_name","phone","email","timezone",
         "days_since_activity","days_since_first_seen","pipeline_stage_name",
         "interest_level","fin_importance","video_watched","convo_summary",
         "mission","first_utm_campaign","smart_reason"]
     show_cols = [c for c in show_cols if c in df.columns]
+    # id needs to ride along (hidden) so we can push the right contact
+    if "id" in df.columns:
+        df_editor = df[show_cols + ["id"]].copy()
+    else:
+        df_editor = df[show_cols].copy()
     pool = contacts[(contacts["in_scope"]) & (contacts["date_added"] >= date_cutoff)]
     st.write(f"Top **{len(df):,}** of {len(pool):,} contacts in last {window_days} days at score >= {min_score}")
-    st.dataframe(df[show_cols], use_container_width=True, hide_index=True,
-        column_config={"smart_score": st.column_config.ProgressColumn("Score", min_value=0, max_value=100),
+    edited = st.data_editor(
+        df_editor, use_container_width=True, hide_index=True, num_rows="fixed",
+        column_config={
+            "select": st.column_config.CheckboxColumn("✓", width="small", help="Tick the contacts you want to push to a workflow"),
+            "smart_score": st.column_config.ProgressColumn("Score", min_value=0, max_value=100),
             "convo_summary": st.column_config.TextColumn("Last AI Convo Summary", width="medium"),
             "mission": st.column_config.TextColumn("Their mission/purpose", width="medium"),
-            "smart_reason": st.column_config.TextColumn("Why hot", width="medium")})
+            "smart_reason": st.column_config.TextColumn("Why hot", width="medium"),
+            "id": None,  # hidden
+        },
+        disabled=[c for c in df_editor.columns if c != "select"],  # only the checkbox is editable
+        key="hot_list_editor",
+    )
+    selected = edited[edited["select"]] if "select" in edited.columns else edited.iloc[0:0]
+    n_selected = len(selected)
+
+    # --- Push to workflow controls ---
+    st.markdown("<div style='margin-top:0.8rem; padding-top:0.8rem; border-top:2px solid #eee;'></div>", unsafe_allow_html=True)
+    pc1, pc2, pc3 = st.columns([2, 2, 1])
+    wf_choice = pc1.selectbox("Push to workflow", list(PUSH_WORKFLOWS.keys()),
+                              help="Adds each selected contact to this GHL workflow.")
+    pc2.markdown(f"<div style='padding-top:1.9rem; font-weight:600; color:{BLUE};'>{n_selected:,} contact{'s' if n_selected != 1 else ''} selected</div>", unsafe_allow_html=True)
+    push_clicked = pc3.button(f"🚀 Push {n_selected}", type="primary", disabled=(n_selected == 0))
+
+    if push_clicked and n_selected > 0:
+        st.session_state["pending_push"] = {
+            "ids": selected["id"].tolist() if "id" in selected.columns else [],
+            "names": (selected["first_name"].fillna("") + " " + selected["last_name"].fillna("")).tolist() if "first_name" in selected.columns else [],
+            "workflow_name": wf_choice,
+            "workflow_id": PUSH_WORKFLOWS[wf_choice],
+        }
+
+    pp = st.session_state.get("pending_push")
+    if pp and pp.get("ids"):
+        with st.container():
+            st.markdown(f"""<div style='background:#fff8e6; border:2px solid {GOLD}; border-radius:10px; padding:1rem; margin:0.5rem 0;'>
+<div style='font-weight:800; color:{DARK_RED}; font-size:1.1rem;'>Confirm push: {len(pp['ids'])} contact{'s' if len(pp['ids'])!=1 else ''} → "{pp['workflow_name']}"</div>
+<div style='font-size:0.85rem; color:#555; margin-top:0.3rem;'>This will add each contact to the GHL workflow. The workflow will run its enroll-from-anywhere triggers.</div>
+</div>""", unsafe_allow_html=True)
+            sample = ", ".join(pp["names"][:5]) + (f" + {len(pp['ids']) - 5} more" if len(pp['ids']) > 5 else "")
+            st.caption(f"Contacts: {sample}")
+            cc1, cc2, _ = st.columns([1, 1, 4])
+            if cc1.button("✅ Yes, push them", type="primary", key="confirm_push"):
+                prog = st.progress(0.0)
+                ok, fail, failures = 0, 0, []
+                for i, (cid, cname) in enumerate(zip(pp["ids"], pp["names"]), 1):
+                    success, msg = push_contact_to_workflow(cid, pp["workflow_id"])
+                    if success:
+                        ok += 1
+                    else:
+                        fail += 1
+                        failures.append(f"{cname or cid}: {msg}")
+                    prog.progress(i / len(pp["ids"]))
+                if ok:
+                    st.success(f"✅ Pushed {ok} contact{'s' if ok != 1 else ''} to '{pp['workflow_name']}'")
+                if fail:
+                    st.error(f"❌ {fail} failed:\n" + "\n".join(failures[:10]))
+                st.session_state["pending_push"] = None
+            if cc2.button("Cancel", key="cancel_push"):
+                st.session_state["pending_push"] = None
+                st.rerun()
+
     st.download_button("Download CSV", data=df[show_cols].to_csv(index=False).encode("utf-8"),
         file_name=f"hot_list_{pd.Timestamp.now().strftime('%Y%m%d_%H%M')}.csv", mime="text/csv")
 
