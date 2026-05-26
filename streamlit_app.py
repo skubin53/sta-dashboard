@@ -455,6 +455,34 @@ elif view == "Cost per Customer":
     merged = spend.merge(by_camp, on="campaign_id", how="left").fillna({"leads": 0, "shoppers": 0})
     merged["leads"] = merged["leads"].astype(int)
     merged["shoppers"] = merged["shoppers"].astype(int)
+
+    # MM Conversions scoping: only count the 3 active ad sets Shannon runs.
+    # Other adsets in MM Conversions (retired Best Posts #2/#3, NEW VIDEOS, etc.)
+    # would otherwise inflate the campaign card vs. the 3-adset breakdown below.
+    MM_NAME = "MM - Switch To America - Conversions"
+    MM_ADSETS = [
+        "Interest: Open (Original Posts PT1)",
+        "Interest: Open (Best Posts #1)",
+        "Interest: Open (Original Posts PT2)",
+    ]
+    mm_ads = ads[(ads["campaign_name"] == MM_NAME) & (ads["adset_name"].isin(MM_ADSETS))]
+    mm_3_ad_ids = set(mm_ads["ad_id"].dropna().astype(str).unique())
+    mm_3_spend = float(mm_ads[mm_ads["date"] >= cutoff_naive]["spend_cad"].sum())
+    mm_attrib_mask = (
+        contacts["first_utm_term"].astype(str).isin(mm_3_ad_ids)
+        | (contacts["ad_name_attrib"].isin(MM_ADSETS))
+        | (contacts["ad_name_attrib"].astype(str).str.startswith(tuple(MM_ADSETS), na=False))
+    )
+    mm_in_window = contacts[mm_attrib_mask & (contacts["date_added"] >= cutoff)]
+    mm_3_leads = len(mm_in_window)
+    mm_3_shoppers = int(mm_in_window["is_shopper"].sum()) if mm_3_leads else 0
+    # Overwrite MM Conversions row in merged with the 3-adset totals
+    mm_mask = merged["campaign_name"] == MM_NAME
+    if mm_mask.any():
+        merged.loc[mm_mask, "spend_cad"] = mm_3_spend
+        merged.loc[mm_mask, "leads"] = mm_3_leads
+        merged.loc[mm_mask, "shoppers"] = mm_3_shoppers
+
     merged["cost_per_lead"] = merged.apply(lambda r: (r["spend_cad"] / r["leads"]) if r["leads"] else 0, axis=1)
     merged["cost_per_customer"] = merged.apply(lambda r: (r["spend_cad"] / r["shoppers"]) if r["shoppers"] else 0, axis=1)
     merged["lead_to_customer_pct"] = merged.apply(lambda r: (r["shoppers"] / r["leads"] * 100) if r["leads"] else 0, axis=1)
