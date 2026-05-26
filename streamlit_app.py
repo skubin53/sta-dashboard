@@ -431,7 +431,7 @@ def currently_running_ads(ads_df, active_cutoff_days):
 
 st.sidebar.markdown(f"<h2 style='color:{BLUE}; margin:0;'>STA Dashboard</h2>", unsafe_allow_html=True)
 st.sidebar.markdown(f"<p style='color:{RED}; font-weight:600; margin:0 0 1rem 0;'>Switch to America</p>", unsafe_allow_html=True)
-view = st.sidebar.radio("View", ["Overview", "Cost per Customer", "Hot list (call these)", "Sales Funnel", "Sync history"])
+view = st.sidebar.radio("View", ["Today", "Overview", "Cost per Customer", "Hot list (call these)", "Sales Funnel", "Sync history"])
 with st.sidebar.expander("Data freshness"):
     log = load_log()
     if log.empty: st.warning("No sync runs yet.")
@@ -447,7 +447,122 @@ if not DB_PATH.exists():
 
 contacts = load_contacts(); ads = load_ads()
 
-if view == "Overview":
+if view == "Today":
+    today_date = pd.Timestamp.now().strftime("%A, %B %d, %Y")
+    st.markdown(f"""<div style="background:linear-gradient(135deg,{BLUE} 0%,{DARK_RED} 100%); padding:1.8rem 2rem; border-radius:14px; margin-bottom:1rem; color:{WHITE};">
+<div style="font-size:0.75rem; letter-spacing:1.5px; opacity:0.85; text-transform:uppercase;">Today</div>
+<div style="font-size:2rem; font-weight:800; line-height:1.1;">{today_date}</div>
+<div style="font-size:0.95rem; opacity:0.9; margin-top:0.4rem;">Your daily action board — call these, watch these, celebrate these.</div>
+</div>""", unsafe_allow_html=True)
+    st.markdown('<div class="flag-strip"></div>', unsafe_allow_html=True)
+
+    if contacts.empty:
+        st.warning("No contacts loaded yet."); st.stop()
+
+    now_utc = pd.Timestamp.utcnow()
+    now_naive = now_utc.tz_localize(None)
+    yesterday_start = (now_naive.normalize() - pd.Timedelta(days=1))
+    today_start = now_naive.normalize()
+
+    # KPI row: yesterday's leads/spend, today's hot count, stale-risk count
+    leads_yest = contacts[(contacts["date_added"] >= yesterday_start.tz_localize("UTC")) & (contacts["date_added"] < today_start.tz_localize("UTC"))]
+    n_leads_yest = len(leads_yest)
+    if not ads.empty:
+        spend_yest = float(ads[ads["date"] == yesterday_start]["spend_cad"].sum())
+    else:
+        spend_yest = 0
+    # Hot leads = score >=50, in scope, last 120 days, with phone or email
+    hot_pool = contacts[contacts["in_scope"]
+                        & (contacts["date_added"] >= now_utc - pd.Timedelta(days=120))
+                        & (contacts["smart_score"] >= 50)
+                        & ((contacts["phone"].fillna("") != "") | (contacts["email"].fillna("") != ""))]
+    n_hot = len(hot_pool)
+    # Stale-risk = high score AND days_since_activity > 14
+    stale_risk = hot_pool[hot_pool["days_since_activity"].fillna(0) > 14].sort_values("smart_score", ascending=False)
+    n_stale = len(stale_risk)
+    # New shoppers this week (became shopper - infer from is_shopper + date_updated in last 7d as proxy)
+    week_ago = now_utc - pd.Timedelta(days=7)
+    new_shop = contacts[contacts["is_shopper"] & (contacts["date_updated"] >= week_ago)].sort_values("date_updated", ascending=False)
+    n_new_shop = len(new_shop)
+
+    k1, k2, k3, k4 = st.columns(4)
+    with k1: st.markdown(f'<div class="kpi-card"><p class="label">Yesterday — Leads</p><p class="value">{n_leads_yest:,}</p><p class="sub">new contacts</p></div>', unsafe_allow_html=True)
+    with k2: st.markdown(f'<div class="kpi-card"><p class="label">Yesterday — Spend</p><p class="value">${spend_yest:,.2f}</p><p class="sub">CAD</p></div>', unsafe_allow_html=True)
+    with k3: st.markdown(f'<div class="kpi-card red"><p class="label">Hot leads to work</p><p class="value">{n_hot:,}</p><p class="sub">score ≥ 50, reachable</p></div>', unsafe_allow_html=True)
+    with k4: st.markdown(f'<div class="kpi-card"><p class="label">Going cold ⚠️</p><p class="value">{n_stale:,}</p><p class="sub">hot, untouched 14d+</p></div>', unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── SECTION 1: Call/text these 5 today ──────────────────────────
+    st.markdown(f"<h2 style='color:{BLUE}; margin-top:0.6rem;'>📞 Call or text these 5 today</h2>", unsafe_allow_html=True)
+    st.caption("Top 5 highest-intent contacts who can be reached. Drafts ready — copy, send, move on.")
+    top5 = hot_pool.sort_values("smart_score", ascending=False).head(5)
+    if top5.empty:
+        st.info("No reachable hot leads right now. Adjust filters on the Hot list tab if this looks wrong.")
+    else:
+        for _, row in top5.iterrows():
+            r = dict(row)
+            name = ((r.get("first_name") or "") + " " + (r.get("last_name") or "")).strip().title() or "(no name)"
+            phone = r.get("phone") or ""
+            email = r.get("email") or ""
+            score = int(r.get("smart_score") or 0)
+            stage = r.get("pipeline_stage_name") or ""
+            tz = r.get("timezone") or ""
+            interest = r.get("interest_level") or ""
+            video = r.get("video_watched") or ""
+            days_first = r.get("days_since_first_seen")
+            days_active = r.get("days_since_activity")
+            draft = draft_sms(r)
+            chip_color = GREEN if score >= 75 else (GOLD if score >= 50 else "#888")
+            ctx_bits = []
+            if stage: ctx_bits.append(f"<b>Stage:</b> {stage}")
+            if interest: ctx_bits.append(f"<b>Interest:</b> {interest}")
+            if video: ctx_bits.append(f"<b>Video:</b> {video}")
+            if pd.notna(days_first): ctx_bits.append(f"<b>In funnel:</b> {int(days_first)}d")
+            if pd.notna(days_active): ctx_bits.append(f"<b>Last activity:</b> {int(days_active)}d ago")
+            if tz: ctx_bits.append(f"<b>TZ:</b> {tz}")
+            ctx_html = " · ".join(ctx_bits) if ctx_bits else "<span style='color:#aaa'>no extra context</span>"
+            with st.container():
+                st.markdown(f"""
+<div style="background:{WHITE}; border:2px solid {chip_color}; border-radius:10px; padding:1rem 1.2rem; margin:0.5rem 0; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem;">
+    <div>
+      <div style="font-weight:800; color:{BLUE}; font-size:1.05rem;">{name}</div>
+      <div style="font-size:0.85rem; color:#555;">{phone if phone else email}</div>
+    </div>
+    <div style="background:{chip_color}; color:{WHITE}; font-weight:800; padding:0.3rem 0.8rem; border-radius:18px; font-size:0.85rem;">{score}</div>
+  </div>
+  <div style="font-size:0.8rem; color:#666; padding:0.4rem 0; border-top:1px solid #eee; border-bottom:1px solid #eee; margin:0.4rem 0;">{ctx_html}</div>
+</div>""", unsafe_allow_html=True)
+                st.text_area(f"SMS draft ({len(draft)} chars)", value=draft, height=70,
+                             key=f"today_draft_{r.get('id', name)}",
+                             help="Edit, then copy with Ctrl+A → Ctrl+C")
+
+    # ── SECTION 2: Going cold ──────────────────────────
+    st.markdown(f"<h2 style='color:{DARK_RED}; margin-top:1.5rem;'>⚠️ Going cold — recover these</h2>", unsafe_allow_html=True)
+    st.caption("High-score contacts you haven't touched in 14+ days. Each one is risk of churn.")
+    cold = stale_risk.head(10)
+    if cold.empty:
+        st.success("Nothing going cold. Nice work staying on top of follow-up.")
+    else:
+        cold_view = cold[["smart_score","first_name","last_name","phone","email",
+                          "days_since_activity","days_since_first_seen","pipeline_stage_name","interest_level","smart_reason"]].copy()
+        cold_view.columns = ["Score","First","Last","Phone","Email","Days quiet","In funnel","Stage","Interest","Why hot"]
+        st.dataframe(cold_view, use_container_width=True, hide_index=True,
+                     column_config={"Score": st.column_config.ProgressColumn("Score", min_value=0, max_value=100),
+                                    "Why hot": st.column_config.TextColumn("Why hot", width="medium")})
+
+    # ── SECTION 3: This week's wins ──────────────────────────
+    st.markdown(f"<h2 style='color:{GREEN}; margin-top:1.5rem;'>🎉 New shoppers this week</h2>", unsafe_allow_html=True)
+    if new_shop.empty:
+        st.caption("No new shoppers tagged in the last 7 days yet. Make some happen today 🚀")
+    else:
+        st.caption(f"{n_new_shop} new shopper{'s' if n_new_shop != 1 else ''} tagged in the last 7 days — celebrate, then think about who in the Hot list looks similar.")
+        win_view = new_shop.head(15)[["first_name","last_name","phone","email","date_updated","first_utm_campaign","pipeline_stage_name"]].copy()
+        win_view["date_updated"] = pd.to_datetime(win_view["date_updated"]).dt.strftime("%a %b %d")
+        win_view.columns = ["First","Last","Phone","Email","Tagged on","From campaign","Stage"]
+        st.dataframe(win_view, use_container_width=True, hide_index=True)
+
+elif view == "Overview":
     st.markdown('<div class="hero"><h1>Switch to America</h1><p>Last 7 days of ad performance across your active campaigns</p></div>', unsafe_allow_html=True)
     st.markdown('<div class="flag-strip"></div>', unsafe_allow_html=True)
     if ads.empty:
