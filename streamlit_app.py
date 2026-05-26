@@ -512,92 +512,132 @@ elif view == "Cost per Customer":
         with cols[i]:
             st.markdown(html, unsafe_allow_html=True)
 
-    # Per-creative breakdown (rolls up audience/phase prefixes so "Best Post #1" and
-    # "Interest: Open (Best Posts #1)" count together — works around FB reissuing ad IDs)
-    st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Per-creative breakdown</h3>", unsafe_allow_html=True)
-    st.caption("Spend windows = last 30 / 60 / 90 days. Leads and Shoppers are lifetime (since FB reissues ad IDs on every duplication, lifetime is the honest attribution).")
-    f1, f2, f3 = st.columns([2, 1, 1])
-    search = f1.text_input("Search creative", value="", placeholder="e.g. Reel 03, Best Post")
-    active_within = f2.number_input("Treat as 'active' if spend in last N days", min_value=1, value=14, step=1)
-    show_mode = f3.selectbox("Show", ["Active now", "All (active + retired)", "Retired only"])
-
+    # --- Creative breakdown inside MM - Switch To America - Conversions ---
+    # Goal: under the MM Conversions card, show each ad (Reel 03, Best Post #1, etc.)
+    # with its lifetime leads/shoppers. Uses creative_key rollup so "Best Post #1"
+    # picks up shoppers from old ad IDs Meta has since retired.
+    mm_name = "MM - Switch To America - Conversions"
     now_naive = pd.Timestamp.utcnow().tz_localize(None)
-    # Spend by creative_key in each window
-    spend_rows = []
-    for label, days in [("spend_30", 30), ("spend_60", 60), ("spend_90", 90), ("spend_active", active_within)]:
+
+    def _spend_by_key_in_window(days, in_campaign=None):
         cutoff = now_naive - pd.Timedelta(days=days)
-        win = ads[ads["date"] >= cutoff].groupby("creative_key", as_index=False)["spend_cad"].sum().rename(columns={"spend_cad": label})
-        spend_rows.append(win)
-    spend_total = ads.groupby("creative_key", as_index=False)["spend_cad"].sum().rename(columns={"spend_cad": "spend_lifetime"})
-    # Best display name per creative_key — prefer the most-recent ad_name we've seen
-    name_per_key = (ads.dropna(subset=["ad_name"]).sort_values("date", ascending=False)
-                    .drop_duplicates(subset=["creative_key"])[["creative_key", "ad_name", "campaign_name"]])
+        df = ads[ads["date"] >= cutoff]
+        if in_campaign is not None:
+            df = df[df["campaign_name"] == in_campaign]
+        return df.groupby("creative_key", as_index=False)["spend_cad"].sum()
 
-    # Contacts: leads + shoppers by creative_key (lifetime)
+    # Creative keys currently running in MM Conversions = any ad in MM Conversions
+    # that had spend in our 30-day window
+    mm_keys = sorted(ads[(ads["campaign_name"] == mm_name) & (ads["spend_cad"] > 0)]
+                     ["creative_key"].dropna().unique().tolist())
+
+    # Lifetime leads + shoppers per creative_key (across ALL of that creative's historic
+    # ad IDs, regardless of which campaign attributed the lead)
     attrib = contacts[contacts["creative_key_attrib"].notna() & (contacts["creative_key_attrib"] != "(unattributed)")]
-    by_key_c = attrib.groupby("creative_key_attrib", as_index=False).agg(
-        leads=("id", "count"), shoppers=("is_shopper", "sum")
-    ).rename(columns={"creative_key_attrib": "creative_key"})
-    by_key_c["shoppers"] = by_key_c["shoppers"].astype(int)
+    lifetime = (attrib.groupby("creative_key_attrib", as_index=False)
+                .agg(leads=("id", "count"), shoppers=("is_shopper", "sum"))
+                .rename(columns={"creative_key_attrib": "creative_key"}))
+    lifetime["shoppers"] = lifetime["shoppers"].astype(int)
 
-    # If a contact's creative_key never appeared in ad_insights (retired ad), we still want a display name
-    contact_name_per_key = (attrib.dropna(subset=["ad_name_attrib"])
-                            .drop_duplicates(subset=["creative_key_attrib"])
-                            [["creative_key_attrib", "ad_name_attrib"]]
-                            .rename(columns={"creative_key_attrib": "creative_key", "ad_name_attrib": "fallback_name"}))
-
-    merged = name_per_key.merge(contact_name_per_key, on="creative_key", how="outer")
-    merged["display_name"] = merged["creative_key"]  # creative_key itself is already a clean human name
-    merged["campaign_name"] = merged["campaign_name"].fillna("(retired)")
-    for s in spend_rows: merged = merged.merge(s, on="creative_key", how="left")
-    merged = merged.merge(spend_total, on="creative_key", how="left")
-    merged = merged.merge(by_key_c, on="creative_key", how="left")
-    for col in ["spend_30","spend_60","spend_90","spend_active","spend_lifetime","leads","shoppers"]:
-        merged[col] = merged[col].fillna(0)
-    merged["shoppers"] = merged["shoppers"].astype(int)
-    merged["leads"] = merged["leads"].astype(int)
-    merged["cost_per_customer"] = merged.apply(
-        lambda r: (r["spend_lifetime"] / r["shoppers"]) if r["shoppers"] else 0, axis=1)
-    merged["is_active"] = merged["spend_active"] > 0
-
-    if show_mode == "Active now":
-        merged = merged[merged["is_active"]]
-    elif show_mode == "Retired only":
-        merged = merged[~merged["is_active"]]
-
-    if search:
-        s = search.lower()
-        merged = merged[merged["display_name"].astype(str).str.lower().str.contains(s, na=False)]
-
-    merged = merged.sort_values(["shoppers", "spend_30"], ascending=[False, False])
-
-    active_n = int(merged["is_active"].sum())
-    retired_n = int((~merged["is_active"]).sum())
-    st.write(f"**{len(merged):,} creatives**  ·  {active_n} active now (spend in last {active_within}d)  ·  {retired_n} retired but produced leads/shoppers")
-    if merged.empty:
-        st.info("Nothing to show with current filters.")
+    # Build per-creative table for MM Conversions
+    if not mm_keys:
+        st.info("No ads currently running in MM - Switch To America - Conversions.")
     else:
-        disp = merged.copy()
-        disp["status"] = disp["is_active"].map(lambda b: "ACTIVE" if b else "retired")
-        for c in ["spend_30","spend_60","spend_90","spend_lifetime","cost_per_customer"]:
+        st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.5rem;'>Inside <span style='color:{RED}'>MM - Switch To America - Conversions</span>: per ad</h3>", unsafe_allow_html=True)
+        st.caption("Each currently-running ad in this campaign, with its lifetime shopper count rolled up across every ad ID that creative has ever had. Best Post #1 picks up its 396 lifetime leads and 6 shoppers from older versions of the same creative.")
+
+        sp30 = _spend_by_key_in_window(30, in_campaign=mm_name).rename(columns={"spend_cad": "spend_30"})
+        sp60 = _spend_by_key_in_window(60, in_campaign=mm_name).rename(columns={"spend_cad": "spend_60"})
+        sp90 = _spend_by_key_in_window(90, in_campaign=mm_name).rename(columns={"spend_cad": "spend_90"})
+        last_day = (ads[(ads["campaign_name"] == mm_name) & (ads["spend_cad"] > 0)]
+                    .groupby("creative_key", as_index=False)["date"].max()
+                    .rename(columns={"date": "last_active"}))
+
+        mm_df = pd.DataFrame({"creative_key": mm_keys})
+        mm_df = (mm_df.merge(sp30, on="creative_key", how="left")
+                       .merge(sp60, on="creative_key", how="left")
+                       .merge(sp90, on="creative_key", how="left")
+                       .merge(last_day, on="creative_key", how="left")
+                       .merge(lifetime, on="creative_key", how="left"))
+        for c in ["spend_30","spend_60","spend_90","leads","shoppers"]:
+            mm_df[c] = mm_df[c].fillna(0)
+        mm_df["leads"] = mm_df["leads"].astype(int)
+        mm_df["shoppers"] = mm_df["shoppers"].astype(int)
+        mm_df["cost_per_customer"] = mm_df.apply(
+            lambda r: (r["spend_30"] / r["shoppers"]) if r["shoppers"] else 0, axis=1)
+        # Days since last spend (so Best Post #1 shows e.g. "14 days ago")
+        mm_df["last_active_disp"] = mm_df["last_active"].apply(
+            lambda d: ((now_naive - d).days if pd.notna(d) else "-"))
+        mm_df = mm_df.sort_values("spend_30", ascending=False)
+
+        # Render as styled cards-in-a-row + a detail table
+        st.markdown('<div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:0.6rem;">', unsafe_allow_html=True)
+        for _, r in mm_df.head(6).iterrows():
+            card_color = BLUE if r["shoppers"] > 0 else "#888"
+            last = r["last_active_disp"]
+            last_txt = "running" if isinstance(last, int) and last <= 1 else (f"{last}d since last spend" if isinstance(last, int) else "—")
+            cpc_txt = f"${r['cost_per_customer']:,.2f}" if r["cost_per_customer"] else "—"
+            st.markdown(f"""
+<div style="flex:1; min-width:240px; background:{WHITE}; border:2px solid {card_color}; border-radius:10px; padding:1rem; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+  <div style="font-weight:800; color:{BLUE}; font-size:1.05rem;">{r['creative_key']}</div>
+  <div style="font-size:0.75rem; color:#888; text-transform:uppercase; margin-bottom:0.6rem;">{last_txt}</div>
+  <div style="display:flex; gap:0.8rem; margin-bottom:0.4rem;">
+    <div><div style="font-size:1.4rem; font-weight:800; color:{BLUE};">${r['spend_30']:,.0f}</div><div style="font-size:0.7rem; color:#888;">SPEND 30D</div></div>
+    <div><div style="font-size:1.4rem; font-weight:800; color:{RED};">{r['leads']:,}</div><div style="font-size:0.7rem; color:#888;">LEADS (lifetime)</div></div>
+    <div><div style="font-size:1.4rem; font-weight:800; color:{GREEN};">{r['shoppers']:,}</div><div style="font-size:0.7rem; color:#888;">SHOPPERS (lifetime)</div></div>
+  </div>
+  <div style="font-size:0.85rem; color:#555;">Cost / shopper (30d spend): <b style="color:{GOLD}">{cpc_txt}</b></div>
+</div>
+""", unsafe_allow_html=True)
+        st.markdown('</div>', unsafe_allow_html=True)
+
+        # Detail table below the cards
+        with st.expander("Show as table", expanded=False):
+            disp = mm_df.copy()
+            disp["spend_30"] = disp["spend_30"].apply(lambda v: f"${v:,.2f}" if v else "-")
+            disp["spend_60"] = disp["spend_60"].apply(lambda v: f"${v:,.2f}" if v else "-")
+            disp["spend_90"] = disp["spend_90"].apply(lambda v: f"${v:,.2f}" if v else "-")
+            disp["cost_per_customer"] = disp["cost_per_customer"].apply(lambda v: f"${v:,.2f}" if v else "-")
+            disp["last_active_disp"] = disp["last_active_disp"].apply(lambda v: f"{v}d ago" if isinstance(v, int) else "-")
+            st.dataframe(
+                disp[["creative_key","last_active_disp","spend_30","spend_60","spend_90","leads","shoppers","cost_per_customer"]],
+                use_container_width=True, hide_index=True,
+                column_config={
+                    "creative_key": "Creative",
+                    "last_active_disp": "Last spend",
+                    "spend_30": "Spend (30d)", "spend_60": "Spend (60d)", "spend_90": "Spend (90d)",
+                    "leads": "Leads (lifetime)", "shoppers": "Shoppers (lifetime)",
+                    "cost_per_customer": "$/Shopper (30d spend)",
+                })
+
+    # --- All creatives (everything, retired included) — collapsed by default ---
+    with st.expander("All creatives across every campaign (retired + active)", expanded=False):
+        spend_rows = []
+        for label, days in [("spend_30", 30), ("spend_60", 60), ("spend_90", 90)]:
+            cutoff = now_naive - pd.Timedelta(days=days)
+            spend_rows.append(ads[ads["date"] >= cutoff].groupby("creative_key", as_index=False)["spend_cad"].sum().rename(columns={"spend_cad": label}))
+        name_per_key = (ads.dropna(subset=["ad_name"]).sort_values("date", ascending=False)
+                        .drop_duplicates(subset=["creative_key"])[["creative_key", "campaign_name"]])
+        all_df = name_per_key.merge(lifetime, on="creative_key", how="outer")
+        all_df["campaign_name"] = all_df["campaign_name"].fillna("(retired)")
+        for s in spend_rows: all_df = all_df.merge(s, on="creative_key", how="left")
+        for c in ["spend_30","spend_60","spend_90","leads","shoppers"]:
+            all_df[c] = all_df[c].fillna(0)
+        all_df["leads"] = all_df["leads"].astype(int)
+        all_df["shoppers"] = all_df["shoppers"].astype(int)
+        all_df = all_df.sort_values(["shoppers","spend_30"], ascending=[False, False])
+        disp = all_df.copy()
+        for c in ["spend_30","spend_60","spend_90"]:
             disp[c] = disp[c].apply(lambda v: f"${v:,.2f}" if v else "-")
-        cols_to_show = ["display_name","status","campaign_name",
-                        "spend_30","spend_60","spend_90","spend_lifetime",
-                        "leads","shoppers","cost_per_customer"]
-        st.dataframe(disp[cols_to_show].head(200), use_container_width=True, hide_index=True,
+        st.dataframe(
+            disp[["creative_key","campaign_name","spend_30","spend_60","spend_90","leads","shoppers"]].head(200),
+            use_container_width=True, hide_index=True,
             column_config={
-                "display_name": "Creative",
-                "status": "Status",
-                "campaign_name": "Current Campaign",
-                "spend_30": "Spend (30d)",
-                "spend_60": "Spend (60d)",
-                "spend_90": "Spend (90d)",
-                "spend_lifetime": "Spend (lifetime in DB)",
-                "leads": "Leads (lifetime)",
-                "shoppers": "Shoppers (lifetime)",
-                "cost_per_customer": "Lifetime $/Shopper",
+                "creative_key": "Creative", "campaign_name": "Current Campaign",
+                "spend_30": "Spend (30d)", "spend_60": "Spend (60d)", "spend_90": "Spend (90d)",
+                "leads": "Leads (lifetime)", "shoppers": "Shoppers (lifetime)",
             })
-        st.caption("Note: spend columns reflect what's in our 30-day Meta sync window. Lifetime spend will be more complete once we pull historical Meta data — a future bite-size step.")
+        st.caption("Lifetime spend will be more complete once we pull historical Meta data — future bite-size step.")
 
 elif view == "Hot list (call these)":
     st.markdown(f"<h1 style='color:{BLUE};'>Hot list - call these next</h1>", unsafe_allow_html=True)
