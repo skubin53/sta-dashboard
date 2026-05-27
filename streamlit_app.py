@@ -1278,10 +1278,13 @@ elif view == "Push to Meta":
         },
     }
     EXCLUDE_GROUPS = {
-        "All bad-fit (recommended) — no-show + not interested + can't afford + DND + dead": {
+        "All bad-fit (recommended) — no-show + not interested + can't afford + DND": {
             "name": f"STA EXCLUDE Bad Fit — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            # Intentionally excludes "lost on first text" and "dead no answer" —
+            # those people just went quiet; they may re-engage and shouldn't be
+            # cut off from ads forever.
             "needles": ["no show", "not interested", "can't afford", "cannot afford",
-                        "dnd", "appt cancelled", "lost on first text", "dead no answer",
+                        "dnd", "appt cancelled",
                         "canceled membership", "canceled recovery"],
         },
         "No-shows only — booked but didn't show up": {
@@ -1299,10 +1302,6 @@ elif view == "Push to Meta":
         "Already enrolled — existing customers (separate audience for upsell)": {
             "name": f"STA Already Customers — {pd.Timestamp.now().strftime('%b %d %Y')}",
             "needles": ["already enrolled"],
-        },
-        "Stopped responding — went dark on outreach": {
-            "name": f"STA EXCLUDE Dead Leads — {pd.Timestamp.now().strftime('%b %d %Y')}",
-            "needles": ["lost on first text", "dead no answer"],
         },
     }
 
