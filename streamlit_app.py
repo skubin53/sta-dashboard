@@ -511,7 +511,7 @@ def currently_running_ads(ads_df, active_cutoff_days):
 
 st.sidebar.markdown(f"<h2 style='color:{BLUE}; margin:0;'>STA Dashboard</h2>", unsafe_allow_html=True)
 st.sidebar.markdown(f"<p style='color:{RED}; font-weight:600; margin:0 0 1rem 0;'>Switch to America</p>", unsafe_allow_html=True)
-view = st.sidebar.radio("View", ["Today", "Overview", "Cost per Customer", "Hot list (call these)", "Sales Funnel", "Sync history"])
+view = st.sidebar.radio("View", ["Today", "Overview", "Cost per Customer", "Hot list (call these)", "Sales Funnel", "Push to Meta", "Sync history"])
 with st.sidebar.expander("Data freshness"):
     log = load_log()
     if log.empty: st.warning("No sync runs yet.")
@@ -1212,6 +1212,131 @@ elif view == "Sales Funnel":
             mime="text/csv")
     else:
         st.success(f"Nobody's stuck at {chosen_stage_label} right now.")
+
+elif view == "Push to Meta":
+    st.markdown(f"<h1 style='color:{BLUE};'>Push to Meta — Custom Audience</h1>", unsafe_allow_html=True)
+    st.caption("Generate a refresh CSV of your current shoppers, formatted exactly for Meta's Customer File upload. Use it to refresh your existing Lookalike audiences with up-to-date buyer signal.")
+
+    if contacts.empty:
+        st.warning("No contacts loaded yet."); st.stop()
+
+    # Seed selector
+    s1, s2 = st.columns([2, 1])
+    seed_choice = s1.radio("Seed group",
+        ["Shopped - Cat 1 (highest-value buyers)",
+         "All shoppers (Cat 1 + StaceyB + Placed Order + Beef)",
+         "Hot leads, score ≥ 80 (qualified but not yet buyers)",
+         "Hot leads + shoppers combined"],
+        index=0)
+    audience_name_default = {
+        "Shopped - Cat 1 (highest-value buyers)": f"STA Cat 1 Buyers — {pd.Timestamp.now().strftime('%b %d %Y')}",
+        "All shoppers (Cat 1 + StaceyB + Placed Order + Beef)": f"STA All Shoppers — {pd.Timestamp.now().strftime('%b %d %Y')}",
+        "Hot leads, score ≥ 80 (qualified but not yet buyers)": f"STA Hot Leads 80+ — {pd.Timestamp.now().strftime('%b %d %Y')}",
+        "Hot leads + shoppers combined": f"STA Buyers + Hot — {pd.Timestamp.now().strftime('%b %d %Y')}",
+    }[seed_choice]
+    audience_name = s2.text_input("Audience name (for your reference)", value=audience_name_default)
+
+    # Build the seed
+    SHOPPER_TAG_NEEDLES_CAT1 = ["shopped cat 1"]
+    def _tag_has(j, needles):
+        try: t = [str(x).lower() for x in (json.loads(j or "[]") or [])]
+        except: return False
+        return any(n in t for n in needles)
+    if seed_choice.startswith("Shopped - Cat 1"):
+        seed = contacts[contacts["tags_json"].apply(lambda j: _tag_has(j, SHOPPER_TAG_NEEDLES_CAT1))]
+    elif seed_choice.startswith("All shoppers"):
+        seed = contacts[contacts["is_shopper"]]
+    elif seed_choice.startswith("Hot leads, score"):
+        seed = contacts[contacts["in_scope"] & (contacts["smart_score"] >= 80)
+                        & ((contacts["phone"].fillna("") != "") | (contacts["email"].fillna("") != ""))]
+    else:  # combined
+        seed_shop = contacts[contacts["is_shopper"]]
+        seed_hot = contacts[contacts["in_scope"] & (contacts["smart_score"] >= 80)
+                            & ((contacts["phone"].fillna("") != "") | (contacts["email"].fillna("") != ""))]
+        seed = pd.concat([seed_shop, seed_hot]).drop_duplicates(subset=["id"])
+
+    n_total = len(seed)
+    n_email = int((seed["email"].fillna("") != "").sum())
+    n_phone = int((seed["phone"].fillna("") != "").sum())
+    n_both = int(((seed["email"].fillna("") != "") & (seed["phone"].fillna("") != "")).sum())
+    n_reachable = int(((seed["email"].fillna("") != "") | (seed["phone"].fillna("") != "")).sum())
+    # KPI cards
+    k1, k2, k3, k4 = st.columns(4)
+    with k1: st.markdown(f'<div class="kpi-card"><p class="label">Total in seed</p><p class="value">{n_total:,}</p><p class="sub">{seed_choice.split(" (")[0]}</p></div>', unsafe_allow_html=True)
+    with k2: st.markdown(f'<div class="kpi-card red"><p class="label">With email</p><p class="value">{n_email:,}</p><p class="sub">{n_email*100/max(n_total,1):.0f}%</p></div>', unsafe_allow_html=True)
+    with k3: st.markdown(f'<div class="kpi-card"><p class="label">With phone</p><p class="value">{n_phone:,}</p><p class="sub">{n_phone*100/max(n_total,1):.0f}%</p></div>', unsafe_allow_html=True)
+    with k4: st.markdown(f'<div class="kpi-card green"><p class="label">Reachable</p><p class="value">{n_reachable:,}</p><p class="sub">email or phone present</p></div>', unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    if n_reachable == 0:
+        st.error("No contacts in this seed have email or phone — nothing to upload.")
+    else:
+        # Country breakdown (Meta's match rate depends on country)
+        cd = seed["country"].fillna("(blank)").value_counts().head(6).to_dict()
+        country_html = " · ".join(f"<b>{c}</b>: {n}" for c, n in cd.items())
+        st.markdown(f"<div style='background:#f6f6f6; padding:0.7rem 1rem; border-radius:8px; font-size:0.85rem; color:#444; margin-bottom:1rem;'>Country mix: {country_html}</div>", unsafe_allow_html=True)
+
+        # Build the Meta-formatted CSV
+        def _norm_phone(p):
+            if not p or pd.isna(p): return ""
+            digits = "".join(ch for ch in str(p) if ch.isdigit())
+            if not digits: return ""
+            # If number has no country code, default to Canada (+1)
+            if len(digits) == 10: digits = "1" + digits
+            return digits
+        def _norm_email(e):
+            if not e or pd.isna(e): return ""
+            return str(e).strip().lower()
+        def _norm_name(n):
+            if not n or pd.isna(n): return ""
+            return "".join(ch for ch in str(n).strip().lower() if ch.isalpha() or ch.isspace()).strip()
+        def _norm_country(c):
+            if not c or pd.isna(c): return ""
+            c = str(c).strip().upper()
+            return c if len(c) == 2 else ""
+
+        rows = []
+        for _, r in seed.iterrows():
+            rows.append({
+                "email": _norm_email(r.get("email")),
+                "phone": _norm_phone(r.get("phone")),
+                "fn": _norm_name(r.get("first_name")),
+                "ln": _norm_name(r.get("last_name")),
+                "country": _norm_country(r.get("country")),
+            })
+        out_df = pd.DataFrame(rows)
+        # Drop rows where both email + phone are empty (Meta requires at least one)
+        out_df = out_df[(out_df["email"] != "") | (out_df["phone"] != "")].reset_index(drop=True)
+
+        st.markdown(f"<h3 style='color:{BLUE}'>Step 1 — Download the CSV</h3>", unsafe_allow_html=True)
+        st.write(f"**{len(out_df):,} contacts** in the file. Meta will hash everything server-side on upload.")
+        csv_bytes = out_df.to_csv(index=False).encode("utf-8")
+        filename = audience_name.replace("—", "-").replace(" ", "_").lower() + ".csv"
+        st.download_button("📥 Download Meta-ready CSV", data=csv_bytes,
+                           file_name=filename, mime="text/csv", type="primary")
+        with st.expander(f"Preview first 10 rows"):
+            st.dataframe(out_df.head(10), use_container_width=True, hide_index=True)
+
+        # Upload instructions
+        st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.2rem;'>Step 2 — Upload to Meta Ads Manager</h3>", unsafe_allow_html=True)
+        st.markdown(f"""
+1. Go to **[Ads Manager → Audiences](https://www.facebook.com/adsmanager/audiences)** (Instagram Advertising account).
+2. Click **Create audience** → **Custom Audience** → **Customer list**.
+3. Pick **"Yes, this list includes a column for LTV"** if you have it — for this file, choose **"No, this list doesn't include a column for LTV"**.
+4. Upload the file you just downloaded (`{filename}`).
+5. Original data source = **"Customers who have already bought from my business"**.
+6. Audience name = **`{audience_name}`** (pre-filled in the file name).
+7. Submit. Meta will match in 30 min to a few hours.
+
+**Then build the Lookalike:**
+8. Once the Custom Audience finishes processing, click **Create Audience → Lookalike**.
+9. Source = **`{audience_name}`** (your new audience).
+10. Location = **United States** (or wherever you're advertising).
+11. Audience size = **1%** (tightest, highest-quality match — best for a small but proven seed).
+12. Click Create. Lookalike processes in 4–24 hours.
+13. In your Phase 1 campaign's audience targeting, swap in the new LAL.
+""")
+        st.info("Pro tip: keep your old LAL running alongside the new one for a week so you can A/B them on cost-per-shopper before you cut the old one.")
 
 elif view == "Sync history":
     st.markdown(f"<h1 style='color:{BLUE};'>Sync history</h1>", unsafe_allow_html=True)
