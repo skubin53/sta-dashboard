@@ -742,7 +742,7 @@ def currently_running_ads(ads_df, active_cutoff_days):
 
 st.sidebar.markdown(f"<h2 style='color:{BLUE}; margin:0;'>STA Dashboard</h2>", unsafe_allow_html=True)
 st.sidebar.markdown(f"<p style='color:{RED}; font-weight:600; margin:0 0 1rem 0;'>Switch to America</p>", unsafe_allow_html=True)
-view = st.sidebar.radio("View", ["Today", "Overview", "Cost per Customer", "Hot list (call these)", "Sales Funnel", "Push to Meta", "Sync history"])
+view = st.sidebar.radio("View", ["Today", "Overview", "Cost per Customer", "Hot list (call these)", "Sales Funnel", "Demographics", "Push to Meta", "Sync history"])
 with st.sidebar.expander("Data freshness"):
     log = load_log()
     if log.empty: st.warning("No sync runs yet.")
@@ -1517,6 +1517,129 @@ elif view == "Sales Funnel":
             mime="text/csv")
     else:
         st.success(f"Nobody's stuck at {chosen_stage_label} right now.")
+
+elif view == "Demographics":
+    st.markdown(f"<h1 style='color:{BLUE};'>Demographics — where your ad dollars actually go</h1>", unsafe_allow_html=True)
+    st.caption("From Meta's age + gender + region breakdown of the last 90 days of ad spend. Compare where the money lands vs your target audience (Women 35-60, US).")
+
+    # Load demo + region data
+    try:
+        with sqlite3.connect(DB_PATH) as cx:
+            demo = pd.read_sql_query("SELECT * FROM ad_insights_demo", cx)
+            region = pd.read_sql_query("SELECT * FROM ad_insights_region", cx)
+    except Exception:
+        demo = pd.DataFrame(); region = pd.DataFrame()
+    if demo.empty:
+        st.warning("No demographic data synced yet. Run the daily digest job to populate."); st.stop()
+    demo["date"] = pd.to_datetime(demo["date"], errors="coerce")
+    region["date"] = pd.to_datetime(region["date"], errors="coerce")
+
+    # Filter: STA-relevant campaigns + window
+    win = st.slider("Window (days)", 7, 90, 90, 7)
+    cutoff = pd.Timestamp.now().normalize() - pd.Timedelta(days=win)
+    demo = demo[demo["date"] >= cutoff]
+    region = region[region["date"] >= cutoff]
+    # Optional campaign filter
+    campaigns = sorted(demo["campaign_name"].dropna().unique().tolist())
+    sel = st.multiselect("Campaigns (blank = all)", campaigns, default=campaigns)
+    if sel:
+        demo = demo[demo["campaign_name"].isin(sel)]
+        region = region[region["campaign_name"].isin(sel)]
+
+    # ── TARGETING ALIGNMENT KPIs ────────────────────
+    TARGET_GENDER = "female"
+    TARGET_AGES = ("35-44", "45-54")  # Women 35-60 — we'll include 55-64 partially
+    total_spend = float(demo["spend_cad"].sum())
+    total_leads = int(demo["leads"].sum())
+    in_target = demo[(demo["gender"] == TARGET_GENDER) & (demo["age"].isin(list(TARGET_AGES) + ["55-64"]))]
+    in_target_spend = float(in_target["spend_cad"].sum())
+    in_target_leads = int(in_target["leads"].sum())
+    off_target_spend = total_spend - in_target_spend
+    male_spend = float(demo[demo["gender"] == "male"]["spend_cad"].sum())
+    over_60_spend = float(demo[demo["age"] == "65+"]["spend_cad"].sum())
+
+    k1, k2, k3, k4 = st.columns(4)
+    with k1: st.markdown(f'<div class="kpi-card"><p class="label">Total spend</p><p class="value">${total_spend:,.0f}</p><p class="sub">last {win} days</p></div>', unsafe_allow_html=True)
+    with k2: st.markdown(f'<div class="kpi-card green"><p class="label">On-target spend</p><p class="value">${in_target_spend:,.0f}</p><p class="sub">{in_target_spend*100/max(total_spend,1):.0f}% — Women 35-64</p></div>', unsafe_allow_html=True)
+    with k3: st.markdown(f'<div class="kpi-card red"><p class="label">To MEN</p><p class="value">${male_spend:,.0f}</p><p class="sub">{male_spend*100/max(total_spend,1):.0f}% (target: 0%)</p></div>', unsafe_allow_html=True)
+    with k4: st.markdown(f'<div class="kpi-card"><p class="label">To 65+</p><p class="value">${over_60_spend:,.0f}</p><p class="sub">{over_60_spend*100/max(total_spend,1):.0f}% — outside target</p></div>', unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # ── HEATMAP: spend by age+gender ────────────────
+    st.markdown(f"<h3 style='color:{BLUE}; margin-top:0.5rem;'>Spend by age + gender</h3>", unsafe_allow_html=True)
+    grid = demo.groupby(["gender", "age"], as_index=False).agg(
+        spend=("spend_cad", "sum"),
+        impressions=("impressions", "sum"),
+        clicks=("clicks", "sum"),
+        leads=("leads", "sum"))
+    grid["cpl"] = grid.apply(lambda r: r["spend"] / r["leads"] if r["leads"] else 0, axis=1)
+    grid["ctr"] = grid.apply(lambda r: r["clicks"] * 100 / r["impressions"] if r["impressions"] else 0, axis=1)
+    # Plot heatmap of spend
+    AGE_ORDER = ["18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
+    GENDER_ORDER = ["female", "male", "unknown"]
+    pivot_spend = grid.pivot_table(index="gender", columns="age", values="spend", fill_value=0)
+    pivot_spend = pivot_spend.reindex(index=[g for g in GENDER_ORDER if g in pivot_spend.index],
+                                       columns=[a for a in AGE_ORDER if a in pivot_spend.columns])
+    pivot_leads = grid.pivot_table(index="gender", columns="age", values="leads", fill_value=0).reindex_like(pivot_spend)
+    pivot_cpl = grid.pivot_table(index="gender", columns="age", values="cpl", fill_value=0).reindex_like(pivot_spend)
+    # Stack text in cells: $ + leads + CPL
+    cell_text = pivot_spend.copy().astype(object)
+    for g in pivot_spend.index:
+        for a in pivot_spend.columns:
+            sp = pivot_spend.loc[g, a]
+            ld = int(pivot_leads.loc[g, a]) if not pd.isna(pivot_leads.loc[g, a]) else 0
+            cpl = pivot_cpl.loc[g, a]
+            cell_text.loc[g, a] = f"${sp:.0f}<br>{ld} leads<br>${cpl:.2f}/lead" if sp else ""
+    import plotly.graph_objects as go
+    fig = go.Figure(data=go.Heatmap(
+        z=pivot_spend.values, x=pivot_spend.columns.tolist(), y=pivot_spend.index.tolist(),
+        text=cell_text.values, texttemplate="%{text}", textfont={"size": 11, "color": "#fff"},
+        colorscale=[[0, "#eee"], [0.3, "#9aa1cc"], [1, BLUE]], showscale=True,
+        hovertemplate="<b>%{y} %{x}</b><br>Spend: $%{z:,.2f}<extra></extra>"))
+    fig.update_layout(height=320, margin=dict(l=10, r=10, t=10, b=10), xaxis_title="", yaxis_title="")
+    st.plotly_chart(fig, use_container_width=True)
+
+    # ── COST PER LEAD by demo ───────────────────────
+    st.markdown(f"<h3 style='color:{BLUE}; margin-top:1rem;'>Cost per lead — cheapest demos first</h3>", unsafe_allow_html=True)
+    by_demo = grid[(grid["leads"] >= 10) & (grid["gender"] != "unknown")].sort_values("cpl")
+    disp = by_demo[["gender", "age", "spend", "impressions", "clicks", "leads", "ctr", "cpl"]].copy()
+    disp["gender"] = disp["gender"].str.title()
+    disp["spend"] = disp["spend"].apply(lambda v: f"${v:,.0f}")
+    disp["impressions"] = disp["impressions"].apply(lambda v: f"{v:,}")
+    disp["clicks"] = disp["clicks"].apply(lambda v: f"{v:,}")
+    disp["leads"] = disp["leads"].apply(lambda v: f"{v:,}")
+    disp["ctr"] = disp["ctr"].apply(lambda v: f"{v:.2f}%")
+    disp["cpl"] = disp["cpl"].apply(lambda v: f"${v:.2f}")
+    st.dataframe(disp, use_container_width=True, hide_index=True,
+                 column_config={"gender": "Gender", "age": "Age", "spend": "Spend",
+                                "impressions": "Impressions", "clicks": "Clicks",
+                                "leads": "Leads", "ctr": "CTR", "cpl": "Cost / lead"})
+    # Winner callout
+    if not by_demo.empty:
+        winner = by_demo.iloc[0]
+        st.markdown(f'''<div class="winner">
+<span class="tag">Cheapest leads</span>
+<h2>{winner["gender"].title()} {winner["age"]}</h2>
+<p>${winner["cpl"]:.2f} per lead — {int(winner["leads"]):,} leads from ${winner["spend"]:,.0f}. Want more of these? Push budget here in your Phase 1 campaign's age/gender targeting.</p>
+</div>''', unsafe_allow_html=True)
+
+    # ── TOP REGIONS ─────────────────────────────────
+    if not region.empty:
+        st.markdown(f"<h3 style='color:{BLUE}; margin-top:1rem;'>Top regions by spend</h3>", unsafe_allow_html=True)
+        region_grid = region.groupby("region", as_index=False).agg(
+            spend=("spend_cad", "sum"), leads=("leads", "sum"),
+            impressions=("impressions", "sum"), clicks=("clicks", "sum"))
+        region_grid["cpl"] = region_grid.apply(lambda r: r["spend"] / r["leads"] if r["leads"] else 0, axis=1)
+        region_grid = region_grid.sort_values("spend", ascending=False).head(20)
+        rdisp = region_grid.copy()
+        rdisp["spend"] = rdisp["spend"].apply(lambda v: f"${v:,.0f}")
+        rdisp["leads"] = rdisp["leads"].apply(lambda v: f"{v:,}")
+        rdisp["impressions"] = rdisp["impressions"].apply(lambda v: f"{v:,}")
+        rdisp["clicks"] = rdisp["clicks"].apply(lambda v: f"{v:,}")
+        rdisp["cpl"] = rdisp["cpl"].apply(lambda v: f"${v:.2f}" if isinstance(v, (int, float)) and v else "—")
+        st.dataframe(rdisp, use_container_width=True, hide_index=True,
+                     column_config={"region": "Region", "spend": "Spend", "leads": "Leads",
+                                    "impressions": "Impressions", "clicks": "Clicks", "cpl": "Cost / lead"})
 
 elif view == "Push to Meta":
     st.markdown(f"<h1 style='color:{BLUE};'>Push to Meta — Custom Audience</h1>", unsafe_allow_html=True)

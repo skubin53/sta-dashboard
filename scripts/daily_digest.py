@@ -207,6 +207,65 @@ def pull_appointments():
     cx.close()
 
 
+def pull_meta_demographics(days=90):
+    """Pull age+gender and region breakdowns of insights."""
+    log(f"Pulling Meta demographics (last {days}d)…")
+    end = datetime.now(timezone.utc).date()
+    start = end - timedelta(days=days)
+    cx = sqlite3.connect(DB_PATH)
+    cx.execute('''CREATE TABLE IF NOT EXISTS ad_insights_demo (
+        date TEXT, ad_id TEXT, ad_name TEXT, campaign_id TEXT, campaign_name TEXT,
+        adset_id TEXT, adset_name TEXT, age TEXT, gender TEXT,
+        spend_cad REAL, impressions INTEGER, clicks INTEGER, leads INTEGER, synced_at TEXT,
+        PRIMARY KEY (date, ad_id, age, gender))''')
+    cx.execute('''CREATE TABLE IF NOT EXISTS ad_insights_region (
+        date TEXT, ad_id TEXT, ad_name TEXT, campaign_id TEXT, campaign_name TEXT,
+        adset_id TEXT, adset_name TEXT, region TEXT,
+        spend_cad REAL, impressions INTEGER, clicks INTEGER, leads INTEGER, synced_at TEXT,
+        PRIMARY KEY (date, ad_id, region))''')
+    cx.execute("DELETE FROM ad_insights_demo")
+    cx.execute("DELETE FROM ad_insights_region")
+    cx.commit()
+    fields = "campaign_id,campaign_name,adset_id,adset_name,ad_id,ad_name,spend,impressions,clicks,actions"
+    for bd, table, col in [("age,gender", "demo", None), ("region", "region", "region")]:
+        url = f"{META_BASE}/{STA_AD_ACCOUNT}/insights"
+        params = {"access_token": META_ACCESS_TOKEN, "level": "ad", "fields": fields,
+                  "breakdowns": bd, "time_increment": 1, "limit": 500,
+                  "time_range": json.dumps({"since": str(start), "until": str(end)})}
+        inserted = 0
+        while url:
+            r = requests.get(url, params=params, timeout=120)
+            if r.status_code != 200: break
+            data = r.json()
+            now_iso = datetime.now(timezone.utc).isoformat()
+            rows = []
+            for d in data.get("data", []):
+                leads = 0
+                for a in (d.get("actions") or []):
+                    if a.get("action_type") in ("lead", "onsite_conversion.lead_grouped"):
+                        try: leads += int(a.get("value", 0))
+                        except: pass
+                base = (d.get("date_start"), d.get("ad_id"), d.get("ad_name"),
+                        d.get("campaign_id"), d.get("campaign_name"),
+                        d.get("adset_id"), d.get("adset_name"))
+                if table == "demo":
+                    rows.append(base + (d.get("age"), d.get("gender"),
+                                float(d.get("spend") or 0), int(d.get("impressions") or 0),
+                                int(d.get("clicks") or 0), leads, now_iso))
+                else:
+                    rows.append(base + (d.get("region"),
+                                float(d.get("spend") or 0), int(d.get("impressions") or 0),
+                                int(d.get("clicks") or 0), leads, now_iso))
+            if rows:
+                placeholders = ",".join(["?"] * len(rows[0]))
+                cx.executemany(f"INSERT OR REPLACE INTO ad_insights_{table} VALUES ({placeholders})", rows)
+                cx.commit()
+                inserted += len(rows)
+            url = (data.get("paging") or {}).get("next"); params = None
+        log(f"  {bd}: {inserted} rows")
+    cx.close()
+
+
 def pull_meta_insights(days=90):
     log(f"Pulling Meta insights (last {days}d)…")
     end = datetime.now(timezone.utc).date()
@@ -460,6 +519,8 @@ def main():
     log("=== STA Daily Digest run ===")
     try: pull_meta_insights(days=90)
     except Exception as e: log(f"  ⚠️ Meta sync failed: {e}")
+    try: pull_meta_demographics(days=90)
+    except Exception as e: log(f"  ⚠️ Meta demographics sync failed: {e}")
     try: pull_contacts(since_days=90)
     except Exception as e: log(f"  ⚠️ Contacts sync failed: {e}")
     try: pull_opportunities()
