@@ -28,6 +28,28 @@ def push_contact_to_workflow(contact_id, workflow_id):
         return False, str(e)[:120]
 
 
+# Shannon's existing GHL contact for self-notifications
+# (gethealthy@shannonandarielle.com)
+SELF_NOTIFY_CONTACT_ID = "Ewylm2gm9RcC4JBEbLXI"
+
+def send_email_via_ghl(contact_id, subject, html):
+    """POST /conversations/messages — send an email to a GHL contact. Returns (ok, message)."""
+    body = {
+        "type": "Email",
+        "contactId": contact_id,
+        "subject": subject,
+        "html": html,
+    }
+    try:
+        r = requests.post(f"{GHL_BASE}/conversations/messages",
+                          headers=GHL_HEADERS, json=body, timeout=20)
+        if r.status_code in (200, 201, 202):
+            return True, "sent"
+        return False, f"HTTP {r.status_code}: {r.text[:200]}"
+    except Exception as e:
+        return False, str(e)[:200]
+
+
 def _first(s, n=80):
     """Truncate to n chars at a word boundary."""
     if not s or pd.isna(s): return ""
@@ -443,6 +465,121 @@ def load_appointments():
     return df
 
 
+def build_daily_digest_html(contacts, ads, apts):
+    """Produce an email-safe HTML digest mirroring Today page (inline styles only)."""
+    now_utc = pd.Timestamp.utcnow()
+    now_naive = now_utc.tz_localize(None)
+    yesterday_start = (now_naive.normalize() - pd.Timedelta(days=1))
+    today_start = now_naive.normalize()
+    today_label = pd.Timestamp.now().strftime("%A, %B %d, %Y")
+
+    # Yesterday's KPIs
+    y_leads = contacts[(contacts["date_added"] >= yesterday_start.tz_localize("UTC"))
+                        & (contacts["date_added"] < today_start.tz_localize("UTC"))]
+    n_leads_y = len(y_leads)
+    y_spend = float(ads[ads["date"] == yesterday_start]["spend_cad"].sum()) if not ads.empty else 0
+    hot_pool = contacts[contacts["in_scope"]
+                        & (contacts["date_added"] >= now_utc - pd.Timedelta(days=120))
+                        & (contacts["smart_score"] >= 50)
+                        & ((contacts["phone"].fillna("") != "") | (contacts["email"].fillna("") != ""))]
+    stale = hot_pool[hot_pool["days_since_activity"].fillna(0) > 14].sort_values("smart_score", ascending=False)
+    new_shop = contacts[contacts["is_shopper"] & (contacts["date_updated"] >= now_utc - pd.Timedelta(days=7))]
+
+    # Helpers — inline styles only (email-safe)
+    kpi = lambda label, val, sub, color: (
+        f'<td style="background:{color};color:#fff;padding:14px 18px;border-radius:8px;text-align:left;vertical-align:top;">'
+        f'<div style="font-size:11px;text-transform:uppercase;letter-spacing:0.8px;opacity:0.9;">{label}</div>'
+        f'<div style="font-size:24px;font-weight:800;line-height:1.1;margin:4px 0;">{val}</div>'
+        f'<div style="font-size:11px;opacity:0.85;">{sub}</div></td>')
+
+    html = [f"""<!doctype html><html><body style="margin:0;padding:0;background:#f4f4f6;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;color:#222;">
+<div style="max-width:680px;margin:0 auto;background:#fff;">
+<div style="background:linear-gradient(135deg,#3C3B6E 0%,#8B1B2A 100%);color:#fff;padding:24px 24px;">
+  <div style="font-size:11px;letter-spacing:1.5px;opacity:0.85;text-transform:uppercase;">STA Daily Digest</div>
+  <div style="font-size:28px;font-weight:800;margin-top:4px;">{today_label}</div>
+  <div style="font-size:14px;opacity:0.9;margin-top:6px;">Your day at a glance — open the dashboard for full detail.</div>
+</div>
+<div style="padding:20px 24px;">
+<table cellpadding="0" cellspacing="6" style="width:100%;border-collapse:separate;"><tr>
+{kpi("Leads — yesterday", f"{n_leads_y:,}", "new contacts", "#3C3B6E")}
+{kpi("Spend — yesterday", f"${y_spend:,.2f}", "CAD", "#B22234")}
+{kpi("Hot to work", f"{len(hot_pool):,}", "score ≥ 50, reachable", "#3C3B6E")}
+{kpi("Going cold", f"{len(stale):,}", "untouched 14d+", "#D4A017")}
+</tr></table>
+"""]
+
+    # Section: upcoming appointments
+    if not apts.empty:
+        upcoming = apts[(apts["start_time"] >= now_utc) & (apts["status"].isin(["confirmed", "scheduled"]))].copy()
+        if not upcoming.empty:
+            preds_html = []
+            contacts_idx = contacts.set_index("id")
+            for _, apt in upcoming.sort_values("start_time").head(10).iterrows():
+                cid = apt.get("contact_id")
+                c = contacts_idx.loc[cid].to_dict() if cid in contacts_idx.index else {}
+                pct, signals = predict_show(c, apt.to_dict())
+                color = "#1F7A3A" if pct >= 75 else ("#D4A017" if pct >= 50 else "#8B1B2A")
+                emoji = "🟢" if pct >= 75 else ("🟡" if pct >= 50 else "🔴")
+                nm = f"{c.get('first_name') or ''} {c.get('last_name') or ''}".strip().title() or "(no name)"
+                when = apt["start_time"].tz_convert("America/Edmonton").strftime("%a %b %-d, %-I:%M %p") if pd.notna(apt["start_time"]) else "—"
+                sig = " · ".join(signals) if signals else ""
+                preds_html.append(f"""
+<div style="background:#fff;border-left:5px solid {color};padding:8px 12px;margin:6px 0;border-radius:5px;font-size:13px;">
+<div style="display:flex;justify-content:space-between;">
+<div><b style="color:#3C3B6E;">{emoji} {nm}</b> · <span style="color:#555;">{when}</span><br>
+<span style="font-size:11px;color:#666;">{sig}</span></div>
+<div style="background:{color};color:#fff;font-weight:800;padding:4px 10px;border-radius:14px;font-size:14px;align-self:center;">{pct}%</div>
+</div></div>""")
+            html.append('<h3 style="color:#3C3B6E;margin:24px 0 8px 0;">📅 Upcoming appointments</h3>')
+            html.append("".join(preds_html))
+
+    # Section: top 5 to text today
+    top5 = hot_pool.sort_values("smart_score", ascending=False).head(5)
+    if not top5.empty:
+        html.append('<h3 style="color:#3C3B6E;margin:24px 0 8px 0;">📞 Call or text these 5 today</h3>')
+        for _, r in top5.iterrows():
+            rr = dict(r)
+            sms = draft_outreach(rr)["sms"]
+            nm = f"{rr.get('first_name') or ''} {rr.get('last_name') or ''}".strip().title()
+            score = int(rr.get("smart_score") or 0)
+            color = "#1F7A3A" if score >= 75 else "#D4A017"
+            phone = rr.get("phone") or rr.get("email") or "—"
+            html.append(f"""
+<div style="background:#fff;border:2px solid {color};border-radius:8px;padding:10px 14px;margin:8px 0;font-size:13px;">
+<div style="display:flex;justify-content:space-between;">
+<div><b style="color:#3C3B6E;font-size:14px;">{nm}</b><br>
+<span style="font-size:12px;color:#666;">{phone}</span></div>
+<div style="background:{color};color:#fff;font-weight:800;padding:3px 10px;border-radius:14px;font-size:13px;align-self:center;">{score}</div>
+</div>
+<div style="margin-top:8px;padding:8px;background:#f6f6f6;border-radius:5px;font-size:12px;color:#333;font-style:italic;">{sms}</div>
+</div>""")
+
+    # Section: going cold (top 5)
+    if not stale.empty:
+        cold5 = stale.head(5)
+        html.append('<h3 style="color:#8B1B2A;margin:24px 0 8px 0;">⚠️ Going cold — recover these</h3>')
+        html.append('<table cellpadding="6" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:13px;">')
+        html.append('<tr style="background:#3C3B6E;color:#fff;"><th align="left">Name</th><th align="left">Score</th><th align="left">Days quiet</th><th align="left">Stage</th></tr>')
+        for _, r in cold5.iterrows():
+            nm = f"{r.get('first_name') or ''} {r.get('last_name') or ''}".strip().title()
+            html.append(f'<tr style="border-bottom:1px solid #eee;"><td>{nm}</td><td>{int(r.get("smart_score") or 0)}</td><td>{int(r.get("days_since_activity") or 0)}d</td><td>{r.get("pipeline_stage_name") or "—"}</td></tr>')
+        html.append('</table>')
+
+    # Section: this week's wins
+    if not new_shop.empty:
+        html.append(f'<h3 style="color:#1F7A3A;margin:24px 0 8px 0;">🎉 {len(new_shop)} new shopper{"s" if len(new_shop)!=1 else ""} this week</h3>')
+        for _, r in new_shop.head(8).iterrows():
+            nm = f"{r.get('first_name') or ''} {r.get('last_name') or ''}".strip().title()
+            html.append(f'<div style="font-size:13px;padding:4px 0;">✅ <b>{nm}</b> — {r.get("pipeline_stage_name") or ""}</div>')
+
+    html.append("""
+<div style="margin-top:30px;padding:18px;background:#f6f6f6;border-radius:8px;font-size:12px;color:#666;text-align:center;">
+<a href="https://sta-dashboard-skubin.streamlit.app/" style="color:#3C3B6E;font-weight:700;text-decoration:none;">→ Open the full dashboard</a>
+</div>
+</div></div></body></html>""")
+    return "".join(html)
+
+
 def predict_show(contact_row, appointment_row):
     """Heuristic show-probability scorer. Returns (probability_pct, list_of_signals).
 
@@ -632,6 +769,27 @@ if view == "Today":
 
     if contacts.empty:
         st.warning("No contacts loaded yet."); st.stop()
+
+    # Daily digest email controls (sends to Shannon's GHL contact via GHL email API)
+    em_c1, em_c2, em_c3 = st.columns([2, 1, 1])
+    em_c1.markdown(f'<div style="padding-top:0.4rem; color:#666; font-size:0.85rem;">📧 Daily digest goes to <b>gethealthy@shannonandarielle.com</b> via GHL</div>', unsafe_allow_html=True)
+    preview_clicked = em_c2.button("👁️ Preview email")
+    send_clicked = em_c3.button("📨 Send now", type="primary")
+
+    if preview_clicked or send_clicked:
+        apts_for_digest = load_appointments()
+        digest_html = build_daily_digest_html(contacts, ads, apts_for_digest)
+        digest_subject = f"STA Daily Digest — {pd.Timestamp.now().strftime('%a %b %-d')}"
+        if preview_clicked:
+            with st.expander("📧 Email preview (HTML)", expanded=True):
+                st.components.v1.html(digest_html, height=900, scrolling=True)
+        if send_clicked:
+            with st.spinner("Sending via GHL..."):
+                ok, msg = send_email_via_ghl(SELF_NOTIFY_CONTACT_ID, digest_subject, digest_html)
+            if ok:
+                st.success(f"✅ Digest sent to gethealthy@shannonandarielle.com — check your inbox in a minute.")
+            else:
+                st.error(f"❌ Send failed: {msg}")
 
     now_utc = pd.Timestamp.utcnow()
     now_naive = now_utc.tz_localize(None)
