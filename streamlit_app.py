@@ -249,9 +249,12 @@ CAMPAIGN_META = {
 }
 ACTIVE_CAMPAIGN_NAMES = list(CAMPAIGN_META.keys())
 
-CF_INTEREST = "UQPGxIfHy8NSvyg2Mkuy"
-CF_FIN      = "6c688ouMMXKIv4gR4Oa2"
-CF_VID      = "tuw7WtjfJHXxjU3CRT1o"
+CF_INTEREST     = "UQPGxIfHy8NSvyg2Mkuy"   # "What level of interest are you?"
+CF_FIN          = "6c688ouMMXKIv4gR4Oa2"   # "How important is creating financial security..."
+CF_VID          = "tuw7WtjfJHXxjU3CRT1o"   # "Video Tracking"
+CF_AI_RESPONSE  = "sJR44dmIdWLMh9Zlj2gP"   # "Latest AI Response" — 211 contacts populated
+CF_AI_HISTORY   = "I3wUlRMZKeaiC3zRMOuJ"   # "Message History" — full convo log
+CF_FIN_GOALS    = "6qHZqcNynJRziF4HQT3v"   # "What exact personal and professional financial goals…"
 CF_GOALS    = "yueImTLblEdpeLQqZrCk"
 CF_MISSION  = "lBBFdNqtuwM9GDybeRc0"
 CF_CONVO    = "UkM9h3rYcHcvRBrV060q"
@@ -676,13 +679,29 @@ def load_contacts():
     df["is_fb_lp"] = df.apply(lambda r: is_fb_lp_lead(dict(r)), axis=1)
     df["is_shopper"] = df["tags_json"].apply(lambda j: has_any_tag(j, SHOPPER_TAGS))
     def cf_val(json_str, fid):
-        try: return (json.loads(json_str or "{}").get(fid) or "")
-        except: return ""
+        """GHL returns custom_fields as a LIST of {id, value} dicts.
+        Walk the list and return the matching id's value (or '')."""
+        try:
+            d = json.loads(json_str or "[]")
+        except Exception:
+            return ""
+        if isinstance(d, list):
+            for f in d:
+                if isinstance(f, dict) and f.get("id") == fid:
+                    return f.get("value") or f.get("fieldValueString") or ""
+            return ""
+        if isinstance(d, dict):  # legacy fallback
+            return d.get(fid) or ""
+        return ""
     df["interest_level"] = df["custom_json"].apply(lambda j: cf_val(j, CF_INTEREST))
     df["fin_importance"] = df["custom_json"].apply(lambda j: cf_val(j, CF_FIN))
     df["video_watched"] = df["custom_json"].apply(lambda j: cf_val(j, CF_VID))
     df["mission"] = df["custom_json"].apply(lambda j: cf_val(j, CF_MISSION))
-    df["convo_summary"] = df["custom_json"].apply(lambda j: cf_val(j, CF_CONVO))
+    # convo_summary: use the GHL "Conversation Summary" field if populated,
+    # otherwise fall back to "Latest AI Response" (211 contacts have this)
+    df["convo_summary"] = df["custom_json"].apply(lambda j: cf_val(j, CF_CONVO) or cf_val(j, CF_AI_RESPONSE))
+    df["latest_ai_response"] = df["custom_json"].apply(lambda j: cf_val(j, CF_AI_RESPONSE))
+    df["fin_goals"] = df["custom_json"].apply(lambda j: cf_val(j, CF_FIN_GOALS))
     now_utc = pd.Timestamp.utcnow()
     df["days_since_activity"] = ((now_utc - df["date_updated"]).dt.total_seconds() / 86400).round(0).astype("Int64")
     df["days_since_first_seen"] = ((now_utc - df["date_added"]).dt.total_seconds() / 86400).round(0).astype("Int64")

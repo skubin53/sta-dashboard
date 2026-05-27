@@ -367,18 +367,45 @@ def _predict_show(contact_row, apt):
     return int(round(max(5, min(95, pct)))), signals
 
 
+CF_INTEREST = "UQPGxIfHy8NSvyg2Mkuy"
+CF_FIN = "6c688ouMMXKIv4gR4Oa2"
+CF_VID = "tuw7WtjfJHXxjU3CRT1o"
+CF_MISSION = "lBBFdNqtuwM9GDybeRc0"
+CF_CONVO = "UkM9h3rYcHcvRBrV060q"
+CF_AI_RESPONSE = "sJR44dmIdWLMh9Zlj2gP"  # 211 contacts populated — used as convo fallback
+CF_FIN_GOALS = "6qHZqcNynJRziF4HQT3v"   # 57 contacts populated
+
+
+def _cf_val(json_str, fid):
+    """Extract a custom-field value by id. GHL custom_json is a dict
+    keyed by field id (legacy) OR a list of {id,value} dicts. Handle both."""
+    try:
+        d = json.loads(json_str or "[]")
+    except Exception:
+        return ""
+    if isinstance(d, dict):
+        return d.get(fid) or ""
+    if isinstance(d, list):
+        for f in d:
+            if isinstance(f, dict) and f.get("id") == fid:
+                return f.get("value") or f.get("fieldValueString") or ""
+    return ""
+
+
 def build_digest_html():
     cx = sqlite3.connect(DB_PATH)
     contacts = pd.read_sql_query("SELECT * FROM contacts", cx)
     if contacts.empty: return None
     contacts["date_added"] = pd.to_datetime(contacts["date_added"], errors="coerce", utc=True)
     contacts["date_updated"] = pd.to_datetime(contacts["date_updated"], errors="coerce", utc=True)
-    # Extract custom fields
-    def _cf(j, fid):
-        try: return (json.loads(j or "{}").get(fid) or "")
-        except: return ""
-    # (For simplicity we don't break out custom fields here — draft_sms just falls
-    # back to tag-based signals which are populated for most contacts.)
+    # Extract custom fields the draft_sms logic relies on
+    contacts["interest_level"] = contacts["custom_json"].apply(lambda j: _cf_val(j, CF_INTEREST))
+    contacts["video_watched"]  = contacts["custom_json"].apply(lambda j: _cf_val(j, CF_VID))
+    contacts["mission"]        = contacts["custom_json"].apply(lambda j: _cf_val(j, CF_MISSION))
+    contacts["fin_importance"] = contacts["custom_json"].apply(lambda j: _cf_val(j, CF_FIN))
+    # convo_summary falls back to Latest AI Response (211 populated)
+    contacts["convo_summary"]  = contacts["custom_json"].apply(
+        lambda j: _cf_val(j, CF_CONVO) or _cf_val(j, CF_AI_RESPONSE))
     contacts["is_shopper"] = contacts["tags_json"].apply(lambda j: _has_any_tag(j, SHOPPER_TAGS))
     contacts["in_scope"] = contacts["tags_json"].apply(lambda j: not _has_any_tag(j, EXCLUDE_TAGS))
     now_utc = pd.Timestamp.utcnow()
