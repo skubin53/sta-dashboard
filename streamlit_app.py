@@ -1215,52 +1215,106 @@ elif view == "Sales Funnel":
 
 elif view == "Push to Meta":
     st.markdown(f"<h1 style='color:{BLUE};'>Push to Meta — Custom Audience</h1>", unsafe_allow_html=True)
-    st.caption("Generate a refresh CSV of your current shoppers, formatted exactly for Meta's Customer File upload. Use it to refresh your existing Lookalike audiences with up-to-date buyer signal.")
+    st.caption("Generate Meta-ready CSVs from your GHL data. Use Include audiences as the seed for Lookalikes; use Exclude audiences to stop Meta from showing ads to people who already said no.")
 
     if contacts.empty:
         st.warning("No contacts loaded yet."); st.stop()
 
-    # Seed selector
-    s1, s2 = st.columns([2, 1])
-    seed_choice = s1.radio("Seed group",
-        ["Shopped - Cat 1 (highest-value buyers)",
-         "All shoppers (Cat 1 + StaceyB + Placed Order + Beef)",
-         "Hot leads, score ≥ 80 (qualified but not yet buyers)",
-         "Hot leads + shoppers combined"],
-        index=0)
-    audience_name_default = {
-        "Shopped - Cat 1 (highest-value buyers)": f"STA Cat 1 Buyers — {pd.Timestamp.now().strftime('%b %d %Y')}",
-        "All shoppers (Cat 1 + StaceyB + Placed Order + Beef)": f"STA All Shoppers — {pd.Timestamp.now().strftime('%b %d %Y')}",
-        "Hot leads, score ≥ 80 (qualified but not yet buyers)": f"STA Hot Leads 80+ — {pd.Timestamp.now().strftime('%b %d %Y')}",
-        "Hot leads + shoppers combined": f"STA Buyers + Hot — {pd.Timestamp.now().strftime('%b %d %Y')}",
-    }[seed_choice]
-    audience_name = s2.text_input("Audience name (for your reference)", value=audience_name_default)
-
-    # Build the seed
-    SHOPPER_TAG_NEEDLES_CAT1 = ["shopped cat 1"]
     def _tag_has(j, needles):
         try: t = [str(x).lower() for x in (json.loads(j or "[]") or [])]
         except: return False
         return any(n in t for n in needles)
-    if seed_choice.startswith("Shopped - Cat 1"):
-        seed = contacts[contacts["tags_json"].apply(lambda j: _tag_has(j, SHOPPER_TAG_NEEDLES_CAT1))]
-    elif seed_choice.startswith("All shoppers"):
-        seed = contacts[contacts["is_shopper"]]
-    elif seed_choice.startswith("Hot leads, score"):
-        seed = contacts[contacts["in_scope"] & (contacts["smart_score"] >= 80)
-                        & ((contacts["phone"].fillna("") != "") | (contacts["email"].fillna("") != ""))]
-    else:  # combined
-        seed_shop = contacts[contacts["is_shopper"]]
-        seed_hot = contacts[contacts["in_scope"] & (contacts["smart_score"] >= 80)
-                            & ((contacts["phone"].fillna("") != "") | (contacts["email"].fillna("") != ""))]
-        seed = pd.concat([seed_shop, seed_hot]).drop_duplicates(subset=["id"])
+
+    mode = st.radio("Mode", ["✅ Include — build a Lookalike from these", "🚫 Exclude — stop showing ads to these"],
+                    horizontal=True, key="meta_push_mode")
+    is_include = mode.startswith("✅")
+
+    INCLUDE_GROUPS = {
+        "Shopped - Cat 1 (highest-value buyers)": {
+            "name": f"STA Cat 1 Buyers — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "filter": lambda c: c[c["tags_json"].apply(lambda j: _tag_has(j, ["shopped cat 1"]))],
+        },
+        "All shoppers (Cat 1 + StaceyB + Placed Order + Beef)": {
+            "name": f"STA All Shoppers — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "filter": lambda c: c[c["is_shopper"]],
+        },
+        "Hot leads, score ≥ 80 (qualified but not yet buyers)": {
+            "name": f"STA Hot Leads 80+ — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "filter": lambda c: c[c["in_scope"] & (c["smart_score"] >= 80)
+                                  & ((c["phone"].fillna("") != "") | (c["email"].fillna("") != ""))],
+        },
+        "Hot leads + shoppers combined": {
+            "name": f"STA Buyers + Hot — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "filter": lambda c: pd.concat([c[c["is_shopper"]],
+                                           c[c["in_scope"] & (c["smart_score"] >= 80)
+                                             & ((c["phone"].fillna("") != "") | (c["email"].fillna("") != ""))]
+                                          ]).drop_duplicates(subset=["id"]),
+        },
+    }
+    EXCLUDE_GROUPS = {
+        "All bad-fit (recommended) — no-show + not interested + can't afford + DND + dead": {
+            "name": f"STA EXCLUDE Bad Fit — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "needles": ["no show", "not interested", "can't afford", "cannot afford",
+                        "dnd", "appt cancelled", "lost on first text", "dead no answer",
+                        "canceled membership", "canceled recovery"],
+        },
+        "No-shows only — booked but didn't show up": {
+            "name": f"STA EXCLUDE No-Shows — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "needles": ["no show", "appt cancelled"],
+        },
+        "Not interested — explicitly said no": {
+            "name": f"STA EXCLUDE Not Interested — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "needles": ["not interested"],
+        },
+        "Affordability — said it's too expensive": {
+            "name": f"STA EXCLUDE Cannot Afford — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "needles": ["can't afford", "cannot afford"],
+        },
+        "Already enrolled — existing customers (separate audience for upsell)": {
+            "name": f"STA Already Customers — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "needles": ["already enrolled"],
+        },
+        "Stopped responding — went dark on outreach": {
+            "name": f"STA EXCLUDE Dead Leads — {pd.Timestamp.now().strftime('%b %d %Y')}",
+            "needles": ["lost on first text", "dead no answer"],
+        },
+    }
+
+    s1, s2 = st.columns([2, 1])
+    if is_include:
+        seed_choice = s1.radio("Seed group", list(INCLUDE_GROUPS.keys()), index=0, key="inc_seed")
+        cfg = INCLUDE_GROUPS[seed_choice]
+        seed = cfg["filter"](contacts)
+        needles_used = None
+    else:
+        seed_choice = s1.radio("Exclusion seed", list(EXCLUDE_GROUPS.keys()), index=0, key="exc_seed")
+        cfg = EXCLUDE_GROUPS[seed_choice]
+        needles_used = cfg["needles"]
+        seed = contacts[contacts["tags_json"].apply(lambda j: _tag_has(j, needles_used))]
+    audience_name = s2.text_input("Audience name (for your reference)", value=cfg["name"], key="aud_name")
+
+    # Diagnostic: which tags contributed (exclude mode only)
+    if not is_include and not seed.empty:
+        with st.expander("Which tags triggered this audience?"):
+            from collections import Counter
+            tag_hits = Counter()
+            for tj in seed["tags_json"]:
+                try: tt = [str(x).lower() for x in (json.loads(tj or "[]") or [])]
+                except: continue
+                for n in needles_used:
+                    for tag in tt:
+                        if n in tag:
+                            tag_hits[tag] += 1
+                            break
+            for t, c in tag_hits.most_common():
+                st.write(f"• **{c:,}** contacts tagged `{t}`")
 
     n_total = len(seed)
-    n_email = int((seed["email"].fillna("") != "").sum())
-    n_phone = int((seed["phone"].fillna("") != "").sum())
-    n_both = int(((seed["email"].fillna("") != "") & (seed["phone"].fillna("") != "")).sum())
-    n_reachable = int(((seed["email"].fillna("") != "") | (seed["phone"].fillna("") != "")).sum())
-    # KPI cards
+    n_email = int((seed["email"].fillna("") != "").sum()) if n_total else 0
+    n_phone = int((seed["phone"].fillna("") != "").sum()) if n_total else 0
+    n_reachable = int(((seed["email"].fillna("") != "") | (seed["phone"].fillna("") != "")).sum()) if n_total else 0
+
+    accent = GREEN if is_include else DARK_RED
     k1, k2, k3, k4 = st.columns(4)
     with k1: st.markdown(f'<div class="kpi-card"><p class="label">Total in seed</p><p class="value">{n_total:,}</p><p class="sub">{seed_choice.split(" (")[0]}</p></div>', unsafe_allow_html=True)
     with k2: st.markdown(f'<div class="kpi-card red"><p class="label">With email</p><p class="value">{n_email:,}</p><p class="sub">{n_email*100/max(n_total,1):.0f}%</p></div>', unsafe_allow_html=True)
@@ -1271,17 +1325,14 @@ elif view == "Push to Meta":
     if n_reachable == 0:
         st.error("No contacts in this seed have email or phone — nothing to upload.")
     else:
-        # Country breakdown (Meta's match rate depends on country)
         cd = seed["country"].fillna("(blank)").value_counts().head(6).to_dict()
         country_html = " · ".join(f"<b>{c}</b>: {n}" for c, n in cd.items())
         st.markdown(f"<div style='background:#f6f6f6; padding:0.7rem 1rem; border-radius:8px; font-size:0.85rem; color:#444; margin-bottom:1rem;'>Country mix: {country_html}</div>", unsafe_allow_html=True)
 
-        # Build the Meta-formatted CSV
         def _norm_phone(p):
             if not p or pd.isna(p): return ""
             digits = "".join(ch for ch in str(p) if ch.isdigit())
             if not digits: return ""
-            # If number has no country code, default to Canada (+1)
             if len(digits) == 10: digits = "1" + digits
             return digits
         def _norm_email(e):
@@ -1305,38 +1356,57 @@ elif view == "Push to Meta":
                 "country": _norm_country(r.get("country")),
             })
         out_df = pd.DataFrame(rows)
-        # Drop rows where both email + phone are empty (Meta requires at least one)
         out_df = out_df[(out_df["email"] != "") | (out_df["phone"] != "")].reset_index(drop=True)
 
-        st.markdown(f"<h3 style='color:{BLUE}'>Step 1 — Download the CSV</h3>", unsafe_allow_html=True)
+        st.markdown(f"<h3 style='color:{accent}'>Step 1 — Download the CSV</h3>", unsafe_allow_html=True)
         st.write(f"**{len(out_df):,} contacts** in the file. Meta will hash everything server-side on upload.")
         csv_bytes = out_df.to_csv(index=False).encode("utf-8")
         filename = audience_name.replace("—", "-").replace(" ", "_").lower() + ".csv"
         st.download_button("📥 Download Meta-ready CSV", data=csv_bytes,
                            file_name=filename, mime="text/csv", type="primary")
-        with st.expander(f"Preview first 10 rows"):
+        with st.expander("Preview first 10 rows"):
             st.dataframe(out_df.head(10), use_container_width=True, hide_index=True)
 
-        # Upload instructions
-        st.markdown(f"<h3 style='color:{BLUE}; margin-top:1.2rem;'>Step 2 — Upload to Meta Ads Manager</h3>", unsafe_allow_html=True)
-        st.markdown(f"""
+        st.markdown(f"<h3 style='color:{accent}; margin-top:1.2rem;'>Step 2 — Upload to Meta Ads Manager</h3>", unsafe_allow_html=True)
+        if is_include:
+            st.markdown(f"""
 1. Go to **[Ads Manager → Audiences](https://www.facebook.com/adsmanager/audiences)** (Instagram Advertising account).
 2. Click **Create audience** → **Custom Audience** → **Customer list**.
-3. Pick **"Yes, this list includes a column for LTV"** if you have it — for this file, choose **"No, this list doesn't include a column for LTV"**.
+3. Choose **"No, this list doesn't include a column for LTV"**.
 4. Upload the file you just downloaded (`{filename}`).
 5. Original data source = **"Customers who have already bought from my business"**.
-6. Audience name = **`{audience_name}`** (pre-filled in the file name).
-7. Submit. Meta will match in 30 min to a few hours.
+6. Audience name = **`{audience_name}`**.
+7. Submit. Meta matches in 30 min to a few hours.
 
 **Then build the Lookalike:**
-8. Once the Custom Audience finishes processing, click **Create Audience → Lookalike**.
-9. Source = **`{audience_name}`** (your new audience).
-10. Location = **United States** (or wherever you're advertising).
-11. Audience size = **1%** (tightest, highest-quality match — best for a small but proven seed).
-12. Click Create. Lookalike processes in 4–24 hours.
-13. In your Phase 1 campaign's audience targeting, swap in the new LAL.
+8. Once processing finishes, click **Create Audience → Lookalike**.
+9. Source = **`{audience_name}`**.
+10. Location = **United States** (or wherever your ads run).
+11. Audience size = **1%** (tightest, highest quality for small seeds).
+12. Click Create. LAL processes in 4–24 hours.
+13. In your Phase 1 campaign's targeting, swap in the new LAL.
 """)
-        st.info("Pro tip: keep your old LAL running alongside the new one for a week so you can A/B them on cost-per-shopper before you cut the old one.")
+            st.info("Pro tip: keep the old LAL running alongside for a week so you can A/B on cost-per-shopper before cutting it.")
+        else:
+            st.markdown(f"""
+1. Go to **[Ads Manager → Audiences](https://www.facebook.com/adsmanager/audiences)**.
+2. Click **Create audience** → **Custom Audience** → **Customer list**.
+3. Choose **"No, this list doesn't include a column for LTV"**.
+4. Upload the file (`{filename}`).
+5. Original data source = **"People who haven't purchased from my business"** (this audience is people we want to AVOID).
+6. Audience name = **`{audience_name}`**.
+7. Submit. Meta matches in 30 min to a few hours.
+
+**Then use it as an EXCLUSION in every campaign:**
+8. Open each ad set in your active campaigns (Phase 1, Phase 2 Retarget, MM Conversions).
+9. Under **Audience Controls → Excluded Custom Audiences**, click **Browse** → pick **`{audience_name}`**.
+10. Save the ad set.
+11. **DO NOT build a Lookalike from this** — lookalikes of bad-fit people are noisy and unreliable. Just exclude the specific people.
+
+**What this does:** Meta will stop showing your ads to anyone on this list AND won't include them when calculating your Lookalike audiences. Budget that was being wasted on people who already said no gets redirected to people who might actually convert.
+""")
+            potential_save_pct = 25 if "All bad-fit" in seed_choice else 10
+            st.warning(f"⚡ **Potential savings:** if even a fraction of these {n_reachable:,} people were getting impressions, excluding them could redirect ~{potential_save_pct}% of your daily spend toward fresh prospects.")
 
 elif view == "Sync history":
     st.markdown(f"<h1 style='color:{BLUE};'>Sync history</h1>", unsafe_allow_html=True)
