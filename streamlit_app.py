@@ -1351,10 +1351,12 @@ elif view == "Push to Meta":
     if n_reachable == 0:
         st.error("No contacts in this seed have email or phone — nothing to upload.")
     else:
-        cd = seed["country"].fillna("(blank)").value_counts().head(6).to_dict()
-        country_html = " · ".join(f"<b>{c}</b>: {n}" for c, n in cd.items())
-        st.markdown(f"<div style='background:#f6f6f6; padding:0.7rem 1rem; border-radius:8px; font-size:0.85rem; color:#444; margin-bottom:1rem;'>Country mix: {country_html}</div>", unsafe_allow_html=True)
-
+        # NOTE: We intentionally do NOT include a country column. Shannon's GHL
+        # contacts have country=CA by default (it defaults to the GHL location
+        # in Edmonton, AB) but the actual buyers are mostly US-based. Including
+        # the wrong country tanks Meta's match rate. Without the column, Meta
+        # infers country from phone area code, email domain, and Pixel signals
+        # — which is more accurate in this case.
         def _norm_phone(p):
             if not p or pd.isna(p): return ""
             digits = "".join(ch for ch in str(p) if ch.isdigit())
@@ -1367,10 +1369,6 @@ elif view == "Push to Meta":
         def _norm_name(n):
             if not n or pd.isna(n): return ""
             return "".join(ch for ch in str(n).strip().lower() if ch.isalpha() or ch.isspace()).strip()
-        def _norm_country(c):
-            if not c or pd.isna(c): return ""
-            c = str(c).strip().upper()
-            return c if len(c) == 2 else ""
 
         rows = []
         for _, r in seed.iterrows():
@@ -1379,10 +1377,10 @@ elif view == "Push to Meta":
                 "phone": _norm_phone(r.get("phone")),
                 "fn": _norm_name(r.get("first_name")),
                 "ln": _norm_name(r.get("last_name")),
-                "country": _norm_country(r.get("country")),
             })
         out_df = pd.DataFrame(rows)
         out_df = out_df[(out_df["email"] != "") | (out_df["phone"] != "")].reset_index(drop=True)
+        st.caption("Country column omitted — GHL's country defaults to Edmonton (CA) but most shoppers are US. Meta will infer country from phone area code instead.")
 
         st.markdown(f"<h3 style='color:{accent}'>Step 1 — Download the CSV</h3>", unsafe_allow_html=True)
         st.write(f"**{len(out_df):,} contacts** in the file. Meta will hash everything server-side on upload.")
