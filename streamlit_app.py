@@ -37,8 +37,13 @@ def _first(s, n=80):
     return cut.rstrip(".,;:") + "…"
 
 
-def draft_sms(row):
-    """Build a personalized SMS draft (<200 chars) from a contact row.
+def draft_outreach(row):
+    """Build personalized SMS + Email + Voicemail drafts for a contact.
+
+    Returns a dict:
+      {'sms': '<text>', 'email_subject': '...', 'email_body': '...',
+       'voicemail': '...', 'rationale': 'which signal triggered the variant'}
+
     Branches on the strongest available signal: mission > convo > tags >
     video watch % > interest level > stage > stale-reactivation.
     """
@@ -51,7 +56,6 @@ def draft_sms(row):
     days_first = row.get("days_since_first_seen")
     days_active = row.get("days_since_activity")
     stage = (row.get("pipeline_stage_name") or "").strip().lower()
-    # Parse tags
     try:
         tags = [str(t).lower() for t in (json.loads(row.get("tags_json") or "[]") or [])]
     except Exception:
@@ -63,50 +67,126 @@ def draft_sms(row):
     except Exception:
         days_first, days_active = None, None
 
-    # Strongest signal first — custom-field signals beat tags
+    # Pick the strongest signal and build all three channels around the same hook
     if mission:
-        m_short = _first(mission, 70)
-        return f"Hey {name}! You mentioned wanting {m_short.lower()}. I think we can actually help with that — got 10 min this week to chat? — Shannon"
+        hook_short = _first(mission, 70).lower()
+        return {
+            "sms": f"Hey {name}! You mentioned wanting {hook_short}. I think we can actually help with that — got 10 min this week to chat? — Shannon",
+            "email_subject": f"{name}, about wanting {_first(mission, 40).lower()}",
+            "email_body": f"Hi {name},\n\nI was just looking back at your responses and saw you mentioned wanting {hook_short}.\n\nThat's exactly the kind of outcome STA is built for, and I'd love to walk you through how it could work for your situation specifically — what's worked for others in a similar spot, the realistic timeline, and any concerns you have.\n\nWould a 10-minute call this week make sense? I'm flexible — just let me know a window that works.\n\n— Shannon",
+            "voicemail": f"Hey {name}, this is Shannon from Switch to America. I was looking back at your responses and saw you mentioned wanting {hook_short}. I really think we can help with that and I'd love to hop on a quick call — even just 10 minutes — to walk you through how. Give me a call back or shoot me a text when you have a sec. Talk soon.",
+            "rationale": "Custom-field 'mission' — strongest signal we have. Speaks back their own words.",
+        }
     if convo and len(convo) > 15:
         c_short = _first(convo, 90)
-        return f"Hi {name}, was just looking back at where we left off: {c_short} — want to pick that up? Free for a quick call? — Shannon"
-
-    # Tag-based signals (these are populated for most contacts)
+        c_email = _first(convo, 180)
+        return {
+            "sms": f"Hi {name}, was just looking back at where we left off: {c_short} — want to pick that up? Free for a quick call? — Shannon",
+            "email_subject": f"{name}, picking up where we left off",
+            "email_body": f"Hi {name},\n\nI was reviewing our last conversation — \"{c_email}\" — and wanted to follow up personally rather than letting it sit.\n\nA few quick questions and a 10-minute call would help me give you the most useful answer to what you were thinking about. Want me to send a couple times that work for me this week?\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon from Switch to America. I was just looking back at our last conversation — you'd mentioned {c_short[:60]}. Wanted to pick that up personally. Give me a call back when you can, or text me, and we'll get you sorted. Talk soon.",
+            "rationale": "Last AI conversation summary — references your prior thread, very high relevance.",
+        }
     if has("hot lead"):
-        return f"Hey {name}! Looks like you're ready to take the next step — want to grab 10 min this week to make it happen? — Shannon"
+        return {
+            "sms": f"Hey {name}! Looks like you're ready to take the next step — want to grab 10 min this week to make it happen? — Shannon",
+            "email_subject": f"{name}, ready for the next step?",
+            "email_body": f"Hi {name},\n\nEverything in your file says you're at the point where it's time to actually pull the trigger — but maybe a few questions are holding you back. Totally normal.\n\nLet's do a 10-minute call this week. I'll answer whatever's still in the way and you can decide if it's a fit. No pressure, just clarity.\n\nWhat day works?\n\n— Shannon",
+            "voicemail": f"Hey {name}, this is Shannon from STA. Your responses all signal you're ready to move — I just want to make sure nothing's in the way before you take the next step. Give me 10 minutes on the phone, I'll answer anything still nagging at you, and you decide. Call or text me back when you've got a second.",
+            "rationale": "Tagged 'hot lead' — highest-intent stage. Direct ask for the close call.",
+        }
     if has("not shopped") and has("booked"):
-        return f"Hi {name}! You booked a call but we never connected — bad timing? Let's get you re-booked at a time that actually works. — Shannon"
+        return {
+            "sms": f"Hi {name}! You booked a call but we never connected — bad timing? Let's get you re-booked at a time that actually works. — Shannon",
+            "email_subject": f"Let's re-book — last time didn't work out",
+            "email_body": f"Hi {name},\n\nYou booked a call with me but we didn't connect last time. That happens — life gets in the way. I don't want to lose track of you though.\n\nCan you send me 2-3 windows this week that actually work for you? I'll lock one in and we'll keep it brief — 10-15 minutes.\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon — we had a call on the books last time that didn't end up connecting. Totally fine, I just want to get you re-booked at a time that works. Shoot me a text with a couple of windows this week and I'll grab one. Talk soon.",
+            "rationale": "Booked but didn't shop — call fell through. Reschedule angle.",
+        }
     if has("livevideo"):
-        return f"Hi {name}! Thanks for joining the live — wanted to check in personally and see what questions came up after. Free for a quick call? — Shannon"
-    if has("business builder"):
-        return f"Hey {name}! Saw you flagged interest in the business builder side — want to hop on a quick call to see if it's a fit? — Shannon"
-    if has("can't afford"):
-        return f"Hi {name}, I remember pricing felt steep — there's a Cat 1 option I haven't fully walked you through that might change things. Open to chat? — Shannon"
-    if has("lost on first text"):
-        return f"Hey {name}, my first message back must've gotten lost. Trying again personally — would 10 min on a call be useful? — Shannon"
+        return {
+            "sms": f"Hi {name}! Thanks for joining the live — wanted to check in personally and see what questions came up after. Free for a quick call? — Shannon",
+            "email_subject": f"{name}, follow-up from the live",
+            "email_body": f"Hi {name},\n\nThanks for showing up to the live training. I always find that the real questions don't come up during — they come up about 24 hours after when you've had time to mull it over.\n\nWhat's still on your mind? Happy to do a quick 10-minute call to clear up anything that's still fuzzy.\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon from STA. Just wanted to follow up personally after the live training — usually the best questions come up a day or two later. What's still on your mind? Give me a call or text when you can.",
+            "rationale": "Attended live video training — warm, post-event follow-up.",
+        }
+    if has("can't afford", "cannot afford"):
+        return {
+            "sms": f"Hi {name}, I remember pricing felt steep — there's a Cat 1 option I haven't fully walked you through that might change things. Open to chat? — Shannon",
+            "email_subject": f"{name}, a different option we haven't really covered",
+            "email_body": f"Hi {name},\n\nI know pricing felt like a stretch last time we talked. I want to be straight with you — there's a Cat 1 path I don't think I fully walked you through, and it changes the math meaningfully for a lot of families.\n\nWorth 10 minutes to see if it actually fits your budget? No pressure if the answer is still no — but I'd rather you decide with the full picture.\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon. I know pricing felt like a stretch last time. There's actually a Cat 1 option I don't think I fully covered with you that changes the math quite a bit for most families. Worth 10 minutes to see if it fits? Call me back when you have a sec.",
+            "rationale": "Tagged 'can't afford' — affordability objection. Cat 1 reframe.",
+        }
     if has("no show", "appt cancelled"):
-        return f"Hi {name}! Looks like our last call got missed — want to grab a new time? Happy to keep it short. — Shannon"
-    if has("daily-prospect"):
-        return f"Hey {name}! Wanted to follow up personally — where are you at with everything we talked about? Free for a quick call? — Shannon"
-
-    # Video / interest / financial signals (less populated but high quality when present)
+        return {
+            "sms": f"Hi {name}! Looks like our last call got missed — want to grab a new time? Happy to keep it short. — Shannon",
+            "email_subject": f"{name}, let's re-grab a time",
+            "email_body": f"Hi {name},\n\nOur last call got missed — life happens. I'd still love to connect though. Send me a couple of windows this week and I'll lock one in. Keeping it short — 10 minutes max.\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon — looks like we missed our last call. No worries, just want to get you re-booked. Text me a couple of times that work this week and I'll grab one.",
+            "rationale": "No-show or cancelled — reschedule with no friction.",
+        }
     if "75" in video or "100" in video or "complete" in video or "finished" in video:
-        return f"Hi {name}! Saw you watched a good chunk of the video. Curious what stood out — and what's holding you back from the next step? — Shannon"
+        return {
+            "sms": f"Hi {name}! Saw you watched a good chunk of the video. Curious what stood out — and what's holding you back from the next step? — Shannon",
+            "email_subject": f"{name}, what stood out from the video?",
+            "email_body": f"Hi {name},\n\nI noticed you watched a real chunk of the training video — most people don't make it past the first 5 minutes. So you're clearly looking for something specific.\n\nWhat resonated? And just as importantly — what's the one thing that's keeping you from taking the next step?\n\nReply here or grab 10 minutes on the phone and we can sort it.\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon. I saw you watched most of the training video, which tells me you're seriously looking. I'm curious what stood out and what's still in the way of the next step. Call me back when you have 10 minutes.",
+            "rationale": "Watched ≥75% of video — high engagement signal, ask what resonated.",
+        }
     if "50" in video:
-        return f"Hey {name}, noticed you got halfway through the video. Anything specific I can answer that would help you decide? — Shannon"
+        return {
+            "sms": f"Hey {name}, noticed you got halfway through the video. Anything specific I can answer that would help you decide? — Shannon",
+            "email_subject": f"{name}, halfway through — what would help?",
+            "email_body": f"Hi {name},\n\nI saw you got halfway through the video and then stepped away. Could mean you got busy — could also mean a specific question came up that the video didn't answer.\n\nWhat would be most useful right now: I keep walking you through, you ask me a specific question, or we just do a quick 10-minute call?\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon. I noticed you got halfway through the training video. Curious what came up — happy to answer specific questions or just hop on a quick call. Give me a buzz when you have a sec.",
+            "rationale": "Watched ~50% of video — partial engagement, ask what stopped them.",
+        }
     if interest in ("very high", "high", "extremely high"):
-        return f"Hey {name}! Your responses said you're really aligned with what we do. Want to jump on a 10-min call this week and dig in? — Shannon"
-    if "extreme" in fin or "very important" in fin or "important" in fin:
-        return f"Hi {name}, you flagged financial security as important — that's exactly what STA helps families lock in. Free for a quick call? — Shannon"
-
-    # Stage / recency
+        return {
+            "sms": f"Hey {name}! Your responses said you're really aligned with what we do. Want to jump on a 10-min call this week and dig in? — Shannon",
+            "email_subject": f"{name}, your responses really resonated",
+            "email_body": f"Hi {name},\n\nLooking back at your responses, you're more aligned with what we do at Switch to America than most people who come through. That's not a sales line — it just means our conversation is going to be useful, not generic.\n\nGrab 10 minutes with me this week? I'd rather have a real conversation than send you another piece of content.\n\n— Shannon",
+            "voicemail": f"Hey {name}, this is Shannon. Your responses really stood out — you're more aligned with what we do than most. I'd love to skip the canned follow-up and just have a real 10-minute conversation. Call me back when you can.",
+            "rationale": "Self-reported interest = high/very high — direct path to the call.",
+        }
+    if "extreme" in fin or "very important" in fin or ("important" in fin and fin):
+        return {
+            "sms": f"Hi {name}, you flagged financial security as important — that's exactly what STA helps families lock in. Free for a quick call? — Shannon",
+            "email_subject": f"{name}, financial security — let's talk specifics",
+            "email_body": f"Hi {name},\n\nYou marked financial security as important to you. That's not a casual thing to check, and most of the families we work with end up with us specifically because of that.\n\nI'd like to walk you through what 'locking it in' actually looks like in practice for your specific situation — not the marketing version. 10 minutes on the phone, anytime this week.\n\n— Shannon",
+            "voicemail": f"Hi {name}, this is Shannon. You marked financial security as important — that's the exact reason most families work with us. I'd love to walk you through what that actually looks like for your situation. Give me 10 minutes on the phone when you can.",
+            "rationale": "Financial-security custom field = important — emotional driver locked in.",
+        }
     if "hot" in stage or "booked" in stage:
-        return f"Hey {name}! Wanted to reach out personally — looks like you're ready to take the next step. Quick call this week? — Shannon"
+        return {
+            "sms": f"Hey {name}! Wanted to reach out personally — looks like you're ready to take the next step. Quick call this week? — Shannon",
+            "email_subject": f"{name}, ready when you are",
+            "email_body": f"Hi {name},\n\nEverything in your record says you're at the decision point. I don't want to leave you hanging there — let's just do a 10-minute call this week, get the last questions answered, and you decide. No pressure.\n\nWhat day works?\n\n— Shannon",
+            "voicemail": f"Hey {name}, this is Shannon. Your file says you're at the decision point — let's not let that linger. Quick 10-minute call this week, get the last questions answered. Call or text me back.",
+            "rationale": "Pipeline stage = hot/booked — they're in the decision zone.",
+        }
     if days_active is not None and days_active > 30:
-        return f"{name}, it's been a minute! Just thinking of you — wanted to check in and see where you're at. Still curious about STA? — Shannon"
+        return {
+            "sms": f"{name}, it's been a minute! Just thinking of you — wanted to check in and see where you're at. Still curious about STA? — Shannon",
+            "email_subject": f"Just thinking of you, {name}",
+            "email_body": f"Hi {name},\n\nIt's been a while since we connected — wanted to reach out personally rather than letting you slip through the cracks.\n\nWhere are you at? Still curious about STA, or has life moved you in a different direction? Either answer is totally fine — I just don't want to keep emailing if it's not relevant anymore.\n\n— Shannon",
+            "voicemail": f"Hey {name}, this is Shannon — it's been a minute. Just wanted to check in personally and see where you're at. Still curious about STA or has life moved you somewhere else? Either way's fine, just let me know.",
+            "rationale": f"No activity in {days_active}d — reactivation, low-pressure check-in.",
+        }
+    return {
+        "sms": f"Hi {name}! Wanted to circle back personally — what would be most helpful for you right now: a quick call, more info, or something else? — Shannon",
+        "email_subject": f"{name}, what would be most helpful?",
+        "email_body": f"Hi {name},\n\nWanted to reach out personally rather than send another canned email. What's actually most useful for you right now — a quick call, more info on a specific piece, or something else entirely? Just hit reply and tell me.\n\n— Shannon",
+        "voicemail": f"Hi {name}, this is Shannon from Switch to America. Wanted to reach out personally and just ask — what's most useful for you right now? A quick call, more info on something specific? Call or text me back and let's figure it out.",
+        "rationale": "Generic fallback — open question, low pressure, lets them lead.",
+    }
 
-    # Generic fallback
-    return f"Hi {name}! Wanted to circle back personally — what would be most helpful for you right now: a quick call, more info, or something else? — Shannon"
+
+def draft_sms(row):
+    """Back-compat wrapper — delegates to draft_outreach()."""
+    return draft_outreach(row)["sms"]
 
 
 def creative_key(name):
@@ -511,7 +591,7 @@ if view == "Today":
             video = r.get("video_watched") or ""
             days_first = r.get("days_since_first_seen")
             days_active = r.get("days_since_activity")
-            draft = draft_sms(r)
+            drafts = draft_outreach(r)
             chip_color = GREEN if score >= 75 else (GOLD if score >= 50 else "#888")
             ctx_bits = []
             if stage: ctx_bits.append(f"<b>Stage:</b> {stage}")
@@ -523,19 +603,34 @@ if view == "Today":
             ctx_html = " · ".join(ctx_bits) if ctx_bits else "<span style='color:#aaa'>no extra context</span>"
             with st.container():
                 st.markdown(f"""
-<div style="background:{WHITE}; border:2px solid {chip_color}; border-radius:10px; padding:1rem 1.2rem; margin:0.5rem 0; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+<div style="background:{WHITE}; border:2px solid {chip_color}; border-radius:10px; padding:1rem 1.2rem; margin:0.5rem 0 0 0; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
   <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem;">
     <div>
       <div style="font-weight:800; color:{BLUE}; font-size:1.05rem;">{name}</div>
-      <div style="font-size:0.85rem; color:#555;">{phone if phone else email}</div>
+      <div style="font-size:0.85rem; color:#555;">📞 {phone or '—'}  ·  ✉️ {email or '—'}</div>
     </div>
     <div style="background:{chip_color}; color:{WHITE}; font-weight:800; padding:0.3rem 0.8rem; border-radius:18px; font-size:0.85rem;">{score}</div>
   </div>
-  <div style="font-size:0.8rem; color:#666; padding:0.4rem 0; border-top:1px solid #eee; border-bottom:1px solid #eee; margin:0.4rem 0;">{ctx_html}</div>
+  <div style="font-size:0.8rem; color:#666; padding:0.4rem 0; border-top:1px solid #eee; margin:0.4rem 0;">{ctx_html}</div>
+  <div style="font-size:0.72rem; color:#888; font-style:italic;">💡 <b>Why this draft:</b> {drafts['rationale']}</div>
 </div>""", unsafe_allow_html=True)
-                st.text_area(f"SMS draft ({len(draft)} chars)", value=draft, height=70,
-                             key=f"today_draft_{r.get('id', name)}",
-                             help="Edit, then copy with Ctrl+A → Ctrl+C")
+                # Three-channel tabs: SMS / Email / Voicemail
+                t_sms, t_email, t_vm = st.tabs([f"📱 SMS ({len(drafts['sms'])} chars)", "✉️ Email", "🎙️ Voicemail"])
+                with t_sms:
+                    st.text_area("", value=drafts["sms"], height=80,
+                                 key=f"today_sms_{r.get('id', name)}",
+                                 help="Edit, then copy with Ctrl+A → Ctrl+C", label_visibility="collapsed")
+                with t_email:
+                    st.text_input("Subject", value=drafts["email_subject"],
+                                  key=f"today_subj_{r.get('id', name)}")
+                    st.text_area("Body", value=drafts["email_body"], height=180,
+                                 key=f"today_email_{r.get('id', name)}",
+                                 help="Edit, then copy with Ctrl+A → Ctrl+C")
+                with t_vm:
+                    st.caption(f"~{len(drafts['voicemail'].split())} words · roughly 25–35 seconds spoken")
+                    st.text_area("", value=drafts["voicemail"], height=120,
+                                 key=f"today_vm_{r.get('id', name)}",
+                                 help="Practice once, then leave the voicemail", label_visibility="collapsed")
 
     # ── SECTION 2: Going cold ──────────────────────────
     st.markdown(f"<h2 style='color:{DARK_RED}; margin-top:1.5rem;'>⚠️ Going cold — recover these</h2>", unsafe_allow_html=True)
