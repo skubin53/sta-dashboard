@@ -428,6 +428,22 @@ def load_ad_lookup():
     return {aid: {"ad_name": nm, "creative_key": creative_key(nm)} for aid, nm in rows}
 
 @st.cache_data(ttl=300)
+def load_opportunity_stages():
+    """contact_id -> set of stage names. Built from opportunities table.
+    Lets us filter by 'who is in Cat 1 stage' rather than 'who has the tag'."""
+    if not DB_PATH.exists(): return {}
+    try:
+        with sqlite3.connect(DB_PATH) as cx:
+            rows = cx.execute("SELECT contact_id, pipeline_stage_name FROM opportunities WHERE contact_id IS NOT NULL").fetchall()
+    except sqlite3.OperationalError:
+        return {}
+    out = {}
+    for cid, stage in rows:
+        if not stage: continue
+        out.setdefault(cid, set()).add(stage)
+    return out
+
+@st.cache_data(ttl=300)
 def load_contacts():
     if not DB_PATH.exists(): return pd.DataFrame()
     with sqlite3.connect(DB_PATH) as cx:
@@ -438,6 +454,13 @@ def load_contacts():
     lookup = load_ad_lookup()
     df["ad_name_attrib"] = df["first_utm_term"].map(lambda t: (lookup.get(t) or {}).get("ad_name") or (t if t else None))
     df["creative_key_attrib"] = df["ad_name_attrib"].map(creative_key)
+    # Opportunity-stage lookup (so we can filter by pipeline stage, not just tag)
+    opp_stages = load_opportunity_stages()
+    df["opp_stages"] = df["id"].map(lambda cid: opp_stages.get(cid, set()))
+    df["in_cat1_stage"] = df["opp_stages"].apply(lambda s: any("Cat 1" in (x or "") for x in s))
+    df["in_no_show_stage"] = df["opp_stages"].apply(lambda s: any("No Show" in (x or "") or "no show" in (x or "").lower() for x in s))
+    df["in_hot_stage"] = df["opp_stages"].apply(lambda s: any("Hot" in (x or "") for x in s))
+    df["in_booked_stage"] = df["opp_stages"].apply(lambda s: any("Booked" in (x or "") or "Appt Confirmed" in (x or "") for x in s))
     results = df.apply(lambda r: smart_score(dict(r)), axis=1)
     df["smart_score"] = [r[0] for r in results]
     df["smart_reason"] = [" | ".join(r[1]) if r[1] else "(no signals)" for r in results]
@@ -1232,11 +1255,14 @@ elif view == "Push to Meta":
     INCLUDE_GROUPS = {
         "Shopped - Cat 1 (highest-value buyers)": {
             "name": f"STA Cat 1 Buyers — {pd.Timestamp.now().strftime('%b %d %Y')}",
-            "filter": lambda c: c[c["tags_json"].apply(lambda j: _tag_has(j, ["shopped cat 1"]))],
+            # Union of: contacts with the "shopped cat 1" tag OR with an opportunity
+            # in the Cat 1 pipeline stage. (Stage is the source of truth in GHL.)
+            "filter": lambda c: c[c["tags_json"].apply(lambda j: _tag_has(j, ["shopped cat 1"]))
+                                  | c["in_cat1_stage"]],
         },
         "All shoppers (Cat 1 + StaceyB + Placed Order + Beef)": {
             "name": f"STA All Shoppers — {pd.Timestamp.now().strftime('%b %d %Y')}",
-            "filter": lambda c: c[c["is_shopper"]],
+            "filter": lambda c: c[c["is_shopper"] | c["in_cat1_stage"]],
         },
         "Hot leads, score ≥ 80 (qualified but not yet buyers)": {
             "name": f"STA Hot Leads 80+ — {pd.Timestamp.now().strftime('%b %d %Y')}",
