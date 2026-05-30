@@ -326,8 +326,19 @@ def in_scope(tags, stage):
 def smart_score(row):
     try: tags = json.loads(row.get("tags_json") or "[]")
     except: tags = []
-    try: custom = json.loads(row.get("custom_json") or "{}")
-    except: custom = {}
+    # custom_json is a LIST of {id, value} dicts in current GHL — flatten to {id: value}
+    # so the .get(CF_*) lookups below keep working. Legacy dict shape also supported.
+    try: raw = json.loads(row.get("custom_json") or "[]")
+    except: raw = []
+    if isinstance(raw, list):
+        custom = {}
+        for f in raw:
+            if isinstance(f, dict) and f.get("id"):
+                custom[f["id"]] = f.get("value") or f.get("fieldValueString") or ""
+    elif isinstance(raw, dict):
+        custom = raw   # legacy shape
+    else:
+        custom = {}
     stage = row.get("pipeline_stage_name")
     scope = in_scope(tags, stage)
     if row.get("dnd"): return 0, ["DND"], False
