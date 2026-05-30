@@ -17,8 +17,8 @@
   // Remembers which version each visitor was assigned (stays consistent on return)
   // Tracks which version is shown in localStorage for analytics reporting
 
-  const VERSION_A = '/version-a';  // patriot — update to actual deployed paths
-  const VERSION_B = '/version-b';  // feminine
+  const VERSION_A = 'https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/website-version-a-patriot.html';
+  const VERSION_B = 'https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/website-version-b-feminine.html';
 
   function getOrAssignVariant() {
     let variant = localStorage.getItem('sta_ab_variant');
@@ -32,7 +32,7 @@
 
   function trackVariant(variant) {
     // Fire to quiz server for analytics logging
-    fetch('http://localhost:3847/ab-track', {
+    fetch('https://introduces-christ-lookup-sculpture.trycloudflare.com/ab-track', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
