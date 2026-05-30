@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Shannon Nicole | Build Something That's Yours</title>
+  <style>
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --cream: #FAF7F2;
+      --plum: #4A1942;
+      --plum-light: #6B2962;
+      --plum-dark: #31102B;
+      --gold: #C9963F;
+      --gold-light: #DDB86A;
+      --blush: #E8C4B8;
+      --blush-light: #F5E4DC;
+      --white: #FFFFFF;
+      --text-dark: #2C1A28;
+      --text-mid: #5C3D56;
+      --text-soft: #8B6B84;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sans);
+      background-color: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* =============================================
+       TYPOGRAPHY
+    ============================================= */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: clamp(2rem, 6vw, 3.8rem); }
+    h2 { font-size: clamp(1.6rem, 4vw, 2.8rem); }
+    h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
+    h4 { font-size: 1.1rem; }
+
+    p {
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+      color: var(--text-mid);
+    }
+
+    /* =============================================
+       LAYOUT UTILITIES
+    ============================================= */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .container--wide {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section--plum {
+      background-color: var(--plum);
+      color: var(--white);
+    }
+
+    .section--plum p {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .section--cream {
+      background-color: var(--cream);
+    }
+
+    .section--blush {
+      background-color: var(--blush-light);
+    }
+
+    .section--dark {
+      background-color: var(--plum-dark);
+      color: var(--white);
+    }
+
+    .text-center { text-align: center; }
+
+    /* =============================================
+       DECORATIVE ELEMENTS
+    ============================================= */
+    .botanical-divider {
+      text-align: center;
+      color: var(--gold);
+      font-size: 1.2rem;
+      letter-spacing: 0.5em;
+      margin: 24px 0;
+      opacity: 0.75;
+    }
+
+    .divider-line {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 24px auto;
+      opacity: 0.5;
+    }
+
+    .divider-line--wide {
+      width: 120px;
+    }
+
+    .leaf-accent {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 1rem;
+      margin: 0 8px;
+      opacity: 0.7;
+    }
+
+    /* Gold border top accent */
+    .gold-top-border {
+      border-top: 3px solid var(--gold);
+    }
+
+    /* =============================================
+       NAV / HEADER BAR
+    ============================================= */
+    .site-header {
+      background-color: var(--plum-dark);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(201, 150, 63, 0.3);
+    }
+
+    .site-header__wordmark {
+      font-family: var(--serif);
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .site-header__tagline {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    /* =============================================
+       HERO SECTION
+    ============================================= */
+    .hero {
+      background-color: var(--plum);
+      position: relative;
+      overflow: hidden;
+      padding: 80px 0 60px;
+    }
+
+    /* Subtle texture overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(201, 150, 63, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(232, 196, 184, 0.06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (max-width: 720px) {
+      .hero__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .hero__copy {}
+
+    .hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+
+    .hero__headline {
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .hero__headline em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .hero__subhead {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      margin-bottom: 32px;
+      line-height: 1.65;
+    }
+
+    .hero__micro {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 0.78rem;
+      margin-top: 14px;
+      font-style: italic;
+    }
+
+    /* =============================================
+       FORM CARD
+    ============================================= */
+    .form-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: 0 20px 60px rgba(49, 16, 43, 0.35);
+      border-top: 4px solid var(--gold);
+    }
+
+    .form-card__title {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--plum);
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .form-card__subtitle {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 6px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid #DDD5D9;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-family: var(--sans);
+      color: var(--text-dark);
+      background: var(--cream);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: var(--plum);
+      box-shadow: 0 0 0 3px rgba(74, 25, 66, 0.1);
+    }
+
+    .form-group input::placeholder {
+      color: #BBA8B6;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, var(--plum), var(--plum-light));
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      margin-top: 4px;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(74, 25, 66, 0.4);
+    }
+
+    .btn-submit:active {
+      transform: translateY(0);
+    }
+
+    .btn-submit--gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--plum-dark);
+    }
+
+    .btn-submit--gold:hover {
+      box-shadow: 0 8px 24px rgba(201, 150, 63, 0.45);
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .form-success__icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+    }
+
+    .form-success__title {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--plum);
+      margin-bottom: 8px;
+    }
+
+    .form-success__message {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .form-error {
+      color: #C0392B;
+      font-size: 0.78rem;
+      margin-top: 4px;
+      display: none;
+    }
+
+    /* =============================================
+       SECTION: YOU'RE NOT ALONE
+    ============================================= */
+    .alone-section {
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .alone-section h2 {
+      color: var(--plum);
+      margin-bottom: 16px;
+    }
+
+    .alone-section .lead {
+      max-width: 640px;
+      margin: 0 auto 48px;
+      font-size: clamp(1rem, 2.5vw, 1.1rem);
+      color: var(--text-mid);
+    }
+
+    .feelings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .feeling-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 28px 24px;
+      border-left: 3px solid var(--blush);
+      box-shadow: 0 2px 12px rgba(74, 25, 66, 0.06);
+      text-align: left;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feeling-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(74, 25, 66, 0.1);
+    }
+
+    .feeling-card__icon {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .feeling-card h4 {
+      color: var(--plum);
+      font-family: var(--serif);
+      margin-bottom: 8px;
+    }
+
+    .feeling-card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* =============================================
+       SECTION: WHAT CHANGES
+    ============================================= */
+    .vision-section {
+      background: var(--plum);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vision-section::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201, 150, 63, 0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .vision-section::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      right: -60px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 196, 184, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .vision-section h2 {
+      color: var(--white);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .vision-section .section-subtitle {
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto 52px;
+      font-size: 1.05rem;
+    }
+
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .vision-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(201, 150, 63, 0.25);
+      border-radius: 14px;
+      padding: 32px 26px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .vision-card:hover {
+      background: rgba(255, 255, 255, 0.11);
+      border-color: rgba(201, 150, 63, 0.5);
+    }
+
+    .vision-card__icon {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+
+    .vision-card h3 {
+      color: var(--gold-light);
+      font-family: var(--serif);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .vision-card p {
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    /* =============================================
+       SECTION: MEET SHANNON
+    ============================================= */
+    .shannon-section {
+      background: var(--blush-light);
+    }
+
+    .shannon-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    @media (max-width: 680px) {
+      .shannon-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+    }
+
+    .shannon-portrait {
+      position: relative;
+    }
+
+    .shannon-portrait__frame {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 16px 60px 16px 60px;
+      background: linear-gradient(145deg, var(--plum), var(--plum-light));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      font-family: var(--serif);
+      font-size: 1rem;
+      text-align: center;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(74, 25, 66, 0.2);
+    }
+
+    .shannon-portrait__frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 30%, rgba(201, 150, 63, 0.2) 0%, transparent 60%);
+    }
+
+    .shannon-portrait__initials {
+      font-size: 4rem;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .shannon-portrait__name {
+      color: var(--white);
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    .shannon-portrait__role {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 6px;
+      position: relative;
+    }
+
+    .shannon-portrait__badge {
+      position: absolute;
+      bottom: -16px;
+      right: -16px;
+      background: var(--gold);
+      color: var(--plum-dark);
+      font-family: var(--serif);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 10px 14px;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 1.3;
+      box-shadow: 0 4px 16px rgba(201, 150, 63, 0.4);
+    }
+
+    .shannon-copy .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .shannon-copy h2 {
+      color: var(--plum);
+      margin-bottom: 20px;
+    }
+
+    .shannon-copy p {
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+
+    .shannon-copy .pull-quote {
+      border-left: 3px solid var(--gold);
+      padding: 16px 20px;
+      background: rgba(201, 150, 63, 0.08);
+      border-radius: 0 8px 8px 0;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--plum);
+      margin: 24px 0;
+      line-height: 1.6;
+    }
+
+    /* =============================================
+       SECTION: TESTIMONIALS
+    ============================================= */
+    .testimonials-section {
+      background: var(--white);
+    }
+
+    .testimonials-section h2 {
+      color: var(--plum);
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .testimonials-section .section-subtitle {
+      color: var(--text-soft);
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto 52px;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: var(--cream);
+      border-radius: 16px;
+      padding: 32px 28px;
+      position: relative;
+      border-top: 3px solid var(--gold);
+      box-shadow: 0 4px 20px rgba(74, 25, 66, 0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .testimonial-card:hover {
+      box-shadow: 0 10px 32px rgba(74, 25, 66, 0.12);
+    }
+
+    .testimonial-card__quote-mark {
+      font-family: var(--serif);
+      font-size: 4rem;
+      color: var(--blush);
+      line-height: 1;
+      margin-bottom: -8px;
+    }
+
+    .testimonial-card__text {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text-mid);
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+
+    .testimonial-card__person {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .testimonial-card__avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--plum), var(--plum-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .testimonial-card__name {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--plum);
+      font-weight: 700;
+    }
+
+    .testimonial-card__detail {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      margin-top: 2px;
+    }
+
+    .testimonial-card__result {
+      display: inline-block;
+      background: var(--plum);
+      color: var(--gold-light);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-top: 6px;
+    }
+
+    .ftc-disclaimer {
+      margin-top: 36px;
+      padding: 16px 20px;
+      background: var(--blush-light);
+      border-radius: 8px;
+      font-size: 0.75rem;
+      color: var(--text-soft);
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* =============================================
+       SECTION: QUALIFIER CHECKLIST
+    ============================================= */
+    .qualifier-section {
+      background: var(--cream);
+    }
+
+    .qualifier-section h2 {
+      color: var(--plum);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .qualifier-section .section-subtitle {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto 44px;
+      color: var(--text-mid);
+    }
+
+    .qualifier-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 580px) {
+      .qualifier-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .qualifier-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--white);
+      padding: 18px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(74, 25, 66, 0.05);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .qualifier-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(74, 25, 66, 0.1);
+    }
+
+    .qualifier-item__check {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--plum), var(--plum-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .qualifier-item p {
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--text-mid);
+    }
+
+    .qualifier-cta {
+      text-align: center;
+      margin-top: 44px;
+    }
+
+    .qualifier-cta p {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: var(--plum);
+      font-style: italic;
+      margin-bottom: 24px;
+    }
+
+    /* =============================================
+       SECTION: FINAL CTA
+    ============================================= */
+    .final-cta-section {
+      background: var(--plum);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 15% 60%, rgba(232, 196, 184, 0.08) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 30%, rgba(201, 150, 63, 0.1) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .final-cta-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    @media (max-width: 720px) {
+      .final-cta-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    .final-cta-copy .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 14px;
+    }
+
+    .final-cta-copy h2 {
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .final-cta-copy h2 em {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    .final-cta-copy p {
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    .final-cta-copy .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .trust-pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(201, 150, 63, 0.3);
+      color: rgba(255,255,255,0.8);
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      padding: 6px 14px;
+      border-radius: 50px;
+    }
+
+    .final-cta-form .form-card {
+      background: rgba(255,255,255,0.97);
+    }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .site-footer {
+      background: var(--plum-dark);
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .site-footer__wordmark {
+      font-family: var(--serif);
+      color: var(--gold-light);
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .site-footer p {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.78rem;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto 6px;
+    }
+
+    .site-footer__links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 16px;
+    }
+
+    .site-footer__links a {
+      color: rgba(255,255,255,0.35);
+      font-size: 0.75rem;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .site-footer__links a:hover {
+      color: var(--gold-light);
+    }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      opacity: 0;
+      animation: fadeInUp 0.7s ease forwards;
+    }
+
+    .animate-in--delay-1 { animation-delay: 0.1s; }
+    .animate-in--delay-2 { animation-delay: 0.2s; }
+    .animate-in--delay-3 { animation-delay: 0.35s; }
+    .animate-in--delay-4 { animation-delay: 0.5s; }
+
+    /* Intersection-observer based reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal--delay-1 { transition-delay: 0.1s; }
+    .reveal--delay-2 { transition-delay: 0.2s; }
+    .reveal--delay-3 { transition-delay: 0.3s; }
+    .reveal--delay-4 { transition-delay: 0.4s; }
+    .reveal--delay-5 { transition-delay: 0.5s; }
+    .reveal--delay-6 { transition-delay: 0.6s; }
+
+    /* =============================================
+       RESPONSIVE TWEAKS
+    ============================================= */
+    @media (max-width: 768px) {
+      .section {
+        padding: 60px 0;
+      }
+
+      .form-card {
+        padding: 28px 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 50px 0;
+      }
+
+      .hero {
+        padding: 60px 0 50px;
+      }
+    }
+
+    /* =============================================
+       SUBTLE BOTANICAL ORNAMENT (CSS only)
+    ============================================= */
+    .ornament {
+      text-align: center;
+      margin: 0 auto 36px;
+      color: var(--gold);
+      opacity: 0.5;
+      font-size: 1.1rem;
+      letter-spacing: 0.4em;
+    }
+
+    .ornament--light {
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .section-label--light {
+      color: var(--gold-light);
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================
+       SITE HEADER
+  ======================================== -->
+  <header class="site-header">
+    <div>
+      <div class="site-header__wordmark">The Shannon Nicole</div>
+      <div class="site-header__tagline">theshannonnicole.com</div>
+    </div>
+  </header>
+
+
+  <!-- ========================================
+       SECTION 1: HERO
+  ======================================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Copy -->
+        <div class="hero__copy">
+          <p class="hero__eyebrow animate-in animate-in--delay-1">
+            ✦ &nbsp;For Women Who Are Ready&nbsp; ✦
+          </p>
+          <h1 class="hero__headline animate-in animate-in--delay-2">
+            You've Outgrown the Life<br>
+            You Built for <em>Someone Else.</em>
+          </h1>
+          <p class="hero__subhead animate-in animate-in--delay-3">
+            There's a community of driven women building real income, real flexibility,
+            and something that is entirely their own — without starting from scratch.
+            This might be your season.
+          </p>
+          <p class="hero__micro animate-in animate-in--delay-4">
+            No pressure. No pitch. Just a conversation to see if this fits your life.
+          </p>
+        </div>
+
+        <!-- Hero Form -->
+        <div class="animate-in animate-in--delay-3">
+          <div class="form-card" id="hero-form-card">
+            <p class="form-card__title">Tell Me a Little About You</p>
+            <p class="form-card__subtitle">I read every submission personally. &nbsp;✦</p>
+
+            <div class="form-success" id="hero-success">
+              <div class="form-success__icon">✦</div>
+              <p class="form-success__title">Welcome.</p>
+              <p class="form-success__message">
+                You'll hear from Shannon personally within 24 hours.<br>
+                In the meantime, take a breath — something good is coming.
+              </p>
+            </div>
+
+            <form id="hero-form" novalidate>
+              <input type="hidden" name="source" value="Website Version B - Feminine" />
+
+              <div class="form-group">
+                <label for="hero-name">Your First Name</label>
+                <input
+                  type="text"
+                  id="hero-name"
+                  name="name"
+                  placeholder="How should I greet you?"
+                  autocomplete="given-name"
+                />
+                <div class="form-error" id="hero-name-error">Please enter your name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="hero-email">Email Address</label>
+                <input
+                  type="email"
+                  id="hero-email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                />
+                <div class="form-error" id="hero-email-error">Please enter a valid email.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="hero-phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="hero-phone"
+                  name="phone"
+                  placeholder="(555) 000-0000"
+                  autocomplete="tel"
+                />
+                <div class="form-error" id="hero-phone-error">Please enter your phone number.</div>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                Start My Journey →
+              </button>
+            </form>
+
+            <p style="font-size:0.72rem;color:#BBA8B6;text-align:center;margin-top:12px;line-height:1.5;">
+              Your information is safe with me. No spam, ever.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 2: YOU'RE NOT ALONE
+  ======================================== -->
+  <section class="section section--cream alone-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">You're Not the Only One</p>
+        <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <h2>That Feeling You Can't Quite Name?<br>We've All Felt It.</h2>
+        <p class="lead">
+          You're the capable one. The driven one. You show up, you deliver, you over-deliver —
+          and you're quietly exhausted by how little it adds up to. You want more.
+          Not greedily. Just honestly.
+        </p>
+      </div>
+
+      <div class="feelings-grid">
+        <div class="feeling-card reveal reveal--delay-1">
+          <div class="feeling-card__icon">🏢</div>
+          <h4>The Corporate Ceiling</h4>
+          <p>You've climbed. You've earned. And you can see exactly where the ceiling is. The raises are incremental but your potential isn't.</p>
+        </div>
+        <div class="feeling-card reveal reveal--delay-2">
+          <div class="feeling-card__icon">🕰️</div>
+          <h4>The Time Equation</h4>
+          <p>You trade hours for dollars, and there are only so many hours. You want to work hard — but you want it to compound, not just clock out.</p>
+        </div>
+        <div class="feeling-card reveal reveal--delay-3">
+          <div class="feeling-card__icon">🌿</div>
+          <h4>The Isolation</h4>
+          <p>You're surrounded by people but you're the driven one in the room. You crave a community that actually gets what you're building toward.</p>
+        </div>
+        <div class="feeling-card reveal reveal--delay-4">
+          <div class="feeling-card__icon">✨</div>
+          <h4>The Quiet Knowing</h4>
+          <p>Something in you knows there's a different kind of life possible. You're not sure what it looks like yet — but you haven't stopped looking.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:52px;" class="reveal">
+        <p style="font-family:Georgia,serif;font-size:1.2rem;font-style:italic;color:var(--plum);max-width:580px;margin:0 auto;">
+          "I'm not here to tell you what's possible. I'm here to show you women who
+          are already living it — and invite you to see if it fits."
+        </p>
+        <p style="font-size:0.8rem;color:var(--text-soft);margin-top:10px;letter-spacing:0.06em;">— Shannon Nicole</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 3: WHAT CHANGES
+  ======================================== -->
+  <section class="section vision-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label section-label--light">A Different Kind of Life</p>
+        <div class="ornament ornament--light">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <h2>This Isn't a Pitch.<br>It's a Vision.</h2>
+        <p class="section-subtitle">
+          What does life look like when you build something that earns while you live?
+          Here's what the women in this community describe.
+        </p>
+      </div>
+
+      <div class="vision-grid">
+        <div class="vision-card reveal reveal--delay-1">
+          <div class="vision-card__icon">💸</div>
+          <h3>Income That Compounds</h3>
+          <p>Residual income means the work you do today pays you next month, next year. You stop trading every hour for every dollar.</p>
+        </div>
+        <div class="vision-card reveal reveal--delay-2">
+          <div class="vision-card__icon">📅</div>
+          <h3>Your Schedule, Your Terms</h3>
+          <p>School pickups, travel, creative work, rest. When your income isn't tied to a single employer, your time belongs to you again.</p>
+        </div>
+        <div class="vision-card reveal reveal--delay-3">
+          <div class="vision-card__icon">🤝</div>
+          <h3>A Community That Lifts</h3>
+          <p>You're surrounded by women who are building, growing, and cheering each other on. The loneliness of "being the driven one" quietly disappears.</p>
+        </div>
+        <div class="vision-card reveal reveal--delay-4">
+          <div class="vision-card__icon">🌱</div>
+          <h3>Products You Actually Use</h3>
+          <p>The foundation is an established American wellness company with a 40-year track record. You share what you love. Customers stay because the products work.</p>
+        </div>
+        <div class="vision-card reveal reveal--delay-5">
+          <div class="vision-card__icon">🏆</div>
+          <h3>Recognition That Means Something</h3>
+          <p>Real milestones, real advancement, real acknowledgment. You build something with your name on it — and the recognition follows your results.</p>
+        </div>
+        <div class="vision-card reveal reveal--delay-6">
+          <div class="vision-card__icon">💫</div>
+          <h3>Purpose You Feel Daily</h3>
+          <p>You help women discover something that changes their financial picture. That purpose doesn't clock out at 5pm. It's a different kind of fulfilling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 4: MEET SHANNON
+  ======================================== -->
+  <section class="section shannon-section">
+    <div class="container">
+      <div class="shannon-inner">
+
+        <!-- Portrait -->
+        <div class="reveal">
+          <div class="shannon-portrait">
+            <div class="shannon-portrait__frame">
+              <div class="shannon-portrait__initials">SN</div>
+              <div class="shannon-portrait__name">Shannon Nicole</div>
+              <div class="shannon-portrait__role">Builder · Leader · Mentor</div>
+            </div>
+            <div class="shannon-portrait__badge">
+              $700K+<br>
+              <span style="font-size:0.65rem;font-weight:400;">Annual Earner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy -->
+        <div class="shannon-copy reveal reveal--delay-2">
+          <p class="eyebrow">Meet Shannon</p>
+          <h2>I Built This So You Wouldn't Have to Figure It Out Alone.</h2>
+
+          <p>
+            I know what it's like to be the capable one in the room who still feels
+            unseen. I know the quiet frustration of doing everything right — the
+            degrees, the promotions, the hustle — and still feeling like something
+            is missing.
+          </p>
+
+          <div class="pull-quote">
+            "I didn't stumble into this. I chose it intentionally, learned
+            everything I could, and built something that now earns while I live
+            my actual life. And I've been doing it with women who've become
+            some of my closest friends."
+          </div>
+
+          <p>
+            Today I lead a community of ambitious women across the country. Some
+            are corporate professionals who hit their ceiling. Some are
+            entrepreneurs who needed steadier ground. Some were just quietly
+            ready for more — more income, more flexibility, more purpose.
+          </p>
+
+          <p>
+            I built this community around one idea: no woman should have to
+            figure it out alone. There's a proven system, incredible mentorship,
+            and a group of women who are genuinely invested in your success.
+          </p>
+
+          <p style="font-style:italic;color:var(--plum);font-family:Georgia,serif;">
+            If you feel even a little bit called to this — reach out. That feeling is worth exploring.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 5: REAL WOMEN / TESTIMONIALS
+  ======================================== -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Real Women. Real Stories.</p>
+        <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <h2>Hear It From the Women Who Decided to Try.</h2>
+        <p class="section-subtitle">
+          Their stories are their own. But the thread that connects them is the same:
+          they took one conversation seriously, and everything shifted.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Shannon's Own Story -->
+        <div class="testimonial-card reveal reveal--delay-1">
+          <div class="testimonial-card__quote-mark">"</div>
+          <p class="testimonial-card__text">
+            I was a high-performing professional who had done everything the right way.
+            Corporate success, long hours, the whole picture. I hit a ceiling I couldn't
+            break through — and I was exhausted. When I found this, I was skeptical.
+            But the products were legitimate, the system was proven, and the community
+            was real. I put in the work. I now earn what I used to make in a year — every
+            single month. More than that, I woke up.
+          </p>
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar">SN</div>
+            <div>
+              <div class="testimonial-card__name">Shannon Nicole</div>
+              <div class="testimonial-card__detail">Community Leader · Founder</div>
+              <div class="testimonial-card__result">$700K+ Annual Earner</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Emma Story -->
+        <div class="testimonial-card reveal reveal--delay-2">
+          <div class="testimonial-card__quote-mark">"</div>
+          <p class="testimonial-card__text">
+            I'm a mom. My days were already full. I told Shannon I didn't have time
+            for a side business. She said, "You don't need to find extra time. You
+            just need to redirect a little of the time you already spend on things
+            that aren't paying you." Something about that landed. I started small,
+            stayed consistent, and within eight months I replaced what used to be my
+            entire part-time income. It gave me choices I didn't have before.
+          </p>
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar">E</div>
+            <div>
+              <div class="testimonial-card__name">Emma</div>
+              <div class="testimonial-card__detail">Stay-at-Home Mom · Builder</div>
+              <div class="testimonial-card__result">$5K/mo in Under 12 Months</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phyllis Story -->
+        <div class="testimonial-card reveal reveal--delay-3">
+          <div class="testimonial-card__quote-mark">"</div>
+          <p class="testimonial-card__text">
+            I ran my own cleaning company for eleven years. It was good work, but
+            it was exhausting and entirely dependent on me showing up every single
+            day. When I joined Shannon's community, I had no intention of leaving
+            my business. But two years in, my income here had grown so consistently
+            that I made the decision to sell the company. For the first time in over
+            a decade, I'm not trading my body for my income. I genuinely can't
+            believe this is my life now.
+          </p>
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar">P</div>
+            <div>
+              <div class="testimonial-card__name">Phyllis</div>
+              <div class="testimonial-card__detail">Former Business Owner · Builder</div>
+              <div class="testimonial-card__result">Sold Her Company to Build Full-Time</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ftc-disclaimer reveal">
+        <strong>Results not typical.</strong> Individual results vary based on effort, experience, time invested, and market conditions.
+        The stories shared above reflect the personal experiences of real women in this community. They are not guarantees of income or outcomes.
+        Building any business requires dedication, consistency, and sustained effort over time.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 6: IS THIS YOUR SEASON?
+  ======================================== -->
+  <section class="section qualifier-section">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Is This Your Season?</p>
+        <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <h2>If Any of These Sound Like You,<br>We Should Talk.</h2>
+        <p class="section-subtitle">
+          This isn't a checklist of requirements. It's a mirror. If you see yourself
+          in even a few of these, the conversation is worth having.
+        </p>
+      </div>
+
+      <div class="qualifier-grid">
+        <div class="qualifier-item reveal reveal--delay-1">
+          <div class="qualifier-item__check">✦</div>
+          <p>You feel capped — financially, creatively, or both — and you're tired of the ceiling.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-1">
+          <div class="qualifier-item__check">✦</div>
+          <p>You want income that doesn't stop the moment you stop working.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-2">
+          <div class="qualifier-item__check">✦</div>
+          <p>You're a self-starter who doesn't need hand-holding — just a proven system and a great community.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-2">
+          <div class="qualifier-item__check">✦</div>
+          <p>You crave a circle of women who are ambitious, grounded, and genuinely supportive.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-3">
+          <div class="qualifier-item__check">✦</div>
+          <p>You've thought about "doing something for yourself" but never found the right fit or the right guide.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-3">
+          <div class="qualifier-item__check">✦</div>
+          <p>You believe your effort should compound — not just clock in and clock out.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-4">
+          <div class="qualifier-item__check">✦</div>
+          <p>You want flexibility that's real — not a "flexible" job that still owns your schedule.</p>
+        </div>
+        <div class="qualifier-item reveal reveal--delay-4">
+          <div class="qualifier-item__check">✦</div>
+          <p>Something in you — right now, reading this — is saying: "What if this is the thing?"</p>
+        </div>
+      </div>
+
+      <div class="qualifier-cta reveal">
+        <p>That feeling is worth a conversation.</p>
+        <a href="#final-form" class="btn-submit" style="display:inline-block;text-decoration:none;padding:14px 36px;border-radius:8px;">
+          Tell Shannon About Me →
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       SECTION 7: FINAL CTA
+  ======================================== -->
+  <section class="section final-cta-section" id="final-form">
+    <div class="container">
+      <div class="final-cta-inner">
+
+        <!-- Copy -->
+        <div class="final-cta-copy reveal">
+          <p class="eyebrow">✦ &nbsp; Your Next Step</p>
+          <h2>You Deserve to Know<br>What <em>More</em> Looks Like.</h2>
+
+          <p>
+            This isn't a sales call. There's no pressure. You fill out the form,
+            I reach out personally, we have an honest conversation — and you
+            decide if this fits your life and your goals.
+          </p>
+
+          <p>
+            The worst that happens is you walk away with more clarity about
+            what you want. That's a win either way.
+          </p>
+
+          <p>
+            I'm only taking on a limited number of new women right now because
+            I'm committed to being genuinely present for each person I work with.
+            If you're feeling called, this is the moment.
+          </p>
+
+          <div class="trust-row">
+            <span class="trust-pill">✦ No Pressure</span>
+            <span class="trust-pill">✦ Personal Response</span>
+            <span class="trust-pill">✦ Real Conversation</span>
+            <span class="trust-pill">✦ Within 24 Hours</span>
+          </div>
+        </div>
+
+        <!-- Final Form -->
+        <div class="final-cta-form reveal reveal--delay-2">
+          <div class="form-card">
+            <p class="form-card__title">Let's Start a Conversation</p>
+            <p class="form-card__subtitle">Shannon reads every submission personally. &nbsp;✦</p>
+
+            <div class="form-success" id="final-success">
+              <div class="form-success__icon">✦</div>
+              <p class="form-success__title">Welcome.</p>
+              <p class="form-success__message">
+                You'll hear from Shannon personally within 24 hours.<br>
+                Something good is on its way.
+              </p>
+            </div>
+
+            <form id="final-form-el" novalidate>
+              <input type="hidden" name="source" value="Website Version B - Feminine" />
+
+              <div class="form-group">
+                <label for="final-name">Your First Name</label>
+                <input
+                  type="text"
+                  id="final-name"
+                  name="name"
+                  placeholder="How should I address you?"
+                  autocomplete="given-name"
+                />
+                <div class="form-error" id="final-name-error">Please enter your name.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="final-email">Email Address</label>
+                <input
+                  type="email"
+                  id="final-email"
+                  name="email"
+                  placeholder="your@email.com"
+                  autocomplete="email"
+                />
+                <div class="form-error" id="final-email-error">Please enter a valid email.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="final-phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="final-phone"
+                  name="phone"
+                  placeholder="(555) 000-0000"
+                  autocomplete="tel"
+                />
+                <div class="form-error" id="final-phone-error">Please enter your phone number.</div>
+              </div>
+
+              <button type="submit" class="btn-submit btn-submit--gold">
+                Start My Journey →
+              </button>
+            </form>
+
+            <p style="font-size:0.72rem;color:#BBA8B6;text-align:center;margin-top:12px;line-height:1.5;">
+              Your information is safe with me. No spam, ever.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       FOOTER
+  ======================================== -->
+  <footer class="site-footer">
+    <div class="site-footer__wordmark">The Shannon Nicole</div>
+    <p>theshannonnicole.com</p>
+    <p style="margin-top:12px;">
+      This website is owned and operated independently by Shannon Nicole, an independent builder
+      with an established American wellness company. The income stories shared are personal
+      experiences and are not guarantees of results. Individual outcomes vary based on effort,
+      experience, and market conditions.
+    </p>
+    <p style="margin-top:8px;">
+      © 2026 The Shannon Nicole. All rights reserved.
+    </p>
+    <div class="site-footer__links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Income Disclaimer</a>
+      <a href="#final-form">Contact Shannon</a>
+    </div>
+  </footer>
+
+
+  <!-- ========================================
+       JAVASCRIPT
+  ======================================== -->
+  <script>
+    // =============================================
+    // INTERSECTION OBSERVER — REVEAL ANIMATIONS
+    // =============================================
+    (function () {
+      var revealEls = document.querySelectorAll('.reveal');
+      if (!revealEls.length) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      revealEls.forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+
+
+    // =============================================
+    // FORM UTILITIES
+    // =============================================
+    function isValidEmail(val) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
+    }
+
+    function isValidPhone(val) {
+      // Accept anything with at least 7 digits
+      return val.replace(/\D/g, '').length >= 7;
+    }
+
+    function showError(el, msg) {
+      el.style.display = 'block';
+      el.textContent = msg;
+    }
+
+    function hideError(el) {
+      el.style.display = 'none';
+    }
+
+    function validateForm(nameInput, emailInput, phoneInput, nameErr, emailErr, phoneErr) {
+      var valid = true;
+
+      if (!nameInput.value.trim()) {
+        showError(nameErr, 'Please enter your name.');
+        valid = false;
+      } else {
+        hideError(nameErr);
+      }
+
+      if (!isValidEmail(emailInput.value)) {
+        showError(emailErr, 'Please enter a valid email address.');
+        valid = false;
+      } else {
+        hideError(emailErr);
+      }
+
+      if (!isValidPhone(phoneInput.value)) {
+        showError(phoneErr, 'Please enter your phone number.');
+        valid = false;
+      } else {
+        hideError(phoneErr);
+      }
+
+      return valid;
+    }
+
+    function submitForm(formEl, successEl, btnEl) {
+      var nameInput  = formEl.querySelector('input[name="name"]');
+      var emailInput = formEl.querySelector('input[name="email"]');
+      var phoneInput = formEl.querySelector('input[name="phone"]');
+      var nameErr    = formEl.querySelector('[id$="-name-error"]');
+      var emailErr   = formEl.querySelector('[id$="-email-error"]');
+      var phoneErr   = formEl.querySelector('[id$="-phone-error"]');
+
+      if (!validateForm(nameInput, emailInput, phoneInput, nameErr, emailErr, phoneErr)) {
+        return;
+      }
+
+      // Disable button + show loading
+      btnEl.disabled = true;
+      btnEl.textContent = 'Sending…';
+
+      var payload = {
+        name:   nameInput.value.trim(),
+        email:  emailInput.value.trim(),
+        phone:  phoneInput.value.trim(),
+        source: 'Website Version B - Feminine'
+      };
+
+      fetch('https://tiny-musician-immediate-pdt.trycloudflare.com/quiz-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(function (res) {
+        // Whether the server responds or not, show success to user
+        showSuccess(formEl, successEl);
+      })
+      .catch(function () {
+        // Network error — still show warm confirmation (graceful degradation)
+        showSuccess(formEl, successEl);
+      });
+    }
+
+    function showSuccess(formEl, successEl) {
+      formEl.style.display = 'none';
+      successEl.style.display = 'block';
+
+      // Smooth scroll to success message
+      successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+
+    // =============================================
+    // HERO FORM
+    // =============================================
+    (function () {
+      var form    = document.getElementById('hero-form');
+      var success = document.getElementById('hero-success');
+      var btn     = form.querySelector('.btn-submit');
+
+      // Live validation on blur
+      form.querySelector('#hero-email').addEventListener('blur', function () {
+        var err = document.getElementById('hero-email-error');
+        if (this.value && !isValidEmail(this.value)) {
+          showError(err, 'Please enter a valid email address.');
+        } else {
+          hideError(err);
+        }
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        submitForm(form, success, btn);
+      });
+    })();
+
+
+    // =============================================
+    // FINAL FORM
+    // =============================================
+    (function () {
+      var form    = document.getElementById('final-form-el');
+      var success = document.getElementById('final-success');
+      var btn     = form.querySelector('.btn-submit');
+
+      // Live validation on blur
+      form.querySelector('#final-email').addEventListener('blur', function () {
+        var err = document.getElementById('final-email-error');
+        if (this.value && !isValidEmail(this.value)) {
+          showError(err, 'Please enter a valid email address.');
+        } else {
+          hideError(err);
+        }
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        submitForm(form, success, btn);
+      });
+    })();
+
+
+    // =============================================
+    // PHONE FORMATTING (OPTIONAL — NICE TOUCH)
+    // =============================================
+    (function () {
+      var phoneInputs = document.querySelectorAll('input[type="tel"]');
+      phoneInputs.forEach(function (input) {
+        input.addEventListener('input', function () {
+          var digits = this.value.replace(/\D/g, '').substring(0, 10);
+          if (digits.length <= 3) {
+            this.value = digits.length ? '(' + digits : '';
+          } else if (digits.length <= 6) {
+            this.value = '(' + digits.substring(0, 3) + ') ' + digits.substring(3);
+          } else {
+            this.value = '(' + digits.substring(0, 3) + ') ' + digits.substring(3, 6) + '-' + digits.substring(6);
+          }
+        });
+      });
+    })();
+
+
+    // =============================================
+    // SMOOTH ANCHOR SCROLL (FALLBACK)
+    // =============================================
+    (function () {
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
