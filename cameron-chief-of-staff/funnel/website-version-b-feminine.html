@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Shannon Nicole | Build Something That's Yours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     /* =============================================
        RESET & BASE
@@ -27,8 +30,8 @@
       --text-dark: #2C1A28;
       --text-mid: #5C3D56;
       --text-soft: #8B6B84;
-      --serif: Georgia, 'Times New Roman', serif;
-      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     }
 
     html {
@@ -52,14 +55,16 @@
       letter-spacing: -0.01em;
     }
 
-    h1 { font-size: clamp(2rem, 6vw, 3.8rem); }
-    h2 { font-size: clamp(1.6rem, 4vw, 2.8rem); }
-    h3 { font-size: clamp(1.1rem, 2.5vw, 1.5rem); }
-    h4 { font-size: 1.1rem; }
+    h1 { font-size: clamp(2.4rem, 6.5vw, 4.2rem); letter-spacing: -0.02em; font-weight: 700; }
+    h2 { font-size: clamp(1.8rem, 4.5vw, 3rem); letter-spacing: -0.015em; font-weight: 600; }
+    h3 { font-size: clamp(1.2rem, 2.8vw, 1.7rem); font-weight: 600; }
+    h4 { font-size: 1.15rem; font-weight: 600; }
 
     p {
-      font-size: clamp(0.95rem, 2vw, 1.05rem);
+      font-family: var(--sans);
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
       color: var(--text-mid);
+      line-height: 1.75;
     }
 
     /* =============================================
@@ -279,39 +284,41 @@
 
     .form-group label {
       display: block;
-      font-size: 0.78rem;
+      font-family: var(--sans);
+      font-size: 0.7rem;
       font-weight: 600;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--text-mid);
-      margin-bottom: 6px;
+      color: var(--gold);
+      margin-bottom: 8px;
     }
 
     .form-group input {
       width: 100%;
-      padding: 12px 16px;
-      border: 1.5px solid #DDD5D9;
-      border-radius: 8px;
-      font-size: 0.95rem;
+      padding: 14px 0;
+      border: none;
+      border-bottom: 2px solid #DDD5D9;
+      border-radius: 0;
+      font-size: 1rem;
       font-family: var(--sans);
       color: var(--text-dark);
-      background: var(--cream);
-      transition: border-color 0.2s, box-shadow 0.2s;
+      background: transparent;
+      transition: border-color 0.2s;
       outline: none;
     }
 
     .form-group input:focus {
-      border-color: var(--plum);
-      box-shadow: 0 0 0 3px rgba(74, 25, 66, 0.1);
+      border-color: var(--gold);
     }
 
     .form-group input::placeholder {
-      color: #BBA8B6;
+      color: #C4ADB9;
+      font-size: 0.9rem;
     }
 
     .btn-submit {
       width: 100%;
-      padding: 14px 24px;
+      padding: 17px 24px;
       background: linear-gradient(135deg, var(--plum), var(--plum-light));
       color: var(--white);
       font-family: var(--sans);
@@ -547,50 +554,32 @@
     .shannon-portrait__frame {
       width: 100%;
       aspect-ratio: 3/4;
-      border-radius: 16px 60px 16px 60px;
-      background: linear-gradient(145deg, var(--plum), var(--plum-light));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: rgba(255,255,255,0.6);
-      font-family: var(--serif);
-      font-size: 1rem;
-      text-align: center;
-      padding: 32px;
+      border-radius: 16px;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 20px 50px rgba(74, 25, 66, 0.2);
+      box-shadow: 0 30px 70px rgba(74, 25, 66, 0.25);
     }
 
-    .shannon-portrait__frame::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 30% 30%, rgba(201, 150, 63, 0.2) 0%, transparent 60%);
+    .shannon-portrait__frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+      mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
     }
 
     .shannon-portrait__initials {
-      font-size: 4rem;
-      color: var(--gold-light);
-      margin-bottom: 12px;
-      position: relative;
+      display: none;
     }
 
     .shannon-portrait__name {
-      color: var(--white);
-      font-size: 1.1rem;
-      letter-spacing: 0.05em;
-      position: relative;
+      display: none;
     }
 
     .shannon-portrait__role {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-top: 6px;
-      position: relative;
+      display: none;
     }
 
     .shannon-portrait__badge {
@@ -1088,16 +1077,16 @@
             ✦ &nbsp;For Women Who Are Ready&nbsp; ✦
           </p>
           <h1 class="hero__headline animate-in animate-in--delay-2">
-            You've Outgrown the Life<br>
-            You Built for <em>Someone Else.</em>
+            You've Already Proven<br>
+            You Can Succeed.<br>
+            <em>Now Prove It For Yourself.</em>
           </h1>
           <p class="hero__subhead animate-in animate-in--delay-3">
-            There's a community of driven women building real income, real flexibility,
-            and something that is entirely their own — without starting from scratch.
-            This might be your season.
+            100+ ambitious women built real residual income here — without inventory,
+            without parties, without a ceiling. This might be your season.
           </p>
           <p class="hero__micro animate-in animate-in--delay-4">
-            No pressure. No pitch. Just a conversation to see if this fits your life.
+            No pressure. No pitch. One honest conversation to find out if this fits your life.
           </p>
         </div>
 
@@ -1288,11 +1277,10 @@
         <!-- Portrait -->
         <div class="reveal">
           <div class="shannon-portrait">
-            <div class="shannon-portrait__frame" style="padding:0;background:none;overflow:hidden;">
+            <div class="shannon-portrait__frame">
               <img
                 src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
-                alt="Top Team Builder"
-                style="width:100%;height:100%;object-fit:cover;border-radius:16px 60px 16px 60px;display:block;max-width:100%;"
+                alt="Shannon Nicole"
               />
             </div>
             <div class="shannon-portrait__badge">
