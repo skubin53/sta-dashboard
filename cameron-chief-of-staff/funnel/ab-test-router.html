@@ -19,8 +19,19 @@
 
   const VERSION_A = 'https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/website-v2-black-gold.html';
   const VERSION_B = 'https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/website-version-a-patriot.html';
+  const ROUTER_VERSION = 'v2'; // bump this to force re-assignment for all visitors
 
   function getOrAssignVariant() {
+    // Allow manual override via URL: ?v=A or ?v=B
+    const urlParam = new URLSearchParams(window.location.search).get('v');
+    if (urlParam === 'A' || urlParam === 'B') return urlParam;
+
+    // Reset if router version changed (clears stale assignments)
+    if (localStorage.getItem('sta_router_version') !== ROUTER_VERSION) {
+      localStorage.removeItem('sta_ab_variant');
+      localStorage.setItem('sta_router_version', ROUTER_VERSION);
+    }
+
     let variant = localStorage.getItem('sta_ab_variant');
     if (!variant) {
       variant = Math.random() < 0.5 ? 'A' : 'B';
@@ -31,7 +42,6 @@
   }
 
   function trackVariant(variant) {
-    // Fire to quiz server for analytics logging
     fetch('https://introduces-christ-lookup-sculpture.trycloudflare.com/ab-track', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -42,13 +52,12 @@
         timestamp: new Date().toISOString(),
         userAgent: navigator.userAgent
       })
-    }).catch(() => {}); // silent fail — never block the redirect
+    }).catch(() => {});
   }
 
   const variant = getOrAssignVariant();
   trackVariant(variant);
 
-  // Redirect to assigned version
   if (variant === 'A') {
     window.location.replace(VERSION_A);
   } else {
