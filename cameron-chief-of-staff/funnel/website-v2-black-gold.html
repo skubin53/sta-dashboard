@@ -211,28 +211,28 @@
       padding: 0;
     }
 
-    /* Shannon's photo fills the entire hero */
+    /* AI-generated cinematic hero background */
     .hero__bg-photo {
       position: absolute;
       inset: 0;
       background-image: url('https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg');
       background-size: cover;
-      background-position: center top;
+      background-position: center 20%;
       background-repeat: no-repeat;
       z-index: 0;
     }
 
-    /* Dark gradient overlay — photo visible on right, dark on left for text */
+    /* Dark gradient overlay — deep left for text, reveal the image right */
     .hero__bg-photo::after {
       content: '';
       position: absolute;
       inset: 0;
       background: linear-gradient(
         105deg,
-        rgba(10, 10, 10, 0.92) 0%,
-        rgba(10, 10, 10, 0.85) 45%,
-        rgba(10, 10, 10, 0.4) 70%,
-        rgba(10, 10, 10, 0.15) 100%
+        rgba(5, 5, 5, 0.95) 0%,
+        rgba(5, 5, 5, 0.88) 40%,
+        rgba(5, 5, 5, 0.55) 65%,
+        rgba(5, 5, 5, 0.2) 100%
       );
     }
 
@@ -367,36 +367,39 @@
     .btn-submit {
       width: 100%;
       padding: 17px 24px;
-      background: linear-gradient(135deg, var(--plum), var(--plum-light));
-      color: var(--white);
+      background: #FF9900;
+      color: #0F1111;
       font-family: var(--sans);
       font-size: 0.9rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
       margin-top: 4px;
     }
 
     .btn-submit:hover {
+      background: #E68A00;
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(74, 25, 66, 0.4);
+      box-shadow: 0 8px 24px rgba(255, 153, 0, 0.45);
     }
 
     .btn-submit:active {
       transform: translateY(0);
+      background: #CC7A00;
     }
 
     .btn-submit--gold {
-      background: linear-gradient(135deg, var(--gold), var(--gold-light));
-      color: var(--plum-dark);
+      background: #FF9900;
+      color: #0F1111;
     }
 
     .btn-submit--gold:hover {
-      box-shadow: 0 8px 24px rgba(201, 150, 63, 0.45);
+      background: #E68A00;
+      box-shadow: 0 8px 24px rgba(255, 153, 0, 0.45);
     }
 
     .form-success {
@@ -547,7 +550,8 @@
       background: rgba(255, 255, 255, 0.07);
       border: 1px solid rgba(201, 150, 63, 0.25);
       border-radius: 14px;
-      padding: 32px 26px;
+      padding: 0 0 24px 0;
+      overflow: hidden;
       transition: background 0.2s, border-color 0.2s;
     }
 
@@ -556,21 +560,27 @@
       border-color: rgba(201, 150, 63, 0.5);
     }
 
+    .vision-card__content {
+      padding: 20px 24px 0;
+    }
+
     .vision-card__icon {
-      font-size: 2rem;
-      margin-bottom: 14px;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: var(--gold);
+      display: block;
     }
 
     .vision-card h3 {
       color: var(--gold-light);
       font-family: var(--serif);
       margin-bottom: 10px;
-      font-size: 1.15rem;
+      font-size: 1.1rem;
     }
 
     .vision-card p {
       color: rgba(255, 255, 255, 0.78);
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       line-height: 1.65;
     }
 
@@ -1066,6 +1076,14 @@
       }
     }
 
+    /* New sections responsive */
+    @media (max-width: 640px) {
+      .not-this-grid { grid-template-columns: 1fr !important; }
+      .how-it-works-grid { grid-template-columns: 1fr !important; }
+      .stats-bar-inner { flex-direction: column !important; }
+      .stats-bar-inner > div { border-right: none !important; border-bottom: 1px solid rgba(201,150,63,0.15); }
+    }
+
     /* =============================================
        SUBTLE BOTANICAL ORNAMENT (CSS only)
     ============================================= */
@@ -1124,16 +1142,16 @@
       <!-- All copy overlaid ON the photo -->
       <div class="hero__copy">
         <span class="hero__eyebrow animate-in animate-in--delay-1">
-          For the Woman Who Has Outperformed Her Salary for Years — and Still Can't Get Ahead
+          For the Woman Who Is Done Trading Her Best Years for Someone Else's Bottom Line
         </span>
         <h1 class="hero__headline animate-in animate-in--delay-2">
-          You've Already<br>
-          Proven You Can<br>
-          <em>Succeed.</em>
+          The Ceiling<br>
+          Is Real.<br>
+          <em>So Is the Door Out.</em>
         </h1>
         <p class="hero__subhead animate-in animate-in--delay-3">
-          100+ ambitious women built real residual income here — without inventory,
-          without parties, without a ceiling. This might be your season.
+          100+ ambitious women stopped waiting for a raise and built real residual income instead —
+          without inventory, without parties, without a ceiling. One conversation changed everything.
         </p>
 
         <!-- Credibility strip -->
@@ -1142,7 +1160,7 @@
           <span>|</span>
           <span>100+ Women Launched</span>
           <span>|</span>
-          <span>$0 To Start</span>
+          <span>No Cost To Start</span>
         </div>
 
         <p class="hero__micro animate-in animate-in--delay-4">
@@ -1155,8 +1173,8 @@
         <!-- Hero Form -->
         <div class="animate-in animate-in--delay-3">
           <div class="form-card" id="hero-form-card">
-            <p class="form-card__title">You've Taken the First Step.</p>
-            <p class="form-card__subtitle">Shannon's team reviews every application within 24 hours.</p>
+            <p class="form-card__title">Let's Start the Conversation.</p>
+            <p class="form-card__subtitle">Shannon personally reviews every application within 24 hours.</p>
 
             <div class="form-success" id="hero-success">
               <div class="form-success__icon">✦</div>
@@ -1176,7 +1194,7 @@
                   type="text"
                   id="hero-name"
                   name="name"
-                  placeholder="Your full name"
+                  placeholder="Your first name"
                   autocomplete="given-name"
                 />
                 <div class="form-error" id="hero-name-error">Please enter your name.</div>
@@ -1207,7 +1225,7 @@
               </div>
 
               <button type="submit" class="btn-submit">
-                See If I Qualify →
+                I'm Ready — Let's Talk →
               </button>
             </form>
 
@@ -1223,6 +1241,31 @@
 
 
   <!-- ========================================
+       STATS BAR — INSTANT CREDIBILITY
+  ======================================== -->
+  <section style="background:#0A0A0A;padding:28px 0;border-top:1px solid rgba(201,150,63,0.2);">
+    <div style="max-width:900px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;justify-content:center;gap:0;text-align:center;">
+      <div style="flex:1;min-width:160px;padding:16px 24px;border-right:1px solid rgba(201,150,63,0.15);">
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:1.75rem;font-weight:700;color:#C9963F;line-height:1;">$1,684,000</div>
+        <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">Personally Earned</div>
+      </div>
+      <div style="flex:1;min-width:160px;padding:16px 24px;border-right:1px solid rgba(201,150,63,0.15);">
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:700;color:#C9963F;line-height:1;">123</div>
+        <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">Women Successfully Launched</div>
+      </div>
+      <div style="flex:1;min-width:160px;padding:16px 24px;border-right:1px solid rgba(201,150,63,0.15);">
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:2rem;font-weight:700;color:#C9963F;line-height:1;">7 Years</div>
+        <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">of Success</div>
+      </div>
+      <div style="flex:1;min-width:160px;padding:16px 24px;">
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-weight:700;color:#C9963F;line-height:1.2;">🇺🇸 America's Most Trusted Brand</div>
+        <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:6px;">Proven Track Record</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
        SECTION 2: YOU'RE NOT ALONE
   ======================================== -->
   <section class="section section--cream alone-section">
@@ -1230,11 +1273,11 @@
       <div class="reveal">
         <p class="section-label">You're Not the Only One</p>
         <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
-        <h2>That Feeling You Can't Quite Name?<br>We've All Felt It.</h2>
+        <h2>You Know in Your Heart<br>You Were Made for <em>More.</em></h2>
         <p class="lead">
           You're the capable one. The driven one. You show up, you deliver, you over-deliver —
-          and you're quietly exhausted by how little it adds up to. You want more.
-          Not greedily. Just honestly.
+          and you're quietly exhausted by how little it compounds. You want more.
+          Not greedily. Just honestly. And that fire in you? It isn't noise. It's a calling.
         </p>
       </div>
 
@@ -1275,6 +1318,78 @@
 
 
   <!-- ========================================
+       WHAT THIS IS — ASPIRATIONAL POSITIONING
+  ======================================== -->
+  <section style="background:#0A0A0A;padding:80px 0;">
+    <div style="max-width:720px;margin:0 auto;padding:0 48px;text-align:center;">
+      <p style="font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9963F;margin-bottom:20px;">Built for Women Who Are Done Waiting</p>
+      <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,5vw,3.2rem);color:#FFFFFF;font-weight:700;line-height:1.2;letter-spacing:-0.02em;margin-bottom:28px;">A Real Business.<br><em style="color:#C9963F;font-style:italic;">Real Income.<br>Real Life.</em></h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;line-height:1.8;max-width:560px;margin:0 auto 40px;">Not direct sales. Not MLM. Not a side hustle that fizzles out. A referral-based model built on an established American wellness company — where your income grows whether you're working or not.</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+        <span style="background:rgba(201,150,63,0.15);border:1px solid rgba(201,150,63,0.3);border-radius:6px;padding:10px 20px;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.85);letter-spacing:0.02em;">No inventory</span>
+        <span style="background:rgba(201,150,63,0.15);border:1px solid rgba(201,150,63,0.3);border-radius:6px;padding:10px 20px;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.85);letter-spacing:0.02em;">No parties</span>
+        <span style="background:rgba(201,150,63,0.15);border:1px solid rgba(201,150,63,0.3);border-radius:6px;padding:10px 20px;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.85);letter-spacing:0.02em;">No cold calls</span>
+        <span style="background:rgba(201,150,63,0.15);border:1px solid rgba(201,150,63,0.3);border-radius:6px;padding:10px 20px;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.85);letter-spacing:0.02em;">Work from anywhere</span>
+        <span style="background:rgba(201,150,63,0.15);border:1px solid rgba(201,150,63,0.3);border-radius:6px;padding:10px 20px;font-size:0.85rem;font-weight:600;color:rgba(255,255,255,0.85);letter-spacing:0.02em;">Income that compounds</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       HOW IT WORKS — VERTICAL STEPS
+  ======================================== -->
+  <section style="background:#FAF8F4;padding:80px 0;">
+    <div style="max-width:640px;margin:0 auto;padding:0 24px;">
+      <div style="text-align:center;margin-bottom:52px;">
+        <p style="font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9963F;margin-bottom:14px;">How It Works</p>
+        <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,4.5vw,2.8rem);color:#111;font-weight:600;letter-spacing:-0.01em;">Three Steps.<br>One Direction.</h2>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0;">
+
+        <div style="display:flex;gap:24px;padding:0 0 40px;position:relative;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:52px;height:52px;border-radius:50%;background:#111;border:2px solid #C9963F;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#C9963F;z-index:1;">1</div>
+            <div style="flex:1;width:1px;background:rgba(201,150,63,0.25);margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:10px;padding-bottom:16px;">
+            <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;color:#111;font-weight:600;margin-bottom:10px;">Fill out the form.</h3>
+            <p style="font-size:0.97rem;color:#666;line-height:1.75;">Shannon personally reviews every submission and reaches out within 24 hours. No automated response. No sales rep. Her.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:24px;padding:0 0 40px;position:relative;">
+          <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
+            <div style="width:52px;height:52px;border-radius:50%;background:#111;border:2px solid #C9963F;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#C9963F;z-index:1;">2</div>
+            <div style="flex:1;width:1px;background:rgba(201,150,63,0.25);margin-top:8px;"></div>
+          </div>
+          <div style="padding-top:10px;padding-bottom:16px;">
+            <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;color:#111;font-weight:600;margin-bottom:10px;">Have a real conversation.</h3>
+            <p style="font-size:0.97rem;color:#666;line-height:1.75;">No pitch. No script. Shannon asks honest questions, you do the same. If it's a fit, you'll both know. If it's not, she'll tell you that too.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:24px;">
+          <div style="flex-shrink:0;">
+            <div style="width:52px;height:52px;border-radius:50%;background:#C9963F;border:2px solid #C9963F;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#111;">3</div>
+          </div>
+          <div style="padding-top:10px;">
+            <h3 style="font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;color:#111;font-weight:600;margin-bottom:10px;">Build something that's yours.</h3>
+            <p style="font-size:0.97rem;color:#666;line-height:1.75;">You get the full system, Shannon's personal mentorship, and a community of women already winning. Month by month, your income grows — and keeps growing.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:52px;">
+        <a href="#final-form" style="display:inline-block;background:#FF9900;color:#0F1111;padding:15px 42px;border-radius:8px;font-weight:700;font-family:Arial,sans-serif;font-size:1rem;text-decoration:none;letter-spacing:0.03em;">I'm Ready — Let's Talk →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
        SECTION 3: WHAT CHANGES
   ======================================== -->
   <section class="section vision-section">
@@ -1282,49 +1397,61 @@
       <div class="reveal">
         <p class="section-label section-label--light">A Different Kind of Life</p>
         <div class="ornament ornament--light">✦ &nbsp; ✦ &nbsp; ✦</div>
-        <h2>This Isn't a Pitch.<br>It's a Vision.</h2>
+        <h2>What Changes When<br>Your Income Is Finally <em>Yours.</em></h2>
         <p class="section-subtitle">
-          What does life look like when you build something that earns while you live?
-          Here's what the women in this community describe.
+          Not a pitch. Not a promise. Just what the women who built this describe
+          when they talk about their lives now.
         </p>
       </div>
 
       <div class="vision-grid">
         <div class="vision-card reveal reveal--delay-1">
-          <img src="https://images.pexels.com/photos/3813341/pexels-photo-3813341.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Income that Compounds" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-36px -36px 20px -36px;width:calc(100% + 72px);max-width:calc(100% + 72px);" />
-          <div class="vision-card__icon">✦</div>
-          <h3>Income That Compounds</h3>
-          <p>Residual income means the work you do today pays you next month, next year. You stop trading every hour for every dollar.</p>
+          <img src="https://images.pexels.com/photos/35962979/pexels-photo-35962979.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Income that Compounds" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-1px -1px 0 -1px;width:calc(100% + 2px);display:block;" />
+          <div class="vision-card__content">
+            <div class="vision-card__icon">✦</div>
+            <h3>Income That Compounds</h3>
+            <p>Residual income means the work you do today pays you next month, next year. You stop trading every hour for every dollar.</p>
+          </div>
         </div>
         <div class="vision-card reveal reveal--delay-2">
-          <img src="https://images.pexels.com/photos/8165276/pexels-photo-8165276.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Your Schedule Your Terms" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-36px -36px 20px -36px;width:calc(100% + 72px);max-width:calc(100% + 72px);" />
-          <div class="vision-card__icon">✦</div>
-          <h3>Your Schedule, Your Terms</h3>
-          <p>School pickups, travel, creative work, rest. When your income isn't tied to a single employer, your time belongs to you again.</p>
+          <img src="https://images.pexels.com/photos/29606658/pexels-photo-29606658.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Your Schedule Your Terms" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-1px -1px 0 -1px;width:calc(100% + 2px);display:block;" />
+          <div class="vision-card__content">
+            <div class="vision-card__icon">✦</div>
+            <h3>Your Schedule, Your Terms</h3>
+            <p>School pickups, travel, creative work, rest. When your income isn't tied to a single employer, your time belongs to you again.</p>
+          </div>
         </div>
         <div class="vision-card reveal reveal--delay-3">
-          <img src="https://images.pexels.com/photos/3927218/pexels-photo-3927218.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A Community that Lifts" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-36px -36px 20px -36px;width:calc(100% + 72px);max-width:calc(100% + 72px);" />
-          <div class="vision-card__icon">✦</div>
-          <h3>A Community That Lifts</h3>
-          <p>You're surrounded by women who are building, growing, and cheering each other on. The loneliness of "being the driven one" quietly disappears.</p>
+          <img src="https://images.pexels.com/photos/8445576/pexels-photo-8445576.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A Community that Lifts" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-1px -1px 0 -1px;width:calc(100% + 2px);display:block;" />
+          <div class="vision-card__content">
+            <div class="vision-card__icon">✦</div>
+            <h3>A Community That Lifts</h3>
+            <p>You're surrounded by women who are building, growing, and cheering each other on. The loneliness of "being the driven one" quietly disappears.</p>
+          </div>
         </div>
         <div class="vision-card reveal reveal--delay-4">
-          <img src="https://images.pexels.com/photos/4841286/pexels-photo-4841286.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Products You Actually Use" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-36px -36px 20px -36px;width:calc(100% + 72px);max-width:calc(100% + 72px);" />
-          <div class="vision-card__icon">✦</div>
-          <h3>Products You Actually Use</h3>
-          <p>The foundation is an established American wellness company with a 40-year track record. You share what you love. Customers stay because the products work.</p>
+          <img src="https://images.pexels.com/photos/3765034/pexels-photo-3765034.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Products You Actually Use" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-1px -1px 0 -1px;width:calc(100% + 2px);display:block;" />
+          <div class="vision-card__content">
+            <div class="vision-card__icon">✦</div>
+            <h3>Products You Actually Use</h3>
+            <p>The foundation is an established American wellness company with a proven track record. You share what you love. Customers stay because the products work.</p>
+          </div>
         </div>
         <div class="vision-card reveal reveal--delay-5">
-          <img src="https://images.pexels.com/photos/6565255/pexels-photo-6565255.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Recognition that Means Something" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-36px -36px 20px -36px;width:calc(100% + 72px);max-width:calc(100% + 72px);" />
-          <div class="vision-card__icon">✦</div>
-          <h3>Recognition That Means Something</h3>
-          <p>Real milestones, real advancement, real acknowledgment. You build something with your name on it — and the recognition follows your results.</p>
+          <img src="https://images.pexels.com/photos/14776470/pexels-photo-14776470.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Recognition that Means Something" style="width:100%;height:220px;object-fit:cover;object-position:center 30%;border-radius:12px 12px 0 0;margin:-1px -1px 0 -1px;width:calc(100% + 2px);display:block;" />
+          <div class="vision-card__content">
+            <div class="vision-card__icon">✦</div>
+            <h3>Recognition That Means Something</h3>
+            <p>Real milestones, real advancement, real acknowledgment. You build something with your name on it — and the recognition follows your results.</p>
+          </div>
         </div>
         <div class="vision-card reveal reveal--delay-6">
-          <img src="https://images.pexels.com/photos/5466235/pexels-photo-5466235.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Purpose You Feel Daily" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-36px -36px 20px -36px;width:calc(100% + 72px);max-width:calc(100% + 72px);" />
-          <div class="vision-card__icon">✦</div>
-          <h3>Purpose You Feel Daily</h3>
-          <p>You help women discover something that changes their financial picture. That purpose doesn't clock out at 5pm. It's a different kind of fulfilling.</p>
+          <img src="https://images.pexels.com/photos/9065326/pexels-photo-9065326.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Purpose You Feel Daily" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px 12px 0 0;margin:-1px -1px 0 -1px;width:calc(100% + 2px);display:block;" />
+          <div class="vision-card__content">
+            <div class="vision-card__icon">✦</div>
+            <h3>Purpose You Feel Daily</h3>
+            <p>You help women discover something that changes their financial picture. That purpose doesn't clock out at 5pm. It's a different kind of fulfilling.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1348,8 +1475,8 @@
               />
             </div>
             <div class="shannon-portrait__badge">
-              $700K+<br>
-              <span style="font-size:0.65rem;font-weight:400;">Annual Earner</span>
+              $1.6M+<br>
+              <span style="font-size:0.65rem;font-weight:400;">Total Earned</span>
             </div>
           </div>
         </div>
@@ -1386,11 +1513,44 @@
             and a group of women who are genuinely invested in your success.
           </p>
 
-          <p style="font-style:italic;color:var(--plum);font-family:Georgia,serif;">
-            If you feel even a little bit called to this — reach out. That feeling is worth exploring.
-          </p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       TRUST SIGNALS GRID
+  ======================================== -->
+  <section style="background:#0A0A0A;padding:52px 0;border-top:1px solid rgba(201,150,63,0.15);border-bottom:1px solid rgba(201,150,63,0.15);">
+    <div style="max-width:800px;margin:0 auto;padding:0 24px;">
+      <p style="text-align:center;font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:36px;">What Makes This Different</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:20px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(201,150,63,0.12);">
+          <span style="color:#C9963F;font-size:1.2rem;line-height:1;flex-shrink:0;margin-top:2px;">✓</span>
+          <div><div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px;">No Inventory</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.5;">Zero products to buy, store, or deliver.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:20px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(201,150,63,0.12);">
+          <span style="color:#C9963F;font-size:1.2rem;line-height:1;flex-shrink:0;margin-top:2px;">✓</span>
+          <div><div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px;">Established Company</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.5;">An American wellness company with a proven track record.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:20px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(201,150,63,0.12);">
+          <span style="color:#C9963F;font-size:1.2rem;line-height:1;flex-shrink:0;margin-top:2px;">✓</span>
+          <div><div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px;">Work From Anywhere</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.5;">Your phone and wifi are your office.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:20px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(201,150,63,0.12);">
+          <span style="color:#C9963F;font-size:1.2rem;line-height:1;flex-shrink:0;margin-top:2px;">✓</span>
+          <div><div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px;">No Parties. No Cold Calls.</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.5;">Built on content and real relationships.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:20px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(201,150,63,0.12);">
+          <span style="color:#C9963F;font-size:1.2rem;line-height:1;flex-shrink:0;margin-top:2px;">✓</span>
+          <div><div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px;">Residual Income</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.5;">The work you do today keeps paying you.</div></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:14px;padding:20px;background:rgba(255,255,255,0.04);border-radius:10px;border:1px solid rgba(201,150,63,0.12);">
+          <span style="color:#C9963F;font-size:1.2rem;line-height:1;flex-shrink:0;margin-top:2px;">✓</span>
+          <div><div style="font-size:0.9rem;font-weight:700;color:#fff;margin-bottom:4px;">Proven System</div><div style="font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.5;">100+ women already building with this model.</div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -1498,10 +1658,11 @@
       <div class="reveal">
         <p class="section-label">Is This Your Season?</p>
         <div class="ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
-        <h2>If Any of These Sound Like You,<br>We Should Talk.</h2>
+        <h2>This Room Was<br>Built for <em>You.</em></h2>
         <p class="section-subtitle">
-          This isn't a checklist of requirements. It's a mirror. If you see yourself
-          in even a few of these, the conversation is worth having.
+          Not for someone else. Not for the woman who has it all figured out.
+          For the unapologetically ambitious woman who is done waiting.
+          If you see yourself in even a few of these — this is your season.
         </p>
       </div>
 
@@ -1543,8 +1704,78 @@
       <div class="qualifier-cta reveal">
         <p>That feeling is worth a conversation.</p>
         <a href="#final-form" class="btn-submit" style="display:inline-block;text-decoration:none;padding:14px 36px;border-radius:8px;">
-          Tell Shannon About Me →
+          Yes — I'm Ready to Learn More →
         </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       FAQ / OBJECTION HANDLING
+  ======================================== -->
+  <section style="background:#FAF8F4;padding:80px 0;">
+    <div style="max-width:720px;margin:0 auto;padding:0 24px;">
+      <div style="text-align:center;margin-bottom:52px;">
+        <p style="font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#C9963F;margin-bottom:14px;">Real Questions</p>
+        <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,4.5vw,2.8rem);color:#111;font-weight:600;letter-spacing:-0.01em;">The Questions You're Already Thinking.</h2>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:0;">
+
+        <details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:0;">
+          <summary style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:600;color:#111;padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Isn't this just MLM?
+            <span style="color:#C9963F;font-size:1.4rem;font-weight:300;line-height:1;">+</span>
+          </summary>
+          <div style="padding:0 0 24px;color:#555;font-size:0.97rem;line-height:1.8;">
+            I get why you're asking. The word "MLM" carries a lot of baggage — and most of it's earned. House parties. Pestering family members. Buying product you don't need to hit a quota. That's not this.<br><br>
+            This is a referral-based model with an established American wellness company. Customers buy directly from the company. No inventory. No minimums. No "selling" in the way you're imagining. I built seven figures here by building genuine relationships and sharing something I actually use. That's it.
+          </div>
+        </details>
+
+        <details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:0;">
+          <summary style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:600;color:#111;padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            How much time does this actually take?
+            <span style="color:#C9963F;font-size:1.4rem;font-weight:300;line-height:1;">+</span>
+          </summary>
+          <div style="padding:0 0 24px;color:#555;font-size:0.97rem;line-height:1.8;">
+            It depends on the outcome you want. Women building a modest supplemental income ($1K–$3K/month) typically invest 5–10 hours per week, focused and intentional. Women building at the level I have — 20–30 hours, especially in the early years. The investment front-loads. The income becomes residual.<br><br>
+            The honest answer: this rewards people who have the capacity and willingness to be consistent for 12–36 months. It's not a quick payday. It's a compounding asset. If that model fits your life, the conversation is worth having.
+          </div>
+        </details>
+
+        <details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:0;">
+          <summary style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:600;color:#111;padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            I've tried things like this before and it didn't work.
+            <span style="color:#C9963F;font-size:1.4rem;font-weight:300;line-height:1;">+</span>
+          </summary>
+          <div style="padding:0 0 24px;color:#555;font-size:0.97rem;line-height:1.8;">
+            That's the most common thing I hear from the women who go on to do the best here. They were burned, skeptical, and almost didn't reach out. Most of the time, what didn't work was: a company that collapsed, a mentor who wasn't invested in their success, a model that required techniques that felt wrong, or a product they didn't actually believe in.<br><br>
+            What I offer is different in all four of those ways. A proven company, personal mentorship, no-pressure approach, and products I've used for years. If you want to tell me what didn't work last time, I'll tell you honestly whether this is different or not.
+          </div>
+        </details>
+
+        <details style="border-bottom:1px solid rgba(0,0,0,0.1);padding:0;">
+          <summary style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:600;color:#111;padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            What does it cost to get started?
+            <span style="color:#C9963F;font-size:1.4rem;font-weight:300;line-height:1;">+</span>
+          </summary>
+          <div style="padding:0 0 24px;color:#555;font-size:0.97rem;line-height:1.8;">
+            There is no cost to get started. No storefront, no employees, no inventory to buy. You start with a conversation — and if it's a fit, you're in. We'll walk through everything together so there are no surprises.
+          </div>
+        </details>
+
+        <details style="padding:0;">
+          <summary style="font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:600;color:#111;padding:22px 0;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Can I really do this if I don't have a big social media following?
+            <span style="color:#C9963F;font-size:1.4rem;font-weight:300;line-height:1;">+</span>
+          </summary>
+          <div style="padding:0 0 24px;color:#555;font-size:0.97rem;line-height:1.8;">
+            Yes. Some of the strongest builders in my community started with a hundred followers or less. This business is built on relationships and trust — not follower counts. We teach you how to find the right people, build genuine connection, and have conversations that lead to results. Follower count is a vanity metric. Relationship depth is what moves this.
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
@@ -1590,8 +1821,8 @@
         <!-- Final Form -->
         <div class="final-cta-form reveal reveal--delay-2">
           <div class="form-card">
-            <p class="form-card__title">Reserve Your Spot</p>
-            <p class="form-card__subtitle">Limited spots. Real conversations. No pressure.</p>
+            <p class="form-card__title">Let's Talk.</p>
+            <p class="form-card__subtitle">No sales pitch. Shannon personally reaches out within 24 hours.</p>
 
             <div class="form-success" id="final-success">
               <div class="form-success__icon">✦</div>
@@ -1611,7 +1842,7 @@
                   type="text"
                   id="final-name"
                   name="name"
-                  placeholder="Your full name"
+                  placeholder="Your first name"
                   autocomplete="given-name"
                 />
                 <div class="form-error" id="final-name-error">Please enter your name.</div>
@@ -1642,7 +1873,7 @@
               </div>
 
               <button type="submit" class="btn-submit btn-submit--gold">
-                See If I Qualify →
+                I'm Ready — Let's Talk →
               </button>
             </form>
 
