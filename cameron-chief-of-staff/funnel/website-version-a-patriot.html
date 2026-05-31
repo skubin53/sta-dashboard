@@ -192,31 +192,39 @@
     .hero {
       background: var(--navy);
       color: var(--white);
-      padding: 72px 0 64px;
+      min-height: 100vh;
+      padding: 0;
       position: relative;
       overflow: hidden;
+      display: flex;
+      align-items: center;
     }
 
-    /* Subtle star pattern background */
+    /* AI-generated cinematic background */
     .hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background-image:
-        radial-gradient(circle, rgba(255,215,0,0.06) 1px, transparent 1px);
-      background-size: 40px 40px;
-      pointer-events: none;
+      background-image: url('https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/hero-bg.jpg');
+      background-size: cover;
+      background-position: center 20%;
+      background-repeat: no-repeat;
+      z-index: 0;
     }
 
-    /* Gold left border accent */
+    /* Patriot gradient — deep navy/red on left, reveal image right */
     .hero::after {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 5px;
-      background: var(--gold);
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(13, 27, 62, 0.97) 0%,
+        rgba(13, 27, 62, 0.90) 40%,
+        rgba(13, 27, 62, 0.60) 65%,
+        rgba(13, 27, 62, 0.20) 100%
+      );
+      z-index: 1;
     }
 
     .hero-grid {
@@ -224,7 +232,8 @@
       grid-template-columns: 1fr;
       gap: 3rem;
       position: relative;
-      z-index: 1;
+      z-index: 2;
+      padding: 120px 0 100px;
     }
 
     @media (min-width: 820px) {
