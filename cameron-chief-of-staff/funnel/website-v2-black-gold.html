@@ -200,39 +200,61 @@
     }
 
     /* =============================================
-       HERO SECTION
+       HERO SECTION — FULL BLEED PHOTO
     ============================================= */
     .hero {
-      background-color: var(--plum);
       position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
       overflow: hidden;
-      padding: 80px 0 60px;
+      padding: 0;
     }
 
-    /* Subtle texture overlay */
-    .hero::before {
+    /* Shannon's photo fills the entire hero */
+    .hero__bg-photo {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+
+    /* Dark gradient overlay — photo visible on right, dark on left for text */
+    .hero__bg-photo::after {
       content: '';
       position: absolute;
       inset: 0;
-      background:
-        radial-gradient(ellipse at 20% 50%, rgba(201, 150, 63, 0.08) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 20%, rgba(232, 196, 184, 0.06) 0%, transparent 50%);
-      pointer-events: none;
+      background: linear-gradient(
+        105deg,
+        rgba(10, 10, 10, 0.92) 0%,
+        rgba(10, 10, 10, 0.85) 45%,
+        rgba(10, 10, 10, 0.4) 70%,
+        rgba(10, 10, 10, 0.15) 100%
+      );
     }
 
     .hero__inner {
       position: relative;
       z-index: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
+      width: 100%;
+      max-width: 680px;
+      padding: 120px 40px 100px;
     }
 
     @media (max-width: 720px) {
+      .hero__bg-photo::after {
+        background: linear-gradient(
+          to bottom,
+          rgba(10,10,10,0.85) 0%,
+          rgba(10,10,10,0.75) 60%,
+          rgba(10,10,10,0.6) 100%
+        );
+      }
       .hero__inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        padding: 100px 24px 80px;
       }
     }
 
@@ -240,35 +262,41 @@
 
     .hero__eyebrow {
       font-family: var(--sans);
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 600;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 20px;
+      color: var(--gold);
+      margin-bottom: 24px;
+      display: block;
     }
 
     .hero__headline {
       color: var(--white);
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      line-height: 1.1;
+      letter-spacing: -0.025em;
     }
 
     .hero__headline em {
       font-style: italic;
       color: var(--gold-light);
+      display: block;
     }
 
     .hero__subhead {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: clamp(1rem, 2.5vw, 1.15rem);
-      margin-bottom: 32px;
-      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      margin-bottom: 40px;
+      line-height: 1.7;
+      max-width: 540px;
     }
 
     .hero__micro {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.78rem;
-      margin-top: 14px;
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 0.8rem;
+      margin-top: 16px;
       font-style: italic;
     }
 
@@ -1088,39 +1116,42 @@
        SECTION 1: HERO
   ======================================== -->
   <section class="hero">
-    <div class="container">
-      <div class="hero__inner">
+    <!-- Full-bleed photo background -->
+    <div class="hero__bg-photo"></div>
 
-        <!-- Copy -->
-        <div class="hero__copy">
-          <p class="hero__eyebrow animate-in animate-in--delay-1">
-            ✦ &nbsp;For the Woman Who Has Outperformed Her Salary for Years — and Still Can't Get Ahead&nbsp; ✦
-          </p>
-          <h1 class="hero__headline animate-in animate-in--delay-2">
-            You've Already Proven<br>
-            You Can Succeed.<br>
-            <em>Now Prove It For Yourself.</em>
-          </h1>
-          <p class="hero__subhead animate-in animate-in--delay-3">
-            100+ ambitious women built real residual income here — without inventory,
-            without parties, without a ceiling. This might be your season.
-          </p>
-          <p class="hero__micro animate-in animate-in--delay-4">
-            No pressure. No pitch. One honest conversation to find out if this fits your life.
-          </p>
+    <div class="hero__inner">
 
-          <!-- Credibility strip — above the fold, immediately visible -->
-          <div class="hero__credibility animate-in animate-in--delay-4">
-            <span>✦ 7 Years Building</span>
-            <span>|</span>
-            <span>100+ Women Launched</span>
-            <span>|</span>
-            <span>$0 To Start</span>
-            <span>|</span>
-            <span>No Inventory. No Parties.</span>
-          </div>
+      <!-- All copy overlaid ON the photo -->
+      <div class="hero__copy">
+        <span class="hero__eyebrow animate-in animate-in--delay-1">
+          For the Woman Who Has Outperformed Her Salary for Years — and Still Can't Get Ahead
+        </span>
+        <h1 class="hero__headline animate-in animate-in--delay-2">
+          You've Already<br>
+          Proven You Can<br>
+          <em>Succeed.</em>
+        </h1>
+        <p class="hero__subhead animate-in animate-in--delay-3">
+          100+ ambitious women built real residual income here — without inventory,
+          without parties, without a ceiling. This might be your season.
+        </p>
+
+        <!-- Credibility strip -->
+        <div class="hero__credibility animate-in animate-in--delay-4">
+          <span>✦ 7 Years Building</span>
+          <span>|</span>
+          <span>100+ Women Launched</span>
+          <span>|</span>
+          <span>$0 To Start</span>
         </div>
 
+        <p class="hero__micro animate-in animate-in--delay-4">
+          No pressure. No pitch. One honest conversation to find out if this fits your life.
+        </p>
+      </div>
+
+      <!-- Hero Form — below the powerful copy, on the photo -->
+      <div style="max-width:480px;margin-top:40px;" class="animate-in animate-in--delay-3">
         <!-- Hero Form -->
         <div class="animate-in animate-in--delay-3">
           <div class="form-card" id="hero-form-card">
@@ -1185,8 +1216,8 @@
             </p>
           </div>
         </div>
-
       </div>
+
     </div>
   </section>
 
