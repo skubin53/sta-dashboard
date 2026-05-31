@@ -820,36 +820,14 @@
         <p class="form-card__title">Claim Your $100 Store Credit</p>
         <p class="form-card__sub">Takes 30 seconds. Free to start. Shannon walks you through everything.</p>
 
-        <div class="form-success" id="hero-success">
-          <div class="form-success__icon">🎉</div>
-          <p class="form-success__title">You're in.</p>
-          <p class="form-success__msg">Shannon will be in touch within 24 hours with your store credit and a quick walkthrough of how this works for your family.</p>
-        </div>
-
-        <form id="hero-form" novalidate>
-          <input type="hidden" name="source" value="Website V3 — Family Supply Chain" />
-
-          <div class="form-group">
-            <label for="h-name">Your First Name</label>
-            <input type="text" id="h-name" name="name" placeholder="First name" autocomplete="given-name" />
-            <div class="field-error" id="h-name-err">Please enter your name.</div>
-          </div>
-          <div class="form-group">
-            <label for="h-email">Email Address</label>
-            <input type="email" id="h-email" name="email" placeholder="your@email.com" autocomplete="email" />
-            <div class="field-error" id="h-email-err">Please enter a valid email.</div>
-          </div>
-          <div class="form-group">
-            <label for="h-phone">Phone Number</label>
-            <input type="tel" id="h-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
-            <div class="field-error" id="h-phone-err">Please enter your phone number.</div>
-          </div>
-
-          <button type="submit" class="btn btn--full">
-            Make the Switch for My Family →
-          </button>
-        </form>
-
+        <iframe src="https://link.switchtoamerica.com/widget/form/bUV7txvhZVXZMe6qGq4E"
+          id="inline-bUV7txvhZVXZMe6qGq4E"
+          data-layout='{"id":"INLINE"}'
+          data-form-id="bUV7txvhZVXZMe6qGq4E"
+          data-form-name="Shop Opt-In"
+          title="Switch to America Opt-In"
+          style="width:100%;min-height:480px;border:none;background:#fff;border-radius:8px;"
+        ></iframe>
         <p class="form-disclaimer">Your information is safe with me. No spam, ever. No pressure — ever.</p>
       </div>
     </div>
@@ -1362,36 +1340,14 @@
           <p class="form-card__title">Make the Switch.</p>
           <p class="form-card__sub">Claim your $100 store credit and get Shannon's personal walkthrough for your family.</p>
 
-          <div class="form-success" id="final-success">
-            <div class="form-success__icon">🎉</div>
-            <p class="form-success__title">Welcome.</p>
-            <p class="form-success__msg">Shannon will be in touch within 24 hours. Something good is on its way to your family.</p>
-          </div>
-
-          <form id="final-form" novalidate>
-            <input type="hidden" name="source" value="Website V3 — Family Supply Chain" />
-
-            <div class="form-group">
-              <label for="f-name">Your First Name</label>
-              <input type="text" id="f-name" name="name" placeholder="First name" autocomplete="given-name" />
-              <div class="field-error" id="f-name-err">Please enter your name.</div>
-            </div>
-            <div class="form-group">
-              <label for="f-email">Email Address</label>
-              <input type="email" id="f-email" name="email" placeholder="your@email.com" autocomplete="email" />
-              <div class="field-error" id="f-email-err">Please enter a valid email.</div>
-            </div>
-            <div class="form-group">
-              <label for="f-phone">Phone Number</label>
-              <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
-              <div class="field-error" id="f-phone-err">Please enter your phone number.</div>
-            </div>
-
-            <button type="submit" class="btn btn--full">
-              Make the Switch for My Family →
-            </button>
-          </form>
-
+          <iframe src="https://link.switchtoamerica.com/widget/form/bUV7txvhZVXZMe6qGq4E"
+            id="inline-bUV7txvhZVXZMe6qGq4E-final"
+            data-layout='{"id":"INLINE"}'
+            data-form-id="bUV7txvhZVXZMe6qGq4E"
+            data-form-name="Shop Opt-In"
+            title="Switch to America Opt-In"
+            style="width:100%;min-height:480px;border:none;background:#fff;border-radius:8px;"
+          ></iframe>
           <p class="form-disclaimer">No spam. No pressure. Shannon personally reviews every form submission.</p>
         </div>
       </div>
@@ -1420,6 +1376,7 @@
 <!-- ===========================
      SCRIPTS
 =========================== -->
+<script src="https://link.switchtoamerica.com/js/form_embed.js"></script>
 <script>
 // ─── SCROLL REVEAL ─────────────────────────────────────────────────
 const revealEls = document.querySelectorAll('.reveal');
@@ -1428,68 +1385,6 @@ const observer  = new IntersectionObserver(
   { threshold: 0.12 }
 );
 revealEls.forEach(el => observer.observe(el));
-
-// ─── FORM HANDLER ─────────────────────────────────────────────────
-const GHL_LOCATION_ID = 'pkNKuHS8wz0aQmZKEXHr';
-const GHL_TOKEN       = null; // forms use server endpoint
-const QUIZ_SERVER     = 'https://introduces-christ-lookup-sculpture.trycloudflare.com';
-
-function validateEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
-function validatePhone(p) { return p.replace(/\D/g,'').length >= 7; }
-
-function showError(id, show) {
-  const el = document.getElementById(id);
-  if (el) el.classList.toggle('visible', show);
-}
-
-async function submitForm(form, successId) {
-  const name  = form.querySelector('[name=name]');
-  const email = form.querySelector('[name=email]');
-  const phone = form.querySelector('[name=phone]');
-  const btn   = form.querySelector('button[type=submit]');
-
-  const errPrefix = form.id === 'hero-form' ? 'h-' : 'f-';
-
-  let valid = true;
-  if (!name.value.trim())           { showError(errPrefix + 'name-err', true);  valid = false; } else { showError(errPrefix + 'name-err', false); }
-  if (!validateEmail(email.value))  { showError(errPrefix + 'email-err', true); valid = false; } else { showError(errPrefix + 'email-err', false); }
-  if (!validatePhone(phone.value))  { showError(errPrefix + 'phone-err', true); valid = false; } else { showError(errPrefix + 'phone-err', false); }
-  if (!valid) return;
-
-  btn.disabled   = true;
-  btn.textContent = 'Sending…';
-
-  const payload = {
-    firstName:  name.value.trim().split(' ')[0],
-    lastName:   name.value.trim().split(' ').slice(1).join(' ') || '',
-    email:      email.value.trim(),
-    phone:      phone.value.trim(),
-    source:     'Website V3 — Family Supply Chain',
-    locationId: GHL_LOCATION_ID,
-    tags:       ['website-v3-family', 'customer-lead'],
-  };
-
-  try {
-    await fetch(QUIZ_SERVER + '/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    });
-  } catch(e) {}
-
-  form.style.display = 'none';
-  const successEl = document.getElementById(successId);
-  if (successEl) successEl.style.display = 'block';
-}
-
-document.getElementById('hero-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  submitForm(this, 'hero-success');
-});
-document.getElementById('final-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  submitForm(this, 'final-success');
-});
 
 // ─── FAQ TOGGLE ICON ───────────────────────────────────────────────
 document.querySelectorAll('details').forEach(d => {
