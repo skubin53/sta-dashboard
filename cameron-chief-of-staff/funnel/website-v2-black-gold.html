@@ -1188,16 +1188,28 @@
             <form id="hero-form" novalidate>
               <input type="hidden" name="source" value="Website Version B - Feminine" />
 
-              <div class="form-group">
-                <label for="hero-name">Your First Name</label>
-                <input
-                  type="text"
-                  id="hero-name"
-                  name="name"
-                  placeholder="Your first name"
-                  autocomplete="given-name"
-                />
-                <div class="form-error" id="hero-name-error">Please enter your name.</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                <div class="form-group">
+                  <label for="hero-fname">First Name</label>
+                  <input
+                    type="text"
+                    id="hero-fname"
+                    name="firstName"
+                    placeholder="First name"
+                    autocomplete="given-name"
+                  />
+                  <div class="form-error" id="hero-name-error">Please enter your first name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="hero-lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="hero-lname"
+                    name="lastName"
+                    placeholder="Last name"
+                    autocomplete="family-name"
+                  />
+                </div>
               </div>
 
               <div class="form-group">
@@ -1836,16 +1848,28 @@
             <form id="final-form-el" novalidate>
               <input type="hidden" name="source" value="Website Version B - Feminine" />
 
-              <div class="form-group">
-                <label for="final-name">Your First Name</label>
-                <input
-                  type="text"
-                  id="final-name"
-                  name="name"
-                  placeholder="Your first name"
-                  autocomplete="given-name"
-                />
-                <div class="form-error" id="final-name-error">Please enter your name.</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                <div class="form-group">
+                  <label for="final-fname">First Name</label>
+                  <input
+                    type="text"
+                    id="final-fname"
+                    name="firstName"
+                    placeholder="First name"
+                    autocomplete="given-name"
+                  />
+                  <div class="form-error" id="final-name-error">Please enter your first name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="final-lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="final-lname"
+                    name="lastName"
+                    placeholder="Last name"
+                    autocomplete="family-name"
+                  />
+                </div>
               </div>
 
               <div class="form-group">
@@ -1965,11 +1989,11 @@
     function validateForm(nameInput, emailInput, phoneInput, nameErr, emailErr, phoneErr) {
       var valid = true;
 
-      if (!nameInput.value.trim()) {
-        showError(nameErr, 'Please enter your name.');
+      if (!nameInput || !nameInput.value.trim()) {
+        if (nameErr) showError(nameErr, 'Please enter your first name.');
         valid = false;
       } else {
-        hideError(nameErr);
+        if (nameErr) hideError(nameErr);
       }
 
       if (!isValidEmail(emailInput.value)) {
@@ -1990,14 +2014,15 @@
     }
 
     function submitForm(formEl, successEl, btnEl) {
-      var nameInput  = formEl.querySelector('input[name="name"]');
-      var emailInput = formEl.querySelector('input[name="email"]');
-      var phoneInput = formEl.querySelector('input[name="phone"]');
-      var nameErr    = formEl.querySelector('[id$="-name-error"]');
-      var emailErr   = formEl.querySelector('[id$="-email-error"]');
-      var phoneErr   = formEl.querySelector('[id$="-phone-error"]');
+      var firstNameInput = formEl.querySelector('input[name="firstName"]');
+      var lastNameInput  = formEl.querySelector('input[name="lastName"]');
+      var emailInput     = formEl.querySelector('input[name="email"]');
+      var phoneInput     = formEl.querySelector('input[name="phone"]');
+      var nameErr        = formEl.querySelector('[id$="-name-error"]');
+      var emailErr       = formEl.querySelector('[id$="-email-error"]');
+      var phoneErr       = formEl.querySelector('[id$="-phone-error"]');
 
-      if (!validateForm(nameInput, emailInput, phoneInput, nameErr, emailErr, phoneErr)) {
+      if (!validateForm(firstNameInput, emailInput, phoneInput, nameErr, emailErr, phoneErr)) {
         return;
       }
 
@@ -2005,11 +2030,17 @@
       btnEl.disabled = true;
       btnEl.textContent = 'Sending…';
 
+      var firstName = (firstNameInput ? firstNameInput.value.trim() : '');
+      var lastName  = (lastNameInput  ? lastNameInput.value.trim()  : '');
+
       var payload = {
-        name:   nameInput.value.trim(),
-        email:  emailInput.value.trim(),
-        phone:  phoneInput.value.trim(),
-        source: 'Website Version B - Feminine'
+        name:      firstName + (lastName ? ' ' + lastName : ''),
+        firstName: firstName,
+        lastName:  lastName,
+        email:     emailInput.value.trim(),
+        phone:     phoneInput.value.trim(),
+        source:    'Website Version B - Feminine',
+        version:   'A'
       };
 
       fetch('https://introduces-christ-lookup-sculpture.trycloudflare.com/website-contact', {

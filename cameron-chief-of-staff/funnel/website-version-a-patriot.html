@@ -1140,10 +1140,16 @@
           <form id="hero-form" novalidate>
             <input type="hidden" name="source" value="Website Version A - Patriot" />
 
-            <div class="form-group">
-              <label for="hero-name">Full Name</label>
-              <input type="text" id="hero-name" name="name" placeholder="Your full name" autocomplete="name" />
-              <div class="field-error" id="hero-name-error">Please enter your name.</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div class="form-group">
+                <label for="hero-fname">First Name</label>
+                <input type="text" id="hero-fname" name="firstName" placeholder="First name" autocomplete="given-name" />
+                <div class="field-error" id="hero-name-error">Please enter your first name.</div>
+              </div>
+              <div class="form-group">
+                <label for="hero-lname">Last Name</label>
+                <input type="text" id="hero-lname" name="lastName" placeholder="Last name" autocomplete="family-name" />
+              </div>
             </div>
 
             <div class="form-group">
@@ -1477,9 +1483,18 @@
           <form id="final-form" novalidate>
             <input type="hidden" name="source" value="Website Version A - Patriot" />
 
-            <div class="form-group">
-              <label for="final-name">Full Name</label>
-              <input type="text" id="final-name" name="name" placeholder="Your full name" autocomplete="name" />
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div class="form-group">
+                <label for="final-fname">First Name</label>
+                <input type="text" id="final-fname" name="firstName" placeholder="First name" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="final-lname">Last Name</label>
+                <input type="text" id="final-lname" name="lastName" placeholder="Last name" autocomplete="family-name" />
+              </div>
+            </div>
+            <div style="display:none;">
+              <input type="text" id="final-name" name="name" placeholder="hidden" />
               <div class="field-error" id="final-name-error">Please enter your name.</div>
             </div>
 
@@ -1592,7 +1607,7 @@
   }
 
   function validateForm(prefix) {
-    var nameInput   = document.getElementById(prefix + '-name');
+    var nameInput   = document.getElementById(prefix + '-fname') || document.getElementById(prefix + '-name');
     var emailInput  = document.getElementById(prefix + '-email');
     var phoneInput  = document.getElementById(prefix + '-phone');
     var nameError   = document.getElementById(prefix + '-name-error');
@@ -1637,24 +1652,30 @@
 
       if (!validateForm(prefix)) return;
 
-      var nameVal  = document.getElementById(prefix + '-name').value.trim();
-      var emailVal = document.getElementById(prefix + '-email').value.trim();
-      var phoneVal = document.getElementById(prefix + '-phone').value.trim();
+      var firstNameEl = document.getElementById(prefix + '-fname') || document.getElementById(prefix + '-name');
+      var lastNameEl  = document.getElementById(prefix + '-lname');
+      var firstName   = firstNameEl ? firstNameEl.value.trim() : '';
+      var lastName    = lastNameEl  ? lastNameEl.value.trim()  : '';
+      var emailVal    = document.getElementById(prefix + '-email').value.trim();
+      var phoneVal    = document.getElementById(prefix + '-phone').value.trim();
 
       submitBtn.textContent = 'Submitting...';
       submitBtn.classList.add('loading');
 
-      var payload = new URLSearchParams({
-        source: 'Website Version A - Patriot',
-        name:   nameVal,
-        email:  emailVal,
-        phone:  phoneVal
+      var payload = JSON.stringify({
+        source:    'Website Version A - Patriot',
+        firstName: firstName,
+        lastName:  lastName,
+        name:      firstName + (lastName ? ' ' + lastName : ''),
+        email:     emailVal,
+        phone:     phoneVal,
+        version:   'B'
       });
 
       fetch('https://introduces-christ-lookup-sculpture.trycloudflare.com/website-contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body:   payload.toString()
+        headers: { 'Content-Type': 'application/json' },
+        body:   payload
       })
       .then(function (response) {
         // Show success regardless of server response (lead captured)
