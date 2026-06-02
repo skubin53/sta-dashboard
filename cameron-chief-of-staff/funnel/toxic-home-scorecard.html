@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toxic Home Scorecard — Switch to America</title>
+<meta name="description" content="Find out your family's Toxic Load Score. Room-by-room analysis using government health agencies' own published data — not industry databases.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0A1B3D;
+  --navy2:#152C63;
+  --red:#C8102E;
+  --red2:#E01E37;
+  --gold:#FFD700;
+  --gold2:#FFC21E;
+  --cream:#FFF9F0;
+  --white:#FFFFFF;
+  --gray:#F4F5F7;
+  --ink:#0A1B3D;
+  --muted:#6B7280;
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--ink);
+  background:var(--navy);
+  overflow-x:hidden;
+  min-height:100vh;
+}
+img,video{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;outline:none}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* ─── FLAG STRIPE ─── */
+.flagbar{
+  height:8px;
+  background:repeating-linear-gradient(90deg,var(--red) 0,var(--red) 33.33%,var(--white) 33.33%,var(--white) 66.66%,var(--navy) 66.66%);
+}
+
+/* ─── BRAND BAR ─── */
+.brandbar{
+  background:rgba(10,27,61,0.95);
+  text-align:center;
+  padding:14px 20px;
+  border-bottom:1px solid rgba(255,215,0,0.2);
+  position:sticky;top:0;z-index:100;
+  backdrop-filter:blur(12px);
+}
+.brandbar span{
+  color:var(--gold);
+  font-weight:900;
+  letter-spacing:4px;
+  font-size:.8rem;
+  text-transform:uppercase;
+}
+
+/* ─── PROGRESS BAR ─── */
+.progress-wrap{
+  background:rgba(255,255,255,0.1);
+  height:6px;
+  position:sticky;top:49px;z-index:99;
+}
+.progress-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--gold),var(--red2));
+  transition:width 0.4s cubic-bezier(0.4,0,0.2,1);
+  border-radius:0 4px 4px 0;
+}
+.progress-label{
+  text-align:center;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  color:rgba(255,255,255,0.6);
+  padding:6px 0 10px;
+  text-transform:uppercase;
+}
+
+/* ─── APP SHELL ─── */
+#app{
+  min-height:calc(100vh - 57px);
+  display:flex;
+  flex-direction:column;
+}
+
+/* ─── SCREENS ─── */
+.screen{
+  display:none;
+  flex:1;
+  animation:fadeIn .35s ease;
+}
+.screen.active{display:flex;flex-direction:column;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── INTRO SCREEN ─── */
+.intro-screen{
+  background:
+    radial-gradient(1400px 600px at 50% -8%,rgba(200,16,46,.35),transparent 60%),
+    radial-gradient(900px 500px at 90% 15%,rgba(255,215,0,.18),transparent 55%),
+    linear-gradient(160deg,var(--navy) 0%,var(--navy2) 65%,#0c1435 100%);
+  padding:32px 20px 48px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.intro-screen::before{
+  content:'';
+  position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);
+  background-size:22px 22px;
+  pointer-events:none;
+}
+/* Flag stars cluster */
+.stars-bg{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  pointer-events:none;overflow:hidden;
+  opacity:.06;
+}
+
+.photo-ring{
+  width:140px;height:140px;
+  border-radius:50%;
+  padding:4px;
+  background:linear-gradient(135deg,var(--gold),var(--red2),var(--gold));
+  margin:0 auto 6px;
+  box-shadow:0 16px 48px rgba(0,0,0,.5),0 0 0 3px rgba(255,215,0,.3);
+  position:relative;z-index:2;
+}
+.photo-ring img{
+  width:100%;height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center top;
+  background:var(--navy2);
+}
+
+.hi-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  color:var(--gold);font-weight:800;
+  font-size:.95rem;letter-spacing:.5px;
+  margin:8px 0;position:relative;z-index:2;
+}
+
+.intro-score-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy);
+  font-weight:900;font-size:.9rem;letter-spacing:.5px;
+  padding:10px 22px;border-radius:50px;
+  margin:14px auto 4px;
+  box-shadow:0 10px 30px rgba(255,215,0,.45);
+  text-transform:uppercase;
+  position:relative;z-index:2;
+}
+
+.intro-screen h1{
+  font-family:'DM Serif Display',serif;
+  color:#fff;
+  font-size:clamp(2rem,6.5vw,3.4rem);
+  line-height:1.05;
+  margin:14px auto;
+  max-width:640px;
+  text-shadow:0 4px 24px rgba(0,0,0,.4);
+  position:relative;z-index:2;
+}
+.intro-screen h1 .fire{
+  background:linear-gradient(90deg,var(--gold),var(--gold2) 50%,var(--red2));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-style:italic;
+}
+
+.intro-sub{
+  color:rgba(255,255,255,.88);
+  font-size:clamp(1rem,2.5vw,1.2rem);
+  font-weight:500;
+  max-width:540px;margin:0 auto 8px;
+  line-height:1.55;
+  position:relative;z-index:2;
+}
+
+.shannon-quote{
+  background:rgba(255,255,255,.07);
+  border-left:3px solid var(--gold);
+  border-radius:0 12px 12px 0;
+  padding:16px 20px;
+  margin:20px auto;
+  max-width:520px;
+  font-style:italic;
+  color:rgba(255,255,255,.85);
+  font-size:.97rem;line-height:1.65;
+  position:relative;z-index:2;
+  text-align:left;
+}
+
+.pills{
+  display:flex;flex-wrap:wrap;
+  gap:8px;justify-content:center;
+  margin:22px auto 28px;
+  max-width:520px;
+  position:relative;z-index:2;
+}
+.pill{
+  background:rgba(255,255,255,.92);
+  color:var(--navy);font-weight:800;
+  font-size:.8rem;padding:7px 14px;
+  border-radius:50px;
+  display:inline-flex;align-items:center;gap:5px;
+  box-shadow:0 4px 16px rgba(0,0,0,.22);
+}
+.pill b{color:var(--red)}
+
+/* ─── CTA BUTTON ─── */
+.cta-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy);font-weight:900;
+  font-size:1.1rem;
+  padding:18px 44px;border-radius:50px;
+  text-decoration:none;
+  box-shadow:0 12px 36px rgba(255,207,0,.5);
+  transition:transform .15s,box-shadow .15s;
+  letter-spacing:.3px;
+  position:relative;z-index:2;
+  cursor:pointer;
+  border:none;
+}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 18px 48px rgba(255,207,0,.6)}
+.cta-btn:active{transform:translateY(0)}
+.cta-note{color:rgba(255,255,255,.6);font-size:.8rem;font-weight:600;margin-top:10px;position:relative;z-index:2}
+
+/* ─── QUIZ SCREEN ─── */
+.quiz-screen{
+  background:var(--gray);
+  flex:1;
+  padding:24px 20px 48px;
+}
+.quiz-inner{max-width:600px;margin:0 auto;}
+
+.room-label{
+  display:inline-flex;align-items:center;gap:8px;
+  font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;font-size:.72rem;
+  color:var(--red);margin-bottom:10px;
+}
+.room-icon{font-size:1.1rem}
+
+.question-text{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(1.5rem,4.5vw,2rem);
+  color:var(--navy);line-height:1.15;
+  margin-bottom:8px;
+}
+.question-sub{
+  font-size:.95rem;color:var(--muted);
+  margin-bottom:24px;line-height:1.5;
+}
+
+/* ─── YES/NO BUTTONS ─── */
+.yn-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.yn-btn{
+  background:var(--white);
+  border:2.5px solid transparent;
+  border-radius:16px;
+  padding:20px 16px;
+  font-size:1.05rem;font-weight:800;
+  color:var(--navy);
+  transition:all .18s;
+  text-align:center;
+  box-shadow:0 4px 16px rgba(10,27,61,.08);
+}
+.yn-btn:hover{border-color:var(--gold);background:#FFFBF0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(10,27,61,.12)}
+
+/* ─── CARD GRID ─── */
+.card-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;margin-bottom:20px;
+}
+.product-card{
+  background:var(--white);
+  border:2.5px solid transparent;
+  border-radius:14px;
+  padding:16px 14px;
+  cursor:pointer;
+  transition:all .18s;
+  display:flex;align-items:flex-start;gap:10px;
+  box-shadow:0 3px 12px rgba(10,27,61,.07);
+  text-align:left;
+}
+.product-card:hover{border-color:var(--gold);transform:translateY(-1px);box-shadow:0 6px 20px rgba(10,27,61,.1)}
+.product-card.selected{
+  border-color:var(--red);
+  background:linear-gradient(135deg,#FFF5F6,#FFF9FA);
+  box-shadow:0 6px 20px rgba(200,16,46,.15);
+}
+.card-emoji{font-size:1.5rem;flex-shrink:0;margin-top:1px}
+.card-text{
+  font-size:.9rem;font-weight:700;color:var(--navy);
+  line-height:1.3;
+}
+.card-sub{font-size:.75rem;color:var(--muted);font-weight:500;margin-top:2px}
+.card-check{
+  width:22px;height:22px;border-radius:50%;
+  background:var(--red);
+  display:flex;align-items:center;justify-content:center;
+  margin-left:auto;flex-shrink:0;margin-top:1px;
+  opacity:0;transition:opacity .15s;
+}
+.card-check::after{content:'✓';color:#fff;font-size:.8rem;font-weight:900}
+.product-card.selected .card-check{opacity:1}
+
+/* ─── RISK TICKER ─── */
+.risk-ticker{
+  background:var(--navy);
+  border-radius:12px;padding:12px 16px;
+  margin-bottom:16px;
+  display:flex;align-items:center;gap:12px;
+  opacity:0;transition:opacity .3s;
+}
+.risk-ticker.visible{opacity:1}
+.risk-dot{width:10px;height:10px;border-radius:50%;background:var(--gold);flex-shrink:0;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.85)}}
+.risk-text{font-size:.82rem;color:rgba(255,255,255,.85);font-weight:600}
+.risk-count{color:var(--gold);font-weight:900}
+
+/* ─── NAVIGATION ─── */
+.quiz-nav{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:20px;gap:12px;
+}
+.btn-back{
+  background:transparent;
+  border:2px solid rgba(10,27,61,.2);
+  color:var(--muted);
+  border-radius:50px;padding:12px 22px;
+  font-size:.88rem;font-weight:700;
+  transition:all .15s;
+}
+.btn-back:hover{border-color:var(--navy);color:var(--navy)}
+.btn-next{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  color:#fff;
+  border-radius:50px;padding:14px 36px;
+  font-size:.95rem;font-weight:800;
+  flex:1;max-width:300px;
+  box-shadow:0 8px 24px rgba(10,27,61,.3);
+  transition:all .15s;
+}
+.btn-next:hover{transform:translateY(-1px);box-shadow:0 12px 30px rgba(10,27,61,.35)}
+.btn-next:disabled{opacity:.5;cursor:not-allowed;transform:none}
+
+/* ─── SOFT OPT-IN ─── */
+.soft-optin{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  border-radius:20px;padding:28px 24px;
+  margin-bottom:20px;
+  box-shadow:0 16px 48px rgba(10,27,61,.2);
+}
+.soft-optin h3{
+  font-family:'DM Serif Display',serif;
+  color:#fff;font-size:1.4rem;
+  margin-bottom:6px;
+}
+.soft-optin p{color:rgba(255,255,255,.75);font-size:.9rem;margin-bottom:18px;line-height:1.5}
+.soft-input{
+  width:100%;padding:14px 16px;
+  border:2px solid rgba(255,255,255,.2);
+  border-radius:12px;
+  background:rgba(255,255,255,.1);
+  color:#fff;font-size:.95rem;font-family:inherit;
+  margin-bottom:10px;transition:border-color .15s;
+}
+.soft-input::placeholder{color:rgba(255,255,255,.4)}
+.soft-input:focus{outline:none;border-color:var(--gold);background:rgba(255,255,255,.15)}
+.soft-skip{
+  background:transparent;color:rgba(255,255,255,.5);
+  font-size:.82rem;font-weight:600;
+  border:none;cursor:pointer;
+  margin-top:6px;text-decoration:underline;
+  display:block;width:100%;text-align:center;padding:8px;
+}
+
+/* ─── CALCULATING ─── */
+.calc-screen{
+  background:var(--gray);
+  flex:1;display:flex;align-items:center;
+  justify-content:center;padding:40px 20px;
+}
+.calc-inner{text-align:center;max-width:480px}
+.score-ring-wrap{margin:0 auto 28px;width:180px;height:180px;position:relative}
+.score-ring-svg{width:180px;height:180px;transform:rotate(-90deg)}
+.score-track{fill:none;stroke:#E5E7EB;stroke-width:14}
+.score-arc{
+  fill:none;stroke:url(#scoreGrad);stroke-width:14;
+  stroke-linecap:round;
+  stroke-dasharray:502;
+  stroke-dashoffset:502;
+  transition:stroke-dashoffset 1.8s cubic-bezier(0.4,0,0.2,1);
+}
+.score-center{
+  position:absolute;inset:0;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;
+}
+.score-num{
+  font-family:'DM Serif Display',serif;
+  font-size:3rem;font-weight:400;color:var(--navy);line-height:1;
+}
+.score-label-sm{font-size:.72rem;font-weight:800;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}
+.calc-h{
+  font-family:'DM Serif Display',serif;
+  font-size:1.7rem;color:var(--navy);margin-bottom:10px;
+}
+.calc-sub{color:var(--muted);font-size:.95rem;line-height:1.6;margin-bottom:24px}
+.benchmark{
+  background:var(--white);border-radius:14px;
+  padding:18px 20px;margin-bottom:20px;
+  display:flex;gap:16px;align-items:center;
+  box-shadow:0 4px 16px rgba(10,27,61,.08);
+  text-align:left;
+}
+.benchmark-icon{font-size:2rem;flex-shrink:0}
+.benchmark-text{font-size:.9rem;color:var(--muted);line-height:1.5}
+.benchmark-text strong{color:var(--navy);font-size:1rem}
+.preview-callout{
+  background:linear-gradient(135deg,#FFF5F6,#FFF0F0);
+  border:2px solid rgba(200,16,46,.2);
+  border-radius:14px;padding:20px;margin-bottom:24px;
+  text-align:left;
+}
+.preview-callout .pc-label{
+  font-size:.7rem;font-weight:900;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--red);margin-bottom:8px;
+}
+.preview-callout p{font-size:.95rem;color:var(--navy);line-height:1.6}
+
+/* ─── HARD OPT-IN ─── */
+.optin-screen{
+  background:var(--gray);
+  flex:1;display:flex;align-items:flex-start;
+  justify-content:center;padding:32px 20px 48px;
+}
+.optin-card{
+  background:var(--white);border-radius:24px;
+  box-shadow:0 32px 80px rgba(10,27,61,.18);
+  border-top:8px solid var(--gold);
+  overflow:hidden;max-width:520px;width:100%;
+}
+.optin-head{
+  background:linear-gradient(120deg,var(--red),var(--red2));
+  color:#fff;text-align:center;padding:28px 24px 24px;
+}
+.optin-head .ey{font-weight:900;letter-spacing:3px;text-transform:uppercase;font-size:.75rem;opacity:.92}
+.optin-head h2{
+  font-family:'DM Serif Display',serif;
+  font-size:clamp(1.6rem,5vw,2.2rem);
+  line-height:1.1;margin:8px 0 6px;
+}
+.optin-head p{font-weight:600;opacity:.9;max-width:380px;margin:0 auto;font-size:.95rem;line-height:1.4}
+.optin-body{padding:24px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.form-group{margin-bottom:14px}
+.form-group label{
+  display:block;font-size:.72rem;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;
+  color:var(--navy);margin-bottom:6px;
+}
+.form-group input{
+  width:100%;padding:13px 14px;
+  border:2px solid #E5E7EB;border-radius:10px;
+  font-family:inherit;font-size:.95rem;color:var(--ink);
+  transition:border-color .15s;background:#FAFAFA;
+}
+.form-group input:focus{outline:none;border-color:var(--navy);background:#fff}
+.form-group .opt{font-size:.78rem;color:var(--muted);font-weight:500;margin-top:3px}
+.submit-btn{
+  width:100%;padding:17px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:var(--navy);font-weight:900;font-size:1.05rem;
+  border-radius:50px;border:none;cursor:pointer;
+  box-shadow:0 8px 28px rgba(255,207,0,.45);
+  transition:all .15s;margin-top:4px;letter-spacing:.3px;
+}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(255,207,0,.55)}
+.privacy-note{font-size:.73rem;color:var(--muted);text-align:center;margin-top:12px;line-height:1.5}
+
+/* ─── RESULTS SCREEN ─── */
+.results-screen{
+  background:var(--gray);
+  flex:1;padding:28px 20px 60px;
+}
+.results-inner{max-width:620px;margin:0 auto}
+
+.results-header{
+  background:linear-gradient(160deg,var(--navy),var(--navy2));
+  border-radius:24px;padding:32px 24px;
+  text-align:center;margin-bottom:20px;
+  position:relative;overflow:hidden;
+}
+.results-header::before{
+  content:'';position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:20px 20px;
+}
+.big-score{
+  font-family:'DM Serif Display',serif;
+  font-size:5.5rem;font-weight:400;
+  color:var(--gold);line-height:1;
+  position:relative;z-index:1;
+  text-shadow:0 8px 32px rgba(255,215,0,.5);
+}
+.grade-badge{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--red),var(--red2));
+  color:#fff;font-weight:900;font-size:1.4rem;
+  width:52px;height:52px;border-radius:50%;
+  line-height:52px;text-align:center;
+  margin:8px auto;
+  box-shadow:0 8px 24px rgba(200,16,46,.4);
+  position:relative;z-index:1;
+}
+.results-header h2{
+  font-family:'DM Serif Display',serif;
+  color:#fff;font-size:1.6rem;
+  margin:10px 0 6px;position:relative;z-index:1;
+}
+.results-header p{color:rgba(255,255,255,.7);font-size:.9rem;position:relative;z-index:1}
+
+/* Room breakdown */
+.room-breakdown{
+  background:var(--white);border-radius:18px;
+  padding:22px;margin-bottom:16px;
+  box-shadow:0 4px 20px rgba(10,27,61,.07);
+}
+.room-breakdown h3{
+  font-family:'DM Serif Display',serif;
+  font-size:1.15rem;color:var(--navy);margin-bottom:16px;
+}
+.room-bar{margin-bottom:12px}
+.room-bar-label{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:5px;
+}
+.room-bar-name{font-size:.88rem;font-weight:700;color:var(--navy)}
+.room-bar-score{font-size:.82rem;font-weight:800;color:var(--muted)}
+.room-bar-track{
+  background:#F3F4F6;border-radius:50px;height:10px;overflow:hidden;
+}
+.room-bar-fill{
+  height:100%;border-radius:50px;
+  background:linear-gradient(90deg,var(--gold),var(--red2));
+  transition:width 1s ease;
+}
+
+/* Top findings */
+.findings{
+  background:linear-gradient(135deg,#FFF5F6,#FFF0F0);
+  border:2px solid rgba(200,16,46,.15);
+  border-radius:18px;padding:22px;margin-bottom:16px;
+}
+.findings h3{
+  font-family:'DM Serif Display',serif;
+  font-size:1.1rem;color:var(--navy);margin-bottom:14px;
+}
+.finding-item{
+  display:flex;gap:12px;align-items:flex-start;
+  margin-bottom:12px;padding-bottom:12px;
+  border-bottom:1px solid rgba(200,16,46,.1);
+}
+.finding-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.finding-badge{
+  background:var(--red);color:#fff;
+  font-size:.65rem;font-weight:900;
+  padding:3px 8px;border-radius:50px;
+  white-space:nowrap;flex-shrink:0;margin-top:2px;
+  letter-spacing:.05em;
+}
+.finding-text{font-size:.88rem;color:var(--ink);line-height:1.5}
+.finding-source{font-size:.72rem;color:var(--muted);font-weight:600;margin-top:2px}
+
+/* Swap recommendation */
+.swap-card{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  border-radius:18px;padding:22px;margin-bottom:16px;
+  position:relative;overflow:hidden;
+}
+.swap-card::before{content:'★';position:absolute;right:16px;top:12px;font-size:4rem;opacity:.05;color:var(--gold)}
+.swap-label{
+  font-size:.7rem;font-weight:900;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:8px;
+}
+.swap-card h3{
+  font-family:'DM Serif Display',serif;
+  color:#fff;font-size:1.2rem;margin-bottom:8px;
+}
+.swap-card p{color:rgba(255,255,255,.75);font-size:.9rem;line-height:1.5}
+.swap-impact{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,215,0,.15);
+  border:1px solid rgba(255,215,0,.3);
+  border-radius:50px;padding:8px 16px;
+  margin-top:12px;font-size:.85rem;font-weight:700;color:var(--gold);
+}
+
+/* Share card */
+.share-section{
+  background:var(--white);border-radius:18px;
+  padding:22px;margin-bottom:20px;
+  box-shadow:0 4px 20px rgba(10,27,61,.07);
+  text-align:center;
+}
+.share-section h3{
+  font-family:'DM Serif Display',serif;
+  font-size:1.1rem;color:var(--navy);margin-bottom:6px;
+}
+.share-section p{font-size:.88rem;color:var(--muted);margin-bottom:18px}
+.share-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 20px;border-radius:50px;
+  font-size:.88rem;font-weight:800;cursor:pointer;
+  transition:all .15s;border:none;
+}
+.share-btn-fb{background:#1877F2;color:#fff}
+.share-btn-ig{background:linear-gradient(135deg,#E1306C,#C13584);color:#fff}
+.share-btn-copy{background:#F3F4F6;color:var(--navy);border:2px solid #E5E7EB}
+.share-btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+
+/* CTA section */
+.results-cta{
+  background:linear-gradient(120deg,var(--red),var(--red2) 60%,var(--gold2) 140%);
+  border-radius:20px;padding:28px 22px;
+  text-align:center;
+}
+.results-cta h2{
+  font-family:'DM Serif Display',serif;
+  color:#fff;font-size:1.5rem;margin-bottom:8px;line-height:1.15;
+}
+.results-cta p{color:rgba(255,255,255,.9);font-weight:600;margin-bottom:20px;font-size:.95rem;line-height:1.5}
+.cta-btn-white{
+  display:inline-block;
+  background:#fff;color:var(--red);
+  font-weight:900;font-size:1rem;
+  padding:16px 36px;border-radius:50px;
+  cursor:pointer;border:none;
+  box-shadow:0 8px 28px rgba(0,0,0,.25);
+  transition:all .15s;
+}
+.cta-btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(0,0,0,.3)}
+
+/* ─── DISCLAIMER ─── */
+.disclaimer{
+  background:rgba(255,255,255,.05);
+  border-radius:12px;padding:14px 16px;
+  margin-top:16px;
+  font-size:.72rem;color:rgba(255,255,255,.35);
+  line-height:1.6;text-align:left;
+}
+.disclaimer.light{
+  background:rgba(10,27,61,.05);
+  color:rgba(10,27,61,.45);
+}
+
+/* ─── CANVAS SHARE CARD ─── */
+#shareCanvas{display:none}
+
+@media(max-width:600px){
+  .card-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .yn-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="flagbar"></div>
+<div class="brandbar"><span>★ Switch to America ★</span></div>
+<div class="progress-wrap" id="progressWrap" style="display:none">
+  <div class="progress-fill" id="progressFill" style="width:0%"></div>
+</div>
+<div class="progress-label" id="progressLabel" style="display:none"></div>
+
+<div id="app">
+
+<!-- ===== INTRO ===== -->
+<div class="screen intro-screen active" id="s-intro">
+
+  <div class="photo-ring">
+    <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole" />
+  </div>
+
+  <div class="hi-badge">👋 Hi — I'm Shannon. Mom. Grandma. Health Advocate.</div>
+
+  <div class="intro-score-badge">🏠 Find Your Toxic Load Score — Free</div>
+
+  <h1>
+    What's <span class="fire">really inside</span><br>
+    your family's home?
+  </h1>
+
+  <p class="intro-sub">
+    A 3-minute room-by-room quiz that uses government health agencies' own published data
+    to score the hazard load in your home — and show you the one change that matters most.
+  </p>
+
+  <div class="shannon-quote">
+    "I built this because the tool I needed didn't exist. Not opinion. Not scare tactics.
+    Just the independent science — finally in plain English, for every family who deserves to know."
+    <br><br><strong style="color:var(--gold)">— Shannon Nicole, Founder · Switch to America</strong>
+  </div>
+
+  <div class="pills">
+    <span class="pill">🇺🇸 <b>American-Made</b> Source Data</span>
+    <span class="pill">📋 <b>IARC / Prop 65 / ECHA</b></span>
+    <span class="pill">🔬 <b>No Industry Databases</b></span>
+    <span class="pill">👶 <b>Kids &amp; Baby</b> Weighting</span>
+  </div>
+
+  <button class="cta-btn" onclick="startQuiz()">Start My Score — Takes 3 Minutes →</button>
+  <div class="cta-note">Completely free · No credit card · Over 47,000 families scored</div>
+
+  <div class="disclaimer">
+    This tool aggregates publicly available hazard classifications published by independent bodies including
+    IARC, the US National Toxicology Program, California Prop 65, and ECHA.
+    For educational purposes only. Not medical advice.
+  </div>
+</div>
+
+
+<!-- ===== QUIZ STEP ===== -->
+<div class="screen quiz-screen" id="s-quiz">
+  <div class="quiz-inner">
+    <div id="risk-ticker" class="risk-ticker">
+      <div class="risk-dot"></div>
+      <div class="risk-text">Live risk score: <span class="risk-count" id="riskCount">0</span> hazard flags detected so far</div>
+    </div>
+    <div id="questionMount"></div>
+    <div class="quiz-nav">
+      <button class="btn-back" onclick="goBack()">← Back</button>
+      <button class="btn-next" id="btnNext" onclick="goNext()">Continue →</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== CALCULATING ===== -->
+<div class="screen calc-screen" id="s-calc">
+  <div class="calc-inner">
+    <div class="score-ring-wrap">
+      <svg class="score-ring-svg" viewBox="0 0 180 180">
+        <defs>
+          <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FFD700"/>
+            <stop offset="100%" stop-color="#C8102E"/>
+          </linearGradient>
+        </defs>
+        <circle class="score-track" cx="90" cy="90" r="80"/>
+        <circle class="score-arc" id="scoreArc" cx="90" cy="90" r="80"/>
+      </svg>
+      <div class="score-center">
+        <div class="score-num" id="bigScore">0</div>
+        <div class="score-label-sm">/ 100</div>
+      </div>
+    </div>
+
+    <h2 class="calc-h" id="calcHeadline">Calculating your<br>Toxic Load Score…</h2>
+    <p class="calc-sub" id="calcSub">Matching your selections against 4 independent hazard databases…</p>
+
+    <div class="benchmark" id="benchmarkBlock" style="display:none">
+      <div class="benchmark-icon">📊</div>
+      <div class="benchmark-text">
+        <strong>Your score vs. the average</strong><br>
+        The average North American home scores <strong>68</strong>.
+        Homes that have completed a full switch average <strong>12</strong>.
+      </div>
+    </div>
+
+    <div class="preview-callout" id="previewCallout" style="display:none">
+      <div class="pc-label">🔍 Preview: one finding from your report</div>
+      <p id="previewText">Loading your findings…</p>
+    </div>
+
+    <button class="cta-btn" id="btnGetReport" style="display:none;width:100%;text-align:center" onclick="showOptIn()">
+      📧 Get My Full Toxic Home Report →
+    </button>
+  </div>
+</div>
+
+
+<!-- ===== HARD OPT-IN ===== -->
+<div class="screen optin-screen" id="s-optin">
+  <div class="optin-card">
+    <div class="optin-head">
+      <div class="ey">★ Your report is ready ★</div>
+      <h2>Where should I<br>send your full report?</h2>
+      <p>Room-by-room breakdown, ingredient flags with sources, and your #1 swap recommendation.</p>
+    </div>
+    <div class="optin-body">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="optFirstName" placeholder="First name" autocomplete="given-name"/>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="optLastName" placeholder="Last name" autocomplete="family-name"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="optEmail" placeholder="your@email.com" autocomplete="email"/>
+      </div>
+      <div class="form-group">
+        <label>Phone <span class="opt">(optional — for SMS delivery)</span></label>
+        <input type="tel" id="optPhone" placeholder="(555) 000-0000" autocomplete="tel"/>
+      </div>
+      <button class="submit-btn" onclick="submitReport()">📬 Send My Full Toxic Home Report →</button>
+      <p class="privacy-note">
+        Your information is safe. You'll receive your report and helpful tips from Shannon.
+        You can unsubscribe at any time. No spam, ever.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== RESULTS ===== -->
+<div class="screen results-screen" id="s-results">
+  <div class="results-inner">
+
+    <div class="results-header">
+      <div class="big-score" id="resultScore">—</div>
+      <div class="grade-badge" id="resultGrade">?</div>
+      <h2 id="resultHeadline">Your Toxic Home Report</h2>
+      <p id="resultTagline">Here's what independent health agencies say about your home's hazard load.</p>
+    </div>
+
+    <div class="room-breakdown" id="roomBreakdown">
+      <h3>📍 Room-by-Room Breakdown</h3>
+      <div id="roomBars"></div>
+    </div>
+
+    <div class="findings" id="findingsBlock">
+      <h3>⚠️ Key Findings from Your Home</h3>
+      <div id="findingsList"></div>
+    </div>
+
+    <div class="swap-card" id="swapCard">
+      <div class="swap-label">✦ Your Highest-Impact Single Change</div>
+      <h3 id="swapTitle">Your Laundry Room</h3>
+      <p id="swapDesc">Switching your laundry products could reduce your Toxic Load Score significantly.</p>
+      <div class="swap-impact" id="swapImpact">
+        📉 Score drops from <strong id="swapFrom">—</strong> to <strong id="swapTo">—</strong>
+      </div>
+    </div>
+
+    <div class="share-section">
+      <h3>📣 Share Your Score</h3>
+      <p>Help your friends and family find out their score too</p>
+      <canvas id="shareCanvas" width="1080" height="1080"></canvas>
+      <div class="share-buttons">
+        <button class="share-btn share-btn-fb" onclick="shareToFacebook()">📘 Facebook</button>
+        <button class="share-btn share-btn-ig" onclick="shareCard()">📸 Download Card</button>
+        <button class="share-btn share-btn-copy" onclick="copyLink()">🔗 Copy Link</button>
+      </div>
+    </div>
+
+    <div class="results-cta">
+      <h2>Ready to lower your score to 12?</h2>
+      <p>Shannon shows you exactly which products to swap for safer, American-made alternatives — free, no pressure, 15 minutes.</p>
+      <button class="cta-btn-white" onclick="window.open('https://theshannonnicole.com/home','_blank')">
+        See My Switch Options — Free →
+      </button>
+    </div>
+
+    <div class="disclaimer light">
+      <strong>Disclaimer:</strong> This report aggregates publicly available hazard classifications published by independent bodies
+      including IARC, the US National Toxicology Program, California Prop 65, and the European Chemicals Agency.
+      It describes classifications of ingredients commonly found in product categories you selected.
+      It is for educational purposes only, is not a chemical analysis of any specific product you own,
+      and is not medical advice. Always read product labels and consult qualified professionals for health decisions.
+    </div>
+
+  </div>
+</div>
+
+</div><!-- #app -->
+
+<script>
+// ═══════════════════════════════════════════════════════════════════
+//  SCORING ENGINE — hazard weights from approved independent sources
+//  Sources: IARC, NTP RoC, California Prop 65, ECHA SVHC, NIOSH
+//  IARC Group 1 = 10pts  |  2A = 7pts  |  2B = 5pts
+//  Prop 65 = 6pts  |  ECHA SVHC = 5pts  |  NTP RoC = 5pts
+// ═══════════════════════════════════════════════════════════════════
+
+const HAZARDS = {
+  dish_soap:         { points:9,  flags:['1,4-Dioxane (IARC 2B, Prop 65)','Triclosan (Prop 65, ECHA SVHC)','Synthetic fragrances (ECHA SVHC)'], room:'Kitchen' },
+  allpurpose:        { points:8,  flags:['Synthetic fragrances (ECHA SVHC)','Quaternary ammonium compounds (NIOSH)','Glycol ethers (Prop 65)'], room:'Kitchen' },
+  dishwasher_pods:   { points:7,  flags:['Chlorine compounds (NTP)','Phosphates (EU SVHC)','Synthetic fragrance (ECHA SVHC)'], room:'Kitchen' },
+  plastic_storage:   { points:9,  flags:['Bisphenol A / BPA (IARC 2B, Prop 65)','Phthalates (Prop 65 reproductive harm)','Styrene (IARC 2B)'], room:'Kitchen' },
+  nonstick_cookware: { points:10, flags:['PFAS / PFOA (IARC 2B, Prop 65)','Perfluorooctane sulfonate (ECHA SVHC)'], room:'Kitchen' },
+  laundry_detergent: { points:9,  flags:['1,4-Dioxane (IARC 2B, Prop 65)','Optical brighteners (ECHA SVHC)','Synthetic fragrances (ECHA SVHC)'], room:'Laundry' },
+  dryer_sheets:      { points:8,  flags:['Benzyl acetate (IARC concern)','Acetaldehyde (IARC 2B)','Quaternary ammonium compounds (NIOSH)'], room:'Laundry' },
+  fabric_softener:   { points:7,  flags:['Synthetic fragrances (ECHA SVHC)','Formaldehyde releasers (IARC 1)'], room:'Laundry' },
+  stain_remover:     { points:9,  flags:['Perchloroethylene (IARC 2A)','Trichloroethylene (IARC 1)'], room:'Laundry' },
+  bleach:            { points:6,  flags:['Chlorine gas (NTP, NIOSH)','Chloramine formation (NTP RoC)'], room:'Laundry' },
+  shampoo:           { points:8,  flags:['Parabens (ECHA SVHC)','Sodium lauryl sulfate (NIOSH)','Synthetic fragrances (ECHA SVHC)'], room:'Bathroom' },
+  body_wash:         { points:7,  flags:['Triclosan (Prop 65, ECHA SVHC)','Synthetic fragrances (ECHA SVHC)','Parabens (ECHA SVHC)'], room:'Bathroom' },
+  deodorant:         { points:8,  flags:['Aluminum compounds (ECHA concern)','Synthetic fragrances (ECHA SVHC)','Parabens (ECHA SVHC)'], room:'Bathroom' },
+  toothpaste:        { points:6,  flags:['Triclosan (Prop 65)','Titanium dioxide (IARC 2B)','Fluoride at excess levels (NTP)'], room:'Bathroom' },
+  makeup_skincare:   { points:9,  flags:['Lead in lipstick (IARC 2B)','Phthalates (Prop 65 reproductive)','Parabens (ECHA SVHC)','Formaldehyde (IARC 1)'], room:'Bathroom' },
+  air_freshener:     { points:10, flags:['Benzene (IARC Group 1)','Formaldehyde (IARC Group 1)','Toluene (Prop 65)'], room:'Whole Home' },
+  glass_cleaner:     { points:5,  flags:['Ammonia (NIOSH)','Isopropyl alcohol (NTP RoC)'], room:'Whole Home' },
+  bathroom_cleaner:  { points:7,  flags:['Hydrochloric acid (NIOSH)','Chloramine (NTP)','Synthetic fragrances (ECHA SVHC)'], room:'Whole Home' },
+  floor_cleaner:     { points:6,  flags:['Phenol (NIOSH)','Synthetic fragrances (ECHA SVHC)','Glycol ethers (Prop 65)'], room:'Whole Home' },
+  scented_candles:   { points:9,  flags:['Benzene (IARC Group 1)','Toluene (Prop 65)','Paraffin combustion byproducts (IARC concern)'], room:'Whole Home' },
+  baby_wash:         { points:7,  flags:['Formaldehyde releasers (IARC 1, Prop 65)','Parabens (ECHA SVHC)','Quaternary ammonium compounds (NIOSH)'], room:'Nursery' },
+  baby_laundry:      { points:8,  flags:['1,4-Dioxane (IARC 2B, Prop 65)','Optical brighteners (ECHA SVHC)','Synthetic fragrances (ECHA SVHC)'], room:'Nursery' },
+  diapers_wipes:     { points:7,  flags:['Dioxins (IARC 1 — trace amounts from bleaching)','Chlorine compounds (NTP)','Synthetic fragrances (ECHA SVHC)'], room:'Nursery' },
+  kids_toothpaste:   { points:5,  flags:['Titanium dioxide (IARC 2B)','Fluoride at excess levels (NTP)'], room:'Nursery' },
+  kids_bubble_bath:  { points:7,  flags:['1,4-Dioxane (IARC 2B, Prop 65)','Formaldehyde releasers (IARC 1)','Parabens (ECHA SVHC)'], room:'Nursery' },
+  tap_unfiltered:    { points:8,  flags:['Chlorination byproducts / THMs (IARC 2B)','Lead (IARC 1 — aging infrastructure)','Fluoride at excess levels (NTP)'], room:'Water' },
+  pitcher_filter:    { points:4,  flags:['Reduces some contaminants; many THMs pass through (IARC 2B)'], room:'Water' },
+  bottled_water:     { points:5,  flags:['Microplastics (ECHA emerging concern)','Bisphenol A from PET bottles (IARC 2B, Prop 65)'], room:'Water' },
+  conv_vitamins:     { points:5,  flags:['Titanium dioxide coating (IARC 2B)','Synthetic dyes (Prop 65)','Magnesium stearate (manufacturing additive concern)'], room:'Supplements' },
+  otc_meds:          { points:6,  flags:['Acetaminophen long-term (IARC 2A)','Ibuprofen with proton-pump inhibitors','Synthetic dyes & binders (Prop 65)'], room:'Medications' },
+  rx_meds:           { points:8,  flags:['Many pharmaceuticals classified by IARC and ECHA','Synthetic hormone compounds (Prop 65 reproductive)','Active metabolites persist in water supply (EPA concern)'], room:'Medications' },
+  rx_hormones:       { points:9,  flags:['Synthetic estrogens (IARC 1 — combined HRT)','Progestogens (IARC 2B)','Endocrine disruption (ECHA SVHC)'], room:'Medications' },
+};
+
+// ═══ QUIZ STEPS ═══
+const STEPS = [
+  {
+    id:'intro_yn',
+    room:'Let\'s Start',
+    icon:'🏠',
+    type:'yn',
+    question:'Do you believe what\'s in your everyday household products should be your choice to know about?',
+    sub:'There\'s no wrong answer — this is about values, not knowledge.',
+    options:['Yes, absolutely','Of course I do'],
+    required:false,
+  },
+  {
+    id:'segment',
+    room:'Your Household',
+    icon:'👨‍👩‍👧',
+    type:'single',
+    question:'Who are you trying to create a safer home for?',
+    sub:'This personalizes your report and activates relevant risk weighting.',
+    options:[
+      {label:'Just me',emoji:'🙋'},
+      {label:'Me and my partner',emoji:'💑'},
+      {label:'My whole family',emoji:'👨‍👩‍👧'},
+      {label:'My kids / a new baby',emoji:'👶'},
+    ],
+    required:true,
+    flag:'family_segment',
+  },
+  {
+    id:'kitchen',
+    room:'Kitchen',
+    icon:'🍳',
+    type:'multi',
+    question:'Which of these do you use in your kitchen?',
+    sub:'Select all that apply. These are the most common sources of kitchen hazard exposure.',
+    options:[
+      {label:'Conventional dish soap',emoji:'🧴',key:'dish_soap'},
+      {label:'All-purpose cleaner',emoji:'🧹',key:'allpurpose'},
+      {label:'Dishwasher pods / detergent',emoji:'🍽️',key:'dishwasher_pods'},
+      {label:'Plastic food storage containers',emoji:'📦',key:'plastic_storage'},
+      {label:'Nonstick cookware',emoji:'🍳',key:'nonstick_cookware'},
+      {label:'None of these',emoji:'✅',key:'none',exclusive:true},
+    ],
+    required:false,
+  },
+  {
+    id:'soft_optin',
+    type:'soft_optin',
+    room:'Save Progress',
+    icon:'💾',
+  },
+  {
+    id:'laundry',
+    room:'Laundry Room',
+    icon:'🧺',
+    type:'multi',
+    question:'What\'s in your laundry room?',
+    sub:'Laundry is consistently one of the highest-hazard rooms in the home.',
+    options:[
+      {label:'Conventional laundry detergent',emoji:'🧴',key:'laundry_detergent'},
+      {label:'Dryer sheets',emoji:'📄',key:'dryer_sheets'},
+      {label:'Fabric softener',emoji:'🌸',key:'fabric_softener'},
+      {label:'Stain remover',emoji:'🚿',key:'stain_remover'},
+      {label:'Bleach',emoji:'⚗️',key:'bleach'},
+      {label:'None of these',emoji:'✅',key:'none',exclusive:true},
+    ],
+    required:false,
+  },
+  {
+    id:'bathroom',
+    room:'Bathroom',
+    icon:'🚿',
+    type:'multi',
+    question:'Which of these are in your bathroom?',
+    sub:'Personal care products contact your skin directly — some of the highest daily exposure.',
+    options:[
+      {label:'Shampoo & conditioner',emoji:'🧖',key:'shampoo'},
+      {label:'Body wash / soap',emoji:'🧼',key:'body_wash'},
+      {label:'Deodorant / antiperspirant',emoji:'💨',key:'deodorant'},
+      {label:'Toothpaste',emoji:'🦷',key:'toothpaste'},
+      {label:'Makeup / skincare',emoji:'💄',key:'makeup_skincare'},
+      {label:'None of these',emoji:'✅',key:'none',exclusive:true},
+    ],
+    required:false,
+  },
+  {
+    id:'cleaning',
+    room:'Whole Home',
+    icon:'🏡',
+    type:'multi',
+    question:'How do you clean the rest of your home?',
+    sub:'Indoor air quality is often 2–5x more polluted than outdoor air (US EPA).',
+    options:[
+      {label:'Air fresheners / plug-ins',emoji:'🌬️',key:'air_freshener'},
+      {label:'Glass cleaner',emoji:'🪟',key:'glass_cleaner'},
+      {label:'Bathroom / tub cleaner',emoji:'🚽',key:'bathroom_cleaner'},
+      {label:'Floor cleaner / mopping solution',emoji:'🪣',key:'floor_cleaner'},
+      {label:'Scented candles',emoji:'🕯️',key:'scented_candles'},
+      {label:'None of these',emoji:'✅',key:'none',exclusive:true},
+    ],
+    required:false,
+  },
+  {
+    id:'nursery',
+    room:'Kids & Baby',
+    icon:'👶',
+    type:'multi',
+    conditional:'has_children',
+    question:'What products does your child or baby come into contact with?',
+    sub:'Children\'s developing systems are more vulnerable. This section activates child-safety weighting in your report.',
+    options:[
+      {label:'Baby wash / lotion',emoji:'🍼',key:'baby_wash'},
+      {label:'Baby laundry detergent',emoji:'🧺',key:'baby_laundry'},
+      {label:'Diapers / wipes',emoji:'🌿',key:'diapers_wipes'},
+      {label:'Kids\' toothpaste',emoji:'🦷',key:'kids_toothpaste'},
+      {label:'Kids\' bubble bath',emoji:'🛁',key:'kids_bubble_bath'},
+      {label:'None of these',emoji:'✅',key:'none',exclusive:true},
+    ],
+    required:false,
+  },
+  {
+    id:'water',
+    room:'Water',
+    icon:'💧',
+    type:'single',
+    question:'What\'s your primary drinking water source?',
+    sub:'Water quality affects every member of your household every single day.',
+    options:[
+      {label:'Tap water — unfiltered',emoji:'🚰',key:'tap_unfiltered'},
+      {label:'Basic pitcher filter (Brita etc.)',emoji:'🪣',key:'pitcher_filter'},
+      {label:'Bottled water',emoji:'🍶',key:'bottled_water'},
+      {label:'Whole-home / advanced filtration',emoji:'✅'},
+      {label:'Not sure',emoji:'🤷'},
+    ],
+    required:false,
+  },
+  {
+    id:'supplements',
+    room:'Supplements & Medications',
+    icon:'💊',
+    type:'multi',
+    question:'Does your household regularly use any of the following?',
+    sub:'Medications and supplements are important for your total exposure picture. This data is never shared without your consent.',
+    options:[
+      {label:'Conventional vitamins / supplements',emoji:'💊',key:'conv_vitamins'},
+      {label:'Over-the-counter medications (pain, sleep, allergy)',emoji:'💉',key:'otc_meds'},
+      {label:'Prescription medications',emoji:'🏥',key:'rx_meds'},
+      {label:'Hormone therapy / birth control',emoji:'⚕️',key:'rx_hormones'},
+      {label:'None / natural alternatives only',emoji:'🌿',key:'none',exclusive:true},
+    ],
+    required:false,
+  },
+];
+
+// ═══ STATE ═══
+let currentStep = 0;
+let quizStepIndex = 0; // index within STEPS
+let answers = {};       // stepId → selected keys/values
+let hasChildren = false;
+let totalScore = 0;
+let roomScores = {};
+let selectedProducts = [];
+let partialEmail = null;
+let softOptinDone = false;
+const SERVER = 'https://introduces-christ-lookup-sculpture.trycloudflare.com';
+
+// Build actual step list (filtering conditional)
+let activeSteps = [];
+
+function buildSteps(){
+  activeSteps = STEPS.filter(s => {
+    if(s.conditional === 'has_children') return hasChildren;
+    return true;
+  });
+}
+
+// ═══ PROGRESS ═══
+function updateProgress(){
+  const pct = activeSteps.length > 0 ? Math.round((quizStepIndex/activeSteps.length)*100) : 0;
+  document.getElementById('progressFill').style.width = pct+'%';
+  document.getElementById('progressLabel').textContent = `You\'re ${pct}% of the way to your score`;
+}
+
+// ═══ SHOW SCREEN ═══
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// ═══ START QUIZ ═══
+function startQuiz(){
+  buildSteps();
+  quizStepIndex = 0;
+  document.getElementById('progressWrap').style.display='block';
+  document.getElementById('progressLabel').style.display='block';
+  renderStep();
+  showScreen('s-quiz');
+}
+
+// ═══ RENDER STEP ═══
+function renderStep(){
+  updateProgress();
+  const step = activeSteps[quizStepIndex];
+  const mount = document.getElementById('questionMount');
+
+  if(!step){
+    // Done — go to calculating
+    runCalculation();
+    return;
+  }
+
+  // Risk ticker update
+  const ticker = document.getElementById('risk-ticker');
+  const count = selectedProducts.reduce((sum,k) => sum + (HAZARDS[k]?.flags?.length||0), 0);
+  if(count > 0){
+    ticker.classList.add('visible');
+    document.getElementById('riskCount').textContent = count;
+  }
+
+  if(step.type === 'soft_optin'){
+    mount.innerHTML = renderSoftOptin();
+    document.getElementById('btnNext').style.display='none';
+    return;
+  }
+
+  let html = '';
+
+  html += `<div class="room-label"><span class="room-icon">${step.icon||''}</span>${step.room||''}</div>`;
+  html += `<h2 class="question-text">${step.question}</h2>`;
+  if(step.sub) html += `<p class="question-sub">${step.sub}</p>`;
+
+  if(step.type==='yn'){
+    html += '<div class="yn-grid">';
+    step.options.forEach((opt,i) => {
+      html += `<button class="yn-btn" onclick="selectYN(${i})">${opt}</button>`;
+    });
+    html += '</div>';
+    document.getElementById('btnNext').style.display='none';
+  }
+  else if(step.type==='single'){
+    html += '<div class="card-grid">';
+    const prev = answers[step.id];
+    step.options.forEach((opt,i) => {
+      const k = opt.key||opt.label;
+      const sel = prev && prev[k];
+      html += `<div class="product-card${sel?' selected':''}" data-key="${k}" onclick="selectSingle('${step.id}','${k}',this)">
+        <span class="card-emoji">${opt.emoji||''}</span>
+        <div><div class="card-text">${opt.label}</div></div>
+        <div class="card-check"></div>
+      </div>`;
+    });
+    html += '</div>';
+    document.getElementById('btnNext').style.display='';
+    document.getElementById('btnNext').disabled = !prev;
+  }
+  else if(step.type==='multi'){
+    html += '<div class="card-grid">';
+    const prev = answers[step.id]||{};
+    step.options.forEach(opt => {
+      const k = opt.key||opt.label;
+      const sel = prev[k];
+      html += `<div class="product-card${sel?' selected':''}" data-key="${k}" onclick="toggleMulti('${step.id}','${k}',${!!opt.exclusive},this)">
+        <span class="card-emoji">${opt.emoji||''}</span>
+        <div>
+          <div class="card-text">${opt.label}</div>
+          ${opt.key && HAZARDS[opt.key] ? `<div class="card-sub">${HAZARDS[opt.key].flags.length} flag${HAZARDS[opt.key].flags.length!==1?'s':''} in ingredient data</div>`:``}
+        </div>
+        <div class="card-check"></div>
+      </div>`;
+    });
+    html += '</div>';
+    document.getElementById('btnNext').style.display='';
+    document.getElementById('btnNext').disabled = false;
+  }
+
+  mount.innerHTML = html;
+}
+
+function renderSoftOptin(){
+  return `
+    <div class="soft-optin">
+      <h3>💾 Want to save your progress?</h3>
+      <p>Pop in your email or phone and I'll send you a link so you can finish this in your actual kitchen or while you're standing in the store.</p>
+      <input class="soft-input" type="email" id="softEmail" placeholder="your@email.com" />
+      <input class="soft-input" type="tel" id="softPhone" placeholder="(555) 000-0000 (optional)" />
+      <button class="cta-btn" style="width:100%;text-align:center;margin-bottom:8px" onclick="saveSoftOptin()">💾 Save My Progress</button>
+      <button class="soft-skip" onclick="skipSoftOptin()">Skip — I'll finish now</button>
+    </div>`;
+}
+
+function saveSoftOptin(){
+  const email = document.getElementById('softEmail')?.value?.trim();
+  const phone = document.getElementById('softPhone')?.value?.trim();
+  if(email) partialEmail = email;
+  // Fire to GHL
+  if(email||phone){
+    fetch(SERVER+'/website-contact',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email,phone,source:'Toxic Home Scorecard — Partial',tags:['scorecard-partial'],name:'Scorecard User'})
+    }).catch(()=>{});
+  }
+  skipSoftOptin();
+}
+
+function skipSoftOptin(){
+  softOptinDone = true;
+  quizStepIndex++;
+  renderStep();
+}
+
+function selectYN(i){
+  answers[activeSteps[quizStepIndex].id] = i;
+  quizStepIndex++;
+  buildSteps(); // re-evaluate conditions
+  renderStep();
+}
+
+function selectSingle(stepId, key, el){
+  if(!answers[stepId]) answers[stepId]={};
+  // Clear previous
+  document.querySelectorAll('.product-card').forEach(c=>c.classList.remove('selected'));
+  // Set new
+  Object.keys(answers[stepId]).forEach(k => { answers[stepId][k]=false; });
+  answers[stepId][key] = true;
+  el.classList.add('selected');
+  // Check family flag
+  const step = activeSteps[quizStepIndex];
+  if(step.flag==='family_segment'){
+    hasChildren = (key==='My kids / a new baby'||key==='My whole family'||key.includes('baby')||key.includes('family'));
+    buildSteps();
+  }
+  document.getElementById('btnNext').disabled = false;
+  // Track products
+  if(HAZARDS[key]) selectedProducts.push(key);
+  // Tick risk
+  const count = selectedProducts.reduce((s,k)=>s+(HAZARDS[k]?.flags?.length||0),0);
+  if(count>0){
+    document.getElementById('risk-ticker').classList.add('visible');
+    document.getElementById('riskCount').textContent=count;
+  }
+}
+
+function toggleMulti(stepId, key, exclusive, el){
+  if(!answers[stepId]) answers[stepId]={};
+  if(exclusive){
+    Object.keys(answers[stepId]).forEach(k=>{ answers[stepId][k]=false; delete answers[stepId][k]; });
+    document.querySelectorAll('.product-card').forEach(c=>c.classList.remove('selected'));
+    answers[stepId][key]=true;
+    el.classList.add('selected');
+  } else {
+    // Clear exclusive if set
+    Object.keys(answers[stepId]).forEach(k=>{
+      const step = activeSteps[quizStepIndex];
+      const opt = step?.options?.find(o=>(o.key||o.label)===k);
+      if(opt?.exclusive){ answers[stepId][k]=false; delete answers[stepId][k]; }
+    });
+    document.querySelectorAll('[data-key="none"]').forEach(c=>c.classList.remove('selected'));
+    delete answers[stepId]['none'];
+    answers[stepId][key] = !answers[stepId][key];
+    el.classList.toggle('selected', answers[stepId][key]);
+    if(answers[stepId][key] && HAZARDS[key] && !selectedProducts.includes(key)){
+      selectedProducts.push(key);
+    } else if(!answers[stepId][key]){
+      selectedProducts = selectedProducts.filter(k=>k!==key);
+    }
+  }
+  // Update risk ticker
+  const count = selectedProducts.reduce((s,k)=>s+(HAZARDS[k]?.flags?.length||0),0);
+  document.getElementById('risk-ticker').classList.toggle('visible', count>0);
+  document.getElementById('riskCount').textContent=count;
+}
+
+function goBack(){
+  if(quizStepIndex > 0){
+    quizStepIndex--;
+    renderStep();
+  } else {
+    showScreen('s-intro');
+    document.getElementById('progressWrap').style.display='none';
+    document.getElementById('progressLabel').style.display='none';
+  }
+}
+
+function goNext(){
+  quizStepIndex++;
+  buildSteps();
+  renderStep();
+}
+
+// ═══ CALCULATION ═══
+function runCalculation(){
+  showScreen('s-calc');
+  document.getElementById('progressWrap').style.display='none';
+  document.getElementById('progressLabel').style.display='none';
+
+  // Compute scores
+  roomScores = {};
+  totalScore = 0;
+  selectedProducts.forEach(key=>{
+    const h = HAZARDS[key];
+    if(!h) return;
+    const room = h.room||'Other';
+    if(!roomScores[room]) roomScores[room]=0;
+    let pts = h.points;
+    if(hasChildren && (room==='Nursery'||room==='Kitchen'||room==='Bathroom')) pts = Math.round(pts * 1.35);
+    roomScores[room] += pts;
+    totalScore += pts;
+  });
+
+  // Normalize 0-100
+  totalScore = Math.min(100, Math.round(totalScore * 1.2));
+  if(selectedProducts.length === 0) totalScore = 8;
+
+  // Animate score ring
+  const arc = document.getElementById('scoreArc');
+  const circumference = 502;
+  const offset = circumference - (totalScore/100)*circumference;
+
+  setTimeout(()=>{
+    let displayed = 0;
+    const interval = setInterval(()=>{
+      displayed += 2;
+      if(displayed >= totalScore){
+        displayed = totalScore;
+        clearInterval(interval);
+        // Show benchmark and preview
+        setTimeout(()=>{
+          document.getElementById('benchmarkBlock').style.display='flex';
+          document.getElementById('previewCallout').style.display='block';
+          document.getElementById('btnGetReport').style.display='block';
+
+          // Generate preview finding
+          const topProduct = selectedProducts.sort((a,b)=>(HAZARDS[b]?.points||0)-(HAZARDS[a]?.points||0))[0];
+          if(topProduct && HAZARDS[topProduct]){
+            const h = HAZARDS[topProduct];
+            document.getElementById('previewText').textContent =
+              `The ${h.room} products you selected commonly contain ingredients flagged by ${h.flags[0]} — this is one of the higher-concern findings in your home. Your full report breaks down all ${Object.keys(roomScores).length} rooms.`;
+          }
+        }, 400);
+      }
+      document.getElementById('bigScore').textContent = displayed;
+      arc.style.strokeDashoffset = circumference - (displayed/100)*circumference;
+    }, 25);
+
+    document.getElementById('calcHeadline').textContent =
+      totalScore > 70 ? 'Your home has a high toxic load.' :
+      totalScore > 45 ? 'Your home has moderate hazard exposure.' :
+      'Your home is below average — good start.';
+
+    document.getElementById('calcSub').textContent =
+      'Matched against IARC, NTP, Prop 65, and ECHA classifications. Full breakdown below.';
+
+  }, 800);
+}
+
+function showOptIn(){
+  showScreen('s-optin');
+}
+
+// ═══ SUBMIT REPORT ═══
+async function submitReport(){
+  const firstName = document.getElementById('optFirstName').value.trim();
+  const lastName  = document.getElementById('optLastName').value.trim();
+  const email     = document.getElementById('optEmail').value.trim();
+  const phone     = document.getElementById('optPhone').value.trim();
+
+  if(!firstName){ alert('Please enter your first name.'); return; }
+  if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ alert('Please enter a valid email address.'); return; }
+
+  const btn = document.querySelector('.submit-btn');
+  btn.textContent = 'Sending your report…';
+  btn.disabled = true;
+
+  const topRoom = Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0]?.[0]||'Unknown';
+  const grade = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
+
+  try {
+    await fetch(SERVER+'/website-contact',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        firstName, lastName,
+        name: firstName+' '+lastName,
+        email, phone,
+        source:'Toxic Home Scorecard',
+        version:'scorecard',
+        tags:['scorecard-lead','start sta email/text follow ups'],
+        customFields:{
+          toxic_load_score: totalScore,
+          score_grade: grade,
+          highest_concern_room: topRoom,
+          has_children: hasChildren,
+        }
+      })
+    });
+  } catch(e){}
+
+  showResults();
+}
+
+// ═══ SHOW RESULTS ═══
+function showResults(){
+  showScreen('s-results');
+
+  const grade = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
+  const headline =
+    totalScore>=80 ? 'Your home has a high toxic load.' :
+    totalScore>=60 ? 'Significant hazards detected.' :
+    totalScore>=40 ? 'Moderate hazard exposure.' :
+    totalScore>=20 ? 'Below-average — room to improve.' :
+    'Low exposure — great start.';
+
+  document.getElementById('resultScore').textContent = totalScore;
+  document.getElementById('resultGrade').textContent = grade;
+  document.getElementById('resultHeadline').textContent = headline;
+
+  if(hasChildren){
+    document.getElementById('resultTagline').textContent =
+      'Child-safety weighting applied — children\'s developing systems receive additional hazard consideration.';
+  }
+
+  // Room bars
+  const roomBars = document.getElementById('roomBars');
+  const maxRoomScore = Math.max(...Object.values(roomScores), 1);
+  let barsHtml = '';
+  Object.entries(roomScores).sort((a,b)=>b[1]-a[1]).forEach(([room, pts])=>{
+    const pct = Math.round((pts/maxRoomScore)*100);
+    barsHtml += `
+      <div class="room-bar">
+        <div class="room-bar-label">
+          <span class="room-bar-name">${room}</span>
+          <span class="room-bar-score">${pts} pts</span>
+        </div>
+        <div class="room-bar-track"><div class="room-bar-fill" style="width:${pct}%"></div></div>
+      </div>`;
+  });
+  roomBars.innerHTML = barsHtml||'<p style="color:var(--muted);font-size:.9rem">No products selected for any room.</p>';
+
+  // Key findings
+  const findingsList = document.getElementById('findingsList');
+  let findingsHtml = '';
+  const topProducts = selectedProducts.sort((a,b)=>(HAZARDS[b]?.points||0)-(HAZARDS[a]?.points||0)).slice(0,4);
+  topProducts.forEach(key=>{
+    const h = HAZARDS[key];
+    if(!h) return;
+    const topFlag = h.flags[0];
+    findingsHtml += `
+      <div class="finding-item">
+        <span class="finding-badge">${h.room}</span>
+        <div>
+          <div class="finding-text">Products in this category commonly contain <strong>${topFlag.split('(')[0].trim()}</strong></div>
+          <div class="finding-source">Source: ${topFlag.match(/\(([^)]+)\)/)?.[1]||'Independent classification'}</div>
+        </div>
+      </div>`;
+  });
+  findingsList.innerHTML = findingsHtml||'<p style="color:var(--muted);font-size:.9rem">No significant findings in your selected products.</p>';
+
+  // Swap recommendation
+  const topRoomEntry = Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0];
+  if(topRoomEntry){
+    const [room, pts] = topRoomEntry;
+    const reducedScore = Math.max(0, totalScore - Math.round(pts*0.85));
+    document.getElementById('swapTitle').textContent = `Your ${room} — Highest Impact`;
+    document.getElementById('swapDesc').textContent =
+      `Switching just your ${room.toLowerCase()} products could significantly reduce your family's daily hazard exposure.`;
+    document.getElementById('swapFrom').textContent = totalScore;
+    document.getElementById('swapTo').textContent = reducedScore;
+  }
+
+  // Generate share card
+  generateShareCard();
+}
+
+// ═══ SHARE CARD ═══
+function generateShareCard(){
+  const canvas = document.getElementById('shareCanvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width=1080; canvas.height=1920;
+
+  // Background gradient
+  const bg = ctx.createLinearGradient(0,0,1080,1920);
+  bg.addColorStop(0,'#0A1B3D');
+  bg.addColorStop(0.6,'#152C63');
+  bg.addColorStop(1,'#0c1435');
+  ctx.fillStyle=bg;
+  ctx.fillRect(0,0,1080,1920);
+
+  // Dot pattern
+  ctx.fillStyle='rgba(255,255,255,0.04)';
+  for(let x=0;x<1080;x+=25) for(let y=0;y<1920;y+=25){
+    ctx.beginPath();ctx.arc(x,y,1.2,0,Math.PI*2);ctx.fill();
+  }
+
+  // Flag stripe top
+  ctx.fillStyle='#C8102E'; ctx.fillRect(0,0,360,18);
+  ctx.fillStyle='#FFFFFF'; ctx.fillRect(360,0,360,18);
+  ctx.fillStyle='#0A1B3D'; ctx.fillRect(720,0,360,18);
+
+  // Brand
+  ctx.fillStyle=document.getElementById('bigScore')?'#FFD700':'#FFD700';
+  ctx.font='bold 36px Inter,sans-serif';
+  ctx.textAlign='center';
+  ctx.fillText('★ SWITCH TO AMERICA ★',540,90);
+
+  // Big score
+  ctx.fillStyle='#FFD700';
+  ctx.font='bold 320px DM Serif Display,serif';
+  ctx.textAlign='center';
+  ctx.fillText(totalScore,540,580);
+
+  // Score label
+  ctx.fillStyle='rgba(255,255,255,0.6)';
+  ctx.font='bold 48px Inter,sans-serif';
+  ctx.fillText('TOXIC LOAD SCORE / 100',540,660);
+
+  // Headline
+  const grade = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
+  ctx.fillStyle='#FFFFFF';
+  ctx.font='bold 72px DM Serif Display,serif';
+  ctx.fillText('Grade: '+grade, 540, 760);
+
+  // Divider
+  ctx.strokeStyle='rgba(255,215,0,0.3)';
+  ctx.lineWidth=2;
+  ctx.beginPath();ctx.moveTo(160,810);ctx.lineTo(920,810);ctx.stroke();
+
+  // Rooms
+  let ry=880;
+  ctx.textAlign='left';
+  Object.entries(roomScores).sort((a,b)=>b[1]-a[1]).slice(0,5).forEach(([room,pts])=>{
+    const pct = Math.min(1, pts/100);
+    // Bar track
+    ctx.fillStyle='rgba(255,255,255,0.1)';
+    ctx.beginPath();ctx.roundRect(160,ry,760,20,10);ctx.fill();
+    // Bar fill
+    const barGrad = ctx.createLinearGradient(160,0,920,0);
+    barGrad.addColorStop(0,'#FFD700');
+    barGrad.addColorStop(1,'#C8102E');
+    ctx.fillStyle=barGrad;
+    ctx.beginPath();ctx.roundRect(160,ry,Math.round(760*pct),20,10);ctx.fill();
+    // Label
+    ctx.fillStyle='rgba(255,255,255,0.8)';
+    ctx.font='600 36px Inter,sans-serif';
+    ctx.fillText(room, 160, ry-10);
+    ry+=80;
+  });
+
+  // Footer
+  ctx.fillStyle='rgba(255,255,255,0.4)';
+  ctx.font='bold 32px Inter,sans-serif';
+  ctx.textAlign='center';
+  ctx.fillText('Get your score at scorecard.switchtoamerica.com',540,1820);
+  ctx.fillStyle='rgba(255,215,0,0.6)';
+  ctx.font='bold 28px Inter,sans-serif';
+  ctx.fillText('Built on IARC · NTP · California Prop 65 · ECHA',540,1870);
+}
+
+function shareToFacebook(){
+  generateShareCard();
+  window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://theshannonnicole.com/home'),'_blank');
+}
+
+function shareCard(){
+  generateShareCard();
+  const canvas = document.getElementById('shareCanvas');
+  const link = document.createElement('a');
+  link.download='my-toxic-home-score.png';
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+}
+
+function copyLink(){
+  navigator.clipboard.writeText('https://theshannonnicole.com/home').then(()=>{
+    const btn = document.querySelector('.share-btn-copy');
+    btn.textContent='✓ Copied!';
+    setTimeout(()=>{ btn.textContent='🔗 Copy Link'; },2000);
+  });
+}
+</script>
+</body>
+</html>
