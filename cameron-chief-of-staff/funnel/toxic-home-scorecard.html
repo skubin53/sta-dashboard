@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>The Toxic Score — Switch to America</title>
+<title>The Family Toxic Scorecard — Switch to America</title>
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room health scorecard.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -423,7 +423,7 @@ html,body{
 
     <div class="intro-tag">Shannon Nicole · Mom · Grandma · Health Advocate</div>
 
-    <h1 class="intro-h1">THE TOXIC<br><span class="hl">SCORE</span></h1>
+    <h1 class="intro-h1">THE FAMILY<br><span class="hl">TOXIC SCORECARD</span></h1>
 
     <p class="intro-sub">What's really in your family's home? A free 3-minute room-by-room scorecard — the honest answer, finally.</p>
 
@@ -865,7 +865,7 @@ function goNext(){
 
 function saveSoft(){
   const email = document.getElementById('sEM').value.trim();
-  if(email) fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:userName||'Scorecard User',source:'Home Truth Scorecard — Partial',tags:['scorecard-partial']})}).catch(()=>{});
+  if(email) fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:userName||'Scorecard User',source:'Family Toxic Scorecard — Partial',tags:['scorecard-partial']})}).catch(()=>{});
   skipSoft();
 }
 function skipSoft(){ stepIdx++; buildActive(); const n=activeSteps[stepIdx]; if(!n){runCalc();return;} renderStep(); showScreen('s-quiz'); }
