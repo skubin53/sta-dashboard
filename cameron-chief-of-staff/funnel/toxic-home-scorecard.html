@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Home Truth — Switch to America</title>
+<title>The Toxic Score — Switch to America</title>
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room health scorecard.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,44 +57,46 @@ html,body{
 ══════════════════════════ */
 #s-intro{background:var(--navy);position:relative;overflow:hidden;align-items:center;justify-content:flex-start}
 
-/* Real flag waving behind content */
+/* American flag — visible but lets text read over it */
 .flag-wave{
   position:absolute;top:0;left:0;right:0;bottom:0;
-  opacity:.15;pointer-events:none;overflow:hidden;
+  pointer-events:none;overflow:hidden;
 }
-/* 13 stripes */
+/* Stripes — more visible */
 .flag-wave .stripes{
-  width:100%;height:100%;
+  position:absolute;right:0;top:0;bottom:0;
+  width:65%;
   background:repeating-linear-gradient(
     to bottom,
-    #B22234 0,#B22234 7.69%,
-    #fff 7.69%,#fff 15.38%,
-    #B22234 15.38%,#B22234 23.07%,
-    #fff 23.07%,#fff 30.76%,
-    #B22234 30.76%,#B22234 38.45%,
-    #fff 38.45%,#fff 46.14%,
-    #B22234 46.14%,#B22234 53.83%,
-    #fff 53.83%,#fff 61.52%,
-    #B22234 61.52%,#B22234 69.21%,
-    #fff 69.21%,#fff 76.9%,
-    #B22234 76.9%,#B22234 84.59%,
-    #fff 84.59%,#fff 92.28%,
-    #B22234 92.28%,#B22234 100%
+    rgba(178,34,52,0.35) 0,rgba(178,34,52,0.35) 7.69%,
+    rgba(255,255,255,0.12) 7.69%,rgba(255,255,255,0.12) 15.38%,
+    rgba(178,34,52,0.35) 15.38%,rgba(178,34,52,0.35) 23.07%,
+    rgba(255,255,255,0.12) 23.07%,rgba(255,255,255,0.12) 30.76%,
+    rgba(178,34,52,0.35) 30.76%,rgba(178,34,52,0.35) 38.45%,
+    rgba(255,255,255,0.12) 38.45%,rgba(255,255,255,0.12) 46.14%,
+    rgba(178,34,52,0.35) 46.14%,rgba(178,34,52,0.35) 53.83%,
+    rgba(255,255,255,0.12) 53.83%,rgba(255,255,255,0.12) 61.52%,
+    rgba(178,34,52,0.35) 61.52%,rgba(178,34,52,0.35) 69.21%,
+    rgba(255,255,255,0.12) 69.21%,rgba(255,255,255,0.12) 76.9%,
+    rgba(178,34,52,0.35) 76.9%,rgba(178,34,52,0.35) 84.59%,
+    rgba(255,255,255,0.12) 84.59%,rgba(255,255,255,0.12) 92.28%,
+    rgba(178,34,52,0.35) 92.28%,rgba(178,34,52,0.35) 100%
   );
 }
-/* Canton / blue field */
+/* Blue canton with stars */
 .flag-wave .canton{
   position:absolute;top:0;left:0;
-  width:40%;height:53.85%;
-  background:#3C3B6E;
+  width:40%;height:46%;
+  background:rgba(10,27,62,0.6);
+  display:flex;flex-wrap:wrap;
+  align-items:center;justify-content:center;
+  gap:6px;padding:10px;
 }
-/* Wave animation */
-@keyframes wave{
-  0%,100%{transform:skewX(0deg) scaleX(1)}
-  25%{transform:skewX(2deg) scaleX(1.015)}
-  75%{transform:skewX(-2deg) scaleX(.985)}
+.flag-wave .canton::after{
+  content:'★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★';
+  font-size:.55rem;color:rgba(255,255,255,0.5);
+  letter-spacing:3px;line-height:1.8;text-align:center;
 }
-.flag-wave{animation:wave 4s ease-in-out infinite}
 
 .intro-inner{
   position:relative;z-index:2;
@@ -421,7 +423,7 @@ html,body{
 
     <div class="intro-tag">Shannon Nicole · Mom · Grandma · Health Advocate</div>
 
-    <h1 class="intro-h1">HOME<br><span class="hl">TRUTH</span></h1>
+    <h1 class="intro-h1">THE TOXIC<br><span class="hl">SCORE</span></h1>
 
     <p class="intro-sub">What's really in your family's home? A free 3-minute room-by-room scorecard — the honest answer, finally.</p>
 
@@ -870,13 +872,14 @@ function skipSoft(){ stepIdx++; buildActive(); const n=activeSteps[stepIdx]; if(
 
 // ── Calculation ──
 function runCalc(){
+  try {
   showScreen('s-calc');
-  document.getElementById('pBar').style.display='none';
-  document.getElementById('cH').innerHTML = `Analyzing ${userName?userName+'\'s':'your'} home…`;
-  const rptEl = document.getElementById('btnRpt');
-  rptEl.innerHTML = `📬 Get ${userName?userName+'\'s':'My'} Full Report →`;
-  if(userName && document.getElementById('cName')) document.getElementById('cName').textContent = userName+'\'s';
-  if(userName && document.getElementById('rptName')) document.getElementById('rptName').textContent = userName+'\'s';
+  var pBar = document.getElementById('pBar');
+  if(pBar) pBar.style.display='none';
+  var cH = document.getElementById('cH');
+  if(cH) cH.textContent = 'Analyzing ' + (userName ? userName+"'s" : 'your') + ' home…';
+  var rptEl = document.getElementById('btnRpt');
+  if(rptEl) rptEl.textContent = '📬 Get ' + (userName ? userName+"'s" : 'My') + ' Full Report →';
 
   roomScores = {}; totalScore = 0;
   STEPS.forEach(s => {
@@ -903,12 +906,14 @@ function runCalc(){
       arc.style.strokeDashoffset=circ-(disp/100)*circ;
       if(disp>=totalScore){ clearInterval(iv); setTimeout(showCalcDetails,400); }
     },28);
-    document.getElementById('cH').textContent =
-      totalScore>=70?`High toxic load detected.`:
-      totalScore>=45?`Moderate hazard exposure found.`:
-      totalScore>=20?`Below average — good choices.`:
-      `Low exposure — you\'re ahead of the curve!`;
+    var cH2 = document.getElementById('cH');
+    if(cH2) cH2.textContent =
+      totalScore>=70?'High toxic load detected.':
+      totalScore>=45?'Moderate hazard exposure found.':
+      totalScore>=20?'Below average — good choices.':
+      'Low exposure — you\'re ahead of the curve!';
   },700);
+  } catch(e){ console.error('runCalc error:', e); showScreen('s-calc'); }
 }
 
 function showCalcDetails(){
