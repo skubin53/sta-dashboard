@@ -648,8 +648,14 @@ const BRAND_DB = {
   // Vitamins / supplements / protein powder
   supplements:{ centrum:8,caltrate:8,'one a day':8,'nature made':7,'nature\'s bounty':7,'gummy':7,'gummies':7,orgain:5,vega:5,'garden of life':4,'ritual':4,thorne:3,sta:0,'switch to america':0,'peak performance':0,'proflex':0,'pro flex':0,'vitality':0,'florify':0,'replenex':0,'provex':0,
     'optimum nutrition':8,'gold standard':8,'muscle milk':8,'premier protein':8,'isopure':7,'naked nutrition':4,vega:4 },
-  // General default
-  general:{}
+  // General clean terms — if someone types these, score 0
+  general:{
+    'none':0,'n/a':0,'nothing':0,'no':0,'don\'t use':0,'do not use':0,'not applicable':0,
+    'clean':0,'natural':0,'organic':0,'homemade':0,'diy':0,'make my own':0,'i make':0,
+    'plant-based':0,'plant based':0,'non-toxic':0,'nontoxic':0,'toxin free':0,'toxin-free':0,
+    'chemical free':0,'chemical-free':0,'fragrance free':0,'unscented':0,'pure':0,
+    'filtered water':0,'tap filtered':0,'well water':0,'spring water':2,
+  }
 };
 
 // Track unscored (empty) fields for report
