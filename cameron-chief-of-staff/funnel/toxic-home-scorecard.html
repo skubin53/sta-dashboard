@@ -710,8 +710,17 @@ function renderStep(){
   let h='';
 
   if(userName) h+=`<div class="q-hi">Hi ${userName},</div>`;
-  const roomCls='room-'+(step.room||'').toLowerCase().replace(/[^a-z]/g,'-').replace(/-+/g,'-').replace(/-$/,'');
-  h+=`<div class="q-room ${roomCls}"><span>${step.icon||''}</span>${step.room||''}</div>`;
+  const roomColors = {
+    'kitchen':'#FF9900','kitchen — cleaning products':'#FF9900','kitchen — food & nutrition':'#FF9900',
+    'laundry room':'#60A5FA','bathroom':'#F472B6','kids & baby':'#86EFAC','kids & baby':'#86EFAC',
+    'water':'#67E8F9','home air':'#C4B5FD','medications & health products':'#FCA5A5',
+    'supplements & meds':'#FDE68A','welcome':'#FF9900','your household':'#60A5FA',
+  };
+  const roomKey = (step.room||'').toLowerCase();
+  const roomColor = roomColors[roomKey] || '#FF9900';
+  h+=`<div class="q-room" style="color:${roomColor};font-size:.75rem;padding:6px 12px;background:rgba(255,255,255,.06);border-radius:50px;display:inline-flex;align-items:center;gap:6px;margin-bottom:10px;border:1px solid ${roomColor}30;">
+    <span>${step.icon||''}</span>${step.room||''}
+  </div>`;
   h+=`<div class="q-text">${step.q}</div>`;
   if(step.sub) h+=`<div class="q-sub">${step.sub}</div>`;
 
