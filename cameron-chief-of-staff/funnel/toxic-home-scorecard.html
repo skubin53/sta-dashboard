@@ -200,21 +200,21 @@ html,body{
   border-radius:12px;padding:13px;margin-bottom:10px;
 }
 .brand-group label{
-  display:block;font-size:.68rem;font-weight:900;
+  display:block;font-size:.68rem;font-weight:800;
   letter-spacing:.1em;text-transform:uppercase;
-  color:var(--orange);margin-bottom:7px;
+  color:rgba(255,255,255,.85);margin-bottom:7px;
 }
 .brand-inp{
   width:100%;padding:12px 14px;
-  border:2px solid rgba(255,255,255,.15);
+  border:1.5px solid rgba(255,255,255,.3);
   border-radius:10px;
-  background:rgba(255,255,255,.08);color:#fff;
-  font-family:inherit;font-size:.9rem;
-  transition:border-color .15s;
+  background:rgba(255,255,255,.1);color:#fff;
+  font-family:inherit;font-size:.92rem;font-weight:500;
+  transition:border-color .15s,background .15s;
 }
-.brand-inp::placeholder{color:rgba(255,255,255,.25)}
-.brand-inp:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.12)}
-.skip-note{font-size:.68rem;color:rgba(255,255,255,.3);margin-top:5px;font-style:italic}
+.brand-inp::placeholder{color:rgba(255,255,255,.45);font-weight:400}
+.brand-inp:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.14)}
+.skip-note{font-size:.68rem;color:rgba(255,255,255,.5);margin-top:5px;font-style:italic}
 
 /* Multi-select on blue (for "extras" type questions) */
 .extras-list{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
@@ -232,12 +232,13 @@ html,body{
 .ext-em{font-size:1.25rem;flex-shrink:0}
 .ext-body{flex:1}
 .ext-lbl{font-size:.85rem;font-weight:700;color:#fff;line-height:1.25}
-.ext-det{font-size:.68rem;color:rgba(255,255,255,.45);margin-top:2px;line-height:1.3}
+.ext-det{font-size:.7rem;color:rgba(255,255,255,.6);margin-top:2px;line-height:1.35}
 .ext-ind{
-  width:22px;height:22px;border-radius:50%;
-  border:2px solid rgba(255,255,255,.2);flex-shrink:0;
+  width:24px;height:24px;border-radius:50%;
+  border:2px solid rgba(255,255,255,.5);flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
   font-size:.7rem;font-weight:900;color:transparent;transition:all .15s;
+  background:rgba(255,255,255,.06);
 }
 .ext-item.sel-orange .ext-ind{background:var(--orange);border-color:var(--orange);color:#0F1111}
 .ext-item.sel-red .ext-ind{background:var(--red);border-color:var(--red);color:#fff}
@@ -310,7 +311,7 @@ html,body{
 .ob{padding:16px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px}
 .fg{margin-bottom:9px}
-.fg label{display:block;font-size:.68rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:5px}
+.fg label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:5px}
 .fg input{width:100%;padding:11px 13px;border:2px solid rgba(255,255,255,.15);border-radius:9px;font-family:inherit;font-size:.88rem;color:#fff;background:rgba(255,255,255,.08);transition:border-color .15s}
 .fg input:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.12)}
 .fg input::placeholder{color:rgba(255,255,255,.28)}
@@ -351,9 +352,9 @@ html,body{
 .sh-btns{display:flex;gap:7px;justify-content:center;flex-wrap:wrap}
 .sb{display:inline-flex;align-items:center;gap:5px;padding:9px 15px;border-radius:50px;font-size:.75rem;font-weight:800;font-family:inherit;cursor:pointer;border:none;transition:all .15s}
 .sb:hover{filter:brightness(1.06);transform:translateY(-1px)}
-.sb-fb{background:#1877F2;color:#fff}
-.sb-dl{background:var(--orange);color:#0F1111}
-.sb-cp{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
+/* Unified share button style — same base, just icon color differs */
+.sb-fb,.sb-dl,.sb-cp{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
+.sb:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.4)}
 .fc{background:linear-gradient(120deg,var(--red),#E8172F 65%,#FF5733 140%);border-radius:14px;padding:20px 16px;text-align:center;margin-bottom:10px}
 .fc h2{font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:5px;line-height:1.2}
 .fc p{font-size:.78rem;color:rgba(255,255,255,.9);font-weight:600;margin-bottom:13px;line-height:1.45}
@@ -807,7 +808,8 @@ function pct(){ return activeSteps.length?Math.round((stepIdx/activeSteps.length
 function upd(){
   const p=pct();
   document.getElementById('pFill').style.width=p+'%';
-  document.getElementById('pLbl').textContent=`Step ${stepIdx} of ${activeSteps.length} — ${p}% complete`;
+  const display = Math.max(1, stepIdx + 1);
+  document.getElementById('pLbl').textContent=`Step ${display} of ${activeSteps.length} — ${p}% complete`;
 }
 
 function startQuiz(){
@@ -1033,7 +1035,10 @@ function runCalc(){
     setTimeout(()=>{
       const iv=setInterval(()=>{
         disp=Math.min(disp+2,totalScore);
-        document.getElementById('cNum').textContent=disp;
+        var numEl=document.getElementById('cNum');
+        numEl.textContent=disp;
+        // Score number adopts zone color
+        numEl.style.color=disp<=30?'#1F8A70':disp<=60?'#E8A317':'#C8102E';
         arc.style.strokeDashoffset=circ-(disp/100)*circ;
         if(disp>=totalScore){ clearInterval(iv); setTimeout(showCalcDetails,400); }
       },28);
