@@ -7,7 +7,7 @@
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room scorecard.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{
@@ -46,26 +46,144 @@ html,body{
 .pf{height:100%;border-radius:50px;background:linear-gradient(90deg,var(--orange),var(--red));transition:width .4s ease}
 .plb{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:center}
 
-/* ══ INTRO ══ */
+/* ══ INTRO — Shannon's mockup design ══ */
 #s-intro{
-  background:var(--navy);
-  position:relative;overflow:hidden;
-  align-items:center;
+  background:
+    radial-gradient(120% 55% at 50% 12%, rgba(70,110,170,.32) 0%, rgba(70,110,170,0) 55%),
+    radial-gradient(90% 40% at 50% 46%, rgba(225,90,40,.10) 0%, rgba(225,90,40,0) 60%),
+    radial-gradient(140% 100% at 50% 100%, #0a2240 0%, #06152b 80%);
+  position:relative;overflow:hidden;align-items:center;
 }
-/* Watermark flag — hidden, solid blue */
+#s-intro::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
 .flag-wm{display:none}
-/* Red stripe top */
 .rtop{
-  position:absolute;top:0;left:0;right:0;height:7px;
-  background:linear-gradient(90deg,var(--red) 33%,#fff 33%,#fff 66%,var(--navy) 66%);
-  z-index:10;border-bottom:1px solid rgba(255,255,255,0.1);
+  position:absolute;top:0;left:0;right:0;height:5px;
+  background:rgba(255,255,255,.06);z-index:5;
 }
-
+.rtop::before{
+  content:'';display:block;height:100%;width:9%;
+  background:linear-gradient(90deg,var(--orange),var(--red));
+}
 .intro-inner{
   position:relative;z-index:2;
   display:flex;flex-direction:column;align-items:center;
-  padding:32px 24px 32px;width:100%;max-width:460px;margin:0 auto;
-  justify-content:center;flex:1;
+  padding:64px 26px 40px;width:100%;max-width:430px;margin:0 auto;
+  justify-content:center;flex:1;text-align:center;
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+}
+
+/* Kicker badge */
+.intro-kicker{
+  font-size:11px;letter-spacing:.22em;font-weight:800;text-transform:uppercase;
+  color:#9fb1cc;border:1px solid rgba(159,177,204,.28);border-radius:999px;
+  padding:7px 15px;margin-bottom:22px;backdrop-filter:blur(2px);
+  opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .05s forwards;
+}
+@keyframes rise{to{opacity:1;transform:none;}}
+
+/* Headline */
+.intro-h1-new{
+  font-family:'Anton',sans-serif;font-weight:400;font-size:54px;line-height:.92;
+  letter-spacing:.01em;text-transform:uppercase;color:#fff;
+  text-shadow:0 2px 30px rgba(0,0,0,.5);margin-bottom:0;
+}
+.intro-h1-l1{opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .12s forwards;}
+.intro-h1-l2{opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .18s forwards;}
+.intro-hide{
+  background:linear-gradient(95deg,var(--orange),var(--red));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 22px rgba(225,90,40,.55));
+}
+
+/* Scanner stage */
+.scan-stage-new{
+  position:relative;width:100%;max-width:340px;margin:30px 0 26px;
+  padding:22px 8px 14px;
+  opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .30s forwards;
+}
+.home-svg{position:absolute;left:50%;top:4px;transform:translateX(-50%);width:300px;height:100px;opacity:.14;z-index:0;}
+.iconrow-new{
+  position:relative;z-index:2;display:flex;justify-content:space-between;
+  align-items:flex-end;padding:0 4px;height:64px;
+}
+.spi{position:relative;width:40px;height:48px;display:flex;align-items:flex-end;justify-content:center;}
+.spi svg.prod{width:34px;height:42px;opacity:.55;filter:grayscale(.55) brightness(.85);transition:opacity .3s,filter .3s,transform .3s;}
+.spi.lit svg.prod{opacity:1;filter:grayscale(0) brightness(1) drop-shadow(0 3px 6px rgba(0,0,0,.4));transform:translateY(-3px);}
+.spi.flagged svg.prod{filter:grayscale(0) brightness(1) drop-shadow(0 0 9px rgba(225,29,42,.7));}
+.sbadge{position:absolute;top:-13px;left:50%;transform:translateX(-50%) scale(0) translateY(3px);transition:transform .24s cubic-bezier(.2,1.7,.4,1);z-index:4;}
+.spi.flagged .sbadge{transform:translateX(-50%) scale(1) translateY(0);}
+.sbadge svg{width:17px;height:17px;display:block;filter:drop-shadow(0 0 6px rgba(225,29,42,.85));}
+.sbeam{position:absolute;top:8px;bottom:32px;width:46px;transform:translateX(-50%);z-index:1;opacity:0;left:0;
+  background:radial-gradient(60% 100% at 50% 50%, rgba(225,29,42,.26), rgba(225,29,42,0));}
+.sbeam::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);
+  background:linear-gradient(180deg,transparent,#ff3b46,transparent);box-shadow:0 0 16px 5px rgba(225,29,42,.55);}
+.sstatus{
+  margin-top:16px;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:#9fb1cc;min-height:16px;transition:color .3s;
+  font-family:'Hanken Grotesk',sans-serif;
+}
+.sstatus .swarn{display:inline-block;width:14px;height:14px;line-height:14px;border-radius:50%;
+  background:var(--red);color:#fff;font-size:10px;text-align:center;margin-right:5px;transform:translateY(1px);}
+.sstatus.alert{color:#ffd9b0;}
+
+/* Trust row */
+.intro-trust-new{
+  display:flex;align-items:center;gap:12px;text-align:left;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;padding:10px 16px 10px 10px;margin-bottom:26px;
+  max-width:340px;width:100%;
+  opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .42s forwards;
+}
+.intro-trust-new img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:center top;
+  border:2px solid var(--orange);background:#22364f;flex:none;}
+.trust-nm{font-size:11.5px;font-weight:800;letter-spacing:.05em;color:var(--orange);text-transform:uppercase;line-height:1.3;}
+.trust-tg{font-size:12.5px;font-style:italic;color:#d8e2f0;margin-top:3px;}
+
+/* Field */
+.intro-field-new{
+  width:100%;max-width:340px;text-align:left;
+  opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .50s forwards;
+}
+.intro-field-new label{display:block;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:9px;}
+.intro-field-new input{
+  width:100%;padding:16px 18px;border-radius:14px;
+  background:rgba(255,255,255,.07);border:1.5px solid rgba(159,177,204,.32);
+  color:#fff;font-size:16px;font-family:'Hanken Grotesk',inherit;outline:none;transition:border .2s,background .2s;
+}
+.intro-field-new input::placeholder{color:#8ea3c2;}
+.intro-field-new input:focus{border-color:var(--orange);background:rgba(255,255,255,.1);}
+
+/* CTA */
+.intro-cta-new{
+  width:100%;max-width:340px;margin-top:16px;padding:18px;
+  border:none;border-radius:16px;cursor:pointer;
+  font-family:'Hanken Grotesk',inherit;font-size:17px;font-weight:800;color:#fff;
+  background:linear-gradient(180deg,#f02635,#b9111d);
+  box-shadow:0 10px 30px -6px rgba(225,29,42,.6);
+  opacity:0;transform:translateY(14px);
+  animation:rise .7s cubic-bezier(.2,.7,.2,1) .56s forwards, ctaPulse 2.8s ease-in-out 1.4s infinite;
+}
+.intro-cta-new:active{transform:scale(.985);}
+
+/* Chips */
+.intro-chips-new{
+  display:flex;gap:8px;margin-top:16px;
+  opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .66s forwards;
+}
+.intro-chip{
+  display:flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;
+  color:#c6d4e8;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:7px 12px;
+  font-family:'Hanken Grotesk',sans-serif;
+}
+.intro-chip svg{width:12px;height:12px;stroke:var(--orange);fill:none;stroke-width:2;}
+.intro-fine{
+  margin-top:16px;font-size:11px;letter-spacing:.04em;color:#7e92b0;
+  opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .74s forwards;
+  font-family:'Hanken Grotesk',sans-serif;
 }
 
 /* APP NAME at the very top */
@@ -375,67 +493,75 @@ html,body{
 
 <!-- ═══ INTRO ═══ -->
 <div class="screen active" id="s-intro">
-  <div class="flag-wm" aria-hidden="true"><div class="stripes"></div><div class="canton"></div></div>
+  <div class="flag-wm" aria-hidden="true"></div>
   <div class="rtop"></div>
   <div class="intro-inner">
 
-    <!-- Kicker badge above headline -->
-    <div style="font-size:.62rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.15);border-radius:50px;padding:5px 14px;margin-bottom:12px;animation:fadeUp .5s ease both">THE FAMILY HOME TOXIC SCORECARD</div>
+    <div class="intro-kicker rise">The Family Home Toxic Scorecard</div>
 
-    <!-- Headline with depth glow -->
-    <div style="position:relative;text-align:center;margin-bottom:10px;animation:headlineIn .6s ease .1s both">
-      <div style="position:absolute;inset:-20px;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(200,16,46,.18),transparent);pointer-events:none;border-radius:50%"></div>
-      <h1 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,12vw,4.2rem);color:#fff;line-height:.93;letter-spacing:.04em;position:relative">
-        WHAT'S <span style="background:linear-gradient(90deg,#E8A317,#C8102E);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 12px rgba(232,163,23,.45))">HIDING</span><br>IN YOUR HOME?
-      </h1>
+    <h1 class="intro-h1-new">
+      <span class="intro-h1-l1 rise" style="display:block">What's <span class="intro-hide">Hiding</span></span>
+      <span class="intro-h1-l2 rise" style="display:block">In Your Home?</span>
+    </h1>
+
+    <!-- SVG Scanner stage -->
+    <div class="scan-stage-new rise">
+      <svg class="home-svg" viewBox="0 0 300 100" aria-hidden="true">
+        <path d="M30 96 V46 L150 10 L270 46 V96" fill="none" stroke="#e3b341" stroke-width="2"/>
+        <path d="M110 96 V66 H140 V96 M170 72 h28 v24 h-28z" fill="none" stroke="#e3b341" stroke-width="2"/>
+      </svg>
+      <div class="iconrow-new" id="iconrow">
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><rect x="9" y="1.5" width="6" height="4" rx="1" fill="#c85e78"/><path d="M8 9c0-1.6 1.3-3 3-3h2c1.7 0 3 1.4 3 3v17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="#e58aa0"/><rect x="9" y="15" width="6" height="4" rx="1" fill="#fff"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><rect x="7" y="10" width="10" height="18" rx="1.5" fill="#f0e6cf"/><rect x="7" y="10" width="10" height="3" rx="1.5" fill="#e3d4b3"/><path d="M12 10V7" stroke="#7a5a32" stroke-width="1.3"/><path d="M12 7c1.7-1.5 1.7-3.2 0-4.6-1.7 1.1-1.7 3.1 0 4.6z" fill="#f6962a"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><path d="M4 10l8-3.5 8 3.5-8 3.5-8-3.5z" fill="#cf9759"/><path d="M4 10v9l8 3.5V13.5z" fill="#b9783f"/><path d="M20 10v9l-8 3.5V13.5z" fill="#a96b37"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><path d="M8 12h8v14a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#5fb3c7"/><rect x="8" y="12" width="8" height="4" fill="#3f95aa"/><path d="M8 12V8h5l5-3v2l-5 1v4z" fill="#7a8aa0"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><ellipse cx="10" cy="18" rx="8.5" ry="5.2" fill="#3a4049"/><rect x="17" y="17" width="7.5" height="2.4" rx="1.2" fill="#7a4a2a" transform="rotate(-3 17 18)"/></svg>
+        </div>
+      </div>
+      <div class="sbeam" id="sbeam"></div>
+      <div class="sstatus" id="sstatus">Scanning your home…</div>
     </div>
 
-    <!-- Hero scan — LIVE animation -->
-    <div id="scanStage" style="position:relative;width:100%;max-width:320px;margin:0 auto 14px;animation:fadeUp .5s ease .25s both;overflow:hidden;padding:10px 0">
-      <!-- Product icons -->
-      <div style="display:flex;justify-content:center;gap:16px;position:relative;z-index:2">
-        <div class="s-icon" data-flag="1" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🧴<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
-        <div class="s-icon" data-flag="0" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🕯️<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
-        <div class="s-icon" data-flag="1" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">📦<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
-        <div class="s-icon" data-flag="0" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🧹<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
-        <div class="s-icon" data-flag="1" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">☕<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
-        <div class="s-icon" data-flag="0" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🍳<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
-      </div>
-      <!-- Scan beam -->
-      <div id="scanBeam" style="position:absolute;top:0;bottom:0;left:-30%;width:28%;background:linear-gradient(90deg,transparent,rgba(200,16,46,.35),transparent);pointer-events:none;transition:left .18s linear;z-index:3"></div>
-      <!-- Status label -->
-      <div id="scanLbl" style="text-align:center;font-size:.66rem;color:rgba(255,255,255,.35);margin-top:8px;letter-spacing:.1em;text-transform:uppercase;transition:color .3s">Scanning your home's products…</div>
-    </div>
-
-    <!-- Trust row: photo + name + tagline in ONE compact block -->
-    <div style="display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:50px;padding:10px 16px 10px 10px;margin-bottom:16px;max-width:360px;animation:fadeUp .5s ease .35s both">
-      <div style="width:44px;height:44px;border-radius:50%;border:2px solid var(--orange);overflow:hidden;flex-shrink:0">
-        <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon" style="width:100%;height:100%;object-fit:cover;object-position:center top"/>
-      </div>
+    <div class="intro-trust-new rise">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole"/>
       <div>
-        <div style="font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)">Shannon Nicole · Mom · Grandma</div>
-        <div style="font-size:.7rem;color:rgba(255,255,255,.55);font-style:italic;margin-top:1px">"Built by a Grandma who got tired of guessing."</div>
+        <div class="trust-nm">Shannon Nicole · Mom · Grandma</div>
+        <div class="trust-tg">"Built by a Grandma who got tired of guessing."</div>
       </div>
     </div>
 
-    <!-- Name input -->
-    <div class="nb" style="animation:fadeUp .5s ease .45s both">
-      <label>Your first name</label>
-      <input type="text" id="firstName" placeholder="Enter your first name…" autocomplete="given-name" oninput="userName=this.value.trim()"/>
+    <div class="intro-field-new rise">
+      <label for="firstName">Your First Name</label>
+      <input id="firstName" type="text" placeholder="Enter your first name…" autocomplete="given-name" oninput="userName=this.value.trim()"/>
     </div>
 
-    <!-- CTA with credibility chip -->
-    <div style="width:100%;max-width:360px;animation:fadeUp .5s ease .55s both">
-      <button class="big-cta" onclick="startQuiz()" style="animation:ctaPulse 2.5s ease-in-out infinite 1.8s">Find My Family's Toxic Score →</button>
-      <!-- Reassurance chips -->
-      <div style="display:flex;justify-content:center;gap:8px;margin-top:10px;flex-wrap:wrap">
-        <span style="font-size:.68rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border-radius:50px;padding:4px 10px;border:1px solid rgba(255,255,255,.1)">✓ Free</span>
-        <span style="font-size:.68rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border-radius:50px;padding:4px 10px;border:1px solid rgba(255,255,255,.1)">⏱ 3 min</span>
-        <span style="font-size:.68rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border-radius:50px;padding:4px 10px;border:1px solid rgba(255,255,255,.1)">🔒 No pressure</span>
-      </div>
-      <!-- Credibility chip -->
-      <div style="text-align:center;margin-top:10px;font-size:.66rem;color:rgba(255,255,255,.3);letter-spacing:.06em">Scored against independent safety data</div>
+    <button class="intro-cta-new" onclick="startQuiz()">Find My Family's Toxic Score →</button>
+
+    <div class="intro-chips-new">
+      <span class="intro-chip"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free</span>
+      <span class="intro-chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span>
+      <span class="intro-chip"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No pressure</span>
     </div>
+
+    <div class="intro-fine rise">Scored against independent safety data</div>
 
   </div>
 </div>
@@ -1267,61 +1393,52 @@ function showResults(){
   genCard();
 }
 
-// ── LIVE SCAN ANIMATION ──────────────────────────────────────────────
+// ── LIVE SCAN ANIMATION (rAF version — Shannon's design) ──────────────
 function runScan(){
-  var icons = document.querySelectorAll('.s-icon');
-  var beam = document.getElementById('scanBeam');
-  var lbl = document.getElementById('scanLbl');
+  var icons = Array.from(document.querySelectorAll('#iconrow .spi'));
+  var beam = document.getElementById('sbeam');
+  var status = document.getElementById('sstatus');
   if(!beam || !icons.length) return;
 
-  var i = 0;
-  var flagCount = 0;
+  var FLAGGED = [0,2,5];
+  var SWEEP = 3400, HOLD = 1500, CYCLE = SWEEP + HOLD;
+  var start = performance.now();
 
-  function step(){
-    if(i < icons.length){
-      // Move beam to icon position
-      var pct = (i / icons.length) * 100;
-      beam.style.left = pct + '%';
-
-      // Brighten icon
-      icons[i].style.opacity = '1';
-      icons[i].style.filter = 'grayscale(0)';
-
-      // Flag if needed
-      if(icons[i].getAttribute('data-flag') === '1'){
-        var flag = icons[i].querySelector('.s-flag');
-        if(flag){ flag.style.display = 'block'; flagCount++; }
+  function frame(now){
+    var tt = (now - start) % CYCLE;
+    if(tt < 50) icons.forEach(function(p){ p.classList.remove('lit','flagged'); });
+    if(tt < SWEEP){
+      var prog = tt / SWEEP;
+      beam.style.opacity = 1;
+      beam.style.left = (prog * 100) + '%';
+      var found = 0;
+      icons.forEach(function(p,i){
+        var at = (i + 0.5) / icons.length;
+        if(prog >= at){
+          p.classList.add('lit');
+          if(FLAGGED.includes(i)){ p.classList.add('flagged'); found++; }
+        }
+      });
+      status.classList.toggle('alert', found > 0);
+      if(found > 0){
+        status.innerHTML = '<span class="swarn">!</span>' + found + ' concern' + (found>1?'s':'') + ' found…';
+      } else {
+        status.textContent = 'Scanning your home…';
       }
-
-      i++;
-      setTimeout(step, 220);
     } else {
-      // Scan complete
-      beam.style.left = '110%';
-      lbl.textContent = '⚠ ' + flagCount + ' concerns detected in a typical home';
-      lbl.style.color = '#C8102E';
-
-      // Reset after 2.8s and loop
-      setTimeout(function(){
-        icons.forEach(function(ic){
-          ic.style.opacity = '.25';
-          ic.style.filter = 'grayscale(1)';
-          var f = ic.querySelector('.s-flag');
-          if(f) f.style.display = 'none';
-        });
-        beam.style.left = '-30%';
-        lbl.textContent = 'Scanning your home\'s products…';
-        lbl.style.color = 'rgba(255,255,255,.35)';
-        i = 0; flagCount = 0;
-        setTimeout(step, 800);
-      }, 2800);
+      beam.style.opacity = 0;
+      icons.forEach(function(p,i){
+        p.classList.add('lit');
+        if(FLAGGED.includes(i)) p.classList.add('flagged');
+      });
+      status.classList.add('alert');
+      status.innerHTML = '<span class="swarn">!</span>3 concerns flagged in a typical home';
     }
+    requestAnimationFrame(frame);
   }
-
-  setTimeout(step, 1200); // Start 1.2s after load
+  requestAnimationFrame(frame);
 }
 
-// Start scan when intro screen is visible
 window.addEventListener('load', function(){ setTimeout(runScan, 400); });
 
 function genCard(){
