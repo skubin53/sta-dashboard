@@ -683,7 +683,12 @@ const STEPS = [
    answers:[{lbl:'Yes — absolutely',pts:0},{lbl:'No — I trust the brands',pts:0}],auto:true},
   // Segment
   {id:'seg',room:'Your Household',icon:'👨‍👩‍👧',type:'single',q:'Who are you building a healthier home for?',
-   answers:[{lbl:'Just me',em:'🙋',flag:null},{lbl:'Me & my partner',em:'💑',flag:null},{lbl:'My whole family',em:'👨‍👩‍👧',flag:'family'},{lbl:'My kids / a baby',em:'👶',flag:'baby'}]},
+   answers:[
+     {lbl:'Just me',em:'🙋',flag:null},
+     {lbl:'Me & my partner',em:'💑',flag:null},
+     {lbl:'My family (school-age kids or older)',em:'👨‍👩‍👧',flag:'family'},
+     {lbl:'My family includes babies or toddlers',em:'👶',flag:'baby'},
+   ]},
 
   // Kitchen Page A — Cleaning Products
   {id:'kitchen_products',room:'Kitchen — Cleaning Products',icon:'🧹',type:'brand_multi',q:'What cleaning products are in your kitchen?',sub:'Enter the brand for each. Leave blank if you don\'t use it.',room_lbl:'Kitchen',
@@ -789,7 +794,7 @@ const STEPS = [
 
 function buildActive(){
   activeSteps = STEPS.filter(s => {
-    if(s.conditional==='baby') return hasBaby||hasFamily;
+    if(s.conditional==='baby') return hasBaby; // Only show for families with babies/toddlers
     return true;
   });
 }
