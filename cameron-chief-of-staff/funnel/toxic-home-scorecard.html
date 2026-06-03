@@ -491,7 +491,7 @@ html,body{
   <div id="scoreLbl" style="font-size:.72rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;padding:5px 14px;border-radius:50px;display:inline-block;display:none"></div>
 
   <h2 class="calc-h" id="cH">Analyzing your home…</h2>
-  <p class="calc-sub" id="cSub">Scoring the brands you use against independent safety data…</p>
+  <p class="calc-sub" id="cSub">Checking every product against independent safety research…</p>
 
   <!-- LOWER = CLEANER direction callout -->
   <div id="directionBar" style="display:none;width:100%;max-width:320px;margin:0 auto 16px">
@@ -612,7 +612,7 @@ html,body{
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.08);border-color:rgba(255,153,0,.2);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <div class="sw" id="swEl"><div class="sw-lbl">✦ Your Biggest Single Change</div><h3 id="swT">—</h3><p id="swD">—</p><div class="sw-imp">📉 Score: <strong id="swF">—</strong> → <strong id="swTo">—</strong></div></div>
     <div class="sh-c"><h3>📣 Share Your Score</h3><p>Help a friend find out their family's score</p><canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas><div class="sh-btns"><button class="sb sb-fb" onclick="shareFB()">📘 Facebook</button><button class="sb sb-dl" onclick="dlCard()">📸 Download</button><button class="sb sb-cp" onclick="cpLink()">🔗 Copy Link</button></div></div>
-    <div class="fc"><h2>Ready to drop your score to 12?</h2><p>Shannon shows you exactly which products to swap — free, 15 minutes, no pressure.</p><button class="fcb" onclick="window.open('https://join.switchtoamerica.com/shop','_blank')">See My Switch Options — Free →</button></div>
+    <div class="fc" id="finalCta"><h2 id="fcH">Ready to drop your score to 12?</h2><p id="fcP">Shannon shows you exactly which products to swap — free, 15 minutes, no pressure.</p><button class="fcb" onclick="window.open('https://join.switchtoamerica.com/shop','_blank')">See the Cleaner Alternatives →</button></div>
     <p class="disc"><strong>Note:</strong> This tool scores brands using independent safety research data. It is educational only — not a laboratory analysis or medical advice.</p>
   </div>
 </div>
@@ -719,11 +719,11 @@ function scoreBrand(text, cat, fieldLabel) {
 
 // ══ QUIZ STEPS ══
 const STEPS = [
-  // Opening
-  {id:'open',room:'Welcome',icon:'🏠',type:'yn',q:'Do families have a right to know what\'s really in the products they bring home?',
-   answers:[{lbl:'Yes — absolutely',pts:0},{lbl:'No — I trust the brands',pts:0}],auto:true},
+  // Opening — single forward action (no confusing No option)
+  {id:'open',room:'Welcome',icon:'🏠',type:'yn',q:'Ready to find out what\'s really in your family\'s home?',
+   answers:[{lbl:'Yes — let\'s find out',pts:0},{lbl:'Show me the truth',pts:0}],auto:true},
   // Segment
-  {id:'seg',room:'Your Household',icon:'👨‍👩‍👧',type:'single',q:'Who are you building a healthier home for?',
+  {id:'seg',room:'Your Household',icon:'👨‍👩‍👧',type:'single',q:'Who lives in your home?',
    answers:[
      {lbl:'Just me',em:'🙋',flag:null},
      {lbl:'Me & my partner',em:'💑',flag:null},
@@ -755,7 +755,7 @@ const STEPS = [
      {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',det:'BPA is a hormone disruptor — linked to fertility problems, early puberty, and brain development issues in children'},
      {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',det:'Sheds microplastics directly into your food — linked to inflammation and digestive problems'},
      {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',det:'Aluminum leaches into food at heat — linked to memory problems and neurological issues'},
-     {lbl:'Coffee pods / single-serve (Keurig, etc.)',em:'☕',pts:8,room:'Kitchen',det:'Boiling water through plastic releases BPA and other hormone-disrupting chemicals into every cup'},
+     {lbl:'Single-serve coffee machine (Keurig, Nespresso)',em:'☕',pts:8,room:'Kitchen',det:'Hot water through plastic at pressure releases hormone-disrupting chemicals — every single cup'},
      {lbl:'Microwave (regular use for cooking)',em:'📡',pts:5,room:'Kitchen',det:'Heating plastic containers in the microwave releases hormone-disrupting chemicals into your food'},
      {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
    ]},
@@ -764,7 +764,7 @@ const STEPS = [
   {id:'__soft',type:'soft'},
 
   // Laundry — ONE combined page
-  {id:'laundry_all',room:'Laundry Room',icon:'🧺',type:'brand_multi',q:'What does your laundry room look like?',sub:'Enter the brand you use for each product. Leave blank if you don\'t use it.',room_lbl:'Laundry',
+  {id:'laundry_all',room:'Laundry Room',icon:'🧺',type:'brand_multi',q:'What laundry products does your family use?',sub:'Enter the brand for each. Leave blank if you don\'t use it.',room_lbl:'Laundry',
    fields:[
      {id:'l_det',label:'Laundry Detergent',ph:'e.g. Tide, Gain, Molly\'s Suds…',cat:'laundry'},
      {id:'l_dry',label:'Dryer Sheets',ph:'e.g. Bounce, Wool balls, None…',cat:'dryer'},
@@ -1155,6 +1155,18 @@ function showResults(){
   if(userName) document.getElementById('rH').textContent=userName+"'s "+hl;
   else document.getElementById('rH').textContent=hl;
   if(hasBaby) document.getElementById('rP').textContent='Child-safety weighting applied — children\'s developing systems are more sensitive.';
+  // Conditional final CTA
+  var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
+  if(totalScore<=20){
+    if(fcH) fcH.textContent='Your home is already ahead of the average.';
+    if(fcP) fcP.textContent='See how Shannon keeps her home this clean — and explore the products she trusts for her family.';
+  } else if(totalScore<=45){
+    if(fcH) fcH.textContent='A few swaps would drop your score significantly.';
+    if(fcP) fcP.textContent='Shannon shows you the exact products to change first — free, 15 minutes, no pressure.';
+  } else {
+    if(fcH) fcH.textContent='Ready to drop your score toward 12?';
+    if(fcP) fcP.textContent='Shannon walks you through exactly which products to swap — free, no obligation, 15 minutes.';
+  }
 
   const mx=Math.max(...Object.values(roomScores),1);
   let bh='';
