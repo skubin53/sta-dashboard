@@ -152,7 +152,7 @@ html,body{
 
 @keyframes headlineIn{from{opacity:0;transform:scale(.96) translateY(-6px)}to{opacity:1;transform:scale(1) translateY(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@keyframes scanSweep{0%{left:-40%;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:140%;opacity:0}}
+@keyframes flagPop{0%{transform:scale(0);opacity:0}60%{transform:scale(1.4);opacity:1}100%{transform:scale(1);opacity:1}}
 @keyframes ctaPulse{0%,100%{box-shadow:0 10px 32px rgba(200,16,46,.5)}50%{box-shadow:0 10px 44px rgba(200,16,46,.7),0 0 0 10px rgba(200,16,46,.1)}}
 .cta-note{font-size:.68rem;color:rgba(255,255,255,.3);margin-top:8px;text-align:center}
 .stat-line{font-size:.72rem;color:rgba(255,255,255,.38);margin-top:10px;text-align:center;letter-spacing:.05em}
@@ -390,16 +390,21 @@ html,body{
       </h1>
     </div>
 
-    <!-- Hero scan visual -->
-    <div style="position:relative;width:100%;max-width:300px;margin:0 auto 14px;animation:fadeUp .5s ease .25s both">
-      <div style="display:flex;justify-content:center;gap:18px;font-size:2rem;opacity:.22;filter:grayscale(1)">
-        🧴🕯️📦🧹☕🍳
+    <!-- Hero scan — LIVE animation -->
+    <div id="scanStage" style="position:relative;width:100%;max-width:320px;margin:0 auto 14px;animation:fadeUp .5s ease .25s both;overflow:hidden;padding:10px 0">
+      <!-- Product icons -->
+      <div style="display:flex;justify-content:center;gap:16px;position:relative;z-index:2">
+        <div class="s-icon" data-flag="1" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🧴<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
+        <div class="s-icon" data-flag="0" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🕯️<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
+        <div class="s-icon" data-flag="1" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">📦<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
+        <div class="s-icon" data-flag="0" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🧹<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
+        <div class="s-icon" data-flag="1" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">☕<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
+        <div class="s-icon" data-flag="0" style="font-size:2rem;opacity:.25;filter:grayscale(1);transition:opacity .2s,filter .2s;position:relative">🍳<span class="s-flag" style="display:none;position:absolute;top:-6px;right:-7px;font-size:.65rem;color:#C8102E;font-weight:900;animation:flagPop .3s ease">⚠</span></div>
       </div>
-      <!-- Scan line sweeps once -->
-      <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;pointer-events:none">
-        <div style="position:absolute;top:0;left:0;height:100%;width:40%;background:linear-gradient(90deg,transparent,rgba(255,153,0,.18),transparent);animation:scanSweep 2s ease .8s 1 forwards;opacity:0"></div>
-      </div>
-      <div style="text-align:center;font-size:.66rem;color:rgba(255,255,255,.3);margin-top:6px;letter-spacing:.1em;text-transform:uppercase">Scanning your home's products</div>
+      <!-- Scan beam -->
+      <div id="scanBeam" style="position:absolute;top:0;bottom:0;left:-30%;width:28%;background:linear-gradient(90deg,transparent,rgba(200,16,46,.35),transparent);pointer-events:none;transition:left .18s linear;z-index:3"></div>
+      <!-- Status label -->
+      <div id="scanLbl" style="text-align:center;font-size:.66rem;color:rgba(255,255,255,.35);margin-top:8px;letter-spacing:.1em;text-transform:uppercase;transition:color .3s">Scanning your home's products…</div>
     </div>
 
     <!-- Trust row: photo + name + tagline in ONE compact block -->
@@ -1211,6 +1216,63 @@ function showResults(){
   }
   genCard();
 }
+
+// ── LIVE SCAN ANIMATION ──────────────────────────────────────────────
+function runScan(){
+  var icons = document.querySelectorAll('.s-icon');
+  var beam = document.getElementById('scanBeam');
+  var lbl = document.getElementById('scanLbl');
+  if(!beam || !icons.length) return;
+
+  var i = 0;
+  var flagCount = 0;
+
+  function step(){
+    if(i < icons.length){
+      // Move beam to icon position
+      var pct = (i / icons.length) * 100;
+      beam.style.left = pct + '%';
+
+      // Brighten icon
+      icons[i].style.opacity = '1';
+      icons[i].style.filter = 'grayscale(0)';
+
+      // Flag if needed
+      if(icons[i].getAttribute('data-flag') === '1'){
+        var flag = icons[i].querySelector('.s-flag');
+        if(flag){ flag.style.display = 'block'; flagCount++; }
+      }
+
+      i++;
+      setTimeout(step, 220);
+    } else {
+      // Scan complete
+      beam.style.left = '110%';
+      lbl.textContent = '⚠ ' + flagCount + ' concerns detected in a typical home';
+      lbl.style.color = '#C8102E';
+
+      // Reset after 2.8s and loop
+      setTimeout(function(){
+        icons.forEach(function(ic){
+          ic.style.opacity = '.25';
+          ic.style.filter = 'grayscale(1)';
+          var f = ic.querySelector('.s-flag');
+          if(f) f.style.display = 'none';
+        });
+        beam.style.left = '-30%';
+        lbl.textContent = 'Scanning your home\'s products…';
+        lbl.style.color = 'rgba(255,255,255,.35)';
+        i = 0; flagCount = 0;
+        setTimeout(step, 800);
+      }, 2800);
+    }
+  }
+
+  setTimeout(step, 1200); // Start 1.2s after load
+}
+
+// Start scan when intro screen is visible
+window.addEventListener('load', function(){ setTimeout(runScan, 400); });
 
 function genCard(){
   try{
