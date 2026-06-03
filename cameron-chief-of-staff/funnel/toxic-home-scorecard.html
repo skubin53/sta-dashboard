@@ -367,7 +367,11 @@ html,body{
   <div class="rtop"></div>
   <div class="intro-inner">
 
-    <div class="app-name">The Family Home<br>Toxic Scorecard</div>
+    <!-- Hook headline first -->
+    <h1 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,11vw,4rem);color:#fff;text-align:center;line-height:.95;letter-spacing:.04em;margin-bottom:6px">
+      WHAT'S <span style="background:linear-gradient(90deg,#FF9900,#C8102E);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">HIDING</span><br>IN YOUR HOME?
+    </h1>
+    <div class="app-name" style="font-size:clamp(.8rem,3vw,1rem);letter-spacing:.16em;opacity:.7;margin-bottom:16px;font-family:'Montserrat',sans-serif;font-weight:700">The Family Home Toxic Scorecard</div>
 
     <div class="sh-circle">
       <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole"/>
@@ -375,7 +379,7 @@ html,body{
 
     <div class="sh-name">Shannon Nicole &nbsp;·&nbsp; Mom &nbsp;·&nbsp; Grandma &nbsp;·&nbsp; Health Advocate</div>
 
-    <p class="intro-sub">What's really in your family's home? A free 3-minute room-by-room scorecard — the honest answer, finally.</p>
+    <p class="intro-sub" style="font-style:italic;color:rgba(255,255,255,.6)">Built by a Grandma who got tired of guessing.</p>
 
     <div class="sh-q">"I built this because my family deserved to know the truth. Now yours can too."</div>
 
@@ -386,7 +390,6 @@ html,body{
 
     <button class="big-cta" onclick="startQuiz()">Find My Family's Toxic Score →</button>
     <div class="cta-note">Free · 3 minutes · No pressure</div>
-    <div class="stat-line">🇺🇸 47,000+ families have already scored their home</div>
   </div>
 </div>
 
@@ -417,19 +420,106 @@ html,body{
 
 <!-- ═══ CALCULATING ═══ -->
 <div class="screen" id="s-calc">
+
+  <!-- Score ring -->
   <div class="c-ring">
     <svg class="c-svg" viewBox="0 0 185 185">
-      <defs><linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FF9900"/><stop offset="100%" stop-color="#C8102E"/></linearGradient></defs>
+      <defs>
+        <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#1F8A70"/>
+          <stop offset="40%" stop-color="#E8A317"/>
+          <stop offset="100%" stop-color="#C8102E"/>
+        </linearGradient>
+      </defs>
       <circle class="c-track" cx="92" cy="92" r="84"/>
       <circle class="c-arc" id="cArc" cx="92" cy="92" r="84"/>
     </svg>
-    <div class="c-center"><div class="c-num" id="cNum">0</div><div class="c-max">/ 100</div></div>
+    <div class="c-center">
+      <div class="c-num" id="cNum">0</div>
+      <div class="c-max">/ 100</div>
+    </div>
   </div>
+
+  <!-- Score label -->
+  <div id="scoreLbl" style="font-size:.72rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px;padding:5px 14px;border-radius:50px;display:inline-block;display:none"></div>
+
   <h2 class="calc-h" id="cH">Analyzing your home…</h2>
   <p class="calc-sub" id="cSub">Scoring the brands you use against independent safety data…</p>
-  <div class="bench" id="bench"><div class="bench-icon">📊</div><div class="bench-txt"><strong>Average home: 68</strong><br>Fully switched homes average <strong>12</strong>. Lower is better.</div></div>
+
+  <!-- LOWER = CLEANER direction callout -->
+  <div id="directionBar" style="display:none;width:100%;max-width:320px;margin:0 auto 16px">
+    <div style="display:flex;justify-content:space-between;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">
+      <span style="color:#1F8A70">✓ CLEANER</span>
+      <span style="color:rgba(255,255,255,.4)">← LOWER IS BETTER →</span>
+      <span style="color:#C8102E">CONCERNING ✗</span>
+    </div>
+    <div style="height:8px;border-radius:50px;background:linear-gradient(90deg,#1F8A70,#E8A317,#C8102E)"></div>
+  </div>
+
+  <!-- Benchmark visual bars -->
+  <div class="bench" id="bench" style="display:none">
+    <div style="flex:1">
+      <div style="font-size:.72rem;font-weight:800;color:rgba(255,255,255,.6);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">How you compare</div>
+      <div style="margin-bottom:8px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:.78rem;font-weight:700;color:#fff">Your home</span>
+          <span id="yourScoreLbl" style="font-size:.78rem;font-weight:900;color:var(--orange)">—</span>
+        </div>
+        <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
+          <div id="yourBar" style="height:100%;background:linear-gradient(90deg,#1F8A70,#E8A317,#C8102E);border-radius:50px;transition:width 1s ease;width:0%"></div>
+        </div>
+      </div>
+      <div style="margin-bottom:8px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.6)">Average home</span>
+          <span style="font-size:.78rem;font-weight:900;color:rgba(255,255,255,.5)">68</span>
+        </div>
+        <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
+          <div style="height:100%;width:68%;background:rgba(200,16,46,.5);border-radius:50px"></div>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.6)">Fully switched home</span>
+          <span style="font-size:.78rem;font-weight:900;color:#1F8A70">12</span>
+        </div>
+        <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
+          <div style="height:100%;width:12%;background:#1F8A70;border-radius:50px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shannon photo at reveal moment -->
+  <div id="shannonReveal" style="display:none;text-align:center;margin-bottom:12px">
+    <div style="width:52px;height:52px;border-radius:50%;border:2px solid var(--orange);overflow:hidden;margin:0 auto 6px">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt="Shannon"/>
+    </div>
+    <p style="font-size:.72rem;color:rgba(255,255,255,.5);font-style:italic" id="shannonMsg">Your full report breaks this down room by room.</p>
+  </div>
+
+  <!-- One finding preview -->
   <div class="prev" id="prev"><div class="prev-lbl">🔍 One finding from your home</div><div class="prev-txt" id="prevTxt">Loading…</div></div>
-  <button class="btn-rpt" id="btnRpt" onclick="showOptin()">📬 Get My Full Report →</button>
+
+  <!-- Blurred report preview -->
+  <div id="blurPreview" style="display:none;position:relative;margin-bottom:16px;border-radius:12px;overflow:hidden">
+    <div style="filter:blur(4px);pointer-events:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
+      <div style="font-size:.72rem;font-weight:800;color:rgba(255,255,255,.4);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">📍 Your Room-by-Room Breakdown</div>
+      <div style="height:10px;background:rgba(255,153,0,.4);border-radius:50px;margin-bottom:8px;width:80%"></div>
+      <div style="height:10px;background:rgba(200,16,46,.3);border-radius:50px;margin-bottom:8px;width:60%"></div>
+      <div style="height:10px;background:rgba(255,153,0,.25);border-radius:50px;margin-bottom:8px;width:45%"></div>
+      <div style="height:10px;background:rgba(200,16,46,.2);border-radius:50px;width:35%"></div>
+    </div>
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,27,61,.4)">
+      <div style="text-align:center;color:#fff">
+        <div style="font-size:.8rem;font-weight:800;color:var(--orange)">🔒 Full report locked</div>
+        <div style="font-size:.7rem;color:rgba(255,255,255,.6);margin-top:3px">Enter your phone to unlock</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-rpt" id="btnRpt" onclick="showOptin()">📲 Text Me My Results →</button>
+  <div style="font-size:.68rem;color:rgba(255,255,255,.35);text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
 </div>
 
 <!-- ═══ HARD OPT-IN ═══ -->
@@ -445,10 +535,8 @@ html,body{
       </div>
     </div>
     <div class="ob">
-      <div class="frow">
-        <div class="fg"><label>First Name *</label><input type="text" id="oFN" placeholder="First name" autocomplete="given-name"/></div>
-        <div class="fg"><label>Last Name *</label><input type="text" id="oLN" placeholder="Last name" autocomplete="family-name"/></div>
-      </div>
+      <div class="fg"><label>First Name *</label><input type="text" id="oFN" placeholder="First name" autocomplete="given-name"/></div>
+      <div class="fg" style="display:none"><label>Last Name</label><input type="text" id="oLN" placeholder="Last name" autocomplete="family-name"/></div>
       <div class="fg">
         <label>📱 Cell Phone Number *</label>
         <input type="tel" id="oPH" placeholder="(555) 000-0000" autocomplete="tel" style="font-size:1rem;padding:14px;"/>
@@ -926,12 +1014,35 @@ function runCalc(){
 }
 
 function showCalcDetails(){
-  document.getElementById('bench').style.display='flex';
+  // Direction bar
+  var db = document.getElementById('directionBar'); if(db) db.style.display='block';
+  // Score label
+  var sl = document.getElementById('scoreLbl');
+  if(sl){
+    sl.style.display='inline-block';
+    if(totalScore>=70){ sl.textContent='⚠ CONCERNING — SEE YOUR FULL REPORT'; sl.style.background='rgba(200,16,46,.2)'; sl.style.color='#FF6B6B'; sl.style.border='1px solid rgba(200,16,46,.3)'; }
+    else if(totalScore>=45){ sl.textContent='MODERATE — ROOM TO IMPROVE'; sl.style.background='rgba(232,163,23,.15)'; sl.style.color='#E8A317'; sl.style.border='1px solid rgba(232,163,23,.25)'; }
+    else { sl.textContent='✓ LOWER THAN AVERAGE — GREAT CHOICES'; sl.style.background='rgba(31,138,112,.15)'; sl.style.color='#1F8A70'; sl.style.border='1px solid rgba(31,138,112,.25)'; }
+  }
+  // Benchmark bars
+  var bench = document.getElementById('bench'); if(bench) bench.style.display='block';
+  var yourBar = document.getElementById('yourBar'); if(yourBar) setTimeout(()=>{ yourBar.style.width=totalScore+'%'; }, 100);
+  var yourScoreLbl = document.getElementById('yourScoreLbl'); if(yourScoreLbl) yourScoreLbl.textContent=totalScore;
+  // Shannon photo reveal
+  var sr = document.getElementById('shannonReveal'); if(sr) sr.style.display='block';
+  var sm = document.getElementById('shannonMsg');
+  if(sm){
+    if(totalScore>=70) sm.textContent='"I want to show you exactly which products to swap first."';
+    else sm.textContent='"Your choices are already better than most. Let me show you the full picture."';
+  }
+  // Blurred preview
+  var bp = document.getElementById('blurPreview'); if(bp) bp.style.display='block';
+  // One finding
   document.getElementById('prev').style.display='block';
   document.getElementById('btnRpt').style.display='block';
   const top=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0];
   if(top&&top[1]>0){
-    document.getElementById('prevTxt').textContent=`Your ${top[0].toLowerCase()} products scored highest — the brands in that room commonly contain ingredients classified by independent health bodies. Your full report breaks down every room.`;
+    document.getElementById('prevTxt').textContent=`Your ${top[0].toLowerCase()} products scored highest — the brands in that room commonly contain ingredients with independent hazard classifications. Your full report breaks down every room.`;
   } else {
     document.getElementById('prevTxt').textContent=`Your home shows a very low hazard load — your product choices are significantly safer than the average home. Your full report confirms the details room by room.`;
   }
