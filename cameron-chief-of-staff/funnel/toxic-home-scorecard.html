@@ -586,20 +586,31 @@ let activeSteps = [];
 
 // ══ BRAND SCORING LOOKUP ══
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
+// STA / Melaleuca product names — always score 0 (clean formulations)
+const STA_CLEAN = ['sta','switch to america','lemon bright','sol-u-guard','solu-guard','melamagic','mela magic',
+  'melapower','mela power','nature bright','affinia','renew','renewal','access bar',
+  'koala pals','proflex','pro flex','peak performance','ecosense','eco sense',
+  'tough & tender','tough and tender','clear power','sei bella','attain','provex',
+  'fiberwise','luminex','replenex','vitality','florify','sustain'];
+
+function isSTA(text){
+  const t = text.toLowerCase().trim();
+  return STA_CLEAN.some(k => t.includes(k));
+}
+
 const BRAND_DB = {
   // Dish soap
-  dish:{ dawn:9,palmolive:9,ajax:9,ivory:9,sunlight:9,joy:9,'mr. clean':8,'seventh generation':7,method:7,ecover:6,'branch basics':7,'better life':6,biokleen:6,sta:0,'switch to america':0 },
+  dish:{ dawn:9,palmolive:9,ajax:9,ivory:9,sunlight:9,joy:9,'mr. clean':8,'seventh generation':7,method:7,ecover:6,'branch basics':7,'better life':6,biokleen:6,sta:0,'switch to america':0,'lemon bright':0 },
   // Dishwasher
   dishwasher:{ cascade:9,finish:9,electrasol:9,jet:8,'seventh generation':7,method:7,bio:6,ecover:6,sta:0,'switch to america':0 },
-  // All-purpose
-  allpurpose:{ '409':9,windex:9,lysol:9,comet:9,tilex:9,'mr. clean':9,'pine-sol':9,fabuloso:8,method:7,mrs:7,'mrs. meyer':7,ecover:6,'branch basics':7,'better life':7,sta:0,'switch to america':0 },
+  // All-purpose / disinfectant
+  allpurpose:{ '409':9,windex:9,lysol:9,comet:9,tilex:9,'mr. clean':9,'pine-sol':9,fabuloso:8,method:7,mrs:7,'mrs. meyer':7,ecover:6,'branch basics':7,'better life':7,sta:0,'switch to america':0,'sol-u-guard':0,'solu-guard':0,'melamagic':0,'mela magic':0,'clear power':0 },
   // Coffee & cooking oils (shared category)
   coffee:{ keurig:9,nespresso:8,'coffee pods':8,kcup:9,'k-cup':9,'single serve':7,
-    // Seed/cooking oils
     crisco:9,wesson:9,canola:8,'vegetable oil':8,'soybean':8,'corn oil':8,'sunflower oil':7,
     'olive oil':3,'avocado oil':2,'coconut oil':2,sta:0,'switch to america':0 },
   // Laundry
-  laundry:{ tide:9,gain:9,persil:9,all:9,cheer:9,era:9,'arm & hammer':7,'seventh generation':7,method:7,ecover:6,"molly's suds":6,biokleen:6,'branch basics':7,sta:0,'switch to america':0 },
+  laundry:{ tide:9,gain:9,persil:9,all:9,cheer:9,era:9,'arm & hammer':7,'seventh generation':7,method:7,ecover:6,"molly's suds":6,biokleen:6,'branch basics':7,sta:0,'switch to america':0,'melapower':0,'mela power':0,'nature bright':0 },
   // Dryer sheets
   dryer:{ bounce:9,downy:9,snuggle:9,gain:8,'seventh generation':7,method:7,'method dryer':7,'wool balls':3,none:0,sta:0,'switch to america':0 },
   // Fabric softener
@@ -607,21 +618,21 @@ const BRAND_DB = {
   // Bleach
   bleach:{ clorox:8,'store brand':7,generic:7,lysol:8,'seventh generation':5,none:0,sta:0,'switch to america':0 },
   // Stain remover
-  stain:{ shout:8,'spray n wash':8,zout:8,resolve:8,'seventh generation':6,'biz':7,none:0,sta:0,'switch to america':0 },
+  stain:{ shout:8,'spray n wash':8,zout:8,resolve:8,'seventh generation':6,'biz':7,none:0,sta:0,'switch to america':0,'tough & tender':0,'tough and tender':0 },
   // Shampoo
-  shampoo:{ pantene:8,'herbal essences':8,'head & shoulders':8,suave:8,garnier:8,tresemme:8,dove:7,ogx:7,shea:7,sheamoisture:7,aveeno:7,native:8,acure:7,briogeo:6,sta:0,'switch to america':0 },
+  shampoo:{ pantene:8,'herbal essences':8,'head & shoulders':8,suave:8,garnier:8,tresemme:8,dove:7,ogx:7,shea:7,sheamoisture:7,aveeno:7,native:8,acure:7,briogeo:6,sta:0,'switch to america':0,'affinia':0,'sei bella':0,'luminex':0 },
   // Body wash
-  bodywash:{ dove:8,ivory:8,axe:8,'old spice':8,dial:8,softsoap:7,'st. ives':7,method:7,native:8,'dr.bronners':6,'dr. bronner':6,bronner:6,sta:0,'switch to america':0 },
+  bodywash:{ dove:8,ivory:8,axe:8,'old spice':8,dial:8,softsoap:7,'st. ives':7,method:7,native:8,'dr.bronners':6,'dr. bronner':6,bronner:6,sta:0,'switch to america':0,'renew':0,'renewal':0,'sei bella':0 },
   // Deodorant
-  deodorant:{ dove:8,secret:8,'old spice':8,degree:8,axe:8,sure:7,'arm & hammer':7,native:8,"schmidt's":7,'toms':7,'tom\'s':7,primal:6,kopari:7,sta:0,'switch to america':0 },
+  deodorant:{ dove:8,secret:8,'old spice':8,degree:8,axe:8,sure:7,'arm & hammer':7,native:8,"schmidt's":7,'toms':7,'tom\'s':7,primal:6,kopari:7,sta:0,'switch to america':0,'access bar':0 },
   // Toothpaste
   toothpaste:{ colgate:7,crest:7,aquafresh:7,'arm & hammer':6,sensodyne:6,'toms':7,'tom\'s':7,hello:6,dr:6,sta:0,'switch to america':0 },
   // Makeup
-  makeup:{ maybelline:9,'l\'oreal':9,loreal:9,revlon:9,covergirl:9,nyx:7,milani:7,elf:7,tarte:6,beautycounter:7,bare:7,sta:0,'switch to america':0 },
+  makeup:{ maybelline:9,'l\'oreal':9,loreal:9,revlon:9,covergirl:9,nyx:7,milani:7,elf:7,tarte:6,beautycounter:7,bare:7,sta:0,'switch to america':0,'sei bella':0 },
   // Baby wash
-  babywash:{ "johnson's":9,johnson:9,'baby magic':8,huggies:8,aveeno:7,babyganics:5,'honest':4,'the honest':4,'earth mama':2,sta:0,'switch to america':0 },
+  babywash:{ "johnson's":9,johnson:9,'baby magic':8,huggies:8,aveeno:7,babyganics:5,'honest':4,'the honest':4,'earth mama':2,sta:0,'switch to america':0,'koala pals':0,'koala':0 },
   // Baby lotion
-  babylotion:{ "johnson's":9,johnson:9,'baby magic':8,aveeno:7,aquaphor:6,cetaphil:6,eucerin:6,'mustela':5,babyganics:5,'earth mama':2,sta:0,'switch to america':0 },
+  babylotion:{ "johnson's":9,johnson:9,'baby magic':8,aveeno:7,aquaphor:6,cetaphil:6,eucerin:6,'mustela':5,babyganics:5,'earth mama':2,sta:0,'switch to america':0,'koala pals':0 },
   // Baby wipes
   babywipes:{ pampers:8,huggies:8,'baby wipes':7,kirkland:6,cottonelle:6,waterwipes:3,hello:3,sta:0,'switch to america':0 },
   // Diaper rash cream
@@ -629,15 +640,14 @@ const BRAND_DB = {
   // Baby powder
   babypowder:{ "johnson's":10,johnson:10,'baby powder':9,shower:7,'shower to shower':8,none:0,sta:0,'switch to america':0 },
   // Baby laundry
-  babylaundry:{ dreft:9,tide:9,all:8,'seventh generation':4,'babyganics':4,'molly\'s':2,sta:0,'switch to america':0 },
+  babylaundry:{ dreft:9,tide:9,all:8,'seventh generation':4,'babyganics':4,'molly\'s':2,sta:0,'switch to america':0,'melapower':0,'nature bright':0 },
   // Water
   water:{ tap:8,'brita':4,'pur':4,'zero water':3,'lifestraw':2,'reverse osmosis':1,'ro system':1,'berkey':1,kangen:1,alkaline:1,spring:2,none:0 },
   // Home air
   homeair:{ febreze:10,glade:9,'air wick':9,'plug-in':9,'yankee':9,'bath & body':9,'bath and body':9,lysol:8,'essential oils':2,beeswax:1,none:0,sta:0,'switch to america':0 },
   // Vitamins / supplements / protein powder
-  supplements:{ centrum:8,caltrate:8,'one a day':8,'nature made':7,'nature\'s bounty':7,'gummy':7,'gummies':7,orgain:5,vega:5,'garden of life':4,'ritual':4,thorne:3,sta:0,'switch to america':0,
-    // Protein
-    'optimum nutrition':8,'gold standard':8,'muscle milk':8,'premier protein':8,'isopure':7,orgain:5,'naked nutrition':4,'garden of life':4,vega:4,sta:0 },
+  supplements:{ centrum:8,caltrate:8,'one a day':8,'nature made':7,'nature\'s bounty':7,'gummy':7,'gummies':7,orgain:5,vega:5,'garden of life':4,'ritual':4,thorne:3,sta:0,'switch to america':0,'peak performance':0,'proflex':0,'pro flex':0,'vitality':0,'florify':0,'replenex':0,'provex':0,
+    'optimum nutrition':8,'gold standard':8,'muscle milk':8,'premier protein':8,'isopure':7,'naked nutrition':4,vega:4 },
   // General default
   general:{}
 };
@@ -647,16 +657,17 @@ let unscoredFields = [];
 
 function scoreBrand(text, cat, fieldLabel) {
   if(!text || text.trim().length === 0) {
-    // Flag as unscored in report
     if(fieldLabel) unscoredFields.push(fieldLabel);
     return 0;
   }
+  // STA / Melaleuca products always score 0 — clean formulations
+  if(isSTA(text)) return 0;
   const t = text.toLowerCase().trim();
   const db = BRAND_DB[cat] || {};
   for(const [k,v] of Object.entries(db)){
     if(t.includes(k)) return v;
   }
-  return 7; // Unknown brand: conservative default (likely conventional)
+  return 7; // Unknown brand: conservative default
 }
 
 // ══ QUIZ STEPS ══
@@ -688,12 +699,12 @@ const STEPS = [
   // Kitchen extras (page 3)
   {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else to check in your kitchen?',sub:'Select all that apply.',
    answers:[
-     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',det:'PFAS/PFOA — strong independent hazard classification'},
-     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',det:'Bisphenol A and BPS — reproductive harm concerns'},
-     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',det:'Microplastics shed into food during cutting; especially at high use'},
-     {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',det:'Aluminum leaching at heat; phthalates in PVC wrap'},
-     {lbl:'Coffee pods / single-serve (Keurig, etc.)',em:'☕',pts:8,room:'Kitchen',det:'Plastic heated under pressure; BPA in pod lining'},
-     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:5,room:'Kitchen',det:'Microwave-safe plastics can still leach at elevated temperatures'},
+     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',det:'Releases toxic gas when overheated — linked to cancer, thyroid disruption, and birth defects'},
+     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',det:'BPA is a hormone disruptor — linked to fertility problems, early puberty, and brain development issues in children'},
+     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',det:'Sheds microplastics directly into your food — linked to inflammation and digestive problems'},
+     {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',det:'Aluminum leaches into food at heat — linked to memory problems and neurological issues'},
+     {lbl:'Coffee pods / single-serve (Keurig, etc.)',em:'☕',pts:8,room:'Kitchen',det:'Boiling water through plastic releases BPA and other hormone-disrupting chemicals into every cup'},
+     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:5,room:'Kitchen',det:'Heating plastic containers in the microwave releases hormone-disrupting chemicals into your food'},
      {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
    ]},
 
@@ -747,9 +758,9 @@ const STEPS = [
   {id:'homeair',room:'Home Air',icon:'🏡',type:'multi',q:'What scented or air products do you use at home?',
    sub:'Home air is often 2-5x more polluted than outdoor air.',
    answers:[
-     {lbl:'Air fresheners or plug-ins (Febreze, Glade)',em:'🌬️',pts:10,room:'Home Air',det:'Benzene, formaldehyde — carcinogens released into indoor air'},
-     {lbl:'Scented candles (Yankee, Bath & Body Works)',em:'🕯️',pts:8,room:'Home Air',det:'Benzene and toluene released during burning'},
-     {lbl:'Synthetic fragrance sprays or diffusers',em:'🫙',pts:6,room:'Home Air',det:'Synthetic fragrance compounds — ECHA Substance of Very High Concern'},
+     {lbl:'Air fresheners or plug-ins (Febreze, Glade)',em:'🌬️',pts:10,room:'Home Air',det:'Release benzene and formaldehyde into your home\'s air — linked to cancer, lung damage, and thyroid problems'},
+     {lbl:'Scented candles (Yankee, Bath & Body Works)',em:'🕯️',pts:8,room:'Home Air',det:'Burning paraffin wax releases cancer-linked chemicals — the same ones found in diesel exhaust'},
+     {lbl:'Synthetic fragrance sprays or diffusers',em:'🫙',pts:6,room:'Home Air',det:'\"Fragrance\" is a legally protected trade secret — can contain hundreds of undisclosed hormone disruptors'},
      {lbl:'Pure essential oils or beeswax candles only',em:'✅',pts:1,exclusive:false,room:'Home Air'},
      {lbl:'None / I don\'t use scented products',em:'🌟',pts:0,exclusive:true},
    ]},
@@ -757,14 +768,14 @@ const STEPS = [
   // Supplements & Medications
   {id:'meds',room:'Medications & Health Products',icon:'💊',type:'multi',q:'What does your household regularly use?',sub:'Helps identify where cleaner alternatives exist. Never shared without your consent.',
    answers:[
-     {lbl:'Energy drinks (Red Bull, Monster, Bang)',em:'⚡',pts:8,room:'Medications',det:'Synthetic dyes (Prop 65), artificial sweeteners, high-dose B vitamins'},
-     {lbl:'Children\'s medications (Tylenol, Motrin for kids)',em:'🧒',pts:7,room:'Medications',det:'Artificial dyes, acetaminophen concerns, synthetic sweeteners'},
-     {lbl:'Antacids / heartburn medications (Tums, Prilosec)',em:'🫁',pts:6,room:'Medications',det:'Aluminum compounds in some formulas; synthetic coatings'},
-     {lbl:'Sleep aids / antihistamines (Benadryl, Unisom)',em:'😴',pts:6,room:'Medications',det:'Diphenhydramine — independent classification concerns at regular use'},
-     {lbl:'Topical antibiotics / creams (Neosporin, cortisone)',em:'🩹',pts:5,room:'Medications',det:'Petroleum-based carriers; preservatives with independent concerns'},
-     {lbl:'Chemical sunscreen (Coppertone, Banana Boat)',em:'☀️',pts:7,room:'Medications',det:'Oxybenzone and octinoxate — endocrine disruption classifications'},
-     {lbl:'Prescription medications',em:'🏥',pts:7,room:'Medications',det:'Many pharmaceuticals have independent hazard classifications for long-term exposure'},
-     {lbl:'Hormone therapy or synthetic birth control',em:'⚕️',pts:8,room:'Medications',det:'Synthetic estrogens — known carcinogen classification in combined HRT'},
+     {lbl:'Energy drinks (Red Bull, Monster, Bang)',em:'⚡',pts:8,room:'Medications',det:'Synthetic dyes linked to cancer, artificial sweeteners linked to mood disorders and metabolic disruption'},
+     {lbl:'Children\'s medications (Tylenol, Motrin for kids)',em:'🧒',pts:7,room:'Medications',det:'Artificial dyes linked to cancer; long-term acetaminophen linked to liver damage and gut disruption'},
+     {lbl:'Antacids / heartburn medications (Tums, Prilosec)',em:'🫁',pts:6,room:'Medications',det:'Aluminum compounds linked to memory problems; long-term use linked to gut microbiome damage'},
+     {lbl:'Sleep aids / antihistamines (Benadryl, Unisom)',em:'😴',pts:6,room:'Medications',det:'Regular use linked to increased dementia risk and memory problems — now confirmed by multiple studies'},
+     {lbl:'Topical antibiotics / creams (Neosporin, cortisone)',em:'🩹',pts:5,room:'Medications',det:'Petroleum-based and linked to skin microbiome disruption; long-term cortisone linked to immune problems'},
+     {lbl:'Chemical sunscreen (Coppertone, Banana Boat)',em:'☀️',pts:7,room:'Medications',det:'Oxybenzone absorbs into the bloodstream — a hormone disruptor found in 97% of Americans in one study'},
+     {lbl:'Prescription medications',em:'🏥',pts:7,room:'Medications',det:'Many pharmaceuticals disrupt hormones and gut microbiome when used long-term — worth discussing with your doctor'},
+     {lbl:'Hormone therapy or synthetic birth control',em:'⚕️',pts:8,room:'Medications',det:'Synthetic estrogens are classified as cancer-causing compounds — linked to breast cancer and blood clot risk'},
      {lbl:'Clean / natural alternatives only',em:'🌿',pts:1,room:'Medications'},
      {lbl:'None of the above',em:'✅',pts:0,exclusive:true},
    ]},
