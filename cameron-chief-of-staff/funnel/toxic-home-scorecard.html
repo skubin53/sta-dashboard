@@ -50,35 +50,8 @@ html,body{
   position:relative;overflow:hidden;
   align-items:center;
 }
-/* Watermark flag */
-.flag-wm{
-  position:absolute;top:0;right:0;bottom:0;
-  width:55%;pointer-events:none;overflow:hidden;opacity:.18;
-}
-.flag-wm .stripes{
-  width:100%;height:100%;
-  background:repeating-linear-gradient(
-    to bottom,
-    #B22234 0,#B22234 7.69%,#fff 7.69%,#fff 15.38%,
-    #B22234 15.38%,#B22234 23.07%,#fff 23.07%,#fff 30.76%,
-    #B22234 30.76%,#B22234 38.45%,#fff 38.45%,#fff 46.14%,
-    #B22234 46.14%,#B22234 53.83%,#fff 53.83%,#fff 61.52%,
-    #B22234 61.52%,#B22234 69.21%,#fff 69.21%,#fff 76.9%,
-    #B22234 76.9%,#B22234 84.59%,#fff 84.59%,#fff 92.28%,
-    #B22234 92.28%,#B22234 100%
-  );
-}
-.flag-wm .canton{
-  position:absolute;top:0;left:0;
-  width:38%;height:53%;
-  background:#3C3B6E;
-}
-.flag-wm .canton::after{
-  content:'★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★';
-  font-size:.5rem;color:rgba(255,255,255,.6);
-  letter-spacing:3px;line-height:1.9;
-  text-align:center;display:block;padding:8px 6px;
-}
+/* Watermark flag — hidden, solid blue */
+.flag-wm{display:none}
 /* Red stripe top */
 .rtop{
   position:absolute;top:0;left:0;right:0;height:7px;
@@ -507,8 +480,11 @@ const BRAND_DB = {
   dishwasher:{ cascade:9,finish:9,electrasol:9,jet:8,'seventh generation':7,method:7,bio:6,ecover:6,sta:0,'switch to america':0 },
   // All-purpose
   allpurpose:{ '409':9,windex:9,lysol:9,comet:9,tilex:9,'mr. clean':9,'pine-sol':9,fabuloso:8,method:7,mrs:7,'mrs. meyer':7,ecover:6,'branch basics':7,'better life':7,sta:0,'switch to america':0 },
-  // Coffee
-  coffee:{ keurig:9,nespresso:8,'coffee pods':8,kcup:9,'k-cup':9,'single serve':7,sta:0,'switch to america':0 },
+  // Coffee & cooking oils (shared category)
+  coffee:{ keurig:9,nespresso:8,'coffee pods':8,kcup:9,'k-cup':9,'single serve':7,
+    // Seed/cooking oils
+    crisco:9,wesson:9,canola:8,'vegetable oil':8,'soybean':8,'corn oil':8,'sunflower oil':7,
+    'olive oil':3,'avocado oil':2,'coconut oil':2,sta:0,'switch to america':0 },
   // Laundry
   laundry:{ tide:9,gain:9,persil:9,all:9,cheer:9,era:9,'arm & hammer':7,'seventh generation':7,method:7,ecover:6,"molly's suds":6,biokleen:6,'branch basics':7,sta:0,'switch to america':0 },
   // Dryer sheets
@@ -576,19 +552,25 @@ const STEPS = [
    answers:[{lbl:'Just me',em:'🙋',flag:null},{lbl:'Me & my partner',em:'💑',flag:null},{lbl:'My whole family',em:'👨‍👩‍👧',flag:'family'},{lbl:'My kids / a baby',em:'👶',flag:'baby'}]},
 
   // Kitchen — individual product questions
-  {id:'dish',room:'Kitchen',icon:'🍳',type:'brand_single',q:'What dish soap does your family use?',sub:'Type the brand you use.',label:'Dish Soap Brand',ph:'e.g. Dawn, Branch Basics, Palmolive…',cat:'dish',room_lbl:'Kitchen',pts_max:9},
-  {id:'dishwasher',room:'Kitchen',icon:'🍳',type:'brand_single',q:'What dishwasher detergent do you use?',sub:'Type the brand, or leave blank if you don\'t have a dishwasher.',label:'Dishwasher Detergent Brand',ph:'e.g. Cascade, Finish, Seventh Generation…',cat:'dishwasher',room_lbl:'Kitchen',pts_max:9},
-  {id:'allpurpose',room:'Kitchen',icon:'🍳',type:'brand_single',q:'What all-purpose cleaner do you use?',sub:'The spray you use on counters, tables, and surfaces.',label:'All-Purpose Cleaner Brand',ph:'e.g. 409, Windex, Mrs. Meyer\'s…',cat:'allpurpose',room_lbl:'Kitchen',pts_max:9},
+  // Kitchen Page — 5 brand inputs on ONE page
+  {id:'kitchen_brands',room:'Kitchen',icon:'🍳',type:'brand_multi',q:'What brands does your kitchen use?',sub:'Enter the brand for each. Leave blank if you don\'t use it.',room_lbl:'Kitchen',
+   fields:[
+     {id:'k_dish',label:'Dish Detergent',ph:'e.g. Dawn, Palmolive, Branch Basics…',cat:'dish'},
+     {id:'k_dwsh',label:'Dishwasher Detergent',ph:'e.g. Cascade, Finish, Seventh Generation…',cat:'dishwasher'},
+     {id:'k_dis',label:'Disinfectant / Surface Cleaner',ph:'e.g. Lysol, Clorox, Mrs. Meyer\'s…',cat:'allpurpose'},
+     {id:'k_cof',label:'Coffee Brand',ph:'e.g. Folgers, Starbucks, Death Wish…',cat:'coffee'},
+     {id:'k_oil',label:'Cooking Oil / Seed Oils',ph:'e.g. Crisco, Wesson, avocado oil…',cat:'coffee'},
+   ]},
 
-  // Kitchen extras
-  {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else in your kitchen?',sub:'Select all that apply.',
+  // Kitchen extras (page 3)
+  {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else to check in your kitchen?',sub:'Select all that apply.',
    answers:[
-     {lbl:'Nonstick pans (Teflon / PTFE)',em:'🍳',pts:10,room:'Kitchen',det:'PFAS/PFOA — strong independent hazard classification'},
+     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',det:'PFAS/PFOA — strong independent hazard classification'},
      {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',det:'Bisphenol A and BPS — reproductive harm concerns'},
+     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',det:'Microplastics shed into food during cutting; especially at high use'},
      {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',det:'Aluminum leaching at heat; phthalates in PVC wrap'},
-     {lbl:'Coffee pods / single-serve pods (Keurig, etc.)',em:'☕',pts:8,room:'Kitchen',det:'Plastic heated under pressure releases compounds; BPA in pod lining'},
+     {lbl:'Coffee pods / single-serve (Keurig, etc.)',em:'☕',pts:8,room:'Kitchen',det:'Plastic heated under pressure; BPA in pod lining'},
      {lbl:'Microwave (regular use for cooking)',em:'📡',pts:5,room:'Kitchen',det:'Microwave-safe plastics can still leach at elevated temperatures'},
-     {lbl:'Seed oils (canola, vegetable, soybean)',em:'🫙',pts:5,room:'Kitchen',det:'Oxidation byproducts; hexane solvent used in extraction'},
      {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
    ]},
 
