@@ -482,6 +482,7 @@ html,body{
   <div class="rb">
     <div class="rcard"><h3>📍 Room-by-Room Breakdown</h3><div id="roomBars"></div></div>
     <div class="rcard" style="background:rgba(200,16,46,.08);border-color:rgba(200,16,46,.2)"><h3>⚠️ Key Findings</h3><div id="findList"></div></div>
+    <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.08);border-color:rgba(255,153,0,.2);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <div class="sw" id="swEl"><div class="sw-lbl">✦ Your Biggest Single Change</div><h3 id="swT">—</h3><p id="swD">—</p><div class="sw-imp">📉 Score: <strong id="swF">—</strong> → <strong id="swTo">—</strong></div></div>
     <div class="sh-c"><h3>📣 Share Your Score</h3><p>Help a friend find out their family's score</p><canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas><div class="sh-btns"><button class="sb sb-fb" onclick="shareFB()">📘 Facebook</button><button class="sb sb-dl" onclick="dlCard()">📸 Download</button><button class="sb sb-cp" onclick="cpLink()">🔗 Copy Link</button></div></div>
     <div class="fc"><h2>Ready to drop your score to 12?</h2><p>Shannon shows you exactly which products to swap — free, 15 minutes, no pressure.</p><button class="fcb" onclick="window.open('https://theshannonnicole.com/home','_blank')">See My Switch Options — Free →</button></div>
@@ -501,33 +502,33 @@ let activeSteps = [];
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
 const BRAND_DB = {
   // Dish soap
-  dish:{ dawn:9,palmolive:9,ajax:9,ivory:9,sunlight:9,joy:9,'mr. clean':8,'seventh generation':5,method:5,ecover:3,'branch basics':1,'better life':1,biokleen:2,sta:0,'switch to america':0 },
+  dish:{ dawn:9,palmolive:9,ajax:9,ivory:9,sunlight:9,joy:9,'mr. clean':8,'seventh generation':7,method:7,ecover:6,'branch basics':7,'better life':6,biokleen:6,sta:0,'switch to america':0 },
   // Dishwasher
-  dishwasher:{ cascade:9,finish:9,electrasol:9,jet:8,'seventh generation':5,method:5,bio:4,ecover:3,sta:0,'switch to america':0 },
+  dishwasher:{ cascade:9,finish:9,electrasol:9,jet:8,'seventh generation':7,method:7,bio:6,ecover:6,sta:0,'switch to america':0 },
   // All-purpose
-  allpurpose:{ '409':9,windex:9,lysol:9,comet:9,tilex:9,'mr. clean':9,'pine-sol':9,fabuloso:8,method:5,mrs:4,mrs.meyers:4,ecover:3,'branch basics':1,'better life':2,sta:0,'switch to america':0 },
+  allpurpose:{ '409':9,windex:9,lysol:9,comet:9,tilex:9,'mr. clean':9,'pine-sol':9,fabuloso:8,method:7,mrs:7,'mrs. meyer':7,ecover:6,'branch basics':7,'better life':7,sta:0,'switch to america':0 },
   // Coffee
   coffee:{ keurig:9,nespresso:8,'coffee pods':8,kcup:9,'k-cup':9,'single serve':7,sta:0,'switch to america':0 },
   // Laundry
-  laundry:{ tide:9,gain:9,persil:9,all:9,cheer:9,era:9,'arm & hammer':7,'seventh generation':4,method:4,ecover:3,"molly's suds":2,biokleen:2,'branch basics':1,sta:0,'switch to america':0 },
+  laundry:{ tide:9,gain:9,persil:9,all:9,cheer:9,era:9,'arm & hammer':7,'seventh generation':7,method:7,ecover:6,"molly's suds":6,biokleen:6,'branch basics':7,sta:0,'switch to america':0 },
   // Dryer sheets
-  dryer:{ bounce:9,downy:9,snuggle:9,gain:8,'seventh generation':5,method:5,'method dryer':5,'wool balls':1,none:0,sta:0,'switch to america':0 },
+  dryer:{ bounce:9,downy:9,snuggle:9,gain:8,'seventh generation':7,method:7,'method dryer':7,'wool balls':3,none:0,sta:0,'switch to america':0 },
   // Fabric softener
-  fabric:{ downy:8,snuggle:8,gain:8,ultra:7,'seventh generation':5,method:5,ecover:4,none:0,sta:0,'switch to america':0 },
+  fabric:{ downy:8,snuggle:8,gain:8,ultra:7,'seventh generation':7,method:7,ecover:6,none:0,sta:0,'switch to america':0 },
   // Bleach
-  bleach:{ clorox:8,'store brand':7,generic:7,lysol:8,'seventh generation':3,none:0,sta:0,'switch to america':0 },
+  bleach:{ clorox:8,'store brand':7,generic:7,lysol:8,'seventh generation':5,none:0,sta:0,'switch to america':0 },
   // Stain remover
-  stain:{ shout:8,'spray n wash':8,zout:8,resolve:8,'seventh generation':4,'biz':7,none:0,sta:0,'switch to america':0 },
+  stain:{ shout:8,'spray n wash':8,zout:8,resolve:8,'seventh generation':6,'biz':7,none:0,sta:0,'switch to america':0 },
   // Shampoo
-  shampoo:{ pantene:8,'herbal essences':8,'head & shoulders':8,suave:8,garnier:8,tresemme:8,dove:7,ogx:5,shea:5,sheamoisture:5,aveeno:5,acure:3,briogeo:3,sta:0,'switch to america':0 },
+  shampoo:{ pantene:8,'herbal essences':8,'head & shoulders':8,suave:8,garnier:8,tresemme:8,dove:7,ogx:7,shea:7,sheamoisture:7,aveeno:7,native:8,acure:7,briogeo:6,sta:0,'switch to america':0 },
   // Body wash
-  bodywash:{ dove:7,ivory:8,axe:8,'old spice':8,dial:8,softsoap:7,'st. ives':7,method:5,dr.bronners:3,'dr. bronner':3,sta:0,'switch to america':0 },
+  bodywash:{ dove:8,ivory:8,axe:8,'old spice':8,dial:8,softsoap:7,'st. ives':7,method:7,native:8,dr.bronners:6,'dr. bronner':6,sta:0,'switch to america':0 },
   // Deodorant
-  deodorant:{ dove:8,secret:8,'old spice':8,degree:8,axe:8,sure:7,'arm & hammer':7,native:5,"schmidt's":4,'toms':4,'tom\'s':4,primal:2,kopari:2,sta:0,'switch to america':0 },
+  deodorant:{ dove:8,secret:8,'old spice':8,degree:8,axe:8,sure:7,'arm & hammer':7,native:8,"schmidt's":7,'toms':7,'tom\'s':7,primal:6,kopari:7,sta:0,'switch to america':0 },
   // Toothpaste
-  toothpaste:{ colgate:7,crest:7,aquafresh:7,'arm & hammer':6,sensodyne:6,'toms':4,'tom\'s':4,hello:4,dr:3,sta:0,'switch to america':0 },
+  toothpaste:{ colgate:7,crest:7,aquafresh:7,'arm & hammer':6,sensodyne:6,'toms':7,'tom\'s':7,hello:6,dr:6,sta:0,'switch to america':0 },
   // Makeup
-  makeup:{ maybelline:9,'l\'oreal':9,loreal:9,revlon:9,covergirl:9,nyx:7,milani:7,elf:6,tarte:5,beautycounter:2,bare:4,sta:0,'switch to america':0 },
+  makeup:{ maybelline:9,'l\'oreal':9,loreal:9,revlon:9,covergirl:9,nyx:7,milani:7,elf:7,tarte:6,beautycounter:7,bare:7,sta:0,'switch to america':0 },
   // Baby wash
   babywash:{ "johnson's":9,johnson:9,'baby magic':8,huggies:8,aveeno:7,babyganics:5,'honest':4,'the honest':4,'earth mama':2,sta:0,'switch to america':0 },
   // Baby lotion
@@ -548,18 +549,21 @@ const BRAND_DB = {
   general:{}
 };
 
-function scoreBrand(text, cat) {
-  if(!text || text.trim().length === 0) return 0;
+// Track unscored (empty) fields for report
+let unscoredFields = [];
+
+function scoreBrand(text, cat, fieldLabel) {
+  if(!text || text.trim().length === 0) {
+    // Flag as unscored in report
+    if(fieldLabel) unscoredFields.push(fieldLabel);
+    return 0;
+  }
   const t = text.toLowerCase().trim();
   const db = BRAND_DB[cat] || {};
   for(const [k,v] of Object.entries(db)){
     if(t.includes(k)) return v;
   }
-  // Check general
-  for(const [k,v] of Object.entries(BRAND_DB.general)){
-    if(t.includes(k)) return v;
-  }
-  return 5; // Unknown brand: moderate default
+  return 7; // Unknown brand: conservative default (likely conventional)
 }
 
 // ══ QUIZ STEPS ══
@@ -854,17 +858,17 @@ function runCalc(){
     showScreen('s-calc');
     document.getElementById('pBar').style.display='none';
 
-    roomScores={}; totalScore=0;
+    roomScores={}; totalScore=0; unscoredFields=[];
     activeSteps.forEach(s=>{
       if(!answers[s.id]) return;
       if(s.type==='brand_single'){
-        let p=scoreBrand(answers[s.id].brand||'',s.cat);
+        let p=scoreBrand(answers[s.id].brand||'',s.cat,s.label||s.q?.split('?')[0]||'Product');
         if(hasBaby&&s.room_lbl==='Bathroom') p=Math.round(p*1.3);
         const r=s.room_lbl||s.room||'Other';
         roomScores[r]=(roomScores[r]||0)+p; totalScore+=p;
       } else if(s.type==='brand_multi'&&s.fields){
         s.fields.forEach(f=>{
-          let p=scoreBrand((answers[s.id][f.id]||''),f.cat);
+          let p=scoreBrand((answers[s.id][f.id]||''),f.cat,f.label);
           if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4);
           const r=s.room_lbl||s.room||'Other';
           roomScores[r]=(roomScores[r]||0)+p; totalScore+=p;
@@ -967,6 +971,22 @@ function showResults(){
   });
   if(!fh) fh='<p style="color:rgba(255,255,255,.4);font-size:.78rem">Your product choices show minimal flagged ingredient exposure.</p>';
   document.getElementById('findList').innerHTML=fh;
+
+  // Unscored (blank) fields
+  if(unscoredFields.length > 0){
+    const ub = document.getElementById('unscoredBlock');
+    const ul = document.getElementById('unscoredList');
+    if(ub) ub.style.display='block';
+    let uh='<p style="color:rgba(255,255,255,.55);font-size:.78rem;margin-bottom:10px;line-height:1.5">These products were left blank — we couldn\'t score them. It\'s worth finding out what brand is in your home:</p>';
+    unscoredFields.forEach(f=>{
+      uh+=`<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,153,0,.12)">
+        <span style="color:var(--orange);font-size:.9rem">?</span>
+        <span style="font-size:.8rem;color:rgba(255,255,255,.7);font-weight:700">${f}</span>
+        <span style="font-size:.72rem;color:rgba(255,153,0,.7);margin-left:auto">Not scored</span>
+      </div>`;
+    });
+    if(ul) ul.innerHTML=uh;
+  }
 
   // Swap
   const te=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0];
