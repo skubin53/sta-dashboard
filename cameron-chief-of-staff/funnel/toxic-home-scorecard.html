@@ -628,11 +628,26 @@ let activeSteps = [];
 // ══ BRAND SCORING LOOKUP ══
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
 // STA / Melaleuca product names — always score 0 (clean formulations)
-const STA_CLEAN = ['sta','switch to america','lemon bright','sol-u-guard','solu-guard','melamagic','mela magic',
-  'melapower','mela power','nature bright','affinia','renew','renewal','access bar',
-  'koala pals','proflex','pro flex','peak performance','ecosense','eco sense',
-  'tough & tender','tough and tender','clear power','sei bella','attain','provex',
-  'fiberwise','luminex','replenex','vitality','florify','sustain'];
+const STA_CLEAN = [
+  'sta','switch to america',
+  // Dish / cleaning — all spelling variants
+  'lemon bright','lemon brite','lemonbrite','lemon-brite',
+  'sol-u-guard','solu-guard','soluguard','sol u guard',
+  'melamagic','mela magic','melabrite','clear power','clearpower',
+  'tough & tender','tough and tender','tough tender',
+  'ecosense','eco sense','mela fresh','melafresh',
+  // Laundry
+  'melapower','mela power','nature bright','nature brite','prespot',
+  // Personal care
+  'affinia','renew','renewal','access bar','sei bella','luminex',
+  // Baby
+  'koala pals','koala',
+  // Health
+  'proflex','pro flex','peak performance','provex','vitality',
+  'florify','replenex','fiberwise','fiber wise','sustain','attain',
+  // Food / coffee
+  'mountain cabin','mountain cabin coffee',
+];
 
 function isSTA(text){
   const t = text.toLowerCase().trim();
@@ -649,7 +664,10 @@ const BRAND_DB = {
   // Coffee & cooking oils (shared category)
   coffee:{ keurig:9,nespresso:8,'coffee pods':8,kcup:9,'k-cup':9,'single serve':7,
     crisco:9,wesson:9,canola:8,'vegetable oil':8,'soybean':8,'corn oil':8,'sunflower oil':7,
-    'olive oil':3,'avocado oil':2,'coconut oil':2,sta:0,'switch to america':0 },
+    'olive oil':3,'avocado oil':2,'coconut oil':2,
+    // Clean animal fats — not seed oils, should score low/zero
+    'beef tallow':0,'tallow':0,'lard':0,'ghee':1,'duck fat':1,'butter':1,'grass-fed':1,
+    sta:0,'switch to america':0 },
   // Laundry
   laundry:{ tide:9,gain:9,persil:9,all:9,cheer:9,era:9,'arm & hammer':7,'seventh generation':7,method:7,ecover:6,"molly's suds":6,biokleen:6,'branch basics':7,sta:0,'switch to america':0,'melapower':0,'mela power':0,'nature bright':0 },
   // Dryer sheets
