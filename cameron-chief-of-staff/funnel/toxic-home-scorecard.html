@@ -11,14 +11,16 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{
-  --navy:#0A1B3D;
-  --navy2:#152C63;
+  --navy:#0B2545;
+  --navy2:#0F2D56;
   --red:#C8102E;
-  --orange:#FF9900;
-  --orange-dk:#E68A00;
-  --gold:#FFD700;
+  --red2:#E8172F;
+  --orange:#C9A227;
+  --orange-dk:#A8851E;
+  --gold:#C9A227;
   --white:#FFFFFF;
-  --green:#22C55E;
+  --green:#1F8A70;
+  --amber:#E8A317;
 }
 html,body{
   height:100%;
@@ -140,10 +142,10 @@ html,body{
 
 .big-cta{
   width:100%;max-width:360px;padding:17px;
-  background:var(--orange);color:#0F1111;
+  background:var(--red);color:#fff;
   font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:900;
   border:none;border-radius:50px;cursor:pointer;
-  box-shadow:0 10px 32px rgba(255,153,0,.4);transition:all .15s;
+  box-shadow:0 10px 32px rgba(200,16,46,.5);transition:all .15s;
   letter-spacing:.03em;
 }
 .big-cta:active{transform:scale(.98)}
@@ -250,12 +252,12 @@ html,body{
 }
 .btn-bk:hover{border-color:rgba(255,255,255,.4);color:#fff}
 .btn-nx{
-  flex:1;background:var(--orange);color:#0F1111;
+  flex:1;background:var(--red);color:#fff;
   border:none;border-radius:50px;padding:14px 20px;
   font-size:.92rem;font-weight:900;font-family:inherit;cursor:pointer;
-  box-shadow:0 5px 20px rgba(255,153,0,.3);transition:all .15s;text-align:center;
+  box-shadow:0 5px 20px rgba(200,16,46,.35);transition:all .15s;text-align:center;
 }
-.btn-nx:hover{background:var(--orange-dk)}
+.btn-nx:hover{background:var(--red2)}
 .btn-nx:active{transform:scale(.98)}
 
 /* ══ SOFT OPT-IN ══ */
@@ -273,8 +275,8 @@ html,body{
 }
 .soft-inp::placeholder{color:rgba(255,255,255,.28)}
 .soft-inp:focus{outline:none;border-color:var(--orange)}
-.btn-sv{width:100%;padding:13px;background:var(--orange);color:#0F1111;font-weight:900;font-size:.9rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;transition:all .15s}
-.btn-sv:hover{background:var(--orange-dk)}
+.btn-sv{width:100%;padding:13px;background:var(--red);color:#fff;font-weight:900;font-size:.9rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;transition:all .15s}
+.btn-sv:hover{background:var(--red2)}
 .btn-sk{background:transparent;border:none;color:rgba(255,255,255,.32);font-size:.76rem;font-weight:600;font-family:inherit;cursor:pointer;display:block;width:100%;text-align:center;padding:10px;text-decoration:underline}
 
 /* ══ CALCULATING ══ */
@@ -295,8 +297,8 @@ html,body{
 .prev{background:rgba(200,16,46,.1);border:1px solid rgba(200,16,46,.22);border-radius:12px;padding:13px;margin-bottom:16px;text-align:left;display:none}
 .prev-lbl{font-size:.6rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
 .prev-txt{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.5}
-.btn-rpt{width:100%;padding:15px;background:var(--orange);color:#0F1111;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 20px rgba(255,153,0,.38);display:none;transition:all .15s}
-.btn-rpt:hover{background:var(--orange-dk)}
+.btn-rpt{width:100%;padding:15px;background:var(--red);color:#fff;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 20px rgba(200,16,46,.4);display:none;transition:all .15s}
+.btn-rpt:hover{background:var(--red2)}
 
 /* ══ HARD OPT-IN ══ */
 #s-optin{background:var(--navy);overflow-y:auto;padding:20px 18px 40px;align-items:center;justify-content:center;min-height:100dvh}
@@ -312,8 +314,8 @@ html,body{
 .fg input{width:100%;padding:11px 13px;border:2px solid rgba(255,255,255,.15);border-radius:9px;font-family:inherit;font-size:.88rem;color:#fff;background:rgba(255,255,255,.08);transition:border-color .15s}
 .fg input:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.12)}
 .fg input::placeholder{color:rgba(255,255,255,.28)}
-.sub-btn{width:100%;padding:14px;background:var(--orange);color:#0F1111;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 18px rgba(255,153,0,.35);transition:all .15s}
-.sub-btn:hover{background:var(--orange-dk)}
+.sub-btn{width:100%;padding:14px;background:var(--red);color:#fff;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 18px rgba(200,16,46,.4);transition:all .15s}
+.sub-btn:hover{background:var(--red2)}
 .optin-note{font-size:.63rem;color:rgba(255,255,255,.35);text-align:center;margin-top:8px;line-height:1.5}
 
 /* ══ RESULTS ══ */
@@ -431,7 +433,7 @@ html,body{
       <defs>
         <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stop-color="#1F8A70"/>
-          <stop offset="40%" stop-color="#E8A317"/>
+          <stop offset="35%" stop-color="#C9A227"/>
           <stop offset="100%" stop-color="#C8102E"/>
         </linearGradient>
       </defs>
