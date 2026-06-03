@@ -154,12 +154,21 @@ html,body{
   padding:16px 20px 16px;max-width:520px;width:100%;margin:0 auto;
 }
 
-/* Room header */
+/* Room header — color by room */
 .q-room{
   font-size:.64rem;font-weight:800;letter-spacing:.16em;
   text-transform:uppercase;color:var(--orange);
   margin-bottom:6px;display:flex;align-items:center;gap:5px;
 }
+/* Room-specific colors */
+.room-kitchen,.room-kitchen-cleaning,.room-kitchen-food{ color:#FF9900 }
+.room-laundry{ color:#60A5FA }
+.room-bathroom{ color:#F472B6 }
+.room-nursery,.room-baby{ color:#86EFAC }
+.room-water{ color:#67E8F9 }
+.room-air{ color:#C4B5FD }
+.room-meds,.room-medications{ color:#FCA5A5 }
+.room-supplements{ color:#FDE68A }
 .q-hi{font-size:.75rem;font-weight:700;color:rgba(255,255,255,.45);margin-bottom:3px}
 .q-text{font-size:clamp(1.15rem,4vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:5px}
 .q-sub{font-size:.78rem;color:rgba(255,255,255,.5);margin-bottom:14px;line-height:1.4}
@@ -521,6 +530,10 @@ const BRAND_DB = {
   water:{ tap:8,'brita':4,'pur':4,'zero water':3,'lifestraw':2,'reverse osmosis':1,'ro system':1,'berkey':1,kangen:1,alkaline:1,spring:2,none:0 },
   // Home air
   homeair:{ febreze:10,glade:9,'air wick':9,'plug-in':9,'yankee':9,'bath & body':9,'bath and body':9,lysol:8,'essential oils':2,beeswax:1,none:0,sta:0,'switch to america':0 },
+  // Vitamins / supplements / protein powder
+  supplements:{ centrum:8,caltrate:8,'one a day':8,'nature made':7,'nature\'s bounty':7,'gummy':7,'gummies':7,orgain:5,vega:5,'garden of life':4,'ritual':4,thorne:3,sta:0,'switch to america':0,
+    // Protein
+    'optimum nutrition':8,'gold standard':8,'muscle milk':8,'premier protein':8,'isopure':7,orgain:5,'naked nutrition':4,'garden of life':4,vega:4,sta:0 },
   // General default
   general:{}
 };
@@ -551,15 +564,21 @@ const STEPS = [
   {id:'seg',room:'Your Household',icon:'👨‍👩‍👧',type:'single',q:'Who are you building a healthier home for?',
    answers:[{lbl:'Just me',em:'🙋',flag:null},{lbl:'Me & my partner',em:'💑',flag:null},{lbl:'My whole family',em:'👨‍👩‍👧',flag:'family'},{lbl:'My kids / a baby',em:'👶',flag:'baby'}]},
 
-  // Kitchen — individual product questions
-  // Kitchen Page — 5 brand inputs on ONE page
-  {id:'kitchen_brands',room:'Kitchen',icon:'🍳',type:'brand_multi',q:'What brands does your kitchen use?',sub:'Enter the brand for each. Leave blank if you don\'t use it.',room_lbl:'Kitchen',
+  // Kitchen Page A — Cleaning Products
+  {id:'kitchen_products',room:'Kitchen — Cleaning Products',icon:'🧹',type:'brand_multi',q:'What cleaning products are in your kitchen?',sub:'Enter the brand for each. Leave blank if you don\'t use it.',room_lbl:'Kitchen',
    fields:[
      {id:'k_dish',label:'Dish Detergent',ph:'e.g. Dawn, Palmolive, Branch Basics…',cat:'dish'},
      {id:'k_dwsh',label:'Dishwasher Detergent',ph:'e.g. Cascade, Finish, Seventh Generation…',cat:'dishwasher'},
      {id:'k_dis',label:'Disinfectant / Surface Cleaner',ph:'e.g. Lysol, Clorox, Mrs. Meyer\'s…',cat:'allpurpose'},
+   ]},
+
+  // Kitchen Page B — Food & Nutrition Items
+  {id:'kitchen_food',room:'Kitchen — Food & Nutrition',icon:'🥗',type:'brand_multi',q:'What food and nutrition products does your family use?',sub:'Enter the brand for each. Leave blank if you don\'t use it.',room_lbl:'Kitchen',
+   fields:[
      {id:'k_cof',label:'Coffee Brand',ph:'e.g. Folgers, Starbucks, Death Wish…',cat:'coffee'},
      {id:'k_oil',label:'Cooking Oil / Seed Oils',ph:'e.g. Crisco, Wesson, avocado oil…',cat:'coffee'},
+     {id:'k_vit',label:'Vitamins / Daily Supplements',ph:'e.g. Centrum, One A Day, Garden of Life…',cat:'supplements'},
+     {id:'k_pro',label:'Protein Powder',ph:'e.g. Optimum Nutrition, Orgain, Vega…',cat:'supplements'},
    ]},
 
   // Kitchen extras (page 3)
@@ -632,13 +651,17 @@ const STEPS = [
    ]},
 
   // Supplements & Medications
-  {id:'meds',room:'Supplements & Meds',icon:'💊',type:'multi',q:'Does your household regularly use any of these?',sub:'Helps identify where cleaner alternatives exist. Never shared without your consent.',
+  {id:'meds',room:'Medications & Health Products',icon:'💊',type:'multi',q:'What does your household regularly use?',sub:'Helps identify where cleaner alternatives exist. Never shared without your consent.',
    answers:[
-     {lbl:'Conventional vitamins / supplements',em:'💊',pts:5,room:'Supplements',det:'Titanium dioxide coatings, synthetic dyes, magnesium stearate'},
-     {lbl:'Over-the-counter medications regularly',em:'💉',pts:5,room:'Medications',det:'Long-term OTC use has known independent safety classifications'},
+     {lbl:'Energy drinks (Red Bull, Monster, Bang)',em:'⚡',pts:8,room:'Medications',det:'Synthetic dyes (Prop 65), artificial sweeteners, high-dose B vitamins'},
+     {lbl:'Children\'s medications (Tylenol, Motrin for kids)',em:'🧒',pts:7,room:'Medications',det:'Artificial dyes, acetaminophen concerns, synthetic sweeteners'},
+     {lbl:'Antacids / heartburn medications (Tums, Prilosec)',em:'🫁',pts:6,room:'Medications',det:'Aluminum compounds in some formulas; synthetic coatings'},
+     {lbl:'Sleep aids / antihistamines (Benadryl, Unisom)',em:'😴',pts:6,room:'Medications',det:'Diphenhydramine — independent classification concerns at regular use'},
+     {lbl:'Topical antibiotics / creams (Neosporin, cortisone)',em:'🩹',pts:5,room:'Medications',det:'Petroleum-based carriers; preservatives with independent concerns'},
+     {lbl:'Chemical sunscreen (Coppertone, Banana Boat)',em:'☀️',pts:7,room:'Medications',det:'Oxybenzone and octinoxate — endocrine disruption classifications'},
      {lbl:'Prescription medications',em:'🏥',pts:7,room:'Medications',det:'Many pharmaceuticals have independent hazard classifications for long-term exposure'},
      {lbl:'Hormone therapy or synthetic birth control',em:'⚕️',pts:8,room:'Medications',det:'Synthetic estrogens — known carcinogen classification in combined HRT'},
-     {lbl:'Clean / natural supplements only',em:'🌿',pts:1,room:'Supplements'},
+     {lbl:'Clean / natural alternatives only',em:'🌿',pts:1,room:'Medications'},
      {lbl:'None of the above',em:'✅',pts:0,exclusive:true},
    ]},
 ];
@@ -679,7 +702,8 @@ function renderStep(){
   let h='';
 
   if(userName) h+=`<div class="q-hi">Hi ${userName},</div>`;
-  h+=`<div class="q-room"><span>${step.icon||''}</span>${step.room||''}</div>`;
+  const roomCls='room-'+(step.room||'').toLowerCase().replace(/[^a-z]/g,'-').replace(/-+/g,'-').replace(/-$/,'');
+  h+=`<div class="q-room ${roomCls}"><span>${step.icon||''}</span>${step.room||''}</div>`;
   h+=`<div class="q-text">${step.q}</div>`;
   if(step.sub) h+=`<div class="q-sub">${step.sub}</div>`;
 
