@@ -149,6 +149,11 @@ html,body{
   letter-spacing:.03em;
 }
 .big-cta:active{transform:scale(.98)}
+
+@keyframes headlineIn{from{opacity:0;transform:scale(.96) translateY(-6px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scanSweep{0%{left:-40%;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:140%;opacity:0}}
+@keyframes ctaPulse{0%,100%{box-shadow:0 10px 32px rgba(200,16,46,.5)}50%{box-shadow:0 10px 44px rgba(200,16,46,.7),0 0 0 10px rgba(200,16,46,.1)}}
 .cta-note{font-size:.68rem;color:rgba(255,255,255,.3);margin-top:8px;text-align:center}
 .stat-line{font-size:.72rem;color:rgba(255,255,255,.38);margin-top:10px;text-align:center;letter-spacing:.05em}
 
@@ -374,29 +379,59 @@ html,body{
   <div class="rtop"></div>
   <div class="intro-inner">
 
-    <!-- Hook headline first -->
-    <h1 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,11vw,4rem);color:#fff;text-align:center;line-height:.95;letter-spacing:.04em;margin-bottom:6px">
-      WHAT'S <span style="background:linear-gradient(90deg,#FF9900,#C8102E);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">HIDING</span><br>IN YOUR HOME?
-    </h1>
-    <div class="app-name" style="font-size:clamp(.8rem,3vw,1rem);letter-spacing:.16em;opacity:.7;margin-bottom:16px;font-family:'Montserrat',sans-serif;font-weight:700">The Family Home Toxic Scorecard</div>
+    <!-- Kicker badge above headline -->
+    <div style="font-size:.62rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.15);border-radius:50px;padding:5px 14px;margin-bottom:12px;animation:fadeUp .5s ease both">THE FAMILY HOME TOXIC SCORECARD</div>
 
-    <div class="sh-circle">
-      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole"/>
+    <!-- Headline with depth glow -->
+    <div style="position:relative;text-align:center;margin-bottom:10px;animation:headlineIn .6s ease .1s both">
+      <div style="position:absolute;inset:-20px;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(200,16,46,.18),transparent);pointer-events:none;border-radius:50%"></div>
+      <h1 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,12vw,4.2rem);color:#fff;line-height:.93;letter-spacing:.04em;position:relative">
+        WHAT'S <span style="background:linear-gradient(90deg,#E8A317,#C8102E);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:none;filter:drop-shadow(0 0 12px rgba(232,163,23,.45))">HIDING</span><br>IN YOUR HOME?
+      </h1>
     </div>
 
-    <div class="sh-name">Shannon Nicole · Mom · Grandma</div>
+    <!-- Hero scan visual -->
+    <div style="position:relative;width:100%;max-width:300px;margin:0 auto 14px;animation:fadeUp .5s ease .25s both">
+      <div style="display:flex;justify-content:center;gap:18px;font-size:2rem;opacity:.22;filter:grayscale(1)">
+        🧴🕯️📦🧹☕🍳
+      </div>
+      <!-- Scan line sweeps once -->
+      <div style="position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;pointer-events:none">
+        <div style="position:absolute;top:0;left:0;height:100%;width:40%;background:linear-gradient(90deg,transparent,rgba(255,153,0,.18),transparent);animation:scanSweep 2s ease .8s 1 forwards;opacity:0"></div>
+      </div>
+      <div style="text-align:center;font-size:.66rem;color:rgba(255,255,255,.3);margin-top:6px;letter-spacing:.1em;text-transform:uppercase">Scanning your home's products</div>
+    </div>
 
-    <p style="font-size:1.05rem;font-weight:800;color:var(--red);text-align:center;margin-bottom:14px;letter-spacing:.01em;line-height:1.3">Built by a Grandma<br>who got tired of guessing.</p>
+    <!-- Trust row: photo + name + tagline in ONE compact block -->
+    <div style="display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:50px;padding:10px 16px 10px 10px;margin-bottom:16px;max-width:360px;animation:fadeUp .5s ease .35s both">
+      <div style="width:44px;height:44px;border-radius:50%;border:2px solid var(--orange);overflow:hidden;flex-shrink:0">
+        <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon" style="width:100%;height:100%;object-fit:cover;object-position:center top"/>
+      </div>
+      <div>
+        <div style="font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)">Shannon Nicole · Mom · Grandma</div>
+        <div style="font-size:.7rem;color:rgba(255,255,255,.55);font-style:italic;margin-top:1px">"Built by a Grandma who got tired of guessing."</div>
+      </div>
+    </div>
 
-    <div class="sh-q">"I built this because my family deserved to know the truth. Now yours can too."</div>
-
-    <div class="nb">
+    <!-- Name input -->
+    <div class="nb" style="animation:fadeUp .5s ease .45s both">
       <label>Your first name</label>
       <input type="text" id="firstName" placeholder="Enter your first name…" autocomplete="given-name" oninput="userName=this.value.trim()"/>
     </div>
 
-    <button class="big-cta" onclick="startQuiz()">Find My Family's Toxic Score →</button>
-    <div class="cta-note">Free · 3 minutes · No pressure</div>
+    <!-- CTA with credibility chip -->
+    <div style="width:100%;max-width:360px;animation:fadeUp .5s ease .55s both">
+      <button class="big-cta" onclick="startQuiz()" style="animation:ctaPulse 2.5s ease-in-out infinite 1.8s">Find My Family's Toxic Score →</button>
+      <!-- Reassurance chips -->
+      <div style="display:flex;justify-content:center;gap:8px;margin-top:10px;flex-wrap:wrap">
+        <span style="font-size:.68rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border-radius:50px;padding:4px 10px;border:1px solid rgba(255,255,255,.1)">✓ Free</span>
+        <span style="font-size:.68rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border-radius:50px;padding:4px 10px;border:1px solid rgba(255,255,255,.1)">⏱ 3 min</span>
+        <span style="font-size:.68rem;font-weight:700;color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);border-radius:50px;padding:4px 10px;border:1px solid rgba(255,255,255,.1)">🔒 No pressure</span>
+      </div>
+      <!-- Credibility chip -->
+      <div style="text-align:center;margin-top:10px;font-size:.66rem;color:rgba(255,255,255,.3);letter-spacing:.06em">Scored against independent safety data</div>
+    </div>
+
   </div>
 </div>
 
