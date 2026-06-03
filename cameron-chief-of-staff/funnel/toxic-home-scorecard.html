@@ -629,24 +629,44 @@ let activeSteps = [];
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
 // STA / Melaleuca product names — always score 0 (clean formulations)
 const STA_CLEAN = [
-  'sta','switch to america',
-  // Dish / cleaning — all spelling variants
+  'sta','switch to america','melaleuca',
+  // Dish / kitchen cleaning
   'lemon bright','lemon brite','lemonbrite','lemon-brite',
+  'diamond brite','diamondbrite','diamond-brite',
+  'ecosense','eco sense','ecosense rinse',
+  // Surface / disinfectant
   'sol-u-guard','solu-guard','soluguard','sol u guard',
-  'melamagic','mela magic','melabrite','clear power','clearpower',
+  'sol-u-mel','solumel','sol u mel',
+  'melamagic','mela magic',
   'tough & tender','tough and tender','tough tender',
-  'ecosense','eco sense','mela fresh','melafresh',
+  'clear power','clearpower',
+  'clean & gleam','clean and gleam',
+  'mela fresh','melafresh',
   // Laundry
-  'melapower','mela power','nature bright','nature brite','prespot',
+  'melapower','mela power',
+  'melasoft','mela soft',
+  'melabrite','mela brite','melaboost','mela boost',
+  'nature bright','nature brite','naturebrite',
+  'prespot','pre spot','pre-spot',
   // Personal care
-  'affinia','renew','renewal','access bar','sei bella','luminex',
+  'affinia','renew','renewal',
+  'access bar','sei bella','seibella','alloy','bath bar',
   // Baby
   'koala pals','koala',
-  // Health
-  'proflex','pro flex','peak performance','provex','vitality',
-  'florify','replenex','fiberwise','fiber wise','sustain','attain',
-  // Food / coffee
-  'mountain cabin','mountain cabin coffee',
+  // Supplements & vitamins
+  'peak performance','vitality for life','vitality pack',
+  'luminex','focusap','focus ap',
+  'crème delight','creme delight','omega-3 creme',
+  'florify','replenex','fiberwise','fiber wise',
+  'sustain','attain','proflex','pro flex','provex',
+  'restez','rest ez','phlorav','vigorft','vigor ft',
+  'k2-d3','k2 d3','cellwise','phytomega',
+  'cranbarrier','nutraview','nutra view',
+  'acai balance','açaí balance',
+  // Food / beverages
+  'mountain cabin','riverbend ranch','riverbend',
+  // Energy / sports
+  'endure','activate',
 ];
 
 function isSTA(text){
