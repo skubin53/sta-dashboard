@@ -295,7 +295,7 @@ html,body{
 .btn-rpt:hover{background:var(--orange-dk)}
 
 /* ══ HARD OPT-IN ══ */
-#s-optin{background:var(--navy);overflow-y:auto;padding:20px 18px 40px;align-items:center;justify-content:flex-start}
+#s-optin{background:var(--navy);overflow-y:auto;padding:20px 18px 40px;align-items:center;justify-content:center;min-height:100dvh}
 .oc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:22px;border-top:7px solid var(--orange);overflow:hidden;width:100%;max-width:440px}
 .oh{background:linear-gradient(120deg,var(--red),#E8172F);padding:20px 18px 16px;text-align:center}
 .oh .ey{font-size:.64rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:4px}
@@ -437,18 +437,26 @@ html,body{
   <div class="oc">
     <div class="oh">
       <div class="ey">★ Your report is ready ★</div>
-      <h2>Where should I send<br>your full report?</h2>
-      <p>Room-by-room breakdown, flagged brands, and your #1 swap.</p>
+      <h2>Get your results<br>by text — right now.</h2>
+      <div style="margin-top:10px;line-height:1.8;font-size:.82rem;color:rgba(255,255,255,.88);font-weight:600">
+        📍 Room-by-room breakdown<br>
+        ⚠️ Your flagged brands & ingredients<br>
+        🔁 Your #1 highest-impact swap
+      </div>
     </div>
     <div class="ob">
       <div class="frow">
         <div class="fg"><label>First Name *</label><input type="text" id="oFN" placeholder="First name" autocomplete="given-name"/></div>
         <div class="fg"><label>Last Name *</label><input type="text" id="oLN" placeholder="Last name" autocomplete="family-name"/></div>
       </div>
-      <div class="fg"><label>Email Address *</label><input type="email" id="oEM" placeholder="your@email.com" autocomplete="email"/></div>
-      <div class="fg"><label>Phone Number *</label><input type="tel" id="oPH" placeholder="(555) 000-0000" autocomplete="tel"/></div>
-      <button class="sub-btn" onclick="submitReport()">📬 Send My Full Report →</button>
-      <p class="optin-note">Your info is safe. Report + tips from Shannon. Unsubscribe anytime.</p>
+      <div class="fg">
+        <label>📱 Cell Phone Number *</label>
+        <input type="tel" id="oPH" placeholder="(555) 000-0000" autocomplete="tel" style="font-size:1rem;padding:14px;"/>
+        <div style="font-size:.68rem;color:var(--orange);margin-top:4px;font-weight:700">We'll text your full report within 5 minutes</div>
+      </div>
+      <div class="fg"><label>Email Address <span style="font-weight:400;color:rgba(255,255,255,.4)">(optional)</span></label><input type="email" id="oEM" placeholder="your@email.com" autocomplete="email"/></div>
+      <button class="sub-btn" onclick="submitReport()">📲 Text Me My Report →</button>
+      <p class="optin-note">Your info is safe. You'll receive your full report by text within 5 minutes. Unsubscribe anytime.</p>
     </div>
   </div>
 </div>
@@ -928,8 +936,9 @@ async function submitReport(){
   const em=document.getElementById('oEM').value.trim();
   const ph=document.getElementById('oPH').value.trim();
   if(!fn){alert('Please enter your first name.');return;}
-  if(!em||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){alert('Please enter a valid email address.');return;}
-  if(!ph||ph.replace(/\D/g,'').length<7){alert('Please enter your phone number.');return;}
+  if(!ph||ph.replace(/\D/g,'').length<7){alert('Please enter your cell phone number so we can text you your report.');return;}
+  // Email is optional — validate only if provided
+  if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){alert('Please enter a valid email address, or leave it blank.');return;}
   const btn=document.querySelector('.sub-btn');
   btn.textContent='Sending…';btn.disabled=true;
   const grade=totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
