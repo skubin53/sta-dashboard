@@ -535,16 +535,18 @@ html,body{
       </div>
     </div>
     <div class="ob">
-      <div class="fg"><label>First Name *</label><input type="text" id="oFN" placeholder="First name" autocomplete="given-name"/></div>
-      <div class="fg" style="display:none"><label>Last Name</label><input type="text" id="oLN" placeholder="Last name" autocomplete="family-name"/></div>
+      <!-- Hidden fields — first name already captured, last name not needed -->
+      <input type="hidden" id="oFN" value=""/>
+      <input type="hidden" id="oLN" value=""/>
+      <input type="hidden" id="oEM" value=""/>
+
       <div class="fg">
-        <label>📱 Cell Phone Number *</label>
-        <input type="tel" id="oPH" placeholder="(555) 000-0000" autocomplete="tel" style="font-size:1rem;padding:14px;"/>
-        <div style="font-size:.68rem;color:var(--orange);margin-top:4px;font-weight:700">We'll text your full report within 5 minutes</div>
+        <label>📱 Your Cell Phone Number</label>
+        <input type="tel" id="oPH" placeholder="(555) 000-0000" autocomplete="tel" style="font-size:1.1rem;padding:16px;text-align:center;letter-spacing:.06em;"/>
+        <div style="font-size:.72rem;color:var(--orange);margin-top:6px;font-weight:700;text-align:center">✓ We'll text your full report within 5 minutes</div>
       </div>
-      <div class="fg"><label>Email Address <span style="font-weight:400;color:rgba(255,255,255,.4)">(optional)</span></label><input type="email" id="oEM" placeholder="your@email.com" autocomplete="email"/></div>
-      <button class="sub-btn" onclick="submitReport()">📲 Text Me My Report →</button>
-      <p class="optin-note">Your info is safe. You'll receive your full report by text within 5 minutes. Unsubscribe anytime.</p>
+      <button class="sub-btn" onclick="submitReport()" style="font-size:1.05rem;padding:17px;">📲 Text Me My Results →</button>
+      <p class="optin-note">Your privacy is protected. One text with your report. Unsubscribe anytime.</p>
     </div>
   </div>
 </div>
@@ -1048,17 +1050,21 @@ function showCalcDetails(){
   }
 }
 
-function showOptin(){ if(userName) document.getElementById('oFN').value=userName; showScreen('s-optin'); }
+function showOptin(){
+  // Pre-fill first name from intro capture (hidden field)
+  var fnEl = document.getElementById('oFN');
+  if(fnEl && userName) fnEl.value = userName;
+  showScreen('s-optin');
+}
 
 async function submitReport(){
   const fn=document.getElementById('oFN').value.trim();
   const ln=document.getElementById('oLN').value.trim();
   const em=document.getElementById('oEM').value.trim();
   const ph=document.getElementById('oPH').value.trim();
-  if(!fn){alert('Please enter your first name.');return;}
-  if(!ph||ph.replace(/\D/g,'').length<7){alert('Please enter your cell phone number so we can text you your report.');return;}
-  // Email is optional — validate only if provided
-  if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){alert('Please enter a valid email address, or leave it blank.');return;}
+  // First name from intro screen (not re-asked on gate)
+  var capturedName = userName || fn || 'Friend';
+  if(!ph||ph.replace(/\D/g,'').length<7){alert('Please enter your cell phone number so we can text you your results.');return;}
   const btn=document.querySelector('.sub-btn');
   btn.textContent='Sending…';btn.disabled=true;
   const grade=totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
