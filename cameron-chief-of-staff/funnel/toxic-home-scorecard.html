@@ -180,7 +180,7 @@ html,body{
 .room-air{ color:#C4B5FD }
 .room-meds,.room-medications{ color:#FCA5A5 }
 .room-supplements{ color:#FDE68A }
-.q-hi{font-size:.75rem;font-weight:700;color:rgba(255,255,255,.45);margin-bottom:3px}
+.q-hi{font-size:1.15rem;font-weight:900;color:#fff;margin-bottom:8px;letter-spacing:.01em}
 .q-text{font-size:clamp(1.15rem,4vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:5px}
 .q-sub{font-size:.78rem;color:rgba(255,255,255,.5);margin-bottom:14px;line-height:1.4}
 
@@ -869,7 +869,7 @@ function renderStep(){
   const prev = answers[step.id]||{};
   let h='';
 
-  if(userName) h+=`<div class="q-hi">Hi ${userName},</div>`;
+  if(userName) h+=`<div class="q-hi">Hi <span style="color:var(--orange)">${userName}</span> 👋</div>`;
   const roomColors = {
     'kitchen':'#FF9900','kitchen — cleaning products':'#FF9900','kitchen — food & nutrition':'#FF9900',
     'laundry room':'#60A5FA','bathroom':'#F472B6','kids & baby':'#86EFAC','kids & baby':'#86EFAC',
