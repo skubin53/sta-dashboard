@@ -1927,8 +1927,8 @@ function renderCommunityStats(){
 }
 function loadCommunityStats(){ try{ fetch(SERVER+'/scan-stats').then(function(r){return r.json();}).then(function(d){ COMM_STATS=d; renderCommunityStats(); }).catch(function(){}); }catch(e){} }
 loadCommunityStats();
-// click counter — every page open pings the server (counts clicks even on links already texted out)
-try{ fetch(SERVER+'/scan-visit?r='+(getParam('r')==='1'?'1':'0'),{method:'POST',keepalive:true}); }catch(e){}
+// click counter — every page open pings the server (counts clicks even on links already texted out; ?c=<contactId> = per-person)
+try{ var _c=getParam('c'); fetch(SERVER+'/scan-visit?r='+(getParam('r')==='1'?'1':'0')+(_c?('&c='+encodeURIComponent(_c)):''),{method:'POST',keepalive:true}); }catch(e){}
 
 // ── Chip-card interaction handlers ──────────────────────────────────────────
 function isSTA_check(text){ return isSTA(text); }
