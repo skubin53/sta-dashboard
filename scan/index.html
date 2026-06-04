@@ -1927,6 +1927,8 @@ function renderCommunityStats(){
 }
 function loadCommunityStats(){ try{ fetch(SERVER+'/scan-stats').then(function(r){return r.json();}).then(function(d){ COMM_STATS=d; renderCommunityStats(); }).catch(function(){}); }catch(e){} }
 loadCommunityStats();
+// click counter — every page open pings the server (counts clicks even on links already texted out)
+try{ fetch(SERVER+'/scan-visit?r='+(getParam('r')==='1'?'1':'0'),{method:'POST',keepalive:true}); }catch(e){}
 
 // ── Chip-card interaction handlers ──────────────────────────────────────────
 function isSTA_check(text){ return isSTA(text); }
