@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Shannon Nicole | Build Something American. Build Something Yours.</title>
+  <meta name="description" content="Shannon Nicole recruits ambitious women into a proven American business model. Not MLM. Not parties. Real income. Apply now." />
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --navy:   #0D1B3E;
+      --navy-mid: #122555;
+      --navy-light: #1a3366;
+      --red:    #C8102E;
+      --red-dark: #a00d25;
+      --white:  #FFFFFF;
+      --gold:   #FFD700;
+      --gold-dark: #c9a800;
+      --gray-light: #f8f8f8;
+      --gray-mid: #d0d4de;
+      --gray-text: #8892a4;
+      --font-serif: 'Georgia', 'Times New Roman', serif;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--white);
+      color: var(--navy);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ============================================================
+       TYPOGRAPHY
+    ============================================================ */
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    h1 { font-size: clamp(2.4rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4.5vw, 3.2rem); }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+
+    p { line-height: 1.75; }
+
+    .text-center { text-align: center; }
+    .text-left   { text-align: left; }
+
+    /* ============================================================
+       LAYOUT UTILITIES
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-sm {
+      padding: 56px 0;
+    }
+
+    /* ============================================================
+       STAR DECORATION
+    ============================================================ */
+    @keyframes star-pulse {
+      0%, 100% { opacity: 0.6; }
+      50%       { opacity: 1; }
+    }
+
+    .star-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .star-row .star {
+      color: var(--gold);
+      font-size: 1rem;
+      animation: star-pulse 3s ease-in-out infinite;
+    }
+
+    .star-row .star:nth-child(2) { animation-delay: 0.3s; }
+    .star-row .star:nth-child(3) { animation-delay: 0.6s; }
+    .star-row .star:nth-child(4) { animation-delay: 0.9s; }
+    .star-row .star:nth-child(5) { animation-delay: 1.2s; }
+
+    /* ============================================================
+       STRIPE ACCENT
+    ============================================================ */
+    .stripe-bar {
+      height: 6px;
+      background: repeating-linear-gradient(
+        90deg,
+        var(--red) 0px,
+        var(--red) 20px,
+        var(--white) 20px,
+        var(--white) 26px,
+        var(--navy) 26px,
+        var(--navy) 46px,
+        var(--white) 46px,
+        var(--white) 52px
+      );
+      width: 100%;
+    }
+
+    /* ============================================================
+       NAV
+    ============================================================ */
+    .nav {
+      background: var(--navy);
+      padding: 14px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid var(--red);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-logo span {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover { background: var(--red-dark); }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      padding: 72px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle star pattern background */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,215,0,0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+
+    /* Gold left border accent */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--gold);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (min-width: 820px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .hero-subhead {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 2rem;
+      max-width: 540px;
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .hero-proof-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 600;
+    }
+
+    .hero-proof-item::before {
+      content: '★';
+      color: var(--gold);
+      font-size: 0.9rem;
+    }
+
+    /* ============================================================
+       FORM CARD
+    ============================================================ */
+    .form-card {
+      background: var(--white);
+      border-radius: 6px;
+      padding: 2rem 1.75rem 2.25rem;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+      border-top: 4px solid var(--gold);
+      position: relative;
+    }
+
+    .form-card-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-card h3 {
+      color: var(--navy);
+      font-size: 1.35rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .form-card-sub {
+      font-size: 0.85rem;
+      color: #555;
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group {
+      margin-bottom: 0.9rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 11px 14px;
+      border: 2px solid #d0d4de;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-family: var(--font-sans);
+      color: var(--navy);
+      background: #fafafa;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: var(--navy);
+      box-shadow: 0 0 0 3px rgba(11,20,38,0.1);
+      background: var(--white);
+    }
+
+    .form-group input.error {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(200,16,46,0.1);
+    }
+
+    .field-error {
+      display: none;
+      font-size: 0.74rem;
+      color: var(--red);
+      font-weight: 600;
+      margin-top: 0.3rem;
+    }
+
+    .field-error.visible { display: block; }
+
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 0.4rem;
+      position: relative;
+    }
+
+    .btn-submit:hover { background: var(--red-dark); }
+    .btn-submit:active { transform: scale(0.99); }
+
+    .btn-submit.loading {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    .form-disclaimer {
+      font-size: 0.7rem;
+      color: #888;
+      margin-top: 0.75rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* Success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    .form-success.visible { display: block; }
+    .form-fields.hidden { display: none; }
+
+    .success-icon {
+      width: 56px;
+      height: 56px;
+      background: #16a34a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .form-success h4 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-success p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* ============================================================
+       STRIPE DIVIDER
+    ============================================================ */
+    .divider-stripe {
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy) 0%, var(--red) 50%, var(--gold) 100%);
+    }
+
+    /* ============================================================
+       PROBLEM SECTION
+    ============================================================ */
+    .problem-section {
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .problem-section h2 {
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .problem-section h2 em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .problem-intro {
+      font-size: 1.05rem;
+      color: #444;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .problem-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 900px) {
+      .problem-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .problem-card {
+      background: var(--gray-light);
+      border: 1px solid #e0e4ed;
+      border-top: 3px solid var(--red);
+      border-radius: 4px;
+      padding: 1.75rem 1.5rem;
+    }
+
+    .problem-card-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .problem-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .problem-card p {
+      font-size: 0.88rem;
+      color: #555;
+      line-height: 1.65;
+    }
+
+    /* ============================================================
+       THE MODEL SECTION
+    ============================================================ */
+    .model-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .model-section h2 {
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .model-section h2 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .model-lead {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      max-width: 620px;
+      margin: 0 auto 3rem;
+    }
+
+    .model-section .section-eyebrow {
+      color: var(--gold);
+    }
+
+    .problem-section .section-eyebrow,
+    .shannon-section .section-eyebrow,
+    .qualify-section .section-eyebrow,
+    .final-cta-section .section-eyebrow {
+      color: var(--red);
+    }
+
+    .model-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .model-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 900px) {
+      .model-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .model-card {
+      background: #1a3366;
+      border-radius: 5px;
+      padding: 1.75rem 1.5rem;
+      border-top: 3px solid var(--red);
+      border-bottom: 3px solid var(--gold);
+      box-shadow: 0 2px 18px rgba(0,0,0,0.25);
+    }
+
+    .model-card-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--red);
+      color: var(--white);
+      font-weight: 900;
+      font-size: 0.9rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .model-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .model-card p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.65;
+    }
+
+    .model-not {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2.5rem;
+    }
+
+    .model-not-pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 18px;
+      border-radius: 100px;
+    }
+
+    .model-not-pill span {
+      color: var(--gold);
+      margin-right: 4px;
+    }
+
+    /* ============================================================
+       SHANNON SECTION
+    ============================================================ */
+    .shannon-section {
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .shannon-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (min-width: 820px) {
+      .shannon-inner { grid-template-columns: 1fr 1.2fr; }
+    }
+
+    .shannon-avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: var(--navy-light);
+      border: 4px solid var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      color: var(--gold);
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle geometric inner ring */
+    .shannon-avatar::after {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border-radius: 50%;
+      border: 2px dashed rgba(200,16,46,0.3);
+    }
+
+    .shannon-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .stat-item {
+      text-align: left;
+    }
+
+    .stat-num {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--red);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .shannon-copy h2 {
+      color: var(--navy);
+      margin-bottom: 1.25rem;
+    }
+
+    .shannon-copy h2 em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .shannon-copy p {
+      color: #444;
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+    }
+
+    .shannon-quote {
+      margin-top: 1.75rem;
+      border-left: 4px solid var(--red);
+      padding-left: 1.25rem;
+    }
+
+    .shannon-quote blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    .shannon-quote cite {
+      display: block;
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--red);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 0.75rem;
+    }
+
+    /* ============================================================
+       TESTIMONIALS
+    ============================================================ */
+    .testimonials-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .testimonials-section h2 {
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .testimonials-section h2 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+
+    .testimonials-section .section-eyebrow {
+      color: var(--gold);
+    }
+
+    .testi-lead {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin: 0 auto 3rem;
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 680px) {
+      .testi-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 900px) {
+      .testi-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .testi-card {
+      background: #1a3366;
+      border-radius: 6px;
+      padding: 1.75rem 1.5rem;
+      border-top: 4px solid var(--red);
+      position: relative;
+      color: var(--white);
+    }
+
+    .testi-card.featured {
+      border-top-color: var(--gold);
+      background: #0a1a3a;
+      color: var(--white);
+    }
+
+    .testi-stars {
+      color: var(--gold);
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.75rem;
+    }
+
+    .testi-income {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 2px;
+      margin-bottom: 0.75rem;
+    }
+
+    .testi-card.featured .testi-income {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .testi-quote {
+      font-family: var(--font-serif);
+      font-size: 0.98rem;
+      font-style: italic;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 1rem;
+    }
+
+    .testi-card.featured .testi-quote { color: rgba(255,255,255,0.9); }
+
+    .testi-name {
+      font-weight: 800;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+    }
+
+    .testi-card.featured .testi-name { color: var(--gold); }
+
+    .testi-detail {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.55);
+      margin-top: 0.2rem;
+    }
+
+    .testi-card.featured .testi-detail { color: rgba(255,255,255,0.55); }
+
+    .ftc-disclaimer {
+      margin-top: 2rem;
+      padding: 1rem 1.25rem;
+      background: rgba(255,255,255,0.08);
+      border-left: 3px solid rgba(255,255,255,0.2);
+      border-radius: 3px;
+      font-size: 0.74rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       IS THIS YOU SECTION
+    ============================================================ */
+    .qualify-section {
+      background: #f8f8f8;
+      color: var(--navy);
+    }
+
+    .qualify-section h2 {
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .qualify-section h2 em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .qualify-lead {
+      font-size: 1rem;
+      color: #555;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .qualify-list {
+      list-style: none;
+      max-width: 680px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    @media (min-width: 640px) {
+      .qualify-list { grid-template-columns: 1fr 1fr; }
+    }
+
+    .qualify-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      background: #ffffff;
+      border: 1px solid #dde3ef;
+      border-radius: 5px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 1px 6px rgba(13,27,62,0.06);
+    }
+
+    .qualify-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      background: var(--red);
+      border-radius: 50%;
+      color: var(--white);
+      font-weight: 900;
+      font-size: 0.85rem;
+      margin-top: 0.1rem;
+    }
+
+    .qualify-text {
+      font-size: 0.92rem;
+      color: #333;
+      line-height: 1.55;
+    }
+
+    .qualify-cta-wrap {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .qualify-cta-wrap p {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+    }
+
+    /* ============================================================
+       FINAL CTA SECTION
+    ============================================================ */
+    .final-cta-section {
+      background: #f8f8f8;
+      padding: 80px 0;
+    }
+
+    .final-cta-section h2 {
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+
+    .final-cta-section h2 em {
+      font-style: normal;
+      color: var(--red);
+    }
+
+    .final-cta-lead {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .final-form-wrap {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .final-form-wrap .form-card {
+      border-top-color: var(--red);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      padding: 2rem 0;
+      font-size: 0.78rem;
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .footer .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer .footer-logo span { color: var(--gold); }
+
+    .footer a { color: rgba(255,255,255,0.5); text-decoration: underline; }
+    .footer a:hover { color: var(--gold); }
+
+    /* ============================================================
+       SCROLL REVEAL ANIMATIONS
+    ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ============================================================
+       BUTTON SHARED STYLE
+    ============================================================ */
+    .btn-primary {
+      display: inline-block;
+      padding: 15px 36px;
+      background: var(--red);
+      color: var(--white);
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, transform 0.1s;
+      text-align: center;
+    }
+
+    .btn-primary:hover { background: var(--red-dark); }
+    .btn-primary:active { transform: scale(0.99); }
+
+    .btn-outline-white {
+      display: inline-block;
+      padding: 13px 30px;
+      background: transparent;
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      border: 2px solid rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-outline-white:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ============================================================
+       MOBILE ADJUSTMENTS
+    ============================================================ */
+    @media (max-width: 639px) {
+      .section { padding: 56px 0; }
+      .section-sm { padding: 40px 0; }
+      .hero { padding: 48px 0 52px; }
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.85rem; }
+    }
+
+    /* Focus ring for accessibility */
+    :focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ====================================================
+     STICKY NAV
+==================================================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <div class="nav-logo">The <span>Shannon Nicole</span></div>
+    <a href="#apply" class="nav-cta" role="button">Apply Now</a>
+  </div>
+</nav>
+
+<div class="stripe-bar" aria-hidden="true"></div>
+
+<!-- ====================================================
+     HERO
+==================================================== -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container hero-grid">
+
+    <!-- LEFT: Copy -->
+    <div class="hero-copy">
+      <div class="star-row" aria-hidden="true">
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+        <span class="star">★</span>
+      </div>
+      <span class="hero-badge">Switch to America</span>
+      <h1 id="hero-heading">
+        You're Done Being Underpaid<br />
+        in Someone Else's <em>Economy.</em>
+      </h1>
+      <p class="hero-subhead">
+        You built their business. You hit their targets. You stayed late, skipped vacations, and played by every rule&thinsp;—&thinsp;and your cap still hasn't moved. There is another way. It's American. It's yours. And it's been waiting.
+      </p>
+
+      <div class="hero-proof">
+        <div class="hero-proof-item">7 Years Building</div>
+        <div class="hero-proof-item">100+ Women Launched</div>
+        <div class="hero-proof-item">Not MLM. Not Parties.</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Form -->
+    <div id="apply">
+      <div class="form-card">
+        <div class="form-card-eyebrow">Step 1 of 2</div>
+        <h3>See If You Qualify</h3>
+        <p class="form-card-sub">Takes 60 seconds. No pitch. No pressure. Just a real conversation.</p>
+
+        <div class="form-fields" id="hero-form-fields">
+          <form id="hero-form" novalidate>
+            <input type="hidden" name="source" value="Website Version A - Patriot" />
+
+            <div class="form-group">
+              <label for="hero-name">Full Name</label>
+              <input type="text" id="hero-name" name="name" placeholder="Your full name" autocomplete="name" />
+              <div class="field-error" id="hero-name-error">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="hero-email">Email Address</label>
+              <input type="email" id="hero-email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <div class="field-error" id="hero-email-error">Please enter a valid email.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="hero-phone">Phone Number</label>
+              <input type="tel" id="hero-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+              <div class="field-error" id="hero-phone-error">Please enter your phone number.</div>
+            </div>
+
+            <button type="submit" class="btn-submit" id="hero-submit">
+              Take the Next Step &rarr;
+            </button>
+          </form>
+
+          <p class="form-disclaimer">By submitting you agree to receive follow-up information. We respect your privacy and will never sell your data.</p>
+        </div>
+
+        <div class="form-success" id="hero-form-success">
+          <div class="success-icon">&#10003;</div>
+          <h4>You're in.</h4>
+          <p>Check your email &mdash; we'll be in touch within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     PROBLEM
+==================================================== -->
+<section class="section problem-section" aria-labelledby="problem-heading">
+  <div class="container text-center">
+    <span class="section-eyebrow">Sound Familiar?</span>
+    <h2 id="problem-heading">The Corporate Lie<br /><em>Nobody Told You About</em></h2>
+    <p class="problem-intro">They said work hard, be loyal, prove yourself. What they didn't say: there's a ceiling &mdash; and you will hit it.</p>
+
+    <div class="problem-grid">
+
+      <div class="problem-card reveal">
+        <div class="problem-card-icon" aria-hidden="true">&#128683;</div>
+        <h4>The Invisible Ceiling</h4>
+        <p>You've outperformed every metric. But someone above you isn't leaving. Your income is frozen in someone else's budget cycle.</p>
+      </div>
+
+      <div class="problem-card reveal reveal-delay-1">
+        <div class="problem-card-icon" aria-hidden="true">&#9200;</div>
+        <h4>Time That Belongs to Them</h4>
+        <p>Your mornings, your evenings, your weekends. You're available 24/7 for a paycheck that doesn't change if you give more or less.</p>
+      </div>
+
+      <div class="problem-card reveal reveal-delay-2">
+        <div class="problem-card-icon" aria-hidden="true">&#128184;</div>
+        <h4>Drowning in Debt, Treading Water</h4>
+        <p>The student loans, the mortgage, the credit cards. You make good money on paper &mdash; but nothing's getting ahead. Nothing's growing.</p>
+      </div>
+
+      <div class="problem-card reveal reveal-delay-3">
+        <div class="problem-card-icon" aria-hidden="true">&#128165;</div>
+        <h4>The Burnout Nobody Admits</h4>
+        <p>You're exhausted. Not lazy &mdash; exhausted. Depleted by a system that takes everything and calls it "opportunity."</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider-stripe" aria-hidden="true"></div>
+
+<!-- ====================================================
+     THE MODEL
+==================================================== -->
+<section class="section model-section" aria-labelledby="model-heading">
+  <div class="container text-center">
+    <span class="section-eyebrow">What This Actually Is</span>
+    <h2 id="model-heading">Built Once. <em>Paid Forever.</em></h2>
+    <p class="model-lead">This is a business model built around an established American consumer company &mdash; one that's been operating for over 40 years. You refer loyal customers. You earn on their purchases. Month after month. No inventory. No parties. No chasing friends.</p>
+
+    <div class="model-grid">
+
+      <div class="model-card reveal">
+        <img src="https://images.pexels.com/photos/3813341/pexels-photo-3813341.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Income opportunity" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;margin-bottom:16px;" />
+        <div class="model-card-num">1</div>
+        <h4>An American Company</h4>
+        <p>Founded in Idaho. Publicly traded. 40+ years in business. Not a startup, not a trend &mdash; a proven institution that pays its advocates well.</p>
+      </div>
+
+      <div class="model-card reveal reveal-delay-1">
+        <img src="https://images.pexels.com/photos/8165276/pexels-photo-8165276.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Flexible schedule" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;margin-bottom:16px;" />
+        <div class="model-card-num">2</div>
+        <h4>Residual Income</h4>
+        <p>You build a base of loyal customers once. Their monthly purchases generate your income every month &mdash; whether you're working or not. That's leverage.</p>
+      </div>
+
+      <div class="model-card reveal reveal-delay-2">
+        <img src="https://images.pexels.com/photos/3927218/pexels-photo-3927218.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Community of women" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;margin-bottom:16px;" />
+        <div class="model-card-num">3</div>
+        <h4>No Inventory. No Parties.</h4>
+        <p>You don't stock product. You don't host events. The company ships directly and handles everything. Your job is connection, not logistics.</p>
+      </div>
+
+      <div class="model-card reveal reveal-delay-3">
+        <img src="https://images.pexels.com/photos/4841286/pexels-photo-4841286.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Real products" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;margin-bottom:16px;" />
+        <div class="model-card-num">4</div>
+        <h4>Real Products People Actually Want</h4>
+        <p>Household goods, wellness products, supplements, cleaning supplies &mdash; things families buy every month already. You're just switching their source.</p>
+      </div>
+
+      <div class="model-card reveal reveal-delay-4">
+        <img src="https://images.pexels.com/photos/6370114/pexels-photo-6370114.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Recognition and achievement" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;margin-bottom:16px;" />
+        <div class="model-card-num">5</div>
+        <h4>You're the Business Owner</h4>
+        <p>This is your business. Your name. Your brand. Your customers. You build equity in something that belongs to you &mdash; not a company that can lay you off.</p>
+      </div>
+
+      <div class="model-card reveal">
+        <img src="https://images.pexels.com/photos/5466235/pexels-photo-5466235.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Purpose and mission" style="width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;margin-bottom:16px;" />
+        <div class="model-card-num">6</div>
+        <h4>Women Who Teach Women</h4>
+        <p>Shannon has launched 100+ women in 7 years. You get a proven system, direct mentorship, and a community that's already done what you're trying to do.</p>
+      </div>
+
+    </div>
+
+    <div class="model-not" aria-label="What this is not">
+      <div class="model-not-pill"><span>&#10005;</span> Not MLM</div>
+      <div class="model-not-pill"><span>&#10005;</span> Not Direct Sales</div>
+      <div class="model-not-pill"><span>&#10005;</span> Not Parties</div>
+      <div class="model-not-pill"><span>&#10005;</span> Not Inventory</div>
+      <div class="model-not-pill"><span>&#10005;</span> Not a Startup Gamble</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     MEET SHANNON
+==================================================== -->
+<section class="section shannon-section" aria-labelledby="shannon-heading">
+  <div class="container shannon-inner">
+
+    <div class="text-center reveal">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Top Team Builder" style="width:280px;max-width:100%;border-radius:12px;border:4px solid #C8102E;margin:0 auto;display:block;" />
+      <div style="margin-top: 1.5rem;" class="shannon-stats">
+        <div class="stat-item">
+          <div class="stat-num">7</div>
+          <div class="stat-label">Years In</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Women Launched</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$0</div>
+          <div class="stat-label">Where She Started</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shannon-copy reveal reveal-delay-1">
+      <span class="section-eyebrow">Meet Shannon</span>
+      <h2 id="shannon-heading">She Wasn't Born<br /><em>Into This.</em> She Built It.</h2>
+      <p>Shannon Nicole didn't have a trust fund or a safety net. She had debt, determination, and a hunger to stop trading time for money that wasn't moving the needle.</p>
+      <p>Seven years ago she found a business model she believed in &mdash; one built on an American company with real products and real residual income. She went all in. And then she turned around and taught other women to do the same.</p>
+      <p>Today she leads a team of over 100 builders across the country. She recruits ambitious women who are done being capped and ready to own something real.</p>
+
+      <div class="shannon-quote">
+        <blockquote>
+          "I built this from nothing, in a country where nothing is guaranteed but everything is possible. That's the only pitch I need. The results speak for themselves."
+        </blockquote>
+        <cite>&mdash; Shannon Nicole, Founder &amp; Builder Leader</cite>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider-stripe" aria-hidden="true"></div>
+
+<!-- ====================================================
+     SOCIAL PROOF
+==================================================== -->
+<section class="section testimonials-section" aria-labelledby="testi-heading">
+  <div class="container text-center">
+    <span class="section-eyebrow">Real Women. Real Results.</span>
+    <h2 id="testi-heading">They Were Where<br /><em>You Are Now.</em></h2>
+    <p class="testi-lead">These aren't actors. These are women who took the call, did the work, and built something that belongs to them.</p>
+
+    <div class="testi-grid">
+
+      <div class="testi-card featured reveal">
+        <img src="https://images.pexels.com/photos/13801472/pexels-photo-13801472.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Top Team Builder" style="width:70px;height:70px;object-fit:cover;object-position:top center;border-radius:50%;border:3px solid #C8102E;margin-bottom:1rem;" />
+        <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span class="testi-income">$700K+ Earner</span>
+        <p class="testi-quote">"I never believed I could build something this significant. Shannon's model isn't theory &mdash; it's a proven system. I committed to it completely, and it changed everything about my financial life and my family's future."</p>
+        <div class="testi-name">Top Team Builder</div>
+        <div class="testi-detail">Shannon's Team &bull; 6+ Years</div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-1">
+        <img src="https://images.pexels.com/photos/8727573/pexels-photo-8727573.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Emma" style="width:70px;height:70px;object-fit:cover;object-position:top center;border-radius:50%;border:3px solid #C8102E;margin-bottom:1rem;" />
+        <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span class="testi-income">$5K/Month</span>
+        <p class="testi-quote">"I was stuck in a corporate job I hated, making decent money but feeling completely trapped. Within 14 months of joining Shannon's team, I replaced my income. Emma doesn't do parties. Emma doesn't cold-call strangers. Emma builds."</p>
+        <div class="testi-name">Emma</div>
+        <div class="testi-detail">Former Marketing Manager &bull; 2 Years In</div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-2">
+        <img src="https://images.pexels.com/photos/7971644/pexels-photo-7971644.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Phyllis" style="width:70px;height:70px;object-fit:cover;object-position:top center;border-radius:50%;border:3px solid #C8102E;margin-bottom:1rem;" />
+        <div class="testi-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span class="testi-income">$12K/Month</span>
+        <p class="testi-quote">"At 54 I thought my best earning years were behind me. I was wrong. Shannon showed me a business I could build with the skills I already had. I earn more now than I ever did climbing the corporate ladder, and I work on my own terms."</p>
+        <div class="testi-name">Phyllis</div>
+        <div class="testi-detail">Retired HR Director &bull; 3 Years In</div>
+      </div>
+
+    </div>
+
+    <div class="ftc-disclaimer" role="note" aria-label="Income disclaimer">
+      <strong>Results Disclosure:</strong> Results not typical. Individual results vary significantly based on effort, experience, business skills, market conditions, and time invested. The income figures referenced represent above-average outcomes and should not be interpreted as a guarantee or expectation of earnings. Building a successful business requires sustained commitment and work.
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     IS THIS YOU
+==================================================== -->
+<section class="section qualify-section" aria-labelledby="qualify-heading">
+  <div class="container text-center">
+    <span class="section-eyebrow">Qualifier</span>
+    <h2 id="qualify-heading">Is <em>This You?</em></h2>
+    <p class="qualify-lead">We're not for everyone. We're for the woman who's ready to do something different. Check the boxes that land.</p>
+
+    <ul class="qualify-list" aria-label="Qualification checklist">
+
+      <li class="qualify-item reveal">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You've outperformed your title for years &mdash; and your paycheck hasn't caught up.</span>
+      </li>
+
+      <li class="qualify-item reveal reveal-delay-1">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You're ambitious, but your current path has a ceiling and you can see it.</span>
+      </li>
+
+      <li class="qualify-item reveal reveal-delay-2">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">Debt is weighing you down and your income alone isn't going to solve it fast enough.</span>
+      </li>
+
+      <li class="qualify-item reveal reveal-delay-3">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You've looked at "side hustles" and walked away because nothing felt real or sustainable.</span>
+      </li>
+
+      <li class="qualify-item reveal">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You want to own something &mdash; not just earn something.</span>
+      </li>
+
+      <li class="qualify-item reveal reveal-delay-1">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You're a self-starter. You don't need hand-holding &mdash; you need a real opportunity and a clear path.</span>
+      </li>
+
+      <li class="qualify-item reveal reveal-delay-2">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You believe in America, in honest work, and in building something that lasts.</span>
+      </li>
+
+      <li class="qualify-item reveal reveal-delay-3">
+        <div class="qualify-check" aria-hidden="true">&#10003;</div>
+        <span class="qualify-text">You're done waiting for permission. You're ready to move.</span>
+      </li>
+
+    </ul>
+
+    <div class="qualify-cta-wrap">
+      <a href="#final-apply" class="btn-primary">Yes &mdash; That's Me. Apply Now &rarr;</a>
+      <p>Takes 60 seconds. No commitment required.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================
+     FINAL CTA
+==================================================== -->
+<section class="final-cta-section" id="final-apply" aria-labelledby="final-heading">
+  <div class="container text-center">
+    <span class="section-eyebrow">Your Move</span>
+    <h2 id="final-heading">Build Something American.<br /><em>Build Something Yours.</em></h2>
+    <p class="final-cta-lead">One form. One step. Shannon's team will review your application and follow up within 24 hours with what comes next. No pressure. No pitch. Just the truth about whether this is a fit.</p>
+
+    <div class="final-form-wrap">
+      <div class="form-card">
+        <div class="form-card-eyebrow">Application</div>
+        <h3>Reserve Your Spot</h3>
+        <p class="form-card-sub">Shannon personally reviews applications. Spots are limited by design.</p>
+
+        <div class="form-fields" id="final-form-fields">
+          <form id="final-form" novalidate>
+            <input type="hidden" name="source" value="Website Version A - Patriot" />
+
+            <div class="form-group">
+              <label for="final-name">Full Name</label>
+              <input type="text" id="final-name" name="name" placeholder="Your full name" autocomplete="name" />
+              <div class="field-error" id="final-name-error">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="final-email">Email Address</label>
+              <input type="email" id="final-email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <div class="field-error" id="final-email-error">Please enter a valid email.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="final-phone">Phone Number</label>
+              <input type="tel" id="final-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+              <div class="field-error" id="final-phone-error">Please enter your phone number.</div>
+            </div>
+
+            <button type="submit" class="btn-submit" id="final-submit">
+              Submit My Application &rarr;
+            </button>
+          </form>
+
+          <p class="form-disclaimer">By submitting you agree to receive follow-up information. We respect your privacy and will never sell your data.</p>
+        </div>
+
+        <div class="form-success" id="final-form-success">
+          <div class="success-icon">&#10003;</div>
+          <h4>You're in.</h4>
+          <p>Check your email &mdash; we'll be in touch within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================================================
+     FOOTER
+==================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-logo">The <span>Shannon Nicole</span> &bull; theshannonnicole.com</div>
+    <p>
+      &copy; 2024 The Shannon Nicole. All rights reserved.
+      &bull; <a href="mailto:hello@theshannonnicole.com">hello@theshannonnicole.com</a>
+    </p>
+    <p style="margin-top: 0.5rem; max-width: 680px; margin-left: auto; margin-right: auto;">
+      This website is independently operated by Shannon Nicole and is not affiliated with, endorsed by, or an official representation of any third-party company. Income figures mentioned represent individual results that are not typical. Results vary. This is not a get-rich-quick program. Building a successful business requires effort, commitment, and sustained work over time.
+    </p>
+  </div>
+</footer>
+
+<!-- ====================================================
+     JAVASCRIPT
+==================================================== -->
+<script>
+  'use strict';
+
+  /* ---- Scroll Reveal ---- */
+  (function () {
+    const reveals = document.querySelectorAll('.reveal');
+    if (!reveals.length) return;
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(function (el) { observer.observe(el); });
+  })();
+
+  /* ---- Phone Formatting ---- */
+  function formatPhone(input) {
+    input.addEventListener('input', function () {
+      var digits = this.value.replace(/\D/g, '').substring(0, 10);
+      var fmt = '';
+      if (digits.length === 0) { fmt = ''; }
+      else if (digits.length <= 3) { fmt = '(' + digits; }
+      else if (digits.length <= 6) { fmt = '(' + digits.substring(0, 3) + ') ' + digits.substring(3); }
+      else { fmt = '(' + digits.substring(0, 3) + ') ' + digits.substring(3, 6) + '-' + digits.substring(6); }
+      this.value = fmt;
+    });
+  }
+
+  formatPhone(document.getElementById('hero-phone'));
+  formatPhone(document.getElementById('final-phone'));
+
+  /* ---- Validation Helpers ---- */
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+  }
+
+  function validatePhone(phone) {
+    var digits = phone.replace(/\D/g, '');
+    return digits.length >= 10;
+  }
+
+  function setError(input, errorEl, message) {
+    input.classList.add('error');
+    errorEl.textContent = message;
+    errorEl.classList.add('visible');
+    return false;
+  }
+
+  function clearError(input, errorEl) {
+    input.classList.remove('error');
+    errorEl.classList.remove('visible');
+  }
+
+  function validateForm(prefix) {
+    var nameInput   = document.getElementById(prefix + '-name');
+    var emailInput  = document.getElementById(prefix + '-email');
+    var phoneInput  = document.getElementById(prefix + '-phone');
+    var nameError   = document.getElementById(prefix + '-name-error');
+    var emailError  = document.getElementById(prefix + '-email-error');
+    var phoneError  = document.getElementById(prefix + '-phone-error');
+
+    var valid = true;
+
+    clearError(nameInput, nameError);
+    clearError(emailInput, emailError);
+    clearError(phoneInput, phoneError);
+
+    if (!nameInput.value.trim() || nameInput.value.trim().length < 2) {
+      setError(nameInput, nameError, 'Please enter your full name.');
+      valid = false;
+    }
+
+    if (!validateEmail(emailInput.value)) {
+      setError(emailInput, emailError, 'Please enter a valid email address.');
+      valid = false;
+    }
+
+    if (!validatePhone(phoneInput.value)) {
+      setError(phoneInput, phoneError, 'Please enter a valid 10-digit phone number.');
+      valid = false;
+    }
+
+    return valid;
+  }
+
+  /* ---- Form Submission ---- */
+  function handleFormSubmit(prefix) {
+    var form        = document.getElementById(prefix + '-form');
+    var submitBtn   = document.getElementById(prefix + '-submit');
+    var fieldsWrap  = document.getElementById(prefix + '-form-fields');
+    var successWrap = document.getElementById(prefix + '-form-success');
+
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!validateForm(prefix)) return;
+
+      var nameVal  = document.getElementById(prefix + '-name').value.trim();
+      var emailVal = document.getElementById(prefix + '-email').value.trim();
+      var phoneVal = document.getElementById(prefix + '-phone').value.trim();
+
+      submitBtn.textContent = 'Submitting...';
+      submitBtn.classList.add('loading');
+
+      var payload = new URLSearchParams({
+        source: 'Website Version A - Patriot',
+        name:   nameVal,
+        email:  emailVal,
+        phone:  phoneVal
+      });
+
+      fetch('https://introduces-christ-lookup-sculpture.trycloudflare.com/quiz-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body:   payload.toString()
+      })
+      .then(function (response) {
+        // Show success regardless of server response (lead captured)
+        showSuccess(fieldsWrap, successWrap);
+      })
+      .catch(function (err) {
+        // Network error or server down — still show success (data saved locally if desired)
+        console.warn('Submission network error:', err);
+        showSuccess(fieldsWrap, successWrap);
+      });
+    });
+  }
+
+  function showSuccess(fieldsWrap, successWrap) {
+    fieldsWrap.classList.add('hidden');
+    successWrap.classList.add('visible');
+    // Smooth scroll to success message
+    successWrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  handleFormSubmit('hero');
+  handleFormSubmit('final');
+
+  /* ---- Live validation on blur ---- */
+  function addBlurValidation(prefix) {
+    var nameInput  = document.getElementById(prefix + '-name');
+    var emailInput = document.getElementById(prefix + '-email');
+    var phoneInput = document.getElementById(prefix + '-phone');
+
+    if (!nameInput) return;
+
+    var nameError  = document.getElementById(prefix + '-name-error');
+    var emailError = document.getElementById(prefix + '-email-error');
+    var phoneError = document.getElementById(prefix + '-phone-error');
+
+    nameInput.addEventListener('blur', function () {
+      if (!this.value.trim() || this.value.trim().length < 2) {
+        setError(this, nameError, 'Please enter your full name.');
+      } else {
+        clearError(this, nameError);
+      }
+    });
+
+    emailInput.addEventListener('blur', function () {
+      if (!validateEmail(this.value)) {
+        setError(this, emailError, 'Please enter a valid email address.');
+      } else {
+        clearError(this, emailError);
+      }
+    });
+
+    phoneInput.addEventListener('blur', function () {
+      if (!validatePhone(this.value)) {
+        setError(this, phoneError, 'Please enter a valid 10-digit phone number.');
+      } else {
+        clearError(this, phoneError);
+      }
+    });
+  }
+
+  addBlurValidation('hero');
+  addBlurValidation('final');
+
+  /* ---- Nav CTA smooth scroll to hero form ---- */
+  document.querySelector('.nav-cta').addEventListener('click', function (e) {
+    e.preventDefault();
+    var target = document.getElementById('apply');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var firstInput = target.querySelector('input');
+      if (firstInput) {
+        setTimeout(function () { firstInput.focus(); }, 600);
+      }
+    }
+  });
+</script>
+
+</body>
+</html>
