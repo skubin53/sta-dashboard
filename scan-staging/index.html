@@ -847,6 +847,10 @@ body { padding-top:0 !important; }
 
 .intro-trust-new .trust-tg { color:#6b5a3a !important; }
 .intro-h1 .intro-hide { color:#C9A227 !important; }
+
+/* Continue: red even when inactive (just dimmer) so it's findable */
+.q-cont { background:linear-gradient(180deg,#f02635,#b9111d) !important; color:#fff !important; opacity:.55 !important; }
+.q-cont.on { opacity:1 !important; box-shadow:0 10px 30px -6px rgba(225,29,42,.6) !important; }
 </style>
 </head>
 <body>
@@ -1806,12 +1810,12 @@ function peekHTML(idx){
 function saveBrandSingle(stepId, val){
   if(!answers[stepId]) answers[stepId]={};
   answers[stepId].brand = val;
-  updateRisk();
+  updateRisk(); updateContinueGate();
 }
 function saveBrandMulti(stepId, fieldId, val){
   if(!answers[stepId]) answers[stepId]={};
   answers[stepId][fieldId] = val;
-  updateRisk();
+  updateRisk(); updateContinueGate();
 }
 // #9 — is the current step actually answered? (gates the Continue button)
 function stepAnswered(step){
@@ -2088,7 +2092,7 @@ function pickChip(stepId, cardId, brand, cat, el){
     // Hide other-input
     const inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
   }
-  updateRisk();
+  updateRisk(); updateContinueGate();
 }
 
 function pickChipNone(stepId, cardId, el){
@@ -2103,7 +2107,7 @@ function pickChipNone(stepId, cardId, el){
     el.classList.add('sel');
     const inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
   }
-  updateRisk();
+  updateRisk(); updateContinueGate();
 }
 
 function pickChipOther(stepId, cardId, el){
@@ -2115,6 +2119,7 @@ function pickChipOther(stepId, cardId, el){
   cur.isNone=false;
   const inp=document.getElementById('co_'+cardId);
   if(inp){ inp.classList.add('show'); inp.focus(); }
+  updateContinueGate();
 }
 
 function saveChipOther(stepId, cardId, val, cat){
@@ -2122,7 +2127,7 @@ function saveChipOther(stepId, cardId, val, cat){
   if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
   answers[stepId][cardId].brand=val;
   answers[stepId][cardId].isNone=false;
-  updateRisk();
+  updateRisk(); updateContinueGate();
 }
 // ────────────────────────────────────────────────────────────────────────────
 
