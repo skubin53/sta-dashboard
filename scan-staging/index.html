@@ -1634,7 +1634,7 @@ function renderStep(){
   </div>`;
 
   // Kicker badge
-  h+=`<div class="q-kicker rise">${step.room||"Let's continue"}${currentStep>=0?'<span class="q-room-pct">'+Math.round(((currentStep+1)/STEPS.length)*100)+'%</span>':''}</div>`;
+  h+=`<div class="q-kicker rise">${step.room||"Let's continue"}${stepIdx>=0?'<span class="q-room-pct">'+Math.round(((stepIdx+1)/STEPS.length)*100)+'%</span>':''}</div>`;
 
   // Question + sub
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.q}</h1>`;
