@@ -771,10 +771,9 @@ html,body{
     </div>
 
     <div class="intro-trust-new rise">
-      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole"/>
       <div>
-        <div class="trust-nm">Shannon Nicole · Mom · Grandma<br>Health &amp; Nutrition Coach</div>
-        <div class="trust-tg">"Built by a Grandma who got tired of guessing."</div>
+        <div class="trust-nm">1 in 4 personal care products<br>contains a chemical linked to a health concern.</div>
+        <div class="trust-tg">Source: Environmental Working Group</div>
       </div>
     </div>
 
@@ -1279,7 +1278,7 @@ const STEPS = [
    ]},
 
   // #4 — name capture AFTER the household question (less landing friction; they've already invested a tap)
-  {id:'yourname',room:'',icon:'👋',type:'name',q:'First — what should I call you?',sub:'So I can make your results personal.'},
+  {id:'yourname',room:'',icon:'👋',type:'name',q:'First, what should I call you?',sub:'So I can make your results personal.'},
 
 
   // Kitchen Page A — Chip-select cleaning products (Shannon's Page 4 design)
@@ -1487,7 +1486,7 @@ const ROOM_QUOTES=[
   {q:"We thought our pitcher filter was enough. After we upgraded our water, even our coffee and cooking tasted different.", a:"Karen S. · Grandmother"},     /*6 water*/
   {q:"I burned candles and plug-ins constantly. Once I stopped, the stuffiness I always blamed on 'allergies' lifted within a week.", a:"Lisa H. · Mom of 2"}, /*7 home air*/
   {q:"I started looking for cleaner alternatives to the everyday stuff in my cabinet — and realized how many small swaps actually add up.", a:"Beth A. · Grandmother"}, /*8 meds/health*/
-  {q:"It started with one bottle under my sink and a question I couldn't stop asking: what's actually in this, and is it safe for my family?", a:"Shannon · Switch to America"}, /*9 intro*/
+  {q:"We changed what we brought into our house, and over time we noticed real differences.", a:"Anonymous · Switch member"}, /*9 intro*/
 ];
 // one fitted testimonial per step — the quote at the bottom must match that page's products
 const STEP_QUOTES={
@@ -1953,7 +1952,7 @@ function commFmt(n){ return (n||0).toLocaleString(); }
 function communityText(){
   if(!COMM_STATS) return null;
   var m=COMM_STATS.month||0, tot=COMM_STATS.total||0;
-  if(tot<500) return '🌱 You\'re part of the first wave of families taking the Toxic Scorecard.'; // soft framing while numbers are small
+  if(tot<500) return null; // first-wave framing removed per Shannon
   return "👥 You're family #"+commFmt(m)+" to take this this month — joining "+commFmt(tot)+" families since launch.";
 }
 function renderCommunityStats(){
@@ -2533,7 +2532,7 @@ function runScan(){
         if(FLAGGED.includes(i)) p.classList.add('flagged');
       });
       status.classList.add('alert');
-      status.innerHTML = '<span class="swarn">!</span>3 concerns flagged in a typical home';
+      status.innerHTML = '';
     }
     requestAnimationFrame(frame);
   }
