@@ -769,6 +769,10 @@ h1, h2, h3 { color:#0B2545 !important; }
   filter:blur(2px);
 }
 #s-intro > * { position:relative; z-index:1; }
+
+/* Kill spinning circle + cartoon house on between-question screens per Shannon */
+.q-emblem, .q-ring, .q-spin, [class*="q-emblem"] { display:none !important; }
+.hs-house, [class*="hs-house"] { display:none !important; }
 </style>
 </head>
 <body>
@@ -817,7 +821,7 @@ h1, h2, h3 { color:#0B2545 !important; }
   <div class="q-wrap">
     <div class="qhouse" id="quizHouse"></div>
     <div class="risk-pill" id="riskPill"><span class="risk-emoji">🚨</span><div class="risk-txt"><span class="risk-n" id="riskN">0</span> <span id="riskLbl">concerns</span> found so far</div></div>
-    <div class="safe-pill" id="safePill"><span>✨</span><div><span class="safe-n" id="safeN">0</span> <span id="safeLbl">clean picks</span> — nice!</div></div>
+    <div class="safe-pill" id="safePill"><span>✨</span><div><span class="safe-n" id="safeN">0</span> <span id="safeLbl">clean picks</span>, nice!</div></div>
     <div id="qMt"></div>
   </div>
   <!-- Sticky action bar — Shannon's design (save link lives here so it never scrolls away) -->
@@ -1790,30 +1794,7 @@ function updateRisk(){
 
 // ── Change #5: reactive house illustration ──
 // hazard 0 (clean, green, no smoke) → 1 (hazardous, red, smoking)
-function houseSVG(hazard){
-  hazard=Math.max(0,Math.min(1,hazard));
-  var glow = hazard<=.4?'#2FB58F':hazard<=.65?'#E8A317':'#E8172F';
-  var glowA = (0.10+hazard*0.42).toFixed(2);
-  var win = hazard<=.4?'#bfeee2':hazard<=.65?'#ffe6b0':'#ff8a8a';
-  var roof = hazard<=.4?'#3f7d6b':hazard<=.65?'#b07a2c':'#9c3322';
-  var plumes = hazard>=.66?3:hazard>=.4?2:hazard>=.16?1:0;
-  var smoke='';
-  for(var i=0;i<plumes;i++){
-    var op=(0.3+hazard*0.45).toFixed(2);
-    smoke+='<circle class="hs-smoke" style="animation-delay:'+(i*0.6)+'s" cx="'+(79+(i-1)*4)+'" cy="26" r="'+(4.5+i*1.8)+'" fill="#aab4c0" opacity="'+op+'"/>';
-  }
-  return '<svg viewBox="0 0 120 112" class="hs-house" aria-hidden="true">'+
-    '<ellipse cx="60" cy="66" rx="54" ry="42" fill="'+glow+'" opacity="'+glowA+'"/>'+
-    smoke+
-    '<rect x="76" y="30" width="9" height="20" rx="1" fill="#6f4a2a"/>'+
-    '<path d="M22 58 L60 26 L98 58 Z" fill="'+roof+'"/>'+
-    '<rect x="34" y="58" width="52" height="42" rx="2" fill="#e7d9bf"/>'+
-    '<rect x="53" y="76" width="14" height="24" rx="1" fill="#6f4a2a"/>'+
-    '<circle cx="64" cy="88" r="1.3" fill="#e7d9bf"/>'+
-    '<rect x="39" y="64" width="12" height="12" rx="1.5" fill="'+win+'"/>'+
-    '<rect x="69" y="64" width="12" height="12" rx="1.5" fill="'+win+'"/>'+
-    '</svg>';
-}
+function houseSVG(){ return ''; /* cartoon house killed per Shannon */ }
 function renderQuizHouse(){
   var el=document.getElementById('quizHouse'); if(!el) return;
   el.innerHTML=houseSVG(Math.min(1,(riskScore||0)/8));
@@ -2154,7 +2135,7 @@ function showRoomReveal(roomKey, nextStep, proceed){
   var avg=ROOM_AVG[roomKey]||60;
   var col=score<=30?'#2FB58F':score<=60?'#E8A317':'#FF5A5A';
   var high=score>=avg;
-  var line=high?"That's above the average home — what's your final going to be?":"Better than the average home — you're already ahead. Keep going!";
+  var line=high?"That's above the average home. What's your final going to be?":"Better than the average home. You're already ahead. Keep going!";
   var nk=nextStep?roomKeyForStep(nextStep):null;
   var nrm=nk?(ROOM_MAP.filter(function(r){return r.key===nk;})[0]||null):null;
   var onto=nextStep?(nrm?('Onto the '+nrm.label+' '+nrm.ic+' →'):'Keep going →'):'See your final score →';
