@@ -734,42 +734,7 @@ html,body{
       <span class="intro-h1-l2 rise" style="display:block">In Your Home?</span>
     </h1>
 
-    <!-- SVG Scanner stage -->
-    <div class="scan-stage-new rise">
-      <svg class="home-svg" viewBox="0 0 300 100" aria-hidden="true">
-        <path d="M30 96 V46 L150 10 L270 46 V96" fill="none" stroke="#e3b341" stroke-width="2"/>
-        <path d="M110 96 V66 H140 V96 M170 72 h28 v24 h-28z" fill="none" stroke="#e3b341" stroke-width="2"/>
-      </svg>
-      <div class="iconrow-new" id="iconrow">
-        <div class="spi">
-          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
-          <svg class="prod" viewBox="0 0 24 30"><rect x="9" y="1.5" width="6" height="4" rx="1" fill="#c85e78"/><path d="M8 9c0-1.6 1.3-3 3-3h2c1.7 0 3 1.4 3 3v17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="#e58aa0"/><rect x="9" y="15" width="6" height="4" rx="1" fill="#fff"/></svg>
-        </div>
-        <div class="spi">
-          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
-          <svg class="prod" viewBox="0 0 24 30"><rect x="7" y="10" width="10" height="18" rx="1.5" fill="#f0e6cf"/><rect x="7" y="10" width="10" height="3" rx="1.5" fill="#e3d4b3"/><path d="M12 10V7" stroke="#7a5a32" stroke-width="1.3"/><path d="M12 7c1.7-1.5 1.7-3.2 0-4.6-1.7 1.1-1.7 3.1 0 4.6z" fill="#f6962a"/></svg>
-        </div>
-        <div class="spi">
-          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
-          <svg class="prod" viewBox="0 0 24 30"><path d="M4 10l8-3.5 8 3.5-8 3.5-8-3.5z" fill="#cf9759"/><path d="M4 10v9l8 3.5V13.5z" fill="#b9783f"/><path d="M20 10v9l-8 3.5V13.5z" fill="#a96b37"/></svg>
-        </div>
-        <div class="spi">
-          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
-          <svg class="prod" viewBox="0 0 24 30"><path d="M8 12h8v14a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#5fb3c7"/><rect x="8" y="12" width="8" height="4" fill="#3f95aa"/><path d="M8 12V8h5l5-3v2l-5 1v4z" fill="#7a8aa0"/></svg>
-        </div>
-        <div class="spi">
-          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
-          <svg class="prod" viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>
-        </div>
-        <div class="spi">
-          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
-          <svg class="prod" viewBox="0 0 24 30"><ellipse cx="10" cy="18" rx="8.5" ry="5.2" fill="#3a4049"/><rect x="17" y="17" width="7.5" height="2.4" rx="1.2" fill="#7a4a2a" transform="rotate(-3 17 18)"/></svg>
-        </div>
-      </div>
-      <div class="sbeam" id="sbeam"></div>
-      <div class="sstatus" id="sstatus">Scanning your home…</div>
-    </div>
-
+    <!-- scan stage + iconrow removed per Shannon advisor #4 -->
     <div class="intro-trust-new rise">
       <div>
         <div class="trust-nm">1 in 4 personal care products<br>contains a chemical linked to a health concern.</div>
@@ -1545,7 +1510,7 @@ const CARD_ICONS = {
   info:'<svg viewBox="0 0 24 24"><path d="M12 8v4M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg>',
   eye:'<svg viewBox="0 0 24 24"><path d="M3 12s3-7 9-7 9 7 9 7-3 7-9 7-9-7-9-7z"/><circle cx="12" cy="12" r="2.5"/></svg>',
   check:'<svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>',
-  home:'<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>',
+  home:'',
   family:'<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
   baby:'<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>',
   default:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>',
@@ -1586,7 +1551,7 @@ function renderStep(){
     <span class="ping"></span><span class="ping ping2"></span>
     <div class="glow"></div><div class="ring"></div><div class="arc"></div>
     <div class="lens">
-      <svg viewBox="0 0 24 24" stroke="var(--orange)" fill="none" stroke-width="2" width="38" height="38" style="filter:drop-shadow(0 0 6px rgba(227,179,65,.55))"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      <!-- magnifying glass removed -->
       <span class="blip"></span>
     </div>
   </div>`;
