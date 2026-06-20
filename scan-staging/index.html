@@ -1004,7 +1004,17 @@ body { padding-top:0 !important; }
   border: 1px solid rgba(11,37,69,.18) !important;
 }
 #s-calc .c-num, #s-calc #cNum { font-weight: 900 !important; }
-#s-calc #cArc { stroke: #0B2545 !important; opacity: .15 !important; }
+/* Pre-reveal: dim the arc so the spinning placeholder reads as grey.
+   Post-reveal (.revealed): let the gradient (#cg) show red/yellow/green. */
+#s-calc:not(.revealed) #cArc { stroke: #0B2545 !important; opacity: .15 !important; }
+#s-calc.revealed #cArc { stroke: url(#cg) !important; opacity: 1 !important; }
+/* Finding-from-your-home box: make readable on the cream background */
+#s-calc .prev { background: rgba(200,16,46,.06) !important; border-color: rgba(200,16,46,.35) !important; }
+#s-calc .prev-lbl { color: #C8102E !important; }
+#s-calc .prev-txt { color: #0B2545 !important; }
+/* Benchmark rows: keep label and score apart so long labels don't kiss the number */
+#s-calc .bench > div > div > div[style*="justify-content:space-between"] { gap: 14px; }
+#s-calc .bench > div > div > div[style*="justify-content:space-between"] > span:first-child { padding-right: 6px; }
 </style>
 </head>
 <body>
@@ -2639,6 +2649,8 @@ function runCalc(){
     const arc=document.getElementById('cArc');
     const circ=525; let disp=0;
     sndReveal(); // Change #6 — drumroll → reveal on the score gauge
+    // Mark s-calc as revealed so the score gauge picks up the red/yellow/green gradient
+    var sCalc=document.getElementById('s-calc'); if(sCalc) sCalc.classList.add('revealed');
     setTimeout(()=>{
       const iv=setInterval(()=>{
         disp=Math.min(disp+2,totalScore);
@@ -2667,8 +2679,10 @@ function showCalcDetails(){
     else { sl.textContent='🟢 CLEAN ZONE'; sl.style.background='rgba(31,138,112,.15)'; sl.style.color='#1F8A70'; sl.style.border='1px solid rgba(31,138,112,.25)'; }
   }
   // Fable-5 uplevel #8 (2026-06-10): grocery-bill headline. Fear opens the quiz; math closes the shop.
-  // Conservative estimate at reveal time; refined number lands in the simulator + Switch List + report.
-  var savingsEst = Math.max(0, Math.round(totalScore * 0.5));
+  // 2026-06-20: bumped multiplier from 0.5 to 1.2 per Shannon. The 0.5 floor was reading too small for
+  // RED ZONE clickers. Average US household spends $80-120/mo on cleaning + personal care; a 30-50%
+  // brand-premium gap is conservative. Score 57 → $68. Score 70 → $84. Score 100 → $120.
+  var savingsEst = Math.max(15, Math.round(totalScore * 1.2));
   var grocEl = document.getElementById('grocerySavings');
   if(!grocEl){
     grocEl = document.createElement('div');
