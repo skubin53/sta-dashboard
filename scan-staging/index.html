@@ -891,6 +891,26 @@ body { padding-top:0 !important; }
 #s-results .rcard p[style*="font-style:italic"] { color: #1a2e54 !important; }
 /* Subscore bar labels */
 #s-results .rb p { color: #1a2e54; }
+/* Nuclear: any inline white-ish color in #s-results becomes dark navy. Excludes button classes. */
+#s-results [style*="color:#fff"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
+#s-results [style*="color: #fff"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
+#s-results [style*="color:#FFF"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
+#s-results [style*="color:#fafdff"],
+#s-results [style*="color:#e8eef5"],
+#s-results [style*="color:#d9e3ee"],
+#s-results [style*="color:#c0cee0"],
+#s-results [style*="color:#eef3fa"],
+#s-results [style*="color:#eaf1f8"],
+#s-results [style*="color:#cbd6e6"],
+#s-results [style*="color:#dbe4f0"],
+#s-results [style*="color:#e3ecf7"],
+#s-results [style*="color:#dfe7e1"],
+#s-results [style*="color:#cfe9df"],
+#s-results [style*="color:#9fe6cf"],
+#s-results [style*="color: white"],
+#s-results [style*="color:white"] {
+  color: #0B2545 !important;
+}
 </style>
 </head>
 <body>
