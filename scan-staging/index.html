@@ -851,6 +851,46 @@ body { padding-top:0 !important; }
 /* Continue: red even when inactive (just dimmer) so it's findable */
 .q-cont { background:linear-gradient(180deg,#f02635,#b9111d) !important; color:#fff !important; opacity:.55 !important; }
 .q-cont.on { opacity:1 !important; box-shadow:0 10px 30px -6px rgba(225,29,42,.6) !important; }
+/* ════════════════════════════════════════════════════════════════
+   2026-06-20: RESULTS SCREEN LIGHT THEME
+   Shannon's iOS Smart Invert was bleaching all the navy-bg+white-text content.
+   Override #s-results to a permanent cream-bg + dark-navy-text theme that
+   reads correctly regardless of Smart Invert / Dark Mode state.
+   ════════════════════════════════════════════════════════════════ */
+#s-results { background: #FFF7EC !important; color: #0B2545 !important; }
+#s-results .rt { background: linear-gradient(160deg, #FFF7EC, #FFE7C4) !important; color: #0B2545 !important; }
+#s-results .rh, #s-results .rp, #s-results h1, #s-results h2, #s-results h3, #s-results h4 { color: #0B2545 !important; }
+#s-results p, #s-results span:not(.brand-chip), #s-results div { color: #1a2e54; }
+#s-results .rcard { background: rgba(255,255,255,.7) !important; border: 1px solid rgba(11,37,69,.18) !important; color: #0B2545 !important; box-shadow: 0 2px 8px -3px rgba(11,37,69,.08); }
+#s-results .rcard h3 { color: #0B2545 !important; }
+#s-results .rcard p, #s-results .rcard span, #s-results .rcard div, #s-results .rcard b { color: #1a2e54 !important; }
+#s-results .sw { background: rgba(255,153,0,.18) !important; border: 1px solid rgba(255,153,0,.6) !important; }
+#s-results .sw-lbl { color: #B07A2C !important; }
+#s-results .sw h3 { color: #0B2545 !important; }
+#s-results .sw p { color: #1a2e54 !important; }
+#s-results .sw-imp { background: rgba(255,153,0,.28) !important; border: 1px solid rgba(255,153,0,.65) !important; color: #8a5a14 !important; }
+#s-results #unscoredBlock { background: rgba(255,153,0,.14) !important; border-color: rgba(255,153,0,.55) !important; }
+#s-results #unscoredBlock h3 { color: #0B2545 !important; }
+/* Final CTA section — override inline styles I set earlier */
+#s-results #finalCta { color: #0B2545; }
+#s-results #finalCta h2#fcH { color: #0B2545 !important; }
+#s-results #finalCta p, #s-results #finalCta div, #s-results #finalCta b { color: #1a2e54 !important; }
+#s-results #finalCta > div[style*="background:rgba(255,255,255,.04)"] { background: rgba(255,255,255,.75) !important; border: 1px solid rgba(11,37,69,.18) !important; }
+/* "Stop guessing / Start swapping" stays in its accent colors — those read fine on cream */
+#s-results #finalCta div[style*="color:#FFD27A"] { color: #C68A1F !important; }
+#s-results #finalCta div[style*="color:#37c79a"] { color: #1F8A70 !important; }
+/* Buttons keep white-on-colored — already readable */
+#s-results .door, #s-results .door-tour, #s-results .door-green, #s-results .door-amber, #s-results .door-red, #s-results .tox-soft-btn, #s-results .sb { color: #fff !important; }
+/* Sub-text under "Book my free home walkthrough" */
+#s-results #finalCta p[style*="rgba(255,255,255,.62)"] { color: #4a5e7e !important; }
+/* Booking iframe wrap */
+#s-results #bookingEmbed { background: rgba(255,255,255,.85) !important; border: 1px solid rgba(11,37,69,.18) !important; }
+/* Disclaimer note */
+#s-results .disc { color: #4a5e7e !important; }
+/* Testimonial quote text */
+#s-results .rcard p[style*="font-style:italic"] { color: #1a2e54 !important; }
+/* Subscore bar labels */
+#s-results .rb p { color: #1a2e54; }
 </style>
 </head>
 <body>
