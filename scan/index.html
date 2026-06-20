@@ -11,12 +11,12 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="What toxic products are hiding in your home?">
 <meta property="og:description" content="Take the free 3-minute Family Home Toxic Scorecard — a room-by-room scan of what's really in your family's everyday products.">
-<meta property="og:image" content="https://skubin53.github.io/sta-dashboard/scan/scorecard-thumbnail.jpg">
-<meta property="og:url" content="https://scan.ismyhometoxic.com/scorecard">
+<meta property="og:image" content="https://skubin53.github.io/sta-dashboard/scan-staging/scorecard-thumbnail.jpg">
+<meta property="og:url" content="https://join.switchtoamerica.com/shop">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="What toxic products are hiding in your home?">
 <meta name="twitter:description" content="The free 3-minute Family Home Toxic Scorecard. Find your family's score.">
-<meta name="twitter:image" content="https://skubin53.github.io/sta-dashboard/scan/scorecard-thumbnail.jpg">
+<meta name="twitter:image" content="https://skubin53.github.io/sta-dashboard/scan-staging/scorecard-thumbnail.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -1520,12 +1520,12 @@ const TOX_DB={
  'mazola':{n:'Mazola Corn Oil',i:'Industrial corn oil, hexane residue, glyphosate',h:'Hexane is a brain-damaging solvent that leaves traces in the oil. Glyphosate (Roundup) is on the cancer-causing chemicals list and shows up in conventional corn. High heat damages the oil even more, and the broken-down compounds feed cancer cell growth in studies.'},
  // _src: FDA SDS PAM cooking spray; FDA propellant approvals; Weston A Price Crisco history; Quora hexane extraction
  'pam':{n:'PAM Cooking Spray',i:'Industrial seed oils, hexane residue, butane and propane propellants',h:'Hexane is a brain-damaging solvent used to extract the oil. Butane and propane are the same gases used in lighter fluid, and you spray them straight onto food at high heat. The oil oxidizes the moment it hits the pan and feeds inflammation in the body.'},
- // _src: USDA Pesticide Data Program coffee residues; Aflatoxin B1 IARC Group 1; CA Prop 65 acrylamide
- 'folgers':{n:'Folgers Coffee',i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin grows on conventional beans during storage and is on the cancer-causing chemicals list at the highest level (Group 1, same as tobacco). Glyphosate (Roundup) is sprayed on the fields. You drink this every morning, year after year.'},
- // _src: USDA Pesticide Data Program; IARC aflatoxin Group 1; Kraft Heinz product page
- 'maxwell house':{n:'Maxwell House Coffee',i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin grows on conventional beans during storage and is on the cancer-causing chemicals list at the highest level. Glyphosate (Roundup) is sprayed on the fields where the beans grow. You drink this every morning, year after year.'},
- // _src: CERT v Starbucks Prop 65 case; OEHHA 2019 coffee regulation; Mountain Cabin clean coffee comparison
- 'starbucks':{n:'Starbucks Coffee',i:'Acrylamide, glyphosate residue, dark-roast oxidation byproducts',h:'Acrylamide forms when beans are roasted dark and is on the cancer-causing chemicals list. California sued Starbucks over it. Conventional beans also carry glyphosate (Roundup), which is on the same list. The dark roast feels strong because the bean is burned, not because the bean is good.'},
+ // _src: USDA Pesticide Data Program coffee residues; IARC Aflatoxin B1 Group 1 monograph; IARC Ochratoxin A Group 2B; Studer-Rohr 1995 ochratoxin A coffee survey; Prop 65 acrylamide
+ 'folgers':{n:'Folgers Coffee',i:'Mold poisons (mycotoxins), pesticides, burnt-roast cancer chemicals',h:'Conventional coffee beans are stored in warehouses where mold grows on them. The mold leaves a poison called aflatoxin on the highest cancer-causing chemicals list, same level as cigarettes. A second mold poison (ochratoxin) damages the gut lining and the brain in studies, which lines up with the morning indigestion, the brain fog, and the stubborn weight that will not come off. The pesticides sprayed on the fields probably cause cancer too. You drink this every morning.'},
+ // _src: USDA Pesticide Data Program; IARC aflatoxin Group 1; IARC ochratoxin Group 2B; Kraft Heinz product page
+ 'maxwell house':{n:'Maxwell House Coffee',i:'Mold poisons (mycotoxins), pesticides, burnt-roast cancer chemicals',h:'Same conventional bean supply as Folgers. Mold grows on the beans in warehouses and leaves behind aflatoxin (highest cancer-causing list) and ochratoxin (gut, brain, and metabolism damage). The fields are sprayed with pesticides the World Health Organization says probably cause cancer. The reason your stomach hurts and your head feels foggy might be the cup in your hand.'},
+ // _src: CERT v Starbucks Prop 65 case; OEHHA 2019 coffee regulation; Mountain Cabin clean coffee comparison; IARC acrylamide Group 2A
+ 'starbucks':{n:'Starbucks Coffee',i:'Mold poisons, burnt-roast cancer chemicals, pesticides',h:'Even Starbucks beans grow in moldy warehouses. The dark roast then burns the bean and creates a chemical (acrylamide) the World Health Organization says probably causes cancer. California actually sued Starbucks over it. The dark, strong, slightly bitter taste people pay extra for is the bean burning, not the bean being good. Same mold poisons damage the gut and the brain.'},
  // _src: Centrum label panel (Pfizer); CA OEHHA synthetic dyes report Apr 2021; ConsumerLab Centrum filler analysis
  'nature made':{n:'Nature Made Vitamins',i:'Synthetic folic acid, titanium dioxide, magnesium stearate, artificial dyes',h:'Synthetic folic acid sits in the bloodstream and is linked to higher cancer rates in adults who can\'t process it (1 in 3 women). Titanium dioxide is banned in food across the EU because it can damage DNA. The dyes cause behavior problems in kids.'},
  // _src: J&J 2013 reformulation announcement; classaction.org DMDM hair-loss MDL; FDA formaldehyde-releaser guidance
@@ -1543,7 +1543,7 @@ const CAT_TOX={
  dish:{i:'Ethoxylated surfactants, synthetic fragrance, methylisothiazolinone',h:'Most dish soaps carry 1,4-dioxane, which is on the EPA likely-cause-cancer list. The fragrance hides dozens of chemicals that burn skin and damage the lungs.'},
  dishwasher:{i:'Enzymes, synthetic fragrance, optical brighteners',h:'The enzymes cause asthma in regular users. Residue stays on the plates your kids eat off, day after day.'},
  allpurpose:{i:'Quaternary ammonium compounds (quats), synthetic fragrance',h:'Quats damage the lungs and cause asthma. Animal studies link them to birth defects and infertility.'},
- coffee:{i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin is on the cancer-causing chemicals list at the highest level (same as tobacco). Glyphosate is sprayed on conventional beans and ends up in the cup.'},
+ coffee:{i:'Mold poisons (mycotoxins), pesticides, burnt-roast cancer chemicals',h:'Conventional coffee carries mold poisons (mycotoxins) on the highest cancer-causing chemicals list, same level as cigarettes. The same poisons damage the gut and the brain in studies, which lines up with morning indigestion and brain fog. Pesticides probably cause cancer too. The morning cup is the day\'s biggest hidden source.'},
  supplements:{i:'Synthetic vitamins, titanium dioxide, artificial dyes, fillers',h:'Synthetic folic acid is linked to higher cancer rates in adults who cannot process it. Titanium dioxide is banned in food across the EU because it can damage DNA. The dyes cause behavior problems in kids.'},
  shampoo:{i:'Hair-loss chemicals, formaldehyde-releasing preservatives, hormone disruptors',h:'Major brands are named in class-action lawsuits for hair falling out and burning scalps. The same chemicals are tied to thyroid problems and cancer. Most women buy more product trying to fix the problem, not knowing the shampoo is the problem.'},
  bodywash:{i:'Synthetic fragrance, preservatives, sulfates',h:'The fragrance is a chemical mix that messes with hormones and triggers allergies. Sulfates burn the skin and dry out the skin barrier.'},
