@@ -1342,7 +1342,7 @@ let activeSteps = [];
 
 // ══ BRAND SCORING LOOKUP ══
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
-// STA / Melaleuca product names — always score 0 (clean formulations)
+// STA product names + safer-brand allowlist, always score 0 (clean formulations)
 const STA_CLEAN = [
   'switch to america','melaleuca',
   // green (clean) — STA products + whole-food cleans Shannon designates green
@@ -1462,73 +1462,104 @@ const TOX_DB={
  'vegetable / canola':{n:'Vegetable / Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
  'vegetable':{n:'Vegetable / Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
  'canola':{n:'Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
- 'dawn':{n:'Dawn Ultra Dish Soap',i:'1,4-Dioxane + SLES',h:'Likely human carcinogen — CA Prop 65'},
- 'palmolive':{n:'Palmolive Dish Liquid',i:'Synthetic fragrance + dyes',h:'Skin irritants & allergens'},
- 'cascade':{n:'Cascade Platinum Pods',i:'Synthetic fragrance + brighteners',h:'Endocrine disruptors that bioaccumulate'},
- 'finish':{n:'Finish Dishwasher Pods',i:'Subtilisin enzymes + fragrance',h:'Asthma trigger'},
- 'lysol':{n:'Lysol Disinfectant Spray',i:'Quaternary ammonium compounds',h:'Linked to asthma & respiratory inflammation'},
- 'clorox':{n:'Clorox Bleach',i:'Sodium hypochlorite + fragrance',h:'Releases chloroform fumes — lung irritant'},
- 'febreze':{n:'Febreze Air Effects',i:'Undisclosed "fragrance" + acetaldehyde',h:'Acetaldehyde — CA Prop 65 carcinogen'},
- 'glade':{n:'Glade Plug-In',i:'Phthalates + synthetic musks',h:'Hormone disruptors'},
- 'air wick':{n:'Air Wick Freshener',i:'Phthalates + benzene compounds',h:'Endocrine disruptors, lung irritants'},
- 'yankee':{n:'Yankee Candle',i:'Paraffin soot + synthetic fragrance',h:'Combustion byproducts — like diesel exhaust'},
- 'bath & body':{n:'Bath & Body Works Candle',i:'Paraffin soot + fragrance',h:'Combustion byproducts — lung irritant'},
- 'tide':{n:'Tide Pods (Original)',i:'Optical brighteners + fragrance',h:'Skin irritants'},
- 'gain':{n:'Gain Detergent',i:'Synthetic fragrance + dyes',h:'Allergens & irritants'},
- 'persil':{n:'Persil Detergent',i:'Enzymes + optical brighteners',h:'Skin & respiratory irritants'},
- 'dreft':{n:'Dreft Baby Detergent',i:'Fragrance + optical brighteners',h:'Residue on baby skin — irritant'},
- 'bounce':{n:'Bounce Dryer Sheets',i:'Quats + synthetic fragrance',h:'Coats fabric in VOCs — asthma trigger'},
- 'downy':{n:'Downy Fabric Softener',i:'Quaternary ammonium + fragrance',h:'Respiratory irritant'},
- 'oxiclean':{n:'OxiClean Stain Remover',i:'Sodium percarbonate + fragrance',h:'Eye & skin irritant'},
- 'shout':{n:'Shout Stain Remover',i:'Solvents + synthetic fragrance',h:'Skin irritant & allergen'},
- 'head & shoulders':{n:'Head & Shoulders',i:'Pyrithione zinc + fragrance',h:'Skin & eye irritant'},
- 'pantene':{n:'Pantene Shampoo',i:'Sulfates + synthetic fragrance',h:'Strips skin barrier — allergen'},
- 'tresemme':{n:'TRESemmé',i:'DMDM hydantoin (formaldehyde)',h:'Formaldehyde releaser — sensitizer'},
- 'dove':{n:'Dove (soap / wash)',i:'Synthetic fragrance + EDTA',h:'Allergens'},
- 'old spice':{n:'Old Spice',i:'Synthetic fragrance + aluminum',h:'Allergens; aluminum absorption'},
- 'secret':{n:'Secret Antiperspirant',i:'Aluminum + fragrance',h:'Aluminum absorption — endocrine concern'},
- 'crest':{n:'Crest Toothpaste',i:'SLS + artificial dyes',h:'Mouth irritant; synthetic colors'},
- 'colgate':{n:'Colgate Toothpaste',i:'SLS + artificial sweeteners',h:'Mouth irritant'},
- 'cerave':{n:'CeraVe Lotion',i:'Parabens + phenoxyethanol',h:'Preservatives — endocrine concern'},
- 'vaseline':{n:'Vaseline Lotion',i:'Petrolatum (refining grade varies)',h:'Possible PAH contamination'},
- 'crisco':{n:'Crisco Shortening',i:'Hydrogenated seed oils + hexane',h:'Inflammatory — linked to metabolic disease'},
- 'wesson':{n:'Wesson Vegetable Oil',i:'Industrial seed oil + hexane residue',h:'Inflammatory — oxidized omega-6'},
- 'mazola':{n:'Mazola Corn Oil',i:'Industrial seed oil + hexane residue',h:'Inflammatory — linked to metabolic disease'},
- 'pam':{n:'PAM Cooking Spray',i:'Propellants + seed oils',h:'Oxidized fats; additive load'},
- 'folgers':{n:'Folgers Coffee',i:'Pesticide residue + mycotoxin risk',h:'Conventional beans — contaminant load'},
- 'maxwell house':{n:'Maxwell House Coffee',i:'Pesticide residue + mycotoxin risk',h:'Conventional beans — contaminant load'},
- 'starbucks':{n:'Starbucks Coffee',i:'Dark-roast acrylamide + pesticides',h:'Acrylamide — CA Prop 65 listed'},
- 'nature made':{n:'Nature Made Vitamins',i:'Synthetic folic acid + fillers',h:'Poor bioavailability — additive load'},
- "johnson's":{n:"Johnson's Baby Wash",i:'Fragrance + formaldehyde releasers',h:'Sensitizer on infant skin'},
- 'optimum nutrition':{n:'Optimum Nutrition Whey',i:'Artificial flavors, heavy metals, carrageenan',h:'Carrageenan is on the cancer-causing chemicals list. Heavy metals in protein powders damage the developing brain in kids.'},
- 'premier protein':{n:'Premier Protein',i:'Carrageenan, artificial flavors, soybean oil',h:'Carrageenan is on the cancer-causing chemicals list. It also damages the gut lining and feeds inflammation, day after day, year after year.'},
- 'muscle milk':{n:'Muscle Milk Protein Powder',i:'Lead, arsenic, cadmium, carrageenan',h:'Lead in kids damages the developing brain. Cadmium causes cancer. Carrageenan is also on the cancer-causing chemicals list. Three poisons in one scoop.'},
- 'centrum':{n:'Centrum Multivitamin',i:'Synthetic folic acid, artificial dyes, talc',h:'The synthetic vitamins the body cannot use. The dyes are linked to cancer and behavior issues in kids. Talc is on the same list as the J&J baby powder that 67,000 women sued over ovarian cancer.'},
+ // _src: EPA TSCA 1,4-dioxane risk eval (nov 2024); As You Sow P&G settlement 2013; CA Prop 65 list
+ 'dawn':{n:'Dawn Ultra Dish Soap',i:'1,4-dioxane, methylisothiazolinone, synthetic fragrance',h:'1,4-dioxane is on the EPA likely-cause-cancer list. It hides inside the bottle because it is a manufacturing byproduct and never appears on the label. Methylisothiazolinone damages nerve cells and burns the skin.'},
+ // _src: SkinSAFE Palmolive Ultra ingredient panel; CIR methylisothiazolinone review; EU Cosmetics Regulation Annex V restriction
+ 'palmolive':{n:'Palmolive Dish Liquid',i:'Methylisothiazolinone, formaldehyde, synthetic fragrance',h:'Formaldehyde causes cancer. The EU banned methylisothiazolinone from leave-on products because it burns skin and triggers lifelong allergies. The fragrance is a black box of dozens of chemicals the company is allowed to hide.'},
+ // _src: NY 1,4-dioxane law (1ppm cap, Jan 2024); EPA TSCA 1,4-dioxane risk eval; P&G reformulation announcement
+ 'cascade':{n:'Cascade Platinum Pods',i:'1,4-dioxane, synthetic fragrance, optical brighteners',h:'1,4-dioxane is on the EPA likely-cause-cancer list and damages the liver and kidneys. New York banned cleaning products with more than 1 part per million because it kept showing up in tap water. The brighteners stay on your plates and feed into your food.'},
+ 'finish':{n:'Finish Dishwasher Pods',i:'Subtilisin enzymes, synthetic fragrance, sodium polyacrylate',h:'The enzymes are a known cause of asthma in adults who breathe the dust day after day. The fragrance can damage the lungs. Residue stays on the plates your kids eat off.'},
+ // _src: J Allergy Clin Immunol Pract 2021 multicenter QAC asthma cohort; Hrubec et al rodent neural defect studies; CDC NHANES QAC bioaccumulation 2023
+ 'lysol':{n:'Lysol Disinfectant Spray',i:'Quaternary ammonium compounds (quats), synthetic fragrance, ethanol',h:'Quats damage the lungs and cause asthma in cleaners who use them every day. Animal studies link quats to birth defects and infertility. They build up inside your body and your kids breathe the spray straight into their lungs.'},
+ // _src: IARC chloroform Group 2B; EPA disinfection byproducts; ATSDR ToxProfile chloroform
+ 'clorox':{n:'Clorox Bleach',i:'Sodium hypochlorite, chloroform fumes, synthetic fragrance',h:'When bleach hits any organic matter (food, hair, dust) it releases chloroform gas. Chloroform is on the cancer-causing chemicals list and damages the liver, kidneys, and nervous system. Every spray burns the lungs of the person cleaning and any kid in the room.'},
+ // _src: CA Prop 65 acetaldehyde listing; NRDC 2007 air freshener report; EPA acetaldehyde IRIS probable carcinogen
+ 'febreze':{n:'Febreze Air Effects',i:'Acetaldehyde, BHT, undisclosed "fragrance"',h:'Acetaldehyde causes cancer and is on California Prop 65. BHT damages nerve cells and messes with hormones. The word "fragrance" hides dozens of chemicals the company is never required to name, and you spray them straight onto your couch where your baby naps.'},
+ // _src: NRDC 2007 air freshener phthalate testing; CHAMACOS phthalate-asthma cohort; CHE phthalate hormone disruption review
+ 'glade':{n:'Glade Plug-In',i:'Phthalates, synthetic musks, formaldehyde',h:'Phthalates lower testosterone, shrink baby boys\' genitals in the womb, and cause early puberty in girls. Formaldehyde causes cancer. The plug-in pumps these into your child\'s bedroom 24 hours a day while they sleep.'},
+ // _src: NRDC 2007 air freshener testing; Steinemann 2016 fragranced consumer products survey; ATSDR benzene ToxProfile
+ 'air wick':{n:'Air Wick Freshener',i:'Phthalates, benzene derivatives, synthetic fragrance',h:'Phthalates cause hormone problems, infertility, and birth defects. Benzene causes leukemia. The label says "fresh linen" but you are spraying a chemical cocktail your kids breathe in every minute they are home.'},
+ // _src: EPA indoor air quality candle study; SC State Univ paraffin combustion study 2009; ATSDR ToxProfile benzene/toluene
+ 'yankee':{n:'Yankee Candle',i:'Paraffin soot, benzene, toluene, synthetic fragrance',h:'Paraffin is a petroleum waste product. Burning it releases the same fumes as a diesel engine, including benzene which causes leukemia. The fragrance load triggers asthma attacks in kids and damages the lungs over time.'},
+ // _src: EPA paraffin candle emissions; Steinemann fragranced product VOC study; OEHHA Prop 65 benzene
+ 'bath & body':{n:'Bath & Body Works Candle',i:'Paraffin soot, benzene, synthetic fragrance',h:'Paraffin wax is a leftover from making gasoline. Burning it releases benzene, which causes leukemia, and dozens of fragrance chemicals that damage the lungs. One candle in a closed bedroom hits kids harder than adults.'},
+ // _src: NY 1,4-dioxane law impact 2024; As You Sow Tide settlement 2013; P&G reformulation
+ 'tide':{n:'Tide Pods (Original)',i:'1,4-dioxane, optical brighteners, synthetic fragrance',h:'1,4-dioxane is on the EPA likely-cause-cancer list. New York forced Tide to lower the amount because it kept showing up in drinking water. Optical brighteners coat your kids\' pajamas and stay on their skin all night.'},
+ 'gain':{n:'Gain Detergent',i:'Synthetic fragrance, optical brighteners, dyes',h:'The fragrance is a hidden mix of dozens of chemicals linked to asthma, headaches, and hormone problems. The brighteners stay on the fabric and rub off on your kids\' skin every time they get dressed.'},
+ 'persil':{n:'Persil Detergent',i:'Enzymes, optical brighteners, synthetic fragrance',h:'The enzymes are a known cause of asthma in workers who breathe the dust. The fragrance damages the lungs and triggers eczema in babies. Residue stays in the fibers and touches your skin all day.'},
+ 'dreft':{n:'Dreft Baby Detergent',i:'Synthetic fragrance, optical brighteners, preservatives',h:'The "baby fresh" smell is a chemical cocktail the company hides under the word "fragrance." The brighteners stay on baby pajamas and burn delicate skin. Marketing this for newborns is the cruelest trick on the laundry aisle.'},
+ // _src: J Allergy Clin Immunol Pract 2021 QAC asthma cohort; Hrubec rodent fertility studies
+ 'bounce':{n:'Bounce Dryer Sheets',i:'Quaternary ammonium compounds, synthetic fragrance, dyes',h:'Quats damage the lungs and cause asthma. The sheets coat every piece of fabric in your house with chemicals that animal studies link to infertility and birth defects. The vent blows them straight outside, so the neighborhood breathes them too.'},
+ 'downy':{n:'Downy Fabric Softener',i:'Quaternary ammonium compounds, synthetic fragrance, dyes',h:'Quats damage the lungs and cause asthma in regular users. They coat your kids\' clothes and stay on their skin against their chest, where they breathe the fumes all day. Animal studies tie quats to infertility and birth defects.'},
+ 'oxiclean':{n:'OxiClean Stain Remover',i:'Sodium percarbonate, synthetic fragrance, dyes',h:'Burns the skin and the eyes. The fragrance is a chemical mix that damages the lungs and triggers asthma. Residue stays on the fabric and touches your kids\' skin.'},
+ 'shout':{n:'Shout Stain Remover',i:'Solvents, synthetic fragrance, surfactants',h:'The solvents damage the brain and the liver. The fragrance burns the skin and damages the lungs. Spraying it indoors fills the air with chemicals your kids breathe in.'},
+ // _src: DailyMed pyrithione zinc OTC monograph; FDA fragrance allergen guidance; CIR fragrance safety review
+ 'head & shoulders':{n:'Head & Shoulders',i:'Pyrithione zinc, synthetic fragrance, methylchloroisothiazolinone',h:'Pyrithione zinc is a registered pesticide and animal studies link it to birth defects. The preservatives burn the scalp and trigger lifelong allergies. The "fresh scent" hides a chemical mix that damages the lungs.'},
+ // _src: classaction.org DMDM hair-loss MDL; FDA formaldehyde-releaser guidance; NTP formaldehyde Report on Carcinogens
+ 'pantene':{n:'Pantene Shampoo',i:'DMDM hydantoin (releases formaldehyde), synthetic fragrance, sulfates',h:'DMDM hydantoin slowly releases formaldehyde into your scalp every wash. Formaldehyde causes cancer. Pantene is named in active hair-loss lawsuits for scalp burns and hair falling out in clumps.'},
+ // _src: TopClassActions Tresemme MDL; classaction.org DMDM formaldehyde page; Unilever 2021 reformulation announcement
+ 'tresemme':{n:"TRESemme",i:'DMDM hydantoin (releases formaldehyde), synthetic fragrance, sulfates',h:'DMDM hydantoin releases formaldehyde, which causes cancer, slowly onto your scalp. Two women sued Unilever after their hair fell out in patches and their scalp burned. Unilever quietly removed it in 2022 but older bottles are still on shelves.'},
+ 'dove':{n:'Dove (soap / wash)',i:'Synthetic fragrance, methylisothiazolinone, EDTA',h:'The EU restricted methylisothiazolinone because it burns skin and causes lifelong allergies. The fragrance hides dozens of unlabeled chemicals. "Gentle" is a marketing word, not a chemistry word.'},
+ // _src: FDA recall Old Spice/Secret Nov 2021 (benzene); ATSDR benzene ToxProfile; Valisure benzene petition
+ 'old spice':{n:'Old Spice',i:'Benzene (per FDA recall), aluminum, synthetic fragrance',h:'In 2021 the FDA pulled Old Spice spray off shelves because it tested with benzene levels nine times the safety limit. Benzene causes leukemia. Aluminum gets absorbed under the arm right next to breast tissue.'},
+ // _src: FDA recall Old Spice/Secret Nov 2021 (benzene); ATSDR aluminum ToxProfile; CDC NHANES aluminum biomonitoring
+ 'secret':{n:'Secret Antiperspirant',i:'Benzene (per FDA recall), aluminum, synthetic fragrance',h:'In 2021 the FDA pulled Secret spray off shelves because it tested with benzene levels nine times the safety limit. Benzene causes leukemia. Aluminum gets absorbed under the arm right next to breast tissue, where it has been found in tumors.'},
+ // _src: FDA color additive list Red 40 / Yellow 5; California OEHHA report on synthetic dyes Apr 2021; CSPI petition on food dyes
+ 'crest':{n:'Crest Toothpaste',i:'Sodium lauryl sulfate, titanium dioxide, Red 40, Yellow 5',h:'Red 40 and Yellow 5 cause behavior problems and hyperactivity in kids (California state report, 2021). Titanium dioxide is banned in food across the EU because it can damage DNA. Your kids swallow some of this paste every morning.'},
+ // _src: FDA color additive list; California OEHHA synthetic dyes report 2021; classaction.org artificial dye hyperactivity
+ 'colgate':{n:'Colgate Toothpaste',i:'Sodium lauryl sulfate, titanium dioxide, Red 40, artificial flavors',h:'Red 40 causes behavior problems and hyperactivity in kids (California state report, 2021). Titanium dioxide is banned from food in the EU because it can damage DNA. SLS burns the mouth and triggers canker sores.'},
+ // _src: Nature Sci Rep 2025 paraben breast cancer cross-sectional; CIR phenoxyethanol review; NIH PMC paraben endocrine review
+ 'cerave':{n:'CeraVe Lotion',i:'Parabens, phenoxyethanol, synthetic fragrance',h:'Parabens mess with estrogen and have been found inside breast cancer tumors. Phenoxyethanol can damage the nervous system in babies. You rub it onto your kids\' skin every day, and the skin absorbs it straight into the bloodstream.'},
+ // _src: EU Cosmetics Regulation Annex II mineral oil; Safe Cosmetics petrolatum dossier; IARC untreated mineral oil Group 1
+ 'vaseline':{n:'Vaseline Lotion',i:'Petrolatum, mineral oil, synthetic fragrance',h:'Petrolatum is a leftover from making gasoline. The EU bans it in cosmetics unless the maker can prove it is fully cleaned, and the US has no such rule. The leftover compounds (PAHs) cause cancer.'},
+ 'crisco':{n:'Crisco Shortening',i:'Industrial soybean oil, hexane residue, mono and diglycerides',h:'Hexane is a brain-damaging solvent used to squeeze the oil out of the beans. Traces stay in the can. The oil itself is heated and pressed until it oxidizes, which feeds inflammation in your body day after day.'},
+ 'wesson':{n:'Wesson Vegetable Oil',i:'Industrial soybean oil, hexane residue, glyphosate',h:'Hexane is a federal hazardous air pollutant that damages nerve cells. Traces stay in the bottle. Glyphosate is on the cancer-causing chemicals list and shows up in conventional soybean oil from sprayed crops.'},
+ 'mazola':{n:'Mazola Corn Oil',i:'Industrial corn oil, hexane residue, glyphosate',h:'Hexane is a brain-damaging solvent that leaves traces in the oil. Glyphosate (Roundup) is on the cancer-causing chemicals list and shows up in conventional corn. High heat damages the oil even more, and the broken-down compounds feed cancer cell growth in studies.'},
+ // _src: FDA SDS PAM cooking spray; FDA propellant approvals; Weston A Price Crisco history; Quora hexane extraction
+ 'pam':{n:'PAM Cooking Spray',i:'Industrial seed oils, hexane residue, butane and propane propellants',h:'Hexane is a brain-damaging solvent used to extract the oil. Butane and propane are the same gases used in lighter fluid, and you spray them straight onto food at high heat. The oil oxidizes the moment it hits the pan and feeds inflammation in the body.'},
+ // _src: USDA Pesticide Data Program coffee residues; Aflatoxin B1 IARC Group 1; CA Prop 65 acrylamide
+ 'folgers':{n:'Folgers Coffee',i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin grows on conventional beans during storage and is on the cancer-causing chemicals list at the highest level (Group 1, same as tobacco). Glyphosate (Roundup) is sprayed on the fields. You drink this every morning, year after year.'},
+ // _src: USDA Pesticide Data Program; IARC aflatoxin Group 1; Kraft Heinz product page
+ 'maxwell house':{n:'Maxwell House Coffee',i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin grows on conventional beans during storage and is on the cancer-causing chemicals list at the highest level. Glyphosate (Roundup) is sprayed on the fields where the beans grow. You drink this every morning, year after year.'},
+ // _src: CERT v Starbucks Prop 65 case; OEHHA 2019 coffee regulation; Mountain Cabin clean coffee comparison
+ 'starbucks':{n:'Starbucks Coffee',i:'Acrylamide, glyphosate residue, dark-roast oxidation byproducts',h:'Acrylamide forms when beans are roasted dark and is on the cancer-causing chemicals list. California sued Starbucks over it. Conventional beans also carry glyphosate (Roundup), which is on the same list. The dark roast feels strong because the bean is burned, not because the bean is good.'},
+ // _src: Centrum label panel (Pfizer); CA OEHHA synthetic dyes report Apr 2021; ConsumerLab Centrum filler analysis
+ 'nature made':{n:'Nature Made Vitamins',i:'Synthetic folic acid, titanium dioxide, magnesium stearate, artificial dyes',h:'Synthetic folic acid sits in the bloodstream and is linked to higher cancer rates in adults who can\'t process it (1 in 3 women). Titanium dioxide is banned in food across the EU because it can damage DNA. The dyes cause behavior problems in kids.'},
+ // _src: J&J 2013 reformulation announcement; classaction.org DMDM hair-loss MDL; FDA formaldehyde-releaser guidance
+ "johnson's":{n:"Johnson's Baby Wash",i:'Formaldehyde-releasing preservatives, synthetic fragrance, 1,4-dioxane',h:'Formaldehyde causes cancer. 1,4-dioxane is on the EPA likely-cause-cancer list. After years of pressure J&J reformulated some products, but older bottles are still on shelves and the fragrance still hides dozens of chemicals that burn baby skin.'},
+ // _src: Clean Label Project 2018 + 2024 protein powder heavy metals report; IARC carrageenan toxicology; FDA undeclared whey contamination
+ 'optimum nutrition':{n:'Optimum Nutrition Gold Standard Whey',i:'Lead, cadmium, carrageenan, artificial flavors',h:'Independent lab testing (Clean Label Project, 2024) found lead and cadmium inside the scoop. Lead damages the developing brain in kids. Cadmium causes cancer. Carrageenan is also on the cancer-causing chemicals list and damages the gut lining.'},
+ // _src: Tobinick et al carrageenan / colitis studies; IARC carrageenan review; Premier Protein label
+ 'premier protein':{n:'Premier Protein',i:'Carrageenan, artificial flavors, industrial soybean oil',h:'Carrageenan is on the cancer-causing chemicals list. It damages the gut lining and feeds inflammation, day after day, year after year. The soybean oil is sprayed with glyphosate and oxidized in the can.'},
+ // _src: Consumer Reports 2010 + 2024 protein powder heavy metals; Clean Label Project 2024; ATSDR ToxProfiles lead arsenic cadmium
+ 'muscle milk':{n:'Muscle Milk Protein Powder',i:'Lead, arsenic, cadmium, carrageenan',h:'Lead, arsenic, and cadmium are inside the scoop. Lead damages the developing brain in kids and never leaves the body. Arsenic and cadmium cause cancer. Carrageenan is also on the cancer-causing chemicals list. Three poisons in one shake.'},
+ // _src: Centrum Pfizer label panel; CSPI false advertising letter 2010; CA OEHHA synthetic dyes Apr 2021; J&J talc litigation MDL
+ 'centrum':{n:'Centrum Multivitamin',i:'Synthetic folic acid, talc, artificial dyes (Red 40, Yellow 6), hydrogenated oil',h:'The synthetic vitamins the body cannot use. The dyes are linked to behavior problems in kids and to cancer. Talc is on the same list as the J&J baby powder that 67,000 women sued over ovarian cancer. You swallow this every morning.'},
 };
 const CAT_TOX={
- dish:{i:'Ethoxylated surfactants + fragrance',h:'Often contain 1,4-dioxane'},
- dishwasher:{i:'Enzymes + fragrance + brighteners',h:'Asthma trigger; endocrine concern'},
- allpurpose:{i:'Quats + synthetic fragrance',h:'Respiratory irritant — asthma link'},
- coffee:{i:'Pesticide residue + mycotoxin risk',h:'Conventional sourcing — contaminant load'},
- supplements:{i:'Synthetic vitamins + fillers / dyes',h:'Poor bioavailability — additive load'},
- shampoo:{i:'Sulfates + synthetic fragrance',h:'Strips skin barrier — allergen'},
- bodywash:{i:'Synthetic fragrance + preservatives',h:'Allergens'},
- toothpaste:{i:'SLS + artificial colors / sweeteners',h:'Mouth irritant — additive load'},
- deodorant:{i:'Aluminum + synthetic fragrance',h:'Aluminum absorption — endocrine concern'},
- laundry:{i:'Optical brighteners + fragrance',h:'Skin irritant — stays in fabric'},
- dryer:{i:'Quats + synthetic fragrance',h:'Coats fabric in VOCs — asthma trigger'},
- fabric:{i:'Quaternary ammonium + fragrance',h:'Respiratory irritant'},
- bleach:{i:'Sodium hypochlorite + fragrance',h:'Lung irritant — releases fumes'},
- stain:{i:'Solvents + synthetic fragrance',h:'Skin & eye irritant'},
- babywash:{i:'Fragrance + formaldehyde releasers',h:'Sensitizer on infant skin'},
- babylotion:{i:'Fragrance + petrolatum',h:'Irritant on infant skin'},
- babywipes:{i:'Fragrance + preservatives',h:'Sensitizer — contact dermatitis'},
- diaperash:{i:'Petrolatum + fragrance',h:'Possible PAH contamination'},
- babypowder:{i:'Talc (asbestos contamination risk)',h:'Talc — CA Prop 65 / litigation history'},
- babylaundry:{i:'Fragrance + optical brighteners',h:'Residue on baby skin — irritant'},
- homeair:{i:'Phthalates + synthetic musks',h:'Hormone disruptors'},
- makeup:{i:'Parabens + heavy metals',h:'Endocrine disruptors'},
- water:{i:'Chlorine byproducts + possible PFAS',h:'Disinfection byproducts — long-term risk'},
+ dish:{i:'Ethoxylated surfactants, synthetic fragrance, methylisothiazolinone',h:'Most dish soaps carry 1,4-dioxane, which is on the EPA likely-cause-cancer list. The fragrance hides dozens of chemicals that burn skin and damage the lungs.'},
+ dishwasher:{i:'Enzymes, synthetic fragrance, optical brighteners',h:'The enzymes cause asthma in regular users. Residue stays on the plates your kids eat off, day after day.'},
+ allpurpose:{i:'Quaternary ammonium compounds (quats), synthetic fragrance',h:'Quats damage the lungs and cause asthma. Animal studies link them to birth defects and infertility.'},
+ coffee:{i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin is on the cancer-causing chemicals list at the highest level (same as tobacco). Glyphosate is sprayed on conventional beans and ends up in the cup.'},
+ supplements:{i:'Synthetic vitamins, titanium dioxide, artificial dyes, fillers',h:'Synthetic folic acid is linked to higher cancer rates in adults who cannot process it. Titanium dioxide is banned in food across the EU because it can damage DNA. The dyes cause behavior problems in kids.'},
+ shampoo:{i:'Sulfates, synthetic fragrance, formaldehyde-releasing preservatives',h:'Formaldehyde causes cancer. The fragrance hides dozens of chemicals that burn the scalp and damage the lungs.'},
+ bodywash:{i:'Synthetic fragrance, preservatives, sulfates',h:'The fragrance is a chemical mix that messes with hormones and triggers allergies. Sulfates burn the skin and dry out the skin barrier.'},
+ toothpaste:{i:'Sodium lauryl sulfate, titanium dioxide, artificial dyes, artificial flavors',h:'Red 40 and Yellow 5 cause behavior problems in kids (California state report, 2021). Titanium dioxide is banned in food across the EU because it can damage DNA. Your kids swallow some of this every morning.'},
+ deodorant:{i:'Aluminum, synthetic fragrance, sometimes benzene',h:'In 2021 the FDA pulled Old Spice and Secret sprays off shelves because of benzene, which causes leukemia. Aluminum gets absorbed under the arm right next to breast tissue.'},
+ laundry:{i:'1,4-dioxane, optical brighteners, synthetic fragrance',h:'1,4-dioxane is on the EPA likely-cause-cancer list. New York banned cleaning products with more than 1 part per million because it kept showing up in drinking water. The brighteners coat your kids\' pajamas and stay on their skin all night.'},
+ dryer:{i:'Quaternary ammonium compounds (quats), synthetic fragrance, dyes',h:'Quats damage the lungs and cause asthma. The sheets coat every piece of fabric in your house with chemicals tied to infertility and birth defects in animal studies.'},
+ fabric:{i:'Quaternary ammonium compounds (quats), synthetic fragrance',h:'Quats damage the lungs and cause asthma. They coat your kids\' clothes and stay on their skin against their chest all day.'},
+ bleach:{i:'Sodium hypochlorite, chloroform fumes, synthetic fragrance',h:'When bleach hits any organic matter it releases chloroform gas. Chloroform is on the cancer-causing chemicals list and damages the liver, kidneys, and nervous system.'},
+ stain:{i:'Solvents, synthetic fragrance, surfactants',h:'The solvents damage the brain and the liver. The fragrance burns the skin and damages the lungs.'},
+ babywash:{i:'Formaldehyde-releasing preservatives, synthetic fragrance, 1,4-dioxane',h:'Formaldehyde causes cancer. 1,4-dioxane is on the EPA likely-cause-cancer list. You wash your newborn in it every night.'},
+ babylotion:{i:'Petrolatum, synthetic fragrance, parabens',h:'Petrolatum is a leftover from making gasoline. The EU bans it in cosmetics unless the maker proves it is fully cleaned, and the US has no such rule. Parabens mess with estrogen.'},
+ babywipes:{i:'Synthetic fragrance, preservatives, phenoxyethanol',h:'Phenoxyethanol can damage the nervous system in babies. The fragrance triggers eczema and burns delicate skin.'},
+ diaperash:{i:'Petrolatum, synthetic fragrance, parabens',h:'Petrolatum is a leftover from making gasoline. The leftover compounds (PAHs) cause cancer. Parabens mess with hormones.'},
+ babypowder:{i:'Talc (with asbestos contamination risk)',h:'Talc is on the same cancer-causing chemicals list as the J&J baby powder that 67,000 women sued over ovarian cancer. Asbestos has been found in talc samples again and again.'},
+ babylaundry:{i:'Synthetic fragrance, optical brighteners, dyes',h:'The brighteners stay on baby pajamas and burn delicate skin. The fragrance hides dozens of chemicals that trigger eczema and asthma.'},
+ homeair:{i:'Phthalates, synthetic musks, formaldehyde',h:'Phthalates lower testosterone, shrink baby boys\' genitals in the womb, and cause early puberty in girls. Formaldehyde causes cancer. Plug-ins pump these into your child\'s bedroom 24 hours a day.'},
+ makeup:{i:'Parabens, heavy metals (lead, cadmium), synthetic fragrance',h:'Parabens mess with estrogen and have been found inside breast cancer tumors. Lead and cadmium damage the brain and cause cancer. The skin absorbs them straight into the bloodstream.'},
+ water:{i:'Chlorine byproducts, PFAS (forever chemicals), lead, microplastics',h:'PFAS are forever chemicals tied to cancer, infertility, and immune problems. They never leave the body. Chlorine byproducts cause bladder cancer in studies.'},
 };
 function findingDisplay(brand,cat,label){
   var key=(brand||'').toLowerCase().trim();
@@ -1546,7 +1577,7 @@ function scoreBrand(text, cat, fieldLabel) {
     if(fieldLabel) unscoredFields.push(fieldLabel);
     return 0;
   }
-  // STA / Melaleuca products always score 0 — clean formulations
+  // STA products always score 0 (clean formulations)
   if(isSTA(text)) return 0;
   const t = text.toLowerCase().trim();
   const db = BRAND_DB[cat] || {};
@@ -2333,7 +2364,7 @@ try{ var _c=getParam('c'); fetch(SERVER+'/scan-visit?r='+(getParam('r')==='1'?'1
 // ── Chip-card interaction handlers ──────────────────────────────────────────
 function isSTA_check(text){ return isSTA(text); }
 
-// change #11 — brand TIERS: green = STA/Melaleuca safer swaps ONLY; amber = "cleaner-ish but still off-the-shelf"; red = conventional/toxic
+// change #11 — brand TIERS: green = STA safer swaps ONLY; amber = "cleaner-ish but still off-the-shelf"; red = conventional/toxic
 const AMBER_BRANDS = new Set(['branch basics','mrs. meyer','mrs. meyers',"mrs. meyer's",'seventh generation','method','native','attitude','force of nature',"molly's suds",'truly free','ecos','better life','aspen clean','dr. bronner',"dr. bronner's",'organic coffee','truvani','brand from naturopath','acure','weleda',"tom's",'toms','hello','babyganics']);
 function brandTier(brand){
   if(!brand) return 'none';
