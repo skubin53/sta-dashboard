@@ -796,14 +796,14 @@ html,body{
 <div class="screen" id="s-quiz">
   <div class="q-wrap">
     <div class="qhouse" id="quizHouse"></div>
-    <div class="risk-pill" id="riskPill" style="display:none"><span class="risk-emoji">🚨</span><div class="risk-txt"><span class="risk-n" id="riskN">0</span> <span id="riskLbl">concerns</span> found so far</div></div>
+    <div class="risk-pill" id="riskPill"><span class="risk-emoji">🚨</span><div class="risk-txt"><span class="risk-n" id="riskN">0</span> <span id="riskLbl">concerns</span> found so far</div></div>
     <div class="safe-pill" id="safePill"><span>✨</span><div><span class="safe-n" id="safeN">0</span> <span id="safeLbl">clean picks</span> — nice!</div></div>
     <div id="qMt"></div>
   </div>
   <!-- Sticky action bar — Shannon's design (save link lives here so it never scrolls away) -->
   <div class="q-actions">
     <div id="saveSpotPanel" class="save-spot-panel" style="display:none"></div>
-    <button id="saveSpotBtn" onclick="saveSpot()" class="save-spot-btn" style="display:none">💾 Save my spot &amp; finish later</button>
+    <button id="saveSpotBtn" onclick="saveSpot()" class="save-spot-btn">💾 Save my spot &amp; finish later</button>
     <div class="q-actions-row">
       <button class="q-back" onclick="goBack()">← Back</button>
       <button class="q-cont" id="btnNx" onclick="goNext()">Continue →</button>
@@ -1030,23 +1030,12 @@ html,body{
       </div>
       <button onclick="openStories()" style="margin-top:13px;background:none;border:none;color:#C9A227;font-weight:800;font-size:.84rem;cursor:pointer;font-family:inherit;text-decoration:underline">+ Read 12 more stories →</button>
     </div>
-    <div class="fc" id="finalCta">
-      <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
-      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 20px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif">
-        <p style="font-size:1.02rem;line-height:1.55;color:#eef3fa;margin-bottom:12px">They scroll on. They mean to come back. They don't.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#cbd6e6;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#cbd6e6;margin-bottom:12px">And the cost is real. The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#cbd6e6;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#cbd6e6;margin-bottom:0">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them. For free.</p>
-      </div>
-      <div style="text-align:center;margin-bottom:14px">
-        <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#FFD27A;margin-bottom:4px">Stop guessing.</div>
-        <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#37c79a">Start swapping.</div>
-      </div>
-      <button class="door door-tour" style="width:100%;font-size:1.04rem;padding:18px 20px;margin-bottom:18px;background:linear-gradient(180deg,#37c79a,#1F8A70);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 10px 28px -8px rgba(31,138,112,.55);font-family:inherit" onclick="document.getElementById('bookingEmbed').scrollIntoView({behavior:'smooth',block:'start'})">📅 Book my free home walkthrough →</button>
-      <p style="text-align:center;font-size:.84rem;color:rgba(255,255,255,.62);margin-bottom:14px;line-height:1.5">15 minutes. One on one. No pitch. We map your house and pick your first 3 swaps together.</p>
-      <div id="bookingEmbed" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:6px">
-        <iframe src="https://link.switchtoamerica.com/widget/bookings/maketheswtch" style="width:100%;min-height:720px;border:0;background:#fff" loading="lazy" title="Book your free home walkthrough"></iframe>
+    <div class="fc" id="finalCta"><h2 id="fcH">Here's where to go next:</h2><p id="fcP">Pick whatever feels right — zero pressure.</p>
+      <div class="doors">
+        <button class="door door-green" onclick="openSwitchList()"><span class="door-t">📋 Text me my Switch List</span><span class="door-s">The clean swaps for exactly what you tapped — free</span></button>
+        <button class="door door-amber" onclick="openAudit()"><span class="door-t">📩 Email my full Home Audit</span><span class="door-s">Your complete room-by-room breakdown</span></button>
+        <button class="door door-red" onclick="window.open('https://join.switchtoamerica.com/shop','_blank')"><span class="door-t">🎁 Unlock my $100 store credit</span><span class="door-s">Start switching with $100 toward your first order</span></button>
+        <button class="door door-tour" onclick="window.open('https://link.switchtoamerica.com/widget/bookings/maketheswtch','_blank')"><span class="door-t">👋 Walk me through it</span><span class="door-s">10 min with Shannon — set up your account together</span></button>
       </div>
       <div id="switchListPanel" class="sl-panel" style="display:none"></div>
       <div id="auditPanel" class="sl-panel" style="display:none"></div>
@@ -1456,7 +1445,6 @@ const STEPS = [
 
 function buildActive(){
   activeSteps = STEPS.filter(s => {
-    if(s.type==='soft') return false; // 2026-06-19 (Matt): kill mid-quiz save-your-spot interrupt
     if(s.conditional==='baby') return hasBaby; // Only show for families with babies/toddlers
     return true;
   });
@@ -2710,7 +2698,8 @@ function buildSimulator(toxList){
     '<div class="sim-foot"><div class="sim-foot-row"><span>Your projected score</span><b><span id="simFromScore">'+totalScore+'</span> → <span id="simToScore" style="color:'+toCol(ns0)+'">'+ns0+'</span></b></div>'+
     '<div class="sim-foot-row"><span>Projected savings</span><b style="color:#37c79a">~$<span id="simSave">'+save0+'</span> CAD</b></div>'+
     '<div class="sim-foot-row"><span>Chemical exposures avoided</span><b style="color:#37c79a"><span id="simExp">'+Math.round(removed0*105).toLocaleString()+'</span>/yr</b></div></div>'+
-    '</div>';
+    '<button class="tox-soft-btn" style="margin-top:13px" onclick="sendMyPlan()">📱 Send Me This Plan →</button>'+
+    '<button onclick="shareScore()" style="display:block;margin:10px auto 0;background:none;border:none;color:#9fb1cc;font-weight:700;font-size:.82rem;cursor:pointer;font-family:inherit;text-decoration:underline">📲 Share my score</button></div>';
   wrap.style.display='block';
 }
 function toggleSwap(i){
@@ -2903,4 +2892,3 @@ function cpLink(){navigator.clipboard.writeText(shareUrl()).then(()=>{const b=do
 </script>
 </body>
 </html>
-
