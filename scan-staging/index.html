@@ -54,7 +54,7 @@ html,body{
 }
 .pt{background:rgba(255,255,255,.12);border-radius:50px;height:5px;margin-bottom:4px}
 .pf{height:100%;border-radius:50px;background:linear-gradient(90deg,#C9A227,#1F8A70);transition:width .4s ease}
-.plb{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.92);text-align:center}
+.plb{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fafdff;text-align:center}
 /* room map (replaces numeric step label — change #2) */
 .roommap{display:flex;justify-content:center;gap:9px;flex-wrap:nowrap;overflow-x:auto;padding:3px 0 1px;-webkit-overflow-scrolling:touch}
 .rm-item{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:34px;opacity:.3;filter:grayscale(1);transition:opacity .35s,filter .35s,transform .35s}
@@ -62,7 +62,7 @@ html,body{
 .rm-item.rm-cur{opacity:1;filter:grayscale(0);transform:translateY(-1px)}
 .rm-ic{font-size:18px;line-height:1.1}
 .rm-cur .rm-ic{filter:drop-shadow(0 0 7px rgba(227,179,65,.95))}
-.rm-lb{font-size:.48rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:rgba(255,255,255,.92);white-space:nowrap}
+.rm-lb{font-size:.48rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#fafdff;white-space:nowrap}
 .rm-cur .rm-lb{color:var(--gold)}
 .rm-done .rm-lb{color:#37c79a}
 .rm-chk{position:absolute;top:-4px;right:1px;font-size:9px;color:#0B2545;font-weight:900;background:#37c79a;width:12px;height:12px;border-radius:50%;line-height:12px;text-align:center}
@@ -254,14 +254,14 @@ html,body{
 }
 
 .intro-sub{
-  font-size:.84rem;font-weight:500;color:rgba(255,255,255,.92);
+  font-size:.84rem;font-weight:500;color:#fafdff;
   text-align:center;line-height:1.55;max-width:300px;margin-bottom:14px;
 }
 
 .sh-q{
   background:rgba(255,255,255,.07);border-left:3px solid var(--orange);
   border-radius:0 10px 10px 0;padding:11px 14px;
-  font-size:.78rem;font-style:italic;color:rgba(255,255,255,.7);
+  font-size:.78rem;font-style:italic;color:#c0cee0;
   line-height:1.5;margin-bottom:18px;max-width:340px;align-self:flex-start;
 }
 
@@ -276,7 +276,7 @@ html,body{
   font-family:inherit;font-size:.98rem;font-weight:700;
   transition:border-color .15s;
 }
-.nb input::placeholder{color:rgba(255,255,255,.92);font-weight:400}
+.nb input::placeholder{color:#fafdff;font-weight:400}
 .nb input:focus{outline:none;border-color:var(--orange)}
 
 .big-cta{
@@ -293,8 +293,8 @@ html,body{
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes flagPop{0%{transform:scale(0);opacity:0}60%{transform:scale(1.4);opacity:1}100%{transform:scale(1);opacity:1}}
 @keyframes ctaPulse{0%,100%{box-shadow:0 10px 32px rgba(200,16,46,.5)}50%{box-shadow:0 10px 44px rgba(200,16,46,.7),0 0 0 10px rgba(200,16,46,.1)}}
-.cta-note{font-size:.68rem;color:rgba(255,255,255,.92);margin-top:8px;text-align:center}
-.stat-line{font-size:.72rem;color:rgba(255,255,255,.92);margin-top:10px;text-align:center;letter-spacing:.05em}
+.cta-note{font-size:.68rem;color:#fafdff;margin-top:8px;text-align:center}
+.stat-line{font-size:.72rem;color:#fafdff;margin-top:10px;text-align:center;letter-spacing:.05em}
 
 /* ══ QUIZ SCREEN — Shannon's Page 2 design ══ */
 #s-quiz{
@@ -343,7 +343,7 @@ html,body{
 .q-opt .oi{flex:none;width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(227,179,65,.14);}
 .q-opt .oi svg{width:18px;height:18px;stroke:var(--orange);fill:none;stroke-width:2;}
 .q-opt .ot{flex:1;font-size:15.5px;font-weight:700;color:#eef3fa;line-height:1.3;}
-.q-opt .od{font-size:.72rem;color:rgba(255,255,255,.92);margin-top:2px;}
+.q-opt .od{font-size:.72rem;color:#fafdff;margin-top:2px;}
 /* change #6 — progressive reveal of health impact */
 .q-opt .oi-hazard{background:rgba(232,163,23,.16);}
 .q-opt .oi-hazard svg{width:18px;height:18px;stroke:#E8A317;}
@@ -356,7 +356,7 @@ html,body{
 /* change #7 — quiet rotating testimonial per room */
 .room-quote{margin:24px auto 2px;max-width:344px;display:flex;gap:9px;align-items:flex-start;opacity:.85;}
 .room-quote .rq-mark{font-family:Georgia,serif;font-size:30px;line-height:.7;color:rgba(227,179,65,.5);flex:none;}
-.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:rgba(255,255,255,.92);font-style:italic;}
+.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:#fafdff;font-style:italic;}
 .room-quote .rq-a{display:block;font-style:normal;font-weight:700;color:rgba(227,179,65,.78);font-size:.7rem;margin-top:5px;letter-spacing:.02em;}
 .q-opt .osel{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(159,177,204,.4);position:relative;transition:border-color .2s;flex-shrink:0;}
 .q-opt .osel::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);transform:scale(0);transition:transform .2s cubic-bezier(.2,1.7,.4,1);}
@@ -409,7 +409,7 @@ html,body{
 .room-supplements{ color:#FDE68A }
 .q-hi{font-size:1.15rem;font-weight:900;color:#fff;margin-bottom:8px;letter-spacing:.01em}
 .q-text{font-size:clamp(1.15rem,4vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:5px}
-.q-sub{font-size:.78rem;color:rgba(255,255,255,.92);margin-bottom:14px;line-height:1.4}
+.q-sub{font-size:.78rem;color:#fafdff;margin-bottom:14px;line-height:1.4}
 
 /* Risk pill */
 .risk-pill{
@@ -438,7 +438,7 @@ html,body{
 .brand-group label{
   display:block;font-size:.68rem;font-weight:800;
   letter-spacing:.1em;text-transform:uppercase;
-  color:rgba(255,255,255,.85);margin-bottom:7px;
+  color:#e8eef5;margin-bottom:7px;
 }
 .brand-inp{
   width:100%;padding:12px 14px;
@@ -448,9 +448,9 @@ html,body{
   font-family:inherit;font-size:.92rem;font-weight:500;
   transition:border-color .15s,background .15s;
 }
-.brand-inp::placeholder{color:rgba(255,255,255,.92);font-weight:400}
+.brand-inp::placeholder{color:#fafdff;font-weight:400}
 .brand-inp:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.14)}
-.skip-note{font-size:.68rem;color:rgba(255,255,255,.92);margin-top:5px;font-style:italic}
+.skip-note{font-size:.68rem;color:#fafdff;margin-top:5px;font-style:italic}
 
 /* ══ CHIP CARDS — Shannon's Page 3/4 design ══ */
 /* Animated kicker dot */
@@ -488,7 +488,7 @@ html,body{
 .chip-safe{position:absolute;top:-7px;right:-5px;width:16px;height:16px;border-radius:50%;background:#1F8A70;color:#fff;font-size:10px;font-weight:900;line-height:16px;text-align:center;box-shadow:0 0 8px rgba(31,138,112,.95);animation:warnPop .28s cubic-bezier(.2,1.8,.4,1);pointer-events:none;z-index:3;}
 .chip-other-input{margin-top:10px;width:100%;padding:11px 14px;border-radius:12px;background:rgba(255,255,255,.07);border:1.5px solid rgba(246,150,42,.5);color:#fff;font-size:14px;font-family:'Hanken Grotesk',inherit;outline:none;display:none;}
 .chip-other-input.show{display:block;}
-.chip-other-input::placeholder{color:rgba(255,255,255,.92);}
+.chip-other-input::placeholder{color:#fafdff;}
 
 /* Multi-select on blue (for "extras" type questions) */
 .extras-list{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
@@ -506,7 +506,7 @@ html,body{
 .ext-em{font-size:1.25rem;flex-shrink:0}
 .ext-body{flex:1}
 .ext-lbl{font-size:.85rem;font-weight:700;color:#fff;line-height:1.25}
-.ext-det{font-size:.7rem;color:rgba(255,255,255,.92);margin-top:2px;line-height:1.35}
+.ext-det{font-size:.7rem;color:#fafdff;margin-top:2px;line-height:1.35}
 .ext-ind{
   width:24px;height:24px;border-radius:50%;
   border:2px solid rgba(255,255,255,.5);flex-shrink:0;
@@ -522,10 +522,10 @@ html,body{
 .q-nav{display:flex;gap:10px;align-items:center;padding-top:6px;flex-shrink:0}
 .btn-bk{
   background:transparent;border:2px solid rgba(255,255,255,.15);
-  color:rgba(255,255,255,.92);border-radius:50px;
+  color:#fafdff;border-radius:50px;
   padding:11px 18px;font-size:.8rem;font-weight:700;font-family:inherit;cursor:pointer;transition:all .15s;white-space:nowrap;
 }
-.btn-bk:hover{border-color:rgba(255,255,255,.92);color:#fff}
+.btn-bk:hover{border-color:#fafdff;color:#fff}
 .btn-nx{
   flex:1;background:var(--red);color:#fff;
   border:none;border-radius:50px;padding:14px 20px;
@@ -540,7 +540,7 @@ html,body{
 .soft-w{padding:24px 20px;max-width:460px;width:100%}
 .soft-c{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px;margin-bottom:10px}
 .soft-c h3{font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:5px}
-.soft-c p{font-size:.8rem;color:rgba(255,255,255,.92);line-height:1.5;margin-bottom:13px}
+.soft-c p{font-size:.8rem;color:#fafdff;line-height:1.5;margin-bottom:13px}
 .soft-inp{
   width:100%;padding:12px 16px;
   border:2px solid rgba(255,255,255,.15);border-radius:10px;
@@ -548,11 +548,11 @@ html,body{
   font-family:inherit;font-size:.88rem;margin-bottom:9px;
   transition:border-color .15s;
 }
-.soft-inp::placeholder{color:rgba(255,255,255,.92)}
+.soft-inp::placeholder{color:#fafdff}
 .soft-inp:focus{outline:none;border-color:var(--orange)}
 .btn-sv{width:100%;padding:13px;background:var(--red);color:#fff;font-weight:900;font-size:.9rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;transition:all .15s}
 .btn-sv:hover{background:var(--red2)}
-.btn-sk{background:transparent;border:none;color:rgba(255,255,255,.92);font-size:.76rem;font-weight:600;font-family:inherit;cursor:pointer;display:block;width:100%;text-align:center;padding:10px;text-decoration:underline}
+.btn-sk{background:transparent;border:none;color:#fafdff;font-size:.76rem;font-weight:600;font-family:inherit;cursor:pointer;display:block;width:100%;text-align:center;padding:10px;text-decoration:underline}
 
 /* ══ CALCULATING ══ */
 #s-calc{background:var(--navy);align-items:center;justify-content:center;text-align:center;padding:40px 24px}
@@ -562,16 +562,16 @@ html,body{
 .c-arc{fill:none;stroke:url(#cg);stroke-width:16;stroke-linecap:round;stroke-dasharray:525;stroke-dashoffset:525;transition:stroke-dashoffset 2s cubic-bezier(.4,0,.2,1)}
 .c-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .c-num{font-family:'Bebas Neue',sans-serif;font-size:3.4rem;letter-spacing:.04em;color:var(--orange);line-height:1}
-.c-max{font-size:.65rem;font-weight:800;letter-spacing:.1em;color:rgba(255,255,255,.92)}
+.c-max{font-size:.65rem;font-weight:800;letter-spacing:.1em;color:#fafdff}
 .calc-h{font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:5px;line-height:1.2}
-.calc-sub{font-size:.8rem;color:rgba(255,255,255,.92);margin-bottom:18px;line-height:1.5}
+.calc-sub{font-size:.8rem;color:#fafdff;margin-bottom:18px;line-height:1.5}
 .bench{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:13px;margin-bottom:10px;display:flex;align-items:center;gap:10px;text-align:left;display:none}
 .bench-icon{font-size:1.5rem;flex-shrink:0}
-.bench-txt{font-size:.78rem;color:rgba(255,255,255,.92);line-height:1.45}
+.bench-txt{font-size:.78rem;color:#fafdff;line-height:1.45}
 .bench-txt strong{color:#fff}
 .prev{background:rgba(200,16,46,.1);border:1px solid rgba(200,16,46,.22);border-radius:12px;padding:13px;margin-bottom:16px;text-align:left;display:none}
 .prev-lbl{font-size:.6rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
-.prev-txt{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.5}
+.prev-txt{font-size:.82rem;color:#c0cee0;line-height:1.5}
 .btn-rpt{width:100%;padding:15px;background:var(--red);color:#fff;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 20px rgba(200,16,46,.4);display:none;transition:all .15s}
 .btn-rpt:hover{background:var(--red2)}
 
@@ -579,19 +579,19 @@ html,body{
 #s-optin{background:var(--navy);overflow-y:auto;padding:20px 18px 40px;align-items:center;justify-content:center;min-height:100dvh}
 .oc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:22px;border-top:7px solid var(--orange);overflow:hidden;width:100%;max-width:440px}
 .oh{background:linear-gradient(120deg,var(--red),#E8172F);padding:20px 18px 16px;text-align:center}
-.oh .ey{font-size:.64rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:4px}
+.oh .ey{font-size:.64rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#d9e3ee;margin-bottom:4px}
 .oh h2{font-size:1.3rem;font-weight:900;color:#fff;line-height:1.1;margin-bottom:3px}
-.oh p{font-size:.78rem;color:rgba(255,255,255,.85);font-weight:600;line-height:1.4}
+.oh p{font-size:.78rem;color:#e8eef5;font-weight:600;line-height:1.4}
 .ob{padding:16px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px}
 .fg{margin-bottom:9px}
-.fg label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:5px}
+.fg label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#d9e3ee;margin-bottom:5px}
 .fg input{width:100%;padding:11px 13px;border:2px solid rgba(255,255,255,.15);border-radius:9px;font-family:inherit;font-size:.88rem;color:#fff;background:rgba(255,255,255,.08);transition:border-color .15s}
 .fg input:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.12)}
-.fg input::placeholder{color:rgba(255,255,255,.92)}
+.fg input::placeholder{color:#fafdff}
 .sub-btn{width:100%;padding:14px;background:var(--red);color:#fff;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 18px rgba(200,16,46,.4);transition:all .15s}
 .sub-btn:hover{background:var(--red2)}
-.optin-note{font-size:.63rem;color:rgba(255,255,255,.92);text-align:center;margin-top:8px;line-height:1.5}
+.optin-note{font-size:.63rem;color:#fafdff;text-align:center;margin-top:8px;line-height:1.5}
 
 /* ══ RESULTS ══ */
 #s-results{background:var(--navy);overflow-y:auto;padding-bottom:40px}
@@ -600,38 +600,38 @@ html,body{
 .rs{font-family:'Bebas Neue',sans-serif;font-size:5.5rem;color:var(--orange);line-height:1;position:relative;z-index:1}
 .rg{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--red),#E8172F);color:#fff;font-size:1.3rem;font-weight:900;margin:4px auto;position:relative;z-index:1;box-shadow:0 5px 16px rgba(200,16,46,.4)}
 .rh{font-size:1.2rem;font-weight:800;color:#fff;margin:7px 0 4px;position:relative;z-index:1}
-.rp{font-size:.78rem;color:rgba(255,255,255,.92);position:relative;z-index:1;line-height:1.4}
+.rp{font-size:.78rem;color:#fafdff;position:relative;z-index:1;line-height:1.4}
 .rb{padding:12px 14px 0;max-width:480px;margin:0 auto}
 .rcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:15px;margin-bottom:10px}
-.rcard h3{font-size:.88rem;font-weight:800;color:rgba(255,255,255,.8);margin-bottom:11px}
+.rcard h3{font-size:.88rem;font-weight:800;color:#d9e3ee;margin-bottom:11px}
 .rbar{margin-bottom:9px}
 .rbar-top{display:flex;justify-content:space-between;margin-bottom:3px}
 .rbar-nm{font-size:.78rem;font-weight:700;color:#fff}
-.rbar-pt{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.92)}
+.rbar-pt{font-size:.7rem;font-weight:800;color:#fafdff}
 .rbar-tr{background:rgba(255,255,255,.1);border-radius:50px;height:8px;overflow:hidden}
 .rbar-fl{height:100%;border-radius:50px;background:linear-gradient(90deg,var(--orange),var(--red));transition:width 1.2s ease}
 .fi{display:flex;gap:7px;align-items:flex-start;margin-bottom:9px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.07)}
 .fi:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
 .fb{background:var(--red);color:#fff;font-size:.58rem;font-weight:900;padding:2px 7px;border-radius:50px;white-space:nowrap;flex-shrink:0;margin-top:2px;letter-spacing:.04em}
-.ft{font-size:.78rem;color:rgba(255,255,255,.8);line-height:1.45}
-.fs{font-size:.65rem;color:rgba(255,255,255,.92);font-weight:600;margin-top:1px}
+.ft{font-size:.78rem;color:#d9e3ee;line-height:1.45}
+.fs{font-size:.65rem;color:#fafdff;font-weight:600;margin-top:1px}
 .sw{background:rgba(255,153,0,.14);border:1px solid rgba(255,153,0,.38);border-radius:14px;padding:15px;margin-bottom:10px}
 .sw-lbl{font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#FFC76A;margin-bottom:6px}
 .sw h3{font-size:1.02rem;font-weight:800;color:#fff;margin-bottom:6px;line-height:1.25}
-.sw p{font-size:.88rem;color:rgba(255,255,255,.95);line-height:1.5}
+.sw p{font-size:.88rem;color:#fafdff;line-height:1.5}
 .sw-imp{display:inline-flex;align-items:center;gap:5px;background:rgba(255,153,0,.22);border:1px solid rgba(255,153,0,.45);border-radius:50px;padding:7px 14px;margin-top:10px;font-size:.84rem;font-weight:800;color:#FFD27A}
 .sh-c{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:15px;margin-bottom:10px;text-align:center}
-.sh-c h3{font-size:.88rem;font-weight:800;color:rgba(255,255,255,.8);margin-bottom:3px}
-.sh-c p{font-size:.75rem;color:rgba(255,255,255,.92);margin-bottom:11px}
+.sh-c h3{font-size:.88rem;font-weight:800;color:#d9e3ee;margin-bottom:3px}
+.sh-c p{font-size:.75rem;color:#fafdff;margin-bottom:11px}
 .sh-btns{display:flex;gap:7px;justify-content:center;flex-wrap:wrap}
 .sb{display:inline-flex;align-items:center;gap:5px;padding:9px 15px;border-radius:50px;font-size:.75rem;font-weight:800;font-family:inherit;cursor:pointer;border:none;transition:all .15s}
 .sb:hover{filter:brightness(1.06);transform:translateY(-1px)}
 /* Unified share button style — same base, just icon color differs */
 .sb-fb,.sb-dl,.sb-cp{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
-.sb:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.92)}
+.sb:hover{background:rgba(255,255,255,.18);border-color:#fafdff}
 .fc{background:rgba(255,255,255,.04);border:1px solid rgba(159,177,204,.18);border-radius:16px;padding:18px 16px;text-align:center;margin-bottom:10px}
 .fc h2{font-size:1.12rem;font-weight:800;color:#fff;margin-bottom:4px;line-height:1.2}
-.fc p{font-size:.8rem;color:rgba(255,255,255,.75);font-weight:600;margin-bottom:14px;line-height:1.45}
+.fc p{font-size:.8rem;color:#c0cee0;font-weight:600;margin-bottom:14px;line-height:1.45}
 .fcb{display:inline-block;background:#fff;color:var(--red);font-weight:900;font-size:.85rem;font-family:inherit;padding:12px 26px;border-radius:50px;border:none;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.2);transition:all .15s}
 /* three escalating doors */
 .doors{display:flex;flex-direction:column;gap:10px}
@@ -646,7 +646,7 @@ html,body{
 .door-tour{background:linear-gradient(180deg,#3b6fb0,#2f5790);border:none;color:#fff;box-shadow:0 8px 24px -8px rgba(59,111,176,.6)}
 .sl-panel{margin-top:14px;text-align:left;background:rgba(0,0,0,.2);border-radius:12px;padding:14px}
 .fcb:hover{transform:translateY(-2px)}
-.disc{font-size:.62rem;color:rgba(255,255,255,.92);line-height:1.6;padding:0 12px 12px;max-width:480px;margin:0 auto}
+.disc{font-size:.62rem;color:#fafdff;line-height:1.6;padding:0 12px 12px;max-width:480px;margin:0 auto}
 #shareCanvas{display:none}
 @keyframes rrIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
 #roomReveal .rr-num{animation:rrPop .5s cubic-bezier(.2,1.3,.4,1) both}
@@ -657,8 +657,8 @@ html,body{
 .tox-name{font-size:1.02rem;font-weight:800;color:#fff;line-height:1.25}
 .tox-ing{font-size:.84rem;font-weight:700;color:#ffb0b0;margin-top:5px}
 .tox-card.tox-good .tox-ing{color:#9fe6cf}
-.tox-harm{font-size:.82rem;color:rgba(255,255,255,.8);margin-top:3px;line-height:1.42}
-.tox-found{font-size:.72rem;color:rgba(255,255,255,.92);margin-top:7px;font-style:italic}
+.tox-harm{font-size:.82rem;color:#d9e3ee;margin-top:3px;line-height:1.42}
+.tox-found{font-size:.72rem;color:#fafdff;margin-top:7px;font-style:italic}
 .tox-soft{background:rgba(31,138,112,.1);border:1px dashed rgba(55,199,154,.45);border-radius:12px;padding:15px;text-align:center;margin-top:4px}
 .tox-soft-q{font-size:.9rem;font-weight:700;color:#eafff7;line-height:1.45;margin-bottom:11px}
 .tox-soft-btn{background:linear-gradient(180deg,#1F8A70,#15705a);color:#fff;border:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:.98rem;cursor:pointer;font-family:inherit;width:100%}
@@ -672,9 +672,9 @@ html,body{
 .sim-tog.on .sim-knob{left:22px}
 .sim-txt{flex:1}
 .sim-swap{font-size:.9rem;font-weight:700;color:#fff;line-height:1.3}
-.sim-sub{font-size:.76rem;color:rgba(255,255,255,.92);margin-top:2px}
+.sim-sub{font-size:.76rem;color:#fafdff;margin-top:2px}
 .sim-foot{margin-top:6px;padding-top:12px;border-top:1px solid rgba(255,255,255,.12)}
-.sim-foot-row{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;color:rgba(255,255,255,.78);padding:4px 0;font-weight:600}
+.sim-foot-row{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;color:#c0cee0;padding:4px 0;font-weight:600}
 .sim-foot-row b{font-size:1.05rem;color:#fff}
 /* Change #5 — reactive house */
 .qhouse{display:flex;justify-content:center;margin:2px auto 8px}
@@ -687,7 +687,7 @@ html,body{
 /* Change #6 — sound toggle */
 #soundToggle{position:fixed;top:9px;right:9px;z-index:9998;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(10,27,61,.55);color:#fff;font-size:.95rem;cursor:pointer;line-height:1;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);padding:0}
 /* Change #8 — save my spot */
-.save-spot-btn{display:block;margin:0 auto 4px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.82);border-radius:50px;padding:11px 22px;min-height:42px;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit}
+.save-spot-btn{display:block;margin:0 auto 4px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:#d9e3ee;border-radius:50px;padding:11px 22px;min-height:42px;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit}
 .save-spot-panel{max-width:340px;margin:0 auto 12px;background:rgba(10,27,61,.65);border:1px solid rgba(255,153,0,.32);border-radius:14px;padding:14px}
 /* Change #9 — influencer referral banner */
 .ref-banner{display:flex;align-items:center;gap:11px;background:rgba(31,138,112,.12);border:1px solid rgba(55,199,154,.35);border-radius:14px;padding:11px 14px;margin-bottom:14px;text-align:left}
@@ -702,17 +702,17 @@ html,body{
 .spark{position:fixed;z-index:10001;pointer-events:none;font-size:15px;opacity:1;will-change:transform,opacity;transition:transform .5s ease-out,opacity .5s ease-out}
 .safe-toast{position:fixed;z-index:10002;pointer-events:none;font-weight:900;color:#37c79a;font-size:1rem;text-shadow:0 1px 5px rgba(0,0,0,.45);opacity:1;will-change:transform,opacity;transition:transform .65s ease-out,opacity .65s ease-out}
 /* Change #12 — community stat */
-.comm-stat{display:none;font-size:.78rem;font-weight:700;color:rgba(255,255,255,.92);text-align:center;margin:10px auto 0;max-width:340px;line-height:1.45}
-.comm-stat-reveal{margin:18px auto 4px;font-size:.86rem;color:rgba(255,255,255,.8);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 16px}
+.comm-stat{display:none;font-size:.78rem;font-weight:700;color:#fafdff;text-align:center;margin:10px auto 0;max-width:340px;line-height:1.45}
+.comm-stat-reveal{margin:18px auto 4px;font-size:.86rem;color:#d9e3ee;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 16px}
 /* Change #13 — per-room peek */
 .peek{margin:16px auto 4px;max-width:340px;background:rgba(31,138,112,.1);border:1px solid rgba(55,199,154,.32);border-radius:14px;padding:13px 16px;text-align:center}
 .peek-done{font-size:.8rem;font-weight:800;color:#37c79a;letter-spacing:.02em}
 .peek-next{font-size:1.02rem;font-weight:800;color:#fff;margin-top:8px}
-.peek-time{font-size:.78rem;color:rgba(255,255,255,.92);margin-top:3px;font-weight:600}
+.peek-time{font-size:.78rem;color:#fafdff;margin-top:3px;font-weight:600}
 .peek-bar{display:flex;gap:4px;justify-content:center;margin:12px 0 5px;flex-wrap:wrap}
 .peek-cell{width:22px;height:5px;border-radius:3px;background:rgba(255,255,255,.14);transition:background .3s}
 .peek-cell.on{background:#37c79a}
-.peek-roomn{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.92)}
+.peek-roomn{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fafdff}
 
 
 /* ═══════════════════════════════════════════════════════════════
@@ -957,7 +957,7 @@ body { padding-top:0 !important; }
   <div id="directionBar" style="display:none;width:100%;max-width:320px;margin:0 auto 16px">
     <div style="display:flex;justify-content:space-between;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">
       <span style="color:#1F8A70">✓ CLEANER</span>
-      <span style="color:rgba(255,255,255,.92)">← LOWER IS BETTER →</span>
+      <span style="color:#fafdff">← LOWER IS BETTER →</span>
       <span style="color:#C8102E">CONCERNING ✗</span>
     </div>
     <div style="height:8px;border-radius:50px;background:linear-gradient(90deg,#1F8A70,#E8A317,#C8102E)"></div>
@@ -966,7 +966,7 @@ body { padding-top:0 !important; }
   <!-- Benchmark visual bars -->
   <div class="bench" id="bench" style="display:none">
     <div style="flex:1">
-      <div style="font-size:.72rem;font-weight:800;color:rgba(255,255,255,.92);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">How you compare</div>
+      <div style="font-size:.72rem;font-weight:800;color:#fafdff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">How you compare</div>
       <div style="margin-bottom:8px">
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
           <span style="font-size:.78rem;font-weight:700;color:#fff">Your home</span>
@@ -978,8 +978,8 @@ body { padding-top:0 !important; }
       </div>
       <div style="margin-bottom:8px">
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
-          <span style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.92)">Average home</span>
-          <span style="font-size:.78rem;font-weight:900;color:rgba(255,255,255,.92)">68</span>
+          <span style="font-size:.78rem;font-weight:700;color:#fafdff">Average home</span>
+          <span style="font-size:.78rem;font-weight:900;color:#fafdff">68</span>
         </div>
         <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
           <div style="height:100%;width:68%;background:rgba(200,16,46,.5);border-radius:50px"></div>
@@ -987,7 +987,7 @@ body { padding-top:0 !important; }
       </div>
       <div>
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
-          <span style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.92)">Fully switched home</span>
+          <span style="font-size:.78rem;font-weight:700;color:#fafdff">Fully switched home</span>
           <span style="font-size:.78rem;font-weight:900;color:#1F8A70">12</span>
         </div>
         <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
@@ -1002,7 +1002,7 @@ body { padding-top:0 !important; }
     <div style="width:52px;height:52px;border-radius:50%;border:2px solid var(--orange);overflow:hidden;margin:0 auto 6px">
       <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt="Shannon"/>
     </div>
-    <p style="font-size:.72rem;color:rgba(255,255,255,.92);font-style:italic" id="shannonMsg">Your full report breaks this down room by room.</p>
+    <p style="font-size:.72rem;color:#fafdff;font-style:italic" id="shannonMsg">Your full report breaks this down room by room.</p>
   </div>
 
   <!-- One finding preview -->
@@ -1011,7 +1011,7 @@ body { padding-top:0 !important; }
   <!-- Blurred report preview -->
   <div id="blurPreview" style="display:none;position:relative;margin-bottom:16px;border-radius:12px;overflow:hidden">
     <div style="filter:blur(4px);pointer-events:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
-      <div style="font-size:.72rem;font-weight:800;color:rgba(255,255,255,.92);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">📍 Your Room-by-Room Breakdown</div>
+      <div style="font-size:.72rem;font-weight:800;color:#fafdff;margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">📍 Your Room-by-Room Breakdown</div>
       <div style="height:10px;background:rgba(255,153,0,.4);border-radius:50px;margin-bottom:8px;width:80%"></div>
       <div style="height:10px;background:rgba(200,16,46,.3);border-radius:50px;margin-bottom:8px;width:60%"></div>
       <div style="height:10px;background:rgba(255,153,0,.25);border-radius:50px;margin-bottom:8px;width:45%"></div>
@@ -1020,13 +1020,13 @@ body { padding-top:0 !important; }
     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,27,61,.4)">
       <div style="text-align:center;color:#fff">
         <div style="font-size:.8rem;font-weight:800;color:var(--orange)">✨ Your full report is ready</div>
-        <div style="font-size:.7rem;color:rgba(255,255,255,.92);margin-top:3px">Tap below to see your results</div>
+        <div style="font-size:.7rem;color:#fafdff;margin-top:3px">Tap below to see your results</div>
       </div>
     </div>
   </div>
 
   <button class="btn-rpt" id="btnRpt" onclick="showResults()">🔓 Get Me My Score →</button>
-  <div style="font-size:.68rem;color:rgba(255,255,255,.92);text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
+  <div style="font-size:.68rem;color:#fafdff;text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
 </div>
 
 <!-- ═══ HARD OPT-IN ═══ -->
@@ -1035,7 +1035,7 @@ body { padding-top:0 !important; }
     <div class="oh">
       <div class="ey">★ Your report is ready ★</div>
       <h2>Get your results<br>by text — right now.</h2>
-      <div style="margin-top:10px;line-height:1.8;font-size:.82rem;color:rgba(255,255,255,.88);font-weight:600">
+      <div style="margin-top:10px;line-height:1.8;font-size:.82rem;color:#e8eef5;font-weight:600">
         📍 Room-by-room breakdown<br>
         ⚠️ Your flagged brands & ingredients<br>
         🔁 Your #1 highest-impact swap
@@ -1145,7 +1145,7 @@ body { padding-top:0 !important; }
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#37c79a">Start swapping.</div>
       </div>
       <button class="door door-tour" style="width:100%;font-size:1.04rem;padding:18px 20px;margin-bottom:18px;background:linear-gradient(180deg,#37c79a,#1F8A70);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 10px 28px -8px rgba(31,138,112,.55);font-family:inherit" onclick="document.getElementById('bookingEmbed').scrollIntoView({behavior:'smooth',block:'start'})">📅 Book my free home walkthrough →</button>
-      <p style="text-align:center;font-size:.84rem;color:rgba(255,255,255,.92);margin-bottom:14px;line-height:1.5">15 minutes. One on one. No pitch. We map your house and pick your first 3 swaps together.</p>
+      <p style="text-align:center;font-size:.84rem;color:#fafdff;margin-bottom:14px;line-height:1.5">15 minutes. One on one. No pitch. We map your house and pick your first 3 swaps together.</p>
       <div id="bookingEmbed" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:6px">
         <iframe src="https://link.switchtoamerica.com/widget/bookings/maketheswtch" style="width:100%;min-height:720px;border:0;background:#fff" loading="lazy" title="Book your free home walkthrough"></iframe>
       </div>
@@ -2053,7 +2053,7 @@ function saveSpot(){
   panel.innerHTML='<div style="font-size:.86rem;font-weight:700;color:#fff;margin-bottom:8px">📱 We\'ll text you the link to finish when you\'re ready.</div>'+
     '<input id="ssPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:11px;border-radius:10px;border:1.5px solid rgba(255,153,0,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/>'+
     '<button onclick="sendSavedSpot()" style="width:100%;min-height:46px;margin-top:8px;padding:12px;border:none;border-radius:10px;background:#FF9900;color:#15233a;font-weight:800;font-size:15px;cursor:pointer">Text me my link →</button>'+
-    '<div style="font-size:.62rem;color:rgba(255,255,255,.92);margin-top:6px;text-align:center;line-height:1.4">One text with your link. Reply STOP anytime.</div>';
+    '<div style="font-size:.62rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">One text with your link. Reply STOP anytime.</div>';
   panel.style.display='block'; panel.scrollIntoView({block:'center'});
 }
 function sendSavedSpot(){
@@ -2072,9 +2072,9 @@ function maybeOfferResume(){
   var b=document.createElement('div');
   b.style.cssText='background:rgba(31,138,112,.14);border:1px solid rgba(55,199,154,.4);border-radius:14px;padding:14px;margin-bottom:14px;text-align:center';
   b.innerHTML='<div style="font-size:.92rem;font-weight:800;color:#eafff7">👋 Welcome back'+(p.u?(', '+p.u):'')+'!</div>'+
-    '<div style="font-size:.8rem;color:rgba(255,255,255,.7);margin:4px 0 10px">You were partway through your home scan. Pick up where you left off?</div>'+
+    '<div style="font-size:.8rem;color:#c0cee0;margin:4px 0 10px">You were partway through your home scan. Pick up where you left off?</div>'+
     '<button onclick="resumeProgress()" style="background:#1F8A70;color:#fff;border:none;border-radius:10px;padding:11px 18px;font-weight:800;font-size:.9rem;cursor:pointer;margin-right:6px">Resume →</button>'+
-    '<button id="freshBtn" style="background:transparent;color:rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:11px 16px;font-weight:700;font-size:.9rem;cursor:pointer">Start fresh</button>';
+    '<button id="freshBtn" style="background:transparent;color:#fafdff;border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:11px 16px;font-weight:700;font-size:.9rem;cursor:pointer">Start fresh</button>';
   inner.insertBefore(b, inner.firstChild);
   var fb=document.getElementById('freshBtn'); if(fb) fb.onclick=function(){ clearProgress(); if(b.parentNode) b.parentNode.removeChild(b); };
 }
@@ -2343,12 +2343,12 @@ function showRoomReveal(roomKey, nextStep, proceed){
   if(!el){ el=document.createElement('div'); el.id='roomReveal'; document.body.appendChild(el); }
   el.setAttribute('style','position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:radial-gradient(120% 80% at 50% 28%, #14305c 0%, #081a33 72%);color:#fff;animation:rrIn .35s ease;cursor:pointer;font-family:inherit');
   el.innerHTML='<div style="font-size:2.6rem">'+(high?'🔥':'💪')+'</div>'+
-    '<div style="font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.92);margin-top:10px">Your '+rm.label+' Score</div>'+
+    '<div style="font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fafdff;margin-top:10px">Your '+rm.label+' Score</div>'+
     '<div class="rr-num" style="font-size:5.6rem;font-weight:900;line-height:1;margin:4px 0;color:'+col+'">'+score+'</div>'+
-    '<div style="font-size:.95rem;color:rgba(255,255,255,.7);font-weight:600">Average '+rm.label.toLowerCase()+': '+avg+'</div>'+
+    '<div style="font-size:.95rem;color:#c0cee0;font-weight:600">Average '+rm.label.toLowerCase()+': '+avg+'</div>'+
     '<div style="font-size:1.04rem;font-weight:700;max-width:330px;margin:20px 0 0;line-height:1.45">'+line+'</div>'+
     '<div style="position:absolute;bottom:58px;left:0;right:0;font-size:1.08rem;font-weight:800;color:#FF9900">'+onto+'</div>'+
-    '<div style="position:absolute;bottom:28px;left:0;right:0;font-size:.72rem;color:rgba(255,255,255,.92)">tap to continue</div>';
+    '<div style="position:absolute;bottom:28px;left:0;right:0;font-size:.72rem;color:#fafdff">tap to continue</div>';
   var done=function(){ if(_revealTimer){clearTimeout(_revealTimer);_revealTimer=null;} el.onclick=null; el.style.display='none'; proceed(); };
   el.onclick=done;
   _revealTimer=setTimeout(done, 2800);
@@ -2621,9 +2621,9 @@ function showResults(){
     if(totalScore>=20){
       var yrs=Math.max(1,Math.round(totalScore*0.18));
       var cigs=(totalScore/100*5).toFixed(1);
-      mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.92)">What that actually means</div>'+
+      mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fafdff">What that actually means</div>'+
         '<div style="font-size:1.04rem;font-weight:800;color:#fff;line-height:1.35;margin-top:6px">Your home is running like one <span style="color:#FF8A5A">'+yrs+' years older</span> than it is.</div>'+
-        '<div style="font-size:.84rem;color:rgba(255,255,255,.7);margin-top:6px">Daily exposure ≈ <b style="color:#ff9a9a">'+cigs+' cigarettes a day</b> of avoidable chemical load.</div>';
+        '<div style="font-size:.84rem;color:#c0cee0;margin-top:6px">Daily exposure ≈ <b style="color:#ff9a9a">'+cigs+' cigarettes a day</b> of avoidable chemical load.</div>';
     } else {
       mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(55,199,154,.7)">What that actually means</div>'+
         '<div style="font-size:1.04rem;font-weight:800;color:#fff;line-height:1.35;margin-top:6px">Your home is running <span style="color:#37c79a">years younger</span> than most — like a household that protects itself.</div>';
@@ -2641,7 +2641,7 @@ function showResults(){
     const w=Math.round((p/mx)*100);
     bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt">${p} pts</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%"></div></div></div>`;
   });
-  document.getElementById('roomBars').innerHTML=bh||'<p style="color:rgba(255,255,255,.92);font-size:.8rem">No significant hazard exposure detected — great choices!</p>';
+  document.getElementById('roomBars').innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected — great choices!</p>';
 
   // Findings from highest-scoring brand inputs
   const findings=[];
@@ -2712,7 +2712,7 @@ function showResults(){
     const ub = document.getElementById('unscoredBlock');
     const ul = document.getElementById('unscoredList');
     if(ub) ub.style.display='block';
-    let uh='<p style="color:rgba(255,255,255,.95);font-size:.88rem;margin-bottom:10px;line-height:1.5">These products were left blank. We couldn\'t score them. Worth finding out what brand is in your home.</p>';
+    let uh='<p style="color:#fafdff;font-size:.88rem;margin-bottom:10px;line-height:1.5">These products were left blank. We couldn\'t score them. Worth finding out what brand is in your home.</p>';
     unscoredFields.forEach(f=>{
       uh+=`<div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,153,0,.28)">
         <span style="color:#FFD27A;font-size:1rem;font-weight:900">?</span>
@@ -2824,12 +2824,12 @@ function buildRewardHTML(){
   var h='<div style="margin-top:14px;background:linear-gradient(180deg,rgba(31,138,112,.24),rgba(31,138,112,.07));border:1px solid rgba(55,199,154,.5);border-radius:16px;padding:18px;text-align:center">'+
     '<div style="font-size:1.6rem">🎁</div>'+
     '<div style="font-size:1.28rem;font-weight:900;color:#37c79a;margin-top:2px;letter-spacing:.01em">$100 CAD Store Credit</div>'+
-    '<div style="font-size:.82rem;color:rgba(255,255,255,.78);margin-top:9px;line-height:1.55">You finished honestly.<br>$100 CAD in store credit is waiting for you — it lands in your account the moment you set it up. Same offer I give every family ready to look.<br><br>No pressure. No expiry. Use it when it feels right.</div>'+
+    '<div style="font-size:.82rem;color:#c0cee0;margin-top:9px;line-height:1.55">You finished honestly.<br>$100 CAD in store credit is waiting for you — it lands in your account the moment you set it up. Same offer I give every family ready to look.<br><br>No pressure. No expiry. Use it when it feels right.</div>'+
     '<div style="font-size:.8rem;font-weight:800;color:#dbe4f0;margin-top:9px">— Shannon</div>';
   if(isSpeedrun()){
     h+='<div style="margin-top:13px;padding-top:13px;border-top:1px solid rgba(255,255,255,.13)">'+
       '<div style="font-size:.95rem;font-weight:900;color:#FFD27A">🏆 Speedrun bonus</div>'+
-      '<div style="font-size:.8rem;color:rgba(255,255,255,.78);margin-top:4px;line-height:1.45">You looked fast <em>and</em> honest — I\'ll personally DM you my own switch list. — Shannon</div></div>';
+      '<div style="font-size:.8rem;color:#c0cee0;margin-top:4px;line-height:1.45">You looked fast <em>and</em> honest — I\'ll personally DM you my own switch list. — Shannon</div></div>';
   }
   h+='</div>';
   return h;
@@ -2859,12 +2859,12 @@ function switchListTeaser(){
   var n=collectSwitchItems().length;
   if(!n) return '<p style="font-size:.82rem;color:#37c79a;font-weight:700;line-height:1.5">Your home is already clean — barely anything to swap! 💚 Drop in your number and I\'ll send the few small upgrades.</p>';
   return '<div style="font-weight:800;color:#fff;margin-bottom:6px;font-size:1rem">📋 Your '+n+' personalized swap'+(n>1?'s are':' is')+' ready</div>'+
-    '<p style="font-size:.82rem;color:rgba(255,255,255,.72);line-height:1.5">Drop in your number and I\'ll text you the full list — the cleaner swap for every brand you tapped. 💛</p>';
+    '<p style="font-size:.82rem;color:#c0cee0;line-height:1.5">Drop in your number and I\'ll text you the full list — the cleaner swap for every brand you tapped. 💛</p>';
 }
 function openSwitchList(){
   var p=document.getElementById('switchListPanel'), a=document.getElementById('auditPanel'); if(a) a.style.display='none';
   if(p.style.display!=='none'){ p.style.display='none'; return; }
-  p.innerHTML=switchListTeaser()+'<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendSwitchList()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my swaps →</button><div style="font-size:.64rem;color:rgba(255,255,255,.92);margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your list. Reply STOP anytime.</div></div>';
+  p.innerHTML=switchListTeaser()+'<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendSwitchList()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my swaps →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your list. Reply STOP anytime.</div></div>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendSwitchList(){
@@ -2877,7 +2877,7 @@ function sendSwitchList(){
 function openAudit(){
   var p=document.getElementById('auditPanel'), s=document.getElementById('switchListPanel'); if(s) s.style.display='none';
   if(p.style.display!=='none'){ p.style.display='none'; return; }
-  p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:6px">📊 Your full Home Audit</div><p style="font-size:.78rem;color:rgba(255,255,255,.7);margin-bottom:10px">Your complete room-by-room breakdown, emailed to you to keep.</p><input id="auEmail" type="email" inputmode="email" placeholder="Your email…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(232,163,23,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendAudit()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#E8A317;color:#15233a;font-weight:800;font-size:15px;cursor:pointer">Send my Home Audit →</button>';
+  p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:6px">📊 Your full Home Audit</div><p style="font-size:.78rem;color:#c0cee0;margin-bottom:10px">Your complete room-by-room breakdown, emailed to you to keep.</p><input id="auEmail" type="email" inputmode="email" placeholder="Your email…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(232,163,23,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendAudit()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#E8A317;color:#15233a;font-weight:800;font-size:15px;cursor:pointer">Send my Home Audit →</button>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendAudit(){
@@ -2938,7 +2938,7 @@ function buildSimulator(toxList){
   });
   var n=swaps.length;
   wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched just '+n+' thing'+(n>1?'s':'')+'?</h3>'+
-    '<p style="font-size:.8rem;color:rgba(255,255,255,.92);margin:-4px 0 13px">Tap the toggles. Watch your score drop.</p>'+rows+
+    '<p style="font-size:.8rem;color:#fafdff;margin:-4px 0 13px">Tap the toggles. Watch your score drop.</p>'+rows+
     '<div class="sim-foot"><div class="sim-foot-row"><span>Your projected score</span><b><span id="simFromScore">'+totalScore+'</span> → <span id="simToScore" style="color:'+toCol(ns0)+'">'+ns0+'</span></b></div>'+
     '<div class="sim-foot-row"><span>Projected savings</span><b style="color:#37c79a">~$<span id="simSave">'+save0+'</span> CAD</b></div>'+
     '<div class="sim-foot-row"><span>Chemical exposures avoided</span><b style="color:#37c79a"><span id="simExp">'+Math.round(removed0*105).toLocaleString()+'</span>/yr</b></div></div>'+
@@ -3006,7 +3006,7 @@ function sendMyPlan(){
   var listHtml=chosen.map(function(s){return '<div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.8rem"><span style="color:#ff9a9a;text-decoration:line-through;opacity:.8">'+shopLink(s.brand)+'</span><span style="color:#37c79a;font-weight:800">→ '+shopLink(s.target)+'</span></div>';}).join('');
   p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:4px">📱 Your custom switch plan</div>'+
     '<div style="font-size:.78rem;color:#37c79a;font-weight:800;margin-bottom:10px">'+totalScore+' → '+projected+' cleaner · ~$'+totalSave+'/mo CAD back</div>'+listHtml+
-    '<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendPlanLead('+totalSave+','+projected+')" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my plan →</button><div style="font-size:.64rem;color:rgba(255,255,255,.92);margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your plan. Reply STOP anytime.</div></div>';
+    '<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendPlanLead('+totalSave+','+projected+')" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my plan →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your plan. Reply STOP anytime.</div></div>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendPlanLead(totalSave,projected){
