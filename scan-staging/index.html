@@ -1307,14 +1307,13 @@ body { padding-top:0 !important; }
     <div class="fc" id="finalCta">
       <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 20px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif">
-        <p style="font-size:1.02rem;line-height:1.55;color:#eef3fa;margin-bottom:12px">They scroll on. They mean to come back. They don't.</p>
         <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
         <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px">And the cost is real. The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
         <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
         <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:0">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them. For free.</p>
       </div>
       <div style="text-align:center;margin-bottom:14px">
-        <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#FFD27A;margin-bottom:4px">Stop guessing.</div>
+        <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#C8102E;margin-bottom:4px">Stop guessing.</div>
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#37c79a">Start swapping.</div>
       </div>
       <button class="door door-tour" style="width:100%;font-size:1.04rem;padding:18px 20px;margin-bottom:18px;background:linear-gradient(180deg,#37c79a,#1F8A70);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 10px 28px -8px rgba(31,138,112,.55);font-family:inherit" onclick="document.getElementById('bookingEmbed').scrollIntoView({behavior:'smooth',block:'start'})">📅 Book my free home walkthrough →</button>
@@ -2857,7 +2856,7 @@ function showResults(){
   // Conditional final CTA
   var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
   var nm = userName ? (', '+userName) : '';
-  if(fcH) fcH.textContent='Okay'+nm+' — here’s where to go next:';
+  if(fcH) fcH.textContent='Okay'+nm+'. Here’s where to go next.';
   if(fcP) fcP.textContent='Pick whatever feels right. Zero pressure.';
 
   const mx=Math.max(...Object.values(roomScores),1);
