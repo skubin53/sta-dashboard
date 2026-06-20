@@ -3117,15 +3117,15 @@ function sendAudit(){
 }
 // ── #12: "more switch stories" lightbox (illustrative testimonials — swap for real ones anytime) ──
 var EXTRA_STORIES=[
-  {q:"My daughter's skin used to flare up after every wash. Switching her body wash and our detergent was the easiest change I've made — wish I'd done it sooner.",a:"Megan R. · Mom of 3"},
+  {q:"My daughter's skin used to flare up after every wash. Switching her body wash and our detergent was the easiest change I've made. I wish I'd done it sooner.",a:"Megan R. · Mom of 3"},
   {q:"I'm 64 and set in my ways, but my granddaughter talked me into it. The products work better AND they're cheaper than what I was grabbing at the store.",a:"Linda P. · Grandmother"},
   {q:"We were spending a fortune at the big-box store on stuff full of who-knows-what. Now it's cleaner and we're saving every single month.",a:"Tara J. · Family of 5"},
   {q:"I started with one swap under the sink. Six months later the whole house is done and I don't miss a single old product.",a:"Crystal H. · Mom of 2"},
   {q:"Honestly didn't expect to care this much. But once you know what's in the old stuff, you can't un-know it.",a:"Beth A. · Mom of 4"},
-  {q:"My husband rolled his eyes — until he read the labels himself. Now he's the one reordering.",a:"Nicole D. · Mom of 2"},
+  {q:"My husband rolled his eyes, then he read the labels himself. Now he's the one reordering.",a:"Nicole D. · Mom of 2"},
   {q:"I kept buying the 'free & clear' versions thinking they were safe. Turns out not so much. First time I actually knew what I was getting.",a:"Amanda K. · Mom of 3"},
   {q:"Switched our laundry first because of my son's sensitive skin. The redness he'd get after every wash? Gone in a couple weeks.",a:"Priya S. · Mom of 2"},
-  {q:"I'm a nurse and skeptical of 'cleaner' claims — I read every label. These held up, and they cost less than what I was buying.",a:"Dana W. · RN, Mom of 1"},
+  {q:"I'm a nurse and skeptical of 'cleaner' claims, so I read every label. These held up, and they cost less than what I was buying.",a:"Dana W. · RN, Mom of 1"},
   {q:"My mom switched, then I switched, now my sister's on board. It kind of spreads once one person in the family does it.",a:"Hailey M. · Family of 4"},
   {q:"I just feel better knowing what's under my sink now. No more guessing, no more mystery 'fragrance' ingredients.",a:"Robin T. · Grandmother"},
   {q:"Took me ten minutes to set up and I haven't walked down that store aisle since. Wish someone had shown me years ago.",a:"Steph L. · Mom of 2"}
@@ -3135,7 +3135,7 @@ function openStories(){
   var html=EXTRA_STORIES.map(function(s){ return '<div style="border-left:3px solid #C9A227;padding:2px 0 2px 14px;margin-bottom:16px"><div style="color:#C9A227;font-size:.78rem;letter-spacing:3px">★★★★★</div><p style="font-style:italic;font-size:.9rem;line-height:1.55;color:#eef3fa;margin:5px 0 6px">“'+s.q+'”</p><div style="font-size:.74rem;font-weight:700;color:#dbe4f0">'+s.a+'</div></div>'; }).join('');
   var m=document.createElement('div'); m.id='storiesModal';
   m.style.cssText='position:fixed;inset:0;z-index:10050;background:rgba(6,18,35,.93);overflow:auto;padding:22px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)';
-  m.innerHTML='<div style="max-width:520px;margin:0 auto;width:100%"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 style="color:#fff;font-size:1.12rem;margin:0">💛 Families who switched</h3><button onclick="closeStories()" style="background:rgba(255,255,255,.12);border:none;color:#fff;width:34px;height:34px;border-radius:50%;font-size:1.05rem;cursor:pointer">✕</button></div>'+html+'</div>';
+  m.innerHTML='<div style="max-width:520px;margin:0 auto;width:100%"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:10px"><h3 style="color:#fff;font-size:1.12rem;margin:0;flex:1;min-width:0">💛 Families who switched</h3><div style="display:flex;align-items:center;gap:8px;flex:none"><span style="color:#FFD27A;font-size:.78rem;font-weight:800;font-style:italic;line-height:1.15;text-align:right;white-space:nowrap">click<br>here →</span><button onclick="closeStories()" aria-label="Close stories" style="background:#C8102E;border:none;color:#fff;width:54px;height:54px;border-radius:50%;font-size:1.5rem;font-weight:900;cursor:pointer;box-shadow:0 6px 18px -4px rgba(200,16,46,.65);display:flex;align-items:center;justify-content:center;line-height:1">✕</button></div></div>'+html+'</div>';
   m.addEventListener('click',function(e){ if(e.target===m) closeStories(); });
   document.body.appendChild(m);
 }
