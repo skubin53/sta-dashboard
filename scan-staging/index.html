@@ -1806,7 +1806,10 @@ function renderStep(){
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
     step.cards.forEach(card=>{
-      const prev2=(answers[step.id]||{})[card.id]||{brand:'',isNone:false};
+      const prev2=(answers[step.id]||{})[card.id]||{brands:[],isNone:false};
+      const _selB = (prev2.brands && Array.isArray(prev2.brands)) ? prev2.brands : (prev2.brand ? [prev2.brand] : []);
+      const _otherVal = prev2.otherBrand || '';
+      const isOther = !!_otherVal && !prev2.isNone;
       h+=`<div class="qcard rise">
         <div class="qcard-head">
           <span class="qcard-ic">${card.icon||''}</span>
@@ -1814,15 +1817,14 @@ function renderStep(){
         </div>
         <div class="chips-row" data-card="${card.id}" data-step="${step.id}" data-cat="${card.cat}">`;
       card.chips.forEach(chip=>{
-        const isSel = prev2.brand===chip && !prev2.isNone;
+        const isSel = _selB.indexOf(chip)>=0 && !prev2.isNone;
         const isSTA = isSTA_check(chip);
         h+=`<button class="brand-chip${isSel?' sel':''}" onclick="pickChip('${step.id}','${card.id}','${chip.replace(/'/g,"\\'")}','${card.cat}',this)">${chip}</button>`;
       });
-      const isOther = prev2.brand && !card.chips.includes(prev2.brand) && !prev2.isNone;
       h+=`<button class="brand-chip chip-other${isOther?' sel':''}" onclick="pickChipOther('${step.id}','${card.id}',this)">+ Other</button>
           <button class="brand-chip chip-none${prev2.isNone?' sel':''}" onclick="pickChipNone('${step.id}','${card.id}',this)">We don't use this</button>
         </div>
-        <input class="chip-other-input${isOther?' show':''}" id="co_${card.id}" placeholder="Type the brand…" value="${isOther?prev2.brand:''}" oninput="saveChipOther('${step.id}','${card.id}',this.value,'${card.cat}')"/>
+        <input class="chip-other-input${isOther?' show':''}" id="co_${card.id}" placeholder="Type the brand…" value="${_otherVal.replace(/"/g,'&quot;')}" oninput="saveChipOther('${step.id}','${card.id}',this.value,'${card.cat}')"/>
       </div>`;
     });
   }
@@ -1948,7 +1950,7 @@ function updateRisk(){
     if(s.type==='brand_single'){
       var b=answers[s.id].brand||''; if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++;
     } else if(s.type==='chip_cards'&&s.cards){
-      s.cards.forEach(card=>{ const sel=answers[s.id][card.id]||{}; if(sel.isNone) return; if(isConcern(sel.brand||'')) count++; else if(isCleanBrand(sel.brand||'')) safe++; });
+      s.cards.forEach(card=>{ const sel=answers[s.id][card.id]||{}; if(sel.isNone) return; selBrands(sel).forEach(function(b){ if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++; }); });
     } else if(s.type==='brand_multi' && s.fields){
       s.fields.forEach(f=>{ var b=answers[s.id][f.id]||''; if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++; });
     } else if(s.answers){
@@ -2165,22 +2167,31 @@ function brandTier(brand){
 function isToxicBrand(brand){ return brandTier(brand)==='red'; }
 function isCleanBrand(brand){ return brandTier(brand)==='green'; }
 function isConcern(brand){ var t=brandTier(brand); return t==='red'||t==='amber'; }
+// 2026-06-20 (Matt): chip cards are now multi-select. Each card may have many brands tapped + an optional "Other" free-text.
+function selBrands(sel){
+  if(!sel) return [];
+  var out=[];
+  if(Array.isArray(sel.brands)) out=out.concat(sel.brands);
+  else if(sel.brand) out.push(sel.brand); // legacy single-string fallback
+  if(sel.otherBrand) out.push(sel.otherBrand);
+  return out.filter(function(b){ return b && (''+b).trim(); });
+}
 function pickChip(stepId, cardId, brand, cat, el){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
-  const cur=answers[stepId][cardId];
-  // Toggle off if already selected
-  if(cur.brand===brand && !cur.isNone){
-    cur.brand='';
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
+  var cur=answers[stepId][cardId];
+  if(!Array.isArray(cur.brands)) cur.brands = cur.brand ? [cur.brand] : []; // migrate legacy shape
+  cur.brand=''; // clear legacy field
+  cur.isNone=false;
+  var idx = cur.brands.indexOf(brand);
+  if(idx>=0){
+    cur.brands.splice(idx,1);
     el.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');
     var w0=el.querySelector('.chip-warn'); if(w0) w0.remove();
     var s0=el.querySelector('.chip-safe'); if(s0) s0.remove();
   } else {
-    cur.brand=brand; cur.isNone=false;
-    // Deselect other chips in same row (clear toxic/clean glow + badges)
-    el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(c=>{c.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');var w=c.querySelector('.chip-warn');if(w)w.remove();var s=c.querySelector('.chip-safe');if(s)s.remove();});
+    cur.brands.push(brand);
     el.classList.add('sel');
-    // change #11: semantic tier — red=toxic, green=STA safer swap, amber=cleaner-ish-but-still-shelf
     var _tier=brandTier(brand);
     if(_tier==='red'){
       el.classList.add('chip-toxic');
@@ -2191,48 +2202,51 @@ function pickChip(stepId, cardId, brand, cat, el){
       el.classList.add('chip-clean');
       var sdot=document.createElement('span'); sdot.className='chip-safe'; sdot.textContent='✓'; el.appendChild(sdot);
       setTimeout(function(){ if(sdot.parentNode) sdot.parentNode.removeChild(sdot); },1200);
-      sndAha(); safeReward(el); // Change #10 — sparkle + "+1 Safe!"
+      sndAha(); safeReward(el);
     } else if(_tier==='amber'){
       el.classList.add('chip-maybe');
       sndDing();
     }
-    // Hide other-input
-    const inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
   }
+  // Clear "We don't use this" if anything is now selected
+  var noneBtn = el.closest('.chips-row').querySelector('.chip-none');
+  if(noneBtn && cur.brands.length>0){ noneBtn.classList.remove('sel'); }
   updateRisk(); updateContinueGate();
 }
 
 function pickChipNone(stepId, cardId, el){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
-  const cur=answers[stepId][cardId];
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
+  var cur=answers[stepId][cardId];
   if(cur.isNone){
     cur.isNone=false; el.classList.remove('sel');
   } else {
-    cur.brand=''; cur.isNone=true;
-    el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(c=>{c.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');var w=c.querySelector('.chip-warn');if(w)w.remove();var s=c.querySelector('.chip-safe');if(s)s.remove();});
+    cur.brands=[]; cur.brand=''; cur.otherBrand=''; cur.isNone=true;
+    el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(function(c){c.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');var w=c.querySelector('.chip-warn');if(w)w.remove();var s=c.querySelector('.chip-safe');if(s)s.remove();});
     el.classList.add('sel');
-    const inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
+    var inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
   }
   updateRisk(); updateContinueGate();
 }
 
 function pickChipOther(stepId, cardId, el){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
-  const cur=answers[stepId][cardId];
-  el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(c=>{c.classList.remove('sel','chip-toxic');var w=c.querySelector('.chip-warn');if(w)w.remove();});
-  el.classList.add('sel');
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
+  var cur=answers[stepId][cardId];
+  if(!Array.isArray(cur.brands)) cur.brands = cur.brand ? [cur.brand] : [];
   cur.isNone=false;
-  const inp=document.getElementById('co_'+cardId);
+  el.classList.add('sel');
+  var noneBtn = el.closest('.chips-row').querySelector('.chip-none');
+  if(noneBtn) noneBtn.classList.remove('sel');
+  var inp=document.getElementById('co_'+cardId);
   if(inp){ inp.classList.add('show'); inp.focus(); }
   updateContinueGate();
 }
 
 function saveChipOther(stepId, cardId, val, cat){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
-  answers[stepId][cardId].brand=val;
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
+  answers[stepId][cardId].otherBrand=val;
   answers[stepId][cardId].isNone=false;
   updateRisk(); updateContinueGate();
 }
@@ -2300,7 +2314,7 @@ function computeRoomScore(roomKey){
   activeSteps.forEach(function(s){
     if(roomKeyForStep(s)!==roomKey || !answers[s.id]) return;
     if(s.type==='chip_cards'&&s.cards){
-      s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; var b=(sel.brand||'').trim(); var p=scoreBrand(b,card.cat,card.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,b.length>0); });
+      s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; var bs=selBrands(sel); if(bs.length===0){ slot(scoreBrand('',card.cat,card.label),false); return; } bs.forEach(function(b){ b=(''+b).trim(); var p=scoreBrand(b,card.cat,card.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,b.length>0); }); });
     } else if(s.type==='brand_single'){
       var b1=(answers[s.id].brand||'').trim(); var p=scoreBrand(b1,s.cat,s.label||'Product'); if(hasBaby&&s.room_lbl==='Bathroom') p=Math.round(p*1.3); slot(p,b1.length>0);
     } else if(s.type==='brand_multi'&&s.fields){
@@ -2427,10 +2441,14 @@ function runCalc(){
         s.cards.forEach(card=>{
           const sel=answers[s.id][card.id]||{};
           if(sel.isNone) return; // "We don't use this" = not scored
-          var brand=(sel.brand||'').trim();
-          let p=scoreBrand(brand,card.cat,card.label);
-          if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4);
-          addSlot(p, brand.length>0, s.room_lbl||s.room||'Kitchen');
+          var bs=selBrands(sel);
+          if(bs.length===0){ addSlot(scoreBrand('',card.cat,card.label), false, s.room_lbl||s.room||'Kitchen'); return; }
+          bs.forEach(function(brand){
+            brand=(''+brand).trim();
+            let p=scoreBrand(brand,card.cat,card.label);
+            if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4);
+            addSlot(p, brand.length>0, s.room_lbl||s.room||'Kitchen');
+          });
         });
       } else if(s.type==='brand_multi'&&s.fields){
         s.fields.forEach(f=>{
@@ -2636,8 +2654,10 @@ function showResults(){
       s.cards.forEach(card=>{
         const sel=answers[s.id][card.id]||{};
         if(sel.isNone) return;
-        const brand=sel.brand||''; const pts=scoreBrand(brand,card.cat);
-        if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Kitchen',brand:brand,cat:card.cat,label:card.label,pts});
+        selBrands(sel).forEach(function(brand){
+          const pts=scoreBrand(brand,card.cat);
+          if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Kitchen',brand:brand,cat:card.cat,label:card.label,pts});
+        });
       });
     } else if(s.type==='brand_multi'&&s.fields){
       s.fields.forEach(f=>{
@@ -2780,7 +2800,7 @@ function collectSwitchItems(){
   activeSteps.forEach(function(s){
     if(!answers[s.id]) return;
     if(s.type==='brand_single'){ var b=answers[s.id].brand||''; if(isConcern(b)) items.push({brand:b,cat:s.cat}); }
-    else if(s.type==='chip_cards'&&s.cards){ s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(!sel.isNone&&isConcern(sel.brand||'')) items.push({brand:sel.brand,cat:card.cat}); }); }
+    else if(s.type==='chip_cards'&&s.cards){ s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; selBrands(sel).forEach(function(b){ if(isConcern(b)) items.push({brand:b,cat:card.cat}); }); }); }
     else if(s.type==='brand_multi'&&s.fields){ s.fields.forEach(function(f){ var b=answers[s.id][f.id]||''; if(isConcern(b)) items.push({brand:b,cat:f.cat}); }); }
   });
   return items;
