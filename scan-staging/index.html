@@ -2817,12 +2817,17 @@ function showResults(){
   if(fcP) fcP.textContent='Pick whatever feels right. Zero pressure.';
 
   const mx=Math.max(...Object.values(roomScores),1);
-  let bh='';
+  // Shannon UX fix 2026-06-20: "pts" meant nothing to a mom + the per-room numbers didn't visibly add
+  // up to the 0-100 overall score (different units). Replace numbers with severity words and color
+  // each bar by severity. Add a one-line header so the page explains itself.
+  function rsev(p){ return p>=35 ? {l:'HIGH',c:'#C8102E'} : p>=15 ? {l:'MODERATE',c:'#E8A317'} : {l:'LOW',c:'#1F8A70'}; }
+  let bh='<div style="font-size:.74rem;color:#4a6a8a;margin-bottom:10px;line-height:1.45;font-weight:600">Where the chemical load lives in your home. A longer bar means more products of concern in that room.</div>';
   Object.entries(roomScores).sort((a,b)=>b[1]-a[1]).forEach(([r,p])=>{
     const w=Math.round((p/mx)*100);
-    bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt">${p} pts</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%"></div></div></div>`;
+    const s=rsev(p);
+    bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt" style="color:${s.c} !important;font-weight:900">${s.l}</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%;background:${s.c}"></div></div></div>`;
   });
-  document.getElementById('roomBars').innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected — great choices!</p>';
+  document.getElementById('roomBars').innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected. Great choices!</p>';
 
   // Findings from highest-scoring brand inputs
   const findings=[];
