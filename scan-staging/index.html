@@ -931,6 +931,80 @@ body { padding-top:0 !important; }
 #s-results [style*="color:white"] {
   color: #0B2545 !important;
 }
+
+/* ── 2026-06-20 Shannon bug-fix #2: "page after Get My Score is bleached out" ──
+   The s-results + s-calc cream-theme overrides above missed several light-red,
+   light-green, and faint-on-cream colors that the original navy theme used.
+   Force every remaining light/faint inline color to readable dark navy or
+   brand red, and stiffen the calc-screen text too. */
+#s-results [style*="color:#FF6B6B"],
+#s-results [style*="color:#ff6b6b"],
+#s-results [style*="color:#FF8A5A"],
+#s-results [style*="color:#ff8a8a"],
+#s-results [style*="color:#FF8A8A"],
+#s-results [style*="color:#ff9a9a"],
+#s-results [style*="color:#FF9A9A"],
+#s-results [style*="color:#ffd27a"],
+#s-results [style*="color:#FFE8C9"],
+#s-results [style*="color:#ffe8c9"] {
+  color: #C8102E !important;
+}
+#s-results [style*="color:#3a4a66"],
+#s-results [style*="color:#6b5a3a"],
+#s-results [style*="color:#5a6a86"] {
+  color: #1a2e54 !important;
+}
+/* Hero block on s-results: force cream gradient + opaque card surfaces */
+#s-results .rt { background: linear-gradient(160deg,#FFF7EC 0%,#FFE7C4 100%) !important; }
+#s-results .rs { text-shadow: none !important; }
+#s-results .rcard,
+#s-results .sw,
+#s-results .sh-c,
+#s-results .fc,
+#s-results #unscoredBlock,
+#s-results #finalCta > div[style*="background:rgba(255,255,255"],
+#s-results [style*="background:rgba(255,255,255,.04)"],
+#s-results [style*="background:rgba(255,255,255,.06)"],
+#s-results [style*="background:rgba(255,255,255,.08)"],
+#s-results [style*="background:rgba(255,255,255,.1)"],
+#s-results [style*="background:rgba(255,255,255,.12)"] {
+  background: #ffffff !important;
+  border: 1px solid rgba(11,37,69,.18) !important;
+  color: #0B2545 !important;
+}
+/* Result-page deep universal text fallback (catches any leftover) */
+#s-results, #s-results * {
+  text-shadow: none !important;
+}
+#s-results :not(.door):not(.door-tour):not(.door-green):not(.door-amber):not(.door-red):not(.tox-soft-btn):not(.sb):not([class*="btn"]):not(.intro-cta-new) {
+  /* color is governed by the universal #000 rule above; this just kills any white drop-shadow that washed text out */
+}
+/* Calc screen — match cream theme so the transition into s-results doesn't strand light text */
+#s-calc { background: #F7F1E6 !important; color: #0B2545 !important; }
+#s-calc [style*="color:#dfe7e1"],
+#s-calc [style*="color:#fafdff"],
+#s-calc [style*="color:#c0cee0"],
+#s-calc [style*="color:#fff"],
+#s-calc [style*="color: #fff"],
+#s-calc [style*="color:#FFF"],
+#s-calc [style*="color:white"],
+#s-calc [style*="color: white"] {
+  color: #0B2545 !important;
+}
+#s-calc [style*="color:#FF6B6B"],
+#s-calc [style*="color:#ff8a8a"],
+#s-calc [style*="color:#FF8A5A"],
+#s-calc [style*="color:#ff9a9a"] {
+  color: #C8102E !important;
+}
+#s-calc [style*="background:rgba(255,255,255,.04)"],
+#s-calc [style*="background:rgba(255,255,255,.06)"],
+#s-calc [style*="background:rgba(255,255,255,.08)"] {
+  background: #ffffff !important;
+  border: 1px solid rgba(11,37,69,.18) !important;
+}
+#s-calc .c-num, #s-calc #cNum { font-weight: 900 !important; }
+#s-calc #cArc { stroke: #0B2545 !important; opacity: .15 !important; }
 </style>
 </head>
 <body>
@@ -2390,11 +2464,18 @@ const ROOM_AVG={kitchen:65,bath:60,laundry:68,nursery:58,water:55,air:62,meds:59
 // Score just one room, using the SAME methodology as the final score (got/max → %).
 function computeRoomScore(roomKey){
   var got=0,max=0,SLOTMAX=8;
+  // 2026-06-20 Shannon bug-fix #1: in chip_cards rooms (Laundry, Kitchen, Bath, Nursery)
+  // every card now counts toward MAX even when untouched, so clicking 1 chip out of 5
+  // cards no longer inflates the room score (was producing 88% from a single click).
+  // Touched cards: contribute their toxicity to GOT and SLOTMAX to MAX.
+  // Untouched cards: contribute 0 to GOT and SLOTMAX to MAX (we assume best-case absence).
+  // "We don't use this" (isNone): excluded from both (deliberate non-applicability).
   function slot(p,answered){ if(!answered) return; got+=p; max+=Math.max(SLOTMAX,p); }
+  function emptySlot(){ max+=SLOTMAX; }
   activeSteps.forEach(function(s){
     if(roomKeyForStep(s)!==roomKey || !answers[s.id]) return;
     if(s.type==='chip_cards'&&s.cards){
-      s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; var bs=selBrands(sel); if(bs.length===0){ slot(scoreBrand('',card.cat,card.label),false); return; } bs.forEach(function(b){ b=(''+b).trim(); var p=scoreBrand(b,card.cat,card.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,b.length>0); }); });
+      s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; var bs=selBrands(sel); if(bs.length===0){ emptySlot(); return; } bs.forEach(function(b){ b=(''+b).trim(); var p=scoreBrand(b,card.cat,card.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,b.length>0); }); });
     } else if(s.type==='brand_single'){
       var b1=(answers[s.id].brand||'').trim(); var p=scoreBrand(b1,s.cat,s.label||'Product'); if(hasBaby&&s.room_lbl==='Bathroom') p=Math.round(p*1.3); slot(p,b1.length>0);
     } else if(s.type==='brand_multi'&&s.fields){
@@ -2520,9 +2601,11 @@ function runCalc(){
       } else if(s.type==='chip_cards'&&s.cards){
         s.cards.forEach(card=>{
           const sel=answers[s.id][card.id]||{};
-          if(sel.isNone) return; // "We don't use this" = not scored
+          if(sel.isNone) return; // "We don't use this" = explicit exclusion
           var bs=selBrands(sel);
-          if(bs.length===0){ addSlot(scoreBrand('',card.cat,card.label), false, s.room_lbl||s.room||'Kitchen'); return; }
+          // 2026-06-20 Shannon bug-fix #1: untouched cards count toward MAX denominator
+          // (0 toward got, SLOTMAX toward max) so sparse fills can't inflate the score.
+          if(bs.length===0){ maxPts += 8; return; }
           bs.forEach(function(brand){
             brand=(''+brand).trim();
             let p=scoreBrand(brand,card.cat,card.label);
