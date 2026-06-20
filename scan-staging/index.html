@@ -1449,7 +1449,11 @@ const BRAND_DB = {
 // ── Change #3: named-product findings — ingredient + harm + source ──
 // Factual, sourced-style associations. Phrased as "linked to / classified / flagged".
 const TOX_DB={
- 'dawn powerwash':{n:'Dawn Powerwash Spray',i:'Alcohol ethoxylates + fragrance',h:'Respiratory & skin irritants'},
+ 'dawn powerwash':{n:'Dawn Powerwash Spray',i:'1,4-dioxane, phthalates, methylisothiazolinone',h:'1,4-dioxane is on the EPA likely-cause-cancer list. Phthalates lower IQ in kids and disrupt thyroid hormones. Methylisothiazolinone damages nerve cells.'},
+ 'vegetable / canola':{n:'Vegetable / Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
+ 'vegetable':{n:'Vegetable / Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
+ 'canola':{n:'Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
+ 'muscle milk':{n:'Muscle Milk Protein Powder',i:'Lead, arsenic, cadmium, carrageenan',h:'Consumer Reports found Muscle Milk had the highest lead per serving of 15 protein drinks tested. Cadmium is a known human carcinogen. Lead in kids damages the developing brain.'},
  'dawn':{n:'Dawn Ultra Dish Soap',i:'1,4-Dioxane + SLES',h:'Likely human carcinogen — CA Prop 65'},
  'palmolive':{n:'Palmolive Dish Liquid',i:'Synthetic fragrance + dyes',h:'Skin irritants & allergens'},
  'cascade':{n:'Cascade Platinum Pods',i:'Synthetic fragrance + brighteners',h:'Endocrine disruptors that bioaccumulate'},
@@ -1522,7 +1526,7 @@ function findingDisplay(brand,cat,label){
   var hit=TOX_DB[key];
   if(!hit){ for(var k in TOX_DB){ if(key && key.indexOf(k)>=0){ hit=TOX_DB[k]; break; } } }
   var ct=CAT_TOX[cat]||{i:'Synthetic additives + fragrance',h:'Flagged for concerning ingredients'};
-  return { name: (hit&&hit.n)?hit.n:(brand+(label?(' — '+label):'')), ing: hit?hit.i:ct.i, harm: hit?hit.h:ct.h };
+  return { name: (hit&&hit.n)?hit.n:(brand+(label?(', '+label):'')), ing: hit?hit.i:ct.i, harm: hit?hit.h:ct.h };
 }
 
 // Track unscored (empty) fields for report
