@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
 <title>The Family Home Toxic Scorecard — Switch to America</title>
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room scorecard.">
 <!-- change #9 — social link-preview cards -->
@@ -38,6 +40,7 @@ html,body{
   background:var(--navy);
   color:var(--white);
   overflow:hidden;
+  color-scheme: light;
 }
 #app{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
 .screen{display:none;height:100dvh;overflow-y:auto;-webkit-overflow-scrolling:touch;flex-direction:column}
@@ -891,6 +894,23 @@ body { padding-top:0 !important; }
 #s-results .rcard p[style*="font-style:italic"] { color: #1a2e54 !important; }
 /* Subscore bar labels */
 #s-results .rb p { color: #1a2e54; }
+/* UNIVERSAL text override: anything in #s-results that isn't a button or accent badge becomes solid black. */
+#s-results h1, #s-results h2, #s-results h3, #s-results h4,
+#s-results p, #s-results span, #s-results div, #s-results b, #s-results strong, #s-results em, #s-results i, #s-results li, #s-results td {
+  color: #000 !important;
+}
+/* Exceptions: keep accent colors readable */
+#s-results .door, #s-results .door *, #s-results .door-tour, #s-results .door-green, #s-results .door-amber, #s-results .door-red, #s-results .tox-soft-btn, #s-results .sb { color: #fff !important; }
+#s-results .sw-lbl { color: #B07A2C !important; }
+#s-results .sw-imp { color: #8a5a14 !important; }
+#s-results .rcard h3[style*="color:#C8102E"], #s-results .rcard div[style*="color:#C8102E"], #s-results .rcard span[style*="color:#C8102E"], #s-results [style*="color:#C8102E"] { color: #C8102E !important; }
+#s-results [style*="color:#37c79a"] { color: #1F8A70 !important; }
+#s-results [style*="color:#FFD27A"], #s-results [style*="color:#FFC76A"] { color: #C68A1F !important; }
+#s-results [style*="color:#FF8A5A"] { color: #C8102E !important; }
+#s-results [style*="color:#C9A227"] { color: #B07A2C !important; }
+#s-results [style*="color:#9fe6cf"], #s-results [style*="color:#3a4a66"] { color: #0B2545 !important; }
+/* Score numbers (orange/red/green accents) keep their colors */
+#s-results [style*="color:var(--orange)"], #s-results [style*="color:var(--red)"], #s-results [style*="color:var(--green)"], #s-results [style*="color:var(--gold)"] { color: revert; }
 /* Nuclear: any inline white-ish color in #s-results becomes dark navy. Excludes button classes. */
 #s-results [style*="color:#fff"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
 #s-results [style*="color: #fff"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
