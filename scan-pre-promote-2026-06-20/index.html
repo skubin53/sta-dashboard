@@ -3,20 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta name="color-scheme" content="light only">
-<meta name="supported-color-schemes" content="light">
 <title>The Family Home Toxic Scorecard — Switch to America</title>
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room scorecard.">
 <!-- change #9 — social link-preview cards -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="What toxic products are hiding in your home?">
 <meta property="og:description" content="Take the free 3-minute Family Home Toxic Scorecard — a room-by-room scan of what's really in your family's everyday products.">
-<meta property="og:image" content="https://skubin53.github.io/sta-dashboard/scan-staging/scorecard-thumbnail.jpg">
+<meta property="og:image" content="https://skubin53.github.io/sta-dashboard/scan/scorecard-thumbnail.jpg">
 <meta property="og:url" content="https://join.switchtoamerica.com/shop">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="What toxic products are hiding in your home?">
 <meta name="twitter:description" content="The free 3-minute Family Home Toxic Scorecard. Find your family's score.">
-<meta name="twitter:image" content="https://skubin53.github.io/sta-dashboard/scan-staging/scorecard-thumbnail.jpg">
+<meta name="twitter:image" content="https://skubin53.github.io/sta-dashboard/scan/scorecard-thumbnail.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:ital,wght@0,400;0,600;0,700;0,800;1,500&family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -40,7 +38,6 @@ html,body{
   background:var(--navy);
   color:var(--white);
   overflow:hidden;
-  color-scheme: light;
 }
 #app{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
 .screen{display:none;height:100dvh;overflow-y:auto;-webkit-overflow-scrolling:touch;flex-direction:column}
@@ -57,7 +54,7 @@ html,body{
 }
 .pt{background:rgba(255,255,255,.12);border-radius:50px;height:5px;margin-bottom:4px}
 .pf{height:100%;border-radius:50px;background:linear-gradient(90deg,#C9A227,#1F8A70);transition:width .4s ease}
-.plb{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fafdff;text-align:center}
+.plb{font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);text-align:center}
 /* room map (replaces numeric step label — change #2) */
 .roommap{display:flex;justify-content:center;gap:9px;flex-wrap:nowrap;overflow-x:auto;padding:3px 0 1px;-webkit-overflow-scrolling:touch}
 .rm-item{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:34px;opacity:.3;filter:grayscale(1);transition:opacity .35s,filter .35s,transform .35s}
@@ -65,7 +62,7 @@ html,body{
 .rm-item.rm-cur{opacity:1;filter:grayscale(0);transform:translateY(-1px)}
 .rm-ic{font-size:18px;line-height:1.1}
 .rm-cur .rm-ic{filter:drop-shadow(0 0 7px rgba(227,179,65,.95))}
-.rm-lb{font-size:.48rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#fafdff;white-space:nowrap}
+.rm-lb{font-size:.48rem;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:rgba(255,255,255,.5);white-space:nowrap}
 .rm-cur .rm-lb{color:var(--gold)}
 .rm-done .rm-lb{color:#37c79a}
 .rm-chk{position:absolute;top:-4px;right:1px;font-size:9px;color:#0B2545;font-weight:900;background:#37c79a;width:12px;height:12px;border-radius:50%;line-height:12px;text-align:center}
@@ -102,7 +99,7 @@ html,body{
 /* Kicker badge */
 .intro-kicker{
   font-size:11px;letter-spacing:.22em;font-weight:800;text-transform:uppercase;
-  color:#dbe4f0;border:1px solid rgba(159,177,204,.28);border-radius:999px;
+  color:#9fb1cc;border:1px solid rgba(159,177,204,.28);border-radius:999px;
   padding:6px 14px;margin-bottom:14px;backdrop-filter:blur(2px);
   opacity:0;transform:translateY(14px);animation:rise .7s cubic-bezier(.2,.7,.2,1) .05s forwards;
 }
@@ -146,7 +143,7 @@ html,body{
   background:linear-gradient(180deg,transparent,#ff3b46,transparent);box-shadow:0 0 16px 5px rgba(225,29,42,.55);}
 .sstatus{
   margin-top:16px;font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:#dbe4f0;min-height:16px;transition:color .3s;
+  color:#9fb1cc;min-height:16px;transition:color .3s;
   font-family:'Hanken Grotesk',sans-serif;
 }
 .sstatus .swarn{display:inline-block;width:14px;height:14px;line-height:14px;border-radius:50%;
@@ -257,14 +254,14 @@ html,body{
 }
 
 .intro-sub{
-  font-size:.84rem;font-weight:500;color:#fafdff;
+  font-size:.84rem;font-weight:500;color:rgba(255,255,255,.62);
   text-align:center;line-height:1.55;max-width:300px;margin-bottom:14px;
 }
 
 .sh-q{
   background:rgba(255,255,255,.07);border-left:3px solid var(--orange);
   border-radius:0 10px 10px 0;padding:11px 14px;
-  font-size:.78rem;font-style:italic;color:#c0cee0;
+  font-size:.78rem;font-style:italic;color:rgba(255,255,255,.7);
   line-height:1.5;margin-bottom:18px;max-width:340px;align-self:flex-start;
 }
 
@@ -279,7 +276,7 @@ html,body{
   font-family:inherit;font-size:.98rem;font-weight:700;
   transition:border-color .15s;
 }
-.nb input::placeholder{color:#fafdff;font-weight:400}
+.nb input::placeholder{color:rgba(255,255,255,.28);font-weight:400}
 .nb input:focus{outline:none;border-color:var(--orange)}
 
 .big-cta{
@@ -296,8 +293,8 @@ html,body{
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes flagPop{0%{transform:scale(0);opacity:0}60%{transform:scale(1.4);opacity:1}100%{transform:scale(1);opacity:1}}
 @keyframes ctaPulse{0%,100%{box-shadow:0 10px 32px rgba(200,16,46,.5)}50%{box-shadow:0 10px 44px rgba(200,16,46,.7),0 0 0 10px rgba(200,16,46,.1)}}
-.cta-note{font-size:.68rem;color:#fafdff;margin-top:8px;text-align:center}
-.stat-line{font-size:.72rem;color:#fafdff;margin-top:10px;text-align:center;letter-spacing:.05em}
+.cta-note{font-size:.68rem;color:rgba(255,255,255,.3);margin-top:8px;text-align:center}
+.stat-line{font-size:.72rem;color:rgba(255,255,255,.38);margin-top:10px;text-align:center;letter-spacing:.05em}
 
 /* ══ QUIZ SCREEN — Shannon's Page 2 design ══ */
 #s-quiz{
@@ -346,7 +343,7 @@ html,body{
 .q-opt .oi{flex:none;width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(227,179,65,.14);}
 .q-opt .oi svg{width:18px;height:18px;stroke:var(--orange);fill:none;stroke-width:2;}
 .q-opt .ot{flex:1;font-size:15.5px;font-weight:700;color:#eef3fa;line-height:1.3;}
-.q-opt .od{font-size:.72rem;color:#fafdff;margin-top:2px;}
+.q-opt .od{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:2px;}
 /* change #6 — progressive reveal of health impact */
 .q-opt .oi-hazard{background:rgba(232,163,23,.16);}
 .q-opt .oi-hazard svg{width:18px;height:18px;stroke:#E8A317;}
@@ -359,7 +356,7 @@ html,body{
 /* change #7 — quiet rotating testimonial per room */
 .room-quote{margin:24px auto 2px;max-width:344px;display:flex;gap:9px;align-items:flex-start;opacity:.85;}
 .room-quote .rq-mark{font-family:Georgia,serif;font-size:30px;line-height:.7;color:rgba(227,179,65,.5);flex:none;}
-.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:#fafdff;font-style:italic;}
+.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:rgba(255,255,255,.62);font-style:italic;}
 .room-quote .rq-a{display:block;font-style:normal;font-weight:700;color:rgba(227,179,65,.78);font-size:.7rem;margin-top:5px;letter-spacing:.02em;}
 .q-opt .osel{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(159,177,204,.4);position:relative;transition:border-color .2s;flex-shrink:0;}
 .q-opt .osel::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);transform:scale(0);transition:transform .2s cubic-bezier(.2,1.7,.4,1);}
@@ -412,7 +409,7 @@ html,body{
 .room-supplements{ color:#FDE68A }
 .q-hi{font-size:1.15rem;font-weight:900;color:#fff;margin-bottom:8px;letter-spacing:.01em}
 .q-text{font-size:clamp(1.15rem,4vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:5px}
-.q-sub{font-size:.78rem;color:#fafdff;margin-bottom:14px;line-height:1.4}
+.q-sub{font-size:.78rem;color:rgba(255,255,255,.5);margin-bottom:14px;line-height:1.4}
 
 /* Risk pill */
 .risk-pill{
@@ -441,7 +438,7 @@ html,body{
 .brand-group label{
   display:block;font-size:.68rem;font-weight:800;
   letter-spacing:.1em;text-transform:uppercase;
-  color:#e8eef5;margin-bottom:7px;
+  color:rgba(255,255,255,.85);margin-bottom:7px;
 }
 .brand-inp{
   width:100%;padding:12px 14px;
@@ -451,9 +448,9 @@ html,body{
   font-family:inherit;font-size:.92rem;font-weight:500;
   transition:border-color .15s,background .15s;
 }
-.brand-inp::placeholder{color:#fafdff;font-weight:400}
+.brand-inp::placeholder{color:rgba(255,255,255,.45);font-weight:400}
 .brand-inp:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.14)}
-.skip-note{font-size:.68rem;color:#fafdff;margin-top:5px;font-style:italic}
+.skip-note{font-size:.68rem;color:rgba(255,255,255,.5);margin-top:5px;font-style:italic}
 
 /* ══ CHIP CARDS — Shannon's Page 3/4 design ══ */
 /* Animated kicker dot */
@@ -475,7 +472,7 @@ html,body{
 .brand-chip:hover{border-color:rgba(227,179,65,.55);color:#fff;}
 .brand-chip:active{transform:scale(.96);}
 .brand-chip.sel{background:var(--orange);border-color:var(--orange);color:#15233a;box-shadow:0 6px 16px -6px rgba(227,179,65,.7);}
-.brand-chip.chip-none{color:#dbe4f0;border-style:dashed;}
+.brand-chip.chip-none{color:#9fb1cc;border-style:dashed;}
 .brand-chip.chip-none.sel{background:rgba(159,177,204,.2);border-color:var(--muted);color:#eaf0f8;border-style:solid;}
 .brand-chip.chip-other{color:var(--orange);border-color:rgba(246,150,42,.4);}
 .brand-chip.chip-other.sel{background:rgba(246,150,42,.18);border-color:var(--orange);color:#ffd9b0;}
@@ -491,7 +488,7 @@ html,body{
 .chip-safe{position:absolute;top:-7px;right:-5px;width:16px;height:16px;border-radius:50%;background:#1F8A70;color:#fff;font-size:10px;font-weight:900;line-height:16px;text-align:center;box-shadow:0 0 8px rgba(31,138,112,.95);animation:warnPop .28s cubic-bezier(.2,1.8,.4,1);pointer-events:none;z-index:3;}
 .chip-other-input{margin-top:10px;width:100%;padding:11px 14px;border-radius:12px;background:rgba(255,255,255,.07);border:1.5px solid rgba(246,150,42,.5);color:#fff;font-size:14px;font-family:'Hanken Grotesk',inherit;outline:none;display:none;}
 .chip-other-input.show{display:block;}
-.chip-other-input::placeholder{color:#fafdff;}
+.chip-other-input::placeholder{color:rgba(255,255,255,.35);}
 
 /* Multi-select on blue (for "extras" type questions) */
 .extras-list{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
@@ -509,7 +506,7 @@ html,body{
 .ext-em{font-size:1.25rem;flex-shrink:0}
 .ext-body{flex:1}
 .ext-lbl{font-size:.85rem;font-weight:700;color:#fff;line-height:1.25}
-.ext-det{font-size:.7rem;color:#fafdff;margin-top:2px;line-height:1.35}
+.ext-det{font-size:.7rem;color:rgba(255,255,255,.6);margin-top:2px;line-height:1.35}
 .ext-ind{
   width:24px;height:24px;border-radius:50%;
   border:2px solid rgba(255,255,255,.5);flex-shrink:0;
@@ -525,10 +522,10 @@ html,body{
 .q-nav{display:flex;gap:10px;align-items:center;padding-top:6px;flex-shrink:0}
 .btn-bk{
   background:transparent;border:2px solid rgba(255,255,255,.15);
-  color:#fafdff;border-radius:50px;
+  color:rgba(255,255,255,.5);border-radius:50px;
   padding:11px 18px;font-size:.8rem;font-weight:700;font-family:inherit;cursor:pointer;transition:all .15s;white-space:nowrap;
 }
-.btn-bk:hover{border-color:#fafdff;color:#fff}
+.btn-bk:hover{border-color:rgba(255,255,255,.4);color:#fff}
 .btn-nx{
   flex:1;background:var(--red);color:#fff;
   border:none;border-radius:50px;padding:14px 20px;
@@ -543,7 +540,7 @@ html,body{
 .soft-w{padding:24px 20px;max-width:460px;width:100%}
 .soft-c{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:22px;margin-bottom:10px}
 .soft-c h3{font-size:1.15rem;font-weight:800;color:#fff;margin-bottom:5px}
-.soft-c p{font-size:.8rem;color:#fafdff;line-height:1.5;margin-bottom:13px}
+.soft-c p{font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.5;margin-bottom:13px}
 .soft-inp{
   width:100%;padding:12px 16px;
   border:2px solid rgba(255,255,255,.15);border-radius:10px;
@@ -551,11 +548,11 @@ html,body{
   font-family:inherit;font-size:.88rem;margin-bottom:9px;
   transition:border-color .15s;
 }
-.soft-inp::placeholder{color:#fafdff}
+.soft-inp::placeholder{color:rgba(255,255,255,.28)}
 .soft-inp:focus{outline:none;border-color:var(--orange)}
 .btn-sv{width:100%;padding:13px;background:var(--red);color:#fff;font-weight:900;font-size:.9rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;transition:all .15s}
 .btn-sv:hover{background:var(--red2)}
-.btn-sk{background:transparent;border:none;color:#fafdff;font-size:.76rem;font-weight:600;font-family:inherit;cursor:pointer;display:block;width:100%;text-align:center;padding:10px;text-decoration:underline}
+.btn-sk{background:transparent;border:none;color:rgba(255,255,255,.32);font-size:.76rem;font-weight:600;font-family:inherit;cursor:pointer;display:block;width:100%;text-align:center;padding:10px;text-decoration:underline}
 
 /* ══ CALCULATING ══ */
 #s-calc{background:var(--navy);align-items:center;justify-content:center;text-align:center;padding:40px 24px}
@@ -565,16 +562,16 @@ html,body{
 .c-arc{fill:none;stroke:url(#cg);stroke-width:16;stroke-linecap:round;stroke-dasharray:525;stroke-dashoffset:525;transition:stroke-dashoffset 2s cubic-bezier(.4,0,.2,1)}
 .c-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .c-num{font-family:'Bebas Neue',sans-serif;font-size:3.4rem;letter-spacing:.04em;color:var(--orange);line-height:1}
-.c-max{font-size:.65rem;font-weight:800;letter-spacing:.1em;color:#fafdff}
+.c-max{font-size:.65rem;font-weight:800;letter-spacing:.1em;color:rgba(255,255,255,.35)}
 .calc-h{font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:5px;line-height:1.2}
-.calc-sub{font-size:.8rem;color:#fafdff;margin-bottom:18px;line-height:1.5}
+.calc-sub{font-size:.8rem;color:rgba(255,255,255,.45);margin-bottom:18px;line-height:1.5}
 .bench{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:13px;margin-bottom:10px;display:flex;align-items:center;gap:10px;text-align:left;display:none}
 .bench-icon{font-size:1.5rem;flex-shrink:0}
-.bench-txt{font-size:.78rem;color:#fafdff;line-height:1.45}
+.bench-txt{font-size:.78rem;color:rgba(255,255,255,.62);line-height:1.45}
 .bench-txt strong{color:#fff}
 .prev{background:rgba(200,16,46,.1);border:1px solid rgba(200,16,46,.22);border-radius:12px;padding:13px;margin-bottom:16px;text-align:left;display:none}
 .prev-lbl{font-size:.6rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
-.prev-txt{font-size:.82rem;color:#c0cee0;line-height:1.5}
+.prev-txt{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.5}
 .btn-rpt{width:100%;padding:15px;background:var(--red);color:#fff;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 20px rgba(200,16,46,.4);display:none;transition:all .15s}
 .btn-rpt:hover{background:var(--red2)}
 
@@ -582,19 +579,19 @@ html,body{
 #s-optin{background:var(--navy);overflow-y:auto;padding:20px 18px 40px;align-items:center;justify-content:center;min-height:100dvh}
 .oc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:22px;border-top:7px solid var(--orange);overflow:hidden;width:100%;max-width:440px}
 .oh{background:linear-gradient(120deg,var(--red),#E8172F);padding:20px 18px 16px;text-align:center}
-.oh .ey{font-size:.64rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#d9e3ee;margin-bottom:4px}
+.oh .ey{font-size:.64rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:4px}
 .oh h2{font-size:1.3rem;font-weight:900;color:#fff;line-height:1.1;margin-bottom:3px}
-.oh p{font-size:.78rem;color:#e8eef5;font-weight:600;line-height:1.4}
+.oh p{font-size:.78rem;color:rgba(255,255,255,.85);font-weight:600;line-height:1.4}
 .ob{padding:16px}
 .frow{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:9px}
 .fg{margin-bottom:9px}
-.fg label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#d9e3ee;margin-bottom:5px}
+.fg label{display:block;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-bottom:5px}
 .fg input{width:100%;padding:11px 13px;border:2px solid rgba(255,255,255,.15);border-radius:9px;font-family:inherit;font-size:.88rem;color:#fff;background:rgba(255,255,255,.08);transition:border-color .15s}
 .fg input:focus{outline:none;border-color:var(--orange);background:rgba(255,255,255,.12)}
-.fg input::placeholder{color:#fafdff}
+.fg input::placeholder{color:rgba(255,255,255,.28)}
 .sub-btn{width:100%;padding:14px;background:var(--red);color:#fff;font-weight:900;font-size:.92rem;font-family:inherit;border:none;border-radius:50px;cursor:pointer;box-shadow:0 5px 18px rgba(200,16,46,.4);transition:all .15s}
 .sub-btn:hover{background:var(--red2)}
-.optin-note{font-size:.63rem;color:#fafdff;text-align:center;margin-top:8px;line-height:1.5}
+.optin-note{font-size:.63rem;color:rgba(255,255,255,.35);text-align:center;margin-top:8px;line-height:1.5}
 
 /* ══ RESULTS ══ */
 #s-results{background:var(--navy);overflow-y:auto;padding-bottom:40px}
@@ -603,38 +600,38 @@ html,body{
 .rs{font-family:'Bebas Neue',sans-serif;font-size:5.5rem;color:var(--orange);line-height:1;position:relative;z-index:1}
 .rg{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--red),#E8172F);color:#fff;font-size:1.3rem;font-weight:900;margin:4px auto;position:relative;z-index:1;box-shadow:0 5px 16px rgba(200,16,46,.4)}
 .rh{font-size:1.2rem;font-weight:800;color:#fff;margin:7px 0 4px;position:relative;z-index:1}
-.rp{font-size:.78rem;color:#fafdff;position:relative;z-index:1;line-height:1.4}
+.rp{font-size:.78rem;color:rgba(255,255,255,.5);position:relative;z-index:1;line-height:1.4}
 .rb{padding:12px 14px 0;max-width:480px;margin:0 auto}
 .rcard{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:15px;margin-bottom:10px}
-.rcard h3{font-size:.88rem;font-weight:800;color:#d9e3ee;margin-bottom:11px}
+.rcard h3{font-size:.88rem;font-weight:800;color:rgba(255,255,255,.8);margin-bottom:11px}
 .rbar{margin-bottom:9px}
 .rbar-top{display:flex;justify-content:space-between;margin-bottom:3px}
 .rbar-nm{font-size:.78rem;font-weight:700;color:#fff}
-.rbar-pt{font-size:.7rem;font-weight:800;color:#fafdff}
+.rbar-pt{font-size:.7rem;font-weight:800;color:rgba(255,255,255,.4)}
 .rbar-tr{background:rgba(255,255,255,.1);border-radius:50px;height:8px;overflow:hidden}
 .rbar-fl{height:100%;border-radius:50px;background:linear-gradient(90deg,var(--orange),var(--red));transition:width 1.2s ease}
 .fi{display:flex;gap:7px;align-items:flex-start;margin-bottom:9px;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.07)}
 .fi:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
 .fb{background:var(--red);color:#fff;font-size:.58rem;font-weight:900;padding:2px 7px;border-radius:50px;white-space:nowrap;flex-shrink:0;margin-top:2px;letter-spacing:.04em}
-.ft{font-size:.78rem;color:#d9e3ee;line-height:1.45}
-.fs{font-size:.65rem;color:#fafdff;font-weight:600;margin-top:1px}
-.sw{background:rgba(255,153,0,.14);border:1px solid rgba(255,153,0,.38);border-radius:14px;padding:15px;margin-bottom:10px}
-.sw-lbl{font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#FFC76A;margin-bottom:6px}
-.sw h3{font-size:1.02rem;font-weight:800;color:#fff;margin-bottom:6px;line-height:1.25}
-.sw p{font-size:.88rem;color:#fafdff;line-height:1.5}
-.sw-imp{display:inline-flex;align-items:center;gap:5px;background:rgba(255,153,0,.22);border:1px solid rgba(255,153,0,.45);border-radius:50px;padding:7px 14px;margin-top:10px;font-size:.84rem;font-weight:800;color:#FFD27A}
+.ft{font-size:.78rem;color:rgba(255,255,255,.8);line-height:1.45}
+.fs{font-size:.65rem;color:rgba(255,255,255,.35);font-weight:600;margin-top:1px}
+.sw{background:rgba(255,153,0,.08);border:1px solid rgba(255,153,0,.2);border-radius:14px;padding:15px;margin-bottom:10px}
+.sw-lbl{font-size:.6rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:5px}
+.sw h3{font-size:.92rem;font-weight:800;color:#fff;margin-bottom:5px}
+.sw p{font-size:.78rem;color:rgba(255,255,255,.58);line-height:1.45}
+.sw-imp{display:inline-flex;align-items:center;gap:5px;background:rgba(255,153,0,.12);border:1px solid rgba(255,153,0,.25);border-radius:50px;padding:6px 12px;margin-top:9px;font-size:.74rem;font-weight:800;color:var(--orange)}
 .sh-c{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:15px;margin-bottom:10px;text-align:center}
-.sh-c h3{font-size:.88rem;font-weight:800;color:#d9e3ee;margin-bottom:3px}
-.sh-c p{font-size:.75rem;color:#fafdff;margin-bottom:11px}
+.sh-c h3{font-size:.88rem;font-weight:800;color:rgba(255,255,255,.8);margin-bottom:3px}
+.sh-c p{font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:11px}
 .sh-btns{display:flex;gap:7px;justify-content:center;flex-wrap:wrap}
 .sb{display:inline-flex;align-items:center;gap:5px;padding:9px 15px;border-radius:50px;font-size:.75rem;font-weight:800;font-family:inherit;cursor:pointer;border:none;transition:all .15s}
 .sb:hover{filter:brightness(1.06);transform:translateY(-1px)}
 /* Unified share button style — same base, just icon color differs */
 .sb-fb,.sb-dl,.sb-cp{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
-.sb:hover{background:rgba(255,255,255,.18);border-color:#fafdff}
+.sb:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.4)}
 .fc{background:rgba(255,255,255,.04);border:1px solid rgba(159,177,204,.18);border-radius:16px;padding:18px 16px;text-align:center;margin-bottom:10px}
 .fc h2{font-size:1.12rem;font-weight:800;color:#fff;margin-bottom:4px;line-height:1.2}
-.fc p{font-size:.8rem;color:#c0cee0;font-weight:600;margin-bottom:14px;line-height:1.45}
+.fc p{font-size:.8rem;color:rgba(255,255,255,.75);font-weight:600;margin-bottom:14px;line-height:1.45}
 .fcb{display:inline-block;background:#fff;color:var(--red);font-weight:900;font-size:.85rem;font-family:inherit;padding:12px 26px;border-radius:50px;border:none;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.2);transition:all .15s}
 /* three escalating doors */
 .doors{display:flex;flex-direction:column;gap:10px}
@@ -649,7 +646,7 @@ html,body{
 .door-tour{background:linear-gradient(180deg,#3b6fb0,#2f5790);border:none;color:#fff;box-shadow:0 8px 24px -8px rgba(59,111,176,.6)}
 .sl-panel{margin-top:14px;text-align:left;background:rgba(0,0,0,.2);border-radius:12px;padding:14px}
 .fcb:hover{transform:translateY(-2px)}
-.disc{font-size:.62rem;color:#fafdff;line-height:1.6;padding:0 12px 12px;max-width:480px;margin:0 auto}
+.disc{font-size:.62rem;color:rgba(255,255,255,.3);line-height:1.6;padding:0 12px 12px;max-width:480px;margin:0 auto}
 #shareCanvas{display:none}
 @keyframes rrIn{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:none}}
 #roomReveal .rr-num{animation:rrPop .5s cubic-bezier(.2,1.3,.4,1) both}
@@ -660,8 +657,8 @@ html,body{
 .tox-name{font-size:1.02rem;font-weight:800;color:#fff;line-height:1.25}
 .tox-ing{font-size:.84rem;font-weight:700;color:#ffb0b0;margin-top:5px}
 .tox-card.tox-good .tox-ing{color:#9fe6cf}
-.tox-harm{font-size:.82rem;color:#d9e3ee;margin-top:3px;line-height:1.42}
-.tox-found{font-size:.72rem;color:#fafdff;margin-top:7px;font-style:italic}
+.tox-harm{font-size:.82rem;color:rgba(255,255,255,.8);margin-top:3px;line-height:1.42}
+.tox-found{font-size:.72rem;color:rgba(255,255,255,.45);margin-top:7px;font-style:italic}
 .tox-soft{background:rgba(31,138,112,.1);border:1px dashed rgba(55,199,154,.45);border-radius:12px;padding:15px;text-align:center;margin-top:4px}
 .tox-soft-q{font-size:.9rem;font-weight:700;color:#eafff7;line-height:1.45;margin-bottom:11px}
 .tox-soft-btn{background:linear-gradient(180deg,#1F8A70,#15705a);color:#fff;border:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:.98rem;cursor:pointer;font-family:inherit;width:100%}
@@ -673,19 +670,11 @@ html,body{
 .sim-tog.on{background:#1F8A70}
 .sim-knob{position:absolute;top:3px;left:3px;width:21px;height:21px;border-radius:50%;background:#fff;transition:left .2s}
 .sim-tog.on .sim-knob{left:22px}
-/* Cream-theme overrides: off-state toggles + rows were ~4-18% white on a cream
-   background, which rendered invisible. Restore contrast so all three swap
-   toggles read as toggles, not just the first one (the one pre-flipped on). */
-#s-results .sim-row{background:rgba(11,37,69,.04)!important;border:1px solid rgba(11,37,69,.18)!important}
-#s-results .sim-row.on{background:rgba(31,138,112,.18)!important;border-color:rgba(31,138,112,.55)!important}
-#s-results .sim-tog{background:rgba(11,37,69,.22)!important;border:1px solid rgba(11,37,69,.3)}
-#s-results .sim-tog.on{background:#1F8A70!important;border-color:#1F8A70}
-#s-results .sim-knob{background:#FFF7EC!important;box-shadow:0 1px 3px rgba(11,37,69,.35)}
 .sim-txt{flex:1}
 .sim-swap{font-size:.9rem;font-weight:700;color:#fff;line-height:1.3}
-.sim-sub{font-size:.76rem;color:#fafdff;margin-top:2px}
+.sim-sub{font-size:.76rem;color:rgba(255,255,255,.6);margin-top:2px}
 .sim-foot{margin-top:6px;padding-top:12px;border-top:1px solid rgba(255,255,255,.12)}
-.sim-foot-row{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;color:#c0cee0;padding:4px 0;font-weight:600}
+.sim-foot-row{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;color:rgba(255,255,255,.78);padding:4px 0;font-weight:600}
 .sim-foot-row b{font-size:1.05rem;color:#fff}
 /* Change #5 — reactive house */
 .qhouse{display:flex;justify-content:center;margin:2px auto 8px}
@@ -698,7 +687,7 @@ html,body{
 /* Change #6 — sound toggle */
 #soundToggle{position:fixed;top:9px;right:9px;z-index:9998;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(10,27,61,.55);color:#fff;font-size:.95rem;cursor:pointer;line-height:1;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);padding:0}
 /* Change #8 — save my spot */
-.save-spot-btn{display:block;margin:0 auto 4px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:#d9e3ee;border-radius:50px;padding:11px 22px;min-height:42px;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit}
+.save-spot-btn{display:block;margin:0 auto 4px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.82);border-radius:50px;padding:11px 22px;min-height:42px;font-size:.82rem;font-weight:700;cursor:pointer;font-family:inherit}
 .save-spot-panel{max-width:340px;margin:0 auto 12px;background:rgba(10,27,61,.65);border:1px solid rgba(255,153,0,.32);border-radius:14px;padding:14px}
 /* Change #9 — influencer referral banner */
 .ref-banner{display:flex;align-items:center;gap:11px;background:rgba(31,138,112,.12);border:1px solid rgba(55,199,154,.35);border-radius:14px;padding:11px 14px;margin-bottom:14px;text-align:left}
@@ -713,316 +702,17 @@ html,body{
 .spark{position:fixed;z-index:10001;pointer-events:none;font-size:15px;opacity:1;will-change:transform,opacity;transition:transform .5s ease-out,opacity .5s ease-out}
 .safe-toast{position:fixed;z-index:10002;pointer-events:none;font-weight:900;color:#37c79a;font-size:1rem;text-shadow:0 1px 5px rgba(0,0,0,.45);opacity:1;will-change:transform,opacity;transition:transform .65s ease-out,opacity .65s ease-out}
 /* Change #12 — community stat */
-.comm-stat{display:none;font-size:.78rem;font-weight:700;color:#fafdff;text-align:center;margin:10px auto 0;max-width:340px;line-height:1.45}
-.comm-stat-reveal{margin:18px auto 4px;font-size:.86rem;color:#d9e3ee;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 16px}
+.comm-stat{display:none;font-size:.78rem;font-weight:700;color:rgba(255,255,255,.62);text-align:center;margin:10px auto 0;max-width:340px;line-height:1.45}
+.comm-stat-reveal{margin:18px auto 4px;font-size:.86rem;color:rgba(255,255,255,.8);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:12px 16px}
 /* Change #13 — per-room peek */
 .peek{margin:16px auto 4px;max-width:340px;background:rgba(31,138,112,.1);border:1px solid rgba(55,199,154,.32);border-radius:14px;padding:13px 16px;text-align:center}
 .peek-done{font-size:.8rem;font-weight:800;color:#37c79a;letter-spacing:.02em}
 .peek-next{font-size:1.02rem;font-weight:800;color:#fff;margin-top:8px}
-.peek-time{font-size:.78rem;color:#fafdff;margin-top:3px;font-weight:600}
+.peek-time{font-size:.78rem;color:rgba(255,255,255,.62);margin-top:3px;font-weight:600}
 .peek-bar{display:flex;gap:4px;justify-content:center;margin:12px 0 5px;flex-wrap:wrap}
 .peek-cell{width:22px;height:5px;border-radius:3px;background:rgba(255,255,255,.14);transition:background .3s}
 .peek-cell.on{background:#37c79a}
-.peek-roomn{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fafdff}
-
-
-/* ═══════════════════════════════════════════════════════════════
-   Shannon advisor edits — applied 2026-06-14
-   - Color: navy → cream/white (basic / less inspector-gadget)
-   - Who-lives: compact, no-scroll
-   - Per-room % indicator
-   - Multi-product silhouette background on intro
-   ═══════════════════════════════════════════════════════════════ */
-
-/* — basic / white background, navy text — */
-html, body { background:#F7F1E6 !important; color:#0B2545 !important; }
-.screen { background:#F7F1E6 !important; color:#0B2545 !important; }
-.intro-eyebrow, .intro-h1, .intro-h1-l2, .intro-sub, .intro-fine,
-.q-eyebrow, .q-title, .q-sub, .q-kicker, .room-name,
-h1, h2, h3 { color:#0B2545 !important; }
-.intro-chip { background:#fff !important; color:#0B2545 !important; border-color:#d4cdb8 !important; }
-.intro-trust-new { background:#fff !important; color:#0B2545 !important; }
-.trust-nm { color:#0B2545 !important; }
-.trust-tg { color:#6b5a3a !important; }
-
-/* — option cards: white surface, navy text, gold accent border on hover — */
-.q-opt { background:#fff !important; color:#0B2545 !important; border-color:#d4cdb8 !important; }
-.q-opt:hover { border-color:#C9A227 !important; background:#fff7e1 !important; }
-.q-opt .ot { color:#0B2545 !important; }
-.q-opt .od { color:rgba(11,37,69,.6) !important; }
-.q-opt .osel { border-color:#9aa6b8 !important; }
-.q-opt.sel .osel, .q-opt.sel-red .osel { border-color:#C8102E !important; }
-.q-opt.sel { border-color:#C9A227 !important; background:#fff7e1 !important; box-shadow:0 0 0 1px #C9A227, 0 8px 24px -10px rgba(201,162,39,.5) !important; }
-
-/* — compact "Who lives in your home?" screen so it fits no-scroll — */
-#s-quiz .q-wrap, #step-yourhome .q-wrap { padding-top:14px !important; padding-bottom:14px !important; }
-.q-title { font-size:1.3rem !important; line-height:1.25 !important; margin-bottom:8px !important; }
-.q-opt { padding:14px 16px !important; margin-bottom:8px !important; }
-
-/* — per-room % indicator pill, top right of quiz screens — */
-.q-room-pct {
-  display:inline-block;
-  background:#0B2545; color:#fff;
-  font-family:'Hanken Grotesk',sans-serif;
-  font-size:11px; font-weight:800;
-  padding:3px 9px; border-radius:999px;
-  letter-spacing:.05em; vertical-align:middle;
-  margin-left:8px;
-}
-
-/* — multi-product silhouette background on intro (subtle, low opacity) — */
-#s-intro .screen, #s-intro {
-  position:relative;
-}
-#s-intro::before {
-  content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background-image:
-    radial-gradient(ellipse 60px 90px at 18% 22%, rgba(11,37,69,.08) 50%, transparent 60%),
-    radial-gradient(ellipse 55px 85px at 78% 18%, rgba(11,37,69,.08) 50%, transparent 60%),
-    radial-gradient(ellipse 50px 75px at 12% 78%, rgba(11,37,69,.08) 50%, transparent 60%),
-    radial-gradient(ellipse 60px 90px at 82% 75%, rgba(11,37,69,.08) 50%, transparent 60%),
-    radial-gradient(ellipse 45px 70px at 50% 50%, rgba(11,37,69,.05) 50%, transparent 60%);
-  filter:blur(2px);
-}
-#s-intro > * { position:relative; z-index:1; }
-
-/* Kill spinning circle + cartoon house on between-question screens per Shannon */
-.q-emblem, .q-ring, .q-spin, [class*="q-emblem"] { display:none !important; }
-.hs-house, [class*="hs-house"] { display:none !important; }
-
-
-/* Shannon: kill the top KITCHEN/BATH/LAUNDRY/WATER/AIR/MEDS strip + scanner ring everywhere */
-#pBar, #roomMap, .roommap { display:none !important; }
-/* Restore top spacing since pBar no longer occupies top */
-body { padding-top:0 !important; }
-
-/* Ensure intro content is centered properly */
-#s-intro.active { display:flex !important; flex-direction:column !important; justify-content:center !important; align-items:center !important; min-height:100dvh !important; padding:24px 18px !important; }
-.intro-inner { max-width:420px !important; width:100% !important; margin:0 auto !important; text-align:center !important; }
-.intro-trust-new { margin:18px auto !important; max-width:380px !important; }
-
-/* Ensure the red CTA is clickable + visible */
-.intro-cta-new { pointer-events:auto !important; cursor:pointer !important; position:relative !important; z-index:10 !important; }
-
-/* Make sure the multi-product BG doesn't block clicks */
-#s-intro::before { pointer-events:none !important; z-index:0 !important; }
-
-/* ── COMPREHENSIVE CREAM-THEME CONTRAST PASS ── */
-.q-text, .q-hi, .q-greet { color:#0B2545 !important; }
-.q-greet b { color:#C8102E !important; }
-
-.risk-pill { background:#fff !important; border:1.5px solid #C8102E !important; }
-.risk-txt { color:#C8102E !important; }
-.risk-n { color:#C8102E !important; }
-
-.room-quote { background:#fff !important; border:1px solid #d4cdb8 !important; border-radius:12px !important; padding:12px 14px !important; }
-.room-quote .rq-body { color:#3a4a66 !important; }
-.room-quote .rq-mark { color:#C9A227 !important; }
-.room-quote .rq-a { color:#6b5a3a !important; }
-
-.brand-chip { color:#0B2545 !important; background:#fff !important; border-color:#d4cdb8 !important; }
-.brand-chip:hover { border-color:#C9A227 !important; background:#fff7e1 !important; color:#0B2545 !important; }
-.brand-chip.chip-none { color:#6b5a3a !important; border-style:dashed !important; }
-.brand-chip.chip-none.sel { background:#fff7e1 !important; border-color:#0B2545 !important; color:#0B2545 !important; }
-.brand-chip.chip-other { color:#C8102E !important; border-color:#C8102E !important; }
-.brand-chip.chip-other.sel { background:#fff7e1 !important; border-color:#C8102E !important; color:#C8102E !important; }
-.brand-chip.chip-toxic.sel { background:#fbe9eb !important; border-color:#C8102E !important; color:#7a0a1f !important; }
-.brand-chip.chip-clean.sel { background:#e6f5ec !important; border-color:#1F8A70 !important; color:#0d4a3a !important; }
-.brand-chip.chip-maybe.sel { background:#fdf4d8 !important; border-color:#C9A227 !important; color:#5a4310 !important; }
-
-.qcard-lbl { color:#0B2545 !important; }
-
-.brand-inp { color:#0B2545 !important; background:#fff !important; border:1.5px solid #d4cdb8 !important; }
-.brand-inp::placeholder { color:rgba(11,37,69,.4) !important; }
-.brand-inp:focus { border-color:#C9A227 !important; }
-.chip-other-input { color:#0B2545 !important; background:#fff !important; border-color:#C8102E !important; }
-.chip-other-input::placeholder { color:rgba(11,37,69,.4) !important; }
-
-.skip-note { color:#6b5a3a !important; }
-
-.soft-inp { color:#0B2545 !important; background:#fff !important; border-color:#d4cdb8 !important; }
-.soft-inp::placeholder { color:rgba(11,37,69,.4) !important; }
-
-.peek { background:#fff !important; border-color:#d4cdb8 !important; }
-.peek-done { color:#1F8A70 !important; }
-.peek-next { color:#0B2545 !important; }
-.peek-time { color:#6b5a3a !important; }
-.peek-roomn { color:#6b5a3a !important; }
-.peek-cell { background:#e5dfca !important; }
-.peek-cell.on { background:#1F8A70 !important; }
-
-.q-back { color:#6b5a3a !important; border:1px solid #d4cdb8 !important; background:#fff !important; }
-.q-back:hover { background:#fff7e1 !important; color:#0B2545 !important; }
-
-.save-spot-btn { color:#6b5a3a !important; background:#fff !important; border:1px solid #d4cdb8 !important; }
-
-.intro-trust-new .trust-tg { color:#6b5a3a !important; }
-.intro-h1 .intro-hide { color:#C9A227 !important; }
-
-/* Continue: red even when inactive (just dimmer) so it's findable */
-.q-cont { background:linear-gradient(180deg,#f02635,#b9111d) !important; color:#fff !important; opacity:.55 !important; }
-.q-cont.on { opacity:1 !important; box-shadow:0 10px 30px -6px rgba(225,29,42,.6) !important; }
-/* ════════════════════════════════════════════════════════════════
-   2026-06-20: RESULTS SCREEN LIGHT THEME
-   Shannon's iOS Smart Invert was bleaching all the navy-bg+white-text content.
-   Override #s-results to a permanent cream-bg + dark-navy-text theme that
-   reads correctly regardless of Smart Invert / Dark Mode state.
-   ════════════════════════════════════════════════════════════════ */
-#s-results { background: #FFF7EC !important; color: #0B2545 !important; }
-#s-results .rt { background: linear-gradient(160deg, #FFF7EC, #FFE7C4) !important; color: #0B2545 !important; }
-#s-results .rh, #s-results .rp, #s-results h1, #s-results h2, #s-results h3, #s-results h4 { color: #0B2545 !important; }
-#s-results p, #s-results span:not(.brand-chip), #s-results div { color: #1a2e54; }
-#s-results .rcard { background: rgba(255,255,255,.7) !important; border: 1px solid rgba(11,37,69,.18) !important; color: #0B2545 !important; box-shadow: 0 2px 8px -3px rgba(11,37,69,.08); }
-#s-results .rcard h3 { color: #0B2545 !important; }
-#s-results .rcard p, #s-results .rcard span, #s-results .rcard div, #s-results .rcard b { color: #1a2e54 !important; }
-#s-results .sw { background: rgba(255,153,0,.18) !important; border: 1px solid rgba(255,153,0,.6) !important; }
-#s-results .sw-lbl { color: #B07A2C !important; }
-#s-results .sw h3 { color: #0B2545 !important; }
-#s-results .sw p { color: #1a2e54 !important; }
-#s-results .sw-imp { background: rgba(255,153,0,.28) !important; border: 1px solid rgba(255,153,0,.65) !important; color: #8a5a14 !important; }
-#s-results #unscoredBlock { background: rgba(255,153,0,.14) !important; border-color: rgba(255,153,0,.55) !important; }
-#s-results #unscoredBlock h3 { color: #0B2545 !important; }
-/* Final CTA section — override inline styles I set earlier */
-#s-results #finalCta { color: #0B2545; }
-#s-results #finalCta h2#fcH { color: #0B2545 !important; }
-#s-results #finalCta p, #s-results #finalCta div, #s-results #finalCta b { color: #1a2e54 !important; }
-#s-results #finalCta > div[style*="background:rgba(255,255,255,.04)"] { background: rgba(255,255,255,.75) !important; border: 1px solid rgba(11,37,69,.18) !important; }
-/* "Stop guessing / Start swapping" stays in its accent colors — those read fine on cream */
-#s-results #finalCta div[style*="color:#FFD27A"] { color: #C68A1F !important; }
-#s-results #finalCta div[style*="color:#37c79a"] { color: #1F8A70 !important; }
-/* Buttons keep white-on-colored — already readable */
-#s-results .door, #s-results .door-tour, #s-results .door-green, #s-results .door-amber, #s-results .door-red, #s-results .tox-soft-btn, #s-results .sb { color: #fff !important; }
-/* Sub-text under "Book my free home walkthrough" */
-#s-results #finalCta p[style*="rgba(255,255,255,.62)"] { color: #4a5e7e !important; }
-/* Booking iframe wrap */
-#s-results #bookingEmbed { background: rgba(255,255,255,.85) !important; border: 1px solid rgba(11,37,69,.18) !important; }
-/* Disclaimer note */
-#s-results .disc { color: #4a5e7e !important; }
-/* Testimonial quote text */
-#s-results .rcard p[style*="font-style:italic"] { color: #1a2e54 !important; }
-/* Subscore bar labels */
-#s-results .rb p { color: #1a2e54; }
-/* UNIVERSAL text override: anything in #s-results that isn't a button or accent badge becomes solid black. */
-#s-results h1, #s-results h2, #s-results h3, #s-results h4,
-#s-results p, #s-results span, #s-results div, #s-results b, #s-results strong, #s-results em, #s-results i, #s-results li, #s-results td {
-  color: #000 !important;
-}
-/* Exceptions: keep accent colors readable */
-#s-results .door, #s-results .door *, #s-results .door-tour, #s-results .door-green, #s-results .door-amber, #s-results .door-red, #s-results .tox-soft-btn, #s-results .sb { color: #fff !important; }
-#s-results .sw-lbl { color: #B07A2C !important; }
-#s-results .sw-imp { color: #8a5a14 !important; }
-#s-results .rcard h3[style*="color:#C8102E"], #s-results .rcard div[style*="color:#C8102E"], #s-results .rcard span[style*="color:#C8102E"], #s-results [style*="color:#C8102E"] { color: #C8102E !important; }
-#s-results [style*="color:#37c79a"] { color: #1F8A70 !important; }
-#s-results [style*="color:#FFD27A"], #s-results [style*="color:#FFC76A"] { color: #C68A1F !important; }
-#s-results [style*="color:#FF8A5A"] { color: #C8102E !important; }
-#s-results [style*="color:#C9A227"] { color: #B07A2C !important; }
-#s-results [style*="color:#9fe6cf"], #s-results [style*="color:#3a4a66"] { color: #0B2545 !important; }
-/* Score numbers (orange/red/green accents) keep their colors */
-#s-results [style*="color:var(--orange)"], #s-results [style*="color:var(--red)"], #s-results [style*="color:var(--green)"], #s-results [style*="color:var(--gold)"] { color: revert; }
-/* Nuclear: any inline white-ish color in #s-results becomes dark navy. Excludes button classes. */
-#s-results [style*="color:#fff"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
-#s-results [style*="color: #fff"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
-#s-results [style*="color:#FFF"]:not(.door):not(.tox-soft-btn):not(.sb):not([class*="btn"]),
-#s-results [style*="color:#fafdff"],
-#s-results [style*="color:#e8eef5"],
-#s-results [style*="color:#d9e3ee"],
-#s-results [style*="color:#c0cee0"],
-#s-results [style*="color:#eef3fa"],
-#s-results [style*="color:#eaf1f8"],
-#s-results [style*="color:#cbd6e6"],
-#s-results [style*="color:#dbe4f0"],
-#s-results [style*="color:#e3ecf7"],
-#s-results [style*="color:#dfe7e1"],
-#s-results [style*="color:#cfe9df"],
-#s-results [style*="color:#9fe6cf"],
-#s-results [style*="color: white"],
-#s-results [style*="color:white"] {
-  color: #0B2545 !important;
-}
-
-/* ── 2026-06-20 Shannon bug-fix #2: "page after Get My Score is bleached out" ──
-   The s-results + s-calc cream-theme overrides above missed several light-red,
-   light-green, and faint-on-cream colors that the original navy theme used.
-   Force every remaining light/faint inline color to readable dark navy or
-   brand red, and stiffen the calc-screen text too. */
-#s-results [style*="color:#FF6B6B"],
-#s-results [style*="color:#ff6b6b"],
-#s-results [style*="color:#FF8A5A"],
-#s-results [style*="color:#ff8a8a"],
-#s-results [style*="color:#FF8A8A"],
-#s-results [style*="color:#ff9a9a"],
-#s-results [style*="color:#FF9A9A"],
-#s-results [style*="color:#ffd27a"],
-#s-results [style*="color:#FFE8C9"],
-#s-results [style*="color:#ffe8c9"] {
-  color: #C8102E !important;
-}
-#s-results [style*="color:#3a4a66"],
-#s-results [style*="color:#6b5a3a"],
-#s-results [style*="color:#5a6a86"] {
-  color: #1a2e54 !important;
-}
-/* Hero block on s-results: force cream gradient + opaque card surfaces */
-#s-results .rt { background: linear-gradient(160deg,#FFF7EC 0%,#FFE7C4 100%) !important; }
-#s-results .rs { text-shadow: none !important; }
-#s-results .rcard,
-#s-results .sw,
-#s-results .sh-c,
-#s-results .fc,
-#s-results #unscoredBlock,
-#s-results #finalCta > div[style*="background:rgba(255,255,255"],
-#s-results [style*="background:rgba(255,255,255,.04)"],
-#s-results [style*="background:rgba(255,255,255,.06)"],
-#s-results [style*="background:rgba(255,255,255,.08)"],
-#s-results [style*="background:rgba(255,255,255,.1)"],
-#s-results [style*="background:rgba(255,255,255,.12)"] {
-  background: #ffffff !important;
-  border: 1px solid rgba(11,37,69,.18) !important;
-  color: #0B2545 !important;
-}
-/* Result-page deep universal text fallback (catches any leftover) */
-#s-results, #s-results * {
-  text-shadow: none !important;
-}
-#s-results :not(.door):not(.door-tour):not(.door-green):not(.door-amber):not(.door-red):not(.tox-soft-btn):not(.sb):not([class*="btn"]):not(.intro-cta-new) {
-  /* color is governed by the universal #000 rule above; this just kills any white drop-shadow that washed text out */
-}
-/* Calc screen — match cream theme so the transition into s-results doesn't strand light text */
-#s-calc { background: #F7F1E6 !important; color: #0B2545 !important; }
-#s-calc [style*="color:#dfe7e1"],
-#s-calc [style*="color:#fafdff"],
-#s-calc [style*="color:#c0cee0"],
-#s-calc [style*="color:#fff"],
-#s-calc [style*="color: #fff"],
-#s-calc [style*="color:#FFF"],
-#s-calc [style*="color:white"],
-#s-calc [style*="color: white"] {
-  color: #0B2545 !important;
-}
-#s-calc [style*="color:#FF6B6B"],
-#s-calc [style*="color:#ff8a8a"],
-#s-calc [style*="color:#FF8A5A"],
-#s-calc [style*="color:#ff9a9a"] {
-  color: #C8102E !important;
-}
-#s-calc [style*="background:rgba(255,255,255,.04)"],
-#s-calc [style*="background:rgba(255,255,255,.06)"],
-#s-calc [style*="background:rgba(255,255,255,.08)"] {
-  background: #ffffff !important;
-  border: 1px solid rgba(11,37,69,.18) !important;
-}
-#s-calc .c-num, #s-calc #cNum { font-weight: 900 !important; }
-/* Pre-reveal: dim the arc so the spinning placeholder reads as grey.
-   Post-reveal (.revealed): let the gradient (#cg) show red/yellow/green. */
-#s-calc:not(.revealed) #cArc { stroke: #0B2545 !important; opacity: .15 !important; }
-#s-calc.revealed #cArc { stroke: url(#cg) !important; opacity: 1 !important; }
-/* Finding-from-your-home box: make readable on the cream background */
-#s-calc .prev { background: rgba(200,16,46,.06) !important; border-color: rgba(200,16,46,.35) !important; }
-#s-calc .prev-lbl { color: #C8102E !important; }
-#s-calc .prev-txt { color: #0B2545 !important; }
-/* Benchmark rows: keep label and score apart so long labels don't kiss the number */
-#s-calc .bench > div > div > div[style*="justify-content:space-between"] { gap: 14px; }
-#s-calc .bench > div > div > div[style*="justify-content:space-between"] > span:first-child { padding-right: 6px; }
+.peek-roomn{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45)}
 </style>
 </head>
 <body>
@@ -1040,14 +730,51 @@ body { padding-top:0 !important; }
     <div id="commStatLanding" class="comm-stat"></div>
 
     <h1 class="intro-h1-new">
-      <span class="intro-h1-l1 rise" style="display:block">What <span class="intro-hide">Toxic Products</span></span>
-      <span class="intro-h1-l2 rise" style="display:block">Are Hiding In Your Home?</span>
+      <span class="intro-h1-l1 rise" style="display:block">What's <span class="intro-hide">Hiding</span></span>
+      <span class="intro-h1-l2 rise" style="display:block">In Your Home?</span>
     </h1>
 
-    <!-- scan stage + iconrow removed per Shannon advisor #4 -->
+    <!-- SVG Scanner stage -->
+    <div class="scan-stage-new rise">
+      <svg class="home-svg" viewBox="0 0 300 100" aria-hidden="true">
+        <path d="M30 96 V46 L150 10 L270 46 V96" fill="none" stroke="#e3b341" stroke-width="2"/>
+        <path d="M110 96 V66 H140 V96 M170 72 h28 v24 h-28z" fill="none" stroke="#e3b341" stroke-width="2"/>
+      </svg>
+      <div class="iconrow-new" id="iconrow">
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><rect x="9" y="1.5" width="6" height="4" rx="1" fill="#c85e78"/><path d="M8 9c0-1.6 1.3-3 3-3h2c1.7 0 3 1.4 3 3v17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="#e58aa0"/><rect x="9" y="15" width="6" height="4" rx="1" fill="#fff"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><rect x="7" y="10" width="10" height="18" rx="1.5" fill="#f0e6cf"/><rect x="7" y="10" width="10" height="3" rx="1.5" fill="#e3d4b3"/><path d="M12 10V7" stroke="#7a5a32" stroke-width="1.3"/><path d="M12 7c1.7-1.5 1.7-3.2 0-4.6-1.7 1.1-1.7 3.1 0 4.6z" fill="#f6962a"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><path d="M4 10l8-3.5 8 3.5-8 3.5-8-3.5z" fill="#cf9759"/><path d="M4 10v9l8 3.5V13.5z" fill="#b9783f"/><path d="M20 10v9l-8 3.5V13.5z" fill="#a96b37"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><path d="M8 12h8v14a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#5fb3c7"/><rect x="8" y="12" width="8" height="4" fill="#3f95aa"/><path d="M8 12V8h5l5-3v2l-5 1v4z" fill="#7a8aa0"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>
+        </div>
+        <div class="spi">
+          <span class="sbadge"><svg viewBox="0 0 24 24"><path d="M12 2 L22.5 21 H1.5 Z" fill="#e11d2a"/><rect x="11" y="8.5" width="2" height="6.5" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.3" fill="#fff"/></svg></span>
+          <svg class="prod" viewBox="0 0 24 30"><ellipse cx="10" cy="18" rx="8.5" ry="5.2" fill="#3a4049"/><rect x="17" y="17" width="7.5" height="2.4" rx="1.2" fill="#7a4a2a" transform="rotate(-3 17 18)"/></svg>
+        </div>
+      </div>
+      <div class="sbeam" id="sbeam"></div>
+      <div class="sstatus" id="sstatus">Scanning your home…</div>
+    </div>
+
     <div class="intro-trust-new rise">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole"/>
       <div>
-        <div class="trust-nm">Before your toddler finishes breakfast,<br>they've been exposed to 50+ chemicals.<br>Most from products you bought yourself.</div>
+        <div class="trust-nm">Shannon Nicole · Mom · Grandma<br>Health &amp; Nutrition Coach</div>
+        <div class="trust-tg">"Built by a Grandma who got tired of guessing."</div>
       </div>
     </div>
 
@@ -1069,14 +796,14 @@ body { padding-top:0 !important; }
 <div class="screen" id="s-quiz">
   <div class="q-wrap">
     <div class="qhouse" id="quizHouse"></div>
-    <div class="risk-pill" id="riskPill" style="display:none"><span class="risk-emoji">🚨</span><div class="risk-txt"><span class="risk-n" id="riskN">0</span> <span id="riskLbl">concerns</span> found so far</div></div>
-    <div class="safe-pill" id="safePill"><span>✨</span><div><span class="safe-n" id="safeN">0</span> <span id="safeLbl">clean picks</span>, nice!</div></div>
+    <div class="risk-pill" id="riskPill"><span class="risk-emoji">🚨</span><div class="risk-txt"><span class="risk-n" id="riskN">0</span> <span id="riskLbl">concerns</span> found so far</div></div>
+    <div class="safe-pill" id="safePill"><span>✨</span><div><span class="safe-n" id="safeN">0</span> <span id="safeLbl">clean picks</span> — nice!</div></div>
     <div id="qMt"></div>
   </div>
   <!-- Sticky action bar — Shannon's design (save link lives here so it never scrolls away) -->
   <div class="q-actions">
     <div id="saveSpotPanel" class="save-spot-panel" style="display:none"></div>
-    <button id="saveSpotBtn" onclick="saveSpot()" class="save-spot-btn" style="display:none">💾 Save my spot &amp; finish later</button>
+    <button id="saveSpotBtn" onclick="saveSpot()" class="save-spot-btn">💾 Save my spot &amp; finish later</button>
     <div class="q-actions-row">
       <button class="q-back" onclick="goBack()">← Back</button>
       <button class="q-cont" id="btnNx" onclick="goNext()">Continue →</button>
@@ -1129,7 +856,7 @@ body { padding-top:0 !important; }
   <div id="directionBar" style="display:none;width:100%;max-width:320px;margin:0 auto 16px">
     <div style="display:flex;justify-content:space-between;font-size:.62rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">
       <span style="color:#1F8A70">✓ CLEANER</span>
-      <span style="color:#fafdff">← LOWER IS BETTER →</span>
+      <span style="color:rgba(255,255,255,.4)">← LOWER IS BETTER →</span>
       <span style="color:#C8102E">CONCERNING ✗</span>
     </div>
     <div style="height:8px;border-radius:50px;background:linear-gradient(90deg,#1F8A70,#E8A317,#C8102E)"></div>
@@ -1138,7 +865,7 @@ body { padding-top:0 !important; }
   <!-- Benchmark visual bars -->
   <div class="bench" id="bench" style="display:none">
     <div style="flex:1">
-      <div style="font-size:.72rem;font-weight:800;color:#fafdff;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">How you compare</div>
+      <div style="font-size:.72rem;font-weight:800;color:rgba(255,255,255,.6);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">How you compare</div>
       <div style="margin-bottom:8px">
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
           <span style="font-size:.78rem;font-weight:700;color:#fff">Your home</span>
@@ -1150,8 +877,8 @@ body { padding-top:0 !important; }
       </div>
       <div style="margin-bottom:8px">
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
-          <span style="font-size:.78rem;font-weight:700;color:#fafdff">Average home</span>
-          <span style="font-size:.78rem;font-weight:900;color:#fafdff">68</span>
+          <span style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.6)">Average home</span>
+          <span style="font-size:.78rem;font-weight:900;color:rgba(255,255,255,.5)">68</span>
         </div>
         <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
           <div style="height:100%;width:68%;background:rgba(200,16,46,.5);border-radius:50px"></div>
@@ -1159,7 +886,7 @@ body { padding-top:0 !important; }
       </div>
       <div>
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
-          <span style="font-size:.78rem;font-weight:700;color:#fafdff">Fully switched home</span>
+          <span style="font-size:.78rem;font-weight:700;color:rgba(255,255,255,.6)">Fully switched home</span>
           <span style="font-size:.78rem;font-weight:900;color:#1F8A70">12</span>
         </div>
         <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
@@ -1174,7 +901,7 @@ body { padding-top:0 !important; }
     <div style="width:52px;height:52px;border-radius:50%;border:2px solid var(--orange);overflow:hidden;margin:0 auto 6px">
       <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt="Shannon"/>
     </div>
-    <p style="font-size:.72rem;color:#fafdff;font-style:italic" id="shannonMsg">Your full report breaks this down room by room.</p>
+    <p style="font-size:.72rem;color:rgba(255,255,255,.5);font-style:italic" id="shannonMsg">Your full report breaks this down room by room.</p>
   </div>
 
   <!-- One finding preview -->
@@ -1183,7 +910,7 @@ body { padding-top:0 !important; }
   <!-- Blurred report preview -->
   <div id="blurPreview" style="display:none;position:relative;margin-bottom:16px;border-radius:12px;overflow:hidden">
     <div style="filter:blur(4px);pointer-events:none;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px">
-      <div style="font-size:.72rem;font-weight:800;color:#fafdff;margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">📍 Your Room-by-Room Breakdown</div>
+      <div style="font-size:.72rem;font-weight:800;color:rgba(255,255,255,.4);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em">📍 Your Room-by-Room Breakdown</div>
       <div style="height:10px;background:rgba(255,153,0,.4);border-radius:50px;margin-bottom:8px;width:80%"></div>
       <div style="height:10px;background:rgba(200,16,46,.3);border-radius:50px;margin-bottom:8px;width:60%"></div>
       <div style="height:10px;background:rgba(255,153,0,.25);border-radius:50px;margin-bottom:8px;width:45%"></div>
@@ -1192,13 +919,13 @@ body { padding-top:0 !important; }
     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,27,61,.4)">
       <div style="text-align:center;color:#fff">
         <div style="font-size:.8rem;font-weight:800;color:var(--orange)">✨ Your full report is ready</div>
-        <div style="font-size:.7rem;color:#fafdff;margin-top:3px">Tap below to see your results</div>
+        <div style="font-size:.7rem;color:rgba(255,255,255,.6);margin-top:3px">Tap below to see your results</div>
       </div>
     </div>
   </div>
 
   <button class="btn-rpt" id="btnRpt" onclick="showResults()">🔓 Get Me My Score →</button>
-  <div style="font-size:.68rem;color:#fafdff;text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
+  <div style="font-size:.68rem;color:rgba(255,255,255,.35);text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
 </div>
 
 <!-- ═══ HARD OPT-IN ═══ -->
@@ -1207,7 +934,7 @@ body { padding-top:0 !important; }
     <div class="oh">
       <div class="ey">★ Your report is ready ★</div>
       <h2>Get your results<br>by text — right now.</h2>
-      <div style="margin-top:10px;line-height:1.8;font-size:.82rem;color:#e8eef5;font-weight:600">
+      <div style="margin-top:10px;line-height:1.8;font-size:.82rem;color:rgba(255,255,255,.88);font-weight:600">
         📍 Room-by-room breakdown<br>
         ⚠️ Your flagged brands & ingredients<br>
         🔁 Your #1 highest-impact swap
@@ -1285,41 +1012,30 @@ body { padding-top:0 !important; }
     <div id="simWrap" style="display:none"></div>
     <div class="rcard"><h3>📍 Room-by-Room Breakdown</h3><div id="roomBars"></div></div>
     <div class="rcard" style="background:rgba(200,16,46,.08);border-color:rgba(200,16,46,.2)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
-    <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
+    <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.08);border-color:rgba(255,153,0,.2);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <div class="sw" id="swEl"><div class="sw-lbl">✦ Your Biggest Single Change</div><h3 id="swT">—</h3><p id="swD">—</p><div class="sw-imp">📉 Score: <strong id="swF">—</strong> → <strong id="swTo">—</strong></div></div>
     <div class="sh-c"><h3>📣 Share Your Score</h3><p>Every share helps a friend find their family's score</p><canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas><div class="sh-btns"><button class="sb sb-fb" onclick="shareScore()">📲 Share</button><button class="sb sb-dl" onclick="dlCard()">📸 Download</button><button class="sb sb-cp" onclick="cpLink()">🔗 Copy Link</button></div></div>
     <div class="rcard" style="background:rgba(201,162,39,.06);border-color:rgba(201,162,39,.25)"><h3>💛 From Families Who Switched</h3>
       <div style="display:flex;flex-direction:column;gap:16px;margin-top:6px">
         <div style="border-left:3px solid #C9A227;padding:2px 0 2px 14px">
           <div style="color:#C9A227;font-size:.78rem;letter-spacing:3px">★★★★★</div>
-          <p style="font-style:italic;font-size:.92rem;line-height:1.55;color:#3a4a66;margin:5px 0 7px">“I was tired of poisoning my grandchildren and my pets every time they came over. Once I saw what was in the cabinet under my sink, I could not unsee it. Now I do not have to worry.”</p>
-          <div style="font-size:.76rem;font-weight:700;color:#6b5a3a">Phyllis R. · Grandmother · Ohio</div>
+          <p style="font-style:italic;font-size:.92rem;line-height:1.55;color:#eef3fa;margin:5px 0 7px">“I'm a grandma who just wanted to buy safer products for my grandkids when they visit. Shannon made it so easy. I wish I'd found this ten years ago — the quality is genuinely better than what I was buying at the store.”</p>
+          <div style="font-size:.76rem;font-weight:700;color:#9fb1cc">Phyllis R. · Grandmother · Ohio</div>
         </div>
         <div style="border-left:3px solid #C9A227;padding:2px 0 2px 14px">
           <div style="color:#C9A227;font-size:.78rem;letter-spacing:3px">★★★★★</div>
-          <p style="font-style:italic;font-size:.92rem;line-height:1.55;color:#3a4a66;margin:5px 0 7px">“My kids' asthma went away. We got them off their inhalers. I had no idea the air freshener and the dryer sheets were the trigger.”</p>
-          <div style="font-size:.76rem;font-weight:700;color:#6b5a3a">Sarah K. · Mom of 3 · Texas</div>
+          <p style="font-style:italic;font-size:.92rem;line-height:1.55;color:#eef3fa;margin:5px 0 7px">“I switched our whole cleaning routine in one order. My kids notice a difference — the house smells clean, not chemical.”</p>
+          <div style="font-size:.76rem;font-weight:700;color:#9fb1cc">Jennifer T. · Mom of 3 · Alberta</div>
         </div>
       </div>
-      <button onclick="openStories()" style="margin-top:15px;width:100%;background:#C8102E;border:none;color:#fff;font-weight:900;font-size:1.02rem;letter-spacing:.02em;padding:14px 18px;border-radius:50px;cursor:pointer;font-family:inherit;box-shadow:0 6px 14px -4px rgba(200,16,46,.45)">📖 Read 12 More Stories →</button>
-      <p style="font-size:.66rem;color:#7a8a9a;margin-top:10px;line-height:1.4;font-style:italic">Stories shared with permission. Individual results. Switching products is not a substitute for medical advice.</p>
+      <button onclick="openStories()" style="margin-top:13px;background:none;border:none;color:#C9A227;font-weight:800;font-size:.84rem;cursor:pointer;font-family:inherit;text-decoration:underline">+ Read 12 more stories →</button>
     </div>
-    <div class="fc" id="finalCta">
-      <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
-      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 20px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif">
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px">And the cost is real. The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:0">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them. For free.</p>
-      </div>
-      <div style="text-align:center;margin-bottom:14px">
-        <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#C8102E !important;margin-bottom:4px">Stop guessing.</div>
-        <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#37c79a !important">Start swapping.</div>
-      </div>
-      <button class="door door-tour" style="width:100%;font-size:1.04rem;padding:18px 20px;margin-bottom:18px;background:linear-gradient(180deg,#FFA41C,#E47911);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 10px 28px -8px rgba(228,121,17,.55);font-family:inherit" onclick="document.getElementById('bookingEmbed').scrollIntoView({behavior:'smooth',block:'start'})">📅 Book my free shopping audit →</button>
-      <p style="text-align:center;font-size:.84rem;color:#fafdff;margin-bottom:14px;line-height:1.5">15 minutes. One on one. No pitch. We map your house and pick your first 3 swaps together.</p>
-      <div id="bookingEmbed" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:6px">
-        <iframe src="https://link.switchtoamerica.com/widget/bookings/maketheswtch" style="width:100%;min-height:720px;border:0;background:#fff" loading="lazy" title="Book your free shopping audit"></iframe>
+    <div class="fc" id="finalCta"><h2 id="fcH">Here's where to go next:</h2><p id="fcP">Pick whatever feels right — zero pressure.</p>
+      <div class="doors">
+        <button class="door door-green" onclick="openSwitchList()"><span class="door-t">📋 Text me my Switch List</span><span class="door-s">The clean swaps for exactly what you tapped — free</span></button>
+        <button class="door door-amber" onclick="openAudit()"><span class="door-t">📩 Email my full Home Audit</span><span class="door-s">Your complete room-by-room breakdown</span></button>
+        <button class="door door-red" onclick="window.open('https://join.switchtoamerica.com/shop','_blank')"><span class="door-t">🎁 Unlock my $100 store credit</span><span class="door-s">Start switching with $100 toward your first order</span></button>
+        <button class="door door-tour" onclick="window.open('https://link.switchtoamerica.com/widget/bookings/maketheswtch','_blank')"><span class="door-t">👋 Walk me through it</span><span class="door-s">10 min with Shannon — set up your account together</span></button>
       </div>
       <div id="switchListPanel" class="sl-panel" style="display:none"></div>
       <div id="auditPanel" class="sl-panel" style="display:none"></div>
@@ -1341,7 +1057,7 @@ let activeSteps = [];
 
 // ══ BRAND SCORING LOOKUP ══
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
-// STA product names + safer-brand allowlist, always score 0 (clean formulations)
+// STA / Melaleuca product names — always score 0 (clean formulations)
 const STA_CLEAN = [
   'switch to america','melaleuca',
   // green (clean) — STA products + whole-food cleans Shannon designates green
@@ -1457,119 +1173,80 @@ const BRAND_DB = {
 // ── Change #3: named-product findings — ingredient + harm + source ──
 // Factual, sourced-style associations. Phrased as "linked to / classified / flagged".
 const TOX_DB={
- 'dawn powerwash':{n:'Dawn Powerwash Spray',i:'1,4-dioxane, phthalates, methylisothiazolinone',h:'1,4-dioxane is on the EPA likely-cause-cancer list. Phthalates lower IQ in kids and disrupt thyroid hormones. Methylisothiazolinone damages nerve cells.'},
- 'vegetable / canola':{n:'Vegetable / Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
- 'vegetable':{n:'Vegetable / Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
- 'canola':{n:'Canola Oil',i:'Hexane residue, glyphosate, heat-damaged seed oils',h:'Hexane is a federal hazardous air pollutant. Glyphosate is on IARC probable-cause-cancer list. High heat turns these oils into compounds that damage DNA.'},
- // _src: EPA TSCA 1,4-dioxane risk eval (nov 2024); As You Sow P&G settlement 2013; CA Prop 65 list
- 'dawn':{n:'Dawn Ultra Dish Soap',i:'1,4-dioxane, methylisothiazolinone, synthetic fragrance',h:'1,4-dioxane is on the EPA likely-cause-cancer list. It hides inside the bottle because it is a manufacturing byproduct and never appears on the label. Methylisothiazolinone damages nerve cells and burns the skin.'},
- // _src: SkinSAFE Palmolive Ultra ingredient panel; CIR methylisothiazolinone review; EU Cosmetics Regulation Annex V restriction
- 'palmolive':{n:'Palmolive Dish Liquid',i:'Methylisothiazolinone, formaldehyde, synthetic fragrance',h:'Formaldehyde causes cancer. The EU banned methylisothiazolinone from leave-on products because it burns skin and triggers lifelong allergies. The fragrance is a black box of dozens of chemicals the company is allowed to hide.'},
- // _src: NY 1,4-dioxane law (1ppm cap, Jan 2024); EPA TSCA 1,4-dioxane risk eval; P&G reformulation announcement
- 'cascade':{n:'Cascade Platinum Pods',i:'1,4-dioxane, synthetic fragrance, optical brighteners',h:'1,4-dioxane is on the EPA likely-cause-cancer list and damages the liver and kidneys. New York banned cleaning products with more than 1 part per million because it kept showing up in tap water. The brighteners stay on your plates and feed into your food.'},
- 'finish':{n:'Finish Dishwasher Pods',i:'Subtilisin enzymes, synthetic fragrance, sodium polyacrylate',h:'The enzymes are a known cause of asthma in adults who breathe the dust day after day. The fragrance can damage the lungs. Residue stays on the plates your kids eat off.'},
- // _src: J Allergy Clin Immunol Pract 2021 multicenter QAC asthma cohort; Hrubec et al rodent neural defect studies; CDC NHANES QAC bioaccumulation 2023
- 'lysol':{n:'Lysol Disinfectant Spray',i:'Quaternary ammonium compounds (quats), synthetic fragrance, ethanol',h:'Quats damage the lungs and cause asthma in cleaners who use them every day. Animal studies link quats to birth defects and infertility. They build up inside your body and your kids breathe the spray straight into their lungs.'},
- // _src: IARC chloroform Group 2B; EPA disinfection byproducts; ATSDR ToxProfile chloroform
- 'clorox':{n:'Clorox Bleach',i:'Sodium hypochlorite, chloroform fumes, synthetic fragrance',h:'When bleach hits any organic matter (food, hair, dust) it releases chloroform gas. Chloroform is on the cancer-causing chemicals list and damages the liver, kidneys, and nervous system. Every spray burns the lungs of the person cleaning and any kid in the room.'},
- // _src: CA Prop 65 acetaldehyde listing; NRDC 2007 air freshener report; EPA acetaldehyde IRIS probable carcinogen
- 'febreze':{n:'Febreze Air Effects',i:'Acetaldehyde, BHT, undisclosed "fragrance"',h:'Acetaldehyde causes cancer and is on California Prop 65. BHT damages nerve cells and messes with hormones. The word "fragrance" hides dozens of chemicals the company is never required to name, and you spray them straight onto your couch where your baby naps.'},
- // _src: NRDC 2007 air freshener phthalate testing; CHAMACOS phthalate-asthma cohort; CHE phthalate hormone disruption review
- 'glade':{n:'Glade Plug-In',i:'Phthalates, synthetic musks, formaldehyde',h:'Phthalates lower testosterone, shrink baby boys\' genitals in the womb, and cause early puberty in girls. Formaldehyde causes cancer. The plug-in pumps these into your child\'s bedroom 24 hours a day while they sleep.'},
- // _src: NRDC 2007 air freshener testing; Steinemann 2016 fragranced consumer products survey; ATSDR benzene ToxProfile
- 'air wick':{n:'Air Wick Freshener',i:'Phthalates, benzene derivatives, synthetic fragrance',h:'Phthalates cause hormone problems, infertility, and birth defects. Benzene causes leukemia. The label says "fresh linen" but you are spraying a chemical cocktail your kids breathe in every minute they are home.'},
- // _src: EPA indoor air quality candle study; SC State Univ paraffin combustion study 2009; ATSDR ToxProfile benzene/toluene
- 'yankee':{n:'Yankee Candle',i:'Paraffin soot, benzene, toluene, synthetic fragrance',h:'Paraffin is a petroleum waste product. Burning it releases the same fumes as a diesel engine, including benzene which causes leukemia. The fragrance load triggers asthma attacks in kids and damages the lungs over time.'},
- // _src: EPA paraffin candle emissions; Steinemann fragranced product VOC study; OEHHA Prop 65 benzene
- 'bath & body':{n:'Bath & Body Works Candle',i:'Paraffin soot, benzene, synthetic fragrance',h:'Paraffin wax is a leftover from making gasoline. Burning it releases benzene, which causes leukemia, and dozens of fragrance chemicals that damage the lungs. One candle in a closed bedroom hits kids harder than adults.'},
- // _src: NY 1,4-dioxane law impact 2024; As You Sow Tide settlement 2013; P&G reformulation
- 'tide':{n:'Tide Pods (Original)',i:'1,4-dioxane, optical brighteners, synthetic fragrance',h:'1,4-dioxane is on the EPA likely-cause-cancer list. New York forced Tide to lower the amount because it kept showing up in drinking water. Optical brighteners coat your kids\' pajamas and stay on their skin all night.'},
- 'gain':{n:'Gain Detergent',i:'Synthetic fragrance, optical brighteners, dyes',h:'The fragrance is a hidden mix of dozens of chemicals linked to asthma, headaches, and hormone problems. The brighteners stay on the fabric and rub off on your kids\' skin every time they get dressed.'},
- 'persil':{n:'Persil Detergent',i:'Enzymes, optical brighteners, synthetic fragrance',h:'The enzymes are a known cause of asthma in workers who breathe the dust. The fragrance damages the lungs and triggers eczema in babies. Residue stays in the fibers and touches your skin all day.'},
- 'dreft':{n:'Dreft Baby Detergent',i:'Synthetic fragrance, optical brighteners, preservatives',h:'The "baby fresh" smell is a chemical cocktail the company hides under the word "fragrance." The brighteners stay on baby pajamas and burn delicate skin. Marketing this for newborns is the cruelest trick on the laundry aisle.'},
- // _src: J Allergy Clin Immunol Pract 2021 QAC asthma cohort; Hrubec rodent fertility studies
- 'bounce':{n:'Bounce Dryer Sheets',i:'Cancer-linked fragrance, lung-damaging cleaning chemicals, hormone disruptors',h:'These sheets coat every piece of fabric in your house with chemicals tied to asthma, hormone disruption, and cancer. The "fresh scent" hides over 100 chemicals the company is not required to list. The dryer vent blows them straight outside, so the neighborhood breathes them too.'},
- // _src: ATSDR Quat ToxProfile; Steinemann 2016 dryer-vent emissions survey; J Allergy Clin Immunol Pract 2021 QAC asthma cohort
- 'snuggle':{n:'Snuggle Dryer Sheets',i:'Cancer-linked fragrance, lung-damaging cleaning chemicals, hormone disruptors',h:'These sheets coat your kids\' clothes with chemicals tied to asthma, hormone disruption, and cancer. The chemicals stay on the fabric all day, against their skin and in their lungs. The "fresh scent" is dozens of chemicals you cannot see.'},
- // _src: ATSDR Quat ToxProfile; Steinemann 2016 fabric softener emissions survey; EPA Indoor Air Quality VOC guidance
- 'herbal essences':{n:'Herbal Essences Shampoo',i:'Hair-loss chemicals, formaldehyde-releasing preservatives, hormone disruptors',h:'The "herbal" name on the bottle is marketing. Inside is the same chemical mix tied to thinning hair, thyroid problems, and cancer. Most women spend hundreds of dollars on hair products that are quietly making their hair worse.'},
- 'downy':{n:'Downy Fabric Softener',i:'Quaternary ammonium compounds, synthetic fragrance, dyes',h:'Quats damage the lungs and cause asthma in regular users. They coat your kids\' clothes and stay on their skin against their chest, where they breathe the fumes all day. Animal studies tie quats to infertility and birth defects.'},
- 'oxiclean':{n:'OxiClean Stain Remover',i:'Sodium percarbonate, synthetic fragrance, dyes',h:'Burns the skin and the eyes. The fragrance is a chemical mix that damages the lungs and triggers asthma. Residue stays on the fabric and touches your kids\' skin.'},
- 'shout':{n:'Shout Stain Remover',i:'Solvents, synthetic fragrance, surfactants',h:'The solvents damage the brain and the liver. The fragrance burns the skin and damages the lungs. Spraying it indoors fills the air with chemicals your kids breathe in.'},
- // _src: DailyMed pyrithione zinc OTC monograph; FDA fragrance allergen guidance; CIR fragrance safety review
- 'head & shoulders':{n:'Head & Shoulders',i:'Pesticide (pyrithione zinc), allergy-triggering preservatives, hormone disruptors',h:'The active ingredient is registered as a pesticide. Animal studies link it to birth defects. The preservatives burn the scalp and trigger allergies that never go away. People use this thinking it fixes their scalp, when it is slowly making it worse.'},
- // _src: classaction.org DMDM hair-loss MDL; FDA formaldehyde-releaser guidance; NTP formaldehyde Report on Carcinogens
- 'pantene':{n:'Pantene Shampoo',i:'Hair-loss chemicals, formaldehyde-releasing preservatives, hormone disruptors',h:'Pantene is named in active class-action lawsuits for scalp burns and women losing their hair in clumps. The same chemicals are tied to thyroid problems and cancer. Most women buy more product trying to fix the problem, not knowing the shampoo is the problem.'},
- // _src: TopClassActions Tresemme MDL; classaction.org DMDM formaldehyde page; Unilever 2021 reformulation announcement
- 'tresemme':{n:"TRESemme",i:'DMDM hydantoin (releases formaldehyde), synthetic fragrance, sulfates',h:'DMDM hydantoin releases formaldehyde, which causes cancer, slowly onto your scalp. Two women sued Unilever after their hair fell out in patches and their scalp burned. Unilever quietly removed it in 2022 but older bottles are still on shelves.'},
- 'dove':{n:'Dove (soap / wash)',i:'Synthetic fragrance, methylisothiazolinone, EDTA',h:'The EU restricted methylisothiazolinone because it burns skin and causes lifelong allergies. The fragrance hides dozens of unlabeled chemicals. "Gentle" is a marketing word, not a chemistry word.'},
- // _src: FDA recall Old Spice/Secret Nov 2021 (benzene); ATSDR benzene ToxProfile; Valisure benzene petition
- 'old spice':{n:'Old Spice',i:'Benzene (per FDA recall), aluminum, synthetic fragrance',h:'In 2021 the FDA pulled Old Spice spray off shelves because it tested with benzene levels nine times the safety limit. Benzene causes leukemia. Aluminum gets absorbed under the arm right next to breast tissue.'},
- // _src: FDA recall Old Spice/Secret Nov 2021 (benzene); ATSDR aluminum ToxProfile; CDC NHANES aluminum biomonitoring
- 'secret':{n:'Secret Antiperspirant',i:'Benzene (per FDA recall), aluminum, synthetic fragrance',h:'In 2021 the FDA pulled Secret spray off shelves because it tested with benzene levels nine times the safety limit. Benzene causes leukemia. Aluminum gets absorbed under the arm right next to breast tissue, where it has been found in tumors.'},
- // _src: FDA color additive list Red 40 / Yellow 5; California OEHHA report on synthetic dyes Apr 2021; CSPI petition on food dyes
- 'crest':{n:'Crest Toothpaste',i:'Sodium lauryl sulfate, titanium dioxide, Red 40, Yellow 5',h:'Red 40 and Yellow 5 cause behavior problems and hyperactivity in kids (California state report, 2021). Titanium dioxide is banned in food across the EU because it can damage DNA. Your kids swallow some of this paste every morning.'},
- // _src: FDA color additive list; California OEHHA synthetic dyes report 2021; classaction.org artificial dye hyperactivity
- 'colgate':{n:'Colgate Toothpaste',i:'Sodium lauryl sulfate, titanium dioxide, Red 40, artificial flavors',h:'Red 40 causes behavior problems and hyperactivity in kids (California state report, 2021). Titanium dioxide is banned from food in the EU because it can damage DNA. SLS burns the mouth and triggers canker sores.'},
- // _src: Nature Sci Rep 2025 paraben breast cancer cross-sectional; CIR phenoxyethanol review; NIH PMC paraben endocrine review
- 'cerave':{n:'CeraVe Lotion',i:'Parabens, phenoxyethanol, synthetic fragrance',h:'Parabens mess with estrogen and have been found inside breast cancer tumors. Phenoxyethanol can damage the nervous system in babies. You rub it onto your kids\' skin every day, and the skin absorbs it straight into the bloodstream.'},
- // _src: EU Cosmetics Regulation Annex II mineral oil; Safe Cosmetics petrolatum dossier; IARC untreated mineral oil Group 1
- 'vaseline':{n:'Vaseline Lotion',i:'Petrolatum, mineral oil, synthetic fragrance',h:'Petrolatum is a leftover from making gasoline. The EU bans it in cosmetics unless the maker can prove it is fully cleaned, and the US has no such rule. The leftover compounds (PAHs) cause cancer.'},
- 'crisco':{n:'Crisco Shortening',i:'Industrial soybean oil, hexane residue, mono and diglycerides',h:'Hexane is a brain-damaging solvent used to squeeze the oil out of the beans. Traces stay in the can. The oil itself is heated and pressed until it oxidizes, which feeds inflammation in your body day after day.'},
- 'wesson':{n:'Wesson Vegetable Oil',i:'Industrial soybean oil, hexane residue, glyphosate',h:'Hexane is a federal hazardous air pollutant that damages nerve cells. Traces stay in the bottle. Glyphosate is on the cancer-causing chemicals list and shows up in conventional soybean oil from sprayed crops.'},
- 'mazola':{n:'Mazola Corn Oil',i:'Industrial corn oil, hexane residue, glyphosate',h:'Hexane is a brain-damaging solvent that leaves traces in the oil. Glyphosate (Roundup) is on the cancer-causing chemicals list and shows up in conventional corn. High heat damages the oil even more, and the broken-down compounds feed cancer cell growth in studies.'},
- // _src: FDA SDS PAM cooking spray; FDA propellant approvals; Weston A Price Crisco history; Quora hexane extraction
- 'pam':{n:'PAM Cooking Spray',i:'Industrial seed oils, hexane residue, butane and propane propellants',h:'Hexane is a brain-damaging solvent used to extract the oil. Butane and propane are the same gases used in lighter fluid, and you spray them straight onto food at high heat. The oil oxidizes the moment it hits the pan and feeds inflammation in the body.'},
- // _src: USDA Pesticide Data Program coffee residues; Aflatoxin B1 IARC Group 1; CA Prop 65 acrylamide
- 'folgers':{n:'Folgers Coffee',i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin grows on conventional beans during storage and is on the cancer-causing chemicals list at the highest level (Group 1, same as tobacco). Glyphosate (Roundup) is sprayed on the fields. You drink this every morning, year after year.'},
- // _src: USDA Pesticide Data Program; IARC aflatoxin Group 1; Kraft Heinz product page
- 'maxwell house':{n:'Maxwell House Coffee',i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin grows on conventional beans during storage and is on the cancer-causing chemicals list at the highest level. Glyphosate (Roundup) is sprayed on the fields where the beans grow. You drink this every morning, year after year.'},
- // _src: CERT v Starbucks Prop 65 case; OEHHA 2019 coffee regulation; Mountain Cabin clean coffee comparison
- 'starbucks':{n:'Starbucks Coffee',i:'Acrylamide, glyphosate residue, dark-roast oxidation byproducts',h:'Acrylamide forms when beans are roasted dark and is on the cancer-causing chemicals list. California sued Starbucks over it. Conventional beans also carry glyphosate (Roundup), which is on the same list. The dark roast feels strong because the bean is burned, not because the bean is good.'},
- // _src: Centrum label panel (Pfizer); CA OEHHA synthetic dyes report Apr 2021; ConsumerLab Centrum filler analysis
- 'nature made':{n:'Nature Made Vitamins',i:'Synthetic folic acid, titanium dioxide, magnesium stearate, artificial dyes',h:'Synthetic folic acid sits in the bloodstream and is linked to higher cancer rates in adults who can\'t process it (1 in 3 women). Titanium dioxide is banned in food across the EU because it can damage DNA. The dyes cause behavior problems in kids.'},
- // _src: J&J 2013 reformulation announcement; classaction.org DMDM hair-loss MDL; FDA formaldehyde-releaser guidance
- "johnson's":{n:"Johnson's Baby Wash",i:'Formaldehyde-releasing preservatives, synthetic fragrance, 1,4-dioxane',h:'Formaldehyde causes cancer. 1,4-dioxane is on the EPA likely-cause-cancer list. After years of pressure J&J reformulated some products, but older bottles are still on shelves and the fragrance still hides dozens of chemicals that burn baby skin.'},
- // _src: Clean Label Project 2018 + 2024 protein powder heavy metals report; IARC carrageenan toxicology; FDA undeclared whey contamination
- 'optimum nutrition':{n:'Optimum Nutrition Gold Standard Whey',i:'Lead, cadmium, carrageenan, artificial flavors',h:'Independent lab testing (Clean Label Project, 2024) found lead and cadmium inside the scoop. Lead damages the developing brain in kids. Cadmium causes cancer. Carrageenan is also on the cancer-causing chemicals list and damages the gut lining.'},
- // _src: Tobinick et al carrageenan / colitis studies; IARC carrageenan review; Premier Protein label
- 'premier protein':{n:'Premier Protein',i:'Carrageenan, artificial flavors, industrial soybean oil',h:'Carrageenan is on the cancer-causing chemicals list. It damages the gut lining and feeds inflammation, day after day, year after year. The soybean oil is sprayed with glyphosate and oxidized in the can.'},
- // _src: Consumer Reports 2010 + 2024 protein powder heavy metals; Clean Label Project 2024; ATSDR ToxProfiles lead arsenic cadmium
- 'muscle milk':{n:'Muscle Milk Protein Powder',i:'Lead, arsenic, cadmium, carrageenan',h:'Lead, arsenic, and cadmium are inside the scoop. Lead damages the developing brain in kids and never leaves the body. Arsenic and cadmium cause cancer. Carrageenan is also on the cancer-causing chemicals list. Three poisons in one shake.'},
- // _src: Centrum Pfizer label panel; CSPI false advertising letter 2010; CA OEHHA synthetic dyes Apr 2021; J&J talc litigation MDL
- 'centrum':{n:'Centrum Multivitamin',i:'Synthetic folic acid, talc, artificial dyes (Red 40, Yellow 6), hydrogenated oil',h:'The synthetic vitamins the body cannot use. The dyes are linked to behavior problems in kids and to cancer. Talc is on the same list as the J&J baby powder that 67,000 women sued over ovarian cancer. You swallow this every morning.'},
+ 'dawn powerwash':{n:'Dawn Powerwash Spray',i:'Alcohol ethoxylates + fragrance',h:'Respiratory & skin irritants'},
+ 'dawn':{n:'Dawn Ultra Dish Soap',i:'1,4-Dioxane + SLES',h:'Likely human carcinogen — CA Prop 65'},
+ 'palmolive':{n:'Palmolive Dish Liquid',i:'Synthetic fragrance + dyes',h:'Skin irritants & allergens'},
+ 'cascade':{n:'Cascade Platinum Pods',i:'Synthetic fragrance + brighteners',h:'Endocrine disruptors that bioaccumulate'},
+ 'finish':{n:'Finish Dishwasher Pods',i:'Subtilisin enzymes + fragrance',h:'Asthma trigger'},
+ 'lysol':{n:'Lysol Disinfectant Spray',i:'Quaternary ammonium compounds',h:'Linked to asthma & respiratory inflammation'},
+ 'clorox':{n:'Clorox Bleach',i:'Sodium hypochlorite + fragrance',h:'Releases chloroform fumes — lung irritant'},
+ 'febreze':{n:'Febreze Air Effects',i:'Undisclosed "fragrance" + acetaldehyde',h:'Acetaldehyde — CA Prop 65 carcinogen'},
+ 'glade':{n:'Glade Plug-In',i:'Phthalates + synthetic musks',h:'Hormone disruptors'},
+ 'air wick':{n:'Air Wick Freshener',i:'Phthalates + benzene compounds',h:'Endocrine disruptors, lung irritants'},
+ 'yankee':{n:'Yankee Candle',i:'Paraffin soot + synthetic fragrance',h:'Combustion byproducts — like diesel exhaust'},
+ 'bath & body':{n:'Bath & Body Works Candle',i:'Paraffin soot + fragrance',h:'Combustion byproducts — lung irritant'},
+ 'tide':{n:'Tide Pods (Original)',i:'Optical brighteners + fragrance',h:'Skin irritants'},
+ 'gain':{n:'Gain Detergent',i:'Synthetic fragrance + dyes',h:'Allergens & irritants'},
+ 'persil':{n:'Persil Detergent',i:'Enzymes + optical brighteners',h:'Skin & respiratory irritants'},
+ 'dreft':{n:'Dreft Baby Detergent',i:'Fragrance + optical brighteners',h:'Residue on baby skin — irritant'},
+ 'bounce':{n:'Bounce Dryer Sheets',i:'Quats + synthetic fragrance',h:'Coats fabric in VOCs — asthma trigger'},
+ 'downy':{n:'Downy Fabric Softener',i:'Quaternary ammonium + fragrance',h:'Respiratory irritant'},
+ 'oxiclean':{n:'OxiClean Stain Remover',i:'Sodium percarbonate + fragrance',h:'Eye & skin irritant'},
+ 'shout':{n:'Shout Stain Remover',i:'Solvents + synthetic fragrance',h:'Skin irritant & allergen'},
+ 'head & shoulders':{n:'Head & Shoulders',i:'Pyrithione zinc + fragrance',h:'Skin & eye irritant'},
+ 'pantene':{n:'Pantene Shampoo',i:'Sulfates + synthetic fragrance',h:'Strips skin barrier — allergen'},
+ 'tresemme':{n:'TRESemmé',i:'DMDM hydantoin (formaldehyde)',h:'Formaldehyde releaser — sensitizer'},
+ 'dove':{n:'Dove (soap / wash)',i:'Synthetic fragrance + EDTA',h:'Allergens'},
+ 'old spice':{n:'Old Spice',i:'Synthetic fragrance + aluminum',h:'Allergens; aluminum absorption'},
+ 'secret':{n:'Secret Antiperspirant',i:'Aluminum + fragrance',h:'Aluminum absorption — endocrine concern'},
+ 'crest':{n:'Crest Toothpaste',i:'SLS + artificial dyes',h:'Mouth irritant; synthetic colors'},
+ 'colgate':{n:'Colgate Toothpaste',i:'SLS + artificial sweeteners',h:'Mouth irritant'},
+ 'cerave':{n:'CeraVe Lotion',i:'Parabens + phenoxyethanol',h:'Preservatives — endocrine concern'},
+ 'vaseline':{n:'Vaseline Lotion',i:'Petrolatum (refining grade varies)',h:'Possible PAH contamination'},
+ 'crisco':{n:'Crisco Shortening',i:'Hydrogenated seed oils + hexane',h:'Inflammatory — linked to metabolic disease'},
+ 'wesson':{n:'Wesson Vegetable Oil',i:'Industrial seed oil + hexane residue',h:'Inflammatory — oxidized omega-6'},
+ 'mazola':{n:'Mazola Corn Oil',i:'Industrial seed oil + hexane residue',h:'Inflammatory — linked to metabolic disease'},
+ 'pam':{n:'PAM Cooking Spray',i:'Propellants + seed oils',h:'Oxidized fats; additive load'},
+ 'folgers':{n:'Folgers Coffee',i:'Pesticide residue + mycotoxin risk',h:'Conventional beans — contaminant load'},
+ 'maxwell house':{n:'Maxwell House Coffee',i:'Pesticide residue + mycotoxin risk',h:'Conventional beans — contaminant load'},
+ 'starbucks':{n:'Starbucks Coffee',i:'Dark-roast acrylamide + pesticides',h:'Acrylamide — CA Prop 65 listed'},
+ 'nature made':{n:'Nature Made Vitamins',i:'Synthetic folic acid + fillers',h:'Poor bioavailability — additive load'},
+ 'centrum':{n:'Centrum Multivitamin',i:'Synthetic folic acid + artificial colors',h:'Poor bioavailability; synthetic dyes'},
+ "johnson's":{n:"Johnson's Baby Wash",i:'Fragrance + formaldehyde releasers',h:'Sensitizer on infant skin'},
+ 'optimum nutrition':{n:'Optimum Nutrition Whey',i:'Sucralose + heavy-metal risk',h:'Artificial sweetener; reported metals'},
+ 'premier protein':{n:'Premier Protein',i:'Carrageenan + sucralose',h:'Gut irritant — inflammatory'},
 };
 const CAT_TOX={
- dish:{i:'Ethoxylated surfactants, synthetic fragrance, methylisothiazolinone',h:'Most dish soaps carry 1,4-dioxane, which is on the EPA likely-cause-cancer list. The fragrance hides dozens of chemicals that burn skin and damage the lungs.'},
- dishwasher:{i:'Enzymes, synthetic fragrance, optical brighteners',h:'The enzymes cause asthma in regular users. Residue stays on the plates your kids eat off, day after day.'},
- allpurpose:{i:'Quaternary ammonium compounds (quats), synthetic fragrance',h:'Quats damage the lungs and cause asthma. Animal studies link them to birth defects and infertility.'},
- coffee:{i:'Glyphosate residue, mycotoxins (aflatoxin), acrylamide',h:'Aflatoxin is on the cancer-causing chemicals list at the highest level (same as tobacco). Glyphosate is sprayed on conventional beans and ends up in the cup.'},
- supplements:{i:'Synthetic vitamins, titanium dioxide, artificial dyes, fillers',h:'Synthetic folic acid is linked to higher cancer rates in adults who cannot process it. Titanium dioxide is banned in food across the EU because it can damage DNA. The dyes cause behavior problems in kids.'},
- shampoo:{i:'Hair-loss chemicals, formaldehyde-releasing preservatives, hormone disruptors',h:'Major brands are named in class-action lawsuits for hair falling out and burning scalps. The same chemicals are tied to thyroid problems and cancer. Most women buy more product trying to fix the problem, not knowing the shampoo is the problem.'},
- bodywash:{i:'Synthetic fragrance, preservatives, sulfates',h:'The fragrance is a chemical mix that messes with hormones and triggers allergies. Sulfates burn the skin and dry out the skin barrier.'},
- toothpaste:{i:'Sodium lauryl sulfate, titanium dioxide, artificial dyes, artificial flavors',h:'Red 40 and Yellow 5 cause behavior problems in kids (California state report, 2021). Titanium dioxide is banned in food across the EU because it can damage DNA. Your kids swallow some of this every morning.'},
- deodorant:{i:'Aluminum, synthetic fragrance, sometimes benzene',h:'In 2021 the FDA pulled Old Spice and Secret sprays off shelves because of benzene, which causes leukemia. Aluminum gets absorbed under the arm right next to breast tissue.'},
- laundry:{i:'1,4-dioxane, optical brighteners, synthetic fragrance',h:'1,4-dioxane is on the EPA likely-cause-cancer list. New York banned cleaning products with more than 1 part per million because it kept showing up in drinking water. The brighteners coat your kids\' pajamas and stay on their skin all night.'},
- dryer:{i:'Cancer-linked fragrance, lung-damaging cleaning chemicals, hormone disruptors',h:'These sheets coat every piece of fabric in your house with chemicals tied to asthma, hormone disruption, and cancer. The "fresh scent" hides dozens of chemicals the company is not required to list.'},
- fabric:{i:'Cancer-linked fragrance, lung-damaging cleaning chemicals, hormone disruptors',h:'These products coat your kids\' clothes with chemicals tied to asthma, hormone disruption, and cancer. The chemicals stay on the fabric and against their skin all day, every day.'},
- bleach:{i:'Sodium hypochlorite, chloroform fumes, synthetic fragrance',h:'When bleach hits any organic matter it releases chloroform gas. Chloroform is on the cancer-causing chemicals list and damages the liver, kidneys, and nervous system.'},
- stain:{i:'Solvents, synthetic fragrance, surfactants',h:'The solvents damage the brain and the liver. The fragrance burns the skin and damages the lungs.'},
- babywash:{i:'Formaldehyde-releasing preservatives, synthetic fragrance, 1,4-dioxane',h:'Formaldehyde causes cancer. 1,4-dioxane is on the EPA likely-cause-cancer list. You wash your newborn in it every night.'},
- babylotion:{i:'Petrolatum, synthetic fragrance, parabens',h:'Petrolatum is a leftover from making gasoline. The EU bans it in cosmetics unless the maker proves it is fully cleaned, and the US has no such rule. Parabens mess with estrogen.'},
- babywipes:{i:'Synthetic fragrance, preservatives, phenoxyethanol',h:'Phenoxyethanol can damage the nervous system in babies. The fragrance triggers eczema and burns delicate skin.'},
- diaperash:{i:'Petrolatum, synthetic fragrance, parabens',h:'Petrolatum is a leftover from making gasoline. The leftover compounds (PAHs) cause cancer. Parabens mess with hormones.'},
- babypowder:{i:'Talc (with asbestos contamination risk)',h:'Talc is on the same cancer-causing chemicals list as the J&J baby powder that 67,000 women sued over ovarian cancer. Asbestos has been found in talc samples again and again.'},
- babylaundry:{i:'Synthetic fragrance, optical brighteners, dyes',h:'The brighteners stay on baby pajamas and burn delicate skin. The fragrance hides dozens of chemicals that trigger eczema and asthma.'},
- homeair:{i:'Phthalates, synthetic musks, formaldehyde',h:'Phthalates lower testosterone, shrink baby boys\' genitals in the womb, and cause early puberty in girls. Formaldehyde causes cancer. Plug-ins pump these into your child\'s bedroom 24 hours a day.'},
- makeup:{i:'Parabens, heavy metals (lead, cadmium), synthetic fragrance',h:'Parabens mess with estrogen and have been found inside breast cancer tumors. Lead and cadmium damage the brain and cause cancer. The skin absorbs them straight into the bloodstream.'},
- water:{i:'Chlorine byproducts, PFAS (forever chemicals), lead, microplastics',h:'PFAS are forever chemicals tied to cancer, infertility, and immune problems. They never leave the body. Chlorine byproducts cause bladder cancer in studies.'},
+ dish:{i:'Ethoxylated surfactants + fragrance',h:'Often contain 1,4-dioxane'},
+ dishwasher:{i:'Enzymes + fragrance + brighteners',h:'Asthma trigger; endocrine concern'},
+ allpurpose:{i:'Quats + synthetic fragrance',h:'Respiratory irritant — asthma link'},
+ coffee:{i:'Pesticide residue + mycotoxin risk',h:'Conventional sourcing — contaminant load'},
+ supplements:{i:'Synthetic vitamins + fillers / dyes',h:'Poor bioavailability — additive load'},
+ shampoo:{i:'Sulfates + synthetic fragrance',h:'Strips skin barrier — allergen'},
+ bodywash:{i:'Synthetic fragrance + preservatives',h:'Allergens'},
+ toothpaste:{i:'SLS + artificial colors / sweeteners',h:'Mouth irritant — additive load'},
+ deodorant:{i:'Aluminum + synthetic fragrance',h:'Aluminum absorption — endocrine concern'},
+ laundry:{i:'Optical brighteners + fragrance',h:'Skin irritant — stays in fabric'},
+ dryer:{i:'Quats + synthetic fragrance',h:'Coats fabric in VOCs — asthma trigger'},
+ fabric:{i:'Quaternary ammonium + fragrance',h:'Respiratory irritant'},
+ bleach:{i:'Sodium hypochlorite + fragrance',h:'Lung irritant — releases fumes'},
+ stain:{i:'Solvents + synthetic fragrance',h:'Skin & eye irritant'},
+ babywash:{i:'Fragrance + formaldehyde releasers',h:'Sensitizer on infant skin'},
+ babylotion:{i:'Fragrance + petrolatum',h:'Irritant on infant skin'},
+ babywipes:{i:'Fragrance + preservatives',h:'Sensitizer — contact dermatitis'},
+ diaperash:{i:'Petrolatum + fragrance',h:'Possible PAH contamination'},
+ babypowder:{i:'Talc (asbestos contamination risk)',h:'Talc — CA Prop 65 / litigation history'},
+ babylaundry:{i:'Fragrance + optical brighteners',h:'Residue on baby skin — irritant'},
+ homeair:{i:'Phthalates + synthetic musks',h:'Hormone disruptors'},
+ makeup:{i:'Parabens + heavy metals',h:'Endocrine disruptors'},
+ water:{i:'Chlorine byproducts + possible PFAS',h:'Disinfection byproducts — long-term risk'},
 };
 function findingDisplay(brand,cat,label){
   var key=(brand||'').toLowerCase().trim();
   var hit=TOX_DB[key];
   if(!hit){ for(var k in TOX_DB){ if(key && key.indexOf(k)>=0){ hit=TOX_DB[k]; break; } } }
   var ct=CAT_TOX[cat]||{i:'Synthetic additives + fragrance',h:'Flagged for concerning ingredients'};
-  return { name: (hit&&hit.n)?hit.n:(brand+(label?(', '+label):'')), ing: hit?hit.i:ct.i, harm: hit?hit.h:ct.h };
+  return { name: (hit&&hit.n)?hit.n:(brand+(label?(' — '+label):'')), ing: hit?hit.i:ct.i, harm: hit?hit.h:ct.h };
 }
 
 // Track unscored (empty) fields for report
@@ -1580,7 +1257,7 @@ function scoreBrand(text, cat, fieldLabel) {
     if(fieldLabel) unscoredFields.push(fieldLabel);
     return 0;
   }
-  // STA products always score 0 (clean formulations)
+  // STA / Melaleuca products always score 0 — clean formulations
   if(isSTA(text)) return 0;
   const t = text.toLowerCase().trim();
   const db = BRAND_DB[cat] || {};
@@ -1602,7 +1279,7 @@ const STEPS = [
    ]},
 
   // #4 — name capture AFTER the household question (less landing friction; they've already invested a tap)
-  {id:'yourname',room:'',icon:'👋',type:'name',q:'First, what should I call you?',sub:'So I can make your results personal.'},
+  {id:'yourname',room:'',icon:'👋',type:'name',q:'First — what should I call you?',sub:'So I can make your results personal.'},
 
 
   // Kitchen Page A — Chip-select cleaning products (Shannon's Page 4 design)
@@ -1766,40 +1443,11 @@ const STEPS = [
    ]},
 ];
 
-// AUDIT STEPS — 3 questions from booking-page-1212, sourced into scorecard's native flow
-const AUDIT_STEPS = [
-  {id:'audit_q1', type:'audit', subtype:'text',
-   q:"Before we score your home — what's the #1 product you most want to swap?",
-   sub:"Be specific. Laundry detergent? Kid shampoo? Makeup? The more specific, the more useful your score.",
-   placeholder:"e.g. The cleaning sprays under my kitchen sink — I have 3 toddlers crawling around and the labels scare me.",
-   minLen:5},
-  {id:'audit_q2', type:'audit', subtype:'choice',
-   q:"How much does your household spend on these everyday essentials per month?",
-   sub:"Cleaning supplies, laundry, shampoo, makeup, vitamins, snacks — everything you reorder month after month.",
-   options:[
-     {val:'lt60',    label:'Under $60',     sub:'Just me, minimal shopping'},
-     {val:'60_150',  label:'$60 – $150',    sub:'Small household'},
-     {val:'150_300', label:'$150 – $300',   sub:'Family of 2 to 4', most:true},
-     {val:'gt300',   label:'$300+',         sub:'Big family or premium brands'}
-   ]},
-  {id:'audit_q3', type:'audit', subtype:'choice',
-   q:"In your house, who decides what gets bought?",
-   sub:"No judgment — just helps us tailor your results.",
-   options:[
-     {val:'me',       label:'I do',                       sub:'My call, my house'},
-     {val:'together', label:'My partner and I together',  sub:'We talk about big purchases'},
-     {val:'partner',  label:'My partner does',            sub:"I'd loop them in"},
-     {val:'other',    label:'Someone else',               sub:'Mom, roommate, etc.'}
-   ]}
-];
-
 function buildActive(){
-  // Audit Q1/Q2/Q3 always come FIRST, then the room-by-room scorecard steps
-  const roomSteps = STEPS.filter(s => {
-    if(s.conditional==='baby') return hasBaby;
+  activeSteps = STEPS.filter(s => {
+    if(s.conditional==='baby') return hasBaby; // Only show for families with babies/toddlers
     return true;
   });
-  activeSteps = AUDIT_STEPS.concat(roomSteps).filter(s => s.type!=='soft'); // 2026-06-20 (Matt): kill mid-quiz save-your-spot interrupt
 }
 
 function showScreen(id){
@@ -1839,7 +1487,7 @@ const ROOM_QUOTES=[
   {q:"We thought our pitcher filter was enough. After we upgraded our water, even our coffee and cooking tasted different.", a:"Karen S. · Grandmother"},     /*6 water*/
   {q:"I burned candles and plug-ins constantly. Once I stopped, the stuffiness I always blamed on 'allergies' lifted within a week.", a:"Lisa H. · Mom of 2"}, /*7 home air*/
   {q:"I started looking for cleaner alternatives to the everyday stuff in my cabinet — and realized how many small swaps actually add up.", a:"Beth A. · Grandmother"}, /*8 meds/health*/
-  {q:"We changed what we brought into our house, and over time we noticed real differences.", a:"Anonymous · Switch member"}, /*9 intro*/
+  {q:"It started with one bottle under my sink and a question I couldn't stop asking: what's actually in this, and is it safe for my family?", a:"Shannon · Switch to America"}, /*9 intro*/
 ];
 // one fitted testimonial per step — the quote at the bottom must match that page's products
 const STEP_QUOTES={
@@ -1898,7 +1546,7 @@ const CARD_ICONS = {
   info:'<svg viewBox="0 0 24 24"><path d="M12 8v4M12 16h.01"/><circle cx="12" cy="12" r="9"/></svg>',
   eye:'<svg viewBox="0 0 24 24"><path d="M3 12s3-7 9-7 9 7 9 7-3 7-9 7-9-7-9-7z"/><circle cx="12" cy="12" r="2.5"/></svg>',
   check:'<svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>',
-  home:'',
+  home:'<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>',
   family:'<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
   baby:'<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>',
   default:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>',
@@ -1914,69 +1562,6 @@ function renderStep(){
   const cont = document.getElementById('btnNx');
   const prev = answers[step.id]||{};
   let h='';
-
-  // ── AUDIT STEPS (Q1 text, Q2/Q3 single-choice) — cream/navy native styling
-  if(step.type==='audit'){
-    if(cont){ cont.classList.remove('on'); cont.style.display=''; }
-    let body = '';
-    body += '<div class="q-eyebrow rise">About You · '+(stepIdx+1)+' of 3</div>';
-    body += '<h2 class="q-title rise">'+step.q+'</h2>';
-    if(step.sub) body += '<div class="q-sub rise">'+step.sub+'</div>';
-    if(step.subtype==='text'){
-      const v = (prev.text||'').replace(/"/g,'&quot;');
-      body += '<textarea id="auditTxt" class="q-input audit-textarea" placeholder="'+step.placeholder.replace(/"/g,'&quot;')+'" maxlength="600" style="width:100%;font-family:inherit;font-size:1.02rem;color:#0B2545;padding:16px 18px;border:2px solid #d4cdb8;border-radius:14px;background:#fff;resize:vertical;min-height:120px;outline:none;margin-top:18px;">'+v+'</textarea>';
-    } else if(step.subtype==='choice'){
-      body += '<div class="q-opts rise" style="margin-top:18px;display:grid;gap:12px;">';
-      step.options.forEach(function(opt){
-        const sel = (prev.val===opt.val) ? ' sel' : '';
-        const mostBadge = opt.most ? '<span style="position:absolute;top:-8px;right:14px;background:#C9A227;color:#0B2545;font-weight:900;font-size:.62rem;letter-spacing:.5px;padding:3px 8px;border-radius:50px;text-transform:uppercase;">Most common</span>' : '';
-        body += '<div class="q-opt'+sel+'" data-audit-val="'+opt.val+'" style="cursor:pointer;background:#fff;border:2px solid #d4cdb8;border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:14px;position:relative;">'
-             + mostBadge
-             + '<div class="osel" style="flex-shrink:0;width:22px;height:22px;border-radius:50%;border:2px solid #9aa6b8;background:#fff;"></div>'
-             + '<div><div class="ot" style="font-weight:700;color:#0B2545;font-size:1rem;">'+opt.label+'</div>'
-             + (opt.sub?'<div class="od" style="font-weight:500;color:rgba(11,37,69,.6);font-size:.85rem;margin-top:2px;">'+opt.sub+'</div>':'')
-             + '</div></div>';
-      });
-      body += '</div>';
-    }
-    m.innerHTML = body;
-    // Wire interactions
-    if(step.subtype==='text'){
-      const ta = document.getElementById('auditTxt');
-      ta.addEventListener('input', function(){
-        answers[step.id] = {text: ta.value.trim()};
-        updateContinueGate();
-      });
-      // Restore + gate on first render
-      answers[step.id] = answers[step.id] || {text: ta.value.trim()};
-      updateContinueGate();
-    } else if(step.subtype==='choice'){
-      m.querySelectorAll('[data-audit-val]').forEach(function(el){
-        el.addEventListener('click', function(){
-          m.querySelectorAll('[data-audit-val]').forEach(function(e){
-            e.classList.remove('sel');
-            e.style.borderColor='#d4cdb8';
-            e.style.background='#fff';
-            e.style.boxShadow='none';
-            const dot=e.querySelector('.osel'); if(dot){ dot.style.borderColor='#9aa6b8'; dot.style.background='#fff'; }
-          });
-          el.classList.add('sel');
-          el.style.borderColor='#C9A227';
-          el.style.background='#fff7e1';
-          el.style.boxShadow='0 0 0 1px #C9A227, 0 8px 24px -10px rgba(201,162,39,.5)';
-          const dot=el.querySelector('.osel'); if(dot){ dot.style.borderColor='#C8102E'; dot.style.background='radial-gradient(circle,#C8102E 0,#C8102E 45%,#fff 50%,#fff 100%)'; }
-          answers[step.id] = {val: el.getAttribute('data-audit-val')};
-          updateContinueGate();
-        });
-        // Restore visual selection if previously answered
-        if(prev.val && el.getAttribute('data-audit-val')===prev.val){
-          el.click();
-        }
-      });
-    }
-    return;
-  }
-
 
   // Show/hide Continue activation (starts off for single-select)
   if(cont){
@@ -2002,25 +1587,22 @@ function renderStep(){
     <span class="ping"></span><span class="ping ping2"></span>
     <div class="glow"></div><div class="ring"></div><div class="arc"></div>
     <div class="lens">
-      <!-- magnifying glass removed -->
+      <svg viewBox="0 0 24 24" stroke="var(--orange)" fill="none" stroke-width="2" width="38" height="38" style="filter:drop-shadow(0 0 6px rgba(227,179,65,.55))"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
       <span class="blip"></span>
     </div>
   </div>`;
 
   // Kicker badge
-  h+=`<div class="q-kicker rise">${step.room||"Let's continue"}${stepIdx>=0?'<span class="q-room-pct">'+Math.round(((stepIdx+1)/STEPS.length)*100)+'%</span>':''}</div>`;
+  h+=`<div class="q-kicker rise">${step.room||'Let\'s continue'}</div>`;
 
   // Question + sub
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.q}</h1>`;
-  if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
+  if(step.sub) h+=`<p style="font-size:14.5px;color:#aebbd0;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
 
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
     step.cards.forEach(card=>{
-      const prev2=(answers[step.id]||{})[card.id]||{brands:[],isNone:false};
-      const _selB = (prev2.brands && Array.isArray(prev2.brands)) ? prev2.brands : (prev2.brand ? [prev2.brand] : []);
-      const _otherVal = prev2.otherBrand || '';
-      const isOther = !!_otherVal && !prev2.isNone;
+      const prev2=(answers[step.id]||{})[card.id]||{brand:'',isNone:false};
       h+=`<div class="qcard rise">
         <div class="qcard-head">
           <span class="qcard-ic">${card.icon||''}</span>
@@ -2028,14 +1610,15 @@ function renderStep(){
         </div>
         <div class="chips-row" data-card="${card.id}" data-step="${step.id}" data-cat="${card.cat}">`;
       card.chips.forEach(chip=>{
-        const isSel = _selB.indexOf(chip)>=0 && !prev2.isNone;
+        const isSel = prev2.brand===chip && !prev2.isNone;
         const isSTA = isSTA_check(chip);
         h+=`<button class="brand-chip${isSel?' sel':''}" onclick="pickChip('${step.id}','${card.id}','${chip.replace(/'/g,"\\'")}','${card.cat}',this)">${chip}</button>`;
       });
+      const isOther = prev2.brand && !card.chips.includes(prev2.brand) && !prev2.isNone;
       h+=`<button class="brand-chip chip-other${isOther?' sel':''}" onclick="pickChipOther('${step.id}','${card.id}',this)">+ Other</button>
           <button class="brand-chip chip-none${prev2.isNone?' sel':''}" onclick="pickChipNone('${step.id}','${card.id}',this)">We don't use this</button>
         </div>
-        <input class="chip-other-input${isOther?' show':''}" id="co_${card.id}" placeholder="Type the brand…" value="${_otherVal.replace(/"/g,'&quot;')}" oninput="saveChipOther('${step.id}','${card.id}',this.value,'${card.cat}')"/>
+        <input class="chip-other-input${isOther?' show':''}" id="co_${card.id}" placeholder="Type the brand…" value="${isOther?prev2.brand:''}" oninput="saveChipOther('${step.id}','${card.id}',this.value,'${card.cat}')"/>
       </div>`;
     });
   }
@@ -2072,7 +1655,7 @@ function renderStep(){
     h+='</div>';
   }
   else if(step.type==='name'){
-    h+=`<div class="q-opts rise" style="margin-top:4px"><input id="nameInput" type="text" value="${(userName||'').replace(/"/g,'&quot;')}" placeholder="Type your first name…" autocomplete="given-name" oninput="userName=this.value.trim();var o=document.getElementById('oFN');if(o)o.value=userName;updateContinueGate();" style="width:100%;padding:16px;border-radius:14px;border:1.5px solid #C9A227;background:#fff;color:#0B2545;font-size:17px;font-family:inherit;outline:none;text-align:center"/></div>`;
+    h+=`<div class="q-opts rise" style="margin-top:4px"><input id="nameInput" type="text" value="${(userName||'').replace(/"/g,'&quot;')}" placeholder="Type your first name…" autocomplete="given-name" oninput="userName=this.value.trim();var o=document.getElementById('oFN');if(o)o.value=userName;updateContinueGate();" style="width:100%;padding:16px;border-radius:14px;border:1.5px solid rgba(227,179,65,.45);background:rgba(255,255,255,.08);color:#fff;font-size:17px;font-family:inherit;outline:none;text-align:center"/></div>`;
   }
   else if(step.type==='multi'){
     h+='<div class="q-opts rise">';
@@ -2125,24 +1708,19 @@ function peekHTML(idx){
 function saveBrandSingle(stepId, val){
   if(!answers[stepId]) answers[stepId]={};
   answers[stepId].brand = val;
-  updateRisk(); updateContinueGate();
+  updateRisk();
 }
 function saveBrandMulti(stepId, fieldId, val){
   if(!answers[stepId]) answers[stepId]={};
   answers[stepId][fieldId] = val;
-  updateRisk(); updateContinueGate();
+  updateRisk();
 }
 // #9 — is the current step actually answered? (gates the Continue button)
 function stepAnswered(step){
   if(!step) return true;
   var a=answers[step.id]||{};
-  if(step.type==='audit'){
-    if(step.subtype==='text'){ return !!(a.text && a.text.length >= (step.minLen||5)); }
-    if(step.subtype==='choice'){ return !!(a.val); }
-    return false;
-  }
   if(step.type==='name'){ return !!(userName&&userName.trim()); }
-  if(step.type==='chip_cards'&&step.cards){ return step.cards.some(function(c){ var s=a[c.id]||{}; return s.isNone || selBrands(s).length>0; }); }
+  if(step.type==='chip_cards'&&step.cards){ return step.cards.some(function(c){ var s=a[c.id]||{}; return s.isNone || (s.brand&&(''+s.brand).trim()); }); }
   if(step.type==='single'||step.type==='yn'||step.type==='multi'){ return Object.keys(a).some(function(k){ return a[k]; }); }
   if(step.type==='brand_single'){ return !!(a.brand&&(''+a.brand).trim()); }
   if(step.type==='brand_multi'&&step.fields){ return step.fields.some(function(f){ return a[f.id]&&(''+a[f.id]).trim(); }); }
@@ -2161,7 +1739,7 @@ function updateRisk(){
     if(s.type==='brand_single'){
       var b=answers[s.id].brand||''; if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++;
     } else if(s.type==='chip_cards'&&s.cards){
-      s.cards.forEach(card=>{ const sel=answers[s.id][card.id]||{}; if(sel.isNone) return; selBrands(sel).forEach(function(b){ if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++; }); });
+      s.cards.forEach(card=>{ const sel=answers[s.id][card.id]||{}; if(sel.isNone) return; if(isConcern(sel.brand||'')) count++; else if(isCleanBrand(sel.brand||'')) safe++; });
     } else if(s.type==='brand_multi' && s.fields){
       s.fields.forEach(f=>{ var b=answers[s.id][f.id]||''; if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++; });
     } else if(s.answers){
@@ -2192,7 +1770,30 @@ function updateRisk(){
 
 // ── Change #5: reactive house illustration ──
 // hazard 0 (clean, green, no smoke) → 1 (hazardous, red, smoking)
-function houseSVG(){ return ''; /* cartoon house killed per Shannon */ }
+function houseSVG(hazard){
+  hazard=Math.max(0,Math.min(1,hazard));
+  var glow = hazard<=.4?'#2FB58F':hazard<=.65?'#E8A317':'#E8172F';
+  var glowA = (0.10+hazard*0.42).toFixed(2);
+  var win = hazard<=.4?'#bfeee2':hazard<=.65?'#ffe6b0':'#ff8a8a';
+  var roof = hazard<=.4?'#3f7d6b':hazard<=.65?'#b07a2c':'#9c3322';
+  var plumes = hazard>=.66?3:hazard>=.4?2:hazard>=.16?1:0;
+  var smoke='';
+  for(var i=0;i<plumes;i++){
+    var op=(0.3+hazard*0.45).toFixed(2);
+    smoke+='<circle class="hs-smoke" style="animation-delay:'+(i*0.6)+'s" cx="'+(79+(i-1)*4)+'" cy="26" r="'+(4.5+i*1.8)+'" fill="#aab4c0" opacity="'+op+'"/>';
+  }
+  return '<svg viewBox="0 0 120 112" class="hs-house" aria-hidden="true">'+
+    '<ellipse cx="60" cy="66" rx="54" ry="42" fill="'+glow+'" opacity="'+glowA+'"/>'+
+    smoke+
+    '<rect x="76" y="30" width="9" height="20" rx="1" fill="#6f4a2a"/>'+
+    '<path d="M22 58 L60 26 L98 58 Z" fill="'+roof+'"/>'+
+    '<rect x="34" y="58" width="52" height="42" rx="2" fill="#e7d9bf"/>'+
+    '<rect x="53" y="76" width="14" height="24" rx="1" fill="#6f4a2a"/>'+
+    '<circle cx="64" cy="88" r="1.3" fill="#e7d9bf"/>'+
+    '<rect x="39" y="64" width="12" height="12" rx="1.5" fill="'+win+'"/>'+
+    '<rect x="69" y="64" width="12" height="12" rx="1.5" fill="'+win+'"/>'+
+    '</svg>';
+}
 function renderQuizHouse(){
   var el=document.getElementById('quizHouse'); if(!el) return;
   el.innerHTML=houseSVG(Math.min(1,(riskScore||0)/8));
@@ -2264,7 +1865,7 @@ function saveSpot(){
   panel.innerHTML='<div style="font-size:.86rem;font-weight:700;color:#fff;margin-bottom:8px">📱 We\'ll text you the link to finish when you\'re ready.</div>'+
     '<input id="ssPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:11px;border-radius:10px;border:1.5px solid rgba(255,153,0,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/>'+
     '<button onclick="sendSavedSpot()" style="width:100%;min-height:46px;margin-top:8px;padding:12px;border:none;border-radius:10px;background:#FF9900;color:#15233a;font-weight:800;font-size:15px;cursor:pointer">Text me my link →</button>'+
-    '<div style="font-size:.62rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">One text with your link. Reply STOP anytime.</div>';
+    '<div style="font-size:.62rem;color:rgba(255,255,255,.45);margin-top:6px;text-align:center;line-height:1.4">One text with your link. Reply STOP anytime.</div>';
   panel.style.display='block'; panel.scrollIntoView({block:'center'});
 }
 function sendSavedSpot(){
@@ -2283,9 +1884,9 @@ function maybeOfferResume(){
   var b=document.createElement('div');
   b.style.cssText='background:rgba(31,138,112,.14);border:1px solid rgba(55,199,154,.4);border-radius:14px;padding:14px;margin-bottom:14px;text-align:center';
   b.innerHTML='<div style="font-size:.92rem;font-weight:800;color:#eafff7">👋 Welcome back'+(p.u?(', '+p.u):'')+'!</div>'+
-    '<div style="font-size:.8rem;color:#c0cee0;margin:4px 0 10px">You were partway through your home scan. Pick up where you left off?</div>'+
+    '<div style="font-size:.8rem;color:rgba(255,255,255,.7);margin:4px 0 10px">You were partway through your home scan. Pick up where you left off?</div>'+
     '<button onclick="resumeProgress()" style="background:#1F8A70;color:#fff;border:none;border-radius:10px;padding:11px 18px;font-weight:800;font-size:.9rem;cursor:pointer;margin-right:6px">Resume →</button>'+
-    '<button id="freshBtn" style="background:transparent;color:#fafdff;border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:11px 16px;font-weight:700;font-size:.9rem;cursor:pointer">Start fresh</button>';
+    '<button id="freshBtn" style="background:transparent;color:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:11px 16px;font-weight:700;font-size:.9rem;cursor:pointer">Start fresh</button>';
   inner.insertBefore(b, inner.firstChild);
   var fb=document.getElementById('freshBtn'); if(fb) fb.onclick=function(){ clearProgress(); if(b.parentNode) b.parentNode.removeChild(b); };
 }
@@ -2352,7 +1953,7 @@ function commFmt(n){ return (n||0).toLocaleString(); }
 function communityText(){
   if(!COMM_STATS) return null;
   var m=COMM_STATS.month||0, tot=COMM_STATS.total||0;
-  if(tot<500) return null; // first-wave framing removed per Shannon
+  if(tot<500) return '🌱 You\'re part of the first wave of families taking the Toxic Scorecard.'; // soft framing while numbers are small
   return "👥 You're family #"+commFmt(m)+" to take this this month — joining "+commFmt(tot)+" families since launch.";
 }
 function renderCommunityStats(){
@@ -2367,7 +1968,7 @@ try{ var _c=getParam('c'); fetch(SERVER+'/scan-visit?r='+(getParam('r')==='1'?'1
 // ── Chip-card interaction handlers ──────────────────────────────────────────
 function isSTA_check(text){ return isSTA(text); }
 
-// change #11 — brand TIERS: green = STA safer swaps ONLY; amber = "cleaner-ish but still off-the-shelf"; red = conventional/toxic
+// change #11 — brand TIERS: green = STA/Melaleuca safer swaps ONLY; amber = "cleaner-ish but still off-the-shelf"; red = conventional/toxic
 const AMBER_BRANDS = new Set(['branch basics','mrs. meyer','mrs. meyers',"mrs. meyer's",'seventh generation','method','native','attitude','force of nature',"molly's suds",'truly free','ecos','better life','aspen clean','dr. bronner',"dr. bronner's",'organic coffee','truvani','brand from naturopath','acure','weleda',"tom's",'toms','hello','babyganics']);
 function brandTier(brand){
   if(!brand) return 'none';
@@ -2378,31 +1979,22 @@ function brandTier(brand){
 function isToxicBrand(brand){ return brandTier(brand)==='red'; }
 function isCleanBrand(brand){ return brandTier(brand)==='green'; }
 function isConcern(brand){ var t=brandTier(brand); return t==='red'||t==='amber'; }
-// 2026-06-20 (Matt): chip cards are now multi-select. Each card may have many brands tapped + an optional "Other" free-text.
-function selBrands(sel){
-  if(!sel) return [];
-  var out=[];
-  if(Array.isArray(sel.brands)) out=out.concat(sel.brands);
-  else if(sel.brand) out.push(sel.brand); // legacy single-string fallback
-  if(sel.otherBrand) out.push(sel.otherBrand);
-  return out.filter(function(b){ return b && (''+b).trim(); });
-}
 function pickChip(stepId, cardId, brand, cat, el){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
-  var cur=answers[stepId][cardId];
-  if(!Array.isArray(cur.brands)) cur.brands = cur.brand ? [cur.brand] : []; // migrate legacy shape
-  cur.brand=''; // clear legacy field
-  cur.isNone=false;
-  var idx = cur.brands.indexOf(brand);
-  if(idx>=0){
-    cur.brands.splice(idx,1);
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
+  const cur=answers[stepId][cardId];
+  // Toggle off if already selected
+  if(cur.brand===brand && !cur.isNone){
+    cur.brand='';
     el.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');
     var w0=el.querySelector('.chip-warn'); if(w0) w0.remove();
     var s0=el.querySelector('.chip-safe'); if(s0) s0.remove();
   } else {
-    cur.brands.push(brand);
+    cur.brand=brand; cur.isNone=false;
+    // Deselect other chips in same row (clear toxic/clean glow + badges)
+    el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(c=>{c.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');var w=c.querySelector('.chip-warn');if(w)w.remove();var s=c.querySelector('.chip-safe');if(s)s.remove();});
     el.classList.add('sel');
+    // change #11: semantic tier — red=toxic, green=STA safer swap, amber=cleaner-ish-but-still-shelf
     var _tier=brandTier(brand);
     if(_tier==='red'){
       el.classList.add('chip-toxic');
@@ -2413,53 +2005,49 @@ function pickChip(stepId, cardId, brand, cat, el){
       el.classList.add('chip-clean');
       var sdot=document.createElement('span'); sdot.className='chip-safe'; sdot.textContent='✓'; el.appendChild(sdot);
       setTimeout(function(){ if(sdot.parentNode) sdot.parentNode.removeChild(sdot); },1200);
-      sndAha(); safeReward(el);
+      sndAha(); safeReward(el); // Change #10 — sparkle + "+1 Safe!"
     } else if(_tier==='amber'){
       el.classList.add('chip-maybe');
       sndDing();
     }
+    // Hide other-input
+    const inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
   }
-  // Clear "We don't use this" if anything is now selected
-  var noneBtn = el.closest('.chips-row').querySelector('.chip-none');
-  if(noneBtn && cur.brands.length>0){ noneBtn.classList.remove('sel'); }
-  updateRisk(); updateContinueGate();
+  updateRisk();
 }
 
 function pickChipNone(stepId, cardId, el){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
-  var cur=answers[stepId][cardId];
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
+  const cur=answers[stepId][cardId];
   if(cur.isNone){
     cur.isNone=false; el.classList.remove('sel');
   } else {
-    cur.brands=[]; cur.brand=''; cur.otherBrand=''; cur.isNone=true;
-    el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(function(c){c.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');var w=c.querySelector('.chip-warn');if(w)w.remove();var s=c.querySelector('.chip-safe');if(s)s.remove();});
+    cur.brand=''; cur.isNone=true;
+    el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(c=>{c.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');var w=c.querySelector('.chip-warn');if(w)w.remove();var s=c.querySelector('.chip-safe');if(s)s.remove();});
     el.classList.add('sel');
-    var inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
+    const inp=document.getElementById('co_'+cardId); if(inp){inp.classList.remove('show');inp.value='';}
   }
-  updateRisk(); updateContinueGate();
+  updateRisk();
 }
 
 function pickChipOther(stepId, cardId, el){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
-  var cur=answers[stepId][cardId];
-  if(!Array.isArray(cur.brands)) cur.brands = cur.brand ? [cur.brand] : [];
-  cur.isNone=false;
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
+  const cur=answers[stepId][cardId];
+  el.closest('.chips-row').querySelectorAll('.brand-chip').forEach(c=>{c.classList.remove('sel','chip-toxic');var w=c.querySelector('.chip-warn');if(w)w.remove();});
   el.classList.add('sel');
-  var noneBtn = el.closest('.chips-row').querySelector('.chip-none');
-  if(noneBtn) noneBtn.classList.remove('sel');
-  var inp=document.getElementById('co_'+cardId);
+  cur.isNone=false;
+  const inp=document.getElementById('co_'+cardId);
   if(inp){ inp.classList.add('show'); inp.focus(); }
-  updateContinueGate();
 }
 
 function saveChipOther(stepId, cardId, val, cat){
   if(!answers[stepId]) answers[stepId]={};
-  if(!answers[stepId][cardId]) answers[stepId][cardId]={brands:[],isNone:false};
-  answers[stepId][cardId].otherBrand=val;
+  if(!answers[stepId][cardId]) answers[stepId][cardId]={brand:'',isNone:false};
+  answers[stepId][cardId].brand=val;
   answers[stepId][cardId].isNone=false;
-  updateRisk(); updateContinueGate();
+  updateRisk();
 }
 // ────────────────────────────────────────────────────────────────────────────
 
@@ -2521,18 +2109,11 @@ const ROOM_AVG={kitchen:65,bath:60,laundry:68,nursery:58,water:55,air:62,meds:59
 // Score just one room, using the SAME methodology as the final score (got/max → %).
 function computeRoomScore(roomKey){
   var got=0,max=0,SLOTMAX=8;
-  // 2026-06-20 Shannon bug-fix #1: in chip_cards rooms (Laundry, Kitchen, Bath, Nursery)
-  // every card now counts toward MAX even when untouched, so clicking 1 chip out of 5
-  // cards no longer inflates the room score (was producing 88% from a single click).
-  // Touched cards: contribute their toxicity to GOT and SLOTMAX to MAX.
-  // Untouched cards: contribute 0 to GOT and SLOTMAX to MAX (we assume best-case absence).
-  // "We don't use this" (isNone): excluded from both (deliberate non-applicability).
   function slot(p,answered){ if(!answered) return; got+=p; max+=Math.max(SLOTMAX,p); }
-  function emptySlot(){ max+=SLOTMAX; }
   activeSteps.forEach(function(s){
     if(roomKeyForStep(s)!==roomKey || !answers[s.id]) return;
     if(s.type==='chip_cards'&&s.cards){
-      s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; var bs=selBrands(sel); if(bs.length===0){ emptySlot(); return; } bs.forEach(function(b){ b=(''+b).trim(); var p=scoreBrand(b,card.cat,card.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,b.length>0); }); });
+      s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; var b=(sel.brand||'').trim(); var p=scoreBrand(b,card.cat,card.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,b.length>0); });
     } else if(s.type==='brand_single'){
       var b1=(answers[s.id].brand||'').trim(); var p=scoreBrand(b1,s.cat,s.label||'Product'); if(hasBaby&&s.room_lbl==='Bathroom') p=Math.round(p*1.3); slot(p,b1.length>0);
     } else if(s.type==='brand_multi'&&s.fields){
@@ -2553,7 +2134,7 @@ function showRoomReveal(roomKey, nextStep, proceed){
   var avg=ROOM_AVG[roomKey]||60;
   var col=score<=30?'#2FB58F':score<=60?'#E8A317':'#FF5A5A';
   var high=score>=avg;
-  var line=high?"That's above the average home. What's your final going to be?":"Better than the average home. You're already ahead. Keep going!";
+  var line=high?"That's above the average home — what's your final going to be?":"Better than the average home — you're already ahead. Keep going!";
   var nk=nextStep?roomKeyForStep(nextStep):null;
   var nrm=nk?(ROOM_MAP.filter(function(r){return r.key===nk;})[0]||null):null;
   var onto=nextStep?(nrm?('Onto the '+nrm.label+' '+nrm.ic+' →'):'Keep going →'):'See your final score →';
@@ -2561,54 +2142,18 @@ function showRoomReveal(roomKey, nextStep, proceed){
   if(!el){ el=document.createElement('div'); el.id='roomReveal'; document.body.appendChild(el); }
   el.setAttribute('style','position:fixed;inset:0;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;background:radial-gradient(120% 80% at 50% 28%, #14305c 0%, #081a33 72%);color:#fff;animation:rrIn .35s ease;cursor:pointer;font-family:inherit');
   el.innerHTML='<div style="font-size:2.6rem">'+(high?'🔥':'💪')+'</div>'+
-    '<div style="font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fafdff;margin-top:10px">Your '+rm.label+' Score</div>'+
+    '<div style="font-size:.82rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:10px">Your '+rm.label+' Score</div>'+
     '<div class="rr-num" style="font-size:5.6rem;font-weight:900;line-height:1;margin:4px 0;color:'+col+'">'+score+'</div>'+
-    '<div style="font-size:.95rem;color:#c0cee0;font-weight:600">Average '+rm.label.toLowerCase()+': '+avg+'</div>'+
+    '<div style="font-size:.95rem;color:rgba(255,255,255,.7);font-weight:600">Average '+rm.label.toLowerCase()+': '+avg+'</div>'+
     '<div style="font-size:1.04rem;font-weight:700;max-width:330px;margin:20px 0 0;line-height:1.45">'+line+'</div>'+
     '<div style="position:absolute;bottom:58px;left:0;right:0;font-size:1.08rem;font-weight:800;color:#FF9900">'+onto+'</div>'+
-    '<div style="position:absolute;bottom:28px;left:0;right:0;font-size:.72rem;color:#fafdff">tap to continue</div>';
+    '<div style="position:absolute;bottom:28px;left:0;right:0;font-size:.72rem;color:rgba(255,255,255,.4)">tap to continue</div>';
   var done=function(){ if(_revealTimer){clearTimeout(_revealTimer);_revealTimer=null;} el.onclick=null; el.style.display='none'; proceed(); };
   el.onclick=done;
   _revealTimer=setTimeout(done, 2800);
 }
-// GHL webhook for the 3 audit answers — fires once when transitioning past audit_q3
-const STA_AUDIT_WEBHOOK = "https://services.leadconnectorhq.com/hooks/pkNKuHS8wz0aQmZKEXHr/webhook-trigger/d1ae6949-5284-48cd-b82b-250fbb7eb846";
-const STA_Q2_LABELS = {lt60:"Under $60", "60_150":"$60 - $150", "150_300":"$150 - $300", gt300:"$300+"};
-const STA_Q3_LABELS = {me:"I do", together:"My partner and I together", partner:"My partner does", other:"Someone else"};
-let _staAuditFired = false;
-function fireAuditWebhookOnce(){
-  if(_staAuditFired) return;
-  const a1 = (answers.audit_q1||{}).text || "";
-  const a2 = (answers.audit_q2||{}).val  || "";
-  const a3 = (answers.audit_q3||{}).val  || "";
-  if(!a1 || !a2 || !a3) return; // wait until all 3 collected
-  let pts = 0;
-  if(a1.length>=15) pts++;
-  if(a2==='150_300' || a2==='gt300') pts++;
-  if(a3==='me' || a3==='together') pts++;
-  const tier = pts===3?'high':pts===2?'warm':pts===1?'exploring':'early';
-  const params = new URLSearchParams(window.location.search);
-  const payload = {
-    contact_id: params.get('contact_id')||params.get('contactId')||params.get('cid')||"",
-    q1: a1,
-    q2: a2, q2_label: STA_Q2_LABELS[a2]||a2,
-    q3: a3, q3_label: STA_Q3_LABELS[a3]||a3,
-    quality_score: pts,
-    quality_tier: tier,
-    source: 'toxic-scorecard',
-    submitted_at: new Date().toISOString(),
-    page_url: window.location.href
-  };
-  try {
-    fetch(STA_AUDIT_WEBHOOK, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload), keepalive:true});
-  } catch(e){}
-  _staAuditFired = true;
-}
-
 function goNext(){
   var prevStep=activeSteps[stepIdx];
-  // Fire the audit webhook once, the moment user advances past audit_q3
-  if(prevStep && prevStep.id==='audit_q3') fireAuditWebhookOnce();
   stepIdx++;
   buildActive();
   const next=activeSteps[stepIdx];
@@ -2619,8 +2164,7 @@ function goNext(){
   };
   var pk=roomKeyForStep(prevStep);
   var nk=next?roomKeyForStep(next):null;
-  // No room-reveal when leaving audit steps (they have no room)
-  if(pk && pk!==nk && !(prevStep && prevStep.type==='audit')){ showRoomReveal(pk, next, proceed); }
+  if(pk && pk!==nk){ showRoomReveal(pk, next, proceed); }
   else proceed();
 }
 
@@ -2658,17 +2202,11 @@ function runCalc(){
       } else if(s.type==='chip_cards'&&s.cards){
         s.cards.forEach(card=>{
           const sel=answers[s.id][card.id]||{};
-          if(sel.isNone) return; // "We don't use this" = explicit exclusion
-          var bs=selBrands(sel);
-          // 2026-06-20 Shannon bug-fix #1: untouched cards count toward MAX denominator
-          // (0 toward got, SLOTMAX toward max) so sparse fills can't inflate the score.
-          if(bs.length===0){ maxPts += 8; return; }
-          bs.forEach(function(brand){
-            brand=(''+brand).trim();
-            let p=scoreBrand(brand,card.cat,card.label);
-            if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4);
-            addSlot(p, brand.length>0, s.room_lbl||s.room||'Kitchen');
-          });
+          if(sel.isNone) return; // "We don't use this" = not scored
+          var brand=(sel.brand||'').trim();
+          let p=scoreBrand(brand,card.cat,card.label);
+          if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4);
+          addSlot(p, brand.length>0, s.room_lbl||s.room||'Kitchen');
         });
       } else if(s.type==='brand_multi'&&s.fields){
         s.fields.forEach(f=>{
@@ -2696,8 +2234,6 @@ function runCalc(){
     const arc=document.getElementById('cArc');
     const circ=525; let disp=0;
     sndReveal(); // Change #6 — drumroll → reveal on the score gauge
-    // Mark s-calc as revealed so the score gauge picks up the red/yellow/green gradient
-    var sCalc=document.getElementById('s-calc'); if(sCalc) sCalc.classList.add('revealed');
     setTimeout(()=>{
       const iv=setInterval(()=>{
         disp=Math.min(disp+2,totalScore);
@@ -2726,10 +2262,8 @@ function showCalcDetails(){
     else { sl.textContent='🟢 CLEAN ZONE'; sl.style.background='rgba(31,138,112,.15)'; sl.style.color='#1F8A70'; sl.style.border='1px solid rgba(31,138,112,.25)'; }
   }
   // Fable-5 uplevel #8 (2026-06-10): grocery-bill headline. Fear opens the quiz; math closes the shop.
-  // 2026-06-20: bumped multiplier from 0.5 to 1.2 per Shannon. The 0.5 floor was reading too small for
-  // RED ZONE clickers. Average US household spends $80-120/mo on cleaning + personal care; a 30-50%
-  // brand-premium gap is conservative. Score 57 → $68. Score 70 → $84. Score 100 → $120.
-  var savingsEst = Math.max(15, Math.round(totalScore * 1.2));
+  // Conservative estimate at reveal time; refined number lands in the simulator + Switch List + report.
+  var savingsEst = Math.max(0, Math.round(totalScore * 0.5));
   var grocEl = document.getElementById('grocerySavings');
   if(!grocEl){
     grocEl = document.createElement('div');
@@ -2845,9 +2379,9 @@ function showResults(){
     if(totalScore>=20){
       var yrs=Math.max(1,Math.round(totalScore*0.18));
       var cigs=(totalScore/100*5).toFixed(1);
-      mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fafdff">What that actually means</div>'+
+      mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)">What that actually means</div>'+
         '<div style="font-size:1.04rem;font-weight:800;color:#fff;line-height:1.35;margin-top:6px">Your home is running like one <span style="color:#FF8A5A">'+yrs+' years older</span> than it is.</div>'+
-        '<div style="font-size:.84rem;color:#c0cee0;margin-top:6px">Daily exposure ≈ <b style="color:#ff9a9a">'+cigs+' cigarettes a day</b> of avoidable chemical load.</div>';
+        '<div style="font-size:.84rem;color:rgba(255,255,255,.7);margin-top:6px">Daily exposure ≈ <b style="color:#ff9a9a">'+cigs+' cigarettes a day</b> of avoidable chemical load.</div>';
     } else {
       mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(55,199,154,.7)">What that actually means</div>'+
         '<div style="font-size:1.04rem;font-weight:800;color:#fff;line-height:1.35;margin-top:6px">Your home is running <span style="color:#37c79a">years younger</span> than most — like a household that protects itself.</div>';
@@ -2856,21 +2390,16 @@ function showResults(){
   // Conditional final CTA
   var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
   var nm = userName ? (', '+userName) : '';
-  if(fcH) fcH.textContent='Okay'+nm+'. Here’s where to go next.';
+  if(fcH) fcH.textContent='Okay'+nm+' — here’s where to go next:';
   if(fcP) fcP.textContent='Pick whatever feels right. Zero pressure.';
 
   const mx=Math.max(...Object.values(roomScores),1);
-  // Shannon UX fix 2026-06-20: "pts" meant nothing to a mom + the per-room numbers didn't visibly add
-  // up to the 0-100 overall score (different units). Replace numbers with severity words and color
-  // each bar by severity. Add a one-line header so the page explains itself.
-  function rsev(p){ return p>=35 ? {l:'HIGH',c:'#C8102E'} : p>=15 ? {l:'MODERATE',c:'#E8A317'} : {l:'LOW',c:'#1F8A70'}; }
-  let bh='<div style="font-size:.74rem;color:#4a6a8a;margin-bottom:10px;line-height:1.45;font-weight:600">Where the chemical load lives in your home. A longer bar means more products of concern in that room.</div>';
+  let bh='';
   Object.entries(roomScores).sort((a,b)=>b[1]-a[1]).forEach(([r,p])=>{
     const w=Math.round((p/mx)*100);
-    const s=rsev(p);
-    bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt" style="color:${s.c} !important;font-weight:900">${s.l}</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%;background:${s.c}"></div></div></div>`;
+    bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt">${p} pts</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%"></div></div></div>`;
   });
-  document.getElementById('roomBars').innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected. Great choices!</p>';
+  document.getElementById('roomBars').innerHTML=bh||'<p style="color:rgba(255,255,255,.4);font-size:.8rem">No significant hazard exposure detected — great choices!</p>';
 
   // Findings from highest-scoring brand inputs
   const findings=[];
@@ -2883,10 +2412,8 @@ function showResults(){
       s.cards.forEach(card=>{
         const sel=answers[s.id][card.id]||{};
         if(sel.isNone) return;
-        selBrands(sel).forEach(function(brand){
-          const pts=scoreBrand(brand,card.cat);
-          if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Kitchen',brand:brand,cat:card.cat,label:card.label,pts});
-        });
+        const brand=sel.brand||''; const pts=scoreBrand(brand,card.cat);
+        if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Kitchen',brand:brand,cat:card.cat,label:card.label,pts});
       });
     } else if(s.type==='brand_multi'&&s.fields){
       s.fields.forEach(f=>{
@@ -2941,12 +2468,12 @@ function showResults(){
     const ub = document.getElementById('unscoredBlock');
     const ul = document.getElementById('unscoredList');
     if(ub) ub.style.display='block';
-    let uh='<p style="color:#fafdff;font-size:.88rem;margin-bottom:10px;line-height:1.5">These products were left blank. We couldn\'t score them. Worth finding out what brand is in your home.</p>';
+    let uh='<p style="color:rgba(255,255,255,.55);font-size:.78rem;margin-bottom:10px;line-height:1.5">These products were left blank — we couldn\'t score them. It\'s worth finding out what brand is in your home:</p>';
     unscoredFields.forEach(f=>{
-      uh+=`<div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,153,0,.28)">
-        <span style="color:#FFD27A;font-size:1rem;font-weight:900">?</span>
-        <span style="font-size:.94rem;color:#fff;font-weight:700">${f}</span>
-        <span style="font-size:.8rem;color:#FFD27A;margin-left:auto;font-weight:800">Not scored</span>
+      uh+=`<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,153,0,.12)">
+        <span style="color:var(--orange);font-size:.9rem">?</span>
+        <span style="font-size:.8rem;color:rgba(255,255,255,.7);font-weight:700">${f}</span>
+        <span style="font-size:.72rem;color:rgba(255,153,0,.7);margin-left:auto">Not scored</span>
       </div>`;
     });
     if(ul) ul.innerHTML=uh;
@@ -3006,7 +2533,7 @@ function runScan(){
         if(FLAGGED.includes(i)) p.classList.add('flagged');
       });
       status.classList.add('alert');
-      status.innerHTML = '';
+      status.innerHTML = '<span class="swarn">!</span>3 concerns flagged in a typical home';
     }
     requestAnimationFrame(frame);
   }
@@ -3029,7 +2556,7 @@ function collectSwitchItems(){
   activeSteps.forEach(function(s){
     if(!answers[s.id]) return;
     if(s.type==='brand_single'){ var b=answers[s.id].brand||''; if(isConcern(b)) items.push({brand:b,cat:s.cat}); }
-    else if(s.type==='chip_cards'&&s.cards){ s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; selBrands(sel).forEach(function(b){ if(isConcern(b)) items.push({brand:b,cat:card.cat}); }); }); }
+    else if(s.type==='chip_cards'&&s.cards){ s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(!sel.isNone&&isConcern(sel.brand||'')) items.push({brand:sel.brand,cat:card.cat}); }); }
     else if(s.type==='brand_multi'&&s.fields){ s.fields.forEach(function(f){ var b=answers[s.id][f.id]||''; if(isConcern(b)) items.push({brand:b,cat:f.cat}); }); }
   });
   return items;
@@ -3053,12 +2580,12 @@ function buildRewardHTML(){
   var h='<div style="margin-top:14px;background:linear-gradient(180deg,rgba(31,138,112,.24),rgba(31,138,112,.07));border:1px solid rgba(55,199,154,.5);border-radius:16px;padding:18px;text-align:center">'+
     '<div style="font-size:1.6rem">🎁</div>'+
     '<div style="font-size:1.28rem;font-weight:900;color:#37c79a;margin-top:2px;letter-spacing:.01em">$100 CAD Store Credit</div>'+
-    '<div style="font-size:.82rem;color:#c0cee0;margin-top:9px;line-height:1.55">You finished honestly.<br>$100 CAD in store credit is waiting for you — it lands in your account the moment you set it up. Same offer I give every family ready to look.<br><br>No pressure. No expiry. Use it when it feels right.</div>'+
-    '<div style="font-size:.8rem;font-weight:800;color:#dbe4f0;margin-top:9px">— Shannon</div>';
+    '<div style="font-size:.82rem;color:rgba(255,255,255,.78);margin-top:9px;line-height:1.55">You finished honestly.<br>$100 CAD in store credit is waiting for you — it lands in your account the moment you set it up. Same offer I give every family ready to look.<br><br>No pressure. No expiry. Use it when it feels right.</div>'+
+    '<div style="font-size:.8rem;font-weight:800;color:#9fb1cc;margin-top:9px">— Shannon</div>';
   if(isSpeedrun()){
     h+='<div style="margin-top:13px;padding-top:13px;border-top:1px solid rgba(255,255,255,.13)">'+
       '<div style="font-size:.95rem;font-weight:900;color:#FFD27A">🏆 Speedrun bonus</div>'+
-      '<div style="font-size:.8rem;color:#c0cee0;margin-top:4px;line-height:1.45">You looked fast <em>and</em> honest — I\'ll personally DM you my own switch list. — Shannon</div></div>';
+      '<div style="font-size:.8rem;color:rgba(255,255,255,.78);margin-top:4px;line-height:1.45">You looked fast <em>and</em> honest — I\'ll personally DM you my own switch list. — Shannon</div></div>';
   }
   h+='</div>';
   return h;
@@ -3088,12 +2615,12 @@ function switchListTeaser(){
   var n=collectSwitchItems().length;
   if(!n) return '<p style="font-size:.82rem;color:#37c79a;font-weight:700;line-height:1.5">Your home is already clean — barely anything to swap! 💚 Drop in your number and I\'ll send the few small upgrades.</p>';
   return '<div style="font-weight:800;color:#fff;margin-bottom:6px;font-size:1rem">📋 Your '+n+' personalized swap'+(n>1?'s are':' is')+' ready</div>'+
-    '<p style="font-size:.82rem;color:#c0cee0;line-height:1.5">Drop in your number and I\'ll text you the full list — the cleaner swap for every brand you tapped. 💛</p>';
+    '<p style="font-size:.82rem;color:rgba(255,255,255,.72);line-height:1.5">Drop in your number and I\'ll text you the full list — the cleaner swap for every brand you tapped. 💛</p>';
 }
 function openSwitchList(){
   var p=document.getElementById('switchListPanel'), a=document.getElementById('auditPanel'); if(a) a.style.display='none';
   if(p.style.display!=='none'){ p.style.display='none'; return; }
-  p.innerHTML=switchListTeaser()+'<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendSwitchList()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my swaps →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your list. Reply STOP anytime.</div></div>';
+  p.innerHTML=switchListTeaser()+'<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendSwitchList()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my swaps →</button><div style="font-size:.64rem;color:rgba(255,255,255,.45);margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your list. Reply STOP anytime.</div></div>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendSwitchList(){
@@ -3106,7 +2633,7 @@ function sendSwitchList(){
 function openAudit(){
   var p=document.getElementById('auditPanel'), s=document.getElementById('switchListPanel'); if(s) s.style.display='none';
   if(p.style.display!=='none'){ p.style.display='none'; return; }
-  p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:6px">📊 Your full Home Audit</div><p style="font-size:.78rem;color:#c0cee0;margin-bottom:10px">Your complete room-by-room breakdown, emailed to you to keep.</p><input id="auEmail" type="email" inputmode="email" placeholder="Your email…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(232,163,23,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendAudit()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#E8A317;color:#15233a;font-weight:800;font-size:15px;cursor:pointer">Send my Home Audit →</button>';
+  p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:6px">📊 Your full Home Audit</div><p style="font-size:.78rem;color:rgba(255,255,255,.7);margin-bottom:10px">Your complete room-by-room breakdown, emailed to you to keep.</p><input id="auEmail" type="email" inputmode="email" placeholder="Your email…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(232,163,23,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendAudit()" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#E8A317;color:#15233a;font-weight:800;font-size:15px;cursor:pointer">Send my Home Audit →</button>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendAudit(){
@@ -3117,25 +2644,25 @@ function sendAudit(){
 }
 // ── #12: "more switch stories" lightbox (illustrative testimonials — swap for real ones anytime) ──
 var EXTRA_STORIES=[
-  {q:"My daughter's skin used to flare up after every wash. Switching her body wash and our detergent was the easiest change I've made. I wish I'd done it sooner.",a:"Megan R. · Mom of 3"},
+  {q:"My daughter's skin used to flare up after every wash. Switching her body wash and our detergent was the easiest change I've made — wish I'd done it sooner.",a:"Megan R. · Mom of 3"},
   {q:"I'm 64 and set in my ways, but my granddaughter talked me into it. The products work better AND they're cheaper than what I was grabbing at the store.",a:"Linda P. · Grandmother"},
   {q:"We were spending a fortune at the big-box store on stuff full of who-knows-what. Now it's cleaner and we're saving every single month.",a:"Tara J. · Family of 5"},
   {q:"I started with one swap under the sink. Six months later the whole house is done and I don't miss a single old product.",a:"Crystal H. · Mom of 2"},
   {q:"Honestly didn't expect to care this much. But once you know what's in the old stuff, you can't un-know it.",a:"Beth A. · Mom of 4"},
-  {q:"My husband rolled his eyes, then he read the labels himself. Now he's the one reordering.",a:"Nicole D. · Mom of 2"},
+  {q:"My husband rolled his eyes — until he read the labels himself. Now he's the one reordering.",a:"Nicole D. · Mom of 2"},
   {q:"I kept buying the 'free & clear' versions thinking they were safe. Turns out not so much. First time I actually knew what I was getting.",a:"Amanda K. · Mom of 3"},
   {q:"Switched our laundry first because of my son's sensitive skin. The redness he'd get after every wash? Gone in a couple weeks.",a:"Priya S. · Mom of 2"},
-  {q:"I'm a nurse and skeptical of 'cleaner' claims, so I read every label. These held up, and they cost less than what I was buying.",a:"Dana W. · RN, Mom of 1"},
+  {q:"I'm a nurse and skeptical of 'cleaner' claims — I read every label. These held up, and they cost less than what I was buying.",a:"Dana W. · RN, Mom of 1"},
   {q:"My mom switched, then I switched, now my sister's on board. It kind of spreads once one person in the family does it.",a:"Hailey M. · Family of 4"},
   {q:"I just feel better knowing what's under my sink now. No more guessing, no more mystery 'fragrance' ingredients.",a:"Robin T. · Grandmother"},
   {q:"Took me ten minutes to set up and I haven't walked down that store aisle since. Wish someone had shown me years ago.",a:"Steph L. · Mom of 2"}
 ];
 function openStories(){
   if(document.getElementById('storiesModal')) return;
-  var html=EXTRA_STORIES.map(function(s){ return '<div style="border-left:3px solid #C9A227;padding:2px 0 2px 14px;margin-bottom:16px"><div style="color:#C9A227;font-size:.78rem;letter-spacing:3px">★★★★★</div><p style="font-style:italic;font-size:.9rem;line-height:1.55;color:#eef3fa;margin:5px 0 6px">“'+s.q+'”</p><div style="font-size:.74rem;font-weight:700;color:#dbe4f0">'+s.a+'</div></div>'; }).join('');
+  var html=EXTRA_STORIES.map(function(s){ return '<div style="border-left:3px solid #C9A227;padding:2px 0 2px 14px;margin-bottom:16px"><div style="color:#C9A227;font-size:.78rem;letter-spacing:3px">★★★★★</div><p style="font-style:italic;font-size:.9rem;line-height:1.55;color:#eef3fa;margin:5px 0 6px">“'+s.q+'”</p><div style="font-size:.74rem;font-weight:700;color:#9fb1cc">'+s.a+'</div></div>'; }).join('');
   var m=document.createElement('div'); m.id='storiesModal';
   m.style.cssText='position:fixed;inset:0;z-index:10050;background:rgba(6,18,35,.93);overflow:auto;padding:22px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)';
-  m.innerHTML='<div style="max-width:520px;margin:0 auto;width:100%"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;gap:10px"><h3 style="color:#fff;font-size:1.12rem;margin:0;flex:1;min-width:0">💛 Families who switched</h3><div style="display:flex;align-items:center;gap:8px;flex:none"><span style="color:#FFD27A;font-size:.78rem;font-weight:800;font-style:italic;line-height:1.15;text-align:right;white-space:nowrap">click<br>here →</span><button onclick="closeStories()" aria-label="Close stories" style="background:#C8102E;border:none;color:#fff;width:54px;height:54px;border-radius:50%;font-size:1.5rem;font-weight:900;cursor:pointer;box-shadow:0 6px 18px -4px rgba(200,16,46,.65);display:flex;align-items:center;justify-content:center;line-height:1">✕</button></div></div>'+html+'</div>';
+  m.innerHTML='<div style="max-width:520px;margin:0 auto;width:100%"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 style="color:#fff;font-size:1.12rem;margin:0">💛 Families who switched</h3><button onclick="closeStories()" style="background:rgba(255,255,255,.12);border:none;color:#fff;width:34px;height:34px;border-radius:50%;font-size:1.05rem;cursor:pointer">✕</button></div>'+html+'</div>';
   m.addEventListener('click',function(e){ if(e.target===m) closeStories(); });
   document.body.appendChild(m);
 }
@@ -3166,12 +2693,13 @@ function buildSimulator(toxList){
       '<div class="sim-sub">Save ~$'+sw.save+' · Drops score by '+sw.drop+'</div></div></div>';
   });
   var n=swaps.length;
-  wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched '+n+' thing'+(n>1?'s':'')+'?</h3>'+
-    '<p style="font-size:.8rem;color:#fafdff;margin:-4px 0 13px">Tap the toggles. Watch your score drop.</p>'+rows+
+  wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched just '+n+' thing'+(n>1?'s':'')+'?</h3>'+
+    '<p style="font-size:.8rem;color:rgba(255,255,255,.6);margin:-4px 0 13px">Tap the toggles. Watch your score drop.</p>'+rows+
     '<div class="sim-foot"><div class="sim-foot-row"><span>Your projected score</span><b><span id="simFromScore">'+totalScore+'</span> → <span id="simToScore" style="color:'+toCol(ns0)+'">'+ns0+'</span></b></div>'+
     '<div class="sim-foot-row"><span>Projected savings</span><b style="color:#37c79a">~$<span id="simSave">'+save0+'</span> CAD</b></div>'+
     '<div class="sim-foot-row"><span>Chemical exposures avoided</span><b style="color:#37c79a"><span id="simExp">'+Math.round(removed0*105).toLocaleString()+'</span>/yr</b></div></div>'+
-    '</div>';
+    '<button class="tox-soft-btn" style="margin-top:13px" onclick="sendMyPlan()">📱 Send Me This Plan →</button>'+
+    '<button onclick="shareScore()" style="display:block;margin:10px auto 0;background:none;border:none;color:#9fb1cc;font-weight:700;font-size:.82rem;cursor:pointer;font-family:inherit;text-decoration:underline">📲 Share my score</button></div>';
   wrap.style.display='block';
 }
 function toggleSwap(i){
@@ -3235,7 +2763,7 @@ function sendMyPlan(){
   var listHtml=chosen.map(function(s){return '<div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.8rem"><span style="color:#ff9a9a;text-decoration:line-through;opacity:.8">'+shopLink(s.brand)+'</span><span style="color:#37c79a;font-weight:800">→ '+shopLink(s.target)+'</span></div>';}).join('');
   p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:4px">📱 Your custom switch plan</div>'+
     '<div style="font-size:.78rem;color:#37c79a;font-weight:800;margin-bottom:10px">'+totalScore+' → '+projected+' cleaner · ~$'+totalSave+'/mo CAD back</div>'+listHtml+
-    '<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendPlanLead('+totalSave+','+projected+')" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my plan →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your plan. Reply STOP anytime.</div></div>';
+    '<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendPlanLead('+totalSave+','+projected+')" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my plan →</button><div style="font-size:.64rem;color:rgba(255,255,255,.45);margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your plan. Reply STOP anytime.</div></div>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendPlanLead(totalSave,projected){
@@ -3362,6 +2890,5 @@ function shareFB(){window.open('https://www.facebook.com/sharer/sharer.php?u='+e
 function dlCard(){genCard();const a=document.createElement('a');a.download='family-toxic-score.png';a.href=document.getElementById('shareCanvas').toDataURL('image/png');a.click();}
 function cpLink(){navigator.clipboard.writeText(shareUrl()).then(()=>{const b=document.querySelector('.sb-cp');b.textContent='✓ Copied!';setTimeout(()=>b.textContent='🔗 Copy Link',2000);})}
 </script>
-
 </body>
 </html>
