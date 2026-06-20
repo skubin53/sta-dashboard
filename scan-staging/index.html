@@ -3149,6 +3149,12 @@ window.openShoppingAudit = function(){
   document.body.classList.add('sta-audit-shown','sta-audit-active');
   window.scrollTo({top:0, behavior:"instant"});
 };
+// Preview mode: ?audit=1 auto-opens the Shopping Audit so Matt/Shannon can review the 3 questions
+try {
+  if (new URLSearchParams(window.location.search).get('audit') === '1') {
+    window.addEventListener('DOMContentLoaded', function(){ window.openShoppingAudit(); });
+  }
+} catch(e){}
 (function(){
   // ============================================================
   // CONFIG — Shopping Audit overlay v2
