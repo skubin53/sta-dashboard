@@ -1931,7 +1931,7 @@ function stepAnswered(step){
     return false;
   }
   if(step.type==='name'){ return !!(userName&&userName.trim()); }
-  if(step.type==='chip_cards'&&step.cards){ return step.cards.some(function(c){ var s=a[c.id]||{}; return s.isNone || (s.brand&&(''+s.brand).trim()); }); }
+  if(step.type==='chip_cards'&&step.cards){ return step.cards.some(function(c){ var s=a[c.id]||{}; return s.isNone || selBrands(s).length>0; }); }
   if(step.type==='single'||step.type==='yn'||step.type==='multi'){ return Object.keys(a).some(function(k){ return a[k]; }); }
   if(step.type==='brand_single'){ return !!(a.brand&&(''+a.brand).trim()); }
   if(step.type==='brand_multi'&&step.fields){ return step.fields.some(function(f){ return a[f.id]&&(''+a[f.id]).trim(); }); }
