@@ -666,7 +666,7 @@ html,body{
 .tox-soft-q{font-size:.9rem;font-weight:700;color:#eafff7;line-height:1.45;margin-bottom:11px}
 .tox-soft-btn{background:linear-gradient(180deg,#1F8A70,#15705a);color:#fff;border:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:.98rem;cursor:pointer;font-family:inherit;width:100%}
 /* Change #4 — "What if I switched?" simulator */
-.sim-card{background:rgba(31,138,112,.07)!important;border-color:rgba(55,199,154,.28)!important}
+.sim-card{background:#e6f3fc!important;border:1.5px solid rgba(95,179,199,.55)!important;box-shadow:0 4px 14px rgba(95,179,199,.18)!important}
 .sim-row{display:flex;align-items:center;gap:12px;padding:11px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);margin-bottom:9px;cursor:pointer;min-height:44px}
 .sim-row.on{background:rgba(31,138,112,.14);border-color:rgba(55,199,154,.45)}
 .sim-tog{flex:none;width:46px;height:27px;border-radius:50px;background:rgba(255,255,255,.18);position:relative;transition:background .2s}
@@ -1631,7 +1631,7 @@ const STEPS = [
      {id:'k_cof',label:'Coffee',cat:'coffee',
       icon:'<svg viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>',
       chips:['Folgers','Maxwell House','Starbucks','Dunkin\'','Nescafé','Death Wish','Kirkland','Organic Coffee','Mountain Cabin']},
-     {id:'k_oil',label:'Cooking Oil / Seed Oils',cat:'coffee',
+     {id:'k_oil',label:'Cooking Oil / Seed Oils',cat:'oil',
       icon:'<svg viewBox="0 0 24 30"><rect x="10" y="2" width="4" height="4" fill="#9aa17a"/><path d="M8 9c0-1.5 1.3-3 4-3s4 1.5 4 3v17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#e7c45a"/><rect x="9.5" y="14" width="7" height="8" rx="1" fill="#fff8e0" opacity=".85"/></svg>',
       chips:['Vegetable / Canola','Crisco','Wesson','Mazola','PAM Spray','Olive oil','Avocado oil','Beef Tallow']},
      {id:'k_vit',label:'Vitamins / Supplements',cat:'supplements',
@@ -3017,12 +3017,12 @@ window.addEventListener('load', function(){ setTimeout(runScan, 400); });
 
 // ── Three doors (Switch List / Home Audit / New Supply Chain) ──
 const SWAP_MAP={dish:'Lemon Brite',dishwasher:'Diamond Brite',allpurpose:'Sol-U-Guard Botanical',laundry:'MelaPower',fabric:'MelaSoft',bleach:'Sol-U-Guard',stain:'PreSpot',
-  coffee:'Mountain Cabin Coffee',supplements:'Peak Performance',shampoo:'Affinia',bodywash:'Gold Bar',toothpaste:'Tooth Polish',makeup:'Sei Bella',
+  coffee:'Mountain Cabin Coffee',oil:'Cold-pressed olive oil',supplements:'Peak Performance',shampoo:'Affinia',bodywash:'Gold Bar',toothpaste:'Tooth Polish',makeup:'Sei Bella',
   babywash:'Koala Pals',babylotion:'Koala Pals',babywipes:'Koala Pals',babylaundry:'MelaPower',diaperash:'Koala Pals',babypowder:'Koala Pals'};
 function swapFor(cat){ return SWAP_MAP[cat] || "Shannon's clean version"; }
 // Est. monthly savings per swap (CAD) — conservative, anchored to typical Walmart category pricing
 // (your brand is always cheaper than Walmart; these are the cheaper-than-Walmart deltas). Swap in exact figures anytime.
-const SIM_SAVINGS={dish:3,dishwasher:5,allpurpose:4,laundry:7,fabric:3,bleach:2,stain:3,coffee:6,supplements:9,shampoo:3,bodywash:3,toothpaste:2,deodorant:2,homeair:5,makeup:7,babywash:3,babylotion:3,babywipes:3,babylaundry:5,diaperash:2,babypowder:2,water:5};
+const SIM_SAVINGS={dish:3,dishwasher:5,allpurpose:4,laundry:7,fabric:3,bleach:2,stain:3,coffee:6,oil:2,supplements:9,shampoo:3,bodywash:3,toothpaste:2,deodorant:2,homeair:5,makeup:7,babywash:3,babylotion:3,babywipes:3,babylaundry:5,diaperash:2,babypowder:2,water:5};
 function savingsFor(cat){ return SIM_SAVINGS[cat]||6; }
 function collectSwitchItems(){
   var items=[];
@@ -3168,9 +3168,7 @@ function buildSimulator(toxList){
   var n=swaps.length;
   wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched '+n+' thing'+(n>1?'s':'')+'?</h3>'+
     '<p style="font-size:.8rem;color:#fafdff;margin:-4px 0 13px">Tap the toggles. Watch your score drop.</p>'+rows+
-    '<div class="sim-foot"><div class="sim-foot-row"><span>Your projected score</span><b><span id="simFromScore">'+totalScore+'</span> → <span id="simToScore" style="color:'+toCol(ns0)+'">'+ns0+'</span></b></div>'+
-    '<div class="sim-foot-row"><span>Projected savings</span><b style="color:#37c79a">~$<span id="simSave">'+save0+'</span> CAD</b></div>'+
-    '<div class="sim-foot-row"><span>Chemical exposures avoided</span><b style="color:#37c79a"><span id="simExp">'+Math.round(removed0*105).toLocaleString()+'</span>/yr</b></div></div>'+
+    '<div class="sim-foot"><div class="sim-foot-row"><span>Savings</span><b style="color:#1F8A70">~$<span id="simSave">'+save0+'</span></b></div></div>'+
     '</div>';
   wrap.style.display='block';
 }
