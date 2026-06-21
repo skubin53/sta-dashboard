@@ -1283,7 +1283,6 @@ body { padding-top:0 !important; }
   </div>
   <div class="rb">
     <div id="simWrap" style="display:none"></div>
-    <div class="rcard"><h3>📍 Room-by-Room Breakdown</h3><div id="roomBars"></div></div>
     <div class="rcard" style="background:rgba(200,16,46,.08);border-color:rgba(200,16,46,.2)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <div class="sw" id="swEl"><div class="sw-lbl">✦ Your Biggest Single Change</div><h3 id="swT">—</h3><p id="swD">—</p><div class="sw-imp">📉 Score: <strong id="swF">—</strong> → <strong id="swTo">—</strong></div></div>
@@ -2870,7 +2869,7 @@ function showResults(){
     const s=rsev(p);
     bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt" style="color:${s.c} !important;font-weight:900">${s.l}</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%;background:${s.c}"></div></div></div>`;
   });
-  document.getElementById('roomBars').innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected. Great choices!</p>';
+  var roomBarsEl=document.getElementById('roomBars'); if(roomBarsEl){ roomBarsEl.innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected. Great choices!</p>'; }
 
   // Findings from highest-scoring brand inputs
   const findings=[];
