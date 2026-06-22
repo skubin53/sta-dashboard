@@ -1238,6 +1238,17 @@ body { padding-top:0 !important; }
     <div class="rs" id="rScore">—</div>
     <div class="rg" id="rGrade">?</div>
     <div id="rZone" style="display:none;font-size:.8rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:6px 16px;border-radius:50px;margin:8px auto 10px"></div>
+    <!-- Share Your Score (moved here 2026-06-21 per Shannon: directly below the score, only spot on the page) -->
+    <div class="sh-c" id="shareYourScore" style="margin:18px auto 14px;max-width:400px;background:linear-gradient(180deg,rgba(255,153,0,.24),rgba(255,153,0,.1));border:1.5px solid rgba(255,153,0,.6);border-radius:16px;padding:18px 16px;text-align:center;box-shadow:0 8px 24px -6px rgba(255,153,0,.45)">
+      <h3 style="font-size:1.18rem;font-weight:900;color:#fff;margin-bottom:6px">📣 Share Your Score</h3>
+      <p style="font-size:.88rem;color:#fafdff;margin-bottom:14px;line-height:1.4">Every share helps a friend find their family's score</p>
+      <canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas>
+      <div class="sh-btns" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+        <button class="sb sb-fb" onclick="shareScore()" style="font-weight:900;padding:12px 18px;font-size:.94rem;min-height:46px">📲 Share</button>
+        <button class="sb sb-dl" onclick="dlCard()" style="font-weight:900;padding:12px 18px;font-size:.94rem;min-height:46px">📸 Download</button>
+        <button class="sb sb-cp" onclick="cpLink()" style="font-weight:900;padding:12px 18px;font-size:.94rem;min-height:46px">🔗 Copy Link</button>
+      </div>
+    </div>
     <h2 class="rh" id="rH">Your Family's Toxic Home Report</h2>
     <p class="rp" id="rP">Based on the brands you use, scored against independent safety research.</p>
     <p id="rFeeling" style="display:none;font-size:1.02rem;font-weight:700;line-height:1.4;color:#fff;margin:12px auto 0;max-width:340px"></p>
@@ -1286,7 +1297,6 @@ body { padding-top:0 !important; }
     <div id="simWrap" style="display:none"></div>
     <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
-    <div class="sh-c"><h3>📣 Share Your Score</h3><p>Every share helps a friend find their family's score</p><canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas><div class="sh-btns"><button class="sb sb-fb" onclick="shareScore()">📲 Share</button><button class="sb sb-dl" onclick="dlCard()">📸 Download</button><button class="sb sb-cp" onclick="cpLink()">🔗 Copy Link</button></div></div>
     <div class="rcard" style="background:rgba(201,162,39,.06);border-color:rgba(201,162,39,.25)"><h3>💛 From Families Who Switched</h3>
       <button onclick="openStories()" style="margin-top:8px;width:100%;background:#C8102E;border:none;color:#fff;font-weight:900;font-size:1.04rem;letter-spacing:.02em;padding:16px 18px;border-radius:50px;cursor:pointer;font-family:inherit;box-shadow:0 6px 14px -4px rgba(200,16,46,.45)">📖 Click here for 12 wake-up calls →</button>
       <p style="font-size:.66rem;color:#7a8a9a;margin-top:10px;line-height:1.4;font-style:italic">Stories shared with permission. Individual results. Switching products is not a substitute for medical advice.</p>
