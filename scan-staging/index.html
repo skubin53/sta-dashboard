@@ -1956,6 +1956,17 @@ const CARD_ICONS = {
 
 function renderStep(){
   upd();
+  // 2026-06-21 Shannon (voice 4104): users landing at the bottom of next page after Continue.
+  // s-quiz is already .active so showScreen's scroll-reset is short-circuited by some browsers.
+  // Force the s-quiz screen's own scrollTop to 0 with multiple retries that outlast any focus-
+  // based auto-scroll the browser does after we paint the new step content.
+  (function _forceTop(){
+    var q=document.getElementById('s-quiz');
+    function _r(){ try{window.scrollTo(0,0);}catch(e){}; try{document.documentElement.scrollTop=0;}catch(e){}; try{document.body.scrollTop=0;}catch(e){}; if(q){ try{q.scrollTop=0;}catch(e){}} }
+    _r();
+    try{ requestAnimationFrame(function(){ _r(); requestAnimationFrame(_r); }); }catch(e){}
+    setTimeout(_r, 60); setTimeout(_r, 220); setTimeout(_r, 500); setTimeout(_r, 900);
+  })();
   const step = activeSteps[stepIdx];
   if(!step){ runCalc(); return; }
   if(step.type==='soft'){ showScreen('s-soft'); return; }
@@ -3076,7 +3087,7 @@ window.addEventListener('load', function(){ setTimeout(runScan, 400); });
 
 // ── Three doors (Switch List / Home Audit / New Supply Chain) ──
 const SWAP_MAP={dish:'Lemon Brite',dishwasher:'Diamond Brite',allpurpose:'Sol-U-Guard Botanical',laundry:'MelaPower',fabric:'MelaSoft',dryer:'MelaSoft',bleach:'Sol-U-Guard',stain:'PreSpot',deodorant:'Sei Bella',
-  coffee:'Mountain Cabin Coffee',oil:'Cold-pressed olive oil',supplements:'Peak Performance',shampoo:'Affinia',bodywash:'Gold Bar',toothpaste:'Tooth Polish',makeup:'Sei Bella',
+  coffee:'Mountain Cabin Coffee',oil:'Beef tallow',supplements:'Peak Performance',shampoo:'Affinia',bodywash:'Gold Bar',toothpaste:'Tooth Polish',makeup:'Sei Bella',
   babywash:'Koala Pals',babylotion:'Koala Pals',babywipes:'Koala Pals',babylaundry:'MelaPower',diaperash:'Koala Pals',babypowder:'Koala Pals'};
 function swapFor(cat){ return SWAP_MAP[cat] || "Shannon's clean version"; }
 // Est. monthly savings per swap (CAD) — conservative, anchored to typical Walmart category pricing
