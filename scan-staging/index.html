@@ -3062,7 +3062,7 @@ function runScan(){
 window.addEventListener('load', function(){ setTimeout(runScan, 400); });
 
 // ── Three doors (Switch List / Home Audit / New Supply Chain) ──
-const SWAP_MAP={dish:'Lemon Brite',dishwasher:'Diamond Brite',allpurpose:'Sol-U-Guard Botanical',laundry:'MelaPower',fabric:'MelaSoft',dryer:'MelaSoft',bleach:'Sol-U-Guard',stain:'PreSpot',
+const SWAP_MAP={dish:'Lemon Brite',dishwasher:'Diamond Brite',allpurpose:'Sol-U-Guard Botanical',laundry:'MelaPower',fabric:'MelaSoft',dryer:'MelaSoft',bleach:'Sol-U-Guard',stain:'PreSpot',deodorant:'Sei Bella',
   coffee:'Mountain Cabin Coffee',oil:'Cold-pressed olive oil',supplements:'Peak Performance',shampoo:'Affinia',bodywash:'Gold Bar',toothpaste:'Tooth Polish',makeup:'Sei Bella',
   babywash:'Koala Pals',babylotion:'Koala Pals',babywipes:'Koala Pals',babylaundry:'MelaPower',diaperash:'Koala Pals',babypowder:'Koala Pals'};
 function swapFor(cat){ return SWAP_MAP[cat] || "Shannon's clean version"; }
@@ -3244,7 +3244,7 @@ function buildSimulator(toxList){
   var n=swaps.length;
   wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched '+n+' thing'+(n>1?'s':'')+'?</h3>'+
     '<p style="font-size:.95rem;color:#C8102E;font-weight:900;letter-spacing:.04em;margin:-4px 0 13px">Tap the toggles.</p>'+rows+
-    '<div class="sim-foot"><div class="sim-foot-row" style="justify-content:center;gap:14px"><span style="color:#C8102E;font-weight:900;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase">SAVINGS</span><b style="color:#C8102E;font-weight:900;font-size:1.5rem">~$<span id="simSave" style="color:#C8102E">'+save0+'</span></b></div></div>'+
+    '<div class="sim-foot"><div class="sim-foot-row" style="justify-content:center;gap:14px"><span style="color:#C8102E!important;font-weight:900;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase">SAVINGS</span><b style="color:#C8102E!important;font-weight:900;font-size:1.5rem">~$<span id="simSave" style="color:#C8102E!important">'+save0+'</span></b></div></div>'+
     '</div>';
   wrap.style.display='block';
 }
