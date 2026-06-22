@@ -662,9 +662,10 @@ html,body{
 .tox-card.tox-good .tox-ing{color:#9fe6cf}
 .tox-harm{font-size:.82rem;color:#d9e3ee;margin-top:3px;line-height:1.42}
 .tox-found{font-size:.72rem;color:#fafdff;margin-top:7px;font-style:italic}
-.tox-soft{background:rgba(31,138,112,.1);border:1px dashed rgba(55,199,154,.45);border-radius:12px;padding:15px;text-align:center;margin-top:4px}
-.tox-soft-q{font-size:.9rem;font-weight:700;color:#eafff7;line-height:1.45;margin-bottom:11px}
-.tox-soft-btn{background:linear-gradient(180deg,#1F8A70,#15705a);color:#fff;border:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:.98rem;cursor:pointer;font-family:inherit;width:100%}
+.tox-soft{background:rgba(200,16,46,.12);border:1px dashed rgba(200,16,46,.55);border-radius:12px;padding:15px;text-align:center;margin-top:4px}
+.tox-soft-q{font-size:.95rem;font-weight:700;color:#C8102E;line-height:1.45;margin-bottom:11px}
+.tox-soft-q b{color:#C8102E;font-weight:900}
+.tox-soft-btn{background:linear-gradient(180deg,#C8102E,#9b0c23);color:#fff;border:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:1rem;cursor:pointer;font-family:inherit;width:100%}
 /* Change #4 — "What if I switched?" simulator */
 .sim-card{background:#e6f3fc!important;border:1.5px solid rgba(95,179,199,.55)!important;box-shadow:0 4px 14px rgba(95,179,199,.18)!important}
 .sim-row{display:flex;align-items:center;gap:12px;padding:11px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);margin-bottom:9px;cursor:pointer;min-height:44px}
@@ -2912,6 +2913,7 @@ function showResults(){
     babywash:'baby',babylotion:'baby',babywipes:'baby',babylaundry:'baby',diaperash:'baby',babypowder:'baby',
     homeair:'air',water:'water'
   };
+  var totalToxBefore = toxList.length; // preserve full count for the CTA copy ("X toxic products in your home")
   var seenFamily={}, diverse=[];
   toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||'other'; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
   if(diverse.length<3){ toxList.forEach(function(f){ if(diverse.indexOf(f)===-1 && diverse.length<3) diverse.push(f); }); }
@@ -2937,9 +2939,11 @@ function showResults(){
       }
       fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
     });
-    var remaining=Math.max(0, toxList.length-3);
-    var moreTxt = remaining>0 ? ('plus the other '+remaining+' from your scan') : 'plus your full room-by-room breakdown';
-    fh+='<div class="tox-soft"><div class="tox-soft-q">✓ Want the safer swap for each of these, '+moreTxt+'?</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Switch List →</button></div>';
+    var remaining=Math.max(0, totalToxBefore-3);
+    var moreTxt = remaining>0
+      ? 'Your full Switch List is ready. <b>'+totalToxBefore+' toxic products → '+totalToxBefore+' cleaner swaps.</b>'
+      : 'Your full Switch List is ready, room by room.';
+    fh+='<div class="tox-soft"><div class="tox-soft-q">'+moreTxt+'</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Switch List →</button></div>';
   } else {
     // Low-score fallback — reward green behavior, never punish.
     fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss — the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That’s the top few that trip almost everyone up.</div></div>';
