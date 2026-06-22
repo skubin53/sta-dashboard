@@ -3102,11 +3102,17 @@ function buildScData(){
   // 2026-06-21 Shannon: report the FULL savings across every toxic product identified, not just
   // the 1-3 that happen to be on in the simulator. The note and SMS use this number to motivate
   // the prospect; a small number tied to the sim widget undersells the opportunity.
-  // 2026-06-21 Shannon: also send ingredient + harm teasers so the /r/<id> report page can show per-swap detail.
+  // 2026-06-21 Shannon: send full per-swap detail (ingredients + 2-paragraph harm w/ red highlights)
+  // to the /r/<id> report. Use safe markers so the server can render approved formatting without
+  // accepting raw HTML from the wire.
   var items=collectSwitchItems().slice(0,12).map(function(it){
     var d = (typeof findingDisplay === 'function') ? findingDisplay(it.brand, it.cat, it.label) : {ing:'', harm:''};
-    var harmPlain = (d.harm || '').replace(/<[^>]+>/g,'');
-    return { brand:it.brand, save:savingsFor(it.cat), target:swapFor(it.cat), ing:(d.ing||''), harm:harmPlain };
+    var harmMarked = (d.harm || '')
+      .replace(/<br\s*\/?>\s*<br\s*\/?>/gi, '[[P]]')
+      .replace(/<b\s+style=["']color:#C8102E["']>/gi, '[[R]]')
+      .replace(/<\/b>/gi, '[[/R]]')
+      .replace(/<[^>]+>/g, '');
+    return { brand:it.brand, save:savingsFor(it.cat), target:swapFor(it.cat), ing:(d.ing||''), harm:harmMarked };
   });
   var totalSav = items.reduce(function(a,it){ return a + (parseInt(it.save,10) || 0); }, 0);
   var simSav = SIM_STATE ? SIM_STATE.swaps.filter(function(s){return s.on;}).reduce(function(a,s){return a+s.save;},0) : 0;
