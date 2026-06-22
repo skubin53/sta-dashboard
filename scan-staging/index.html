@@ -3089,7 +3089,19 @@ function buildScData(){
   var sav=SIM_STATE?SIM_STATE.swaps.filter(function(s){return s.on;}).reduce(function(a,s){return a+s.save;},0):0;
   // per-toxic-item savings (no clean-product name) so the email can say "Switch your Dawn → save ~$X"
   var items=collectSwitchItems().slice(0,12).map(function(it){ return { brand:it.brand, save:savingsFor(it.cat) }; });
-  return { firstName:userName||'', swaps:swapsString(), items:items, savings:sav, score:totalScore, zone:zoneLabel(), rooms:roomsString() };
+  // 2026-06-21 Shannon: include the 3 early-profile answers + frustration so they land in the GHL note.
+  var seg=answers&&answers.seg||{};
+  var q1 =answers&&answers.audit_q1||{};
+  var q2 =answers&&answers.audit_q2||{};
+  var q3 =answers&&answers.audit_q3||{};
+  return {
+    firstName:userName||'',
+    swaps:swapsString(), items:items, savings:sav, score:totalScore, zone:zoneLabel(), rooms:roomsString(),
+    segment: seg.lbl || '',
+    frustration: q1.text || '',
+    monthlySpend: (typeof STA_Q2_LABELS!=='undefined' && STA_Q2_LABELS[q2.val]) || q2.val || '',
+    decisionMaker: (typeof STA_Q3_LABELS!=='undefined' && STA_Q3_LABELS[q3.val]) || q3.val || ''
+  };
 }
 function captureLead(extra){
   extra=extra||{};
