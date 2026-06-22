@@ -3089,7 +3089,7 @@ function roomsString(){ return Object.entries(roomScores).sort(function(a,b){ret
 function buildScData(){
   var sav=SIM_STATE?SIM_STATE.swaps.filter(function(s){return s.on;}).reduce(function(a,s){return a+s.save;},0):0;
   // per-toxic-item savings (no clean-product name) so the email can say "Switch your Dawn → save ~$X"
-  var items=collectSwitchItems().slice(0,12).map(function(it){ return { brand:it.brand, save:savingsFor(it.cat) }; });
+  var items=collectSwitchItems().slice(0,12).map(function(it){ return { brand:it.brand, save:savingsFor(it.cat), target:swapFor(it.cat) }; });
   // 2026-06-21 Shannon: include the 3 early-profile answers + frustration so they land in the GHL note.
   var seg=answers&&answers.seg||{};
   var q1 =answers&&answers.audit_q1||{};
