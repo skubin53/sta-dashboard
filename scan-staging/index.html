@@ -1304,15 +1304,13 @@ body { padding-top:0 !important; }
     </div>
     <div class="fc" id="finalCta">
       <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
-      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 20px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif">
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:6px">A year later the same cleaner is still under the sink.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:6px">The candle still burns.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:14px">The wipes are still in the diaper bag.</p>
-        <p style="font-size:1.02rem;line-height:1.55;color:#fff;font-weight:800;text-align:center;margin-bottom:10px">And the cost is real.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:14px">The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:6px">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them.</p>
-        <p style="text-align:center;margin:14px 0 0"><span style="color:#C8102E;font-weight:900;font-size:1.45rem;letter-spacing:.06em;text-transform:uppercase">FOR FREE</span></p>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 22px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif;text-align:center">
+        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
+        <p style="font-size:1.08rem;line-height:1.55;color:#fff;font-weight:800;margin-bottom:6px">And the cost is real.</p>
+        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:14px">The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
+        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
+        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:18px">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them.</p>
+        <p style="text-align:center;margin:16px 0 0;line-height:1"><span style="color:#C8102E!important;font-weight:900;font-size:2.4rem;letter-spacing:.08em;text-transform:uppercase;font-family:'Anton',sans-serif">FOR FREE</span></p>
       </div>
       <div style="text-align:center;margin-bottom:14px">
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#C8102E !important;margin-bottom:4px">Stop guessing.</div>
@@ -2859,27 +2857,11 @@ function showResults(){
     else if(totalScore>=45){ z.textContent='🟡 CAUTION ZONE'; z.style.background='rgba(232,163,23,.16)'; z.style.color='#E8A317'; z.style.border='1px solid rgba(232,163,23,.3)'; }
     else { z.textContent='🟢 CLEAN ZONE'; z.style.background='rgba(31,138,112,.16)'; z.style.color='#37c79a'; z.style.border='1px solid rgba(31,138,112,.3)'; }
   }
-  var cc=riskScore||0, fe=document.getElementById('rFeeling');
-  if(fe){ fe.style.display='block';
-    if(cc>=1 && totalScore>=45){ fe.innerHTML='Right now, <b style="color:#ff8a8a">'+cc+'</b> product'+(cc>1?'s':'')+' in your home '+(cc>1?'are':'is')+' flagged for concerning ingredients — and your family touches '+(cc>1?'them':'it')+' every day.'; }
-    else if(cc>=1){ fe.innerHTML='I flagged <b style="color:#E8A317">'+cc+'</b> product'+(cc>1?'s':'')+' worth a second look — and the good news is '+(cc>1?'they\'re':'it\'s')+' all easy swaps.'; }
-    else { fe.innerHTML='I went looking and barely found a thing — your home is genuinely cleaner than most. 💛'; }
-  }
-  // Change #7 — visceral metaphor beside the score (Spotify-Wrapped style)
-  var mEl=document.getElementById('rMetaphor');
-  if(mEl){
-    mEl.style.display='block';
-    if(totalScore>=20){
-      var yrs=Math.max(1,Math.round(totalScore*0.18));
-      var cigs=(totalScore/100*5).toFixed(1);
-      mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fafdff">What that actually means</div>'+
-        '<div style="font-size:1.04rem;font-weight:800;color:#fff;line-height:1.35;margin-top:6px">Your home is running like one <span style="color:#FF8A5A">'+yrs+' years older</span> than it is.</div>'+
-        '<div style="font-size:.84rem;color:#c0cee0;margin-top:6px">Daily exposure ≈ <b style="color:#ff9a9a">'+cigs+' cigarettes a day</b> of avoidable chemical load.</div>';
-    } else {
-      mEl.innerHTML='<div style="font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(55,199,154,.7)">What that actually means</div>'+
-        '<div style="font-size:1.04rem;font-weight:800;color:#fff;line-height:1.35;margin-top:6px">Your home is running <span style="color:#37c79a">years younger</span> than most — like a household that protects itself.</div>';
-    }
-  }
+  // 2026-06-21 Shannon: rFeeling + rMetaphor REMOVED. The "≈ cigarettes a day" + "X years older"
+  // + "Right now N products are flagged" copy were getting clipped at the bottom of .rt and showing
+  // as two dark crescent artifacts floating above the sim card. Killed both entirely.
+  var fe=document.getElementById('rFeeling'); if(fe){ fe.style.display='none'; fe.innerHTML=''; }
+  var mEl=document.getElementById('rMetaphor'); if(mEl){ mEl.style.display='none'; mEl.innerHTML=''; }
   // Conditional final CTA
   var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
   var nm = userName ? (', '+userName) : '';
