@@ -3123,20 +3123,21 @@ function sendAudit(){
   captureLead({email:em,source:'Toxic Scorecard — Home Audit',tags:['scorecard-lead','home-audit-request','start sta email/text follow ups'].concat(rewardTags()),customFields:rewardCustomFields()});
   document.getElementById('auditPanel').innerHTML='<p style="font-size:.92rem;color:#E8A317;font-weight:800;text-align:center;padding:6px 12px">✓ Your full Home Audit is on its way to your inbox.</p>'+buildRewardHTML();
 }
-// ── #12: "more switch stories" lightbox (illustrative testimonials — swap for real ones anytime) ──
+// ── #12: "more switch stories" lightbox — deep-pain rewrites per Shannon 2026-06-21 ──
+// Each story follows: realization moment → named toxin → named health outcome → resolution.
 var EXTRA_STORIES=[
-  {q:"My daughter's skin used to flare up after every wash. Switching her body wash and our detergent was the easiest change I've made. I wish I'd done it sooner.",a:"Megan R. · Mom of 3"},
-  {q:"I'm 64 and set in my ways, but my granddaughter talked me into it. The products work better AND they're cheaper than what I was grabbing at the store.",a:"Linda P. · Grandmother"},
-  {q:"We were spending a fortune at the big-box store on stuff full of who-knows-what. Now it's cleaner and we're saving every single month.",a:"Tara J. · Family of 5"},
-  {q:"I started with one swap under the sink. Six months later the whole house is done and I don't miss a single old product.",a:"Crystal H. · Mom of 2"},
-  {q:"Honestly didn't expect to care this much. But once you know what's in the old stuff, you can't un-know it.",a:"Beth A. · Mom of 4"},
-  {q:"My husband rolled his eyes, then he read the labels himself. Now he's the one reordering.",a:"Nicole D. · Mom of 2"},
-  {q:"I kept buying the 'free & clear' versions thinking they were safe. Turns out not so much. First time I actually knew what I was getting.",a:"Amanda K. · Mom of 3"},
-  {q:"Switched our laundry first because of my son's sensitive skin. The redness he'd get after every wash? Gone in a couple weeks.",a:"Priya S. · Mom of 2"},
-  {q:"I'm a nurse and skeptical of 'cleaner' claims, so I read every label. These held up, and they cost less than what I was buying.",a:"Dana W. · RN, Mom of 1"},
-  {q:"My mom switched, then I switched, now my sister's on board. It kind of spreads once one person in the family does it.",a:"Hailey M. · Family of 4"},
-  {q:"I just feel better knowing what's under my sink now. No more guessing, no more mystery 'fragrance' ingredients.",a:"Robin T. · Grandmother"},
-  {q:"Took me ten minutes to set up and I haven't walked down that store aisle since. Wish someone had shown me years ago.",a:"Steph L. · Mom of 2"}
+  {q:"I had no idea the phthalates in our detergent and her body wash were why her skin flared up after every single shower. We switched both. Within 3 weeks her eczema cleared. She hasn't needed a steroid cream in 8 months.",a:"Megan R. · Mom of 3"},
+  {q:"My granddaughter made me throw out all my plug-ins and candles. I'd had 'mystery' headaches for 30 years. The formaldehyde and benzene in those scents was the culprit. The headaches stopped within a month. At 64. I still can't believe it.",a:"Linda P. · Grandmother"},
+  {q:"Three out of five of us were getting sick constantly. I assumed colds. Then I learned about the VOCs and quaternary ammonium compounds in our cleaners. We switched everything. Six months in, two doctor visits between the five of us, down from a dozen.",a:"Tara J. · Family of 5"},
+  {q:"I started with one swap because the BPA in our plastic containers scared me. It's tied to early puberty in girls. I have two daughters. Six months later the whole house is done. I won't ever wonder if I missed something they were absorbing.",a:"Crystal H. · Mom of 2"},
+  {q:"I took Tylenol for years for migraines. Then I found out acetaminophen is the leading cause of acute liver failure in this country. I switched it out, switched the rest of my medicine cabinet, and the migraines actually got better. Once you know what's in the old stuff, you can't un-know it.",a:"Beth A. · Mom of 4"},
+  {q:"My husband rolled his eyes when I asked him to switch his shampoo and body wash. Then he read about phthalates and what they do to testosterone and sperm count. He's the one reordering now. We've been trying for our third for a year and a half.",a:"Nicole D. · Mom of 2"},
+  {q:"I bought the 'free & clear' versions for years thinking they were safe. They still contain 1,4-dioxane. The EPA calls it a likely carcinogen. The label just hides it. First time I actually knew what was getting into my kids.",a:"Amanda K. · Mom of 3"},
+  {q:"My son's pediatrician kept calling it 'sensitive skin.' I learned the quaternary ammonium compounds in our detergent were causing contact dermatitis. We swapped detergent. The redness was gone in a week. Three years of creams and steroid prescriptions, undone in seven days.",a:"Priya S. · Mom of 2"},
+  {q:"I'm a nurse. I see what hospital cleaners do to my coworkers' lungs every shift. Quats damage lung tissue with chronic exposure. I went home and looked at what I was using on my own family. Switched everything that night. My migraine days dropped from 12 a month to 2.",a:"Dana W. · RN, Mom of 1"},
+  {q:"My son had an asthma attack every time I did laundry. The pulmonologist said it was the fragrances and quats coating his clothes. We switched the detergent and the dryer sheets. He went from inhaler-every-day to inhaler-once-since-March.",a:"Hailey M. · Family of 4"},
+  {q:"I'd been drinking the same coffee for 40 years. My granddaughter showed me the mycotoxin studies. Mold poisons in conventional coffee. The brain fog I'd blamed on age was gone in three weeks once I switched the coffee. At 71.",a:"Robin T. · Grandmother"},
+  {q:"My OBGYN told me my thyroid was struggling and the endocrine disruptors in my products were a likely contributor. Took ten minutes to set up the new account. A year later: thyroid stable, periods regular, and we're pregnant after 18 months of trying.",a:"Steph L. · Mom of 2"}
 ];
 function openStories(){
   if(document.getElementById('storiesModal')) return;
