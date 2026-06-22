@@ -3068,15 +3068,16 @@ function rewardCustomFields(){
 }
 function rewardTags(){ return ['store-credit-100'].concat(isSpeedrun()?['speedrun-bonus']:[]); }
 function buildRewardHTML(){
-  var h='<div style="margin-top:14px;background:linear-gradient(180deg,rgba(31,138,112,.24),rgba(31,138,112,.07));border:1px solid rgba(55,199,154,.5);border-radius:16px;padding:18px;text-align:center">'+
-    '<div style="font-size:1.6rem">🎁</div>'+
-    '<div style="font-size:1.28rem;font-weight:900;color:#37c79a;margin-top:2px;letter-spacing:.01em">$100 CAD Store Credit</div>'+
-    '<div style="font-size:.82rem;color:#c0cee0;margin-top:9px;line-height:1.55">You finished honestly.<br>$100 CAD in store credit is waiting for you — it lands in your account the moment you set it up. Same offer I give every family ready to look.<br><br>No pressure. No expiry. Use it when it feels right.</div>'+
-    '<div style="font-size:.8rem;font-weight:800;color:#dbe4f0;margin-top:9px">— Shannon</div>';
+  var h='<div style="margin-top:14px;background:linear-gradient(180deg,rgba(31,138,112,.24),rgba(31,138,112,.07));border:1px solid rgba(55,199,154,.5);border-radius:16px;padding:20px 18px;text-align:center">'+
+    '<div style="font-size:1.8rem">🎁</div>'+
+    '<div style="font-size:1.32rem;font-weight:900;color:#37c79a;margin-top:4px;letter-spacing:.01em">$100 Store Credit</div>'+
+    '<div style="font-size:.92rem;color:#c0cee0;margin-top:11px;line-height:1.55">Book a quick 15-minute shopping audit with me. I will walk you through your list, answer your questions, and put the <b style="color:#fff">$100 store credit</b> straight in your account.</div>'+
+    '<button onclick="document.getElementById(\'bookingEmbed\').scrollIntoView({behavior:\'smooth\',block:\'start\'})" style="margin-top:16px;width:100%;min-height:52px;padding:14px 18px;border:none;border-radius:12px;background:linear-gradient(180deg,#FF9900,#E47911);color:#fff;font-weight:900;font-size:1.04rem;cursor:pointer;font-family:inherit;box-shadow:0 8px 22px -6px rgba(228,121,17,.55)">📅 Book my shopping audit →</button>'+
+    '<div style="font-size:.78rem;font-weight:700;color:#dbe4f0;margin-top:10px">💛 Shannon</div>';
   if(isSpeedrun()){
     h+='<div style="margin-top:13px;padding-top:13px;border-top:1px solid rgba(255,255,255,.13)">'+
       '<div style="font-size:.95rem;font-weight:900;color:#FFD27A">🏆 Speedrun bonus</div>'+
-      '<div style="font-size:.8rem;color:#c0cee0;margin-top:4px;line-height:1.45">You looked fast <em>and</em> honest — I\'ll personally DM you my own switch list. — Shannon</div></div>';
+      '<div style="font-size:.8rem;color:#c0cee0;margin-top:4px;line-height:1.45">You looked fast <em>and</em> honest. I will personally DM you my own switch list. 💛 Shannon</div></div>';
   }
   h+='</div>';
   return h;
@@ -3131,7 +3132,9 @@ function sendSwitchList(){
   if(ph.replace(/\D/g,'').length<7){ alert('Please enter your phone number'); return; }
   captureLead({phone:ph,source:'Toxic Scorecard — Switch List',tags:['scorecard-lead','switch-list-request','start sta email/text follow ups'].concat(rewardTags()),customFields:rewardCustomFields()});
   // Now that they've opted in, reveal the actual swap list (their payoff) + the reward
-  document.getElementById('switchListPanel').innerHTML='<p style="font-size:.92rem;color:#37c79a;font-weight:800;text-align:center;padding:6px 12px">✓ Got it! Sending these to your phone now 💚</p>'+buildSwitchListHTML()+buildRewardHTML();
+  // 2026-06-21 Shannon: switch list itself is going to them via SMS; don't repeat it on the page.
+  // Confirmation + the $100 store credit + book-the-audit CTA is the whole reveal now.
+  document.getElementById('switchListPanel').innerHTML='<p style="font-size:.92rem;color:#37c79a;font-weight:800;text-align:center;padding:6px 12px">✓ Got it! Sending your full switch list to your phone now 💚</p>'+buildRewardHTML();
 }
 function openAudit(){
   var p=document.getElementById('auditPanel'), s=document.getElementById('switchListPanel'); if(s) s.style.display='none';
