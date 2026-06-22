@@ -1304,10 +1304,14 @@ body { padding-top:0 !important; }
     <div class="fc" id="finalCta">
       <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 20px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif">
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px">And the cost is real. The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
+        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:6px">A year later the same cleaner is still under the sink.</p>
+        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:6px">The candle still burns.</p>
+        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:14px">The wipes are still in the diaper bag.</p>
+        <p style="font-size:1.02rem;line-height:1.55;color:#fff;font-weight:800;text-align:center;margin-bottom:10px">And the cost is real.</p>
+        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:14px">The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
         <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
-        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:0">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them. For free.</p>
+        <p style="font-size:.96rem;line-height:1.55;color:#eaf1f8;margin-bottom:6px">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them.</p>
+        <p style="text-align:center;margin:14px 0 0"><span style="color:#C8102E;font-weight:900;font-size:1.45rem;letter-spacing:.06em;text-transform:uppercase">FOR FREE</span></p>
       </div>
       <div style="text-align:center;margin-bottom:14px">
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#C8102E !important;margin-bottom:4px">Stop guessing.</div>
@@ -2868,7 +2872,8 @@ function showResults(){
   // Conditional final CTA
   var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
   var nm = userName ? (', '+userName) : '';
-  if(fcH) fcH.textContent='Okay'+nm+'. Here’s where to go next.';
+  // 2026-06-21 Shannon: drop "Okay" + period sentence. Two lines, name above "Next Steps".
+  if(fcH) fcH.innerHTML=(userName?userName:'You')+'<br><span style="display:inline-block;margin-top:4px">Next Steps</span>';
   if(fcP) fcP.textContent='Pick whatever feels right. Zero pressure.';
 
   const mx=Math.max(...Object.values(roomScores),1);
