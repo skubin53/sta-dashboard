@@ -1648,15 +1648,43 @@ const STEPS = [
       chips:['Optimum Nutrition','Premier Protein','Quest','Muscle Milk','Garden of Life','Truvani','Proflex']},
    ]},
 
-  // Kitchen extras (page 3)
+  // Kitchen extras (page 3) — deep research per item, sourced 2026-06-21 per Shannon's "for the report" ask.
+  // Each item carries: det (short reveal in quiz UI), swap (clean alternative shown in report), ing (chemicals
+  // / issues), harm (long-form research copy with red highlights, rendered in /r/<id> Switch List).
+  // Primary sources cited per entry: C8 Science Panel; CDC NHANES; IARC; EPA TSCA; Nebraska Medicine 2023;
+  // North Carolina State 2023 cutting-board study; Lebanese University 2012 Al migration; WHO PTWI; FDA.
   {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else to check in your kitchen?',sub:'Select all that apply.',
    answers:[
-     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',det:'Releases toxic gas when overheated — linked to cancer, thyroid disruption, and birth defects'},
-     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',det:'BPA is a hormone disruptor — linked to fertility problems, early puberty, and brain development issues in children'},
-     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',det:'Sheds microplastics directly into your food — linked to inflammation and digestive problems'},
-     {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',det:'Aluminum leaches into food at heat — linked to memory problems and neurological issues'},
-     {lbl:'Single-serve coffee machine (Keurig, Nespresso)',em:'☕',pts:8,room:'Kitchen',det:'Hot water through plastic at pressure releases hormone-disrupting chemicals — every single cup'},
-     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:5,room:'Kitchen',det:'Heating plastic containers in the microwave releases hormone-disrupting chemicals into your food'},
+     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',
+      det:'Coating breaks down above 500°F (below medium-high heat on most stoves) and releases PFAS forever chemicals into the air your family breathes.',
+      swap:'Cast iron or stainless steel',
+      ing:'PFAS forever chemicals, PTFE that degrades at 500°F, perfluorinated coatings',
+      harm:'<b style="color:#C8102E">99% of Americans</b> already have PFAS in their blood (CDC). The C8 Science Panel linked these chemicals to <b style="color:#C8102E">kidney cancer, testicular cancer, ulcerative colitis, thyroid disease,</b> and pregnancy-induced hypertension.[[P]]The pan coating breaks down above 500°F (cooking spray + medium-high heat hits that fast). The fumes give people <b style="color:#C8102E">flu-like polymer-fume fever</b> and kill pet birds. PFAS are called "forever chemicals" because they never break down in your body or in the environment.'},
+     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',
+      det:'Leaches hormone disruptors into your food. Heat, fat, and acidic foods speed it up. "BPA-free" containers were tested with BPS that disrupts hormones just as much.',
+      swap:'Glass storage with bamboo or silicone lids',
+      ing:'Bisphenol A (BPA), bisphenol S/F replacements, phthalate plasticizers (DEHP, DBP)',
+      harm:'<b style="color:#C8102E">93% of Americans</b> test positive for BPA in their urine (CDC NHANES). BPA mimics estrogen. It is linked to <b style="color:#C8102E">infertility, lower sperm count, early puberty in girls, type 2 diabetes, breast and prostate cancer,</b> and ADHD-like behavior in children.[[P]]The "BPA-free" replacement (BPS) is in NIH-cited research showing the same or worse hormone disruption. Every plastic container of leftovers your kids reheat is a low-dose hormone exposure their growing body cannot get rid of.'},
+     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',
+      det:'A 2023 lab study clocked one plastic cutting board shedding 14 to 71 mg of microplastics per cut, straight into the food you are about to eat.',
+      swap:'Wood or bamboo cutting board',
+      ing:'Polyethylene and polypropylene microplastics released by every knife stroke',
+      harm:'A 2023 study in <i>Environmental Science & Technology</i> measured one plastic cutting board shedding <b style="color:#C8102E">14 to 71 milligrams of microplastics per cut</b>. Those fragments go straight into your meal.[[P]]Microplastics have now been found in human <b style="color:#C8102E">lung tissue, breast milk, and placentas</b>. The WWF/Newcastle 2019 review estimates we eat a credit card\'s worth of plastic every week. Plastic boards also hold more bacteria in knife grooves than wood (USDA Cliver, 1993).'},
+     {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',
+      det:'Hot food + acidic ingredients = aluminum and DEHP phthalates leaching straight into the bite you are about to take.',
+      swap:'Parchment paper or beeswax wraps',
+      ing:'Aluminum that leaches at heat, PVC plastic wrap loaded with DEHP phthalates',
+      harm:'A Lebanese University study measured cooking with aluminum foil transferring up to <b style="color:#C8102E">378 mg of aluminum per serving</b>, well over the WHO weekly safety limit in a single meal. Aluminum is found in the <b style="color:#C8102E">brain plaques of Alzheimer\'s patients</b> (Nature review, 2008).[[P]]PVC plastic wrap contains <b style="color:#C8102E">DEHP phthalates</b> on California Prop 65 for cancer and reproductive harm. Acidic foods (tomato, lemon, spinach) accelerate both forms of leaching dramatically.'},
+     {lbl:'Single-serve coffee machine (Keurig, Nespresso)',em:'☕',pts:8,room:'Kitchen',
+      det:'190°F water under pressure through polystyrene plastic pods every morning. The WHO classifies styrene as "probably carcinogenic to humans."',
+      swap:'French press or pour-over with whole beans',
+      ing:'Polystyrene leaching styrene, plastic-aluminum hot pressurized brewing, phthalates',
+      harm:'K-Cups are made of polystyrene. The WHO\'s IARC reclassified styrene as <b style="color:#C8102E">"probably carcinogenic to humans"</b> (Group 2A) in 2018.[[P]]Running 190°F water through plastic under pressure accelerates chemical migration into every cup. Independent testing has detected <b style="color:#C8102E">phthalates</b> in beverages brewed through plastic-lined pods. Nespresso aluminum capsules also leach aluminum into the acidic coffee. Every single cup is a low-dose hit of three different concerns.'},
+     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:5,room:'Kitchen',
+      det:'A 2023 University of Nebraska study found microwaving plastic containers releases 4.22 million microplastics + 2.11 billion nanoplastics per cm² of plastic into the food.',
+      swap:'Reheat in glass or ceramic (stovetop is better)',
+      ing:'Microplastics and nanoplastics released by heat, BPA migration, phthalate leaching',
+      harm:'A 2023 University of Nebraska study in <i>Environmental Science & Technology</i> measured 3-minute microwaving releasing <b style="color:#C8102E">4.22 million microplastics + 2.11 billion nanoplastics per square centimeter of plastic</b> into the food itself.[[P]]"Microwave safe" only means the container will not <b style="color:#C8102E">melt</b>. It does not mean the chemicals stay put. BPA and phthalate leaching speeds up dramatically at microwave temperatures, especially in fatty or acidic foods.'},
      {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
    ]},
 
@@ -3062,6 +3090,9 @@ function collectSwitchItems(){
     if(s.type==='brand_single'){ var b=answers[s.id].brand||''; if(isConcern(b)) items.push({brand:b,cat:s.cat}); }
     else if(s.type==='chip_cards'&&s.cards){ s.cards.forEach(function(card){ var sel=answers[s.id][card.id]||{}; if(sel.isNone) return; selBrands(sel).forEach(function(b){ if(isConcern(b)) items.push({brand:b,cat:card.cat}); }); }); }
     else if(s.type==='brand_multi'&&s.fields){ s.fields.forEach(function(f){ var b=answers[s.id][f.id]||''; if(isConcern(b)) items.push({brand:b,cat:f.cat}); }); }
+    // 2026-06-21 Shannon: include multi-type warnings (kitchen_extras, homeair, meds) in the report
+    // when the chip carries its own swap/ing/harm fields. Treats the chip label as the "brand" to strike out.
+    else if(s.type==='multi'&&s.answers){ s.answers.forEach(function(a){ var sel=answers[s.id][a.lbl]; if(sel && !a.exclusive && a.swap){ items.push({brand:a.lbl, cat:s.id, label:a.lbl, _multi:true, _swap:a.swap, _ing:a.ing||'', _harm:a.harm||''}); } }); }
   });
   return items;
 }
@@ -3107,6 +3138,15 @@ function buildScData(){
   // to the /r/<id> report. Use safe markers so the server can render approved formatting without
   // accepting raw HTML from the wire.
   var items=collectSwitchItems().slice(0,12).map(function(it){
+    // Multi-type warnings carry their own ing / harm / swap on the chip itself.
+    if(it._multi){
+      var harmMarkedM = (it._harm || '')
+        .replace(/<br\s*\/?>\s*<br\s*\/?>/gi, '[[P]]')
+        .replace(/<b\s+style=["']color:#C8102E["']>/gi, '[[R]]')
+        .replace(/<\/b>/gi, '[[/R]]')
+        .replace(/<[^>]+>/g, '');
+      return { brand:it.brand, save:0, target:it._swap, ing:it._ing, harm:harmMarkedM };
+    }
     var d = (typeof findingDisplay === 'function') ? findingDisplay(it.brand, it.cat, it.label) : {ing:'', harm:''};
     var harmMarked = (d.harm || '')
       .replace(/<br\s*\/?>\s*<br\s*\/?>/gi, '[[P]]')
