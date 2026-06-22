@@ -2810,6 +2810,13 @@ async function submitReport(){
 
 function showResults(){
   showScreen('s-results');
+  // 2026-06-21 Shannon: scroll to absolute top so the score donut + headline aren't cut off by where the user happened to be scrolled on the last quiz step.
+  try {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    var resScreen = document.getElementById('s-results');
+    if (resScreen && resScreen.scrollTop != null) resScreen.scrollTop = 0;
+    if (document.scrollingElement) document.scrollingElement.scrollTop = 0;
+  } catch(e){}
   track('scan_completed'); // Change #9 — influencer attribution
   loadCommunityStats(); // Change #12 — refresh count so the reveal includes their own scan
   // RETARGETING version (?r=1): existing leads have already been to the site — hide the off-site Shop + Tour doors
