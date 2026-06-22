@@ -2939,11 +2939,7 @@ function showResults(){
       }
       fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
     });
-    var remaining=Math.max(0, totalToxBefore-3);
-    var moreTxt = remaining>0
-      ? 'Your full Switch List is ready. <b>'+totalToxBefore+' toxic products → '+totalToxBefore+' cleaner swaps.</b>'
-      : 'Your full Switch List is ready, room by room.';
-    fh+='<div class="tox-soft"><div class="tox-soft-q">'+moreTxt+'</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Switch List →</button></div>';
+    fh+='<div class="tox-soft"><div class="tox-soft-q">Click below to get your full shopping audit texted to you ASAP.</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Shopping Audit →</button></div>';
   } else {
     // Low-score fallback — reward green behavior, never punish.
     fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss — the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That’s the top few that trip almost everyone up.</div></div>';
@@ -2953,7 +2949,7 @@ function showResults(){
     } else {
       fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">🌿 Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>';
     }
-    fh+='<div class="tox-soft"><div class="tox-soft-q">✓ Want your personalized swap list anyway?</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Switch List →</button></div>';
+    fh+='<div class="tox-soft"><div class="tox-soft-q">Click below to get your shopping audit texted to you ASAP.</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Shopping Audit →</button></div>';
   }
   document.getElementById('findList').innerHTML=fh;
 
