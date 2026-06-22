@@ -1286,7 +1286,6 @@ body { padding-top:0 !important; }
     <div id="simWrap" style="display:none"></div>
     <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
-    <div class="sw" id="swEl"><div class="sw-lbl">✦ Your Biggest Single Change</div><h3 id="swT">—</h3><p id="swD">—</p><div class="sw-imp">📉 Score: <strong id="swF">—</strong> → <strong id="swTo">—</strong></div></div>
     <div class="sh-c"><h3>📣 Share Your Score</h3><p>Every share helps a friend find their family's score</p><canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas><div class="sh-btns"><button class="sb sb-fb" onclick="shareScore()">📲 Share</button><button class="sb sb-dl" onclick="dlCard()">📸 Download</button><button class="sb sb-cp" onclick="cpLink()">🔗 Copy Link</button></div></div>
     <div class="rcard" style="background:rgba(201,162,39,.06);border-color:rgba(201,162,39,.25)"><h3>💛 From Families Who Switched</h3>
       <div style="display:flex;flex-direction:column;gap:16px;margin-top:6px">
@@ -2969,17 +2968,21 @@ function showResults(){
     if(ul) ul.innerHTML=uh;
   }
 
-  // Swap
-  const te=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0];
-  if(te&&te[1]>0&&maxPts>0){
-    const [r,p]=te;
-    const rd=Math.max(2,Math.round((gotPts-p)/maxPts*100));
-    document.getElementById('swT').textContent=`Your ${r} — Highest Impact`;
-    document.getElementById('swD').textContent=`Switching just your ${r.toLowerCase()} products to cleaner alternatives would make the biggest single difference for your family.`;
-    document.getElementById('swF').textContent=totalScore;
-    document.getElementById('swTo').textContent=rd;
-  } else {
-    document.getElementById('swEl').style.display='none';
+  // 'Your Biggest Single Change' card removed per Shannon 2026-06-21. Logic kept as no-op
+  // (null-guarded) so any other code still relying on roomScores ordering keeps working.
+  const swElNode = document.getElementById('swEl');
+  if (swElNode) {
+    const te=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0];
+    if(te&&te[1]>0&&maxPts>0){
+      const [r,p]=te;
+      const rd=Math.max(2,Math.round((gotPts-p)/maxPts*100));
+      const swT=document.getElementById('swT'); if(swT) swT.textContent=`Your ${r} — Highest Impact`;
+      const swD=document.getElementById('swD'); if(swD) swD.textContent=`Switching just your ${r.toLowerCase()} products to cleaner alternatives would make the biggest single difference for your family.`;
+      const swF=document.getElementById('swF'); if(swF) swF.textContent=totalScore;
+      const swTo=document.getElementById('swTo'); if(swTo) swTo.textContent=rd;
+    } else {
+      swElNode.style.display='none';
+    }
   }
   genCard();
 }
