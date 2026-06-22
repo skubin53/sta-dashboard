@@ -2901,6 +2901,21 @@ function showResults(){
   // Named-product card stack (capped at 3) — the screenshottable "moment of truth".
   // only genuinely TOXIC (red) brands count as "switch this" — excludes amber/cleaner-ish (e.g. Branch Basics); already impact-sorted
   var toxList=findings.filter(function(f){return f.pts>=7 && f.brand && brandTier(f.brand)==='red';});
+  // Shannon 2026-06-21: diversify findings across product families so the page doesn't
+  // read as "just swap your cleaners". One pick per family (highest-pts wins), fall back
+  // to next-highest if fewer than 3 distinct families were tapped.
+  var CAT_FAMILY={
+    dish:'cleaning',dishwasher:'cleaning',allpurpose:'cleaning',bleach:'cleaning',stain:'cleaning',
+    laundry:'cleaning',fabric:'cleaning',dryer:'cleaning',
+    coffee:'food',oil:'food',supplements:'food',
+    shampoo:'personal',bodywash:'personal',toothpaste:'personal',deodorant:'personal',makeup:'personal',
+    babywash:'baby',babylotion:'baby',babywipes:'baby',babylaundry:'baby',diaperash:'baby',babypowder:'baby',
+    homeair:'air',water:'water'
+  };
+  var seenFamily={}, diverse=[];
+  toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||'other'; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
+  if(diverse.length<3){ toxList.forEach(function(f){ if(diverse.indexOf(f)===-1 && diverse.length<3) diverse.push(f); }); }
+  toxList=diverse;
   buildSimulator(toxList); // Change #4: "what if I switched?" simulator — their actual top-impact toxic taps
   var fh='';
   var fh='';
