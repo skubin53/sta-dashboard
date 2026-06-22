@@ -1152,10 +1152,10 @@ body { padding-top:0 !important; }
       <div style="margin-bottom:8px">
         <div style="display:flex;justify-content:space-between;margin-bottom:3px">
           <span style="font-size:.78rem;font-weight:700;color:#fafdff">Average home</span>
-          <span style="font-size:.78rem;font-weight:900;color:#fafdff">68</span>
+          <span id="avgScoreLbl" style="font-size:.78rem;font-weight:900;color:#fafdff">—</span>
         </div>
         <div style="height:10px;background:rgba(255,255,255,.1);border-radius:50px;overflow:hidden">
-          <div style="height:100%;width:68%;background:rgba(200,16,46,.5);border-radius:50px"></div>
+          <div id="avgBar" style="height:100%;width:0%;background:rgba(200,16,46,.5);border-radius:50px;transition:width 1s ease"></div>
         </div>
       </div>
       <div>
@@ -2750,6 +2750,11 @@ function showCalcDetails(){
   var bench = document.getElementById('bench'); if(bench) bench.style.display='block';
   var yourBar = document.getElementById('yourBar'); if(yourBar) setTimeout(()=>{ yourBar.style.width=totalScore+'%'; }, 100);
   var yourScoreLbl = document.getElementById('yourScoreLbl'); if(yourScoreLbl) yourScoreLbl.textContent=totalScore;
+  // 2026-06-21 Shannon: Average home should be LOWER than user score so they feel above average and motivated to fix it.
+  // Formula: 12 points below user score, floored at 20, capped at 45 so it never exceeds the Caution Zone threshold.
+  var avgHomeScore = Math.max(20, Math.min(45, totalScore - 12));
+  var avgScoreLbl = document.getElementById('avgScoreLbl'); if(avgScoreLbl) avgScoreLbl.textContent=avgHomeScore;
+  var avgBar = document.getElementById('avgBar'); if(avgBar) setTimeout(()=>{ avgBar.style.width=avgHomeScore+'%'; }, 200);
   // Shannon photo reveal
   var sr = document.getElementById('shannonReveal'); if(sr) sr.style.display='block';
   var sm = document.getElementById('shannonMsg');
