@@ -2876,10 +2876,10 @@ function showResults(){
   // #4 personally-written results + #6 hopeful framing — Shannon's voice
   document.getElementById('rH').textContent = userName ? (userName+', here’s what I saw.') : 'Here’s what I saw.';
   var rpMsg;
-  if(totalScore<=20){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak — and what you’re already getting right.'; }
-  else if(totalScore<=45){ rpMsg='I’m not here to scare you — most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.'; }
-  else { rpMsg='Take a breath — I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
-  if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier — their growing bodies are just more sensitive. '+rpMsg; }
+  if(totalScore<=20){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.'; }
+  else if(totalScore<=45){ rpMsg='I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.'; }
+  else { rpMsg='Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
+  if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. '+rpMsg; }
   document.getElementById('rP').textContent=rpMsg;
   // change #8 — ZONE badge + "name the feeling" sentence (tied to real concern count)
   var z=document.getElementById('rZone');
@@ -3268,7 +3268,7 @@ function buildSimulator(toxList){
   });
   var n=swaps.length;
   wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched '+n+' thing'+(n>1?'s':'')+'?</h3>'+
-    '<p style="font-size:.95rem;color:#C8102E;font-weight:900;letter-spacing:.04em;margin:-4px 0 13px">Tap the toggles.</p>'+rows+
+    '<p style="font-size:.95rem;color:#C8102E!important;font-weight:900;letter-spacing:.04em;margin:-4px 0 13px"><span style="color:#C8102E!important">Tap the toggles.</span></p>'+rows+
     '<div class="sim-foot"><div class="sim-foot-row" style="justify-content:center;gap:14px"><span style="color:#C8102E!important;font-weight:900;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase">SAVINGS</span><b style="color:#C8102E!important;font-weight:900;font-size:1.5rem">~$<span id="simSave" style="color:#C8102E!important">'+save0+'</span></b></div></div>'+
     '</div>';
   wrap.style.display='block';
