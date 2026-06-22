@@ -2760,11 +2760,12 @@ function showCalcDetails(){
     if(anchor && anchor.parentNode) anchor.parentNode.insertBefore(grocEl, anchor);
   }
   if(grocEl){
+    // 2026-06-21 Shannon: the $X/month must hit RED so the cost-of-staying-put line stops the scroller cold.
     var grocMsg = totalScore>=70
-      ? 'Staying toxic is costing you about <strong>$'+savingsEst+'/month</strong>. That\'s grocery money — not "extra" spending.'
+      ? 'Staying toxic is costing you about <strong style="color:#C8102E;font-weight:900;font-size:1.15em">$'+savingsEst+'/month</strong>. That is grocery money, not "extra" spending.'
       : totalScore>=45
-        ? 'You\'re leaking about <strong>$'+savingsEst+'/month</strong> on the products you could cleanly swap.'
-        : 'You\'re already saving most of what you could. Maybe <strong>$'+savingsEst+'/month</strong> left on the table.';
+        ? 'You are leaking about <strong style="color:#C8102E;font-weight:900;font-size:1.15em">$'+savingsEst+'/month</strong> on the products you could cleanly swap.'
+        : 'You are already saving most of what you could. Maybe <strong style="color:#C8102E;font-weight:900;font-size:1.15em">$'+savingsEst+'/month</strong> left on the table.';
     grocEl.innerHTML = '<div style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#1F8A70;margin-bottom:4px">The cost of staying put</div><div style="font-size:15px;color:#dfe7e1;line-height:1.5">'+grocMsg+'</div>';
   }
   // Benchmark bars
