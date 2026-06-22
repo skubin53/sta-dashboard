@@ -667,7 +667,7 @@ html,body{
 .tox-soft-q b{color:#C8102E;font-weight:900}
 .tox-soft-btn{background:linear-gradient(180deg,#C8102E,#9b0c23);color:#fff;border:none;border-radius:12px;padding:14px 18px;font-weight:800;font-size:1rem;cursor:pointer;font-family:inherit;width:100%}
 /* Change #4 — "What if I switched?" simulator */
-.sim-card{background:#e6f3fc!important;border:1.5px solid rgba(95,179,199,.55)!important;box-shadow:0 4px 14px rgba(95,179,199,.18)!important}
+.sim-card{background:#cde9f5!important;border:2px solid rgba(95,179,199,.8)!important;box-shadow:0 6px 20px rgba(95,179,199,.32)!important;margin-top:18px!important}
 .sim-row{display:flex;align-items:center;gap:12px;padding:11px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);margin-bottom:9px;cursor:pointer;min-height:44px}
 .sim-row.on{background:rgba(31,138,112,.14);border-color:rgba(55,199,154,.45)}
 .sim-tog{flex:none;width:46px;height:27px;border-radius:50px;background:rgba(255,255,255,.18);position:relative;transition:background .2s}
@@ -3199,7 +3199,7 @@ function buildSimulator(toxList){
   var n=swaps.length;
   wrap.innerHTML='<div class="rcard sim-card"><h3>🧪 What if you switched '+n+' thing'+(n>1?'s':'')+'?</h3>'+
     '<p style="font-size:.8rem;color:#fafdff;margin:-4px 0 13px">Tap the toggles.</p>'+rows+
-    '<div class="sim-foot"><div class="sim-foot-row"><span style="color:#C8102E;font-weight:900">Savings</span><b style="color:#C8102E;font-weight:900">~$<span id="simSave">'+save0+'</span></b></div></div>'+
+    '<div class="sim-foot"><div class="sim-foot-row" style="justify-content:center;gap:14px"><span style="color:#C8102E;font-weight:900;font-size:1.25rem;letter-spacing:.06em;text-transform:uppercase">SAVINGS</span><b style="color:#C8102E;font-weight:900;font-size:1.5rem">~$<span id="simSave">'+save0+'</span></b></div></div>'+
     '</div>';
   wrap.style.display='block';
 }
