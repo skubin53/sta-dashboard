@@ -1067,7 +1067,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <button class="intro-cta-new" onclick="startQuiz()">Find My Family's Toxic Score →</button>
+    <div class="intro-field-new rise">
+      <label for="introPhone">Your cell phone</label>
+      <input id="introPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(___) ___-____"/>
+    </div>
+
+    <button class="intro-cta-new" onclick="startQuizWithCapture()">Find My Family's Toxic Score →</button>
 
     <div class="intro-chips-new">
       <span class="intro-chip"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free</span>
@@ -1954,6 +1959,27 @@ function startQuiz(){
   track('scan_started'); // Change #9 — influencer attribution
   try{ fetch(SERVER+'/scan-start',{method:'POST'}); }catch(e){} // Change #12 — increment the real community counter
   if(userName) document.getElementById('oFN').value=userName;
+}
+
+// 2026-06-23 Shannon: capture phone on the intro page so FB-ad leads land in GHL
+// even if they bounce before finishing the quiz.
+function startQuizWithCapture(){
+  var inp = document.getElementById('introPhone');
+  var ph = (inp && inp.value || '').trim();
+  if(ph.replace(/\D/g,'').length<10){
+    alert('Please enter your cell phone number so we can text you your results.');
+    if(inp) inp.focus();
+    return;
+  }
+  try{ window._introPhone = ph; }catch(e){}
+  try{
+    captureLead({
+      phone: ph,
+      source: 'Toxic Scorecard — Intro Opt-in',
+      tags: ['scorecard-lead','scorecard-intro-optin','start sta email/text follow ups']
+    });
+  }catch(e){}
+  startQuiz();
 }
 
 // SVG icons for option cards
