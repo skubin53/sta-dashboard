@@ -1068,6 +1068,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <div class="intro-field-new rise">
+      <label for="introFirstName">First name</label>
+      <input id="introFirstName" type="text" autocomplete="given-name" placeholder="Sarah"/>
+    </div>
+    <div class="intro-field-new rise">
+      <label for="introLastName">Last name</label>
+      <input id="introLastName" type="text" autocomplete="family-name" placeholder="Johnson"/>
+    </div>
+    <div class="intro-field-new rise">
       <label for="introPhone">Your cell phone</label>
       <input id="introPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(___) ___-____"/>
     </div>
@@ -1963,17 +1971,40 @@ function startQuiz(){
 
 // 2026-06-23 Shannon: capture phone on the intro page so FB-ad leads land in GHL
 // even if they bounce before finishing the quiz.
+// 2026-06-24 Shannon: also capture first + last name on intro so GHL contact is complete.
 function startQuizWithCapture(){
-  var inp = document.getElementById('introPhone');
-  var ph = (inp && inp.value || '').trim();
-  if(ph.replace(/\D/g,'').length<10){
-    alert('Please enter your cell phone number so we can text you your results.');
-    if(inp) inp.focus();
+  var fnEl = document.getElementById('introFirstName');
+  var lnEl = document.getElementById('introLastName');
+  var phEl = document.getElementById('introPhone');
+  var fn = (fnEl && fnEl.value || '').trim();
+  var ln = (lnEl && lnEl.value || '').trim();
+  var ph = (phEl && phEl.value || '').trim();
+  if(!fn){
+    alert('Please enter your first name.');
+    if(fnEl) fnEl.focus();
     return;
   }
-  try{ window._introPhone = ph; }catch(e){}
+  if(!ln){
+    alert('Please enter your last name.');
+    if(lnEl) lnEl.focus();
+    return;
+  }
+  if(ph.replace(/\D/g,'').length<10){
+    alert('Please enter your cell phone number so we can text you your results.');
+    if(phEl) phEl.focus();
+    return;
+  }
+  try{
+    window._introPhone = ph;
+    window._introFirstName = fn;
+    window._introLastName = ln;
+    // userName is the existing global the rest of the quiz uses for personalization
+    if(typeof userName !== 'undefined'){ userName = fn; }
+  }catch(e){}
   try{
     captureLead({
+      firstName: fn,
+      lastName: ln,
       phone: ph,
       source: 'Toxic Scorecard — Intro Opt-in',
       tags: ['scorecard-lead','scorecard-intro-optin','start sta email/text follow ups']
