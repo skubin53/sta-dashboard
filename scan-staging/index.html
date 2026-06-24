@@ -3238,15 +3238,25 @@ function switchListTeaser(){
   return '<div style="font-weight:800;color:#fff;margin-bottom:6px;font-size:1rem">📋 Your '+n+' personalized swap'+(n>1?'s are':' is')+' ready</div>'+
     '<p style="font-size:.82rem;color:#c0cee0;line-height:1.5">Drop in your number and I\'ll text you the full list — the cleaner swap for every brand you tapped. 💛</p>';
 }
+// 2026-06-23 Shannon: phone is now captured on the intro page, so don't re-ask at the end.
+function _hasIntroPhone(){ try{ return typeof window._introPhone==='string' && window._introPhone.replace(/\D/g,'').length>=10; }catch(e){ return false; } }
+function _phoneInputHtml(){
+  return '<input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(255,153,0,.55);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none;margin-bottom:8px"/>';
+}
 function openSwitchList(){
   var p=document.getElementById('switchListPanel'), a=document.getElementById('auditPanel'); if(a) a.style.display='none';
   if(p.style.display!=='none'){ p.style.display='none'; return; }
-  p.innerHTML=switchListTeaser()+'<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(255,153,0,.55);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendSwitchList()" style="width:100%;min-height:50px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:linear-gradient(180deg,#FF9900,#E47911);color:#fff;font-weight:900;font-size:1.02rem;cursor:pointer;box-shadow:0 6px 16px -4px rgba(228,121,17,.5)">Text me my swaps →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your list. Reply STOP anytime.</div></div>';
+  var phField = _hasIntroPhone() ? '' : _phoneInputHtml();
+  p.innerHTML=switchListTeaser()+'<div style="margin-top:12px">'+phField+'<button onclick="sendSwitchList()" style="width:100%;min-height:50px;padding:13px;border:none;border-radius:10px;background:linear-gradient(180deg,#FF9900,#E47911);color:#fff;font-weight:900;font-size:1.02rem;cursor:pointer;box-shadow:0 6px 16px -4px rgba(228,121,17,.5)">Text me my swaps →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your list. Reply STOP anytime.</div></div>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendSwitchList(){
-  var ph=((document.getElementById('slPhone')||{}).value||'').trim();
-  if(ph.replace(/\D/g,'').length<7){ alert('Please enter your phone number'); return; }
+  var ph;
+  if(_hasIntroPhone()){ ph = window._introPhone; }
+  else {
+    ph=((document.getElementById('slPhone')||{}).value||'').trim();
+    if(ph.replace(/\D/g,'').length<7){ alert('Please enter your phone number'); return; }
+  }
   captureLead({phone:ph,source:'Toxic Scorecard — Switch List',tags:['scorecard-lead','switch-list-request','start sta email/text follow ups'].concat(rewardTags()),customFields:rewardCustomFields()});
   // Now that they've opted in, reveal the actual swap list (their payoff) + the reward
   // 2026-06-21 Shannon: switch list itself is going to them via SMS; don't repeat it on the page.
@@ -3384,12 +3394,16 @@ function sendMyPlan(){
   var listHtml=chosen.map(function(s){return '<div style="display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.8rem"><span style="color:#ff9a9a;text-decoration:line-through;opacity:.8">'+shopLink(s.brand)+'</span><span style="color:#37c79a;font-weight:800">→ '+shopLink(s.target)+'</span></div>';}).join('');
   p.innerHTML='<div style="font-weight:800;color:#fff;margin-bottom:4px">📱 Your custom switch plan</div>'+
     '<div style="font-size:.78rem;color:#37c79a;font-weight:800;margin-bottom:10px">'+totalScore+' → '+projected+' cleaner · ~$'+totalSave+'/mo CAD back</div>'+listHtml+
-    '<div style="margin-top:12px"><input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none"/><button onclick="sendPlanLead('+totalSave+','+projected+')" style="width:100%;min-height:48px;margin-top:8px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my plan →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your plan. Reply STOP anytime.</div></div>';
+    '<div style="margin-top:12px">'+(_hasIntroPhone()?'':'<input id="slPhone" type="tel" inputmode="tel" placeholder="Your phone number…" style="width:100%;min-height:44px;padding:12px;border-radius:10px;border:1.5px solid rgba(55,199,154,.5);background:rgba(255,255,255,.07);color:#fff;font-size:16px;font-family:inherit;outline:none;margin-bottom:8px"/>')+'<button onclick="sendPlanLead('+totalSave+','+projected+')" style="width:100%;min-height:48px;padding:13px;border:none;border-radius:10px;background:#1F8A70;color:#fff;font-weight:800;font-size:15px;cursor:pointer">Text me my plan →</button><div style="font-size:.64rem;color:#fafdff;margin-top:6px;text-align:center;line-height:1.4">By tapping, you agree to get a text with your plan. Reply STOP anytime.</div></div>';
   p.style.display='block'; p.scrollIntoView({block:'center'});
 }
 function sendPlanLead(totalSave,projected){
-  var ph=((document.getElementById('slPhone')||{}).value||'').trim();
-  if(ph.replace(/\D/g,'').length<7){ alert('Please enter your phone number'); return; }
+  var ph;
+  if(_hasIntroPhone()){ ph = window._introPhone; }
+  else {
+    ph=((document.getElementById('slPhone')||{}).value||'').trim();
+    if(ph.replace(/\D/g,'').length<7){ alert('Please enter your phone number'); return; }
+  }
   var chosen=SIM_STATE.swaps.filter(function(s){return s.on;});
   captureLead({phone:ph,source:'Toxic Scorecard — Custom Switch Plan',tags:['scorecard-lead','switch-plan-request','start sta email/text follow ups'].concat(rewardTags()),customFields:Object.assign({score:totalScore,projectedScore:projected,monthlySavings:totalSave,swaps:chosen.map(function(s){return s.brand+' → '+s.target;}).join(', ')},rewardCustomFields())});
   document.getElementById('switchListPanel').innerHTML='<p style="font-size:.92rem;color:#37c79a;font-weight:800;text-align:center;padding:6px 12px">✓ Your custom plan is on its way. 💚</p>'+buildRewardHTML();
