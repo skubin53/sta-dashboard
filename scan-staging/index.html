@@ -1055,18 +1055,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="commStatLanding" class="comm-stat"></div>
 
     <!-- ═══ ROTATING PAIN-POINT HOOKS (Shannon's 5 chosen 2026-06-25) ═══ -->
-    <h1 class="intro-h1-new pain-rotator" id="painRotator" aria-live="polite">
-      <span class="pain-hook pain-active" data-hook="0">Your husband's deodorant is killing his sperm count.</span>
-      <span class="pain-hook" data-hook="1">Your kid's lunchbox is leaching plastic into their food.</span>
-      <span class="pain-hook" data-hook="2">Your kid's Goldfish crackers are dusted with a pesticide banned in 4 countries.</span>
-      <span class="pain-hook" data-hook="3">Your morning protein shake has more lead than a chocolate bar.</span>
-      <span class="pain-hook" data-hook="4">Your plug-in air freshener is doing far worse to the air in your home than you think.</span>
-    </h1>
+    <h2 id="painRotator" class="pain-rotator" aria-live="polite">
+      <span id="painCurrent" class="pain-current">Your husband's deodorant is killing his sperm count.</span>
+    </h2>
     <style>
-      .pain-rotator{min-height:130px;display:block;position:relative;font-family:'Anton','Bebas Neue',Impact,sans-serif;font-size:1.55rem;line-height:1.18;letter-spacing:.005em;color:#0B2545;text-transform:none;font-weight:400;text-align:center;margin:6px 0 14px}
-      .pain-hook{position:absolute;left:0;right:0;opacity:0;transition:opacity .55s ease;padding:0 4px}
-      .pain-hook.pain-active{opacity:1}
-      @media (min-width:480px){ .pain-rotator{font-size:1.85rem;min-height:140px} }
+      h2.pain-rotator{
+        font-family:'Anton','Bebas Neue',Impact,sans-serif !important;
+        font-size:1.55rem !important;
+        line-height:1.22 !important;
+        letter-spacing:.005em !important;
+        color:#0B2545 !important;
+        text-transform:none !important;
+        font-weight:400 !important;
+        text-align:center !important;
+        margin:6px auto 14px !important;
+        padding:0 6px !important;
+        max-width:100% !important;
+        min-height:100px;
+        display:block !important;
+        text-shadow:none !important;
+      }
+      .pain-current{
+        display:block;
+        opacity:1;
+        transition:opacity .3s ease;
+        width:100%;
+      }
+      @media (min-width:480px){ h2.pain-rotator{ font-size:1.78rem !important; min-height:110px; } }
     </style>
 
     <!-- scan stage + iconrow removed per Shannon advisor #4 -->
@@ -1992,15 +2007,25 @@ function startQuiz(){
 // 2026-06-23 Shannon: capture phone on the intro page so FB-ad leads land in GHL
 // even if they bounce before finishing the quiz.
 // 2026-06-24 Shannon: also capture first + last name on intro so GHL contact is complete.
-// ═══ ROTATING PAIN-POINT HOOKS — Shannon's 5 chosen 2026-06-25 ═══
+// ═══ ROTATING PAIN-POINT HOOKS — Shannon's 5 chosen 2026-06-25, normal block flow ═══
 (function painRotator(){
-  var hooks = document.querySelectorAll('#painRotator .pain-hook');
-  if (!hooks.length) return;
+  var hooks = [
+    "Your husband's deodorant is killing his sperm count.",
+    "Your kid's lunchbox is leaching plastic into their food.",
+    "Your kid's Goldfish crackers are dusted with a pesticide banned in 4 countries.",
+    "Your morning protein shake has more lead than a chocolate bar.",
+    "Your plug-in air freshener is doing far worse to the air in your home than you think."
+  ];
+  var el = document.getElementById('painCurrent');
+  if (!el) return;
   var idx = 0;
   setInterval(function(){
-    hooks[idx].classList.remove('pain-active');
-    idx = (idx + 1) % hooks.length;
-    hooks[idx].classList.add('pain-active');
+    el.style.opacity = '0';
+    setTimeout(function(){
+      idx = (idx + 1) % hooks.length;
+      el.textContent = hooks[idx];
+      el.style.opacity = '1';
+    }, 320);
   }, 4200);
 })();
 
