@@ -1382,10 +1382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="simWrap" style="display:none"></div>
     <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
-    <div class="rcard" style="background:#cde9f5;border:2px solid rgba(95,179,199,.8);box-shadow:0 6px 20px rgba(95,179,199,.32)"><h3>💛 Testimonies</h3>
-      <p style="font-size:.92rem;color:#0b2545;margin:6px 0 12px;font-weight:600">Click below to view customer testimonies.</p>
-      <button onclick="openStories()" style="margin-top:4px;width:100%;background:#C8102E;border:none;color:#fff;font-weight:900;font-size:1.04rem;letter-spacing:.02em;padding:16px 18px;border-radius:50px;cursor:pointer;font-family:inherit;box-shadow:0 6px 14px -4px rgba(200,16,46,.45)">📖 Click here for 12 wake-up calls →</button>
-    </div>
+    <!-- Testimonies block removed from score-reveal (Shannon 2026-06-26 08:29 MDT). Belongs on the post-payment thank-you page, not in the choice-architecture between $7 tripwire + free audit. -->
     <div class="fc" id="finalCta">
       <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 22px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif;text-align:center">
@@ -3182,7 +3179,7 @@ function showResults(){
       }
       fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
     });
-    fh+='<div class="tox-soft"><div class="tox-soft-q">Click below to get your full shopping audit texted to you ASAP.</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Shopping Audit →</button></div>';
+    // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
   } else {
     // Low-score fallback, reward green behavior, never punish.
     fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That’s the top few that trip almost everyone up.</div></div>';
@@ -3192,7 +3189,7 @@ function showResults(){
     } else {
       fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">🌿 Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>';
     }
-    fh+='<div class="tox-soft"><div class="tox-soft-q">Click below to get your shopping audit texted to you ASAP.</div><button class="tox-soft-btn" onclick="openSwitchList()">📱 Text Me My Shopping Audit →</button></div>';
+    // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — same reason as high-score branch
   }
   document.getElementById('findList').innerHTML=fh;
 
