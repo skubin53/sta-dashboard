@@ -2063,17 +2063,23 @@ function startQuiz(){
     "Did you know that the LEAD in your protein shake is impairing your brain, organs, and reproductive system?",
     "Your plug-in air freshener is causing damage to your organs."
   ];
+  // Per-hook display duration (ms). Hook idx 1 (lunchbox/bloodstream) gets +2s per Shannon 2026-06-26 08:30 MDT.
+  var durations = [4200, 6200, 4200, 4200, 4200];
   var el = document.getElementById('painCurrent');
   if (!el) return;
   var idx = 0;
-  setInterval(function(){
-    el.style.opacity = '0';
+  function tick(){
     setTimeout(function(){
-      idx = (idx + 1) % hooks.length;
-      el.textContent = hooks[idx];
-      el.style.opacity = '1';
-    }, 320);
-  }, 4200);
+      el.style.opacity = '0';
+      setTimeout(function(){
+        idx = (idx + 1) % hooks.length;
+        el.textContent = hooks[idx];
+        el.style.opacity = '1';
+        tick();
+      }, 320);
+    }, durations[idx]);
+  }
+  tick();
 })();
 
 // ═══ $9 CAD ($7 USD) SCORE RECOVERY TRIPWIRE, Square hosted checkout ═══
