@@ -834,6 +834,27 @@ body { padding-top:0 !important; }
 /* Make sure the multi-product BG doesn't block clicks */
 #s-intro::before { pointer-events:none !important; z-index:0 !important; }
 
+/* 2026-06-25 Shannon: title kicker + typed input text were invisible on the cream bg
+   (legacy navy-era colors). Force dark, readable text. */
+.intro-kicker {
+  color:#0B2545 !important;
+  border-color:rgba(11,37,69,.35) !important;
+  background:#fff !important;
+}
+.intro-field-new input {
+  color:#0B2545 !important;
+  background:#fff !important;
+  border-color:rgba(11,37,69,.25) !important;
+  -webkit-text-fill-color:#0B2545 !important;
+}
+.intro-field-new input::placeholder {
+  color:rgba(11,37,69,.4) !important;
+}
+.intro-field-new input:focus {
+  border-color:#C9A227 !important;
+  background:#fff !important;
+}
+
 /* ── COMPREHENSIVE CREAM-THEME CONTRAST PASS ── */
 .q-text, .q-hi, .q-greet { color:#0B2545 !important; }
 .q-greet b { color:#C8102E !important; }
