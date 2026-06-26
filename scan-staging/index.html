@@ -767,6 +767,8 @@ html, body { background:#F7F1E6 !important; color:#0B2545 !important; }
 .intro-eyebrow, .intro-h1, .intro-h1-l2, .intro-sub, .intro-fine,
 .q-eyebrow, .q-title, .q-sub, .q-kicker, .room-name,
 h1, h2, h3 { color:#0B2545 !important; }
+/* First-page question title in brand red, populist-patriot accent on the opening hook */
+h1.q-h1-seg { color:#C8102E !important; }
 .intro-chip { background:#fff !important; color:#0B2545 !important; border-color:#d4cdb8 !important; }
 .intro-trust-new { background:#fff !important; color:#0B2545 !important; }
 .trust-nm { color:#0B2545 !important; }
@@ -2271,7 +2273,7 @@ function renderStep(){
   h+=`<div class="q-kicker rise">${step.room||"Let's continue"}${stepIdx>=0?'<span class="q-room-pct">'+Math.round(((stepIdx+1)/STEPS.length)*100)+'%</span>':''}</div>`;
 
   // Question + sub
-  h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.q}</h1>`;
+  h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise q-h1-${step.id}">${step.q}</h1>`;
   if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
 
   // Chip cards (Shannon's Page 4 design)
