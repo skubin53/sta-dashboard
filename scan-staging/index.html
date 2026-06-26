@@ -1092,7 +1092,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="intro-inner">
 
     <div class="intro-kicker rise">The Family Home Toxic Scorecard</div>
-    <div id="commStatLanding" class="comm-stat"></div>
 
     <!-- ═══ ROTATING PAIN-POINT HOOKS (Shannon's 5 chosen 2026-06-25) ═══ -->
     <h2 id="painRotator" class="pain-rotator" aria-live="polite">
@@ -1111,7 +1110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         margin:6px auto 14px !important;
         padding:0 6px !important;
         max-width:100% !important;
-        min-height:100px;
+        min-height:64px;
         display:block !important;
         text-shadow:none !important;
       }
@@ -1121,12 +1120,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         transition:opacity .3s ease;
         width:100%;
       }
-      @media (min-width:480px){ h2.pain-rotator{ font-size:1.78rem !important; min-height:110px; } }
+      @media (min-width:480px){ h2.pain-rotator{ font-size:1.78rem !important; min-height:72px; } }
     </style>
 
     <!-- scan stage + iconrow removed per Shannon advisor #4 -->
     <!-- trust band removed per Shannon 2026-06-26 07:40 MDT — clearer flow from pain hook straight to opt-in -->
 
+    <!-- chips moved up to anchor the gap the trust band used to fill (Shannon 2026-06-26 07:44 MDT) -->
+    <div class="intro-chips-new rise" style="margin-bottom:18px;">
+      <span class="intro-chip"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free</span>
+      <span class="intro-chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span>
+      <span class="intro-chip"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No pressure</span>
+    </div>
 
     <div class="intro-field-new rise">
       <label for="introFirstName">First name</label>
@@ -1142,14 +1147,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <button class="intro-cta-new" onclick="startQuizWithCapture()">Find My Family's Toxic Score →</button>
-
-    <div class="intro-chips-new">
-      <span class="intro-chip"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free</span>
-      <span class="intro-chip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>3 min</span>
-      <span class="intro-chip"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No pressure</span>
-    </div>
-
-    <div class="intro-fine rise">Scored against independent safety data</div>
 
   </div>
 </div>
