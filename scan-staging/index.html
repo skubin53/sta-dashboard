@@ -1054,15 +1054,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="intro-kicker rise">The Family Home Toxic Scorecard</div>
     <div id="commStatLanding" class="comm-stat"></div>
 
-    <h1 class="intro-h1-new">
-      <span class="intro-h1-l1 rise" style="display:block">What <span class="intro-hide">Toxic Products</span></span>
-      <span class="intro-h1-l2 rise" style="display:block">Are Hiding In Your Home?</span>
+    <!-- ═══ ROTATING PAIN-POINT HOOKS (Shannon's 5 chosen 2026-06-25) ═══ -->
+    <h1 class="intro-h1-new pain-rotator" id="painRotator" aria-live="polite">
+      <span class="pain-hook pain-active" data-hook="0">Your husband's deodorant is killing his sperm count.</span>
+      <span class="pain-hook" data-hook="1">Your kid's lunchbox is leaching plastic into their food.</span>
+      <span class="pain-hook" data-hook="2">Your kid's Goldfish crackers are dusted with a pesticide banned in 4 countries.</span>
+      <span class="pain-hook" data-hook="3">Your morning protein shake has more lead than a chocolate bar.</span>
+      <span class="pain-hook" data-hook="4">Your plug-in air freshener is doing far worse to the air in your home than you think.</span>
     </h1>
+    <style>
+      .pain-rotator{min-height:130px;display:block;position:relative;font-family:'Anton','Bebas Neue',Impact,sans-serif;font-size:1.55rem;line-height:1.18;letter-spacing:.005em;color:#0B2545;text-transform:none;font-weight:400;text-align:center;margin:6px 0 14px}
+      .pain-hook{position:absolute;left:0;right:0;opacity:0;transition:opacity .55s ease;padding:0 4px}
+      .pain-hook.pain-active{opacity:1}
+      @media (min-width:480px){ .pain-rotator{font-size:1.85rem;min-height:140px} }
+    </style>
 
     <!-- scan stage + iconrow removed per Shannon advisor #4 -->
     <div class="intro-trust-new rise">
       <div>
-        <div class="trust-nm">Before your toddler finishes breakfast,<br>they've been exposed to 50+ chemicals.<br>Most from products you bought yourself.</div>
+        <div class="trust-nm">Find your score. Get the swap.<br>3 minutes. Backed by EPA, FDA, NIH primary research.</div>
       </div>
     </div>
 
@@ -1342,6 +1352,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#C8102E !important;margin-bottom:4px">Stop guessing.</div>
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#37c79a !important">Start swapping.</div>
       </div>
+      <!-- ═══ $7 SCORE RECOVERY PLAN TRIPWIRE (Shannon 2026-06-25) ═══ -->
+      <div style="background:#fff;border:2px solid #C9A227;border-radius:14px;padding:18px 18px 16px;margin-bottom:14px;box-shadow:0 8px 20px -8px rgba(11,37,69,.18)">
+        <div style="font-family:'Anton',sans-serif;font-size:18px;letter-spacing:.04em;text-transform:uppercase;color:#C8102E !important;margin-bottom:6px;text-align:center">Don't wait. Start swapping now.</div>
+        <div style="font-size:.92rem;color:#0B2545 !important;line-height:1.42;margin-bottom:12px;text-align:center">Your personalized 7-day swap plan, keyed to <strong>your exact score</strong>. Delivered in 60 seconds. One safer swap a day. EPA / FDA / NIH sourced.</div>
+        <button onclick="openScoreRecoveryTripwire()" style="width:100%;font-size:1.05rem;padding:18px 20px;background:linear-gradient(180deg,#FFA41C,#E47911);border:none;color:#fff;font-weight:900;border-radius:12px;cursor:pointer;box-shadow:0 8px 22px -6px rgba(228,121,17,.55);font-family:inherit">Get my 7-Day Score Recovery Plan → $7</button>
+        <div style="text-align:center;font-size:.72rem;color:rgba(11,37,69,.6) !important;margin-top:9px">One time. No subscription. No refunds. Powered by Square.</div>
+      </div>
+
+      <div style="text-align:center;font-size:.78rem;font-weight:700;color:rgba(11,37,69,.5) !important;text-transform:uppercase;letter-spacing:.16em;margin:12px 0 10px">— or talk it through —</div>
+
       <button class="door door-tour" style="width:100%;font-size:1.04rem;padding:18px 20px;margin-bottom:18px;background:linear-gradient(180deg,#FFA41C,#E47911);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 10px 28px -8px rgba(228,121,17,.55);font-family:inherit" onclick="document.getElementById('bookingEmbed').scrollIntoView({behavior:'smooth',block:'start'})">📅 Book my free shopping audit →</button>
       <p style="text-align:center;font-size:.84rem;color:#fafdff;margin-bottom:14px;line-height:1.5">15 minutes. One on one. No pitch. We map your house and pick your first 3 swaps together.</p>
       <div id="bookingEmbed" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:6px">
@@ -1972,6 +1992,29 @@ function startQuiz(){
 // 2026-06-23 Shannon: capture phone on the intro page so FB-ad leads land in GHL
 // even if they bounce before finishing the quiz.
 // 2026-06-24 Shannon: also capture first + last name on intro so GHL contact is complete.
+// ═══ ROTATING PAIN-POINT HOOKS — Shannon's 5 chosen 2026-06-25 ═══
+(function painRotator(){
+  var hooks = document.querySelectorAll('#painRotator .pain-hook');
+  if (!hooks.length) return;
+  var idx = 0;
+  setInterval(function(){
+    hooks[idx].classList.remove('pain-active');
+    idx = (idx + 1) % hooks.length;
+    hooks[idx].classList.add('pain-active');
+  }, 4200);
+})();
+
+// ═══ $9 CAD ($7 USD) SCORE RECOVERY TRIPWIRE — Square hosted checkout ═══
+window.SQUARE_SCORE_RECOVERY_URL = 'https://square.link/u/Hkd1QW5f';
+
+function openScoreRecoveryTripwire(){
+  try {
+    if (window.gtag) gtag('event','tripwire_click',{value:7,currency:'USD',item:'score_recovery_plan'});
+    if (window.dataLayer) dataLayer.push({event:'tripwire_click',value:7,currency:'USD',item:'score_recovery_plan'});
+  } catch(e){}
+  window.open(window.SQUARE_SCORE_RECOVERY_URL, '_blank');
+}
+
 function startQuizWithCapture(){
   var fnEl = document.getElementById('introFirstName');
   var lnEl = document.getElementById('introLastName');
