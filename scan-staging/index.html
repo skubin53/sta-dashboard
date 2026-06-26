@@ -2425,7 +2425,7 @@ function updateRisk(){
     } else if(s.type==='brand_multi' && s.fields){
       s.fields.forEach(f=>{ var b=answers[s.id][f.id]||''; if(isConcern(b)) count++; else if(isCleanBrand(b)) safe++; });
     } else if(s.answers){
-      s.answers.forEach(a=>{ if(!answers[s.id][a.lbl]) return; if((a.pts||0)>0) count++; else if((a.pts||0)<=1 && !a.exclusive) safe++; });
+      s.answers.forEach(a=>{ if(!answers[s.id][a.lbl]) return; if((a.pts||0)>0) count++; else if(typeof a.pts==='number' && a.pts===0 && !a.exclusive) safe++; });
     }
   });
   riskScore=count; safeScore=safe;
