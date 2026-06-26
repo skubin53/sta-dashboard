@@ -1933,6 +1933,11 @@ function buildActive(){
     return true;
   });
   activeSteps = AUDIT_STEPS.concat(roomSteps).filter(s => s.type!=='soft'); // 2026-06-20 (Matt): kill mid-quiz save-your-spot interrupt
+  // 2026-06-25 Shannon: skip the in-quiz 'what should I call you?' step when the
+  // intro form already captured first name (cold-traffic /now path). Redundant ask.
+  if (window._introFirstName) {
+    activeSteps = activeSteps.filter(s => s.id !== 'yourname');
+  }
 }
 
 function showScreen(id){
