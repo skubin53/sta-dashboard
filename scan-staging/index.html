@@ -9,6 +9,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KMZ2XV2F');</script>
 <!-- End Google Tag Manager -->
 
+<!-- Meta Pixel — Switch To America's pixel 1922419774790297 (installed 2026-06-25 per agent review #1) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1922419774790297');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1922419774790297&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="color-scheme" content="light only">
@@ -1900,6 +1917,14 @@ function buildActive(){
 function showScreen(id){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  // Meta Pixel: fire CompleteRegistration the moment the scorecard finishes + reveals
+  try {
+    if (id === 's-results' && !window._fbqResultsFired) {
+      window._fbqResultsFired = true;
+      if (window.fbq) fbq('track', 'CompleteRegistration', { content_name: 'Scorecard Complete', status: 'completed' });
+      if (window.dataLayer) dataLayer.push({event:'scorecard_complete'});
+    }
+  } catch(e){}
   // 2026-06-21 Shannon: every .screen is height:100dvh + overflow-y:auto, so it has
   // its OWN scrollTop independent of window scroll. Reset both — and retry post-layout
   // because the first call lands before the new screen's content has laid out.
@@ -2034,6 +2059,7 @@ window.SQUARE_SCORE_RECOVERY_URL = 'https://square.link/u/Hkd1QW5f';
 
 function openScoreRecoveryTripwire(){
   try {
+    if (window.fbq) fbq('track', 'InitiateCheckout', { value: 7, currency: 'USD', content_name: 'Score Recovery Plan', content_ids: ['score_recovery_v1'] });
     if (window.gtag) gtag('event','tripwire_click',{value:7,currency:'USD',item:'score_recovery_plan'});
     if (window.dataLayer) dataLayer.push({event:'tripwire_click',value:7,currency:'USD',item:'score_recovery_plan'});
   } catch(e){}
@@ -2069,6 +2095,11 @@ function startQuizWithCapture(){
     // userName is the existing global the rest of the quiz uses for personalization
     if(typeof userName !== 'undefined'){ userName = fn; }
   }catch(e){}
+  // Meta Pixel: Lead event fires the moment phone is captured (highest-quality optimization signal)
+  try {
+    if (window.fbq) fbq('track', 'Lead', { content_name: 'Scorecard Intro Opt-in', content_category: 'shopper_funnel' });
+    if (window.dataLayer) dataLayer.push({event:'scorecard_lead_capture', source:'now_intro'});
+  } catch(e){}
   try{
     captureLead({
       firstName: fn,
