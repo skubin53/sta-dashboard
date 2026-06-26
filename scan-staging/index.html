@@ -2429,7 +2429,7 @@ function updateRisk(){
   var spill=document.getElementById('safePill'), sNel=document.getElementById('safeN');
   if(spill&&sNel){
     if(safe>0){ spill.classList.add('show'); sNel.textContent=safe;
-      var sl=document.getElementById('safeLbl'); if(sl) sl.textContent=(safe===1?'clean pick':'clean picks');
+      var sl=document.getElementById('safeLbl'); if(sl) sl.textContent=(safe===1?'clean pick so far':'clean picks so far');
       if(safe>(updateRisk._lastSafe||0)){ spill.classList.remove('bump'); void spill.offsetWidth; spill.classList.add('bump'); } }
     else { spill.classList.remove('show'); sNel.textContent='0'; }
   }
