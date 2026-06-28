@@ -1146,7 +1146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <input id="introPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(___) ___-____"/>
     </div>
 
-    <button class="intro-cta-new" onclick="startQuizWithCapture()">Find My Family's Toxic Score →</button>
+    <button class="intro-cta-new" onclick="startQuizWithCapture()">Start the 3-minute scan →</button>
 
   </div>
 </div>
@@ -1384,36 +1384,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <!-- Testimonies block removed from score-reveal (Shannon 2026-06-26 08:29 MDT). Belongs on the post-payment thank-you page, not in the choice-architecture between $7 tripwire + free audit. -->
     <div class="fc" id="finalCta">
-      <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
+      <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Two ways forward.</h2>
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 22px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif;text-align:center">
-        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
-        <p style="font-size:1.08rem;line-height:1.55;color:#fff;font-weight:800;margin-bottom:6px">And the cost is real.</p>
-        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:14px">The chemicals that scored your home stay in the air. They land on your kids' skin. They build up year after year.</p>
-        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:12px"><b style="color:#fff">Here's the part no one tells you.</b> Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep.</p>
-        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:18px">That's what I do. I run a private storefront with hundreds of cleaner products that already passed the test. I walk families through their home one room at a time and help them swap out what's hurting them.</p>
-        <p style="text-align:center;margin:16px 0 0;line-height:1"><span style="color:#C8102E!important;font-weight:900;font-size:2.4rem;letter-spacing:.08em;text-transform:uppercase;font-family:'Anton',sans-serif">FOR FREE</span></p>
+        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:12px">A year from now the same cleaner is still under the sink. The candle still burns. The chemicals are still landing on your kids' skin.</p>
+        <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:0">Most families freeze because they don't know where to start. What's safe. What's not. What to swap. What to keep. Pick the path that fits tonight.</p>
       </div>
       <div style="text-align:center;margin-bottom:14px">
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#C8102E !important;margin-bottom:4px">Stop guessing.</div>
         <div style="font-family:'Anton',sans-serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:#0B2545 !important">Start swapping.</div>
       </div>
-      <!-- ═══ $7 SCORE RECOVERY PLAN TRIPWIRE (Shannon 2026-06-25) ═══ -->
-      <div style="background:#fff;border:2px solid #C9A227;border-radius:14px;padding:18px 18px 16px;margin-bottom:14px;box-shadow:0 8px 20px -8px rgba(11,37,69,.18)">
-        <div style="font-family:'Anton',sans-serif;font-size:18px;letter-spacing:.04em;text-transform:uppercase;color:#C8102E !important;margin-bottom:6px;text-align:center">Don't wait. Start swapping now.</div>
-        <div style="font-size:.92rem;color:#0B2545 !important;line-height:1.42;margin-bottom:12px;text-align:center">Your personalized 7-day swap plan, keyed to <strong>your exact score</strong>. Delivered in 60 seconds. One safer swap a day. EPA / FDA / NIH sourced.</div>
-        <button onclick="openScoreRecoveryTripwire()" style="width:100%;font-size:1.05rem;padding:18px 20px;background:linear-gradient(180deg,#C9A227,#A8851E);border:none;color:#fff;font-weight:900;border-radius:12px;cursor:pointer;box-shadow:0 8px 22px -6px rgba(201,162,39,.55);font-family:inherit">Get my 7-Day Score Recovery Plan → $7</button>
-        <div style="text-align:center;font-size:.72rem;color:rgba(11,37,69,.6) !important;margin-top:9px">One time. No subscription. No refunds. Powered by Stripe.</div>
+      <!-- ═══ $7 HERO CARD — symptom-pain list, no day numbering, no candles, no laundry (Shannon 2026-06-26 23:20 MDT voice) ═══ -->
+      <div style="position:relative;background:linear-gradient(180deg,#fff 0%,#FFF3E0 100%);border:3px solid #FF9900;border-radius:16px;padding:32px 22px 22px;margin-bottom:18px;box-shadow:0 14px 38px -10px rgba(255,153,0,.55),0 4px 14px rgba(11,37,69,.18)">
+        <div style="position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:#0B2545 !important;color:#fff !important;font-family:'Anton',sans-serif;font-size:17px !important;letter-spacing:.18em;font-weight:700;padding:10px 22px;border-radius:50px;text-transform:uppercase;box-shadow:0 6px 16px rgba(11,37,69,.55);white-space:nowrap;text-shadow:0 1px 2px rgba(0,0,0,.3)"><span style="color:#FFD54A !important">⚡</span> <span style="color:#fff !important">Tonight's price · $7</span></div>
+        <div style="font-family:'Anton',sans-serif;font-size:34px;line-height:1.0;letter-spacing:.02em;text-transform:uppercase;color:#C8102E !important;margin:8px 0 14px;text-align:center">Get rid of<br>what's hurting you.</div>
+        <div style="font-size:1.05rem;color:#0B2545 !important;line-height:1.4;margin-bottom:22px;text-align:center;font-weight:700">We're not just getting older.<br><span style="color:#C8102E !important">We're being poisoned.</span></div>
+        <div style="margin:0 4px 22px;font-size:1.02rem;color:#0B2545 !important;line-height:1.5">
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">The back pain <span style="color:#C8102E !important;font-weight:900">ibuprofen barely touches.</span></div>
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">The knees and hips <span style="color:#C8102E !important;font-weight:900">that ache before it rains.</span></div>
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">The hair in the shower drain. <span style="color:#C8102E !important;font-weight:900">Every morning.</span></div>
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">The brain fog that's not burnout. <span style="color:#C8102E !important;font-weight:900">It's hormones.</span></div>
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">Your kid's wheeze <span style="color:#C8102E !important;font-weight:900">that doesn't quit.</span></div>
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">The eczema <span style="color:#C8102E !important;font-weight:900">steroid cream can't fix.</span></div>
+          <div style="margin-bottom:11px;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">Puberty <span style="color:#C8102E !important;font-weight:900">showing up at 8 years old.</span></div>
+          <div style="margin-bottom:0;padding-left:14px;border-left:4px solid #FF9900;font-weight:600">Your dog's tumors. Your cat's seizures. <span style="color:#C8102E !important;font-weight:900">No vet can explain why.</span></div>
+        </div>
+        <div style="font-size:.96rem;color:#0B2545 !important;line-height:1.5;margin-bottom:18px;text-align:center;font-weight:600">Your family's health matters. <strong style="color:#C8102E !important">Your pets' health matters.</strong><br><span style="font-weight:500">The products doing this are still in your house.</span></div>
+        <button onclick="openScoreRecoveryTripwire()" style="width:100%;font-size:1.18rem;padding:22px 20px;background:linear-gradient(180deg,#FF9900,#c97700);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 12px 28px -8px rgba(255,153,0,.75),inset 0 1px 0 rgba(255,255,255,.28);font-family:inherit;letter-spacing:.01em;text-transform:uppercase">Send me my detailed plan → $7</button>
+        <div style="text-align:center;font-size:.78rem;color:rgba(11,37,69,.7) !important;margin-top:11px;font-weight:600">Delivered by text in 60 seconds. Yours forever.</div>
       </div>
 
-      <div style="display:flex;align-items:center;text-align:center;margin:18px 0 14px;color:rgba(11,37,69,.55) !important;font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase">
-        <span style="flex:1;height:1px;background:rgba(11,37,69,.18)"></span>
-        <span style="padding:0 14px">Or talk it through</span>
-        <span style="flex:1;height:1px;background:rgba(11,37,69,.18)"></span>
+      <!-- Free audit — demoted to secondary alternative (Shannon 2026-06-26 23:08 MDT) -->
+      <div style="text-align:center;margin:4px 0 18px;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);border-radius:10px">
+        <div style="font-size:.78rem;color:rgba(250,253,255,.65);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:8px">Rather talk first?</div>
+        <button class="door door-tour" style="background:transparent;border:1.5px solid rgba(250,253,255,.5);color:#fafdff;font-weight:700;font-size:.92rem;padding:10px 22px;border-radius:50px;cursor:pointer;font-family:inherit" onclick="(function(){var be=document.getElementById('bookingEmbed');if(be){be.style.display='block';setTimeout(function(){be.scrollIntoView({behavior:'smooth',block:'start'})},80)}})()">📅 Book a free 15-min phone audit</button>
+        <div style="font-size:.74rem;color:rgba(250,253,255,.55);margin-top:7px">Walk through your house with me. No pitch.</div>
       </div>
-
-      <button class="door door-tour" style="width:100%;font-size:1.04rem;padding:18px 20px;margin-bottom:18px;background:linear-gradient(180deg,#C8102E,#9a0c25);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 10px 28px -8px rgba(200,16,46,.55);font-family:inherit" onclick="document.getElementById('bookingEmbed').scrollIntoView({behavior:'smooth',block:'start'})">📅 Book my free shopping audit →</button>
-      <p style="text-align:center;font-size:.84rem;color:#fafdff;margin-bottom:14px;line-height:1.5">15 minutes. One on one. No pitch. We map your house and pick your first 3 swaps together.</p>
-      <div id="bookingEmbed" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:6px">
+      <div id="bookingEmbed" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden;margin-top:6px;display:none">
         <iframe src="https://link.switchtoamerica.com/widget/bookings/maketheswtch" style="width:100%;min-height:720px;border:0;background:#fff" loading="lazy" title="Book your free shopping audit"></iframe>
       </div>
       <div id="switchListPanel" class="sl-panel" style="display:none"></div>
@@ -1939,6 +1945,8 @@ function buildActive(){
 function showScreen(id){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  // 2026-06-26 23:48 MDT — Shannon: some screens (bathroom etc.) landed at the bottom on advance. Force viewport to top of new screen.
+  try { window.scrollTo({top:0, left:0, behavior:'auto'}); document.documentElement.scrollTop = 0; document.body.scrollTop = 0; } catch(e){}
   // Meta Pixel: fire CompleteRegistration the moment the scorecard finishes + reveals
   try {
     if (id === 's-results' && !window._fbqResultsFired) {
@@ -2091,7 +2099,14 @@ function openScoreRecoveryTripwire(){
     if (window.gtag) gtag('event','tripwire_click',{value:7,currency:'USD',item:'score_recovery_plan'});
     if (window.dataLayer) dataLayer.push({event:'tripwire_click',value:7,currency:'USD',item:'score_recovery_plan'});
   } catch(e){}
-  window.open(window.SQUARE_SCORE_RECOVERY_URL, '_blank');
+  // 2026-06-27 — pass reportId via client_reference_id so the post-purchase audit page knows who they are.
+  var rid = '';
+  try { rid = localStorage.getItem('reportId') || ''; } catch(e){}
+  var url = window.SQUARE_SCORE_RECOVERY_URL;
+  if (rid) {
+    url += (url.indexOf('?')>=0 ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(rid);
+  }
+  window.open(url, '_blank');
 }
 
 function startQuizWithCapture(){
@@ -2123,20 +2138,17 @@ function startQuizWithCapture(){
     // userName is the existing global the rest of the quiz uses for personalization
     if(typeof userName !== 'undefined'){ userName = fn; }
   }catch(e){}
-  // Meta Pixel: Lead event fires the moment phone is captured (highest-quality optimization signal)
+  // Meta Pixel: Lead event fires on intent (FB ad optimization signal — stays here, ad algorithm needs it).
   try {
     if (window.fbq) fbq('track', 'Lead', { content_name: 'Scorecard Intro Opt-in', content_category: 'shopper_funnel' });
     if (window.dataLayer) dataLayer.push({event:'scorecard_lead_capture', source:'now_intro'});
   } catch(e){}
-  try{
-    captureLead({
-      firstName: fn,
-      lastName: ln,
-      phone: ph,
-      source: 'Toxic Scorecard, Intro Opt-in',
-      tags: ['scorecard-lead','scorecard-intro-optin','start sta email/text follow ups']
-    });
-  }catch(e){}
+  // 2026-06-28 Shannon (msg 5619): GHL contact creation MOVED to after Q1 is answered.
+  // Previously, every intro tap created a "score=0 abandoned" ghost contact in GHL — 6/6
+  // abandonment rate on Sun morning showed that pattern was polluting the lead list.
+  // Now: stash the intro data, let the user answer at least one question, THEN write to GHL.
+  // Hook lives in goNext() — fires once when stepIdx advances past the first quiz step.
+  window._introPendingCapture = true;
   startQuiz();
 }
 
@@ -2868,6 +2880,21 @@ function goNext(){
   // Fire the audit webhook once, the moment user advances past audit_q3
   if(prevStep && prevStep.id==='audit_q3') fireAuditWebhookOnce();
   stepIdx++;
+  // Deferred GHL contact creation — fires the moment the user finishes their FIRST quiz step.
+  // (Was firing immediately on intro tap, creating ghost score=0 abandoners. See note in
+  // startQuizWithCapture for full context. Shannon 2026-06-28.)
+  if (window._introPendingCapture && stepIdx >= 1) {
+    try {
+      captureLead({
+        firstName: window._introFirstName || '',
+        lastName: window._introLastName || '',
+        phone: window._introPhone || '',
+        source: 'Toxic Scorecard, Intro Opt-in',
+        tags: ['scorecard-lead','scorecard-intro-optin','start sta email/text follow ups']
+      });
+    } catch(e){}
+    window._introPendingCapture = false;
+  }
   buildActive();
   const next=activeSteps[stepIdx];
   var proceed=function(){
@@ -3104,9 +3131,9 @@ function showResults(){
   // Conditional final CTA
   var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
   var nm = userName ? (', '+userName) : '';
-  // 2026-06-21 Shannon: drop "Okay" + period sentence. Two lines, name above "Next Steps".
-  if(fcH) fcH.innerHTML=(userName?userName:'You')+'<br><span style="display:inline-block;margin-top:4px">Next Steps</span>';
-  if(fcP) fcP.textContent='Pick whatever feels right. Zero pressure.';
+  // 2026-06-26 23:05 MDT — Shannon: switched to "Two ways forward" + dropped "zero pressure" subhead (was undermining the $7).
+  if(fcH) fcH.innerHTML=(userName?userName:'You')+'<br><span style="display:inline-block;margin-top:4px">Two Ways Forward</span>';
+  if(fcP) fcP.textContent='';
 
   const mx=Math.max(...Object.values(roomScores),1);
   // Shannon UX fix 2026-06-20: "pts" meant nothing to a mom + the per-room numbers didn't visibly add
@@ -3461,9 +3488,13 @@ function openStories(){
 function closeStories(){ var m=document.getElementById('storiesModal'); if(m && m.parentNode) m.parentNode.removeChild(m); }
 
 // ── Change #4: "What if I switched?" simulator ──
+// 2026-06-26 23:45 MDT — Shannon: removed from score-reveal (was noise blocking the $7 buy decision).
+// Code preserved here to repurpose for the post-purchase $7 plan delivery page.
 var SIM_STATE=null, _scoreAnim=null, _saveAnim=null;
 function buildSimulator(toxList){
   var wrap=document.getElementById('simWrap'); if(!wrap) return;
+  // Hard-skip on score-reveal — re-enable when this code is moved to the paid-plan page.
+  wrap.style.display='none'; wrap.innerHTML=''; return;
   var swaps=(toxList||[]).slice(0,3).map(function(f){
     return { brand:f.brand, cat:f.cat, label:f.label, pts:f.pts, target:swapFor(f.cat), save:savingsFor(f.cat),
              drop:Math.max(1, Math.round(f.pts/Math.max(maxPts,1)*100)), on:false };
