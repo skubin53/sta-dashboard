@@ -1148,7 +1148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <input id="introFirstName" type="text" autocomplete="given-name"/>
     </div>
     <div class="intro-field-new rise">
-      <label for="introLastName">Last name</label>
+      <label for="introLastName">Last name <span style="font-weight:400;opacity:.6">(optional)</span></label>
       <input id="introLastName" type="text" autocomplete="family-name"/>
     </div>
     <div class="intro-field-new rise">
@@ -1437,6 +1437,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Price hero -->
         <div style="padding:28px 22px 20px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08)">
+          <!-- B1: Price anchor -->
+          <div style="font-size:.88rem;font-style:italic;line-height:1.45;margin-bottom:14px;padding:10px 14px;background:rgba(255,255,255,.07);border-radius:8px;border-left:3px solid rgba(255,153,0,.5)">A home wellness consultant charges $150+ to walk your house room by room. Your scan already did the work.</div>
           <div class="cta-sub" style="font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin-bottom:4px">One-time price</div>
           <div class="cta-price" style="font-family:'Anton',sans-serif;font-size:88px;line-height:1;letter-spacing:-.02em;text-shadow:0 0 40px rgba(255,153,0,.4)">$7</div>
           <div class="cta-label" style="font-size:.88rem;font-weight:600;margin-top:4px">No subscription. No upsell. Yours to keep.</div>
@@ -1459,12 +1461,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div style="font-size:.97rem;font-weight:600;line-height:1.4">Room-by-room action list so you know exactly where to start</div>
             </div>
           </div>
+          <!-- B4: Proof at the price -->
+          <div style="margin-top:16px;padding:14px 16px;background:rgba(255,255,255,.06);border-radius:10px;border-left:3px solid #FF9900">
+            <div style="font-size:.88rem;font-style:italic;line-height:1.55">"I'd had 'mystery' headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can't believe it."</div>
+          </div>
         </div>
 
         <!-- CTA -->
         <div style="padding:20px 22px 24px">
           <button onclick="openScoreRecoveryTripwire()" style="width:100%;font-size:1.2rem;padding:22px 20px;background:linear-gradient(180deg,#FF9900,#d97e00);border:none;color:#fff;font-weight:900;border-radius:14px;cursor:pointer;box-shadow:0 14px 32px -8px rgba(255,153,0,.7),inset 0 1px 0 rgba(255,255,255,.25);font-family:inherit;letter-spacing:.01em;text-transform:uppercase;line-height:1.2">Get My Report Now → $7</button>
-          <div style="text-align:center;margin-top:12px;display:flex;align-items:center;justify-content:center;gap:6px">
+          <!-- B2: Deadline -->
+          <div style="text-align:center;margin-top:10px;font-size:.85rem;font-weight:700">⏳ Your scan results are held for 48 hours — after that, it's a fresh scan.</div>
+          <!-- B3: Guarantee -->
+          <div style="text-align:center;margin-top:8px;font-size:.75rem;line-height:1.5;opacity:.75">If your report doesn't show you at least 3 swaps that matter, text REFUND and the $7 goes back on your card. No questions.</div>
+          <div style="text-align:center;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:6px">
             <span style="font-size:.9rem">📱</span>
             <span style="font-size:.8rem;color:rgba(250,253,255,.6);font-weight:600">Delivered by text in 60 seconds. Yours forever.</span>
           </div>
@@ -2165,7 +2175,7 @@ function openScoreRecoveryTripwire(){
   if (rid) {
     url += (url.indexOf('?')>=0 ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(rid);
   }
-  window.open(url, '_blank');
+  window.location.href = url;
 }
 
 function startQuizWithCapture(){
@@ -2180,11 +2190,7 @@ function startQuizWithCapture(){
     if(fnEl) fnEl.focus();
     return;
   }
-  if(!ln){
-    alert('Please enter your last name.');
-    if(lnEl) lnEl.focus();
-    return;
-  }
+  // Last name is optional — don't block on it
   if(ph.replace(/\D/g,'').length<10){
     alert('Please enter your cell phone number so we can text you your results.');
     if(phEl) phEl.focus();
@@ -3123,9 +3129,20 @@ function showCalcDetails(){
 }
 
 function showOptin(){
-  // Pre-fill first name from intro capture (hidden field)
+  // A1: Phone already captured at intro — pre-fill and auto-submit, no second gate
+  if (window._introPhone && window._introPhone.replace(/\D/g,'').length >= 10) {
+    var fnEl = document.getElementById('oFN');
+    var lnEl = document.getElementById('oLN');
+    var phEl = document.getElementById('oPH');
+    if (fnEl && userName) fnEl.value = userName;
+    if (lnEl && window._introLastName) lnEl.value = window._introLastName;
+    if (phEl) phEl.value = window._introPhone;
+    submitReport();
+    return;
+  }
+  // Fallback: no intro phone — show gate, pre-fill what we know
   var fnEl = document.getElementById('oFN');
-  if(fnEl && userName) fnEl.value = userName;
+  if (fnEl && userName) fnEl.value = userName;
   showScreen('s-optin');
 }
 
