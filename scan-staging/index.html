@@ -936,6 +936,16 @@ body { padding-top:0 !important; }
 #s-results #finalCta { color: #0B2545; }
 #s-results #finalCta h2#fcH { color: #0B2545 !important; }
 #s-results #finalCta p, #s-results #finalCta div, #s-results #finalCta b { color: #1a2e54 !important; }
+/* Dark hero card — override the cream color bleed so text shows white on dark bg */
+#s-results #finalCta #ctaDarkCard,
+#s-results #finalCta #ctaDarkCard div,
+#s-results #finalCta #ctaDarkCard span,
+#s-results #finalCta #ctaDarkCard p,
+#s-results #finalCta #ctaDarkCard b { color: #ffffff !important; }
+#s-results #finalCta #ctaDarkCard .cta-price { color: #FF9900 !important; }
+#s-results #finalCta #ctaDarkCard .cta-check { color: #FF9900 !important; }
+#s-results #finalCta #ctaDarkCard .cta-label { color: rgba(250,253,255,.6) !important; }
+#s-results #finalCta #ctaDarkCard .cta-sub { color: rgba(250,253,255,.55) !important; }
 #s-results #finalCta > div[style*="background:rgba(255,255,255,.04)"] { background: rgba(255,255,255,.75) !important; border: 1px solid rgba(11,37,69,.18) !important; }
 /* "Stop guessing / Start swapping" stays in its accent colors, those read fine on cream */
 #s-results #finalCta div[style*="color:#FFD27A"] { color: #C68A1F !important; }
@@ -1417,7 +1427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <!-- ═══ $7 HERO CARD — 2026-07-08 full redesign ═══ -->
-      <div style="background:linear-gradient(160deg,#0d2040 0%,#071428 100%);border:2px solid rgba(255,153,0,.5);border-radius:20px;overflow:hidden;margin-bottom:20px;box-shadow:0 20px 50px -10px rgba(0,0,0,.5),0 0 0 1px rgba(255,153,0,.15)">
+      <div id="ctaDarkCard" style="background:linear-gradient(160deg,#0d2040 0%,#071428 100%);border:2px solid rgba(255,153,0,.5);border-radius:20px;overflow:hidden;margin-bottom:20px;box-shadow:0 20px 50px -10px rgba(0,0,0,.5),0 0 0 1px rgba(255,153,0,.15)">
 
         <!-- Card header -->
         <div style="background:linear-gradient(90deg,#C8102E,#a00d25);padding:14px 22px;text-align:center">
@@ -1427,26 +1437,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Price hero -->
         <div style="padding:28px 22px 20px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08)">
-          <div style="font-size:.82rem;color:rgba(250,253,255,.55);text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin-bottom:4px">One-time price</div>
-          <div style="font-family:'Anton',sans-serif;font-size:88px;line-height:1;color:#FF9900;letter-spacing:-.02em;text-shadow:0 0 40px rgba(255,153,0,.4)">$7</div>
-          <div style="font-size:.88rem;color:rgba(250,253,255,.6);font-weight:600;margin-top:4px">No subscription. No upsell. Yours to keep.</div>
+          <div class="cta-sub" style="font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;font-weight:700;margin-bottom:4px">One-time price</div>
+          <div class="cta-price" style="font-family:'Anton',sans-serif;font-size:88px;line-height:1;letter-spacing:-.02em;text-shadow:0 0 40px rgba(255,153,0,.4)">$7</div>
+          <div class="cta-label" style="font-size:.88rem;font-weight:600;margin-top:4px">No subscription. No upsell. Yours to keep.</div>
         </div>
 
         <!-- What's inside -->
         <div style="padding:20px 22px;border-bottom:1px solid rgba(255,255,255,.08)">
-          <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;color:#FF9900;font-weight:800;margin-bottom:14px">What's inside</div>
+          <div class="cta-check" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800;margin-bottom:14px">What's inside</div>
           <div style="display:flex;flex-direction:column;gap:12px">
             <div style="display:flex;align-items:flex-start;gap:12px">
-              <span style="color:#FF9900;font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
-              <div style="font-size:.97rem;color:#eaf1f8;font-weight:600;line-height:1.4">Every flagged product from <em>your</em> scan — rated and explained</div>
+              <span class="cta-check" style="font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
+              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Every flagged product from <em>your</em> scan — rated and explained</div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:12px">
-              <span style="color:#FF9900;font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
-              <div style="font-size:.97rem;color:#eaf1f8;font-weight:600;line-height:1.4">Exact brand-by-brand swaps — no research required</div>
+              <span class="cta-check" style="font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
+              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Exact brand-by-brand swaps — no research required</div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:12px">
-              <span style="color:#FF9900;font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
-              <div style="font-size:.97rem;color:#eaf1f8;font-weight:600;line-height:1.4">Room-by-room action list so you know exactly where to start</div>
+              <span class="cta-check" style="font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
+              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Room-by-room action list so you know exactly where to start</div>
             </div>
           </div>
         </div>
