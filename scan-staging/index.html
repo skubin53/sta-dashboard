@@ -1965,6 +1965,7 @@ function showScreen(id){
     try { document.body.scrollTop = 0; } catch(e){}
     if (el) { try { el.scrollTop = 0; } catch(e){} }
     document.querySelectorAll('.screen').forEach(function(s){ try { s.scrollTop = 0; } catch(e){} });
+    document.querySelectorAll('.q-wrap').forEach(function(s){ try { s.scrollTop = 0; } catch(e){} });
   }
   _resetAll();
   try { requestAnimationFrame(function(){ _resetAll(); requestAnimationFrame(_resetAll); }); } catch(e){}
@@ -2171,10 +2172,12 @@ function renderStep(){
   // based auto-scroll the browser does after we paint the new step content.
   (function _forceTop(){
     var q=document.getElementById('s-quiz');
-    function _r(){ try{window.scrollTo(0,0);}catch(e){}; try{document.documentElement.scrollTop=0;}catch(e){}; try{document.body.scrollTop=0;}catch(e){}; if(q){ try{q.scrollTop=0;}catch(e){}} }
+    var qw=document.querySelector('.q-wrap');
+    try{ if(document.activeElement && document.activeElement.blur) document.activeElement.blur(); }catch(e){}
+    function _r(){ try{window.scrollTo(0,0);}catch(e){}; try{document.documentElement.scrollTop=0;}catch(e){}; try{document.body.scrollTop=0;}catch(e){}; if(q){ try{q.scrollTop=0;}catch(e){}} if(qw){ try{qw.scrollTop=0;}catch(e){}} }
     _r();
     try{ requestAnimationFrame(function(){ _r(); requestAnimationFrame(_r); }); }catch(e){}
-    setTimeout(_r, 60); setTimeout(_r, 220); setTimeout(_r, 500); setTimeout(_r, 900);
+    setTimeout(_r, 60); setTimeout(_r, 220); setTimeout(_r, 500); setTimeout(_r, 900); setTimeout(_r, 1400);
   })();
   const step = activeSteps[stepIdx];
   if(!step){ runCalc(); return; }
