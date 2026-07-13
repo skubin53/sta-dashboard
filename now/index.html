@@ -2978,7 +2978,7 @@ function goNext(){
 
 function saveSoft(){
   const email=document.getElementById('sEM').value.trim();
-  if(email) fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:userName||'Scorecard User',source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial'].concat(refCode?['ref:'+refCode]:[]),customFields:{referredBy:refCode||''}})}).catch(()=>{});
+  if(email){var _sp={email,name:userName||'Scorecard User',source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial'].concat(refCode?['ref:'+refCode]:[]),customFields:{referredBy:refCode||''}};fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(_sp)}).catch(function(){fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer pit-26ea2466-ffc7-49ca-8d8b-a272d38653cc','Version':'2021-07-28'},body:JSON.stringify({locationId:'pkNKuHS8wz0aQmZKEXHr',email:email,source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial']})}).catch(function(){});});}
   skipSoft();
 }
 function skipSoft(){ stepIdx++; buildActive(); const n=activeSteps[stepIdx]; if(!n){runCalc();return;} renderStep(); showScreen('s-quiz'); }
@@ -3164,11 +3164,23 @@ async function submitReport(){
     score: totalScore, grade, topRoom, hasFamily,
     items: collectSwitchItems ? collectSwitchItems().slice(0,12).map(function(it){ return { brand: it.brand, cat: it.cat, target: swapFor ? swapFor(it.cat) : '', save: savingsFor ? savingsFor(it.cat) : 0 }; }) : []
   };
+  var _contactPayload = {firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}};
   try{
-    const _r = await fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}})});
+    var _ctrl = new AbortController(); var _tid = setTimeout(function(){ _ctrl.abort(); }, 5000);
+    const _r = await fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(_contactPayload),signal:_ctrl.signal});
+    clearTimeout(_tid);
     const _j = await _r.json().catch(function(){ return {}; });
     if (_j && _j.reportId) { try { localStorage.setItem('reportId', _j.reportId); } catch(e){} }
-  }catch(e){}
+  }catch(e){
+    // Mac mini unreachable — write directly to GHL so lead is never lost
+    try{
+      var _gp = {locationId:'pkNKuHS8wz0aQmZKEXHr',source:'Family Home Toxic Scorecard (CDN fallback)',tags:_contactPayload.tags};
+      if(fn) _gp.firstName=fn; if(ln) _gp.lastName=ln; if(em) _gp.email=em; if(ph) _gp.phone=ph;
+      _gp.customFields=[{id:'ZceUTpgbwTA9y70UE74Q',value:new Date().toISOString().split('T')[0]},{id:'1rM7I1uXqMwrWm7mejnC',value:'Scorecard'}];
+      if(totalScore!=null) _gp.customFields.push({id:'kEHqXmFNOA9zLvqUovRt',value:String(totalScore)});
+      await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer pit-26ea2466-ffc7-49ca-8d8b-a272d38653cc','Version':'2021-07-28'},body:JSON.stringify(_gp)});
+    }catch(e2){}
+  }
   showResults();
 }
 
