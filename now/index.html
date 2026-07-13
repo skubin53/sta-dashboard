@@ -2168,6 +2168,19 @@ function openScoreRecoveryTripwire(){
     if (window.gtag) gtag('event','tripwire_click',{value:7,currency:'USD',item:'score_recovery_plan'});
     if (window.dataLayer) dataLayer.push({event:'tripwire_click',value:7,currency:'USD',item:'score_recovery_plan'});
   } catch(e){}
+  // Save scan data to localStorage so the static post-purchase page can render without Mac mini
+  try {
+    var _items = (typeof collectSwitchItems === 'function') ? collectSwitchItems().slice(0,20).map(function(it){ return {brand:it.brand, cat:it.cat, target:(typeof swapFor==='function'?swapFor(it.cat):''), save:(typeof savingsFor==='function'?savingsFor(it.cat):6)}; }) : [];
+    var _totalSave = _items.reduce(function(a,it){ return a+(it.save||0); }, 0);
+    localStorage.setItem('sta_purchase_scan', JSON.stringify({
+      firstName: window._introFirstName || (typeof userName!=='undefined'?userName:'') || '',
+      score: typeof totalScore!=='undefined' ? totalScore : 0,
+      topRoom: (typeof roomScores!=='undefined' && roomScores) ? (Object.entries(roomScores).sort(function(a,b){return b[1]-a[1];})[0]||[''])[0] : '',
+      items: _items,
+      totalSave: _totalSave,
+      savedAt: new Date().toISOString()
+    }));
+  } catch(e){}
   // 2026-06-27 — pass reportId via client_reference_id so the post-purchase audit page knows who they are.
   var rid = '';
   try { rid = localStorage.getItem('reportId') || ''; } catch(e){}

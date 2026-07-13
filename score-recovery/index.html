@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Your Home Audit — Switch to America</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#faf6ef;color:#1d2330;line-height:1.6;padding:20px}
+.wrap{max-width:680px;margin:0 auto}
+.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 6px 24px rgba(0,0,0,.08);margin-bottom:18px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#c79a3b;margin-bottom:8px}
+h1{font-size:26px;font-weight:800;color:#1c2a4a;margin-bottom:4px}
+.score-big{font-size:64px;font-weight:900;line-height:1;color:#1c2a4a;text-align:center;margin:8px 0 4px}
+.zone-badge{display:inline-block;font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:4px 14px;border-radius:20px;margin-bottom:4px}
+.zone-red{background:rgba(200,16,46,.12);color:#C8102E;border:1px solid rgba(200,16,46,.3)}
+.zone-yellow{background:rgba(232,163,23,.12);color:#E8A317;border:1px solid rgba(232,163,23,.3)}
+.zone-green{background:rgba(31,138,112,.12);color:#1F8A70;border:1px solid rgba(31,138,112,.3)}
+.swap-item{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #f0ece3;gap:8px;flex-wrap:wrap}
+.swap-item:last-child{border-bottom:none}
+.brand-out{color:#C8102E;text-decoration:line-through;font-size:14px}
+.brand-in{color:#1F8A70;font-weight:800;font-size:14px}
+.save{font-size:12px;color:#888;white-space:nowrap}
+.cta-btn{display:block;background:linear-gradient(180deg,#FF9900,#E47911);color:#fff;text-decoration:none;font-weight:900;padding:18px 24px;border-radius:14px;font-size:17px;text-align:center;box-shadow:0 8px 22px -6px rgba(228,121,17,.5);margin-top:8px}
+.email-note{background:#e6f3fc;border:1.5px solid rgba(95,179,199,.4);border-radius:12px;padding:18px;font-size:14px;margin-top:4px}
+.savings-big{font-size:36px;font-weight:900;color:#C8102E;text-align:center}
+.no-data{text-align:center;padding:40px 20px;color:#5b6270}
+img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="report-loading" class="card" style="text-align:center;padding:40px">
+    <div style="font-size:32px;margin-bottom:12px">⏳</div>
+    <p style="color:#5b6270">Loading your home audit…</p>
+  </div>
+  <div id="report-content" style="display:none"></div>
+  <div id="report-noscript" class="card no-data" style="display:none">
+    <div style="font-size:48px;margin-bottom:16px">📬</div>
+    <h2 style="margin-bottom:12px;color:#1c2a4a">Your audit is on its way.</h2>
+    <p>It looks like you're opening this on a different device or browser.<br>Check your inbox — Shannon's sending your complete home audit by email.</p>
+    <p style="margin-top:12px;font-size:13px;color:#888">If you don't see it within a few minutes, check your spam folder.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var BOOKING_URL = 'https://api.leadconnectorhq.com/widget/booking/kBsyKsW5kF1ZqiRxr4OC';
+
+  function el(id){ return document.getElementById(id); }
+
+  function zoneBadge(score){
+    if(score>=70) return '<span class="zone-badge zone-red">🔴 Red Zone</span>';
+    if(score>=45) return '<span class="zone-badge zone-yellow">🟡 Caution Zone</span>';
+    return '<span class="zone-badge zone-green">🟢 Clean Zone</span>';
+  }
+
+  function renderReport(d){
+    var firstName = d.firstName || 'there';
+    var score = d.score || 0;
+    var items = d.items || [];
+    var totalSave = d.totalSave || items.reduce(function(a,it){ return a+(it.save||0); },0);
+    var topRoom = d.topRoom || '';
+
+    var swapsHtml = '';
+    if(items.length){
+      swapsHtml = items.map(function(it){
+        return '<div class="swap-item"><span class="brand-out">'+esc(it.brand)+'</span>'+
+          '<span style="color:#888;font-size:14px">→</span>'+
+          '<span class="brand-in">'+esc(it.target||"Shannon's clean version")+'</span>'+
+          (it.save ? '<span class="save">save ~$'+it.save+'/mo</span>' : '')+
+          '</div>';
+      }).join('');
+    } else {
+      swapsHtml = '<p style="color:#5b6270;font-size:14px">Great news — no concerning brands detected in your scan.</p>';
+    }
+
+    var html = '<div class="card">'+
+      '<div class="kicker">Family Home Toxic Scorecard</div>'+
+      '<h1>'+esc(firstName)+'\'s Home Audit</h1>'+
+      '<p style="color:#5b6270;font-size:14px;margin-top:4px">Payment confirmed 💛 — your complete report is below.</p>'+
+      '</div>'+
+
+      '<div class="card" style="text-align:center">'+
+      '<div class="kicker">Your Score</div>'+
+      '<div class="score-big">'+score+'<span style="font-size:28px;color:#9aa0ab"> / 100</span></div>'+
+      zoneBadge(score)+
+      (topRoom ? '<p style="color:#5b6270;margin-top:8px;font-size:14px">Biggest room to tackle: <strong>'+esc(topRoom)+'</strong></p>' : '')+
+      '</div>'+
+
+      (totalSave>0 ?
+        '<div class="card" style="text-align:center">'+
+        '<div class="kicker">Estimated Monthly Savings</div>'+
+        '<div class="savings-big">$'+totalSave+'/month</div>'+
+        '<p style="color:#5b6270;font-size:13px;margin-top:6px">Switching to cleaner products that cost less</p>'+
+        '</div>' : '')+
+
+      '<div class="card">'+
+      '<div class="kicker" style="margin-bottom:12px">Your Switch List</div>'+
+      swapsHtml+
+      '</div>'+
+
+      '<div class="card">'+
+      '<div class="kicker">Next Step</div>'+
+      '<p style="margin-bottom:14px;font-size:16px;font-weight:700;color:#1c2a4a">Walk through your house with Shannon — free 15-minute phone audit.</p>'+
+      '<p style="font-size:14px;color:#5b6270;margin-bottom:16px">She\'ll go room by room, answer questions about what you found, and help you prioritize. No pitch. Just rooms.</p>'+
+      '<a href="'+BOOKING_URL+'" class="cta-btn">📅 Book my free phone audit →</a>'+
+      '</div>'+
+
+      '<div class="card email-note">'+
+      '<strong>📬 Check your email</strong><br>'+
+      'Shannon is also sending your audit by email so you have a permanent copy. If you don\'t see it within a few minutes, check your spam folder.'+
+      '</div>'+
+
+      '<div class="card" style="text-align:center">'+
+      '<img class="shannon" src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" alt="Shannon Nicole">'+
+      '<p style="font-size:14px;color:#5b6270;margin-top:4px">— Shannon Nicole</p>'+
+      '<p style="font-size:12px;color:#aaa;margin-top:8px">Order: 7-Day Score Recovery Plan · $7 USD · Receipt sent by Stripe</p>'+
+      '</div>';
+
+    el('report-loading').style.display='none';
+    el('report-content').innerHTML = html;
+    el('report-content').style.display='block';
+  }
+
+  function esc(s){ var d=document.createElement('div'); d.textContent=String(s||''); return d.innerHTML; }
+
+  // Try to load from localStorage (same browser session as quiz)
+  var scanData = null;
+  try { scanData = JSON.parse(localStorage.getItem('sta_purchase_scan')||'null'); } catch(e){}
+
+  if(scanData && scanData.savedAt){
+    // Check data isn't stale (>2 hours old = probably different session)
+    var age = (new Date() - new Date(scanData.savedAt)) / 1000 / 60;
+    if(age > 120) scanData = null;
+  }
+
+  if(scanData){
+    renderReport(scanData);
+  } else {
+    // Different device or session — show email fallback
+    el('report-loading').style.display='none';
+    el('report-noscript').style.display='block';
+    // Still try Mac mini for the report data via session_id
+    var sid = (location.search.match(/session_id=([^&]+)/)||[])[1];
+    if(sid){
+      fetch('https://api.ismyhometoxic.com/score-recovery-thanks?session_id='+encodeURIComponent(sid)+'&format=json')
+        .then(function(r){ return r.ok ? r.json() : null; })
+        .then(function(d){ if(d && d.sc) renderReport(d); })
+        .catch(function(){});
+    }
+  }
+})();
+</script>
+</body>
+</html>
