@@ -3235,23 +3235,24 @@ function showResults(){
   var fh='';
   var fh='';
   if(toxList.length>=2){
-    // Fable-5 uplevel #4 (2026-06-10): use REAL counts from /scan-realstats when available,
-    // fall back to the conservative formula only if the realstats fetch hasn't returned yet.
-    // window.REAL_STATS is populated on page load by an async fetch added near applyRef().
-    toxList.slice(0,3).forEach(function(f){
-      var d=findingDisplay(f.brand,f.cat,f.label);
-      var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
-      var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
-      var foundLine;
-      if (realCount && realTotal >= 50) {
-        foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
-      } else {
-        // Use the formula until we have at least 50 real scans (prevents tiny-n looking ridiculous)
-        var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
-        foundLine = 'Found in '+fi+' of 50 homes scanned this month';
-      }
-      fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
-    });
+    // Shannon 2026-07-15: show only the WORST 1 finding — tease, don't give it all away.
+    // The rest are locked behind the $7 report. totalToxBefore tracks full count for the CTA.
+    var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
+    var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
+    var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
+    var foundLine;
+    if (realCount && realTotal >= 50) {
+      foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
+    } else {
+      var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
+      foundLine = 'Found in '+fi+' of 50 homes scanned this month';
+    }
+    fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
+    // Teaser for the remaining findings — locked behind the $7 report
+    if(totalToxBefore>1){
+      var hidden=totalToxBefore-1;
+      fh+='<div class="tox-card" style="border-color:rgba(200,16,46,.25);background:rgba(200,16,46,.04);text-align:center;padding:18px 20px"><div style="font-size:1.2rem;margin-bottom:6px">🔒</div><div class="tox-name" style="color:#C8102E;font-size:.95rem">+ '+hidden+' more flagged product'+(hidden>1?'s':'')+' in your home</div><div class="tox-harm" style="color:#5b6270;font-size:.82rem;margin-top:6px">The full list — with every ingredient and the clean swap for each — is in your $7 room-by-room report.</div></div>';
+    }
     // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
   } else {
     // Low-score fallback, reward green behavior, never punish.
