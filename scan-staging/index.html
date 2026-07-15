@@ -356,7 +356,7 @@ html,body{
 @keyframes qblip{0%,52%{transform:scale(0)}62%{transform:scale(1)}82%{transform:scale(1)}100%{transform:scale(0)}}
 
 /* Kicker badge */
-.q-kicker{font-size:10.5px;letter-spacing:.2em;font-weight:800;text-transform:uppercase;color:var(--orange);background:rgba(246,150,42,.12);border:1px solid rgba(246,150,42,.3);border-radius:999px;padding:5px 13px;margin-bottom:14px;display:inline-block;font-family:'Hanken Grotesk',sans-serif;}
+.q-kicker{font-size:14px;letter-spacing:.2em;font-weight:800;text-transform:uppercase;color:var(--orange);background:rgba(246,150,42,.12);border:1px solid rgba(246,150,42,.3);border-radius:999px;padding:5px 13px;margin-bottom:14px;display:inline-block;font-family:'Hanken Grotesk',sans-serif;} /* 2026-07-15 P8: bumped from 10.5px */
 
 /* Option cards, Shannon's style */
 .q-opts{width:100%;display:flex;flex-direction:column;gap:12px;margin-top:4px;}
@@ -370,7 +370,7 @@ html,body{
 .q-opt:active{transform:scale(.99);}
 .q-opt .oi{flex:none;width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(227,179,65,.14);}
 .q-opt .oi svg{width:18px;height:18px;stroke:var(--orange);fill:none;stroke-width:2;}
-.q-opt .ot{flex:1;font-size:15.5px;font-weight:700;color:#eef3fa;line-height:1.3;}
+.q-opt .ot{flex:1;font-size:17px;font-weight:700;color:#eef3fa;line-height:1.3;} /* 2026-07-15 P8: bumped from 15.5px */
 .q-opt .od{font-size:.72rem;color:#fafdff;margin-top:2px;}
 /* change #6, progressive reveal of health impact */
 .q-opt .oi-hazard{background:rgba(232,163,23,.16);}
@@ -496,7 +496,7 @@ html,body{
 
 /* Brand chips */
 .chips-row{display:flex;flex-wrap:wrap;gap:8px;}
-.brand-chip{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-family:'Hanken Grotesk',inherit;font-size:13.5px;font-weight:700;color:#d7e1f0;cursor:pointer;background:rgba(255,255,255,.06);border:1.5px solid rgba(159,177,204,.26);border-radius:999px;padding:10px 16px;transition:all .16s;}
+.brand-chip{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-family:'Hanken Grotesk',inherit;font-size:17px;font-weight:700;color:#d7e1f0;cursor:pointer;background:rgba(255,255,255,.06);border:1.5px solid rgba(159,177,204,.26);border-radius:999px;padding:10px 16px;transition:all .16s;} /* 2026-07-15 P8: bumped from 13.5px */
 .brand-chip:hover{border-color:rgba(227,179,65,.55);color:#fff;}
 .brand-chip:active{transform:scale(.96);}
 .brand-chip.sel{background:var(--orange);border-color:var(--orange);color:#15233a;box-shadow:0 6px 16px -6px rgba(227,179,65,.7);}
@@ -793,7 +793,7 @@ h1.q-h1-seg { color:#C8102E !important; }
   display:inline-block;
   background:#0B2545; color:#fff;
   font-family:'Hanken Grotesk',sans-serif;
-  font-size:11px; font-weight:800;
+  font-size:14px; font-weight:800; /* 2026-07-15 P8: bumped from 11px */
   padding:3px 9px; border-radius:999px;
   letter-spacing:.05em; vertical-align:middle;
   margin-left:8px;
@@ -1797,65 +1797,7 @@ const STEPS = [
       chips:['Lysol','Clorox','Mrs. Meyer\'s','Method','Sol-U-Guard']},
    ]},
 
-  // Kitchen Page B, Pantry / Food & Nutrition (chip design)
-  {id:'kitchen_food',room:'Room 2 · The Pantry',icon:'🥗',type:'chip_cards',
-   q:'What are your <span style="background:linear-gradient(95deg,var(--orange),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent">family favorites?</span>',
-   sub:'<b>These are some of the biggest hidden sources.</b> Tap what you buy.',
-   room_lbl:'Kitchen',
-   cards:[
-     {id:'k_cof',label:'Coffee',cat:'coffee',
-      icon:'<svg viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>',
-      chips:['Folgers','Maxwell House','Starbucks','Dunkin\'','Nescafé','Death Wish','Kirkland','Organic Coffee','Mountain Cabin']},
-     {id:'k_oil',label:'Cooking Oil / Seed Oils',cat:'oil',
-      icon:'<svg viewBox="0 0 24 30"><rect x="10" y="2" width="4" height="4" fill="#9aa17a"/><path d="M8 9c0-1.5 1.3-3 4-3s4 1.5 4 3v17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#e7c45a"/><rect x="9.5" y="14" width="7" height="8" rx="1" fill="#fff8e0" opacity=".85"/></svg>',
-      chips:['Vegetable / Canola','Crisco','Wesson','Mazola','PAM Spray','Olive oil','Avocado oil','Beef Tallow']},
-     {id:'k_vit',label:'Vitamins / Supplements',cat:'supplements',
-      icon:'<svg viewBox="0 0 24 30"><rect x="8" y="2" width="8" height="3.5" rx="1" fill="#cfd8c2"/><rect x="7.5" y="6" width="9" height="22" rx="2.5" fill="#6fae6a"/><rect x="9.5" y="12" width="9" height="9" rx="1" fill="#eef6ec" transform="translate(-2 0)"/></svg>',
-      chips:['Nature Made','Centrum','Nature\'s Bounty','Garden of Life','Kirkland','GNC','Brand from Naturopath','Peak Performance']},
-     {id:'k_pro',label:'Protein Powder',cat:'supplements',
-      icon:'<svg viewBox="0 0 24 30"><rect x="6" y="2" width="12" height="4" rx="2" fill="#3a4049"/><path d="M6 7h12v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" fill="#5a4a8a"/><rect x="8" y="13" width="8" height="9" rx="1" fill="#efeaf7"/></svg>',
-      chips:['Optimum Nutrition','Premier Protein','Quest','Muscle Milk','Garden of Life','Truvani','Proflex']},
-   ]},
-
-  // Kitchen extras (page 3), deep research per item, sourced 2026-06-21 per Shannon's "for the report" ask.
-  // Each item carries: det (short reveal in quiz UI), swap (clean alternative shown in report), ing (chemicals
-  // / issues), harm (long-form research copy with red highlights, rendered in /r/<id> Switch List).
-  // Primary sources cited per entry: C8 Science Panel; CDC NHANES; IARC; EPA TSCA; Nebraska Medicine 2023;
-  // North Carolina State 2023 cutting-board study; Lebanese University 2012 Al migration; WHO PTWI; FDA.
-  {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else to check in your kitchen?',sub:'Select all that apply.',
-   answers:[
-     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',
-      det:'Coating breaks down above 500°F (below medium-high heat on most stoves) and releases PFAS forever chemicals into the air your family breathes.',
-      swap:'Cast iron or stainless steel',
-      ing:'PFAS forever chemicals, PTFE that degrades at 500°F, perfluorinated coatings',
-      harm:'<b style="color:#C8102E">99% of Americans</b> already have PFAS in their blood (CDC). The C8 Science Panel linked these chemicals to <b style="color:#C8102E">kidney cancer, testicular cancer, ulcerative colitis, thyroid disease,</b> and pregnancy-induced hypertension.[[P]]The pan coating breaks down above 500°F (cooking spray + medium-high heat hits that fast). The fumes give people <b style="color:#C8102E">flu-like polymer-fume fever</b> and kill pet birds. PFAS are called "forever chemicals" because they never break down in your body or in the environment.'},
-     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',
-      det:'Leaches hormone disruptors into your food. Heat, fat, and acidic foods speed it up. "BPA-free" containers were tested with BPS that disrupts hormones just as much.',
-      swap:'Glass storage with bamboo or silicone lids',
-      ing:'Bisphenol A (BPA), bisphenol S/F replacements, phthalate plasticizers (DEHP, DBP)',
-      harm:'<b style="color:#C8102E">93% of Americans</b> test positive for BPA in their urine (CDC NHANES). BPA mimics estrogen. It is linked to <b style="color:#C8102E">infertility, lower sperm count, early puberty in girls, type 2 diabetes, breast and prostate cancer,</b> and ADHD-like behavior in children.[[P]]The "BPA-free" replacement (BPS) is in NIH-cited research showing the same or worse hormone disruption. Every plastic container of leftovers your kids reheat is a low-dose hormone exposure their growing body cannot get rid of.'},
-     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',
-      det:'A 2023 lab study clocked one plastic cutting board shedding 14 to 71 mg of microplastics per cut, straight into the food you are about to eat.',
-      swap:'Wood or bamboo cutting board',
-      ing:'Polyethylene and polypropylene microplastics released by every knife stroke',
-      harm:'A 2023 study in <i>Environmental Science & Technology</i> measured one plastic cutting board shedding <b style="color:#C8102E">14 to 71 milligrams of microplastics per cut</b>. Those fragments go straight into your meal.[[P]]Microplastics have now been found in human <b style="color:#C8102E">lung tissue, breast milk, and placentas</b>. The WWF/Newcastle 2019 review estimates we eat a credit card\'s worth of plastic every week. Plastic boards also hold more bacteria in knife grooves than wood (USDA Cliver, 1993).'},
-     {lbl:'Aluminum foil or plastic wrap regularly',em:'🥡',pts:6,room:'Kitchen',
-      det:'Hot food + acidic ingredients = aluminum and DEHP phthalates leaching straight into the bite you are about to take.',
-      swap:'Parchment paper or beeswax wraps',
-      ing:'Aluminum that leaches at heat, PVC plastic wrap loaded with DEHP phthalates',
-      harm:'A Lebanese University study measured cooking with aluminum foil transferring up to <b style="color:#C8102E">378 mg of aluminum per serving</b>, well over the WHO weekly safety limit in a single meal. Aluminum is found in the <b style="color:#C8102E">brain plaques of Alzheimer\'s patients</b> (Nature review, 2008).[[P]]PVC plastic wrap contains <b style="color:#C8102E">DEHP phthalates</b> on California Prop 65 for cancer and reproductive harm. Acidic foods (tomato, lemon, spinach) accelerate both forms of leaching dramatically.'},
-     {lbl:'Single-serve coffee machine (Keurig, Nespresso)',em:'☕',pts:8,room:'Kitchen',
-      det:'190°F water under pressure through polystyrene plastic pods every morning. The WHO classifies styrene as "probably carcinogenic to humans."',
-      swap:'French press or pour-over with whole beans',
-      ing:'Polystyrene leaching styrene, plastic-aluminum hot pressurized brewing, phthalates',
-      harm:'K-Cups are made of polystyrene. The WHO\'s IARC reclassified styrene as <b style="color:#C8102E">"probably carcinogenic to humans"</b> (Group 2A) in 2018.[[P]]Running 190°F water through plastic under pressure accelerates chemical migration into every cup. Independent testing has detected <b style="color:#C8102E">phthalates</b> in beverages brewed through plastic-lined pods. Nespresso aluminum capsules also leach aluminum into the acidic coffee. Every single cup is a low-dose hit of three different concerns.'},
-     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:8,room:'Kitchen',
-      det:'Microwaving destroys most of the nutrients in your food, leaches plastic chemicals into the meal, and creates aged-protein compounds linked to inflammation and chronic disease. Never reheat in plastic.',
-      swap:'Reheat on the stovetop or in the oven (glass or ceramic only)',
-      ing:'Plastic microplastics + nanoplastics, denatured proteins and vitamins, advanced glycation end-products (AGEs), accelerated BPA and phthalate migration',
-      harm:'<b style="color:#C8102E">The Lancet (1989)</b> reported that microwaving infant formula converted natural amino acids into <b style="color:#C8102E">d-isomers</b>, which are <b style="color:#C8102E">neurotoxic and nephrotoxic</b> in humans. The same protein damage happens in any food you microwave.[[P]]A Spanish CSIC study in the <i>Journal of the Science of Food and Agriculture</i> (2003) tested broccoli. Steaming destroyed about 11% of the flavonoid antioxidants. <b style="color:#C8102E">Microwaving destroyed 97%</b>. The "healthy vegetable" reheated in the microwave was barely food anymore.[[P]]A 2023 University of Nebraska study in <i>Environmental Science & Technology</i> measured a 3-minute microwave cycle releasing <b style="color:#C8102E">4.22 million microplastics + 2.11 billion nanoplastics per square centimeter</b> of plastic, straight into the meal. "Microwave safe" only means the container will not <b style="color:#C8102E">melt</b>. It does not mean the BPA, phthalates, or plastic fragments stay put. Heat plus fat plus acid (sauce, butter, tomato) accelerates leaching dramatically.[[P]]Microwave hot-spots also drive <b style="color:#C8102E">advanced glycation end-products (AGEs)</b>, which feed <b style="color:#C8102E">chronic inflammation, diabetes, kidney disease, and accelerated aging</b>. The food looks the same. Your body knows the difference. Reheat on the stovetop or in the oven. Never in plastic. Ideally, never at all.'},
-     {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
-   ]},
+  // kitchen_food and kitchen_extras removed 2026-07-15 (P4: shorten quiz to ~6 scoring questions)
 
   // Soft opt-in
   {id:'__soft',type:'soft'},
@@ -1969,40 +1911,29 @@ const STEPS = [
    ]},
 ];
 
-// AUDIT STEPS, 3 questions from booking-page-1212, sourced into scorecard's native flow
+// AUDIT STEPS — post-score follow-up (moved after scoring per P1/P2 2026-07-15)
+// audit_q2 and audit_q3 removed (pure sales-qualification, no user value)
 const AUDIT_STEPS = [
-  {id:'audit_q1', type:'audit', subtype:'text',
-   q:"Before we score your home, what's the #1 product you most want to swap?",
-   sub:"Be specific. Laundry detergent? Kid shampoo? Makeup? The more specific, the more useful your score.",
-   placeholder:"e.g. The cleaning sprays under my kitchen sink, I have 3 toddlers crawling around and the labels scare me.",
-   minLen:5},
-  {id:'audit_q2', type:'audit', subtype:'choice',
-   q:"How much does your household spend on these everyday essentials per month?",
-   sub:"Cleaning supplies, laundry, shampoo, makeup, vitamins, snacks, everything you reorder month after month.",
+  {id:'audit_q1', type:'audit', subtype:'choice',
+   q:"What's the #1 product you'd like to tackle first?",
+   sub:"Based on your score, which room do you want to start with?",
    options:[
-     {val:'lt60',    label:'Under $60',     sub:'Just me, minimal shopping'},
-     {val:'60_150',  label:'$60 to $150',    sub:'Small household'},
-     {val:'150_300', label:'$150 to $300',   sub:'Family of 2 to 4', most:true},
-     {val:'gt300',   label:'$300+',         sub:'Big family or premium brands'}
-   ]},
-  {id:'audit_q3', type:'audit', subtype:'choice',
-   q:"In your house, who decides what gets bought?",
-   sub:"No judgment, just helps us tailor your results.",
-   options:[
-     {val:'me',       label:'I do',                       sub:'My call, my house'},
-     {val:'together', label:'My partner and I together',  sub:'We talk about big purchases'},
-     {val:'partner',  label:'My partner does',            sub:"I'd loop them in"},
-     {val:'other',    label:'Someone else',               sub:'Mom, roommate, etc.'}
+     {val:'laundry',  label:'Laundry',         sub:'Detergent, dryer sheets, softener'},
+     {val:'cleaners', label:'Kitchen cleaners', sub:'Dish soap, surface sprays'},
+     {val:'personal', label:'Personal care',    sub:'Shampoo, body wash, deodorant'},
+     {val:'kids',     label:"Kids' products",   sub:'Baby wash, wipes, detergent'},
+     {val:'makeup',   label:'Makeup',           sub:'Foundation, mascara, lipstick'},
+     {val:'notsure',  label:'Not sure yet',     sub:'Show me the worst offenders first'},
    ]}
 ];
 
 function buildActive(){
-  // Audit Q1/Q2/Q3 always come FIRST, then the room-by-room scorecard steps
+  // 2026-07-15 P1: AUDIT_STEPS moved AFTER roomSteps (scoring questions come first)
   const roomSteps = STEPS.filter(s => {
     if(s.conditional==='baby') return hasBaby;
     return true;
   });
-  activeSteps = AUDIT_STEPS.concat(roomSteps).filter(s => s.type!=='soft'); // 2026-06-20 (Matt): kill mid-quiz save-your-spot interrupt
+  activeSteps = roomSteps.concat(AUDIT_STEPS).filter(s => s.type!=='soft'); // 2026-06-20 (Matt): kill mid-quiz save-your-spot interrupt
   // 2026-06-25 Shannon: skip the in-quiz 'what should I call you?' step when the
   // intro form already captured first name (cold-traffic /now path). Redundant ask.
   if (window._introFirstName) {
@@ -2256,7 +2187,10 @@ function renderStep(){
   if(step.type==='audit'){
     if(cont){ cont.classList.remove('on'); cont.style.display=''; }
     let body = '';
-    body += '<div class="q-eyebrow rise">About You · '+(stepIdx+1)+' of 3</div>';
+    // 2026-07-15 P3: AUDIT_STEPS now come after scoring; show step position in full sequence
+    var auditStepNum = stepIdx + 1;
+    var auditStepTotal = activeSteps.length;
+    body += '<div class="q-eyebrow rise">Question '+auditStepNum+' of '+auditStepTotal+'</div>';
     body += '<h2 class="q-title rise">'+step.q+'</h2>';
     if(step.sub) body += '<div class="q-sub rise">'+step.sub+'</div>';
     if(step.subtype==='text'){
@@ -2944,8 +2878,8 @@ function fireAuditWebhookOnce(){
 
 function goNext(){
   var prevStep=activeSteps[stepIdx];
-  // Fire the audit webhook once, the moment user advances past audit_q3
-  if(prevStep && prevStep.id==='audit_q3') fireAuditWebhookOnce();
+  // Fire the audit webhook once after the user answers audit_q1 (q2/q3 removed 2026-07-15)
+  if(prevStep && prevStep.id==='audit_q1') fireAuditWebhookOnce();
   stepIdx++;
   // Deferred GHL contact creation — fires the moment the user finishes their FIRST quiz step.
   // (Was firing immediately on intro tap, creating ghost score=0 abandoners. See note in
@@ -3043,7 +2977,7 @@ function runCalc(){
     });
     totalScore = maxPts>0 ? Math.round(gotPts/maxPts*100) : 0;
     if(totalScore>100) totalScore=100;
-    if(totalScore<1) totalScore=2;
+    if(totalScore<18) totalScore=18; // 2026-07-15 P6: floor at 18 to keep messaging meaningful
 
     const arc=document.getElementById('cArc');
     const circ=525; let disp=0;
@@ -3061,7 +2995,7 @@ function runCalc(){
         if(disp>=totalScore){ clearInterval(iv); setTimeout(showCalcDetails,400); }
       },28);
       const cH=document.getElementById('cH');
-      if(cH) cH.textContent=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=20?'Below average, good choices.':'Low exposure, great choices!';
+      if(cH) cH.textContent=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!'; // 2026-07-15 P6: updated thresholds
     },700);
   } catch(e){ console.error(e); showScreen('s-calc'); }
 }
@@ -3179,7 +3113,7 @@ function showResults(){
   // RETARGETING version (?r=1): existing leads have already been to the site, hide the off-site Shop + Tour doors
   if(getParam('r')==='1'){ ['#finalCta .door-red','#finalCta .door-tour'].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display='none'; }); }
   const grade=totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
-  const hl=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=20?'Below average, good choices.':'Low exposure, great choices!';
+  const hl=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!'; // 2026-07-15 P6: updated thresholds
   var rsEl=document.getElementById('rScore'); rsEl.textContent=totalScore;
   rsEl.style.color=totalScore<=30?'#1F8A70':totalScore<=60?'#E8A317':'#C8102E';
   rsEl.setAttribute('role','img'); rsEl.setAttribute('aria-label','Toxic score: '+totalScore+' out of 100. '+(totalScore>=70?'Red Zone':totalScore>=45?'Caution Zone':'Clean Zone')+'.'); // #4 a11y
@@ -3189,7 +3123,7 @@ function showResults(){
   // #4 personally-written results + #6 hopeful framing, Shannon's voice
   document.getElementById('rH').textContent = userName ? (userName+', here’s what I saw.') : 'Here’s what I saw.';
   var rpMsg;
-  if(totalScore<=20){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.'; }
+  if(totalScore<=17){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.'; } // 2026-07-15 P6: threshold below score floor
   else if(totalScore<=45){ rpMsg='I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.'; }
   else { rpMsg='Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
   if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. '+rpMsg; }
