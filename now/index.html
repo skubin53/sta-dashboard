@@ -3132,6 +3132,10 @@ async function submitReport(){
 
 function showResults(){
   showScreen('s-results'); // showScreen now handles the scroll-to-top reliably across .screen containers
+  // Extra scroll resets after dynamic content renders (score, house, swaps all paint async)
+  var _sr = document.getElementById('s-results');
+  function _topResult(){ if(_sr){ _sr.scrollTop=0; } window.scrollTo(0,0); document.documentElement.scrollTop=0; document.body.scrollTop=0; }
+  setTimeout(_topResult, 100); setTimeout(_topResult, 300); setTimeout(_topResult, 600); setTimeout(_topResult, 1000);
   track('scan_completed'); // Change #9, influencer attribution
   loadCommunityStats(); // Change #12, refresh count so the reveal includes their own scan
   // RETARGETING version (?r=1): existing leads have already been to the site, hide the off-site Shop + Tour doors
