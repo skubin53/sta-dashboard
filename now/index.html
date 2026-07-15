@@ -386,6 +386,8 @@ html,body{
 .room-quote .rq-mark{font-family:Georgia,serif;font-size:30px;line-height:.7;color:rgba(227,179,65,.5);flex:none;}
 .room-quote .rq-body{font-size:.79rem;line-height:1.45;color:#fafdff;font-style:italic;}
 .room-quote .rq-a{display:block;font-style:normal;font-weight:700;color:rgba(227,179,65,.78);font-size:.7rem;margin-top:5px;letter-spacing:.02em;}
+/* P7: real member photo in testimonial */
+.room-quote .rq-img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;border:2px solid rgba(227,179,65,.45);margin-top:2px;}
 .q-opt .osel{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(159,177,204,.4);position:relative;transition:border-color .2s;flex-shrink:0;}
 .q-opt .osel::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);transform:scale(0);transition:transform .2s cubic-bezier(.2,1.7,.4,1);}
 .q-opt.sel{border-color:var(--orange);background:rgba(227,179,65,.08);box-shadow:0 0 0 1px rgba(227,179,65,.35),0 8px 24px -10px rgba(227,179,65,.5);}
@@ -1996,16 +1998,16 @@ function roomKeyForStep(s){
 }
 // change #7, real testimonials (from STA site), one per room
 const ROOM_QUOTES=[
-  {q:"I work in the ER. I see what these chemicals do to people's lungs every shift. Then my own son ended up there. I switched our whole house in one order. He has not touched his rescue inhaler in 4 months.", a:"Tamara W. · Nurse"},           /*0 under-sink cleaning*/
+  {q:"I work in the ER. I see what these chemicals do to people's lungs every shift. Then my own son ended up there. I switched our whole house in one order. He has not touched his rescue inhaler in 4 months.", a:"Tamara W. · Nurse", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/6967f9afa3e5c1b0f5b96cda.jpg"},           /*0 under-sink cleaning — real member photo*/
   {q:"My skin used to react to everything. Once I swapped my shampoo and body wash, the breakouts I'd had for years just… stopped.", a:"Maria K. · Mom of 2"}, /*1 bathroom*/
   {q:"I wanted to know exactly what was touching my baby's skin. Now bath time is one less thing I worry about.", a:"Ashley D. · New Mom"},                  /*2 nursery*/
-  {q:"I didn't know my brand of coffee contained toxins and mold. Once I switched, I noticed my headaches were gone and no more allergies.", a:"Cheryl Owen · Business Owner"}, /*3 pantry*/
+  {q:"You ever wonder if your morning coffee is secretly dragging you down? A lot of regular coffee is loaded with mold and toxins. I switched to something clean, organic, and tested for purity. I drink it faithfully every single morning.", a:"Jen · Switch to America Member", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b08f81f60a14f34f905f8.jpg"}, /*3 coffee/pantry — real member Jen*/
   {q:"I had no idea my nonstick pans were releasing chemicals linked to <span style=\"color:#C8102E;font-weight:900\">kidney and testicular cancer</span> every time I cooked. Or that the plastic containers I packed in my kids' lunches were leaching BPA, a hormone disruptor linked to <span style=\"color:#C8102E;font-weight:900\">early puberty and breast cancer</span>. Replacing it all was the easiest upgrade I've ever made for my family.", a:"Dana R. · Mom of 4"}, /*4 kitchen extras*/
-  {q:"My daughter's skin would get red and itchy after every wash. New detergent, no more irritation, I wish I'd done it sooner.", a:"Rachel M. · Mom of 3"}, /*5 laundry*/
+  {q:"We made the switch 7 months ago and haven't looked back. American-made, cleaner ingredients, better value — and the whole family agreed to pose with the boxes, which says everything.", a:"Brittany · Mom of 2", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b0d981f60a1673df9bf2e.jpg"}, /*5 laundry — real member Brittany family*/
   {q:"We thought our pitcher filter was enough. After we upgraded our water, even our coffee and cooking tasted different.", a:"Karen S. · Grandmother"},     /*6 water*/
   {q:"My pediatrician asked if anyone smoked in our house when my daughter was diagnosed with asthma at age 4. Nobody did. The candles I lit every night and the plug-ins in every room were releasing the same toxic particles as cigarette smoke. I threw them all out. Her asthma attacks stopped within a month.", a:"Diane M. · Mom of 3"}, /*7 home air, candles+plug-ins = indoor smoking*/
   {q:"Tylenol was destroying my liver. Acetaminophen is the leading cause of acute liver failure in America, and nobody told me. I switched so many of these items in my cabinet. Not only have my allergies disappeared, I am <span style=\"color:#C8102E;font-weight:900\">SAVING MONEY</span>.", a:"Beth A. · Grandmother"}, /*8 meds/health*/
-  {q:"I was on a mission to find out why my husband got cancer. What I learned about the products in our own home stopped me cold.", a:"Karla M. · Wife and Caregiver"}, /*9 intro*/
+  {q:"I was tired of overpaying for basic household things that barely worked and were toxic AF. So I switched where we shopped. That was it. Literally.", a:"Meg Ann · Mom of 3", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b0ab496dd5b904ed4a561.jpg"}, /*9 intro — real member Meg Ann*/
   {q:"My hands cracked open every time I cleaned. The cracks bled. I cried in the shower because the water burned. The dermatologist said it was the methylisothiazolinone in my disinfectant. I threw out everything under our sink. My hands healed in 3 weeks for the first time in 4 years.", a:"Rachel B. · Mom of 2"}, /*10 kitchen cleaners, severe hand eczema*/
 ];
 // one fitted testimonial per step, the quote at the bottom must match that page's products
@@ -2374,7 +2376,7 @@ function renderStep(){
   }
 
   // change #7, quiet testimonial bubble (one per room)
-  var _q=quoteForStep(step); if(_q) h+=`<div class="room-quote rise"><span class="rq-mark">“</span><div class="rq-body">${_q.q}<span class="rq-a">, ${_q.a}</span></div></div>`;
+  var _q=quoteForStep(step); if(_q){ var _img=_q.img?`<img class=”rq-img” src=”${_q.img}” alt=”” loading=”lazy”>`:'<span class=”rq-mark”>”</span>'; h+=`<div class=”room-quote rise”>${_img}<div class=”rq-body”>${_q.q}<span class=”rq-a”>, ${_q.a}</span></div></div>`; }
   // change #13, per-room peek: preview of what's next + finite progress
   h+=peekHTML(stepIdx);
   m.innerHTML=h;
