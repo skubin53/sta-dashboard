@@ -2617,7 +2617,26 @@ function applyRef(){
   inner.insertBefore(b, inner.firstChild);
 }
 applyRef();
-maybeOfferResume();
+// 2026-07-15 Shannon: ?go=1 in recovery SMS link auto-starts the quiz, skipping the intro form.
+// If localStorage has their prior progress, resume it. Otherwise start fresh with name pre-filled.
+(function(){
+  var go = getParam('go'), prefillName = getParam('n');
+  if(go==='1'){
+    var saved = loadProgress();
+    if(prefillName){ window._introFirstName = prefillName; }
+    if(saved && saved.a && saved.si >= 1){
+      // Same device — resume where they left off, no intro needed
+      resumeProgress();
+    } else {
+      // Different device — skip the intro form, start fresh with name pre-filled
+      if(prefillName){ userName = prefillName; }
+      window._introPendingCapture = true; // GHL contact will be created on first quiz step
+      buildActive(); stepIdx=0; renderStep(); showScreen('s-quiz'); renderQuizHouse(); updateRisk();
+    }
+  } else {
+    maybeOfferResume();
+  }
+})();
 makeQR(); // Change #2 update, preload the share-card QR (best-effort)
 
 // Fable-5 uplevel #4 (2026-06-10): real brand-hit counts for "Found in X of Y homes" lines.
