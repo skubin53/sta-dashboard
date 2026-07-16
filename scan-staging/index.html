@@ -375,6 +375,8 @@ html,body{
 /* change #6, progressive reveal of health impact */
 .q-opt .oi-hazard{background:rgba(232,163,23,.16);}
 .q-opt .oi-hazard svg{width:18px;height:18px;stroke:#E8A317;}
+.q-opt .oi-safe{background:rgba(31,138,112,.16);}
+.q-opt .oi-safe svg{width:18px;height:18px;stroke:#37c79a;}
 .od-toggle{display:block;width:fit-content;margin-top:6px;background:none;border:none;padding:0;color:var(--orange);font-size:.7rem;font-weight:800;cursor:pointer;font-family:'Hanken Grotesk',inherit;letter-spacing:.01em;}
 .od-chev{display:inline-block;transition:transform .25s;font-size:.6rem;}
 .q-opt.revealed .od-chev{transform:rotate(180deg);}
@@ -2423,8 +2425,12 @@ function renderStep(){
     step.answers.forEach((a,i)=>{
       const k=a.lbl; const sel=!!prev[k];
       const pts=a.pts||0;
+      const isCleanOpt = pts < 5;
+      const iconHtml = isCleanOpt
+        ? `<span class="oi oi-safe"><svg viewBox="0 0 24 24" fill="none" stroke="#37c79a" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>`
+        : `<span class="oi oi-hazard"><svg viewBox="0 0 24 24" fill="none" stroke="#E8A317" stroke-width="2"><path d="M12 3.2 L22 20 H2 Z"/><path d="M12 10v4.5M12 17.5h.01"/></svg></span>`;
       h+=`<div class="q-opt${sel?' sel':''}" onclick="pickMulti('${step.id}',${i},${!!a.exclusive},this)">
-        <span class="oi oi-hazard"><svg viewBox="0 0 24 24" fill="none" stroke="#E8A317" stroke-width="2"><path d="M12 3.2 L22 20 H2 Z"/><path d="M12 10v4.5M12 17.5h.01"/></svg></span>
+        ${iconHtml}
         <span class="ot">${a.lbl}${a.det?`<button class="od-toggle" onclick="event.stopPropagation();this.closest('.q-opt').classList.toggle('revealed')">tap to see what science says <span class="od-chev">▾</span></button><div class="od-reveal">${a.det}</div>`:''}</span>
         <span class="osel"></span>
       </div>`;
