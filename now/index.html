@@ -1296,7 +1296,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-  <button class="btn-rpt" id="btnRpt" onclick="showResults()">🔓 Get Me My Score →</button>
+  <button class="btn-rpt" id="btnRpt" tabindex="-1" onclick="showResults()">🔓 Get Me My Score →</button>
   <div style="font-size:.68rem;color:#fafdff;text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
 </div>
 
@@ -3165,10 +3165,15 @@ function showCalcDetails(){
   // 2026-07-16 Shannon: adding content here pushes the score circle above the viewport.
   // Force s-calc back to top so the circle is the first thing they see.
   var _sc = document.getElementById('s-calc');
-  function _calcTop(){ if(_sc) _sc.scrollTop = 0; try{ window.scrollTo(0,0); }catch(e){} }
+  function _calcTop(){
+    try{ if(document.activeElement && document.activeElement.blur) document.activeElement.blur(); }catch(e){}
+    if(_sc){ _sc.scrollTop=0; try{_sc.scroll({top:0,behavior:'instant'});}catch(e){} }
+    try{window.scrollTo(0,0);}catch(e){}
+    try{document.documentElement.scrollTop=0;}catch(e){}
+  }
   _calcTop();
   requestAnimationFrame(function(){ _calcTop(); requestAnimationFrame(_calcTop); });
-  setTimeout(_calcTop, 80); setTimeout(_calcTop, 250); setTimeout(_calcTop, 500);
+  setTimeout(_calcTop, 80); setTimeout(_calcTop, 200); setTimeout(_calcTop, 400); setTimeout(_calcTop, 700);
 }
 
 function showOptin(){
@@ -3417,6 +3422,7 @@ function showResults(){
   // re-anchoring scroll. Resets fire up to 3s to cover async community stats + image loads.
   var _rEl = document.getElementById('s-results');
   function _forceTop(){
+    try{ if(document.activeElement && document.activeElement.blur) document.activeElement.blur(); }catch(e){}
     if(_rEl){ _rEl.scrollTop=0; try{_rEl.scroll({top:0,behavior:'instant'});}catch(e){} }
     try{window.scrollTo(0,0);}catch(e){}
     try{document.documentElement.scrollTop=0;}catch(e){}
