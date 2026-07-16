@@ -1795,8 +1795,56 @@ const STEPS = [
       chips:['Lysol','Clorox','Mrs. Meyer\'s','Method','Sol-U-Guard']},
    ]},
 
-  // kitchen_food removed 2026-07-15 (P4: shorten quiz to ~6 scoring questions)
-  // kitchen_extras removed 2026-07-15 (P4: shorten quiz to ~6 scoring questions)
+  // Kitchen Page B, Pantry / Food & Nutrition
+  {id:'kitchen_food',room:'Room 2 · The Pantry',icon:'🥗',type:'chip_cards',
+   q:'What are your <span style="background:linear-gradient(95deg,var(--orange),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent">family favorites?</span>',
+   sub:'<b>These are some of the biggest hidden sources.</b> Tap what you buy.',
+   room_lbl:'Kitchen',
+   cards:[
+     {id:'k_cof',label:'Coffee',cat:'coffee',
+      icon:'<svg viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>',
+      chips:['Folgers','Maxwell House','Starbucks','Dunkin\'','Nescafé','Death Wish','Kirkland','Organic Coffee','Mountain Cabin']},
+     {id:'k_oil',label:'Cooking Oil / Seed Oils',cat:'oil',
+      icon:'<svg viewBox="0 0 24 30"><rect x="10" y="2" width="4" height="4" fill="#9aa17a"/><path d="M8 9c0-1.5 1.3-3 4-3s4 1.5 4 3v17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#e7c45a"/><rect x="9.5" y="14" width="7" height="8" rx="1" fill="#fff8e0" opacity=".85"/></svg>',
+      chips:['Vegetable / Canola','Crisco','Wesson','Mazola','PAM Spray','Olive oil','Avocado oil','Beef Tallow']},
+     {id:'k_vit',label:'Vitamins / Supplements',cat:'supplements',
+      icon:'<svg viewBox="0 0 24 30"><rect x="8" y="2" width="8" height="3.5" rx="1" fill="#cfd8c2"/><rect x="7.5" y="6" width="9" height="22" rx="2.5" fill="#6fae6a"/><rect x="9.5" y="12" width="9" height="9" rx="1" fill="#eef6ec" transform="translate(-2 0)"/></svg>',
+      chips:['Nature Made','Centrum','Nature\'s Bounty','Garden of Life','Kirkland','GNC','Brand from Naturopath','Peak Performance']},
+     {id:'k_pro',label:'Protein Powder',cat:'supplements',
+      icon:'<svg viewBox="0 0 24 30"><rect x="6" y="2" width="12" height="4" rx="2" fill="#3a4049"/><path d="M6 7h12v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" fill="#5a4a8a"/><rect x="8" y="13" width="8" height="9" rx="1" fill="#efeaf7"/></svg>',
+      chips:['Optimum Nutrition','Premier Protein','Quest','Muscle Milk','Garden of Life','Truvani','Proflex']},
+   ]},
+
+  // Kitchen extras — high-impact items (plastic, microwave, etc.)
+  {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else to check in your kitchen?',sub:'Select all that apply.',
+   answers:[
+     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',
+      det:'Coating breaks down above 500°F and releases PFAS forever chemicals into the air your family breathes.',
+      swap:'Cast iron or stainless steel',
+      ing:'PFAS forever chemicals, PTFE that degrades at 500°F',
+      harm:'<b style="color:#C8102E">99% of Americans</b> already have PFAS in their blood (CDC). The C8 Science Panel linked these chemicals to <b style="color:#C8102E">kidney cancer, testicular cancer, ulcerative colitis, thyroid disease,</b> and pregnancy-induced hypertension.[[P]]The pan coating breaks down above 500°F. The fumes give people <b style="color:#C8102E">flu-like polymer-fume fever</b> and kill pet birds. PFAS are called "forever chemicals" because they never break down in your body or the environment.'},
+     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',
+      det:'Leaches hormone disruptors into your food. Heat, fat, and acidic foods speed it up.',
+      swap:'Glass storage with bamboo or silicone lids',
+      ing:'Bisphenol A (BPA), bisphenol S/F replacements, phthalate plasticizers',
+      harm:'<b style="color:#C8102E">93% of Americans</b> test positive for BPA in their urine (CDC NHANES). BPA mimics estrogen. It is linked to <b style="color:#C8102E">infertility, lower sperm count, early puberty in girls, type 2 diabetes, breast and prostate cancer,</b> and ADHD-like behavior in children.'},
+     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',
+      det:'A 2023 lab study clocked one plastic cutting board shedding 14 to 71 mg of microplastics per cut, straight into the food you are about to eat.',
+      swap:'Wood or bamboo cutting board',
+      ing:'Polyethylene and polypropylene microplastics released by every knife stroke',
+      harm:'A 2023 study in <i>Environmental Science & Technology</i> measured one plastic cutting board shedding <b style="color:#C8102E">14 to 71 milligrams of microplastics per cut</b>. Those fragments go straight into your meal.[[P]]Microplastics have now been found in human <b style="color:#C8102E">lung tissue, breast milk, and placentas</b>.'},
+     {lbl:'Single-serve coffee machine (Keurig, Nespresso)',em:'☕',pts:8,room:'Kitchen',
+      det:'190°F water under pressure through polystyrene plastic pods every morning.',
+      swap:'French press or pour-over with whole beans',
+      ing:'Polystyrene leaching styrene, phthalates',
+      harm:'K-Cups are made of polystyrene. The WHO\'s IARC reclassified styrene as <b style="color:#C8102E">"probably carcinogenic to humans"</b> (Group 2A) in 2018.[[P]]Running 190°F water through plastic under pressure accelerates chemical migration into every cup.'},
+     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:8,room:'Kitchen',
+      det:'Microwaving destroys most nutrients in your food and creates aged-protein compounds linked to inflammation.',
+      swap:'Reheat on the stovetop or in the oven (glass or ceramic only)',
+      ing:'Plastic microplastics, denatured proteins, advanced glycation end-products (AGEs)',
+      harm:'A 2023 University of Nebraska study measured a 3-minute microwave cycle releasing <b style="color:#C8102E">4.22 million microplastics + 2.11 billion nanoplastics per square centimeter</b> of plastic into the meal. "Microwave safe" only means the container will not <b style="color:#C8102E">melt</b>.[[P]]A Spanish CSIC study tested broccoli: steaming destroyed about 11% of antioxidants. <b style="color:#C8102E">Microwaving destroyed 97%</b>.'},
+     {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
+   ]},
 
   // Soft opt-in
   {id:'__soft',type:'soft'},
