@@ -501,7 +501,7 @@ html,body{
 .brand-chip{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-family:'Hanken Grotesk',inherit;font-size:17px;font-weight:700;color:#d7e1f0;cursor:pointer;background:rgba(255,255,255,.06);border:1.5px solid rgba(159,177,204,.26);border-radius:999px;padding:10px 16px;transition:all .16s;} /* 2026-07-15 P8: bumped from 13.5px */
 .brand-chip:hover{border-color:rgba(227,179,65,.55);color:#fff;}
 .brand-chip:active{transform:scale(.96);}
-.brand-chip.sel{background:var(--orange);border-color:var(--orange);color:#15233a;box-shadow:0 6px 16px -6px rgba(227,179,65,.7);}
+.brand-chip.sel{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 6px 18px -6px rgba(200,16,46,.7);}
 .brand-chip.chip-none{color:#dbe4f0;border-style:dashed;}
 .brand-chip.chip-none.sel{background:rgba(159,177,204,.2);border-color:var(--muted);color:#eaf0f8;border-style:solid;}
 .brand-chip.chip-other{color:var(--orange);border-color:rgba(246,150,42,.4);}
@@ -867,9 +867,9 @@ body { padding-top:0 !important; }
 .risk-txt { color:#C8102E !important; }
 .risk-n { color:#C8102E !important; }
 
-.room-quote { background:#fff !important; border:1px solid #d4cdb8 !important; border-radius:12px !important; padding:12px 14px !important; }
+.room-quote { background:#fff !important; border:1px solid #d4cdb8 !important; border-left:3.5px solid #C9A227 !important; border-radius:12px !important; padding:12px 14px !important; }
 .room-quote .rq-body { color:#3a4a66 !important; }
-.room-quote .rq-mark { color:#C9A227 !important; }
+.room-quote .rq-mark { color:#C9A227 !important; font-size:44px !important; }
 .room-quote .rq-a { color:#6b5a3a !important; }
 
 .brand-chip { color:#0B2545 !important; background:#fff !important; border-color:#d4cdb8 !important; }
@@ -964,6 +964,11 @@ body { padding-top:0 !important; }
 #s-results .rcard p[style*="font-style:italic"] { color: #1a2e54 !important; }
 /* Subscore bar labels */
 #s-results .rb p { color: #1a2e54; }
+/* pfHero dark card — keep white/gold text despite the cream override */
+#s-results #pfHero, #s-results #pfHero div, #s-results #pfHero span, #s-results #pfHero p, #s-results #pfHero b { color: #eaf1f8 !important; }
+#s-results #pfHero .pf-title { color: #E8A317 !important; }
+#s-results #pfHero .pf-count { color: #fff !important; }
+#s-results #pfHero .pf-sub { color: #E8A317 !important; }
 /* UNIVERSAL text override: anything in #s-results that isn't a button or accent badge becomes solid black. */
 #s-results h1, #s-results h2, #s-results h3, #s-results h4,
 #s-results p, #s-results span, #s-results div, #s-results b, #s-results strong, #s-results em, #s-results i, #s-results li, #s-results td {
@@ -1145,6 +1150,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="intro-chip"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No pressure</span>
     </div>
 
+    <!-- Founder byline + social proof (Hormozi real-face + starving-crowd levers) -->
+    <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:10px">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
+           style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid rgba(255,255,255,.3);flex-shrink:0" alt="Shannon Nicole"/>
+      <div style="text-align:left">
+        <div style="font-size:.73rem;color:rgba(250,253,255,.92);font-weight:700;line-height:1.3">A free scan built by Shannon Nicole</div>
+        <div style="font-size:.67rem;color:rgba(250,253,255,.6);line-height:1.3">Founder, Switch to America</div>
+      </div>
+    </div>
+    <div style="font-size:.71rem;font-weight:700;color:rgba(250,253,255,.7);text-align:center;margin-bottom:16px">
+      ✓ Join <span id="introScanCount">12,000+</span> families who've already checked their home
+    </div>
+
     <div class="intro-field-new rise">
       <label for="introFirstName">First name</label>
       <input id="introFirstName" type="text" autocomplete="given-name"/>
@@ -1152,6 +1170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="intro-field-new rise">
       <label for="introPhone">Your cell phone</label>
       <input id="introPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(___) ___-____"/>
+      <div style="font-size:.67rem;color:rgba(250,253,255,.6);margin-top:5px;text-align:center;line-height:1.5">We text your score once. No calls, no spam, no selling your number.</div>
     </div>
 
     <button class="intro-cta-new" onclick="startQuizWithCapture()">Start the 3-minute scan →</button>
@@ -1388,7 +1407,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="rb">
     <div id="simWrap" style="display:none"></div>
-    <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
+    <div id="pfHero" style="display:none;margin-bottom:20px"></div>
+    <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3 style="text-transform:uppercase;letter-spacing:.1em">🔍 What We Found in Your Home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <!-- Testimonies block removed from score-reveal (Shannon 2026-06-26 08:29 MDT). Belongs on the post-payment thank-you page, not in the choice-architecture between $7 tripwire + free audit. -->
     <div class="fc" id="finalCta">
@@ -2343,7 +2363,8 @@ function renderStep(){
 
   // Question + sub
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise q-h1-${step.id}">${step.q}</h1>`;
-  if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
+  if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:10px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
+  if(step.type==='chip_cards') h+=`<div class="rise" style="display:inline-flex;align-items:center;gap:4px;background:rgba(31,138,112,.12);border:1px solid rgba(31,138,112,.4);border-radius:50px;padding:4px 10px;font-size:.7rem;font-weight:800;color:#1F8A70;margin-bottom:14px"><span>✓</span><span>No typing required</span></div>`;
 
   // Testimonial above the content so it's visible on load without scrolling
   var _qt=quoteForStep(step); if(_qt){ var _img=_qt.img?`<img class="rq-img" src="${_qt.img}" alt="" loading="lazy">`:'<span class="rq-mark">"</span>'; h+=`<div class="room-quote rise" style="margin-bottom:18px">${_img}<div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`; }
@@ -2742,6 +2763,11 @@ function communityText(){
 function renderCommunityStats(){
   var txt=communityText(); if(!txt) return;
   ['commStatLanding','commStatReveal'].forEach(function(id){ var el=document.getElementById(id); if(el){ el.textContent=txt; el.style.display='block'; } });
+  // Update intro scan count with real total
+  if(COMM_STATS && COMM_STATS.total > 500){
+    var sc=document.getElementById('introScanCount');
+    if(sc) sc.textContent=commFmt(COMM_STATS.total)+'+';
+  }
 }
 function loadCommunityStats(){ try{ fetch(SERVER+'/scan-stats').then(function(r){return r.json();}).then(function(d){ COMM_STATS=d; renderCommunityStats(); }).catch(function(){}); }catch(e){} }
 loadCommunityStats();
@@ -3306,22 +3332,20 @@ function showResults(){
   rsEl.setAttribute('role','img'); rsEl.setAttribute('aria-label','Toxic score: '+totalScore+' out of 100. '+(totalScore>=70?'Red Zone':totalScore>=45?'Caution Zone':'Clean Zone')+'.'); // #4 a11y
   renderResultHouse(totalScore); // Change #5, hero house reflects final score
   prepShareFile(); // pre-build the share image so the share sheet opens instantly on tap (iOS-safe)
-  document.getElementById('rGrade').textContent=grade;
-  // #4 personally-written results + #6 hopeful framing, Shannon's voice
-  document.getElementById('rH').textContent = userName ? (userName+', here’s what I saw.') : 'Here’s what I saw.';
+  // Grade letter removed — contradicts "X products flagged" framing (per Hormozi handoff 2026-07-15)
+  var gradeEl = document.getElementById(‘rGrade’); if(gradeEl) gradeEl.style.display=’none’;
+  // #4 personally-written results + #6 hopeful framing, Shannon’s voice
+  document.getElementById(‘rH’).textContent = userName ? (userName+’, here’s what I saw.’) : ‘Here’s what I saw.’;
   var rpMsg;
-  if(totalScore<=17){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.'; }
-  else if(totalScore<=45){ rpMsg='I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.'; }
-  else { rpMsg='Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
-  if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. '+rpMsg; }
-  document.getElementById('rP').textContent=rpMsg;
-  // change #8, ZONE badge + "name the feeling" sentence (tied to real concern count)
-  var z=document.getElementById('rZone');
-  if(z){ z.style.display='inline-block';
-    if(totalScore>=70){ z.textContent='🔴 RED ZONE'; z.style.background='rgba(200,16,46,.2)'; z.style.color='#FF6B6B'; z.style.border='1px solid rgba(200,16,46,.4)'; }
-    else if(totalScore>=45){ z.textContent='🟡 CAUTION ZONE'; z.style.background='rgba(232,163,23,.16)'; z.style.color='#E8A317'; z.style.border='1px solid rgba(232,163,23,.3)'; }
-    else { z.textContent='🟢 CLEAN ZONE'; z.style.background='rgba(31,138,112,.16)'; z.style.color='#37c79a'; z.style.border='1px solid rgba(31,138,112,.3)'; }
-  }
+  if(totalScore<=17){ rpMsg=’Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.’; }
+  else if(totalScore<=45){ rpMsg=’I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.’; }
+  else { rpMsg=’Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.’; }
+  if(hasBaby){ rpMsg=’Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. ‘+rpMsg; }
+  document.getElementById(‘rP’).textContent=rpMsg;
+  // Zone badge suppressed — replaced by pfHero flagged-count card (no contradictory CLEAN ZONE next to fear copy)
+  var z=document.getElementById(‘rZone’); if(z) z.style.display=’none’;
+  // rP text superseded by pfHero body copy — hide after toxList is built below
+
   // 2026-06-21 Shannon: rFeeling + rMetaphor REMOVED. The "≈ cigarettes a day" + "X years older"
   // + "Right now N products are flagged" copy were getting clipped at the bottom of .rt and showing
   // as two dark crescent artifacts floating above the sim card. Killed both entirely.
@@ -3386,12 +3410,28 @@ function showResults(){
     homeair:'air',water:'water'
   };
   var totalToxBefore = toxList.length; // preserve full count for the CTA copy ("X toxic products in your home")
+  // Build "PRODUCTS FLAGGED IN YOUR HOME" dark hero (replaces grade/zone framing)
+  var pfEl = document.getElementById('pfHero');
+  if(pfEl) {
+    if(totalToxBefore >= 1) {
+      pfEl.style.display = 'block';
+      pfEl.innerHTML =
+        '<div style="background:linear-gradient(160deg,#0d1f3c 0%,#071428 100%);border-radius:16px;padding:26px 20px;text-align:center">'
+        +'<div class="pf-title" style="font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin-bottom:14px">Products Flagged in Your Home</div>'
+        +'<div class="pf-count" style="font-family:\'Anton\',sans-serif;font-size:80px;line-height:1;margin-bottom:8px;text-shadow:0 0 40px rgba(255,153,0,.4)">'+totalToxBefore+'</div>'
+        +'<div class="pf-sub" style="font-size:.9rem;font-weight:700;margin-bottom:16px">Each one linked to a real, documented health concern</div>'
+        +'<div class="pf-body" style="font-size:.9rem;line-height:1.65">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</div>'
+        +'</div>';
+      var rPEl = document.getElementById('rP'); if(rPEl) rPEl.style.display='none';
+    } else {
+      pfEl.style.display = 'none';
+    }
+  }
   var seenFamily={}, diverse=[];
   toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||'other'; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
   if(diverse.length<3){ toxList.forEach(function(f){ if(diverse.indexOf(f)===-1 && diverse.length<3) diverse.push(f); }); }
   toxList=diverse;
   buildSimulator(toxList); // Change #4: "what if I switched?" simulator, their actual top-impact toxic taps
-  var fh='';
   var fh='';
   if(toxList.length>=2){
     // Shannon 2026-07-15: show only the WORST 1 finding — tease, don't give it all away.

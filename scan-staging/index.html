@@ -499,7 +499,7 @@ html,body{
 .brand-chip{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:44px;font-family:'Hanken Grotesk',inherit;font-size:17px;font-weight:700;color:#d7e1f0;cursor:pointer;background:rgba(255,255,255,.06);border:1.5px solid rgba(159,177,204,.26);border-radius:999px;padding:10px 16px;transition:all .16s;} /* 2026-07-15 P8: bumped from 13.5px */
 .brand-chip:hover{border-color:rgba(227,179,65,.55);color:#fff;}
 .brand-chip:active{transform:scale(.96);}
-.brand-chip.sel{background:var(--orange);border-color:var(--orange);color:#15233a;box-shadow:0 6px 16px -6px rgba(227,179,65,.7);}
+.brand-chip.sel{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 6px 18px -6px rgba(200,16,46,.7);}
 .brand-chip.chip-none{color:#dbe4f0;border-style:dashed;}
 .brand-chip.chip-none.sel{background:rgba(159,177,204,.2);border-color:var(--muted);color:#eaf0f8;border-style:solid;}
 .brand-chip.chip-other{color:var(--orange);border-color:rgba(246,150,42,.4);}
@@ -2338,10 +2338,11 @@ function renderStep(){
 
   // Question + sub
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise q-h1-${step.id}">${step.q}</h1>`;
-  if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
+  if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:10px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
+  if(step.type==='chip_cards') h+=`<div class="rise" style="display:inline-flex;align-items:center;gap:4px;background:rgba(31,138,112,.18);border:1px solid rgba(31,138,112,.45);border-radius:50px;padding:4px 10px;font-size:.7rem;font-weight:800;color:#37c79a;margin-bottom:14px"><span>✓</span><span>No typing required</span></div>`;
 
-  // Testimonial above the content so it's visible without scrolling
-  var _qt=quoteForStep(step); if(_qt) h+=`<div class="room-quote rise" style="margin-bottom:18px"><span class="rq-mark">"</span><div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`;
+  // Testimonial above the content so it's visible without scrolling — gold left-border accent
+  var _qt=quoteForStep(step); if(_qt) h+=`<div class="room-quote rise" style="margin-bottom:18px;border-left:3.5px solid rgba(227,179,65,.75)"><span class="rq-mark">"</span><div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`;
 
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
