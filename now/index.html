@@ -2297,6 +2297,9 @@ function renderStep(){
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise q-h1-${step.id}">${step.q}</h1>`;
   if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
 
+  // Testimonial above the content so it's visible on load without scrolling
+  var _qt=quoteForStep(step); if(_qt){ var _img=_qt.img?`<img class="rq-img" src="${_qt.img}" alt="" loading="lazy">`:'<span class="rq-mark">"</span>'; h+=`<div class="room-quote rise" style="margin-bottom:18px">${_img}<div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`; }
+
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
     step.cards.forEach(card=>{
@@ -2371,8 +2374,6 @@ function renderStep(){
     h+='</div>';
   }
 
-  // change #7, quiet testimonial bubble (one per room)
-  var _q=quoteForStep(step); if(_q){ var _img=_q.img?`<img class=”rq-img” src=”${_q.img}” alt=”” loading=”lazy”>`:'<span class=”rq-mark”>”</span>'; h+=`<div class=”room-quote rise”>${_img}<div class=”rq-body”>${_q.q}<span class=”rq-a”>, ${_q.a}</span></div></div>`; }
   // change #13, per-room peek: preview of what's next + finite progress
   h+=peekHTML(stepIdx);
   m.innerHTML=h;
