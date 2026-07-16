@@ -109,12 +109,13 @@ img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
 
   var PHOTO_BASE = 'https://skubin53.github.io/sta-dashboard/now/';
 
-  // Visual break image banner — rectangular so both subjects show
-  function photoBanner(src, alt, caption, objectPos){
+  // Visual break — card layout with portrait image + quote beside it (avoids cropping either subject)
+  function photoBanner(src, alt, caption, objectPos, imgHeight){
+    imgHeight = imgHeight || '240px';
     objectPos = objectPos || 'center center';
-    return '<div style="margin:16px 0;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.1)">'
-      +'<img src="'+src+'" alt="'+alt+'" style="width:100%;height:220px;object-fit:cover;object-position:'+objectPos+';display:block"/>'
-      +(caption ? '<div style="background:#f5f1ea;padding:8px 14px;font-size:12px;font-style:italic;color:#6b5a3a;text-align:center">'+caption+'</div>' : '')
+    return '<div style="margin:16px 0;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.1);background:#f5f1ea">'
+      +'<img src="'+src+'" alt="'+alt+'" style="width:100%;height:'+imgHeight+';object-fit:cover;object-position:'+objectPos+';display:block"/>'
+      +(caption ? '<div style="padding:10px 14px;font-size:12px;font-style:italic;color:#6b5a3a;text-align:center;line-height:1.5">'+caption+'</div>' : '')
       +'</div>';
   }
 
@@ -130,7 +131,8 @@ img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
               PHOTO_BASE+'testimonial-mom-baby.jpg',
               'Mom holding her baby',
               '"The things I was putting on my newborn every night. Once I knew, I couldn\'t unknow it." — Sarah K.',
-              'center 40%'  // shows mom\'s face AND baby — not just the top of frame
+              'center top',  // portrait image — top anchor shows mom\'s face AND baby in arms
+              '320px'
             )
           +'<div class="prod-list-wrap">';
       }
@@ -139,9 +141,10 @@ img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
         html += '</div>'
           + photoBanner(
               PHOTO_BASE+'testimonial-grandma-patio.jpg',
-              'Grandmother with grandchildren',
+              'Grandmother with grandchildren at patio table',
               '"I made the switch for them. Cleanest table in the neighborhood." — Linda P., Grandmother',
-              'center center'
+              'center center',
+              '260px'
             )
           +'<div class="prod-list-wrap">';
       }
