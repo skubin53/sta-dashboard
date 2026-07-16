@@ -66,10 +66,14 @@ img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
     var swapsHtml = '';
     if(items.length){
       swapsHtml = items.map(function(it){
-        return '<div class="swap-item"><span class="brand-out">'+esc(it.brand)+'</span>'+
-          '<span style="color:#888;font-size:14px">→</span>'+
+        return '<div class="swap-item">'+
+          '<div style="flex:1;min-width:0">'+
+          '<span class="brand-out">'+esc(it.brand)+'</span>'+
+          (it.detail ? '<div style="font-size:13px;color:#c0392b;margin:4px 0 6px;line-height:1.45">'+esc(it.detail)+'</div>' : '')+
+          '<span style="color:#888;font-size:13px">swap → </span>'+
           '<span class="brand-in">'+esc(it.target||"Shannon's clean version")+'</span>'+
-          (it.save ? '<span class="save">save ~$'+it.save+'/mo</span>' : '')+
+          (it.save ? '<span class="save" style="display:block;margin-top:2px">save ~$'+it.save+'/mo</span>' : '')+
+          '</div>'+
           '</div>';
       }).join('');
     } else {
@@ -134,21 +138,36 @@ img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
       topRoom:'Laundry',
       totalSave:47,
       items:[
-        {brand:'Dawn',         cat:'dish',       target:"Lemon Brite (Switch to America)",     save:4},
-        {brand:'Cascade',      cat:'dishwasher',  target:"Diamond Brite (Switch to America)",   save:3},
-        {brand:'Lysol',        cat:'allpurpose',  target:"Sol-U-Guard (Switch to America)",     save:5},
-        {brand:'Tide',         cat:'laundry',     target:"MelaPower (Switch to America)",       save:6},
-        {brand:'Bounce',       cat:'dryer',       target:"Wool dryer balls + MelaSoft",         save:4},
-        {brand:'Downy',        cat:'fabric',      target:"MelaSoft (Switch to America)",        save:3},
-        {brand:'Clorox',       cat:'bleach',      target:"MelaBrite + Sol-U-Guard",             save:3},
-        {brand:'Shout',        cat:'stain',       target:"Tough & Tender (Switch to America)",  save:2},
-        {brand:'Pantene',      cat:'shampoo',     target:"Affinia (Switch to America)",         save:5},
-        {brand:'Dove Body Wash',cat:'bodywash',   target:"Gold Bar / Renew (Switch to America)",save:4},
-        {brand:'Secret',       cat:'deodorant',   target:"Access Bar (Switch to America)",      save:3},
-        {brand:'Colgate',      cat:'toothpaste',  target:"Tooth Polish (Switch to America)",    save:2},
-        {brand:"Johnson's Baby Wash",cat:'babywash',target:"Koala Pals (Switch to America)",    save:3},
-        {brand:'Febreze plug-in',cat:'air',       target:"Pure essential oils + MelaBrite",     save:0},
-        {brand:'Yankee Candle',cat:'air',         target:"Beeswax candles only",                save:0},
+        {brand:'Dawn',          cat:'dish',      target:"Lemon Brite (Switch to America)",      save:4,
+         detail:"Contains methylisothiazolinone (MIT), a preservative the EU has restricted as a known skin sensitizer and allergen. Also contains synthetic fragrance — a legal loophole that hides dozens of undisclosed hormone disruptors."},
+        {brand:'Cascade',       cat:'dishwasher', target:"Diamond Brite (Switch to America)",   save:3,
+         detail:"Contains chlorine compounds that off-gas during hot dishwasher cycles and polyacrylates linked to aquatic toxicity. Residue stays on dishes your family eats from."},
+        {brand:'Lysol',         cat:'allpurpose', target:"Sol-U-Guard (Switch to America)",     save:5,
+         detail:"Contains benzalkonium chloride, linked to antibiotic resistance, plus synthetic fragrance loaded with phthalates — hormone disruptors that mimic estrogen and have been detected in children's urine."},
+        {brand:'Tide',          cat:'laundry',    target:"MelaPower (Switch to America)",       save:6,
+         detail:"Contains 1,4-dioxane, classified by the EPA as a probable human carcinogen, optical brighteners that absorb through skin, and synthetic fragrance with undisclosed phthalates. Your family wears this all day."},
+        {brand:'Bounce',        cat:'dryer',      target:"Wool dryer balls + MelaSoft",         save:4,
+         detail:"Coated in quaternary ammonium compounds (quats) that transfer directly onto clothing and absorb through skin with every wear. Quats are linked to asthma, reproductive harm, and antibiotic resistance."},
+        {brand:'Downy',         cat:'fabric',     target:"MelaSoft (Switch to America)",        save:3,
+         detail:"Contains synthetic musk fragrances that accumulate in human fat tissue and breast milk. The 'fresh laundry' smell is phthalates — EPA-flagged hormone disruptors — releasing from your sheets all night."},
+        {brand:'Clorox',        cat:'bleach',     target:"MelaBrite + Sol-U-Guard",             save:3,
+         detail:"Chlorine bleach fumes irritate the lungs and react with organic matter in your home to form chloramines and trihalomethanes — both classified as carcinogens by the EPA."},
+        {brand:'Shout',         cat:'stain',      target:"Tough & Tender (Switch to America)",  save:2,
+         detail:"Contains ethoxylated surfactants contaminated with 1,4-dioxane (probable carcinogen), plus synthetic fragrance and glycol ethers linked to developmental harm in children."},
+        {brand:'Pantene',       cat:'shampoo',    target:"Affinia (Switch to America)",         save:5,
+         detail:"Contains parabens (methylparaben, propylparaben) that mimic estrogen and have been found in breast tumor tissue in peer-reviewed studies. Also contains dimethicone — a silicone that builds up on the scalp and blocks follicles."},
+        {brand:'Dove Body Wash', cat:'bodywash',  target:"Gold Bar / Renew (Switch to America)",save:4,
+         detail:"Contains parabens and PEGs (polyethylene glycols) that can be contaminated with 1,4-dioxane. Parabens absorb through skin during every shower and have been detected in breast tissue."},
+        {brand:'Secret',        cat:'deodorant',  target:"Access Bar (Switch to America)",      save:3,
+         detail:"Contains aluminum compounds that plug sweat ducts — applied daily to your armpit, directly over lymph nodes. Aluminum accumulates in breast tissue and has been studied in connection with breast cancer. Also contains parabens and synthetic fragrance."},
+        {brand:'Colgate',       cat:'toothpaste', target:"Tooth Polish (Switch to America)",    save:2,
+         detail:"Contains sodium lauryl sulfate (SLS) that strips the mouth's natural protective lining, triclosan (an antibiotic linked to hormone disruption, now banned in hand soap but still in some toothpastes), and artificial flavoring with saccharin."},
+        {brand:"Johnson's Baby Wash", cat:'babywash', target:"Koala Pals (Switch to America)", save:3,
+         detail:"Contains quaternium-15, a preservative that releases formaldehyde — a known human carcinogen — directly onto your baby's skin. Also contains parabens and synthetic fragrance. Babies absorb 3x more through skin than adults."},
+        {brand:'Febreze plug-in', cat:'air',      target:"Pure essential oils + diffuser",      save:0,
+         detail:"Continuously releases benzene, formaldehyde, and phthalates into your home's air 24/7. A NIH study found plug-in air fresheners can raise VOC levels in a room to match light cigarette smoke exposure — with no warning on the label."},
+        {brand:'Yankee Candle', cat:'air',        target:"Beeswax candles only",                save:0,
+         detail:"Paraffin wax is a petroleum byproduct. Burning it releases toluene and benzene — the same carcinogens found in diesel exhaust. In an enclosed room, a single scented candle can match the air quality of sitting next to a smoker."},
       ]
     });
     return;
