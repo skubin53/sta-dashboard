@@ -2376,7 +2376,9 @@ function renderStep(){
       card.chips.forEach(chip=>{
         const isSel = _selB.indexOf(chip)>=0 && !prev2.isNone;
         const isSTA = isSTA_check(chip);
-        h+=`<button class="brand-chip${isSel?' sel':''}" onclick="pickChip('${step.id}','${card.id}','${chip.replace(/'/g,"\\'")}','${card.cat}',this)">${chip}</button>`;
+        let tierCls = '';
+        if(isSel){ const _t=brandTier(chip); if(_t==='green') tierCls=' chip-clean'; else if(_t==='amber') tierCls=' chip-maybe'; else tierCls=' chip-toxic'; }
+        h+=`<button class="brand-chip${isSel?' sel':''}${tierCls}" onclick="pickChip('${step.id}','${card.id}','${chip.replace(/'/g,"\\'")}','${card.cat}',this)">${chip}</button>`;
       });
       h+=`<button class="brand-chip chip-other${isOther?' sel':''}" onclick="pickChipOther('${step.id}','${card.id}',this)">+ Other</button>
           <button class="brand-chip chip-none${prev2.isNone?' sel':''}" onclick="pickChipNone('${step.id}','${card.id}',this)">We don't use this</button>
