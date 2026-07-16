@@ -1501,6 +1501,9 @@ let riskScore = 0, totalScore = 0, roomScores = {}, gotPts = 0, maxPts = 0, safe
 let quizStartTs = 0, quizDurationSec = 0; // Change #11, timing for speedrun bonus
 let hasFamily = false, hasBaby = false;
 let activeSteps = [];
+// Drop-off tracking — unique session ID for this page load
+const _SID = (function(){ var a='',c='abcdefghijklmnopqrstuvwxyz0123456789'; for(var i=0;i<20;i++) a+=c[Math.floor(Math.random()*c.length)]; return a; })();
+function _trackStep(stepId, idx){ try{ fetch(SERVER+'/scan-step',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sid:_SID,step:stepId,idx:idx,ts:Date.now(),ref:typeof refCode!=='undefined'?refCode:'',name:userName||''}),keepalive:true}).catch(function(){}); }catch(e){} }
 
 // ══ BRAND SCORING LOOKUP ══
 // Score brands when typed. Lower = cleaner. 0 = STA/truly clean. 9-10 = conventional toxic.
@@ -2217,6 +2220,8 @@ const CARD_ICONS = {
 
 function renderStep(){
   upd();
+  // Track which step the user reached (drop-off dashboard)
+  var _ts=activeSteps[stepIdx]; if(_ts) _trackStep(_ts.id||_ts.type||'step'+stepIdx, stepIdx);
   // 2026-06-21 Shannon (voice 4104): users landing at the bottom of next page after Continue.
   // s-quiz is already .active so showScreen's scroll-reset is short-circuited by some browsers.
   // Force the s-quiz screen's own scrollTop to 0 with multiple retries that outlast any focus-
@@ -2993,6 +2998,7 @@ function saveSoft(){
 function skipSoft(){ stepIdx++; buildActive(); const n=activeSteps[stepIdx]; if(!n){runCalc();return;} renderStep(); showScreen('s-quiz'); }
 
 function runCalc(){
+  try { _trackStep('complete', activeSteps.length); } catch(e) {}
   try {
     clearProgress(); // Change #8, quiz completed; no resume needed
     quizDurationSec = quizStartTs ? Math.round((Date.now()-quizStartTs)/1000) : 0; // Change #11, speedrun timing
