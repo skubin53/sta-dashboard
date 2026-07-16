@@ -624,7 +624,7 @@ html,body{
 .optin-note{font-size:.63rem;color:#fafdff;text-align:center;margin-top:8px;line-height:1.5}
 
 /* ══ RESULTS ══ */
-#s-results{background:var(--navy);overflow-y:auto;padding-bottom:40px}
+#s-results{background:var(--navy);overflow-y:auto;padding-bottom:40px;overflow-anchor:none}
 .rt{background:linear-gradient(160deg,#0A1B3D,#152C63);padding:24px 18px 20px;text-align:center;position:relative;overflow:hidden}
 .rt::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:16px 16px}
 .rs{font-family:'Bebas Neue',sans-serif;font-size:5.5rem;color:var(--orange);line-height:1;position:relative;z-index:1}
@@ -1999,7 +1999,7 @@ const ROOM_QUOTES=[
   {q:"I wanted to know exactly what was touching my baby's skin. Now bath time is one less thing I worry about.", a:"Ashley D. · New Mom"},                  /*2 nursery*/
   {q:"You ever wonder if your morning coffee is secretly dragging you down? A lot of regular coffee is loaded with mold and toxins. I switched to something clean, organic, and tested for purity. I drink it faithfully every single morning.", a:"Jen · Switch to America Member", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b08f81f60a14f34f905f8.jpg"}, /*3 coffee/pantry — real member Jen*/
   {q:"I had no idea my nonstick pans were releasing chemicals linked to <span style=\"color:#C8102E;font-weight:900\">kidney and testicular cancer</span> every time I cooked. Or that the plastic containers I packed in my kids' lunches were leaching BPA, a hormone disruptor linked to <span style=\"color:#C8102E;font-weight:900\">early puberty and breast cancer</span>. Replacing it all was the easiest upgrade I've ever made for my family.", a:"Dana R. · Mom of 4"}, /*4 kitchen extras*/
-  {q:"We made the switch 7 months ago and haven't looked back. American-made, cleaner ingredients, better value — and the whole family agreed to pose with the boxes, which says everything.", a:"Brittany · Mom of 2", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b0d981f60a1673df9bf2e.jpg"}, /*5 laundry — real member Brittany family*/
+  {q:"We made the switch 7 months ago and haven't looked back. American-made, cleaner ingredients, better value — and the whole family agreed to pose with the boxes, which says everything.", a:"Brittany · Mom of 2"}, /*5 laundry — photo removed (had text overlay)*/
   {q:"We thought our pitcher filter was enough. After we upgraded our water, even our coffee and cooking tasted different.", a:"Karen S. · Grandmother"},     /*6 water*/
   {q:"My pediatrician asked if anyone smoked in our house when my daughter was diagnosed with asthma at age 4. Nobody did. The candles I lit every night and the plug-ins in every room were releasing the same toxic particles as cigarette smoke. I threw them all out. Her asthma attacks stopped within a month.", a:"Diane M. · Mom of 3"}, /*7 home air, candles+plug-ins = indoor smoking*/
   {q:"Tylenol was destroying my liver. Acetaminophen is the leading cause of acute liver failure in America, and nobody told me. I switched so many of these items in my cabinet. Not only have my allergies disappeared, I am <span style=\"color:#C8102E;font-weight:900\">SAVING MONEY</span>.", a:"Beth A. · Grandmother"}, /*8 meds/health*/
@@ -3411,6 +3411,13 @@ function showResults(){
     }
   }
   genCard();
+  // Scroll-to-top: extended resets covering async canvas + community stats reflows.
+  var _rElRes = document.getElementById('s-results');
+  function _forceTopRes(){ if(_rElRes){ _rElRes.scrollTop=0; } try{window.scrollTo(0,0);}catch(e){} }
+  setTimeout(_forceTopRes, 300);
+  setTimeout(_forceTopRes, 700);
+  setTimeout(_forceTopRes, 1100);
+  setTimeout(_forceTopRes, 1800);
 }
 
 // ── LIVE SCAN ANIMATION (rAF version, Shannon's design) ──────────────
