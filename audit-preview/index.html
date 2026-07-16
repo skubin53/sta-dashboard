@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shannon's Complete Home Audit &middot; Switch to America</title>
+<style>
+:root{--navy:#0e2240;--red:#c8102e;--gold:#c8a24a;--green:#1c7a3d;--off:#f4f7fb;--cream:#fff8ea;--ink:#16233b;--mut:#5b6b83;--amber:#e08a1e;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:#e9edf3;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;background:#fff;overflow:hidden}
+img{max-width:100%;display:block}
+.bar{display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:11px 18px;font-size:13px;font-weight:600;letter-spacing:.3px}
+.bar .dot{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.bar small{margin-left:auto;opacity:.7;font-weight:500}
+.pconf{background:#e2f3e8;color:var(--green);font-size:12.5px;font-weight:700;text-align:center;padding:8px}
+.hero{background:linear-gradient(180deg,var(--navy),#0a1a33);color:#fff;padding:28px 24px 32px;text-align:center}
+.hero .kick{font-size:12px;letter-spacing:2px;color:var(--gold);font-weight:700;text-transform:uppercase}
+.hero h1{font-size:25px;line-height:1.18;margin:9px 0 20px;font-weight:800}
+.ring{width:180px;height:180px;margin:0 auto 6px;position:relative}
+.ring svg{transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .num b{font-size:50px;line-height:1;font-weight:800}
+.ring .num span{font-size:12px;opacity:.75;margin-top:2px}
+.grade{display:inline-block;color:#fff;font-weight:800;font-size:14px;padding:4px 15px;border-radius:20px;margin-top:6px;letter-spacing:1px;background:#c8102e}
+.hero p.sub{max-width:430px;margin:15px auto 0;font-size:15.5px;opacity:.92}
+.scope{background:var(--red);color:#fff;text-align:center;padding:22px}
+.scope .big{font-size:20px;font-weight:800;line-height:1.3}
+.scope .big b{font-size:28px}
+.scope small{display:block;opacity:.85;margin-top:6px;font-size:13px}
+.grp{padding:6px 16px 2px}
+.grp-head{display:flex;align-items:center;gap:9px;border-bottom:2px solid var(--navy);padding:16px 2px 7px;margin-bottom:12px}
+.grp-icon{font-size:18px}
+.grp-name{font-size:14px;font-weight:800;letter-spacing:1.2px;color:var(--navy)}
+.grp-count{margin-left:auto;font-size:11px;font-weight:700;color:var(--mut)}
+.pc{border:1px solid #e3e8f0;border-radius:14px;margin-bottom:12px;box-shadow:0 1px 3px rgba(14,34,64,.06);overflow:hidden;background:#fff}
+.pc:nth-of-type(even){background:#dce5f0}
+.pc summary{list-style:none;cursor:pointer;padding:14px 16px;display:block}
+.pc summary::-webkit-details-marker{display:none}
+.pc-flag{font-size:10.5px;font-weight:800;letter-spacing:.6px;color:var(--red);margin-bottom:8px}
+.pc-top{display:flex;justify-content:space-between;align-items:flex-start}
+.pc-brand{font-size:19px;font-weight:800;color:var(--navy);line-height:1.1}
+.pc-cat{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--mut);margin-top:3px}
+.pc-chev{color:#b6c1d2;font-size:20px;transition:transform .2s;line-height:1}
+.pc[open] .pc-chev{transform:rotate(180deg)}
+.pc-hook{font-size:14.5px;color:#33425c;margin:10px 0 12px}
+.pc-swap{background:#f2fbf5;border-left:4px solid var(--green);border-radius:8px;padding:9px 12px;font-size:14.5px;font-weight:700;color:var(--green)}
+.pc-swap-k{display:block;font-size:10px;letter-spacing:1px;opacity:.85;margin-bottom:1px}
+.pc-more{font-size:13.5px;color:#f26a1b;font-weight:800;letter-spacing:.3px;text-align:center;margin-top:12px;text-transform:uppercase}
+.pc[open] .pc-more{display:none}
+.pc-body{padding:2px 16px 16px;border-top:1px solid #eef1f6;margin-top:4px}
+.pc-sec{margin-top:13px}
+.pc-lab{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--red);margin-bottom:4px}
+.pc-body p{font-size:14px;color:#33425c}
+.pc-src{font-size:12.5px;color:var(--mut);margin-top:12px;font-weight:600}
+.pc-tonight{background:var(--navy);color:#fff;border-radius:10px;padding:11px 13px;margin-top:13px;font-size:14px}
+.pc-tonight span{display:block;font-size:10px;letter-spacing:1.5px;color:var(--gold);font-weight:800;margin-bottom:3px}
+.brk{margin:24px 16px;border-radius:14px;background:linear-gradient(135deg,var(--navy),#0a1a33);box-shadow:0 5px 16px rgba(14,34,64,.20)}
+.brk .cap{padding:22px 20px;color:#fff;font-weight:800;font-size:19px;text-align:center;text-wrap:balance}
+.more-note{text-align:center;font-size:13.5px;color:var(--mut);font-style:italic;padding:14px 24px}
+.founder{background:var(--off);padding:30px 24px;text-align:center}
+.founder img{width:118px;height:118px;border-radius:50%;object-fit:cover;object-position:center top;margin:0 auto 14px;border:4px solid #fff;box-shadow:0 6px 18px rgba(14,34,64,.20)}
+.founder .k{font-size:12px;letter-spacing:2px;color:var(--gold);font-weight:800;text-transform:uppercase}
+.founder h3{font-size:23px;font-weight:800;color:var(--navy);margin:8px 0 12px;line-height:1.2}
+.founder p{font-size:15.5px;color:#33425c;max-width:460px;margin:0 auto 10px;line-height:1.6}
+.founder .nrl{display:inline-block;margin-top:12px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;padding:10px 18px;border-radius:22px;line-height:1.4}
+.bridge{background:var(--navy);color:#fff;padding:30px 24px;text-align:center}
+.bridge h2{font-size:23px;font-weight:800;line-height:1.25;margin-bottom:12px}
+.bridge p{font-size:15.5px;opacity:.9;max-width:440px;margin:0 auto 8px}
+.bridge .em{color:var(--gold);font-weight:700}
+.offer{background:var(--cream);padding:26px 22px 30px}
+.ocard{background:#fff;border:2px solid var(--gold);border-radius:16px;padding:22px 20px;box-shadow:0 8px 24px rgba(200,162,74,.18)}
+.ocard .tag{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:4px 12px;border-radius:12px}
+.ocard h3{font-size:22px;font-weight:800;color:var(--navy);margin:11px 0 4px}
+.ocard .price{font-size:15px;color:var(--mut);margin-bottom:14px}
+.ocard .price b{font-size:26px;color:var(--navy)}
+.ocard .price s{color:#b9c2d0}
+.stack{list-style:none;margin:0 0 16px}
+.stack li{display:flex;gap:9px;font-size:14.5px;padding:6px 0;border-bottom:1px solid #f0eddf}
+.stack li:last-child{border-bottom:0}
+.stack .ck{color:var(--green);font-weight:800}
+.stack .val{margin-left:auto;color:var(--mut);font-size:13px;white-space:nowrap}
+.stack .free{color:var(--green);font-weight:800}
+.guar{display:flex;gap:10px;align-items:flex-start;background:#f2fbf5;border:1px solid #cfe9d8;border-radius:12px;padding:13px 15px;margin-top:14px;font-size:13.5px;color:#1c5133}
+.guar b{color:var(--green)}
+.btn{display:block;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:17px;padding:15px;border-radius:12px;max-width:380px;margin:0 auto;box-shadow:0 6px 16px rgba(200,16,46,.3);text-align:center}
+.math{background:#fff;padding:26px 18px}
+.mathcard{background:linear-gradient(158deg,#f57c25,#e0530b);color:#fff;border-radius:20px;padding:30px 22px;text-align:center;box-shadow:0 14px 34px rgba(224,83,11,.30)}
+.mathcard .k{font-size:12px;letter-spacing:3px;font-weight:800;text-transform:uppercase;color:#ffe1c2}
+.mathcard h3{font-size:27px;font-weight:800;letter-spacing:.5px;margin:8px 0 18px;text-transform:uppercase;line-height:1.1}
+.mathinner{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.30);border-radius:14px;padding:18px 16px;margin-bottom:16px}
+.mathinner .lbl{font-size:16px;font-weight:700}
+.mathinner .big{font-size:40px;font-weight:800;line-height:1.05;margin:6px 0 5px;text-shadow:0 2px 8px rgba(120,40,0,.25)}
+.mathinner .sub{font-size:14px;opacity:.92}
+.mathcard p{font-size:14.5px;opacity:.96;max-width:440px;margin:0 auto;line-height:1.55}
+.testi{padding:26px 20px 8px;background:var(--off)}
+.testi h4{text-align:center;font-size:12px;letter-spacing:2px;color:var(--mut);font-weight:700;text-transform:uppercase;margin-bottom:16px}
+.tq{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:12px;box-shadow:0 2px 8px rgba(14,34,64,.07);border-left:4px solid var(--gold)}
+.tq p{font-size:14.5px;color:#33425c;font-style:italic}
+.tq .who{font-size:13px;font-weight:800;color:var(--navy);margin-top:9px;font-style:normal}
+.tphotos{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.testi img{border-radius:14px;box-shadow:0 3px 10px rgba(14,34,64,.1)}
+.reframe{background:linear-gradient(158deg,#123056,#0a1a33);color:#fff;padding:34px 24px;text-align:center}
+.reframe .k{font-size:12px;letter-spacing:2px;color:var(--gold);font-weight:800;text-transform:uppercase}
+.reframe h3{font-size:26px;font-weight:800;margin:8px 0 14px;line-height:1.2}
+.reframe p{font-size:16px;max-width:470px;margin:0 auto;line-height:1.6;opacity:.95}
+.reframe .pop{color:var(--gold);font-weight:800}
+.recap{background:var(--cream);padding:26px 24px;text-align:center}
+.recap h4{font-size:13px;letter-spacing:2px;color:var(--red);font-weight:800;text-transform:uppercase;margin-bottom:14px}
+.recap ul{list-style:none;max-width:460px;margin:0 auto;text-align:left}
+.recap li{display:flex;gap:10px;font-size:15px;color:#33425c;padding:6px 0}
+.recap li b{color:var(--navy)}
+.recap .ck{color:var(--green);font-weight:800;flex:0 0 auto}
+.recap .kick{font-size:16px;font-weight:800;color:var(--navy);margin-top:14px}
+.altline{font-size:13.5px;color:var(--mut);max-width:430px;margin:18px auto 0;line-height:1.55}
+.altline a{color:var(--red);font-weight:700}
+.disc{background:var(--navy);color:#9fb0c9;font-size:11.5px;line-height:1.55;padding:20px 24px 30px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="bar"><span class="dot"></span> YOUR COMPLETE HOME AUDIT <small>Switch to America</small></div>
+<div class="pconf">&#10003; Purchase confirmed. This page is yours forever. Bookmark it.</div>
+
+<div class="hero">
+  <div class="kick">Shannon's complete home audit</div>
+  <h1>What&rsquo;s hurting you.<br>Why. What to do.</h1>
+  
+  <div class="ring">
+    <svg width="180" height="180" viewBox="0 0 180 180">
+      <circle cx="90" cy="90" r="78" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="13"/>
+      <circle cx="90" cy="90" r="78" fill="none" stroke="#c8102e" stroke-width="13" stroke-linecap="round" stroke-dasharray="490" stroke-dashoffset="54"/>
+    </svg>
+    <div class="num"><b>89</b><span>toxic-load score</span></div>
+  </div>
+  <div class="grade">GRADE F</div>
+  
+  <p class="sub">Every point of it is fixable. Below is exactly what&rsquo;s driving your score, and the swap for each one.</p>
+</div>
+
+<div class="scope">
+  <div class="big">You flagged <b>24 products</b>.<br>Here&rsquo;s every one.</div>
+  <small>The worst offenders first &middot; tap any card for the full research</small>
+</div>
+
+
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">🍽</span>
+    <span class="grp-name">KITCHEN</span>
+    <span class="grp-count">10 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Lysol</div>
+        <div class="pc-cat">ALL-PURPOSE + DISINFECTANT SPRAYS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Sprayed into the air your family breathes, then settles on every surface food touches.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America cleaning products. Safe, vetted, and they actually work.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Quaternary ammonium compounds (quats), ammonia, sodium hypochlorite (bleach), 2-butoxyethanol, synthetic fragrance.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>This is marketed as something that protects your family. It does the opposite. The chemicals in Lysol are toxic to the human body. They get into the air the moment you spray them. They absorb through your lungs, through your skin, through the surfaces your children touch and put in their mouths. They are linked to hormone disruption, reproductive harm, lung damage, and they are creating antibiotic-resistant bacteria in your own home. The bottle says it protects you. It is poisoning the air your family breathes.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Throw it in the garbage. Do not touch the bottle with your bare hands.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Dawn</div>
+        <div class="pc-cat">DISH SOAP</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Residue stays on every plate, glass, and utensil your family eats off of, three meals a day.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America dish soap. Plant-based, rinses clean, no residue.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>1,4-dioxane (a contaminant from ethoxylation), synthetic fragrance, sulfates, methylisothiazolinone (MIT), formaldehyde-releasing preservatives.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Three of the ingredients in Dawn cause cancer. Another causes thyroid problems. Another causes memory problems, mood swings, depression, and anxiety. There are hormone disruptors in this soap that wreak havoc on men, women, boys, and girls. And there is an ingredient linked to brain development problems in children. This is the residue sitting on every plate, glass, and utensil your family eats from. Three meals a day. You have no idea it is there.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Move the conventional dish soap to a separate spot. Don&#39;t refill it.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Teflon-coated</div>
+        <div class="pc-cat">NON-STICK COOKWARE</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">PFAS chemicals migrate from heated pans into the food you serve your family.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Cast iron (seasoned), stainless steel, or carbon steel. For eggs and delicate items, well-seasoned cast iron releases food cleanly.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Per- and polyfluoroalkyl substances (PFAS / PFOA / PFOS / GenX). When heated above 500°F, the coating decomposes and releases fluoropolymer fumes.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>PFAS are called forever chemicals because your body cannot get rid of them once they are in. The EPA set limits because they are linked to thyroid disease, liver damage, immune problems, and certain cancers. Your non-stick pan releases these into the food you are cooking for your family every time you heat it. Your immune system is working harder than it should.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Replace the most-used non-stick pan first. Replace as you can afford. One every month.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Plastic cutting boards</div>
+        <div class="pc-cat">PLASTIC CUTTING BOARDS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Every knife cut shaves microplastic particles directly onto the food being prepared.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Hardwood cutting board (maple, walnut, or end-grain), or a titanium cutting board. Wash with hot water and Switch to America dish soap, dry standing up.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Polypropylene or polyethylene microplastic particles. Older plastic boards may also leach phthalates and bisphenols.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Every time you run a knife across that plastic board, you are shaving microplastics directly onto the food you are about to eat. Those particles go into your bloodstream. They affect your brain function, your organs, and cause serious damage to your health over time. This is all proven. And it is happening at every meal. The cutting board is one of the easiest swaps you will make.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Stop using the plastic cutting boards. Throw them in the garbage. It is just that simple.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">microwave</div>
+        <div class="pc-cat">MICROWAVE</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">The microwave is the gateway to your worst food packaging. The fix isn&#39;t a better container. The fix is the stove.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> The stove with a proper pot or pan. Reheat leftovers in a stainless or ceramic saucepan over low heat. Frozen meals and microwave popcorn skip entirely.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Whatever you reheat in the microwave is usually wrapped in plastic film, sitting in a plastic container, or packaged in a PFAS-lined box (frozen meals, popcorn bags, takeout). Heat accelerates chemical migration from all three.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>A microwave changes the molecular structure of food. The nourishment gets destroyed. You eat to fuel your body, but food heated this way cannot do that job. Add the plastic containers and packaging releasing toxins into every bite, and you are not eating a meal. You are creating disease. Use the stove.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Unplug the microwave. Heat tonight&#39;s dinner on the stove.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Crisco</div>
+        <div class="pc-cat">PANTRY COOKING OILS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Industrial seed oils are processed with hexane, then oxidize when heated, creating compounds linked to systemic inflammation.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Grass-fed beef tallow (rendered, shelf-stable, withstands high heat). For salads: cold-pressed olive oil from a trusted single source.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Hexane residue (from extraction), oxidation byproducts (4-hydroxynonenal, malondialdehyde) that form when polyunsaturated oils are heated.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>When you heat these oils, they break down into toxic compounds that go directly into your bloodstream and damage your cells. Your body stores the oxidized fats in your fat tissue and they do not leave easily. They are linked to chronic inflammation, stubborn weight that will not move, brain fog, joint pain, and metabolic problems you cannot explain. The solvent used to extract most seed oils is hexane, the same chemical used in industrial adhesives. Trace residues stay in every bottle. The label says healthy. That is a lie the food industry paid to put there.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Cook tonight&#39;s dinner in tallow or butter. Then throw the bottles in the garbage. They are toxic. Not meant to be consumed by humans.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Plastic food containers</div>
+        <div class="pc-cat">PLASTIC FOOD CONTAINERS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Hot leftovers in plastic means chemicals migrate straight into the food you serve tomorrow.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Glass food storage with glass or silicone lids. Mason jars for leftovers. Stainless steel lunch containers.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Bisphenol A (BPA), BPS replacements, phthalate plasticizers, antimony (in PET-coded plastics), styrene oligomers (from polystyrene takeout containers).</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Plastic leaches chemicals into whatever is touching it, and heat makes it worse. BPA, one of the most well-studied endocrine disruptors, has been detected in 92% of Americans. Your body is carrying it right now. The BPA-free replacements behave the same way in lab testing. Hot food in a plastic container is one of the biggest daily chemical exposures in most homes.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Move tonight&#39;s leftovers into a glass jar. Recycle the plastic ones.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Aluminum foil or plastic wrap</div>
+        <div class="pc-cat">ALUMINUM FOIL + PLASTIC WRAP</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Both leach into food on contact. Acidic foods like tomato sauce or citrus pull chemicals out fastest.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Unbleached parchment paper for cooking. Beeswax wraps for storage. Glass lids for covering bowls.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Aluminum migrating from foil into food (intensified by heat, acid, or salt). Phthalates and PVC plasticizers from cling film.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Aluminum from foil migrates into food, and acidic foods like tomatoes, lemon, and vinegar pull it out at 5 to 6 times the normal rate. Excess aluminum has been studied in connection to neurological disease and cognitive decline. The plastic wrap adds phthalate plasticizers, documented hormone disruptors, to every food they touch. Two products people use every day without a second thought.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Use parchment paper for the next roast. Skip the foil.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Single-serve coffee machine</div>
+        <div class="pc-cat">SINGLE-SERVE COFFEE PODS (KEURIG, NESPRESSO)</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Boiling water flowing through a heated plastic pod, into the cup you drink every morning.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> A regular coffee maker with a stainless-steel reusable filter, no plastic pod. Buy ground coffee from a trusted, small-batch roaster.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Plastic-pod migrants: heat-leached PET oligomers, antimony, and microplastic + nanoplastic shedding. Aluminum-coated pods add aluminum migration on top.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Boiling water through a plastic pod, straight into your cup, every single morning. The plastics leaching in attack your immune system, disrupt your thyroid, and affect brain function. The &#39;BPA-free&#39; label does not cover nanoplastics, phthalates, or heat-leached oligomers. You wonder why you feel off. This is why. Changing this one thing makes a difference you will actually feel.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Brew tomorrow&#39;s pot with a stainless-steel filter instead of a plastic pod.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Tap water</div>
+        <div class="pc-cat">TAP WATER (UN-FILTERED)</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">You have been drinking bleach and calling it water. It is not safe.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Reverse osmosis system for drinking + cooking water. Carbon filter pitcher as a minimum baseline.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Chlorine bleach, chloramines, synthetic fluoride, PFAS forever chemicals, lead, disinfection byproducts, microplastics, pharmaceutical residues.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Your tap water contains chlorine bleach, synthetic fluoride, PFAS forever chemicals, lead, and pharmaceutical residues. These are not trace amounts. These are real concentrations going into your body every time you drink, cook, or bathe. They attack your organs, damage your liver and kidneys, disrupt your hormones, and affect your memory and cognitive function. You have been drinking bleach and toxic synthetic fluoride your whole life and calling it water. It is slowly destroying your health. A filter is not optional. It is essential.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Stop drinking the tap water tonight. Not sure which filter to get? Come into the Switch Squad community, first month free with your $17 Reset, where we share exactly what works. Never drink unfiltered tap water again.</div>
+  </div>
+</details>
+</div>
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">🚿</span>
+    <span class="grp-name">BATHROOM</span>
+    <span class="grp-count">3 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Secret</div>
+        <div class="pc-cat">DEODORANT + ANTIPERSPIRANT</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Applied to the warmest part of the body, every single day, on skin one inch from lymph nodes.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America deodorant (aluminum-free, paraben-free) or a clean magnesium-based deodorant.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Aluminum chlorohydrate (in antiperspirants), parabens (preservatives), phthalates (in fragrance), triclosan (in some formulations).</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>You apply this every single day to skin that sits one inch from your lymph nodes and breast tissue. The parabens in it are hormone-disrupting chemicals that have been found directly inside human breast tissue. Your body is absorbing this every single morning. Daily exposure to endocrine disruptors applied right next to your lymph nodes has a real cost. Your body is keeping score.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Stop using the antiperspirant. Try Affinia for one week.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Dove body wash</div>
+        <div class="pc-cat">BODY WASH + SHAMPOO</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Lathered on the body&#39;s largest organ, daily, then absorbed through wet skin.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America body wash and shampoo. Paraben-free, no formaldehyde-releasers.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Sodium laureth sulfate (often contaminated with 1,4-dioxane), parabens, phthalates in fragrance, formaldehyde-releasing preservatives (DMDM hydantoin, quaternium-15).</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Hot shower, wet skin, scrubbing your body with something that contains a likely human carcinogen. 1,4-dioxane hides in many shampoos and body washes as an unlisted byproduct. It does not have to be on the label. The formaldehyde-releasing preservatives inside are slowly releasing a known carcinogen over the shelf life. You are bathing in this daily. Your skin absorbs more when it is warm and wet.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Finish what&#39;s open. Replace one product at a time.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Sunscreen</div>
+        <div class="pc-cat">SUNSCREEN (COPPERTONE, BANANA BOAT)</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Sprayed on the largest organ in the body, then absorbed into the bloodstream within hours.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Mineral sunscreen with non-nano zinc oxide or titanium dioxide as the only active ingredient. Look for &#39;mineral only&#39; on the label.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Avobenzone, oxybenzone, octinoxate, octisalate, homosalate. Hormone-active chemical UV filters that absorb systemically.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Imagine you are a mom who wants to protect your child. So you lather them with a cream you believe is going to keep them safe. Then the sun bakes those toxic ingredients straight into their skin. And you think you just protected your child. What you actually did is increase their chances of getting skin cancer. The ingredients in conventional sunscreen should never be heated into anyone&#39;s skin. The sun is not your enemy. The cream is.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Throw it out. It is toxic. Do not just grab a mineral one from the grocery store, most of those are full of the same toxins. Come into the Switch Squad and we will show you exactly what to get.</div>
+  </div>
+</details>
+</div><div class="brk"><div class="cap">Real families. Real switches.</div></div>
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">🫧</span>
+    <span class="grp-name">LAUNDRY</span>
+    <span class="grp-count">1 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Tide</div>
+        <div class="pc-cat">LAUNDRY DETERGENT</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Residue stays in fabric. Your skin is in contact with it 24 hours a day.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America laundry detergent and fabric conditioner. Wool dryer balls instead of dryer sheets.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Optical brighteners (which stay in fabric to fluoresce under light), 1,4-dioxane, synthetic fragrance (including phthalate carriers), surfactants like nonylphenol ethoxylate.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Your skin absorbs what touches it all day. Your clothes are touching your skin every single hour you wear them. The fragrance chemicals in that detergent, phthalates that disrupt hormones, are releasing from the fabric onto skin all day long. Your family is sleeping in this at night. The clean smell you love is the problem.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Use what&#39;s open. Don&#39;t buy more. Switch when the next load needs detergent.</div>
+  </div>
+</details>
+</div>
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">🕯</span>
+    <span class="grp-name">AIR &amp; SCENT</span>
+    <span class="grp-count">3 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Glade Plug-In</div>
+        <div class="pc-cat">PLUG-IN AIR FRESHENERS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Pumps endocrine-disrupting chemicals into the room 24 hours a day, while your family sleeps and breathes.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Pure essential oil diffuser with a single STA-source essential oil. For background scent, baking soda + lemon rind in an open dish.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Phthalates, synthetic musks, formaldehyde, benzene-family compounds, isobutane.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>This thing is pumping endocrine disruptors, formaldehyde, and hormone-altering chemicals into the air your kids breathe all night. Formaldehyde is a known carcinogen. Phthalates mess with hormones, trigger early puberty in girls, and lower testosterone in boys. Your kids are breathing this. Every. Single. Night. Unplug it and open a window. You will feel the difference.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Unplug every one tonight. Open windows for 15 minutes.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Yankee Candle</div>
+        <div class="pc-cat">CONVENTIONAL CANDLES</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">A scented candle in a closed room is closer to indoor diesel exhaust than ambient candlelight.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> 100% beeswax or organic coconut wax with a cotton wick. Or a flameless LED candle for the ambiance.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Paraffin wax (petroleum byproduct), lead-cored or zinc-cored wicks (in some imports), synthetic fragrance, formaldehyde, acrolein, benzene.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>You light this to make your home feel cozy. What it is actually doing is burning petroleum byproducts and filling your air with benzene and toluene, the same chemicals in car exhaust. The soot coating your ceiling? That is also coating your lungs. No one warns you about this. Now you know.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Stop burning the paraffin ones. Keep one beeswax for ambiance.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Synthetic fragrance sprays or diffusers</div>
+        <div class="pc-cat">SYNTHETIC FRAGRANCE SPRAYS + DIFFUSERS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">The word &#39;fragrance&#39; is a legal black box. One word can hide hundreds of undisclosed chemicals.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> A stainless or glass diffuser with one essential oil and water. Open a window for fresh air. A bowl of baking soda absorbs odors without scent.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>FDA does not require fragrance ingredients to be itemized on the label. Industry data shows the typical &#39;fragrance&#39; bucket can include phthalate carriers, synthetic musks, allergens, and 1,4-dioxane contaminants.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>The word fragrance on a label is a legal loophole. It can hide hundreds of individual chemicals, and the manufacturer does not have to tell you what they are. The EU restricts dozens of these that are still fully allowed here with zero disclosure. What you are spraying into your air is essentially an anonymous chemical cocktail. Every room. Every day. Your body is trying to process all of it.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Throw out the spray. Open a window for ten minutes.</div>
+  </div>
+</details>
+</div><div class="brk"><div class="cap">This is who it&rsquo;s for.</div></div>
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">🧸</span>
+    <span class="grp-name">NURSERY</span>
+    <span class="grp-count">2 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Huggies</div>
+        <div class="pc-cat">BABY WIPES</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Used dozens of times a day on the most absorbent, thinnest skin in the house.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America baby wipes. Designed for sensitive infant skin, no MIT, no phenoxyethanol.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Phenoxyethanol, methylisothiazolinone (MIT), fragrance compounds, polysorbate-20, sometimes propylene glycol.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>You use these dozens of times a day on the thinnest, most absorbent skin in your house. Baby skin absorbs up to 30% more than adult skin. The preservatives in standard wipes have been flagged by the FDA for nervous system effects in infants with repeated exposure. What you put on your baby goes into your baby. This is one of the cheapest and easiest switches you will make.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Switch tonight. Use a soft cloth + warm water until the new wipes arrive.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Johnson &amp; Johnson</div>
+        <div class="pc-cat">KIDS&#39; SOAP + BUBBLE BATH</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Heated water + closed bathroom + thin baby skin = maximum chemical absorption per square inch.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Switch to America kids body wash and shampoo. Gentle surfactants, no formaldehyde-releasers.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Quaternium-15 (formaldehyde releaser, historically in J&amp;J), DMDM hydantoin, fragrance, dioxane contaminants, propylene glycol.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Johnson and Johnson is one of the most sued companies in American history — and most of those lawsuits involve products they marketed to babies and children. Their talc baby powder was found to contain asbestos. Internal documents proved they knew for decades. 67,000 women filed ovarian cancer and mesothelioma claims. J&amp;J set aside $6.5 billion to settle. Their baby shampoo contained formaldehyde-releasing preservatives they only removed after a public campaign forced their hand. They reformulated under pressure, not out of conscience. Baby skin absorbs up to 30% more than adult skin. What goes on your child goes into your child.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Throw it in the garbage. It is toxic. Then book a free appointment with Shannon.<a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch" style="display:block;margin-top:10px;background:var(--red);color:#fff;text-align:center;font-weight:800;font-size:14px;padding:10px 14px;border-radius:9px;text-decoration:none">Book my free appointment &rarr;</a></div>
+  </div>
+</details>
+</div>
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">💊</span>
+    <span class="grp-name">MEDICINE CABINET</span>
+    <span class="grp-count">4 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Children&#39;s medications</div>
+        <div class="pc-cat">CHILDREN&#39;S OTC MEDICATIONS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Sugary syrups, artificial dyes, and adult-strength active ingredients delivered to a 30-pound body.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Talk to your pediatrician about a dye-free version of the same medication. Per AAP guidance, mild fevers in otherwise well children can be monitored without medication.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Acetaminophen (Tylenol) or ibuprofen (Motrin). Inactive ingredients include Red 40, Yellow 6, high-fructose corn syrup, propylene glycol, sodium benzoate, polysorbate 80, parabens.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>The medicine is one thing. The inactive ingredients are another conversation. Red 40, artificial colors, high-fructose corn syrup, preservatives, and parabens are all going into a small body that does not have the adult capacity to process them. Pediatricians will give you a dye-free version of the same drug if you ask. Most parents do not know to ask. Now you do.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Read the inactive-ingredient list on the bottle. Ask the pediatrician next visit about a dye-free option.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Antacids</div>
+        <div class="pc-cat">ANTACIDS + HEARTBURN MEDS (TUMS, PRILOSEC)</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">These don&#39;t fix heartburn. They turn off the stomach acid you need to digest food and absorb minerals.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Most heartburn is actually low stomach acid, not high. Try apple cider vinegar before meals, smaller meals, no liquid with meals, magnesium glycinate at night. If persistent: test for H. pylori. If you&#39;re on a PPI, taper slowly with a doctor&#39;s supervision (do not stop cold).</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Calcium carbonate (Tums) plus artificial dyes and flavors. Or proton pump inhibitors (PPIs) like omeprazole and esomeprazole that suppress stomach acid for 12 to 24 hours per dose.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Heartburn drugs do not fix the problem. They switch off stomach acid you need to digest food, absorb minerals, and fight bacteria. Long-term use is linked to B12 deficiency, bone fractures, kidney damage, and magnesium depletion. Your immune system runs on the nutrients these drugs block you from absorbing. If you have been on these for months or years, the cost to your body is real.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Eat tonight&#39;s meal without anything to drink. Wait 30 minutes before water. See if it changes anything.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Sleep aids</div>
+        <div class="pc-cat">ANTIHISTAMINE SLEEP AIDS (BENADRYL, UNISOM)</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Long-term anticholinergic use has documented brain-effect risks. &#39;Just to fall asleep&#39; becomes nightly.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Magnesium glycinate (200 to 400mg before bed), L-theanine, a real sleep audit: dark room, no screens 60 minutes before bed, cooler room (65 to 68°F). If chronic: test for cortisol dysregulation.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Diphenhydramine (Benadryl, Tylenol PM) or doxylamine (Unisom). Both block the acetylcholine receptors in the brain that handle memory and learning.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>These work by blocking the brain receptors that handle memory and learning. Using them regularly is not harmless. Long-term cumulative use is linked to significantly increased dementia risk. The American Geriatrics Society warns against these specifically for adults over 65. Just to fall asleep becomes nightly, and nightly becomes a pattern your brain pays for later.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Skip it tonight. Magnesium glycinate if you have it. Lights out by 11pm.</div>
+  </div>
+</details>
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Topical antibiotics</div>
+        <div class="pc-cat">TOPICAL ANTIBIOTICS + CORTISONE CREAMS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Daily or repeat use creates real problems even though each application feels harmless.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Soap and water on clean minor cuts. Tallow balm for skin healing. Manuka honey for stubborn wounds. For rashes and eczema, find the root cause (laundry detergent, body wash, food sensitivity) before reaching for cortisone.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>Neomycin (Neosporin) is a leading contact allergen. Bacitracin causes contact dermatitis in 9 to 22 percent of long-term users. Hydrocortisone is a corticosteroid that thins skin and can cause rebound flares with chronic use.</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>Dermatologists stopped recommending Neosporin on minor cuts because the neomycin in it causes contact dermatitis in a significant number of long-term users. The CDC has concerns about routine topical antibiotics and resistance. Cortisone creams thin skin over time and can cause rebound flares when you stop. You reach for these because you think they help. For minor wounds, clean water and soap work better.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Wash the cut with soap and water. Don&#39;t apply anything else.</div>
+  </div>
+</details>
+</div>
+<div class="grp">
+  <div class="grp-head">
+    <span class="grp-icon">🥤</span>
+    <span class="grp-name">PANTRY</span>
+    <span class="grp-count">1 flagged</span>
+  </div>
+  
+<details class="pc">
+  <summary>
+    <div class="pc-flag">&#9888; YOU FLAGGED THIS</div>
+    <div class="pc-top">
+      <div>
+        <div class="pc-brand">Energy drinks</div>
+        <div class="pc-cat">ENERGY DRINKS</div>
+      </div>
+      <div class="pc-chev">&#8964;</div>
+    </div>
+    <div class="pc-hook">Engineered to override the body&#39;s fatigue signals. The crash is your nervous system trying to recover.</div>
+    <div class="pc-swap"><span class="pc-swap-k">&#10003; SWITCH TO</span> Real food. Real sleep. If you need a lift: black coffee, green tea, matcha. Magnesium glycinate at night for actual recovery.</div>
+    <div class="pc-more">&#9660; Tap for the full breakdown</div>
+  </summary>
+  <div class="pc-body">
+    <div class="pc-sec"><div class="pc-lab">What&#39;s actually in it</div><p>200 to 400mg caffeine per can (vs ~100mg in coffee), synthetic taurine, artificial colors (Red 40, Yellow 5, Blue 1), sucralose or aspartame, sodium benzoate, sometimes brominated vegetable oil (BVO).</p></div>
+    <div class="pc-sec"><div class="pc-lab">Why it matters</div><p>These are engineered to override your body&#39;s natural signals. The crash you feel afterward is your nervous system trying to recover. The FDA banned one common ingredient, BVO, in 2025 because it accumulates in body tissue. The artificial colors have been flagged for behavioral effects in children. The caffeine levels are high enough to cause documented heart problems in young people. Your body was not designed to run on this.</p></div>
+    <div class="pc-src">&#128279; 3 independent regulatory / peer-reviewed sources</div>
+    <div class="pc-tonight"><span>&#128296; TONIGHT</span> Throw them in the garbage. They are toxic. Then book a free appointment with Shannon and we will show you better options that actually fuel your body without the synthetic ingredients.<a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch" style="display:block;margin-top:10px;background:var(--red);color:#fff;text-align:center;font-weight:800;font-size:14px;padding:10px 14px;border-radius:9px;text-decoration:none">Book my free appointment &rarr;</a></div>
+  </div>
+</details>
+</div>
+
+<div class="more-note">That&rsquo;s all 24, your complete flag list, every room of the house.</div>
+
+<div class="founder">
+  <img src="/testimonial-shannon-founder.jpg" alt="Shannon Nicole">
+  <div class="k">Why I built this</div>
+  <h3>It started with a box of cereal.</h3>
+  <p>Twenty years ago, someone showed me that one of the ingredients in my kids&rsquo; cereal was the same chemical used to make paint thinner. I couldn&rsquo;t unsee it. So I started reading labels, and the more I read, the more I found the same thing everywhere. Almost everything on the shelf is toxic.</p>
+  <p>Finding the problem was the easy part. The hard part was the next question every family runs into: where do you even go? What do you actually buy instead? Nobody had a simple answer, so I built one.</p>
+  <p>That&rsquo;s why I founded Switch to America. I already did the digging, so you don&rsquo;t have to. Every product on your list has a clean, American-made swap, and it costs about what you spend right now.</p>
+  <div class="nrl">It&rsquo;s time we take our health back. It&rsquo;s easy, it&rsquo;s affordable, and every family needs to see this.</div>
+</div>
+
+<div class="bridge">
+  <h2>24 switches is a lot.<br>So don&rsquo;t do them all at once.</h2>
+  <p>Trying to detox your whole house in a weekend is exactly how people get overwhelmed and quit.</p>
+  <p>So we built you a plan: <span class="em">one room a month.</span> Every product above, sequenced, with the exact shopping list, done for you.</p>
+  <p>Ninety days from now, you&rsquo;re not just a cleaner home. You&rsquo;re the one who took the power back from the companies that lied to you.</p>
+</div>
+
+<div class="offer">
+  <div class="ocard">
+    <span class="tag">YOUR NEXT STEP</span>
+    <h3>The 3-Month Home Reset</h3>
+    <div class="price"><s>$332 value</s> &nbsp; today just <b>$17</b></div>
+    <ul class="stack">
+      <li><span class="ck">&#10003;</span> Your 90-day room-by-room reset plan <span class="val">$97</span></li>
+      <li><span class="ck">&#10003;</span> Done-for-you monthly shopping lists <span class="val">$67</span></li>
+      <li><span class="ck">&#10003;</span> The printable 90-Day Progress Tracker <span class="val">$27</span></li>
+      <li><span class="ck">&#10003;</span> The Toxic 12 Kickstart — pull these today <span class="val">$19</span></li>
+      <li><span class="ck">&#10003;</span> The Protein Breakfast Guide — clean fuel, no synthetic junk <span class="val">$17</span></li>
+      <li><span class="ck">&#10003;</span> The Switch Squad group <span class="val free">1st month FREE, then $6/mo</span></li>
+    </ul>
+    <a class="btn" href="/home-reset-checkout">Yes, unlock my 3-Month Reset &rarr;</a>
+    <div class="guar"><span style="color:var(--green);font-weight:800;font-size:16px">&#10003;</span><div><b>The zero-risk promise.</b> Follow it for 30 days and re-scan your home. If your score hasn&rsquo;t dropped and it doesn&rsquo;t feel different, I&rsquo;ll personally walk your house with you, or refund every penny. Either way, you keep everything.</div></div>
+  </div>
+</div>
+
+<div class="math">
+  <div class="mathcard">
+    <div class="k">The math is real</div>
+    <h3>One habit. One number.</h3>
+    <div class="mathinner">
+      <div class="lbl">A $3 coffee every morning</div>
+      <div class="big">= $90 a month</div>
+      <div class="sub">$1,080 a year. One toxic habit.</div>
+    </div>
+    <p>Every product in this audit is the same kind of math. The ones hurting you cost you twice, your health <em>and</em> your money.</p>
+  </div>
+</div>
+
+
+<div class="testi">
+  <h4>FROM OTHER FAMILIES &middot; VERBATIM, NO EDITS</h4>
+  
+  <div class="tq">
+    <p>&ldquo;I had no idea my nonstick pans were releasing chemicals linked to kidney and testicular cancer every time I cooked. Replacing it all was the easiest upgrade I&#39;ve ever made.&rdquo;</p>
+    <div class="who">Dana R. &middot; Mom of 4</div>
+  </div>
+  <div class="tq">
+    <p>&ldquo;I wanted to know exactly what was touching my baby&#39;s skin. Now bath time is one less thing I worry about.&rdquo;</p>
+    <div class="who">Ashley D. &middot; New Mom</div>
+  </div>
+  <div class="tq">
+    <p>&ldquo;I didn&#39;t know my brand of coffee contained toxins and mold. Once I switched, I noticed my headaches were gone and no more allergies.&rdquo;</p>
+    <div class="who">Cheryl Owen &middot; Business Owner</div>
+  </div>
+  <div class="tphotos">
+    <img src="/testimonial-gene.jpg" alt="Gene, Switch to America member">
+    <img src="/testimonial-missy.jpg" alt="Missy, Switch to America member">
+    <img src="/testimonial-john.jpg" alt="John, Switch to America member">
+    <img src="/testimonial-eddie.jpg" alt="Eddie, Switch to America member">
+  </div>
+</div>
+
+<div class="reframe">
+  <div class="k">The part nobody tells you</div>
+  <h3>Switching doesn&rsquo;t cost you a penny more.</h3>
+  <p>You already spend hundreds a month on Dawn, Tide, shampoo, vitamins. This isn&rsquo;t a new bill, it&rsquo;s the <span class="pop">same budget, moved to American-made.</span> Same shopping. Same spend. A different address. You just stop funding the companies that made this list.</p>
+</div>
+
+<div class="recap">
+  <h4>So here&rsquo;s where you stand</h4>
+  <ul>
+    <li><span class="ck">&#10003;</span><span>You found the <b>24 things</b> hurting your family, and the clean swap for every one.</span></li>
+    <li><span class="ck">&#10003;</span><span>A <b>done-for-you 90-day plan</b> that does it one easy room a month.</span></li>
+    <li><span class="ck">&#10003;</span><span>The <b>Switch Squad group</b>, first month free, then $6/mo.</span></li>
+    <li><span class="ck">&#10003;</span><span>Backed by the <b>refund promise</b>, you risk nothing.</span></li>
+  </ul>
+  <div class="kick">The only thing left is the stuff still under your sink.</div>
+  <a class="btn" href="/home-reset-checkout" style="max-width:400px;margin:20px auto 0">Yes, start my 3-Month Reset ($17) &rarr;</a>
+  <div class="altline">Prefer done-with-you? You can also <a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">book a free Walk-Your-House call with Shannon</a>, she sets up your swaps live and drops a <strong>$100 store credit</strong> in your account.</div>
+</div>
+
+<div class="disc">
+  Sources cited above are independent regulatory bodies and peer-reviewed literature. This audit is educational, not medical advice, and not a substitute for your doctor. Always consult your own healthcare provider before changing medications, diet, or care. Individual products and results vary.<br>
+  Prepared for Shannon &middot; preview@switchtoamerica.com &middot; Ref -MAXDEMO<br>
+  <strong style="color:var(--gold)">&copy; Switch to America</strong> &middot; scan.ismyhometoxic.com
+</div>
+
+</div>
+</body>
+</html>
