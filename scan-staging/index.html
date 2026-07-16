@@ -2285,6 +2285,9 @@ function renderStep(){
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise q-h1-${step.id}">${step.q}</h1>`;
   if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:20px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
 
+  // Testimonial above the content so it's visible without scrolling
+  var _qt=quoteForStep(step); if(_qt) h+=`<div class="room-quote rise" style="margin-bottom:18px"><span class="rq-mark">"</span><div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`;
+
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
     step.cards.forEach(card=>{
@@ -2359,8 +2362,6 @@ function renderStep(){
     h+='</div>';
   }
 
-  // change #7, quiet testimonial bubble (one per room)
-  var _q=quoteForStep(step); if(_q) h+=`<div class="room-quote rise"><span class="rq-mark">“</span><div class="rq-body">${_q.q}<span class="rq-a">, ${_q.a}</span></div></div>`;
   // change #13, per-room peek: preview of what's next + finite progress
   h+=peekHTML(stepIdx);
   m.innerHTML=h;
@@ -2925,7 +2926,7 @@ function runCalc(){
     document.getElementById('pBar').style.display='none'; var _rp=document.getElementById('riskPill'); if(_rp) _rp.classList.remove('show');
 
     roomScores={}; totalScore=0; unscoredFields=[]; gotPts=0; maxPts=0;
-    var SLOTMAX=8;
+    var SLOTMAX=10; // max brand score in the system; prevents 9/9=100% when selecting one toxic brand
     // A product "slot" only counts toward the score when it was actually answered.
     // got = how toxic the chosen brand is; max = worst case for that slot. Score = got/max.
     function addSlot(p, answered, room){
@@ -2948,7 +2949,7 @@ function runCalc(){
           var bs=selBrands(sel);
           // 2026-06-20 Shannon bug-fix #1: untouched cards count toward MAX denominator
           // (0 toward got, SLOTMAX toward max) so sparse fills can't inflate the score.
-          if(bs.length===0){ maxPts += 8; return; }
+          if(bs.length===0){ maxPts += SLOTMAX; return; }
           bs.forEach(function(brand){
             brand=(''+brand).trim();
             let p=scoreBrand(brand,card.cat,card.label);
@@ -2964,15 +2965,27 @@ function runCalc(){
           addSlot(p, bm.length>0, s.room_lbl||s.room||'Other');
         });
       } else if(s.answers){
-        // multi-select checklist: max = every option in the question, got = the ones they checked
-        s.answers.forEach(a=>{
-          if(a.pts>0){
-            var mx=a.pts;
-            if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35);
-            maxPts+=mx;
-            if(answers[s.id][a.lbl]){ gotPts+=mx; const r=a.room||'Other'; roomScores[r]=(roomScores[r]||0)+mx; }
+        if(s.type==='single'||s.type==='yn'){
+          // Single-select: max = worst possible option for this question; prevents all-options sum inflating denominator
+          var sMax=0;
+          s.answers.forEach(a=>{ if(a.pts>0&&a.pts>sMax) sMax=a.pts; });
+          if(sMax>0){
+            maxPts+=sMax;
+            s.answers.forEach(a=>{
+              if(a.pts>0&&answers[s.id][a.lbl]){ gotPts+=a.pts; var r=a.room||'Other'; roomScores[r]=(roomScores[r]||0)+a.pts; }
+            });
           }
-        });
+        } else {
+          // multi-select checklist: max = every option in the question, got = the ones they checked
+          s.answers.forEach(a=>{
+            if(a.pts>0){
+              var mx=a.pts;
+              if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35);
+              maxPts+=mx;
+              if(answers[s.id][a.lbl]){ gotPts+=mx; const r=a.room||'Other'; roomScores[r]=(roomScores[r]||0)+mx; }
+            }
+          });
+        }
       }
     });
     totalScore = maxPts>0 ? Math.round(gotPts/maxPts*100) : 0;
