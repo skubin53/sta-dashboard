@@ -2538,9 +2538,42 @@ var PKEY='sta_progress_v1';
 function persistProgress(){
   try{ if(typeof stepIdx!=='number') return;
     localStorage.setItem(PKEY, JSON.stringify({u:userName||'',a:answers,si:stepIdx,hb:hasBaby,hf:hasFamily})); }catch(e){}
+  // Push to server keyed by reportId so resume links work cross-device
+  try{
+    var rid=''; try{ rid=localStorage.getItem('reportId')||''; }catch(e){}
+    if(rid){
+      var curStep=activeSteps[stepIdx]||{};
+      fetch(SERVER+'/scan-save-progress',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({token:rid,u:userName||'',a:answers,si:stepIdx,hb:hasBaby,hf:hasFamily,
+          step:curStep.id||'',room:curStep.room_lbl||curStep.room||'',
+          phone:window._introPhone||'',name:window._introFirstName||''}),keepalive:true});
+    }
+  }catch(e){}
 }
-function clearProgress(){ try{ localStorage.removeItem(PKEY); }catch(e){} }
+function clearProgress(){
+  try{ localStorage.removeItem(PKEY); }catch(e){}
+  try{ var rid=''; try{ rid=localStorage.getItem('reportId')||''; }catch(e){} if(rid) fetch(SERVER+'/scan-save-progress',{method:'DELETE',headers:{'Content-Type':'application/json'},body:JSON.stringify({token:rid})}); }catch(e){}
+}
 function loadProgress(){ try{ var s=localStorage.getItem(PKEY); return s?JSON.parse(s):null; }catch(e){ return null; } }
+
+// Resume from magic link: ?resume=<reportId> restores saved progress cross-device
+(function checkMagicResume(){
+  var rt=(location.search.match(/[?&]resume=([^&]+)/)||[])[1];
+  if(!rt) return;
+  fetch(SERVER+'/scan-load-progress?token='+encodeURIComponent(rt))
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(d){
+      if(!d||!d.a) return;
+      try{
+        answers=d.a; stepIdx=d.si||0; userName=d.u||''; hasBaby=!!d.hb; hasFamily=!!d.hf;
+        if(userName){ var o=document.getElementById('oFN'); if(o) o.value=userName; }
+        localStorage.setItem(PKEY,JSON.stringify(d));
+        try{ localStorage.setItem('reportId',rt); }catch(e){}
+        buildActive(); document.getElementById('pBar').style.display='block';
+        renderStep(); showScreen('s-quiz'); renderQuizHouse(); updateRisk();
+      }catch(e){}
+    }).catch(function(){});
+})();
 function saveSpot(){
   var panel=document.getElementById('saveSpotPanel'); if(!panel) return;
   if(panel.style.display!=='none'){ panel.style.display='none'; return; }
