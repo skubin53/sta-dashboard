@@ -126,6 +126,34 @@ img.shannon{width:80px;border-radius:50%;display:block;margin:12px auto 4px}
 
   function esc(s){ var d=document.createElement('div'); d.textContent=String(s||''); return d.innerHTML; }
 
+  // ?maxdemo=1 — Shannon's iteration view. Shows every bad brand selected, max score.
+  if(location.search.indexOf('maxdemo=1')>=0){
+    renderReport({
+      firstName:'Shannon',
+      score:89,
+      topRoom:'Laundry',
+      totalSave:47,
+      items:[
+        {brand:'Dawn',         cat:'dish',       target:"Lemon Brite (Switch to America)",     save:4},
+        {brand:'Cascade',      cat:'dishwasher',  target:"Diamond Brite (Switch to America)",   save:3},
+        {brand:'Lysol',        cat:'allpurpose',  target:"Sol-U-Guard (Switch to America)",     save:5},
+        {brand:'Tide',         cat:'laundry',     target:"MelaPower (Switch to America)",       save:6},
+        {brand:'Bounce',       cat:'dryer',       target:"Wool dryer balls + MelaSoft",         save:4},
+        {brand:'Downy',        cat:'fabric',      target:"MelaSoft (Switch to America)",        save:3},
+        {brand:'Clorox',       cat:'bleach',      target:"MelaBrite + Sol-U-Guard",             save:3},
+        {brand:'Shout',        cat:'stain',       target:"Tough & Tender (Switch to America)",  save:2},
+        {brand:'Pantene',      cat:'shampoo',     target:"Affinia (Switch to America)",         save:5},
+        {brand:'Dove Body Wash',cat:'bodywash',   target:"Gold Bar / Renew (Switch to America)",save:4},
+        {brand:'Secret',       cat:'deodorant',   target:"Access Bar (Switch to America)",      save:3},
+        {brand:'Colgate',      cat:'toothpaste',  target:"Tooth Polish (Switch to America)",    save:2},
+        {brand:"Johnson's Baby Wash",cat:'babywash',target:"Koala Pals (Switch to America)",    save:3},
+        {brand:'Febreze plug-in',cat:'air',       target:"Pure essential oils + MelaBrite",     save:0},
+        {brand:'Yankee Candle',cat:'air',         target:"Beeswax candles only",                save:0},
+      ]
+    });
+    return;
+  }
+
   // Try to load from localStorage (same browser session as quiz)
   var scanData = null;
   try { scanData = JSON.parse(localStorage.getItem('sta_purchase_scan')||'null'); } catch(e){}
