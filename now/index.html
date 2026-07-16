@@ -982,6 +982,11 @@ body { padding-top:0 !important; }
 #s-results [style*="color:#37c79a"] { color: #0B2545 !important; }
 #s-results [style*="color:#FFD27A"], #s-results [style*="color:#FFC76A"] { color: #C68A1F !important; }
 #s-results [style*="color:#FF8A5A"] { color: #C8102E !important; }
+/* sr-navy — dark gradient cards that must stay white text despite cream override */
+#s-results .sr-navy{background:linear-gradient(158deg,#0e2240,#0a1a33) !important;border-radius:20px;padding:28px 22px 24px;color:#fff !important;margin-bottom:20px}
+#s-results .sr-navy, #s-results .sr-navy *{color:#fff !important}
+#s-results .sr-navy .sr-gold{color:#c8a24a !important}
+#s-results #sr-mirror .sr-navy ul li span{color:#fff !important}
 #s-results [style*="color:#C9A227"] { color: #B07A2C !important; }
 #s-results [style*="color:#9fe6cf"], #s-results [style*="color:#3a4a66"] { color: #0B2545 !important; }
 /* Score numbers (orange/red/green accents) keep their colors */
@@ -1331,71 +1336,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- ═══ RESULTS ═══ -->
 <div class="screen" id="s-results">
-  <div class="rt">
-    <div class="rhouse" id="resultHouse"></div>
-    <div class="rs" id="rScore">,</div>
-    <div class="rg" id="rGrade">?</div>
-    <div id="rZone" style="display:none;font-size:.8rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;padding:6px 16px;border-radius:50px;margin:8px auto 10px"></div>
-    <!-- Share Your Score (moved here 2026-06-21 per Shannon: directly below the score, only spot on the page) -->
-    <div class="sh-c" id="shareYourScore" style="margin:18px auto 14px;max-width:400px;background:linear-gradient(180deg,rgba(255,153,0,.24),rgba(255,153,0,.1));border:1.5px solid rgba(255,153,0,.6);border-radius:16px;padding:18px 16px;text-align:center;box-shadow:0 8px 24px -6px rgba(255,153,0,.45)">
-      <h3 style="font-size:1.18rem;font-weight:900;color:#fff;margin-bottom:6px">📣 Share Your Score</h3>
-      <p style="font-size:.88rem;color:#fafdff;margin-bottom:14px;line-height:1.4">Every share helps a friend find their family's score</p>
-      <canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas>
-      <div class="sh-btns" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
-        <button class="sb sb-fb" onclick="shareScore()" style="font-weight:900;padding:12px 18px;font-size:.94rem;min-height:46px">📲 Share</button>
-        <button class="sb sb-dl" onclick="dlCard()" style="font-weight:900;padding:12px 18px;font-size:.94rem;min-height:46px">📸 Download</button>
-        <button class="sb sb-cp" onclick="cpLink()" style="font-weight:900;padding:12px 18px;font-size:.94rem;min-height:46px">🔗 Copy Link</button>
-      </div>
-    </div>
-    <h2 class="rh" id="rH">Your Family's Toxic Home Report</h2>
-    <p class="rp" id="rP">Based on the brands you use, scored against independent safety research.</p>
-    <p id="rFeeling" style="display:none;font-size:1.02rem;font-weight:700;line-height:1.4;color:#fff;margin:12px auto 0;max-width:340px"></p>
-    <div id="rMetaphor" style="display:none;margin:14px auto 0;max-width:330px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 16px"></div>
-    <!-- Fable-5 uplevel #5 (2026-06-10): Shannon voice note at score reveal. Hidden until the zone MP3 proves it exists (files 404 until recorded). -->
-    <div id="shVoice" style="display:none;margin:14px auto 0;max-width:330px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:12px 16px;text-align:center">
-      <button id="shVoiceBtn" type="button" style="background:rgba(255,153,0,.14);border:1px solid rgba(255,153,0,.4);color:#FFE8C9;font-weight:800;font-size:.86rem;padding:10px 18px;border-radius:50px;cursor:pointer;-webkit-tap-highlight-color:transparent">🎙️ Tap to hear Shannon's take</button>
-      <audio id="shVoiceAudio" preload="none" playsinline controls style="display:none;width:100%;margin-top:10px"></audio>
-    </div>
-    <script>
-    (function(){
-      var inited=false;
-      function initShannonVoice(){
-        if(inited) return; inited=true;
-        var wrap=document.getElementById('shVoice'), btn=document.getElementById('shVoiceBtn'), au=document.getElementById('shVoiceAudio');
-        if(!wrap||!btn||!au) return;
-        var score=(typeof totalScore!=='undefined')?totalScore:0;
-        var zone=score>=70?'red':score>=45?'caution':'clean';
-        au.addEventListener('loadedmetadata',function(){ wrap.style.display='block'; });
-        au.addEventListener('error',function(){ wrap.style.display='none'; });
-        au.src='/assets/shannon-reveal-'+zone+'.mp3';
-        au.preload='metadata';
-        au.load();
-        var tracked=false;
-        btn.addEventListener('click',function(){
-          au.style.display='block';
-          btn.textContent='🔊 Playing Shannon...';
-          var p=au.play();
-          if(p&&p.catch) p.catch(function(){ wrap.style.display='none'; });
-          if(!tracked){ tracked=true;
-            try{ if(typeof track==='function') track('voice_note_played',{zone:zone}); else console.log('voice_note_played',{zone:zone}); }catch(e){}
-          }
-        });
-        au.addEventListener('ended',function(){ btn.textContent='🎙️ Replay Shannon\'s take'; });
-      }
-      window.addEventListener('load',function(){
-        if(typeof showResults==='function'){
-          var orig=showResults;
-          showResults=function(){ orig.apply(this,arguments); initShannonVoice(); };
-        }
-      });
-    })();
-    </script>
+  <!-- Hidden share canvas (still needed by genCard/shareScore) -->
+  <canvas id="shareCanvas" width="1080" height="1080" style="display:none"></canvas>
+  <!-- Hidden legacy elements kept for JS compatibility (rScore, rGrade, etc.) -->
+  <div style="display:none" aria-hidden="true">
+    <div id="resultHouse"></div>
+    <div id="rScore"></div>
+    <div id="rGrade"></div>
+    <div id="rZone"></div>
+    <div id="rH"></div>
+    <div id="rP"></div>
+    <div id="rFeeling"></div>
+    <div id="rMetaphor"></div>
+    <div id="shVoice"><audio id="shVoiceAudio" preload="none"></audio></div>
+    <div id="simWrap"></div>
+    <div id="pfHero"></div>
+    <div id="findList"></div>
+    <div id="unscoredBlock"><div id="unscoredList"></div></div>
+    <div id="roomBars"></div>
+    <div id="swEl"><span id="swT"></span><span id="swD"></span><span id="swF"></span><span id="swTo"></span></div>
+    <div id="fcH"></div>
+    <div id="fcP"></div>
   </div>
-  <div class="rb">
-    <div id="simWrap" style="display:none"></div>
-    <div id="pfHero" style="display:none;margin-bottom:20px"></div>
-    <div class="rcard" style="background:#fff;border:1px solid #e3e8f0;box-shadow:0 4px 14px rgba(14,34,64,.06)"><h3 style="font-size:.75rem;letter-spacing:1.5px;color:#5b6b83;text-transform:uppercase;font-weight:800;margin-bottom:14px">&#128269; What we found in your home</h3><div id="findList"></div></div>
-    <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
+  <div id="sr-greet" style="text-align:center;padding:22px 22px 6px"></div>
+  <div class="rb" style="padding-bottom:40px">
+    <div id="sr-scorewrap" style="margin:0 0 20px"></div>
+    <div id="sr-found" style="margin:0 0 20px"></div>
     <!-- Testimonies block removed from score-reveal (Shannon 2026-06-26 08:29 MDT). Belongs on the post-payment thank-you page, not in the choice-architecture between $7 tripwire + free audit. -->
     <div class="fc" id="finalCta">
 
@@ -1505,16 +1471,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div id="switchListPanel" class="sl-panel" style="display:none"></div>
       <div id="auditPanel" class="sl-panel" style="display:none"></div>
     </div>
-    <div id="commStatReveal" class="comm-stat comm-stat-reveal"></div>
-    <!-- Founder byline -->
-    <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin:18px auto 6px;max-width:320px">
-      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
-           style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>
-      <div style="text-align:left">
-        <div style="font-size:.72rem;font-weight:700;color:#0B2545;line-height:1.3">Built by Shannon Nicole, founder of Switch to America</div>
-        <div style="font-size:.65rem;color:#4a5e7e;line-height:1.3">Switching families from toxic brands since 2018</div>
-      </div>
-    </div>
+    <div id="commStatReveal" class="comm-stat comm-stat-reveal" style="display:none"></div>
+    <div id="sr-proof" style="margin:0 0 24px"></div>
+    <div id="sr-byline" style="display:flex;align-items:center;gap:10px;justify-content:center;margin:0 0 18px"></div>
     <p class="disc"><strong>Note:</strong> This tool scores brands using independent safety research data. It is educational only, not a laboratory analysis or medical advice.</p>
   </div>
 </div>
@@ -3227,195 +3186,131 @@ function showResults(){
   var _srEl = document.getElementById('s-results');
   function _srTop(){ if(_srEl){ _srEl.scrollTop = 0; } try{ window.scrollTo(0,0); }catch(e){} }
   _srTop(); requestAnimationFrame(function(){ _srTop(); requestAnimationFrame(_srTop); });
-  track('scan_completed'); // Change #9, influencer attribution
-  loadCommunityStats(); // Change #12, refresh count so the reveal includes their own scan
+  track(‘scan_completed’); // Change #9, influencer attribution
   // RETARGETING version (?r=1): existing leads have already been to the site, hide the off-site Shop + Tour doors
-  if(getParam('r')==='1'){ ['#finalCta .door-red','#finalCta .door-tour'].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display='none'; }); }
-  const grade=totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
-  const hl=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!'; // 2026-07-15 P6: updated thresholds
-  var rsEl=document.getElementById('rScore'); rsEl.textContent=totalScore;
-  rsEl.style.color=totalScore<=30?'#1F8A70':totalScore<=60?'#E8A317':'#C8102E';
-  rsEl.setAttribute('role','img'); rsEl.setAttribute('aria-label','Toxic score: '+totalScore+' out of 100. '+(totalScore>=70?'Red Zone':totalScore>=45?'Caution Zone':'Clean Zone')+'.'); // #4 a11y
-  renderResultHouse(totalScore); // Change #5, hero house reflects final score
-  prepShareFile(); // pre-build the share image so the share sheet opens instantly on tap (iOS-safe)
-  document.getElementById('rGrade').textContent=grade;
-  // #4 personally-written results + #6 hopeful framing, Shannon's voice
-  document.getElementById('rH').textContent = userName ? (userName+', here’s what I saw.') : 'Here’s what I saw.';
-  var rpMsg;
-  if(totalScore<=17){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.'; } // 2026-07-15 P6: threshold below score floor
-  else if(totalScore<=45){ rpMsg='I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.'; }
-  else { rpMsg='Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
-  if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. '+rpMsg; }
-  document.getElementById('rP').textContent=rpMsg;
-  // rP text is superseded by pfHero body copy — hide it so there's no duplicate
-  var rPEl = document.getElementById('rP'); if(rPEl) rPEl.style.display='none';
-  // change #8, ZONE badge + "name the feeling" sentence (tied to real concern count)
-  var z=document.getElementById('rZone');
-  if(z){ z.style.display='inline-block';
-    if(totalScore>=70){ z.textContent='🔴 RED ZONE'; z.style.background='rgba(200,16,46,.2)'; z.style.color='#FF6B6B'; z.style.border='1px solid rgba(200,16,46,.4)'; }
-    else if(totalScore>=45){ z.textContent='🟡 CAUTION ZONE'; z.style.background='rgba(232,163,23,.16)'; z.style.color='#E8A317'; z.style.border='1px solid rgba(232,163,23,.3)'; }
-    else { z.textContent='🟢 CLEAN ZONE'; z.style.background='rgba(31,138,112,.16)'; z.style.color='#37c79a'; z.style.border='1px solid rgba(31,138,112,.3)'; }
-  }
-  // 2026-06-21 Shannon: rFeeling + rMetaphor REMOVED. The "≈ cigarettes a day" + "X years older"
-  // + "Right now N products are flagged" copy were getting clipped at the bottom of .rt and showing
-  // as two dark crescent artifacts floating above the sim card. Killed both entirely.
-  var fe=document.getElementById('rFeeling'); if(fe){ fe.style.display='none'; fe.innerHTML=''; }
-  var mEl=document.getElementById('rMetaphor'); if(mEl){ mEl.style.display='none'; mEl.innerHTML=''; }
-  // Conditional final CTA
-  var fcH = document.getElementById('fcH'); var fcP = document.getElementById('fcP');
-  var nm = userName ? (', '+userName) : '';
-  // 2026-06-26 23:05 MDT — Shannon: switched to "Two ways forward" + dropped "zero pressure" subhead (was undermining the $7).
-  if(fcH) fcH.innerHTML=(userName?userName:'You')+'<br><span style="display:inline-block;margin-top:4px">Two Ways Forward</span>';
-  if(fcP) fcP.textContent='';
+  if(getParam(‘r’)===’1’){ [‘#finalCta .door-red’,’#finalCta .door-tour’].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display=’none’; }); }
 
-  const mx=Math.max(...Object.values(roomScores),1);
-  // Shannon UX fix 2026-06-20: "pts" meant nothing to a mom + the per-room numbers didn't visibly add
-  // up to the 0-100 overall score (different units). Replace numbers with severity words and color
-  // each bar by severity. Add a one-line header so the page explains itself.
-  function rsev(p){ return p>=35 ? {l:'HIGH',c:'#C8102E'} : p>=15 ? {l:'MODERATE',c:'#E8A317'} : {l:'LOW',c:'#1F8A70'}; }
-  let bh='<div style="font-size:.74rem;color:#4a6a8a;margin-bottom:10px;line-height:1.45;font-weight:600">Where the chemical load lives in your home. A longer bar means more products of concern in that room.</div>';
-  Object.entries(roomScores).sort((a,b)=>b[1]-a[1]).forEach(([r,p])=>{
-    const w=Math.round((p/mx)*100);
-    const s=rsev(p);
-    bh+=`<div class="rbar"><div class="rbar-top"><span class="rbar-nm">${r}</span><span class="rbar-pt" style="color:${s.c} !important;font-weight:900">${s.l}</span></div><div class="rbar-tr"><div class="rbar-fl" style="width:${w}%;background:${s.c}"></div></div></div>`;
-  });
-  var roomBarsEl=document.getElementById('roomBars'); if(roomBarsEl){ roomBarsEl.innerHTML=bh||'<p style="color:#fafdff;font-size:.8rem">No significant hazard exposure detected. Great choices!</p>'; }
+  // ── sr-greet ──
+  var srGreet = document.getElementById(‘sr-greet’);
+  if(srGreet) srGreet.innerHTML = ‘<div style="font-size:15px;color:#5b6b83">Hi <b style="color:#0e2240">’+(userName||’there’)+’</b>, here\’s what I saw.</div>’;
 
-  // Findings from highest-scoring brand inputs
+  // ── Build findings list (same logic as before) ──
   const findings=[];
   activeSteps.forEach(s=>{
     if(!answers[s.id]) return;
-    if(s.type==='brand_single'){
-      const brand=answers[s.id].brand||''; const pts=scoreBrand(brand,s.cat);
-      if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Home',brand:brand,cat:s.cat,label:s.label||'',pts});
-    } else if(s.type==='chip_cards'&&s.cards){
+    if(s.type===’brand_single’){
+      const brand=answers[s.id].brand||’’; const pts=scoreBrand(brand,s.cat);
+      if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||’Home’,brand:brand,cat:s.cat,label:s.label||’’,pts});
+    } else if(s.type===’chip_cards’&&s.cards){
       s.cards.forEach(card=>{
         const sel=answers[s.id][card.id]||{};
         if(sel.isNone) return;
         selBrands(sel).forEach(function(brand){
           const pts=scoreBrand(brand,card.cat);
-          if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Kitchen',brand:brand,cat:card.cat,label:card.label,pts});
+          if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||’Kitchen’,brand:brand,cat:card.cat,label:card.label,pts});
         });
       });
-    } else if(s.type==='brand_multi'&&s.fields){
+    } else if(s.type===’brand_multi’&&s.fields){
       s.fields.forEach(f=>{
-        const brand=answers[s.id][f.id]||''; const pts=scoreBrand(brand,f.cat);
-        if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Home',brand:brand,cat:f.cat,label:f.label,pts});
+        const brand=answers[s.id][f.id]||’’; const pts=scoreBrand(brand,f.cat);
+        if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||’Home’,brand:brand,cat:f.cat,label:f.label,pts});
       });
     }
   });
   findings.sort((a,b)=>b.pts-a.pts);
-  // Named-product card stack (capped at 3), the screenshottable "moment of truth".
-  // only genuinely TOXIC (red) brands count as "switch this", excludes amber/cleaner-ish (e.g. Branch Basics); already impact-sorted
-  var toxList=findings.filter(function(f){return f.pts>=7 && f.brand && brandTier(f.brand)==='red';});
-  // Shannon 2026-06-21: diversify findings across product families so the page doesn't
-  // read as "just swap your cleaners". One pick per family (highest-pts wins), fall back
-  // to next-highest if fewer than 3 distinct families were tapped.
+  var toxList=findings.filter(function(f){return f.pts>=7 && f.brand && brandTier(f.brand)===’red’;});
   var CAT_FAMILY={
-    dish:'cleaning',dishwasher:'cleaning',allpurpose:'cleaning',bleach:'cleaning',stain:'cleaning',
-    laundry:'cleaning',fabric:'cleaning',dryer:'cleaning',
-    coffee:'food',oil:'food',supplements:'food',
-    shampoo:'personal',bodywash:'personal',toothpaste:'personal',deodorant:'personal',makeup:'personal',
-    babywash:'baby',babylotion:'baby',babywipes:'baby',babylaundry:'baby',diaperash:'baby',babypowder:'baby',
-    homeair:'air',water:'water'
+    dish:’cleaning’,dishwasher:’cleaning’,allpurpose:’cleaning’,bleach:’cleaning’,stain:’cleaning’,
+    laundry:’cleaning’,fabric:’cleaning’,dryer:’cleaning’,
+    coffee:’food’,oil:’food’,supplements:’food’,
+    shampoo:’personal’,bodywash:’personal’,toothpaste:’personal’,deodorant:’personal’,makeup:’personal’,
+    babywash:’baby’,babylotion:’baby’,babywipes:’baby’,babylaundry:’baby’,diaperash:’baby’,babypowder:’baby’,
+    homeair:’air’,water:’water’
   };
-  var totalToxBefore = toxList.length; // preserve full count for the CTA copy ("X toxic products in your home")
-  // Build "PRODUCTS FLAGGED IN YOUR HOME" dark hero
-  var pfEl = document.getElementById('pfHero');
-  if(pfEl) {
-    if(totalToxBefore >= 1) {
-      pfEl.style.display = 'block';
-      pfEl.innerHTML =
-        '<div style="background:linear-gradient(158deg,#0e2240,#0a1a33);border-radius:20px;padding:28px 22px 24px;text-align:center;color:#fff;margin-bottom:4px">'
-        +'<div class="pf-title" style="font-size:.8rem;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase">Products flagged in your home</div>'
-        +'<div class="pf-count" style="display:block;font-size:56px;font-weight:800;line-height:1;margin:8px 0 2px;color:#fff;letter-spacing:0">'+totalToxBefore+'</div>'
-        +'<div class="pf-sub" style="display:block;font-size:14.5px;font-weight:600;opacity:.85;letter-spacing:0">Each one linked to a real, documented health concern</div>'
-        +'<p style="font-size:14.5px;opacity:.92;max-width:360px;margin:14px auto 0;line-height:1.55">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</p>'
-        +'</div>';
-    } else {
-      pfEl.style.display = 'none';
-    }
-  }
+  var totalToxBefore = toxList.length;
   var seenFamily={}, diverse=[];
-  toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||'other'; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
+  toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||’other’; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
   if(diverse.length<3){ toxList.forEach(function(f){ if(diverse.indexOf(f)===-1 && diverse.length<3) diverse.push(f); }); }
   toxList=diverse;
-  buildSimulator(toxList); // Change #4: "what if I switched?" simulator, their actual top-impact toxic taps
-  var fh='';
-  var fh='';
-  if(toxList.length>=2){
-    // Fable-5 uplevel #4 (2026-06-10): use REAL counts from /scan-realstats when available,
-    // fall back to the conservative formula only if the realstats fetch hasn't returned yet.
-    // window.REAL_STATS is populated on page load by an async fetch added near applyRef().
-    // Show only the #1 flagged product; lock the rest behind the $7 report
-    toxList.slice(0,1).forEach(function(f){
-      var d=findingDisplay(f.brand,f.cat,f.label);
-      var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
-      var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
-      var foundLine;
-      if (realCount && realTotal >= 50) {
-        foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
-      } else {
-        var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
-        foundLine = 'Found in '+fi+' of 50 homes scanned this month';
+  buildSimulator(toxList);
+
+  // ── sr-scorewrap (navy card) ──
+  var srScorewrap = document.getElementById(‘sr-scorewrap’);
+  if(srScorewrap){
+    srScorewrap.innerHTML =
+      ‘<div class="sr-navy" style="text-align:center">’
+      +’<div style="font-size:13px;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase">Products flagged in your home</div>’
+      +’<div style="font-size:56px;font-weight:800;line-height:1;margin:8px 0 2px">’+totalToxBefore+’</div>’
+      +’<div style="font-size:14.5px;font-weight:600;opacity:.85">Each one linked to a real, documented health concern</div>’
+      +’<p style="font-size:14.5px;opacity:.92;max-width:360px;margin:14px auto 0;line-height:1.55">I\’m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\’s exactly what I found, and the fix for each.</p>’
+      +’</div>’;
+  }
+
+  // ── sr-found (white card with product cards) ──
+  var srFound = document.getElementById(‘sr-found’);
+  if(srFound){
+    var srFoundHtml = ‘<div style="background:#fff;border-radius:16px;padding:20px 20px 6px;box-shadow:0 4px 14px rgba(14,34,64,.08)">’;
+    srFoundHtml += ‘<div style="font-size:12px;letter-spacing:1.5px;color:#5b6b83;text-transform:uppercase;font-weight:800;margin-bottom:14px">&#128269; What we found in your home</div>’;
+    var fh=’’;
+    if(toxList.length>=2){
+      toxList.slice(0,1).forEach(function(f){
+        var d=findingDisplay(f.brand,f.cat,f.label);
+        var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
+        var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
+        var foundLine;
+        if (realCount && realTotal >= 50) {
+          foundLine = ‘Found in ‘+realCount+’ of ‘+realTotal+’ homes scanned’;
+        } else {
+          var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
+          foundLine = ‘Found in ‘+fi+’ of 50 homes scanned this month’;
+        }
+        fh+=’<div class="tox-card"><div class="tox-name">’+d.name+’</div><div class="tox-ing">’+d.ing+’</div><div class="tox-harm">’+d.harm+’</div><div class="tox-found">’+foundLine+’</div></div>’;
+      });
+      if(totalToxBefore > 1) {
+        var moreCount = totalToxBefore - 1;
+        fh += ‘<div style="background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px">’
+          +’<div style="font-size:22px">&#128274;</div>’
+          +’<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ ‘+moreCount+’ more flagged product’+(moreCount===1?’’:’s’)+’ in your home</h4>’
+          +’<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</p>’
+          +’</div>’;
       }
-      fh+='<div class="tox-card"><div class="tox-name">'+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
-    });
-    // Locked teaser for remaining flagged products
-    if(totalToxBefore > 1) {
-      var moreCount = totalToxBefore - 1;
-      fh += '<div style="background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px">'
-        +'<div style="font-size:22px">&#128274;</div>'
-        +'<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ '+moreCount+' more flagged product'+(moreCount===1?'':'s')+' in your home</h4>'
-        +'<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</p>'
-        +'</div>';
-    }
-    // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
-  } else {
-    // Low-score fallback, reward green behavior, never punish.
-    fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That’s the top few that trip almost everyone up.</div></div>';
-    if(toxList.length===1){
-      var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
-      fh+='<div class="tox-card"><div class="tox-name">'+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>';
     } else {
-      fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">🌿 Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>';
+      fh+=’<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">&#10024; What you\’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That\’s the top few that trip almost everyone up.</div></div>’;
+      if(toxList.length===1){
+        var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
+        fh+=’<div class="tox-card"><div class="tox-name">’+d.name+’</div><div class="tox-ing">’+d.ing+’</div><div class="tox-harm">’+d.harm+’</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>’;
+      } else {
+        fh+=’<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">&#127807; Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>’;
+      }
     }
-    // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — same reason as high-score branch
-  }
-  document.getElementById('findList').innerHTML=fh;
-
-  // Unscored (blank) fields
-  if(unscoredFields.length > 0){
-    const ub = document.getElementById('unscoredBlock');
-    const ul = document.getElementById('unscoredList');
-    if(ub) ub.style.display='block';
-    let uh='<p style="color:#fafdff;font-size:.88rem;margin-bottom:10px;line-height:1.5">These products were left blank. We couldn\'t score them. Worth finding out what brand is in your home.</p>';
-    unscoredFields.forEach(f=>{
-      uh+=`<div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,153,0,.28)">
-        <span style="color:#FFD27A;font-size:1rem;font-weight:900">?</span>
-        <span style="font-size:.94rem;color:#fff;font-weight:700">${f}</span>
-        <span style="font-size:.8rem;color:#FFD27A;margin-left:auto;font-weight:800">Not scored</span>
-      </div>`;
-    });
-    if(ul) ul.innerHTML=uh;
+    srFoundHtml += fh;
+    srFoundHtml += ‘</div>’;
+    srFound.innerHTML = srFoundHtml;
   }
 
-  // 'Your Biggest Single Change' card removed per Shannon 2026-06-21. Logic kept as no-op
-  // (null-guarded) so any other code still relying on roomScores ordering keeps working.
-  const swElNode = document.getElementById('swEl');
-  if (swElNode) {
-    const te=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0];
-    if(te&&te[1]>0&&maxPts>0){
-      const [r,p]=te;
-      const rd=Math.max(2,Math.round((gotPts-p)/maxPts*100));
-      const swT=document.getElementById('swT'); if(swT) swT.textContent=`Your ${r}, Highest Impact`;
-      const swD=document.getElementById('swD'); if(swD) swD.textContent=`Switching just your ${r.toLowerCase()} products to cleaner alternatives would make the biggest single difference for your family.`;
-      const swF=document.getElementById('swF'); if(swF) swF.textContent=totalScore;
-      const swTo=document.getElementById('swTo'); if(swTo) swTo.textContent=rd;
-    } else {
-      swElNode.style.display='none';
-    }
+  // ── sr-proof (Gene’s testimonial) ──
+  var srProof = document.getElementById(‘sr-proof’);
+  if(srProof){
+    srProof.innerHTML = ‘<div style="background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 14px rgba(14,34,64,.08)">’
+      +’<div style="display:flex;align-items:flex-start;gap:12px">’
+      +’<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/member-linda.jpg" onerror="this.style.display=\’none\’" style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(14,34,64,.15);flex-shrink:0" alt="Linda P."/>’
+      +’<div>’
+      +’<div style="font-size:.88rem;font-style:italic;line-height:1.55;color:#1a2e54">"I\’d had \’mystery\’ headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can\’t believe it."</div>’
+      +’<div style="font-size:.72rem;font-weight:800;color:#B07A2C;margin-top:6px">Linda P. &middot; Grandmother &middot; Ohio</div>’
+      +’</div></div></div>’;
   }
+
+  // ── sr-byline (Shannon’s photo + attribution) ──
+  var srByline = document.getElementById(‘sr-byline’);
+  if(srByline){
+    srByline.innerHTML = ‘<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>’
+      +’<div style="text-align:left">’
+      +’<div style="font-size:.72rem;font-weight:700;color:#0B2545;line-height:1.3">Built by Shannon Nicole, founder of Switch to America</div>’
+      +’<div style="font-size:.65rem;color:#4a5e7e;line-height:1.3">Switching families from toxic brands since 2018</div>’
+      +’</div>’;
+  }
+
+  prepShareFile(); // pre-build the share image so the share sheet opens instantly on tap (iOS-safe)
   genCard();
   // Results page scroll-to-top. Uses both scrollTop and scroll({behavior:'instant'}) to defeat
   // iOS momentum scrolling. overflow-anchor:none on .screen prevents content insertion from
