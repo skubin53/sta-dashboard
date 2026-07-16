@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+(function(){
+  var path = window.location.pathname;
+  // /r/<code> → scorecard with ref tracking
+  var ref = path.match(/^\/r\/([a-zA-Z0-9_-]+)\/?$/);
+  if(ref){
+    window.location.replace('https://scan.ismyhometoxic.com/now?ref=' + encodeURIComponent(ref[1]));
+    return;
+  }
+  // anything else → home
+  window.location.replace('https://scan.ismyhometoxic.com/now');
+})();
+</script>
+</head>
+<body></body>
+</html>
