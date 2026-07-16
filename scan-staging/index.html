@@ -3007,7 +3007,7 @@ function runCalc(){
     document.getElementById('pBar').style.display='none'; var _rp=document.getElementById('riskPill'); if(_rp) _rp.classList.remove('show');
 
     roomScores={}; totalScore=0; unscoredFields=[]; gotPts=0; maxPts=0;
-    var SLOTMAX=10; // max brand score in the system; prevents 9/9=100% when selecting one toxic brand
+    var SLOTMAX=12; // 2026-07-16 Shannon: raised 10→12 to match room score fix (same fix applied to computeRoomScore 2026-07-15). Brand score 9 now gives 9/12=75% per slot instead of 9/10=90%, preventing a handful of toxic picks from inflating the total score to 95+.
     // A product "slot" only counts toward the score when it was actually answered.
     // got = how toxic the chosen brand is; max = worst case for that slot. Score = got/max.
     function addSlot(p, answered, room){
