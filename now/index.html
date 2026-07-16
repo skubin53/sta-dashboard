@@ -2385,7 +2385,7 @@ function renderStep(){
   if(step.type==='chip_cards') h+=`<div class="rise" style="display:inline-flex;align-items:center;gap:4px;background:rgba(31,138,112,.12);border:1px solid rgba(31,138,112,.4);border-radius:50px;padding:4px 10px;font-size:.7rem;font-weight:800;color:#1F8A70;margin-bottom:14px"><span>✓</span><span>No typing required</span></div>`;
 
   // Testimonial above the content so it's visible on load without scrolling
-  var _qt=quoteForStep(step); if(_qt){ var _img=_qt.img?`<img class="rq-img" src="${_qt.img}" alt="" loading="lazy">`:'<span class="rq-mark">"</span>'; h+=`<div class="room-quote rise" style="margin-bottom:18px">${_img}<div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`; }
+  var _qt=quoteForStep(step); if(_qt){ var _img=_qt.img?`<img class="rq-img" src="${_qt.img}" alt="" loading="lazy">`:'<span class="rq-mark">"</span>'; h+=`<div class="room-quote rise" style="margin-bottom:18px">${_img}<div class="rq-body">${_qt.q}<span class="rq-a">${_qt.a}</span></div></div>`; }
 
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
