@@ -2099,9 +2099,9 @@ function startQuiz(){
   quizStartTs=Date.now();
   track('scan_started');
   try{ fetch(SERVER+'/scan-start',{method:'POST'}); }catch(e){}
-  // Delay 120ms so iOS keyboard fully dismisses before we swap screens.
+  // Delay 350ms so iOS keyboard fully dismisses before we swap screens.
   // Without this, the viewport resize from keyboard-close races the transition
-  // and the quiz renders off-screen on iPhone.
+  // and the quiz renders off-screen on iPhone. Increased from 120ms → 350ms (some iPhones slow).
   setTimeout(function(){
     document.getElementById('pBar').style.display='block';
     renderStep(); showScreen('s-quiz');
@@ -2167,12 +2167,13 @@ function showIntroError(el, msg){
   if(existing) existing.remove();
   var err = document.createElement('div');
   err.className = 'intro-err';
-  err.style.cssText = 'color:#C8102E;font-size:.75rem;font-weight:700;margin-top:5px;text-align:left;';
+  err.style.cssText = 'color:#C8102E;font-size:.82rem;font-weight:800;margin-top:8px;padding:8px 12px;background:rgba(200,16,46,.1);border-radius:8px;border-left:3px solid #C8102E;text-align:left;';
   err.textContent = msg;
   wrap.appendChild(err);
   el.style.border = '2px solid #C8102E';
-  el.focus();
-  setTimeout(function(){ if(err.parentNode) err.remove(); el.style.border = ''; }, 4000);
+  // Do NOT call el.focus() — on mobile it reopens the keyboard and hides the error behind it
+  try { err.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); } catch(e) {}
+  setTimeout(function(){ if(err.parentNode) err.remove(); el.style.border = ''; }, 6000);
 }
 function startQuizWithCapture(){
   var fnEl = document.getElementById('introFirstName');
