@@ -3351,17 +3351,17 @@ function showResults(){
   renderResultHouse(totalScore); // Change #5, hero house reflects final score
   prepShareFile(); // pre-build the share image so the share sheet opens instantly on tap (iOS-safe)
   // Grade letter removed — contradicts "X products flagged" framing (per Hormozi handoff 2026-07-15)
-  var gradeEl = document.getElementById(‘rGrade’); if(gradeEl) gradeEl.style.display=’none’;
-  // #4 personally-written results + #6 hopeful framing, Shannon’s voice
-  document.getElementById(‘rH’).textContent = userName ? (userName+’, here’s what I saw.’) : ‘Here’s what I saw.’;
+  var gradeEl = document.getElementById('rGrade'); if(gradeEl) gradeEl.style.display='none';
+  // #4 personally-written results + #6 hopeful framing, Shannon's voice
+  document.getElementById('rH').textContent = userName ? (userName+", here's what I saw.") : "Here's what I saw.";
   var rpMsg;
-  if(totalScore<=17){ rpMsg=’Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.’; }
-  else if(totalScore<=45){ rpMsg=’I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.’; }
-  else { rpMsg=’Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.’; }
-  if(hasBaby){ rpMsg=’Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. ‘+rpMsg; }
-  document.getElementById(‘rP’).textContent=rpMsg;
+  if(totalScore<=17){ rpMsg="Honestly? You're already ahead of most homes I look at. Let me show you the couple of little things I'd still tweak, and what you're already getting right."; }
+  else if(totalScore<=45){ rpMsg="I'm not here to scare you. Most of what I found is an easy fix. Here's what stood out to me, and the good news that comes with each one."; }
+  else { rpMsg="Take a breath. I see homes like this every single day, and it's so fixable. None of this means you did anything wrong. Here's what jumped out at me, one thing at a time."; }
+  if(hasBaby){ rpMsg="Since you've got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. "+rpMsg; }
+  document.getElementById('rP').textContent=rpMsg;
   // Zone badge suppressed — replaced by pfHero flagged-count card (no contradictory CLEAN ZONE next to fear copy)
-  var z=document.getElementById(‘rZone’); if(z) z.style.display=’none’;
+  var z=document.getElementById('rZone'); if(z) z.style.display='none';
   // rP text superseded by pfHero body copy — hide after toxList is built below
 
   // 2026-06-21 Shannon: rFeeling + rMetaphor REMOVED. The "≈ cigarettes a day" + "X years older"
@@ -3473,7 +3473,7 @@ function showResults(){
     // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
   } else {
     // Low-score fallback, reward green behavior, never punish.
-    fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That’s the top few that trip almost everyone up.</div></div>';
+    fh+=`<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you're doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That's the top few that trip almost everyone up.</div></div>`;
     if(toxList.length===1){
       var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
       fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>';
