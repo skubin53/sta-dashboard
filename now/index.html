@@ -3142,9 +3142,35 @@ async function submitReport(){
   const topRoom=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0]?.[0]||'Unknown';
   // Fable-5 uplevel #2 (2026-06-10): send sc payload so the server can persist a permanent
   // /r/<id> report URL, and capture the returned reportId so the SMS includes the link.
+  // Collect every brand the user selected across all rooms (not just flagged ones)
+  function collectAllBrands(){
+    var out=[];
+    activeSteps.forEach(function(s){
+      if(!answers[s.id]) return;
+      if(s.type==='chip_cards'&&s.cards){
+        s.cards.forEach(function(card){
+          var sel=answers[s.id][card.id]||{};
+          if(sel.isNone) return;
+          (sel.brands||[]).forEach(function(b){ if(b&&b.trim()) out.push({brand:b.trim(),room:s.room_lbl||s.room||'',cat:card.cat}); });
+          if(sel.otherBrand&&sel.otherBrand.trim()) out.push({brand:sel.otherBrand.trim(),room:s.room_lbl||s.room||'',cat:card.cat});
+        });
+      } else if(s.type==='brand_single'){
+        var b=(answers[s.id].brand||'').trim(); if(b) out.push({brand:b,room:s.room_lbl||s.room||'',cat:s.cat||''});
+      } else if(s.type==='brand_multi'&&s.fields){
+        s.fields.forEach(function(f){ var b=(answers[s.id][f.id]||'').trim(); if(b) out.push({brand:b,room:s.room_lbl||s.room||'',cat:f.cat||''}); });
+      } else if(s.answers){
+        s.answers.forEach(function(a){ if(a.pts&&a.pts>0&&answers[s.id][a.lbl]) out.push({brand:a.lbl,room:a.room||s.room||'',cat:''}); });
+      }
+    });
+    return out;
+  }
+  var allBrands = collectAllBrands();
+  var swaps = collectSwitchItems ? collectSwitchItems().slice(0,12).map(function(it){ return { brand: it.brand, cat: it.cat, target: swapFor ? swapFor(it.cat) : '', save: savingsFor ? savingsFor(it.cat) : 0 }; }) : [];
   var scForSrv = {
     score: totalScore, grade, topRoom, hasFamily,
-    items: collectSwitchItems ? collectSwitchItems().slice(0,12).map(function(it){ return { brand: it.brand, cat: it.cat, target: swapFor ? swapFor(it.cat) : '', save: savingsFor ? savingsFor(it.cat) : 0 }; }) : []
+    items: swaps,
+    brands: allBrands,
+    swaps: swaps.map(function(it){ return it.brand+' → '+it.target; }).join(', ')
   };
   var _contactPayload = {firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}};
   try{
