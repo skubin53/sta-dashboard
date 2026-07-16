@@ -2907,10 +2907,22 @@ function fireAuditWebhookOnce(){
   _staAuditFired = true;
 }
 
+function trackStep(stepId, idx){
+  // Lightweight drop-off tracking. Fire-and-forget — never blocks the quiz.
+  try{
+    var sid='';
+    try{ sid=localStorage.getItem('sta_scan_sid')||''; }catch(e){}
+    if(!sid){ sid=Math.random().toString(36).slice(2)+Date.now().toString(36); try{ localStorage.setItem('sta_scan_sid',sid); }catch(e){} }
+    fetch(SERVER+'/scan-step',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({sid:sid,step:stepId,idx:idx,ts:Date.now(),ref:refCode||'',name:userName||''}),keepalive:true});
+  }catch(e){}
+}
 function goNext(){
   var prevStep=activeSteps[stepIdx];
   // Fire the audit webhook once, the moment user advances past audit_q3
   if(prevStep && prevStep.id==='audit_q1') fireAuditWebhookOnce();
+  // Step completion tracking for drop-off dashboard
+  if(prevStep) trackStep(prevStep.id, stepIdx);
   stepIdx++;
   // Deferred GHL contact creation — fires the moment the user finishes their FIRST quiz step.
   // (Was firing immediately on intro tap, creating ghost score=0 abandoners. See note in
@@ -3006,12 +3018,12 @@ function runCalc(){
         });
       }
     });
-    // 2026-07-15: minimum denominator of 80 prevents inflated scores from sparse answers.
-    // Removing kitchen_food/extras reduced the natural denominator — this restores calibration.
-    // Has no effect when someone answers most questions (maxPts grows well above 80).
-    var effectiveMax = Math.max(maxPts, 80);
+    // 2026-07-15: minimum denominator prevents inflated scores from sparse answers.
+    // Raised to 120 — prevents 100/100 from just 4 toxic kitchen clicks.
+    // Has no effect when someone answers most questions (maxPts grows well above 120).
+    var effectiveMax = Math.max(maxPts, 120);
     totalScore = effectiveMax>0 ? Math.round(gotPts/effectiveMax*100) : 0;
-    if(totalScore>100) totalScore=100;
+    if(totalScore>95) totalScore=95; // nobody gets 100 on a partial quiz
     if(totalScore<18) totalScore=18; // 2026-07-15 P6: floor at 18 to keep messaging meaningful
 
     const arc=document.getElementById('cArc');
