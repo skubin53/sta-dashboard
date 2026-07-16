@@ -2153,6 +2153,20 @@ function openScoreRecoveryTripwire(){
   window.location.href = url;
 }
 
+function showIntroError(el, msg){
+  var wrap = el && el.closest ? el.closest('.intro-field-new') : null;
+  if(!wrap) return;
+  var existing = wrap.querySelector('.intro-err');
+  if(existing) existing.remove();
+  var err = document.createElement('div');
+  err.className = 'intro-err';
+  err.style.cssText = 'color:#C8102E;font-size:.75rem;font-weight:700;margin-top:5px;text-align:left;';
+  err.textContent = msg;
+  wrap.appendChild(err);
+  el.style.border = '2px solid #C8102E';
+  el.focus();
+  setTimeout(function(){ if(err.parentNode) err.remove(); el.style.border = ''; }, 4000);
+}
 function startQuizWithCapture(){
   var fnEl = document.getElementById('introFirstName');
   var lnEl = document.getElementById('introLastName');
@@ -2161,14 +2175,12 @@ function startQuizWithCapture(){
   var ln = (lnEl && lnEl.value || '').trim();
   var ph = (phEl && phEl.value || '').trim();
   if(!fn){
-    alert('Please enter your first name.');
-    if(fnEl) fnEl.focus();
+    showIntroError(fnEl, 'Please enter your first name.');
     return;
   }
   // Last name is optional — don't block on it
   if(ph.replace(/\D/g,'').length<10){
-    alert('Please enter your cell phone number so we can text you your results.');
-    if(phEl) phEl.focus();
+    showIntroError(phEl, 'Enter your cell number so we can text you your results.');
     return;
   }
   try{
