@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loading your scorecard…</title>
+<script>
+(function(){
+  var path = window.location.pathname; // e.g. /r/ao3u5r0xmn
+  var code = path.replace(/^\/r\/?/, '').replace(/\/$/, '').trim();
+  var dest = 'https://scan.ismyhometoxic.com/now';
+  if(code) dest += '?ref=' + encodeURIComponent(code);
+  window.location.replace(dest);
+})();
+</script>
+</head>
+<body></body>
+</html>
