@@ -1479,9 +1479,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div style="font-size:.97rem;font-weight:600;line-height:1.4">Room-by-room action list so you know exactly where to start</div>
             </div>
           </div>
-          <!-- B4: Proof at the price -->
+          <!-- B4: Proof at the price — real customer photo + attribution -->
           <div style="margin-top:16px;padding:14px 16px;background:rgba(255,255,255,.06);border-radius:10px;border-left:3px solid #FF9900">
-            <div style="font-size:.88rem;font-style:italic;line-height:1.55">"I'd had 'mystery' headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can't believe it."</div>
+            <div style="display:flex;align-items:flex-start;gap:12px">
+              <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/member-linda.jpg"
+                   onerror="this.style.display='none'"
+                   style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,153,0,.5);flex-shrink:0" alt="Linda P."/>
+              <div>
+                <div style="font-size:.88rem;font-style:italic;line-height:1.55">"I'd had 'mystery' headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can't believe it."</div>
+                <div style="font-size:.72rem;font-weight:800;color:rgba(255,153,0,.8);margin-top:6px;font-style:normal">Linda P. · Grandmother · Ohio</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1512,6 +1520,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div id="auditPanel" class="sl-panel" style="display:none"></div>
     </div>
     <div id="commStatReveal" class="comm-stat comm-stat-reveal"></div>
+    <!-- Founder byline — ties the page back to a real person -->
+    <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin:18px auto 6px;max-width:320px">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
+           style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>
+      <div style="text-align:left">
+        <div style="font-size:.72rem;font-weight:700;color:#0B2545;line-height:1.3">Built by Shannon Nicole, founder of Switch to America</div>
+        <div style="font-size:.65rem;color:#4a5e7e;line-height:1.3">Switching families from toxic brands since 2018</div>
+      </div>
+    </div>
     <p class="disc"><strong>Note:</strong> This tool scores brands using independent safety research data. It is educational only, not a laboratory analysis or medical advice.</p>
   </div>
 </div>
@@ -1591,7 +1608,7 @@ const BRAND_DB = {
     // Bump named coffee brands to 9 so a Folgers tap competes with a Dawn tap.
     folgers:9,'maxwell house':9,starbucks:9,dunkin:9,"dunkin'":9,nescafé:9,nescafe:9,'death wish':8,kirkland:7,'organic coffee':4,'mountain cabin':0,
     crisco:9,wesson:9,canola:8,'vegetable oil':8,'soybean':8,'corn oil':8,'sunflower oil':7,
-    'olive oil':3,'avocado oil':2,'coconut oil':2,
+    'olive oil':8,'avocado oil':8,'coconut oil':2,
     // Clean animal fats, not seed oils, should score low/zero
     'beef tallow':0,'tallow':0,'lard':0,'ghee':1,'duck fat':1,'butter':1,'grass-fed':1,
     sta:0,'switch to america':0 },
@@ -1711,6 +1728,7 @@ const TOX_DB={
  // _src: FDA SDS PAM cooking spray; FDA propellant approvals; Weston A Price Crisco history; Quora hexane extraction
  'pam':{n:'PAM Cooking Spray',i:'Industrial seed oils, hexane residue, butane and propane propellants',h:'Hexane is a brain-damaging solvent used to extract the oil. Butane and propane are the same gases used in lighter fluid, and you spray them straight onto food at high heat. The oil oxidizes the moment it hits the pan and feeds inflammation in the body.'},
  // _src: UC Davis Green & Wang 2020 commercial avocado oil quality+purity study (Food Control journal); UC Davis Olive Center 2020 press release; FDA absence of avocado oil standard of identity
+ 'olive oil':{n:'Olive Oil (Store-Bought)',i:'Routinely adulterated with cheaper seed oils, often rancid before opening, hexane extraction common',h:'A 2016 UC Davis study found <b style="color:#C8102E">over 70% of common imported olive oil brands failed international purity standards</b>. Most were cut with cheap seed oils or were already rancid at the time of purchase. Rancid fats produce <b style="color:#C8102E">inflammatory compounds</b> every time you cook with them.[[P]]The olive oil aisle looks healthy. The contents often aren\'t. A single-ingredient animal fat like grass-fed beef tallow has none of these adulteration problems because there is nothing to cut it with.'},
  'avocado oil':{n:'Avocado Oil (Store-Bought)',i:'Often rancid before opening, often cut with cheap soybean and sunflower oil, heat-refined and stripped of nutrients',h:'UC Davis tested every avocado oil on US shelves in 2020. <b style="color:#C8102E">82% were rancid or cut with other oils before the bottle was even opened</b>. The words "pure" and "extra virgin" mean nothing on avocado oil because the <b style="color:#C8102E">FDA has no rule for those words on this product</b>.<br><br>The "pure" bottles tested were diluted with soybean and sunflower oil, which are sprayed with <b style="color:#C8102E">glyphosate</b> (on the cancer-causing chemicals list). The rancid bottles are loaded with broken-down compounds that <b style="color:#C8102E">feed inflammation</b> in your body every time you cook. You are paying premium prices for oxidized seed oil in an avocado bottle.'},
  'avocado':{n:'Avocado Oil (Store-Bought)',i:'Often rancid before opening, often cut with cheap soybean and sunflower oil, heat-refined and stripped of nutrients',h:'UC Davis tested every avocado oil on US shelves in 2020. <b style="color:#C8102E">82% were rancid or cut with other oils before the bottle was even opened</b>. The words "pure" and "extra virgin" mean nothing on avocado oil because the <b style="color:#C8102E">FDA has no rule for those words on this product</b>.<br><br>The "pure" bottles tested were diluted with soybean and sunflower oil, which are sprayed with <b style="color:#C8102E">glyphosate</b> (on the cancer-causing chemicals list). The rancid bottles are loaded with broken-down compounds that <b style="color:#C8102E">feed inflammation</b> in your body every time you cook. You are paying premium prices for oxidized seed oil in an avocado bottle.'},
  // _src: USDA Pesticide Data Program coffee residues; IARC Aflatoxin B1 Group 1 monograph; IARC Ochratoxin A Group 2B; Studer-Rohr 1995 ochratoxin A coffee survey; Prop 65 acrylamide
