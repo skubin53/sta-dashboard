@@ -622,7 +622,7 @@ html,body{
 .optin-note{font-size:.63rem;color:#fafdff;text-align:center;margin-top:8px;line-height:1.5}
 
 /* ══ RESULTS ══ */
-#s-results{background:var(--navy);overflow-y:auto;padding-bottom:40px}
+#s-results{background:var(--navy);overflow-y:auto;padding-bottom:40px;overflow-anchor:none}
 .rt{background:linear-gradient(160deg,#0A1B3D,#152C63);padding:24px 18px 20px;text-align:center;position:relative;overflow:hidden}
 .rt::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:16px 16px}
 .rs{font-family:'Bebas Neue',sans-serif;font-size:5.5rem;color:var(--orange);line-height:1;position:relative;z-index:1}
@@ -962,6 +962,11 @@ body { padding-top:0 !important; }
 #s-results .rcard p[style*="font-style:italic"] { color: #1a2e54 !important; }
 /* Subscore bar labels */
 #s-results .rb p { color: #1a2e54; }
+/* pfHero dark card — keep white/gold text despite the cream override */
+#s-results #pfHero, #s-results #pfHero div, #s-results #pfHero span, #s-results #pfHero p, #s-results #pfHero b { color: #eaf1f8 !important; }
+#s-results #pfHero .pf-title { color: #E8A317 !important; }
+#s-results #pfHero .pf-count { color: #fff !important; }
+#s-results #pfHero .pf-sub { color: #E8A317 !important; }
 /* UNIVERSAL text override: anything in #s-results that isn't a button or accent badge becomes solid black. */
 #s-results h1, #s-results h2, #s-results h3, #s-results h4,
 #s-results p, #s-results span, #s-results div, #s-results b, #s-results strong, #s-results em, #s-results i, #s-results li, #s-results td {
@@ -1390,7 +1395,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div class="rb">
     <div id="simWrap" style="display:none"></div>
-    <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3>🔍 What We Found in Your Home</h3><div id="findList"></div></div>
+    <div id="pfHero" style="display:none;margin-bottom:20px"></div>
+    <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3 style="text-transform:uppercase;letter-spacing:.1em">🔍 What We Found in Your Home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <!-- Testimonies block removed from score-reveal (Shannon 2026-06-26 08:29 MDT). Belongs on the post-payment thank-you page, not in the choice-architecture between $7 tripwire + free audit. -->
     <div class="fc" id="finalCta">
@@ -1797,7 +1803,56 @@ const STEPS = [
       chips:['Lysol','Clorox','Mrs. Meyer\'s','Method','Sol-U-Guard']},
    ]},
 
-  // kitchen_food and kitchen_extras removed 2026-07-15 (P4: shorten quiz to ~6 scoring questions)
+  // Kitchen Page B, Pantry / Food & Nutrition
+  {id:'kitchen_food',room:'Room 2 · The Pantry',icon:'🥗',type:'chip_cards',
+   q:'What are your <span style="background:linear-gradient(95deg,var(--orange),var(--red));-webkit-background-clip:text;background-clip:text;color:transparent">family favorites?</span>',
+   sub:'<b>These are some of the biggest hidden sources.</b> Tap what you buy.',
+   room_lbl:'Kitchen',
+   cards:[
+     {id:'k_cof',label:'Coffee',cat:'coffee',
+      icon:'<svg viewBox="0 0 24 30"><path d="M5 12h12v9a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#f2ede4"/><path d="M5 12h12v3H5z" fill="#6b4326"/><path d="M17 14h2.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="#d9d2c6" stroke-width="2"/></svg>',
+      chips:['Folgers','Maxwell House','Starbucks','Dunkin\'','Nescafé','Death Wish','Kirkland','Organic Coffee','Mountain Cabin']},
+     {id:'k_oil',label:'Cooking Oil / Seed Oils',cat:'oil',
+      icon:'<svg viewBox="0 0 24 30"><rect x="10" y="2" width="4" height="4" fill="#9aa17a"/><path d="M8 9c0-1.5 1.3-3 4-3s4 1.5 4 3v17a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z" fill="#e7c45a"/><rect x="9.5" y="14" width="7" height="8" rx="1" fill="#fff8e0" opacity=".85"/></svg>',
+      chips:['Vegetable / Canola','Crisco','Wesson','Mazola','PAM Spray','Olive oil','Avocado oil','Beef Tallow']},
+     {id:'k_vit',label:'Vitamins / Supplements',cat:'supplements',
+      icon:'<svg viewBox="0 0 24 30"><rect x="8" y="2" width="8" height="3.5" rx="1" fill="#cfd8c2"/><rect x="7.5" y="6" width="9" height="22" rx="2.5" fill="#6fae6a"/><rect x="9.5" y="12" width="9" height="9" rx="1" fill="#eef6ec" transform="translate(-2 0)"/></svg>',
+      chips:['Nature Made','Centrum','Nature\'s Bounty','Garden of Life','Kirkland','GNC','Brand from Naturopath','Peak Performance']},
+     {id:'k_pro',label:'Protein Powder',cat:'supplements',
+      icon:'<svg viewBox="0 0 24 30"><rect x="6" y="2" width="12" height="4" rx="2" fill="#3a4049"/><path d="M6 7h12v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z" fill="#5a4a8a"/><rect x="8" y="13" width="8" height="9" rx="1" fill="#efeaf7"/></svg>',
+      chips:['Optimum Nutrition','Premier Protein','Quest','Muscle Milk','Garden of Life','Truvani','Proflex']},
+   ]},
+
+  // Kitchen extras — high-impact items (plastic, microwave, etc.)
+  {id:'kitchen_extras',room:'Kitchen',icon:'🍳',type:'multi',q:'Anything else to check in your kitchen?',sub:'Select all that apply.',
+   answers:[
+     {lbl:'Nonstick pans (Teflon / PTFE coated)',em:'🍳',pts:10,room:'Kitchen',
+      det:'Coating breaks down above 500°F and releases PFAS forever chemicals into the air your family breathes.',
+      swap:'Cast iron or stainless steel',
+      ing:'PFAS forever chemicals, PTFE that degrades at 500°F',
+      harm:'<b style="color:#C8102E">99% of Americans</b> already have PFAS in their blood (CDC). The C8 Science Panel linked these chemicals to <b style="color:#C8102E">kidney cancer, testicular cancer, ulcerative colitis, thyroid disease,</b> and pregnancy-induced hypertension.[[P]]The pan coating breaks down above 500°F. The fumes give people <b style="color:#C8102E">flu-like polymer-fume fever</b> and kill pet birds. PFAS are called "forever chemicals" because they never break down in your body or the environment.'},
+     {lbl:'Plastic food containers (BPA / standard)',em:'📦',pts:8,room:'Kitchen',
+      det:'Leaches hormone disruptors into your food. Heat, fat, and acidic foods speed it up.',
+      swap:'Glass storage with bamboo or silicone lids',
+      ing:'Bisphenol A (BPA), bisphenol S/F replacements, phthalate plasticizers',
+      harm:'<b style="color:#C8102E">93% of Americans</b> test positive for BPA in their urine (CDC NHANES). BPA mimics estrogen. It is linked to <b style="color:#C8102E">infertility, lower sperm count, early puberty in girls, type 2 diabetes, breast and prostate cancer,</b> and ADHD-like behavior in children.'},
+     {lbl:'Plastic cutting boards (standard)',em:'🔪',pts:7,room:'Kitchen',
+      det:'A 2023 lab study clocked one plastic cutting board shedding 14 to 71 mg of microplastics per cut, straight into the food you are about to eat.',
+      swap:'Wood or bamboo cutting board',
+      ing:'Polyethylene and polypropylene microplastics released by every knife stroke',
+      harm:'A 2023 study in <i>Environmental Science & Technology</i> measured one plastic cutting board shedding <b style="color:#C8102E">14 to 71 milligrams of microplastics per cut</b>. Those fragments go straight into your meal.[[P]]Microplastics have now been found in human <b style="color:#C8102E">lung tissue, breast milk, and placentas</b>.'},
+     {lbl:'Single-serve coffee machine (Keurig, Nespresso)',em:'☕',pts:8,room:'Kitchen',
+      det:'190°F water under pressure through polystyrene plastic pods every morning.',
+      swap:'French press or pour-over with whole beans',
+      ing:'Polystyrene leaching styrene, phthalates',
+      harm:'K-Cups are made of polystyrene. The WHO\'s IARC reclassified styrene as <b style="color:#C8102E">"probably carcinogenic to humans"</b> (Group 2A) in 2018.[[P]]Running 190°F water through plastic under pressure accelerates chemical migration into every cup.'},
+     {lbl:'Microwave (regular use for cooking)',em:'📡',pts:8,room:'Kitchen',
+      det:'Microwaving destroys most nutrients in your food and creates aged-protein compounds linked to inflammation.',
+      swap:'Reheat on the stovetop or in the oven (glass or ceramic only)',
+      ing:'Plastic microplastics, denatured proteins, advanced glycation end-products (AGEs)',
+      harm:'A 2023 University of Nebraska study measured a 3-minute microwave cycle releasing <b style="color:#C8102E">4.22 million microplastics + 2.11 billion nanoplastics per square centimeter</b> of plastic into the meal. "Microwave safe" only means the container will not <b style="color:#C8102E">melt</b>.[[P]]A Spanish CSIC study tested broccoli: steaming destroyed about 11% of antioxidants. <b style="color:#C8102E">Microwaving destroyed 97%</b>.'},
+     {lbl:'None of these / clean alternatives only',em:'✅',pts:0,exclusive:true},
+   ]},
 
   // Soft opt-in
   {id:'__soft',type:'soft'},
@@ -2630,6 +2685,9 @@ function communityText(){
 function renderCommunityStats(){
   var txt=communityText(); if(!txt) return;
   ['commStatLanding','commStatReveal'].forEach(function(id){ var el=document.getElementById(id); if(el){ el.textContent=txt; el.style.display='block'; } });
+  // Async DOM update can shift scroll on results page — reset it.
+  var rEl=document.getElementById('s-results');
+  if(rEl && rEl.classList.contains('active')){ rEl.scrollTop=0; window.scrollTo(0,0); }
 }
 function loadCommunityStats(){ try{ fetch(SERVER+'/scan-stats').then(function(r){return r.json();}).then(function(d){ COMM_STATS=d; renderCommunityStats(); }).catch(function(){}); }catch(e){} }
 loadCommunityStats();
@@ -2789,10 +2847,15 @@ function goBack(){
 }
 // ── Change #2: mid-quiz mini-reveals between rooms ──
 // Plausible "average home" benchmarks per room (feel-good comparison, not a real dataset).
-const ROOM_AVG={kitchen:65,bath:60,laundry:68,nursery:58,water:55,air:62,meds:59};
+// 2026-07-15 scoring calibration: ROOM_AVG[water] corrected from 55→18 (tap water max is 32,
+// so 55 was unreachable — everyone always showed "below average" on water).
+// Other room averages kept; will recalibrate once dashboard has 50+ real sessions.
+const ROOM_AVG={kitchen:65,bath:60,laundry:68,nursery:58,water:18,air:62,meds:59};
 // Score just one room, using the SAME methodology as the final score (got/max → %).
 function computeRoomScore(roomKey){
-  var got=0,max=0,SLOTMAX=8;
+  var got=0,max=0,SLOTMAX=12;
+  // 2026-07-15 Shannon: raised SLOTMAX 8→12 so brand scores of 9 give 9/12=75% not 9/9=100%.
+  // With SLOTMAX=8, Dawn/Tide/Lysol all maxed their slots at 100% → room scores hit 100/95/81.
   // 2026-06-20 Shannon bug-fix #1: in chip_cards rooms (Laundry, Kitchen, Bath, Nursery)
   // every card now counts toward MAX even when untouched, so clicking 1 chip out of 5
   // cards no longer inflates the room score (was producing 88% from a single click).
@@ -2810,7 +2873,10 @@ function computeRoomScore(roomKey){
     } else if(s.type==='brand_multi'&&s.fields){
       s.fields.forEach(function(f){ var bm=(answers[s.id][f.id]||'').trim(); var p=scoreBrand(bm,f.cat,f.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,bm.length>0); });
     } else if(s.answers){
-      s.answers.forEach(function(a){ if(a.pts>0){ var mx=a.pts; if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35); max+=mx; if(answers[s.id][a.lbl]) got+=mx; } });
+      // 2026-07-15: single-choice questions (water) use 1.4× multiplier on denominator so
+      // "tap water" (worst option, 8pts) scores 8/(sum*1.4)=32 instead of 8/18=44.
+      var isSingle=(s.type==='single'||s.type==='yn');
+      s.answers.forEach(function(a){ if(a.pts>0){ var mx=isSingle?Math.round(a.pts*1.4):a.pts; if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35); max+=mx; if(answers[s.id][a.lbl]) got+=a.pts; } });
     }
   });
   if(max<=0) return null;
@@ -3141,6 +3207,8 @@ function showResults(){
   else { rpMsg='Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
   if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. '+rpMsg; }
   document.getElementById('rP').textContent=rpMsg;
+  // rP text is superseded by pfHero body copy — hide it so there's no duplicate
+  var rPEl = document.getElementById('rP'); if(rPEl) rPEl.style.display='none';
   // change #8, ZONE badge + "name the feeling" sentence (tied to real concern count)
   var z=document.getElementById('rZone');
   if(z){ z.style.display='inline-block';
@@ -3212,6 +3280,22 @@ function showResults(){
     homeair:'air',water:'water'
   };
   var totalToxBefore = toxList.length; // preserve full count for the CTA copy ("X toxic products in your home")
+  // Build "PRODUCTS FLAGGED IN YOUR HOME" dark hero
+  var pfEl = document.getElementById('pfHero');
+  if(pfEl) {
+    if(totalToxBefore >= 1) {
+      pfEl.style.display = 'block';
+      pfEl.innerHTML =
+        '<div style="background:linear-gradient(160deg,#0d1f3c 0%,#071428 100%);border-radius:16px;padding:26px 20px;text-align:center">'
+        +'<div class="pf-title" style="font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin-bottom:14px">Products Flagged in Your Home</div>'
+        +'<div class="pf-count" style="font-family:\'Anton\',sans-serif;font-size:80px;line-height:1;margin-bottom:8px;text-shadow:0 0 40px rgba(255,153,0,.4)">'+totalToxBefore+'</div>'
+        +'<div class="pf-sub" style="font-size:.9rem;font-weight:700;margin-bottom:16px">Each one linked to a real, documented health concern</div>'
+        +'<div class="pf-body" style="font-size:.9rem;line-height:1.65">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</div>'
+        +'</div>';
+    } else {
+      pfEl.style.display = 'none';
+    }
+  }
   var seenFamily={}, diverse=[];
   toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||'other'; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
   if(diverse.length<3){ toxList.forEach(function(f){ if(diverse.indexOf(f)===-1 && diverse.length<3) diverse.push(f); }); }
@@ -3223,7 +3307,8 @@ function showResults(){
     // Fable-5 uplevel #4 (2026-06-10): use REAL counts from /scan-realstats when available,
     // fall back to the conservative formula only if the realstats fetch hasn't returned yet.
     // window.REAL_STATS is populated on page load by an async fetch added near applyRef().
-    toxList.slice(0,3).forEach(function(f){
+    // Show only the #1 flagged product; lock the rest behind the $7 report
+    toxList.slice(0,1).forEach(function(f){
       var d=findingDisplay(f.brand,f.cat,f.label);
       var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
       var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
@@ -3231,12 +3316,20 @@ function showResults(){
       if (realCount && realTotal >= 50) {
         foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
       } else {
-        // Use the formula until we have at least 50 real scans (prevents tiny-n looking ridiculous)
         var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
         foundLine = 'Found in '+fi+' of 50 homes scanned this month';
       }
       fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
     });
+    // Locked teaser for remaining flagged products
+    if(totalToxBefore > 1) {
+      var moreCount = totalToxBefore - 1;
+      fh += '<div style="margin-top:12px;border:1.5px dashed rgba(200,16,46,.3);border-radius:14px;padding:22px 16px;text-align:center;background:rgba(255,255,255,.6)">'
+        +'<div style="font-size:1.4rem;margin-bottom:10px">🔒</div>'
+        +'<div style="color:#C8102E !important;font-size:.98rem;font-weight:800;margin-bottom:8px">+ '+moreCount+' more flagged product'+(moreCount===1?'':'s')+' in your home</div>'
+        +'<div style="color:#4a5e7e !important;font-size:.82rem;line-height:1.55">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</div>'
+        +'</div>';
+    }
     // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
   } else {
     // Low-score fallback, reward green behavior, never punish.
@@ -3284,6 +3377,13 @@ function showResults(){
     }
   }
   genCard();
+  // Results page scroll-to-top: fires after all sync DOM work + covers async reflow from loadCommunityStats.
+  var _rEl = document.getElementById('s-results');
+  function _forceTop(){ if(_rEl){ _rEl.scrollTop=0; } try{window.scrollTo(0,0);}catch(e){} }
+  setTimeout(_forceTop, 300);
+  setTimeout(_forceTop, 700);
+  setTimeout(_forceTop, 1100);
+  setTimeout(_forceTop, 1800);
 }
 
 // ── LIVE SCAN ANIMATION (rAF version, Shannon's design) ──────────────
