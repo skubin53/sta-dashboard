@@ -381,13 +381,13 @@ html,body{
 .q-opt.revealed .od-toggle{color:#ff8a8a;}
 .od-reveal{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .3s,margin-top .3s;font-size:.78rem;color:#ffd6d6;line-height:1.45;font-weight:500;}
 .q-opt.revealed .od-reveal{max-height:180px;opacity:1;margin-top:7px;}
-/* change #7, quiet rotating testimonial per room */
-.room-quote{margin:24px auto 2px;max-width:344px;display:flex;gap:9px;align-items:flex-start;opacity:.85;}
+/* change #7, rotating testimonial per room — P7 update: photo card style */
+.room-quote{margin:22px auto 6px;max-width:360px;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px 16px;opacity:1;}
 .room-quote .rq-mark{font-family:Georgia,serif;font-size:30px;line-height:.7;color:rgba(227,179,65,.5);flex:none;}
-.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:#fafdff;font-style:italic;}
-.room-quote .rq-a{display:block;font-style:normal;font-weight:700;color:rgba(227,179,65,.78);font-size:.7rem;margin-top:5px;letter-spacing:.02em;}
-/* P7: real member photo in testimonial */
-.room-quote .rq-img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none;border:2px solid rgba(227,179,65,.45);margin-top:2px;}
+.room-quote .rq-body{font-size:.82rem;line-height:1.5;color:#fafdff;font-style:italic;}
+.room-quote .rq-a{display:block;font-style:normal;font-weight:800;color:rgba(227,179,65,.9);font-size:.72rem;margin-top:6px;letter-spacing:.02em;}
+/* P7: real member photo in testimonial — prominent card */
+.room-quote .rq-img{width:62px;height:62px;border-radius:50%;object-fit:cover;flex:none;border:2.5px solid rgba(227,179,65,.6);margin-top:0;flex-shrink:0;box-shadow:0 4px 12px rgba(0,0,0,.25);}
 .q-opt .osel{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(159,177,204,.4);position:relative;transition:border-color .2s;flex-shrink:0;}
 .q-opt .osel::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);transform:scale(0);transition:transform .2s cubic-bezier(.2,1.7,.4,1);}
 .q-opt.sel{border-color:var(--orange);background:rgba(227,179,65,.08);box-shadow:0 0 0 1px rgba(227,179,65,.35),0 8px 24px -10px rgba(227,179,65,.5);}
