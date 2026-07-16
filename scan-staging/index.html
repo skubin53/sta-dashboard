@@ -682,13 +682,13 @@ html,body{
 #roomReveal .rr-num{animation:rrPop .5s cubic-bezier(.2,1.3,.4,1) both}
 @keyframes rrPop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
 /* Change #3, named-product finding cards */
-.tox-card{background:#ffffff;border:1px solid rgba(95,179,199,.4);border-left:4px solid #C8102E;border-radius:12px;padding:13px 15px;margin-bottom:11px}
-.tox-card.tox-good{background:rgba(31,138,112,.08);border-color:rgba(31,138,112,.25);border-left-color:#1F8A70}
-.tox-name{font-size:1.02rem;font-weight:800;color:#fff;line-height:1.25}
-.tox-ing{font-size:.84rem;font-weight:700;color:#ffb0b0;margin-top:5px}
-.tox-card.tox-good .tox-ing{color:#9fe6cf}
-.tox-harm{font-size:.82rem;color:#d9e3ee;margin-top:3px;line-height:1.42}
-.tox-found{font-size:.72rem;color:#fafdff;margin-top:7px;font-style:italic}
+.tox-card{background:#fff5f5;border-left:4px solid #C8102E;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px}
+.tox-card.tox-good{background:#f2fbf5;border-left-color:#1F8A70}
+.tox-name{font-size:1.06rem;font-weight:800;color:#16233b;line-height:1.2}
+.tox-ing{font-size:.82rem;font-weight:700;color:#C8102E;margin:4px 0 6px}
+.tox-card.tox-good .tox-ing{color:#1c7a3d}
+.tox-harm{font-size:.84rem;color:#33425c;margin-top:3px;line-height:1.45}
+.tox-found{font-size:.75rem;color:#5b6b83;margin-top:8px;font-style:italic}
 .tox-soft{background:rgba(200,16,46,.12);border:1px dashed rgba(200,16,46,.55);border-radius:12px;padding:15px;text-align:center;margin-top:4px}
 .tox-soft-q{font-size:.95rem;font-weight:700;color:#C8102E;line-height:1.45;margin-bottom:11px}
 .tox-soft-q b{color:#C8102E;font-weight:900}
@@ -1394,7 +1394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="rb">
     <div id="simWrap" style="display:none"></div>
     <div id="pfHero" style="display:none;margin-bottom:20px"></div>
-    <div class="rcard" style="background:#e6f3fc;border:1.5px solid rgba(95,179,199,.55);box-shadow:0 4px 14px rgba(95,179,199,.18)"><h3 style="text-transform:uppercase;letter-spacing:.1em">🔍 What We Found in Your Home</h3><div id="findList"></div></div>
+    <div class="rcard" style="background:#fff;border:1px solid #e3e8f0;box-shadow:0 4px 14px rgba(14,34,64,.06)"><h3 style="font-size:.75rem;letter-spacing:1.5px;color:#5b6b83;text-transform:uppercase;font-weight:800;margin-bottom:14px">&#128269; What we found in your home</h3><div id="findList"></div></div>
     <div class="rcard" id="unscoredBlock" style="background:rgba(255,153,0,.14);border-color:rgba(255,153,0,.38);display:none"><h3>🔍 Products We Couldn't Score</h3><div id="unscoredList"></div></div>
     <!-- Testimonies block removed from score-reveal (Shannon 2026-06-26 08:29 MDT). Belongs on the post-payment thank-you page, not in the choice-architecture between $7 tripwire + free audit. -->
     <div class="fc" id="finalCta">
@@ -3319,11 +3319,11 @@ function showResults(){
     if(totalToxBefore >= 1) {
       pfEl.style.display = 'block';
       pfEl.innerHTML =
-        '<div style="background:linear-gradient(160deg,#0d1f3c 0%,#071428 100%);border-radius:16px;padding:26px 20px;text-align:center">'
-        +'<div class="pf-title" style="font-size:.72rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;margin-bottom:14px">Products Flagged in Your Home</div>'
-        +'<div class="pf-count" style="font-family:\'Anton\',sans-serif;font-size:80px;line-height:1;margin-bottom:8px;text-shadow:0 0 40px rgba(255,153,0,.4)">'+totalToxBefore+'</div>'
-        +'<div class="pf-sub" style="font-size:.9rem;font-weight:700;margin-bottom:16px">Each one linked to a real, documented health concern</div>'
-        +'<div class="pf-body" style="font-size:.9rem;line-height:1.65">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</div>'
+        '<div style="background:linear-gradient(158deg,#0e2240,#0a1a33);border-radius:20px;padding:28px 22px 24px;text-align:center;color:#fff;margin-bottom:4px">'
+        +'<div class="pf-title" style="font-size:.8rem;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase">Products flagged in your home</div>'
+        +'<div class="pf-count" style="display:block;font-size:56px;font-weight:800;line-height:1;margin:8px 0 2px;color:#fff;letter-spacing:0">'+totalToxBefore+'</div>'
+        +'<div class="pf-sub" style="display:block;font-size:14.5px;font-weight:600;opacity:.85;letter-spacing:0">Each one linked to a real, documented health concern</div>'
+        +'<p style="font-size:14.5px;opacity:.92;max-width:360px;margin:14px auto 0;line-height:1.55">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</p>'
         +'</div>';
     } else {
       pfEl.style.display = 'none';
@@ -3352,15 +3352,15 @@ function showResults(){
         var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
         foundLine = 'Found in '+fi+' of 50 homes scanned this month';
       }
-      fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
+      fh+='<div class="tox-card"><div class="tox-name">'+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
     });
     // Locked teaser for remaining flagged products
     if(totalToxBefore > 1) {
       var moreCount = totalToxBefore - 1;
-      fh += '<div style="margin-top:12px;border:1.5px dashed rgba(200,16,46,.3);border-radius:14px;padding:22px 16px;text-align:center;background:rgba(255,255,255,.6)">'
-        +'<div style="font-size:1.4rem;margin-bottom:10px">🔒</div>'
-        +'<div style="color:#C8102E !important;font-size:.98rem;font-weight:800;margin-bottom:8px">+ '+moreCount+' more flagged product'+(moreCount===1?'':'s')+' in your home</div>'
-        +'<div style="color:#4a5e7e !important;font-size:.82rem;line-height:1.55">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</div>'
+      fh += '<div style="background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px">'
+        +'<div style="font-size:22px">&#128274;</div>'
+        +'<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ '+moreCount+' more flagged product'+(moreCount===1?'':'s')+' in your home</h4>'
+        +'<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</p>'
         +'</div>';
     }
     // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
@@ -3369,7 +3369,7 @@ function showResults(){
     fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">✨ What you’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That’s the top few that trip almost everyone up.</div></div>';
     if(toxList.length===1){
       var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
-      fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>';
+      fh+='<div class="tox-card"><div class="tox-name">'+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>';
     } else {
       fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">🌿 Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>';
     }
