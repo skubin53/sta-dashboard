@@ -68,7 +68,7 @@ html,body{
   color-scheme: light;
 }
 #app{height:100dvh;display:flex;flex-direction:column;overflow:hidden}
-.screen{display:none;height:100dvh;overflow-y:auto;-webkit-overflow-scrolling:touch;flex-direction:column}
+.screen{display:none;height:100dvh;overflow-y:auto;-webkit-overflow-scrolling:touch;flex-direction:column;overflow-anchor:none}
 .screen.active{display:flex}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 .screen.active{animation:fadeUp .28s ease}
@@ -3412,13 +3412,25 @@ function showResults(){
     }
   }
   genCard();
-  // Results page scroll-to-top: fires after all sync DOM work + covers async reflow from loadCommunityStats.
+  // Results page scroll-to-top. Uses both scrollTop and scroll({behavior:'instant'}) to defeat
+  // iOS momentum scrolling. overflow-anchor:none on .screen prevents content insertion from
+  // re-anchoring scroll. Resets fire up to 3s to cover async community stats + image loads.
   var _rEl = document.getElementById('s-results');
-  function _forceTop(){ if(_rEl){ _rEl.scrollTop=0; } try{window.scrollTo(0,0);}catch(e){} }
+  function _forceTop(){
+    if(_rEl){ _rEl.scrollTop=0; try{_rEl.scroll({top:0,behavior:'instant'});}catch(e){} }
+    try{window.scrollTo(0,0);}catch(e){}
+    try{document.documentElement.scrollTop=0;}catch(e){}
+    try{document.body.scrollTop=0;}catch(e){}
+  }
+  _forceTop();
+  requestAnimationFrame(function(){ _forceTop(); requestAnimationFrame(_forceTop); });
+  setTimeout(_forceTop, 100);
   setTimeout(_forceTop, 300);
-  setTimeout(_forceTop, 700);
-  setTimeout(_forceTop, 1100);
-  setTimeout(_forceTop, 1800);
+  setTimeout(_forceTop, 600);
+  setTimeout(_forceTop, 1000);
+  setTimeout(_forceTop, 1500);
+  setTimeout(_forceTop, 2200);
+  setTimeout(_forceTop, 3000);
 }
 
 // ── LIVE SCAN ANIMATION (rAF version, Shannon's design) ──────────────
