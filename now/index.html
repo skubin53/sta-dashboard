@@ -383,11 +383,13 @@ html,body{
 .q-opt.revealed .od-toggle{color:#ff8a8a;}
 .od-reveal{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .3s,margin-top .3s;font-size:.78rem;color:#ffd6d6;line-height:1.45;font-weight:500;}
 .q-opt.revealed .od-reveal{max-height:180px;opacity:1;margin-top:7px;}
-/* change #7, quiet rotating testimonial per room */
-.room-quote{margin:24px auto 2px;max-width:344px;display:flex;gap:9px;align-items:flex-start;opacity:.85;}
+/* change #7, rotating testimonial per room — P7 update: photo card style */
+.room-quote{margin:22px auto 6px;max-width:360px;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px 16px;opacity:1;}
 .room-quote .rq-mark{font-family:Georgia,serif;font-size:30px;line-height:.7;color:rgba(227,179,65,.5);flex:none;}
-.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:#fafdff;font-style:italic;}
-.room-quote .rq-a{display:block;font-style:normal;font-weight:700;color:rgba(227,179,65,.78);font-size:.7rem;margin-top:5px;letter-spacing:.02em;}
+.room-quote .rq-body{font-size:.82rem;line-height:1.5;color:#fafdff;font-style:italic;}
+.room-quote .rq-a{display:block;font-style:normal;font-weight:800;color:rgba(227,179,65,.9);font-size:.72rem;margin-top:6px;letter-spacing:.02em;}
+/* P7: real member photo in testimonial — prominent card */
+.room-quote .rq-img{width:62px;height:62px;border-radius:50%;object-fit:cover;flex:none;border:2.5px solid rgba(227,179,65,.6);margin-top:0;flex-shrink:0;box-shadow:0 4px 12px rgba(0,0,0,.25);}
 .q-opt .osel{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(159,177,204,.4);position:relative;transition:border-color .2s;flex-shrink:0;}
 .q-opt .osel::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);transform:scale(0);transition:transform .2s cubic-bezier(.2,1.7,.4,1);}
 .q-opt.sel{border-color:var(--orange);background:rgba(227,179,65,.08);box-shadow:0 0 0 1px rgba(227,179,65,.35),0 8px 24px -10px rgba(227,179,65,.5);}
@@ -1495,7 +1497,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <script>
-const SERVER = 'https://scan.ismyhometoxic.com';
+const SERVER = 'https://api.ismyhometoxic.com';
 let userName = '', stepIdx = 0, answers = {};
 let riskScore = 0, totalScore = 0, roomScores = {}, gotPts = 0, maxPts = 0, safeScore = 0;
 let quizStartTs = 0, quizDurationSec = 0; // Change #11, timing for speedrun bonus
@@ -2039,16 +2041,16 @@ function roomKeyForStep(s){
 }
 // change #7, real testimonials (from STA site), one per room
 const ROOM_QUOTES=[
-  {q:"I work in the ER. I see what these chemicals do to people's lungs every shift. Then my own son ended up there. I switched our whole house in one order. He has not touched his rescue inhaler in 4 months.", a:"Tamara W. · Nurse"},           /*0 under-sink cleaning*/
+  {q:"I work in the ER. I see what these chemicals do to people's lungs every shift. Then my own son ended up there. I switched our whole house in one order. He has not touched his rescue inhaler in 4 months.", a:"Tamara W. · Nurse", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/6967f9afa3e5c1b0f5b96cda.jpg"},           /*0 under-sink cleaning — real member photo*/
   {q:"My skin used to react to everything. Once I swapped my shampoo and body wash, the breakouts I'd had for years just… stopped.", a:"Maria K. · Mom of 2"}, /*1 bathroom*/
   {q:"I wanted to know exactly what was touching my baby's skin. Now bath time is one less thing I worry about.", a:"Ashley D. · New Mom"},                  /*2 nursery*/
-  {q:"I didn't know my brand of coffee contained toxins and mold. Once I switched, I noticed my headaches were gone and no more allergies.", a:"Cheryl Owen · Business Owner"}, /*3 pantry*/
+  {q:"You ever wonder if your morning coffee is secretly dragging you down? A lot of regular coffee is loaded with mold and toxins. I switched to something clean, organic, and tested for purity. I drink it faithfully every single morning.", a:"Jen · Switch to America Member", img:"https://scan.ismyhometoxic.com/testimonial-jen-coffee.jpg"}, /*3 coffee/pantry — real member Jen*/
   {q:"I had no idea my nonstick pans were releasing chemicals linked to <span style=\"color:#C8102E;font-weight:900\">kidney and testicular cancer</span> every time I cooked. Or that the plastic containers I packed in my kids' lunches were leaching BPA, a hormone disruptor linked to <span style=\"color:#C8102E;font-weight:900\">early puberty and breast cancer</span>. Replacing it all was the easiest upgrade I've ever made for my family.", a:"Dana R. · Mom of 4"}, /*4 kitchen extras*/
-  {q:"My daughter's skin would get red and itchy after every wash. New detergent, no more irritation, I wish I'd done it sooner.", a:"Rachel M. · Mom of 3"}, /*5 laundry*/
+  {q:"We made the switch 7 months ago and haven't looked back. American-made, cleaner ingredients, better value — and the whole family agreed to pose with the boxes, which says everything.", a:"Brittany · Mom of 2"}, /*5 laundry*/
   {q:"We thought our pitcher filter was enough. After we upgraded our water, even our coffee and cooking tasted different.", a:"Karen S. · Grandmother"},     /*6 water*/
   {q:"My pediatrician asked if anyone smoked in our house when my daughter was diagnosed with asthma at age 4. Nobody did. The candles I lit every night and the plug-ins in every room were releasing the same toxic particles as cigarette smoke. I threw them all out. Her asthma attacks stopped within a month.", a:"Diane M. · Mom of 3"}, /*7 home air, candles+plug-ins = indoor smoking*/
   {q:"Tylenol was destroying my liver. Acetaminophen is the leading cause of acute liver failure in America, and nobody told me. I switched so many of these items in my cabinet. Not only have my allergies disappeared, I am <span style=\"color:#C8102E;font-weight:900\">SAVING MONEY</span>.", a:"Beth A. · Grandmother"}, /*8 meds/health*/
-  {q:"I was on a mission to find out why my husband got cancer. What I learned about the products in our own home stopped me cold.", a:"Karla M. · Wife and Caregiver"}, /*9 intro*/
+  {q:"I was tired of overpaying for basic household things that barely worked and were toxic AF. So I switched where we shopped. That was it. Literally.", a:"Meg Ann · Mom of 3", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b0ab496dd5b904ed4a561.jpg"}, /*9 intro — real member Meg Ann*/
   {q:"My hands cracked open every time I cleaned. The cracks bled. I cried in the shower because the water burned. The dermatologist said it was the methylisothiazolinone in my disinfectant. I threw out everything under our sink. My hands healed in 3 weeks for the first time in 4 years.", a:"Rachel B. · Mom of 2"}, /*10 kitchen cleaners, severe hand eczema*/
 ];
 // one fitted testimonial per step, the quote at the bottom must match that page's products
@@ -2331,7 +2333,8 @@ function renderStep(){
   if(step.type==='chip_cards') h+=`<div class="rise" style="display:inline-flex;align-items:center;gap:4px;background:rgba(31,138,112,.18);border:1px solid rgba(31,138,112,.45);border-radius:50px;padding:4px 10px;font-size:.7rem;font-weight:800;color:#37c79a;margin-bottom:14px"><span>✓</span><span>No typing required</span></div>`;
 
   // Testimonial above the content so it's visible without scrolling — gold left-border accent
-  var _qt=quoteForStep(step); if(_qt) h+=`<div class="room-quote rise" style="margin-bottom:18px;border-left:3.5px solid rgba(227,179,65,.75)"><span class="rq-mark">"</span><div class="rq-body">${_qt.q}<span class="rq-a">${_qt.a}</span></div></div>`;
+  // Testimonial above the content so it's visible on load without scrolling
+  var _qt=quoteForStep(step); if(_qt){ var _img=_qt.img?`<img class="rq-img" src="${_qt.img}" alt="" loading="lazy">`:'<span class="rq-mark">"</span>'; h+=`<div class="room-quote rise" style="margin-bottom:18px">${_img}<div class="rq-body">${_qt.q}<span class="rq-a">${_qt.a}</span></div></div>`; }
 
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
