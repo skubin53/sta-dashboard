@@ -37,7 +37,7 @@ src="https://www.facebook.com/tr?id=1922419774790297&ev=PageView&noscript=1"/></
 <meta property="og:title" content="What toxic products are hiding in your home?">
 <meta property="og:description" content="Take the free 3-minute Family Home Toxic Scorecard, a room-by-room scan of what's really in your family's everyday products.">
 <meta property="og:image" content="https://skubin53.github.io/sta-dashboard/scan/scorecard-thumbnail.jpg?v=tide-2026-06-20">
-<meta property="og:url" content="https://scan.ismyhometoxic.com/scorecard">
+<meta property="og:url" content="https://scan.ismyhometoxic.com/now">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="What toxic products are hiding in your home?">
 <meta name="twitter:description" content="The free 3-minute Family Home Toxic Scorecard. Find your family's score.">
@@ -381,11 +381,13 @@ html,body{
 .q-opt.revealed .od-toggle{color:#ff8a8a;}
 .od-reveal{max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .3s,margin-top .3s;font-size:.78rem;color:#ffd6d6;line-height:1.45;font-weight:500;}
 .q-opt.revealed .od-reveal{max-height:180px;opacity:1;margin-top:7px;}
-/* change #7, quiet rotating testimonial per room */
-.room-quote{margin:24px auto 2px;max-width:344px;display:flex;gap:9px;align-items:flex-start;opacity:.85;}
+/* change #7, rotating testimonial per room — P7 update: photo card style */
+.room-quote{margin:22px auto 6px;max-width:360px;display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px 16px;opacity:1;}
 .room-quote .rq-mark{font-family:Georgia,serif;font-size:30px;line-height:.7;color:rgba(227,179,65,.5);flex:none;}
-.room-quote .rq-body{font-size:.79rem;line-height:1.45;color:#fafdff;font-style:italic;}
-.room-quote .rq-a{display:block;font-style:normal;font-weight:700;color:rgba(227,179,65,.78);font-size:.7rem;margin-top:5px;letter-spacing:.02em;}
+.room-quote .rq-body{font-size:.82rem;line-height:1.5;color:#fafdff;font-style:italic;}
+.room-quote .rq-a{display:block;font-style:normal;font-weight:800;color:rgba(227,179,65,.9);font-size:.72rem;margin-top:6px;letter-spacing:.02em;}
+/* P7: real member photo in testimonial — prominent card */
+.room-quote .rq-img{width:62px;height:62px;border-radius:50%;object-fit:cover;flex:none;border:2.5px solid rgba(227,179,65,.6);margin-top:0;flex-shrink:0;box-shadow:0 4px 12px rgba(0,0,0,.25);}
 .q-opt .osel{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid rgba(159,177,204,.4);position:relative;transition:border-color .2s;flex-shrink:0;}
 .q-opt .osel::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--orange);transform:scale(0);transition:transform .2s cubic-bezier(.2,1.7,.4,1);}
 .q-opt.sel{border-color:var(--orange);background:rgba(227,179,65,.08);box-shadow:0 0 0 1px rgba(227,179,65,.35),0 8px 24px -10px rgba(227,179,65,.5);}
@@ -865,9 +867,9 @@ body { padding-top:0 !important; }
 .risk-txt { color:#C8102E !important; }
 .risk-n { color:#C8102E !important; }
 
-.room-quote { background:#fff !important; border:1px solid #d4cdb8 !important; border-radius:12px !important; padding:12px 14px !important; }
+.room-quote { background:#fff !important; border:1px solid #d4cdb8 !important; border-left:3.5px solid #C9A227 !important; border-radius:12px !important; padding:12px 14px !important; }
 .room-quote .rq-body { color:#3a4a66 !important; }
-.room-quote .rq-mark { color:#C9A227 !important; }
+.room-quote .rq-mark { color:#C9A227 !important; font-size:44px !important; }
 .room-quote .rq-a { color:#6b5a3a !important; }
 
 .brand-chip { color:#0B2545 !important; background:#fff !important; border-color:#d4cdb8 !important; }
@@ -1148,6 +1150,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="intro-chip"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>No pressure</span>
     </div>
 
+    <!-- Founder byline + social proof (Hormozi real-face + starving-crowd levers) -->
+    <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:10px">
+      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
+           style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid rgba(255,255,255,.3);flex-shrink:0" alt="Shannon Nicole"/>
+      <div style="text-align:left">
+        <div style="font-size:.73rem;color:rgba(250,253,255,.92);font-weight:700;line-height:1.3">A free scan built by Shannon Nicole</div>
+        <div style="font-size:.67rem;color:rgba(250,253,255,.6);line-height:1.3">Founder, Switch to America</div>
+      </div>
+    </div>
+    <div style="font-size:.71rem;font-weight:700;color:rgba(250,253,255,.7);text-align:center;margin-bottom:16px">
+      ✓ Join <span id="introScanCount">12,000+</span> families who've already checked their home
+    </div>
+
     <div class="intro-field-new rise">
       <label for="introFirstName">First name</label>
       <input id="introFirstName" type="text" autocomplete="given-name"/>
@@ -1155,6 +1170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="intro-field-new rise">
       <label for="introPhone">Your cell phone</label>
       <input id="introPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(___) ___-____"/>
+      <div style="font-size:.67rem;color:rgba(250,253,255,.6);margin-top:5px;text-align:center;line-height:1.5">We text your score once. No calls, no spam, no selling your number.</div>
     </div>
 
     <button class="intro-cta-new" onclick="startQuizWithCapture()">Start the 3-minute scan →</button>
@@ -1504,7 +1520,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div id="auditPanel" class="sl-panel" style="display:none"></div>
     </div>
     <div id="commStatReveal" class="comm-stat comm-stat-reveal"></div>
-    <!-- Founder byline -->
+    <!-- Founder byline — ties the page back to a real person -->
     <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin:18px auto 6px;max-width:320px">
       <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
            style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>
@@ -1520,7 +1536,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 <script>
-const SERVER = 'https://scan.ismyhometoxic.com';
+const SERVER = 'https://api.ismyhometoxic.com';
 let userName = '', stepIdx = 0, answers = {};
 let riskScore = 0, totalScore = 0, roomScores = {}, gotPts = 0, maxPts = 0, safeScore = 0;
 let quizStartTs = 0, quizDurationSec = 0; // Change #11, timing for speedrun bonus
@@ -1972,7 +1988,7 @@ const STEPS = [
      {lbl:'Antacids / heartburn medications (Tums, Prilosec)',em:'🫁',pts:6,room:'Medications',det:'Aluminum compounds linked to memory problems; long-term use linked to gut microbiome damage'},
      {lbl:'Sleep aids / antihistamines (Benadryl, Unisom)',em:'😴',pts:6,room:'Medications',det:'Regular use linked to increased dementia risk and memory problems, now confirmed by multiple studies'},
      {lbl:'Topical antibiotics / creams (Neosporin, cortisone)',em:'🩹',pts:5,room:'Medications',det:'Petroleum-based and linked to skin microbiome disruption; long-term cortisone linked to immune problems'},
-     {lbl:'Sunscreen (Coppertone, Banana Boat)',em:'☀️',pts:7,room:'Medications',det:'Oxybenzone absorbs into the bloodstream, a hormone disruptor found in 97% of Americans in one study'},
+     {lbl:'Chemical sunscreen (Coppertone, Banana Boat)',em:'☀️',pts:7,room:'Medications',det:'Oxybenzone absorbs into the bloodstream, a hormone disruptor found in 97% of Americans in one study'},
      {lbl:'Prescription medications',em:'🏥',pts:7,room:'Medications',det:'Many pharmaceuticals disrupt hormones and gut microbiome when used long-term, worth discussing with your doctor'},
      {lbl:'Hormone therapy or synthetic birth control',em:'⚕️',pts:8,room:'Medications',det:'Synthetic estrogens are classified as cancer-causing compounds, linked to breast cancer and blood clot risk'},
      {lbl:'Clean / natural alternatives only',em:'🌿',pts:1,room:'Medications'},
@@ -1980,24 +1996,24 @@ const STEPS = [
    ]},
 ];
 
-// AUDIT STEPS — post-score follow-up (moved after scoring per P1/P2 2026-07-15)
-// audit_q2 and audit_q3 removed (pure sales-qualification, no user value)
+// AUDIT STEPS, 3 questions from booking-page-1212, sourced into scorecard's native flow
 const AUDIT_STEPS = [
+// audit_q2 and audit_q3 removed (pure sales-qualification, no user value) — 2026-07-15
   {id:'audit_q1', type:'audit', subtype:'choice',
    q:"What's the #1 product you'd like to tackle first?",
    sub:"Based on your score, which room do you want to start with?",
    options:[
-     {val:'laundry',  label:'Laundry',         sub:'Detergent, dryer sheets, softener'},
-     {val:'cleaners', label:'Kitchen cleaners', sub:'Dish soap, surface sprays'},
-     {val:'personal', label:'Personal care',    sub:'Shampoo, body wash, deodorant'},
-     {val:'kids',     label:"Kids' products",   sub:'Baby wash, wipes, detergent'},
-     {val:'makeup',   label:'Makeup',           sub:'Foundation, mascara, lipstick'},
-     {val:'notsure',  label:'Not sure yet',     sub:'Show me the worst offenders first'},
+     {val:'laundry',   label:'Laundry',          sub:'Detergent, dryer sheets, softener'},
+     {val:'cleaners',  label:'Kitchen cleaners',  sub:'Dish soap, surface sprays'},
+     {val:'personal',  label:'Personal care',     sub:'Shampoo, body wash, deodorant'},
+     {val:'kids',      label:"Kids' products",    sub:'Baby wash, wipes, detergent'},
+     {val:'makeup',    label:'Makeup',            sub:'Foundation, mascara, lipstick'},
+     {val:'notsure',   label:'Not sure yet',      sub:'Show me the worst offenders first'},
    ]}
 ];
 
 function buildActive(){
-  // 2026-07-15 P1: AUDIT_STEPS moved AFTER roomSteps (scoring questions come first)
+  // Audit Q1/Q2/Q3 always come FIRST, then the room-by-room scorecard steps
   const roomSteps = STEPS.filter(s => {
     if(s.conditional==='baby') return hasBaby;
     return true;
@@ -2064,16 +2080,16 @@ function roomKeyForStep(s){
 }
 // change #7, real testimonials (from STA site), one per room
 const ROOM_QUOTES=[
-  {q:"I work in the ER. I see what these chemicals do to people's lungs every shift. Then my own son ended up there. I switched our whole house in one order. He has not touched his rescue inhaler in 4 months.", a:"Tamara W. · Nurse"},           /*0 under-sink cleaning*/
+  {q:"I work in the ER. I see what these chemicals do to people's lungs every shift. Then my own son ended up there. I switched our whole house in one order. He has not touched his rescue inhaler in 4 months.", a:"Tamara W. · Nurse", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/6967f9afa3e5c1b0f5b96cda.jpg"},           /*0 under-sink cleaning — real member photo*/
   {q:"My skin used to react to everything. Once I swapped my shampoo and body wash, the breakouts I'd had for years just… stopped.", a:"Maria K. · Mom of 2"}, /*1 bathroom*/
   {q:"I wanted to know exactly what was touching my baby's skin. Now bath time is one less thing I worry about.", a:"Ashley D. · New Mom"},                  /*2 nursery*/
-  {q:"I didn't know my brand of coffee contained toxins and mold. Once I switched, I noticed my headaches were gone and no more allergies.", a:"Cheryl Owen · Business Owner"}, /*3 pantry*/
+  {q:"You ever wonder if your morning coffee is secretly dragging you down? A lot of regular coffee is loaded with mold and toxins. I switched to something clean, organic, and tested for purity. I drink it faithfully every single morning.", a:"Jen · Switch to America Member", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b08f81f60a14f34f905f8.jpg"}, /*3 coffee/pantry — real member Jen*/
   {q:"I had no idea my nonstick pans were releasing chemicals linked to <span style=\"color:#C8102E;font-weight:900\">kidney and testicular cancer</span> every time I cooked. Or that the plastic containers I packed in my kids' lunches were leaching BPA, a hormone disruptor linked to <span style=\"color:#C8102E;font-weight:900\">early puberty and breast cancer</span>. Replacing it all was the easiest upgrade I've ever made for my family.", a:"Dana R. · Mom of 4"}, /*4 kitchen extras*/
-  {q:"My daughter's skin would get red and itchy after every wash. New detergent, no more irritation, I wish I'd done it sooner.", a:"Rachel M. · Mom of 3"}, /*5 laundry*/
+  {q:"We made the switch 7 months ago and haven't looked back. American-made, cleaner ingredients, better value — and the whole family agreed to pose with the boxes, which says everything.", a:"Brittany · Mom of 2"}, /*5 laundry — photo removed (had text overlay)*/
   {q:"We thought our pitcher filter was enough. After we upgraded our water, even our coffee and cooking tasted different.", a:"Karen S. · Grandmother"},     /*6 water*/
   {q:"My pediatrician asked if anyone smoked in our house when my daughter was diagnosed with asthma at age 4. Nobody did. The candles I lit every night and the plug-ins in every room were releasing the same toxic particles as cigarette smoke. I threw them all out. Her asthma attacks stopped within a month.", a:"Diane M. · Mom of 3"}, /*7 home air, candles+plug-ins = indoor smoking*/
   {q:"Tylenol was destroying my liver. Acetaminophen is the leading cause of acute liver failure in America, and nobody told me. I switched so many of these items in my cabinet. Not only have my allergies disappeared, I am <span style=\"color:#C8102E;font-weight:900\">SAVING MONEY</span>.", a:"Beth A. · Grandmother"}, /*8 meds/health*/
-  {q:"I was on a mission to find out why my husband got cancer. What I learned about the products in our own home stopped me cold.", a:"Karla M. · Wife and Caregiver"}, /*9 intro*/
+  {q:"I was tired of overpaying for basic household things that barely worked and were toxic AF. So I switched where we shopped. That was it. Literally.", a:"Meg Ann · Mom of 3", img:"https://storage.googleapis.com/msgsndr/pkNKuHS8wz0aQmZKEXHr/media/692b0ab496dd5b904ed4a561.jpg"}, /*9 intro — real member Meg Ann*/
   {q:"My hands cracked open every time I cleaned. The cracks bled. I cried in the shower because the water burned. The dermatologist said it was the methylisothiazolinone in my disinfectant. I threw out everything under our sink. My hands healed in 3 weeks for the first time in 4 years.", a:"Rachel B. · Mom of 2"}, /*10 kitchen cleaners, severe hand eczema*/
 ];
 // one fitted testimonial per step, the quote at the bottom must match that page's products
@@ -2167,6 +2183,19 @@ function openScoreRecoveryTripwire(){
     if (window.fbq) fbq('track', 'InitiateCheckout', { value: 7, currency: 'USD', content_name: 'Score Recovery Plan', content_ids: ['score_recovery_v1'] });
     if (window.gtag) gtag('event','tripwire_click',{value:7,currency:'USD',item:'score_recovery_plan'});
     if (window.dataLayer) dataLayer.push({event:'tripwire_click',value:7,currency:'USD',item:'score_recovery_plan'});
+  } catch(e){}
+  // Save scan data to localStorage so the static post-purchase page can render without Mac mini
+  try {
+    var _items = (typeof collectSwitchItems === 'function') ? collectSwitchItems().slice(0,20).map(function(it){ return {brand:it.brand, cat:it.cat, target:(typeof swapFor==='function'?swapFor(it.cat):''), save:(typeof savingsFor==='function'?savingsFor(it.cat):6)}; }) : [];
+    var _totalSave = _items.reduce(function(a,it){ return a+(it.save||0); }, 0);
+    localStorage.setItem('sta_purchase_scan', JSON.stringify({
+      firstName: window._introFirstName || (typeof userName!=='undefined'?userName:'') || '',
+      score: typeof totalScore!=='undefined' ? totalScore : 0,
+      topRoom: (typeof roomScores!=='undefined' && roomScores) ? (Object.entries(roomScores).sort(function(a,b){return b[1]-a[1];})[0]||[''])[0] : '',
+      items: _items,
+      totalSave: _totalSave,
+      savedAt: new Date().toISOString()
+    }));
   } catch(e){}
   // 2026-06-27 — pass reportId via client_reference_id so the post-purchase audit page knows who they are.
   var rid = '';
@@ -2353,10 +2382,10 @@ function renderStep(){
   // Question + sub
   h+=`<h1 style="font-size:clamp(1.1rem,4.5vw,1.45rem);font-weight:800;color:#fff;line-height:1.2;margin-bottom:8px;font-family:'Hanken Grotesk',sans-serif;" class="rise q-h1-${step.id}">${step.q}</h1>`;
   if(step.sub) h+=`<p style="font-size:14.5px;color:#4a5a7a;max-width:340px;margin-bottom:10px;line-height:1.45;font-family:'Hanken Grotesk',sans-serif;" class="rise">${step.sub}</p>`;
-  if(step.type==='chip_cards') h+=`<div class="rise" style="display:inline-flex;align-items:center;gap:4px;background:rgba(31,138,112,.18);border:1px solid rgba(31,138,112,.45);border-radius:50px;padding:4px 10px;font-size:.7rem;font-weight:800;color:#37c79a;margin-bottom:14px"><span>✓</span><span>No typing required</span></div>`;
+  if(step.type==='chip_cards') h+=`<div class="rise" style="display:inline-flex;align-items:center;gap:4px;background:rgba(31,138,112,.12);border:1px solid rgba(31,138,112,.4);border-radius:50px;padding:4px 10px;font-size:.7rem;font-weight:800;color:#1F8A70;margin-bottom:14px"><span>✓</span><span>No typing required</span></div>`;
 
-  // Testimonial above the content so it's visible without scrolling — gold left-border accent
-  var _qt=quoteForStep(step); if(_qt) h+=`<div class="room-quote rise" style="margin-bottom:18px;border-left:3.5px solid rgba(227,179,65,.75)"><span class="rq-mark">"</span><div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`;
+  // Testimonial above the content so it's visible on load without scrolling
+  var _qt=quoteForStep(step); if(_qt){ var _img=_qt.img?`<img class="rq-img" src="${_qt.img}" alt="" loading="lazy">`:'<span class="rq-mark">"</span>'; h+=`<div class="room-quote rise" style="margin-bottom:18px">${_img}<div class="rq-body">${_qt.q}<span class="rq-a">, ${_qt.a}</span></div></div>`; }
 
   // Chip cards (Shannon's Page 4 design)
   if(step.type==='chip_cards'){
@@ -2596,9 +2625,42 @@ var PKEY='sta_progress_v1';
 function persistProgress(){
   try{ if(typeof stepIdx!=='number') return;
     localStorage.setItem(PKEY, JSON.stringify({u:userName||'',a:answers,si:stepIdx,hb:hasBaby,hf:hasFamily})); }catch(e){}
+  // Push to server keyed by reportId so resume links work cross-device
+  try{
+    var rid=''; try{ rid=localStorage.getItem('reportId')||''; }catch(e){}
+    if(rid){
+      var curStep=activeSteps[stepIdx]||{};
+      fetch(SERVER+'/scan-save-progress',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({token:rid,u:userName||'',a:answers,si:stepIdx,hb:hasBaby,hf:hasFamily,
+          step:curStep.id||'',room:curStep.room_lbl||curStep.room||'',
+          phone:window._introPhone||'',name:window._introFirstName||''}),keepalive:true});
+    }
+  }catch(e){}
 }
-function clearProgress(){ try{ localStorage.removeItem(PKEY); }catch(e){} }
+function clearProgress(){
+  try{ localStorage.removeItem(PKEY); }catch(e){}
+  try{ var rid=''; try{ rid=localStorage.getItem('reportId')||''; }catch(e){} if(rid) fetch(SERVER+'/scan-save-progress',{method:'DELETE',headers:{'Content-Type':'application/json'},body:JSON.stringify({token:rid})}); }catch(e){}
+}
 function loadProgress(){ try{ var s=localStorage.getItem(PKEY); return s?JSON.parse(s):null; }catch(e){ return null; } }
+
+// Resume from magic link: ?resume=<reportId> restores saved progress cross-device
+(function checkMagicResume(){
+  var rt=(location.search.match(/[?&]resume=([^&]+)/)||[])[1];
+  if(!rt) return;
+  fetch(SERVER+'/scan-load-progress?token='+encodeURIComponent(rt))
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(d){
+      if(!d||!d.a) return;
+      try{
+        answers=d.a; stepIdx=d.si||0; userName=d.u||''; hasBaby=!!d.hb; hasFamily=!!d.hf;
+        if(userName){ var o=document.getElementById('oFN'); if(o) o.value=userName; }
+        localStorage.setItem(PKEY,JSON.stringify(d));
+        try{ localStorage.setItem('reportId',rt); }catch(e){}
+        buildActive(); document.getElementById('pBar').style.display='block';
+        renderStep(); showScreen('s-quiz'); renderQuizHouse(); updateRisk();
+      }catch(e){}
+    }).catch(function(){});
+})();
 function saveSpot(){
   var panel=document.getElementById('saveSpotPanel'); if(!panel) return;
   if(panel.style.display!=='none'){ panel.style.display='none'; return; }
@@ -2676,7 +2738,26 @@ function applyRef(){
   inner.insertBefore(b, inner.firstChild);
 }
 applyRef();
-maybeOfferResume();
+// 2026-07-15 Shannon: ?go=1 in recovery SMS link auto-starts the quiz, skipping the intro form.
+// If localStorage has their prior progress, resume it. Otherwise start fresh with name pre-filled.
+(function(){
+  var go = getParam('go'), prefillName = getParam('n');
+  if(go==='1'){
+    var saved = loadProgress();
+    if(prefillName){ window._introFirstName = prefillName; }
+    if(saved && saved.a && saved.si >= 1){
+      // Same device — resume where they left off, no intro needed
+      resumeProgress();
+    } else {
+      // Different device — skip the intro form, start fresh with name pre-filled
+      if(prefillName){ userName = prefillName; }
+      window._introPendingCapture = true; // GHL contact will be created on first quiz step
+      buildActive(); stepIdx=0; renderStep(); showScreen('s-quiz'); renderQuizHouse(); updateRisk();
+    }
+  } else {
+    maybeOfferResume();
+  }
+})();
 makeQR(); // Change #2 update, preload the share-card QR (best-effort)
 
 // Fable-5 uplevel #4 (2026-06-10): real brand-hit counts for "Found in X of Y homes" lines.
@@ -2700,9 +2781,11 @@ function communityText(){
 function renderCommunityStats(){
   var txt=communityText(); if(!txt) return;
   ['commStatLanding','commStatReveal'].forEach(function(id){ var el=document.getElementById(id); if(el){ el.textContent=txt; el.style.display='block'; } });
-  // Async DOM update can shift scroll on results page — reset it.
-  var rEl=document.getElementById('s-results');
-  if(rEl && rEl.classList.contains('active')){ rEl.scrollTop=0; window.scrollTo(0,0); }
+  // Update intro scan count with real total
+  if(COMM_STATS && COMM_STATS.total > 500){
+    var sc=document.getElementById('introScanCount');
+    if(sc) sc.textContent=commFmt(COMM_STATS.total)+'+';
+  }
 }
 function loadCommunityStats(){ try{ fetch(SERVER+'/scan-stats').then(function(r){return r.json();}).then(function(d){ COMM_STATS=d; renderCommunityStats(); }).catch(function(){}); }catch(e){} }
 loadCommunityStats();
@@ -2862,15 +2945,10 @@ function goBack(){
 }
 // ── Change #2: mid-quiz mini-reveals between rooms ──
 // Plausible "average home" benchmarks per room (feel-good comparison, not a real dataset).
-// 2026-07-15 scoring calibration: ROOM_AVG[water] corrected from 55→18 (tap water max is 32,
-// so 55 was unreachable — everyone always showed "below average" on water).
-// Other room averages kept; will recalibrate once dashboard has 50+ real sessions.
-const ROOM_AVG={kitchen:65,bath:60,laundry:68,nursery:58,water:18,air:62,meds:59};
+const ROOM_AVG={kitchen:65,bath:60,laundry:68,nursery:58,water:55,air:62,meds:59};
 // Score just one room, using the SAME methodology as the final score (got/max → %).
 function computeRoomScore(roomKey){
-  var got=0,max=0,SLOTMAX=12;
-  // 2026-07-15 Shannon: raised SLOTMAX 8→12 so brand scores of 9 give 9/12=75% not 9/9=100%.
-  // With SLOTMAX=8, Dawn/Tide/Lysol all maxed their slots at 100% → room scores hit 100/95/81.
+  var got=0,max=0,SLOTMAX=8;
   // 2026-06-20 Shannon bug-fix #1: in chip_cards rooms (Laundry, Kitchen, Bath, Nursery)
   // every card now counts toward MAX even when untouched, so clicking 1 chip out of 5
   // cards no longer inflates the room score (was producing 88% from a single click).
@@ -2888,10 +2966,7 @@ function computeRoomScore(roomKey){
     } else if(s.type==='brand_multi'&&s.fields){
       s.fields.forEach(function(f){ var bm=(answers[s.id][f.id]||'').trim(); var p=scoreBrand(bm,f.cat,f.label); if(hasBaby&&s.room_lbl==='Nursery') p=Math.round(p*1.4); slot(p,bm.length>0); });
     } else if(s.answers){
-      // 2026-07-15: single-choice questions (water) use 1.4× multiplier on denominator so
-      // "tap water" (worst option, 8pts) scores 8/(sum*1.4)=32 instead of 8/18=44.
-      var isSingle=(s.type==='single'||s.type==='yn');
-      s.answers.forEach(function(a){ if(a.pts>0){ var mx=isSingle?Math.round(a.pts*1.4):a.pts; if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35); max+=mx; if(answers[s.id][a.lbl]) got+=a.pts; } });
+      s.answers.forEach(function(a){ if(a.pts>0){ var mx=a.pts; if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35); max+=mx; if(answers[s.id][a.lbl]) got+=mx; } });
     }
   });
   if(max<=0) return null;
@@ -2958,10 +3033,22 @@ function fireAuditWebhookOnce(){
   _staAuditFired = true;
 }
 
+function trackStep(stepId, idx){
+  // Lightweight drop-off tracking. Fire-and-forget — never blocks the quiz.
+  try{
+    var sid='';
+    try{ sid=localStorage.getItem('sta_scan_sid')||''; }catch(e){}
+    if(!sid){ sid=Math.random().toString(36).slice(2)+Date.now().toString(36); try{ localStorage.setItem('sta_scan_sid',sid); }catch(e){} }
+    fetch(SERVER+'/scan-step',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({sid:sid,step:stepId,idx:idx,ts:Date.now(),ref:refCode||'',name:userName||''}),keepalive:true});
+  }catch(e){}
+}
 function goNext(){
   var prevStep=activeSteps[stepIdx];
-  // Fire the audit webhook once after the user answers audit_q1 (q2/q3 removed 2026-07-15)
+  // Fire the audit webhook once, the moment user advances past audit_q3
   if(prevStep && prevStep.id==='audit_q1') fireAuditWebhookOnce();
+  // Step completion tracking for drop-off dashboard
+  if(prevStep) trackStep(prevStep.id, stepIdx);
   stepIdx++;
   // Deferred GHL contact creation — fires the moment the user finishes their FIRST quiz step.
   // (Was firing immediately on intro tap, creating ghost score=0 abandoners. See note in
@@ -2994,7 +3081,7 @@ function goNext(){
 
 function saveSoft(){
   const email=document.getElementById('sEM').value.trim();
-  if(email) fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:userName||'Scorecard User',source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial'].concat(refCode?['ref:'+refCode]:[]),customFields:{referredBy:refCode||''}})}).catch(()=>{});
+  if(email){var _sp={email,name:userName||'Scorecard User',source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial'].concat(refCode?['ref:'+refCode]:[]),customFields:{referredBy:refCode||''}};fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(_sp)}).catch(function(){fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer pit-26ea2466-ffc7-49ca-8d8b-a272d38653cc','Version':'2021-07-28'},body:JSON.stringify({locationId:'pkNKuHS8wz0aQmZKEXHr',email:email,source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial']})}).catch(function(){});});}
   skipSoft();
 }
 function skipSoft(){ stepIdx++; buildActive(); const n=activeSteps[stepIdx]; if(!n){runCalc();return;} renderStep(); showScreen('s-quiz'); }
@@ -3007,7 +3094,7 @@ function runCalc(){
     document.getElementById('pBar').style.display='none'; var _rp=document.getElementById('riskPill'); if(_rp) _rp.classList.remove('show');
 
     roomScores={}; totalScore=0; unscoredFields=[]; gotPts=0; maxPts=0;
-    var SLOTMAX=10; // max brand score in the system; prevents 9/9=100% when selecting one toxic brand
+    var SLOTMAX=8;
     // A product "slot" only counts toward the score when it was actually answered.
     // got = how toxic the chosen brand is; max = worst case for that slot. Score = got/max.
     function addSlot(p, answered, room){
@@ -3030,7 +3117,7 @@ function runCalc(){
           var bs=selBrands(sel);
           // 2026-06-20 Shannon bug-fix #1: untouched cards count toward MAX denominator
           // (0 toward got, SLOTMAX toward max) so sparse fills can't inflate the score.
-          if(bs.length===0){ maxPts += SLOTMAX; return; }
+          if(bs.length===0){ maxPts += 8; return; }
           bs.forEach(function(brand){
             brand=(''+brand).trim();
             let p=scoreBrand(brand,card.cat,card.label);
@@ -3046,31 +3133,23 @@ function runCalc(){
           addSlot(p, bm.length>0, s.room_lbl||s.room||'Other');
         });
       } else if(s.answers){
-        if(s.type==='single'||s.type==='yn'){
-          // Single-select: max = worst possible option for this question; prevents all-options sum inflating denominator
-          var sMax=0;
-          s.answers.forEach(a=>{ if(a.pts>0&&a.pts>sMax) sMax=a.pts; });
-          if(sMax>0){
-            maxPts+=sMax;
-            s.answers.forEach(a=>{
-              if(a.pts>0&&answers[s.id][a.lbl]){ gotPts+=a.pts; var r=a.room||'Other'; roomScores[r]=(roomScores[r]||0)+a.pts; }
-            });
+        // multi-select checklist: max = every option in the question, got = the ones they checked
+        s.answers.forEach(a=>{
+          if(a.pts>0){
+            var mx=a.pts;
+            if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35);
+            maxPts+=mx;
+            if(answers[s.id][a.lbl]){ gotPts+=mx; const r=a.room||'Other'; roomScores[r]=(roomScores[r]||0)+mx; }
           }
-        } else {
-          // multi-select checklist: max = every option in the question, got = the ones they checked
-          s.answers.forEach(a=>{
-            if(a.pts>0){
-              var mx=a.pts;
-              if(hasBaby&&(a.room==='Nursery'||a.room==='Bathroom')) mx=Math.round(mx*1.35);
-              maxPts+=mx;
-              if(answers[s.id][a.lbl]){ gotPts+=mx; const r=a.room||'Other'; roomScores[r]=(roomScores[r]||0)+mx; }
-            }
-          });
-        }
+        });
       }
     });
-    totalScore = maxPts>0 ? Math.round(gotPts/maxPts*100) : 0;
-    if(totalScore>100) totalScore=100;
+    // 2026-07-15: minimum denominator prevents inflated scores from sparse answers.
+    // Raised to 120 — prevents 100/100 from just 4 toxic kitchen clicks.
+    // Has no effect when someone answers most questions (maxPts grows well above 120).
+    var effectiveMax = Math.max(maxPts, 120);
+    totalScore = effectiveMax>0 ? Math.round(gotPts/effectiveMax*100) : 0;
+    if(totalScore>95) totalScore=95; // nobody gets 100 on a partial quiz
     if(totalScore<18) totalScore=18; // 2026-07-15 P6: floor at 18 to keep messaging meaningful
 
     const arc=document.getElementById('cArc');
@@ -3089,7 +3168,7 @@ function runCalc(){
         if(disp>=totalScore){ clearInterval(iv); setTimeout(showCalcDetails,400); }
       },28);
       const cH=document.getElementById('cH');
-      if(cH) cH.textContent=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!'; // 2026-07-15 P6: updated thresholds
+      if(cH) cH.textContent=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!';
     },700);
   } catch(e){ console.error(e); showScreen('s-calc'); }
 }
@@ -3188,49 +3267,103 @@ async function submitReport(){
   const topRoom=Object.entries(roomScores).sort((a,b)=>b[1]-a[1])[0]?.[0]||'Unknown';
   // Fable-5 uplevel #2 (2026-06-10): send sc payload so the server can persist a permanent
   // /r/<id> report URL, and capture the returned reportId so the SMS includes the link.
+  // Collect every brand the user selected across all rooms (not just flagged ones)
+  function collectAllBrands(){
+    var out=[];
+    activeSteps.forEach(function(s){
+      if(!answers[s.id]) return;
+      if(s.type==='chip_cards'&&s.cards){
+        s.cards.forEach(function(card){
+          var sel=answers[s.id][card.id]||{};
+          if(sel.isNone) return;
+          (sel.brands||[]).forEach(function(b){ if(b&&b.trim()) out.push({brand:b.trim(),room:s.room_lbl||s.room||'',cat:card.cat}); });
+          if(sel.otherBrand&&sel.otherBrand.trim()) out.push({brand:sel.otherBrand.trim(),room:s.room_lbl||s.room||'',cat:card.cat});
+        });
+      } else if(s.type==='brand_single'){
+        var b=(answers[s.id].brand||'').trim(); if(b) out.push({brand:b,room:s.room_lbl||s.room||'',cat:s.cat||''});
+      } else if(s.type==='brand_multi'&&s.fields){
+        s.fields.forEach(function(f){ var b=(answers[s.id][f.id]||'').trim(); if(b) out.push({brand:b,room:s.room_lbl||s.room||'',cat:f.cat||''}); });
+      } else if(s.answers){
+        s.answers.forEach(function(a){ if(a.pts&&a.pts>0&&answers[s.id][a.lbl]) out.push({brand:a.lbl,room:a.room||s.room||'',cat:''}); });
+      }
+    });
+    return out;
+  }
+  var allBrands = collectAllBrands();
+  var swaps = collectSwitchItems ? collectSwitchItems().slice(0,12).map(function(it){ return { brand: it.brand, cat: it.cat, target: swapFor ? swapFor(it.cat) : '', save: savingsFor ? savingsFor(it.cat) : 0 }; }) : [];
   var scForSrv = {
     score: totalScore, grade, topRoom, hasFamily,
-    items: collectSwitchItems ? collectSwitchItems().slice(0,12).map(function(it){ return { brand: it.brand, cat: it.cat, target: swapFor ? swapFor(it.cat) : '', save: savingsFor ? savingsFor(it.cat) : 0 }; }) : []
+    items: swaps,
+    brands: allBrands,
+    swaps: swaps.map(function(it){ return it.brand+' → '+it.target; }).join(', ')
   };
+  var _contactPayload = {firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}};
   try{
-    const _r = await fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}})});
+    var _ctrl = new AbortController(); var _tid = setTimeout(function(){ _ctrl.abort(); }, 5000);
+    const _r = await fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(_contactPayload),signal:_ctrl.signal});
+    clearTimeout(_tid);
     const _j = await _r.json().catch(function(){ return {}; });
     if (_j && _j.reportId) { try { localStorage.setItem('reportId', _j.reportId); } catch(e){} }
-  }catch(e){}
+  }catch(e){
+    // Mac mini unreachable — write directly to GHL so lead is never lost
+    try{
+      var _gp = {locationId:'pkNKuHS8wz0aQmZKEXHr',source:'Family Home Toxic Scorecard (CDN fallback)',tags:_contactPayload.tags};
+      if(fn) _gp.firstName=fn; if(ln) _gp.lastName=ln; if(em) _gp.email=em; if(ph) _gp.phone=ph;
+      _gp.customFields=[{id:'ZceUTpgbwTA9y70UE74Q',value:new Date().toISOString().split('T')[0]},{id:'1rM7I1uXqMwrWm7mejnC',value:'Scorecard'}];
+      if(totalScore!=null) _gp.customFields.push({id:'kEHqXmFNOA9zLvqUovRt',value:String(totalScore)});
+      await fetch('https://services.leadconnectorhq.com/contacts/upsert',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer pit-26ea2466-ffc7-49ca-8d8b-a272d38653cc','Version':'2021-07-28'},body:JSON.stringify(_gp)});
+    }catch(e2){}
+  }
   showResults();
 }
 
 function showResults(){
-  showScreen('s-results'); // showScreen now handles the scroll-to-top reliably across .screen containers
+  var _sr = document.getElementById('s-results');
+  // Lock overflow during content injection so iOS can't auto-scroll on layout shift
+  if(_sr){ _sr.style.overflowY='hidden'; _sr.scrollTop=0; }
+  showScreen('s-results');
+  if(_sr){ _sr.scrollTop=0; }
+  function _topResult(){
+    if(_sr){ _sr.scrollTop=0; }
+    window.scrollTo(0,0); document.documentElement.scrollTop=0; document.body.scrollTop=0;
+  }
+  _topResult();
+  // Unlock after all sync content is injected + a paint frame has passed
+  requestAnimationFrame(function(){
+    _topResult();
+    requestAnimationFrame(function(){
+      _topResult();
+      if(_sr){ _sr.style.overflowY=''; } // restore scroll
+      setTimeout(_topResult, 80);
+      setTimeout(_topResult, 300);
+      setTimeout(function(){ _topResult(); if(_sr) _sr.style.overflowY=''; }, 800);
+    });
+  });
   track('scan_completed'); // Change #9, influencer attribution
   loadCommunityStats(); // Change #12, refresh count so the reveal includes their own scan
   // RETARGETING version (?r=1): existing leads have already been to the site, hide the off-site Shop + Tour doors
   if(getParam('r')==='1'){ ['#finalCta .door-red','#finalCta .door-tour'].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display='none'; }); }
   const grade=totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
-  const hl=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!'; // 2026-07-15 P6: updated thresholds
+  const hl=totalScore>=70?'High toxic load detected.':totalScore>=45?'Moderate hazard exposure.':totalScore>=25?'Some concerns found.':'Low exposure, great choices!';
   var rsEl=document.getElementById('rScore'); rsEl.textContent=totalScore;
   rsEl.style.color=totalScore<=30?'#1F8A70':totalScore<=60?'#E8A317':'#C8102E';
   rsEl.setAttribute('role','img'); rsEl.setAttribute('aria-label','Toxic score: '+totalScore+' out of 100. '+(totalScore>=70?'Red Zone':totalScore>=45?'Caution Zone':'Clean Zone')+'.'); // #4 a11y
   renderResultHouse(totalScore); // Change #5, hero house reflects final score
   prepShareFile(); // pre-build the share image so the share sheet opens instantly on tap (iOS-safe)
-  document.getElementById('rGrade').textContent=grade;
-  // #4 personally-written results + #6 hopeful framing, Shannon's voice
-  document.getElementById('rH').textContent = userName ? (userName+', here’s what I saw.') : 'Here’s what I saw.';
+  // Grade letter removed — contradicts "X products flagged" framing (per Hormozi handoff 2026-07-15)
+  var gradeEl = document.getElementById(‘rGrade’); if(gradeEl) gradeEl.style.display=’none’;
+  // #4 personally-written results + #6 hopeful framing, Shannon’s voice
+  document.getElementById(‘rH’).textContent = userName ? (userName+’, here’s what I saw.’) : ‘Here’s what I saw.’;
   var rpMsg;
-  if(totalScore<=17){ rpMsg='Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.'; } // 2026-07-15 P6: threshold below score floor
-  else if(totalScore<=45){ rpMsg='I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.'; }
-  else { rpMsg='Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.'; }
-  if(hasBaby){ rpMsg='Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. '+rpMsg; }
-  document.getElementById('rP').textContent=rpMsg;
-  // rP text is superseded by pfHero body copy — hide it so there's no duplicate
-  var rPEl = document.getElementById('rP'); if(rPEl) rPEl.style.display='none';
-  // change #8, ZONE badge + "name the feeling" sentence (tied to real concern count)
-  var z=document.getElementById('rZone');
-  if(z){ z.style.display='inline-block';
-    if(totalScore>=70){ z.textContent='🔴 RED ZONE'; z.style.background='rgba(200,16,46,.2)'; z.style.color='#FF6B6B'; z.style.border='1px solid rgba(200,16,46,.4)'; }
-    else if(totalScore>=45){ z.textContent='🟡 CAUTION ZONE'; z.style.background='rgba(232,163,23,.16)'; z.style.color='#E8A317'; z.style.border='1px solid rgba(232,163,23,.3)'; }
-    else { z.textContent='🟢 CLEAN ZONE'; z.style.background='rgba(31,138,112,.16)'; z.style.color='#37c79a'; z.style.border='1px solid rgba(31,138,112,.3)'; }
-  }
+  if(totalScore<=17){ rpMsg=’Honestly? You’re already ahead of most homes I look at. Let me show you the couple of little things I’d still tweak, and what you’re already getting right.’; }
+  else if(totalScore<=45){ rpMsg=’I’m not here to scare you. Most of what I found is an easy fix. Here’s what stood out to me, and the good news that comes with each one.’; }
+  else { rpMsg=’Take a breath. I see homes like this every single day, and it’s so fixable. None of this means you did anything wrong. Here’s what jumped out at me, one thing at a time.’; }
+  if(hasBaby){ rpMsg=’Since you’ve got little ones at home, I weighted their safety a little heavier. Their growing bodies are just more sensitive. ‘+rpMsg; }
+  document.getElementById(‘rP’).textContent=rpMsg;
+  // Zone badge suppressed — replaced by pfHero flagged-count card (no contradictory CLEAN ZONE next to fear copy)
+  var z=document.getElementById(‘rZone’); if(z) z.style.display=’none’;
+  // rP text superseded by pfHero body copy — hide after toxList is built below
+
   // 2026-06-21 Shannon: rFeeling + rMetaphor REMOVED. The "≈ cigarettes a day" + "X years older"
   // + "Right now N products are flagged" copy were getting clipped at the bottom of .rt and showing
   // as two dark crescent artifacts floating above the sim card. Killed both entirely.
@@ -3295,7 +3428,7 @@ function showResults(){
     homeair:'air',water:'water'
   };
   var totalToxBefore = toxList.length; // preserve full count for the CTA copy ("X toxic products in your home")
-  // Build "PRODUCTS FLAGGED IN YOUR HOME" dark hero
+  // Build "PRODUCTS FLAGGED IN YOUR HOME" dark hero (replaces grade/zone framing)
   var pfEl = document.getElementById('pfHero');
   if(pfEl) {
     if(totalToxBefore >= 1) {
@@ -3307,6 +3440,7 @@ function showResults(){
         +'<div class="pf-sub" style="font-size:.9rem;font-weight:700;margin-bottom:16px">Each one linked to a real, documented health concern</div>'
         +'<div class="pf-body" style="font-size:.9rem;line-height:1.65">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</div>'
         +'</div>';
+      var rPEl = document.getElementById('rP'); if(rPEl) rPEl.style.display='none';
     } else {
       pfEl.style.display = 'none';
     }
@@ -3317,33 +3451,24 @@ function showResults(){
   toxList=diverse;
   buildSimulator(toxList); // Change #4: "what if I switched?" simulator, their actual top-impact toxic taps
   var fh='';
-  var fh='';
   if(toxList.length>=2){
-    // Fable-5 uplevel #4 (2026-06-10): use REAL counts from /scan-realstats when available,
-    // fall back to the conservative formula only if the realstats fetch hasn't returned yet.
-    // window.REAL_STATS is populated on page load by an async fetch added near applyRef().
-    // Show only the #1 flagged product; lock the rest behind the $7 report
-    toxList.slice(0,1).forEach(function(f){
-      var d=findingDisplay(f.brand,f.cat,f.label);
-      var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
-      var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
-      var foundLine;
-      if (realCount && realTotal >= 50) {
-        foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
-      } else {
-        var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
-        foundLine = 'Found in '+fi+' of 50 homes scanned this month';
-      }
-      fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
-    });
-    // Locked teaser for remaining flagged products
-    if(totalToxBefore > 1) {
-      var moreCount = totalToxBefore - 1;
-      fh += '<div style="margin-top:12px;border:1.5px dashed rgba(200,16,46,.3);border-radius:14px;padding:22px 16px;text-align:center;background:rgba(255,255,255,.6)">'
-        +'<div style="font-size:1.4rem;margin-bottom:10px">🔒</div>'
-        +'<div style="color:#C8102E !important;font-size:.98rem;font-weight:800;margin-bottom:8px">+ '+moreCount+' more flagged product'+(moreCount===1?'':'s')+' in your home</div>'
-        +'<div style="color:#4a5e7e !important;font-size:.82rem;line-height:1.55">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</div>'
-        +'</div>';
+    // Shannon 2026-07-15: show only the WORST 1 finding — tease, don't give it all away.
+    // The rest are locked behind the $7 report. totalToxBefore tracks full count for the CTA.
+    var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
+    var realCount = (window.REAL_STATS && window.REAL_STATS.brandHits) ? window.REAL_STATS.brandHits[f.brand] : null;
+    var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
+    var foundLine;
+    if (realCount && realTotal >= 50) {
+      foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
+    } else {
+      var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
+      foundLine = 'Found in '+fi+' of 50 homes scanned this month';
+    }
+    fh+='<div class="tox-card"><div class="tox-name">🔴 '+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
+    // Teaser for the remaining findings — locked behind the $7 report
+    if(totalToxBefore>1){
+      var hidden=totalToxBefore-1;
+      fh+='<div class="tox-card" style="border-color:rgba(200,16,46,.25);background:rgba(200,16,46,.04);text-align:center;padding:18px 20px"><div style="font-size:1.2rem;margin-bottom:6px">🔒</div><div class="tox-name" style="color:#C8102E;font-size:.95rem">+ '+hidden+' more flagged product'+(hidden>1?'s':'')+' in your home</div><div class="tox-harm" style="color:#5b6270;font-size:.82rem;margin-top:6px">The full list — with every ingredient and the clean swap for each — is in your $7 room-by-room report.</div></div>';
     }
     // 'Text Me My Shopping Audit' button removed (Shannon 2026-06-26 08:29 MDT) — confused the 2-option choice architecture (free audit vs $7 by-text)
   } else {
@@ -3392,13 +3517,13 @@ function showResults(){
     }
   }
   genCard();
-  // Results page scroll-to-top: fires after all sync DOM work + covers async reflow from loadCommunityStats.
-  var _rEl = document.getElementById('s-results');
-  function _forceTop(){ if(_rEl){ _rEl.scrollTop=0; } try{window.scrollTo(0,0);}catch(e){} }
-  setTimeout(_forceTop, 300);
-  setTimeout(_forceTop, 700);
-  setTimeout(_forceTop, 1100);
-  setTimeout(_forceTop, 1800);
+  // Scroll-to-top: extended resets covering async canvas + community stats reflows.
+  var _rElRes = document.getElementById('s-results');
+  function _forceTopRes(){ if(_rElRes){ _rElRes.scrollTop=0; } try{window.scrollTo(0,0);}catch(e){} }
+  setTimeout(_forceTopRes, 300);
+  setTimeout(_forceTopRes, 700);
+  setTimeout(_forceTopRes, 1100);
+  setTimeout(_forceTopRes, 1800);
 }
 
 // ── LIVE SCAN ANIMATION (rAF version, Shannon's design) ──────────────
