@@ -835,7 +835,7 @@ body { padding-top:0 !important; }
 .intro-trust-new { margin:18px auto !important; max-width:380px !important; }
 
 /* Ensure the red CTA is clickable + visible */
-.intro-cta-new { pointer-events:auto !important; cursor:pointer !important; position:relative !important; z-index:10 !important; }
+.intro-cta-new { pointer-events:auto !important; cursor:pointer !important; position:relative !important; z-index:10 !important; touch-action:manipulation !important; -webkit-appearance:none !important; min-height:52px !important; }
 
 /* Make sure the multi-product BG doesn't block clicks */
 #s-intro::before { pointer-events:none !important; z-index:0 !important; }
@@ -2176,6 +2176,7 @@ function showIntroError(el, msg){
   setTimeout(function(){ if(err.parentNode) err.remove(); el.style.border = ''; }, 6000);
 }
 function startQuizWithCapture(){
+  try {
   var fnEl = document.getElementById('introFirstName');
   var lnEl = document.getElementById('introLastName');
   var phEl = document.getElementById('introPhone');
@@ -2210,7 +2211,26 @@ function startQuizWithCapture(){
   // Hook lives in goNext() — fires once when stepIdx advances past the first quiz step.
   window._introPendingCapture = true;
   startQuiz();
+  } catch(err) {
+    // Surface any JS error visibly so it's not a silent failure on iOS
+    var errDiv = document.createElement('div');
+    errDiv.style.cssText = 'position:fixed;bottom:20px;left:16px;right:16px;background:#C8102E;color:#fff;padding:14px;border-radius:10px;font-size:.85rem;font-weight:700;z-index:99999;text-align:center';
+    errDiv.textContent = 'Error: ' + (err && err.message ? err.message : String(err));
+    document.body.appendChild(errDiv);
+    setTimeout(function(){ if(errDiv.parentNode) errDiv.parentNode.removeChild(errDiv); }, 8000);
+  }
 }
+
+// Backup touchend listener for iOS devices where onclick can be unreliable
+document.addEventListener('DOMContentLoaded', function(){
+  var btn = document.querySelector('.intro-cta-new');
+  if(btn){
+    btn.addEventListener('touchend', function(e){
+      e.preventDefault();
+      startQuizWithCapture();
+    }, {passive: false});
+  }
+});
 
 // SVG icons for option cards
 const CARD_ICONS = {
