@@ -3241,81 +3241,81 @@ function showResults(){
   var _srEl = document.getElementById('s-results');
   function _srTop(){ if(_srEl){ _srEl.scrollTop = 0; } try{ window.scrollTo(0,0); }catch(e){} }
   _srTop(); requestAnimationFrame(function(){ _srTop(); requestAnimationFrame(_srTop); });
-  track(‘scan_completed’); // Change #9, influencer attribution
+  track('scan_completed'); // Change #9, influencer attribution
   // RETARGETING version (?r=1): existing leads have already been to the site, hide the off-site Shop + Tour doors
-  if(getParam(‘r’)===’1’){ [‘#finalCta .door-red’,’#finalCta .door-tour’].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display=’none’; }); }
+  if(getParam('r')==='1'){ ['#finalCta .door-red','#finalCta .door-tour'].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display='none'; }); }
 
-  // ── sr-greet — personalized headline with user’s name ──
-  var srGreet = document.getElementById(‘sr-greet’);
+  // ── sr-greet — personalized headline with user's name ──
+  var srGreet = document.getElementById('sr-greet');
   if(srGreet){
-    var displayName = userName || ‘’;
+    var displayName = userName || '';
     srGreet.innerHTML = displayName
-      ? ‘<div style="font-size:13px;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase;margin-bottom:6px">Your personal report</div>’
-        +’<div style="font-size:28px;font-weight:900;color:#0e2240;line-height:1.15;margin-bottom:4px">’
-        +displayName+’\’s Home Toxic Score’
-        +’</div>’
-        +’<div style="font-size:14px;color:#5b6b83;margin-top:4px">Here\’s exactly what I found room by room.</div>’
-      : ‘<div style="font-size:15px;color:#5b6b83">Here\’s what I found in your home.</div>’;
+      ? '<div style="font-size:13px;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase;margin-bottom:6px">Your personal report</div>'
+        +'<div style="font-size:28px;font-weight:900;color:#0e2240;line-height:1.15;margin-bottom:4px">'
+        +displayName+'\'s Home Toxic Score'
+        +'</div>'
+        +'<div style="font-size:14px;color:#5b6b83;margin-top:4px">Here\'s exactly what I found room by room.</div>'
+      : '<div style="font-size:15px;color:#5b6b83">Here\'s what I found in your home.</div>';
   }
 
   // ── Build findings list (same logic as before) ──
   const findings=[];
   activeSteps.forEach(s=>{
     if(!answers[s.id]) return;
-    if(s.type===’brand_single’){
-      const brand=answers[s.id].brand||’’; const pts=scoreBrand(brand,s.cat);
-      if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||’Home’,brand:brand,cat:s.cat,label:s.label||’’,pts});
-    } else if(s.type===’chip_cards’&&s.cards){
+    if(s.type==='brand_single'){
+      const brand=answers[s.id].brand||''; const pts=scoreBrand(brand,s.cat);
+      if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Home',brand:brand,cat:s.cat,label:s.label||'',pts});
+    } else if(s.type==='chip_cards'&&s.cards){
       s.cards.forEach(card=>{
         const sel=answers[s.id][card.id]||{};
         if(sel.isNone) return;
         selBrands(sel).forEach(function(brand){
           const pts=scoreBrand(brand,card.cat);
-          if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||’Kitchen’,brand:brand,cat:card.cat,label:card.label,pts});
+          if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Kitchen',brand:brand,cat:card.cat,label:card.label,pts});
         });
       });
-    } else if(s.type===’brand_multi’&&s.fields){
+    } else if(s.type==='brand_multi'&&s.fields){
       s.fields.forEach(f=>{
-        const brand=answers[s.id][f.id]||’’; const pts=scoreBrand(brand,f.cat);
-        if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||’Home’,brand:brand,cat:f.cat,label:f.label,pts});
+        const brand=answers[s.id][f.id]||''; const pts=scoreBrand(brand,f.cat);
+        if(pts>=7&&brand) findings.push({room:s.room_lbl||s.room||'Home',brand:brand,cat:f.cat,label:f.label,pts});
       });
     }
   });
   findings.sort((a,b)=>b.pts-a.pts);
-  var toxList=findings.filter(function(f){return f.pts>=7 && f.brand && brandTier(f.brand)===’red’;});
+  var toxList=findings.filter(function(f){return f.pts>=7 && f.brand && brandTier(f.brand)==='red';});
   var CAT_FAMILY={
-    dish:’cleaning’,dishwasher:’cleaning’,allpurpose:’cleaning’,bleach:’cleaning’,stain:’cleaning’,
-    laundry:’cleaning’,fabric:’cleaning’,dryer:’cleaning’,
-    coffee:’food’,oil:’food’,supplements:’food’,
-    shampoo:’personal’,bodywash:’personal’,toothpaste:’personal’,deodorant:’personal’,makeup:’personal’,
-    babywash:’baby’,babylotion:’baby’,babywipes:’baby’,babylaundry:’baby’,diaperash:’baby’,babypowder:’baby’,
-    homeair:’air’,water:’water’
+    dish:'cleaning',dishwasher:'cleaning',allpurpose:'cleaning',bleach:'cleaning',stain:'cleaning',
+    laundry:'cleaning',fabric:'cleaning',dryer:'cleaning',
+    coffee:'food',oil:'food',supplements:'food',
+    shampoo:'personal',bodywash:'personal',toothpaste:'personal',deodorant:'personal',makeup:'personal',
+    babywash:'baby',babylotion:'baby',babywipes:'baby',babylaundry:'baby',diaperash:'baby',babypowder:'baby',
+    homeair:'air',water:'water'
   };
   var totalToxBefore = toxList.length;
   var seenFamily={}, diverse=[];
-  toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||’other’; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
+  toxList.forEach(function(f){ var fam=CAT_FAMILY[f.cat]||f.cat||'other'; if(!seenFamily[fam]){ seenFamily[fam]=true; diverse.push(f); } });
   if(diverse.length<3){ toxList.forEach(function(f){ if(diverse.indexOf(f)===-1 && diverse.length<3) diverse.push(f); }); }
   toxList=diverse;
   buildSimulator(toxList);
 
   // ── sr-scorewrap (navy card) ──
-  var srScorewrap = document.getElementById(‘sr-scorewrap’);
+  var srScorewrap = document.getElementById('sr-scorewrap');
   if(srScorewrap){
     srScorewrap.innerHTML =
-      ‘<div class="sr-navy" style="text-align:center">’
-      +’<div style="font-size:13px;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase">Products flagged in your home</div>’
-      +’<div style="font-size:56px;font-weight:800;line-height:1;margin:8px 0 2px">’+totalToxBefore+’</div>’
-      +’<div style="font-size:14.5px;font-weight:600;opacity:.85">Each one linked to a real, documented health concern</div>’
-      +’<p style="font-size:14.5px;opacity:.92;max-width:360px;margin:14px auto 0;line-height:1.55">I\’m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\’s exactly what I found, and the fix for each.</p>’
-      +’</div>’;
+      '<div class="sr-navy" style="text-align:center">'
+      +'<div style="font-size:13px;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase">Products flagged in your home</div>'
+      +'<div style="font-size:56px;font-weight:800;line-height:1;margin:8px 0 2px">'+totalToxBefore+'</div>'
+      +'<div style="font-size:14.5px;font-weight:600;opacity:.85">Each one linked to a real, documented health concern</div>'
+      +'<p style="font-size:14.5px;opacity:.92;max-width:360px;margin:14px auto 0;line-height:1.55">I\'m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here\'s exactly what I found, and the fix for each.</p>'
+      +'</div>';
   }
 
   // ── sr-found (white card with product cards) ──
-  var srFound = document.getElementById(‘sr-found’);
+  var srFound = document.getElementById('sr-found');
   if(srFound){
-    var srFoundHtml = ‘<div style="background:#fff;border-radius:16px;padding:20px 20px 6px;box-shadow:0 4px 14px rgba(14,34,64,.08)">’;
-    srFoundHtml += ‘<div style="font-size:12px;letter-spacing:1.5px;color:#5b6b83;text-transform:uppercase;font-weight:800;margin-bottom:14px">&#128269; What we found in your home</div>’;
-    var fh=’’;
+    var srFoundHtml = '<div style="background:#fff;border-radius:16px;padding:20px 20px 6px;box-shadow:0 4px 14px rgba(14,34,64,.08)">';
+    srFoundHtml += '<div style="font-size:12px;letter-spacing:1.5px;color:#5b6b83;text-transform:uppercase;font-weight:800;margin-bottom:14px">&#128269; What we found in your home</div>';
+    var fh='';
     if(toxList.length>=2){
       toxList.slice(0,1).forEach(function(f){
         var d=findingDisplay(f.brand,f.cat,f.label);
@@ -3323,55 +3323,55 @@ function showResults(){
         var realTotal = (window.REAL_STATS && window.REAL_STATS.totalHomes) || 0;
         var foundLine;
         if (realCount && realTotal >= 50) {
-          foundLine = ‘Found in ‘+realCount+’ of ‘+realTotal+’ homes scanned’;
+          foundLine = 'Found in '+realCount+' of '+realTotal+' homes scanned';
         } else {
           var fi = Math.min(50, 32+f.pts*2) - (f.brand.length%4);
-          foundLine = ‘Found in ‘+fi+’ of 50 homes scanned this month’;
+          foundLine = 'Found in '+fi+' of 50 homes scanned this month';
         }
-        fh+=’<div class="tox-card"><div class="tox-name">’+d.name+’</div><div class="tox-ing">’+d.ing+’</div><div class="tox-harm">’+d.harm+’</div><div class="tox-found">’+foundLine+’</div></div>’;
+        fh+='<div class="tox-card"><div class="tox-name">'+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">'+foundLine+'</div></div>';
       });
       if(totalToxBefore > 1) {
         var moreCount = totalToxBefore - 1;
-        fh += ‘<div style="background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px">’
-          +’<div style="font-size:22px">&#128274;</div>’
-          +’<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ ‘+moreCount+’ more flagged product’+(moreCount===1?’’:’s’)+’ in ‘+(userName?userName+’\’s’:’your’)+’ home</h4>’
-          +’<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each is in ‘+(userName?userName+’\’s’:’your’)+’ $7 room-by-room report.</p>’
-          +’</div>’;
+        fh += '<div style="background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px">'
+          +'<div style="font-size:22px">&#128274;</div>'
+          +'<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ '+moreCount+' more flagged product'+(moreCount===1?'':'s')+' in '+(userName?userName+'\'s':'your')+' home</h4>'
+          +'<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each is in '+(userName?userName+'\'s':'your')+' $7 room-by-room report.</p>'
+          +'</div>';
       }
     } else {
-      fh+=’<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">&#10024; What you\’re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That\’s the top few that trip almost everyone up.</div></div>’;
+      fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">&#10024; What you\'re doing right</div><div class="tox-harm" style="color:#cfe9df">You skipped the big offenders most families miss, the conventional air fresheners, the heavily-fragranced detergents, the harsh disinfectants. That\'s the top few that trip almost everyone up.</div></div>';
       if(toxList.length===1){
         var f=toxList[0], d=findingDisplay(f.brand,f.cat,f.label);
-        fh+=’<div class="tox-card"><div class="tox-name">’+d.name+’</div><div class="tox-ing">’+d.ing+’</div><div class="tox-harm">’+d.harm+’</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>’;
+        fh+='<div class="tox-card"><div class="tox-name">'+d.name+'</div><div class="tox-ing">'+d.ing+'</div><div class="tox-harm">'+d.harm+'</div><div class="tox-found">The 1 swap that would drop your score the most</div></div>';
       } else {
-        fh+=’<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">&#127807; Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>’;
+        fh+='<div class="tox-card tox-good"><div class="tox-name" style="color:#37c79a">&#127807; Barely a thing to flag</div><div class="tox-harm" style="color:#cfe9df">Your home is genuinely cleaner than most I scan. The Switch List below has the few small upgrades left.</div></div>';
       }
     }
     srFoundHtml += fh;
-    srFoundHtml += ‘</div>’;
+    srFoundHtml += '</div>';
     srFound.innerHTML = srFoundHtml;
   }
 
-  // ── sr-proof (Gene’s testimonial) ──
-  var srProof = document.getElementById(‘sr-proof’);
+  // ── sr-proof (Gene's testimonial) ──
+  var srProof = document.getElementById('sr-proof');
   if(srProof){
-    srProof.innerHTML = ‘<div style="background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 14px rgba(14,34,64,.08)">’
-      +’<div style="display:flex;align-items:flex-start;gap:12px">’
-      +’<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/member-linda.jpg" onerror="this.style.display=\’none\’" style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(14,34,64,.15);flex-shrink:0" alt="Linda P."/>’
-      +’<div>’
-      +’<div style="font-size:.88rem;font-style:italic;line-height:1.55;color:#1a2e54">"I\’d had \’mystery\’ headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can\’t believe it."</div>’
-      +’<div style="font-size:.72rem;font-weight:800;color:#B07A2C;margin-top:6px">Linda P. &middot; Grandmother &middot; Ohio</div>’
-      +’</div></div></div>’;
+    srProof.innerHTML = '<div style="background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 14px rgba(14,34,64,.08)">'
+      +'<div style="display:flex;align-items:flex-start;gap:12px">'
+      +'<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/member-linda.jpg" onerror="this.style.display=\'none\'" style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(14,34,64,.15);flex-shrink:0" alt="Linda P."/>'
+      +'<div>'
+      +'<div style="font-size:.88rem;font-style:italic;line-height:1.55;color:#1a2e54">"I\'d had \'mystery\' headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can\'t believe it."</div>'
+      +'<div style="font-size:.72rem;font-weight:800;color:#B07A2C;margin-top:6px">Linda P. &middot; Grandmother &middot; Ohio</div>'
+      +'</div></div></div>';
   }
 
-  // ── sr-byline (Shannon’s photo + attribution) ──
-  var srByline = document.getElementById(‘sr-byline’);
+  // ── sr-byline (Shannon's photo + attribution) ──
+  var srByline = document.getElementById('sr-byline');
   if(srByline){
-    srByline.innerHTML = ‘<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>’
-      +’<div style="text-align:left">’
-      +’<div style="font-size:.72rem;font-weight:700;color:#0B2545;line-height:1.3">Built by Shannon Nicole, founder of Switch to America</div>’
-      +’<div style="font-size:.65rem;color:#4a5e7e;line-height:1.3">Switching families from toxic brands since 2018</div>’
-      +’</div>’;
+    srByline.innerHTML = '<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>'
+      +'<div style="text-align:left">'
+      +'<div style="font-size:.72rem;font-weight:700;color:#0B2545;line-height:1.3">Built by Shannon Nicole, founder of Switch to America</div>'
+      +'<div style="font-size:.65rem;color:#4a5e7e;line-height:1.3">Switching families from toxic brands since 2018</div>'
+      +'</div>';
   }
 
   prepShareFile(); // pre-build the share image so the share sheet opens instantly on tap (iOS-safe)
