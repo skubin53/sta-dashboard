@@ -3225,9 +3225,18 @@ function showResults(){
   // RETARGETING version (?r=1): existing leads have already been to the site, hide the off-site Shop + Tour doors
   if(getParam(‘r’)===’1’){ [‘#finalCta .door-red’,’#finalCta .door-tour’].forEach(function(sel){ var d=document.querySelector(sel); if(d) d.style.display=’none’; }); }
 
-  // ── sr-greet ──
+  // ── sr-greet — personalized headline with user’s name ──
   var srGreet = document.getElementById(‘sr-greet’);
-  if(srGreet) srGreet.innerHTML = ‘<div style="font-size:15px;color:#5b6b83">Hi <b style="color:#0e2240">’+(userName||’there’)+’</b>, here\’s what I saw.</div>’;
+  if(srGreet){
+    var displayName = userName || ‘’;
+    srGreet.innerHTML = displayName
+      ? ‘<div style="font-size:13px;letter-spacing:2px;color:#c8a24a;font-weight:800;text-transform:uppercase;margin-bottom:6px">Your personal report</div>’
+        +’<div style="font-size:28px;font-weight:900;color:#0e2240;line-height:1.15;margin-bottom:4px">’
+        +displayName+’\’s Home Toxic Score’
+        +’</div>’
+        +’<div style="font-size:14px;color:#5b6b83;margin-top:4px">Here\’s exactly what I found room by room.</div>’
+      : ‘<div style="font-size:15px;color:#5b6b83">Here\’s what I found in your home.</div>’;
+  }
 
   // ── Build findings list (same logic as before) ──
   const findings=[];
@@ -3305,8 +3314,8 @@ function showResults(){
         var moreCount = totalToxBefore - 1;
         fh += ‘<div style="background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px">’
           +’<div style="font-size:22px">&#128274;</div>’
-          +’<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ ‘+moreCount+’ more flagged product’+(moreCount===1?’’:’s’)+’ in your home</h4>’
-          +’<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</p>’
+          +’<h4 style="font-size:16px;font-weight:800;color:#e0530b;margin:8px 0 6px">+ ‘+moreCount+’ more flagged product’+(moreCount===1?’’:’s’)+’ in ‘+(userName?userName+’\’s’:’your’)+’ home</h4>’
+          +’<p style="font-size:13px;color:#5b6b83;margin:0">The full list, every ingredient, and the clean American-made swap for each is in ‘+(userName?userName+’\’s’:’your’)+’ $7 room-by-room report.</p>’
           +’</div>’;
       }
     } else {
