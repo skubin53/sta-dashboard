@@ -2742,6 +2742,8 @@ function pickChip(stepId, cardId, brand, cat, el){
   cur.brand=''; // clear legacy field
   cur.isNone=false;
   var idx = cur.brands.indexOf(brand);
+  // Product tally tracking — fire when selecting (not deselecting)
+  if(idx < 0){ try{ fetch(SERVER+'/scan-product',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sid:_SID,brand:brand,cat:cat,step:stepId,ts:Date.now()}),keepalive:true}).catch(function(){}); }catch(e){} }
   if(idx>=0){
     cur.brands.splice(idx,1);
     el.classList.remove('sel','chip-toxic','chip-clean','chip-maybe');
