@@ -2109,10 +2109,18 @@ function startQuiz(){
   // Without this, the viewport resize from keyboard-close races the transition
   // and the quiz renders off-screen on iPhone. Increased from 120ms → 350ms (some iPhones slow).
   setTimeout(function(){
-    document.getElementById('pBar').style.display='block';
-    renderStep(); showScreen('s-quiz');
-    renderQuizHouse();
-    if(userName) { try{ document.getElementById('oFN').value=userName; }catch(e){} }
+    try {
+      document.getElementById('pBar').style.display='block';
+      renderStep(); showScreen('s-quiz');
+      renderQuizHouse();
+      if(userName) { try{ document.getElementById('oFN').value=userName; }catch(e){} }
+    } catch(e2) {
+      var eb=document.createElement('div');
+      eb.style.cssText='position:fixed;bottom:20px;left:16px;right:16px;background:#C8102E;color:#fff;padding:14px;border-radius:10px;font-size:.85rem;font-weight:700;z-index:99999;text-align:center';
+      eb.textContent='Quiz error: '+(e2&&e2.message?e2.message:String(e2));
+      document.body.appendChild(eb);
+      setTimeout(function(){if(eb.parentNode)eb.parentNode.removeChild(eb);},10000);
+    }
   }, 500);
 }
 
