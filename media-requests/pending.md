@@ -21,7 +21,7 @@ Each request block looks like:
 ---
 
 ### blog-tide-v2
-- status: pending
+- status: handed-off
 - for: GHL blog post — "Is Tide Laundry Detergent Toxic?"
 - ghl_post_id: 6876cd3e6c3c1f682f01ee4d
 - prompt: A woman in her early 40s standing in a bright laundry room, holding a bright orange Tide PODS container and reading the label with a slightly concerned expression. The Tide branding is clearly visible. Natural light from a window. Photorealistic, warm tones.
