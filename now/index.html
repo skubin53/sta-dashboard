@@ -2182,6 +2182,7 @@ function showIntroError(el, msg){
   setTimeout(function(){ if(err.parentNode) err.remove(); el.style.border = ''; }, 6000);
 }
 function startQuizWithCapture(){
+  alert('Button tapped — JS is running. Version: ' + new Date().getSeconds());
   try {
   var fnEl = document.getElementById('introFirstName');
   var lnEl = document.getElementById('introLastName');
