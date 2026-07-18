@@ -49,6 +49,6 @@ That is not acceptable. Shannon should never have to find the failures.
 ## CTA block standard
 
 Dark navy (#14263f), Shannon's circular photo on the left, gold "Run the Free Scan" button.
-NOT green. Dark navy. Warm and inviting.
+NOT green. NOT gold. Dark navy (#14263f) with Amazon Orange (#FF9900) button and accents. Shannon confirmed 2026-07-18. Warm and inviting.
 Shannon's photo: https://raw.githubusercontent.com/skubin53/sta-dashboard/main/media/shannon-nicole-founder.jpg
 
