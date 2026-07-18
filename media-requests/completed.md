@@ -87,71 +87,71 @@ Cameron marks cameron_processed as true after picking up and applying each image
 ### febreze-label-closeup-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051718_5b1d63c3-abcd-422e-b53f-b6c5ae69ffc1.png
-- ghl_post_id: TBD
+- ghl_post_id: 6a5b107d6c046951a54c891b
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### febreze-comparison-graphic-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051722_230c40f2-08bd-4568-84df-77791718932b.png
-- ghl_post_id: TBD
+- ghl_post_id: 6a5b107d6c046951a54c891b
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### febreze-sensitive-airways-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051725_5dac274c-bd54-4651-b68f-e314f722e6b0.png
-- ghl_post_id: TBD
+- ghl_post_id: 6a5b107d6c046951a54c891b
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### febreze-indoor-air-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051728_98e97d42-074e-42db-843a-044f25cecde2.png
-- ghl_post_id: TBD
+- ghl_post_id: 6a5b107d6c046951a54c891b
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### febreze-natural-swap-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051730_fcf0bdd3-6bcd-451a-a25f-f1b48bcbd673.png
-- ghl_post_id: TBD
+- ghl_post_id: 6a5b107d6c046951a54c891b
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### dawn-label-closeup-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051835_12058adc-3eac-479c-b966-1af003494f7c.png
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### dawn-rinse-dishes-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051837_ff38ac68-a473-416a-8b54-7cc297aae33d.png
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### dawn-comparison-graphic-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051841_d8b63660-f452-4558-9e23-6fd5016095f6.png
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### dawn-hands-skin-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051844_1b70e1ef-21b2-41fb-b7ad-389f5e969a49.png
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 ### dawn-safer-swap-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_051846_40bd19bd-e3f9-41c0-adaf-b0cd405942ec.png
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - completed: 2026-07-17T23:27:03
-- cameron_processed: false
+- cameron_processed: true
 
 *No completed requests yet.*
