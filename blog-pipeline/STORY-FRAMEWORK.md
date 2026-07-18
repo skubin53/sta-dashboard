@@ -56,7 +56,7 @@ You walk her from one felt state to the next, one section at a time.
 - Reader is the hero. Shannon guides, never rescues.
 - No em-dashes. No rule-of-three tricolons. No "here's the thing." No fake build-up with a bow on it.
 - Shannon never cites agencies in her own voice. The receipts live in the linked Proof section.
-- Never tell her to "read the label" as the fix. The label is a lie; the fix is changing where she buys.
+- Never tell her to "read the label" as the fix. The label is a lie. The fix is always the same: find a LOCAL FARM and get to know the farmer, ask how they grow it, because that relationship is how she knows her food is safe. NEVER send her to a mill, a bakery, a co-op, or a store.
 - Lead the emotional hook with the internal problem (the worry, the guilt, feeling out of control), not the chemical.
 - Full voice rules: see INSTRUCTIONS-FOR-BLOG-CLAUDE.md and the Shannon's Advice voice guidance.
 
@@ -70,12 +70,12 @@ One villain: potassium bromate. One receipt (web-verify a live, category-matched
 
 **H2 #2 (her objection, defused):** "Isn't this in everything? Why bother?" You are right that you cannot fix it all tonight. So do not. You do not overhaul your pantry. You find your worst one thing first, the one you use every single day. For a lot of families that is the bread and the flour. Start there.
 
-**Comparison table:** bromate flour and factory bread on the left, a clean bag from a real mill or a local bakery loaf on the right.
+**Comparison table:** bromate flour and factory bread on the left, a clean bag of real flour from a local farm on the right.
 
 **Proof section:** the real ban or state action, hyperlinked, attributed as allegation.
 
 **Shannon's Advice box (meeting the guide, in Shannon's true story, no fake conversion):**
-Nobody handed me this. I figured it out young, on my own, back when there was no one to ask and no label worth trusting. What I learned early is that the answer is never in the aisle. The stuff you would want to avoid is not on the label, and they stamp "natural" on the front and count on you being too busy to fight it. So I stopped fighting it. I do not buy my food from those places at all. My flour is spelt, straight from a farm, the same grain people baked with for thousands of years before a factory ever touched it. My kids grew up on real food and they are healthy. You do not have to fix your whole kitchen by Friday. Find one farm or one small mill near you and get your flour there. That is the first switch, and you are already the kind of woman who will make it, or you would not have read this far.
+Nobody handed me this. I figured it out young, on my own, back when there was no one to ask and no label worth trusting. What I learned early is that the answer is never in the aisle. The stuff you would want to avoid is not on the label, and they stamp "natural" on the front and count on you being too busy to fight it. So I stopped fighting it. I do not buy my food from those places at all. My flour is spelt, straight from a farm, the same grain people baked with for thousands of years before a factory ever touched it. My kids grew up on real food and they are healthy. You do not have to fix your whole kitchen by Friday. Find one local farm near you and get to know the farmer who grows your food. That is the first switch, and you are already the kind of woman who will make it, or you would not have read this far.
 
 **FAQ:** clear the leftover worry (does baking cook it off, is my brand affected), then plant it: you are not paranoid, a lot of us eat this way; you are about to be the one in your family who caught it; this is the start of a home you actually trust.
 
