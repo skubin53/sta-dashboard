@@ -102,7 +102,7 @@ Every post is 5 to 6 images. Aim to hit these beats in order; combine 4 and 5 if
 4. **HER OBJECTION DEFUSED**: same woman pausing, leaning on the counter, hand to chin, dawning clarity not panic. Temperature starts warming, color returns to her skin. Real micro-expression (skeptical, thinking, relieved), not a smile-for-camera. Medium shot, shallow depth. 3:2.
 5. **THE GUIDE, SHANNON (rare)**: Shannon only here and only as mentor. Environmental and secondary: slightly out of focus behind the reader, or hands-only passing a jar, or beside the woman both looking at the solution together. Warm side light, relaxed mid-50s authenticity. Never centered, never out-lit or out-dressed the reader. 3:2.
 6. **NOT ALONE / COMMUNITY**: two to four DIFFERENT real moms together (varied age, ethnicity, body, dress) at an island, a market stall, a porch, or a phone text-thread held in frame. Candid mid-laugh or mid-conversation, hands busy. Warm ambient/golden light, layered depth. This frame carries connection. 3:2.
-7. **THE TRANSFORMATION**: end on warmth and freedom: real food from a farm/mill/market (a crate of veg, flour dusting a mill counter, eggs in a bowl, tallow rendering) or the reader relaxed in her calm lived-in home, feet up, kid nearby. Warmest grade, golden, rich natural saturation. The emotional peak. This is always the LAST image. 16:9 or 3:2.
+7. **THE TRANSFORMATION**: end on warmth and freedom: real food from a farm or a farmers market (a crate of veg, a farmer handing over a bag of flour, eggs in a bowl, tallow rendering) or the reader relaxed in her calm lived-in home, feet up, kid nearby. Warmest grade, golden, rich natural saturation. The emotional peak. This is always the LAST image. 16:9 or 3:2.
 
 ---
 
