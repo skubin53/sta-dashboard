@@ -83,7 +83,7 @@ Post URL: join.switchtoamerica.com/post/is-clorox-spray-toxic
 Hero already live at api.ismyhometoxic.com/blog-image-clorox.jpg
 
 ### clorox-label-closeup-v1
-- status: pending
+- status: handed-off
 - for: Clorox post — "What is in Clorox bleach spray?" section
 - ghl_post_id: 6a5add01220e9606ef417e68
 - placement: Under the "What is in Clorox bleach spray?" H2
@@ -95,7 +95,7 @@ Hero already live at api.ismyhometoxic.com/blog-image-clorox.jpg
 - requested: 2026-07-17
 
 ### clorox-fumes-bathroom-v1
-- status: pending
+- status: handed-off
 - for: Clorox post — "What happens when you breathe Clorox fumes?" section
 - ghl_post_id: 6a5add01220e9606ef417e68
 - placement: Beside the "What happens when you breathe Clorox fumes?" section
@@ -107,7 +107,7 @@ Hero already live at api.ismyhometoxic.com/blog-image-clorox.jpg
 - requested: 2026-07-17
 
 ### clorox-mixing-danger-v1
-- status: pending
+- status: handed-off
 - for: Clorox post — "Why is mixing Clorox with other cleaners so dangerous?" section (beside or instead of comparison table)
 - ghl_post_id: 6a5add01220e9606ef417e68
 - placement: This is the BRANDED GRAPHIC — comparison infographic, 1:1 for Pinterest/social
@@ -119,7 +119,7 @@ Hero already live at api.ismyhometoxic.com/blog-image-clorox.jpg
 - requested: 2026-07-17
 
 ### clorox-ventilation-v1
-- status: pending
+- status: handed-off
 - for: Clorox post — "Did we start over-spraying after COVID?" section
 - ghl_post_id: 6a5add01220e9606ef417e68
 - placement: Beside the over-spraying/COVID section
@@ -131,7 +131,7 @@ Hero already live at api.ismyhometoxic.com/blog-image-clorox.jpg
 - requested: 2026-07-17
 
 ### clorox-safer-swap-v1
-- status: pending
+- status: handed-off
 - for: Clorox post — "What should you look for in a safer clean?" section
 - ghl_post_id: 6a5add01220e9606ef417e68
 - placement: Beside or below the safer clean checklist
