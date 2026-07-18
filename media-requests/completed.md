@@ -52,36 +52,36 @@ Cameron marks cameron_processed as true after picking up and applying each image
 ### clorox-label-closeup-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_023424_a5511ee3-58f8-48bf-b04b-6671480e7862.png
-- ghl_post_id: 6a5add01220e9606ef417e68
+- ghl_post_id: 6a5aeec77335d95a14066fd8
 - completed: 2026-07-17T20:37:27
-- cameron_processed: false
+- cameron_processed: true
 
 ### clorox-fumes-bathroom-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_023427_90259ef5-a9d8-4064-becc-b94a3fb2c427.png
-- ghl_post_id: 6a5add01220e9606ef417e68
+- ghl_post_id: 6a5aeec77335d95a14066fd8
 - completed: 2026-07-17T20:37:27
-- cameron_processed: false
+- cameron_processed: true
 
 ### clorox-mixing-danger-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_023431_22070266-c098-4b9b-984c-fa7f112a223f.png
-- ghl_post_id: 6a5add01220e9606ef417e68
+- ghl_post_id: 6a5aeec77335d95a14066fd8
 - completed: 2026-07-17T20:37:27
-- cameron_processed: false
+- cameron_processed: true
 
 ### clorox-ventilation-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_023434_f04969bc-3324-4ab0-b84c-22f55c70f0cc.png
-- ghl_post_id: 6a5add01220e9606ef417e68
+- ghl_post_id: 6a5aeec77335d95a14066fd8
 - completed: 2026-07-17T20:37:27
-- cameron_processed: false
+- cameron_processed: true
 
 ### clorox-safer-swap-v1
 - status: done
 - image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_023437_be96241a-7602-4a19-81de-1ff8afddd86f.png
-- ghl_post_id: 6a5add01220e9606ef417e68
+- ghl_post_id: 6a5aeec77335d95a14066fd8
 - completed: 2026-07-17T20:37:27
-- cameron_processed: false
+- cameron_processed: true
 
 *No completed requests yet.*
