@@ -214,7 +214,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 ## Hero already exists: api.ismyhometoxic.com/blog-image-febreze.jpg
 
 ### febreze-label-closeup-v1
-- status: pending
+- status: handed-off
 - for: Febreze blog post body — "What is actually inside a bottle of Febreze?" section
 - ghl_post_id: TBD (new post, not yet published)
 - placement: Section 1 — below opening paragraphs, before the comparison table
@@ -226,7 +226,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### febreze-comparison-graphic-v1
-- status: pending
+- status: handed-off
 - for: Febreze blog post body — beside the ingredient comparison table
 - ghl_post_id: TBD
 - placement: Section 2 — directly after the comparison table. This is the 1:1 Pinterest-shareable branded infographic.
@@ -238,7 +238,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### febreze-sensitive-airways-v1
-- status: pending
+- status: handed-off
 - for: Febreze blog post body — "Can breathing Febreze irritate your lungs?" section
 - ghl_post_id: TBD
 - placement: Section 3 — beside or below the "Can breathing Febreze irritate your lungs?" paragraphs
@@ -250,7 +250,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### febreze-indoor-air-v1
-- status: pending
+- status: handed-off
 - for: Febreze blog post body — "Why does spraying Febreze indoors matter more than outdoors?" section
 - ghl_post_id: TBD
 - placement: Section 4 — beside or below the indoor air paragraphs
@@ -262,7 +262,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### febreze-natural-swap-v1
-- status: pending
+- status: handed-off
 - for: Febreze blog post body — "What should you look for instead?" section
 - ghl_post_id: TBD
 - placement: Section 5 — beside or below the label-reading checklist
@@ -280,7 +280,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 ## Hero already exists: api.ismyhometoxic.com/blog-image-dawn.jpg
 
 ### dawn-label-closeup-v1
-- status: pending
+- status: handed-off
 - for: Dawn blog post body — "What is 1,4-dioxane?" section
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - placement: Section 1 — below the 1,4-dioxane paragraphs, before the preservative section
@@ -292,7 +292,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### dawn-rinse-dishes-v1
-- status: pending
+- status: handed-off
 - for: Dawn blog post body — "What is really left on your dishes?" section
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - placement: Section 2 — beside or below the dishes/residue section
@@ -304,7 +304,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### dawn-comparison-graphic-v1
-- status: pending
+- status: handed-off
 - for: Dawn blog post body — beside the ingredient comparison table
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - placement: Section 3 — directly after the comparison table. 1:1 Pinterest-shareable branded infographic.
@@ -316,7 +316,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### dawn-hands-skin-v1
-- status: pending
+- status: handed-off
 - for: Dawn blog post body — "What preservative is in Dawn?" section
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - placement: Section 4 — beside the preservative/skin section (after the label checklist)
@@ -328,7 +328,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### dawn-safer-swap-v1
-- status: pending
+- status: handed-off
 - for: Dawn blog post body — "Where do you go from here?" section
 - ghl_post_id: 6a599956220e969e9c3cfb48
 - placement: Section 5 — beside or below the closing section before the final CTA
