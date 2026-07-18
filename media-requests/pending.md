@@ -77,6 +77,73 @@ Each request block looks like:
 
 ---
 
+## CLOROX POST — 5 in-body images needed
+GHL Post ID: 6a5add01220e9606ef417e68
+Post URL: join.switchtoamerica.com/post/is-clorox-spray-toxic
+Hero already live at api.ismyhometoxic.com/blog-image-clorox.jpg
+
+### clorox-label-closeup-v1
+- status: pending
+- for: Clorox post — "What is in Clorox bleach spray?" section
+- ghl_post_id: 6a5add01220e9606ef417e68
+- placement: Under the "What is in Clorox bleach spray?" H2
+- prompt: Close-up of a woman's hand holding a white Clorox spray bottle and reading the ingredient label on the back. Natural light, bathroom or kitchen setting. The Clorox logo is clearly visible. Photorealistic, warm tones, authentic not studio.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: is-clorox-spray-toxic-ingredients-label.webp
+- alt_text: Close-up of hand holding Clorox spray bottle reading the ingredient label
+- requested: 2026-07-17
+
+### clorox-fumes-bathroom-v1
+- status: pending
+- for: Clorox post — "What happens when you breathe Clorox fumes?" section
+- ghl_post_id: 6a5add01220e9606ef417e68
+- placement: Beside the "What happens when you breathe Clorox fumes?" section
+- prompt: A woman in a small bathroom with no window, crouching to spray Clorox on the bathtub, her hand raised slightly to wave away fumes, a slightly uncomfortable expression. Realistic bathroom setting, tight space, inadequate ventilation visible. Warm documentary tone, not scary.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: clorox-spray-fumes-small-bathroom-ventilation.webp
+- alt_text: Woman spraying Clorox in a small bathroom waving away fumes
+- requested: 2026-07-17
+
+### clorox-mixing-danger-v1
+- status: pending
+- for: Clorox post — "Why is mixing Clorox with other cleaners so dangerous?" section (beside or instead of comparison table)
+- ghl_post_id: 6a5add01220e9606ef417e68
+- placement: This is the BRANDED GRAPHIC — comparison infographic, 1:1 for Pinterest/social
+- prompt: Clean branded infographic titled "Never Mix These With Bleach" on a navy background. Four rows showing: Bleach + Ammonia (window cleaners) = Chloramine gas (CDC); Bleach + Vinegar = Chlorine gas (CDC); Bleach + Toilet bowl cleaner = Chlorine gas (CDC); Spraying in small rooms = Aerosol exposure (EPA). Clean sans-serif font, red warning icons, Switch to America branding bottom right. Infographic style, Pinterest-ready, warm cream rows.
+- style: Nano Banana Pro
+- aspect_ratio: 1:1
+- filename: clorox-bleach-mixing-dangers-comparison-infographic.webp
+- alt_text: Infographic showing 4 dangerous Clorox bleach combinations and what CDC EPA found
+- requested: 2026-07-17
+
+### clorox-ventilation-v1
+- status: pending
+- for: Clorox post — "Did we start over-spraying after COVID?" section
+- ghl_post_id: 6a5add01220e9606ef417e68
+- placement: Beside the over-spraying/COVID section
+- prompt: A woman in a bright, well-ventilated kitchen with a window open and sunlight coming in, wiping a countertop with a damp cloth instead of spraying. Calm, peaceful expression. This image shows the BETTER alternative — a cloth instead of spray, fresh air. Warm, reassuring tone.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: safer-cleaning-method-cloth-ventilation-no-spray.webp
+- alt_text: Woman wiping kitchen countertop with damp cloth near open window instead of spraying bleach
+- requested: 2026-07-17
+
+### clorox-safer-swap-v1
+- status: pending
+- for: Clorox post — "What should you look for in a safer clean?" section
+- ghl_post_id: 6a5add01220e9606ef417e68
+- placement: Beside or below the safer clean checklist
+- prompt: Clean, organized bathroom or kitchen shelf showing a before-and-after swap: on the left, a familiar white Clorox spray bottle; on the right, a hydrogen-peroxide-based cleaner with minimal packaging. Warm natural light, tidy and inviting. Simple swap, not alarming.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: clorox-safer-cleaner-swap-hydrogen-peroxide-alternative.webp
+- alt_text: Side-by-side shelf showing Clorox spray versus a safer hydrogen-peroxide cleaner swap
+- requested: 2026-07-17
+
+---
+
 ## TIDE POST — 5 additional in-body images (Photo Guide standard)
 Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tide-v2) is already applied. These 5 go inside the post body at specific sections.
 
