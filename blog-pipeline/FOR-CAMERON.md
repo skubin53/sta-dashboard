@@ -52,3 +52,38 @@ Dark navy (#14263f), Shannon's circular photo on the left, gold "Run the Free Sc
 NOT green. NOT gold. Dark navy (#14263f) with Amazon Orange (#FF9900) button and accents. Shannon confirmed 2026-07-18. Warm and inviting.
 Shannon's photo: https://raw.githubusercontent.com/skubin53/sta-dashboard/main/media/shannon-nicole-founder.jpg
 
+
+---
+
+## CTA Block Design Standard (confirmed 2026-07-18)
+
+Shannon approved this design: "I love how you designed the attached. Going forward please use the Amazon Orange hue instead of yellow."
+
+**Every in-content CTA block uses this exact structure:**
+
+```html
+<div class="sta-cta">
+  <img src="https://api.ismyhometoxic.com/shannon-photo.jpg" alt="Shannon Nicole" class="sta-cta-photo" loading="lazy">
+  <div class="sta-cta-inner">
+    <span class="sta-cta-heading">What else is hiding in your home?</span>
+    <p>The free 60-second scan shows you your worst room first. No email required to start.</p>
+    <a href="https://scan.ismyhometoxic.com/now">Run the Free Scan</a>
+  </div>
+</div>
+```
+
+**Required CSS:**
+```css
+.sta-cta{background:#14263f;border-radius:12px;padding:24px 28px;margin:32px 0;display:flex;align-items:center;gap:20px}
+.sta-cta-photo{width:72px;height:72px;border-radius:50%;object-fit:cover;flex-shrink:0;border:3px solid #FF9900}
+.sta-cta-inner{flex:1}
+.sta-cta-heading{color:#FF9900;font-size:1.15em;font-weight:700;margin:0 0 8px;display:block}
+.sta-cta p{color:#e0eaf4;margin:0 0 16px;font-size:1em;line-height:1.6}
+.sta-cta a{display:inline-block;background:#FF9900;color:#14263f!important;padding:12px 28px;border-radius:6px;font-size:1em;font-weight:700;text-decoration:none}
+```
+
+**Hard rules:**
+- Background: `#14263f` (dark navy). NEVER cream or light.
+- Button/accent: `#FF9900` (Amazon Orange). NEVER yellow, gold, or green.
+- Shannon's photo: circular, 72×72, orange border. Always present.
+- Button text: dark navy (`#14263f`). White is wrong.
