@@ -338,3 +338,69 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - filename: dawn-dish-soap-safer-swap-cleaner-alternative.webp
 - alt_text: Clean kitchen counter with a simple dish soap alternative and fresh dishes
 - requested: 2026-07-17
+
+---
+
+## LYSOL POST — 5 in-body images needed
+## GHL post will update slug: is-lysol-safe-to-inhale
+## Hero already exists: api.ismyhometoxic.com/blog-image-lysol.jpg
+
+### lysol-label-epa-v1
+- status: pending
+- for: Lysol blog post body — "Why is Lysol classified as a pesticide?" section
+- ghl_post_id: 6a599957220e96dd4a3cfb56
+- placement: Section 1 — below the pesticide classification paragraphs
+- prompt: Close-up of the back of a Lysol Disinfectant Spray can, a hand holding it while a finger points to the EPA registration number and precautionary statements. The text "avoid breathing vapor or mist" visible. Natural bathroom light. Focused and slightly concerned expression. Photorealistic. Nano Banana Pro. 16:9.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: lysol-disinfectant-epa-pesticide-label-closeup.webp
+- alt_text: Close-up of Lysol Disinfectant Spray can showing EPA registration number and precautionary warnings
+- requested: 2026-07-17
+
+### lysol-bathroom-spray-v1
+- status: pending
+- for: Lysol blog post body — "What does the EPA label say?" section
+- ghl_post_id: 6a599957220e96dd4a3cfb56
+- placement: Section 2 — beside or below the ventilation paragraphs
+- prompt: A woman in her 30s spraying Lysol in a bathroom with the window visibly open in the background. She looks careful and mindful, not alarmed. Natural light. The window open and fan suggests she is following the label instructions. Authentic and photorealistic, warm tones. Nano Banana Pro. 16:9.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: lysol-spray-bathroom-window-open-ventilation.webp
+- alt_text: Woman spraying Lysol in bathroom with window open for ventilation
+- requested: 2026-07-17
+
+### lysol-child-protection-v1
+- status: pending
+- for: Lysol blog post body — "Are quats harmful for children?" section
+- ghl_post_id: 6a599957220e96dd4a3cfb56
+- placement: Section 3 — beside or below the children/pregnancy section
+- prompt: A parent keeping a toddler out of a freshly cleaned bathroom, gently holding the child's hand and closing the bathroom door. The parent looks calm and protective. Warm natural home light. Authentic and warm, not alarming. Photorealistic. Nano Banana Pro. 16:9.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: lysol-child-safety-keep-out-of-room-after-spray.webp
+- alt_text: Parent keeping a toddler out of a freshly sprayed bathroom, calm and protective
+- requested: 2026-07-17
+
+### lysol-comparison-graphic-v1
+- status: pending
+- for: Lysol blog post body — beside the ingredient comparison table
+- ghl_post_id: 6a599957220e96dd4a3cfb56
+- placement: Section 4 — directly after the comparison table. 1:1 Pinterest-shareable branded infographic.
+- prompt: Clean branded graphic showing two Lysol ingredient concerns (quats, aerosol mist) vs safer approaches. Switch to America red and navy color palette. Bold readable text. Designed for Pinterest sharing. 1:1 square format. Professional infographic style. Nano Banana Pro.
+- style: Nano Banana Pro
+- aspect_ratio: 1:1
+- filename: lysol-quats-safer-disinfecting-alternatives-infographic.webp
+- alt_text: Branded infographic comparing Lysol ingredient concerns to safer cleaning approaches
+- requested: 2026-07-17
+
+### lysol-safer-clean-v1
+- status: pending
+- for: Lysol blog post body — "How can you use disinfectant more safely?" section
+- ghl_post_id: 6a599957220e96dd4a3cfb56
+- placement: Section 5 — beside or below the safer use checklist
+- prompt: Bright, clean bathroom with a window open letting in fresh air. A microfiber cloth folded neatly on the counter next to a simple spray bottle. No Lysol visible. The mood is calm, clean, and practical. Warm natural light. Photorealistic. Nano Banana Pro. 16:9.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- filename: lysol-safer-clean-microfiber-cloth-open-window.webp
+- alt_text: Clean bright bathroom with open window and microfiber cloth as a safer cleaning approach
+- requested: 2026-07-17
