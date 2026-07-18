@@ -81,7 +81,7 @@ Each request block looks like:
 Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tide-v2) is already applied. These 5 go inside the post body at specific sections.
 
 ### tide-label-closeup-v1
-- status: pending
+- status: handed-off
 - for: Tide blog post body — under "What is actually in Tide?" H2, above comparison table
 - ghl_post_id: 6a5999559ba2b5829ac09454
 - placement: Section 2 — under the "What is actually in Tide?" heading, above the comparison table
@@ -93,7 +93,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### tide-comparison-graphic-v1
-- status: pending
+- status: handed-off
 - for: Tide blog post body — beside the comparison table (this is the Pinterest/social share branded infographic)
 - ghl_post_id: 6a5999559ba2b5829ac09454
 - placement: Section 2 — beside or instead of the comparison table. This is the BRANDED GRAPHIC and the highest-leverage shareable asset.
@@ -105,7 +105,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### tide-baby-laundry-v1
-- status: pending
+- status: handed-off
 - for: Tide blog post body — "Does laundry detergent really stay on your clothes?" section
 - ghl_post_id: 6a5999559ba2b5829ac09454
 - placement: Section 4 — beside the skin-contact/residue section, emotional anchor for the 14-16 hour contact point
@@ -117,7 +117,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### tide-safe-babies-v1
-- status: pending
+- status: handed-off
 - for: Tide blog post body — "Is Tide safe for babies and kids?" section
 - ghl_post_id: 6a5999559ba2b5829ac09454
 - placement: Section 5 — beside the "Is Tide safe for babies and kids?" H2
@@ -129,7 +129,7 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - requested: 2026-07-17
 
 ### tide-safer-swap-shelf-v1
-- status: pending
+- status: handed-off
 - for: Tide blog post body — "What is a non-toxic laundry detergent?" section
 - ghl_post_id: 6a5999559ba2b5829ac09454
 - placement: Section 6 — beside or below the label-reading checklist under "What is a non-toxic laundry detergent?"
