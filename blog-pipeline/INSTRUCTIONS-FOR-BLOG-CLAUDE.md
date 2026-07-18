@@ -88,6 +88,35 @@ Use this format so Cameron knows what photo to request:
 
 Place 5-6 image placeholders throughout the post (1 per ~300 words).
 
+### Shannon's Advice section (required on every post)
+
+Every post includes one "Shannon's Advice" box: Shannon's own blunt, first-person, nutrition-coach voice breaking into the calm body copy. It is a deliberate tonal shift and a trust builder. Place it near the end, right before the closing scan CTA.
+
+Voice: direct, no sugar-coating, no hype words, sounds like a real coach talking to a friend ("I'll be honest with you", "here is what I tell the mamas I coach", "I put the jar down"). She may state strong opinions ("I won't feed this to my family") because it is clearly HER opinion.
+
+Legal line (critical): documented facts (an agency finding, a recall, "no safe level of lead" per AAP or CDC) are stated as fact and hyperlinked. Anything about a product CAUSING harm, or a named brand "poisoning" people or being "not fit for human consumption", stays as Shannon's clearly-first-person opinion, never as objective fact, because that causation is usually a disputed or unproven allegation. Always end with a simple, practical do-this-instead tip.
+
+Use this structure:
+```
+<div class="shannons-advice">
+<h3>Shannon's Advice</h3>
+<p class="advice-tag">Straight talk from a nutrition coach</p>
+<p>[her blunt take, opinion-framed, facts hyperlinked]</p>
+<p>[practical do-this-instead tip]</p>
+</div>
+```
+
+Add this CSS to the styles block:
+```
+.shannons-advice{background:#1b2733;border-left:6px solid #b22234;border-radius:0;padding:20px 26px;margin:26px 0;}
+.shannons-advice h3{color:#f5d888;font-size:1.25em;margin:0 0 3px;}
+.shannons-advice .advice-tag{font-size:0.72em;font-weight:bold;color:#8fa3b8;text-transform:uppercase;letter-spacing:1.4px;margin:0 0 12px;}
+.shannons-advice p{color:#e9eef4;line-height:1.7;margin:0 0 11px;}
+.shannons-advice p:last-child{margin:0;}
+.shannons-advice a{color:#f5d888;}
+```
+
+
 ---
 
 ## The 30-Day Calendar
