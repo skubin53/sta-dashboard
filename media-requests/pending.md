@@ -430,3 +430,12 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - aspect_ratio: 16:9
 - requested: 2026-07-18
 - note: This replaces only the hero image. The 5 body images are already live. Once generated, write URL to completed.md with placement: hero. Cameron will republish with updated hero.
+
+### bromate-farmersmarket-v1
+- post: TPW-01 (florida-general-mills-potassium-bromate-subpoena)
+- ghl_post_id: 6a5bc131f5f21e82e5b2b2c0
+- requested: 2026-07-18
+- aspect_ratio: 3:2
+- prompt: A woman in her early 40s at a farmers market stall, holding a simple paper bag of flour, talking naturally with the farmer behind the table. Warm summer daylight. Real and unposed. No branded products visible.
+- placement: body -- after "You are not the only one asking" section (before Shannon's Advice box)
+- status: pending
