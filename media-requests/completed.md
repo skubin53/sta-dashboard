@@ -14,4 +14,39 @@ Cameron marks cameron_processed as true after picking up and applying each image
 - completed: 2026-07-17T01:03:52
 - cameron_processed: true
 
+### tide-label-closeup-v1
+- status: done
+- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_010824_fcf9836e-e3b0-4706-9211-7b87507fb0de.png
+- ghl_post_id: 6a5999559ba2b5829ac09454
+- completed: 2026-07-17T19:13:37
+- cameron_processed: false
+
+### tide-comparison-graphic-v1
+- status: done
+- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_010827_05aca4e7-df35-4a0f-8076-1895cc2c10f2.png
+- ghl_post_id: 6a5999559ba2b5829ac09454
+- completed: 2026-07-17T19:13:37
+- cameron_processed: false
+
+### tide-baby-laundry-v1
+- status: done
+- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_010830_cadfa8ac-1ece-43d8-8a57-6dac48bf9372.png
+- ghl_post_id: 6a5999559ba2b5829ac09454
+- completed: 2026-07-17T19:13:37
+- cameron_processed: false
+
+### tide-safe-babies-v1
+- status: done
+- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_010833_c5812194-0f47-4079-af0f-8fff5654580a.png
+- ghl_post_id: 6a5999559ba2b5829ac09454
+- completed: 2026-07-17T19:13:37
+- cameron_processed: false
+
+### tide-safer-swap-shelf-v1
+- status: done
+- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260718_010836_20247ba5-44cc-473f-a0a6-a39cca633718.png
+- ghl_post_id: 6a5999559ba2b5829ac09454
+- completed: 2026-07-17T19:13:37
+- cameron_processed: false
+
 *No completed requests yet.*
