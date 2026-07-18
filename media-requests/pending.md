@@ -404,3 +404,29 @@ Per blog-post-standards.md: 5-6 images per post, 1 per 300 words. Hero (blog-tid
 - filename: lysol-safer-clean-microfiber-cloth-open-window.webp
 - alt_text: Clean bright bathroom with open window and microfiber cloth as a safer cleaning approach
 - requested: 2026-07-17
+
+---
+
+### febreze-comparison-graphic-v2
+- status: pending
+- for: GHL blog post — "Is Febreze Safe to Breathe?" (replaces v1 infographic)
+- ghl_post_id: 6a5b107d6c046951a54c891b
+- reason: v1 infographic used different ingredients than the written comparison table. This v2 must match the table exactly.
+- prompt: A branded infographic comparing Febreze ingredients to safer alternatives. Four rows with these exact labels: Row 1: "Undisclosed Fragrance" → "Open a window + fragrance-free products" | Row 2: "Phthalates (possible)" → "Phthalate-free labeled products" | Row 3: "Methylisothiazolinone" → "Fewer sprayed products" | Row 4: "Formaldehyde (can form)" → "Improve ventilation". Clean design with Switch to America brand colors (navy header, red accents). White background. Clear, legible text. Professional infographic format, 1:1 square ratio for Pinterest sharing.
+- style: Nano Banana Pro
+- aspect_ratio: 1:1
+- requested: 2026-07-18
+- note: Once generated, write URL to completed.md. Cameron will apply it to the live post replacing the v1 infographic image.
+
+---
+
+### clorox-hero-v2
+- status: pending
+- for: GHL blog post — "Is Clorox Spray Toxic?" — hero image replacement
+- ghl_post_id: 6a5b073acf37694afe4c7eb4
+- reason: Current hero is an old stock image (api.ismyhometoxic.com/blog-image-clorox.jpg). Needs a Higgsfield hero to match the quality of the other posts.
+- prompt: A woman in her late 30s wearing rubber gloves, spraying a white Clorox bleach spray bottle onto a bathroom countertop. She pauses and looks at the bottle with a thoughtful, questioning expression — not alarmed, just curious. The Clorox branding and spray bottle are clearly visible. Bright bathroom, natural light, warm tones. Photorealistic.
+- style: Nano Banana Pro
+- aspect_ratio: 16:9
+- requested: 2026-07-18
+- note: This replaces only the hero image. The 5 body images are already live. Once generated, write URL to completed.md with placement: hero. Cameron will republish with updated hero.
