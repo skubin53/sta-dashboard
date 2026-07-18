@@ -3117,6 +3117,20 @@ function runCalc(){
 }
 
 function showCalcDetails(){
+  // 2026-07-18: Capture score to GHL the moment it's revealed — before any CTA.
+  // Ensures even non-$7-buyers get their score in GHL notes (red-hot lead signal).
+  if (totalScore > 0 && window._introPhone && window._introPhone.replace(/\D/g,'').length >= 10) {
+    try {
+      var _sg = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
+      var _tr = Object.entries(roomScores).sort(function(a,b){return b[1]-a[1];})[0]?.[0]||'Unknown';
+      fetch(SERVER + '/scan-score', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ phone: window._introPhone, score: totalScore, grade: _sg, topRoom: _tr, zone: zoneLabel(), firstName: userName || '' }),
+        keepalive: true
+      }).catch(function(){});
+    } catch(e) {}
+  }
   // Direction bar
   var db = document.getElementById('directionBar'); if(db) db.style.display='block';
   // Score label
