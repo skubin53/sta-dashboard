@@ -80,6 +80,8 @@ cameron_processed: false
 
 ---
 
+**Read `blog-pipeline/PHOTO-GUIDE.md` first every day.** It is the full creative direction: the story-arc temperature ramp, the anti-AI realism checklist, the beat-by-beat shot map, and the prompt recipe. The image briefs Cameron passes you already name the beat and the look, so expand each one with the PHOTO-GUIDE recipe and run the checklist before you deliver.
+
 ## Image Standards
 
 - Model: **Nano Banana Pro** (always, unless request specifies otherwise)
