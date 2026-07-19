@@ -3251,9 +3251,6 @@ async function submitReport(){
     const _j = await _r.json().catch(function(){ return {}; });
     if (_j && _j.reportId) {
       try { localStorage.setItem('reportId', _j.reportId); } catch(e){}
-      // Redirect to v2 audit results (replaces old #s-results sales pitch)
-      window.location.href = SERVER + '/r/' + _j.reportId;
-      return;
     }
   }catch(e){}
   showResults();
