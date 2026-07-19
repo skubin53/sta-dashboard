@@ -3260,7 +3260,10 @@ async function submitReport(){
 }
 
 function showResults(){
-  showScreen('s-results'); // showScreen now handles the scroll-to-top reliably across .screen containers
+  // Redirect to the sales results page instead of showing inline #s-results
+  window.location.href = 'https://scan.ismyhometoxic.com/results-preview.html';
+  return;
+  showScreen('s-results'); // kept for reference — superseded by redirect above
   // 2026-07-16 Shannon: belt-and-suspenders scroll reset right after showScreen so s-results
   // always opens at the score, not partway down (content population can push scroll position).
   var _srEl = document.getElementById('s-results');
