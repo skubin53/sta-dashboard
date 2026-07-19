@@ -3243,7 +3243,12 @@ async function submitReport(){
   try{
     const _r = await fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}})});
     const _j = await _r.json().catch(function(){ return {}; });
-    if (_j && _j.reportId) { try { localStorage.setItem('reportId', _j.reportId); } catch(e){} }
+    if (_j && _j.reportId) {
+      try { localStorage.setItem('reportId', _j.reportId); } catch(e){}
+      // Redirect to v2 audit results (replaces old #s-results sales pitch)
+      window.location.href = SERVER + '/r/' + _j.reportId;
+      return;
+    }
   }catch(e){}
   showResults();
 }
