@@ -1317,7 +1317,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-  <button class="btn-rpt" id="btnRpt" tabindex="-1" onclick="showResults()">🔓 Get Me My Score →</button>
+  <button class="btn-rpt" id="btnRpt" tabindex="-1" onclick="(function(){var rid=localStorage.getItem('reportId');if(rid){window.location.href='https://api.ismyhometoxic.com/r/'+rid;}else{showResults();}})()">🔓 Get Me My Score →</button>
   <div style="font-size:.68rem;color:#fafdff;text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
 </div>
 
@@ -3123,11 +3123,17 @@ function showCalcDetails(){
     try {
       var _sg = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
       var _tr = Object.entries(roomScores).sort(function(a,b){return b[1]-a[1];})[0]?.[0]||'Unknown';
-      fetch(SERVER + '/scan-score', {
+      var _scData = {
+        score: totalScore, grade: _sg, topRoom: _tr, hasFamily: hasFamily,
+        items: collectSwitchItems ? collectSwitchItems().slice(0,12).map(function(it){ return { brand: it.brand, cat: it.cat, target: swapFor ? swapFor(it.cat) : '', save: savingsFor ? savingsFor(it.cat) : 0 }; }) : []
+      };
+      fetch(SERVER + '/website-contact', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ phone: window._introPhone, score: totalScore, grade: _sg, topRoom: _tr, zone: zoneLabel(), firstName: userName || '' }),
+        body: JSON.stringify({ phone: window._introPhone, firstName: userName||'', source: 'Family Home Toxic Scorecard', tags: ['scorecard-lead'], version: 'scorecard', sc: _scData, customFields: { score: totalScore, grade: _sg, topRoom: _tr, hasFamily: hasFamily } }),
         keepalive: true
+      }).then(function(r){ return r.json(); }).then(function(j){
+        if(j && j.reportId){ try{ localStorage.setItem('reportId', j.reportId); }catch(e){} }
       }).catch(function(){});
     } catch(e) {}
   }
