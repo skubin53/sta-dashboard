@@ -1,5 +1,8 @@
 # FOR CAMERON — Read this every time you pick up a blog post
 
+> **STATUS 2026-07-20: THE REWRITE BACKLOG IS COMPLETE.** All 6 framework rewrites are LIVE (potassium bromate, Lysol, Tide, Dawn, Febreze, Clorox). Do NOT publish or republish any rewrite. Going forward, publish ONLY new posts from the daily writer / 30-day plan.
+
+
 ## The standard is PERFECTION. Not speed.
 
 Shannon's words (2026-07-18): "You have to STOP rushing Cameron. This isn't a race. I am looking and expecting perfection from you."
