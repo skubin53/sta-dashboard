@@ -7,8 +7,8 @@ slug: is-febreze-safe
 keyword: is Febreze safe
 category: Home air
 meta_description: Is Febreze safe? What that fresh-linen spray really does in your air, the odor-elimination claim a review panel told P&G to drop, and calmer swaps that work.
-status: ready-for-photos
-note: "Framework rewrite. Cameron: replace the live Febreze post with this (draft old, post new), keep the existing live URL/slug."
+status: published
+note: "PUBLISHED and LIVE as of 2026-07-20 (confirmed by Shannon). Rewrite complete. Do NOT republish."
 ---
 
 <style>
