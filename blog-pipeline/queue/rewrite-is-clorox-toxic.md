@@ -7,8 +7,8 @@ slug: is-clorox-toxic
 keyword: is Clorox toxic
 category: Cleaning
 meta_description: That clean bleach smell in a closed bathroom is chlorine gas drifting into the air you breathe. See what Clorox really does to that air, plus the verified 2026 federal penalty against its maker and the calmer swap you can make today.
-status: ready-for-photos
-note: "Framework rewrite. Cameron: replace the live Clorox post with this (draft old, post new), keep the existing live URL/slug."
+status: published
+note: "PUBLISHED and LIVE as of 2026-07-20 (confirmed by Shannon). Rewrite complete. Do NOT republish."
 ---
 
 <style>
