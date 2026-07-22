@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Your Toxic Home Scan Results &middot; Switch to America</title>
+<style>
+:root{--navy:#0e2240;--red:#c8102e;--gold:#c8a24a;--green:#1c7a3d;--amber:#e0530b;--cream:#fdf3e3;--ink:#16233b;--mut:#5b6b83}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.5}
+.wrap{max-width:480px;margin:0 auto;padding:0 0 40px}
+img{max-width:100%;display:block}
+
+.top{text-align:center;padding:22px 22px 6px}
+.top .greet{font-size:15px;color:var(--mut)}
+.top .greet b{color:var(--navy)}
+
+.scorewrap{background:linear-gradient(158deg,var(--navy),#0a1a33);margin:14px 16px 0;border-radius:20px;padding:28px 22px 24px;text-align:center;color:#fff}
+.flagged{font-size:13px;letter-spacing:2px;color:var(--gold);font-weight:800;text-transform:uppercase}
+.flagged .n{display:block;font-size:56px;font-weight:800;line-height:1;margin:8px 0 2px;color:#fff;letter-spacing:0;text-transform:none}
+.flagged .l{display:block;font-size:14.5px;font-weight:600;opacity:.85;letter-spacing:0;text-transform:none}
+.scorewrap p{font-size:14.5px;opacity:.92;max-width:360px;margin:14px auto 0;line-height:1.55}
+
+.found{margin:20px 16px 0;background:#fff;border-radius:16px;padding:20px 20px 6px;box-shadow:0 4px 14px rgba(14,34,64,.08)}
+.found h3{font-size:12px;letter-spacing:1.5px;color:var(--mut);text-transform:uppercase;font-weight:800;margin-bottom:14px}
+.pcard{border-left:4px solid var(--red);background:#fff5f5;border-radius:0 12px 12px 0;padding:14px 16px;margin-bottom:14px}
+.pcard .name{font-weight:800;font-size:17px;color:var(--navy)}
+.pcard .ing{font-size:13px;font-weight:700;color:var(--red);margin:4px 0 6px}
+.pcard p{font-size:13.5px;color:#33425c}
+.pcard .n{font-size:12px;color:var(--mut);font-style:italic;margin-top:8px}
+.locked{background:#fff3e9;border:1px dashed #e0b088;border-radius:12px;padding:18px 16px;text-align:center;margin-bottom:16px}
+.locked .lk{font-size:22px}
+.locked h4{font-size:16px;font-weight:800;color:var(--amber);margin:8px 0 6px}
+.locked p{font-size:13px;color:var(--mut)}
+
+.mirror{margin:22px 16px 0;background:var(--navy);border-radius:16px;padding:24px 20px;color:#fff}
+.mirror h3{font-size:20px;font-weight:800;text-align:center;line-height:1.25;margin-bottom:4px}
+.mirror .sub{text-align:center;font-size:13.5px;opacity:.8;margin-bottom:16px}
+.mirror ul{list-style:none}
+.mirror li{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:14.5px}
+.mirror li:last-child{border-bottom:0}
+.mirror .ic{font-size:19px;flex:0 0 auto}
+.mirror .kick{text-align:center;font-weight:800;font-size:15.5px;color:var(--gold);margin-top:16px;line-height:1.4}
+
+.offer{margin:24px 16px 0}
+.oc{background:#fff;border:2px solid var(--gold);border-radius:18px;padding:24px 20px;box-shadow:0 10px 26px rgba(200,162,74,.20);text-align:center}
+.oc .tag{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:4px 13px;border-radius:12px}
+.oc h2{font-size:22px;font-weight:800;color:var(--navy);margin:12px 0 4px}
+.oc .anchor{font-size:13.5px;color:var(--mut);margin-bottom:10px}
+.oc .price{font-size:44px;font-weight:800;color:var(--navy);line-height:1}
+.oc .price small{font-size:14px;font-weight:700;color:var(--mut);display:block;margin-top:2px}
+.stack{list-style:none;text-align:left;margin:18px 0}
+.stack li{display:flex;gap:9px;font-size:14.5px;padding:6px 0;color:#33425c}
+.stack .ck{color:var(--green);font-weight:800;flex:0 0 auto}
+.btn{display:block;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:19px;padding:18px;border-radius:13px;box-shadow:0 8px 22px rgba(200,16,46,.32)}
+.urgency{font-size:12.5px;color:var(--amber);font-weight:700;margin-top:12px}
+
+.guar{display:flex;gap:11px;align-items:flex-start;background:#f2fbf5;border:1px solid #cfe9d8;border-radius:12px;padding:14px 15px;margin-top:16px;text-align:left;font-size:13px;color:#1c5133}
+.guar b{color:var(--green)}
+
+.proof{margin:24px 16px 0;background:#fff;border-radius:16px;padding:18px 18px 20px;box-shadow:0 4px 14px rgba(14,34,64,.08)}
+.proof .row{display:flex;gap:13px;align-items:center}
+.proof img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:2px solid var(--cream)}
+.proof p{font-size:14px;color:#33425c;font-style:italic;margin-bottom:6px}
+.proof .who{font-size:12.5px;font-weight:800;color:var(--navy);font-style:normal}
+
+.byline{display:flex;align-items:center;gap:10px;justify-content:center;margin:24px 22px 0}
+.byline img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 2px 6px rgba(14,34,64,.18)}
+.byline span{font-size:12.5px;color:var(--mut)}
+.byline b{color:var(--navy)}
+
+.alt{text-align:center;margin:22px 22px 0;font-size:13px;color:var(--mut)}
+.alt a{color:var(--navy);font-weight:800}
+
+.fine{text-align:center;font-size:11px;color:#8a97ac;margin:26px 24px 0;line-height:1.5}
+</style></head>
+<body><div class="wrap">
+
+  <div class="top"><div class="greet">Hi <b>Shannon</b>, here&rsquo;s what I saw.</div></div>
+
+  <div class="scorewrap">
+    <div class="flagged">Products flagged in your home
+      <span class="n">3</span>
+      <span class="l">Each one linked to a real, documented health concern</span>
+    </div>
+    <p>I&rsquo;m not here to scare you. Almost every one of these has an easy, affordable American-made swap. Here&rsquo;s exactly what I found, and the fix for each.</p>
+  </div>
+
+  <div class="found">
+    <h3>&#128269; What we found in your home</h3>
+    <div class="pcard">
+      <div class="name">&#128308; Dawn Ultra Dish Soap</div>
+      <div class="ing">1,4-dioxane, MIT preservative, synthetic fragrance</div>
+      <p>1,4-dioxane is on the EPA&rsquo;s likely-cause-cancer list. It hides inside the bottle as a manufacturing byproduct, so it never appears on the label. The preservative is linked to thyroid problems, memory loss, and hormone disruption.</p>
+      <div class="n">Found in 21 of 93 homes scanned this week</div>
+    </div>
+    <div class="locked">
+      <div class="lk">&#128274;</div>
+      <h4>+ 2 more flagged products in your home</h4>
+      <p>The full list, every ingredient, and the clean American-made swap for each, is in your $7 room-by-room report.</p>
+    </div>
+  </div>
+
+  <div class="mirror">
+    <h3>Does any of this sound familiar?</h3>
+    <div class="sub">Your scan just told us what&rsquo;s in your house.</div>
+    <ul>
+      <li><span class="ic">&#129504;</span><span>Brain fog and fatigue that never fully lifts</span></li>
+      <li><span class="ic">&#128552;</span><span>Kids with skin issues, asthma, or allergies that don&rsquo;t go away</span></li>
+      <li><span class="ic">&#128548;</span><span>Pain and inflammation no doctor can explain</span></li>
+      <li><span class="ic">&#128704;</span><span>Hair thinning and hormones that feel off for no reason</span></li>
+    </ul>
+    <div class="kick">These aren&rsquo;t age. These aren&rsquo;t bad luck. They&rsquo;re coming from your house.</div>
+  </div>
+
+  <div class="offer">
+    <div class="oc">
+      <span class="tag">YOUR PERSONALIZED REPORT</span>
+      <h2>Toxic Home Scan Results</h2>
+      <div class="anchor">A home wellness consultant charges $150+ to walk your house room by room. Your scan already did the work.</div>
+      <div class="price">$7<small>One-time. No subscription. Yours to keep.</small></div>
+      <ul class="stack">
+        <li><span class="ck">&#10003;</span> Every flagged product from your scan, rated and explained</li>
+        <li><span class="ck">&#10003;</span> Exact brand-by-brand swaps, no research required</li>
+        <li><span class="ck">&#10003;</span> Room-by-room action list so you know exactly where to start</li>
+      </ul>
+      <a class="btn" href="#">Get my report now &rarr; $7</a>
+      <div class="urgency">&#9203; Your scan results are held for 48 hours. After that, it&rsquo;s a fresh scan.</div>
+      <div class="guar"><span style="color:var(--green);font-weight:800;font-size:16px">&#10003;</span><div>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text REFUND and the $7 goes back on your card. No questions.</div></div>
+    </div>
+  </div>
+
+  <div class="proof">
+    <div class="row">
+      <img src="https://raw.githubusercontent.com/skubin53/sta-dashboard/main/media/testimonial-gene.jpg" alt="Gene, real Switch to America customer">
+      <div>
+        <p>&ldquo;I&rsquo;d had &lsquo;mystery&rsquo; headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can&rsquo;t believe it.&rdquo;</p>
+        <div class="who">Real Switch to America customer</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="byline">
+    src="https://raw.githubusercontent.com/skubin53/sta-dashboard/main/media/shannon-nicole-founder.jpg" alt="Shannon Nicole">
+    <span>Built by <b>Shannon Nicole</b>, founder of Switch to America. Delivered by text in 60 seconds, yours forever.</span>
+  </div>
+
+  <div class="alt">Rather talk first? <a href="#">Book a free 15-min phone audit</a>, walk through your house with me, no pitch.</div>
+
+  <div class="fine">This tool scores brands using independent safety research. It is educational only, not a laboratory analysis or medical advice.</div>
+
+</div>
+<script>
+(function(){
+  var STRIPE_URL = 'https://buy.stripe.com/00weVdaIecG06oJ5R3cjS00';
+  var BOOKING_URL = 'https://link.switchtoamerica.com/widget/bookings/maketheswtch';
+
+  // Read data from localStorage (set by scorecard on completion)
+  function g(k){ try{ return localStorage.getItem(k)||''; }catch(e){ return ''; } }
+
+  var name   = g('sta_name') || 'there';
+  var count  = parseInt(g('sta_count'))||3;
+  var brand  = g('sta_brand') || 'Your Top Flagged Product';
+  var ing    = g('sta_ing')   || '';
+  var harm   = g('sta_harm')  || '';
+  var locked = Math.max(0, count - 1);
+  var rid    = g('reportId')  || g('sta_rid')  || '';
+
+  // Populate greeting
+  var greet = document.querySelector('.greet b');
+  if(greet) greet.textContent = name;
+
+  // Populate count
+  var countEl = document.querySelector('.flagged .n');
+  if(countEl) countEl.textContent = count;
+
+  // Populate first product
+  var nameEl = document.querySelector('.pcard .name');
+  if(nameEl) nameEl.textContent = '🔴 ' + brand;
+
+  var ingEl = document.querySelector('.pcard .ing');
+  if(ingEl && ing) ingEl.textContent = ing;
+
+  var harmEl = document.querySelector('.pcard p');
+  if(harmEl && harm) harmEl.textContent = harm;
+
+  // Populate locked count
+  var lockedH4 = document.querySelector('.locked h4');
+  if(lockedH4 && locked > 0) lockedH4.textContent = '+ ' + locked + ' more flagged product' + (locked===1?'':'s') + ' in your home';
+
+  // Wire $7 button
+  var stripeUrl = STRIPE_URL;
+  if(rid) stripeUrl += (stripeUrl.indexOf('?')>=0?'&':'?') + 'client_reference_id=' + encodeURIComponent(rid);
+  var btnEl = document.querySelector('.btn');
+  if(btnEl) btnEl.href = stripeUrl;
+
+  // Wire booking link
+  var altA = document.querySelector('.alt a');
+  if(altA) altA.href = BOOKING_URL;
+})();
+</script>
+
+</body></html>

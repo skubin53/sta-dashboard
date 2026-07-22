@@ -3267,6 +3267,26 @@ function showResults(){
   toxList=diverse;
   buildSimulator(toxList);
 
+  // ── Save data to localStorage and redirect to redesigned score-reveal page ──
+  try {
+    var topBrand = toxList.length > 0 ? toxList[0].brand : '';
+    var topCat   = toxList.length > 0 ? toxList[0].cat   : '';
+    // Look up ingredient/harm text from the SWAP_MAP if available
+    var ingText  = '', harmText = '';
+    if(typeof findingDisplay === 'function' && topBrand && topCat) {
+      var fd = findingDisplay(topBrand, topCat, '');
+      ingText  = (fd && fd.ing)  ? fd.ing  : '';
+      harmText = (fd && fd.harm) ? fd.harm.replace(/<[^>]+>/g,'').replace(/\[\[.\]\]/g,'') : '';
+    }
+    localStorage.setItem('sta_name',  userName || '');
+    localStorage.setItem('sta_count', String(totalToxBefore));
+    localStorage.setItem('sta_brand', topBrand);
+    localStorage.setItem('sta_ing',   ingText);
+    localStorage.setItem('sta_harm',  harmText.slice(0, 220));
+  } catch(e) {}
+  // Redirect to redesigned results page
+  window.location.href = '/score-reveal/' + window.location.search;
+
   // ── sr-scorewrap (navy card) ──
   var srScorewrap = document.getElementById(‘sr-scorewrap’);
   if(srScorewrap){
