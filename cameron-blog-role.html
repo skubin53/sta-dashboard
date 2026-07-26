@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cameron's Role in the Blog Pipeline — The ABCs</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #1a1a2e;
+    background: #f9f9f7;
+  }
+  header {
+    background: #14263f;
+    color: #fff;
+    padding: 36px 40px 28px;
+    border-bottom: 5px solid #FF9900;
+  }
+  header h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  header .subtitle {
+    font-size: 0.92rem;
+    color: #a8c0d8;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 28px 48px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #14263f;
+    border-left: 5px solid #FF9900;
+    padding-left: 14px;
+    margin: 40px 0 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #14263f;
+    margin: 22px 0 8px;
+  }
+  p {
+    margin-bottom: 12px;
+  }
+  .player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+  }
+  .player-card {
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    border-top: 4px solid #FF9900;
+    border-radius: 6px;
+    padding: 18px 20px;
+  }
+  .player-card h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #14263f;
+  }
+  .player-card .player-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FF9900;
+    margin-bottom: 6px;
+  }
+  .player-card ul {
+    margin: 10px 0 0 16px;
+    font-size: 0.92rem;
+    color: #374151;
+  }
+  .player-card ul li {
+    margin-bottom: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.93rem;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  thead tr {
+    background: #14263f;
+    color: #fff;
+  }
+  thead th {
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.3px;
+  }
+  tbody tr:nth-child(even) {
+    background: #f4f7fa;
+  }
+  tbody tr:nth-child(odd) {
+    background: #fff;
+  }
+  tbody td {
+    padding: 11px 14px;
+    vertical-align: top;
+    border-bottom: 1px solid #e9edf2;
+    color: #1f2937;
+  }
+  .tag-cameron { color: #1d4ed8; font-weight: 600; }
+  .tag-photo { color: #7c3aed; font-weight: 600; }
+  .tag-shannon { color: #b45309; font-weight: 600; }
+  .tag-new {
+    display: inline-block;
+    background: #FF9900;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .checklist-item {
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 16px 18px;
+  }
+  .checklist-item .letter {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FF9900;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .checklist-item .check-title {
+    font-weight: 700;
+    font-size: 0.93rem;
+    color: #14263f;
+    margin-bottom: 4px;
+  }
+  .checklist-item p {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin: 0;
+  }
+  .shannon-box {
+    background: #fff8ee;
+    border-left: 5px solid #FF9900;
+    border-radius: 0 6px 6px 0;
+    padding: 20px 22px;
+    margin-top: 18px;
+  }
+  .shannon-box .task-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: flex-start;
+  }
+  .shannon-box .task-row:last-child {
+    margin-bottom: 0;
+  }
+  .task-icon {
+    font-size: 1.2rem;
+    min-width: 24px;
+    line-height: 1.4;
+  }
+  .task-text {
+    font-size: 0.95rem;
+    color: #1f2937;
+  }
+  .status-live {
+    display: inline-block;
+    background: #16a34a;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  .status-queued {
+    display: inline-block;
+    background: #6b7280;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  .post-url {
+    font-size: 0.8rem;
+    color: #1d4ed8;
+    word-break: break-all;
+  }
+  .break-callout {
+    background: #14263f;
+    color: #e9eef4;
+    border-radius: 6px;
+    padding: 20px 22px;
+    margin-top: 16px;
+    font-size: 0.93rem;
+  }
+  .break-callout .bc-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 24px;
+    margin-top: 10px;
+  }
+  .bc-label {
+    font-weight: 700;
+    color: #FF9900;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .bc-text {
+    font-size: 0.9rem;
+    color: #c8d8e8;
+    margin-bottom: 14px;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid #dde4ec;
+    margin: 10px 0 0;
+  }
+  footer {
+    background: #14263f;
+    color: #6b8aaa;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 18px 20px;
+    border-top: 3px solid #FF9900;
+    margin-top: 48px;
+  }
+  @media print {
+    body { background: #fff; font-size: 14px; }
+    header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .player-card, .checklist-item { page-break-inside: avoid; }
+    table { page-break-inside: avoid; }
+    footer { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .break-callout { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+  @media (max-width: 600px) {
+    header { padding: 24px 20px 18px; }
+    header h1 { font-size: 1.35rem; }
+    .container { padding: 20px 14px 36px; }
+    .bc-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Cameron's Role in the Blog Pipeline &mdash; The ABCs</h1>
+  <div class="subtitle">Switch to America &nbsp;|&nbsp; AI Operating System &nbsp;|&nbsp; Blog Division of Responsibilities</div>
+</header>
+
+<div class="container">
+
+  <!-- SECTION 1 -->
+  <h2>Section 1: The Three Players</h2>
+  <p>Three parties run the blog pipeline. Each has a hard boundary. None of them step into each other's lane.</p>
+
+  <div class="player-grid">
+
+    <div class="player-card">
+      <div class="player-label">Mac Mini in Phoenix</div>
+      <h3>Cameron (the AI system)</h3>
+      <ul>
+        <li>Runs on a cron schedule, 24/7</li>
+        <li>At 7:30 AM: reads the day's blog post from GitHub and writes photo requests</li>
+        <li>At 8:30 AM: reads completed photo URLs, places images into the post, runs the A-B-C-D checklist, and publishes to GHL</li>
+        <li>Sends Shannon a Telegram notification the moment a post goes live</li>
+        <li>Flags problems by 8:45 AM if anything breaks</li>
+        <li>Does NOT generate images. Does NOT write the blog post.</li>
+      </ul>
+    </div>
+
+    <div class="player-card">
+      <div class="player-label">Shannon's Claude subscription</div>
+      <h3>Photo Claude (Higgsfield)</h3>
+      <ul>
+        <li>Runs on Shannon's own Claude subscription, not the Mac Mini</li>
+        <li>Shannon opens it manually at 8:00 AM, Mon-Sat</li>
+        <li>Reads the day's photo request file from GitHub</li>
+        <li>Generates every image via Higgsfield (Nano Banana Pro model)</li>
+        <li>Commits completed image URLs back to GitHub so Cameron can pick them up</li>
+        <li>Does NOT write blog content. Does NOT publish to GHL.</li>
+      </ul>
+    </div>
+
+    <div class="player-card">
+      <div class="player-label">The human</div>
+      <h3>Shannon</h3>
+      <ul>
+        <li>Runs Photo Claude every morning at 8:00 AM MDT (Mon-Sat)</li>
+        <li>Reviews Telegram notifications when Cameron publishes</li>
+        <li>Tops up fal.ai billing when balance runs low</li>
+        <li>Makes judgment calls when Cameron flags a problem</li>
+        <li>Everything else is handled automatically</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- SECTION 2 -->
+  <h2>Section 2: The Daily Timeline (MDT)</h2>
+  <p>Every weekday, the pipeline runs on this exact schedule. The only human touch point is Shannon opening Photo Claude at 8:00 AM.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:110px;">Time (MDT)</th>
+        <th style="width:130px;">Who</th>
+        <th>What Happens</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>7:00 AM</strong></td>
+        <td><span class="tag-cameron">Blog Claude</span></td>
+        <td>Writes the day's blog post based on the 30-day calendar and commits it to <code>blog-pipeline/queue/YYYY-MM-DD.md</code> on GitHub.</td>
+      </tr>
+      <tr>
+        <td><strong>7:30 AM</strong></td>
+        <td><span class="tag-cameron">Cameron</span></td>
+        <td>Reads the queued post, extracts image descriptions, and writes photo requests to <code>blog-pipeline/photo-requests/YYYY-MM-DD.md</code> on GitHub.</td>
+      </tr>
+      <tr>
+        <td><strong>8:00 AM</strong></td>
+        <td><span class="tag-shannon">Shannon</span> + <span class="tag-photo">Photo Claude</span></td>
+        <td>Shannon opens Photo Claude. Photo Claude reads today's request file, generates each image via Higgsfield (Nano Banana Pro), and commits completed URLs to <code>blog-pipeline/photos-completed/YYYY-MM-DD.md</code>.</td>
+      </tr>
+      <tr>
+        <td><strong>8:30 AM</strong></td>
+        <td><span class="tag-cameron">Cameron</span></td>
+        <td>Reads completed photo URLs. Places images into the post. Runs the A-B-C-D checklist. Publishes to GHL. Sends Shannon a Telegram notification with the live URL.</td>
+      </tr>
+      <tr>
+        <td><strong>8:45 AM</strong> <span class="tag-new">NEW RULE</span></td>
+        <td><span class="tag-cameron">Cameron</span></td>
+        <td>If photos are still not committed by 8:45 AM, Cameron flags the outage via Telegram so Shannon can intervene. Before July 25, Cameron stayed silent. This is the fix.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION 3 -->
+  <h2>Section 3: The A-B-C-D Checklist (Cameron runs before every publish)</h2>
+  <p>Cameron runs four checks every single time before it publishes. If any check fails, it does not publish and flags Shannon instead.</p>
+
+  <div class="checklist-grid">
+    <div class="checklist-item">
+      <div class="letter">A</div>
+      <div class="check-title">All images placed</div>
+      <p>Every image placeholder has a real URL. Hero image is set as the GHL cover photo only, never duplicated in the post body.</p>
+    </div>
+    <div class="checklist-item">
+      <div class="letter">B</div>
+      <div class="check-title">No label reading</div>
+      <p>Every image is inspected. If any image shows readable text on product packaging or labels, it is flagged and not placed.</p>
+    </div>
+    <div class="checklist-item">
+      <div class="letter">C</div>
+      <div class="check-title">Slug matches calendar</div>
+      <p>The URL slug in the post frontmatter matches the slug listed in the 30-day calendar exactly. Mismatches cause 404s.</p>
+    </div>
+    <div class="checklist-item">
+      <div class="letter">D</div>
+      <div class="check-title">URL returns 200 three times</div>
+      <p>After publishing, Cameron hits the live URL three times. All three must return HTTP 200. If any fail, it re-publishes using the DRAFT-to-PUBLISHED cycle.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <h2>Section 4: What Breaks the Pipeline and What Cameron Does</h2>
+  <p>These are the four known failure modes and exactly how Cameron handles each one without Shannon having to step in (unless flagged).</p>
+
+  <div class="break-callout">
+    <div class="bc-row">
+
+      <div>
+        <div class="bc-label">Problem 1</div>
+        <div class="bc-text">Photo Claude does not run and no photos are committed by 8:30 AM.</div>
+        <div class="bc-label">Cameron's response</div>
+        <div class="bc-text">Waits until 8:45 AM, then sends Shannon a Telegram flag: "Photo Claude did not run today. Post for [title] is on hold. Please run Photo Claude and I will publish when photos land." <em>This is the fix from the July 24-25 outage. Previously Cameron stayed silent and the post just did not publish.</em></div>
+      </div>
+
+      <div>
+        <div class="bc-label">Problem 2</div>
+        <div class="bc-text">fal.ai balance runs out mid-generation and Higgsfield cannot produce images.</div>
+        <div class="bc-label">Cameron's response</div>
+        <div class="bc-text">Flags the balance immediately via Telegram. Falls back to RunwayML if available, or places Pexels stock images. Flags Shannon that stock was used and photo quality should be reviewed when balance is restored.</div>
+      </div>
+
+      <div>
+        <div class="bc-label">Problem 3</div>
+        <div class="bc-text">GHL publish API call fails (network error, timeout, or GHL outage).</div>
+        <div class="bc-label">Cameron's response</div>
+        <div class="bc-text">Retries using the two-step method: POST to create the post as DRAFT, then PUT to set status to PUBLISHED. This avoids single-call race conditions that cause silent GHL failures.</div>
+      </div>
+
+      <div>
+        <div class="bc-label">Problem 4</div>
+        <div class="bc-text">URL returns 404 after the publish call appears to succeed.</div>
+        <div class="bc-label">Cameron's response</div>
+        <div class="bc-text">Re-runs the full DRAFT-to-PUBLISHED cycle. Waits 60 seconds between attempts. Verifies with three HTTP requests. If still failing after two cycles, flags Shannon.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <h2>Section 5: What Shannon Needs to Do</h2>
+  <p>This is the complete list. Nothing else is required from Shannon on a normal day.</p>
+
+  <div class="shannon-box">
+    <div class="task-row">
+      <div class="task-icon">&#9201;</div>
+      <div class="task-text">
+        <strong>Run Photo Claude at 8:00 AM MDT, Monday through Saturday.</strong><br>
+        Open <code>blog-pipeline/photo-requests/YYYY-MM-DD.md</code> in the sta-dashboard GitHub repo (today's date). Pass each request to Higgsfield. Write the URLs back and commit. Tell Photo Claude to commit when done. Cameron picks up and publishes at 8:30 AM.
+      </div>
+    </div>
+    <hr class="divider" style="margin: 12px 0;">
+    <div class="task-row">
+      <div class="task-icon">&#128241;</div>
+      <div class="task-text">
+        <strong>Watch for Telegram notifications from Cameron.</strong><br>
+        When a post goes live, Cameron sends a Telegram message with the URL. If anything looks wrong, reply and Cameron will investigate. If Cameron flags a problem at 8:45 AM, that is the signal to run Photo Claude if it was missed.
+      </div>
+    </div>
+    <hr class="divider" style="margin: 12px 0;">
+    <div class="task-row">
+      <div class="task-icon">&#128178;</div>
+      <div class="task-text">
+        <strong>Top up fal.ai billing when the balance runs low.</strong><br>
+        Go to fal.ai/dashboard/billing. Cameron flags immediately when balance is exhausted. Keep a buffer so Photo Claude does not get blocked mid-run.
+      </div>
+    </div>
+    <hr class="divider" style="margin: 12px 0;">
+    <div class="task-row">
+      <div class="task-icon">&#10003;</div>
+      <div class="task-text">
+        <strong>That is it.</strong><br>
+        Cameron handles writing the blog post (via Blog Claude at 7:00 AM), building photo requests, placing images, running the A-B-C-D checklist, publishing to GHL, verifying the URL, and sending notifications. Nothing else falls on Shannon unless Cameron flags it.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2>Section 6: What Has Been Built (as of July 25, 2026)</h2>
+  <p>Days 01 through 05 are live. Day 06 is queued and publishes Monday, July 28.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:55px;">Day</th>
+        <th>Topic</th>
+        <th style="width:130px;">Status</th>
+        <th>Live URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>01</strong></td>
+        <td>Fabuloso</td>
+        <td><span class="status-live">Live</span></td>
+        <td><span class="post-url">https://join.switchtoamerica.com/post/is-fabuloso-safe</span></td>
+      </tr>
+      <tr>
+        <td><strong>02</strong></td>
+        <td>Scentsy</td>
+        <td><span class="status-live">Live</span></td>
+        <td><span class="post-url">https://join.switchtoamerica.com/post/are-scentsy-wax-melts-toxic</span></td>
+      </tr>
+      <tr>
+        <td><strong>03</strong></td>
+        <td>Mascara</td>
+        <td><span class="status-live">Live</span></td>
+        <td><span class="post-url">https://join.switchtoamerica.com/post/is-waterproof-mascara-safe-pfas</span></td>
+      </tr>
+      <tr>
+        <td><strong>04</strong></td>
+        <td>Deodorant</td>
+        <td><span class="status-live">Live</span></td>
+        <td><span class="post-url">https://join.switchtoamerica.com/post/is-spray-deodorant-safe-benzene-recall</span></td>
+      </tr>
+      <tr>
+        <td><strong>05</strong></td>
+        <td>Ziploc</td>
+        <td><span class="status-live">Live</span></td>
+        <td><span class="post-url">https://join.switchtoamerica.com/post/can-you-microwave-ziploc-bags</span></td>
+      </tr>
+      <tr>
+        <td><strong>06</strong></td>
+        <td>Pine-Sol</td>
+        <td><span class="status-queued">Queued</span></td>
+        <td style="color:#6b7280; font-size:0.85rem;">Publishes Mon July 28</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer>
+  Generated by Cameron &nbsp;&bull;&nbsp; Switch to America AI Operating System &nbsp;&bull;&nbsp; July 26, 2026
+</footer>
+
+</body>
+</html>
