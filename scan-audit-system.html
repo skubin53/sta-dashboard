@@ -439,10 +439,13 @@
 <h3>Step 4: The Voice Note (Approval Required, Never Auto-fires)</h3>
 <p>For high-scoring leads, Cameron generates a personalized voice note using Shannon's cloned voice:</p>
 <ul>
-  <li><strong>Voice:</strong> ElevenLabs cloned voice ID ERKvau7lq5DZnC9WSMcR (Shannon's narrator voice)</li>
-  <li><strong>What it sounds like:</strong> Shannon speaking directly to the lead, naming her specific flagged room and product, and inviting her to a 15-minute phone call</li>
-  <li><strong>How it gets to the lead:</strong> Cameron generates the audio via ElevenLabs API, converts it to OGG via ffmpeg, then surfaces it to Shannon as a Telegram approval card. Shannon listens and taps approve. Then an SMS with a link to the voice note goes to the lead.</li>
+  <li><strong>Voice name in ElevenLabs:</strong> "Shannon Nicole (aka Zoe)" — a cloned voice built from Shannon's real recordings</li>
+  <li><strong>Voice ID:</strong> ERKvau7lq5DZnC9WSMcR</li>
+  <li><strong>How the script sounds:</strong> First-person Shannon. Not "Zoe the narrator." The script opens: "[First name], it's Shannon. First off, thank you for completing that quiz. I see you scored [N]. Do you have time tomorrow, late morning or afternoon, for a quick ten-minute shopping audit over the phone?" Natural, human, warm. No "checking in" language.</li>
+  <li><strong>When it fires:</strong> 10-15 minutes after scorecard completion — not 90 minutes. Speed matters.</li>
+  <li><strong>How it gets to the lead:</strong> Cameron generates the audio via ElevenLabs API directly (not through OpenClaw's built-in TTS tool — that uses the wrong voice), converts to OGG via ffmpeg, then surfaces it to Shannon as a Telegram approval card. Shannon listens and taps approve. Then an SMS with a link to the voice note goes to the lead.</li>
   <li><strong>Shannon must tap approve every single time.</strong> This is never auto-fired.</li>
+  <li><strong>Note on the two voices:</strong> Cameron's voice for briefs TO Shannon is different — that is "Brian — Deep, Resonant and Comforting" (voice ID nPczCjzI2devNBz1zQrb). Shannon picked Brian from a 3-voice test on June 24, 2026. Brian = Cameron talking to Shannon. Zoe/Shannon-Nicole = Shannon talking to leads. Never mix them.</li>
 </ul>
 
 <h3>Step 5: The Lawsuit / Recall Alert (Daily 9 AM, Approval Required)</h3>
