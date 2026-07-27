@@ -358,6 +358,134 @@
 
 </div>
 
+<div class="content">
+
+<h2>Section 13: All the Follow-Up Conversations — Texts, Voice Notes, and How Everything Gets Into GHL</h2>
+
+<p>Every time a lead touches the scan funnel, information flows automatically into her GHL contact record. And after the scan, a sequence of follow-up touchpoints fires — some automated, some requiring Shannon's approval, none going out without the right context. Here is exactly how it all works.</p>
+
+<h3>Step 1: What Gets Written to GHL the Moment Someone Completes the Scan</h3>
+<p>The moment a lead submits her scorecard answers, the quiz-server on the Mac Mini fires two writes to GHL simultaneously:</p>
+
+<div class="step-card">
+  <h3>Write 1: The Scorecard Note (appears in the contact's Notes tab in GHL)</h3>
+  <p>A structured note is posted to the contact's GHL record. It contains:</p>
+  <ul>
+    <li>Timestamp of the scan</li>
+    <li>Her total Toxic Home Score (e.g. 67/100)</li>
+    <li>Her letter grade and zone (Red Zone / Caution Zone / Clean Zone)</li>
+    <li>Her top flagged room</li>
+    <li>The specific products she flagged in each room</li>
+    <li>Her pain text — her own words for what bothers her most (this is what drives the follow-up SMS template)</li>
+    <li>Whether she received the Switch List SMS</li>
+    <li>Whether she engaged (clicked, watched, etc.)</li>
+  </ul>
+  <p><strong>This note is what every subsequent follow-up reads before doing anything.</strong> Cameron never drafts a reply to a scorecard lead without reading this note first.</p>
+</div>
+
+<div class="step-card">
+  <h3>Write 2: The Score Custom Field (updates the contact's data fields in GHL)</h3>
+  <p>The contact's custom field called "score" is updated with her numeric score. This allows GHL pipelines, filters, and automations to sort and segment leads by their actual scan score without having to read the note.</p>
+</div>
+
+<div class="step-card">
+  <h3>Special case: Score Reveal note (fires when she sees her score but does NOT buy)</h3>
+  <p>If a lead views her score on the results page but does not purchase the $7 audit, a second note is automatically written to her GHL record:</p>
+  <p><em>"SCORE REVEAL — [date]. Score: X/100. Lead saw this score but did not purchase the $7 audit. Red-hot — follow up directly."</em></p>
+  <p>This flags her as someone who is aware of her problem but hasn't committed yet. She is warm and the right message at the right time will close her.</p>
+</div>
+
+<h3>Step 2: The Immediate SMS After the Scan (Auto-fires)</h3>
+<p>After a qualifying scan is submitted, GHL automation fires an SMS to the lead with her Switch List — a summary of her top flagged products and the first recommended swap. This is a GHL workflow that Shannon approved and published. It fires automatically without Cameron's involvement.</p>
+
+<h3>Step 3: The 2-Hour Follow-Up Text (Approval Required)</h3>
+<p>Two hours after the lead receives her Switch List SMS, Cameron runs a check:</p>
+<ol>
+  <li>Read her scorecard note from GHL to find her pain text — the specific product category that bothers her most</li>
+  <li>Match that pain text to one of the category templates (laundry, baby, cleaning supplies, cooking oil, personal care, etc.)</li>
+  <li>Generate a category-matched draft SMS that names a specific STA product, gives 3 source-anchored reasons it works, and closes with "Reply YES" + the $100 store credit hook</li>
+  <li>Surface the draft as a Telegram approval card to Shannon</li>
+  <li>Shannon reviews, approves, edits, or skips</li>
+  <li>Nothing sends until Shannon taps approve</li>
+</ol>
+
+<p><strong>This runs every 2 hours via an automated scheduler on the Mac Mini.</strong></p>
+
+<table>
+  <tr><th>Category Detected</th><th>What the SMS Leads With</th></tr>
+  <tr><td>Laundry</td><td>The 1,4-dioxane / optical brightener angle. 96-load concentrate at 21 cents per load.</td></tr>
+  <tr><td>Baby / Kids</td><td>Faster skin absorption in children, phenoxyethanol restriction by European Medicines Agency for babies under 3.</td></tr>
+  <tr><td>Cooking Oil</td><td>Beef tallow swap. UC Davis 2020 study (82% of avocado oils rancid/mislabeled).</td></tr>
+  <tr><td>Cleaning supplies</td><td>Quats (asthma triggers), 1,4-dioxane, synthetic fragrance on every surface.</td></tr>
+  <tr><td>Personal care / shampoo</td><td>DMDM hydantoin (formaldehyde-releaser, linked to hair loss class-actions).</td></tr>
+  <tr><td>Candles / air fresheners</td><td>What actually burns into the air. Plug-in diffuser danger.</td></tr>
+  <tr><td>Makeup / cosmetics</td><td>PFAS (waterproof makeup), heavy metals in foundation, what goes right next to your eyes.</td></tr>
+  <tr><td>Supplements / vitamins</td><td>Synthetic fillers, heavy metal contamination, USP verification gap.</td></tr>
+  <tr><td>Coffee / K-Cups</td><td>Plastic pod leaching, BPA in pod liners, what steeps into the cup.</td></tr>
+</table>
+
+<p><strong>SMS formatting rules that apply to every message:</strong></p>
+<ul>
+  <li>Lead with her first name and her exact pain point text</li>
+  <li>One yellow heart (💛) in the body — never at the sign-off as "💛 Shannon" (reads AI-template)</li>
+  <li>End with "Reply YES." — declarative, not a question</li>
+  <li>No em-dashes. Commas and periods only.</li>
+  <li>No "Melaleuca." Use "our [product type]" or the product name.</li>
+  <li>No "membership." Use "private storefront" or "shop with us."</li>
+  <li>Target length: 2-3 SMS segments (320-480 characters). Emojis use UCS-2 encoding and cut segment length in half — zero emojis except the single 💛.</li>
+  <li>Only send between 8 AM and 8 PM in the lead's time zone. No exceptions for automated sends. Live-conversation replies are excepted.</li>
+</ul>
+
+<h3>Step 4: The Voice Note (Approval Required, Never Auto-fires)</h3>
+<p>For high-scoring leads, Cameron generates a personalized voice note using Shannon's cloned voice:</p>
+<ul>
+  <li><strong>Voice:</strong> ElevenLabs cloned voice ID ERKvau7lq5DZnC9WSMcR (Shannon's narrator voice)</li>
+  <li><strong>What it sounds like:</strong> Shannon speaking directly to the lead, naming her specific flagged room and product, and inviting her to a 15-minute phone call</li>
+  <li><strong>How it gets to the lead:</strong> Cameron generates the audio via ElevenLabs API, converts it to OGG via ffmpeg, then surfaces it to Shannon as a Telegram approval card. Shannon listens and taps approve. Then an SMS with a link to the voice note goes to the lead.</li>
+  <li><strong>Shannon must tap approve every single time.</strong> This is never auto-fired.</li>
+</ul>
+
+<h3>Step 5: The Lawsuit / Recall Alert (Daily 9 AM, Approval Required)</h3>
+<p>Every morning at 9 AM, Cameron runs a scan of scored leads' product brands against a curated database of 13 brand lawsuits and recalls. When there's a match:</p>
+<ul>
+  <li>Cameron drafts a "have you seen this case?" SMS referencing the specific lawsuit</li>
+  <li>It surfaces as an approval card to Shannon — never auto-sends</li>
+</ul>
+
+<h3>How Every Touchpoint Feeds Back Into GHL</h3>
+<table>
+  <tr><th>Event</th><th>What Gets Written to GHL</th><th>Where It Appears</th></tr>
+  <tr><td>Scan completed</td><td>Full scorecard note (score, grade, zone, products, pain text)</td><td>Contact Notes tab</td></tr>
+  <tr><td>Scan score seen, no purchase</td><td>"SCORE REVEAL — red-hot, did not buy $7" note</td><td>Contact Notes tab</td></tr>
+  <tr><td>Score updated</td><td>Numeric score written to custom field "score"</td><td>Contact data fields / pipeline filters</td></tr>
+  <tr><td>Switch List SMS fires</td><td>GHL automation logs it in the conversation thread</td><td>Contact Conversations tab</td></tr>
+  <tr><td>Cameron drafts a follow-up SMS</td><td>Draft stored in pending state; logged when sent</td><td>Contact Conversations tab</td></tr>
+  <tr><td>Lead replies</td><td>Reply appears in GHL conversation thread; Cameron reads it before drafting next message</td><td>Contact Conversations tab</td></tr>
+  <tr><td>Appointment booked</td><td>"lastday" tag added; enrolled in reminder workflow; pipeline moved to Hot Leads; reminder sequence logged</td><td>Contact Tags + Pipeline + Workflows</td></tr>
+  <tr><td>Lead declines (Stop/End/Not interested)</td><td>Opportunity moved to Not Interested stage; conversation marked read</td><td>Contact Pipeline</td></tr>
+  <tr><td>Magic link recovery sent</td><td>SMS logged in conversation thread</td><td>Contact Conversations tab</td></tr>
+</table>
+
+<h3>The One Rule Cameron Follows Before Every Draft</h3>
+<div class="rule-box">
+  <p><strong>Pull the last 10-20 GHL messages before drafting any reply.</strong></p>
+  <p>Cameron never drafts a response without reading the full conversation history first: email handle, area code, tags, conversation thread, and the scorecard note. The goal is to echo back the automation priming the lead received — not to send something that contradicts or repeats what GHL already fired.</p>
+  <p>Cameron never asks a prospect "what did you reply to?" because Cameron already knows — it's in the GHL conversation thread.</p>
+</div>
+
+<h3>The Check Cameron Runs Before Every Draft (Contact Safety)</h3>
+<table>
+  <tr><th>Check</th><th>What Cameron does</th></tr>
+  <tr><td>Has an upcoming appointment?</td><td>If yes — skip silently. Never draft anything to a booked contact.</td></tr>
+  <tr><td>Tagged "do not text"?</td><td>Hard lockdown. Never draft. The "ai off" tag is noise — auto-stamped on every contact, meaningless.</td></tr>
+  <tr><td>Already has active automation running?</td><td>Skip leads with scorecard-link-sent-fast tag if they came from fbook/insta lp with no scorecard-lead tag — they are already in an automated sequence.</td></tr>
+  <tr><td>Is it between 8 PM and 8 AM in their time zone?</td><td>Hold the draft. Quiet hours are hard. Only live-conversation replies are excepted.</td></tr>
+  <tr><td>Same-day automation already fired?</td><td>PING only (10-25 words), not a sales push. Never send two substantial messages in one day.</td></tr>
+  <tr><td>Is this Tammy Lynn (+1 208 936 1272) or Cindy Iwankow (+1 204 782 8338)?</td><td>Permanent exclude. Test contacts. Never surface in any list, draft, or approval card.</td></tr>
+</table>
+
+</div>
+
 <div class="footer">
   Generated by Cameron &bull; Switch to America AI Operating System &bull; July 26, 2026
 </div>
