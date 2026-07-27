@@ -545,8 +545,8 @@
     <tr><th>Component</th><th>Detail</th></tr>
     <tr><td>Sales page URL</td><td>shift.theshannonnicole.com/the-shift</td></tr>
     <tr><td>Access page URL</td><td>shift.theshannonnicole.com/the-shift-access</td></tr>
-    <tr><td>Payment</td><td>Square checkout — $11 CAD. Link: square.link/u/jsj5GIeM</td></tr>
-    <tr><td>What happens after payment</td><td>Redirect to /the-shift-access. Shannon's video is embedded there. GHL tags the contact "tripwire-buyer."</td></tr>
+    <tr><td>Payment</td><td>Stripe — $11 USD. Stripe Checkout Session created server-side via POST to Stripe API.</td></tr>
+    <tr><td>What happens after payment</td><td>Stripe webhook (checkout.session.completed) fires. Server fulfills: upserts GHL contact, tags the contact "tripwire-buyer" + "the-shift-buyer" + "builder-lead", sends access email, redirects to /the-shift-access where Shannon's video is embedded.</td></tr>
     <tr><td>Server</td><td>Runs on the Mac Mini, exposed via Cloudflare Tunnel (shift.theshannonnicole.com)</td></tr>
     <tr><td>Pixel</td><td>PageView + InitiateCheckout on sales page. Purchase event on access page.</td></tr>
   </table>
@@ -565,7 +565,47 @@
   <p><strong>Where it's documented:</strong> Obsidian Vault/concepts/Builder-Fit-Quiz.md</p>
 </div>
 
-<h2>Section 16: Compliance Rules That Apply to the Entire Funnel</h2>
+<h2>Section 16: Stripe Payment Processing — How Money Flows</h2>
+
+<p>Stripe is the only payment processor. All three paid products in the funnel run through it. No Square. No PayPal. Stripe only.</p>
+
+<h3>The Three Products and What Stripe Charges</h3>
+<table>
+  <tr><th>Product</th><th>Price</th><th>Who buys it</th><th>GHL tags applied after payment</th></tr>
+  <tr><td>7-Day Score Recovery Plan</td><td>$7 USD</td><td>Shopper who completed the scan and wants the full personalized Blueprint</td><td>score-recovery-buyer, score-recovery-welcome-pending, scorecard-lead</td></tr>
+  <tr><td>3-Month Home Reset</td><td>$17 USD</td><td>Shopper ready for the full room-by-room switch plan</td><td>home-reset-buyer, home-reset-welcome-pending, scorecard-lead</td></tr>
+  <tr><td>The Shift (builder tripwire)</td><td>$11 USD</td><td>Builder prospect who qualified through the builder quiz</td><td>tripwire-buyer, the-shift-buyer, builder-lead</td></tr>
+</table>
+
+<h3>How Stripe Is Wired (Technical)</h3>
+<div class="step-card">
+  <p><strong>Mode:</strong> The server runs in LIVE or TEST mode. Live keys (pk_live + sk_live) are saved. The webhook signing secret (whsec_) is still needed to fully arm live mode — until that's provided, the server runs in test mode.</p>
+  <p><strong>Where keys are stored:</strong> Mac Mini at /workspace/state/secrets/scripts.env. Never write raw Stripe keys into a document or commit them to GitHub.</p>
+  <p><strong>Checkout flow:</strong></p>
+  <ol>
+    <li>Lead clicks the buy button on the sales page</li>
+    <li>Server creates a Stripe Checkout Session via POST to Stripe API</li>
+    <li>Lead is redirected to Stripe's hosted checkout page</li>
+    <li>Lead pays with card</li>
+    <li>Stripe fires a webhook to the server: checkout.session.completed</li>
+    <li>Server verifies payment_status === "paid" (concurrency guard prevents double-fulfillment)</li>
+    <li>Server fulfills: upserts GHL contact, adds tags, sends access email, redirects to the access page</li>
+  </ol>
+</div>
+
+<h3>What Happens After Each Payment</h3>
+<table>
+  <tr><th>Product</th><th>Access URL</th><th>What they receive</th></tr>
+  <tr><td>$7 Score Recovery</td><td>scan.ismyhometoxic.com/score/[slug] (or /score-recovery-thanks)</td><td>Personalized audit page built from their scan answers. Email with access link.</td></tr>
+  <tr><td>$17 Home Reset</td><td>quiz-server/home-reset-access</td><td>3-Month Home Reset PDF (3-month-home-reset-v2.pdf) delivered via email. Subject line: "3-Month Home Reset" — never "The Shift."</td></tr>
+  <tr><td>$11 The Shift</td><td>shift.theshannonnicole.com/the-shift-access</td><td>Shannon's 15-minute video. Gated by Stripe session_id with payment_status=paid — sharing the URL without a valid paid session returns a 403.</td></tr>
+</table>
+
+<h3>Stripe Webhook Security</h3>
+<p>The server validates every webhook using the Stripe webhook signing secret (whsec_). This prevents anyone from faking a payment by sending a fake webhook. Without whsec_ configured, the server is in test mode only.</p>
+<p><strong>Where to get whsec_:</strong> Stripe Dashboard → Developers → Webhooks → select the endpoint → Signing secret. Shannon provides this. Once provided, it goes in /workspace/state/secrets/scripts.env and the server switches to live mode.</p>
+
+<h2>Section 17: Compliance Rules That Apply to the Entire Funnel</h2>
 <p>These apply to everything — every SMS, every email, every page, every bot message. Cameron checks these before anything goes out.</p>
 
 <table>
