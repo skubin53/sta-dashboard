@@ -489,6 +489,100 @@
 
 </div>
 
+<div class="content">
+
+<h2>Section 14: The GHL Automation Stack — What's Running and the DO NOT TOUCH Rules</h2>
+
+<p>Shannon has built her own automations directly in GHL. These are the only automations that should be running for the shopper/buyer funnel. Cameron does not build parallel Mac Mini automations that duplicate what GHL already handles.</p>
+
+<div class="rule-box">
+  <p><strong>Shannon's rule (June 13, 2026):</strong> "Do not touch any of these. Everything is perfect the way it is right now."</p>
+  <p>This applies to: the 22 Patriot-era GHL templates AND all V3 funnel workflow opt-ins. Do NOT delete, pause, or rewire them. If Cameron audits these and flags something as a "fire risk" or "compliance concern," the response is to surface it to Shannon for review — never auto-act.</p>
+</div>
+
+<h3>What GHL Handles Automatically (No Cameron Involvement)</h3>
+<table>
+  <tr><th>Trigger</th><th>What GHL Fires</th></tr>
+  <tr><td>New lead opts in via Facebook/Instagram ads (Patriot voice funnel)</td><td>V3 Patriot-era template sequence fires automatically</td></tr>
+  <tr><td>Contact completes scorecard and submits form</td><td>Switch List SMS fires via GHL workflow</td></tr>
+  <tr><td>Appointment booked on Shannon's calendar</td><td>Reminder workflow (24hr/2hr/5min) fires via workflow 6c7af622</td></tr>
+  <tr><td>$17 purchase completed (Stripe)</td><td>3-Month Home Reset PDF delivered via GHL email automation</td></tr>
+  <tr><td>Contact replies Stop/End/Unsubscribe</td><td>GHL marks the contact DNC automatically</td></tr>
+</table>
+
+<h3>Two Separate Pipelines — Never Mix Them</h3>
+<table>
+  <tr><th></th><th>Shopper / Buyer Pipeline</th><th>Builder Pipeline</th></tr>
+  <tr><td><strong>Who it's for</strong></td><td>Anyone who takes the free scan and moves toward enrolling as a member</td><td>Anyone being recruited as an Independent Marketing Executive (builder)</td></tr>
+  <tr><td><strong>Calendar</strong></td><td>Shannon's shopper calendar (bfmvjAoI4FxLd2cOyn9c) — shopping audit phone calls</td><td>boostyourincome calendar (w6s75rMfU2Gfg8OAVMv9) — 1-on-1 builder Zooms</td></tr>
+  <tr><td><strong>The call format</strong></td><td>Phone call. Never Zoom.</td><td>Zoom. Never a phone call.</td></tr>
+  <tr><td><strong>GHL workflows</strong></td><td>V3 Patriot-era stack + reminder workflow</td><td>Builder nurture sequences (Day 1/3/5/7/10/14)</td></tr>
+  <tr><td><strong>The 44K contacts</strong></td><td>The 44,000 GHL contacts are shopper leads from 4 years of Facebook ads. They are NOT a builder recruitment pool. Never treated as builder targets.</td><td>Builder leads come from theshannonnicole.com builder funnel, creator outreach, and the $11 Shift tripwire.</td></tr>
+</table>
+
+<h3>The 44K List — What It Is and What Cameron Never Does With It</h3>
+<p>Shannon has ~44,000 contacts in GHL accumulated from 4+ years of Facebook ads. These are shopper leads.</p>
+<div class="never-box">
+  <ul>
+    <li>Never bulk-SMS the 44K list. GHL has hard outbound limits and these leads are too old for cold SMS to do anything but burn deliverability.</li>
+    <li>Never treat the 44K as a builder reactivation pool.</li>
+    <li>Reactivation for dormant leads: Meta custom audiences + ManyChat DM sequences and Reel retargeting ONLY. Never SMS for dormant contacts.</li>
+  </ul>
+</div>
+
+<h2>Section 15: The $11 Shift Tripwire (Builder Side)</h2>
+<p>This is a separate system from the shopper scan funnel. It exists to convert warm builder prospects into booked Zoom appointments. Documented here because it connects to the same quiz-server infrastructure.</p>
+
+<div class="step-card">
+  <h3>What it is</h3>
+  <p>A self-liquidating offer (SLO): Shannon's personal testimony video about how she took her income from $257/month to $17,000/month. Priced at $11 CAD. The small purchase filters serious prospects from lookers (skin in the game) and offsets Facebook ad spend.</p>
+  <p><strong>The flow:</strong> theshannonnicole.com/builder (warm-up page) → Builder Fit Quiz → quiz result → The Shift sales page ($11) → purchase → video access → invite to book 1-on-1 builder Zoom.</p>
+</div>
+
+<div class="step-card">
+  <h3>Technical details</h3>
+  <table>
+    <tr><th>Component</th><th>Detail</th></tr>
+    <tr><td>Sales page URL</td><td>shift.theshannonnicole.com/the-shift</td></tr>
+    <tr><td>Access page URL</td><td>shift.theshannonnicole.com/the-shift-access</td></tr>
+    <tr><td>Payment</td><td>Square checkout — $11 CAD. Link: square.link/u/jsj5GIeM</td></tr>
+    <tr><td>What happens after payment</td><td>Redirect to /the-shift-access. Shannon's video is embedded there. GHL tags the contact "tripwire-buyer."</td></tr>
+    <tr><td>Server</td><td>Runs on the Mac Mini, exposed via Cloudflare Tunnel (shift.theshannonnicole.com)</td></tr>
+    <tr><td>Pixel</td><td>PageView + InitiateCheckout on sales page. Purchase event on access page.</td></tr>
+  </table>
+</div>
+
+<div class="step-card">
+  <h3>The video content (what Shannon records)</h3>
+  <p>Four scenes, varied settings and outfits (not one desk shot): couch, kitchen, teaching, close. About 15 minutes total. Shannon records herself — this is her personal testimony, not AI-generated content.</p>
+  <p><strong>What the video covers:</strong> Her personal story → the 5 steps that shifted her income → the invitation to a Zoom to learn more.</p>
+  <p><strong>Compliance rule:</strong> Numbers ($257/mo → $17,000/mo) are presented as "here's what I did" (her personal testimony, covered by her brand/following, with disclosure) — NEVER "here's what you'll make." Income claims never appear in ads or landing pages — only on the Shift page itself.</p>
+</div>
+
+<div class="step-card">
+  <h3>The Builder Fit Quiz (feeds into The Shift)</h3>
+  <p>Lives at shift.theshannonnicole.com/quiz. Runs on the Mac Mini quiz-server. Qualifies prospects before they see The Shift offer. Qualified result pages link to The Shift; unqualified results send them elsewhere.</p>
+  <p><strong>Where it's documented:</strong> Obsidian Vault/concepts/Builder-Fit-Quiz.md</p>
+</div>
+
+<h2>Section 16: Compliance Rules That Apply to the Entire Funnel</h2>
+<p>These apply to everything — every SMS, every email, every page, every bot message. Cameron checks these before anything goes out.</p>
+
+<table>
+  <tr><th>Rule</th><th>Detail</th></tr>
+  <tr><td><strong>Melaleuca brand blackout</strong></td><td>Never name "Melaleuca" in any public-facing content, SMS, email, or bot message. Use "The Wellness Company" or "private membership store." Company name revealed only on the 1-on-1 call.</td></tr>
+  <tr><td><strong>FTC income claims</strong></td><td>Every income testimonial needs a substantiation file and FTC-compliant disclosure language. Shannon's $700K / $12K-month / $8.5K-month testimonials require disclosures before further amplification.</td></tr>
+  <tr><td><strong>FTC health claims</strong></td><td>No cancer, asthma, or cardiovascular efficacy claims without substantiation. "Linked to" / "flagged by" / "restricted in EU" — yes. "Causes" / "treats" / "prevents" — never.</td></tr>
+  <tr><td><strong>No EWG citations</strong></td><td>Never cite EWG publicly. Approved sources only: EPA, FDA, ATSDR, CDC, NTP, IARC, Prop 65, peer-reviewed journals.</td></tr>
+  <tr><td><strong>Anti-MLM positioning</strong></td><td>Switch to America positions explicitly AGAINST MLM tropes. Never use "MLM," "house parties," "DM-spamming," or "join my downline." She positions as "Not direct sales. Not MLM."</td></tr>
+  <tr><td><strong>SMS quiet hours</strong></td><td>No automated outbound SMS outside 8 AM to 8 PM in the lead's time zone. Live conversation replies are excepted.</td></tr>
+  <tr><td><strong>GHL SMS volume limits</strong></td><td>GHL has hard outbound limits per 24-hour period. All scripts respect these. Never bulk-send beyond what's allowed.</td></tr>
+  <tr><td><strong>No "membership" in SMS</strong></td><td>Use "private storefront" or "shop with us." Never "membership."</td></tr>
+  <tr><td><strong>No em-dashes in any public copy</strong></td><td>Em-dashes render badly at scroll seams and are the #1 AI giveaway. Commas, periods, line breaks instead.</td></tr>
+</table>
+
+</div>
+
 <div class="footer">
   Generated by Cameron &bull; Switch to America AI Operating System &bull; July 26, 2026
 </div>
