@@ -257,6 +257,62 @@
   <tr><td>scan.ismyhometoxic.com/dashboard</td><td>Shannon's live business dashboard</td><td>Cameron updates data. Shannon reads it.</td></tr>
 </table>
 
+
+<h2>Section 11: Where Every File Lives (If You Need to Edit Anything)</h2>
+<p>All files live in two places: the <strong>sta-dashboard GitHub repo</strong> (the website code) and the <strong>Obsidian Vault</strong> (the business brain). GitHub repo is at github.com/skubin53/sta-dashboard. Obsidian Vault is at /Users/oscortexshannon/Documents/Obsidian Vault/ on the Mac Mini.</p>
+
+<h3>The Scan App (The Quiz Itself)</h3>
+<table>
+  <tr><th>What you want to edit</th><th>File location</th><th>Notes</th></tr>
+  <tr><td>The live scan app (questions, scoring, results page)</td><td>sta-dashboard/scan-staging/index.html</td><td>Edit scan-staging/ ONLY. Never edit scan/ directly. Changes go live when Cameron pushes to GitHub.</td></tr>
+  <tr><td>The scan app thumbnail (social share image)</td><td>sta-dashboard/scan/scorecard-thumbnail.jpg</td><td>Replace this file and push to update the og:image.</td></tr>
+  <tr><td>The /now redirect page</td><td>sta-dashboard/now/index.html</td><td>This is the page that redirects traffic from scan.ismyhometoxic.com/now to the scan app.</td></tr>
+</table>
+
+<h3>The Funnel (Blueprint / $7 / $17)</h3>
+<table>
+  <tr><th>What you want to edit</th><th>File location</th><th>Notes</th></tr>
+  <tr><td>The Scan Blueprint architecture and build spec</td><td>sta-dashboard/funnel/SCAN-BLUEPRINT-SPEC.md</td><td>Read this first if anyone asks how the $7 Blueprint is supposed to work.</td></tr>
+  <tr><td>The funnel landing page</td><td>sta-dashboard/funnel/index.html</td><td>The page prospects see when they land on the shopper funnel.</td></tr>
+  <tr><td>The audit preview page</td><td>sta-dashboard/audit-preview/index.html</td><td>Preview of what the audit looks like.</td></tr>
+  <tr><td>$17 email subject and content</td><td>GHL — the automation workflow that fires after the $17 purchase. Shannon manages in GHL UI.</td><td>Subject must say "3-Month Home Reset" — not "The Shift."</td></tr>
+</table>
+
+<h3>GHL (Appointments, Contacts, Workflows)</h3>
+<table>
+  <tr><th>What you want to edit</th><th>Where it lives</th><th>Notes</th></tr>
+  <tr><td>Shannon's shopper booking calendar</td><td>GHL UI → Calendars → bfmvjAoI4FxLd2cOyn9c</td><td>This is where shopping audit appointments live. Shannon moves/cancels in GHL UI.</td></tr>
+  <tr><td>Reminder workflow (24hr/2hr/5min)</td><td>GHL UI → Workflows → 6c7af622-0cdd-4624-814f-d9abed63f4ad</td><td>Cameron enrolls contacts here after every booking via API. Shannon publishes changes in GHL UI.</td></tr>
+  <tr><td>Hot Leads pipeline stage</td><td>GHL UI → Pipelines → opportunity stage 1ab37211...4f16bc6</td><td>Cameron moves opps here after booking via API.</td></tr>
+  <tr><td>Contact tags</td><td>GHL UI → Contacts → individual contact</td><td>"lastday" = booking confirmed. "do not text" = hard lockdown. "ai off" = ignore it (auto-stamped on every new contact, meaningless).</td></tr>
+</table>
+
+<h3>Business Strategy and Rules</h3>
+<table>
+  <tr><th>What you want to find</th><th>File location</th></tr>
+  <tr><td>The master rules for this entire system</td><td>Obsidian Vault/CLAUDE.md</td></tr>
+  <tr><td>Shannon's profile, goals, contact info</td><td>Mac Mini: /workspace/USER.md</td></tr>
+  <tr><td>Cameron's role boundaries and off-limits list</td><td>Mac Mini: /workspace/IDENTITY.md</td></tr>
+  <tr><td>Most recent Shannon-stated facts (newest first)</td><td>Obsidian Vault/LATEST.md</td></tr>
+  <tr><td>Topic routing — which file is canonical when two files disagree</td><td>Obsidian Vault/CANON.md</td></tr>
+  <tr><td>Open items and pending decisions</td><td>Obsidian Vault/inbox.md</td></tr>
+  <tr><td>The North Star metric explanation</td><td>Obsidian Vault/concepts/North-Star.md</td></tr>
+  <tr><td>The Scan Blueprint spec (how the $7 Blueprint works)</td><td>sta-dashboard/funnel/SCAN-BLUEPRINT-SPEC.md</td></tr>
+  <tr><td>The follow-up sequence for cold creator outreach</td><td>Obsidian Vault/concepts/Follow-Up-Sequence.md</td></tr>
+  <tr><td>Value-ladder PDFs spec (what sends before the call)</td><td>Obsidian Vault/concepts/Value-Ladder-PDFs-Pre-Call.md</td></tr>
+</table>
+
+<h3>Cameron's Scripts and Tools</h3>
+<table>
+  <tr><th>What it does</th><th>File location</th></tr>
+  <tr><td>GHL API client (the shared tool all scripts use to talk to GHL)</td><td>Mac Mini: /workspace/tools/_ghl_client.py</td></tr>
+  <tr><td>Scorecard follow-up templates (SMS copy)</td><td>Mac Mini: /workspace/tools/scorecard_followup_templates.py</td></tr>
+  <tr><td>Zoe score-anchored follow-up script</td><td>Mac Mini: /workspace/tools/zoe-score-anchored.py</td></tr>
+  <tr><td>Cameron's secrets and API tokens</td><td>Mac Mini: /workspace/state/secrets/scripts.env</td></tr>
+  <tr><td>GHL nurture token</td><td>Mac Mini: /workspace/state/ghl-nurture-token.env</td></tr>
+  <tr><td>Dashboard data (what powers the dashboard page)</td><td>Mac Mini: /workspace/funnels/dashboard-data.json</td></tr>
+</table>
+
 </div>
 
 <div class="footer">
