@@ -456,6 +456,16 @@
   <p><strong>What gets filled in:</strong> [First name] = her real first name from the GHL contact. [their score] = her actual numeric Toxic Home Score (e.g. "67"). Both are pulled from GHL at the time the voice note is generated.</p>
 </ul>
 
+<div class="never-box">
+  <strong>IMPORTANT — How this was built vs. how it needs to work going forward:</strong>
+  <ul>
+    <li><strong>How it was built (now deleted):</strong> The voice note generation and the 2-hour scorecard follow-up SMS were running via a Python watcher script on the Mac Mini (<code>scorecard-followup-watcher.py</code>) triggered by a launchd scheduler (<code>com.switchtoamerica.scorecard-followup.plist</code>). Every 2 hours the script polled GHL, found scored leads, generated drafts, and sent Telegram approval cards to Shannon. This was custom infrastructure separate from GHL.</li>
+    <li><strong>What happened:</strong> Both the watcher script and the launchd scheduler were deleted on July 26, 2026 at Shannon's instruction. They no longer exist.</li>
+    <li><strong>What this means right now:</strong> The voice note outreach and the 2-hour SMS follow-up are NOT currently firing for new scorecard leads. The automation is off.</li>
+    <li><strong>What needs to be built:</strong> These follow-up touchpoints need to be rebuilt natively inside GHL automation workflows — so they run reliably inside GHL without depending on the Mac Mini being awake and scripts running. This is an open build item.</li>
+  </ul>
+</div>
+
 <h3>Step 5: The Lawsuit / Recall Alert (Daily 9 AM, Approval Required)</h3>
 <p>Every morning at 9 AM, Cameron runs a scan of scored leads' product brands against a curated database of 13 brand lawsuits and recalls. When there's a match:</p>
 <ul>
