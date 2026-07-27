@@ -313,6 +313,49 @@
   <tr><td>Dashboard data (what powers the dashboard page)</td><td>Mac Mini: /workspace/funnels/dashboard-data.json</td></tr>
 </table>
 
+<h2>Section 12: How Cloudflare Fits In</h2>
+<p>Cloudflare sits between the internet and Shannon's websites. Think of it as a traffic cop and a speed layer. It does not host the content — it caches and routes it. Understanding this explains why changes sometimes take a few minutes to appear and why certain domains can't be touched without going through Cloudflare first.</p>
+
+<h3>scan.ismyhometoxic.com (The Scan App)</h3>
+<div class="step-card">
+  <p><strong>Hosted on:</strong> GitHub Pages (the sta-dashboard repo at github.com/skubin53/sta-dashboard)</p>
+  <p><strong>Cloudflare's role:</strong> Cloudflare sits in front of GitHub Pages as a CDN (content delivery network) and proxy. When a visitor loads the scan app, they're actually hitting Cloudflare's servers first. Cloudflare serves a cached copy of the page.</p>
+  <p><strong>Why this matters for editing:</strong> When Cameron pushes a change to GitHub, it does NOT show up instantly for visitors. Cloudflare's cache has a TTL (time-to-live) of approximately 10 minutes (max-age=600). This is why after a push it can take 1-10 minutes before the live site reflects the change. This is normal and expected — not a bug.</p>
+  <p><strong>Important clarification:</strong> scan.ismyhometoxic.com is GitHub Pages with Cloudflare in front — it is <strong>NOT</strong> Cloudflare Pages. There is a dead folder called scorecard-cloudflare/ in the workspace that was an old experiment. Ignore it.</p>
+</div>
+
+<h3>shift.theshannonnicole.com (The $11 Tripwire / Quiz Server)</h3>
+<div class="step-card">
+  <p><strong>Hosted on:</strong> The Mac Mini in Scottsdale, exposed to the internet via a Cloudflare Tunnel</p>
+  <p><strong>Cloudflare's role:</strong> A Cloudflare Tunnel (DNS CNAME pointing to cfargotunnel) creates a secure connection from the Mac Mini's quiz-server to the internet without opening firewall ports. The URL shift.theshannonnicole.com routes through this tunnel directly to the Node.js quiz-server running on the Mac Mini.</p>
+  <p><strong>What lives here:</strong> The $11 Shift tripwire checkout, the Stripe webhook, the quiz-server, The Shift access page, the builder quiz.</p>
+</div>
+
+<h3>theshannonnicole.com (The Apex Domain — Locked)</h3>
+<div class="step-card">
+  <p><strong>The problem:</strong> GHL (GoHighLevel) has the bare apex domain theshannonnicole.com registered as a Cloudflare-for-SaaS Custom Hostname. This lives at Cloudflare's EDGE layer — meaning DNS changes alone cannot override it. GHL owns that hostname at the infrastructure level.</p>
+  <p><strong>What this means practically:</strong> The $11 tripwire cannot live at theshannonnicole.com/the-shift. It has to live at shift.theshannonnicole.com. To move it to the apex, either GHL support would need to release the custom hostname, or Shannon would need to move her GHL funnel's primary domain off the apex (e.g. to home.theshannonnicole.com). Until that changes, shift.theshannonnicole.com is the correct URL and should not be changed.</p>
+</div>
+
+<h3>Cloudflare Access and Credentials</h3>
+<table>
+  <tr><th>Item</th><th>Detail</th></tr>
+  <tr><td>Cloudflare API token</td><td>Saved in Mac Mini at: /workspace/state/secrets/scripts.env (never write the raw token in a document — look it up there)</td></tr>
+  <tr><td>Cloudflare Account ID</td><td>57c23b2fe9763e8fa093c6fb36c47a45</td></tr>
+  <tr><td>Who manages Cloudflare</td><td>Cameron has API access. DNS changes and tunnel changes require the Cloudflare dashboard or API. Shannon owns the Cloudflare account.</td></tr>
+  <tr><td>Cache purge (force-refresh after a push)</td><td>Cameron can purge the Cloudflare cache via API when a change needs to go live immediately rather than waiting 10 minutes.</td></tr>
+</table>
+
+<h3>Why You See a Delay After GitHub Pushes</h3>
+<p>When Cameron pushes a change to the sta-dashboard GitHub repo:</p>
+<ol>
+  <li>GitHub Pages rebuilds — takes ~30-60 seconds</li>
+  <li>Cloudflare serves its cached version — for up to 10 minutes</li>
+  <li>After the cache expires, visitors see the new version automatically</li>
+  <li>If it needs to go live faster, Cameron can call the Cloudflare API to purge the cache for that URL</li>
+</ol>
+<p>This is why Cameron always waits and then does a 3x curl verify before reporting a change as live — to confirm it has cleared Cloudflare's cache and is actually rendering for real visitors.</p>
+
 </div>
 
 <div class="footer">
