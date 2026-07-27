@@ -517,7 +517,7 @@
   <tr><td><strong>Calendar</strong></td><td>Shannon's shopper calendar (bfmvjAoI4FxLd2cOyn9c) — shopping audit phone calls</td><td>boostyourincome calendar (w6s75rMfU2Gfg8OAVMv9) — 1-on-1 builder Zooms</td></tr>
   <tr><td><strong>The call format</strong></td><td>Phone call. Never Zoom.</td><td>Zoom. Never a phone call.</td></tr>
   <tr><td><strong>GHL workflows</strong></td><td>V3 Patriot-era stack + reminder workflow</td><td>Builder nurture sequences (Day 1/3/5/7/10/14)</td></tr>
-  <tr><td><strong>The 44K contacts</strong></td><td>The 44,000 GHL contacts are shopper leads from 4 years of Facebook ads. They are NOT a builder recruitment pool. Never treated as builder targets.</td><td>Builder leads come from theshannonnicole.com builder funnel, creator outreach, and the $11 Shift tripwire.</td></tr>
+  <tr><td><strong>The 44K contacts</strong></td><td>The 44,000 GHL contacts are shopper leads from 4 years of Facebook ads. They are NOT a builder recruitment pool. Never treated as builder targets.</td><td>Builder leads come from theshannonnicole.com builder funnel and creator outreach.</td></tr>
 </table>
 
 <h3>The 44K List — What It Is and What Cameron Never Does With It</h3>
@@ -530,51 +530,15 @@
   </ul>
 </div>
 
-<h2>Section 15: The $11 Shift Tripwire (Builder Side)</h2>
-<p>This is a separate system from the shopper scan funnel. It exists to convert warm builder prospects into booked Zoom appointments. Documented here because it connects to the same quiz-server infrastructure.</p>
+<h2>Section 15: Stripe Payment Processing — How Money Flows</h2>
 
-<div class="step-card">
-  <h3>What it is</h3>
-  <p>A self-liquidating offer (SLO): Shannon's personal testimony video about how she took her income from $257/month to $17,000/month. Priced at $11 CAD. The small purchase filters serious prospects from lookers (skin in the game) and offsets Facebook ad spend.</p>
-  <p><strong>The flow:</strong> theshannonnicole.com/builder (warm-up page) → Builder Fit Quiz → quiz result → The Shift sales page ($11) → purchase → video access → invite to book 1-on-1 builder Zoom.</p>
-</div>
+<p>Stripe is the only payment processor. Both paid products in the scan/audit funnel run through it. No Square. No PayPal. Stripe only.</p>
 
-<div class="step-card">
-  <h3>Technical details</h3>
-  <table>
-    <tr><th>Component</th><th>Detail</th></tr>
-    <tr><td>Sales page URL</td><td>shift.theshannonnicole.com/the-shift</td></tr>
-    <tr><td>Access page URL</td><td>shift.theshannonnicole.com/the-shift-access</td></tr>
-    <tr><td>Payment</td><td>Stripe — $11 USD. Stripe Checkout Session created server-side via POST to Stripe API.</td></tr>
-    <tr><td>What happens after payment</td><td>Stripe webhook (checkout.session.completed) fires. Server fulfills: upserts GHL contact, tags the contact "tripwire-buyer" + "the-shift-buyer" + "builder-lead", sends access email, redirects to /the-shift-access where Shannon's video is embedded.</td></tr>
-    <tr><td>Server</td><td>Runs on the Mac Mini, exposed via Cloudflare Tunnel (shift.theshannonnicole.com)</td></tr>
-    <tr><td>Pixel</td><td>PageView + InitiateCheckout on sales page. Purchase event on access page.</td></tr>
-  </table>
-</div>
-
-<div class="step-card">
-  <h3>The video content (what Shannon records)</h3>
-  <p>Four scenes, varied settings and outfits (not one desk shot): couch, kitchen, teaching, close. About 15 minutes total. Shannon records herself — this is her personal testimony, not AI-generated content.</p>
-  <p><strong>What the video covers:</strong> Her personal story → the 5 steps that shifted her income → the invitation to a Zoom to learn more.</p>
-  <p><strong>Compliance rule:</strong> Numbers ($257/mo → $17,000/mo) are presented as "here's what I did" (her personal testimony, covered by her brand/following, with disclosure) — NEVER "here's what you'll make." Income claims never appear in ads or landing pages — only on the Shift page itself.</p>
-</div>
-
-<div class="step-card">
-  <h3>The Builder Fit Quiz (feeds into The Shift)</h3>
-  <p>Lives at shift.theshannonnicole.com/quiz. Runs on the Mac Mini quiz-server. Qualifies prospects before they see The Shift offer. Qualified result pages link to The Shift; unqualified results send them elsewhere.</p>
-  <p><strong>Where it's documented:</strong> Obsidian Vault/concepts/Builder-Fit-Quiz.md</p>
-</div>
-
-<h2>Section 16: Stripe Payment Processing — How Money Flows</h2>
-
-<p>Stripe is the only payment processor. All three paid products in the funnel run through it. No Square. No PayPal. Stripe only.</p>
-
-<h3>The Three Products and What Stripe Charges</h3>
+<h3>The Two Products and What Stripe Charges</h3>
 <table>
   <tr><th>Product</th><th>Price</th><th>Who buys it</th><th>GHL tags applied after payment</th></tr>
   <tr><td>7-Day Score Recovery Plan</td><td>$7 USD</td><td>Shopper who completed the scan and wants the full personalized Blueprint</td><td>score-recovery-buyer, score-recovery-welcome-pending, scorecard-lead</td></tr>
   <tr><td>3-Month Home Reset</td><td>$17 USD</td><td>Shopper ready for the full room-by-room switch plan</td><td>home-reset-buyer, home-reset-welcome-pending, scorecard-lead</td></tr>
-  <tr><td>The Shift (builder tripwire)</td><td>$11 USD</td><td>Builder prospect who qualified through the builder quiz</td><td>tripwire-buyer, the-shift-buyer, builder-lead</td></tr>
 </table>
 
 <h3>How Stripe Is Wired (Technical)</h3>
@@ -598,14 +562,13 @@
   <tr><th>Product</th><th>Access URL</th><th>What they receive</th></tr>
   <tr><td>$7 Score Recovery</td><td>scan.ismyhometoxic.com/score/[slug] (or /score-recovery-thanks)</td><td>Personalized audit page built from their scan answers. Email with access link.</td></tr>
   <tr><td>$17 Home Reset</td><td>quiz-server/home-reset-access</td><td>3-Month Home Reset PDF (3-month-home-reset-v2.pdf) delivered via email. Subject line: "3-Month Home Reset" — never "The Shift."</td></tr>
-  <tr><td>$11 The Shift</td><td>shift.theshannonnicole.com/the-shift-access</td><td>Shannon's 15-minute video. Gated by Stripe session_id with payment_status=paid — sharing the URL without a valid paid session returns a 403.</td></tr>
 </table>
 
 <h3>Stripe Webhook Security</h3>
 <p>The server validates every webhook using the Stripe webhook signing secret (whsec_). This prevents anyone from faking a payment by sending a fake webhook. Without whsec_ configured, the server is in test mode only.</p>
 <p><strong>Where to get whsec_:</strong> Stripe Dashboard → Developers → Webhooks → select the endpoint → Signing secret. Shannon provides this. Once provided, it goes in /workspace/state/secrets/scripts.env and the server switches to live mode.</p>
 
-<h2>Section 17: Compliance Rules That Apply to the Entire Funnel</h2>
+<h2>Section 16: Compliance Rules That Apply to the Entire Funnel</h2>
 <p>These apply to everything — every SMS, every email, every page, every bot message. Cameron checks these before anything goes out.</p>
 
 <table>
