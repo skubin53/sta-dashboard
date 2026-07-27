@@ -18,7 +18,8 @@ h1{font-size:2.05em;line-height:1.2;text-align:center;margin:0 0 12px;letter-spa
 .vid{background:#000;border-radius:12px;overflow:hidden;box-shadow:0 4px 18px rgba(20,38,63,.18);margin:0 0 8px;}
 video{width:100%;display:block;background:#000;}
 .vnote{text-align:center;font-size:.85em;color:#7a89a0;margin:0 0 26px;}
-.cta{background:#14263f;border-radius:12px;padding:26px 22px;text-align:center;color:#fff;margin:0 0 16px;}
+.cta{background:#14263f;} .cta+.cta{background:#22364f;} .cta{border-radius:12px;padding:26px 22px;text-align:center;color:#fff;margin:0 0 16px;}
+.cta:last-of-type{margin-bottom:26px;}
 .cta h2{font-size:1.35em;margin:0 0 8px;color:#fff;}
 .cta p{color:#c3d0e0;margin:0 0 18px;font-size:1.02em;}
 .btn{display:block;background:#FF9900;color:#231400;text-decoration:none;font-weight:800;font-size:1.15em;padding:17px 22px;border-radius:9px;box-shadow:0 3px 0 #c47600;}
@@ -54,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="wrap">
 
   <h1>4 Reasons Your Kids Are Sick All the Time</h1>
-  <p class="sub">Watch this before your next trip to the store. It is about eight minutes.</p>
+  <p class="sub">Watch this before your next trip to the store. It is 7 minutes.</p>
 
   <div class="vid">
     <video controls preload="metadata" playsinline
@@ -72,9 +73,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="btn" href="https://link.switchtoamerica.com/widget/bookings/maketheswtch" onclick="try{fbq('track','Lead',{content_name:'tour_click'});dataLayer.push({event:'tour_click'});}catch(e){}">Book My Switch Tour</a>
   </div>
 
-  <div class="second">
-    <p>Not ready to talk yet? Start here instead.</p>
-    <a href="https://scan.ismyhometoxic.com/now" onclick="try{fbq('trackCustom','ScanClick');dataLayer.push({event:'scan_click'});}catch(e){}">Take the 60 second scan and see which room in your house to start with</a>
+  <div class="cta">
+    <h2>Not ready to talk yet?</h2>
+    <p>Take the scan instead. Sixty seconds, and it tells you which room in your house to start with.</p>
+    <a class="btn" href="https://scan.ismyhometoxic.com/now" onclick="try{fbq('trackCustom','ScanClick');dataLayer.push({event:'scan_click'});}catch(e){}">Take My 60 Second Scan</a>
   </div>
 
   <div class="who">
