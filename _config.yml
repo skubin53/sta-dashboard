@@ -1,0 +1,24 @@
+# GitHub Pages build config for scan.ismyhometoxic.com
+#
+# 2026-07-28: Pages builds had been failing instantly (duration 0) since
+# 2026-07-27 18:53, freezing the live site on the 18:49 build. Cause: the
+# repo carries ~772 MB of video under reels/, pushing the published site
+# past the GitHub Pages 1 GB limit.
+#
+# These folders are storage, not website. Nothing served at
+# scan.ismyhometoxic.com references them, and raw.githubusercontent.com
+# links to them still work because excludes only affect the Pages build.
+
+exclude:
+  - reels
+  - blog-images
+  - voice-memos
+  - blog-pipeline
+  - scan-pre-promote-2026-06-20
+  - scan-staging
+  - cameron-chief-of-staff
+  - "*.py"
+  - "*.db"
+  - "*.csv"
+  - requirements.txt
+  - README.md
