@@ -3257,6 +3257,32 @@ async function submitReport(){
 }
 
 function showResults(){
+  // 2026-07-29: hand off to the personalised sales page at /score-reveal/.
+  // We stash the visitor's own scan first. If that fails for any reason we fall
+  // straight through to the inline results below, so this can never loop or
+  // leave them on a blank screen.
+  try {
+    var _items = (typeof collectSwitchItems === 'function')
+      ? collectSwitchItems().slice(0, 12).map(function(it){
+          return { brand: it.brand, cat: it.cat,
+                   target: (typeof swapFor === 'function' ? swapFor(it.cat) : ''),
+                   save: (typeof savingsFor === 'function' ? savingsFor(it.cat) : 0) };
+        })
+      : [];
+    if (_items.length) {
+      var _g = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
+      localStorage.setItem('sta_scan', JSON.stringify({
+        name: (typeof userName !== 'undefined' ? userName : '') || '',
+        score: totalScore, grade: _g, items: _items, at: new Date().toISOString()
+      }));
+      // only leave if the write actually stuck
+      if (localStorage.getItem('sta_scan')) {
+        window.location.href = 'https://scan.ismyhometoxic.com/score-reveal/';
+        return;
+      }
+    }
+  } catch(e){ /* fall through to inline results */ }
+
   // 2026-07-28 reverted: this redirect sent every scanner to a STATIC page showing
   // score 89 / Grade F / 24 products regardless of their own answers, and handed out
   // the paid $7 audit for free. Restored the original inline personalised results,
