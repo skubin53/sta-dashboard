@@ -89,7 +89,7 @@ So going forward:
 
 ---
 
-# SET A — Spray deodorant (benzene recall)
+# SET A - Spray deodorant (benzene recall)
 slug: is-spray-deodorant-safe-benzene-recall
 Story: the morning ritual, arms up, a cloud she has never thought about -> the villain
 is the aerosol cloud itself hanging in a small closed bathroom -> she sets the can down
@@ -126,7 +126,7 @@ window on the left.
 
 ---
 
-# SET B — Tide laundry detergent
+# SET B - Tide laundry detergent
 slug: is-tide-laundry-detergent-toxic
 Story: the laundry ritual she does four times a week -> the villain is the detergent
 itself pouring thick into the cap in cold light -> she stops mid-pour -> a neighbour
@@ -161,7 +161,7 @@ shirt with sleeves rolled, laundry room with a window on the right.
 
 ---
 
-# SET C — Clorox bleach spray
+# SET C - Clorox bleach spray
 slug: is-clorox-spray-toxic
 Story: the bathroom deep clean with the door shut -> the villain is the spray mist
 hanging over a closed toilet lid in cold light -> she opens the window -> a woman hands
@@ -197,7 +197,7 @@ t-shirt, yellow rubber gloves, small windowed bathroom.
 
 ---
 
-# SET D — Febreze fresh-linen spray
+# SET D - Febreze fresh-linen spray
 slug: is-febreze-safe-to-breathe
 Story: she sprays the couch before people come over, because she wants the house to
 feel welcoming -> the villain is the mist settling over the sofa where the family sits
