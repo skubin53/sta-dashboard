@@ -1,3 +1,8 @@
+# 2026-07-30 FIX: blog-images was removed from this list. Excluding it was a
+# mistake - it 404'd every blog photo on the LIVE posts (the Ziploc post lost
+# all 5 images). blog-images is ~12 MB and was never the size problem; reels/
+# at ~772 MB was. Blog photos MUST stay in the Pages build.
+#
 # GitHub Pages build config for scan.ismyhometoxic.com
 #
 # 2026-07-28: Pages builds had been failing instantly (duration 0) since
@@ -11,7 +16,6 @@
 
 exclude:
   - reels
-  - blog-images
   - voice-memos
   - blog-pipeline
   - scan-pre-promote-2026-06-20
