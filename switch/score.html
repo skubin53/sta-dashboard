@@ -2,38 +2,38 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex"><title>Your Switch Score</title>
 <style>
-:root{--navy:#14263f;--green:#1c7a3d;--orange:#FF9900;--line:#dde4ec;--muted:#5a6b80}
+:root{--navy:#14263f;--green:#1c7a3d;--orange:#FF9900;--red:#BF3B3B;--line:#dde4ec;--muted:#5a6b80}
 *{box-sizing:border-box}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-     color:var(--navy);background:#fff;font-size:18px;line-height:1.55}
-.wrap{max-width:760px;margin:0 auto;padding:0 18px 70px}
-header{background:var(--navy);color:#fff;padding:38px 18px;text-align:center}
-.big{font-size:4.6em;font-weight:800;line-height:1;color:var(--orange);margin:8px 0}
-header p{margin:0;color:#cfe0f0}
-.card{border:2px solid var(--line);border-radius:13px;padding:24px;margin:22px 0}
-.card h2{margin:0 0 12px;font-size:1.28em}
+     color:#14263f;background:#fff;font-size:18px;line-height:1.55}
+.wrap{max-width:800px;margin:0 auto;padding:0 18px 70px}
+header{background:#fff;padding:44px 18px 26px;text-align:center;border-bottom:1px solid var(--line)}
+.q{color:var(--red);font-weight:800;font-size:2.5em;line-height:1.2;margin:0}
+.ys{color:var(--red);font-weight:300;font-size:2.1em;line-height:1.25;margin:6px 0 0}
+.score{color:var(--red);font-weight:800;font-size:5.4em;line-height:1;margin:10px 0 4px}
+.expl{margin:20px auto 0;max-width:720px;font-size:1.1em;color:#111}
+.tagline{margin:22px 0 0;font-size:1.35em;font-weight:800;color:var(--red)}
+.card{border:2px solid var(--line);border-radius:13px;padding:24px;margin:26px 0}
+.card h2{margin:0 0 12px;font-size:1.26em}
 ul.p{margin:0;padding:0;list-style:none;column-count:2;column-gap:26px}
 ul.p li{padding:6px 0;break-inside:avoid}
 ul.p li:before{content:"\2713";color:var(--green);font-weight:800;margin-right:8px}
-h3.sub{margin:20px 0 8px;font-size:1em;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
 .cta{background:var(--navy);border-radius:13px;padding:28px;text-align:center;margin:26px 0}
 .cta p{color:#e0eaf4;margin:0 0 18px}
 .cta a{display:inline-block;background:var(--orange);color:var(--navy);padding:16px 34px;
        border-radius:9px;font-weight:800;text-decoration:none;font-size:1.05em}
 .note{color:var(--muted);font-size:.85em;text-align:center}
-@media(max-width:600px){ul.p{column-count:1}.big{font-size:3.4em}}
+@media(max-width:600px){ul.p{column-count:1}.score{font-size:4em}.q{font-size:2em}.ys{font-size:1.7em}}
 </style></head><body>
 <header>
-<p>Here is what your household is handing to the big box shelves.</p>
-<div class="big" id="score">0</div>
-<p><span id="count">0</span> products you already buy somewhere else</p>
+<p class="q" id="qual">You're Qualified!</p>
+<p class="ys">You Scored:</p>
+<div class="score"><span id="score">0</span> Points</div>
+<p class="expl">New Members that shop 35 points (about $100 after tax &amp; shipping) or more per month get $100 in FREE products over their first five months.</p>
+<p class="tagline">Exceptional Products, Reasonable Prices!</p>
 </header>
 <div class="wrap">
-<div class="card">
-<h2>What this number actually means</h2>
-<p>Every one of these is something your family already buys. Nobody is asking you to add anything to your life or spend more than you spend today. You are being asked to buy the same things from a brand that leaves the junk out.</p>
-<p><strong>Same shopping. Different shelf.</strong></p>
-</div>
 <div class="card">
 <h2>What you told me you buy</h2>
 <ul class="p" id="picked"></ul>
@@ -42,6 +42,11 @@ h3.sub{margin:20px 0 8px;font-size:1em;color:var(--muted);text-transform:upperca
   <ul class="p" id="beef"></ul>
 </div>
 </div>
+<div class="card">
+<h2>What this actually means</h2>
+<p>Every one of these is something your family already buys. Nobody is asking you to add anything to your life or spend more than you spend today. You are being asked to buy the same things from a brand that leaves the junk out.</p>
+<p><strong>Same shopping. Different shelf.</strong></p>
+</div>
 <div class="cta">
 <p>Let's walk through your list together and find the easiest place to start.</p>
 <a href="https://scan.ismyhometoxic.com/now">Book My 10 Minutes</a>
@@ -49,10 +54,13 @@ h3.sub{margin:20px 0 8px;font-size:1em;color:var(--muted);text-transform:upperca
 <p class="note" id="saved"></p>
 </div>
 <script>
-var WEBHOOK='';  // paste the Cloudflare Worker URL here once deployed
+var WEBHOOK='';           // paste the Cloudflare Worker URL here once deployed
+var QUALIFY=35;           // 35 points is roughly $100 after tax and shipping
 var r={};try{r=JSON.parse(sessionStorage.getItem('switchResult')||'{}')}catch(e){}
-document.getElementById('score').textContent=r.score||0;
-document.getElementById('count').textContent=r.count||0;
+var score=r.score||0;
+document.getElementById('score').textContent=score;
+// only say qualified when they actually are
+document.getElementById('qual').textContent = score>=QUALIFY ? "You're Qualified!" : "Here is where you are today";
 var picked=r.picked||[];
 var beef=picked.filter(function(p){return p.group==='Beef';});
 var rest=picked.filter(function(p){return p.group!=='Beef';});
@@ -64,9 +72,8 @@ var cid=r.contact||new URLSearchParams(location.search).get('contact_id')||'';
 var note=document.getElementById('saved');
 if(cid && WEBHOOK){
   fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({contact_id:cid,score:r.score,count:r.count,items:picked})})
-  .then(function(x){return x.json();})
-  .then(function(j){note.textContent=j&&j.saved?'Saved to your file.':'';})
+    body:JSON.stringify({contact_id:cid,score:score,count:r.count,items:picked})})
+  .then(function(x){return x.json();}).then(function(j){note.textContent=j&&j.saved?'Saved to your file.':'';})
   .catch(function(){note.textContent='';});
 }
 </script></body></html>
