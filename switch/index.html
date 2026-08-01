@@ -1,109 +1,86 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>The Switch Checklist</title>
+<title>Check Off Everything You Buy</title>
 <style>
-:root{--navy:#14263f;--green:#1c7a3d;--orange:#FF9900;--line:#e2e8f0;--muted:#5a6b80}
+:root{--navy:#14263f;--green:#1c7a3d;--orange:#FF9900;--line:#dde4ec;--muted:#5a6b80}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#14263f;background:#f7f8fa;-webkit-text-size-adjust:100%}
-.wrap{max-width:820px;margin:0 auto;padding:0 16px 130px}
-header{background:var(--navy);color:#fff;padding:26px 16px 22px;text-align:center}
-header h1{margin:0 0 8px;font-size:1.5em;line-height:1.25}
-header p{margin:0 auto;max-width:600px;color:#cfe0f0;font-size:.97em;line-height:1.5}
-.tools{position:sticky;top:0;z-index:20;background:#f7f8fa;padding:12px 0 10px;border-bottom:1px solid var(--line)}
-#q{width:100%;padding:13px 14px;font-size:1em;border:2px solid var(--line);border-radius:9px;outline:none}
-#q:focus{border-color:var(--green)}
-.grp{background:#fff;border:1px solid var(--line);border-radius:11px;margin:14px 0;overflow:hidden}
-.ghead{display:flex;align-items:center;gap:10px;padding:15px 17px;cursor:pointer;user-select:none}
-.ghead:hover{background:#fafbfc}
-.gt{flex:1}
-.gt b{display:block;font-size:1.06em}
-.gt span{color:var(--muted);font-size:.85em}
-.gcount{background:#eef2f7;color:var(--navy);border-radius:20px;padding:3px 11px;font-size:.82em;font-weight:700;min-width:34px;text-align:center}
-.gcount.on{background:var(--green);color:#fff}
-.arw{color:var(--muted);transition:transform .18s}
-.grp.open .arw{transform:rotate(180deg)}
-.gbody{display:none;border-top:1px solid var(--line)}
-.grp.open .gbody{display:block}
-label.it{display:flex;align-items:center;gap:12px;padding:13px 17px;border-bottom:1px solid #f1f4f8;cursor:pointer}
-label.it:last-child{border-bottom:0}
-label.it:hover{background:#fafbfc}
-label.it input{width:21px;height:21px;accent-color:var(--green);flex-shrink:0;margin:0}
-label.it.sel{background:#f2f9f4}
-.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -3px 14px rgba(0,0,0,.07);padding:12px 16px;z-index:30}
-.bin{max-width:820px;margin:0 auto;display:flex;align-items:center;gap:14px}
-.tally{flex:1;font-size:.95em}
-.tally b{font-size:1.35em;display:block;line-height:1.15}
-.tally span{color:var(--muted);font-size:.85em}
-button.go{background:var(--orange);color:var(--navy);border:0;padding:15px 26px;border-radius:9px;font-size:1.03em;font-weight:800;cursor:pointer;white-space:nowrap}
-button.go:disabled{background:#dfe4ea;color:#98a2b0;cursor:not-allowed}
-.none{display:none;text-align:center;padding:26px;color:var(--muted)}
-@media(max-width:560px){header h1{font-size:1.28em}.bin{gap:10px}button.go{padding:14px 18px;font-size:.97em}}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+     color:var(--navy);background:#fff;font-size:18px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px 160px}
+header{background:var(--navy);color:#fff;padding:34px 18px 30px;text-align:center}
+header h1{margin:0 0 12px;font-size:1.75em;line-height:1.2}
+header h1 span{color:var(--orange)}
+header p{margin:0 auto;max-width:640px;color:#cfe0f0;font-size:1.02em}
+h2.g{margin:42px 0 4px;font-size:1.5em;border-bottom:4px solid var(--orange);padding-bottom:9px}
+p.gs{margin:0 0 16px;color:var(--muted);font-size:.95em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+label.it{display:flex;align-items:center;gap:14px;padding:16px 18px;border:2px solid var(--line);
+        border-radius:11px;cursor:pointer;background:#fff;font-size:1.03em;font-weight:500}
+label.it:hover{border-color:#b9c6d6;background:#fafbfc}
+label.it input{width:26px;height:26px;accent-color:var(--green);flex-shrink:0;margin:0;cursor:pointer}
+label.it.sel{border-color:var(--green);background:#f0f8f2;font-weight:700}
+.beef{background:#fbf7f2;border:2px dashed #d8c3a5;border-radius:12px;padding:18px 20px;margin-top:14px}
+.beef p{margin:0 0 14px;color:#6b5a45;font-size:.95em}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:3px solid var(--navy);
+     box-shadow:0 -4px 18px rgba(0,0,0,.12);padding:14px 18px;z-index:30}
+.bin{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:18px}
+.tally{flex:1}
+.tally b{font-size:2.1em;display:block;line-height:1;color:var(--navy)}
+.tally span{color:var(--muted);font-size:.92em}
+button.go{background:var(--orange);color:var(--navy);border:0;padding:19px 34px;border-radius:11px;
+          font-size:1.12em;font-weight:800;cursor:pointer;white-space:nowrap}
+button.go:disabled{background:#e3e8ee;color:#9aa5b3;cursor:not-allowed}
+@media(max-width:620px){body{font-size:17px}header h1{font-size:1.4em}.grid{grid-template-columns:1fr}
+  button.go{padding:17px 22px;font-size:1em}.tally b{font-size:1.75em}}
 </style></head><body>
 <header>
-<h1>Check off every product you use,<br>even if you have a favourite brand.</h1>
-<p>Every item you check is money you are handing to a big box conglomerate. Tick anything your household buys anywhere, then see your number.</p>
+<h1>Check off every product you use,<br><span>even if you have a favourite brand.</span></h1>
+<p>Every item you check is money you are handing to a big box conglomerate. Tick anything your household buys anywhere.</p>
 </header>
-<div class="wrap">
-<div class="tools"><input id="q" type="search" placeholder="Search for a product, try shampoo or laundry" autocomplete="off"></div>
-<div id="list"></div>
-<div class="none" id="none">Nothing matches that. Try a different word.</div>
-</div>
+<div class="wrap" id="wrap"></div>
 <div class="bar"><div class="bin">
 <div class="tally"><b id="n">0</b><span id="lab">items checked</span></div>
 <button class="go" id="go" disabled>Check My Score</button>
 </div></div>
 <script>
-var GROUPS=[{"group": "Daily Essentials", "sub": "Hair, body, dental and sun", "items": [{"label": "Daily shampoo", "points": 10, "rep": "Sei Bella® Argan Oil & Coconut Moisture Smooth Shampoo", "price": "$26.00", "matches": 8}, {"label": "Conditioner", "points": 10, "rep": "Sei Bella® Olive Fruit & Almond Protein Strength Conditioner", "price": "$26.00", "matches": 8}, {"label": "Body wash", "points": 5, "rep": "Alloy 3-in-1 Hair & Body Wash", "price": "", "matches": 3}, {"label": "Bar soap", "points": 7, "rep": "Luxury Glycerin Bath Bar 3-Pack", "price": "$16.72", "matches": 1}, {"label": "Hand soap", "points": 4, "rep": "Koala Pals™ Hand Wash: Refill", "price": "$9.49", "matches": 4}, {"label": "Hand sanitizer", "points": 6, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Body lotion", "points": 10, "rep": "Renew™ Intensive Skin Therapy: Value Size (Pump sold separately)", "price": "$22.29", "matches": 8}, {"label": "Deodorant / antiperspirant", "points": 2, "rep": "Affinia Vanilla Musk & Jasmine Antiperspirant & Deodorant", "price": "$7.29", "matches": 2}, {"label": "Shave gel", "points": 6, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Lip balm", "points": 6, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Sunscreen", "points": 6, "rep": "Sun Shades™ After Sun Hydrogel E Moisturizing Relief", "price": "$13.29", "matches": 3}, {"label": "Toothpaste", "points": 2, "rep": "Exceed® Hydroxyapatite Tooth Polish", "price": "$6.49", "matches": 8}, {"label": "Mouthwash", "points": 4, "rep": "Breath-Away Essential Oil Mouth Rinse", "price": "$11.29", "matches": 2}, {"label": "Floss / dental", "points": 6, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Mints", "points": 2, "rep": "Exceed™ Mints 3,Pack", "price": "$8.67", "matches": 1}]}, {"group": "Safe & Happy Home", "sub": "Cleaning, laundry and air", "items": [{"label": "Laundry detergent", "points": 10, "rep": "HE MelaPower® 9x Detergent: Island Breeze", "price": "$24.59", "matches": 13}, {"label": "Fabric softener / dryer sheets", "points": 3, "rep": "MelaSoft® Dryer Sheets: Scent-Free", "price": "$8.69", "matches": 8}, {"label": "Laundry stain remover", "points": 3, "rep": "PreSpot™ 4x Concentrate Laundry Stain Remover", "price": "$9.49", "matches": 4}, {"label": "Bleach alternative / brightener", "points": 4, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Laundry scent booster", "points": 5, "rep": "MelaBoost™ Garden Lavender Laundry Fragrance Booster", "price": "$15.29", "matches": 4}, {"label": "Dish soap", "points": 2, "rep": "Lemon Brite® Hand Dishwashing Liquid: Tropical Scent", "price": "$5.99", "matches": 5}, {"label": "Dishwasher detergent", "points": 4, "rep": "Diamond Brite™ Packs Automatic Dishwasher Detergent", "price": "$12.59", "matches": 7}, {"label": "All-purpose cleaner", "points": 3, "rep": "Clear Power® 12x Glass Cleaner", "price": "$9.49", "matches": 5}, {"label": "Bath and shower cleaner", "points": 3, "rep": "Tough & Tender® 12x All-Purpose Cleaner", "price": "$9.49", "matches": 13}, {"label": "Glass cleaner", "points": 2, "rep": "Clear Power Glass Wipes", "price": "$5.79", "matches": 3}, {"label": "Toilet bowl cleaner", "points": 3, "rep": "Safe & Mighty™ Toilet Bowl Cleaner", "price": "$8.39", "matches": 2}, {"label": "Floor cleaner", "points": 4, "rep": "Clean & Gleam™ Floor Polish", "price": "$12.79", "matches": 3}, {"label": "Furniture polish", "points": 4, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Disinfectant", "points": 6, "rep": "Sol-U-Guard Botanical® 2x Disinfectant", "price": "$14.89", "matches": 3}, {"label": "Air freshener", "points": 4, "rep": "Revive™ Fabric Freshener & Wrinkle Relaxer Concentrate: Sea Salt & Vanilla", "price": "$10.69", "matches": 4}, {"label": "Cleaning wipes", "points": 2, "rep": "Koala Kubs Wipes", "price": "", "matches": 7}, {"label": "Fruit and veg wash", "points": 5, "rep": "Pure™ Grapefruit Essential Oil", "price": "$14.75", "matches": 8}]}, {"group": "Healthy Mind & Body", "sub": "Vitamins and supplements", "items": [{"label": "Multivitamin", "points": 8, "rep": "Vitality Multivitamin & Mineral™ Women", "price": "$19.19", "matches": 29}, {"label": "Antioxidants", "points": 11, "rep": "Provex-Plus™ Circulatory System Antioxidant", "price": "$23.99", "matches": 2}, {"label": "Omega-3", "points": 10, "rep": "Omega-3 Crème Delight™ ,Lime Sorbet", "price": "$28.59", "matches": 8}, {"label": "Collagen", "points": 16, "rep": "Vitality for Life® Collagen Boost with Astaxanthin", "price": "$49.99", "matches": 7}, {"label": "Magnesium", "points": 12, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Probiotic", "points": 11, "rep": "Florify® for Kids Probiotic", "price": "$29.59", "matches": 9}, {"label": "Digestive enzymes", "points": 17, "rep": "Good Zymes™ Digestive Enzymes", "price": "$39.99", "matches": 2}, {"label": "Fiber drink", "points": 12, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Vitamin C / immune", "points": 10, "rep": "Sei Bella Vitamin C Gentle Exfoliating Cleanser", "price": "$25.50", "matches": 11}, {"label": "Joint care", "points": 12, "rep": "Replenex® Extra Strength Joint Health Drink Mix", "price": "$28.99", "matches": 5}, {"label": "Bone health", "points": 6, "rep": "Vitality Calcium Complete™", "price": "$14.99", "matches": 3}, {"label": "Cholesterol support", "points": 13, "rep": "Phytomega™ Cholesterol Support", "price": "$35.69", "matches": 1}, {"label": "Blood pressure support", "points": 18, "rep": "ProvexCV® Blood Pressure Support", "price": "$44.19", "matches": 3}, {"label": "Glucose support", "points": 12, "rep": "Vitality for Life® Berberine Glucose Support", "price": "$31.99", "matches": 4}, {"label": "Prenatal", "points": 12, "rep": "Vitality for Life® Prenatal Omega-3™", "price": "$32.49", "matches": 3}, {"label": "Prostate health", "points": 11, "rep": "ProstAvan™ Prostate Support", "price": "$26.29", "matches": 1}, {"label": "Vision support", "points": 17, "rep": "NutraView™ Vision Support 2-Pack", "price": "$47.58", "matches": 1}, {"label": "Energy support", "points": 15, "rep": "CoQ10+ Cellular Energy Support", "price": "$33.49", "matches": 6}]}, {"group": "Kitchen & Nutrition", "sub": "Food, drinks and snacks", "items": [{"label": "Protein shakes", "points": 12, "rep": "GC Control™ Weight Management Shake: Caramel Crème Brûlée", "price": "$33.99", "matches": 10}, {"label": "Protein / snack bars", "points": 8, "rep": "Access™ Exercise Bars: Chocolate Coconut Kraze", "price": "$21.79", "matches": 15}, {"label": "Meal replacement", "points": 11, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Coffee", "points": 9, "rep": "Sei Bella® Eyeshadow Palette: Morning Coffee", "price": "$37.50", "matches": 2}, {"label": "Tea", "points": 9, "rep": "Let’s Get Steamy Shower Melts, Powered by Brighten Joy Blend", "price": "$29.25", "matches": 7}, {"label": "Sports drink", "points": 11, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Popcorn / snacks", "points": 22, "rep": "R3 Lifestyle Snack Pack", "price": "$75.86", "matches": 2}, {"label": "Baking mix", "points": 11, "rep": "No Work™ Mixing Spray Bottle", "price": "$2.29", "matches": 13, "needsReview": true}, {"label": "Seasonings", "points": 4, "rep": "Simply Fit™ Veggie Protein Crisps: Savory Barbecue", "price": "$14.19", "matches": 3}]}, {"group": "Beauty", "sub": "Skin care and cosmetics", "items": [{"label": "Facial cleanser", "points": 4, "rep": "Affinia Apple Blossom & Lily Gentle Plant Based Body Cleanser", "price": "$11.69", "matches": 8}, {"label": "Moisturizer", "points": 5, "rep": "Alloy Smoothing Body Moisturizer", "price": "$13.79", "matches": 2}, {"label": "Facial serum", "points": 16, "rep": "Sei Bella® Bright Eyes Dark Circle Minimizing Serum", "price": "$37.00", "matches": 3}, {"label": "Eye cream", "points": 16, "rep": "Sei Bella® Night Recovery Eye Cream", "price": "$37.00", "matches": 1}, {"label": "Toner", "points": 10, "rep": "Sei Bella Deep Marine Sea Toner", "price": "$28.50", "matches": 1}, {"label": "Acne treatment", "points": 20, "rep": "Sei Bella® Clarity Clear Skin Solutions Regimen Bundle", "price": "$54.99", "matches": 1}, {"label": "Foundation", "points": 10, "rep": "Sei Bella® Flawless Liquid Foundation Shade-Matching Samples: Medium", "price": "$4.99", "matches": 3, "needsReview": true}, {"label": "Concealer", "points": 10, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Mascara", "points": 8, "rep": "Sei Bella® Dramatic Impact Mascara: Black", "price": "$20.00", "matches": 3}, {"label": "Lipstick / lip gloss", "points": 8, "rep": "Sei Bella Lip Liner: Blushing Berry", "price": "$22.00", "matches": 30}, {"label": "Eyeshadow", "points": 9, "rep": "Sei Bella® Eyeshadow Palette: After the Storm", "price": "$37.50", "matches": 6}, {"label": "Eyeliner", "points": 7, "rep": "Sei Bella Eyeliner: Dark Brown", "price": "$19.50", "matches": 5}, {"label": "Bronzer / blush", "points": 7, "rep": "Sei Bella® Powder Blush: Fashionably Late", "price": "$19.50", "matches": 14}, {"label": "Makeup remover", "points": 10, "rep": "", "price": "", "matches": 0, "needsReview": true}]}, {"group": "Baby & Kids", "sub": "Everything for the little ones", "items": [{"label": "Baby wash", "points": 3, "rep": "Koala Pals™ Hand Wash (Pump sold separately)", "price": "$7.49", "matches": 6}, {"label": "Baby shampoo", "points": 3, "rep": "Koala Pals™ Hand Wash (Pump sold separately)", "price": "$7.49", "matches": 6}, {"label": "Baby wipes", "points": 3, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Diaper cream", "points": 3, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Kids toothpaste", "points": 3, "rep": "Koala Pals™ Hand Wash (Pump sold separately)", "price": "$7.49", "matches": 6}, {"label": "Kids vitamins", "points": 3, "rep": "Koala Pals™ Hand Wash (Pump sold separately)", "price": "$7.49", "matches": 6}]}, {"group": "Medicine Cabinet", "sub": "The everyday remedies", "items": [{"label": "Pain reliever", "points": 2, "rep": "CounterAct® Pain - Acetaminophen", "price": "$6.19", "matches": 3}, {"label": "Allergy medicine", "points": 5, "rep": "CounterAct® Allergy", "price": "$15.69", "matches": 2}, {"label": "Antacid", "points": 3, "rep": "Calmicid™ Antacid Supplement", "price": "$7.89", "matches": 2}, {"label": "Cough drops / cold", "points": 8, "rep": "Vitality Coldwater Omega-3™", "price": "$22.79", "matches": 1}, {"label": "First aid / cuts and burns", "points": 6, "rep": "Independent Marketing Executive Agreement - French", "price": "$0.20", "matches": 3, "needsReview": true}, {"label": "Insect bite relief", "points": 6, "rep": "", "price": "", "matches": 0, "needsReview": true}, {"label": "Essential oils", "points": 10, "rep": "Pure™ Citronella Essential Oil", "price": "$22.75", "matches": 73}]}];
-var params=new URLSearchParams(location.search);
-var CONTACT=params.get('contact_id')||params.get('contactId')||params.get('cid')||'';
-var list=document.getElementById('list');
+var GROUPS=[{"group": "Bathroom & Personal Care", "items": [{"label": "Shampoo", "points": 10, "rep": "Sei Bella® Argan Oil & Coconut Moisture Smooth Shampoo"}, {"label": "Conditioner", "points": 10, "rep": "Sei Bella® Olive Fruit & Almond Protein Strength Conditioner"}, {"label": "Body wash", "points": 5, "rep": "Alloy 3-in-1 Hair & Body Wash"}, {"label": "Bar soap", "points": 0, "rep": "", "noMatch": true}, {"label": "Hand soap", "points": 3, "rep": "Koala Pals™ Hand Wash (Pump sold separately)"}, {"label": "Hand sanitizer", "points": 0, "rep": "", "noMatch": true}, {"label": "Body lotion", "points": 4, "rep": "Affinia Vanilla Musk & Jasmine Nourishing Body Lotion"}, {"label": "Deodorant", "points": 2, "rep": "Affinia Vanilla Musk & Jasmine Antiperspirant & Deodorant"}, {"label": "Shave gel or cream", "points": 0, "rep": "", "noMatch": true}, {"label": "Lip balm", "points": 0, "rep": "", "noMatch": true}, {"label": "Sunscreen", "points": 6, "rep": "Sun Shades™ After Sun Hydrogel E Moisturizing Relief"}, {"label": "Toothpaste", "points": 2, "rep": "Exceed® Essential Oil Tooth Polish: Cinnamon Fluoride-Free"}, {"label": "Mouthwash", "points": 4, "rep": "Breath-Away Essential Oil Mouth Rinse"}, {"label": "Floss", "points": 0, "rep": "", "noMatch": true}, {"label": "Breath mints", "points": 2, "rep": "Exceed™ Mints 3,Pack"}, {"label": "Hair styling products", "points": 2, "rep": "PreSpot™ Gel with Scrub Brush Tip"}]}, {"group": "Cleaning & Laundry", "items": [{"label": "Laundry detergent", "points": 10, "rep": "HE MelaPower® 9x Detergent: Mountain Fresh"}, {"label": "Fabric softener", "points": 3, "rep": "MelaSoft® Dryer Sheets: Spring Breeze"}, {"label": "Dryer sheets", "points": 3, "rep": "MelaSoft® Dryer Sheets: Spring Breeze"}, {"label": "Laundry stain remover", "points": 2, "rep": "PreSpot™ Instant Stain Remover 3,Pack"}, {"label": "Laundry scent booster", "points": 5, "rep": "MelaBoost™ Mountain Fresh Laundry Fragrance Booster"}, {"label": "Bleach alternative", "points": 0, "rep": "", "noMatch": true}, {"label": "Dish soap", "points": 2, "rep": "Lemon Brite® Hand Dishwashing Liquid: Lavender Scent"}, {"label": "Dishwasher detergent", "points": 3, "rep": "EcoSense Rinse Aid - Dishwasher Rinse and Drying Agent"}, {"label": "All-purpose cleaner", "points": 3, "rep": "MelaMagic® Heavy-Duty Cleaner"}, {"label": "Bathroom & tub cleaner", "points": 3, "rep": "Tub & Tile™ 6x Bathroom Cleaner"}, {"label": "Glass cleaner", "points": 2, "rep": "Clear Power Glass Wipes"}, {"label": "Toilet bowl cleaner", "points": 3, "rep": "Safe & Mighty™ Toilet Bowl Cleaner"}, {"label": "Floor cleaner", "points": 3, "rep": "Clean & Gleam™ 12x Floor Cleaner"}, {"label": "Furniture polish", "points": 0, "rep": "", "noMatch": true}, {"label": "Disinfectant", "points": 6, "rep": "Sol-U-Guard Botanical® 2x Disinfectant"}, {"label": "Cleaning wipes", "points": 2, "rep": "Tough & Tender™ Wipes"}, {"label": "Air freshener", "points": 4, "rep": "Hit Refresh Odor Spray"}]}, {"group": "Vitamins & Supplements", "items": [{"label": "Multivitamin", "points": 8, "rep": "Vitality Multivitamin & Mineral™ 50+"}, {"label": "Antioxidants", "points": 10, "rep": "CellWise™ Broad-Spectrum Antioxidant"}, {"label": "Omega-3", "points": 8, "rep": "Vitality Coldwater Omega-3™"}, {"label": "Collagen", "points": 16, "rep": "Vitality for Life Collagen Boost With Ceramides"}, {"label": "Probiotic", "points": 9, "rep": "Exceed™ Oral Probiotic Mint"}, {"label": "Digestive enzymes", "points": 17, "rep": "Good Zymes™ Digestive Enzymes"}, {"label": "Fiber supplement", "points": 0, "rep": "", "noMatch": true}, {"label": "Immune support", "points": 6, "rep": "Activate-C Immune Complex Drink: Raspberry"}, {"label": "Joint care", "points": 12, "rep": "Replenex® Extra Strength"}, {"label": "Bone health", "points": 6, "rep": "Vitality Calcium Complete™"}, {"label": "Cholesterol support", "points": 13, "rep": "Phytomega™ Cholesterol Support"}, {"label": "Blood pressure support", "points": 10, "rep": "CardiOmega EPA™"}, {"label": "Blood sugar support", "points": 12, "rep": "Vitality for Life® Berberine Glucose Support"}, {"label": "Prenatal", "points": 10, "rep": "Vitality Pack: Prenatal"}, {"label": "Prostate health", "points": 11, "rep": "ProstAvan™ Prostate Support"}, {"label": "Sleep support", "points": 0, "rep": "", "noMatch": true}, {"label": "Kids vitamins", "points": 2, "rep": "Koala Kubs Wipes"}]}, {"group": "Medicine Cabinet", "items": [{"label": "Allergy medicine", "points": 5, "rep": "CounterAct® Allergy"}, {"label": "Acid reducer", "points": 6, "rep": "Calmicid™ AC Acid Reducer"}, {"label": "Antacid", "points": 3, "rep": "Calmicid™ Antacid Supplement"}, {"label": "Cough drops", "points": 0, "rep": "", "noMatch": true}, {"label": "Pain relief tablets", "points": 2, "rep": "CounterAct® IB - Ibuprofen"}, {"label": "Pain & muscle relief cream", "points": 6, "rep": "Pure™ Work it Out Blue Heat Muscle Massage Roll-On"}, {"label": "First aid ointment", "points": 3, "rep": "Triple Antibiotic Ointment"}, {"label": "Cuts, burns & bite cream", "points": 0, "rep": "", "noMatch": true}]}, {"group": "Essential Oils", "items": [{"label": "Single essential oils", "points": 2, "rep": "Exceed® Essential Oil Tooth Polish: Cinnamon Fluoride-Free"}, {"label": "Essential oil blends", "points": 5, "rep": "Pure™ Vitalize Invigorating Essential Oil Blend"}, {"label": "Roll-on blends", "points": 6, "rep": "Pure™ Work it Out Blue Heat Muscle Massage Roll-On"}, {"label": "Carrier oils", "points": 4, "rep": "Pure™ Fractionated Coconut Oil"}, {"label": "Diffuser", "points": 0, "rep": "", "noMatch": true}, {"label": "Melaleuca oil (T36-C5 / T40-C3)", "points": 4, "rep": "T36-C5™ Melaleuca Oil: 15 mL"}]}, {"group": "Skin Care & Beauty", "items": [{"label": "Facial cleanser", "points": 4, "rep": "Affinia Vanilla Musk & Jasmine Gentle Plant Based Body Cleanser"}, {"label": "Micellar cleansing water", "points": 0, "rep": "", "noMatch": true}, {"label": "Facial toner", "points": 10, "rep": "Sei Bella Deep Marine Sea Toner"}, {"label": "Facial moisturizer", "points": 5, "rep": "Alloy Smoothing Body Moisturizer"}, {"label": "Facial serum", "points": 12, "rep": "Alloy Tightening Facial Serum"}, {"label": "Eye treatment", "points": 16, "rep": "Sei Bella® Night Recovery Eye Cream"}, {"label": "Overnight or peptide treatment", "points": 18, "rep": "Sei Bella Deep Marine Age Defying Overnight Cream"}, {"label": "Charcoal or clay mask", "points": 11, "rep": "Sei Bella Charcoal & Flower Detoxifying Mask"}, {"label": "Acne treatment", "points": 0, "rep": "", "noMatch": true}, {"label": "Foundation", "points": 0, "rep": "", "noMatch": true}, {"label": "Primer", "points": 10, "rep": "Sei Bella® Eyeshadow Primer"}, {"label": "Concealer", "points": 0, "rep": "", "noMatch": true}, {"label": "Powder", "points": 3, "rep": "Sei Bella® Pressed Powder Refill"}, {"label": "Blush", "points": 7, "rep": "Sei Bella Powder Blush: Weekend Escape"}, {"label": "Bronzer or contour", "points": 9, "rep": "Sei Bella Powder Bronzer"}, {"label": "Mascara", "points": 8, "rep": "Sei Bella Volume Mascara: Black"}, {"label": "Eyeliner", "points": 6, "rep": "Sei Bella® Liquid Eyeliner"}, {"label": "Eyeshadow", "points": 9, "rep": "Sei Bella® Eyeshadow Palette: Down to Earth"}, {"label": "Eyebrow pencil", "points": 0, "rep": "", "noMatch": true}, {"label": "Lipstick", "points": 8, "rep": "Sei Bella® Matte Lipstick: Early Bird"}, {"label": "Lip gloss", "points": 5, "rep": "Sei Bella® Lip Gloss: Sun-Kissed"}, {"label": "Lip liner", "points": 8, "rep": "Sei Bella Lip Liner: Bronzed Rose"}, {"label": "Setting spray", "points": 0, "rep": "", "noMatch": true}, {"label": "Makeup remover", "points": 0, "rep": "", "noMatch": true}, {"label": "Perfume", "points": 0, "rep": "", "noMatch": true}]}, {"group": "Weight, Fitness & Snacks", "items": [{"label": "Protein shakes", "points": 11, "rep": "Proflex Protein Shake: Orange Creamsicle"}, {"label": "Vegan protein shakes", "points": 0, "rep": "", "noMatch": true}, {"label": "Kids shake", "points": 2, "rep": "Koala Kubs Wipes"}, {"label": "Protein bars", "points": 4, "rep": "Proflex Chewy Protein Bar: Cookies and Cream"}, {"label": "Granola or fiber bars", "points": 0, "rep": "", "noMatch": true}, {"label": "Fruit & nut or chocolate bars", "points": 0, "rep": "", "noMatch": true}, {"label": "Crave blocking bars", "points": 0, "rep": "", "noMatch": true}, {"label": "Fat burner", "points": 0, "rep": "", "noMatch": true}, {"label": "Pre-workout", "points": 9, "rep": "Vitality Elevate Pre-Workout: Limeade"}, {"label": "Post-workout or creatine", "points": 5, "rep": "Vitality Elevate Pure Creatine"}, {"label": "Energy shots", "points": 4, "rep": "Energy Shot 6,Pack"}, {"label": "Veggie protein crisps", "points": 4, "rep": "Simply Fit™ Veggie Protein Crisps: Savory Barbecue"}, {"label": "Popcorn", "points": 0, "rep": "", "noMatch": true}]}, {"group": "Food & Drinks", "items": [{"label": "Coffee", "points": 9, "rep": "Sei Bella® Eyeshadow Palette: Morning Coffee"}, {"label": "Tea", "points": 4, "rep": "Homestead Blend"}, {"label": "Electrolyte hydration", "points": 6, "rep": "Sustain Active Hydration: Raspberry Lemonade Packets"}, {"label": "Seasonings", "points": 4, "rep": "Simply Fit™ Veggie Protein Crisps: Savory Barbecue"}, {"label": "Baking mixes", "points": 7, "rep": "Simply Fit™ Simple Start Baking Mix: Pancakes"}]}, {"group": "Baby & Kids", "items": [{"label": "Baby wash & shampoo", "points": 2, "rep": "Koala Kubs Wipes"}, {"label": "Baby wipes", "points": 0, "rep": "", "noMatch": true}, {"label": "Diaper rash cream", "points": 0, "rep": "", "noMatch": true}, {"label": "Kids toothpaste", "points": 2, "rep": "Exceed® Essential Oil Tooth Polish: Cinnamon Fluoride-Free"}]}, {"group": "Home Fragrance", "items": [{"label": "Candles", "points": 0, "rep": "", "noMatch": true}, {"label": "Wax melts or warmers", "points": 9, "rep": "Let’s Get Steamy Shower Melts, Powered by Brighten Joy Blend"}, {"label": "Linen or room spray", "points": 2, "rep": "Revive™ Room Spray Starter Pack"}, {"label": "Bath bombs & shower melts", "points": 6, "rep": "Soak Away the Day Bath Bomb,Powered by Peace Tranquility Blend"}]}, {"group": "Beef", "unscored": true, "note": "Riverbend Ranch is a separate subscription with no product points.", "items": [{"label": "Ribeye", "points": 0, "unscored": true}, {"label": "New York Strip", "points": 0, "unscored": true}, {"label": "Filet Mignon", "points": 0, "unscored": true}, {"label": "Sirloin", "points": 0, "unscored": true}, {"label": "Flank Steak", "points": 0, "unscored": true}, {"label": "Tri-tip", "points": 0, "unscored": true}, {"label": "Picanha Roast", "points": 0, "unscored": true}, {"label": "Chuck Roast", "points": 0, "unscored": true}, {"label": "New York Strip Roast", "points": 0, "unscored": true}, {"label": "Short Rib", "points": 0, "unscored": true}, {"label": "Brisket", "points": 0, "unscored": true}, {"label": "Diced Steak or Steak Strips", "points": 0, "unscored": true}, {"label": "Ground Beef", "points": 0, "unscored": true}]}];
+var CID=new URLSearchParams(location.search).get('contact_id')||'';
+var w=document.getElementById('wrap');
 GROUPS.forEach(function(g,gi){
-  var d=document.createElement('div'); d.className='grp'; d.dataset.g=gi;
-  var items=g.items.map(function(it,ii){
-    return '<label class="it" data-l="'+it.label.toLowerCase()+'"><input type="checkbox" data-g="'+gi+'" data-i="'+ii+'" data-p="'+it.points+'"><span>'+it.label+'</span></label>';
-  }).join('');
-  d.innerHTML='<div class="ghead"><div class="gt"><b>'+g.group+'</b><span>'+g.sub+'</span></div>'+
-    '<div class="gcount" id="c'+gi+'">0</div><div class="arw">&#9662;</div></div><div class="gbody">'+items+'</div>';
-  list.appendChild(d);
-});
-document.addEventListener('click',function(e){
-  var h=e.target.closest('.ghead'); if(h) h.parentElement.classList.toggle('open');
+  var h=document.createElement('h2'); h.className='g'; h.textContent=g.group; w.appendChild(h);
+  if(g.unscored){
+    var b=document.createElement('div'); b.className='beef';
+    b.innerHTML='<p>'+g.note+'</p><div class="grid" id="G'+gi+'"></div>';
+    w.appendChild(b);
+  } else {
+    var d=document.createElement('div'); d.className='grid'; d.id='G'+gi; w.appendChild(d);
+  }
+  var host=document.getElementById('G'+gi);
+  g.items.forEach(function(it,ii){
+    var l=document.createElement('label'); l.className='it';
+    l.innerHTML='<input type="checkbox" data-g="'+gi+'" data-i="'+ii+'"><span>'+it.label+'</span>';
+    host.appendChild(l);
+  });
 });
 function tally(){
-  var boxes=[].slice.call(document.querySelectorAll('#list input:checked'));
-  document.getElementById('n').textContent=boxes.length;
-  document.getElementById('lab').textContent=boxes.length===1?'item checked':'items checked';
-  document.getElementById('go').disabled=boxes.length===0;
-  GROUPS.forEach(function(g,gi){
-    var c=document.querySelectorAll('#list input[data-g="'+gi+'"]:checked').length;
-    var el=document.getElementById('c'+gi); el.textContent=c; el.className='gcount'+(c?' on':'');
-  });
+  var b=document.querySelectorAll('#wrap input:checked');
+  document.getElementById('n').textContent=b.length;
+  document.getElementById('lab').textContent=b.length===1?'item checked':'items checked';
+  document.getElementById('go').disabled=b.length===0;
 }
 document.addEventListener('change',function(e){
-  if(e.target.type==='checkbox'){ e.target.closest('label').classList.toggle('sel',e.target.checked); tally(); }
-});
-document.getElementById('q').addEventListener('input',function(){
-  var v=this.value.trim().toLowerCase(); var any=false;
-  document.querySelectorAll('.grp').forEach(function(g){
-    var shown=0;
-    g.querySelectorAll('label.it').forEach(function(l){
-      var m=!v||l.dataset.l.indexOf(v)>-1; l.style.display=m?'':'none'; if(m)shown++;
-    });
-    g.style.display=shown?'':'none'; if(shown)any=true;
-    if(v&&shown)g.classList.add('open'); if(!v)g.classList.remove('open');
-  });
-  document.getElementById('none').style.display=any?'none':'block';
+  if(e.target.type==='checkbox'){e.target.closest('label').classList.toggle('sel',e.target.checked);tally();}
 });
 document.getElementById('go').addEventListener('click',function(){
   var picked=[],score=0;
-  document.querySelectorAll('#list input:checked').forEach(function(b){
-    var g=GROUPS[b.dataset.g], it=g.items[b.dataset.i];
-    picked.push({group:g.group,label:it.label,points:it.points});
-    score+=it.points;
+  document.querySelectorAll('#wrap input:checked').forEach(function(b){
+    var g=GROUPS[b.dataset.g],it=g.items[b.dataset.i];
+    picked.push({group:g.group,label:it.label});
+    if(!g.unscored) score+=it.points;
   });
-  sessionStorage.setItem('switchResult',JSON.stringify({score:score,count:picked.length,picked:picked,contact:CONTACT}));
-  location.href='score.html'+(CONTACT?('?contact_id='+encodeURIComponent(CONTACT)):'');
+  sessionStorage.setItem('switchResult',JSON.stringify({score:score,count:picked.length,picked:picked,contact:CID}));
+  location.href='score.html'+(CID?('?contact_id='+encodeURIComponent(CID)):'');
 });
 tally();
 </script></body></html>
