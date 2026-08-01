@@ -54,7 +54,7 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 <p class="note" id="saved"></p>
 </div>
 <script>
-var WEBHOOK='';           // paste the Cloudflare Worker URL here once deployed
+var WEBHOOK='https://switch-checklist.theshannonnicole.workers.dev/';  // Cloudflare Worker, deployed 2026-08-01
 var QUALIFY=35;           // 35 points is roughly $100 after tax and shipping
 var r={};try{r=JSON.parse(sessionStorage.getItem('switchResult')||'{}')}catch(e){}
 var score=r.score||0;
