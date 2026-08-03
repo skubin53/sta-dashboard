@@ -1,6 +1,6 @@
 ---
 date: 2026-08-02
-status: pending-photos
+status: complete
 image_count: 20
 cameron_processed: false
 sets: 4
