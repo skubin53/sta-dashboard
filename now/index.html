@@ -2504,15 +2504,37 @@ function stepAnswered(step){
     return false;
   }
   if(step.type==='name'){ return !!(userName&&userName.trim()); }
-  if(step.type==='chip_cards'&&step.cards){ return step.cards.some(function(c){ var s=a[c.id]||{}; return s.isNone || selBrands(s).length>0; }); }
+  // EVERY, not some. A step with 5 product cards is only "answered" when all 5 are
+  // answered. Before this, tapping one card lit up Continue and people walked past
+  // 3 or 4 questions without realizing it, which gutted their score and the report
+  // they were about to pay for. Every card has a "We don't use this" option, so
+  // every question is always answerable. Shannon 2026-08-05.
+  if(step.type==='chip_cards'&&step.cards){ return step.cards.every(function(c){ var s=a[c.id]||{}; return s.isNone || selBrands(s).length>0; }); }
   if(step.type==='single'||step.type==='yn'||step.type==='multi'){ return Object.keys(a).some(function(k){ return a[k]; }); }
   if(step.type==='brand_single'){ return !!(a.brand&&(''+a.brand).trim()); }
-  if(step.type==='brand_multi'&&step.fields){ return step.fields.some(function(f){ return a[f.id]&&(''+a[f.id]).trim(); }); }
+  if(step.type==='brand_multi'&&step.fields){ return step.fields.every(function(f){ return a[f.id]&&(''+a[f.id]).trim(); }); }
   return true;
+}
+// How many sub-questions on this step are still blank. Drives the live countdown
+// on the Continue button so nobody can skip past questions by accident.
+function stepRemaining(step){
+  if(!step) return 0;
+  var a=answers[step.id]||{}, left=0;
+  if(step.type==='chip_cards'&&step.cards){
+    step.cards.forEach(function(c){ var s=a[c.id]||{}; if(!(s.isNone||selBrands(s).length>0)) left++; });
+  } else if(step.type==='brand_multi'&&step.fields){
+    step.fields.forEach(function(f){ if(!(a[f.id]&&(''+a[f.id]).trim())) left++; });
+  }
+  return left;
 }
 function updateContinueGate(){
   var cont=document.getElementById('btnNx'); if(!cont) return;
-  cont.classList.toggle('on', stepAnswered(activeSteps[stepIdx]));
+  var step=activeSteps[stepIdx];
+  var done=stepAnswered(step), left=stepRemaining(step);
+  cont.classList.toggle('on', done);
+  // The button itself does the telling: "3 more questions" -> "Continue".
+  if(!done && left>0){ cont.textContent = left + (left===1 ? ' more question' : ' more questions'); }
+  else { cont.textContent = 'Continue →'; }
 }
 function updateRisk(){
   // change #4: COUNT concerns (toxic taps), not points, live tally that ticks up
