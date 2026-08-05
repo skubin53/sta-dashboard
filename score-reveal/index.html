@@ -210,7 +210,8 @@ function staEsc(t){
 
   var lk = document.getElementById("sr-locked");
   if (lk){
-    var rest = items.length - 1;
+    /* same uncapped total, so "+ N more flagged products" matches the headline number */
+    var rest = flaggedTotal - 1;
     lk.textContent = rest > 0
       ? "+ " + rest + (rest === 1 ? " more flagged product" : " more flagged products") + " in your home"
       : "Your full room-by-room breakdown";
