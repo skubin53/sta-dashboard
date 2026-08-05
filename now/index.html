@@ -3287,18 +3287,21 @@ function showResults(){
   // straight through to the inline results below, so this can never loop or
   // leave them on a blank screen.
   try {
-    var _items = (typeof collectSwitchItems === 'function')
-      ? collectSwitchItems().slice(0, 12).map(function(it){
-          return { brand: it.brand, cat: it.cat,
-                   target: (typeof swapFor === 'function' ? swapFor(it.cat) : ''),
-                   save: (typeof savingsFor === 'function' ? savingsFor(it.cat) : 0) };
-        })
-      : [];
+    // _all is EVERY flagged product, uncapped. _items stays capped at 12 because that is
+    // all the reveal page renders, but we now also send `total` so the "Products flagged
+    // in your home" number reflects every single tap. It used to read _items.length, so
+    // it froze at 12 no matter how much someone flagged. Shannon 2026-08-05.
+    var _all = (typeof collectSwitchItems === 'function') ? collectSwitchItems() : [];
+    var _items = _all.slice(0, 12).map(function(it){
+      return { brand: it.brand, cat: it.cat,
+               target: (typeof swapFor === 'function' ? swapFor(it.cat) : ''),
+               save: (typeof savingsFor === 'function' ? savingsFor(it.cat) : 0) };
+    });
     if (_items.length) {
       var _g = totalScore>=80?'D':totalScore>=60?'C':totalScore>=40?'B':totalScore>=20?'B+':'A';
       localStorage.setItem('sta_scan', JSON.stringify({
         name: (typeof userName !== 'undefined' ? userName : '') || '',
-        score: totalScore, grade: _g, items: _items, at: new Date().toISOString()
+        score: totalScore, grade: _g, items: _items, total: _all.length, at: new Date().toISOString()
       }));
       // only leave if the write actually stuck
       if (localStorage.getItem('sta_scan')) {

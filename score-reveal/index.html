@@ -174,8 +174,12 @@ function staEsc(t){
   var nameEl = document.getElementById("sr-name");
   if (nameEl && d.name) nameEl.textContent = d.name;
 
+  /* Show EVERY flagged product, not just the 12 we carry copy for. items[] is capped at
+     12 for payload size, so reading items.length froze this number at 12 and it stopped
+     climbing as people flagged more. d.total is the true uncapped count. Shannon 2026-08-05. */
   var cEl = document.getElementById("sr-count");
-  if (cEl) cEl.textContent = items.length;
+  var flaggedTotal = (typeof d.total === "number" && d.total > items.length) ? d.total : items.length;
+  if (cEl) cEl.textContent = flaggedTotal;
 
   /* reveal the first flagged item we have real copy for, else fall back to item 1 */
   var pick = null, picked = items[0];
