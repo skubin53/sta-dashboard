@@ -1159,7 +1159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Founder byline + social proof -->
     <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:10px">
-      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg"
+      <img src="shannon-photo.jpg"
            style="width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid rgba(255,255,255,.3);flex-shrink:0" alt="Shannon Nicole"/>
       <div style="text-align:left">
         <div style="font-size:.73rem;color:#1c2a4a;font-weight:700;line-height:1.3">A free scan built by Shannon Nicole</div>
@@ -1292,7 +1292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- Shannon photo at reveal moment -->
   <div id="shannonReveal" style="display:none;text-align:center;margin-bottom:12px">
     <div style="width:52px;height:52px;border-radius:50%;border:2px solid var(--orange);overflow:hidden;margin:0 auto 6px">
-      <img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt="Shannon"/>
+      <img src="shannon-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt="Shannon"/>
     </div>
     <p style="font-size:.72rem;color:#fafdff;font-style:italic" id="shannonMsg">Your full report breaks this down room by room.</p>
   </div>
@@ -1409,7 +1409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- TRUTH LINE -->
       <div style="text-align:center;margin-bottom:24px;padding:0 4px">
-        <div style="font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;color:#fff;line-height:1.2;letter-spacing:.02em">These aren't age. These aren't bad luck.<br><span style="color:#FF9900">They're coming from your house.</span></div>
+        <div style="font-family:'Anton',sans-serif;font-size:22px;text-transform:uppercase;color:#fff;line-height:1.2;letter-spacing:.02em">This isn't age related, this isn't hereditary.<br><span style="color:#FF9900">You, your kids, your pets, you are all being poisoned.</span></div>
       </div>
 
       <!-- ═══ $7 HERO CARD — 2026-07-08 full redesign ═══ -->
@@ -2683,6 +2683,9 @@ function applyRef(){
   if(!r){ try{ r=localStorage.getItem('sta_ref'); }catch(e){} }       // sticky across resume / reloads
   if(!r) return;
   r=(''+r).trim().toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,40); if(!r) return;
+  // Only greet by a real-looking first name (or a known influencer). A random code
+  // like "ahsy35uhij" must never be shown as a friend's name; drop it and self-heal.
+  if(!INFLUENCERS[r] && !/^[a-z][a-z-]{1,23}$/.test(r)){ try{ localStorage.removeItem('sta_ref'); }catch(e){} return; }
   refCode=r; try{ localStorage.setItem('sta_ref',r); }catch(e){}
   refInfo=INFLUENCERS[r]||{name:prettyName(r),photo:null};
   var inner=document.querySelector('#s-intro .intro-inner'); if(!inner) return;
@@ -3419,7 +3422,7 @@ function showResults(){
   // ── sr-byline (Shannon's photo + attribution) ──
   var srByline = document.getElementById('sr-byline');
   if(srByline){
-    srByline.innerHTML = '<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg" style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>'
+    srByline.innerHTML = '<img src="shannon-photo.jpg" style="width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:center top;border:1.5px solid rgba(11,37,69,.2);flex-shrink:0" alt="Shannon Nicole"/>'
       +'<div style="text-align:left">'
       +'<div style="font-size:.72rem;font-weight:700;color:#0B2545;line-height:1.3">Built by Shannon Nicole, founder of Switch to America</div>'
       +'<div style="font-size:.65rem;color:#4a5e7e;line-height:1.3">Switching families from toxic brands since 2018</div>'
