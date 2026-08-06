@@ -197,7 +197,10 @@ function staEsc(t){
     if (p){ seenCat[c] = 1; candidates.push({ copy: p, item: items[i], rank: RANK[c] || 5, ord: i }); }
   }
   candidates.sort(function(a,b){ return (a.rank - b.rank) || (a.ord - b.ord); });
-  var picks = candidates.slice(0, 3);
+  /* Reveal exactly ONE product. The rest stays behind the $7, that is the whole offer.
+     The ranking above still decides WHICH one, so the single reveal is her most
+     personal hit (the coffee she drinks) instead of whatever the scan asked first. */
+  var picks = candidates.slice(0, 1);
   if (!picks.length && items.length) picks = [{ copy: null, item: items[0] }];
   var pick = picks.length ? picks[0].copy : null;
   var picked = picks.length ? picks[0].item : items[0];
