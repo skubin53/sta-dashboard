@@ -5,7 +5,7 @@ post_title: The Switch Circle, $19/month private community
 slug: switch-circle-upsell
 target_page: https://sta-checkout.theshannonnicole.workers.dev/upsell
 beats: 3
-status: requested
+status: complete
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige, NOT stock-photo. Distinct real-looking women who could actually be in her Facebook group: ages roughly 35 to 65, mixed body types, mixed hair, no models. Five fingers per hand, visible pores, documentary realism. Temperature is WARM throughout, this is not a fear page. Nano Banana Pro at 4K, 16:9."
 product_note: "NO products in frame at all. This page sells people, not a swap. If a bottle appears it must be plain and unbranded."
 ---
