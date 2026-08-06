@@ -187,6 +187,9 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       creates duplicates; retire the old one or it keeps serving.)*
 - [ ] **E4** Record in `blog-pipeline/published/YYYY-MM-DD.md` with post id + URL.
 - [ ] **E5** Add the new post to the internal-link web of at least 2 older posts.
+      **This is a GHL UI job, not an API job.** See the platform-traps table: replacing
+      the body of an already-live post over the API 404s it. Open the older post in the
+      GHL blog editor, add the `<li>` to its Keep reading list, save.
 
 ---
 
@@ -199,7 +202,9 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 | `PUT` missing `locationId`+`blogId` | 422 |
 | archive control | boolean `archived`, NOT `status: ARCHIVED` |
 | `status: DRAFT` | **UNPUBLISHES a live post** (404'd the avocado post this way) |
-| body edit | POST new FIRST, confirm, THEN move old off the slug |
+| body edit of a LIVE post | **DO IT IN THE GHL UI.** Proven again 2026-08-06 |
+| POST a new post on a FRESH slug | renders publicly in seconds. This is what blog-publish.py does and it works |
+| POST a replacement onto an EXISTING slug | **404s the live page.** GHL's public router keeps resolving that slug to the OLD post id, so the new post is unreachable no matter what you set. Setting `publishedAt` does not fix it. The only recovery is to park the new copy on a junk slug as DRAFT and put the original back, which restores 200 instantly. This is what makes `blog-swap-body.py` unusable on this blog |
 | image-only change | overwrite the same repo path, no republish needed |
 | list posts | `/blogs/posts/all?locationId=&blogId=&limit=&offset=&status=PUBLISHED` — **`status` is REQUIRED** or it returns 0. Flaky, retry it |
 | `raw.githubusercontent.com` | caches ~60s. Confirm an edit is on raw BEFORE publishing |
