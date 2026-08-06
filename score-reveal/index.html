@@ -240,7 +240,7 @@ function staEsc(t){
   /* Stripe, carrying the report id so the paid page knows who they are */
   var buy = document.getElementById("sr-buy");
   if (buy){
-    buy.addEventListener("click", function(ev){
+    buy.addEventListener("click", async function(ev){
       ev.preventDefault();
       var rid = "";
       try { rid = localStorage.getItem("reportId") || ""; } catch(e){}
@@ -250,6 +250,18 @@ function staEsc(t){
       } catch(e){}
       var u = STA_STRIPE;
       if (rid) u += (u.indexOf("?") >= 0 ? "&" : "?") + "client_reference_id=" + encodeURIComponent(rid);
+      // Hand her actual scan to the checkout domain first. localStorage does not cross
+      // domains, so without this her answers are lost the moment she leaves this page and
+      // the audit she pays for could not be personalized. Best effort: if it fails we
+      // still send her to checkout rather than blocking the sale.
+      try {
+        var rr = await fetch("https://sta-checkout.theshannonnicole.workers.dev/report-save", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ scan: d })
+        });
+        var rj = await rr.json();
+        if (rj && rj.id) u += (u.indexOf("?") >= 0 ? "&" : "?") + "r=" + encodeURIComponent(rj.id);
+      } catch (e) {}
       location.href = u;
     });
   }
