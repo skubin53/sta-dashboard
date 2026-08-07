@@ -57,6 +57,17 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       hedging, no "it's not just X, it's Y". Ground every specific in Shannon's REAL
       lived detail, never an invented one. (`sta-blog-voice-guide`)
 
+> **0.4 false positive, fixed 2026-08-07.** Three finished posts were blocked for
+> "read the label" when the sentence was *"I will not tell you to read the label"*,
+> which is the rule being obeyed. `blog-gates.py` now looks at the words in front of
+> the phrase and lets the negated form through. If you ever loosen that regex, keep
+> the negation check.
+
+> **"my kids" check.** Shannon raised ONE daughter. Never write "my kids", "my
+> children" or "when my kids were little" in her voice. It survived into three posts
+> a day after she corrected it elsewhere, so read every Shannon's Advice box and
+> author bio for it before publishing.
+
 ## GATE A — CONTENT
 
 - [ ] **A1** Title is the exact question a real person types, plus `(2026)`.
@@ -207,7 +218,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 | POST a replacement onto an EXISTING slug | **404s the live page.** GHL's public router keeps resolving that slug to the OLD post id, so the new post is unreachable no matter what you set. Setting `publishedAt` does not fix it. The only recovery is to park the new copy on a junk slug as DRAFT and put the original back, which restores 200 instantly. This is what makes `blog-swap-body.py` unusable on this blog |
 | image-only change | overwrite the same repo path, no republish needed |
 | list posts | `/blogs/posts/all?locationId=&blogId=&limit=&offset=&status=PUBLISHED` — **`status` is REQUIRED** or it returns 0. Flaky, retry it |
-| `raw.githubusercontent.com` | caches ~60s. Confirm an edit is on raw BEFORE publishing |
+| `raw.githubusercontent.com` | **caches for MINUTES and ignores `?cb=` query strings.** On 2026-08-07 it handed blog-publish.py a body committed a minute earlier that was three edits out of date, and the dry run assembled the OLD post with the OLD images. Never read a just-committed repo file from RAW. `blog-publish.py` now goes through the **GitHub Contents API** (`/contents/<path>?ref=main`, base64 in `content`), which always reflects the real commit |
 | GitHub Pages CDN | caches 404s. Wait for the Pages build to reach your commit, THEN verify with `?cb=` |
 | `_config.yml` `exclude:` | anything listed vanishes from the live site |
 
