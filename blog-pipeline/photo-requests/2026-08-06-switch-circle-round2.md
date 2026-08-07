@@ -5,7 +5,7 @@ post_title: The Switch Circle, four more images
 slug: switch-circle-round2
 target_page: https://sta-checkout.theshannonnicole.workers.dev/circle
 beats: 4
-status: requested
+status: complete
 style: "SAME SET as 2026-08-06-switch-circle, and continuity with it matters. Nano Banana Pro at 4K, 16:9. Real-looking women roughly 35 to 65, mixed ages, body types, skin tones and hair, all in different ordinary colorful clothes, no beige. Honest lived-in rooms, natural true-to-life color. Documentary realism, five fingers per hand, visible pores. NOT candy-bright, NOT sad-beige, NOT stock, NOT an advertisement."
 product_note: "NO products in frame at all. No bottles, no labels, no cleaning supplies, no branded packaging anywhere. This page sells people and relief, never a swap."
 ---
