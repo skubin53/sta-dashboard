@@ -204,6 +204,12 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 
 ---
 
+- [ ] **D9** **The free cheat sheet gets a line in "Keep reading".** Added 2026-08-08.
+      Paste exactly this, last item in the list, so it sits above the author bio:
+      `<li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>`
+      It costs about 10 words, so check A13 again after adding it. Two posts went
+      over the ceiling on 2026-08-08 purely from this line.
+
 ## GHL / PLATFORM TRAPS  (established by direct test, do not re-derive)
 
 | Thing | Truth |
@@ -221,6 +227,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 | `raw.githubusercontent.com` | **caches for MINUTES and ignores `?cb=` query strings.** On 2026-08-07 it handed blog-publish.py a body committed a minute earlier that was three edits out of date, and the dry run assembled the OLD post with the OLD images. Never read a just-committed repo file from RAW. `blog-publish.py` now goes through the **GitHub Contents API** (`/contents/<path>?ref=main`, base64 in `content`), which always reflects the real commit |
 | GitHub Pages CDN | caches 404s. Wait for the Pages build to reach your commit, THEN verify with `?cb=` |
 | `_config.yml` `exclude:` | anything listed vanishes from the live site |
+| `POST /workflows/` | **404, there is no create endpoint.** GHL workflows cannot be made from the API at all, only read. And the builder freezes the renderer under browser automation on this account (150 workflows in the list). Anything that needs a workflow is either a manual build by Shannon or has to live in the Worker |
 
 ## THE TOOLS
 
