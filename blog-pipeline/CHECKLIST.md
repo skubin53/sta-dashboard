@@ -90,9 +90,13 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 - [ ] **A8** **Visible FAQ section**, 3 to 5 real follow-up questions, 2 to 4 sentence
       answers. This is separate from the FAQ schema in B3 and both are required.
 - [ ] **A9** **Shannon's Advice box**, dark, near the end, right before the closing
-      scan CTA. Facts stated flat and hyperlinked in the body; anything about a product
-      CAUSING harm, or a brand "poisoning" people, stays her clearly first-person
-      OPINION. Always ends on a practical do-this-instead.
+      scan CTA. **PASTE THE STANDARD BLOCK VERBATIM. DO NOT WRITE A NEW ONE.**
+      Canonical text: `Downloads\STA-Shannons-Advice-STANDARD.txt`.
+      Locked 2026-08-08 by Shannon: "This way you aren't potentially writing fake advice
+      that isn't mine." Every post before that date had a DIFFERENT box, several of them
+      making personal claims about her life she never made. Do not personalise it to the
+      product. If a post genuinely needs a product-specific line from her, it goes in the
+      BODY, and it has to come from Shannon first.
 - [ ] **A10** **Proof section**: category-matched, hyperlinked real lawsuits, recalls
       or fines. **Every one attributed as an allegation**, never as proven fact.
 - [ ] **A11** **Author bio block**, first person, warm.
