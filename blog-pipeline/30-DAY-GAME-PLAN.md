@@ -57,11 +57,11 @@ Sets marked DONE are rendered and committed. Everything else is `status: request
 | Aug 09 | Is Colgate Toothpaste Safe? | Bathroom | DONE, written, ready |
 | Aug 10 | Is Suave Shampoo Safe? | Kids | DONE, needs writing |
 | Aug 11 | Is Your Tap Water Safe to Drink? | Kitchen | requested |
-| Aug 12 | Is Crest Toothpaste Safe? | Bathroom | requested |
-| Aug 13 | Is Downy Fabric Softener Toxic? | Laundry | requested |
-| Aug 14 | Is Vaseline Safe for Babies? | Kids | requested |
-| Aug 15 | Is Gatorade Bad for Kids? | Kitchen | requested |
-| Aug 16 | Is Bottled Water Safe? | Kitchen | requested |
+| Aug 12 | Eleven Food Companies Got Sued Over Ultra Processed Food | Kitchen | requested |
+| Aug 13 | Who Actually Owns Your Vitamins? P&G Buys Thorne | Bathroom | requested |
+| Aug 14 | Should You Give a Child Cough Syrup? | Kids | requested |
+| Aug 15 | Are Pancake and Baking Mixes Actually Healthy? | Kitchen | requested |
+| Aug 16 | Are the Supplements on Amazon Real? | Bathroom | requested |
 | Aug 17 | Are Seed Oils Bad for You? | Kitchen | requested |
 | Aug 18 | Are Plastic Cutting Boards Safe? | Kitchen | requested |
 | Aug 19 | Are Dryer Sheets Toxic? | Laundry | requested |
@@ -75,8 +75,43 @@ Sets marked DONE are rendered and committed. Everything else is `status: request
 | Aug 27 | Is Your Lipstick Safe? | Makeup | requested |
 | Aug 28 | Are Food Dyes Still Legal in American Food? | Kitchen | requested |
 | Aug 29 | Are Canned Foods Lined With BPA? | Kitchen | requested |
+| Aug 30 | Is Crest Toothpaste Safe? | Bathroom | requested |
+| Aug 31 | Is Downy Fabric Softener Toxic? | Laundry | requested |
+| Sep 01 | Is Vaseline Safe for Babies? | Kids | requested |
+| Sep 02 | Is Gatorade Bad for Kids? | Kitchen | requested |
+| Sep 03 | Is Bottled Water Safe? | Kitchen | requested |
 
-**19 sets outstanding, 95 images.**
+**24 sets outstanding, 120 images.**
+
+### Mixed up, 2026-08-08
+
+Shannon: "We need to mix it up a bit." The calendar was 19 straight "is X toxic" product
+posts. Five NEWSIER posts were slotted in at Aug 12 to 16, and what they displaced moved
+to Aug 30 to Sep 3 rather than being dropped:
+
+| New at | Post | Why it is a different KIND of post |
+|---|---|---|
+| Aug 12 | Ultra processed food lawsuit | a court case, not a product |
+| Aug 13 | Who owns your vitamins | corporate ownership, hard news anchor |
+| Aug 14 | Kids cough syrup | a federal advisory, not an ingredient |
+| Aug 15 | Baking and pancake mixes | the health-halo box |
+| Aug 16 | Amazon counterfeit supplements | a marketplace problem, not a formula |
+
+They go SOON on purpose. Photo Claude renders in date order, so putting them at the end
+of the month means they do not appear for three weeks.
+
+### THREE CLAIMS THAT MUST BE CHECKED BEFORE WRITING
+
+1. **The UPF lawsuit was DISMISSED.** The December 2024 Bryce Martinez suit against the
+   11 companies was thrown out by a federal judge in Philadelphia in August 2025. Do NOT
+   write "they are being sued" in the present tense. The true story is stronger anyway:
+   a 19 year old with fatty liver and type 2 diabetes took on the biggest food companies
+   in America, a judge threw it out, and more suits keep getting filed.
+2. **Kids cough syrup is NOT "unfit for human consumption."** That is false and it would
+   sink the post. The real, sourceable line is the FDA advising against OTC cough and
+   cold medicines for children under 4. That is plenty.
+3. **Do not assert who owns a baking mix brand** without a source. The P&G and Thorne
+   deal has one (Reuters, 2026-08-04). The mix brands do not, yet.
 
 ### Room balance
 
