@@ -1,5 +1,84 @@
 <!doctype html>
 <html lang="en"><head>
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-KMZ2XV2F');</script>
+
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel — Switch To America's pixel 1922419774790297 (installed 2026-06-25 per agent review #1) -->
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+n.queue=[];t=b.createElement(e);t.async=!0;
+
+t.src=v;s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1922419774790297');
+
+fbq('track', 'PageView');
+
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+
+src="https://www.facebook.com/tr?id=1922419774790297&ev=PageView&noscript=1"/></noscript>
+
+<!-- End Meta Pixel -->
+<!-- STA form_submit, same shape as the switchtoamerica.com sites. Added 2026-08-09. -->
+<script>
+window.dataLayer = window.dataLayer || [];
+(function(){
+if(window.__staFormTracker) return; window.__staFormTracker = 1;
+function rnd(){return 'lead_'+Date.now()+'_'+Math.random().toString(36).substring(2,10);}
+function digits(v){return (v||'').replace(/\D/g,'');}
+async function eid(k){if(!k)return rnd();var s=k+'|'+new Date().toISOString().slice(0,10)+'|sta-lead';
+var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));
+return 'lead_'+Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0');}).join('').substring(0,32);}
+function fields(f){return {
+ em:f.querySelector('input[type="email"],input[name*="email" i]'),
+ ph:f.querySelector('input[type="tel"],input[name*="phone" i]'),
+ fn:f.querySelector('input[name*="first" i],input[placeholder*="first" i]'),
+ ln:f.querySelector('input[name*="last" i],input[placeholder*="last" i]')};}
+function key(x){var e=x.em&&x.em.value?x.em.value.trim().toLowerCase():'';if(e)return e;
+var p=digits(x.ph&&x.ph.value);return p?'p:'+p:'';}
+function attach(){document.querySelectorAll('form').forEach(function(f){
+ if(f.dataset.staTracked==='1')return; f.dataset.staTracked='1';
+ var h=f.querySelector('input[name="sta_event_id"]');
+ if(!h){h=document.createElement('input');h.type='hidden';h.name='sta_event_id';f.appendChild(h);}
+ var x=fields(f);
+ var up=async function(){try{h.value=await eid(key(x));}catch(e){}};
+ [x.em,x.ph].forEach(function(el){if(el){el.addEventListener('input',up);el.addEventListener('blur',up);el.addEventListener('change',up);}});
+ f.addEventListener('submit',function(){var y=fields(f);
+  window.dataLayer.push({event:'form_submit',event_id:h.value||rnd(),lead_value:2.20,currency:'CAD',
+   user_data:{email:y.em&&y.em.value?y.em.value.trim().toLowerCase():'',phone:digits(y.ph&&y.ph.value),
+   first_name:y.fn&&y.fn.value?y.fn.value.trim().toLowerCase():'',last_name:y.ln&&y.ln.value?y.ln.value.trim().toLowerCase():''},
+   page_path:location.pathname});});});}
+function init(){attach();new MutationObserver(attach).observe(document.body,{childList:true,subtree:true});}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
+})();
+</script>
+<!-- END STA form_submit -->
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Your Toxic Home Scan Results &middot; Switch to America</title>
 <style>
