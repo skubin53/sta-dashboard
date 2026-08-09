@@ -62,7 +62,7 @@ src="https://www.facebook.com/tr?id=1922419774790297&ev=PageView&noscript=1"/></
 
 <meta name="supported-color-schemes" content="light">
 
-<title>The Family Home Toxic Scorecard v2 — Switch to America</title>
+<title>The Family Home Toxic Scorecard v2, Switch to America</title>
 
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room scorecard.">
 
@@ -2887,7 +2887,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
               <span class="cta-check" style="font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
 
-              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Every flagged product from <em>your</em> scan — rated and explained</div>
+              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Every flagged product from <em>your</em> scan, rated and explained</div>
 
             </div>
 
@@ -2895,7 +2895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
               <span class="cta-check" style="font-weight:900;font-size:1.1rem;flex-shrink:0;margin-top:1px">✓</span>
 
-              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Exact brand-by-brand swaps — no research required</div>
+              <div style="font-size:.97rem;font-weight:600;line-height:1.4">Exact brand-by-brand swaps, no research required</div>
 
             </div>
 
@@ -2945,7 +2945,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <!-- B2: Deadline -->
 
-          <div style="text-align:center;margin-top:10px;font-size:.85rem;font-weight:700">⏳ Your scan results are held for 48 hours — after that, it's a fresh scan.</div>
+          <div style="text-align:center;margin-top:10px;font-size:.85rem;font-weight:700">⏳ Your scan lives on this screen. Close the tab and it is a fresh scan.</div>
 
           <!-- B3: Guarantee -->
 
@@ -4345,7 +4345,50 @@ function openScoreRecoveryTripwire(){
 
   }
 
-  window.location.href = url;
+  // 2026-08-08: hand her actual scan to the checkout domain, the same way the score
+  // reveal page does. localStorage does not cross domains, so without this her answers
+  // never arrive and the audit she pays for cannot be built from them. `r` is the KV id
+  // that decides whether a personalised audit exists at all; client_reference_id above
+  // is a different id and does not do this job.
+  // Best effort, with a short timeout: a slow save must never cost a sale.
+
+  (function(){
+
+    var scan = null;
+
+    try { scan = JSON.parse(localStorage.getItem('sta_scan') || 'null'); } catch(e){}
+
+    if (!scan || !scan.items || !scan.items.length) { window.location.href = url; return; }
+
+    var done = false;
+
+    var go = function(extra){
+
+      if (done) return; done = true;
+
+      window.location.href = url + (extra || '');
+
+    };
+
+    setTimeout(function(){ go(''); }, 4000);
+
+    try {
+
+      fetch('https://sta-checkout.theshannonnicole.workers.dev/report-save', {
+
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+
+        body: JSON.stringify({ scan: scan })
+
+      }).then(function(r){ return r.json(); }).then(function(j){
+
+        go(j && j.id ? ((url.indexOf('?')>=0 ? '&' : '?') + 'r=' + encodeURIComponent(j.id)) : '');
+
+      }).catch(function(){ go(''); });
+
+    } catch(e) { go(''); }
+
+  })();
 
 }
 
@@ -6589,23 +6632,41 @@ function showResults(){
 
   try {
 
-    // _all is EVERY flagged product, uncapped. _items stays capped at 12 because that is
-
-    // all the reveal page renders, but we now also send `total` so the "Products flagged
-
-    // in your home" number reflects every single tap. It used to read _items.length, so
-
-    // it froze at 12 no matter how much someone flagged. Shannon 2026-08-05.
+    // _all is EVERY flagged product and _items is now the same list, uncapped, so the
+    // number on the reveal page and the number of cards in the paid audit finally agree.
+    // `total` is kept because the reveal reads it. Shannon 2026-08-05, 2026-08-08.
 
     var _all = (typeof collectSwitchItems === 'function') ? collectSwitchItems() : [];
 
-    var _items = _all.slice(0, 12).map(function(it){
+    // 2026-08-08: the cap is GONE. It used to be _all.slice(0, 12), which meant a woman
+    // who flagged 27 products bought the audit and received 6. Everything past the
+    // twelfth was thrown away here, silently, before it ever reached the report. In one
+    // real test that was every bathroom item, every laundry item and every baby item.
+    // The reveal page renders exactly ONE product, so this was never sized for the
+    // reveal; 27 items is about 3 KB.
 
-      return { brand: it.brand, cat: it.cat,
+    var _items = _all.map(function(it){
 
-               target: (typeof swapFor === 'function' ? swapFor(it.cat) : ''),
+      var _t = (typeof swapFor === 'function') ? swapFor(it.cat) : '';
 
-               save: (typeof savingsFor === 'function' ? savingsFor(it.cat) : 0) };
+      // swapFor returns the placeholder "Shannon's clean version" for any category with
+      // no product mapping (kitchen_extras, homeair, water). Send nothing rather than
+      // print placeholder text to a paying customer; the audit then falls back to
+      // Shannon's own written swap line for that product.
+
+      if (_t === "Shannon's clean version") _t = '';
+
+      var _o = { brand: it.brand, cat: it.cat, target: _t,
+
+                 save: (typeof savingsFor === 'function' ? savingsFor(it.cat) : 0) };
+
+      // The kitchen_extras answers carry their own research in the scan itself. Carry it
+      // through so the audit can render a real card for a category that has no product
+      // entry, instead of dropping the item.
+
+      if (it._swap) { _o.swap = it._swap; _o.ing = it._ing || ''; _o.harm = (it._harm || '').slice(0, 1400); }
+
+      return _o;
 
     });
 
@@ -7103,7 +7164,39 @@ function collectSwitchItems(){
 
     // when the chip carries its own swap/ing/harm fields. Treats the chip label as the "brand" to strike out.
 
-    else if(s.type==='multi'&&s.answers){ s.answers.forEach(function(a){ var sel=answers[s.id][a.lbl]; if(sel && !a.exclusive && a.swap){ items.push({brand:a.lbl, cat:s.id, label:a.lbl, _multi:true, _swap:a.swap, _ing:a.ing||'', _harm:a.harm||''}); } }); }
+    else if(s.type==='multi'&&s.answers){ s.answers.forEach(function(a){ var sel=answers[s.id][a.lbl]; if(!sel||a.exclusive) return;
+
+      if(a.swap){ items.push({brand:a.lbl, cat:s.id, label:a.lbl, _multi:true, _swap:a.swap, _ing:a.ing||'', _harm:a.harm||''}); return; }
+
+      // 2026-08-08: homeair answers carry no .swap, so the line above pushed nothing
+
+      // and the air freshener card in the paid audit could never render, even though
+
+      // it has been written and paid for the whole time. The essential-oil answer is
+
+      // the clean choice, so it is not a flag.
+
+      if(s.id==='homeair' && !/pure essential|beeswax/i.test(a.lbl)){ items.push({brand:a.lbl, cat:'homeair', label:a.lbl, _multi:true}); }
+
+    }); }
+
+    // 2026-08-08: `water` is a single, and there was no branch for single at all, so
+
+    // the tap water card was unreachable too. Filtered and RO answers are not flags.
+
+    else if(s.id==='water' && answers[s.id] && typeof answers[s.id]==='object'){
+
+      // pickSingle stores {label:true}, NOT a plain string, so the first version of
+
+      // this never fired and the tap water card stayed unreachable.
+
+      var _wk=Object.keys(answers[s.id]).filter(function(k){ return answers[s.id][k]; });
+
+      var _w=_wk[0]||'';
+
+      if(_w && !/alkaline|structured|high-quality|whole-home|reverse osmosis/i.test(_w)){ items.push({brand:_w, cat:'water', label:_w, _multi:true}); }
+
+    }
 
   });
 
