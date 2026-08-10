@@ -1,0 +1,7 @@
+# Binaries must never be line-ending converted. core.autocrlf is true on this
+# machine, and a checkout of cheatsheet.pdf without this would corrupt the file.
+*.pdf binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.png binary
