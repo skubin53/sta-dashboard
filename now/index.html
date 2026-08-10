@@ -4598,6 +4598,29 @@ const CARD_ICONS = {
 
 
 function renderStep(){
+  // Which question do people quit on. One push per step per session, so GA4 can show the
+  // funnel: reached step 1, reached step 2, and where the wall is. Deduped because
+  // renderStep also fires on a repaint and on the back button, and double counting a step
+  // would hide the very drop-off this exists to find.
+  try {
+    var _s = activeSteps[stepIdx];
+    if (_s) {
+      window.__staSteps = window.__staSteps || {};
+      var _k = 'i' + stepIdx + ':' + (_s.id || '');
+      if (!window.__staSteps[_k]) {
+        window.__staSteps[_k] = 1;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'scan_step',
+          scan_step_index: stepIdx,
+          scan_step_id: _s.id || '',
+          scan_step_label: 'step ' + stepIdx + ' ' + (_s.id || ''),
+          scan_steps_total: activeSteps.length
+        });
+      }
+    }
+  } catch (e) {}
+
 
   upd();
 
