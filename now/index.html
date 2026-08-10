@@ -3010,6 +3010,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 
 const SERVER = 'https://api.ismyhometoxic.com';
+// Lead capture moved off the quiz server on 2026-08-09. Its /website-contact endpoint
+// returns 500 {"success":false,"error":"Contact creation failed"} on every payload,
+// including an empty one, so it was the server and not the request, and every person who
+// finished the scan and typed their details in was being dropped. The Cloudflare worker
+// takes it now: same payload shapes, writes the scan custom fields that had always been
+// empty, respects the stop tags, and answers CORS. The stats endpoints above still work
+// and are deliberately left on SERVER.
+const LEADAPI = 'https://sta-checkout.theshannonnicole.workers.dev/scan-lead';
 
 let userName = '', stepIdx = 0, answers = {};
 
@@ -6140,7 +6148,7 @@ function saveSoft(){
 
   const email=document.getElementById('sEM').value.trim();
 
-  if(email) fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:userName||'Scorecard User',source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial'].concat(refCode?['ref:'+refCode]:[]),customFields:{referredBy:refCode||''}})}).catch(()=>{});
+  if(email) fetch(LEADAPI,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,name:userName||'Scorecard User',source:'Family Toxic Scorecard, Partial',tags:['scorecard-partial'].concat(refCode?['ref:'+refCode]:[]),customFields:{referredBy:refCode||''}})}).catch(()=>{});
 
   skipSoft();
 
@@ -6362,7 +6370,7 @@ function showCalcDetails(){
 
       };
 
-      fetch(SERVER + '/website-contact', {
+      fetch(LEADAPI, {
 
         method: 'POST',
 
@@ -6602,7 +6610,7 @@ async function submitReport(){
 
   try{
 
-    const _r = await fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}})});
+    const _r = await fetch(LEADAPI,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({firstName:fn,lastName:ln,email:em,phone:ph,name:fn+' '+ln,source:'Family Home Toxic Scorecard',tags:['scorecard-lead','start sta email/text follow ups'].concat(refCode?['ref:'+refCode]:[]),version:'scorecard',sc:scForSrv,customFields:{score:totalScore,grade,topRoom,hasFamily,referredBy:refCode||''}})});
 
     const _j = await _r.json().catch(function(){ return {}; });
 
@@ -7368,7 +7376,7 @@ function captureLead(extra){
 
     if(refCode){ body.customFields.referredBy=refCode; body.tags=(extra.tags||[]).concat(['ref:'+refCode]); } // Change #9 attribution
 
-    fetch(SERVER+'/website-contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+    fetch(LEADAPI,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
 
   }catch(e){}
 
