@@ -7295,6 +7295,16 @@ function collectSwitchItems(){
     else if(s.type==='multi'&&s.answers){ s.answers.forEach(function(a){ var sel=answers[s.id][a.lbl]; if(!sel||a.exclusive) return;
 
       if(a.swap){ items.push({brand:a.lbl, cat:s.id, label:a.lbl, _multi:true, _swap:a.swap, _ing:a.ing||'', _harm:a.harm||''}); return; }
+      // 2026-08-10 Shannon: "if I type Microwave or anything else on that page it needs to
+      // count". The rule above only pushed an answer that carried a swap, with one
+      // hardcoded exception for homeair, so every one of the ten medicine-cabinet answers
+      // was dropped. They still added to her SCORE, because scoring reads pts directly, so
+      // her score climbed while the flag count did not. That is the gap she saw, and it was
+      // also eight items she paid for and never received.
+      // General rule now: a multi answer counts unless it IS the clean choice. Each carries
+      // its own det text through as _harm so the paid report can render a real card for it.
+      if(/clean|natural alternative|pure essential|beeswax|none of/i.test(a.lbl)) return;
+      items.push({brand:a.lbl, cat:s.id, label:a.lbl, _multi:true, _ing:'', _harm:a.det||''});
 
       // 2026-08-08: homeair answers carry no .swap, so the line above pushed nothing
 
@@ -7304,7 +7314,7 @@ function collectSwitchItems(){
 
       // the clean choice, so it is not a flag.
 
-      if(s.id==='homeair' && !/pure essential|beeswax/i.test(a.lbl)){ items.push({brand:a.lbl, cat:'homeair', label:a.lbl, _multi:true}); }
+      // (the homeair special case above is now covered by the general rule)
 
     }); }
 
