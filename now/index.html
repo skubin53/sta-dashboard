@@ -4026,6 +4026,27 @@ const AUDIT_STEPS = [
 
 
 
+
+  // The last question asks what she wants to tackle first. Its answer is a ROOM word
+  // (laundry, cleaners, personal, kids, makeup), not a scan category, so nothing
+  // downstream ever matched it and a woman who picked Makeup got a report with no makeup
+  // in it. Map it to a real report category here, and resolve the swap name here too, so
+  // the report never has to know product names. 'notsure' maps to nothing on purpose.
+  var PRIORITY_CAT = {laundry:'laundry', cleaners:'dish', personal:'shampoo',
+                      kids:'babywash', makeup:'makeup'};
+  var PRIORITY_LABEL = {laundry:'Laundry', cleaners:'Kitchen cleaners',
+                        personal:'Personal care', kids:"Kids' products",
+                        makeup:'Makeup', notsure:'Not sure yet'};
+  function priorityPick(){
+    var v = ((typeof answers !== 'undefined' && answers.audit_q1) || {}).val || '';
+    var c = PRIORITY_CAT[v] || '';
+    if (!c) return null;
+    var t = '';
+    try { t = (typeof swapFor === 'function') ? swapFor(c) : ''; } catch(e){}
+    if (t === "Shannon's clean version") t = '';
+    return { pick: v, label: PRIORITY_LABEL[v] || v, cat: c, target: t };
+  }
+
 function buildActive(){
 
   // 2026-07-15 P1: AUDIT_STEPS moved AFTER roomSteps (scoring questions come first)
@@ -6766,7 +6787,11 @@ function showResults(){
 
         name: (typeof userName !== 'undefined' ? userName : '') || '',
 
-        score: totalScore, grade: _g, items: _items, total: _all.length, at: new Date().toISOString()
+        score: totalScore, grade: _g, items: _items, total: _all.length,
+
+        priority: priorityPick(),
+
+        at: new Date().toISOString()
 
       }));
 
@@ -7432,7 +7457,10 @@ function buildScData(){
 
     segment: seg.lbl || '',
 
-    frustration: q1.text || '',
+    // audit_q1 became a CHOICE and stores .val, so .text alone was blank for
+    // everybody and this field has been empty since the question changed.
+    frustration: q1.text || (typeof PRIORITY_LABEL !== 'undefined'
+                             ? (PRIORITY_LABEL[q1.val] || q1.val || '') : (q1.val || '')),
 
     monthlySpend: (typeof STA_Q2_LABELS!=='undefined' && STA_Q2_LABELS[q2.val]) || q2.val || '',
 
