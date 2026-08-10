@@ -6798,6 +6798,14 @@ function showResults(){
 
         priority: priorityPick(),
 
+        // Carried so the $7 checkout can hand GoHighLevel something to MATCH on.
+
+        // Without it the scan makes a phone-only contact, Stripe makes an
+
+        // email-only one, and every buyer ends up as two people.
+
+        phone: (window._introPhone || ''),
+
         at: new Date().toISOString()
 
       }));
