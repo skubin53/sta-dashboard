@@ -3018,6 +3018,55 @@ const SERVER = 'https://api.ismyhometoxic.com';
 // empty, respects the stop tags, and answers CORS. The stats endpoints above still work
 // and are deliberately left on SERVER.
 const LEADAPI = 'https://sta-checkout.theshannonnicole.workers.dev/scan-lead';
+// Meta and GA4 only learn about a lead from a dataLayer push. This page has carried GTM
+// and the pixel for months and never pushed anything, so every scan lead was invisible to
+// the ad platforms while the ads ran into it. staLeadEvent() is called after each
+// successful capture. Guarded, because three different steps can capture the same person.
+window.__staLeadFired = false;
+function staLeadEvent(d) {
+  try {
+    if (window.__staLeadFired) return;
+    window.__staLeadFired = true;
+    d = d || {};
+    var digits = function (v) { return String(v || '').replace(/\D/g, ''); };
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'form_submit',
+      event_id: 'scan_' + Date.now() + '_' + Math.random().toString(36).substring(2, 10),
+      lead_value: 2.20,
+      currency: 'CAD',
+      user_data: {
+        email: String(d.email || '').trim().toLowerCase(),
+        phone: digits(d.phone),
+        first_name: String(d.firstName || '').trim().toLowerCase(),
+        last_name: String(d.lastName || '').trim().toLowerCase()
+      },
+      page_path: location.pathname,
+      scan_score: d.score === undefined ? '' : d.score,
+      scan_grade: d.grade || ''
+    });
+  } catch (e) {}
+}
+// One shim instead of editing four call sites: anything posted to LEADAPI counts as a
+// lead, and the body it was posted with is exactly the data the event needs.
+(function () {
+  var _f = window.fetch;
+  window.fetch = function (u, o) {
+    try {
+      if (String(u) === LEADAPI && o && o.body) {
+        var b = JSON.parse(o.body);
+        var cf = b.customFields || {};
+        staLeadEvent({
+          email: b.email, phone: b.phone,
+          firstName: b.firstName || (b.name || '').split(' ')[0], lastName: b.lastName,
+          score: cf.score !== undefined ? cf.score : (b.sc || {}).score,
+          grade: cf.grade || (b.sc || {}).grade
+        });
+      }
+    } catch (e) {}
+    return _f.apply(this, arguments);
+  };
+})();
 
 let userName = '', stepIdx = 0, answers = {};
 
