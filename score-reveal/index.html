@@ -130,6 +130,31 @@ img{max-width:100%;display:block}
 .urgency{font-size:12.5px;color:var(--amber);font-weight:700;margin-top:10px}
 .guar{display:flex;gap:11px;align-items:flex-start;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 13px;margin-top:14px;font-size:12.5px;color:var(--mut);line-height:1.55}
 .guar b{color:var(--ink)}
+/* ---- sticky buy bar + objections (Hunter's devices, v3) ------------------------------
+   His offer repeats five times down the page. Hers appeared twice, and after the founder
+   block there was nothing to click for two screens. The bar makes the offer reachable at
+   every scroll position without adding a word. */
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(110%);
+  transition:transform .28s ease;background:rgba(10,14,20,.96);border-top:1px solid var(--line);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+.stick.on{transform:translateY(0)}
+.stick .in{max-width:520px;margin:0 auto;display:flex;align-items:center;gap:12px}
+.stick .t{flex:1;min-width:0}
+.stick .t b{display:block;font-size:13.5px;color:var(--ink);line-height:1.25}
+.stick .t span{font-size:11.5px;color:var(--mut)}
+.stick a{flex:none;background:linear-gradient(90deg,var(--orange),var(--orange2));
+  color:#20140a;font-weight:800;font-size:14.5px;text-decoration:none;padding:12px 18px;
+  border-radius:11px;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.stick{transition:none}}
+
+.objs{margin:26px 0 0}
+.objs h3{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mut);text-align:center;margin-bottom:12px}
+.obj{background:var(--panel2);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;margin-bottom:9px}
+.obj b{display:block;font-size:14px;color:var(--ink);margin-bottom:5px}
+.obj p{font-size:13.5px;color:#c6d3e0;line-height:1.6;margin:0}
 /* ---- v2, the page was not selling (2 sales from 99 leads) ----------------------------
    The fixes, in order of how much they matter: show the product, move the proof above the
    button, make the anchor visible, name the reviewer, give the guarantee its own line. */
@@ -315,6 +340,32 @@ img{max-width:100%;display:block}
     </div>
   </div>
 
+  <div class="objs">
+    <h3>What women ask me before they buy</h3>
+
+    <div class="obj">
+      <b>I already know what to throw out.</b>
+      <p>Then you are further along than most. This is not a list of what is bad, it is a
+      list of what to buy instead, for the exact brands you just tapped, so you are not
+      standing in an aisle at 9pm reading the back of a bottle.</p>
+    </div>
+
+    <div class="obj">
+      <b>Is this just a list of your own products?</b>
+      <p>The swaps are mine, yes. I am not going to pretend otherwise or send you to a
+      company I do not stand behind. What is in the report that you cannot get anywhere
+      else is what is actually in the products you already own, room by room, and which one
+      to deal with first.</p>
+    </div>
+
+    <div class="obj">
+      <b>Seven dollars for a list?</b>
+      <p>A home wellness consultant charges $150 to walk your house and tell you this. Your
+      scan already did the walking. And if it does not show you three swaps that matter, you
+      text me REFUND and I put the $7 back.</p>
+    </div>
+  </div>
+
   <div class="fin">
     <h2>You know what is in your house. Now get the list that fixes it.</h2>
     <p class="lede">Every product your scan flagged, what is actually in it, and the clean
@@ -338,6 +389,17 @@ img{max-width:100%;display:block}
   <div class="alt">Rather talk first? <a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book your free Your First Switch call</a>, ten minutes, we walk your house together, no pitch.</div>
 
   <div class="fine">This tool scores brands using independent safety research. It is educational only, not a laboratory analysis or medical advice.</div>
+
+  <!-- Hunter's sticky bar. Appears past 600px of scroll, which is roughly the moment her
+       first button leaves the screen. Uses [data-buy] so it runs the SAME handler as the
+       other two: a third button that skipped the scan hand-off would sell an audit with
+       nobody's answers in it. -->
+  <div class="stick" id="stickbar">
+    <div class="in">
+      <div class="t"><b>Your report is ready</b><span>28 products flagged &middot; $7</span></div>
+      <a data-buy href="#">Unlock it</a>
+    </div>
+  </div>
 
 </div>
 <script>
@@ -381,9 +443,21 @@ function staRich(t){
   /* Show EVERY flagged product, not just the 12 we carry copy for. items[] is capped at
      12 for payload size, so reading items.length froze this number at 12 and it stopped
      climbing as people flagged more. d.total is the true uncapped count. Shannon 2026-08-05. */
+  /* The bar carries her own number, not a placeholder, and only appears once the first
+     button has scrolled away. Passive listener so it cannot cost scroll smoothness. */
+  var bar = document.getElementById("stickbar");
+  if (bar) {
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 600) bar.classList.add("on");
+      else bar.classList.remove("on");
+    }, { passive: true });
+  }
+
   var cEl = document.getElementById("sr-count");
   var flaggedTotal = (typeof d.total === "number" && d.total > items.length) ? d.total : items.length;
   if (cEl) cEl.textContent = flaggedTotal;
+  var barN = bar && bar.querySelector(".t span");
+  if (barN) barN.textContent = flaggedTotal + " products flagged \u00b7 $7";
 
   /* Reveal up to THREE flagged products, spread across her scan instead of just the
      first one. The old code broke on the first match, and because the scan asks kitchen
