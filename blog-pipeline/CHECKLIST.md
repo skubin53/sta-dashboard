@@ -91,12 +91,67 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       answers. This is separate from the FAQ schema in B3 and both are required.
 - [ ] **A9** **Shannon's Advice box**, dark, near the end, right before the closing
       scan CTA. **PASTE THE STANDARD BLOCK VERBATIM. DO NOT WRITE A NEW ONE.**
-      Canonical text: `Downloads\STA-Shannons-Advice-STANDARD.txt`.
+
+      > **REWRITTEN BY SHANNON 2026-08-11. The old box is dead.** If you are looking at
+      > `Downloads\STA-Shannons-Advice-STANDARD.txt`, that file is the 2026-08-08 version
+      > and it is STALE. The canonical text is now `SHANNONS-ADVICE-SPEC.md` in this
+      > folder, and there is a copy-and-paste PDF at `Documents\Shannons-Advice-Box.pdf`.
+
       Locked 2026-08-08 by Shannon: "This way you aren't potentially writing fake advice
       that isn't mine." Every post before that date had a DIFFERENT box, several of them
       making personal claims about her life she never made. Do not personalise it to the
       product. If a post genuinely needs a product-specific line from her, it goes in the
-      BODY, and it has to come from Shannon first.
+      BODY, or as ONE optional extra paragraph ABOVE the standard block, and it has to
+      come from Shannon first.
+
+      **The block, verbatim:**
+
+      ```html
+      <div class="shannons-advice">
+      <h3>Shannon's Advice</h3>
+      <span class="advice-tag">Straight talk from Shannon</span>
+
+      <p>I do not call them grocery stores. They are poison centers meant to do you and
+      your family harm. It is not just the brands who are doing the harm, it is the stores
+      themselves. They allow these toxic products on their shelves. People are sick and
+      dying. This is a very serious matter. How can we ever trust them again?</p>
+
+      <p>We can't trust them. That is where Switch to America comes in. We are a new
+      supply chain, built on family values, trust and affordability.</p>
+
+      <p>You do not have to take my word for it. The proof is in my blog posts, the
+      recalls, the lawsuits and the fines, and in the app I built called The Family Home
+      Toxic Scorecard. Also, inside my Switch Circle private community, we talk about real
+      solutions.</p>
+
+      <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
+      they never wanted. I have spent the last 15 years helping women get off prescription
+      medications. I help families reclaim their health.</p>
+
+      <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
+      into their stores. We are linking arms and together taking our control back. Control
+      of our health and our finances.</p>
+
+      <p>Start by clicking the link below and taking the SCAN.</p>
+      </div>
+      ```
+
+- [ ] **A9a** **Two sentences in that box may not be reworded.** They repeat on every
+      post, so an edit here repeats everywhere.
+      - *"I have spent the last 15 years helping women get off prescription medications."*
+        Shannon's own line, confirmed twice. The subject must stay **Shannon and her
+        fifteen years**. The moment it becomes "you can get off your medication" it turns
+        into advice to a sick person from someone who is not their doctor.
+      - *"They are poison centers meant to do you and your family harm."* Shannon removed
+        the "in my opinion" frame on 2026-08-11 and **that was deliberate, do not put it
+        back**. What keeps it safe is that it names no retailer, no product and no
+        incident. Attach a named store to a specific claim of intent and it stops being a
+        characterisation and becomes an allegation of fact.
+- [ ] **A9b** **No bold inside the box, and no link inside the box.** Shannon stripped
+      every `<strong>` on 2026-08-11. The closing scan CTA is the very next element on the
+      page, so a link in the box is a second link to the same place four lines above the
+      first. The `<p>` and `<div>` tags DO stay: they are the paragraph breaks and the
+      dark panel, not decoration.
 - [ ] **A10** **Proof section**: category-matched, hyperlinked real lawsuits, recalls
       or fines. **Every one attributed as an allegation**, never as proven fact.
 - [ ] **A11** **Author bio block**, first person, warm.

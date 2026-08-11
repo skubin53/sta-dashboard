@@ -139,7 +139,8 @@ img{max-width:100%;display:block}
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
   border:1px solid var(--accent);border-radius:999px;padding:6px 14px}
 /* the label owns its own line, so the image below it starts clean */
-.shot-hero>.tag{margin-left:auto;margin-right:auto}
+.shot-hero>.tag{display:block;width:-moz-fit-content;width:fit-content;
+  margin-left:auto;margin-right:auto}
 /* display:block is the fix, not text-align. The label and the image are both inline
    level, so they flowed onto the SAME line and the label ended up sitting on the image's
    baseline, at the bottom left. Block puts the image on its own line and centres it by
@@ -196,8 +197,14 @@ img{max-width:100%;display:block}
 
 .gtee{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.3);
   border-radius:12px;padding:13px 15px;margin-top:13px;text-align:left}
-.gtee b{color:var(--good);display:block;font-size:12px;letter-spacing:.06em;
+/* This rule was written for the "My promise" heading and was matching every <b> in the
+   box, including the two inside the sentence. That is why "3 SWAPS THAT MATTER" and
+   "FULL REFUND" broke onto their own lines in green uppercase. Direct child only. */
+.gtee>b{color:var(--good);display:block;font-size:12px;letter-spacing:.06em;
   text-transform:uppercase;margin-bottom:4px}
+/* emphasis inside the sentence stays inline and stays in the running text colour */
+.gtee span b{display:inline;color:#eaf3fa;font-weight:800;font-size:inherit;
+  letter-spacing:0;text-transform:none;margin:0}
 .gtee span{font-size:13px;color:#cddae6;line-height:1.55}
 /* ---- the foot, rebuilt on Hunter's shape (Shannon 2026-08-10) -------------------
    The two photos are base64 and they are shown in three places between them, so they
