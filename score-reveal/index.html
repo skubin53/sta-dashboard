@@ -130,6 +130,32 @@ img{max-width:100%;display:block}
 .urgency{font-size:12.5px;color:var(--amber);font-weight:700;margin-top:10px}
 .guar{display:flex;gap:11px;align-items:flex-start;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 13px;margin-top:14px;font-size:12.5px;color:var(--mut);line-height:1.55}
 .guar b{color:var(--ink)}
+/* ---- v2, the page was not selling (2 sales from 99 leads) ----------------------------
+   The fixes, in order of how much they matter: show the product, move the proof above the
+   button, make the anchor visible, name the reviewer, give the guarantee its own line. */
+.shot{margin:0 0 18px;text-align:center}
+.shot img{width:100%;max-width:290px;height:auto;display:inline-block;
+  filter:drop-shadow(0 18px 34px rgba(0,0,0,.45))}
+.shot .cap{font-size:12px;color:var(--mut);margin-top:6px}
+
+.preproof{display:flex;align-items:center;justify-content:center;gap:11px;margin:0 0 14px}
+.preproof .faces{display:flex}
+.preproof .ph{width:32px;height:32px;border-radius:50%;border:2px solid var(--panel);
+  margin-left:-10px;background-size:cover;background-position:center 18%}
+.preproof .ph:first-child{margin-left:0}
+.preproof .n{font-size:12.5px;color:var(--mut);text-align:left;line-height:1.35}
+.preproof .n b{color:var(--ink)}
+
+.oc .was{display:block;font-size:15px;color:var(--mut);text-decoration:line-through;
+  font-weight:700;margin-bottom:-2px}
+.oc .price .now{font-size:12px;color:var(--teal);font-weight:800;letter-spacing:.08em;
+  display:block;text-transform:uppercase;margin-bottom:2px}
+
+.gtee{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.3);
+  border-radius:12px;padding:13px 15px;margin-top:13px;text-align:left}
+.gtee b{color:var(--good);display:block;font-size:12px;letter-spacing:.06em;
+  text-transform:uppercase;margin-bottom:4px}
+.gtee span{font-size:13px;color:#cddae6;line-height:1.55}
 /* ---- the foot, rebuilt on Hunter's shape (Shannon 2026-08-10) -------------------
    The two photos are base64 and they are shown in three places between them, so they
    are declared ONCE here as backgrounds. Pasting the data URI at each <img> put 78 KB
@@ -226,17 +252,32 @@ img{max-width:100%;display:block}
   <div class="offer">
     <div class="oc">
       <span class="tag">YOUR PERSONALIZED REPORT</span>
+
+      <!-- She is being asked to buy something she has never seen. Hunter never does that:
+           his phone in a pair of hands is the first thing your eye lands on. Same hands and
+           same phone her cheat sheet page already uses, with her actual audit on screen. -->
+      <div class="shot">
+        <img src="../media/report-phone.webp"
+             alt="A pair of hands holding a phone showing the Switch to America home audit, with flagged products and the clean swap for each">
+        <div class="cap">This is your report. Every room, every product, every swap.</div>
+      </div>
       <h2>Toxic Home Scan Results</h2>
-      <div class="anchor">A home wellness consultant charges $150+ to walk your house room by room. Your scan already did the work.</div>
-      <div class="price">$7<small>One-time. No subscription. Yours to keep.</small></div>
+      <div class="anchor">A home wellness consultant charges $150 to walk your house room by room. Your scan already did the work.</div>
+      <div class="price"><span class="now">Today</span><span class="was">$150</span>$7<small>One-time. No subscription. Yours to keep.</small></div>
       <ul class="stack">
         <li><span class="ck">&#10003;</span> Every flagged product from your scan, rated and explained</li>
         <li><span class="ck">&#10003;</span> Exact brand-by-brand swaps, no research required</li>
         <li><span class="ck">&#10003;</span> Room-by-room action list so you know exactly where to start</li>
       </ul>
+      <!-- Proof BEFORE the ask. All of it used to sit below the fold, after the button. -->
+      <div class="preproof">
+        <span class="faces"><span class="ph ph-meg"></span><span class="ph ph-gene"></span><span class="ph ph-shan"></span></span>
+        <span class="n"><b>20,000+</b> families have<br>already made the switch</span>
+      </div>
+
       <a class="btn" id="sr-buy" data-buy href="#">Get my report now &rarr; $7</a>
       <div class="urgency">&#9203; Your scan results are held for 48 hours. After that, it&rsquo;s a fresh scan.</div>
-      <div class="guar"><span style="color:var(--green);font-weight:800;font-size:16px">&#10003;</span><div>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text REFUND and the $7 goes back on your card. No questions.</div></div>
+      <div class="gtee"><b>My promise</b><span>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text me the word REFUND and I put the $7 back on your card. You keep the report. I am not going to argue with you over seven dollars.</span></div>
     </div>
   </div>
 
@@ -248,7 +289,7 @@ img{max-width:100%;display:block}
       <p>&ldquo;I&rsquo;d had &lsquo;mystery&rsquo; headaches for 30 years. The formaldehyde
       and benzene in those scented plug-ins was the culprit. The headaches stopped within a
       month. At 64, I still can&rsquo;t believe it.&rdquo;</p>
-      <div class="who"><span class="ph ph-gene" role="img" aria-label="Real Switch to America customer"></span> Real Switch to America customer</div>
+      <div class="who"><span class="ph ph-gene" role="img" aria-label="Gene"></span> Gene &middot; Switch to America customer</div>
     </div>
 
     <div class="rev">
@@ -290,7 +331,7 @@ img{max-width:100%;display:block}
         <li><span class="ck">&#10003;</span> Room-by-room action list so you know exactly where to start</li>
       </ul>
       <a class="btn" data-buy href="#">Get my report now &rarr; $7</a>
-      <div class="guar"><span style="color:var(--green);font-weight:800;font-size:16px">&#10003;</span><div>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text REFUND and the $7 goes back on your card. No questions.</div></div>
+      <div class="gtee"><b>My promise</b><span>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text me the word REFUND and I put the $7 back on your card. You keep the report. I am not going to argue with you over seven dollars.</span></div>
     </div>
   </div>
 
