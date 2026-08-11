@@ -1,4 +1,4 @@
-# Shannon's Advice — the final spec
+# Shannon's Advice, the final spec
 
 **This is the one source of truth for the Advice box. Written 2026-08-10. Approved by Shannon: pending.**
 
@@ -96,6 +96,14 @@ Lawsuits are **allegations** until a court says otherwise, every single time.
 - Never write "Melaleuca." It is the private membership store, or Switch to America.
 - No medical claims. She is a coach, not a doctor.
 - Never invent a testimonial, a number, a customer, or scarcity.
+- **Never talk about government officials.** No legislators, no politicians, no named
+  officials, and never a line like "lawmakers looked at this and said not in our state".
+  Shannon, 2026-08-11: *"I would never ever talk about Government Officials. That's an evil
+  world and if you don't talk about it then it doesn't exist and we never talk about it."*
+  The DISTINCTION that keeps the proof section alive: citing a **law, a court case, a recall
+  or a regulator's action** as a receipt is fine and is required, because that is a document
+  a reader can open. Casting **people in government as characters with motives** is not.
+  Write "seven states have banned it" with a link. Never write "legislators in Texas decided".
 
 ---
 
@@ -141,10 +149,9 @@ From the lab-grown beef post, 2026-08-09:
 > to food, **and I believe it is going to harm people. That is my opinion and I will put my
 > name on it.**
 >
-> Seven states banned it. Think about what that means. Legislators in [Alabama, Florida,
-> Indiana, Mississippi, Montana, Nebraska and Texas](url) looked at this and said not in our
-> state. Meanwhile it went on a shelf in California on August 1 and barely made the news.
-> They are not hiding it exactly. They are counting on you being too busy to look.
+> [Seven states have banned it](url). It went on a shelf in California on August 1 anyway
+> and barely made the news. They are not hiding it exactly. They are counting on you being
+> too busy to look.
 >
 > Here is what to do, and it is not complicated. Find a rancher within driving distance of
 > your house and go meet him. Ask what he feeds, when he processes, and whether you can buy
@@ -167,3 +174,5 @@ your own kitchen.
 5. Is the action a farm or making it herself? → not a store, not a co-op
 6. Any em dashes? → replace
 7. Does it sound like the article, or like a person? → if the article, rewrite it
+8. Does it mention a legislator, a politician, or any government official? → cut it. A law
+   or a recall as a LINK is fine. A person in government as a character is not.
