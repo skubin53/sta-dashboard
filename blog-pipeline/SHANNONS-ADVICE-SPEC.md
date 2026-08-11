@@ -1,8 +1,63 @@
 # Shannon's Advice, the final spec
 
+## THE BOX IS FIXED. IT IS THE SAME IN EVERY POST.
+
+Shannon, 2026-08-11: *"I want 1 that is the same in every post."*
+
+Do not write a new one per post. Paste this block, unchanged, into every single article,
+near the end, right before the closing scan CTA. The rules further down govern how a post
+may EXTEND this box, never how to replace it.
+
+```html
+<div class="shannons-advice">
+<h3>Shannon's Advice</h3>
+<span class="advice-tag">Straight talk from Shannon</span>
+
+<p>I do not call them grocery stores. They are poison centers, and <strong>in my opinion they
+are meant to do you and your family harm</strong>. It is not just the brands who are doing
+the harm. It is the stores themselves. People are sick and dying. This is a very serious
+matter. How can we ever trust them again?</p>
+
+<p><strong>We cannot.</strong></p>
+
+<p>You do not have to take my word for any of it. <strong>The proof is in every post on this
+blog.</strong> The recalls. The lawsuits. The fines. The ingredients the company itself will
+not print on the front of the box. Read them, then look at your own cart.</p>
+
+<p>Women come to me exhausted, hurting, and on a list of prescriptions they never wanted. I
+am not a doctor and I will never tell anyone to stop a medication. What I do is help families
+get the poison out of their house and reclaim their health, and then they go and have that
+conversation with their own doctor from a much stronger place.</p>
+
+<p><strong>We cannot stop them. I have stopped expecting to. But we can stop walking in the
+door.</strong></p>
+
+<p>Here is what I do instead. I buy from farms where I know the person's name, and what I
+cannot buy that way, I make myself. Find one farm within driving distance this week and go
+meet them. Ask what they feed and how they grow it. They will talk your ear off, because they
+are proud of it. That is how you walk out of the poison center for good.</p>
+</div>
+```
+
+**The only clause that may not be edited without a lawyer:** *"in my opinion they are meant
+to do you and your family harm."* That sentence asserts intent on the part of real,
+well-resourced retailers, and the first-person frame is the entire reason it is publishable.
+"poison centers" stays flat because that is a characterisation, not a claim of fact about a
+specific act. Take the frame off the intent clause and the sentence changes category.
+
+**The medical line is also load bearing.** *"I am not a doctor and I will never tell anyone
+to stop a medication."* Shannon's ask was to talk about helping people get off prescriptions.
+That is only safe as what women arrive wanting, never as her advice to a sick person.
+
+---
+
+## If a post needs more than the standard box
+
 **This is the one source of truth for the Advice box. Written 2026-08-10. Approved by Shannon: pending.**
 
-Every post gets exactly one. It sits near the end, right before the closing scan CTA.
+A post may add ONE extra paragraph above the standard block if the subject genuinely
+warrants it. That extra paragraph follows every rule below. The standard block still
+goes underneath it, word for word.
 
 ---
 
@@ -117,17 +172,14 @@ Three paragraphs. Rarely four. Never two.
 
 ---
 
-## The HTML
+## The CSS
 
-```html
-<div class="shannons-advice">
-<h3>Shannon's Advice</h3>
-<p class="advice-tag">Straight talk from a nutrition coach</p>
-<p>[the blunt take, opinion-framed]</p>
-<p>[the turn]</p>
-<p>[what to do tonight]</p>
-</div>
-```
+The HTML is the fixed block at the top of this file. There is no template to fill in, and
+the old placeholder version of it has been removed so nobody pastes `[the blunt take]` into
+a live post by accident.
+
+Note the tag line is `<span class="advice-tag">`, not `<p class="advice-tag">`. Older posts
+use the `<p>` form and render slightly differently. New posts use the block at the top.
 
 ```css
 .shannons-advice{background:#1b2733;border-left:6px solid #b22234;border-radius:0;padding:20px 26px;margin:26px 0;}
@@ -140,7 +192,11 @@ Three paragraphs. Rarely four. Never two.
 
 ---
 
-## A worked example that follows every rule
+## A worked example of the OPTIONAL extra paragraph
+
+**This is not a replacement for the standard box.** It is what one good extra paragraph
+looks like when a subject genuinely earns one. The fixed block still goes underneath it,
+word for word.
 
 From the lab-grown beef post, 2026-08-09:
 
