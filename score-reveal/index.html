@@ -81,6 +81,7 @@ if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded'
 
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Your Toxic Home Scan Results &middot; Switch to America</title>
+<meta name="robots" content="noindex,nofollow">
 <style>
 :root{--bg:#0a0e14;--panel:#121a24;--panel2:#0f1620;--line:#22303f;--ink:#eef3f8;--mut:#93a4b5;
 --teal:#2dd4bf;--teal2:#22d3ee;--orange:#ff9f1c;--orange2:#ffb347;--good:#34d399;--warn:#f87171;--amber:#fbbf24;
@@ -430,6 +431,36 @@ function staRich(t){
   var d = {};
   try { d = JSON.parse(localStorage.getItem("sta_scan") || "{}"); } catch(e){}
   var items = (d && d.items) || [];
+
+  /* ?preview=1 renders a labelled sample so the page can be REVIEWED without completing a
+     scan first. Shannon could not open her own sales page otherwise, because the guard
+     below bounces anyone without a scan straight back to /now. This never fires for a real
+     visitor: it needs the query string, and it does not write to localStorage, so a real
+     scan started afterwards is completely unaffected. */
+  if (!items.length && /[?&]preview=1/.test(location.search)) {
+    d = {
+      name: "Sample",
+      score: 61,
+      grade: "D",
+      priority: "laundry",
+      items: [
+        { cat: "laundry",  brand: "Tide",        label: "Laundry detergent" },
+        { cat: "dish",     brand: "Dawn",        label: "Dish soap" },
+        { cat: "allpurpose", brand: "Pine-Sol",  label: "All purpose cleaner" },
+        { cat: "coffee",   brand: "Folgers",     label: "Coffee" }
+      ]
+    };
+    items = d.items;
+    var pv = document.createElement("div");
+    pv.setAttribute("style",
+      "position:fixed;top:0;left:0;right:0;z-index:200;background:#7a1020;color:#fff;" +
+      "font:600 12.5px/1.35 system-ui,sans-serif;text-align:center;padding:7px 12px");
+    pv.textContent = "PREVIEW. Sample answers, not a real scan. Remove ?preview=1 to use the live page.";
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.appendChild(pv);
+      document.body.style.paddingTop = "30px";
+    });
+  }
 
   /* no scan in this browser: send them back rather than show a fake result */
   if (!items.length){
