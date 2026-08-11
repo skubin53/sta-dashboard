@@ -15,27 +15,29 @@ may EXTEND this box, never how to replace it.
 
 <p>I do not call them grocery stores. They are poison centers, and <strong>in my opinion they
 are meant to do you and your family harm</strong>. It is not just the brands who are doing
-the harm. It is the stores themselves. People are sick and dying. This is a very serious
-matter. How can we ever trust them again?</p>
+the harm, it is the stores themselves. They allow these toxic products on their shelves.
+People are sick and dying. This is a very serious matter. How can we ever trust them
+again?</p>
 
-<p><strong>We cannot.</strong></p>
+<p><strong>We can't trust them.</strong> That is where Switch to America comes in. We are a
+new supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for any of it. <strong>The proof is in every post on this
-blog.</strong> The recalls. The lawsuits. The fines. The ingredients the company itself will
-not print on the front of the box. Read them, then look at your own cart.</p>
+<p>You do not have to take my word for it. The proof is in my blog posts, the recalls, the
+lawsuits and the fines, and in the app I built called <strong>The Family Home Toxic
+Scorecard</strong>. And inside my <strong>Switch Circle</strong> private community, we talk
+about real solutions.</p>
 
-<p>Women come to me exhausted, hurting, and on a list of prescriptions they never wanted. I
-am not a doctor and I will never tell anyone to stop a medication. What I do is help families
-get the poison out of their house and reclaim their health, and then they go and have that
-conversation with their own doctor from a much stronger place.</p>
+<p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they
+never wanted. I have spent the last 15 years helping women get off prescription medications.
+I help families <strong>reclaim</strong> their health.</p>
 
-<p><strong>We cannot stop them. I have stopped expecting to. But we can stop walking in the
-door.</strong></p>
+<p>We cannot stop them. I have stopped expecting to. However, we can stop walking into their
+stores. We are linking arms and together taking our control back. Control of our health and
+our finances.</p>
 
-<p>Here is what I do instead. I buy from farms where I know the person's name, and what I
-cannot buy that way, I make myself. Find one farm within driving distance this week and go
-meet them. Ask what they feed and how they grow it. They will talk your ear off, because they
-are proud of it. That is how you walk out of the poison center for good.</p>
+<p><strong>Start by clicking the link below and taking the SCAN.</strong></p>
+
+<p><a href="https://scan.ismyhometoxic.com/now/">Take the Family Home Toxic Scorecard scan</a></p>
 </div>
 ```
 
@@ -45,9 +47,20 @@ well-resourced retailers, and the first-person frame is the entire reason it is 
 "poison centers" stays flat because that is a characterisation, not a claim of fact about a
 specific act. Take the frame off the intent clause and the sentence changes category.
 
-**The medical line is also load bearing.** *"I am not a doctor and I will never tell anyone
-to stop a medication."* Shannon's ask was to talk about helping people get off prescriptions.
-That is only safe as what women arrive wanting, never as her advice to a sick person.
+**The prescriptions line is Shannon's, written by her, and she has confirmed it twice.**
+*"I have spent the last 15 years helping women get off prescription medications."* I flagged
+the risk, she reaffirmed it in stronger terms, and it ships as she wrote it. Anyone editing
+this file later should know it is deliberate and not quietly soften it.
+
+What it must NEVER become is an instruction to the reader. It is a statement about her own
+work over fifteen years. The moment it turns into "stop taking your prescriptions" or "you
+can get off your medication", it stops being her history and becomes advice to a sick person
+from someone who is not her doctor. Keep the subject as Shannon, never the reader.
+
+**Written 2026-08-11: the box is now hers, not mine.** She added the stores being complicit,
+Switch to America as the new supply chain, the Scorecard app, the Switch Circle, linking arms
+over health and finances, and the closing scan CTA. The version before this named the villain
+and offered a farm, and never once named what she actually built.
 
 ---
 
