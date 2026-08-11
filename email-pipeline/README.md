@@ -5,12 +5,25 @@ There is no `STA Email 01`. The numbering starts at 02.
 
 | File | What it is | In GHL? |
 |---|---|---|
-| `STA-First-10-Emails-v2.md` | The rewritten first 10, 2026-08-11 | **NO. Not pushed.** |
+| `v3-manifest.json` + `v3-*.html` | **v3. LIVE in GHL since 2026-08-11.** Pain-first, red and navy buttons. | **YES** |
+| `STA-First-10-Emails-v2.md` | v2, superseded. Kept for its link list. | no |
 
-## Status, 2026-08-11
+## Status, 2026-08-11: v3 IS LIVE
 
-The rewrite is done and reviewed. It is **not live**. The live templates 02 to 11 still carry
-the old versions, including "the cupboard nobody opens", which Shannon rejected.
+Templates 02 to 11 now carry v3. Verified by fetching each template's `previewUrl` and matching
+every sentence of the new body, **never by the POST status code**, because POST returns `ok:true`
+whether or not the content landed. "The cupboard nobody opens" is gone.
+
+**v3 is not v2 reworded.** Shannon: *"This isn't a history lesson. This is about their pain
+points and the solutions we have for them."* v2 opened every email with a number, and a fact is
+not a hook. So the order flipped:
+
+    v2   fact -> pain -> villain -> receipt -> action -> text link
+    v3   HER PAIN -> the thing doing it -> one receipt -> the fix -> BUTTON
+
+Buttons are table based with `bgcolor` on the `td`, the only construction Outlook renders. Red
+`#b22234` for the scan, navy `#0e2240` for the Circle. Regenerate with
+`sta-tools/build-emails-v3.py`, never by hand.
 
 ## What pushing actually involves, and why it is not just a body swap
 
