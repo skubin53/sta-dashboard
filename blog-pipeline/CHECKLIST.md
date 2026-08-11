@@ -53,6 +53,14 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       "private membership store."
 - [ ] **0.6 No em-dashes, no en-dashes, no `&mdash;`.** Commas, periods, "to".
       Shannon reads them as an AI tell.
+- [ ] **0.6a NO HEDGES, ANYWHERE.** Never "in my opinion", "I think", "I believe",
+      "personally", "it seems", "worth considering". Shannon 2026-08-11: *"never say 'in my
+      opinion'. Obviously it is, right? I only speak truth and I am loud and proud (never
+      ashamed). I don't use weak words. I speak with authority against a criminal empire
+      that is killing humanity."* **Delete the hedge, keep the sentence.** What carries the
+      claim is the hyperlinked receipt, not a softener, so the proof section matters more.
+- [ ] **0.6b NO DISCLAIMERS.** The not-a-doctor line is banned outright, in every form. The
+      only real line is never writing an instruction telling a reader to stop a medication.
 - [ ] **0.7 Kill the AI tells.** No jargon openings, no rule-of-three tricolons, no
       hedging, no "it's not just X, it's Y". Ground every specific in Shannon's REAL
       lived detail, never an invented one. (`sta-blog-voice-guide`)
@@ -139,9 +147,9 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 - [ ] **A9a** **Two sentences in that box may not be reworded.** They repeat on every
       post, so an edit here repeats everywhere.
       - *"I have spent the last 15 years helping women get off prescription medications."*
-        Shannon's own line, confirmed twice. The subject must stay **Shannon and her
-        fifteen years**. The moment it becomes "you can get off your medication" it turns
-        into advice to a sick person from someone who is not their doctor.
+        Shannon's own line, confirmed three times. The subject stays **Shannon and her
+        fifteen years**, never a command to the reader. **The not-a-doctor disclaimer is
+        BANNED** (Shannon 2026-08-11: "NEVER say this ever again. EVER."). Never add one.
       - *"They are poison centers meant to do you and your family harm."* Shannon removed
         the "in my opinion" frame on 2026-08-11 and **that was deliberate, do not put it
         back**. What keeps it safe is that it names no retailer, no product and no

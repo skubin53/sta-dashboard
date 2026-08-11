@@ -39,15 +39,19 @@ our finances.</p>
 </div>
 ```
 
-**Shannon removed the opinion frame on 2026-08-11 and that is a deliberate decision, not an
-oversight. Do not put it back.**
+**EVERY HEDGE IS BANNED, EVERYWHERE. Not just in this box. Do not put one back.**
 
-The line reads *"They are poison centers meant to do you and your family harm."* I had
-written it as *"in my opinion they are meant to..."*, because the clause asserts intent on
-the part of real, well-resourced retailers, which is the most actionable kind of sentence a
-person can publish about a company. Her answer: *"take out 'in my opinion', that's weak and
-lame."* She is right about the writing. A hedge in the first line of the box undercuts the
-one paragraph that has to land hardest, and she is the one whose name is on it.
+The line reads *"They are poison centers meant to do you and your family harm."* Shannon on
+2026-08-11: *"take out 'in my opinion', that's weak and lame"*, and then again when I used it
+elsewhere: *"never say 'in my opinion'. Obviously it is, right? It's my email. I only speak
+truth and I am loud and proud (never ashamed). I don't use weak words. I speak with authority
+against a criminal empire that is killing humanity."*
+
+That covers every softener, not only that phrase: "I think", "I believe", "personally", "it
+seems", "worth considering", "might be". **Delete the hedge and keep the sentence.**
+
+She never writes the criminal empire line. She writes from it. What carries a hard claim now
+is the hyperlinked receipt, which is why the proof standard matters more than it ever did.
 
 What keeps it defensible without the hedge: the sentence is **rhetoric about an industry**,
 not a factual allegation about a specific act by a specific company. It names no retailer,
@@ -56,15 +60,18 @@ to a specific claim of intent, it stops being a characterisation and becomes an 
 of fact, and then it needs either a frame or a receipt.** Keep this paragraph general and it
 stays what it is: how she talks about the industry.
 
-**The prescriptions line is Shannon's, written by her, and she has confirmed it twice.**
-*"I have spent the last 15 years helping women get off prescription medications."* I flagged
-the risk, she reaffirmed it in stronger terms, and it ships as she wrote it. Anyone editing
-this file later should know it is deliberate and not quietly soften it.
+**The prescriptions line is Shannon's and she has confirmed it three times.**
+*"I have spent the last 15 years helping women get off prescription medications."* It ships
+exactly as she wrote it. Anyone editing this file later should know that is deliberate and
+must not quietly soften it.
 
-What it must NEVER become is an instruction to the reader. It is a statement about her own
-work over fifteen years. The moment it turns into "stop taking your prescriptions" or "you
-can get off your medication", it stops being her history and becomes advice to a sick person
-from someone who is not her doctor. Keep the subject as Shannon, never the reader.
+**THE NOT-A-DOCTOR DISCLAIMER IS BANNED.** Shannon, 2026-08-11: *"NEVER say this ever again.
+EVER."* No disclaimer, no softer version of one, nowhere in any Switch to America copy.
+
+What the line must never become is an instruction to the reader. It is a statement about
+Shannon's own work over fifteen years. Keep the subject as Shannon. Never write a sentence
+telling a reader to stop taking something, and never give a dose. That is the only line, and
+it gets crossed by writing a command, not by dropping a disclaimer.
 
 **Written 2026-08-11: the box is now hers, not mine.** She added the stores being complicit,
 Switch to America as the new supply chain, the Scorecard app, the Switch Circle, linking arms
@@ -147,17 +154,37 @@ This is the difference between a blog that survives and one that gets a letter.
 - A classification ("the WHO classes it as probably causing cancer in people")
 - "No safe level of lead," per AAP or CDC
 
-**Stated as Shannon's own first-person opinion, never as fact:**
-- That a product *causes* harm
-- That a named brand is *poisoning* people
-- That something is *not fit for human consumption*
-- Anything where the causation is disputed, unproven, or still an allegation
+**REWRITTEN 2026-08-11. The old version of this section told writers to hedge with "I
+believe" and "in my opinion". Shannon has banned both. Do not reinstate them.**
 
-The tell is the sentence stem. **"I believe," "in my opinion," "I would not," "that is my
-opinion and I will put my name on it."** She can be as blunt as she likes inside that frame,
-and she should be. The frame is what makes the bluntness safe.
+Her words: *"never say 'in my opinion'. Obviously it is, right? It's my email. I only speak
+truth and I am loud and proud (never ashamed). I don't use weak words. I speak with authority
+against a criminal empire that is killing humanity."*
 
-Lawsuits are **allegations** until a court says otherwise, every single time.
+So the safety no longer comes from a softener in front of the sentence. **It comes from what
+the sentence is about and what is linked underneath it.**
+
+**Two things keep a hard claim publishable now:**
+
+1. **Aim at the industry, not at one company's specific act.** "They are poison centers meant
+   to do you and your family harm" names no retailer, no product, no incident. That is
+   characterisation, and it is hers to make. The moment a named store is attached to a
+   specific claim of intent, it becomes an allegation of fact and it needs a receipt.
+2. **Carry a receipt for anything specific.** A recall with its date and number. A settlement
+   that actually happened. A fine, a guilty plea, an agency classification. Hyperlinked, so a
+   reader can open the document herself. **The receipt is the replacement for the hedge, and
+   it is a stronger one.**
+
+**Still true, and unaffected by any of this:**
+- Lawsuits are **allegations** until a court says otherwise, every single time. Write them
+  that way.
+- Never state as settled fact that a specific product caused a specific disease when the
+  causation is genuinely disputed. Report what the court, the agency or the study said, and
+  link it.
+- No dosing, and never an instruction telling a reader to stop taking a medication.
+
+**And she is blunt, not careful.** "That is not what innocent looks like" needs no frame. It
+is a judgement about behaviour anyone can look up.
 
 ---
 
@@ -224,8 +251,7 @@ From the lab-grown beef post, 2026-08-09:
 
 > I am not going to soften this. Growing meat in a steel tank and selling it to families is
 > one of the grossest things I have watched happen in thirty-four years of paying attention
-> to food, **and I believe it is going to harm people. That is my opinion and I will put my
-> name on it.**
+> to food, **and it is going to harm people. I will put my name on that.**
 >
 > [Seven states have banned it](url). It went on a shelf in California on August 1 anyway
 > and barely made the news. They are not hiding it exactly. They are counting on you being
@@ -236,8 +262,8 @@ From the lab-grown beef post, 2026-08-09:
 > a quarter. He will talk your ear off, because he is proud of it. Once your freezer is full
 > of beef from a person whose name you know, none of this can touch you.
 
-**Why it works:** no conversion story. The harm claim is explicitly opinion and signed. The
-seven-state fact is stated flat and hyperlinked. It ends on a farmer and a full freezer, not
+**Why it works:** no conversion story. The harm claim is flat, signed and unhedged, and the
+seven-state fact beneath it is stated plainly and hyperlinked, which is what carries it. It ends on a farmer and a full freezer, not
 on fear. And the last line is what she is actually selling, which is not being afraid in
 your own kitchen.
 
@@ -247,7 +273,8 @@ your own kitchen.
 
 1. Is there a conversion story anywhere in it? → cut it
 2. Does she cite a study as something she read? → move it upstairs
-3. Is any causation claim stated as fact? → put it in an "I believe" frame
+3. Is there a hedge anywhere? "in my opinion", "I think", "I believe", "personally" → cut
+   the hedge, keep the sentence. If the claim is specific, add the receipt instead.
 4. Does it end on fear, or on an action? → must be an action
 5. Is the action a farm or making it herself? → not a store, not a co-op
 6. Any em dashes? → replace
