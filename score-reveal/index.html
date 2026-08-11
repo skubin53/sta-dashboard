@@ -131,6 +131,16 @@ img{max-width:100%;display:block}
 .urgency{font-size:12.5px;color:var(--amber);font-weight:700;margin-top:10px}
 .guar{display:flex;gap:11px;align-items:flex-start;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px 13px;margin-top:14px;font-size:12.5px;color:var(--mut);line-height:1.55}
 .guar b{color:var(--ink)}
+/* ---- hero mockup (v4) ---------------------------------------------------------------
+   Was inside .offer, where it inherited that card's padding and centring. At the top of
+   the page it has to stand on its own, so it carries its own frame and its own label. */
+.shot-hero{margin:0 0 22px;text-align:center}
+.shot-hero .tag{display:inline-block;margin:0 0 12px;font-size:11px;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  border:1px solid var(--accent);border-radius:999px;padding:6px 14px}
+.shot-hero img{max-width:100%;width:360px;height:auto;border-radius:14px;margin:0 auto}
+.shot-hero .cap{margin-top:10px;font-size:13px;color:var(--mut)}
+@media(max-width:420px){.shot-hero img{width:100%}}
 /* ---- sticky buy bar + objections (Hunter's devices, v3) ------------------------------
    His offer repeats five times down the page. Hers appeared twice, and after the founder
    block there was nothing to click for two screens. The bar makes the offer reachable at
@@ -243,6 +253,19 @@ img{max-width:100%;display:block}
 
   <div class="top"><div class="greet">Hi <b id="sr-name">there</b>, here&rsquo;s what I saw.</div></div>
 
+  <!-- Shannon, 2026-08-11: "Put this picture at the top of the sales page." She is right, and
+       it is what Hunter actually does: the phone in a pair of hands is the FIRST object on the
+       page, above the fold, before a single argument is made. It used to sit two thirds down
+       inside the offer card, behind the score, the found list and the six symptom bullets,
+       which is a long walk before you see the thing you are buying.
+       MOVED, not copied. The same picture twice on one page halves the impact of both. -->
+  <div class="shot shot-hero">
+    <span class="tag">YOUR PERSONALIZED REPORT</span>
+    <img src="../media/report-phone.webp"
+         alt="A pair of hands holding a phone showing the Switch to America home audit, with flagged products and the clean swap for each">
+    <div class="cap">This is your report. Every room, every product, every swap.</div>
+  </div>
+
   <div class="scorewrap">
     <div class="flagged">Products flagged in your home
       <span class="n" id="sr-count">3</span>
@@ -277,16 +300,9 @@ img{max-width:100%;display:block}
 
   <div class="offer">
     <div class="oc">
-      <span class="tag">YOUR PERSONALIZED REPORT</span>
-
-      <!-- She is being asked to buy something she has never seen. Hunter never does that:
-           his phone in a pair of hands is the first thing your eye lands on. Same hands and
-           same phone her cheat sheet page already uses, with her actual audit on screen. -->
-      <div class="shot">
-        <img src="../media/report-phone.webp"
-             alt="A pair of hands holding a phone showing the Switch to America home audit, with flagged products and the clean swap for each">
-        <div class="cap">This is your report. Every room, every product, every swap.</div>
-      </div>
+      <!-- The "YOUR PERSONALIZED REPORT" label went to the top with the phone. Leaving a copy
+           here would be the second time she reads the same three words, and this card already
+           has its own heading. -->
       <h2>Toxic Home Scan Results</h2>
       <div class="anchor">A home wellness consultant charges $150 to walk your house room by room. Your scan already did the work.</div>
       <div class="price"><span class="now">Today</span><span class="was">$150</span>$7<small>One-time. No subscription. Yours to keep.</small></div>
@@ -303,7 +319,7 @@ img{max-width:100%;display:block}
 
       <a class="btn" id="sr-buy" data-buy href="#">Get my report now &rarr; $7</a>
       <div class="urgency">&#9203; Your scan results are held for 48 hours. After that, it&rsquo;s a fresh scan.</div>
-      <div class="gtee"><b>My promise</b><span>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text me the word REFUND and I put the $7 back on your card. You keep the report. I am not going to argue with you over seven dollars.</span></div>
+      <div class="gtee"><b>My promise</b><span>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text me the word REFUND and you get a <b>FULL REFUND</b>. You keep the report.</span></div>
     </div>
   </div>
 
@@ -383,7 +399,7 @@ img{max-width:100%;display:block}
         <li><span class="ck">&#10003;</span> Room-by-room action list so you know exactly where to start</li>
       </ul>
       <a class="btn" data-buy href="#">Get my report now &rarr; $7</a>
-      <div class="gtee"><b>My promise</b><span>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text me the word REFUND and I put the $7 back on your card. You keep the report. I am not going to argue with you over seven dollars.</span></div>
+      <div class="gtee"><b>My promise</b><span>If your report doesn&rsquo;t show you at least <b>3 swaps that matter</b>, text me the word REFUND and you get a <b>FULL REFUND</b>. You keep the report.</span></div>
     </div>
   </div>
 
