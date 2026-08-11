@@ -138,7 +138,14 @@ img{max-width:100%;display:block}
 .shot-hero .tag{display:inline-block;margin:0 0 12px;font-size:11px;font-weight:800;
   letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
   border:1px solid var(--accent);border-radius:999px;padding:6px 14px}
-.shot-hero img{max-width:100%;width:360px;height:auto;border-radius:14px;margin:0 auto}
+/* the label owns its own line, so the image below it starts clean */
+.shot-hero>.tag{margin-left:auto;margin-right:auto}
+/* display:block is the fix, not text-align. The label and the image are both inline
+   level, so they flowed onto the SAME line and the label ended up sitting on the image's
+   baseline, at the bottom left. Block puts the image on its own line and centres it by
+   margin; the label is then alone on its line where text-align:center works. */
+.shot-hero img{display:block;max-width:100%;width:360px;height:auto;border-radius:14px;
+  margin:0 auto}
 .shot-hero .cap{margin-top:10px;font-size:13px;color:var(--mut)}
 @media(max-width:420px){.shot-hero img{width:100%}}
 /* ---- sticky buy bar + objections (Hunter's devices, v3) ------------------------------
@@ -300,9 +307,16 @@ img{max-width:100%;display:block}
 
   <div class="offer">
     <div class="oc">
-      <!-- The "YOUR PERSONALIZED REPORT" label went to the top with the phone. Leaving a copy
-           here would be the second time she reads the same three words, and this card already
-           has its own heading. -->
+      <span class="tag">YOUR PERSONALIZED REPORT</span>
+      <!-- Shannon: "It's suppose to be in 2 places." She is right and I had read "put it at
+           the top" as a move. The buy button is in THIS card, and the picture of the thing
+           you get belongs beside the button that buys it. Smaller than the hero and without
+           the caption, so the two do not read as a copy-paste. Same file, so no second
+           download. -->
+      <div class="shot">
+        <img src="../media/report-phone.webp"
+             alt="A pair of hands holding a phone showing the Switch to America home audit, with flagged products and the clean swap for each">
+      </div>
       <h2>Toxic Home Scan Results</h2>
       <div class="anchor">A home wellness consultant charges $150 to walk your house room by room. Your scan already did the work.</div>
       <div class="price"><span class="now">Today</span><span class="was">$150</span>$7<small>One-time. No subscription. Yours to keep.</small></div>
