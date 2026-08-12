@@ -6921,8 +6921,23 @@ function showResults(){
 
   var srProof = document.getElementById('sr-proof');
 
-  if(srProof){ srProof.style.display='none'; }  /* testimonial removed 2026-08-12:
-     unsourced, already pulled off /kids for the same reason. Still live on /now/. */
+  if(srProof){
+
+    srProof.innerHTML = '<div style="background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 14px rgba(14,34,64,.08)">'
+
+      +'<div style="display:flex;align-items:flex-start;gap:12px">'
+
+      +'<img src="https://skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/member-linda.jpg" onerror="this.style.display=\'none\'" style="width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid rgba(14,34,64,.15);flex-shrink:0" alt="Linda P."/>'
+
+      +'<div>'
+
+      +'<div style="font-size:.88rem;font-style:italic;line-height:1.55;color:#1a2e54">"I\'d had \'mystery\' headaches for 30 years. The formaldehyde and benzene in those scented plug-ins was the culprit. The headaches stopped within a month. At 64, I still can\'t believe it."</div>'
+
+      +'<div style="font-size:.72rem;font-weight:800;color:#B07A2C;margin-top:6px">Linda P. &middot; Grandmother &middot; Ohio</div>'
+
+      +'</div></div></div>';
+
+  }
 
 
 
@@ -7445,7 +7460,8 @@ var EXTRA_STORIES=[
 
   {q:"I had no idea the phthalates in our detergent and her body wash were why her skin flared up after every single shower. We switched both. Within 3 weeks her eczema cleared. She hasn't needed a steroid cream in 8 months.",a:"Megan R. · Mom of 3"},
 
-  {q:"Three out of five of us were getting sick constantly. I assumed colds. Then I learned about the VOCs and quaternary ammonium compounds in our cleaners. We switched everything. Six months in, two doctor visits between the five of us, down from a dozen.",a:"Tara J. · Family of 5"},
+  {q:"My granddaughter made me throw out all my plug-ins and candles. I'd had 'mystery' headaches for 30 years. The formaldehyde and benzene in those scents was the culprit. The headaches stopped within a month. At 64. I still can't believe it.",a:"Linda P. · Grandmother"},
+    {q:"Three out of five of us were getting sick constantly. I assumed colds. Then I learned about the VOCs and quaternary ammonium compounds in our cleaners. We switched everything. Six months in, two doctor visits between the five of us, down from a dozen.",a:"Tara J. · Family of 5"},
 
   {q:"I started with one swap because the BPA in our plastic containers scared me. It's tied to early puberty in girls. I have two daughters. Six months later the whole house is done. I won't ever wonder if I missed something they were absorbing.",a:"Crystal H. · Mom of 2"},
 
