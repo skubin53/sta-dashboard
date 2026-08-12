@@ -5,7 +5,7 @@ post_title: "Extra Income for Women in Their 50s: An Honest Look (2026)"
 slug: extra-income-for-women-in-their-50s
 queue_file: blog-pipeline/queue/builder-extra-income-women-50s.md
 beats: 5
-status: requested
+status: complete
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. Continuity: the SAME woman in her early fifties across all five beats, same face, same hands, clothes change only between the night beat and the morning beats. Temperature ramp runs coldest at the villain beat to warmest at the last beat. Nano Banana Pro at 4K."
 product_note: "NONE. No product anywhere in this set. See the hard rule below."
 ---
