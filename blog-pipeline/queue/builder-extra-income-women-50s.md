@@ -53,6 +53,8 @@ status: ready
 <p><strong>This page does not promise you an amount.</strong> Anybody who does is either guessing or breaking the rules the <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">FTC set out</a> about earnings claims. What this page does is lay the options side by side with the catch attached to each.</p>
 </div>
 
+[IMAGE: extraincome-hero-v1]
+
 <div class="sta-toc">
 <h2 id="what-this-guide-answers">What this guide answers</h2>
 <ol>
@@ -97,6 +99,8 @@ status: ready
 
 <p>Notice what is not on that list. No crypto, no dropshipping, no course about selling courses. If it is not on the table it is because I would not point my sister at it.</p>
 
+[IMAGE: extraincome-villain-v1]
+
 <h2 id="what-should-you-refuse-outright">What should you refuse outright?</h2>
 
 <p class="quick-answer">Quick answer: anything that needs your money before it makes you any.</p>
@@ -121,6 +125,8 @@ status: ready
 
 <p><strong>3. What happens if I only ever want to be a customer?</strong> If the honest answer is "that is completely normal and most people do exactly that", good. If being a customer is treated as failing, you have your answer.</p>
 
+[IMAGE: extraincome-turning-point-v1]
+
 <h2 id="what-about-the-money-you-are-already-spending">What about the money you are already spending?</h2>
 
 <p class="quick-answer">Quick answer: this is the part almost nobody looks at, and it is the fastest thing on this page.</p>
@@ -132,6 +138,8 @@ status: ready
 <p>A woman who reroutes that spend has done something better than a second job. She has kept money she had already given away, and she did not sell an evening to do it.</p>
 
 <p>That is also, honestly, where the referral option starts making sense and not before. You move your own shop first. Whether anything else ever comes of it is a separate question you can answer later or never.</p>
+
+[IMAGE: extraincome-belonging-v1]
 
 <h2 id="where-do-you-start-this-week">Where do you start this week?</h2>
 
@@ -213,6 +221,8 @@ our finances.</p>
 <p><strong>I have no spare time at all. What then?</strong> Then the outgoings section is your whole answer this month, and the rest of this page can wait. Money kept counts the same as money earned.</p>
 
 <p><strong>What happens on the free call?</strong> Ten minutes, one room, what to swap first. No card and no presentation. Most of these calls never touch the income side at all.</p>
+
+[IMAGE: extraincome-freedom-v1]
 
 <h2 id="who-you-become">Who you become</h2>
 

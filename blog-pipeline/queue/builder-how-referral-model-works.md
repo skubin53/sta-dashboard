@@ -53,6 +53,8 @@ status: ready
 <p>What I can tell you honestly is how it works, what it costs you, and who it is wrong for. That is this page.</p>
 </div>
 
+[IMAGE: howreferral-hero-v1]
+
 <div class="sta-toc">
 <h2 id="what-this-guide-answers">What this guide answers</h2>
 <ol>
@@ -85,6 +87,8 @@ status: ready
 <p>The free "Your First Switch" call is a walkthrough of one room in your house and what to swap first. If you never want to talk about the income side, we never will.</p>
 <a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book the free 10 minute call</a>
 </div>
+
+[IMAGE: howreferral-villain-v1]
 
 <h2 id="what-do-most-people-actually-earn">What do most people actually earn?</h2>
 
@@ -119,6 +123,8 @@ status: ready
 
 <p><strong>So when somebody in this industry shows you a number, ask one question: can you substantiate that, and does it include expenses?</strong> Watch what happens to the conversation. That single question is the best filter you have, and you can use it on me.</p>
 
+[IMAGE: howreferral-turning-point-v1]
+
 <h2 id="what-does-it-actually-cost-to-start">What does it actually cost to start?</h2>
 
 <p class="quick-answer">Quick answer: the cost is your monthly order, which replaces shopping you already do.</p>
@@ -140,6 +146,8 @@ status: ready
 <p>The way it is not different: it is still the same basic structure, and pretending otherwise would be exactly the sort of thing this page exists to stop doing. If the structure itself is the thing you object to, that is a coherent position and I am not going to argue you out of it.</p>
 
 <p>What I would say is this. I did not come to this because I wanted a business. I came to it because I had spent decades keeping a non-toxic house and I was tired of the only alternative being a shelf full of things I would not put in my own home. The supply chain came first. The income came a long way after.</p>
+
+[IMAGE: howreferral-belonging-v1]
 
 <h2 id="who-is-this-genuinely-wrong-for">Who is this genuinely wrong for?</h2>
 
@@ -207,6 +215,8 @@ our finances.</p>
 <p><strong>Do I have to recruit anybody?</strong> No. Most people never do. You can shop, save on your own household, and never mention it once.</p>
 
 <p><strong>What actually happens on the free call?</strong> Ten minutes, one room in your house, and what to swap first. I do not need your card and there is no presentation. If the income side never comes up, that is a normal outcome.</p>
+
+[IMAGE: howreferral-freedom-v1]
 
 <h2 id="who-you-become">Who you become</h2>
 
