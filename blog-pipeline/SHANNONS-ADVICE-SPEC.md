@@ -10,6 +10,7 @@ may EXTEND this box, never how to replace it.
 
 ```html
 <div class="shannons-advice">
+<img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
 <h3>Shannon's Advice</h3>
 <span class="advice-tag">Straight talk from Shannon</span>
 
@@ -281,3 +282,25 @@ your own kitchen.
 7. Does it sound like the article, or like a person? → if the article, rewrite it
 8. Does it mention a legislator, a politician, or any government official? → cut it. A law
    or a recall as a LINK is fine. A person in government as a character is not.
+
+
+## Her photo, added 2026-08-12
+
+Shannon: *"my picture needs to be in that box at the top right so ppl know who I am."*
+
+It is the FIRST child of the div so it floats top right and the text wraps around it.
+Served from `https://scan.ismyhometoxic.com/now/shannon-photo.jpg`, not from `api.ismyhometoxic.com`. Both work today, but api is the
+quiz server that 500'd on every lead for weeks, and one outage there would strip her
+face off every post on the blog at once.
+
+```css
+.shannons-advice .advice-photo{float:right;width:78px;height:78px;border-radius:50%;object-fit:cover;border:2.5px solid #c9a227;margin:0 0 12px 16px;box-shadow:0 4px 14px rgba(0,0,0,.35);}
+```
+
+## Order, settled 2026-08-12
+
+Shannon: *"the receipts cannot be before Shannon's Advice."*
+
+**Advice box first, receipts underneath it.** Putting the lawsuits first treats the
+evidence as the thing that earns her the right to speak. On her brand that is
+backwards. She is why anyone is reading. Her point, then the proof.

@@ -97,8 +97,16 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       converts.
 - [ ] **A8** **Visible FAQ section**, 3 to 5 real follow-up questions, 2 to 4 sentence
       answers. This is separate from the FAQ schema in B3 and both are required.
-- [ ] **A9** **Shannon's Advice box**, dark, near the end, right before the closing
-      scan CTA. **PASTE THE STANDARD BLOCK VERBATIM. DO NOT WRITE A NEW ONE.**
+- [ ] **A9** **Shannon's Advice box**, dark, near the end. **PASTE THE STANDARD BLOCK
+      VERBATIM. DO NOT WRITE A NEW ONE.**
+
+      > **HER PHOTO IS PART OF THE BLOCK, added 2026-08-12.** Shannon: *"my picture needs
+      > to be in that box at the top right so ppl know who I am."* The `<img>` is the FIRST
+      > child of the div so it floats top right and the text wraps around it. Source it from
+      > `scan.ismyhometoxic.com/now/shannon-photo.jpg`, **not** `api.ismyhometoxic.com`.
+      > Both answer today, but api is the quiz server that returned 500 on every lead for
+      > weeks, and one outage there strips her face off every post at once.
+      > The `.advice-photo` CSS rule has to be in the post's `<style>` block too.
 
       > **REWRITTEN BY SHANNON 2026-08-11. The old box is dead.** If you are looking at
       > `Downloads\STA-Shannons-Advice-STANDARD.txt`, that file is the 2026-08-08 version
@@ -162,6 +170,12 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       dark panel, not decoration.
 - [ ] **A10** **Proof section**: category-matched, hyperlinked real lawsuits, recalls
       or fines. **Every one attributed as an allegation**, never as proven fact.
+
+      > **IT GOES AFTER SHANNON'S ADVICE, NEVER BEFORE. Shannon, 2026-08-12: "the receipts
+      > cannot be before Shannon's Advice."** Putting the lawsuits first treats the evidence
+      > as the thing that earns her the right to speak. On a personal brand that is
+      > backwards. She is why anyone is reading. Her point first, the proof underneath it.
+      > Order in every post: body -> **Shannon's Advice** -> **Proof** -> scan CTA -> FAQ.
 - [ ] **A11** **Author bio block**, first person, warm.
 - [ ] **A12** Include the evidence that CUTS AGAINST the story. The baby-powder post
       states the FDA found nothing in 2021, 2022 and 2023. Leaving that out is how a
@@ -268,6 +282,17 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 - [ ] **D8** 2 CTA blocks minimum to `scan.ismyhometoxic.com/now`, and **one must be
       high up**, right after the first major finding. Shannon: *"Most ppl don't read
       the whole blog post."*
+
+## GATE A-FINAL — THE THREE THINGS TO EYEBALL BEFORE EVERY PUBLISH
+
+Added 2026-08-12 after two posts went live missing all three.
+
+- [ ] **Her photo is in the Advice box**, top right. Open the assembled body and look.
+- [ ] **Shannon's Advice comes BEFORE the receipts.** Not after.
+- [ ] **It is 2 posts, and it is noon.** Nothing auto-publishes. Cameron is retired and
+      there is no cron, so if it is not published inside a session it does not go out.
+      On 2026-08-12 the answer to "how many published today" was zero at 14:34, with both
+      posts sitting finished in the queue. **Publish first, then do everything else.**
 
 ## GATE E — AFTER PUBLISH
 

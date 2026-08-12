@@ -34,6 +34,7 @@ status: ready
 .shannons-advice .advice-tag{font-size:0.72em;font-weight:bold;color:#8fa3b8;text-transform:uppercase;letter-spacing:1.4px;margin:0 0 12px;}
 .shannons-advice p{color:#e9eef4;line-height:1.7;margin:0 0 11px;}
 .shannons-advice p:last-child{margin:0;}
+.shannons-advice .advice-photo{float:right;width:78px;height:78px;border-radius:50%;object-fit:cover;border:2.5px solid #c9a227;margin:0 0 12px 16px;box-shadow:0 4px 14px rgba(0,0,0,.35);}
 .shannons-advice a{color:#f5d888;}
 .sta-proof{background:#FBF7F0;border-left:6px solid #c8a24a;padding:18px 24px;margin:26px 0;}
 .sta-proof h3{margin:0 0 10px;color:#0B2545;}
@@ -166,18 +167,9 @@ status: ready
 
 <p><strong>Give anything on this list ninety days before you judge it, and judge it on whether you would keep doing it, not on the money yet.</strong> Money in the first ninety days tells you almost nothing. Whether you dreaded it tells you everything.</p>
 
-<div class="sta-proof">
-<h3>Where to check me</h3>
-<ul>
-<li><a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">FTC Business Guidance Concerning Multi-Level Marketing</a>, on what may and may not be claimed about earnings.</li>
-<li><a href="https://www.ftc.gov/reports/multi-level-marketing-income-disclosure-statements">FTC staff report on income disclosure statements</a>, an analysis of how these figures actually get presented.</li>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-proposes-rule-changes-new-rule-deter-deceptive-earnings-claims-multilevel-marketers-money-making">The proposed Earnings Claim Rule</a>, January 2025, aimed at deceptive earnings claims.</li>
-<li><a href="https://www.ftc.gov/business-guidance/blog/2026/06/back-those-earnings-claims-other-lessons-ftcs-labor-task-force-work">"Back up those earnings claims"</a>, FTC business guidance, June 2026.</li>
-<li><a href="https://join.switchtoamerica.com/post/how-referral-model-actually-works">My own honest write-up of how the referral model works</a>, including what I will not tell you and why.</li>
-</ul>
-</div>
 
 <div class="shannons-advice">
+<img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
 <h3>Shannon's Advice</h3>
 <span class="advice-tag">Straight talk from Shannon</span>
 
@@ -204,6 +196,17 @@ stores. We are linking arms and together taking our control back. Control of our
 our finances.</p>
 
 <p>Start by clicking the link below and taking the SCAN.</p>
+</div>
+
+<div class="sta-proof">
+<h3>Where to check me</h3>
+<ul>
+<li><a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">FTC Business Guidance Concerning Multi-Level Marketing</a>, on what may and may not be claimed about earnings.</li>
+<li><a href="https://www.ftc.gov/reports/multi-level-marketing-income-disclosure-statements">FTC staff report on income disclosure statements</a>, an analysis of how these figures actually get presented.</li>
+<li><a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-proposes-rule-changes-new-rule-deter-deceptive-earnings-claims-multilevel-marketers-money-making">The proposed Earnings Claim Rule</a>, January 2025, aimed at deceptive earnings claims.</li>
+<li><a href="https://www.ftc.gov/business-guidance/blog/2026/06/back-those-earnings-claims-other-lessons-ftcs-labor-task-force-work">"Back up those earnings claims"</a>, FTC business guidance, June 2026.</li>
+<li><a href="https://join.switchtoamerica.com/post/how-referral-model-actually-works">My own honest write-up of how the referral model works</a>, including what I will not tell you and why.</li>
+</ul>
 </div>
 
 <div class="sta-cta">
