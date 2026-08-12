@@ -166,9 +166,23 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 - [ ] **A12** Include the evidence that CUTS AGAINST the story. The baby-powder post
       states the FDA found nothing in 2021, 2022 and 2023. Leaving that out is how a
       post gets torn apart in the comments.
-- [ ] **A13** **Word count 1,200 to 2,000.** **Longer is NOT better.** The page beating
-      us on Scentsy is 1,200 words. Our recent posts ran 2,400 to 3,100 and rank
-      nowhere. Stop padding.
+- [ ] **A13** **Word count 1,200 to 2,000, measured on PROSE ONLY.** **Longer is NOT
+      better.** The page beating us on Scentsy is 1,200 words. Our recent posts ran 2,400
+      to 3,100 and rank nowhere. Stop padding.
+
+      > **What counts, settled 2026-08-11.** Measure the prose. **Exclude** the Advice box,
+      > the TOC, the Proof list, the comparison table, the CTA blocks, Keep reading and the
+      > author bio. Those are mandatory furniture and they come to roughly **600 words**
+      > before a single sentence of the post is written, so a raw whole-file count can
+      > never reach 2,000 and chasing it means deleting sourcing and argument.
+      >
+      > Measured raw, every post in the pipeline fails: the two Shannon approved on
+      > 2026-08-11 came in at 2,850 and 2,844, and live posts run 2,500 to 3,200. Measured
+      > on prose, those same two are 2,105 and 2,132, still over, and 2026-08-12 and
+      > 2026-08-13 are 1,590 and 1,468, which is inside.
+      >
+      > I cut 240 words out of two good posts chasing the raw number before checking it
+      > against anything. **Calibrate against a post that passed before trimming a new one.**
 - [ ] **A14** **No fabricated testimonials. Never invent a named customer quote.** No
       real message means the slot stays empty. *(Two live posts carry "Jennifer M.,
       Ontario" and "Melissa R., Ontario" of unknown provenance, and a prior audit
