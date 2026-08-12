@@ -1203,7 +1203,13 @@ body { padding-top:0 !important; }
   <div style="font-size:.68rem;color:#fafdff;text-align:center;margin-top:6px">Free · 3 minutes · No pressure</div>
 </div>
 
-<!-- ═══ HARD OPT-IN ═══ -->
+<!-- ═══ HARD OPT-IN — DEAD ON THIS BUILD, DO NOT RE-ENABLE ═══
+     Nothing reaches this screen. The calc screen button calls showResults() directly.
+     It is kept only so the paid /now/ build and this one stay diffable. This is the FREE
+     retention scan for people who are already customers: it asks for a first name and
+     nothing else. Wiring this back in would ask an existing shopper for a phone number
+     Shannon already has. -->
+<!-- ═══ HARD OPT-IN (unreachable) ═══ -->
 <div class="screen" id="s-optin">
   <div class="oc">
     <div class="oh">
@@ -1598,6 +1604,11 @@ function scoreBrand(text, cat, fieldLabel) {
 
 // ══ QUIZ STEPS ══
 const STEPS = [
+  // Name is the FIRST thing asked, Shannon 2026-08-12. This build is shared with people
+  // who are ALREADY shoppers, so the old logic of delaying the ask to reduce landing
+  // friction does not apply: they already know her and they opened her link.
+  {id:'yourname',room:'',icon:'👋',type:'name',q:'First, what should I call you?',sub:'So I can make your results personal.'},
+
   // Segment (now the opening question — honesty step removed per Shannon, change #1)
   {id:'seg',room:'Your Household',icon:'👨‍👩‍👧',type:'single',q:'Who lives in your home?',
    answers:[
@@ -1607,8 +1618,6 @@ const STEPS = [
      {lbl:'My family includes babies or toddlers',em:'👶',flag:'baby'},
    ]},
 
-  // #4 — name capture AFTER the household question (less landing friction; they've already invested a tap)
-  {id:'yourname',room:'',icon:'👋',type:'name',q:'First, what should I call you?',sub:'So I can make your results personal.'},
 
 
   // Kitchen Page A — Chip-select cleaning products (Shannon's Page 4 design)
@@ -1689,7 +1698,9 @@ const STEPS = [
    ]},
 
   // Soft opt-in
-  {id:'__soft',type:'soft'},
+  // Email soft opt-in REMOVED 2026-08-12. These are existing shoppers, she already has
+  // their email, and interrupting a free gift to ask for something she holds already is
+  // the fastest way to make a retention piece feel like a funnel.
 
   // Bathroom (chip design) — Room 3
   {id:'bathroom_all',room:'Room 3 · The Bathroom',icon:'🚿',type:'chip_cards',
