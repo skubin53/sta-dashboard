@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light">
-<title>The Family Home Toxic Scorecard — Switch to America</title>
+<title>The Family Home Toxic Scorecard, Switch to America</title>
 <meta name="description" content="Find out what's really in your family's home. A free 3-minute room-by-room scorecard.">
 <!-- change #9 — social link-preview cards -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="What toxic products are hiding in your home?">
-<meta property="og:description" content="Take the free 3-minute Family Home Toxic Scorecard — a room-by-room scan of what's really in your family's everyday products.">
+<meta property="og:description" content="Take the free 3-minute Family Home Toxic Scorecard, a room-by-room scan of what's really in your family's everyday products.">
 <meta property="og:image" content="https://skubin53.github.io/sta-dashboard/scan/scorecard-thumbnail.jpg?v=tide-2026-06-20">
 <meta property="og:url" content="https://scan.ismyhometoxic.com/scorecard">
 <meta name="twitter:card" content="summary_large_image">
@@ -1042,19 +1042,19 @@ body { padding-top:0 !important; }
     <div id="commStatLanding" class="comm-stat"></div>
 
     <h1 class="intro-h1-new">
-      <span class="intro-h1-l1 rise" style="display:block">What <span class="intro-hide">Toxic Products</span></span>
-      <span class="intro-h1-l2 rise" style="display:block">Are Hiding In Your Home?</span>
+      <span class="intro-h1-l1 rise" style="display:block">You already know</span>
+      <span class="intro-h1-l2 rise" style="display:block">what a clean house feels like.</span>
     </h1>
 
     <!-- scan stage + iconrow removed per Shannon advisor #4 -->
     <div class="intro-trust-new rise">
       <div>
-        <div class="trust-nm">Before your toddler finishes breakfast,<br>they've been exposed to 50+ chemicals.<br>Most from products you bought yourself.</div>
+        <div class="trust-nm">It comes back one bottle at a time.<br>A cleaner here, a shampoo there, whatever was on sale.<br>Nobody notices it happening. You just start feeling worse.</div>
       </div>
     </div>
 
 
-    <button class="intro-cta-new" onclick="startQuiz()">Find My Family's Toxic Score →</button>
+    <button class="intro-cta-new" onclick="startQuiz()">Show me what came back →</button>
 
     <div class="intro-chips-new">
       <span class="intro-chip"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Free</span>
@@ -1309,7 +1309,7 @@ body { padding-top:0 !important; }
       <button onclick="openStories()" style="margin-top:4px;width:100%;background:#C8102E;border:none;color:#fff;font-weight:900;font-size:1.04rem;letter-spacing:.02em;padding:16px 18px;border-radius:50px;cursor:pointer;font-family:inherit;box-shadow:0 6px 14px -4px rgba(200,16,46,.45)">📖 Click here for 12 wake-up calls →</button>
     </div>
     <div class="fc" id="finalCta">
-      <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">Here's what most families do next.</h2>
+      <h2 id="fcH" style="font-family:'Anton',sans-serif;font-weight:400;font-size:34px;line-height:1.04;letter-spacing:.01em;text-transform:uppercase;text-align:center;color:#fff;margin-bottom:14px">You have done this before.</h2>
       <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 22px;margin-bottom:18px;font-family:'Hanken Grotesk',sans-serif;text-align:center">
         <p style="font-size:.98rem;line-height:1.6;color:#eaf1f8;margin-bottom:12px">A year later the same cleaner is still under the sink. The candle still burns. The wipes are still in the diaper bag.</p>
         <p style="font-size:1.08rem;line-height:1.55;color:#fff;font-weight:800;margin-bottom:6px">And the cost is real.</p>
@@ -1607,7 +1607,7 @@ const STEPS = [
   // Name is the FIRST thing asked, Shannon 2026-08-12. This build is shared with people
   // who are ALREADY shoppers, so the old logic of delaying the ask to reduce landing
   // friction does not apply: they already know her and they opened her link.
-  {id:'yourname',room:'',icon:'👋',type:'name',q:'First, what should I call you?',sub:'So I can make your results personal.'},
+  {id:'yourname',room:'',icon:'👋',type:'name',q:'First, what should I call you?',sub:'So I can talk to you properly and not like a stranger.'},
 
   // Segment (now the opening question — honesty step removed per Shannon, change #1)
   {id:'seg',room:'Your Household',icon:'👨‍👩‍👧',type:'single',q:'Who lives in your home?',
@@ -1816,7 +1816,7 @@ const AUDIT_STEPS = [
   {id:'audit_q1', type:'audit', subtype:'text',
    q:"Before we score your home — what's the #1 product you most want to swap?",
    sub:"Be specific. Laundry detergent? Kid shampoo? Makeup? The more specific, the more useful your score.",
-   placeholder:"e.g. The cleaning sprays under my kitchen sink — I have 3 toddlers crawling around and the labels scare me.",
+   placeholder:"e.g. The sprays under my kitchen sink. I used to buy better and somewhere along the way I stopped.",
    minLen:5},
   {id:'audit_q2', type:'audit', subtype:'choice',
    q:"How much does your household spend on these everyday essentials per month?",
