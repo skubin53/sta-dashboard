@@ -9,30 +9,30 @@ note: "Nano Banana Pro 4K, two variants per beat. BUILDER TRACK, so the usual sh
 
 ### extraincome-hero-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_192910_5fb21bd7-a299-41cd-8218-db0a816d9de6.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/extraincome-hero-v1.webp
 - placement: COVER only (og:image + social thumbnail, never repeated in body)
 - completed: 2026-08-12T14:07:10
 
 ### extraincome-villain-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_192657_5f0df78d-6f66-4b29-ada2-82e597198d2f.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/extraincome-villain-v1.webp
 - placement: body, in beat order (the coldest frame)
 - completed: 2026-08-12T14:07:10
 
 ### extraincome-turning-point-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_195504_5286b971-12ec-4118-9f20-47ae66d691e9.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/extraincome-turning-point-v1.webp
 - placement: body, in beat order
 - completed: 2026-08-12T14:07:10
 
 ### extraincome-belonging-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_195632_8c8f7571-cddc-4075-a23a-425628bbb215.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/extraincome-belonging-v1.webp
 - placement: body, in beat order
 - completed: 2026-08-12T14:07:10
 
 ### extraincome-freedom-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_195716_ec22d8b4-650f-4150-8b49-ebe5bd5d254b.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/extraincome-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-08-12T14:07:10
