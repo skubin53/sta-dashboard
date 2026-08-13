@@ -9,30 +9,30 @@ note: "Nano Banana Pro 4K, two variants per beat. BUILDER TRACK so there is no v
 
 ### howreferral-hero-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_211124_b35c5d12-aec8-4fb5-b1b3-6608f30441ba.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/howreferral-hero-v1.webp
 - placement: COVER only (og:image + social thumbnail, never repeated in body)
 - completed: 2026-08-13T12:14:15
 
 ### howreferral-villain-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_211210_9f9bbf21-60ce-4bbf-b6c4-e22a866543f1.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/howreferral-villain-v1.webp
 - placement: body, in beat order (the coldest frame)
 - completed: 2026-08-13T12:14:15
 
 ### howreferral-turning-point-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260813_180605_27ebda19-fc22-40cf-b076-d3bebcfe5a2e.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/howreferral-turning-point-v1.webp
 - placement: body, in beat order
 - completed: 2026-08-13T12:14:15
 
 ### howreferral-belonging-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260812_211302_614822a8-7798-4452-bac9-c8cca90815ec.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/howreferral-belonging-v1.webp
 - placement: body, in beat order
 - completed: 2026-08-13T12:14:15
 
 ### howreferral-freedom-v1
 - status: done
-- image_url: https://d8j0ntlcm91z4.cloudfront.net/user_3DalfbEQO3eXz1EJxnkMvLayuUW/hf_20260813_180659_d5e1c173-80af-463d-b508-777022d247c4.png
+- image_url: https://scan.ismyhometoxic.com/blog-images/howreferral-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-08-13T12:14:15
