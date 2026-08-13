@@ -5,7 +5,7 @@ post_title: How Does a Referral Model Actually Work? An Honest Answer (2026)
 slug: how-referral-model-actually-works
 queue_file: blog-pipeline/queue/builder-how-referral-model-works.md
 beats: 5
-status: requested
+status: complete
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. Continuity: same woman, same clothes, same hands across beats 2 to 5. Temperature ramp runs coldest at the villain beat to warmest at the last beat. Nano Banana Pro at 4K."
 product_note: "NONE. This set has no product in it. See the hard rule below, it is different from every other set on this blog."
 ---
