@@ -45,7 +45,7 @@ status: ready
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 14, 2026</p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 14, 2026<br><span style="font-size:.92em;">Published August 14, 2026 &middot; Last updated August 14, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -53,8 +53,6 @@ status: ready
 <p><strong>Now the part nobody puts in the graphic.</strong> Most people who start this earn a small amount and then stop. Not some. Most. I am not going to show you a number I cannot substantiate, because <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">the FTC's own guidance</a> says any earnings information has to be truthful and substantiated, and because you have been lied to enough.</p>
 <p>What I can tell you honestly is how it works, what it costs you, and who it is wrong for. That is this page.</p>
 </div>
-
-[IMAGE: howreferral-hero-v1]
 
 <div class="sta-toc">
 <h2 id="what-this-guide-answers">What this guide answers</h2>
@@ -65,8 +63,15 @@ status: ready
 <li><a href="#what-does-it-actually-cost-to-start">What does it actually cost to start?</a></li>
 <li><a href="#how-is-this-different-from-the-thing-your-friend-pitched-you">How is this different from the thing your friend pitched you in 2009?</a></li>
 <li><a href="#who-is-this-genuinely-wrong-for">Who is this genuinely wrong for?</a></li>
-<li><a href="#what-else-do-people-ask">What happens if you want to look at it?</a></li>
+<li><a href="#faq">What happens if you want to look at it?</a></li>
 </ol>
+</div>
+
+
+<div class="sta-cta">
+<h3>Before any of this, look at your own house</h3>
+<p>The free 3 minute scan goes room by room and shows you what the swap actually is. No card, no call.</p>
+<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
 <h2 id="how-does-the-referral-model-actually-work">How does the referral model actually work?</h2>
@@ -89,7 +94,9 @@ status: ready
 <a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book the free 10 minute call</a>
 </div>
 
-[IMAGE: howreferral-villain-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/howreferral-villain-v1.webp" alt="A woman at a kitchen table looking at a job offer letter she is not going to accept" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="what-do-most-people-actually-earn">What do most people actually earn?</h2>
 
@@ -124,7 +131,9 @@ status: ready
 
 <p><strong>So when somebody in this industry shows you a number, ask one question: can you substantiate that, and does it include expenses?</strong> Watch what happens to the conversation. That single question is the best filter you have, and you can use it on me.</p>
 
-[IMAGE: howreferral-turning-point-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/howreferral-turning-point-v1.webp" alt="The same woman closing her laptop, decision made" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="what-does-it-actually-cost-to-start">What does it actually cost to start?</h2>
 
@@ -148,7 +157,9 @@ status: ready
 
 <p>What I would say is this. I did not come to this because I wanted a business. I came to it because I had spent decades keeping a non-toxic house and I was tired of the only alternative being a shelf full of things I would not put in my own home. The supply chain came first. The income came a long way after.</p>
 
-[IMAGE: howreferral-belonging-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/howreferral-belonging-v1.webp" alt="Two women talking over coffee, one showing the other something on a phone" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="who-is-this-genuinely-wrong-for">Who is this genuinely wrong for?</h2>
 
@@ -160,7 +171,6 @@ status: ready
 <li><strong>Anyone hoping to never talk to people.</strong> It is conversations. That is the job. There is no version of it that runs while you sleep.</li>
 <li><strong>Anyone who wants a guarantee.</strong> There is not one. What there is, is a thing you can try in your own house with no obligation to ever mention it to another soul.</li>
 </ul>
-
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -209,7 +219,7 @@ our finances.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
-<h2 id="what-else-do-people-ask">What else do people ask?</h2>
+<h2 id="faq">What else do people ask?</h2>
 
 <p><strong>Is this a pyramid scheme?</strong> A pyramid scheme pays people for recruiting. If the money in a model comes from signing people up rather than from products households actually use, that is the thing to run from. Ask where the money originates and do not accept a vague answer, from me or from anyone.</p>
 
@@ -219,7 +229,9 @@ our finances.</p>
 
 <p><strong>What actually happens on the free call?</strong> Ten minutes, one room in your house, and what to swap first. I do not need your card and there is no presentation. If the income side never comes up, that is a normal outcome.</p>
 
-[IMAGE: howreferral-freedom-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/howreferral-freedom-v1.webp" alt="The same woman walking out her front door on a weekday morning, unhurried" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="who-you-become">Who you become</h2>
 
