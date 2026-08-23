@@ -86,7 +86,10 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 - [ ] **0.0 READ THE CANON FIRST.** Before writing a word, read
       `blog-pipeline/COPYWRITING-CANON.md`. It is the definitive list of the 21 copywriting
       documents in Shannon's Obsidian vault plus the 70 rules pulled out of them, each carrying
-      the line it came from so it can be checked rather than trusted.
+      the line it came from so it can be checked rather than trusted. It is in TWO parts:
+      **Part One** is 70 rules. **Part Two** is 67 nuggets from a second, slower pass, and it
+      is the more useful half: the formulas with their blanks, the numbers, the example lines,
+      the reason each rule works, and 11 places where the source files contradict each other.
 
       > Shannon, 2026-08-23: *"What are all the documents in Obsidian that refer to copywriting
       > and gary halbert? Do you have that list? The list you need to read (Not surface read)
