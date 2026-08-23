@@ -1,7 +1,7 @@
 ---
 type: builder-draft
-status: draft-for-review
-note: "Builder-intent post (audience = repriced affiliate creators). DRAFT ONLY. Do NOT put in the consumer auto-publish queue. Review before publishing."
+status: ready
+note: "Builder-intent post (audience = repriced affiliate creators). Cleaned 2026-08-23: the company name removed, the hedge removed, the invented Advice box replaced with the locked block, income-statistics claim removed, calendar link filled."
 title: Cookie vs. Customer: What the Affiliate Repricing Just Taught Every Creator
 slug: cookie-vs-customer
 category: Builders
@@ -56,12 +56,34 @@ If April rattled you, look around. Every corner of the creator world is quietly 
 
 > **Shannon's Advice**
 >
-> Here is what I tell every creator who ends up on a call with me. An affiliate link makes you the middleman for a company that can change your pay while you sleep, and this spring, a lot of them did. I would rather own a relationship than rent a click. When someone I referred keeps buying because they actually love the thing, no head office can delete that with a policy update. That is my opinion, not a money promise. But I have spent years building work that keeps paying me back for effort I already put in, and I am not interested in waking up at zero every 24 hours. You should not have to either.
+> I do not call them grocery stores. They are poison centers meant to do you and your family
+> harm. It is not just the brands who are doing the harm, it is the stores themselves. They allow
+> these toxic products on their shelves. People are sick and dying. This is a very serious matter.
+> How can we ever trust them again?
+>
+> We can't trust them. That is where Switch to America comes in. We are a new supply chain, built
+> on family values, trust and affordability.
+>
+> You do not have to take my word for it. The proof is in my blog posts, the recalls, the lawsuits
+> and the fines, and in the app I built called The Family Home Toxic Scorecard. Also, inside my
+> Switch Circle private community, we talk about real solutions.
+>
+> Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they never
+> wanted. I have spent the last 15 years helping women get off prescription medications. I help
+> families reclaim their health.
+>
+> We cannot stop them. I have stopped expecting to. However, we can stop walking into their
+> stores. We are linking arms and together taking our control back. Control of our health and our
+> finances.
+>
+> Start by clicking the link below and taking the SCAN.
 
 ## Where this could go
 
-If your income just got rewritten by someone else's memo, it might be worth one honest conversation. I partner with Melaleuca, a company that has sold everyday household and wellness products for decades and publishes its real income statistics every year, including how modest the typical numbers are and how many people earn little or nothing. I will put those real numbers in front of you before you decide anything. No pitch, no pressure.
+If your income just got rewritten by someone else's memo, it might be worth one honest conversation. I built Switch to America as a private membership store: we are the manufacturer, there is no middleman and no markup, and people reorder because they actually want the products, not because anybody talked them into it. There is no monthly requirement and it costs less than the big box shop it replaces. I will walk you through exactly how it works before you decide anything. No pitch, no pressure.
 
 You are not a cookie. You are the reason people buy. It might be time your pay worked that way.
 
-[CALENDAR LINK]
+[Book a 15 minute call with me](https://link.switchtoamerica.com/widget/bookings/maketheswtch)
+
+[Take the free home scan](https://scan.ismyhometoxic.com/now/)

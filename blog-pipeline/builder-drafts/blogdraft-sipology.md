@@ -1,6 +1,6 @@
 ---
 type: builder-draft
-status: draft-for-review
+status: ready
 note: "Builder-intent post (audience = displaced Sipology consultants). DRAFT ONLY. Do NOT put in the consumer auto-publish queue. Review before publishing."
 title: For the Sipology Consultants Left Holding the Bag
 slug: sipology-closed-what-consultants-can-do-next
@@ -31,7 +31,7 @@ The hard part about starting over is that trust feels expensive now. So use that
 
 **Recurring referral income you can count on.** The version of this work that lasts pays you month after month when the people you introduced keep buying things they genuinely use. It's not fast and it's not flashy, but it doesn't vanish overnight either.
 
-**A company that shows its real numbers.** After what you've been through, you have every right to ask for the plain facts before you commit to anyone. A trustworthy company publishes official income statistics and lets you read them yourself. If someone dodges that question, believe the dodge.
+**A company that answers straight questions.** After what you have been through, you have every right to ask for plain answers before you commit to anyone. Ask who makes the products, whether there is a monthly requirement, and what happens to your customers if you walk away. If someone dodges that, believe the dodge.
 
 ## You get to choose on purpose this time
 
@@ -41,11 +41,36 @@ And you don't have to sort it out by yourself.
 
 If you'd like to talk with someone who isn't going to rush you or run a pitch, I'm glad to have a real, private conversation about what you're looking for and whether what I'm doing even fits. If it doesn't, I'll tell you that too.
 
-[CALENDAR LINK]
+[Book a 15 minute call with me](https://link.switchtoamerica.com/widget/bookings/maketheswtch)
+
+[Take the free home scan](https://scan.ismyhometoxic.com/now/)
 
 However you move forward, I hope your next chapter is one where the people at the top remember who did the work.
 ```
 
 ---
 
-Both posts written using only the verified event facts (Forever Living US enrollment ended May 1, 2026, legacy bonuses frozen; Sipology closed April 2026, commissions unpaid). No income figures, no "$1.5M," no earnings promises, no "fire your boss" framing, no company-bashing beyond the factual event, no emoji, and no em- or en-dashes anywhere. Each includes title, slug, meta_description, and full markdown body, ending on a soft [CALENDAR LINK] CTA to a private conversation.
+
+> **Shannon's Advice**
+>
+> I do not call them grocery stores. They are poison centers meant to do you and your family
+> harm. It is not just the brands who are doing the harm, it is the stores themselves. They allow
+> these toxic products on their shelves. People are sick and dying. This is a very serious matter.
+> How can we ever trust them again?
+>
+> We can't trust them. That is where Switch to America comes in. We are a new supply chain, built
+> on family values, trust and affordability.
+>
+> You do not have to take my word for it. The proof is in my blog posts, the recalls, the lawsuits
+> and the fines, and in the app I built called The Family Home Toxic Scorecard. Also, inside my
+> Switch Circle private community, we talk about real solutions.
+>
+> Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they never
+> wanted. I have spent the last 15 years helping women get off prescription medications. I help
+> families reclaim their health.
+>
+> We cannot stop them. I have stopped expecting to. However, we can stop walking into their
+> stores. We are linking arms and together taking our control back. Control of our health and our
+> finances.
+>
+> Start by clicking the link below and taking the SCAN.
