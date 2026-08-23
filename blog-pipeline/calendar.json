@@ -1,0 +1,859 @@
+{
+ "start": "2026-08-24",
+ "days": 30,
+ "per_day": 2,
+ "calendar": [
+  {
+   "date": "2026-08-24",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-head-and-shoulders-safe",
+     "title": "Is Head and Shoulders Safe? What Is In Dandruff Shampoo (2026)",
+     "cat": "Personal Care",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-45-too-late-to-start-something-new",
+     "title": "Is 45 Too Late To Start Something New?",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-25",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-sunscreen-safe",
+     "title": "Is Sunscreen Safe? What Goes Through the Skin at the Beach (2026)",
+     "cat": "Personal Care",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-your-lipstick-safe",
+     "title": "Is Your Lipstick Safe? What Ends Up On Your Lips All Day (2026)",
+     "cat": "Beauty",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-26",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "are-baby-wipes-safe",
+     "title": "Are Baby Wipes Safe? What You Are Wiping On a Baby Ten Times a Day (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "amazon-cut-your-affiliate-commission-now-what",
+     "title": "Amazon Cut Your Affiliate Commission. Now What? (2026)",
+     "cat": "Builders",
+     "why": "This is the single highest-intent audience owner on the internet right now: she has proven distribution, proven trust with a buying audience",
+     "perish": 0,
+     "keyword": "amazon affiliate commission cut 2026",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-27",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "are-canned-foods-lined-with-bpa",
+     "title": "Are Canned Foods Lined With BPA? What Is On the Inside of the Tin (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "are-food-dyes-still-legal",
+     "title": "Are Food Dyes Still Legal in American Food? What Is In the Snack Cupboard (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-28",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "are-baking-mixes-healthy",
+     "title": "Are Pancake and Baking Mixes Actually Healthy? What Is In the Box (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "sipology-closed-what-consultants-can-do-next",
+     "title": "For the Sipology Consultants Left Holding the Bag",
+     "cat": "Builders",
+     "why": "draft exists, needs your review",
+     "perish": 0,
+     "keyword": "",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-29",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "are-plastic-cutting-boards-safe",
+     "title": "Are Plastic Cutting Boards Safe? What Comes Off With the Carrots (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "are-amazon-supplements-real",
+     "title": "Are the Supplements on Amazon Real? The Counterfeit Problem Nobody Talks About (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-30",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-antiperspirant-safe",
+     "title": "Is Antiperspirant Safe? What Aluminum Is Doing Under Your Arms (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating In It (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-08-31",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-crest-toothpaste-safe",
+     "title": "Is Crest Toothpaste Safe? The Second Half of the Fluoride Question (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "forever-living-ended-us-enrollment-what-next",
+     "title": "Is Forever Living Shutting Down? What US Distributors Should Do Next (2026)",
+     "cat": "Builders",
+     "why": "A decaying asset that is already drafted. Every week it sits unpublished, more of that search demand disappears and more of those FBOs land ",
+     "perish": 0,
+     "keyword": "is forever living shutting down",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-01",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Bad for Kids? What Is In the Bottle on the Sideline (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-02",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-johnsons-baby-shampoo-safe",
+     "title": "Is Johnsons Baby Shampoo Safe? What Is In the Yellow Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "direct-sales-companies-that-shut-down-2026",
+     "title": "Which Direct Sales Companies Shut Down in 2026? And How to Vet the Next One",
+     "cat": "Builders",
+     "why": "Displaced leaders are the highest-skill recruits alive. They already know how to enroll, follow up, train a newcomer, and hold a group toget",
+     "perish": 0,
+     "keyword": "direct sales companies that shut down 2026",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-03",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What You Are Putting on Your Kids Every Night (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe for Babies? What Petroleum Jelly Actually Is (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-04",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "am-i-being-pushed-out-of-my-job-at-50",
+     "title": "Am I Being Pushed Out of My Job at 50? (2026)",
+     "cat": "Builders",
+     "why": "Catches her while she still has income to invest and a runway to build on, which is a far better starting condition than catching her after ",
+     "perish": 1,
+     "keyword": "being pushed out of my job at 50",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-05",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "red-dye-40-mars-broken-promise",
+     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Should You Give a Child Cough Syrup? What the FDA Actually Says (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-06",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "are-cheap-aluminum-pans-safe",
+     "title": "Are Cheap Aluminum Pans Safe? The Lead Recall That Hit More Than 30 States (2026)",
+     "cat": "Kitchen",
+     "why": "Town Food Service Equipment Co Inc. It put its own brand name on aluminum sauce pans that FDA found would leach lead into food, and those pans were already in kitchens across more than thirty states before anyone pulled them.",
+     "perish": 1,
+     "keyword": "aluminum pans lead recall",
+     "felt": "The small saucepan is the one she actually uses, every single day, for the eggs and the oatmeal and the one portion of soup now that the house is quieter than it used to be. She has never once thought about what the pan is made of.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "are-flushable-wipes-actually-flushable",
+     "title": "Are Flushable Wipes Actually Flushable? (2026)",
+     "cat": "Bathroom",
+     "why": "Kimberly-Clark, which marketed wipes under Cottonelle, Scott, Huggies Pull-Ups, Poise and Kotex as flushable and safe for plumbing, and charged a premium for the word, while plaintiffs said the wipes clogged pipes, septic systems and sewer lines. It fought the case for more than a decade.",
+     "perish": 1,
+     "keyword": "are flushable wipes safe for septic",
+     "felt": "She keeps the wipes on the back of the toilet now. Between menopause and the extra trips at 2 a.m., regular paper stopped being enough, and this was the small dignity she bought herself. Then the plumber quoted her hundreds of dollars on a fixed income and told her what he pulled out of the line.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-07",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "are-k-cups-really-recyclable",
+     "title": "Are K-Cups Really Recyclable? (2026)",
+     "cat": "Kitchen",
+     "why": "Keurig Dr Pepper. In its annual reports it told investors that testing with recycling facilities validated that K-Cup pods can be effectively recycled, while leaving out that two of the largest recycling companies in the country had already told Keurig they had significant concerns about curbside recycling of pods and did not intend to accept them.",
+     "perish": 1,
+     "keyword": "are k cups recyclable",
+     "felt": "She makes two pods a day, every day, and she has spent years peeling the lid, rinsing the cup and putting it in the blue bin because she was told that was the responsible thing to do. That is roughly 700 small acts of care a year, done on a promise.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "how-to-tell-if-a-business-opportunity-is-legit",
+     "title": "How Do You Tell a Real Business Opportunity From a Repackaged Course? (2026)",
+     "cat": "Builders",
+     "why": "This is the last search she runs before she books or walks, so it intercepts the decision itself. It is also the only post on this list that",
+     "perish": 1,
+     "keyword": "how to tell if a business opportunity is legit",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-08",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "are-makeup-remover-wipes-safe",
+     "title": "Are Makeup Remover Wipes Safe? What Kenvue Found in a Neutrogena Lot (2026)",
+     "cat": "Beauty",
+     "why": "Kenvue Brands LLC, the company spun out of Johnson and Johnson that now owns Neutrogena. Its own internal quality testing turned up the bacteria, which means the testing worked and the manufacturing did not.",
+     "perish": 1,
+     "keyword": "neutrogena wipes recall",
+     "felt": "It is eleven at night and she is too tired to stand at the sink and do it properly, so she drags the wipe across her closed eyes and her mouth and goes to bed. That is the whole ritual, and it happens on the thinnest skin on her body.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "are-plastic-bags-actually-recyclable",
+     "title": "Are Plastic Bags Actually Recyclable? (2026)",
+     "cat": "Kitchen",
+     "why": "Novolex Holdings, Inteplast Group and Mettler Packaging, three of the biggest bag manufacturers in the country, which sold bags marketed as recyclable under California law and then could not show that recycling facilities were actually processing them. Four more producers had already settled the same claims months earlier.",
+     "perish": 1,
+     "keyword": "are plastic bags actually recyclable",
+     "felt": "She has a drawer or a bin stuffed with bags and she gets down on the kitchen floor to sort them, then carries them back to the grocery store bin, because she was raised not to waste and because she wants to leave the place better than she found it. Her back is not what it was. She wants to know the trip meant something.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-09",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "are-store-brand-eye-drops-safe",
+     "title": "Are Store Brand Eye Drops Safe? What Got Pulled From Walgreens, CVS and Kroger (2026)",
+     "cat": "Bathroom",
+     "why": "K.C. Pharmaceuticals, Inc. of Pomona, California. It does not sell under its own name. It fills the bottles that carry the Walgreens, CVS, Kroger, Rite Aid, Equate, DG Health, TopCare, Good Sense, Leader, Good Neighbor Pharmacy, Harris Teeter, Publix, Meijer, H-E-B, Foster and Thrive and GeriCare labels. FDA put its sterility failures in writing in a 2023 warning letter and the firm recalled 397,430 bottles that same year. Three years later it recalled eight times that number for the same category of failure.",
+     "perish": 1,
+     "keyword": "eye drops recall 2026",
+     "felt": "Her eyes started burning and blurring by mid afternoon somewhere around 48 and nobody warned her that dry eye arrives with everything else. The cheap store brand bottle lives in her purse and she uses it two or three times a day, straight onto the surface of her eye.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "how-much-should-a-50-year-old-woman-have-saved",
+     "title": "How Much Should a 50-Year-Old Woman Have Saved? The Honest Answer (2026)",
+     "cat": "Builders",
+     "why": "Highest search volume on this list and the deepest 11pm fear for her exact demographic. It also justifies a second income line without any i",
+     "perish": 1,
+     "keyword": "how much should a 50 year old woman have saved for retirement",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-10",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "does-laminate-flooring-off-gas-formaldehyde",
+     "title": "Does Laminate Flooring Give Off Formaldehyde? (2026)",
+     "cat": "Home air",
+     "why": "Lumber Liquidators. After a 60 Minutes investigation aired on March 1, 2015, the company told investors in a regulatory filing that its Chinese-made laminate complied with California's formaldehyde emission limits. The California Air Resources Board had already informed the company in 2013 and 2014 that samples pulled from its own California stores failed formaldehyde testing.",
+     "perish": 1,
+     "keyword": "does laminate flooring off gas formaldehyde",
+     "felt": "She put that floor in herself, or paid to have it done, back when the house needed to look like she had it together. Now the windows stay shut from November to March and her eyes water and her throat is scratchy every winter, and she has been calling it allergies for ten years.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "does-prevagen-actually-work",
+     "title": "Does Prevagen Actually Work? (2026)",
+     "cat": "Supplements",
+     "why": "Quincy Bioscience. It put clinically shown to improve memory on the package starting around 2011 and took it to national television and radio in 2013, and kept the claim running through seven years of litigation. Internal company documents produced at trial showed the jellyfish protein is rapidly digested and unlikely to reach the brain at all.",
+     "perish": 1,
+     "keyword": "does prevagen actually work",
+     "felt": "She walks into the kitchen and cannot remember why. It happens three times a week now and nobody tells her anything except that it is just her age, so when she sees the box at the pharmacy counter promising her memory back she picks it up, because the alternative is being scared.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-11",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "does-woolite-revive-colors",
+     "title": "Does Woolite Really Revive Your Colors? (2026)",
+     "cat": "Laundry",
+     "why": "Reckitt Benckiser, which sold Woolite Gentle Cycle and Woolite Darks under the words \"Color Renew\" and \"revives colors,\" charging for a promise that clothes would come out of the wash better than they went in. It paid millions rather than prove the claim.",
+     "perish": 1,
+     "keyword": "woolite color renew lawsuit",
+     "felt": "She is not buying new clothes the way she used to. The good sweater and the black pants have to last, so she pays the extra couple of dollars for the gentle bottle with the promise on it, and then watches the black go grey anyway and quietly blames her washing machine or herself.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-did-my-blog-traffic-drop-2026",
+     "title": "Why Did My Blog Traffic Drop in 2026? And What to Build Instead",
+     "cat": "Builders",
+     "why": "The largest population of newly desperate audience owners in 2026, and nobody in her category is speaking to them. These are people with lis",
+     "perish": 1,
+     "keyword": "why did my blog traffic drop 2026",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-12",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is A Keratin Treatment Safe? (2026)",
+     "cat": "Beauty",
+     "why": "GIB, LLC, trading as Brazilian Blowout. The California Attorney General settled with them on January 30, 2012 for labelling the Acai Smoothing Solution and the Professional Smoothing Solution as formaldehyde free when both released formaldehyde gas as soon as heat hit them. They paid $600,000, half of it Proposition 65 civil penalties. The words on the bottle were the lie, not the fine print inside it.",
+     "perish": 1,
+     "keyword": "is keratin treatment safe",
+     "felt": "The frizz got worse after forty-five and the humidity wins every single morning. Three hours in the chair and a treatment that costs more than her last pair of good shoes buys her twelve weeks of hair that behaves. She sat in that chair with her eyes watering and the stylist opened a window and neither of them said anything about it.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-angry-orange-stain-remover-safe",
+     "title": "Is Angry Orange Stain Remover Safe? What Was Growing in 1.5 Million Bottles (2026)",
+     "cat": "Cleaning",
+     "why": "Thrasio, the holding company that bought the Angry Orange brand. It kept the product on shelves at Walmart, Target, Home Depot, Meijer, Staples, TJ Maxx, Amazon, Chewy and its own site from March 2019 all the way through December 2025 before the recall landed.",
+     "perish": 1,
+     "keyword": "angry orange recall",
+     "felt": "The dog had an accident on the carpet again and she is down on her knees with the windows shut, spraying and scrubbing with her face maybe eighteen inches from the wet patch, breathing it the whole time.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-13",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-antibacterial-hand-soap-safe",
+     "title": "Is Antibacterial Hand Soap Safe? (2026)",
+     "cat": "Bathroom",
+     "why": "Henkel's Dial. When the FDA pulled triclosan off the market, Dial Complete reformulated with benzalkonium chloride, one of exactly three ingredients the FDA had just set aside because nobody had submitted the safety and effectiveness data, and kept the word Antibacterial on the front of the pump.",
+     "perish": 1,
+     "keyword": "is antibacterial soap safe",
+     "felt": "Her hands split at the knuckles every winter and bleed when she makes a fist, and she has been told it is her age and the dry air. She washes them thirty times a day at a sink where the pump promises to kill 99.99% of germs, and she has never once thought of that bottle as part of the problem.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "cat": "Beauty",
+     "why": "Amazon, which kept facilitating sales of skin creams into California that carried mercury far above the federal limit. Under the settlement Amazon has to build a suppression rule to block high-mercury listings, hire an independent product consultant, and maintain a pre-approved brand list. The state had to make it do that.",
+     "perish": 1,
+     "keyword": "is it safe to buy skincare on amazon",
+     "felt": "She is watching brown patches come up on her cheeks and along her jaw and everybody tells her it is hormones and it is just her age. So she searches for something for dark spots, reads the reviews, and orders it from the place she orders everything from, because if it is on Amazon somebody must have checked it.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "cat": "Cleaning",
+     "why": "Rust-Oleum Corporation, which put \"Non-Toxic\" and \"Earth Friendly\" on the front of Krud Kutter cleaners for nine years, then agreed under a court-approved settlement to permanently strip \"Non-Toxic\" off the package and bury a qualifier behind an asterisk on \"Earth Friendly\" rather than defend the words at trial.",
+     "perish": 1,
+     "keyword": "is krud kutter non toxic",
+     "felt": "She reaches for the bottle that says non-toxic because her hands crack open every winter now and her chest gets tight after she scrubs the shower. She is not being fussy. She is 54 and her body reacts to things it never used to react to, and she picked that bottle specifically to be safe.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45? (2026)",
+     "cat": "Builders",
+     "why": "This is the exact avatar in her own words, made searchable. A capped high earner has money, discipline, a professional network, and a very s",
+     "perish": 1,
+     "keyword": "why did my salary stop increasing",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-15",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "cat": "Bathroom",
+     "why": "L'Oreal USA. New York capped 1,4-dioxane in personal care at 1 ppm. Instead of meeting it, L'Oreal USA applied to the state for waivers on 69 salon products and got them, listing Redken All Soft Shampoo at 4.5 ppm, Redken Color Extend Graydiant at 3.67 ppm, Kerastase Densifique Women Bain at 4.6 ppm, and L'Oreal Professionnel Serie Expert Volumetry at 7.23 ppm. That is seven times the legal limit, in writing, on a government form, signed by the company.",
+     "perish": 1,
+     "keyword": "is redken shampoo safe",
+     "felt": "Her hair changed. It went dry and flat and the gray came in wiry, so she stopped buying the drugstore bottle and started paying thirty-eight dollars at the salon because the stylist said the cheap stuff was the problem. She has been buying safety. That is what the price tag was for.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "cat": "Cleaning",
+     "why": "Bayer, which owns Monsanto. Rather than defend the warning label, it has been backing state legislation declaring that a federally approved pesticide label satisfies any duty under state law to warn customers, which takes the failure-to-warn claim off the table before anyone can file it.",
+     "perish": 1,
+     "keyword": "is roundup safe",
+     "felt": "There is a jug in her garage she has been dragging out every spring for twenty years to hit the cracks in the driveway and the fence line, in flip flops, bare-handed, on a windy day, because that is how everybody's mother did it.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-16",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
+     "cat": "Cleaning",
+     "why": "Star Brands Manufacturing Ltd, the maker of Stardrops The Pink Stuff. Their Miracle Wash-Up Spray sits on New York's approved waiver register at 4.5 ppm of 1,4-dioxane against a 1 ppm legal limit, and it is on the final waiver tier, the one running December 31, 2024 through December 30, 2025. Two earlier compliance deadlines had already come and gone and they were still asking for an exemption in the last year the state offered one.",
+     "perish": 1,
+     "keyword": "is the pink stuff safe",
+     "felt": "Every woman she knows bought the pink tub because of a video. It got the scorch off the glass oven door and the gray marks off the sink and it felt like a small win in a house that has been quietly getting away from her. Nobody told her it was chemistry. It looked like pink icing in a tub.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-do-women-owned-businesses-stay-small",
+     "title": "Why Do Women-Owned Businesses Stay Small? (2026)",
+     "cat": "Builders",
+     "why": "Women who already own something have proven they will do hard work without a boss, which is the single hardest trait to screen for. They als",
+     "perish": 1,
+     "keyword": "why do women owned businesses stay small",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-17",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "cat": "Home air",
+     "why": "Gree, and specifically the two California executives of its U.S. importer, Gree USA. By September 2012 they had reports and test results showing the dehumidifiers were defective and could catch fire. They kept selling them and said nothing to the safety commission for at least six months. Federal law says report immediately.",
+     "perish": 1,
+     "keyword": "dehumidifier fire recall",
+     "felt": "She runs a dehumidifier in the basement or the bedroom all night, every night, because the damp makes her joints ache and sets off her sinuses, and because she is trying to keep mold out of a house she has lived in for twenty years. It hums under the floor while she sleeps and she has never once thought about it.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "cat": "Supplements",
+     "why": "eSupplements, LLC, doing business as Nutricost, which sold Magnesium Glycinate printed \"420 MG per serving\" on the front of the bottle when, plaintiffs allege, the capsules held far less than that. Not a contaminant. Not an ingredient debate. The number on the front of the bottle.",
+     "perish": 1,
+     "keyword": "magnesium glycinate lawsuit label",
+     "felt": "She started taking magnesium for the 3 a.m. wake-ups, the leg cramps that jerk her out of sleep, and the low hum of anxiety her doctor waved off as just her age. She takes it faithfully every night. It is not working, and she has spent a year assuming the problem is her body.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-18",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "why-did-clorox-pay-a-14-million-fine",
+     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
+     "cat": "Cleaning",
+     "why": "The Clorox Company. CPSC charged it with knowingly failing to report a hazard it was legally required to report immediately. Its own microbiologists wrote the problem down in early 2019. Consumers did not hear about it until October 2022.",
+     "perish": 1,
+     "keyword": "clorox fine pine sol",
+     "felt": "That smell is the one her mother used. It is the smell that meant the floors were done and the house was safe and she had held it together for another week. She bought it on trust, not on research.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-is-my-coaching-business-stuck",
+     "title": "Why Is My Coaching Business Stuck at the Same Revenue Every Year? (2026)",
+     "cat": "Builders",
+     "why": "Coaches are the fastest-converting audience owner there is: they already have trust with a group of women who buy on their recommendation, w",
+     "perish": 1,
+     "keyword": "why is my coaching business not growing",
+     "felt": "",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-19",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? (2026)",
+     "cat": "Food",
+     "why": "Cal-Maine Foods, the largest egg producer in America, along with Hickman's Egg Ranch and Versova. The Justice Department alleges they coordinated their bidding to push up the daily Urner Barry price quotation that sets what grocery stores pay for billions of eggs a year, including flooding the market with bids in the hours right before the quote published and placing bids unlikely to ever become real trades.",
+     "perish": 1,
+     "keyword": "why are eggs so expensive",
+     "felt": "She stands in front of the egg case doing math. Eggs were the one cheap protein she could still count on, the thing she made when the week ran long and her knees hurt too much to cook properly. She assumed it was bird flu and she assumed there was nothing to be done about it.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "window-air-conditioner-mold-recall",
+     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
+     "cat": "Home air",
+     "why": "GD Midea Air-Conditioning Equipment Co. Ltd. of China. It built one unit and sold it under ten different names, so a woman who deliberately avoided the Chinese brand still bought the same machine: Midea, Frigidaire, Danby, Insignia, Keystone, Mr. Cool, Perfect Aire, Comfort Aire, Sea Breeze and LBG Products. CPSC found the design let water pool inside instead of draining, which is what grew the mold.",
+     "perish": 1,
+     "keyword": "window air conditioner mold",
+     "felt": "Every summer she wakes with a sore throat, a stuffy head and that heavy tired that coffee does not fix, and every summer she calls it allergies or getting older. The unit blowing on her while she sleeps has been in that bedroom window since 2020.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-20",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "why-was-the-laundress-recalled-twice",
+     "title": "Why Was The Laundress Recalled Twice? (2026)",
+     "cat": "Laundry",
+     "why": "Conopco Inc., doing business as Unilever, maker of The Laundress. The brand was built on being the careful, gentle, premium choice and sold through Target, Nordstrom, Saks Fifth Avenue and Bloomingdale's, and it had to recall the same product line twice inside four months.",
+     "perish": 1,
+     "keyword": "the laundress recall",
+     "felt": "She paid four times the drugstore price for the pretty glass bottle because her skin got reactive somewhere around 48 and she decided the good sheets and her own body were worth the upgrade. She bought careful. Careful is what she thought she was paying for.",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-21",
+   "weekday": "Mon",
+   "slots": []
+  },
+  {
+   "date": "2026-09-22",
+   "weekday": "Tue",
+   "slots": []
+  }
+ ],
+ "shortfall": 5,
+ "blocked": [
+  {
+   "slug": "is-fabuloso-toxic",
+   "title": "Is Fabuloso Toxic? What the Recall Was Actually For, and What Is Still in the Bottle (2026)",
+   "why": "written but 6 photographs are still missing from the file, so the publisher will refuse it"
+  },
+  {
+   "slug": "cookie-vs-customer",
+   "title": "Cookie vs Customer: What the Affiliate Repricing Taught Every Creator",
+   "why": "the draft names the wellness company by name in its closing paragraph, which is a hard brand violation. Fix before it is scheduled."
+  }
+ ],
+ "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
+}
