@@ -83,6 +83,17 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       claim is the hyperlinked receipt, not a softener, so the proof section matters more.
 - [ ] **0.6b NO DISCLAIMERS.** The not-a-doctor line is banned outright, in every form. The
       only real line is never writing an instruction telling a reader to stop a medication.
+- [ ] **0.0 READ THE CANON FIRST.** Before writing a word, read
+      `blog-pipeline/COPYWRITING-CANON.md`. It is the definitive list of the 21 copywriting
+      documents in Shannon's Obsidian vault plus the 70 rules pulled out of them, each carrying
+      the line it came from so it can be checked rather than trusted.
+
+      > Shannon, 2026-08-23: *"What are all the documents in Obsidian that refer to copywriting
+      > and gary halbert? Do you have that list? The list you need to read (Not surface read)
+      > but read deeply to understand before you write blog posts."* I had read 8 of 21. The
+      > canon file exists so that gap cannot happen again. Read the SOURCES themselves when a
+      > rule is unclear, or roughly monthly, because a distillation always loses something.
+
 - [ ] **0.7 Kill the AI tells.** No jargon openings, no rule-of-three tricolons, no
       hedging, no "it's not just X, it's Y". Ground every specific in Shannon's REAL
       lived detail, never an invented one. (`sta-blog-voice-guide`)
