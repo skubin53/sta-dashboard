@@ -54,7 +54,7 @@
 </div>
 
 <h2>What This System Is</h2>
-<p>Switch to America runs a shopper funnel that converts warm leads into enrolled members of the private membership store (the wellness company Shannon cannot name publicly). This funnel has five steps. Each step prepares the person for the next. The final step is a personal phone call — a shopping audit — where Shannon or Stacy walks them through swapping their home products and enrolls them.</p>
+<p>Switch to America runs a shopper funnel that converts warm leads into enrolled members of the private membership store (Melaleuca, which is never named publicly). This funnel has five steps. Each step prepares the person for the next. The final step is a personal phone call — a shopping audit — where Shannon or Stacy walks them through swapping their home products and enrolls them.</p>
 <p>Cameron's job in this system is to move leads through the steps, book the phone calls, and keep Shannon's calendar filled — without Shannon having to manage it manually.</p>
 
 <h2>The Five Steps</h2>
@@ -172,7 +172,7 @@
 <div class="step-card">
   <h3><span class="step-num">5</span>Membership Store Enrollment</h3>
   <p><strong>What it is:</strong> The end of the shopper path. After the shopping audit phone call, the prospect enrolls as a member of the private membership store.</p>
-  <p><strong>The company name rule:</strong> Shannon cannot name the company (Melaleuca) in any public-facing content, ever. In all public content it is "The Wellness Company" or "the private membership store." The company name is revealed only on the phone call — never in an SMS, never in an email, never in a DM to a cold prospect.</p>
+  <p><strong>The company name rule:</strong> Shannon cannot name the company (Melaleuca) in any public-facing content, ever. In all public content say "Switch to America". NEVER "the wellness company", Shannon 2026-08-23: "it sounds like an MLM". "Private membership store" is fine as a description of the model. The company name is revealed only on the phone call — never in an SMS, never in an email, never in a DM to a cold prospect.</p>
   <p><strong>Cameron's role here:</strong> None. Melaleuca handles fulfillment, payments, and customer accounts directly. This is Shannon's domain on the call.</p>
 </div>
 
@@ -226,7 +226,7 @@
     <li><strong>Never re-enrolls a booked contact</strong> in reminder workflows. Check has_upcoming_appointment before doing anything.</li>
     <li><strong>Never deletes and recreates appointments.</strong> That fires every new-contact workflow. Update in place via PUT.</li>
     <li><strong>Never invites existing enrolled customers</strong> to a shopping audit. Check tags, pipeline, and dateEnrolled first.</li>
-    <li><strong>Never names the wellness company publicly.</strong> It is "The Wellness Company" or "private membership store" in all outbound messages.</li>
+    <li><strong>Never names Melaleuca publicly.</strong> It is "Switch to America" in all outbound messages. NEVER "the wellness company", which Shannon banned on 2026-08-23 because "it sounds like an MLM". "Private membership store" is fine as a description.</li>
     <li><strong>Never sends to Stacy's contacts once she has taken over the thread.</strong> Stacy owns the reply. Cameron stays out.</li>
     <li><strong>Never sends emojis in SMS except one yellow heart (💛) early in the body.</strong> Emojis cost extra (UCS-2 encoding). Zero emoji default on all other messages.</li>
   </ul>
@@ -591,7 +591,7 @@
 
 <table>
   <tr><th>Rule</th><th>Detail</th></tr>
-  <tr><td><strong>Melaleuca brand blackout</strong></td><td>Never name "Melaleuca" in any public-facing content, SMS, email, or bot message. Use "The Wellness Company" or "private membership store." Company name revealed only on the 1-on-1 call.</td></tr>
+  <tr><td><strong>Melaleuca brand blackout</strong></td><td>Never name "Melaleuca" in any public-facing content, SMS, email, or bot message. Say "Switch to America". NEVER "the wellness company". "Private membership store" is fine. Company name revealed only on the 1-on-1 call.</td></tr>
   <tr><td><strong>FTC income claims</strong></td><td>Every income testimonial needs a substantiation file and FTC-compliant disclosure language. Shannon's $700K / $12K-month / $8.5K-month testimonials require disclosures before further amplification.</td></tr>
   <tr><td><strong>FTC health claims</strong></td><td>No cancer, asthma, or cardiovascular efficacy claims without substantiation. "Linked to" / "flagged by" / "restricted in EU" — yes. "Causes" / "treats" / "prevents" — never.</td></tr>
   <tr><td><strong>No EWG citations</strong></td><td>Never cite EWG publicly. Approved sources only: EPA, FDA, ATSDR, CDC, NTP, IARC, Prop 65, peer-reviewed journals.</td></tr>

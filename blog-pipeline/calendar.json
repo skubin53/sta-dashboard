@@ -845,14 +845,9 @@
  "shortfall": 5,
  "blocked": [
   {
-   "slug": "is-fabuloso-toxic",
-   "title": "Is Fabuloso Toxic? What the Recall Was Actually For, and What Is Still in the Bottle (2026)",
-   "why": "written but 6 photographs are still missing from the file, so the publisher will refuse it"
-  },
-  {
    "slug": "cookie-vs-customer",
    "title": "Cookie vs Customer: What the Affiliate Repricing Taught Every Creator",
-   "why": "the draft names the wellness company by name in its closing paragraph, which is a hard brand violation. Fix before it is scheduled."
+   "why": "the draft names Melaleuca outright in its closing paragraph, which is a hard brand violation. Fix that paragraph before it is scheduled."
   }
  ],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."

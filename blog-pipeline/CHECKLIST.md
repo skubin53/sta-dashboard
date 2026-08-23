@@ -13,6 +13,10 @@ If this file and any of those disagree, **this file wins** and go fix the other 
 
 Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) -> D (links) -> E (post-publish)**
 
+**THE LAST THING YOU DO, EVERY TIME, IS REFRESH THE BLOG DESK:**
+### https://scan.ismyhometoxic.com/blog-desk/#cal
+`python C:/Users/skubi/sta-tools/blog-desk.py --check --live` (full detail at gate E6)
+
 ---
 
 ## THE THREE THINGS THAT MATTERED MOST (2026-07-31 audit)
@@ -49,8 +53,26 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       - **NEVER "read the label" as the fix.** Not even "look for a short list you
         recognise." You cannot read your way out; the label is the lie. Contrast the
         COMPANY and your trust, never label contents.
-- [ ] **0.5 Never write the word "Melaleuca."** Use "the wellness company" or
-      "private membership store."
+- [ ] **0.5 Never write the word "Melaleuca."** And **never write "the wellness
+      company" either.** Say **Switch to America**.
+
+      > **Changed 2026-08-23. Shannon:** *"never publish wellness company. it sounds like
+      > an MLM - please fix that."* She is right and the old rule here was the thing
+      > generating it. A coy euphemism for a company you will not name IS the MLM tell.
+      > Refusing to say who you are is what makes a reader suspicious, not the name itself.
+      >
+      > **Say the brand: Switch to America.** That is hers, she owns it, and it is the
+      > thing she actually wants people to remember. Her own reel script does exactly
+      > this: *"We are Switch to America. We are the manufacturer with over 500 products.
+      > No middlemen. No markup."*
+      >
+      > **"Private membership store" is still fine**, because it describes how the thing
+      > works rather than dodging its name. So is "a new supply chain", "we are the
+      > manufacturer", "no middlemen, no markup".
+      >
+      > Nothing published carries the banned phrase. All 29 live posts were curled and
+      > checked on 2026-08-23 and came back clean. `blog-gates.py` gate 0.5b now fails
+      > the build if it ever appears.
 - [ ] **0.6 No em-dashes, no en-dashes, no `&mdash;`.** Commas, periods, "to".
       Shannon reads them as an AI tell.
 - [ ] **0.6a NO HEDGES, ANYWHERE.** Never "in my opinion", "I think", "I believe",
@@ -307,6 +329,33 @@ Added 2026-08-12 after two posts went live missing all three.
       **This is a GHL UI job, not an API job.** See the platform-traps table: replacing
       the body of an already-live post over the API 404s it. Open the older post in the
       GHL blog editor, add the `<li>` to its Keep reading list, save.
+
+- [ ] **E6 REFRESH THE BLOG DESK. THIS IS THE LAST STEP OF EVERY PUBLISH.**
+
+      ### https://scan.ismyhometoxic.com/blog-desk/#cal
+
+      Shannon, 2026-08-23: *"ON your checklist put this link. As a step at the end. Make sure
+      to update it with the blog posts as they are being published."*
+
+      ```bash
+      python C:/Users/skubi/sta-tools/blog-desk.py --check --live
+      ```
+
+      `--check` re-curls every slug against the live blog so the post you just published
+      moves from "ready to publish" into "published" on its own. `--live` commits and pushes
+      it. GitHub Pages takes a minute or two, so a 404 straight after the push is normal.
+
+      **Do not skip this because the numbers "look right".** The whole reason this page exists
+      is that the folders lie: four live posts had no record in `published/` at all and were
+      only found by curling the blog. If the desk is not refreshed, it keeps showing a post as
+      pending after it has gone live, and the next session works off a stale board.
+
+      If the calendar itself needs rebuilding (a topic changed, a slot was filled, new photo
+      requests are needed), that is a separate script and it also pushes:
+
+      ```bash
+      python C:/Users/skubi/sta-tools/build-calendar.py --live
+      ```
 
 ---
 
