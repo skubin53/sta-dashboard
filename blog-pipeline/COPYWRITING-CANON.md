@@ -848,6 +848,16 @@ sort-line; only the sentence is  One per post, and never before the capsule
 
 **Close every post with a P**.
 
+> **OVERRULED BY SHANNON, 2026-08-24.** *"Take the PS out going forward. It has no place in a
+> blog really."* The two P.S. rules below (the single dated-detail close, and the three-rung
+> P.S./P.P.S./P.P.P.S. ladder) are DEAD on the blog. Do not write a P.S. block on any post. The
+> post ends on the who-you-become section, then the closing scan CTA block, and stops. Both rules
+> came from sales-letter sources, where the P.S. is the second most-read element on a long letter
+> nobody scrolls; a blog post is not that. Everything else those two entries teach still stands
+> (hold one receipt back, land the withheld fact, close on a real dated specific), it just has to
+> live inside the body or the closing CTA instead.
+
+
 S  block placed after the final scan CTA  Build it on ONE specific, dated, physical detail from
 Shannon's own life (an actual month, an actual place, an actual span of time: "I stood at my
 kitchen window for almost an hour one Tuesday in March"), then the ask, then stop  Never recap
@@ -1666,6 +1676,16 @@ file's logic is "If this person could do it, you definitely can." So she is the 
 the stuff for fifteen years and kept a case of it under the sink, never the woman who always knew.
 
 ### The P
+
+> **OVERRULED BY SHANNON, 2026-08-24.** *"Take the PS out going forward. It has no place in a
+> blog really."* The two P.S. rules below (the single dated-detail close, and the three-rung
+> P.S./P.P.S./P.P.P.S. ladder) are DEAD on the blog. Do not write a P.S. block on any post. The
+> post ends on the who-you-become section, then the closing scan CTA block, and stops. Both rules
+> came from sales-letter sources, where the P.S. is the second most-read element on a long letter
+> nobody scrolls; a blog post is not that. Everything else those two entries teach still stands
+> (hold one receipt back, land the withheld fact, close on a real dated specific), it just has to
+> live inside the body or the closing CTA instead.
+
 
 S. is a three-rung ladder with three different jobs, not one sign-off: P.S. restates the single
 biggest benefit or core promise, P.P.S. adds urgency or scarcity, P.P.P.S. introduces new proof or

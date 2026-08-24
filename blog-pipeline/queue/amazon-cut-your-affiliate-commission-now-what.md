@@ -40,7 +40,6 @@ status: ready
 .shannons-advice a{color:#f5d888;}
 .sta-proof{background:#FBF7F0;border-left:6px solid #c8a24a;padding:18px 24px;margin:26px 0;}
 .sta-proof h3{margin:0 0 10px;color:#0B2545;}
-.sta-ps{border-top:2px solid #e3e0d8;margin-top:28px;padding-top:16px;color:#3d4a5c;line-height:1.7;}
 .sta-author{background:#FBF7F0;border-radius:10px;padding:18px 24px;margin:26px 0;}
 .sta-author h3{margin:0 0 10px;color:#0B2545;}
 .sta-keep{border-top:2px solid #e3e0d8;margin-top:30px;padding-top:18px;}
@@ -267,9 +266,7 @@ our finances.</p>
 <span class="micro">If your stuff is already fine, I will tell you that and we will hang up.</span>
 </div>
 
-<p class="sta-ps">P.S. You do not have to rebuild anything this week. You have to answer one question. Are you paid for a click, or for a person?</p>
 
-<p class="sta-ps">P.P.S. Tonight, open the Amazon updates page. Read the Onsite Commission Scope line out loud. It is one sentence. That is the whole assignment. It beats another night on the dashboard.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
