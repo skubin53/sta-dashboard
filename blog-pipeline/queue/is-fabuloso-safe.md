@@ -265,7 +265,7 @@ of our health and our finances.</p>
 <p><strong>Did anybody get sick?</strong> The notice says "None reported" under injuries. I will not claim more than that.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/is-fabuloso-safe-04.webp" alt="A family relaxed together on a clean sunlit kitchen floor in warm morning light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isfabuloso-freedom-v2.webp" alt="A woman in her forties sitting on a clean sunlit kitchen floor with her golden retriever, both relaxed" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
