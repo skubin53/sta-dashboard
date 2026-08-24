@@ -9,9 +9,9 @@ Posts with photographs already delivered are scheduled first, so the backlog dra
 
 | Date | Day | Slot | Track | Title | Photos |
 |---|---|---|---|---|---|
-| 2026-08-24 | Mon | 1 | shopper | Is Head and Shoulders Safe? What Is In Dandruff Shampoo (2026) | ready |
-| 2026-08-24 | Mon | 2 | builder | Is 45 Too Late To Start Something New? | ready |
-| 2026-08-25 | Tue | 1 | shopper | Is Sunscreen Safe? What Goes Through the Skin at the Beach (2026) | ready |
+| 2026-08-24 | Mon | 1 | shopper | Is Sunscreen Safe? What Goes Through the Skin at the Beach (2026) | PUBLISHED |
+| 2026-08-24 | Mon | 2 | builder | Is 45 Too Late To Start Something New? | PUBLISHED |
+| 2026-08-25 | Tue | 1 | shopper | Is Head and Shoulders Safe? What Is In Dandruff Shampoo (2026) | ready |
 | 2026-08-25 | Tue | 2 | shopper | Is Your Lipstick Safe? What Ends Up On Your Lips All Day (2026) | ready |
 | 2026-08-26 | Wed | 1 | shopper | Are Baby Wipes Safe? What You Are Wiping On a Baby Ten Times a Day (2026) | ready |
 | 2026-08-26 | Wed | 2 | builder | Amazon Cut Your Affiliate Commission. Now What? (2026) | NEEDED |
