@@ -1,3 +1,11 @@
+# 2026-08-24 FIX: cameron-chief-of-staff was removed from this list, for exactly the
+# same reason blog-images was on 2026-07-30. Excluding it 404'd the hero background photo
+# on theshannonnicole.com, whose CSS loads
+# skubin53.github.io/sta-dashboard/cameron-chief-of-staff/funnel/shannon-photo.jpg.
+# Shannon noticed it was gone. The folder is 0.34 MB across 5 files, so it was never the
+# size problem either; reels/ at ~772 MB was. Before excluding any folder, grep the live
+# funnels for its path first.
+#
 # 2026-07-30 FIX: blog-images was removed from this list. Excluding it was a
 # mistake - it 404'd every blog photo on the LIVE posts (the Ziploc post lost
 # all 5 images). blog-images is ~12 MB and was never the size problem; reels/
@@ -20,7 +28,6 @@ exclude:
   - blog-pipeline
   - scan-pre-promote-2026-06-20
   - scan-staging
-  - cameron-chief-of-staff
   - "*.py"
   - "*.db"
   - "*.csv"
