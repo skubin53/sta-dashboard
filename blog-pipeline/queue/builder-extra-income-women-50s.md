@@ -7,6 +7,7 @@ keyword: extra income for women in their 50s
 category: Builders
 meta_description: No promises, no screenshots. Six real options for a woman in her 50s who needs a few hundred a month, with the honest catch on every one.
 status: ready
+cover: https://scan.ismyhometoxic.com/blog-images/extraincome-hero-v1.webp
 ---
 
 <style>

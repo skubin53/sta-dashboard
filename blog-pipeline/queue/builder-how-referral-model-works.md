@@ -7,6 +7,7 @@ keyword: how does a referral model work
 category: Builders
 meta_description: No income promises, no car, no beach photo. Here is the plain mechanics of a referral model, what most people actually earn, and who it is wrong for.
 status: ready
+cover: https://scan.ismyhometoxic.com/blog-images/howreferral-hero-v1.webp
 ---
 
 <style>
