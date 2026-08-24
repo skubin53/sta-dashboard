@@ -5,7 +5,7 @@ post_title: Is Fabuloso Safe? What That Purple Clean Smell Is Really Hiding
 slug: is-fabuloso-safe
 queue_file: blog-pipeline/queue/is-fabuloso-safe.md
 beats: 3
-status: requested
+status: complete
 priority: URGENT, blocking a same-day republish
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige, NOT a white showroom kitchen. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. SHOW the real recognizable branded product, correct container shape and FRONT branding. NEVER a label-reading or ingredient-panel shot and never anyone inspecting fine print. Nano Banana Pro at 4K, two variants per beat."
 product_note: "REAL Fabuloso. The recognizable tall purple bottle with the FRONT label facing camera, Lavender purple liquid. Shannon 2026-08-11: if people do not recognise the brand they do not keep reading."
