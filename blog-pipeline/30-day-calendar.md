@@ -14,7 +14,7 @@ Posts with photographs already delivered are scheduled first, so the backlog dra
 | 2026-08-25 | Tue | 1 | shopper | Is Head and Shoulders Safe? What Is In Dandruff Shampoo (2026) | ready |
 | 2026-08-25 | Tue | 2 | shopper | Is Your Lipstick Safe? What Ends Up On Your Lips All Day (2026) | ready |
 | 2026-08-26 | Wed | 1 | shopper | Are Baby Wipes Safe? What You Are Wiping On a Baby Ten Times a Day (2026) | ready |
-| 2026-08-26 | Wed | 2 | builder | Amazon Cut Your Affiliate Commission. Now What? (2026) | NEEDED |
+| 2026-08-26 | Wed | 2 | builder | Amazon Cut Your Affiliate Commission. Now What? (2026) | ready |
 | 2026-08-27 | Thu | 1 | shopper | Are Canned Foods Lined With BPA? What Is On the Inside of the Tin (2026) | ready |
 | 2026-08-27 | Thu | 2 | shopper | Are Food Dyes Still Legal in American Food? What Is In the Snack Cupboard (2026) | ready |
 | 2026-08-28 | Fri | 1 | shopper | Are Pancake and Baking Mixes Actually Healthy? What Is In the Box (2026) | ready |
