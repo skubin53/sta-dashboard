@@ -7,6 +7,7 @@ keyword: is 45 too late to start a business
 category: Builders
 meta_description: Researchers checked the age of America's fastest growing new companies. The average founder was 45. Here is what that number does and does not mean.
 status: ready
+cover: https://scan.ismyhometoxic.com/blog-images/is45toolate-hero-v1.webp
 ---
 
 <style>
