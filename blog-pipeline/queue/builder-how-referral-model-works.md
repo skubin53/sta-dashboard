@@ -49,9 +49,11 @@ status: ready
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>You shop at a private membership store instead of a grocery store. If somebody you know does the same because of you, you earn a percentage of what they buy. That is the whole mechanic. There is no inventory in your garage and nothing to sell out of a trunk.</p>
-<p><strong>Now the part nobody puts in the graphic.</strong> Most people who start this earn a small amount and then stop. Not some. Most. I am not going to show you a number I cannot substantiate, because <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">the FTC's own guidance</a> says any earnings information has to be truthful and substantiated, and because you have been lied to enough.</p>
-<p>What I can tell you honestly is how it works, what it costs you, and who it is wrong for. That is this page.</p>
+<p>You shop at a private membership store instead of a grocery store. If someone you know does the same because of you, you earn a cut of what they buy.</p>
+<p>That is the whole thing. No boxes in your garage. Nothing to sell out of a car.</p>
+<p><strong>Now the part nobody puts in the graphic.</strong> Most people who start earn a small amount and then stop. Not some. Most.</p>
+<p>I will not show you a number I cannot back up. <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">The FTC says any earnings claim has to be true and backed up.</a> And you have been lied to enough.</p>
+<p>I can tell you how it works. What it costs. Who it is wrong for. That is this page.</p>
 </div>
 
 <div class="sta-toc">
@@ -78,15 +80,21 @@ status: ready
 
 <p class="quick-answer">Quick answer: you move your own shopping, and you get paid a percentage when other people move theirs.</p>
 
-<p>Strip the language off it and there are three moving parts.</p>
+<p>Take the fancy words off. There are three parts.</p>
 
-<p><strong>One.</strong> You buy your household goods from a private membership store instead of a big-box grocery store. Soap, laundry, cleaners, vitamins, the things that leave your house every month anyway. You were always going to buy them. The only change is where the order goes.</p>
+<p><strong>One.</strong> You buy your home goods from a private membership store, not a big box store.</p>
+<p>Soap. Laundry. Cleaners. Vitamins. The things that run out every month.</p>
+<p>You were going to buy them anyway. The only change is where the order goes.</p>
 
-<p><strong>Two.</strong> If somebody you know decides to do the same, and they signed up through you, you earn a percentage of what they spend each month. Not a one time finder's fee. A percentage, for as long as they keep shopping.</p>
+<p><strong>Two.</strong> If someone you know does the same through you, you earn a cut of what they spend each month.</p>
+<p>Not a one time fee. A cut, for as long as they shop.</p>
 
-<p><strong>Three.</strong> If one of those people goes on to do the same thing, you earn a smaller percentage on that too, several layers down. That is the part people call the pyramid, and I understand why. The honest distinction is whether money comes from products people actually use, or from the act of signing people up. If a model pays you for recruiting rather than for purchasing, walk away from it, and that is not a small technical difference. It is the whole difference.</p>
+<p><strong>Three.</strong> If one of those people does the same, you earn a smaller cut on that too. A few layers down.</p>
+<p>That is the part people call a pyramid. I get why.</p>
+<p>So here is the test. Does the money come from goods people use? Or from signing people up?</p>
+<p>If it pays you to sign people up, walk away. That is not a small point. That is the whole point.</p>
 
-<p>What is not involved: no inventory, no parties in your living room, no minimum you have to personally sell, no buying stock you then have to move.</p>
+<p>What is not part of it. No stock. No parties in your front room. No sales quota. No boxes to shift.</p>
 
 <div class="sta-cta">
 <h3>Ten minutes, and nobody pitches you</h3>
@@ -102,34 +110,41 @@ status: ready
 
 <p class="quick-answer">Quick answer: a small amount, and then most of them stop. That is the honest shape of it.</p>
 
-<p>Here is where almost every page about this starts lying, so let me be plain about what I am and am not saying.</p>
+<p>This is where most pages start lying. So let me be plain.</p>
 
-<p><strong>I am not going to give you an income figure.</strong> Not mine, not a team average, not a "some of my people make" number. Partly because I would have to be able to substantiate it in writing, and partly because a number from a woman on the internet is worth nothing to you anyway.</p>
+<p><strong>I will not give you an income number.</strong> Not mine. Not a team average. Not a "some of my people make" number.</p>
+<p>I would have to back it up in writing. And a number from a woman on the internet is worth nothing to you.</p>
 
-<p>What I will tell you is the shape, because the shape is what actually matters when you are deciding.</p>
+<p>I will tell you the shape of it. The shape is what matters.</p>
 
 <ul>
-<li><strong>Most people who start earn a small amount.</strong> Enough to cover their own order, often. That is a real outcome and for a lot of women it is the whole point.</li>
-<li><strong>Most people stop.</strong> Across this industry, roughly three out of four people who sign up are gone before long. Anyone who tells you otherwise is selling you something.</li>
-<li><strong>It builds slowly or not at all.</strong> There is no month where it suddenly goes vertical. If somebody shows you a graph that does, ask them for the disclosure statement behind it.</li>
-<li><strong>The people who do build something did it over years,</strong> usually while doing something else, and usually because they genuinely used the products first.</li>
+<li><strong>Most people earn a small amount.</strong> Often just enough to cover their own order. That is a real result, and for a lot of women it is the whole point.</li>
+<li><strong>Most people stop.</strong> In this whole trade, most who sign up are gone before long. Anyone who says different is selling you something.</li>
+<li><strong>It builds slowly, or not at all.</strong> There is no month where it shoots up. If someone shows you a chart that does, ask what is behind it.</li>
+<li><strong>The ones who did build something took years.</strong> Usually while doing another job. Usually because they used the goods first.</li>
 </ul>
 
-<p>If that reads as a bad pitch, good. It is not a pitch. It is the thing I would want said to me.</p>
+<p>If that reads like a bad pitch, good. It is not a pitch. It is what I would want said to me.</p>
 
 <h2 id="why-will-nobody-give-you-a-straight-number">Why will nobody give you a straight number?</h2>
 
-<p class="quick-answer">Quick answer: because giving you one honestly is harder than it looks, and giving you one dishonestly is now a serious problem.</p>
+<p class="quick-answer">Quick answer: an honest number is hard. A dishonest one is now a legal problem.</p>
 
-<p>The <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">FTC's business guidance on this industry</a> is blunt. Any earnings information given to a potential participant has to be truthful, substantiated and not misleading, and avoiding deception requires a clear presentation of the typical participant's revenue <em>and expenses</em>.</p>
+<p><a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">The FTC guidance on this trade is blunt.</a> Any earnings claim must be true, backed up, and not misleading.</p>
+<p>And it must show the typical person's income <em>and</em> what they spent.</p>
 
-<p>That last word is the one that quietly ends most of the numbers you have seen. Revenue is not income. A figure that leaves out what somebody spent to get there is not an honest figure.</p>
+<p>That last bit kills most of the numbers you have seen.</p>
+<p>Money in is not the same as money kept. Leave out what they spent, and it is not an honest number.</p>
 
-<p>The FTC also says plainly that sticking "results not typical" under a screenshot does not fix it. In its words, that kind of disclosure is not enough, and to count it has to be prominent, in words people understand, and placed right next to the claim it disclaims.</p>
+<p>The FTC also says the small print does not fix it. Putting "results not typical" under a screenshot is not enough.</p>
+<p>To count, it has to be big, in plain words, and right next to the claim.</p>
 
-<p>In 2024 the FTC's staff <a href="https://www.ftc.gov/business-guidance/blog/2024/09/ftc-staff-report-analyzes-70-mlm-income-disclosure-statements">read 70 of these income disclosure statements</a> and published what it found. In January 2025 it <a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-proposes-rule-changes-new-rule-deter-deceptive-earnings-claims-multilevel-marketers-money-making">proposed a new Earnings Claim Rule</a> aimed squarely at this. And in June 2026 it told businesses again to <a href="https://www.ftc.gov/business-guidance/blog/2026/06/back-those-earnings-claims-other-lessons-ftcs-labor-task-force-work">back up their earnings claims</a>.</p>
+<p>They are not done either. In 2024 FTC staff <a href="https://www.ftc.gov/business-guidance/blog/2024/09/ftc-staff-report-analyzes-70-mlm-income-disclosure-statements">read 70 of these income statements</a> and wrote up what they found.</p>
+<p>In January 2025 they <a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-proposes-rule-changes-new-rule-deter-deceptive-earnings-claims-multilevel-marketers-money-making">put forward a new Earnings Claim Rule</a>.</p>
+<p>In June 2026 they said it again: <a href="https://www.ftc.gov/business-guidance/blog/2026/06/back-those-earnings-claims-other-lessons-ftcs-labor-task-force-work">back up your earnings claims</a>.</p>
 
-<p><strong>So when somebody in this industry shows you a number, ask one question: can you substantiate that, and does it include expenses?</strong> Watch what happens to the conversation. That single question is the best filter you have, and you can use it on me.</p>
+<p><strong>So when anyone shows you a number, ask one thing. Can you back that up, and does it count what you spent?</strong></p>
+<p>Then watch what happens. That one question is the best filter you have. Use it on me too.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/howreferral-turning-point-v1.webp" alt="The same woman closing her laptop, decision made" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -141,21 +156,25 @@ status: ready
 
 <table class="sta-table">
 <tr><th>The question</th><th>The honest answer</th><th>What to watch for elsewhere</th></tr>
-<tr><td>Is there a buy-in?</td><td>There is a small membership, and then you order household goods monthly like you would anywhere else</td><td>A large upfront "starter package" you have to buy and then resell. That is inventory loading</td></tr>
+<tr><td>Is there a buy-in?</td><td>A small membership. Then you order home goods monthly, like anywhere else</td><td>A big upfront starter pack you must buy and resell. That is stock loading</td></tr>
 <tr><td>Do I have to hold stock?</td><td>No. Orders ship to the person who ordered them</td><td>Anyone whose garage is full of product they paid for</td></tr>
-<tr><td>Is there a monthly minimum?</td><td>You order what your household uses. It is a shop, not a quota</td><td>A required volume you must hit whether you need the goods or not</td></tr>
-<tr><td>Can I just be a customer?</td><td>Yes, and most people are. The income side is optional and always was</td><td>Any model where being only a customer is treated as failing</td></tr>
+<tr><td>Is there a monthly minimum?</td><td>You order what your home uses. It is a shop, not a quota</td><td>A set amount you must hit whether you need it or not</td></tr>
+<tr><td>Can I just be a customer?</td><td>Yes, and most people are. The income side is optional</td><td>Any setup where being only a shopper counts as failing</td></tr>
 </table>
 
 <h2 id="how-is-this-different-from-the-thing-your-friend-pitched-you">How is this different from the thing your friend pitched you in 2009?</h2>
 
 <p class="quick-answer">Quick answer: in one real way and one that matters less than people think.</p>
 
-<p>The way it is genuinely different: this is a shop. The money moves because households buy laundry soap and shampoo they were going to buy regardless. Nobody is being asked to sell a dream to their cousin.</p>
+<p>The real difference: this is a shop. The money moves because homes buy soap and shampoo they were buying anyway.</p>
+<p>Nobody is asked to sell a dream to their cousin.</p>
 
-<p>The way it is not different: it is still the same basic structure, and pretending otherwise would be exactly the sort of thing this page exists to stop doing. If the structure itself is the thing you object to, that is a coherent position and I am not going to argue you out of it.</p>
+<p>The way it is not different: it is still the same basic shape. Pretending it is not would be the exact thing this page exists to stop.</p>
+<p>If the shape itself is your problem, that is fair. I am not going to argue you out of it.</p>
 
-<p>What I would say is this. I did not come to this because I wanted a business. I came to it because I had spent decades keeping a non-toxic house and I was tired of the only alternative being a shelf full of things I would not put in my own home. The supply chain came first. The income came a long way after.</p>
+<p>Here is my part of it. I did not come to this wanting a business.</p>
+<p>I had kept a non toxic house for decades. I was tired of the only other choice being a shelf of things I would not use.</p>
+<p>The supply chain came first. The income came long after.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/howreferral-belonging-v1.webp" alt="Two women talking over coffee, one showing the other something on a phone" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -166,10 +185,10 @@ status: ready
 <p class="quick-answer">Quick answer: more people than any recruiter will ever tell you.</p>
 
 <ul>
-<li><strong>Anyone who needs money this month.</strong> This is not that. If rent is due, this is the wrong door and I would rather say so now than take up your evening.</li>
-<li><strong>Anyone who does not actually like the products.</strong> If you would not buy them anyway, the whole thing collapses, and it should.</li>
-<li><strong>Anyone hoping to never talk to people.</strong> It is conversations. That is the job. There is no version of it that runs while you sleep.</li>
-<li><strong>Anyone who wants a guarantee.</strong> There is not one. What there is, is a thing you can try in your own house with no obligation to ever mention it to another soul.</li>
+<li><strong>Anyone who needs money this month.</strong> This is not that. If rent is due, this is the wrong door. I would rather say so now.</li>
+<li><strong>Anyone who does not like the products.</strong> If you would not buy them anyway, the whole thing falls apart. It should.</li>
+<li><strong>Anyone hoping to never talk to people.</strong> It is talking. That is the job. No version of it runs while you sleep.</li>
+<li><strong>Anyone who wants a promise.</strong> There is not one. What there is, is a thing you can try in your own house and never mention to a soul.</li>
 </ul>
 
 <div class="shannons-advice">

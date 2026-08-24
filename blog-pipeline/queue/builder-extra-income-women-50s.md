@@ -49,10 +49,14 @@ status: ready
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>You are not looking for a career change. You are looking for a few hundred dollars a month that does not cost you your evenings, your back, or your dignity.</p>
-<p>There are about six honest options for that. Every one of them has a real trade-off, and the ones that sound easiest almost always cost the most in ways nobody mentions up front.</p>
-<p>Before any of it, there is a cheaper question: what is already leaving your house every month without you deciding it should. <a href="https://scan.ismyhometoxic.com/now/">The free home scan</a> answers that in three minutes, and money kept counts the same as money earned.</p>
-<p><strong>This page does not promise you an amount.</strong> Anybody who does is either guessing or breaking the rules the <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">FTC set out</a> about earnings claims. What this page does is lay the options side by side with the catch attached to each.</p>
+<p>You are not after a career change. You are after a bit more each month.</p>
+<p>And you want it without giving up your evenings, your back, or your pride.</p>
+<p>There are about six honest ways to do that. Every one has a real cost.</p>
+<p>The ones that sound easiest usually cost the most. Nobody says that part up front.</p>
+<p>But first, a cheaper question. What is already leaving your house each month that you never chose?</p>
+<p><a href="https://scan.ismyhometoxic.com/now/">The free home scan</a> answers that in three minutes. Money kept counts the same as money earned.</p>
+<p><strong>This page promises you no amount.</strong> Anyone who does is guessing, or breaking <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">the rules the FTC set out</a> about earnings claims.</p>
+<p>What this page does is lay the choices side by side, with the catch on each one.</p>
 </div>
 
 <div class="sta-toc">
@@ -69,13 +73,17 @@ status: ready
 
 <h2 id="why-is-this-so-much-harder-at-52-than-it-was-at-32">Why is this so much harder at 52 than it was at 32?</h2>
 
-<p class="quick-answer">Quick answer: because the obvious answers all assume you have something you no longer have a surplus of.</p>
+<p class="quick-answer">Quick answer: the easy answers all assume you have spare hours. You do not.</p>
 
-<p>At thirty you had energy and no money. The advice was: work more hours. It was terrible advice but it was at least possible.</p>
+<p>At thirty you had energy and no money. The advice was to work more hours.</p>
+<p>Bad advice. But at least it was possible.</p>
 
-<p>Now the arithmetic is different. You may be holding a job, ageing parents, a grown child who still needs you, and a body that has stopped negotiating. A second shift is not a plan, it is a health event waiting to happen.</p>
+<p>Now the sums are different. You may be holding down a job. Ageing parents. A grown child who still needs you.</p>
+<p>And a body that has stopped taking requests.</p>
+<p>A second shift is not a plan. It is a health scare waiting its turn.</p>
 
-<p>So the useful question is not "how do I earn more". It is narrower and better. <strong>What can I add that does not take a second body to do?</strong></p>
+<p>So the useful question is not how do I earn more.</p>
+<p>It is better than that. <strong>What can I add that does not need a second body?</strong></p>
 
 <div class="sta-cta">
 <h3>Ten minutes, and nobody sells you anything</h3>
@@ -85,19 +93,20 @@ status: ready
 
 <h2 id="what-are-the-actual-options">What are the actual options?</h2>
 
-<p class="quick-answer">Quick answer: six of them, and the trade-off column is the only one worth reading.</p>
+<p class="quick-answer">Quick answer: six of them. The catch column is the one to read.</p>
 
 <table class="sta-table">
 <tr><th>Option</th><th>What it really is</th><th>The catch nobody leads with</th></tr>
-<tr><td>More hours where you already work</td><td>Overtime or a shift change</td><td>The most reliable money on this list and the most expensive in health. Costs the exact thing you have least of</td></tr>
-<tr><td>A second part-time job</td><td>Retail, care work, admin</td><td>Reliable, and it takes your evenings and weekends permanently. Hard to stop once the money is budgeted</td></tr>
-<tr><td>Selling a skill you already have</td><td>Bookkeeping, sewing, baking, tutoring, cleaning</td><td>Genuinely the best return per hour for most women. The catch is finding clients, which is the part nobody teaches</td></tr>
-<tr><td>Renting something you own</td><td>A room, a driveway, a caravan, equipment</td><td>Real money for little labour, if you have the asset. Most people do not</td></tr>
-<tr><td>Online gig platforms</td><td>Surveys, transcription, virtual assistant work</td><td>Pays badly per hour and the good listings are crowded. Fine for pocket money, not for a bill</td></tr>
-<tr><td>Referral or affiliate income</td><td>You get a percentage when people buy through you</td><td>Slow, uncertain, and most people who start it stop. Honest version below</td></tr>
+<tr><td>More hours where you already work</td><td>Overtime or a shift change</td><td>The surest money here. Also the dearest in health. It costs the one thing you have least of</td></tr>
+<tr><td>A second part-time job</td><td>Retail, care work, admin</td><td>Steady, and it takes your evenings and weekends for good. Hard to stop once you have spent it</td></tr>
+<tr><td>Selling a skill you already have</td><td>Bookkeeping, sewing, baking, tutoring, cleaning</td><td>The best return per hour for most women. The catch is finding clients. Nobody teaches that part</td></tr>
+<tr><td>Renting something you own</td><td>A room, a driveway, a caravan, equipment</td><td>Real money for little work, if you own the thing. Most people do not</td></tr>
+<tr><td>Online gig platforms</td><td>Surveys, transcription, virtual assistant work</td><td>Pays badly by the hour. The good jobs are crowded. Fine for pocket money, not a bill</td></tr>
+<tr><td>Referral or affiliate income</td><td>You get a percentage when people buy through you</td><td>Slow. Not certain. Most people who start it stop. Honest version below</td></tr>
 </table>
 
-<p>Notice what is not on that list. No crypto, no dropshipping, no course about selling courses. If it is not on the table it is because I would not point my sister at it.</p>
+<p>Notice what is not on that list. No crypto. No dropshipping. No course about selling courses.</p>
+<p>If it is not there, it is because I would not send my sister at it.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/extraincome-villain-v1.webp" alt="A woman crossing an empty staff car park alone at night after a late shift, upright and steady" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -108,24 +117,27 @@ status: ready
 <p class="quick-answer">Quick answer: anything that needs your money before it makes you any.</p>
 
 <ul>
-<li><strong>Anything with a joining fee that is really the product.</strong> If the main thing being sold is the chance to sell, the customers are the recruits. Leave.</li>
-<li><strong>Anything you have to buy stock for.</strong> Boxes in the spare room are not an asset. They are your money, in a box.</li>
-<li><strong>Anything that will not tell you where the money comes from.</strong> Ask once, plainly. A straight business gives a straight answer in a sentence.</li>
-<li><strong>Anything that shows you a screenshot instead of a disclosure.</strong> The FTC has said plainly that "results not typical" under a screenshot does not make it honest, and that earnings claims have to be substantiated and include expenses.</li>
-<li><strong>Anything that needs an answer today.</strong> Urgency is a sales technique, not a feature of real work.</li>
+<li><strong>Anything where the joining fee is the product.</strong> If the main thing sold is the chance to sell, then the recruits are the customers. Leave.</li>
+<li><strong>Anything you must buy stock for.</strong> Boxes in the spare room are not savings. That is your money, in a box.</li>
+<li><strong>Anything that will not say where the money comes from.</strong> Ask once, plainly. A straight business answers in one sentence.</li>
+<li><strong>Anything that shows a screenshot instead of the real figures.</strong> The FTC says "results not typical" under a screenshot does not make it honest. Earnings claims must be backed up and must count what was spent.</li>
+<li><strong>Anything that needs an answer today.</strong> Rush is a sales trick. It is not a feature of real work.</li>
 </ul>
 
 <h2 id="how-do-you-tell-a-real-opportunity-from-a-dressed-up-one">How do you tell a real opportunity from a dressed-up one?</h2>
 
 <p class="quick-answer">Quick answer: three questions, asked out loud, and you watch the face.</p>
 
-<p>These work on every offer anyone ever brings you, and you are welcome to use all three on me.</p>
+<p>These work on any offer anyone brings you. Use all three on me too.</p>
 
-<p><strong>1. Where does the money come from?</strong> Not "how much can I make". Where does it originate. If the answer is that people buy things they wanted, that is a business. If the answer is that people join, that is not.</p>
+<p><strong>1. Where does the money come from?</strong> Not how much can I make. Where does it start.</p>
+<p>If people buy things they wanted, that is a business. If people join, it is not.</p>
 
-<p><strong>2. Can you substantiate that number, and does it include expenses?</strong> This is the question the whole industry hopes you never learn. Revenue is not income. The FTC's guidance is explicit that a fair presentation has to show the typical participant's revenue <em>and</em> expenses.</p>
+<p><strong>2. Can you back that number up, and does it count what you spent?</strong> This is the one they hope you never learn.</p>
+<p>Money in is not money kept. The FTC says a fair figure must show what the typical person made <em>and</em> spent.</p>
 
-<p><strong>3. What happens if I only ever want to be a customer?</strong> If the honest answer is "that is completely normal and most people do exactly that", good. If being a customer is treated as failing, you have your answer.</p>
+<p><strong>3. What if I only ever want to be a shopper?</strong> If the answer is that this is normal and most people do it, good.</p>
+<p>If being a shopper counts as failing, you have your answer.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/extraincome-turning-point-v1.webp" alt="The same woman back at her kitchen table in daylight, writing a short list" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -133,13 +145,15 @@ status: ready
 
 <h2 id="what-about-the-money-you-are-already-spending">What about the money you are already spending?</h2>
 
-<p class="quick-answer">Quick answer: this is the part almost nobody looks at, and it is the fastest thing on this page.</p>
+<p class="quick-answer">Quick answer: nobody looks here. It is the fastest thing on this page.</p>
 
-<p>Before you go and earn another two hundred dollars, it is worth knowing what is already leaving the house every month for things that are not doing what the label says.</p>
+<p>Before you go and earn more, find out what is already leaving the house each month.</p>
+<p>Money spent on things that do not do what the label says.</p>
 
-<p>I am not talking about cutting back. I am talking about the ordinary monthly shop. Laundry, cleaning, personal care, the vitamins that <a href="https://join.switchtoamerica.com/post/who-owns-your-vitamins">may not contain what the bottle says</a>, the oil you <a href="https://join.switchtoamerica.com/post/is-avocado-oil-fake">paid extra for because it said healthy</a>.</p>
+<p>I am not saying cut back. I mean the ordinary monthly shop.</p>
+<p>Laundry. Cleaning. Personal care. The vitamins that <a href="https://join.switchtoamerica.com/post/who-owns-your-vitamins">may not hold what the bottle says</a>. The oil you <a href="https://join.switchtoamerica.com/post/is-avocado-oil-fake">paid extra for because it said healthy</a>.</p>
 
-<p>A woman who reroutes that spend has done something better than a second job. She has kept money she had already given away, and she did not sell an evening to do it.</p>
+<p>A woman who reroutes that spend has done something better than a second job. She kept money she had already given away. She did not sell an evening to do it.</p>
 
 <p>That is also, honestly, where the referral option starts making sense and not before. You move your own shop first. Whether anything else ever comes of it is a separate question you can answer later or never.</p>
 
@@ -155,7 +169,7 @@ status: ready
 <li><strong>Write down what people already ask you for.</strong> Not what you are qualified in. What they ask. That list is your skill, and it is usually invisible to the person who has it.</li>
 <li><strong>Price it once and tell three people.</strong> Not a business, not a website. Three people, one price, this week.</li>
 <li><strong>Then look at the outgoings, room by room.</strong> That is what the free scan below does, and it takes three minutes.</li>
-<li><strong>Give anything slow six months before you judge it.</strong> Referral income in particular either builds quietly or it does not build at all, and you cannot tell which in three weeks.</li>
+<li><strong>Give anything slow six months before you judge it.</strong> Referral income builds quietly, or not at all. You cannot tell which in three weeks.</li>
 </ul>
 
 <h2 id="what-do-the-first-ninety-days-actually-feel-like">What do the first ninety days actually feel like?</h2>
@@ -164,13 +178,13 @@ status: ready
 
 <p>Nobody describes this bit, so here it is.</p>
 
-<p>The first month is admin. Whatever you pick, there is a stretch of setting things up, working out pricing, and telling people, and none of it pays anything yet. This is where most people decide it is not working. It is working. It just has not paid yet.</p>
+<p>The first month is admin. Whatever you pick, there is a setting up stretch. Pricing. Telling people. None of it pays anything yet. This is where most people decide it is not working. It is working. It just has not paid yet.</p>
 
-<p>The second month is the awkward one. You have told the people closest to you and now you have to tell somebody who is not obliged to be kind about it. A handful will not reply. One will say something that stings. That is a normal week, not a verdict on you.</p>
+<p>The second month is the awkward one. You have told the people closest to you. Now tell someone who has no duty to be kind. A handful will not reply. One will say something that stings. That is a normal week, not a verdict on you.</p>
 
-<p>By the third month you know whether the thing suits your actual life, which is the only question that ever mattered. Not whether it can work. Whether it works for a woman with your hours, your energy and your house.</p>
+<p>By month three you know if it suits your real life. That is the only question that ever mattered. Not whether it can work. Whether it works for a woman with your hours, your energy and your house.</p>
 
-<p><strong>Give anything on this list ninety days before you judge it, and judge it on whether you would keep doing it, not on the money yet.</strong> Money in the first ninety days tells you almost nothing. Whether you dreaded it tells you everything.</p>
+<p><strong>Give anything here ninety days. Then judge it on whether you would keep going, not on the money yet.</strong> Money in the first ninety days tells you almost nothing. Whether you dreaded it tells you everything.</p>
 
 
 <div class="shannons-advice">
@@ -222,9 +236,9 @@ our finances.</p>
 
 <h2 id="faq">What else do people ask?</h2>
 
-<p><strong>How much can I actually make?</strong> I will not give you a figure, and you should be wary of anyone who does without a substantiated disclosure that includes expenses. What I can say is that most people who start a referral income earn a small amount and most stop. That is the honest shape of it.</p>
+<p><strong>How much can I actually make?</strong> I will not give you a figure. Be wary of anyone who does without backing it up, counting includes expenses. Most people who start a referral income earn a small amount. Most stop. That is the honest shape of it.</p>
 
-<p><strong>Is 55 too late to start something?</strong> No, and the skill option in particular gets better with age, because the thing being paid for is the thirty years you already did.</p>
+<p><strong>Is 55 too late to start something?</strong> No. The skill option gets better with age. What gets paid for is the thirty years you already did.</p>
 
 <p><strong>I have no spare time at all. What then?</strong> Then the outgoings section is your whole answer this month, and the rest of this page can wait. Money kept counts the same as money earned.</p>
 
@@ -236,7 +250,7 @@ our finances.</p>
 
 <h2 id="who-you-become">Who you become</h2>
 
-<p>You become the woman who can hear an offer and ask where the money comes from before she asks how much. That question costs nothing, takes four seconds, and it will protect you and everyone you love for the rest of your life.</p>
+<p>You become the woman who hears an offer and asks where the money comes from. Before she asks how much. That question is free and takes four seconds. It will protect you and everyone you love for the rest of your life.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
