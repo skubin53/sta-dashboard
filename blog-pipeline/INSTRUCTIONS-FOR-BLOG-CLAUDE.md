@@ -146,3 +146,25 @@ Start at Day 1 if the queue is empty. If Day 1 is already there, write Day 2. An
 ## Confirmation
 
 After committing, you can tell Shannon: "Day [N] post for [title] is in the queue. Cameron picks it up at 7:30 AM."
+
+## WHICH BLOG A POST GOES TO (Shannon, 2026-08-24)
+
+There are two blogs now, and picking the wrong one puts income content in front of a woman
+who came to read about her shampoo.
+
+| Track   | Blog                | blogId                 | Post URL |
+|---------|---------------------|------------------------|----------|
+| shopper | Switch to America   | `Hulr7aT2G6a5AdONSXQx` | `join.switchtoamerica.com/post/<slug>` |
+| builder | The Shannon Nicole  | `YjBySnIppiSfkeKxjiaO` | `theshannonnicole.com/post/<slug>` |
+
+Builder posts publish with `sta-toolslog-publish-tsn.py`. Shopper posts keep using
+`blog-publish.py` / `blog-republish.py`. Her words: *"all blog posts need to go there. Of
+course it would be confusing and sounds like and MLM the way it is built now."*
+
+Index page is `theshannonnicole.com/blog`. Individual posts are `/post/<slug>`, NOT
+`/blog/<slug>`, because the blog slug only sets the index path.
+
+Slugs are unique per LOCATION, not per blog. If a slug already exists on the other blog GHL
+silently appends a random number and still returns 200. Always read `urlSlug` back off the
+API response instead of trusting the one you sent.
+
