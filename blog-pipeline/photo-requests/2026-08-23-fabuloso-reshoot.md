@@ -4,7 +4,7 @@ day: "RESHOOT, urgent, needed TODAY"
 post_title: Is Fabuloso Safe? What That Purple Clean Smell Is Really Hiding
 slug: is-fabuloso-safe
 queue_file: blog-pipeline/queue/is-fabuloso-safe.md
-beats: 2
+beats: 3
 status: requested
 priority: URGENT, blocking a same-day republish
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige, NOT a white showroom kitchen. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. SHOW the real recognizable branded product, correct container shape and FRONT branding. NEVER a label-reading or ingredient-panel shot and never anyone inspecting fine print. Nano Banana Pro at 4K, two variants per beat."
@@ -66,6 +66,21 @@ existing later images if that can be matched; if not, a woman clearly in her lat
   with a legible brand name in frame. No gibberish text. No invented brands.
 - temperature: warming, the turn in the ramp
 
+### isfabuloso-freedom-v2
+- replaces: is-fabuloso-safe-04.webp
+- placement: final image before the closing scan CTA (the warmest frame)
+- brief: A woman in her 40s sitting on a clean sunlit kitchen floor with her golden
+  retriever, both relaxed, her hand on the dog's back or scratching its ears. Barefoot,
+  ordinary comfortable clothes. Warm golden morning light coming across the floor. The
+  floor is clean and she is sitting right down on it, easy about it, because she knows
+  what was used on it. No products anywhere in frame. No bottles, no spray, no cloth.
+  Just her, the dog, and the light.
+- the argument the picture makes: she sits on her own floor without thinking about it.
+- must NOT show: NO baby, NO toddler, NO high chair, NO nursery. No cleaning products or
+  bottles in frame. No ingredient panel or label of any kind. No gibberish text. No
+  invented brand names.
+- temperature: warmest point of the ramp
+
 ---
 
 ## DELIVERY
@@ -74,14 +89,15 @@ Commit both to `photos-completed/` at 4K webp, named exactly:
 
 - `isfabuloso-villain-v2.webp`
 - `isfabuloso-turning-point-v2.webp`
+- `isfabuloso-freedom-v2.webp`
 
 They will be served from `https://scan.ismyhometoxic.com/blog-images/`.
 
 Do NOT overwrite `is-fabuloso-safe-01.webp` or `is-fabuloso-safe-02.webp`. The old post
 stays up until Shannon deletes it, and overwriting would change the live page under her.
 
-## STILL OPEN, NOT PART OF THIS REQUEST
+## RESOLVED
 
-`is-fabuloso-safe-04.webp` is a mother and a toddler on a kitchen floor. That breaks the
-women 40 to 60 rule (never build on a baby or toddler). Shannon asked for the first two
-only, so it is flagged here rather than requested. If she says go, it becomes a third beat.
+`is-fabuloso-safe-04.webp` was a mother and a toddler on a kitchen floor, which breaks the
+women 40 to 60 rule. Shannon 2026-08-23: "Fabuloso can be a women in her 40's with a golden
+retriever." That is now the third beat above, `isfabuloso-freedom-v2`.
