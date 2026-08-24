@@ -5,6 +5,7 @@ title: Is Fabuloso Safe? What Was Growing Inside 4.9 Million Bottles (2026)
 slug: is-fabuloso-safe
 keyword: is fabuloso safe
 category: Cleaning
+cover: https://scan.ismyhometoxic.com/blog-images/fabuloso-hero-v2.webp
 meta_description: In February 2023 Colgate-Palmolive recalled about 4.9 million bottles of Fabuloso because bacteria were growing inside them. Here is what the notice says.
 status: ready
 replaces: live post is-fabuloso-safe (published 2026-07-21), Shannon to delete
