@@ -1,6 +1,6 @@
 ---
 title: Builder Application Follow-Up Sequence
-status: v1 draft, written 2026-08-24, NOT YET IN GOHIGHLEVEL
+status: LIVE 2026-08-24. Runs in the Cloudflare Worker, not in a GHL workflow.
 trigger: tag `builder-application` (set by the Worker route /builder-lead)
 goal: one thing only, get her onto the 20 minute Zoom
 ---
@@ -42,6 +42,33 @@ specificity, which is the only thing that works on a woman who is braced for a p
   that kill this before a call ever happens.
 - **Never sell the company. Sell the twenty minutes.**
 - **Every email is short enough to read on a phone in a school pickup line.**
+
+## WHERE THIS ACTUALLY RUNS
+
+**Not in a GoHighLevel workflow.** The GHL API cannot create one: `POST /workflows` returns 404,
+the endpoint is read-only, and the only other route is hand-building it in the workflow UI,
+which has already been recorded as silently no-opping when driven.
+
+So it runs in `sta-tools/checkout-worker/worker.js`, which already receives the applicant at
+`/builder-lead`, already sends email through GoHighLevel, already checks hard stops and already
+runs a daily cron.
+
+- **Email 1 sends inline the moment she applies.** Not on tomorrow's cron.
+- **Emails 2, 4, 6 and 7** go on days 1, 4, 8 and 11 from the daily pass.
+- **State lives in tags** so Shannon can read the whole thing off the contact:
+  `builder-applied-YYYY-MM-DD` stamped once, then `builder-seq-N` per email actually sent.
+- **At most one email per person per run**, so a cron that misses two days cannot fire three
+  emails at once.
+- **`builder-email-undeliverable`** is set if GoHighLevel refuses the address, and that contact
+  is then skipped forever. Found by testing: without it, a bad address would be retried daily
+  for ever. She still gave a phone number, so that tag means call her.
+
+**THE WORKER IS THE SOURCE OF TRUTH FOR THE COPY.** The `STA Builder NN` templates in her
+account are a readable mirror. Editing one of those does NOT change what goes out.
+
+Verified end to end on 2026-08-24: application posted, contact created and sourced, date
+stamped, email 1 sent and visible as an outbound message on the conversation, `builder-seq-1`
+tagged. Both test contacts deleted afterwards and the tag search confirmed back to zero.
 
 ## Sending
 
