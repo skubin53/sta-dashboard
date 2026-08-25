@@ -27,6 +27,44 @@ She is a woman roughly **40 to 60** who already sells, leads or owns something, 
 income structure just changed or has hit a ceiling. She reads Hormozi and Eker. She is hunted
 by **what she consumes**, not by her job title.
 
+### THE TWO LOCKED PROFILES, and they were in the vault the whole time
+
+`entities/icps/capped-corporate.md` and `entities/icps/burned-out.md` in the Obsidian vault
+carry two finished profiles written in Shannon's voice, dated June, unread since Cameron was
+retired on 2026-07-27. They are better than anything below and they take priority.
+
+**CAPPED CORPORATE WOMAN.** Forty-eight to fifty-three. Director, senior manager or RN-manager,
+fifteen to twenty years into the climb. The next rung needs politics she will not play. Kids in
+college or nearly. The company has started looking past her toward somebody twenty years
+younger. She built every dollar on her terms and she is not looking for a hobby.
+Her hooks, verbatim: *the math at eleven p.m.* / *twenty years underneath you and nothing
+underneath the income* / *the kitchen-window thought, second cup of coffee, house finally
+quiet* / *built for more, capped where you are.*
+
+**BURNED-OUT BUSINESS OWNER.** Fifty-two. Runs her own thing: solo RN practice, a salon, a real
+estate book, a photography studio. Twenty years in, profitable on paper, exhausted in the body.
+She is the bottleneck of her own business and she knows it. She has cash and no time. She has
+been pitched fifty opportunities and is allergic to all of them, and she is tired enough to look
+at one more if it does not insult her intelligence.
+Her hooks, verbatim: *income stops the day I stop* / *I built a job, not an asset* / *tired of
+trading hours.*
+
+**ANSWERS ALREADY DRAFTED IN HER VOICE**, several still marked *draft, Shannon refine tomorrow*:
+
+- *"I do not have time."* -> "The women who do this well have less time than you do. Twenty
+  hours a week, ninety days head-down. I am asking you to look at the math, not add a second
+  job." **This answers section 7 item 3 below. The hours figure was never missing.**
+- *"I am not a salesperson."* -> "Good. The ones who think they are are the ones who burn out."
+- *"What if it does not work."* -> "Then you have spent ninety days learning a real skill. That
+  is the entire downside. The upside is the part that does not have a ceiling."
+- *"How is this different from what I am doing now."* -> "What you have now is leverage on you.
+  What this builds is leverage off of you. Same hours, different math."
+
+### The four shapes, kept because they describe arrival events rather than people
+
+These are still useful, but they are the WEAKER of the two frames. The profiles above are who
+she is. These are what just happened to her. Where they disagree, the profiles win.
+
 **The four shapes she usually arrives in:**
 
 | Shape | What just happened to her | What she is actually asking |
@@ -83,6 +121,24 @@ IS an earnings claim.** No cash, cheques, wallets, payment apps, dashboards, cha
 calculators, new cars, suitcases or beaches in any builder image.
 
 ---
+
+## 2b. THE NORTH STAR, AND A RULE ABOUT WHO IS OFF LIMITS
+
+`concepts/North-Star.md` is stamped canonical in the vault:
+
+> There is one metric: fill Shannon's calendar with qualified, ready-to-show-up builder Zoom
+> appointments. Shopper enrollments are nice. Builder Zooms are the business.
+
+Everything in this document is judged against that and nothing else.
+
+**AND A HARD RULE I DID NOT HAVE.** `concepts/MLM-Vetting-Filter.md`: never approach somebody
+already inside another direct-sales company, and never poach a committed competitor rep. It
+names excluded companies explicitly and lists the tells: a second business handle, "join my
+team", downline language.
+
+That rule is currently unresolved against the Avon material written 2026-08-24, because active
+Avon reps are inside a direct-sales company. **Shannon rules on that before anything Avon-facing
+goes out.**
 
 ## 3. THE OFFER, STATED PLAINLY
 
@@ -295,7 +351,9 @@ Things this knowledge base does not yet have and cannot invent:
 2. **Named customer testimonies.** 20,000+ customers and not one usable named account, because
    inventing one is not allowed and she has not yet named any. A woman describing her own life
    is not a health claim.
-3. **The real hours range.** Objection 4.3 needs a true number. Shannon has it and I do not.
+3. ~~**The real hours range.**~~ **CLOSED 2026-08-24.** It was never missing. It is in her own
+   voice in `entities/icps/capped-corporate.md`: twenty hours a week, ninety days head-down.
+   I claimed it was a gap without ever opening her vault.
 4. **The current start cost figure**, stated to the dollar, for objection 4.6.
 5. **What a builder's first 30 days actually look like**, step by step, for the first-action
    sequence.
