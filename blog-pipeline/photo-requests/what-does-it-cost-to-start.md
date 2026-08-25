@@ -1,5 +1,5 @@
 ---
-date: 2026-09-15
+date: 2026-09-13
 post_title: "What Does It Actually Cost to Start? (2026)"
 slug: what-does-it-cost-to-start
 track: builder

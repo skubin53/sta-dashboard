@@ -1,5 +1,5 @@
 ---
-date: 2026-09-08
+date: 2026-09-06
 post_title: "I Am Good at Sales and Tired of Selling Someone Else's Product (2026)"
 slug: tired-of-selling-someone-elses-product
 track: builder

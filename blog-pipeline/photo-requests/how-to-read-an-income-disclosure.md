@@ -1,5 +1,5 @@
 ---
-date: 2026-09-04
+date: 2026-09-02
 post_title: "How Do You Read an Income Disclosure Statement? (2026)"
 slug: how-to-read-an-income-disclosure
 track: builder

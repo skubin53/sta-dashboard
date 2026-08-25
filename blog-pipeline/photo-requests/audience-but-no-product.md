@@ -1,5 +1,5 @@
 ---
-date: 2026-09-10
+date: 2026-09-08
 post_title: "I Have an Audience and No Product. What Now? (2026)"
 slug: audience-but-no-product
 track: builder

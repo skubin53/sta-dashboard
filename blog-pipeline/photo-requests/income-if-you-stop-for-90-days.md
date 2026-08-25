@@ -1,5 +1,5 @@
 ---
-date: 2026-09-17
+date: 2026-09-15
 post_title: "What Happens to Your Income If You Stop Working for 90 Days? (2026)"
 slug: income-if-you-stop-for-90-days
 track: builder

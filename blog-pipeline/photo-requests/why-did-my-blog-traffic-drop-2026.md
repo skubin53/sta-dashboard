@@ -1,5 +1,5 @@
 ---
-date: 2026-09-19
+date: 2026-09-17
 post_title: "Why Did My Blog Traffic Drop in 2026? And What to Build Instead"
 slug: why-did-my-blog-traffic-drop-2026
 track: builder

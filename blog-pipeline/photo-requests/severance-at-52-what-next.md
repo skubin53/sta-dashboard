@@ -1,5 +1,5 @@
 ---
-date: 2026-09-09
+date: 2026-09-07
 post_title: "I Got a Severance Package at 52. What Do I Do With It? (2026)"
 slug: severance-at-52-what-next
 track: builder

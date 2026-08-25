@@ -1,5 +1,5 @@
 ---
-date: 2026-09-12
+date: 2026-09-10
 post_title: "My Commissions Dropped and My Broker Says It Is the Market (2026)"
 slug: commissions-dropped-real-estate
 track: builder

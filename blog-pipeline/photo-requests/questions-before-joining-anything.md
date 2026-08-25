@@ -1,5 +1,5 @@
 ---
-date: 2026-09-18
+date: 2026-09-16
 post_title: "What Questions Should I Ask Before Joining Anything? (2026)"
 slug: questions-before-joining-anything
 track: builder

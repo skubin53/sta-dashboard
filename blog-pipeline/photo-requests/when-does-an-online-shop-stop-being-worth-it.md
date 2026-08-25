@@ -1,5 +1,5 @@
 ---
-date: 2026-09-03
+date: 2026-09-01
 post_title: "Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026)"
 slug: when-does-an-online-shop-stop-being-worth-it
 track: builder

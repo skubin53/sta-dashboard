@@ -1,5 +1,5 @@
 ---
-date: 2026-09-01
+date: 2026-08-30
 post_title: "Can You Do This Without Posting Your Face? (2026)"
 slug: without-posting-your-face
 track: builder

@@ -1,5 +1,5 @@
 ---
-date: 2026-09-14
+date: 2026-09-12
 post_title: "TikTok Shop Commissions Keep Moving. What Do You Actually Build On? (2026)"
 slug: tiktok-shop-commission-changes
 track: builder

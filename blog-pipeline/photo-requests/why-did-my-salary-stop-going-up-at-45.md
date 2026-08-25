@@ -1,5 +1,5 @@
 ---
-date: 2026-09-20
+date: 2026-09-18
 post_title: "Why Did My Salary Stop Going Up at 45? (2026)"
 slug: why-did-my-salary-stop-going-up-at-45
 track: builder

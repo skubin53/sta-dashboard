@@ -1,5 +1,5 @@
 ---
-date: 2026-09-13
+date: 2026-09-11
 post_title: "Recurring vs Residual: They Are Not the Same Thing (2026)"
 slug: recurring-vs-residual-income
 track: builder

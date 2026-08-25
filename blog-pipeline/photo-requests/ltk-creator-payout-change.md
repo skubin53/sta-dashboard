@@ -1,5 +1,5 @@
 ---
-date: 2026-09-02
+date: 2026-08-31
 post_title: "Did LTK Just Change What Creators Get Paid? (2026)"
 slug: ltk-creator-payout-change
 track: builder

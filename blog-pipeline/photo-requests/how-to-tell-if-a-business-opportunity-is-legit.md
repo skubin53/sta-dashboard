@@ -1,5 +1,5 @@
 ---
-date: 2026-09-05
+date: 2026-09-03
 post_title: "How Do You Tell a Real Business Opportunity From a Repackaged Course? (2026)"
 slug: how-to-tell-if-a-business-opportunity-is-legit
 track: builder

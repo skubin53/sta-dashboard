@@ -1,5 +1,5 @@
 ---
-date: 2026-09-11
+date: 2026-09-09
 post_title: "Is a Franchise Worth It at 50? The Numbers Nobody Puts in the Brochure (2026)"
 slug: is-a-franchise-worth-it-at-50
 track: builder

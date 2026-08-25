@@ -1,5 +1,5 @@
 ---
-date: 2026-09-23
+date: 2026-09-21
 post_title: "Why Does My Business Own Me? (2026)"
 slug: why-does-my-business-own-me
 track: builder

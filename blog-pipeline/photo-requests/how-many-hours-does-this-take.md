@@ -1,5 +1,5 @@
 ---
-date: 2026-09-06
+date: 2026-09-04
 post_title: "How Many Hours a Week Does This Really Take? (2026)"
 slug: how-many-hours-does-this-take
 track: builder

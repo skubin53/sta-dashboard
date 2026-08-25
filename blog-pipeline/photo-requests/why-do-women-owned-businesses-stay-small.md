@@ -1,5 +1,5 @@
 ---
-date: 2026-09-22
+date: 2026-09-20
 post_title: "Why Do Women-Owned Businesses Stay Small? (2026)"
 slug: why-do-women-owned-businesses-stay-small
 track: builder

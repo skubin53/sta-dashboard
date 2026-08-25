@@ -1,5 +1,5 @@
 ---
-date: 2026-09-07
+date: 2026-09-05
 post_title: "How Much Should a 50-Year-Old Woman Have Saved? The Honest Answer (2026)"
 slug: how-much-should-a-50-year-old-woman-have-saved
 track: builder

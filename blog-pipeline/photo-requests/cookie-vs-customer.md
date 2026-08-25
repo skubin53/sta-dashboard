@@ -1,5 +1,5 @@
 ---
-date: 2026-08-31
+date: 2026-08-29
 post_title: "Cookie vs Customer: What the Affiliate Repricing Taught Every Creator"
 slug: cookie-vs-customer
 track: builder

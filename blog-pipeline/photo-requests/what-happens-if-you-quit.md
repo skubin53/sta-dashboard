@@ -1,5 +1,5 @@
 ---
-date: 2026-09-16
+date: 2026-09-14
 post_title: "What Happens to Your Customers If You Quit? (2026)"
 slug: what-happens-if-you-quit
 track: builder
