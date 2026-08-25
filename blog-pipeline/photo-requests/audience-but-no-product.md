@@ -1,12 +1,12 @@
 ---
-date: 2026-09-02
-post_title: "Which Direct Sales Companies Shut Down in 2026? And How to Vet the Next One"
-slug: direct-sales-companies-that-shut-down-2026
+date: 2026-09-10
+post_title: "I Have an Audience and No Product. What Now? (2026)"
+slug: audience-but-no-product
 track: builder
-queue_file: blog-pipeline/queue/direct-sales-companies-that-shut-down-2026.md
+queue_file: blog-pipeline/queue/audience-but-no-product.md
 beats: 5
-status: complete
-style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. SHOW the real recognizable branded product where the beat calls for it, correct container shape and FRONT branding. NEVER a label-reading or ingredient-panel shot and never anyone inspecting fine print. Continuity: same person, same clothes, same hands across the five beats, and ONE room per set unless the brief says otherwise. Temperature ramp runs coldest at the villain beat to warmest at the last beat. Nano Banana Pro at 4K."
+status: requested
+style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. There is NO product in this set and nothing branded should appear. No legible text anywhere in any frame. Continuity: same woman, same clothes, same room across the five beats. Temperature ramp runs coldest at the villain beat to warmest at the last. Nano Banana Pro at 4K."
 generated_by: "sta-tools/build-calendar.py, 2026-08-23"
 ---
 
@@ -18,32 +18,32 @@ HARD FTC RULE FOR THIS SET: nothing suggesting money, earnings or income anywher
 
 This is a BUILDER post. She is a woman of 45 to 58 who runs something or leads something. Modern, tidy, well kept home. Ordinary and lived-in is right, shabby is not. No suggestion of wealth and no suggestion of hardship.
 
-### directsales-hero-v1
+### audiencebut-hero-v1
 - placement: COVER only (og:image + social thumbnail, never repeated in body)
-- brief: Her, mid-task, using the thing she is walking away from in the way she really uses it on an ordinary day. Relaxed, not suspicious, no idea anything is wrong. The product is recognisable with FRONT branding.
+- brief: Her at her own desk or kitchen island mid-ordinary-morning, working. Calm, capable, no distress. A laptop may be open but the screen must be off, blank or angled away so no text or number is legible. This is the woman before anything changed.
 - must NOT show: nothing suggesting money, earnings or income anywhere in any frame. No cash, cheques, wallets, bank or payment apps, charts, graphs, dashboards, calculators, new cars, suitcases or beaches. No legible text of any kind. The copy carries no income figure and a photo implying income IS an earnings claim. Also check bystanders for clothing logos.
 - temperature: neutral, cool-leaning
 
-### directsales-villain-v1
+### audiencebut-villain-v1
 - placement: body, in beat order
-- brief: the thing she is walking away from alone, nobody in frame, hard flat light, the coldest frame of the set. This is the money shot: it should look completely ordinary, because that IS the argument.
+- brief: The same room, empty of people, late. One lamp on, the laptop closed, a cold mug beside it, the chair pushed back at an angle. NOTHING on any screen. The argument is the hour and the emptiness, not an object.
 - must NOT show: nothing suggesting money, earnings or income anywhere in any frame. No cash, cheques, wallets, bank or payment apps, charts, graphs, dashboards, calculators, new cars, suitcases or beaches. No legible text of any kind. The copy carries no income figure and a photo implying income IS an earnings claim. Also check bystanders for clothing logos.
 - temperature: coldest point of the ramp
 
-### directsales-turning-point-v1
+### audiencebut-turning-point-v1
 - placement: body, in beat order
-- brief: The same woman lowering the thing she is walking away from to her side or setting it down, looking away from it, settled, decision already made. She is NOT reading it and NOT studying it.
+- brief: Her closing the laptop with one hand and looking out of the window, shoulders down, decision already made. She is NOT reading anything and NOT frowning at a screen.
 - must NOT show: nothing suggesting money, earnings or income anywhere in any frame. No cash, cheques, wallets, bank or payment apps, charts, graphs, dashboards, calculators, new cars, suitcases or beaches. No legible text of any kind. The copy carries no income figure and a photo implying income IS an earnings claim. Also check bystanders for clothing logos.
 - temperature: warming
 
-### directsales-belonging-v1
+### audiencebut-belonging-v1
 - placement: body, in beat order
-- brief: TWO clearly distinct women together, mid-conversation, warm, unpacking or sharing a plain unbranded swap. Exactly two people, no extra hands, no third face.
+- brief: TWO clearly distinct women 45 to 58 at a kitchen table with coffee, mid conversation, one talking and one genuinely listening. Exactly two people, no third face, no paperwork between them.
 - must NOT show: nothing suggesting money, earnings or income anywhere in any frame. No cash, cheques, wallets, bank or payment apps, charts, graphs, dashboards, calculators, new cars, suitcases or beaches. No legible text of any kind. The copy carries no income figure and a photo implying income IS an earnings claim. Also check bystanders for clothing logos.
 - temperature: warm
 
-### directsales-freedom-v1
-- placement: final image before the closing scan CTA
-- brief: The same woman, warmest and brightest frame of the set, doing the ordinary thing she was doing at the start with none of the worry. Natural light.
+### audiencebut-freedom-v1
+- placement: final image before the closing CTA
+- brief: Her outside in late afternoon light, walking, coffee in hand or hands free, phone nowhere in frame. Unhurried. Nothing that says work and nothing that says money.
 - must NOT show: nothing suggesting money, earnings or income anywhere in any frame. No cash, cheques, wallets, bank or payment apps, charts, graphs, dashboards, calculators, new cars, suitcases or beaches. No legible text of any kind. The copy carries no income figure and a photo implying income IS an earnings claim. Also check bystanders for clothing logos.
 - temperature: warmest point of the ramp
