@@ -8,6 +8,7 @@ category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/amazoncutyo-hero-v1.webp
 meta_description: On April 14, 2026 Amazon rewrote the Associates rules. Onsite commission now pays only on the exact item clicked. Here is what that changes.
 status: ready
+vault_checked: [Affiliate-Footprint-Targeting, MLM-Vetting-Filter, Builder-Target-Segments, North-Star]
 ---
 
 <style>
