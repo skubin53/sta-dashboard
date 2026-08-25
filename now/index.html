@@ -5450,7 +5450,70 @@ function persistProgress(){
 
     localStorage.setItem(PKEY, JSON.stringify({u:userName||'',a:answers,si:stepIdx,hb:hasBaby,hf:hasFamily})); }catch(e){}
 
+  try{ pushProgress(); }catch(e){}
+
 }
+
+/* ── server-side memory ──────────────────────────────────────────────────────────────
+   The line above remembers her on THIS browser. This sends the same thing to our own
+   server so she can carry on from a different device, and so that a scan somebody starts
+   and abandons is written down somewhere. Before this, 14 scans were on record and every
+   one of them said "completed", because quitting was never recorded at all.
+
+   Deliberately fire and forget. The scan never waits on it and never shows an error for it. */
+var SKEY='sta_scan_token_v1';
+function scanToken(){
+  try{
+    var v=localStorage.getItem(SKEY);
+    if(!v){
+      v=(Date.now().toString(36)+Math.random().toString(36).slice(2,10));
+      localStorage.setItem(SKEY,v);
+    }
+    return v;
+  }catch(e){ return ''; }
+}
+var _lastPush='';
+function pushProgress(done){
+  var tok=scanToken(); if(!tok) return;
+  var sig=tok+'|'+stepIdx+'|'+(done?1:0);
+  if(sig===_lastPush && !done) return;      /* one write per real step change, not per keystroke */
+  _lastPush=sig;
+  var em='';
+  try{
+    var e1=document.getElementById('email'); var e2=document.getElementById('oEmail');
+    em=(e1&&e1.value)||(e2&&e2.value)||'';
+  }catch(e){}
+  var body=JSON.stringify({
+    t:tok, si:stepIdx, n:(typeof activeSteps!=='undefined'&&activeSteps?activeSteps.length:0),
+    u:(typeof userName!=='undefined'?userName:'')||'', a:Object.keys(answers||{}).length,
+    e:em, done:!!done
+  });
+  try{
+    fetch('https://sta-checkout.theshannonnicole.workers.dev/scan-progress',
+      {method:'POST',headers:{'Content-Type':'application/json'},body:body,keepalive:true})
+      .catch(function(){});
+  }catch(e){}
+}
+
+/* Carry on from another device. Token only. Her email is never put in a URL. */
+function resumeFromServer(){
+  var m=/[?&]r=([A-Za-z0-9_-]{4,64})/.exec(location.search||'');
+  if(!m) return;
+  try{ localStorage.setItem(SKEY,m[1]); }catch(e){}
+  fetch('https://sta-checkout.theshannonnicole.workers.dev/scan-resume?r='+encodeURIComponent(m[1]))
+    .then(function(r){return r.json();})
+    .then(function(p){
+      if(!p||typeof p.si!=='number') return;
+      try{
+        var cur=loadProgress();
+        /* Never overwrite something further along that is already on this device. */
+        if(cur && (cur.si||0) >= p.si) return;
+        localStorage.setItem(PKEY, JSON.stringify({u:p.u||'',a:{},si:p.si,hb:false,hf:false}));
+      }catch(e){}
+    })
+    .catch(function(){});
+}
+try{ resumeFromServer(); }catch(e){}
 
 function clearProgress(){ try{ localStorage.removeItem(PKEY); }catch(e){} }
 
