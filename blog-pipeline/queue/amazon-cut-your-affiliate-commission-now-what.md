@@ -94,9 +94,9 @@ status: ready
 <p>Four changes, one Tuesday, and nobody asked you.</p>
 
 <div class="sta-cta">
-<h3>Before you take my word on anything</h3>
-<p>Go look at your own house first. The free 3 minute scan walks you room by room and names what to swap. It is free because I would rather you check your own shelf than take my word. No card, no call.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<h3>Twenty minutes, and you decide nothing on the call</h3>
+<p>I will show you how the money actually moves, on Zoom, in twenty minutes. Bring the questions you would ask an accountant. It is free because I would rather you see the arithmetic than take my word for it. No slides, no pitch.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
 <span class="micro">You can always say no.</span>
 </div>
 
@@ -260,10 +260,10 @@ our finances.</p>
 <p>You become the woman who asks where the money comes from. Before she asks how much. The years you spent building an audience were not wasted. They were pointed at the wrong payout.</p>
 
 <div class="sta-cta">
-<h3>The thing you were holding when you started reading</h3>
-<p>That April 14 line is on every Associates account in the country, including yours. One thing the top of this page did not say. This is the same scan I hand to shoppers. So you see what you would be recommending before you recommend it. You do not have to decide about your income today. Scan the one room you already doubt. Three minutes, no card, nobody calls.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
-<span class="micro">If your stuff is already fine, I will tell you that and we will hang up.</span>
+<h3>You already know what a repriced payout feels like</h3>
+<p>That April 14 line is on every Associates account in the country, including yours. Here is the part this page could not give you: your own numbers. Bring one month of your actual earnings and we will look at what you would be paid on instead. Twenty minutes on Zoom, and you do not have to delete a single affiliate link to have the conversation.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">If it is not a fit, I will say so on the call and we will hang up.</span>
 </div>
 
 

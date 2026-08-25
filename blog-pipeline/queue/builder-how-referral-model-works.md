@@ -72,9 +72,10 @@ cover: https://scan.ismyhometoxic.com/blog-images/howreferral-hero-v1.webp
 
 
 <div class="sta-cta">
-<h3>Before any of this, look at your own house</h3>
-<p>The free 3 minute scan goes room by room and shows you what the swap actually is. No card, no call.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<h3>Twenty minutes, and you decide nothing on the call</h3>
+<p>I will show you how the money actually moves, on Zoom, in twenty minutes. Bring the questions you would ask an accountant. It is free because I would rather you see the arithmetic than take my word for it. No slides, no pitch.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">You can always say no.</span>
 </div>
 
 <h2 id="how-does-the-referral-model-actually-work">How does the referral model actually work?</h2>
@@ -96,12 +97,6 @@ cover: https://scan.ismyhometoxic.com/blog-images/howreferral-hero-v1.webp
 <p>If it pays you to sign people up, walk away. That is not a small point. That is the whole point.</p>
 
 <p>What is not part of it. No stock. No parties in your front room. No sales quota. No boxes to shift.</p>
-
-<div class="sta-cta">
-<h3>Ten minutes, and nobody pitches you</h3>
-<p>The free "Your First Switch" call is a walkthrough of one room in your house and what to swap first. If you never want to talk about the income side, we never will.</p>
-<a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book the free 10 minute call</a>
-</div>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/howreferral-villain-v1.webp" alt="A woman at a kitchen table looking at a job offer letter she is not going to accept" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -234,9 +229,10 @@ our finances.</p>
 </div>
 
 <div class="sta-cta">
-<h3>Start with your own house, not a business plan</h3>
-<p>The free 3 minute scan goes room by room and tells you which one to deal with first, and what to use instead. No card, no call required.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<h3>You have the mechanics now. The rest is your own numbers.</h3>
+<p>This page gave you the model and the honest average. What it cannot tell you is whether it fits your life, your hours and the people you already talk to. That takes twenty minutes and your actual situation, not a landing page.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">If it is not a fit, I will say so on the call and we will hang up.</span>
 </div>
 
 <h2 id="faq">What else do people ask?</h2>
@@ -247,7 +243,7 @@ our finances.</p>
 
 <p><strong>Do I have to recruit anybody?</strong> No. Most people never do. You can shop, save on your own household, and never mention it once.</p>
 
-<p><strong>What actually happens on the free call?</strong> Ten minutes, one room in your house, and what to swap first. I do not need your card and there is no presentation. If the income side never comes up, that is a normal outcome.</p>
+<p><strong>What actually happens on the free call?</strong> Twenty minutes on Zoom. You bring your own numbers and we look at them together. No card, no presentation, and you decide nothing on the call.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/howreferral-freedom-v1.webp" alt="The same woman walking out her front door on a weekday morning, unhurried" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -307,7 +303,7 @@ our finances.</p>
    "name": "What actually happens on the free call?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Ten minutes, one room in your house, and what to swap first. I do not need your card and there is no presentation. If the income side never comes up, that is a normal outcome."
+    "text": "Twenty minutes on Zoom. You bring your own numbers and we look at them together. No card, no presentation, and you decide nothing on the call."
    }
   }
  ]

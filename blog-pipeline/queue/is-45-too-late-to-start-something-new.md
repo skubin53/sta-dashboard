@@ -68,9 +68,10 @@ cover: https://scan.ismyhometoxic.com/blog-images/is45toolate-hero-v1.webp
 </div>
 
 <div class="sta-cta">
-<h3>While you are thinking, do the easy one first</h3>
-<p>The free 3 minute scan walks your home room by room. It tells you what to deal with first. No cost, no call.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<h3>Twenty minutes, and you decide nothing on the call</h3>
+<p>I will show you how the money actually moves, on Zoom, in twenty minutes. Bring the questions you would ask an accountant. It is free because I would rather you see the arithmetic than take my word for it. No slides, no pitch.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">You can always say no.</span>
 </div>
 
 <h2 id="who-checked">Who checked, and how?</h2>
@@ -216,9 +217,10 @@ of our health and our finances.</p>
 </div>
 
 <div class="sta-cta">
-<h3>Start with three minutes, not a big decision</h3>
-<p>The free scan goes room by room and tells you what to fix first. It is the smallest first step there is.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<h3>The average founder was 45. You are allowed to ask what it would take.</h3>
+<p>This page argued the timing. It could not answer what starting would actually look like for you, in your week, with the hours you really have. That is a twenty minute conversation and it costs you nothing but the twenty minutes.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">If it is not a fit, I will say so on the call and we will hang up.</span>
 </div>
 
 <h2 id="faq">What else do people ask?</h2>

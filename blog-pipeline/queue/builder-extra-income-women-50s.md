@@ -50,14 +50,14 @@ cover: https://scan.ismyhometoxic.com/blog-images/extraincome-hero-v1.webp
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>You are not after a career change. You are after a bit more each month.</p>
-<p>And you want it without giving up your evenings, your back, or your pride.</p>
-<p>There are about six honest ways to do that. Every one has a real cost.</p>
-<p>The ones that sound easiest usually cost the most. Nobody says that part up front.</p>
-<p>But first, a cheaper question. What is already leaving your house each month that you never chose?</p>
-<p><a href="https://scan.ismyhometoxic.com/now/">The free home scan</a> answers that in three minutes. Money kept counts the same as money earned.</p>
+<p>You are not after a career change. You want a bit more each month.</p>
+<p>Without giving up your evenings, your back, or your pride.</p>
+<p>There are six honest ways to do that. Every one has a cost.</p>
+<p>The ones that sound easiest cost the most. Nobody says that up front.</p>
+<p>First, a cheaper question. What leaves your house each month that you never chose?</p>
+<p>Money kept counts the same as money earned, and it is faster.</p>
 <p><strong>This page promises you no amount.</strong> Anyone who does is guessing, or breaking <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">the rules the FTC set out</a> about earnings claims.</p>
-<p>What this page does is lay the choices side by side, with the catch on each one.</p>
+<p>What it does is lay the choices side by side, with the catch on each.</p>
 </div>
 
 <div class="sta-toc">
@@ -87,9 +87,10 @@ cover: https://scan.ismyhometoxic.com/blog-images/extraincome-hero-v1.webp
 <p>It is better than that. <strong>What can I add that does not need a second body?</strong></p>
 
 <div class="sta-cta">
-<h3>Ten minutes, and nobody sells you anything</h3>
-<p>The free "Your First Switch" call walks one room of your house and what to swap first. No card, no presentation, and if you only ever want the household side, that is a complete conversation.</p>
-<a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book the free 10 minute call</a>
+<h3>Twenty minutes, and you decide nothing on the call</h3>
+<p>I will show you how the money actually moves, on Zoom, in twenty minutes. Bring the questions you would ask an accountant. It is free because I would rather you see the arithmetic than take my word for it.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">You can always say no.</span>
 </div>
 
 <h2 id="what-are-the-actual-options">What are the actual options?</h2>
@@ -129,7 +130,7 @@ cover: https://scan.ismyhometoxic.com/blog-images/extraincome-hero-v1.webp
 
 <p class="quick-answer">Quick answer: three questions, asked out loud, and you watch the face.</p>
 
-<p>These work on any offer anyone brings you. Use all three on me too.</p>
+<p>These work on any offer. Use all three on me too.</p>
 
 <p><strong>1. Where does the money come from?</strong> Not how much can I make. Where does it start.</p>
 <p>If people buy things they wanted, that is a business. If people join, it is not.</p>
@@ -230,9 +231,10 @@ our finances.</p>
 </div>
 
 <div class="sta-cta">
-<h3>Find the money already leaving your house</h3>
-<p>Three minutes, room by room, and you will know which one is costing you most and what to use instead.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<h3>Pick one of the six and let us price it out loud</h3>
+<p>You just read six honest options and what each really costs in hours. Bring the one you keep circling back to. Twenty minutes on Zoom, and even if you go do the sewing one, you will know the real numbers.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">If it is not a fit, I will say so on the call and we will hang up.</span>
 </div>
 
 <h2 id="faq">What else do people ask?</h2>
@@ -243,7 +245,7 @@ our finances.</p>
 
 <p><strong>I have no spare time at all. What then?</strong> Then the outgoings section is your whole answer this month, and the rest of this page can wait. Money kept counts the same as money earned.</p>
 
-<p><strong>What happens on the free call?</strong> Ten minutes, one room, what to swap first. No card and no presentation. Most of these calls never touch the income side at all.</p>
+<p><strong>What happens on the free call?</strong> Twenty minutes on Zoom. You bring one of the six and we price it out loud. No card, no presentation, and you decide nothing on the call.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/extraincome-freedom-v1.webp" alt="Saturday morning, coffee held in both hands, a second mug on the table" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -303,7 +305,7 @@ our finances.</p>
    "name": "What happens on the free call?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Ten minutes, one room, what to swap first. No card and no presentation. Most of these calls never touch the income side at all."
+    "text": "Twenty minutes on Zoom. You bring one of the six and we price it out loud. No card, no presentation, and you decide nothing on the call."
    }
   }
  ]
