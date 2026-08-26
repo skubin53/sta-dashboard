@@ -76,13 +76,13 @@ status: ready
 
 <p class="quick-answer">Quick answer: flour, and flour is not one thing.</p>
 
-<p>Saturday morning. The box comes down. Add water, stir, pour.</p>
+<p>Saturday morning. You take the box down. Add water, stir, pour.</p>
 
 <p>It is mostly flour. No surprise there.</p>
 
-<p>Here is the surprise. Flour comes in kinds. The kinds are not the same.</p>
+<p>But flour is not one thing. It comes in kinds, and the kinds are not the same.</p>
 
-<p>Look at how a big mill sells flour to bakeries. <a href="https://www.generalmillsfoodservice.com/products/56573000-gold-medal-superlative-flour-bakers-enriched-bromated-bleached">Its own page calls it an "enriched bromated bleached option."</a></p>
+<p>A big mill sells flour to bakeries. <a href="https://www.generalmillsfoodservice.com/products/56573000-gold-medal-superlative-flour-bakers-enriched-bromated-bleached">Its own page calls it an "enriched bromated bleached option."</a></p>
 
 <p>Three words there do work.</p>
 
@@ -108,27 +108,29 @@ status: ready
 
 <p>Take the word healthy. You would think it is nailed down.</p>
 
-<p>The FDA did change the rule. It came out on <a href="https://www.fda.gov/food/hfp-constituent-updates/fda-finalizes-updated-healthy-nutrient-content-claim">19 December 2024</a>.</p>
+<p>There is a rule for that word. <a href="https://www.fda.gov/food/hfp-constituent-updates/fda-finalizes-updated-healthy-nutrient-content-claim">It was finished in December 2024</a>.</p>
 
-<p>Now read the FDA's own line on who has to follow it.</p>
+<p>Read the line about who has to follow it.</p>
 
 <p><strong>"Manufacturers can voluntarily use the claim on a food package if the product meets the updated criteria."</strong></p>
 
 <p>Nobody is made to put it on. That is what voluntary means.</p>
 
+<p>Nobody is checking that box for you. The company selling it decides what goes on the front.</p>
+
 <p>And a box can say warmer things instead. Wholesome. Homestyle. Made with real buttermilk.</p>
 
 <p>Those words have no test to pass.</p>
 
-<p>Then there is the plain question. Is the box even right?</p>
+<p>And is the box even right?</p>
 
-<p>In January 2025 a pancake mix was pulled. <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/quaker-issues-limited-recall-undeclared-milk-pearl-milling-company-original-pancake-waffle-mix">The FDA notice says the boxes "may contain undeclared milk."</a></p>
+<p>In January 2025 a pancake mix was pulled. <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/quaker-issues-limited-recall-undeclared-milk-pearl-milling-company-original-pancake-waffle-mix">The recall notice says the boxes "may contain undeclared milk."</a></p>
 
 <p>Milk in the box. Not on the box.</p>
 
 <p>If you cannot have milk, that matters a lot.</p>
 
-<p>Now read how they found out. The notice says it came "after being alerted by a retail partner."</p>
+<p>Read how they found out. The notice says it came "after being alerted by a retail partner."</p>
 
 <p>A shop told the maker. Not the other way round.</p>
 
@@ -140,7 +142,7 @@ status: ready
 
 <p class="quick-answer">Quick answer: it wrote a warning label, and set the clock for 2027.</p>
 
-<p>This is the newest thing on it, and almost nobody has read it.</p>
+<p>This is the newest thing on it. Almost nobody has read it.</p>
 
 <p>Texas Senate Bill 25 names 44 things. Bleached flour is number six. Bromated flour is number nine.</p>
 
@@ -154,7 +156,7 @@ status: ready
 
 <p>The fine has teeth. Up to <strong>fifty thousand dollars a day</strong>, per product.</p>
 
-<p>Now here is the line that decides how much of this you ever see.</p>
+<p>One line decides how much of this you ever see.</p>
 
 <p>The law "applies only to a food product label developed or copyrighted on or after January 1, 2027."</p>
 
@@ -171,7 +173,7 @@ status: ready
 <tr><td>Texas listed 44 ingredients</td><td>Bleached flour and bromated flour are on it</td><td>Texas Senate Bill 25, 2025</td><td>A warning label is not a ban</td></tr>
 <tr><td>The warning cites other countries</td><td>Australia, Canada, the EU and the UK</td><td>The text of the bill itself</td><td>It is not a finding of harm in America</td></tr>
 <tr><td>It starts with new artwork</td><td>Labels made from 1 January 2027</td><td>Texas Senate Bill 25, Section 19</td><td>Older label designs are not covered</td></tr>
-<tr><td>Pancake mix recalled for undeclared milk</td><td>A shop had to tell the maker</td><td>FDA notice, 14 to 15 January 2025</td><td>No reactions were reported and it was limited</td></tr>
+<tr><td>Pancake mix recalled for undeclared milk</td><td>A shop had to tell the maker</td><td>Recall notice, 14 January 2025</td><td>No reactions were reported and it was limited</td></tr>
 </tbody>
 </table>
 
@@ -185,11 +187,11 @@ status: ready
 
 <p><strong>Three.</strong> The recall was small and it was handled. The notice says plainly: "No allergic reactions related to this matter have been reported to date."</p>
 
-<p><strong>Four.</strong> The Texas law can switch itself off. If the FDA rules on one of the 44, the bill says the state rule "has no effect."</p>
+<p><strong>Four.</strong> The Texas law can switch itself off. If Washington acts on one of the 44, the bill says the state rule "has no effect."</p>
 
 <p>So this is not a story about poison in a pancake.</p>
 
-<p>It is a story about a gap you cannot close from where you stand.</p>
+<p>It is a story about a gap you cannot close standing in the baking aisle.</p>
 
 <p>The good word on the front is optional. How the flour was made is not on the front at all. The one law that would change that starts with next year's boxes.</p>
 
@@ -232,14 +234,13 @@ dying. This is a very serious matter. How can we ever trust them again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a new
 supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in my blog posts, the
-recalls, the lawsuits and the fines, and in the app I built called The Family Home
+<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and the fines, and in the app I built called The Family Home
 Toxic Scorecard. Also, inside my Switch Circle private community, we talk about real
 solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
-they never wanted. I have spent the last 15 years helping women get off prescription
-medications. I help families reclaim their health.</p>
+they never wanted. I have spent the last 15 years helping women get to the bottom of why they feel
+that way. I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
 into their stores. We are linking arms and together taking our control back. Control
@@ -251,10 +252,10 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00025F.htm">Texas Senate Bill 25, 89th Legislature, enrolled text</a>. The list of 44 ingredients includes "(6) bleached flour" and "(9) bromated flour." The required statement reads: "WARNING: This product contains an ingredient that is not recommended for human consumption by the appropriate authority in Australia, Canada, the European Union, or the United Kingdom." Penalties run to "$50,000 per day for each distinct food product in violation." Section 19 limits it to "a food product label developed or copyrighted on or after January 1, 2027," and a separate section removes its effect where the FDA acts on the same ingredient.</li>
+<li><a href="https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00025F.htm">Texas Senate Bill 25, 89th Legislature, enrolled text</a>. The list of 44 ingredients includes "(6) bleached flour" and "(9) bromated flour." The required statement reads: "WARNING: This product contains an ingredient that is not recommended for human consumption by the appropriate authority in Australia, Canada, the European Union, or the United Kingdom." Penalties run to "$50,000 per day for each distinct food product in violation." Section 19 limits it to "a food product label developed or copyrighted on or after January 1, 2027," and a separate section removes its effect where the federal government acts on the same ingredient.</li>
 <li><a href="https://www.generalmillsfoodservice.com/products/56573000-gold-medal-superlative-flour-bakers-enriched-bromated-bleached">General Mills Foodservice, Gold Medal Superlative bakers flour</a>. The company's own listing describes the product as "Provided in an enriched bromated bleached option." This is the manufacturer describing its own flour, on its own website.</li>
-<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/quaker-issues-limited-recall-undeclared-milk-pearl-milling-company-original-pancake-waffle-mix">FDA, company announcement 14 January 2025, published 15 January 2025</a>. The Quaker Oats Company recalled two pound boxes of Pearl Milling Company Original Pancake and Waffle Mix that "may contain undeclared milk, after being alerted by a retail partner." It covered 11 states. The notice states: "No allergic reactions related to this matter have been reported to date."</li>
-<li><a href="https://www.fda.gov/food/hfp-constituent-updates/fda-finalizes-updated-healthy-nutrient-content-claim">FDA, final rule on the "healthy" claim, 19 December 2024</a>. "Manufacturers can voluntarily use the claim on a food package if the product meets the updated criteria." The effective date was later postponed to 28 April 2025.</li>
+<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/quaker-issues-limited-recall-undeclared-milk-pearl-milling-company-original-pancake-waffle-mix">Recall notice, company announcement 14 January 2025, published 15 January 2025</a>. The Quaker Oats Company recalled two pound boxes of Pearl Milling Company Original Pancake and Waffle Mix that "may contain undeclared milk, after being alerted by a retail partner." It covered 11 states. The notice states: "No allergic reactions related to this matter have been reported to date."</li>
+<li><a href="https://www.fda.gov/food/hfp-constituent-updates/fda-finalizes-updated-healthy-nutrient-content-claim">The final federal rule on the word "healthy", 19 December 2024</a>. "Manufacturers can voluntarily use the claim on a food package if the product meets the updated criteria." The effective date was later postponed to 28 April 2025.</li>
 </ul>
 </div>
 
@@ -272,7 +273,7 @@ of our health and our finances.</p>
 
 <p><strong>Is a mix worse than making it from scratch?</strong> The main difference is what you can see. From scratch, you chose all six things. From a box, you chose the box.</p>
 
-<p><strong>Does the word healthy on a box mean anything now?</strong> The FDA changed the rule in December 2024. Using the word is optional, so a box can just say something else.</p>
+<p><strong>Does the word healthy on a box mean anything now?</strong> The rule for that word was finished in December 2024. Using it is optional, so a box can just say something else.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arebakingmi-freedom-v1.webp" alt="A stack of scratch pancakes with butter melting and real maple syrup being poured, warm morning light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -280,7 +281,7 @@ of our health and our finances.</p>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
-<p>You become the woman who makes pancakes, not the one who buys them.</p>
+<p>You become the one who makes the pancakes, not the one who buys the box.</p>
 
 <p>That sounds small. It is four minutes and a jar.</p>
 
@@ -358,7 +359,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Is pancake mix worse than making pancakes from scratch?",
    "acceptedAnswer": {"@type": "Answer", "text": "The main difference is visibility. Making them from scratch means you chose each of the six ingredients yourself. Buying a mix means you chose the box."}},
   {"@type": "Question", "name": "Does the word healthy on a food package mean anything?",
-   "acceptedAnswer": {"@type": "Answer", "text": "The FDA issued a final rule updating the healthy nutrient content claim on 19 December 2024. The FDA states that manufacturers can voluntarily use the claim, so a package can use other unregulated words instead."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "The final federal rule on the healthy nutrient content claim was issued on 19 December 2024. Using the claim is voluntary, so a package can use other unregulated words instead."}}
  ]
 }
 </script>

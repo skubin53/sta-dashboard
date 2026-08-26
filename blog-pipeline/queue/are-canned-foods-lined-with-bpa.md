@@ -51,7 +51,7 @@ status: ready
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>Yes. Most metal food cans have a coating on the inside. Plenty of them are made with BPA.</p>
-<p><strong><a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/bisphenol-bpa-use-food-contact-application">The FDA says it plainly: "BPA is also found in epoxy resins, which act as a protective lining on the inside of some metal-based food and beverage cans."</a></strong></p>
+<p><strong><a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/bisphenol-bpa-use-food-contact-application">The government's own page on food packaging spells it out: "BPA is also found in epoxy resins, which act as a protective lining on the inside of some metal-based food and beverage cans."</a></strong></p>
 <p>In 2012 they took it out of baby bottles. Nobody took it out of the can in your pantry.</p>
 </div>
 
@@ -76,21 +76,23 @@ status: ready
 
 <p class="quick-answer">Quick answer: a thin layer of plastic you never see.</p>
 
-<p>Open a can of beans. Tip it. Look inside the empty tin.</p>
+<p>Open a can of beans. Tip it out. Look inside the empty tin.</p>
 
 <p>That pale gold shine is not the metal. It is a coating.</p>
 
-<p>The FDA says the liners "form a barrier between the food and the can surface that prevents corrosion of the can and migration of metal into the food."</p>
+<p>The same page explains what the coating is for. The liners "form a barrier between the food and the can surface that prevents corrosion of the can and migration of metal into the food."</p>
 
-<p>Read that again. It is there to stop the metal getting into your food.</p>
+<p>Read that again. It is there to stop the metal getting into your dinner.</p>
 
-<p>The FDA also says a little moves the other way: "very small amounts of BPA may migrate from the food packaging into foods or beverages."</p>
+<p>Further down, a little goes the other way. "Very small amounts of BPA may migrate from the food packaging into foods or beverages."</p>
 
-<p><strong>Migrate just means move.</strong> A little of the coating comes off into the food.</p>
+<p><strong>Migrate just means move.</strong> A little of the coating comes off into the food you eat.</p>
 
-<p>One more thing from that same page. Those approvals "date from the 1960s."</p>
+<p>One more line off that page. The rules that let it in there "date from the 1960s."</p>
 
-<p>The sign off on your soup can is older than most of us.</p>
+<p>The sign off on your can of soup is older than most of us.</p>
+
+<p>Nobody is checking that can. The company that fills it is the only one deciding what the lining is made of.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arecannedfo-villain-v1.webp" alt="An opened empty food can tipped on its side on a kitchen counter, the pale gold plastic lining clearly visible inside" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -102,7 +104,7 @@ status: ready
 
 <p>This is the part that made me sit down.</p>
 
-<p><a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/questions-answers-bisphenol-bpa-use-food-contact-applications">The FDA says: "In 2012 and 2013, FDA granted two petitions requesting that FDA amend its food additive regulations to no longer provide for the use of certain BPA-based materials in baby bottles, sippy cups, and infant formula packaging because these uses have been abandoned."</a></p>
+<p>In 2012 and 2013 two rules were deleted. <a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/questions-answers-bisphenol-bpa-use-food-contact-applications">The record reads: "no longer provide for the use of certain BPA-based materials in baby bottles, sippy cups, and infant formula packaging because these uses have been abandoned."</a></p>
 
 <p>Bottles. Cups. Formula packs.</p>
 
@@ -114,13 +116,13 @@ status: ready
 
 <p>Abandoned means the companies had already stopped using it there.</p>
 
-<p>So this was not a ruling. Nobody decided it was harmful.</p>
+<p>So nobody ruled it harmful. That sentence says so in plain English.</p>
 
-<p>The companies had already moved on in one aisle. They asked for the old paperwork to be deleted. It was.</p>
+<p>The companies had already moved on in one aisle. They asked for the old paperwork to be deleted. It was deleted.</p>
 
 <p>In the aisle where they had not moved on, nothing happened.</p>
 
-<p>That is the whole story in one line. <strong>They fixed it where they had already fixed it.</strong></p>
+<p>That is the whole story in one line. <strong>They fixed it where it was already fixed.</strong></p>
 
 <h2 id="is-bpa-free-the-fix">So is BPA free the fix?</h2>
 
@@ -134,9 +136,9 @@ status: ready
 
 <p>The common stand in is BPS. One letter different.</p>
 
-<p>California wrote this down in October 2023. <a href="https://oehha.ca.gov/sites/default/files/media/downloads/crnr/bpsfemalehid100623.pdf">Its state health office says BPS "is in protective coatings inside some food cans."</a></p>
+<p>California wrote this down in October 2023. <a href="https://oehha.ca.gov/sites/default/files/media/downloads/crnr/bpsfemalehid100623.pdf">Its state health office found BPS "is in protective coatings inside some food cans."</a></p>
 
-<p>The same report says why the swap happened. "Manufacturers have been gradually replacing BPA with BPS."</p>
+<p>The report gives the reason. "Manufacturers have been gradually replacing BPA with BPS."</p>
 
 <p>Then California put BPS on its own warning list. Three times.</p>
 
@@ -144,18 +146,18 @@ status: ready
 
 <p>That last one was eight months ago.</p>
 
-<p>So the word on the front changed. The list of concerns got longer.</p>
+<p>So the word on the front of the can changed. The list of concerns got longer.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arecannedfo-turning-point-v1.webp" alt="A woman in her fifties standing at an open pantry with a can in each hand, looking past them, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <table class="sta-table">
-<thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
+<thead><tr><th>What happened</th><th>The concern</th><th>Named source and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Baby bottle approval deleted</td><td>Only bottles, cups and formula packs</td><td>FDA, 2012 and 2013</td><td>It was not a safety ruling. FDA says so itself</td></tr>
-<tr><td>The can lining approval stayed</td><td>Cans were never in that change</td><td>FDA, current guidance</td><td>FDA still calls the approved uses safe</td></tr>
-<tr><td>The approvals are from the 1960s</td><td>The first sign off is over 60 years old</td><td>FDA, its own background page</td><td>Old rules are not the same as wrong rules</td></tr>
+<tr><td>Baby bottle paperwork deleted</td><td>Only bottles, cups and formula packs</td><td>Federal record, 2012 and 2013</td><td>Not a safety ruling. The record says so</td></tr>
+<tr><td>The can lining rule stayed</td><td>Cans were never in that change</td><td>Federal record, current page</td><td>Nobody has ruled the lining harmful either</td></tr>
+<tr><td>The rules date from the 1960s</td><td>The first sign off is over 60 years old</td><td>Federal record, its own background page</td><td>Old rules are not automatically wrong rules</td></tr>
 <tr><td>BPS added to a state list</td><td>Three times in two years</td><td>California, Dec 2023, Jan 2025, Dec 2025</td><td>A state listing is a warning rule, not a ban</td></tr>
 <tr><td>BPS is in some can coatings</td><td>The label word changed, the coating stayed</td><td>California state report, October 2023</td><td>One 13 year study found no rising trend in food</td></tr>
 </tbody>
@@ -167,23 +169,25 @@ status: ready
 
 <p>I will not hide the parts that do not help me.</p>
 
-<p><strong>One.</strong> The FDA has not changed its mind. Its words: "the available information continues to support the safety of BPA for the currently approved uses in food containers and packaging."</p>
+<p><strong>One.</strong> The official line has not moved. It still reads: "the available information continues to support the safety of BPA for the currently approved uses in food containers and packaging."</p>
 
-<p><strong>Two.</strong> The swap story is not settled either. California's own report quotes a study that ran 13 years. It found that the lack of a trend "does not support the speculation that BPS is being used to replace BPA in food packaging."</p>
+<p><strong>Two.</strong> The swap story is not settled either. California's own report quotes a study that ran 13 years. It found the lack of a trend "does not support the speculation that BPS is being used to replace BPA in food packaging."</p>
 
-<p>So the state document carries the argument against itself. Good. That is what a real report looks like.</p>
+<p>So the state's own report argues against itself. Good.</p>
 
-<p><strong>Three.</strong> The lining does a job. Without it you get metal in the food. That is a worse trade.</p>
+<p><strong>Three.</strong> The lining does a job. Without it you get metal in your food. That is a worse trade.</p>
 
 <p>So why does this still sit wrong with me?</p>
 
-<p>Because of one date. The FDA's big review was "a four-year review of more than 300 scientific studies."</p>
+<p>Because of one date. That official line rests on "a four-year review of more than 300 scientific studies."</p>
 
 <p>Look at the years it covered. <strong>"The studies reviewed were published or available from November 1, 2009 to July 23, 2013."</strong></p>
 
 <p>That is the newest full review on the page. It stops in 2013.</p>
 
 <p>Your can is being judged on homework from thirteen years ago.</p>
+
+<p>Nothing newer sits on that page. And your pantry is not waiting.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arecannedfo-belonging-v1.webp" alt="Two women of about the same age unpacking glass mason jars from a box in a kitchen, packing paper on the table" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -222,14 +226,13 @@ dying. This is a very serious matter. How can we ever trust them again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a new
 supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in my blog posts, the
-recalls, the lawsuits and the fines, and in the app I built called The Family Home
+<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and the fines, and in the app I built called The Family Home
 Toxic Scorecard. Also, inside my Switch Circle private community, we talk about real
 solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
-they never wanted. I have spent the last 15 years helping women get off prescription
-medications. I help families reclaim their health.</p>
+they never wanted. I have spent the last 15 years helping women get to the bottom of
+why they feel that way. I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
 into their stores. We are linking arms and together taking our control back. Control
@@ -242,8 +245,8 @@ of our health and our finances.</p>
 <h3>The receipts</h3>
 <ul>
 <li><a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/bisphenol-bpa-use-food-contact-application">FDA, Update on Bisphenol A for Use in Food Contact Applications</a>. "BPA is also found in epoxy resins, which act as a protective lining on the inside of some metal-based food and beverage cans." The same page states the original approvals "date from the 1960s" and that "the available information continues to support the safety of BPA for the currently approved uses in food containers and packaging."</li>
-<li><a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/questions-answers-bisphenol-bpa-use-food-contact-applications">FDA, Questions and Answers on BPA Use in Food Contact Applications</a>. "In 2012 and 2013, FDA granted two petitions requesting that FDA amend its food additive regulations to no longer provide for the use of certain BPA-based materials in baby bottles, sippy cups, and infant formula packaging because these uses have been abandoned." And: "An amendment of the food additive regulations based on abandonment is not based on safety." The same page dates its four year review of more than 300 studies to material "published or available from November 1, 2009 to July 23, 2013."</li>
-<li><a href="https://oehha.ca.gov/sites/default/files/media/downloads/crnr/bpsfemalehid100623.pdf">California Office of Environmental Health Hazard Assessment, October 2023</a>. BPS "is in protective coatings inside some food cans" and "manufacturers have been gradually replacing BPA with BPS and other analogs." The same report quotes a 13 year study finding the lack of trend "does not support the speculation that BPS is being used to replace BPA in food packaging." Both sides are in the state's own document.</li>
+<li><a href="https://www.fda.gov/food/food-packaging-other-substances-come-contact-food-information-consumers/questions-answers-bisphenol-bpa-use-food-contact-applications">FDA, Questions and Answers on BPA Use in Food Contact Applications</a>. The 2012 and 2013 petitions asked to "no longer provide for the use of certain BPA-based materials in baby bottles, sippy cups, and infant formula packaging because these uses have been abandoned." And: "An amendment of the food additive regulations based on abandonment is not based on safety." The same page dates its four year review of more than 300 studies to material "published or available from November 1, 2009 to July 23, 2013."</li>
+<li><a href="https://oehha.ca.gov/sites/default/files/media/downloads/crnr/bpsfemalehid100623.pdf">California Office of Environmental Health Hazard Assessment, October 2023</a>. BPS "is in protective coatings inside some food cans" and "manufacturers have been gradually replacing BPA with BPS and other analogs." The same report quotes a 13 year study finding the lack of trend "does not support the speculation that BPS is being used to replace BPA in food packaging."</li>
 <li><a href="https://oehha.ca.gov/proposition-65/chemicals/bisphenol-s-bps">California, Proposition 65 listing for bisphenol S</a>. Three listing dates: 29 December 2023, 3 January 2025 and 8 December 2025. A listing triggers warning rules in California. It is not a nationwide ban.</li>
 </ul>
 </div>
@@ -260,7 +263,7 @@ of our health and our finances.</p>
 
 <p><strong>Is the lining printed on the label?</strong> No. Can coatings count as packaging, not as an ingredient. They do not appear on the ingredients list.</p>
 
-<p><strong>Did the FDA ever ban BPA in food cans?</strong> No. The 2012 and 2013 changes covered baby bottles, sippy cups and infant formula packaging. The FDA still lists can linings among its approved uses.</p>
+<p><strong>Did the FDA ever ban BPA in food cans?</strong> No. The 2012 and 2013 changes covered baby bottles, sippy cups and infant formula packaging. The can lining rule was never touched. It is still on the books today.</p>
 
 <p><strong>Should I throw out the cans in my pantry?</strong> No. Eat them. Then change the two or three you buy most often, and leave the rest alone. That is a shopping list, not a bin bag.</p>
 
@@ -270,9 +273,9 @@ of our health and our finances.</p>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
-<p>You become the woman who knows her own pantry.</p>
+<p>You become the kind of woman who knows her own pantry.</p>
 
-<p>Not all of it. Just the two things she opens every week.</p>
+<p>Not all of it. Just the two things you open every week.</p>
 
 <p>That is enough. It was enough for me.</p>
 
@@ -346,7 +349,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Is the can lining printed on the label?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. Can coatings count as packaging rather than as an ingredient, so they do not appear on the ingredients list."}},
   {"@type": "Question", "name": "Did the FDA ever ban BPA in food cans?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. The 2012 and 2013 amendments covered baby bottles, sippy cups and infant formula packaging only. The FDA still lists can linings among the approved uses of BPA."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No. The 2012 and 2013 amendments covered baby bottles, sippy cups and infant formula packaging only. The can lining rule was never touched and is still on the books today."}},
   {"@type": "Question", "name": "Should I throw out the canned food in my pantry?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. Eat what you have, then change the two or three cans you buy most often and leave the rest alone."}}
  ]

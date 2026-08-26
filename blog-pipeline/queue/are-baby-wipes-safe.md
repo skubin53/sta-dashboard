@@ -50,7 +50,7 @@ status: ready
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>On 4 June 2026, Target pulled its own brand of baby wipes off the shelf.</p>
-<p><strong><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">The FDA notice says it happened "following customer complaints of product discoloration, and FDA testing that identified the presence of Burkholderia cepacia complex and Burkholderia gladioli in product samples."</a></strong></p>
+<p><strong><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">The recall notice says it happened "following customer complaints of product discoloration, and FDA testing that identified the presence of Burkholderia cepacia complex and Burkholderia gladioli in product samples."</a></strong></p>
 <p>Read that order again. Shoppers noticed first. The wipes looked wrong in the packet. Only then did anybody test them.</p>
 </div>
 
@@ -77,13 +77,15 @@ status: ready
 
 <p>You keep a pack by the back door. One in the car. One in your handbag.</p>
 
-<p>They are for when the grandkids come. You also use them on your own hands. Most of us do.</p>
+<p>They come out when the grandkids come. They also come out for your own hands. Your face after a hot afternoon. The steering wheel. I keep a pack in my car for exactly that.</p>
 
-<p>Here is what the FDA published. Target recalled its Up and Up Fragrance Free wipes and its Up and Up Fresh Cucumber Scented wipes. Every size. The little 20 count pouch up to the 1200 count box.</p>
+<p>So this one is about your skin too.</p>
+
+<p>Target recalled two kinds. Up and Up Fragrance Free wipes, and Up and Up Fresh Cucumber Scented wipes. Every size. The little 20 count pouch up to the 1200 count box.</p>
 
 <p><strong>Recalled means the company asks for it back.</strong> It is not a warning. It is a stop.</p>
 
-<p>Two germs were found. You can see both names in the quote above. A germ is a tiny living thing. You cannot see one. These two live in soil and in water. On healthy skin they mostly do nothing.</p>
+<p>Two germs turned up in the samples. Both names are in the quote above. A germ is a tiny living thing. You cannot see one. These two live in soil and in water. On healthy skin they mostly do nothing.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-villain-v1.webp" alt="An open pack of baby wipes alone on a bare counter under flat cold light, nobody in frame" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -93,9 +95,9 @@ status: ready
 
 <p class="quick-answer">Quick answer: not Target. A company you have never heard of.</p>
 
-<p>This is the part of the notice most people skip.</p>
+<p>This is the part of the notice you skip. I skipped it too.</p>
 
-<p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">The FDA notice says: "The recalled wipes were manufactured by a supplier."</a> Further down it gives the name. Sapro Temizlik Urunleri.</p>
+<p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">The notice puts it plainly: "The recalled wipes were manufactured by a supplier."</a> Further down it gives the name. Sapro Temizlik Urunleri.</p>
 
 <p>So Target's name was on the front. Someone else made what was inside.</p>
 
@@ -103,9 +105,9 @@ status: ready
 
 <p><strong>You had no way to know that.</strong> It is not on the front of the pack in a size you could read.</p>
 
-<p>Here is the last thing that notice says on it. Target and the maker "have received a number of consumer complaints and adverse event reports alleging product discoloration and symptoms such as skin irritation, eye irritation, and infections potentially associated with the use of the product." Then: "These reports remain under investigation."</p>
+<p>Here is the last line that matters. Target and the maker say they have had complaints. The words are "skin irritation, eye irritation, and infections." Then: "These reports remain under investigation."</p>
 
-<p>Alleging means claimed. It does not mean proven. Under investigation means nobody has finished. I use the exact words on purpose. The exact words matter here.</p>
+<p>Their word for those reports is "alleging." That means claimed. It does not mean proven. Under investigation means nobody has finished. I use their exact words on purpose. The exact words matter here.</p>
 
 <h2 id="why-nobody-checked">Why did nobody check them first?</h2>
 
@@ -115,9 +117,9 @@ status: ready
 
 <p>That word does a lot of work.</p>
 
-<p><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated">Cosmetics in America are not approved before they go on sale.</a> Medicine is. Cosmetics are not. Nobody signs them off first.</p>
+<p><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated">Nobody checks a cosmetic before it goes on sale in America.</a> No test. No sign off. The company selling it is the only one deciding what goes in that packet.</p>
 
-<p>So June was not a slip. That is the system working as built.</p>
+<p>So June was not a slip. That is the system working the way it was built.</p>
 
 <h3>Step one, it goes on the shelf</h3>
 <p>No test required first. The company decides it is fine.</p>
@@ -126,21 +128,21 @@ status: ready
 <p>You have nothing to check. There is no approval number to look up.</p>
 
 <h3>Step three, somebody notices</h3>
-<p>Real shoppers saw the colour was off and said so.</p>
+<p>Real shoppers saw the color was off and said so.</p>
 
 <h3>Step four, then it gets tested</h3>
-<p>The FDA tested it and found the germs. The recall came after that.</p>
+<p>Only then were the wipes tested. The germs turned up. The recall came after that.</p>
 
 <p>One law did change in 2022. <a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra">You can read it here.</a> It made companies list their factories. It made them report bad reactions. That is real progress. I will say so. It still does not mean anyone tests the packet first.</p>
 
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Target recalled Up and Up baby wipes</td><td>Two germs found in test samples</td><td>FDA notice, 4 to 5 June 2026</td><td>Target pulled them itself. Nobody forced it</td></tr>
-<tr><td>Shoppers spotted it first</td><td>Colour complaints came before any testing</td><td>The FDA notice says so plainly</td><td>The system worked, slowly, in the end</td></tr>
-<tr><td>Made by an outside supplier</td><td>The name on the pack did not make the product</td><td>FDA notice names Sapro Temizlik Urunleri</td><td>Store brands are made this way everywhere</td></tr>
-<tr><td>Sold as a cosmetic</td><td>Cosmetics need no approval before sale</td><td>FDA, on its own authority over cosmetics</td><td>It is legal. That is the point</td></tr>
-<tr><td>Reports of irritation</td><td>Skin and eye irritation reported</td><td>FDA notice, still under investigation</td><td>Alleged, not proven. Nothing is settled</td></tr>
+<tr><td>Target recalled Up and Up baby wipes</td><td>Two germs found in test samples</td><td>FDA recall notice, 4 to 5 June 2026</td><td>Target pulled them itself. Nobody forced it</td></tr>
+<tr><td>Shoppers spotted it first</td><td>Color complaints came before any testing</td><td>The recall notice, in its own words</td><td>The system worked, slowly, in the end</td></tr>
+<tr><td>Made by an outside supplier</td><td>The name on the pack did not make the product</td><td>The notice names Sapro Temizlik Urunleri</td><td>Store brands are made this way everywhere</td></tr>
+<tr><td>Sold as a cosmetic</td><td>Nobody checks a cosmetic before sale</td><td>The June notice, Product Type: Cosmetics</td><td>It is legal. That is the point</td></tr>
+<tr><td>Reports of irritation</td><td>Skin and eye irritation reported</td><td>The notice, still under investigation</td><td>Alleged, not proven. Nothing is settled</td></tr>
 </tbody>
 </table>
 
@@ -154,11 +156,11 @@ status: ready
 
 <p>I want to be fair about this one.</p>
 
-<p><strong>One.</strong> The FDA says the risk is not the same for everyone. Its words: "In healthy individuals, use of the product on skin with minor lesions will more likely result in local infections." Lesions just means small cuts or sore patches. For a healthy grown woman, that is a lot milder than the headline sounds.</p>
+<p><strong>One.</strong> The risk is not the same for everyone. The notice says so. Its words: "In healthy individuals, use of the product on skin with minor lesions will more likely result in local infections." Lesions just means small cuts or sore patches. If you are healthy, that is a lot milder than the headline sounds.</p>
 
 <p><strong>Two.</strong> The serious part is about the very young and the very sick. The notice says the spread is worse in "immunocompromised individuals, newborns, infants and young children." That long word means a body that cannot fight germs well.</p>
 
-<p><strong>Three.</strong> Target pulled them on its own. The words in the notice are "voluntarily recalling" and "out of abundance of caution." That is a company doing the right thing, and I will not pretend otherwise.</p>
+<p><strong>Three.</strong> Target pulled them on its own. The words in the notice are "voluntarily recalling" and "out of abundance of caution." That is a company doing the right thing. I will not pretend otherwise.</p>
 
 <p>So why does it still bother me?</p>
 
@@ -172,17 +174,17 @@ status: ready
 
 <p class="quick-answer">Quick answer: for most jobs, a warm cloth. For the rest, know who made it.</p>
 
-<p>Start with the easy one. Half the times you reach for a wipe, a cloth and warm water does the same job. Sticky hands. A face after lunch. That is it.</p>
+<p>Start with the easy one. Half the times you reach for a wipe, a cloth and warm water does the same job. Sticky hands. A face after lunch. The steering wheel.</p>
 
 <p>For the times you do want a wipe, the question is not what is printed on the front.</p>
 
-<p>I am not going to send you to the shelf to compare packets. The June recall is the reason. Those wipes looked fine on the shelf. The problem was in the factory, and the factory is not on the front of the pack.</p>
+<p>I am not going to send you to the shelf to compare packets. June is the reason. Those wipes looked fine on the shelf. The problem was in the factory, and the factory is not printed on the front.</p>
 
-<p>So the only question left is who made it, and whether they would tell you if something came back wrong.</p>
+<p>So one question is left. Who made it, and would they tell you if something came back wrong?</p>
 
 <p>That is why my family buys through a private membership store instead. We are the manufacturer. No middleman, no markup. One name on it, and a person who picks up the phone.</p>
 
-<p>Do the small thing first. Go and look at what is by your back door today.</p>
+<p>Do the small thing first. Go and look at what is by your back door right now.</p>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -197,14 +199,13 @@ dying. This is a very serious matter. How can we ever trust them again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a new
 supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in my blog posts, the
-recalls, the lawsuits and the fines, and in the app I built called The Family Home
+<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and the fines, and in the app I built called The Family Home
 Toxic Scorecard. Also, inside my Switch Circle private community, we talk about real
 solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
-they never wanted. I have spent the last 15 years helping women get off prescription
-medications. I help families reclaim their health.</p>
+they never wanted. I have spent the last 15 years helping women get to the bottom of
+why they feel that way. I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
 into their stores. We are linking arms and together taking our control back. Control
@@ -218,8 +219,8 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">FDA, company announcement 4 June 2026, published 5 June 2026</a>. Target voluntarily recalled Up and Up Fragrance Free and Fresh Cucumber Scented Baby Wipes "following customer complaints of product discoloration, and FDA testing that identified the presence of Burkholderia cepacia complex and Burkholderia gladioli in product samples."</li>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">The same notice, on who made them</a>: "The recalled wipes were manufactured by a supplier." The supplier is named in the notice as Sapro Temizlik Urunleri. Target and the maker report complaints "alleging product discoloration and symptoms such as skin irritation, eye irritation, and infections potentially associated with the use of the product." Those reports "remain under investigation." Alleged, not proven.</li>
-<li><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated">FDA, on its authority over cosmetics</a>. Cosmetics are regulated but are not approved by the FDA before they go on sale. The June recall lists these wipes under Product Type: Cosmetics.</li>
-<li><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra">FDA, Modernization of Cosmetics Regulation Act of 2022</a>. The law that added factory registration and reporting of bad reactions. It does not add approval before sale.</li>
+<li><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/fda-authority-over-cosmetics-how-cosmetics-are-not-fda-approved-are-fda-regulated">The government's own page on cosmetics</a>. Nobody checks a cosmetic before it goes on sale. The June recall lists these wipes under Product Type: Cosmetics.</li>
+<li><a href="https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra">Modernization of Cosmetics Regulation Act of 2022</a>. The law that added factory registration and reporting of bad reactions. It added nothing that checks the packet before sale.</li>
 </ul>
 </div>
 
@@ -231,13 +232,13 @@ of our health and our finances.</p>
 
 <h2 id="faq">What else do people ask?</h2>
 
-<p><strong>How do I know if my pack is one of them?</strong> The FDA notice lists every UPC and the date codes. Fragrance Free packs made between 7 November 2025 and 5 May 2026 are in it. Target says to stop using them and take them back to any store for a full refund.</p>
+<p><strong>How do I know if my pack is one of them?</strong> The recall notice lists every UPC and the date codes. Fragrance Free packs made between 7 November 2025 and 5 May 2026 are in it. Target says to stop using them and take them back to any store for a full refund.</p>
 
 <p><strong>Are the fragrance free ones safer?</strong> Not in this case. Both kinds were recalled. The fragrance free version was the one with the wider range of dates.</p>
 
-<p><strong>Is it safe to use wipes on my own face?</strong> A wipe made for a baby is made to be gentle, and plenty of grown women use them. What June showed is that gentle and clean are two different questions.</p>
+<p><strong>Is it safe to use wipes on my own face?</strong> A wipe made for a baby is made to be gentle, and plenty of us use them on our own faces. June showed that gentle and clean are two different questions.</p>
 
-<p><strong>Has anyone actually been harmed?</strong> There are reports of skin irritation, eye irritation and infection, and the FDA notice says they are still being looked into. Nothing has been proven and I am not going to say it has.</p>
+<p><strong>Has anyone actually been harmed?</strong> There are reports of skin irritation, eye irritation and infection, and the notice says they are still being looked into. Nothing has been proven and I am not going to say it has.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-freedom-v1.webp" alt="A grandmother laughing with her grandchild in warm afternoon light, a folded cloth on the table" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -245,7 +246,7 @@ of our health and our finances.</p>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
-<p>You become the woman who checks the packet by the back door, not because she is worried, but because it takes ten seconds.</p>
+<p>You become the kind of woman who checks the packet by the back door. Not because you are worried. Because it takes ten seconds.</p>
 
 <p>You stop waiting to be told. In June the telling took months, and it started with shoppers.</p>
 

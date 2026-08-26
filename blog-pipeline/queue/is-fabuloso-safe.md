@@ -222,8 +222,7 @@ dying. This is a very serious matter. How can we ever trust them again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a new
 supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in my blog posts, the
-recalls, the lawsuits and the fines, and in the app I built called The Family Home
+<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and the fines, and in the app I built called The Family Home
 Toxic Scorecard. Also, inside my Switch Circle private community, we talk about real
 solutions.</p>
 

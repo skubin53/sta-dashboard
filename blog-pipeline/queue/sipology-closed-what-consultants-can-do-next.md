@@ -72,11 +72,11 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <p class="quick-answer">Quick answer: the selling side stopped, and the money owed stopped with it.</p>
 
-<p>It started in 2006 in Ontario as Steeped Tea. In 2012 the founders took it on Dragons' Den and it took off. In 2018 the name changed to Sipology. For a lot of women it was tea, a table, and money coming into the house.</p>
+<p>It started in 2006 in Ontario as Steeped Tea. In 2012 the founders took it on Dragons' Den and it took off. In 2018 the name changed to Sipology. For you it was tea, a table, and money coming into the house.</p>
 
 <p>In April 2026 that ended. Direct Selling News reported that the selling side had stopped. The United States website went dark. New orders stopped.</p>
 
-<p>Then there is the line that matters most. In her message to consultants, the founder wrote this. "Given the company's financial position, we are unable to process commission payments."</p>
+<p>Then one line. In her message to consultants, the founder wrote this. "Given the company's financial position, we are unable to process commission payments."</p>
 
 <p>Read that again slowly. Not the products stopped. Not the website stopped. The money already earned, for work already done, stopped.</p>
 
@@ -87,7 +87,7 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 <span class="micro">You can always say no.</span>
 </div>
 
-<p>She also called it "one of the hardest messages we've ever had to write." She said the company "was built in living rooms, around kitchen tables." I believe her. Both things are true. She meant it. And the women in those living rooms still did not get paid.</p>
+<p>She also called it "one of the hardest messages we've ever had to write." She said the company "was built in living rooms, around kitchen tables." I believe her. Both things are true. She meant it. And you still did not get paid.</p>
 
 <p>One caveat. There was no formal public statement, and the effect on the making and retail side was not clear. I am telling you what was reported. No more.</p>
 
@@ -102,7 +102,7 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <p>The account was not. The billing was not. The list was not. All of it sat at head office, on a system you could not log into. So when head office stopped, everything stopped in the same second. Not slowly. Not with warning. Not in line with how hard you worked.</p>
 
-<p>So a woman with four hundred customers and a woman with four both went to zero. Same afternoon. Effort had nothing to do with it.</p>
+<p>You could have four hundred customers. You could have four. Both went to zero the same afternoon. How hard you worked had nothing to do with it.</p>
 
 <img src="https://scan.ismyhometoxic.com/blog-images/sipologyclo-villain-v1.webp" alt="Shelves in a spare room holding rows of identical tins and sealed boxes, nobody in the room" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
@@ -122,13 +122,13 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <h3>The reorder</h3>
 
-<p>This is the one I care about most. A sale pays you once. A woman who reorders every month pays you for as long as she needs it. Two different lives. In month one they look the same.</p>
+<p>This is the one I care about most. A sale pays you once. A customer who reorders pays you month after month after month. Two different lives. In month one they look the same.</p>
 
 <table class="sta-table">
 <tr><th>&nbsp;</th><th>Renting</th><th>Keeping</th></tr>
 <tr><td>Who holds the customer record</td><td>Head office</td><td>You, and you can export it</td></tr>
 <tr><td>Who carries the stock</td><td>You, up front</td><td>Nobody. She orders, it ships</td></tr>
-<tr><td>What you get paid on</td><td>The sale</td><td>What she buys again next month</td></tr>
+<tr><td>What you get paid on</td><td>The sale</td><td>Her next order, every month</td></tr>
 <tr><td>If the company stops</td><td>You stop the same day</td><td>You still know every one of them</td></tr>
 <tr><td>What you are left holding</td><td>Boxes</td><td>Relationships</td></tr>
 </table>
@@ -161,11 +161,11 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <h3>Count what you are still holding</h3>
 
-<p>Go into the room. Count the boxes. Write the number down. Not to punish yourself. So it stops living in your stomach and starts living on paper.</p>
+<p>Go into the spare room. Count the boxes. Write the number down. Not to punish yourself. So it stops living in your stomach and starts living on paper.</p>
 
 <h3>Write down the people, not the products</h3>
 
-<p>Women skip this part. It is the only thing you still own. Every name you can remember. Her, her sister, the one from the school run.</p>
+<p>Do not skip this part. It is the only thing you still own. Every name you can remember. Her, her sister, the one from the school run.</p>
 
 <p>Those relationships did not close in April. Nobody switches those off from an office. They are yours. They always were. They are worth more than the stock.</p>
 
@@ -191,20 +191,18 @@ again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a
 new supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in my blog posts, the recalls, the
-lawsuits and the fines, and in the app I built called The Family Home Toxic
-Scorecard. Also, inside my Switch Circle private community, we talk
-about real solutions.</p>
+<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and the fines. Also, inside my Switch Circle
+private community, we talk about real solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they
-never wanted. I have spent the last 15 years helping women get off prescription medications.
+never wanted. I have spent the last 15 years helping women get to the bottom of why they feel that way.
 I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking into their
 stores. We are linking arms and together taking our control back. Control of our health and
 our finances.</p>
 
-<p>Start by clicking the link below and taking the SCAN.</p>
+<p>Start by clicking the link below and booking the twenty minutes.</p>
 </div>
 
 <div class="sta-proof">
@@ -216,7 +214,7 @@ our finances.</p>
 <li><a href="https://www.directsellingnews.com/2025/01/25/epicure-announced-that-it-had-ceased-operations/">Epicure ceased operations</a> in January 2025. Another kitchen table company, another set of consultants.</li>
 <li><a href="https://www.directsellingnews.com/2025/01/27/tupperware-to-withdraw-from-europe/">Tupperware withdrew from Europe</a> in January 2025. A name your mother trusted.</li>
 </ul>
-<p class="micro">Four closures in sixteen months, and not one of them was announced to the women in advance. That is the pattern. It is not bad luck and it is not you.</p>
+<p class="micro">Four closures in sixteen months, and not one was announced in advance. That is the pattern. It is not bad luck and it is not you.</p>
 </div>
 
 <h2 id="faq">Questions women are asking me about this</h2>
@@ -234,20 +232,20 @@ our finances.</p>
 <p>You do not, and you never will for certain. What you can do is ask the five questions. Refuse to move until all five are answered plainly. Companies that fold get vague on questions two and three first.</p>
 
 <p><strong>What if I never want to sell anything again?</strong></p>
-<p>Then don't. That is a fair answer. Take your list of people. Keep being the woman they text about what is safe to use. Let that be enough. It was never really about the tea.</p>
+<p>Then don't. That is a fair answer. Take your list of people. Keep being who they text about what is safe to use. Let that be enough. It was never really about the tea.</p>
 
 <img src="https://scan.ismyhometoxic.com/blog-images/sipologyclo-freedom-v1.webp" alt="A woman making herself a cup of tea in full morning sun, the worktop clear" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <p>Here is what I want for you, whether or not you ever speak to me.</p>
 
-<p>You spent years becoming the woman other women ask. That is not a job title. Nobody can take it off you. It did not close in April. Whatever you do next, do it as her. And make whoever wants your time answer all five questions first.</p>
+<p>You spent years becoming the one other women ask. That is not a job title. Nobody can take it off you. It did not close in April. Whatever you do next, do it as her. And make whoever wants your time answer all five questions first.</p>
 
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
 <li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> Same structure, different company.</li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a> For the part that is not about money.</li>
-<li><a href="https://theshannonnicole.com/blog/">Everything else I have written for women building something</a></li>
+<li><a href="https://theshannonnicole.com/blog/">More for women building something</a></li>
 </ul>
 </div>
 
@@ -311,7 +309,7 @@ our finances.</p>
   {"@type": "Question", "name": "How do I know the next one will not do the same thing?",
    "acceptedAnswer": {"@type": "Answer", "text": "You do not know with certainty and nobody can promise you that. What you can do is ask five questions and refuse to move until all five are answered plainly: what it costs to start all in, whether there is any monthly requirement, what happens to your customers if you stop, where the income disclosure is, and who makes money when you join."}},
   {"@type": "Question", "name": "What if I never want to sell anything again?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Then do not. Take your list of people, keep being the woman they text about what is safe to use, and let that be enough."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "Then do not. Take your list of people, keep being who they text about what is safe to use, and let that be enough."}}
  ]
 }
 </script>
