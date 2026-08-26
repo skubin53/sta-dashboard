@@ -1,11 +1,12 @@
 ---
 day: 14
-date: 2026-08-27
+date: 2026-08-26
 title: Are Canned Foods Lined With BPA? What Is On the Inside of the Tin (2026)
 slug: are-canned-foods-lined-with-bpa
 keyword: are canned foods lined with bpa
 category: Food
 meta_description: The FDA took BPA out of baby bottles in 2012. It left the can lining approval alone. Here is what coats the inside of the tin in 2026.
+vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 status: ready
 ---
 
@@ -46,7 +47,7 @@ status: ready
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 27, 2026<br><span style="font-size:.92em;">Published August 27, 2026 &middot; Last updated August 27, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 26, 2026<br><span style="font-size:.92em;">Published August 26, 2026 &middot; Last updated August 26, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -147,10 +148,6 @@ status: ready
 <p>That last one was eight months ago.</p>
 
 <p>So the word on the front of the can changed. The list of concerns got longer.</p>
-
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/arecannedfo-turning-point-v1.webp" alt="A woman in her fifties standing at an open pantry with a can in each hand, looking past them, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
 
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named source and date</th><th>What it does NOT mean</th></tr></thead>
@@ -305,8 +302,8 @@ of our health and our finances.</p>
    "headline": "Are Canned Foods Lined With BPA? What Is On the Inside of the Tin (2026)",
    "description": "The FDA took BPA out of baby bottles in 2012. It left the can lining approval alone. Here is what coats the inside of the tin in 2026.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arecannedfo-hero-v1.webp",
-   "datePublished": "2026-08-27",
-   "dateModified": "2026-08-27",
+   "datePublished": "2026-08-26",
+   "dateModified": "2026-08-26",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-canned-foods-lined-with-bpa"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}

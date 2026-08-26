@@ -1,7 +1,33 @@
 # THE BLOG CHECKLIST — the one and only
 
-**Triple-check every post against this. Once before publish, once after publish against
-the LIVE page, once more before you tell Shannon it is done.**
+> # NEVER RUSH THIS.
+>
+> **Shannon, 2026-08-26:** *"Take each point separately and make sure that it is done
+> correctly. EDIT what isn't. Then go back over the list 2 more times. This is soo
+> important that you NEVER rush this part. Never rush this. Take each point separately
+> and ensure that it is correct. Check your work."*
+>
+> **Take each point on its own.** Not a scan of the list, not a glance at the whole post
+> asking "does this look right". One point, then the next point, and for each one go and
+> look at the thing it is actually about.
+>
+> **A passing gate is not a checked point.** `blog-gates.py` proves a `<div>` exists. It
+> cannot tell you the words inside it are right, that the link goes where it claims, that
+> the picture matches the sentence beside it, or that the receipt says what the post says
+> it says. **The script is the floor, not the check.** Every point below still has to be
+> read by a person and confirmed against the post itself.
+>
+> **EDIT what is wrong, the moment you find it.** Do not note it and move on and plan to
+> come back. Fix it, then carry on down the list.
+>
+> **Then go over the whole list twice more.** Three passes, every time. Pass two catches
+> what pass one broke. Pass three catches what pass two broke. It is not paranoia: on
+> 2026-08-26 pass two caught a heading whose fix in pass one had silently orphaned the
+> table of contents anchor.
+>
+> **If you are hurrying, stop.** There is no deadline here worth a post that is wrong.
+> Publishing late is a small thing. Publishing something broken, or something that
+> contradicts what she has said, is the brand's front door.
 
 This MERGES three things that used to live apart, which is why items kept getting
 missed:

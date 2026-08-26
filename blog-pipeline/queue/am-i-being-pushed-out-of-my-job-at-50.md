@@ -1,6 +1,6 @@
 ---
 day: 15
-date: 2026-08-30
+date: 2026-08-26
 title: Am I Being Pushed Out of My Job at 50? (2026)
 slug: am-i-being-pushed-out-of-my-job-at-50
 keyword: am i being pushed out of my job at 50
@@ -47,7 +47,7 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 30, 2026<br><span style="font-size:.92em;">Published August 30, 2026 &middot; Last updated August 30, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 26, 2026<br><span style="font-size:.92em;">Published August 26, 2026 &middot; Last updated August 26, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -108,7 +108,7 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <p>New title. New description. Half of it is work you have never done. New tools, new start date. Nobody fired you. They built a chair you cannot sit in.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-villain-v1.webp" alt="An empty desk chair pushed back from a work desk in a grey office, a name plate turned face down" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-villain-v1.webp" alt="An empty open plan office at dusk, strip lights on, chairs pushed back at empty desks, a cardigan left over one of them" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <p>ProPublica spent a year inside one company on this. In 2018 its reporters counted more than twenty thousand American workers over forty cut in five years. Some were told their skills were out of date. Then it hired some of them back as contractors. Same work, less pay.</p>
 
@@ -143,7 +143,7 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <p>Nobody handed you that table at twenty two. I am handing it to you now. It costs you nothing. Take it to a company that is not mine.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-turning-point-v1.webp" alt="A woman in her fifties at her own kitchen table at night, laptop closed, a notebook open in front of her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-turning-point-v1.webp" alt="A woman in her fifties standing at her own kitchen island, one hand on the counter, looking out of the window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <p>And I am not telling you to quit. Keep the paycheck. Keep the benefits. Build the other thing beside it. At night, on a Sunday, while the first one pays the mortgage.</p>
 
@@ -161,7 +161,7 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <p>And there is no list of ten people you know. I do not teach that and I do not have one myself.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-belonging-v1.webp" alt="Two women in their fifties sitting on a porch step with mugs, talking, one leaning in to listen" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-belonging-v1.webp" alt="Two women walking together along a tree lined street in autumn light, one talking with her hands, the other laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="monday">What would I do first on Monday?</h2>
 
@@ -244,7 +244,7 @@ our finances.</p>
 <p><strong>What if I have no idea what I would even build?</strong></p>
 <p>Then you are in the right place to ask questions instead of make decisions. That is what the twenty minutes is for. You bring the awkward ones.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-freedom-v1.webp" alt="A woman in her fifties on her own front steps in full morning sun, coffee in hand, no bag, no lanyard" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/amibeingpus-freedom-v1.webp" alt="A woman in her fifties laughing in her own kitchen in full morning sun, both hands round a mug, breakfast on the island beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <p>Here is what I want for you, whether or not you ever speak to me.</p>
 
@@ -267,42 +267,66 @@ our finances.</p>
 
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "Article",
-   "headline": "Am I Being Pushed Out of My Job at 50? (2026)",
-   "description": "You are not imagining it. What the reorg, the younger manager and the redefined role really are, what the numbers say, and what nobody can reorg you out of.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/amibeingpus-hero-v1.webp",
-   "datePublished": "2026-08-30",
-   "dateModified": "2026-08-30",
-   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50"},
-   "author": {"@id": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50#author"},
-   "publisher": {"@id": "https://switchtoamerica.com#org"}
-  },
-  {
-   "@type": "Person",
-   "@id": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50#author",
-   "name": "Shannon Nicole",
-   "jobTitle": "Founder",
-   "worksFor": {"@id": "https://switchtoamerica.com#org"},
-   "url": "https://switchtoamerica.com"
-  },
-  {
-   "@type": "Organization",
-   "@id": "https://switchtoamerica.com#org",
-   "name": "Switch to America",
-   "url": "https://switchtoamerica.com"
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://theshannonnicole.com"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://theshannonnicole.com/blog/"},
-    {"@type": "ListItem", "position": 3, "name": "Am I Being Pushed Out of My Job at 50?", "item": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50"}
-   ]
-  }
- ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Am I Being Pushed Out of My Job at 50? (2026)",
+      "description": "You are not imagining it. The reorg, the younger boss, the role redefined. What the numbers say about being pushed out after 50, and what to do.",
+      "image": "https://scan.ismyhometoxic.com/blog-images/amibeingpus-hero-v1.webp",
+      "datePublished": "2026-08-26",
+      "dateModified": "2026-08-26",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50"
+      },
+      "author": {
+        "@id": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50#author"
+      },
+      "publisher": {
+        "@id": "https://switchtoamerica.com#org"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50#author",
+      "name": "Shannon Nicole",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://switchtoamerica.com#org"
+      },
+      "url": "https://switchtoamerica.com"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://switchtoamerica.com#org",
+      "name": "Switch to America",
+      "url": "https://switchtoamerica.com"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://theshannonnicole.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://theshannonnicole.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Am I Being Pushed Out of My Job at 50?",
+          "item": "https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50"
+        }
+      ]
+    }
+  ]
 }
 </script>
 

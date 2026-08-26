@@ -5,7 +5,8 @@ title: Are Baby Wipes Safe? What Target Pulled Off the Shelf in June (2026)
 slug: are-baby-wipes-safe
 keyword: are baby wipes safe
 category: Baby/kids
-meta_description: Target recalled its Up and Up baby wipes in June 2026. Shoppers noticed the colour was wrong first. Then the FDA tested them and found bacteria.
+meta_description: Target pulled its Up and Up baby wipes in June 2026. Shoppers noticed the color was wrong first. Nobody tested them until after that.
+vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 status: ready
 ---
 
@@ -269,43 +270,65 @@ of our health and our finances.</p>
 
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "Article",
-   "headline": "Are Baby Wipes Safe? What Target Pulled Off the Shelf in June (2026)",
-   "description": "Target recalled its Up and Up baby wipes in June 2026. Shoppers noticed the colour was wrong first. Then the FDA tested them and found bacteria.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/arebabywipe-hero-v1.webp",
-   "datePublished": "2026-08-26",
-   "dateModified": "2026-08-26",
-   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-baby-wipes-safe"},
-   "author": {"@id": "https://switchtoamerica.com/#shannon"},
-   "publisher": {"@id": "https://switchtoamerica.com/#org"}
-  },
-  {
-   "@type": "Person",
-   "@id": "https://switchtoamerica.com/#shannon",
-   "name": "Shannon Nicole",
-   "jobTitle": "Founder, Switch to America",
-   "description": "Founder of Switch to America. 34 years keeping a non-toxic home and 15 years as a health and nutrition coach working with women.",
-   "url": "https://join.switchtoamerica.com/post/about-shannon-nicole",
-   "image": "https://scan.ismyhometoxic.com/now/shannon-photo.jpg"
-  },
-  {
-   "@type": "Organization",
-   "@id": "https://switchtoamerica.com/#org",
-   "name": "Switch to America",
-   "url": "https://switchtoamerica.com"
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://join.switchtoamerica.com"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://join.switchtoamerica.com/blog"},
-    {"@type": "ListItem", "position": 3, "name": "Are Baby Wipes Safe?", "item": "https://join.switchtoamerica.com/post/are-baby-wipes-safe"}
-   ]
-  }
- ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Are Baby Wipes Safe? What Target Pulled Off the Shelf in June (2026)",
+      "description": "Target pulled its Up and Up baby wipes in June 2026. Shoppers noticed the color was wrong first. Nobody tested them until after that.",
+      "image": "https://scan.ismyhometoxic.com/blog-images/arebabywipe-hero-v1.webp",
+      "datePublished": "2026-08-26",
+      "dateModified": "2026-08-26",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://join.switchtoamerica.com/post/are-baby-wipes-safe"
+      },
+      "author": {
+        "@id": "https://switchtoamerica.com/#shannon"
+      },
+      "publisher": {
+        "@id": "https://switchtoamerica.com/#org"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://switchtoamerica.com/#shannon",
+      "name": "Shannon Nicole",
+      "jobTitle": "Founder, Switch to America",
+      "description": "Founder of Switch to America. 34 years keeping a non-toxic home and 15 years as a health and nutrition coach working with women.",
+      "url": "https://join.switchtoamerica.com/post/about-shannon-nicole",
+      "image": "https://scan.ismyhometoxic.com/now/shannon-photo.jpg"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://switchtoamerica.com/#org",
+      "name": "Switch to America",
+      "url": "https://switchtoamerica.com"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://join.switchtoamerica.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://join.switchtoamerica.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Are Baby Wipes Safe?",
+          "item": "https://join.switchtoamerica.com/post/are-baby-wipes-safe"
+        }
+      ]
+    }
+  ]
 }
 </script>
 
