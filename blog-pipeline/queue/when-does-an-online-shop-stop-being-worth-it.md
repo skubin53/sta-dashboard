@@ -86,14 +86,14 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <div class="sta-cta">
 <h3>Twenty minutes, and you decide nothing on the call</h3>
-<p>Doing this arithmetic and not liking the answer? Book the twenty minutes. I will answer whatever you ask.</p>
+<p>Doing this arithmetic and not liking the answer? Book the twenty minutes. I will look at your numbers with you and answer whatever you ask.</p>
 <p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
 <span class="micro">You can always say no.</span>
 </div>
 
 <p>Now the other day. An Offsite Ad found your buyer.</p>
 
-<p><a href="https://help.etsy.com/hc/en-us/articles/360000338367-How-Etsy-s-Offsite-Ads-Work">Etsy charges 15% of the order for that.</a> If your shop has cleared $10,000 in any 365 days, the rate drops to 12%.</p>
+<p><a href="https://help.etsy.com/hc/en-us/articles/360000338367-How-Etsy-s-Offsite-Ads-Work">Etsy charges 15% of the order total for that.</a> If your shop has cleared $10,000 in any 365 days, the rate drops to 12%.</p>
 
 <p>15% of $30 is $4.50. Your $3.30 just became $7.80.</p>
 
@@ -121,7 +121,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Etsy names the cause in the same breath. The rise was "primarily driven by Etsy Ads", and Offsite Ads added more.</p>
 
-<p>And you cannot always say no. Once your shop makes $10,000 in any 365 days, Etsy enrolls you in Offsite Ads "for the lifetime of your shop".</p>
+<p>And you cannot always say no. Once your shop has made $10,000 in any 365 days, Etsy says you are enrolled in Offsite Ads "for the lifetime of your shop".</p>
 
 <p>eBay moved too, just slower. <a href="https://www.ebay.com/sellercenter/resources/seller-updates/2025-january/final-value-fee">It raised final value fees in most categories on February 14, 2025.</a> Its notice calls that an adjustment.</p>
 
@@ -131,7 +131,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Etsy told shareholders it had about 87 million active buyers last year. You did not build that.</p>
 
-<p>eBay hands you 250 listings a month for nothing.</p>
+<p>eBay hands you 250 listings a month for nothing, then charges $0.35 each after that.</p>
 
 <p>The ad fee only lands when the ad actually sells something. It is capped at $100 an order.</p>
 
@@ -163,7 +163,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Ask who owns your buyer. Not who shipped the box. Who can reach her in March.</p>
 
-<p>Look at what happens on eBay if you try. Its fee page is blunt. Reference your own contact details in the context of selling outside eBay, and eBay bills you a final value fee anyway. Their words: "even if your item doesn't sell".</p>
+<p>Look at what happens on eBay if you try. Its fee page says that if you offer or reference your contact information in the context of buying or selling outside eBay, you are charged a final value fee "even if your item doesn't sell".</p>
 
 <p>Read that twice. The relationship is the thing they are pricing.</p>
 
@@ -171,7 +171,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 [IMAGE: shopworth-belonging-v1]
 
-<p>Now the part that cuts against me.</p>
+<p>Now the part that cuts against me, because you deserve it straight.</p>
 
 <p>Owning the relationship is slower. A listing can sell tonight. A buyer who comes back on her own pays you nothing in the first month.</p>
 
@@ -223,8 +223,8 @@ again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a
 new supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and
-the fines. Also, inside my Switch Circle private community, we talk about real solutions.</p>
+<p>You do not have to take my word for it. The proof is in my blog posts, the recalls,
+the lawsuits and the fines. Also, inside my Switch Circle private community, we talk about real solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they
 never wanted. I have spent the last 15 years helping women get off prescription medications.
@@ -240,13 +240,13 @@ our finances.</p>
 <div class="sta-proof">
 <h3>Where to check me</h3>
 <ul>
-<li><a href="https://help.etsy.com/hc/en-us/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy">Etsy's fee and tax page</a>. The $0.20 listing, the four month expiry, the 6.5%, the 15% or 12% ad fee.</li>
-<li><a href="https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy">Etsy's processing table</a>. United States, 3% plus $0.25, on top of the 6.5%.</li>
-<li><a href="https://help.etsy.com/hc/en-us/articles/360000338367-How-Etsy-s-Offsite-Ads-Work">Etsy on Offsite Ads</a>. The $10,000 threshold, the lifetime line, the $100 cap.</li>
-<li><a href="https://investors.etsy.com/sec-filings/all-sec-filings/content/0001370637-26-000079/q226shareholderletter.htm">Etsy's shareholder letter, filed 5 August 2026</a>. Take rate 25.9%, up from 24.6%. About 87 million buyers.</li>
-<li><a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822">eBay's selling fees page</a>. 13.6%, the $0.30 and $0.40 order fees, sales tax inside the base, and the charge for sharing contact details.</li>
-<li><a href="https://www.ebay.com/sellercenter/resources/seller-updates/2025-january/final-value-fee">eBay's notice of the 14 February 2025 change</a>. Most categories.</li>
-<li><a href="https://www.npr.org/2022/04/11/1091123928/etsy-strike-2022">NPR, 11 April 2022, on the Etsy seller strike</a>. The 5% to 6.5% raise.</li>
+<li><a href="https://help.etsy.com/hc/en-us/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy">Etsy's own fee and tax page</a>. The $0.20 listing fee, the four month expiry, the 6.5% sale fee and the 15% or 12% ad fee.</li>
+<li><a href="https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy">Etsy's payment processing table</a>. United States, 3% plus $0.25, on top of the 6.5%.</li>
+<li><a href="https://help.etsy.com/hc/en-us/articles/360000338367-How-Etsy-s-Offsite-Ads-Work">Etsy on how Offsite Ads work</a>. The $10,000 threshold, the lifetime line and the $100 cap, quoted word for word.</li>
+<li><a href="https://investors.etsy.com/sec-filings/all-sec-filings/content/0001370637-26-000079/q226shareholderletter.htm">Etsy's second quarter 2026 shareholder letter, filed 5 August 2026</a>. Take rate 25.9%, up from 24.6%, and about 87 million active buyers.</li>
+<li><a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822">eBay's selling fees page</a>. 13.6%, the $0.30 and $0.40 order fees, sales tax inside the fee base, and the charge for sharing contact details.</li>
+<li><a href="https://www.ebay.com/sellercenter/resources/seller-updates/2025-january/final-value-fee">eBay's notice of the 14 February 2025 fee change</a>. Most categories, up to 0.35 percentage points.</li>
+<li><a href="https://www.npr.org/2022/04/11/1091123928/etsy-strike-2022">NPR, 11 April 2022, on the Etsy seller strike</a>. The receipt for the 5% to 6.5% raise.</li>
 </ul>
 </div>
 
@@ -279,8 +279,8 @@ our finances.</p>
 <h3>Worth reading next</h3>
 <ul>
 <li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> The same move, on a different platform.</li>
-<li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work?</a></li>
-<li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">The real extra income options for women in their 50s</a>.</li>
+<li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work?</a> The plain mechanics, no hype.</li>
+<li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">The real extra income options for women in their 50s</a>. All of them, compared honestly.</li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>
 <li><a href="https://theshannonnicole.com/blog/">More for women building something</a></li>
 </ul>
@@ -288,7 +288,7 @@ our finances.</p>
 
 <div class="sta-author">
 <h3>About the author</h3>
-<p>Shannon Nicole founded Switch to America. Seven years building it, more than a hundred women launched. She writes about what companies actually do.</p>
+<p>Shannon Nicole founded Switch to America. Seven years building it, more than a hundred women launched. She writes about what companies actually do, with the receipts attached.</p>
 </div>
 
 <script type="application/ld+json">

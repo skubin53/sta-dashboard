@@ -191,7 +191,7 @@ again?</p>
 <p>We can't trust them. That is where Switch to America comes in. We are a
 new supply chain, built on family values, trust and affordability.</p>
 
-<p>You do not have to take my word for it. The proof is in the recalls, the lawsuits and the fines. Also, inside my Switch Circle
+<p>You do not have to take my word for it. The proof is in my blog posts, the recalls, the lawsuits and the fines. Also, inside my Switch Circle
 private community, we talk about real solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they

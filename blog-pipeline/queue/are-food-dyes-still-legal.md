@@ -233,8 +233,8 @@ Toxic Scorecard. Also, inside my Switch Circle private community, we talk about 
 solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
-they never wanted. I have spent the last 15 years standing beside them while they
-build a life that does not need that list. I help families reclaim their health.</p>
+they never wanted. I have spent the last 15 years helping women get off prescription
+medications. I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
 into their stores. We are linking arms and together taking our control back. Control
