@@ -154,3 +154,48 @@ The ones most often missed:
 - **Gentle posts** end on whichever fits, softly, once.
 
 Never end on fear. End on who she becomes.
+
+---
+
+## 7. Copy you may not touch, and a cap that contradicts itself
+
+### Three sentences are locked. They are not up for review.
+
+They live in the Shannon's Advice box and repeat on every post, so an edit here repeats
+everywhere. `CHECKLIST` gate **A9a** locks the first two and `SHANNONS-ADVICE-SPEC.md` says
+Shannon confirmed them and they **must not be quietly softened.**
+
+1. *"I have spent the last 15 years helping women get off prescription medications."*
+   Confirmed three times. It is **not** the never-stop-a-medicine rule: that rule is about telling
+   THE READER to come off a prescription, and this is Shannon, first person, describing her own
+   work. **The not-a-doctor disclaimer is BANNED** alongside it. Never add one.
+2. *"They are poison centers meant to do you and your family harm."*
+   She removed the "in my opinion" frame herself and that was deliberate.
+3. *"The proof is in my blog posts, the recalls, the lawsuits and the fines..."*
+   Her shipping copy. Her "never say I have written about it" rule was scoped to the CHAT.
+
+**On 2026-08-26 a voice rule written that morning flagged the first one and it was softened
+across 65 files before anybody read the spec.** All reverted. `blog-voice-audit.py` now carries a
+`LOCKED_COPY` list and no rule fires inside these sentences. If you think one of them is wrong,
+that is a conversation with Shannon, not an edit.
+
+**The one permitted variation:** a BUILDER post drops *"and in the app I built called The Family
+Home Toxic Scorecard"* from sentence 3, because a builder post may never point at the home scan.
+It keeps every other word, including "my blog posts", and the closing line becomes the twenty
+minutes instead of the scan.
+
+### The two word-count rules contradict each other. Here is how to land it.
+
+- The brief asks for **1,200 to 2,000 words of body prose.**
+- Gate **A13b caps the WHOLE FILE at 2,000 words.**
+- The mandatory furniture, the Advice box, the table, the Proof section, the calls to action, the
+  Keep Reading block and the author bio, is **about 870 words before a single sentence of the post
+  exists.**
+
+So prose can never reach 1,200 inside a 2,000 word file. Both numbers cannot be satisfied.
+
+**Until Shannon moves one of them, A13b wins, because it is the gate that blocks publication and it
+carries her date on it.** Aim for **1,900 to 1,990 total**, which lands around 1,100 to 1,200 words
+of real prose. Every post in the queue sits there. Do not pad to hit 1,200 prose and do not cut a
+receipt to hit 2,000 total. If the argument genuinely needs more room, say so rather than
+quietly trimming the proof.
