@@ -8,7 +8,7 @@ category: Builders
 cover: [IMAGE: withoutpost-hero-v1]
 meta_description: You do not have to be on camera. Here is what has to happen before somebody buys, and how little of it needs your face.
 status: needs photos
-vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concepts/North-Star, concepts/Recurring-Income-Offer]
+vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, entities/icps/soft-seeker, concepts/North-Star, concepts/Recurring-Income-Offer, concepts/Builder-Target-Segments, concepts/Builder-Fit-Quiz, entities/Builder-Appointment-Engine]
 ---
 
 <style>
@@ -53,7 +53,7 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 <h2 id="the-short-answer">The short answer</h2>
 <p>Yes. And I know it because I do not go on camera either.</p>
 <p>No reels. No lives. Not one talking head video. What I have built, I built with my phone, my voice, and women who trust me.</p>
-<p>Here is the honest part. It is not faster this way. It is possible. That is a different word, and it is the one nobody says out loud.</p>
+<p>Here is the honest part. It is not faster this way. It is possible. That is a different word, and nobody says it out loud.</p>
 </div>
 
 <div class="sta-toc">
@@ -76,22 +76,22 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <p>And the thing in your way now is a lens the size of a dime.</p>
 
-<p>That is not vanity. You know what work is. You have done harder things than this before breakfast.</p>
+<p>That is not vanity. You have done harder things than this before breakfast.</p>
 
-<p>Almost nobody who comes to me here planned to be here. Something moved first. A job ended. A commission got cut. A title stopped meaning what it used to mean.</p>
+<p>Almost nobody who comes to me here planned to be here. Something moved first. A job ended. A commission got cut.</p>
 
-<p>That happens more than anyone admits. The Urban Institute followed full time workers in their early fifties. <a href="https://www.urban.org/research/publication/how-secure-employment-older-ages">About half of them lost a job for a reason the employer chose</a>, not one they chose, before they turned sixty five. Pay after that rarely climbs back.</p>
+<p>The Urban Institute followed full time workers in their early fifties. <a href="https://www.urban.org/research/publication/how-secure-employment-older-ages">About half of them lost a job because the employer ended it</a>. Not because they walked. Pay after that rarely climbs back.</p>
+
+<p>The Federal Reserve asked about saving this year. Between forty five and fifty nine, <a href="https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-savings-investments.htm">forty three percent said their saving was on track</a>. More than half said it was not.</p>
+
+<p>And so you start looking. And the first thing everybody tells you is to get on video.</p>
 
 <div class="sta-cta">
 <h3>Twenty minutes, and you decide nothing on the call</h3>
-<p>Working out what comes next? Book the twenty minutes. I will answer whatever you ask, including the awkward ones.</p>
+<p>Working out what comes next? Book the twenty minutes. I will answer whatever you ask.</p>
 <p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
 <span class="micro">You can always say no.</span>
 </div>
-
-<p>The Federal Reserve asked about saving this year. Between forty five and fifty nine, <a href="https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-savings-investments.htm">forty three percent said their retirement saving was on track</a>. So more than half said it was not.</p>
-
-<p>And so you start looking. And the first thing every single person tells you is to get on video.</p>
 
 <h2 id="before-somebody-buys">What has to happen before somebody buys?</h2>
 
@@ -99,25 +99,25 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <h3>She hears it from somebody she trusts</h3>
 
-<p>Not from an ad. From a person. Her sister, her hairdresser, the friend she walks with on Tuesdays.</p>
+<p>Not from an ad. From a person. Her sister. Her hairdresser. The friend from her Tuesday walk.</p>
 
-<p>This is the step a camera is for. It is one way to become the person she heard it from. It has never been the only way.</p>
+<p>This is the step a camera is for. It is one way to become the person she heard it from. Never the only way.</p>
 
 <h3>Her question gets answered</h3>
 
-<p>She has one, and it is small. Will it strip my floors. Is it safe around the dog. Does it come in a bigger bottle.</p>
+<p>She has one, and it is small. Will it strip my floors. Is it safe around the dog.</p>
 
 <p>A video cannot answer that. You can, in four lines, in her messages, tonight.</p>
 
 <h3>She sees it working in a real house</h3>
 
-<p>Yours. A photo of your own worktop does that job. Your face does not have to be in the frame.</p>
+<p>Yours. A photo of your own worktop does that. Your face does not have to be in it.</p>
 
 <h3>She orders it herself</h3>
 
-<p>Nothing goes through you. No stock in your hall. No taking money at your kitchen table. She orders, it ships to her door, and you are not the shop.</p>
+<p>Nothing goes through you. No stock in your hall. No taking money at your kitchen table. She orders and it ships to her door.</p>
 
-<p>Read those four again. Three of them are a phone and a person who cares. That is what you already are.</p>
+<p>Read those four again. Three of them are just a phone and a person who cares.</p>
 
 <p>And the trusting step is not the weak one. It is the strong one. Three researchers followed about ten thousand customers of a German bank for nearly three years. <a href="https://www.marketing.uni-frankfurt.de/fileadmin/user_upload/dateien_abteilungen/abt_marketing/Bilder/Professor_Skiera/Slides/Executive-Summary-Schmitt-Skiera-vandenBulte-2011-Referral-Programs-Customer-Value.pdf">The ones who came in on somebody's recommendation stayed longer and were worth more</a> than the ones who came in cold.</p>
 
@@ -131,11 +131,11 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <p>Pew Research Center asked in 2025. Of adults between fifty and sixty four, <a href="https://www.pewresearch.org/internet/fact-sheet/social-media/">thirty percent use TikTok and forty percent use Instagram</a>. Seventy four percent are on Facebook. Eighty five percent are on YouTube.</p>
 
-<p>So seven in ten women your age are not on TikTok at all. The room you are selling into is not mostly a short video room.</p>
+<p>So seven in ten women your age are not on TikTok. The room you are selling into is not a short video room.</p>
 
-<p>Now the other side, because you have earned it straight. A face gets trusted quicker. Thirty seconds of watching somebody talk says something a paragraph cannot say. That is true and I will not argue with it.</p>
+<p>Now the other side, because you deserve it straight. A face gets trusted quicker. Thirty seconds of watching somebody talk says something a paragraph cannot say. That is true.</p>
 
-<p>What I am telling you is that it is one door into a house with four doors. Not the door.</p>
+<p>It is one door into a house with four doors. Not the door.</p>
 
 [IMAGE: withoutpost-turning-point-v1]
 
@@ -147,9 +147,9 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 
 <p>Here is what got me anyway.</p>
 
-<p>Video is a wide net thrown at strangers. It reaches hundreds who will never order a thing.</p>
+<p>Video is a wide net thrown at strangers. It reaches hundreds who will never order.</p>
 
-<p>What you have is narrower and heavier. Twenty women who already answer your texts. That is a slower start with a much better floor under it.</p>
+<p>What you have is narrower and heavier. Twenty women who already answer your texts. A slower start with a much better floor under it.</p>
 
 <table class="sta-table">
 <tr><th>What has to happen</th><th>Does it need a camera</th><th>What you do instead</th></tr>
@@ -158,10 +158,9 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 <tr><td>She sees it in a real house</td><td>No</td><td>A photo of your worktop, no face</td></tr>
 <tr><td>She understands the whole thing</td><td>No</td><td>A page does the explaining for you</td></tr>
 <tr><td>She orders</td><td>No</td><td>She orders herself, it ships to her</td></tr>
-<tr><td>She stays</td><td>No</td><td>You are the one she texts</td></tr>
 </table>
 
-<p>And if the camera is more than a preference for you, you are not rare. The National Institute of Mental Health puts <a href="https://www.nimh.nih.gov/health/statistics/social-anxiety-disorder">social anxiety at about one in eight adults</a> at some point in life, and higher in women than in men.</p>
+<p>And if the camera is more than a preference for you, you are not rare. The National Institute of Mental Health puts <a href="https://www.nimh.nih.gov/health/statistics/social-anxiety-disorder">social anxiety at about one in eight adults</a> at some point in life. It runs higher in women than in men.</p>
 
 <p>Nobody has to fix that before starting. Not here.</p>
 
@@ -180,8 +179,6 @@ vault_checked: [entities/icps/capped-corporate, entities/icps/burned-out, concep
 <h3>Send one message, and do not sell in it</h3>
 
 <p>Ask her something about her. What is she washing her floors with. Then let her answer, and leave it there.</p>
-
-<p>That is not a trick. It is the same thing you would do at her kitchen table.</p>
 
 <h3>Let a page do the explaining</h3>
 
@@ -211,7 +208,7 @@ new supply chain, built on family values, trust and affordability.</p>
 private community, we talk about real solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they
-never wanted. I have spent the last 15 years helping women get to the bottom of why they feel that way.
+never wanted. I have spent the last 15 years helping women get off prescription medications.
 I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking into their
@@ -224,41 +221,41 @@ our finances.</p>
 <div class="sta-proof">
 <h3>Where to check me</h3>
 <ul>
-<li><a href="https://www.urban.org/research/publication/how-secure-employment-older-ages">Urban Institute, December 2018, on how secure a job is after fifty</a>. Richard Johnson and Peter Gosselin found about half of full time workers aged 51 to 54 hit a job loss the employer decided on. It means the ending was not about how good you were.</li>
-<li><a href="https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-savings-investments.htm">The Federal Reserve on household saving, published May 2026</a>. Forty three percent of people aged 45 to 59 said their retirement saving was on track. So the worry you have at eleven at night is the normal one, not the odd one.</li>
-<li><a href="https://www.pewresearch.org/internet/fact-sheet/social-media/">Pew Research Center on who uses which platform</a>, surveyed February to June 2025. Thirty percent of adults aged 50 to 64 use TikTok, against seventy four percent on Facebook. It means the camera is not where your buyer is standing.</li>
+<li><a href="https://www.urban.org/research/publication/how-secure-employment-older-ages">Urban Institute, December 2018, on how secure a job is after fifty</a>. Richard Johnson and Peter Gosselin found about half of full time workers aged 51 to 54 hit a job loss the employer chose. The ending was not about how good you were.</li>
+<li><a href="https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-savings-investments.htm">The Federal Reserve on household saving, published May 2026</a>. Forty three percent of people aged 45 to 59 said their retirement saving was on track. The worry you have at eleven at night is the normal one.</li>
+<li><a href="https://www.pewresearch.org/internet/fact-sheet/social-media/">Pew Research Center on who uses which platform</a>, surveyed February to June 2025. Thirty percent of adults aged 50 to 64 use TikTok, against seventy four percent on Facebook. The camera is not where your buyer is standing.</li>
 <li><a href="https://www.marketing.uni-frankfurt.de/fileadmin/user_upload/dateien_abteilungen/abt_marketing/Bilder/Professor_Skiera/Slides/Executive-Summary-Schmitt-Skiera-vandenBulte-2011-Referral-Programs-Customer-Value.pdf">Schmitt, Skiera and Van den Bulte, Journal of Marketing, 2011</a>. Ten thousand bank customers tracked for nearly three years. The recommended ones stayed longer and were worth more, which is the part of the work you already do.</li>
-<li><a href="https://www.nimh.nih.gov/health/statistics/social-anxiety-disorder">National Institute of Mental Health on social anxiety</a>. About one in eight adults live with it at some point, and more women than men. It means the thing you feel about the camera has a number on it and is not a character flaw.</li>
+<li><a href="https://www.nimh.nih.gov/health/statistics/social-anxiety-disorder">National Institute of Mental Health on social anxiety</a>. About one in eight adults live with it at some point, and more women than men. What you feel about the camera has a number on it. It is not a flaw in you.</li>
 </ul>
-<p class="micro">Five sources, none of them mine. Open every one of them and check me.</p>
+<p class="micro">Five sources, none of them mine. Open every one and check me.</p>
 </div>
 
 <h2 id="faq">Questions women are asking me about this</h2>
 
 <p><strong>Do you really never go on camera?</strong></p>
-<p>Never. I have not filmed one video of my face for this and I am not planning to. I write, I talk on the phone, and I sit down with women on a call. If somebody tells you that cannot work, they are describing their own way of working, not the only one.</p>
+<p>Never. Not one video of my face, and I am not planning one. I write, I talk on the phone, and I sit down with women on a call. If somebody says that cannot work, they are describing their own way, not the only one.</p>
 
 <p><strong>What do I say when somebody asks what I do?</strong></p>
-<p>Say the plain thing. You help families get the toxic products out of their house and buy the clean ones for less. Nine words. If she wants more she will ask, and then you send her the page instead of performing an answer.</p>
+<p>Say the plain thing. You help families get the toxic products out of their house and buy the clean ones for less. If she wants more she will ask, and then you send her the page.</p>
 
 <p><strong>Can I do this without telling everybody I know?</strong></p>
-<p>Yes. There is no announcement post and I would not want one. You talk to the women you already talk to. Nobody else has to find out until you feel like telling them.</p>
+<p>Yes. There is no announcement post and I would not want one. You talk to whoever you already talk to. Nobody else finds out until you tell them.</p>
 
 <p><strong>What if I only have a handful of people?</strong></p>
-<p>Good. A handful who trust you beats a thousand who scrolled past you. Twelve names is a real start and it is the number I would give you. Small and warm has always beaten big and cold.</p>
+<p>Good. A handful who trust you beats a thousand who scrolled past you. Twelve names is a real start. Small and warm has always beaten big and cold.</p>
 
 <p><strong>Will somebody push me to do video later?</strong></p>
-<p>Not by me. If it ever suits you, do it. If it never does, you will not be behind, because the four things that make a sale do not include it. Ask me that one on the call and watch my face when I answer.</p>
+<p>Not by me. If it ever suits you, do it. If it never does, you are not behind. The four things that make a sale do not include it.</p>
 
 [IMAGE: withoutpost-freedom-v1]
 
 <p>Here is what I want for you, whether or not we ever speak.</p>
 
-<p>You spent years becoming the one other women ask. That happened off camera. It was always off camera. It was the phone calls and the front doorstep and the answer you gave at nine at night.</p>
+<p>You spent years becoming the one other women ask. That happened off camera. It was always off camera.</p>
 
-<p>It is a Tuesday in October. You come in from the car and put your keys down slowly, because the only work left today was one message and you sent it this morning. You do not open the laptop again.</p>
+<p>It is a Tuesday in October. You come in from the car and put your keys down slowly. The only work left today was one message, and you sent it this morning. You do not open the laptop again.</p>
 
-<p>You become the woman who built it in her own voice, in the room she was already standing in.</p>
+<p>You become the one who built it in your own voice, in the room you were already standing in.</p>
 
 <div class="sta-keep">
 <h3>Worth reading next</h3>
