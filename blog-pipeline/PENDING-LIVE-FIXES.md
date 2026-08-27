@@ -46,21 +46,6 @@ along with the next republish of that post for any other reason.
   with the reason attached.
 - **Live fix:** delete one `<li>` per post in the GHL Code Editor. Four small edits.
 
-### 2026-08-27, both posts published today shipped with unfixed bodies
-- **What is wrong live:** `are-baby-wipes-safe` is dated August 26 in the byline and schema,
-  `cookie-vs-customer` is dated August 29 (two days in the FUTURE, which can stop Google
-  indexing it), and the first "Worth reading next" link on the cookie post 404s because it
-  points at the clean Amazon slug instead of the `-5366` one that is actually live.
-- **Cause, and it is a process hole worth keeping:** `blog-publish.py` reads the queue file
-  from **GitHub**, not from local disk. The dates and the link were fixed locally, the gates
-  were run locally and passed on the fixed file, then the publisher shipped the unfixed
-  GitHub copy. The commit came afterwards. **Local file, repo file and live post are three
-  different things.** Gate E2 exists to catch exactly this and the live HTML was checked for
-  schema, meta and TOC but not for the one field that had just been edited.
-- **Rule from it:** commit and push BEFORE publishing, always, and re-check on the live page
-  the specific thing you just changed.
-- **Live fix:** paste the corrected bodies in the GHL Code Editor.
-
 ## Closed
 
 ### 2026-08-27, both posts published today shipped with unfixed bodies - CLOSED
