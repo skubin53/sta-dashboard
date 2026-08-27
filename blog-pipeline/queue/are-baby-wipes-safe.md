@@ -5,6 +5,7 @@ title: Are Baby Wipes Safe? What Target Pulled Off the Shelf in June (2026)
 slug: are-baby-wipes-safe
 keyword: are baby wipes safe
 category: Baby/kids
+cover: https://scan.ismyhometoxic.com/blog-images/arebabywipe-hero-v1.webp
 meta_description: Target pulled its Up and Up baby wipes in June 2026. Shoppers noticed the color was wrong first. Nobody tested them until after that.
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 status: ready
