@@ -94,7 +94,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>None of that is about your work. All of it is about your money.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-villain-v1.webp" alt="A woman in her fifties at a desk lamp late at night, laptop open on a creator earnings dashboard, phone face down beside it" loading="eager" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-villain-v1.webp" alt="An empty letterbox hanging open on a brick wall beside a front door, dead leaves across the mat and a dried up plant in a pot" loading="eager" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="already-done">Why does the cut land on work you already did?</h2>
 
@@ -141,7 +141,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Nobody hands you that table on day one. I am handing it to you now. It costs you nothing. Take it to a company that is not mine.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-turning-point-v1.webp" alt="A woman closing her laptop at a kitchen table in morning light, a notebook open beside it with a handwritten list of names" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-turning-point-v1.webp" alt="A woman with a silver bob at a kitchen table wrapping small parcels in brown paper and string, scissors and a roll of paper beside her, looking out of the window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="is-this-a-pitch">Isn't this just another pitch?</h2>
 
@@ -161,7 +161,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>I will not hand you a number to expect either. Nobody honest can.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-belonging-v1.webp" alt="Two women in their fifties sitting together on a porch step with coffee mugs, one showing the other something on her phone" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-belonging-v1.webp" alt="Two women laughing in a sunlit doorway as one hands the other a small brown paper parcel tied with string" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="monday">What would I do first on Monday?</h2>
 
@@ -242,7 +242,7 @@ our finances.</p>
 <p><strong>What if I never want to sell anything again?</strong></p>
 <p>Then don't. That is a fair answer. Keep being the one they text about what is safe to use. Let that be enough.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-freedom-v1.webp" alt="A woman in her fifties standing in her own doorway in full afternoon sun, phone in her hand, looking out at the street" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/cookievscus-freedom-v1.webp" alt="A woman at a kitchen table in golden morning light, laughing as she reads a handwritten note, more letters and a mug on the table beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <p>Here is what I want for you, whether or not we ever speak.</p>
 

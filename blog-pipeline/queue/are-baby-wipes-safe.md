@@ -86,10 +86,12 @@ status: ready
 
 <p><strong>Recalled means the company asks for it back.</strong> It is not a warning. It is a stop.</p>
 
-<p>Two germs turned up in the samples. Both names are in the quote above. A germ is a tiny living thing. You cannot see one. These two live in soil and in water. On healthy skin they mostly do nothing.</p>
+<p>Two germs turned up in the samples. Both names are in the quote above. A germ is a tiny living thing. You cannot see one. These two live in soil and in water.</p>
+
+<p>The notice does not treat them as harmless. Its words: contaminated product "may result in serious and life-threatening infections," used on children "who are particularly vulnerable."</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-villain-v1.webp" alt="An open pack of baby wipes alone on a bare counter under flat cold light, nobody in frame" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-villain-v1.webp" alt="A pack of baby wipes open on a bedroom chest of drawers, surrounded by muslin cloths, a mug of tea, a hairbrush and a phone, with a changing mat on the bed behind" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="who-made-them">Who actually made them?</h2>
@@ -148,7 +150,7 @@ status: ready
 </table>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-turning-point-v1.webp" alt="A woman in her fifties setting a pack of wipes down on the counter, looking away from it, decided" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-turning-point-v1.webp" alt="A woman in her fifties sitting on the end of a bed holding a pack of wipes in her lap, looking away out of the window, while a baby plays with a soft toy behind her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="is-this-only-about-babies">Is this only about babies?</h2>
@@ -157,9 +159,9 @@ status: ready
 
 <p>I want to be fair about this one.</p>
 
-<p><strong>One.</strong> The risk is not the same for everyone. The notice says so. Its words: "In healthy individuals, use of the product on skin with minor lesions will more likely result in local infections." Lesions just means small cuts or sore patches. If you are healthy, that is a lot milder than the headline sounds.</p>
+<p><strong>One.</strong> The risk is not the same for everyone. The notice says so. Its words: "In healthy individuals, use of the product on skin with minor lesions will more likely result in local infections." Lesions just means small cuts or sore patches. On a healthy grown up, that is milder than the headline sounds.</p>
 
-<p><strong>Two.</strong> The serious part is about the very young and the very sick. The notice says the spread is worse in "immunocompromised individuals, newborns, infants and young children." That long word means a body that cannot fight germs well.</p>
+<p><strong>Two.</strong> The serious part is about the very young and the very sick. That is who these are sold for. The notice says that in "immunocompromised individuals, newborns, infants and young children" the infection "is more likely to spread into the bloodstream." Its next words are "life-threatening sepsis or pneumonia." I am not softening that one. It is a baby wipe.</p>
 
 <p><strong>Three.</strong> Target pulled them on its own. The words in the notice are "voluntarily recalling" and "out of abundance of caution." That is a company doing the right thing. I will not pretend otherwise.</p>
 
@@ -168,7 +170,7 @@ status: ready
 <p>Because of the order. You were the test. Your eyes on the packet were the safety check. That is what I want you to see.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-belonging-v1.webp" alt="Two women of about the same age talking in a kitchen, unpacking a plain box together" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-belonging-v1.webp" alt="Two women in their fifties sitting on a living room floor talking, with two babies playing between them on a rug" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-do-i-use">What do I keep in the house instead?</h2>
@@ -232,7 +234,7 @@ of our health and our finances.</p>
 
 <h2 id="faq">What else do people ask?</h2>
 
-<p><strong>How do I know if my pack is one of them?</strong> The recall notice lists every UPC and the date codes. Fragrance Free packs made between 7 November 2025 and 5 May 2026 are in it. Target says to stop using them and take them back to any store for a full refund.</p>
+<p><strong>How do I know if my pack is one of them?</strong> Look at the manufacturing date code on the pack. The two kinds have very different windows. Fragrance Free runs 7 November 2025 to 5 May 2026. Fresh Cucumber is two days only, 29 to 30 December 2025. So a Cucumber pack made in March is not in this recall. Target says to return them to any Target store for a full refund. Its Guest Relations number is 1-800-440-0680.</p>
 
 <p><strong>Are the fragrance free ones safer?</strong> Not in this case. Both kinds were recalled. The fragrance free version was the one with the wider range of dates.</p>
 
@@ -241,7 +243,7 @@ of our health and our finances.</p>
 <p><strong>Has anyone actually been harmed?</strong> There are reports of skin irritation, eye irritation and infection, and the notice says they are still being looked into. Nothing has been proven and I am not going to say it has.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-freedom-v1.webp" alt="A grandmother laughing with her grandchild in warm afternoon light, a folded cloth on the table" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-freedom-v1.webp" alt="A grey haired woman laughing nose to nose with a baby on her hip at a sunny kitchen sink, rinsing a cloth under the tap" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
@@ -338,7 +340,7 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "How do I know if my pack of baby wipes was recalled?",
-   "acceptedAnswer": {"@type": "Answer", "text": "The FDA notice lists every UPC and the date codes. Fragrance Free packs made between 7 November 2025 and 5 May 2026 are included. Target says to stop using them and return them to any store for a full refund."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Check the manufacturing date code on the pack. The two kinds have different windows. Fragrance Free runs 7 November 2025 to 5 May 2026. Fresh Cucumber Scented is two days only, 29 to 30 December 2025. Target says to stop using recalled packs and return them to any Target store for a full refund."}},
   {"@type": "Question", "name": "Are fragrance free baby wipes safer?",
    "acceptedAnswer": {"@type": "Answer", "text": "Not in this case. Both the fragrance free and the cucumber scented versions were recalled, and the fragrance free version covered the wider range of dates."}},
   {"@type": "Question", "name": "Is it safe to use baby wipes on my own face?",
