@@ -1,6 +1,6 @@
 ---
 day: 13
-date: 2026-08-26
+date: 2026-08-27
 title: Are Baby Wipes Safe? What Target Pulled Off the Shelf in June (2026)
 slug: are-baby-wipes-safe
 keyword: are baby wipes safe
@@ -46,7 +46,7 @@ status: ready
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 26, 2026<br><span style="font-size:.92em;">Published August 26, 2026 &middot; Last updated August 26, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 27, 2026<br><span style="font-size:.92em;">Published August 27, 2026 &middot; Last updated August 27, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -277,8 +277,8 @@ of our health and our finances.</p>
       "headline": "Are Baby Wipes Safe? What Target Pulled Off the Shelf in June (2026)",
       "description": "Target pulled its Up and Up baby wipes in June 2026. Shoppers noticed the color was wrong first. Nobody tested them until after that.",
       "image": "https://scan.ismyhometoxic.com/blog-images/arebabywipe-hero-v1.webp",
-      "datePublished": "2026-08-26",
-      "dateModified": "2026-08-26",
+      "datePublished": "2026-08-27",
+      "dateModified": "2026-08-27",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://join.switchtoamerica.com/post/are-baby-wipes-safe"

@@ -1,6 +1,6 @@
 ---
 day: 14
-date: 2026-08-29
+date: 2026-08-27
 title: Cookie or Customer: What Did the Affiliate Repricing Teach Every Creator? (2026)
 slug: cookie-vs-customer
 keyword: affiliate commission cut creators cookie vs customer
@@ -47,7 +47,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 29, 2026<br><span style="font-size:.92em;">Published August 29, 2026 &middot; Last updated August 29, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 27, 2026<br><span style="font-size:.92em;">Published August 27, 2026 &middot; Last updated August 27, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -253,7 +253,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> The April change on its own.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> The April change on its own.</li>
 <li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work? An honest answer</a></li>
 <li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">Extra income for women in their 50s, without the hype</a></li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>
@@ -275,8 +275,8 @@ our finances.</p>
    "headline": "Cookie or Customer: What Did the Affiliate Repricing Teach Every Creator? (2026)",
    "description": "Amazon narrowed affiliate pay on April 14, 2026 and Target ended its creator program in May. A cookie rents a stranger. A customer reorders.",
    "image": "https://scan.ismyhometoxic.com/blog-images/cookievscus-hero-v1.webp",
-   "datePublished": "2026-08-29",
-   "dateModified": "2026-08-29",
+   "datePublished": "2026-08-27",
+   "dateModified": "2026-08-27",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/cookie-vs-customer"},
    "author": {"@id": "https://theshannonnicole.com/post/cookie-vs-customer#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
