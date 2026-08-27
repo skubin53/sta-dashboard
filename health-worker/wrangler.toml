@@ -1,0 +1,20 @@
+name = "sta-health"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# switchtoamericahealth.com + chat.switchtoamericahealth.com
+#
+# Deliberately has NO secrets and NO KV. It serves a static bio page and proxies the four
+# chat endpoints to sta-checkout, which is where the Anthropic key and the chat index live.
+# Nothing here can charge a card, because the Stripe code is not in this worker.
+#
+# Custom Domains are added AFTER the first deploy, never before, or the hostname resolves
+# to a worker that does not exist yet.
+
+# Worker-to-worker over the public workers.dev hostname returned 404 from inside the
+# worker even though the same URL curls 200 from outside. A service binding is the
+# supported way to call another Worker on the same account: it never leaves Cloudflare's
+# network, so it is faster and it does not depend on the upstream's public hostname.
+[[services]]
+binding = "CHECKOUT"
+service = "sta-checkout"
