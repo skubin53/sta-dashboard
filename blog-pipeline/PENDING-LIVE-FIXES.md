@@ -63,4 +63,26 @@ along with the next republish of that post for any other reason.
 
 ## Closed
 
-(nothing yet)
+### 2026-08-27, both posts published today shipped with unfixed bodies - CLOSED
+Republished the same day via blog-republish.py, POST-new then retire-old, and verified
+on the SERVED page rather than on a status code. Baby wipes now carries the Fresh Cucumber
+window, "any Target store", the life-threatening sentence and correct alt text. Cookie
+carries the working Amazon link, the 27 August date and correct alt text. Both 200.
+
+Three real bugs in blog-republish.py were fixed to make this possible, and all three were
+the same shape as the failure they were repairing:
+  * it read the queue file from raw.githubusercontent, which caches for minutes, so it
+    would have republished the STALE body while reporting success. Now uses the GitHub
+    Contents API, same as blog-publish.py.
+  * its image check had no retry, so it refused three times on 000s from a host whose
+    images were all provably 200. Ported the hardened code() from blog-publish.py.
+  * it was hardcoded to the shopper blog, so a builder post had no safe repair path at
+    all. Now takes --builder.
+
+Also learned: PUT /blogs/posts/{id} REQUIRES a status field (422 without it), and even
+with status included it still silently ignores rawHTML. Re-tested directly on 2026-08-27,
+so the trap table stands, with that extra detail.
+
+Its post-publish content check is still unreliable: it looks for a marker that exists in
+both the old and new bodies, so it cried "CONTENT NOT UPDATED" on a republish that had in
+fact worked. Verify by grepping for something you actually changed.
