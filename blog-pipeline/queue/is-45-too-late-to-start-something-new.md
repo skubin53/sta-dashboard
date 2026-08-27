@@ -251,7 +251,6 @@ of our health and our finances.</p>
 <li><a href="https://join.switchtoamerica.com/post/how-referral-model-actually-works">How the referral model actually works, in plain words</a></li>
 <li><a href="https://join.switchtoamerica.com/post/who-owns-your-vitamins">Who owns your vitamins? The names behind the labels</a></li>
 <li><a href="https://join.switchtoamerica.com/post/ultra-processed-food-lawsuit">The ultra processed food lawsuit, explained simply</a></li>
-<li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>
 </ul>
 </div>
 

@@ -259,7 +259,6 @@ our finances.</p>
 <li><a href="https://join.switchtoamerica.com/post/ultra-processed-food-lawsuit">What happened to the ultra processed food lawsuit</a></li>
 <li><a href="https://join.switchtoamerica.com/post/who-owns-your-vitamins">Who actually owns your vitamins?</a></li>
 <li><a href="https://join.switchtoamerica.com/post/is-tide-laundry-detergent-toxic">Is Tide laundry detergent toxic?</a></li>
-<li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>
 </ul>
 </div>
 

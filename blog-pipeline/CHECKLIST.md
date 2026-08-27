@@ -399,11 +399,31 @@ Added 2026-08-12 after two posts went live missing all three.
 
 ---
 
-- [ ] **D9** **The free cheat sheet gets a line in "Keep reading".** Added 2026-08-08.
-      Paste exactly this, last item in the list, so it sits above the author bio:
+- [ ] **D9** **SHOPPER POSTS ONLY: the free cheat sheet gets a line in "Keep reading".**
+      Added 2026-08-08. Paste exactly this, last item in the list, so it sits above the
+      author bio:
       `<li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>`
       It costs about 10 words, so check A13 again after adding it. Two posts went
       over the ceiling on 2026-08-08 purely from this line.
+
+      > **NEVER ON A BUILDER POST. Shannon, 2026-08-27:** *"The cheat sheet does not
+      > belong on the builder post."*
+      >
+      > This rule was written on 2026-08-08, before the builder track existed, and it said
+      > "every post" because at the time every post was a shopper post. When builder posts
+      > started it kept firing on them, and it is on four of them live right now:
+      > `amazon-cut-your-affiliate-commission-now-what`, `is-45-too-late-to-start-something-new`,
+      > `builder-how-referral-model-works`, `builder-extra-income-women-50s`.
+      > The eight newer builder posts had already stopped carrying it, but nobody wrote
+      > down why, so three separate QC passes argued about it on 2026-08-27.
+      >
+      > **Why it is wrong there:** a builder post talks to a woman weighing up an income
+      > decision. The cheat sheet is a shopper lead magnet about products under her sink.
+      > It is the same fault as gate D8c, which already bans the home scan on builder
+      > posts. A builder post has exactly one CTA, the 20 minute Discovery Zoom.
+      >
+      > Removed from the four repo files 2026-08-27. **The four LIVE pages still carry it**
+      > and each needs a GHL Code Editor pass, tracked in `PENDING-LIVE-FIXES.md`.
 
 ## GHL / PLATFORM TRAPS  (established by direct test, do not re-derive)
 

@@ -261,7 +261,6 @@ our finances.</p>
 <li><a href="https://join.switchtoamerica.com/post/about-shannon-nicole">About Shannon Nicole, and why she started this</a></li>
 <li><a href="https://join.switchtoamerica.com/post/who-owns-your-vitamins">Who actually owns your vitamins?</a></li>
 <li><a href="https://join.switchtoamerica.com/post/is-avocado-oil-fake">Is your avocado oil real? Most bottles failed the test</a></li>
-<li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>
 </ul>
 </div>
 
