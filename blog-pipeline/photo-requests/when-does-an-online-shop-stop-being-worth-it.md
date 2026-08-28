@@ -5,7 +5,7 @@ slug: when-does-an-online-shop-stop-being-worth-it
 track: builder
 queue_file: blog-pipeline/queue/when-does-an-online-shop-stop-being-worth-it.md
 beats: 5
-status: requested
+status: complete
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. There is NO product in this set and nothing branded should appear. No legible text anywhere in any frame. Continuity: same woman, same clothes, same room across the five beats. Temperature ramp runs coldest at the villain beat to warmest at the last. Nano Banana Pro at 4K."
 generated_by: "sta-tools/build-calendar.py, 2026-08-23"
 ---
