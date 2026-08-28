@@ -63,7 +63,7 @@ status: ready
 <li><a href="#who-made-them">Who actually made them?</a></li>
 <li><a href="#why-nobody-checked">Why did nobody check them first?</a></li>
 <li><a href="#is-this-only-about-babies">Is this only about babies?</a></li>
-<li><a href="#what-do-i-use">What do I keep in the house instead?</a></li>
+<li><a href="#what-do-i-use">What do you keep in the house instead?</a></li>
 </ol>
 </div>
 
@@ -79,7 +79,7 @@ status: ready
 
 <p>You keep a pack by the back door. One in the car. One in your handbag.</p>
 
-<p>They come out when the grandkids come. They also come out for your own hands. Your face after a hot afternoon. The steering wheel. I keep a pack in my car for exactly that.</p>
+<p>They come out when the grandkids come. They also come out for your own hands. Your face after a hot afternoon. The steering wheel.</p>
 
 <p>So this one is about your skin too.</p>
 
@@ -99,7 +99,7 @@ status: ready
 
 <p class="quick-answer">Quick answer: not Target. A company you have never heard of.</p>
 
-<p>This is the part of the notice you skip. I skipped it too.</p>
+<p>Target did not make these wipes.</p>
 
 <p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/target-recalls-fragrance-free-and-fresh-cucumber-scented-baby-wipes-due-potential-microbial">The notice puts it plainly: "The recalled wipes were manufactured by a supplier."</a> Further down it gives the name. Sapro Temizlik Urunleri.</p>
 
@@ -174,7 +174,7 @@ status: ready
 <img src="https://scan.ismyhometoxic.com/blog-images/arebabywipe-belonging-v1.webp" alt="Two women in their fifties sitting on a living room floor talking, with two babies playing between them on a rug" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
-<h2 id="what-do-i-use">What do I keep in the house instead?</h2>
+<h2 id="what-do-i-use">What do you keep in the house instead?</h2>
 
 <p class="quick-answer">Quick answer: for most jobs, a warm cloth. For the rest, know who made it.</p>
 
