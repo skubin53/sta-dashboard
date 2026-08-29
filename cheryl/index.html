@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Your Three Packs</title>
+<style>
+ :root{--navy:#0B2545;--red:#C8102E;--cream:#FBF7F0;--line:#E3E0D8;--ink:#1B2A41;--muted:#5A6B80;--bg:#fff;--green:#1D7A4C}
+ @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0E1620;--cream:#152030;--line:#25344A;--ink:#E6ECF3;--muted:#9DB0C6;--navy:#E6ECF3;--red:#FF8A80;--green:#5FD39B}}
+ :root[data-theme=dark]{--bg:#0E1620;--cream:#152030;--line:#25344A;--ink:#E6ECF3;--muted:#9DB0C6;--navy:#E6ECF3;--red:#FF8A80;--green:#5FD39B}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+ .wrap{max-width:820px;margin:0 auto;padding:0 20px 60px}
+ header{background:#0B2545;color:#fff;padding:30px 0 26px;margin-bottom:6px}
+ header h1{margin:0 0 6px;font-size:1.5em;color:#fff;line-height:1.25}
+ header p{margin:0;color:#BFD2E6;font-size:.95em}
+ .meta{margin-top:13px;font-size:.87em;color:#BFD2E6}
+ .pkg{margin:32px 0 0}
+ h2{color:var(--navy);font-size:1.25em;margin:0 0 2px;border-bottom:2px solid var(--line);padding-bottom:7px}
+ .cnt{font-weight:400;color:var(--muted);font-size:.72em;margin-left:7px}
+ .blurb{color:var(--muted);font-size:.93em;margin:8px 0 12px}
+ .scroll{overflow-x:auto}
+ table{width:100%;border-collapse:collapse;font-size:.95em}
+ th{text-align:left;background:var(--cream);color:var(--navy);padding:8px 10px;font-size:.78em;text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid var(--line)}
+ td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+ td.n{font-weight:600;color:var(--navy)}
+ td.n small{display:block;font-weight:400;color:var(--muted);font-size:.84em;margin-top:1px}
+ th.p,td.p{text-align:right;width:76px;font-variant-numeric:tabular-nums}
+ th.c,td.c{text-align:right;width:96px;font-variant-numeric:tabular-nums;color:var(--red);font-weight:600}
+ tr.free td.c{color:var(--green);font-weight:800;letter-spacing:.04em}
+ tr.free td.n{color:var(--green)}
+ tr.tot td{border-top:2px solid var(--navy);border-bottom:none;font-weight:800;font-size:1.06em;padding-top:11px;color:var(--navy)}
+ tr.tot td.c{color:var(--red);font-size:1.2em}
+ @media(max-width:520px){body{font-size:15px}td,th{padding:7px 6px}th.c,td.c{width:82px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <h1>3 different packs based on your choices</h1>
+ <p>Built from your Switch Checklist, 29 August 2026</p>
+ <div class="meta">Score 169 &middot; 31 products you already buy elsewhere</div>
+</div></header>
+<div class="wrap">
+
+<section class="pkg">
+  <h2>Package 1 <span class="cnt">8 products</span></h2>
+  <p class="blurb">Everything you clean and wash with, plus the two supplements you asked about.</p>
+  <div class="scroll"><table>
+   <tr><th>Product</th><th class="p">Points</th><th class="c">Price</th></tr>
+   <tr><td class="n">Alloy Deodorant<small>Deodorant</small></td><td class="p">2</td><td class="c">$5.79</td></tr><tr><td class="n">Exceed Essential Oil Tooth Polish<small>Toothpaste</small></td><td class="p">2</td><td class="c">$4.59</td></tr><tr><td class="n">Lemon Brite Hand Dishwashing Liquid<small>Dish soap</small></td><td class="p">2</td><td class="c">$4.39</td></tr><tr><td class="n">Tough & Tender Wipes<small>All-purpose cleaner</small></td><td class="p">2</td><td class="c">$4.29</td></tr><tr><td class="n">Clear Power 12x Glass Cleaner<small>Glass cleaner</small></td><td class="p">3</td><td class="c">$6.99</td></tr><tr><td class="n">Vitality Multivitamin & Mineral<small>Multivitamin</small></td><td class="p">8</td><td class="c">$14.99</td></tr><tr><td class="n">Vitality for Life Collagen Boost With Ceramides<small>Collagen</small></td><td class="p">16</td><td class="c">$39.89</td></tr><tr class="free"><td class="n">Mela-Out Magnesium<small>Magnesium &middot; yours free</small></td><td class="p">11</td><td class="c">FREE</td></tr>
+   <tr class="tot"><td>Total</td><td class="p">35</td><td class="c">$80.93</td></tr>
+  </table></div>
+</section>
+<section class="pkg">
+  <h2>Package 2 <span class="cnt">7 products</span></h2>
+  <p class="blurb">Your hair, your kitchen, and something for the lunchbox.</p>
+  <div class="scroll"><table>
+   <tr><th>Product</th><th class="p">Points</th><th class="c">Price</th></tr>
+   <tr><td class="n">Affinia Moisture Shampoo<small>Shampoo</small></td><td class="p">4</td><td class="c">$8.49</td></tr><tr><td class="n">Affinia Moisture Conditioner<small>Conditioner</small></td><td class="p">4</td><td class="c">$8.49</td></tr><tr><td class="n">Sei Bella Dry Shampoo<small>Hair styling</small></td><td class="p">10</td><td class="c">$19.50</td></tr><tr><td class="n">Diamond Brite Gel Automatic Dishwasher Detergent<small>Dish soap</small></td><td class="p">4</td><td class="c">$8.19</td></tr><tr><td class="n">Sol-U-Guard Botanical Convenience Wipes<small>Disinfectant</small></td><td class="p">3</td><td class="c">$6.19</td></tr><tr><td class="n">Activate Immune Complex<small>Immune support</small></td><td class="p">6</td><td class="c">$13.29</td></tr><tr><td class="n">Riverbend Ranch Beef Sticks<small>Beef sticks</small></td><td class="p">4</td><td class="c">$10.75</td></tr>
+   <tr class="tot"><td>Total</td><td class="p">35</td><td class="c">$74.90</td></tr>
+  </table></div>
+</section>
+<section class="pkg">
+  <h2>Package 3 <span class="cnt">4 products</span></h2>
+  <p class="blurb">Your makeup bag. Fewer items, more in each one.</p>
+  <div class="scroll"><table>
+   <tr><th>Product</th><th class="p">Points</th><th class="c">Price</th></tr>
+   <tr><td class="n">Sei Bella Mineral Foundation<small>Foundation</small></td><td class="p">11</td><td class="c">$21.50</td></tr><tr><td class="n">Sei Bella Powder Blush<small>Blush</small></td><td class="p">7</td><td class="c">$15.00</td></tr><tr><td class="n">Sei Bella Lipstick<small>Lipstick</small></td><td class="p">8</td><td class="c">$16.50</td></tr><tr><td class="n">Sei Bella Finishing Spray<small>Setting spray</small></td><td class="p">9</td><td class="c">$17.00</td></tr>
+   <tr class="tot"><td>Total</td><td class="p">35</td><td class="c">$70.00</td></tr>
+  </table></div>
+</section></div>
+</body>
+</html>
