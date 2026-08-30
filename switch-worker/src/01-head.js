@@ -65,12 +65,25 @@ const TARGET_MAX = 37;
 const PRIORITY_FIRST = ["Laundry detergent"];
 const LOG_TTL = 60 * 60 * 24 * 730;
 
-// Shannon's message, 2026-08-30, verbatim. Her copy is not mine to improve; the only
-// thing this code substitutes is the link on the last line.
-const SMS_BODY = [
-  "Perfect - thank you for taking the time to do that.",
+// Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:
+// "This is the text that Chad received from me. I changed it a bit. This should be for
+// everyone." Her copy is not mine to improve. Reproduced character for character,
+// including the two spaces after "anyway." and the trailing space after "money.".
+//
+// TWO THINGS ARE SUBSTITUTED, AND ONLY TWO: the link, and the number of packs.
+//
+// She wrote "3 packs", having seen Chad's page, which has three. Most do: every real
+// checklist on record ticked 24 items or more and produced three. But 1 and 2 are
+// genuinely reachable, roughly a quarter of randomly generated tick-lists, typically
+// someone who ticks 10 to 20 things. Sending that person "here are 3 packs" over a page
+// showing two is a small lie in the first line she reads, and the page heading was
+// already fixed for exactly this reason. So the numeral tracks reality. Her sentence is
+// otherwise untouched, and if she wants it to always read 3, that is one line below.
+const SMS_LINES = [
+  "Perfect - thank you for taking the time to do that list.",
   "",
-  "Based on your results, here are 3 packs that I put together for you.",
+  "__PACKS__",
+  "(with prices)",
   "",
   "Take a look & tell me what you think?",
   "",
@@ -79,7 +92,18 @@ const SMS_BODY = [
   "Keep in mind, we have a 90 day money back guarantee and you can cancel at anytime - super easy.",
   "",
   "__URL__",
-].join("\n");
+];
+
+function smsBody(url, n) {
+  // A row written before the count existed would otherwise render "here are undefined
+  // packs". Fall back to her literal sentence, which is right for almost everyone.
+  if (typeof n !== "number" || !isFinite(n) || n < 1) n = 3;
+  n = Math.floor(n);
+  const packs = n === 1
+    ? "Based on your results, here is a pack that I put together for you."
+    : "Based on your results, here are " + n + " packs that I put together for you.";
+  return SMS_LINES.join("\n").replace("__PACKS__", packs).replace("__URL__", url);
+}
 
 // Any one of these on a contact means never text them. Lower case, compared lower case.
 // "not interested" is Shannon's own kill switch and the reason this list exists at all.

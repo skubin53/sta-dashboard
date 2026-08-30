@@ -259,7 +259,7 @@ async function stepRow(env, row) {
     const why = mustNotText(contact);
     if (why.length) { await block(env, row, why); return "blocked-late"; }
 
-    const message = SMS_BODY.replace("__URL__", row.url);
+    const message = smsBody(row.url, row.packs);
 
     if (mode !== "live") {
       row.state = "blocked";
