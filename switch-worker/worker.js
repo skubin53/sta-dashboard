@@ -76,6 +76,20 @@ const PRIORITY_FIRST = ["Laundry detergent"];
 // Tallow, Sticks and Jerky are NOT in this group. They are ordinary Food & Drinks
 // products with real points and they stay in the packages.
 const NEVER_IN_PACK_GROUPS = ["Beef"];
+
+// Shannon, 2026-08-30: "yes please make one of her packs a beauty one."
+//
+// Marie ticked 21 makeup and skin care items and not one reached her page. Nothing was
+// broken. The search prefers the MOST ITEMS, which Shannon asked for after the three
+// expensive jars version, and beauty costs 7 to 18 points a product where a household item
+// costs 2 or 3. Beauty loses every comparison, so the woman who ticks the most makeup is
+// the one guaranteed to see none of it.
+//
+// One package is now built from this group alone, BEFORE the others so it is not competing
+// for the same 35 points, and shown LAST so she still opens on the pack holding her
+// detergent. Only happens if her ticks can actually fill it. Selected by GROUP so it
+// follows the checklist instead of a hand-kept list of labels.
+const THEME_GROUPS = ["Skin Care & Beauty"];
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:
@@ -199,6 +213,35 @@ const PRODUCT_MAP = {
   "Baking mixes": [["Simply Fit Simple Start Baking Mix: Pancakes", 7, 17.99], ["Simply Fit Simple Start Baking Mix: Muffins", 8, 21.99]],
   "Popcorn": [["Simply Fit Microwave Popcorn", 2, 4.49]],
   "Electrolyte hydration": [["Sustain Active Hydration", 6, 12.99]],
+  "Facial cleanser": [["Sei Bella Honey and Rose Soothing Foam Cleanser", 9, 19.5], ["Sei Bella Charcoal & Flower Detoxifying Cleanser", 7, 17.0]],
+  "Facial toner": [["Sei Bella Deep Marine Sea Toner", 10, 21.5]],
+  "Eye treatment": [["Sei Bella Night Recovery Eye Cream", 16, 29.0]],
+  "Overnight or peptide treatment": [["Sei Bella Honey & Rose Overnight Recovery Cream", 15, 32.0], ["Sei Bella Deep Marine Age Defying Overnight Cream", 18, 37.5]],
+  "Concealer": [["Sei Bella Flawless Concealer", 8, 19.5]],
+  "Powder": [["Sei Bella Pressed Powder with Compact", 8, 19.0]],
+  "Bronzer or contour": [["Sei Bella Powder Bronzer", 9, 16.5], ["Sei Bella Contour Palette", 8, 23.5]],
+  "Eyeliner": [["Sei Bella Eyeliner", 7, 14.5], ["Sei Bella Liquid Eyeliner", 6, 14.0]],
+  "Eyebrow pencil": [["Sei Bella Brow Pencil", 7, 16.5], ["Sei Bella Brow Tint", 7, 16.5]],
+  "Lip gloss": [["SeiBella Lip Gloss", 5, 12.5]],
+  "Lip liner": [["Sei Bella Lip Liner", 8, 16.5]],
+  "Single essential oils": [["PURE Eucalyptus Essential Oil", 4, 8.75], ["PURE Cedarwood Essential Oil", 5, 10.0], ["PURE Clove Essential Oil", 5, 10.5]],
+  "Essential oil blends": [["PURE Armor Protective Essential Oil Blend", 10, 20.5], ["PURE Blue Heat Soothing Essential Oil Blend", 10, 20.5]],
+  "Linen or room spray": [["I'm a Dreamer Nighttime Linen Spray", 4, 10.75], ["Hit Refresh Odor Spray", 4, 10.75]],
+  "Bath bombs & shower melts": [["Let's Get Steamy Shower Melts", 9, 22.25]],
+  "Laundry scent booster": [["MelaBoost Laundry Fragrance Booster", 5, 11.99]],
+  "Bleach alternative": [["MelaBrite 9x Color Booster", 8, 15.99]],
+  "Antacid": [["Calmicid Antacid Supplement", 3, 6.19]],
+  "Acid reducer": [["Calmicid AC Acid Reducer", 6, 14.59]],
+  "Natural Insect Repellent": [["Natural Insect Repellent", 4, 6.79]],
+  "Women's Menopausal Support": [["EstrAval Menopause Support", 14, 23.49]],
+  "Furniture polish": [["Rustic Touch Furniture Polish (sprayer not included)", 3, 6.99]],
+  "Men's Antiperspirant / Deodorant": [["Alloy Antiperspirant & Deodorant", 2, 5.79]],
+  "Men's 3-in-1 Hair & Body Wash": [["Alloy 3-in-1 Hair & Body Wash", 5, 9.99]],
+  "Men's Shave Gel": [["Alloy Shave Gel", 2, 5.99]],
+  "Mints (Sugar-Free)": [["Exceed Mints", 1, 2.69]],
+  "Crave Blocking Bars": [["Attain with CraveBlocker Bars", 5, 11.49]],
+  "Post-Workout Drink (Creatine)": [["Vitality Elevate Pure Creatine", 5, 10.99]],
+  "Pre-Workout Drink": [["Vitality Elevate Pre-Workout: Limeade", 9, 19.99]],
 };
 
 // NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
@@ -337,6 +380,29 @@ function buildPacks(items, n) {
   const packs = [];
   const usedNames = new Set();
   const usedLabels = new Set();
+
+  // Built FIRST so it is not competing with cheap household items, shown LAST so she
+  // still opens on the pack with her detergent in it. See THEME_GROUPS.
+  let themed = null;
+  for (const gname of THEME_GROUPS) {
+    const labels = new Set();
+    if (Array.isArray(items)) {
+      for (const it of items) {
+        if (it && typeof it === "object" && it.group === gname &&
+            typeof it.label === "string") labels.add(it.label);
+      }
+    }
+    if (!labels.size) continue;
+    const sub = pool.filter((p) => labels.has(p.label));
+    if (!sub.length) continue;
+    const got = pickPackage(sub, usedNames, usedLabels);
+    if (got && got.length) {
+      themed = got;
+      for (const p of got) { usedNames.add(p.name); usedLabels.add(p.label); }
+      n -= 1;
+      break;
+    }
+  }
   for (let i = 0; i < n; i++) {
     let pk = null;
     if (i === 0) {
@@ -368,6 +434,7 @@ function buildPacks(items, n) {
     packs.push(pk);
     for (const p of pk) { usedNames.add(p.name); usedLabels.add(p.label); }
   }
+  if (themed) packs.push(themed);
   return { packs };
 }
 

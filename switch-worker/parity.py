@@ -70,6 +70,24 @@ CASES = [
         "Laundry stain remover", "Dish soap", "Dishwasher detergent",
         "All-purpose cleaner", "Bathroom & tub cleaner", "Glass cleaner",
         "Toilet bowl cleaner", "Floor cleaner", "Disinfectant", "Cleaning wipes"]),
+
+    # These carry a GROUP. Without one, neither the Beef exclusion nor the beauty theme
+    # can fire, and every case above was silently testing the easy half of the code.
+    ("beef group excluded", [["Beef", "Ribeye"], ["Beef", "Sirloin"],
+        ["Beef", "Ground Beef"], ["Cleaning & Laundry", "Laundry detergent"],
+        ["Cleaning & Laundry", "Dish soap"], ["Bathroom & Personal Care", "Toothpaste"],
+        ["Bathroom & Personal Care", "Shampoo"], ["Food & Drinks", "Beef Jerky"]]),
+    ("beauty theme fires", [["Skin Care & Beauty", "Blush"],
+        ["Skin Care & Beauty", "Mascara"], ["Skin Care & Beauty", "Lipstick"],
+        ["Skin Care & Beauty", "Eyeliner"], ["Skin Care & Beauty", "Bronzer or contour"],
+        ["Skin Care & Beauty", "Lip gloss"], ["Skin Care & Beauty", "Foundation"],
+        ["Cleaning & Laundry", "Laundry detergent"],
+        ["Cleaning & Laundry", "Dish soap"], ["Cleaning & Laundry", "Dryer sheets"],
+        ["Cleaning & Laundry", "Glass cleaner"], ["Bathroom & Personal Care", "Toothpaste"],
+        ["Bathroom & Personal Care", "Shampoo"], ["Bathroom & Personal Care", "Deodorant"]]),
+    ("beauty ticked but too thin", [["Skin Care & Beauty", "Blush"],
+        ["Cleaning & Laundry", "Laundry detergent"], ["Cleaning & Laundry", "Dish soap"],
+        ["Bathroom & Personal Care", "Toothpaste"]]),
 ]
 
 
@@ -80,7 +98,8 @@ def norm(packs):
 
 
 def run_py(labels):
-    items = [{"label": l} for l in labels]
+    items = [{"group": l[0], "label": l[1]} if isinstance(l, (list, tuple))
+             else {"label": l} for l in labels]
     packs, _pool = bp.build(items, PMAP)
     return norm(packs)
 

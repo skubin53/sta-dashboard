@@ -76,6 +76,20 @@ const PRIORITY_FIRST = ["Laundry detergent"];
 // Tallow, Sticks and Jerky are NOT in this group. They are ordinary Food & Drinks
 // products with real points and they stay in the packages.
 const NEVER_IN_PACK_GROUPS = ["Beef"];
+
+// Shannon, 2026-08-30: "yes please make one of her packs a beauty one."
+//
+// Marie ticked 21 makeup and skin care items and not one reached her page. Nothing was
+// broken. The search prefers the MOST ITEMS, which Shannon asked for after the three
+// expensive jars version, and beauty costs 7 to 18 points a product where a household item
+// costs 2 or 3. Beauty loses every comparison, so the woman who ticks the most makeup is
+// the one guaranteed to see none of it.
+//
+// One package is now built from this group alone, BEFORE the others so it is not competing
+// for the same 35 points, and shown LAST so she still opens on the pack holding her
+// detergent. Only happens if her ticks can actually fill it. Selected by GROUP so it
+// follows the checklist instead of a hand-kept list of labels.
+const THEME_GROUPS = ["Skin Care & Beauty"];
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:

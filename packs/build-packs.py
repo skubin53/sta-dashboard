@@ -72,6 +72,20 @@ PRIORITY_FIRST = ["Laundry detergent"]
 # they are ordinary Food & Drinks products with real points, and they stay.
 NEVER_IN_PACK_GROUPS = {"Beef"}
 
+# Shannon, 2026-08-30: "yes please make one of her packs a beauty one."
+#
+# Marie ticked 21 makeup and skin care items and not one of them reached her page. Nothing
+# was broken. The search prefers the MOST ITEMS, which is what Shannon asked for after the
+# three-expensive-jars version, and beauty costs 7 to 18 points a product where a household
+# item costs 2 or 3. So beauty loses every single comparison, and the woman who ticks the
+# most makeup is the one guaranteed to see none of it.
+#
+# So one package is now built from this group alone, BEFORE the others, and only if her
+# ticks can actually fill it to 35. If she ticked no beauty, or not enough of it, nothing
+# changes and she gets three ordinary packages. Selected by GROUP, so it follows the
+# checklist rather than a list of labels kept in step by hand.
+THEME_GROUPS = ["Skin Care & Beauty"]
+
 
 def in_pack_scope(item):
     """False for anything the packages must ignore. Not a gap, a deliberate exclusion."""
@@ -252,6 +266,25 @@ def pick_package(pool, used_names, used_labels, force=None):
 def build(items, pmap, n=3):
     pool = candidates(items, pmap)
     packs, used_names, used_labels = [], set(), set()
+
+    # The themed package is built FIRST so it is not competing with cheap household items
+    # for the same 35 points, but it is SHOWN LAST, so she still opens on the pack that
+    # holds her detergent.
+    themed = None
+    for gname in THEME_GROUPS:
+        labels = {it.get("label") for it in items
+                  if isinstance(it, dict) and it.get("group") == gname}
+        sub = [p for p in pool if p["label"] in labels]
+        if not sub:
+            continue
+        got = pick_package(sub, used_names, used_labels)
+        if got:
+            themed = got
+            for p in got:
+                used_names.add(p["name"])
+                used_labels.add(p["label"])
+            n -= 1
+            break
     for i in range(n):
         pk = None
         if i == 0:
@@ -274,6 +307,8 @@ def build(items, pmap, n=3):
         for p in pk:
             used_names.add(p["name"])
             used_labels.add(p["label"])
+    if themed:
+        packs.append(themed)
     return packs, pool
 
 

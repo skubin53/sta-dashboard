@@ -11,7 +11,8 @@ const cases = JSON.parse(readFileSync(casesPath, "utf8"));
 
 const out = {};
 for (const [name, labels] of Object.entries(cases)) {
-  const r = m.buildPacks(labels.map((l) => ({ label: l })));
+  const r = m.buildPacks(labels.map((l) =>
+    Array.isArray(l) ? { group: l[0], label: l[1] } : { label: l }));
   out[name] = {
     packs: r.packs.map((pk) =>
       pk.map((p) => [p.name, p.label, p.pts, Math.round(p.usd * 100) / 100])),

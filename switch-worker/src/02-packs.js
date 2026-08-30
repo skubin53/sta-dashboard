@@ -119,6 +119,29 @@ function buildPacks(items, n) {
   const packs = [];
   const usedNames = new Set();
   const usedLabels = new Set();
+
+  // Built FIRST so it is not competing with cheap household items, shown LAST so she
+  // still opens on the pack with her detergent in it. See THEME_GROUPS.
+  let themed = null;
+  for (const gname of THEME_GROUPS) {
+    const labels = new Set();
+    if (Array.isArray(items)) {
+      for (const it of items) {
+        if (it && typeof it === "object" && it.group === gname &&
+            typeof it.label === "string") labels.add(it.label);
+      }
+    }
+    if (!labels.size) continue;
+    const sub = pool.filter((p) => labels.has(p.label));
+    if (!sub.length) continue;
+    const got = pickPackage(sub, usedNames, usedLabels);
+    if (got && got.length) {
+      themed = got;
+      for (const p of got) { usedNames.add(p.name); usedLabels.add(p.label); }
+      n -= 1;
+      break;
+    }
+  }
   for (let i = 0; i < n; i++) {
     let pk = null;
     if (i === 0) {
@@ -150,5 +173,6 @@ function buildPacks(items, n) {
     packs.push(pk);
     for (const p of pk) { usedNames.add(p.name); usedLabels.add(p.label); }
   }
+  if (themed) packs.push(themed);
   return { packs };
 }
