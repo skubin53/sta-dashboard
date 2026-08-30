@@ -58,6 +58,13 @@ function pickPackage(pool, usedNames, usedLabels) {
       for (const prod of byLabel.get(lab)) {
         const np = pts + prod.pts;
         if (np > TARGET) continue;
+        // One product can serve two categories: Tough & Tender Wipes is both the
+        // all-purpose cleaner and the cleaning wipes. Without this, ticking both puts
+        // the same jar in one package twice on two different lines. usedLabels only
+        // stops repeats BETWEEN packages; this stops them inside one.
+        let dup = false;
+        for (const p of st.picks) { if (p.name === prod.name) { dup = true; break; } }
+        if (dup) continue;
         const cand = {
           cnt: st.cnt + 1,
           fresh: st.fresh + 1,

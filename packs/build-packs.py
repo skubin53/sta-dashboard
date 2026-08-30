@@ -125,6 +125,14 @@ def pick_package(pool, used_names, used_labels):
                 np = pts + prod["pts"]
                 if np > TARGET:
                     continue
+                # One product can serve two categories: Tough & Tender Wipes is both the
+                # all-purpose cleaner and the cleaning wipes. Without this, a man who
+                # ticks both gets the same jar listed twice in one package at two
+                # different lines, which reads as careless and pads the item count.
+                # used_names only stops repeats BETWEEN packages; this stops them inside
+                # one. Found on Chad's list 2026-08-29 before it went out.
+                if any(p["name"] == prod["name"] for p in picks):
+                    continue
                 cand = (cnt + 1, fresh + 1, negcost - prod["usd"], picks + [prod])
                 cur = nxt.get(np)
                 if cur is None or cand[:3] > cur[:3]:

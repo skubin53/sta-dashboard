@@ -1,57 +1,653 @@
 {
-  "_note": "Switch Checklist label -> Melaleuca products. Name, product points, US Member price. Harvested from the live store 2026-08-29. Prices are stable month to month; re-sweep monthly (see melaleuca-catalogue-harvest.md). Two or three options per label on purpose, so three packages can differ without repeating a product.",
-  "_verified": "2026-08-29",
-
-  "Shampoo":                 [["Affinia Moisture Shampoo",4,8.49],["Affinia Volume Shampoo",4,8.49],["Melaleuca Original Shampoo",9,17.49],["Melaleuca Herbal Shampoo",9,17.49]],
-  "Conditioner":             [["Affinia Moisture Conditioner",4,8.49],["Affinia Volume Conditioner",4,8.49],["Sei Bella Salon Conditioner",10,20.00]],
-  "Body wash":               [["Renew Body Wash",6,10.99],["Alloy 3-in-1 Hair & Body Wash",5,9.99]],
-  "Hand soap":               [["Renew Hand Wash",4,7.39]],
-  "Body lotion":             [["Affinia Nourishing Body Lotion",4,9.29],["Renew Intensive Skin Therapy",10,16.99],["Body Satin Hand Creme",2,3.59]],
-  "Deodorant":               [["Alloy Deodorant",2,5.79],["Affinia Antiperspirant & Deodorant",2,5.79],["Melaleuca Herbal Deodorant",2,5.79]],
-  "Toothpaste":              [["Exceed Essential Oil Tooth Polish",2,4.59],["Classic Tooth Polish",2,4.59],["Exceed Hydroxyapatite Tooth Polish",2,5.19]],
-  "Mouthwash":               [["Breath-Away Essential Oil Mouth Rinse",4,8.59]],
-  "Hair styling products":   [["Sei Bella Dry Shampoo",10,19.50],["Soft Hold Styling Cream Sei Bella",9,17.00],["Sei Bella Hair Oil",11,24.00]],
-
-  "Laundry detergent":       [["MelaPower 9x Detergent",10,19.49]],
-  "Fabric softener":         [["MelaSoft 9x Liquid Fabric Softener",5,12.59]],
-  "Dryer sheets":            [["MelaSoft Dryer Sheets",3,6.49]],
-  "Laundry stain remover":   [["PreSpot Instant Stain Remover",1,2.59],["PreSpot Gel with Scrub Brush",2,4.19]],
-  "Dish soap":               [["Lemon Brite Hand Dishwashing Liquid",2,4.39],["Lemon Brite Hand Dishwashing Liquid: Lavender",2,4.39]],
-  "Dishwasher detergent":    [["Diamond Brite Gel Automatic Dishwasher Detergent",4,8.19],["Diamond Brite Packs Automatic Dishwasher Detergent",4,9.49]],
-  "All-purpose cleaner":     [["Tough & Tender Wipes",2,4.29],["Tough & Tender 12x All-Purpose Cleaner",3,6.99],["Tough & Tender 12x All-Purpose Cleaner: Lavender",3,6.99]],
-  "Bathroom & tub cleaner":  [["Tub & Tile 12x Bathroom Cleaner",3,6.99]],
-  "Glass cleaner":           [["Clear Power Glass Wipes",2,4.29],["Clear Power 12x Glass Cleaner",3,6.99]],
-  "Toilet bowl cleaner":     [["Safe & Mighty Toilet Bowl Cleaner",3,6.19]],
-  "Floor cleaner":           [["Clean & Gleam 12x Floor Cleaner",3,6.99],["Clean & Gleam Floor Polish",4,10.29]],
-  "Disinfectant":            [["Sol-U-Guard Botanical Convenience Wipes",3,6.19],["Sol-U-Guard Botanical 2x Disinfectant",6,11.39]],
-  "Cleaning wipes":          [["Tough & Tender Wipes",2,4.29],["Clear Power Glass Wipes",2,4.29]],
-
-  "Antioxidants":                          [["CellWise Broad Spectrum Antioxidant",10,17.79],["Provex-Plus Circulatory System Antioxidant",11,17.79]],
-  "Bone Health":                           [["Calcium Complete",6,11.49],["K2-D3 Optimal Calcium Delivery",13,24.99]],
-  "Collagen (Types I, II & III)":          [["Vitality for Life Collagen Boost With Ceramides",16,39.89],["Vitality for Life Collagen Boost with Astaxanthin",16,39.89]],
-  "Immune Support / Echinacea / Vitamin C":[["Activate Immune Complex",6,13.29],["Activate-C Immune Complex Drink: Orange",6,12.99],["Activate-C Immune Complex Drink: Raspberry",6,12.99]],
-  "Magnesium":                             [["Mela-Out Magnesium",11,24.59]],
-  "Multivitamin / Minerals":               [["Vitality Multivitamin & Mineral",8,14.99],["Vitality Pack",10,20.48]],
-  "Vitamin D3":                            [["Vitality Vitamin D3",4,8.39]],
-  "Joint Care (Glucosamine)":              [["Replenex Extra Strength",12,22.39],["Replenex Extra Strength Drink",12,22.39]],
-  "Probiotics":                            [["Exceed Oral Probiotic Mint",9,19.99]],
-  "Digestive Enzymes":                     [["FiberWise Cobbler Bar: Blueberry",4,10.29]],
-
-  "Allergy medicine":            [["CounterAct Allergy",5,12.29]],
-  "Pain relief tablets":         [["CounterAct Pain - Acetaminophen",2,4.59],["CounterAct IB - Ibuprofen",2,4.59]],
-  "Pain & muscle relief cream":  [["Pain-A-Trate Original",6,10.69],["Pain-A-Trate Ultra",7,12.79]],
-  "First aid ointment":          [["Triple Antibiotic Ointment",3,6.19],["MelaGel Topical Balm - Disk",5,8.39],["MelaGel Topical Gel - Tube",5,8.39]],
-  "Cuts, burns & bite cream":    [["DermaCort Anti-Itch Cream",5,7.49]],
-
-  "Foundation":     [["Sei Bella Flawless Liquid Foundation",10,27.00],["Sei Bella Mineral Foundation",11,21.50]],
-  "Primer":         [["Sei Bella Foundation Primer",11,22.50]],
-  "Blush":          [["Sei Bella Powder Blush",7,15.00],["Sei Bella Powder Blush with Compact",8,18.00]],
-  "Eyeshadow":      [["Sei Bella Snowed In Eyeshadow Palette",8,25.00],["Sei Bella Eyeshadow Palette: Morning Coffee",9,30.00]],
-  "Mascara":        [["Sei Bella Dramatic Impact Mascara: Black",8,15.50],["Sei Bella Defining Lash Mascara",8,15.50]],
-  "Lipstick":       [["Sei Bella Lipstick",8,16.50],["SeiBella Lip Gloss",5,12.50]],
-  "Setting spray":  [["Sei Bella Finishing Spray",9,17.00],["Sei Bella Makeup Setting Spray",9,20.00]],
-
-  "Coffee":      [["Mountain Cabin Coffee",5,11.49]],
-  "Beef Sticks": [["Riverbend Ranch Beef Sticks",4,10.75]],
-  "Beef Jerky":  [["Riverbend Ranch Beef Jerky: Original",3,8.95]]
+  "_note": "Switch Checklist label -> Melaleuca products. Name, product points, US Member price. Harvested from the live store 2026-08-29. Prices are stable month to month; re-sweep monthly (see melaleuca-catalogue-harvest.md). Two or three options per label on purpose, so three packages can differ without repeating a product. NOT SOLD: Melaleuca has no men's cologne, checked the whole personal-care category 2026-08-30, 167 products, zero fragrance. Leave that label unmapped rather than substituting.",
+  "_verified": "2026-08-30",
+  "Shampoo": [
+    [
+      "Affinia Moisture Shampoo",
+      4,
+      8.49
+    ],
+    [
+      "Affinia Volume Shampoo",
+      4,
+      8.49
+    ],
+    [
+      "Melaleuca Original Shampoo",
+      9,
+      17.49
+    ],
+    [
+      "Melaleuca Herbal Shampoo",
+      9,
+      17.49
+    ]
+  ],
+  "Conditioner": [
+    [
+      "Affinia Moisture Conditioner",
+      4,
+      8.49
+    ],
+    [
+      "Affinia Volume Conditioner",
+      4,
+      8.49
+    ],
+    [
+      "Sei Bella Salon Conditioner",
+      10,
+      20.0
+    ]
+  ],
+  "Body wash": [
+    [
+      "Renew Body Wash",
+      6,
+      10.99
+    ],
+    [
+      "Alloy 3-in-1 Hair & Body Wash",
+      5,
+      9.99
+    ]
+  ],
+  "Hand soap": [
+    [
+      "Renew Hand Wash",
+      4,
+      7.39
+    ]
+  ],
+  "Body lotion": [
+    [
+      "Affinia Nourishing Body Lotion",
+      4,
+      9.29
+    ],
+    [
+      "Renew Intensive Skin Therapy",
+      10,
+      16.99
+    ],
+    [
+      "Body Satin Hand Creme",
+      2,
+      3.59
+    ]
+  ],
+  "Deodorant": [
+    [
+      "Alloy Deodorant",
+      2,
+      5.79
+    ],
+    [
+      "Affinia Antiperspirant & Deodorant",
+      2,
+      5.79
+    ],
+    [
+      "Melaleuca Herbal Deodorant",
+      2,
+      5.79
+    ]
+  ],
+  "Toothpaste": [
+    [
+      "Exceed Essential Oil Tooth Polish",
+      2,
+      4.59
+    ],
+    [
+      "Classic Tooth Polish",
+      2,
+      4.59
+    ],
+    [
+      "Exceed Hydroxyapatite Tooth Polish",
+      2,
+      5.19
+    ]
+  ],
+  "Mouthwash": [
+    [
+      "Breath-Away Essential Oil Mouth Rinse",
+      4,
+      8.59
+    ]
+  ],
+  "Hair styling products": [
+    [
+      "Sei Bella Dry Shampoo",
+      10,
+      19.5
+    ],
+    [
+      "Soft Hold Styling Cream Sei Bella",
+      9,
+      17.0
+    ],
+    [
+      "Sei Bella Hair Oil",
+      11,
+      24.0
+    ]
+  ],
+  "Laundry detergent": [
+    [
+      "MelaPower 9x Detergent",
+      10,
+      19.49
+    ]
+  ],
+  "Fabric softener": [
+    [
+      "MelaSoft 9x Liquid Fabric Softener",
+      5,
+      12.59
+    ]
+  ],
+  "Dryer sheets": [
+    [
+      "MelaSoft Dryer Sheets",
+      3,
+      6.49
+    ]
+  ],
+  "Laundry stain remover": [
+    [
+      "PreSpot Instant Stain Remover",
+      1,
+      2.59
+    ],
+    [
+      "PreSpot Gel with Scrub Brush",
+      2,
+      4.19
+    ]
+  ],
+  "Dish soap": [
+    [
+      "Lemon Brite Hand Dishwashing Liquid",
+      2,
+      4.39
+    ],
+    [
+      "Lemon Brite Hand Dishwashing Liquid: Lavender",
+      2,
+      4.39
+    ]
+  ],
+  "Dishwasher detergent": [
+    [
+      "Diamond Brite Gel Automatic Dishwasher Detergent",
+      4,
+      8.19
+    ],
+    [
+      "Diamond Brite Packs Automatic Dishwasher Detergent",
+      4,
+      9.49
+    ]
+  ],
+  "All-purpose cleaner": [
+    [
+      "Tough & Tender Wipes",
+      2,
+      4.29
+    ],
+    [
+      "Tough & Tender 12x All-Purpose Cleaner",
+      3,
+      6.99
+    ],
+    [
+      "Tough & Tender 12x All-Purpose Cleaner: Lavender",
+      3,
+      6.99
+    ]
+  ],
+  "Bathroom & tub cleaner": [
+    [
+      "Tub & Tile 12x Bathroom Cleaner",
+      3,
+      6.99
+    ]
+  ],
+  "Glass cleaner": [
+    [
+      "Clear Power Glass Wipes",
+      2,
+      4.29
+    ],
+    [
+      "Clear Power 12x Glass Cleaner",
+      3,
+      6.99
+    ]
+  ],
+  "Toilet bowl cleaner": [
+    [
+      "Safe & Mighty Toilet Bowl Cleaner",
+      3,
+      6.19
+    ]
+  ],
+  "Floor cleaner": [
+    [
+      "Clean & Gleam 12x Floor Cleaner",
+      3,
+      6.99
+    ],
+    [
+      "Clean & Gleam Floor Polish",
+      4,
+      10.29
+    ]
+  ],
+  "Disinfectant": [
+    [
+      "Sol-U-Guard Botanical Convenience Wipes",
+      3,
+      6.19
+    ],
+    [
+      "Sol-U-Guard Botanical 2x Disinfectant",
+      6,
+      11.39
+    ]
+  ],
+  "Cleaning wipes": [
+    [
+      "Tough & Tender Wipes",
+      2,
+      4.29
+    ],
+    [
+      "Clear Power Glass Wipes",
+      2,
+      4.29
+    ]
+  ],
+  "Antioxidants": [
+    [
+      "CellWise Broad Spectrum Antioxidant",
+      10,
+      17.79
+    ],
+    [
+      "Provex-Plus Circulatory System Antioxidant",
+      11,
+      17.79
+    ]
+  ],
+  "Bone Health": [
+    [
+      "Calcium Complete",
+      6,
+      11.49
+    ],
+    [
+      "K2-D3 Optimal Calcium Delivery",
+      13,
+      24.99
+    ]
+  ],
+  "Collagen (Types I, II & III)": [
+    [
+      "Vitality for Life Collagen Boost With Ceramides",
+      16,
+      39.89
+    ],
+    [
+      "Vitality for Life Collagen Boost with Astaxanthin",
+      16,
+      39.89
+    ]
+  ],
+  "Immune Support / Echinacea / Vitamin C": [
+    [
+      "Activate Immune Complex",
+      6,
+      13.29
+    ],
+    [
+      "Activate-C Immune Complex Drink: Orange",
+      6,
+      12.99
+    ],
+    [
+      "Activate-C Immune Complex Drink: Raspberry",
+      6,
+      12.99
+    ]
+  ],
+  "Magnesium": [
+    [
+      "Mela-Out Magnesium",
+      11,
+      24.59
+    ]
+  ],
+  "Multivitamin / Minerals": [
+    [
+      "Vitality Multivitamin & Mineral",
+      8,
+      14.99
+    ],
+    [
+      "Vitality Pack",
+      10,
+      20.48
+    ]
+  ],
+  "Vitamin D3": [
+    [
+      "Vitality Vitamin D3",
+      4,
+      8.39
+    ]
+  ],
+  "Joint Care (Glucosamine)": [
+    [
+      "Replenex Extra Strength",
+      12,
+      22.39
+    ],
+    [
+      "Replenex Extra Strength Drink",
+      12,
+      22.39
+    ]
+  ],
+  "Probiotics": [
+    [
+      "Exceed Oral Probiotic Mint",
+      9,
+      19.99
+    ]
+  ],
+  "Digestive Enzymes": [
+    [
+      "FiberWise Cobbler Bar: Blueberry",
+      4,
+      10.29
+    ]
+  ],
+  "Allergy medicine": [
+    [
+      "CounterAct Allergy",
+      5,
+      12.29
+    ]
+  ],
+  "Pain relief tablets": [
+    [
+      "CounterAct Pain - Acetaminophen",
+      2,
+      4.59
+    ],
+    [
+      "CounterAct IB - Ibuprofen",
+      2,
+      4.59
+    ]
+  ],
+  "Pain & muscle relief cream": [
+    [
+      "Pain-A-Trate Original",
+      6,
+      10.69
+    ],
+    [
+      "Pain-A-Trate Ultra",
+      7,
+      12.79
+    ]
+  ],
+  "First aid ointment": [
+    [
+      "Triple Antibiotic Ointment",
+      3,
+      6.19
+    ],
+    [
+      "MelaGel Topical Balm - Disk",
+      5,
+      8.39
+    ],
+    [
+      "MelaGel Topical Gel - Tube",
+      5,
+      8.39
+    ]
+  ],
+  "Cuts, burns & bite cream": [
+    [
+      "DermaCort Anti-Itch Cream",
+      5,
+      7.49
+    ]
+  ],
+  "Foundation": [
+    [
+      "Sei Bella Flawless Liquid Foundation",
+      10,
+      27.0
+    ],
+    [
+      "Sei Bella Mineral Foundation",
+      11,
+      21.5
+    ]
+  ],
+  "Primer": [
+    [
+      "Sei Bella Foundation Primer",
+      11,
+      22.5
+    ]
+  ],
+  "Blush": [
+    [
+      "Sei Bella Powder Blush",
+      7,
+      15.0
+    ],
+    [
+      "Sei Bella Powder Blush with Compact",
+      8,
+      18.0
+    ]
+  ],
+  "Eyeshadow": [
+    [
+      "Sei Bella Snowed In Eyeshadow Palette",
+      8,
+      25.0
+    ],
+    [
+      "Sei Bella Eyeshadow Palette: Morning Coffee",
+      9,
+      30.0
+    ]
+  ],
+  "Mascara": [
+    [
+      "Sei Bella Dramatic Impact Mascara: Black",
+      8,
+      15.5
+    ],
+    [
+      "Sei Bella Defining Lash Mascara",
+      8,
+      15.5
+    ]
+  ],
+  "Lipstick": [
+    [
+      "Sei Bella Lipstick",
+      8,
+      16.5
+    ],
+    [
+      "SeiBella Lip Gloss",
+      5,
+      12.5
+    ]
+  ],
+  "Setting spray": [
+    [
+      "Sei Bella Finishing Spray",
+      9,
+      17.0
+    ],
+    [
+      "Sei Bella Makeup Setting Spray",
+      9,
+      20.0
+    ]
+  ],
+  "Coffee": [
+    [
+      "Mountain Cabin Coffee",
+      5,
+      11.49
+    ]
+  ],
+  "Beef Sticks": [
+    [
+      "Riverbend Ranch Beef Sticks",
+      4,
+      10.75
+    ]
+  ],
+  "Beef Jerky": [
+    [
+      "Riverbend Ranch Beef Jerky: Original",
+      3,
+      8.95
+    ]
+  ],
+  "Bar soap": [
+    [
+      "Alloy Luxury Glycerin Bar",
+      3,
+      4.79
+    ],
+    [
+      "The Platinum Bar",
+      3,
+      4.79
+    ],
+    [
+      "Luxury Glycerin Bath Bar",
+      3,
+      4.79
+    ]
+  ],
+  "Shave gel or cream": [
+    [
+      "Alloy Shave Gel",
+      2,
+      5.99
+    ],
+    [
+      "Affinia Shave Gel",
+      2,
+      5.99
+    ]
+  ],
+  "Air freshener": [
+    [
+      "Revive Plug In Oils",
+      3,
+      6.79
+    ],
+    [
+      "Revive Fabric Freshener & Wrinkle Relaxer Concentrate",
+      4,
+      7.89
+    ]
+  ],
+  "Caffeine (Mental Clarity & Focus)": [
+    [
+      "Vitality For Life FocusAP",
+      13,
+      25.99
+    ],
+    [
+      "CoQ10+ Cellular Energy Support",
+      15,
+      27.89
+    ]
+  ],
+  "Omega-3s (Cardiovascular)": [
+    [
+      "Coldwater Omega-3",
+      8,
+      17.19
+    ],
+    [
+      "CardiOmega EPA",
+      10,
+      19.79
+    ]
+  ],
+  "Fruit & Nut / Dark Chocolate Bars": [
+    [
+      "Simply Fit Coconut Cocoa Rounds",
+      4,
+      8.99
+    ]
+  ],
+  "Granola Bars": [
+    [
+      "Simply Fit Chewy Snack Bars",
+      3,
+      6.79
+    ]
+  ],
+  "Nut & Fruit Clusters": [
+    [
+      "Simply Fit Nut & Fruit Clusters",
+      4,
+      8.99
+    ]
+  ],
+  "Protein Bars": [
+    [
+      "Proflex Pro Protein Bars",
+      7,
+      15.89
+    ],
+    [
+      "Access Exercise Bars",
+      8,
+      16.99
+    ],
+    [
+      "Attain with CraveBlocker Bars",
+      5,
+      11.49
+    ]
+  ],
+  "Protein Shakes": [
+    [
+      "Proflex Protein Shake",
+      11,
+      26.59
+    ],
+    [
+      "Access Exercise Shake: Chocolate Slam",
+      9,
+      19.99
+    ],
+    [
+      "Proflex Pro Whey Protein Shake",
+      15,
+      35.79
+    ]
+  ]
 }

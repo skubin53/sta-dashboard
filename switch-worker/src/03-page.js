@@ -63,6 +63,23 @@ function blurb(pack) {
 }
 
 /**
+ * Names come out of GHL however they were typed. Chad's is stored "chad murphy", so the
+ * page would have opened "chad, here are...", which looks like nobody checked.
+ *
+ * Only fix a name that is ENTIRELY lower case. A name with any capital in it was typed
+ * deliberately, and blanket title casing would turn McKenzie into Mckenzie and O'Brien
+ * into O'brien. Better to leave a correct name alone than to "correct" it into a
+ * misspelling of somebody's own name.
+ */
+function properName(s) {
+  const n = String(s || "").trim();
+  if (!n || n !== n.toLowerCase()) return n;
+  return n.replace(/(^|[\s'-])([a-z])/g, function (m, sep, ch) {
+    return sep + ch.toUpperCase();
+  });
+}
+
+/**
  * Count the packs in the heading instead of assuming three.
  *
  * Caught on the first live dry run: Natalie's page said "3 different packs" over two
@@ -78,7 +95,7 @@ function headline(first, n) {
 }
 
 function renderPage(rec, packs, gifts) {
-  const first = rec.first_name || "";
+  const first = properName(rec.first_name);
   const secs = [];
   for (let i = 0; i < packs.length; i++) {
     const pk = packs[i];

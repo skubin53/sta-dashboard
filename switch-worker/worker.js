@@ -139,6 +139,16 @@ const PRODUCT_MAP = {
   "Coffee": [["Mountain Cabin Coffee", 5, 11.49]],
   "Beef Sticks": [["Riverbend Ranch Beef Sticks", 4, 10.75]],
   "Beef Jerky": [["Riverbend Ranch Beef Jerky: Original", 3, 8.95]],
+  "Bar soap": [["Alloy Luxury Glycerin Bar", 3, 4.79], ["The Platinum Bar", 3, 4.79], ["Luxury Glycerin Bath Bar", 3, 4.79]],
+  "Shave gel or cream": [["Alloy Shave Gel", 2, 5.99], ["Affinia Shave Gel", 2, 5.99]],
+  "Air freshener": [["Revive Plug In Oils", 3, 6.79], ["Revive Fabric Freshener & Wrinkle Relaxer Concentrate", 4, 7.89]],
+  "Caffeine (Mental Clarity & Focus)": [["Vitality For Life FocusAP", 13, 25.99], ["CoQ10+ Cellular Energy Support", 15, 27.89]],
+  "Omega-3s (Cardiovascular)": [["Coldwater Omega-3", 8, 17.19], ["CardiOmega EPA", 10, 19.79]],
+  "Fruit & Nut / Dark Chocolate Bars": [["Simply Fit Coconut Cocoa Rounds", 4, 8.99]],
+  "Granola Bars": [["Simply Fit Chewy Snack Bars", 3, 6.79]],
+  "Nut & Fruit Clusters": [["Simply Fit Nut & Fruit Clusters", 4, 8.99]],
+  "Protein Bars": [["Proflex Pro Protein Bars", 7, 15.89], ["Access Exercise Bars", 8, 16.99], ["Attain with CraveBlocker Bars", 5, 11.49]],
+  "Protein Shakes": [["Proflex Protein Shake", 11, 26.59], ["Access Exercise Shake: Chocolate Slam", 9, 19.99], ["Proflex Pro Whey Protein Shake", 15, 35.79]],
 };
 
 // A gift is offered ONLY when that category is one she actually ticked.
@@ -207,6 +217,13 @@ function pickPackage(pool, usedNames, usedLabels) {
       for (const prod of byLabel.get(lab)) {
         const np = pts + prod.pts;
         if (np > TARGET) continue;
+        // One product can serve two categories: Tough & Tender Wipes is both the
+        // all-purpose cleaner and the cleaning wipes. Without this, ticking both puts
+        // the same jar in one package twice on two different lines. usedLabels only
+        // stops repeats BETWEEN packages; this stops them inside one.
+        let dup = false;
+        for (const p of st.picks) { if (p.name === prod.name) { dup = true; break; } }
+        if (dup) continue;
         const cand = {
           cnt: st.cnt + 1,
           fresh: st.fresh + 1,
@@ -324,6 +341,23 @@ function blurb(pack) {
 }
 
 /**
+ * Names come out of GHL however they were typed. Chad's is stored "chad murphy", so the
+ * page would have opened "chad, here are...", which looks like nobody checked.
+ *
+ * Only fix a name that is ENTIRELY lower case. A name with any capital in it was typed
+ * deliberately, and blanket title casing would turn McKenzie into Mckenzie and O'Brien
+ * into O'brien. Better to leave a correct name alone than to "correct" it into a
+ * misspelling of somebody's own name.
+ */
+function properName(s) {
+  const n = String(s || "").trim();
+  if (!n || n !== n.toLowerCase()) return n;
+  return n.replace(/(^|[\s'-])([a-z])/g, function (m, sep, ch) {
+    return sep + ch.toUpperCase();
+  });
+}
+
+/**
  * Count the packs in the heading instead of assuming three.
  *
  * Caught on the first live dry run: Natalie's page said "3 different packs" over two
@@ -339,7 +373,7 @@ function headline(first, n) {
 }
 
 function renderPage(rec, packs, gifts) {
-  const first = rec.first_name || "";
+  const first = properName(rec.first_name);
   const secs = [];
   for (let i = 0; i < packs.length; i++) {
     const pk = packs[i];
