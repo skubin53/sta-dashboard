@@ -58,7 +58,18 @@ GIFTS = {
 }
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
-LOG = "https://switch-checklist.theshannonnicole.workers.dev/log?k=sw7k2mq4vd9x"
+# The ?k= is NOT written here. It used to be, and this file is committed to a public
+# repo, so for a day anyone could read the key off raw.githubusercontent.com and open
+# /log, which lists real women's names, contact ids and everything they ticked. Rotated
+# 2026-08-30; the new key lives in sta-tools/.logkey, which is in no repository.
+LOG_BASE = "https://switch-checklist.theshannonnicole.workers.dev/log"
+
+
+def log_url():
+    kf = os.path.join(os.path.dirname(HERE), ".logkey")
+    if not os.path.exists(kf):
+        raise SystemExit("  no sta-tools/.logkey, cannot read the submission log")
+    return LOG_BASE + "?k=" + io.open(kf, encoding="utf-8").read().strip()
 
 
 def load_map():
@@ -71,7 +82,7 @@ def fetch_submission(contact_id):
     out = os.path.join(HERE, "_log.json")
     for _ in range(4):
         subprocess.run(["curl", "-s", "--max-time", "45", "-A", UA,
-                        LOG + "&contact=" + contact_id, "-o", out], capture_output=True)
+                        log_url() + "&contact=" + contact_id, "-o", out], capture_output=True)
         if os.path.exists(out) and os.path.getsize(out) > 40:
             break
     d = json.load(io.open(out, encoding="utf-8"))
