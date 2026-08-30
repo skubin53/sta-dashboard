@@ -90,6 +90,26 @@ const NEVER_IN_PACK_GROUPS = ["Beef"];
 // detergent. Only happens if her ticks can actually fill it. Selected by GROUP so it
 // follows the checklist instead of a hand-kept list of labels.
 const THEME_GROUPS = ["Skin Care & Beauty"];
+
+// Shannon, 2026-08-30: "each pack does not need more than 1 package of wipes. I always
+// prefer to recommend the Soluguard WIpes (they work the best)"
+//
+// Visible on Marie's page: package 1 held Tough & Tender Wipes, Clear Power Glass Wipes
+// AND Sol-U-Guard Wipes. All-purpose cleaner, glass cleaner, cleaning wipes and
+// disinfectant are four separate ticks that each have a wipe as their cheapest product,
+// and nothing stopped them stacking because the only rule was one product per category.
+//
+// A package may now hold AT MOST ONE wipe, and when it holds one the search prefers hers,
+// ranked ABOVE price so it wins even when it costs more. The other ticks fall back to the
+// spray version, which is a better bundle anyway.
+//
+// Plain substring on purpose, no regex. In the Python this started life as a word
+// boundary pattern and the escape arrived in the file as a literal backspace byte, so it
+// matched nothing and failed silently while every check passed. No product name contains
+// "wipe" inside another word.
+const PREFERRED = ["Sol-U-Guard Botanical Convenience Wipes"];
+
+function isWipe(p) { return String(p.name).toLowerCase().indexOf("wipe") >= 0; }
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:
@@ -172,7 +192,7 @@ const PRODUCT_MAP = {
   "Toilet bowl cleaner": [["Safe & Mighty Toilet Bowl Cleaner", 3, 6.19]],
   "Floor cleaner": [["Clean & Gleam 12x Floor Cleaner", 3, 6.99], ["Clean & Gleam Floor Polish", 4, 10.29]],
   "Disinfectant": [["Sol-U-Guard Botanical Convenience Wipes", 3, 6.19], ["Sol-U-Guard Botanical 2x Disinfectant", 6, 11.39]],
-  "Cleaning wipes": [["Tough & Tender Wipes", 2, 4.29], ["Clear Power Glass Wipes", 2, 4.29]],
+  "Cleaning wipes": [["Sol-U-Guard Botanical Convenience Wipes", 3, 6.19], ["Tough & Tender Wipes", 2, 4.29], ["Clear Power Glass Wipes", 2, 4.29]],
   "Antioxidants": [["CellWise Broad Spectrum Antioxidant", 10, 17.79], ["Provex-Plus Circulatory System Antioxidant", 11, 17.79]],
   "Bone Health": [["Calcium Complete", 6, 11.49], ["K2-D3 Optimal Calcium Delivery", 13, 24.99]],
   "Collagen (Types I, II & III)": [["Vitality for Life Collagen Boost With Ceramides", 16, 39.89], ["Vitality for Life Collagen Boost with Astaxanthin", 16, 39.89]],
@@ -306,10 +326,12 @@ function candidates(items) {
   return out;
 }
 
-// Python's tuple comparison on (count, fresh, negCost), element by element.
+// Python's tuple comparison on (count, fresh, preferred, negCost), element by element.
+// "preferred" sits ABOVE cost so her Sol-U-Guard wipes win even when they cost more.
 function better(a, b) {
   if (a.cnt !== b.cnt) return a.cnt > b.cnt;
   if (a.fresh !== b.fresh) return a.fresh > b.fresh;
+  if (a.pref !== b.pref) return a.pref > b.pref;
   return a.negcost > b.negcost;
 }
 
@@ -323,11 +345,12 @@ function pickPackage(pool, usedNames, usedLabels, force) {
   // A forced product is placed first and its category taken off the table, so the rest
   // of the package is built around it instead of competing with it.
   let startPts = 0;
-  let start = { cnt: 0, fresh: 0, negcost: 0.0, picks: [] };
+  let start = { cnt: 0, fresh: 0, pref: 0, negcost: 0.0, picks: [] };
   if (force) {
     if (usedNames.has(force.name) || usedLabels.has(force.label)) return null;
     byLabel.delete(force.label);
-    start = { cnt: 1, fresh: 1, negcost: -force.usd, picks: [force] };
+    start = { cnt: 1, fresh: 1, pref: PREFERRED.indexOf(force.name) >= 0 ? 1 : 0,
+              negcost: -force.usd, picks: [force] };
     startPts = force.pts;
   }
   if (startPts > TARGET_MAX) return null;
@@ -351,9 +374,16 @@ function pickPackage(pool, usedNames, usedLabels, force) {
         let dup = false;
         for (const p of st.picks) { if (p.name === prod.name) { dup = true; break; } }
         if (dup) continue;
+        // at most one wipe per package
+        if (isWipe(prod)) {
+          let hasWipe = false;
+          for (const p of st.picks) { if (isWipe(p)) { hasWipe = true; break; } }
+          if (hasWipe) continue;
+        }
         const cand = {
           cnt: st.cnt + 1,
           fresh: st.fresh + 1,
+          pref: st.pref + (PREFERRED.indexOf(prod.name) >= 0 ? 1 : 0),
           negcost: st.negcost - prod.usd,
           picks: st.picks.concat([prod]),
         };
@@ -578,9 +608,12 @@ function renderPage(rec, packs) {
     // One line under all three packs, naming no products, because the list of what is
     // free changes every month.
     '<p class="freebar">' + esc(FREE_PRODUCT_LINE) + "</p>\n" +
-    '<p class="foot">These are things you buy anyway. Same shelf, better quality, and the ' +
-    "price you see is what you pay. 90 day money back guarantee, and you can cancel any " +
-    "time.</p>\n" +
+    // Shannon, 2026-08-30. "Take this out - Same shelf, better quality, and the price you
+    // see is what you pay." and "Keep - These are things you usually buy.  At Melaleuca
+    // you will get a 90 day money back guarantee, and you can cancel any time."
+    // Her wording, and she names the supplier here on purpose.
+    '<p class="foot">These are things you usually buy.  At Melaleuca you will get a ' +
+    "90 day money back guarantee, and you can cancel any time.</p>\n" +
     "</div>\n</body>\n</html>\n";
 }
 

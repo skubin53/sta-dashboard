@@ -35,6 +35,14 @@ if out == before:
 if not out.isascii():
     bad = sorted({c for c in out if not c.isascii()})
     print("  FAILED: non-ascii in worker: %r" % bad); raise SystemExit(1)
+
+# Control characters pass isascii() and are invisible in every editor. On 2026-08-30 a
+# word boundary escape landed in build-packs.py as a literal BACKSPACE, so the compiled
+# pattern matched nothing and packages went out holding three tubs of wipes. Nothing
+# caught it: the file looked correct, the tests passed, the output was simply wrong.
+ctrl = sorted({ord(c) for c in out if ord(c) < 32 and c not in chr(10)+chr(13)+chr(9)})
+if ctrl:
+    print("  FAILED: control characters in worker: %r" % ctrl); raise SystemExit(1)
 for dash in ("\u2014", "\u2013"):
     if dash in out:
         print("  FAILED: em/en dash in copy"); raise SystemExit(1)

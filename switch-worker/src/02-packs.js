@@ -45,10 +45,12 @@ function candidates(items) {
   return out;
 }
 
-// Python's tuple comparison on (count, fresh, negCost), element by element.
+// Python's tuple comparison on (count, fresh, preferred, negCost), element by element.
+// "preferred" sits ABOVE cost so her Sol-U-Guard wipes win even when they cost more.
 function better(a, b) {
   if (a.cnt !== b.cnt) return a.cnt > b.cnt;
   if (a.fresh !== b.fresh) return a.fresh > b.fresh;
+  if (a.pref !== b.pref) return a.pref > b.pref;
   return a.negcost > b.negcost;
 }
 
@@ -62,11 +64,12 @@ function pickPackage(pool, usedNames, usedLabels, force) {
   // A forced product is placed first and its category taken off the table, so the rest
   // of the package is built around it instead of competing with it.
   let startPts = 0;
-  let start = { cnt: 0, fresh: 0, negcost: 0.0, picks: [] };
+  let start = { cnt: 0, fresh: 0, pref: 0, negcost: 0.0, picks: [] };
   if (force) {
     if (usedNames.has(force.name) || usedLabels.has(force.label)) return null;
     byLabel.delete(force.label);
-    start = { cnt: 1, fresh: 1, negcost: -force.usd, picks: [force] };
+    start = { cnt: 1, fresh: 1, pref: PREFERRED.indexOf(force.name) >= 0 ? 1 : 0,
+              negcost: -force.usd, picks: [force] };
     startPts = force.pts;
   }
   if (startPts > TARGET_MAX) return null;
@@ -90,9 +93,16 @@ function pickPackage(pool, usedNames, usedLabels, force) {
         let dup = false;
         for (const p of st.picks) { if (p.name === prod.name) { dup = true; break; } }
         if (dup) continue;
+        // at most one wipe per package
+        if (isWipe(prod)) {
+          let hasWipe = false;
+          for (const p of st.picks) { if (isWipe(p)) { hasWipe = true; break; } }
+          if (hasWipe) continue;
+        }
         const cand = {
           cnt: st.cnt + 1,
           fresh: st.fresh + 1,
+          pref: st.pref + (PREFERRED.indexOf(prod.name) >= 0 ? 1 : 0),
           negcost: st.negcost - prod.usd,
           picks: st.picks.concat([prod]),
         };

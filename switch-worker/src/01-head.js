@@ -90,6 +90,26 @@ const NEVER_IN_PACK_GROUPS = ["Beef"];
 // detergent. Only happens if her ticks can actually fill it. Selected by GROUP so it
 // follows the checklist instead of a hand-kept list of labels.
 const THEME_GROUPS = ["Skin Care & Beauty"];
+
+// Shannon, 2026-08-30: "each pack does not need more than 1 package of wipes. I always
+// prefer to recommend the Soluguard WIpes (they work the best)"
+//
+// Visible on Marie's page: package 1 held Tough & Tender Wipes, Clear Power Glass Wipes
+// AND Sol-U-Guard Wipes. All-purpose cleaner, glass cleaner, cleaning wipes and
+// disinfectant are four separate ticks that each have a wipe as their cheapest product,
+// and nothing stopped them stacking because the only rule was one product per category.
+//
+// A package may now hold AT MOST ONE wipe, and when it holds one the search prefers hers,
+// ranked ABOVE price so it wins even when it costs more. The other ticks fall back to the
+// spray version, which is a better bundle anyway.
+//
+// Plain substring on purpose, no regex. In the Python this started life as a word
+// boundary pattern and the escape arrived in the file as a literal backspace byte, so it
+// matched nothing and failed silently while every check passed. No product name contains
+// "wipe" inside another word.
+const PREFERRED = ["Sol-U-Guard Botanical Convenience Wipes"];
+
+function isWipe(p) { return String(p.name).toLowerCase().indexOf("wipe") >= 0; }
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:

@@ -138,9 +138,12 @@ function renderPage(rec, packs) {
     // One line under all three packs, naming no products, because the list of what is
     // free changes every month.
     '<p class="freebar">' + esc(FREE_PRODUCT_LINE) + "</p>\n" +
-    '<p class="foot">These are things you buy anyway. Same shelf, better quality, and the ' +
-    "price you see is what you pay. 90 day money back guarantee, and you can cancel any " +
-    "time.</p>\n" +
+    // Shannon, 2026-08-30. "Take this out - Same shelf, better quality, and the price you
+    // see is what you pay." and "Keep - These are things you usually buy.  At Melaleuca
+    // you will get a 90 day money back guarantee, and you can cancel any time."
+    // Her wording, and she names the supplier here on purpose.
+    '<p class="foot">These are things you usually buy.  At Melaleuca you will get a ' +
+    "90 day money back guarantee, and you can cancel any time.</p>\n" +
     "</div>\n</body>\n</html>\n";
 }
 

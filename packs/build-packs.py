@@ -34,6 +34,7 @@ WHAT IT WILL NOT DO
 """
 import argparse
 import io
+import re
 import json
 import os
 import subprocess
@@ -85,6 +86,30 @@ NEVER_IN_PACK_GROUPS = {"Beef"}
 # changes and she gets three ordinary packages. Selected by GROUP, so it follows the
 # checklist rather than a list of labels kept in step by hand.
 THEME_GROUPS = ["Skin Care & Beauty"]
+
+# Shannon, 2026-08-30: "each pack does not need more than 1 package of wipes. I always
+# prefer to recommend the Soluguard WIpes (they work the best)"
+#
+# She is right and it was visible on Marie's page: package 1 held Tough & Tender Wipes,
+# Clear Power Glass Wipes AND Sol-U-Guard Wipes, three tubs of wipes in one bundle,
+# because all-purpose cleaner, glass cleaner, cleaning wipes and disinfectant are four
+# separate ticks that each happen to have a wipe as their cheapest product. Nothing
+# stopped them stacking, because the only rule was one product per category.
+#
+# TWO RULES NOW. A package may hold AT MOST ONE wipe. And when a wipe is used, the search
+# prefers hers, ranked above price so it wins even when it costs more. The other ticks
+# fall back to the spray version of the same product, which is a better bundle anyway.
+# Plain substring, deliberately no regex. The first version of this line was a word
+# boundary pattern, and the backslash-b arrived in the file as a literal BACKSPACE byte,
+# so the compiled pattern held two backspace characters and matched nothing. It failed
+# SILENTLY: the file looked right in an editor, every check passed, and packages kept
+# going out holding three tubs of wipes. No product name contains "wipe" inside another
+# word, so a substring is both sufficient and impossible to get wrong.
+PREFERRED = {"Sol-U-Guard Botanical Convenience Wipes"}
+
+
+def is_wipe(prod):
+    return "wipe" in prod["name"].lower()
 
 
 def in_pack_scope(item):
@@ -223,20 +248,20 @@ def pick_package(pool, used_names, used_labels, force=None):
         if force["name"] in used_names or force["label"] in used_labels:
             return None
         by_label.pop(force["label"], None)
-        start = (1, 1, -force["usd"], [force])
+        start = (1, 1, 1 if force["name"] in PREFERRED else 0, -force["usd"], [force])
         start_pts = force["pts"]
     else:
-        start = (0, 0, 0.0, [])
+        start = (0, 0, 0, 0.0, [])
         start_pts = 0
     if start_pts > TARGET_MAX:
         return None
     labels = sorted(by_label)
 
-    # state: points -> (items, freshLabels, -cost, picks)
+    # state: points -> (items, freshLabels, preferredProducts, -cost, picks)
     best = {start_pts: start}
     for lab in labels:
         nxt = dict(best)
-        for pts, (cnt, fresh, negcost, picks) in best.items():
+        for pts, (cnt, fresh, pref, negcost, picks) in best.items():
             for prod in by_label[lab]:
                 np = pts + prod["pts"]
                 if np > TARGET_MAX:
@@ -249,9 +274,13 @@ def pick_package(pool, used_names, used_labels, force=None):
                 # one. Found on Chad's list 2026-08-29 before it went out.
                 if any(p["name"] == prod["name"] for p in picks):
                     continue
-                cand = (cnt + 1, fresh + 1, negcost - prod["usd"], picks + [prod])
+                if is_wipe(prod) and any(is_wipe(p) for p in picks):
+                    continue
+                cand = (cnt + 1, fresh + 1,
+                        pref + (1 if prod["name"] in PREFERRED else 0),
+                        negcost - prod["usd"], picks + [prod])
                 cur = nxt.get(np)
-                if cur is None or cand[:3] > cur[:3]:
+                if cur is None or cand[:4] > cur[:4]:
                     nxt[np] = cand
         best = nxt
     # Any total in 35..37 qualifies, so take the best of the three rather than insisting
@@ -260,7 +289,7 @@ def pick_package(pool, used_names, used_labels, force=None):
     hits = [best[p] for p in range(TARGET_MIN, TARGET_MAX + 1) if p in best]
     if not hits:
         return None
-    return max(hits, key=lambda h: h[:3])[3]
+    return max(hits, key=lambda h: h[:4])[4]
 
 
 def build(items, pmap, n=3):
