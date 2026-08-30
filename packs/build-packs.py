@@ -41,6 +41,21 @@ from itertools import combinations
 HERE = os.path.dirname(os.path.abspath(__file__))
 MAP = os.path.join(HERE, "product-map.json")
 TARGET = 35
+
+# Shannon, 2026-08-30: "magnesium is always FREE with the first order, or coffee is always
+# FREE with the first order. But only put those options if they chose those products."
+#
+# So a gift is offered ONLY when that category is one she actually ticked. Never dangle a
+# free thing she has shown no interest in: it turns a swap list into a sales pitch, which
+# is the one thing these packages are supposed to avoid.
+#
+# A gift does NOT count toward the 35 and does NOT count toward the cost. It also removes
+# that category from the paid pool, so magnesium can never be free in one line and charged
+# for in another.
+GIFTS = {
+    "Magnesium": ("Mela-Out Magnesium", 11, 24.59),
+    "Coffee": ("Mountain Cabin Coffee", 5, 11.49),
+}
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
 LOG = "https://switch-checklist.theshannonnicole.workers.dev/log?k=sw7k2mq4vd9x"
@@ -119,8 +134,19 @@ def pick_package(pool, used_names, used_labels):
     return hit[3] if hit else None
 
 
+def gifts_for(items):
+    """Which free gifts apply, given only what she actually ticked."""
+    ticked = {(i.get("label") if isinstance(i, dict) else str(i)) for i in items}
+    return [{"label": lab, "name": g[0], "pts": g[1], "usd": g[2]}
+            for lab, g in GIFTS.items() if lab in ticked]
+
+
 def build(items, pmap, n=3):
     pool = candidates(items, pmap)
+    gifts = gifts_for(items)
+    # a gifted category is never also sold in a package
+    gift_labels = {g["label"] for g in gifts}
+    pool = [p for p in pool if p["label"] not in gift_labels]
     packs, used_names, used_labels = [], set(), set()
     for _ in range(n):
         pk = pick_package(pool, used_names, used_labels)
@@ -130,7 +156,7 @@ def build(items, pmap, n=3):
         for p in pk:
             used_names.add(p["name"])
             used_labels.add(p["label"])
-    return packs, pool
+    return packs, pool, gifts
 
 
 def main():
@@ -171,7 +197,7 @@ def main():
     if unmapped:
         print("  no product mapped yet for: %s\n" % ", ".join(unmapped[:12]))
 
-    packs, pool = build(items, pmap)
+    packs, pool, gifts = build(items, pmap)
     if not packs:
         print("  could not build a single 35 point package from these ticks.")
         raise SystemExit(1)
@@ -183,22 +209,33 @@ def main():
         print("  PACKAGE %d   %d items | %d points | $%.2f%s" % (n, len(pk), pts, usd, flag))
         for p in pk:
             print("     %-52s %2d pts  $%6.2f   (%s)" % (p["name"][:52], p["pts"], p["usd"], p["label"]))
+        note = "free with first order" if len(gifts) == 1 else "choose ONE free with first order"
+        for g in gifts:
+            print("     %-52s %2d pts  %6s   (%s, %s)"
+                  % (g["name"][:52], g["pts"], "FREE", g["label"], note))
         print()
     if len(packs) < 3:
         print("  only %d package(s) possible without repeating a product." % len(packs))
 
     if a.html:
-        io.open(a.html, "w", encoding="utf-8").write(render(packs, who))
+        io.open(a.html, "w", encoding="utf-8").write(render(packs, who, gifts))
         print("  wrote %s" % a.html)
 
 
-def render(packs, who):
+def render(packs, who, gifts=()):
     secs = []
     for n, pk in enumerate(packs, 1):
         rows = "".join(
             '<tr><td class="n">%s<small>%s</small></td><td class="p">%d</td>'
             '<td class="c">$%.2f</td></tr>' % (p["name"], p["label"], p["pts"], p["usd"])
             for p in pk)
+        rows += "".join(
+            '<tr class="free"><td class="n">%s<small>%s &middot; %s</small></td>'
+            '<td class="p">%d</td><td class="c">FREE</td></tr>'
+            % (g["name"], g["label"],
+               "yours free with your first order" if len(gifts) == 1
+               else "choose one of these free with your first order", g["pts"])
+            for g in gifts)
         secs.append(
             '<section class="pkg"><h2>Package %d <span class="cnt">%d products</span></h2>'
             '<div class="scroll"><table><tr><th>Product</th><th class="p">Points</th>'
@@ -228,7 +265,7 @@ def render(packs, who):
             "th.p,td.p{text-align:right;width:76px;font-variant-numeric:tabular-nums}"
             "th.c,td.c{text-align:right;width:96px;font-variant-numeric:tabular-nums;"
             "color:var(--red);font-weight:600}"
-            "tr.tot td{border-top:2px solid var(--navy);border-bottom:none;font-weight:800;"
+            "tr.free td.c{color:#1D7A4C;font-weight:800}tr.free td.n{color:#1D7A4C}tr.tot td{border-top:2px solid var(--navy);border-bottom:none;font-weight:800;"
             "padding-top:11px;color:var(--navy)}tr.tot td.c{color:var(--red);font-size:1.2em}"
             "</style><header><div class='wrap'><h1>3 different packs based on your choices</h1>"
             "</div></header><div class='wrap'>" + "".join(secs) + "</div>")
