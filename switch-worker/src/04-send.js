@@ -206,7 +206,7 @@ async function stepRow(env, row) {
 
     row.first_name = contact.firstName || "";
     const slug = await allocateSlug(env, row.contact_id, row.first_name);
-    const html = renderPage(row, built.packs, built.gifts);
+    const html = renderPage(row, built.packs);
     await env.REPORTS.put("packpage:" + slug, JSON.stringify({
       html, contact_id: row.contact_id, at: new Date().toISOString(),
     }), { expirationTtl: LOG_TTL });
@@ -214,7 +214,6 @@ async function stepRow(env, row) {
     row.slug = slug;
     row.url = PACK_HOST + "/" + slug;
     row.packs = built.packs.length;
-    row.gifts = built.gifts.map(function (g) { return g.name; });
     row.state = "ready";
     note(row, "page built at " + row.url + " (" + built.packs.length + " packs)");
     await writeRow(env, row);

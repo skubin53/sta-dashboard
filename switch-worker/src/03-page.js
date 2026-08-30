@@ -94,7 +94,7 @@ function headline(first, n) {
   return first ? first + ", " + body : body.charAt(0).toUpperCase() + body.slice(1);
 }
 
-function renderPage(rec, packs, gifts) {
+function renderPage(rec, packs) {
   const first = properName(rec.first_name);
   const secs = [];
   for (let i = 0; i < packs.length; i++) {
@@ -104,14 +104,6 @@ function renderPage(rec, packs, gifts) {
       rows += '<tr><td class="n">' + esc(p.name) + "<small>" + esc(p.label) +
               '</small></td><td class="p">' + p.pts + '</td><td class="c">' +
               money(p.usd) + "</td></tr>";
-    }
-    const giftNote = gifts.length === 1
-      ? "yours free with your first order"
-      : "choose one of these free with your first order";
-    for (const g of gifts) {
-      rows += '<tr class="free"><td class="n">' + esc(g.name) + "<small>" +
-              esc(g.label) + " &middot; " + giftNote + '</small></td><td class="p">' +
-              g.pts + '</td><td class="c">FREE</td></tr>';
     }
     let pts = 0, usd = 0;
     for (const p of pk) { pts += p.pts; usd += p.usd; }
@@ -142,6 +134,10 @@ function renderPage(rec, packs, gifts) {
     (sub ? ' <div class="meta">' + sub + "</div>\n" : "") +
     "</div></header>\n" +
     '<div class="wrap">\n' + secs.join("\n") + "\n" +
+    // Shannon, 2026-08-30: "So just add at the bottom / $20 in FREE product".
+    // One line under all three packs, naming no products, because the list of what is
+    // free changes every month.
+    '<p class="freebar">' + esc(FREE_PRODUCT_LINE) + "</p>\n" +
     '<p class="foot">These are things you buy anyway. Same shelf, better quality, and the ' +
     "price you see is what you pay. 90 day money back guarantee, and you can cancel any " +
     "time.</p>\n" +
@@ -175,6 +171,7 @@ const PAGE_CSS = [
   "tr.free td.n{color:var(--green)}",
   "tr.tot td{border-top:2px solid var(--navy);border-bottom:none;font-weight:800;font-size:1.06em;padding-top:11px;color:var(--navy)}",
   "tr.tot td.c{color:var(--red);font-size:1.2em}",
-  ".foot{margin:34px 0 0;color:var(--muted);font-size:.93em;border-top:1px solid var(--line);padding-top:16px}",
+  ".freebar{margin:30px 0 0;padding:14px 16px;border:2px solid var(--green);border-radius:8px;color:var(--green);font-weight:800;font-size:1.05em;text-align:center;letter-spacing:.01em}",
+  ".foot{margin:22px 0 0;color:var(--muted);font-size:.93em;border-top:1px solid var(--line);padding-top:16px}",
   "@media(max-width:520px){body{font-size:15px}td,th{padding:7px 6px}th.c,td.c{width:82px}}",
 ].join("\n");

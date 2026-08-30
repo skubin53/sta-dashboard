@@ -19,7 +19,7 @@ const rec = {
   score: sub.score,
   count: sub.count,
 };
-const html = mod.renderPage(rec, built.packs, built.gifts);
+const html = mod.renderPage(rec, built.packs);
 
 const totals = built.packs.map((pk) => ({
   items: pk.length,
@@ -32,6 +32,5 @@ process.stdout.write(JSON.stringify({
   slug,
   html,
   packs: built.packs.map((pk) => pk.map((p) => [p.name, p.label, p.pts, p.usd])),
-  gifts: built.gifts.map((g) => g.name),
   totals,
 }));

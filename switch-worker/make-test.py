@@ -25,7 +25,7 @@ parts = [io.open(os.path.join(SRC, f), encoding="utf-8").read()
          for f in ("01-head.js", "02-packs.js", "03-page.js")]
 t = re.sub(r"/\*__PRODUCT_MAP__\*/.*?/\*__END__\*/", lambda m: js_map,
            "\n".join(parts), flags=re.S)
-t += "\nexport { buildPacks, candidates, pickPackage, giftsFor, renderPage, PRODUCT_MAP };\n"
+t += "\nexport { buildPacks, candidates, pickPackage, renderPage, PRODUCT_MAP };\n"
 
 out = os.path.join(HERE, "packs-test.mjs")
 io.open(out, "w", encoding="utf-8", newline="\n").write(t)

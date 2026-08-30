@@ -125,8 +125,17 @@ const STOP_TAGS = [
 // Generated from product-map.json; do not hand edit, re-run the build script.
 const PRODUCT_MAP = /*__PRODUCT_MAP__*/null/*__END__*/;
 
-// A gift is offered ONLY when that category is one she actually ticked.
-const GIFTS = [
-  ["Magnesium", "Mela-Out Magnesium", 11, 24.59],
-  ["Coffee", "Mountain Cabin Coffee", 5, 11.49],
-];
+// NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
+//
+// It used to name magnesium and coffee as gifts. Shannon tested the live system on her own
+// phone 2026-08-30 and found the fault herself: "It offered me coffee & magnesium both for
+// FREE on all 3 packs. It's REALLY up to $20 in FREE product with each order. But coffee &
+// Magnesium are not offered in Month 2 and 3."
+//
+// The free product was never those two items. It is $20 of the customer's choice from a
+// list Melaleuca changes every month. Hardcoding this month's names would go stale on the
+// 1st and start promising people something they cannot have. The page states the $20 and
+// names nothing, which is the only version that stays true without maintenance.
+//
+// Consequence: magnesium and coffee are ordinary paid products again.
+const FREE_PRODUCT_LINE = "Plus $20 in FREE product with each order";

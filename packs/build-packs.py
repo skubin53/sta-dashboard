@@ -58,20 +58,21 @@ TARGET = TARGET_MIN          # kept: other tools import this name
 # it up. Anything added here gets the same treatment.
 PRIORITY_FIRST = ["Laundry detergent"]
 
-# Shannon, 2026-08-30: "magnesium is always FREE with the first order, or coffee is always
-# FREE with the first order. But only put those options if they chose those products."
+# NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
 #
-# So a gift is offered ONLY when that category is one she actually ticked. Never dangle a
-# free thing she has shown no interest in: it turns a swap list into a sales pitch, which
-# is the one thing these packages are supposed to avoid.
+# It used to name magnesium and coffee as gifts. Shannon tested the live system on her own
+# phone 2026-08-30 and found the fault: "It offered me coffee & magnesium both for FREE on
+# all 3 packs. It's REALLY up to $20 in FREE product with each order. But coffee &
+# Magnesium are not offered in Month 2 and 3."
 #
-# A gift does NOT count toward the 35 and does NOT count toward the cost. It also removes
-# that category from the paid pool, so magnesium can never be free in one line and charged
-# for in another.
-GIFTS = {
-    "Magnesium": ("Mela-Out Magnesium", 11, 24.59),
-    "Coffee": ("Mountain Cabin Coffee", 5, 11.49),
-}
+# So the free product was never those two items. It is $20 of the customer's choice from a
+# list Melaleuca changes every month. Hardcoding this month's names would go stale on the
+# 1st and start promising people something they cannot have. The page states the $20 and
+# names nothing, which is both simpler and the only version that stays true.
+#
+# Consequence: magnesium and coffee are ordinary paid products again, and can appear in a
+# package like anything else she ticked.
+
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
 # The ?k= is NOT written here. It used to be, and this file is committed to a public
@@ -94,16 +95,36 @@ def load_map():
 
 
 def fetch_submission(contact_id):
-    """Pull this person's most recent checklist submission from the worker's log."""
+    """Pull this person's most recent checklist submission from the worker's log.
+
+    THE STALE CACHE THAT BUILT THE WRONG PERSON'S PACKAGES, 2026-08-30.
+    This wrote the response to _log.json and broke out of the retry loop as soon as that
+    file existed and was bigger than 40 bytes. It never deleted it first. So when curl
+    failed, and curl fails here often, the check passed instantly against the PREVIOUS
+    run's file and the packages were built from whoever was looked up last. Asking for
+    Cheryl returned Chad's list, silently, with no error anywhere.
+
+    Two fixes, because either alone is not enough: the file is deleted before the fetch,
+    so a failure cannot be mistaken for a success, and the submission that comes back is
+    checked to actually belong to the person who was asked for. Getting nothing is a fine
+    outcome. Getting somebody else's shopping list and putting it in front of a customer
+    is not.
+    """
     out = os.path.join(HERE, "_log.json")
+    if os.path.exists(out):
+        os.remove(out)
     for _ in range(4):
         subprocess.run(["curl", "-s", "--max-time", "45", "-A", UA,
                         log_url() + "&contact=" + contact_id, "-o", out], capture_output=True)
         if os.path.exists(out) and os.path.getsize(out) > 40:
             break
+    if not os.path.exists(out):
+        print("  could not reach the log after 4 tries")
+        return None
     d = json.load(io.open(out, encoding="utf-8"))
     subs = d.get("submissions") or []
-    real = [s for s in subs if s.get("items")]
+    real = [s for s in subs if s.get("items")
+            and s.get("contact_id") == contact_id]     # never accept a near miss
     if not real:
         return None
     real.sort(key=lambda s: s.get("at") or "", reverse=True)
@@ -205,19 +226,8 @@ def pick_package(pool, used_names, used_labels, force=None):
     return max(hits, key=lambda h: h[:3])[3]
 
 
-def gifts_for(items):
-    """Which free gifts apply, given only what she actually ticked."""
-    ticked = {(i.get("label") if isinstance(i, dict) else str(i)) for i in items}
-    return [{"label": lab, "name": g[0], "pts": g[1], "usd": g[2]}
-            for lab, g in GIFTS.items() if lab in ticked]
-
-
 def build(items, pmap, n=3):
     pool = candidates(items, pmap)
-    gifts = gifts_for(items)
-    # a gifted category is never also sold in a package
-    gift_labels = {g["label"] for g in gifts}
-    pool = [p for p in pool if p["label"] not in gift_labels]
     packs, used_names, used_labels = [], set(), set()
     for i in range(n):
         pk = None
@@ -241,7 +251,7 @@ def build(items, pmap, n=3):
         for p in pk:
             used_names.add(p["name"])
             used_labels.add(p["label"])
-    return packs, pool, gifts
+    return packs, pool
 
 
 def main():
@@ -282,7 +292,7 @@ def main():
     if unmapped:
         print("  no product mapped yet for: %s\n" % ", ".join(unmapped[:12]))
 
-    packs, pool, gifts = build(items, pmap)
+    packs, pool = build(items, pmap)
     if not packs:
         print("  could not build a single 35 point package from these ticks.")
         raise SystemExit(1)
@@ -294,33 +304,22 @@ def main():
         print("  PACKAGE %d   %d items | %d points | $%.2f%s" % (n, len(pk), pts, usd, flag))
         for p in pk:
             print("     %-52s %2d pts  $%6.2f   (%s)" % (p["name"][:52], p["pts"], p["usd"], p["label"]))
-        note = "free with first order" if len(gifts) == 1 else "choose ONE free with first order"
-        for g in gifts:
-            print("     %-52s %2d pts  %6s   (%s, %s)"
-                  % (g["name"][:52], g["pts"], "FREE", g["label"], note))
         print()
     if len(packs) < 3:
         print("  only %d package(s) possible without repeating a product." % len(packs))
 
     if a.html:
-        io.open(a.html, "w", encoding="utf-8").write(render(packs, who, gifts))
+        io.open(a.html, "w", encoding="utf-8").write(render(packs, who))
         print("  wrote %s" % a.html)
 
 
-def render(packs, who, gifts=()):
+def render(packs, who):
     secs = []
     for n, pk in enumerate(packs, 1):
         rows = "".join(
             '<tr><td class="n">%s<small>%s</small></td><td class="p">%d</td>'
             '<td class="c">$%.2f</td></tr>' % (p["name"], p["label"], p["pts"], p["usd"])
             for p in pk)
-        rows += "".join(
-            '<tr class="free"><td class="n">%s<small>%s &middot; %s</small></td>'
-            '<td class="p">%d</td><td class="c">FREE</td></tr>'
-            % (g["name"], g["label"],
-               "yours free with your first order" if len(gifts) == 1
-               else "choose one of these free with your first order", g["pts"])
-            for g in gifts)
         secs.append(
             '<section class="pkg"><h2>Package %d <span class="cnt">%d products</span></h2>'
             '<div class="scroll"><table><tr><th>Product</th><th class="p">Points</th>'

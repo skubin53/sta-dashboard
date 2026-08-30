@@ -73,20 +73,16 @@ CASES = [
 ]
 
 
-def norm(packs, gifts):
+def norm(packs):
     """Reduce to the only thing that matters: which products, in which order."""
-    return {
-        "packs": [[[p["name"], p["label"], p["pts"], round(float(p["usd"]), 2)]
-                   for p in pk] for pk in packs],
-        "gifts": [[g["name"], g["label"], g["pts"], round(float(g["usd"]), 2)]
-                  for g in gifts],
-    }
+    return {"packs": [[[p["name"], p["label"], p["pts"], round(float(p["usd"]), 2)]
+                       for p in pk] for pk in packs]}
 
 
 def run_py(labels):
     items = [{"label": l} for l in labels]
-    packs, _pool, gifts = bp.build(items, PMAP)
-    return norm(packs, gifts)
+    packs, _pool = bp.build(items, PMAP)
+    return norm(packs)
 
 
 def run_js(cases):
@@ -114,8 +110,7 @@ def canon(res):
     """
     def row(r):
         return [r[0], r[1], int(r[2]), "%.2f" % float(r[3])]
-    return {"packs": [[row(x) for x in pk] for pk in res["packs"]],
-            "gifts": [row(g) for g in res["gifts"]]}
+    return {"packs": [[row(x) for x in pk] for pk in res["packs"]]}
 
 
 def main():

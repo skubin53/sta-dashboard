@@ -109,29 +109,9 @@ function pickPackage(pool, usedNames, usedLabels, force) {
   return win ? win.picks : null;
 }
 
-function giftsFor(items) {
-  const ticked = new Set();
-  if (Array.isArray(items)) {
-    for (const it of items) {
-      let lab;
-      if (it && typeof it === "object") lab = it.label;
-      else lab = it;
-      if (typeof lab === "string") ticked.add(lab);
-    }
-  }
-  const out = [];
-  for (const [lab, name, pts, usd] of GIFTS) {
-    if (ticked.has(lab)) out.push({ label: lab, name, pts, usd });
-  }
-  return out;
-}
-
 function buildPacks(items, n) {
   n = n || 3;
-  let pool = candidates(items);
-  const gifts = giftsFor(items);
-  const giftLabels = new Set(gifts.map((g) => g.label));
-  pool = pool.filter((p) => !giftLabels.has(p.label));
+  const pool = candidates(items);
 
   const packs = [];
   const usedNames = new Set();
@@ -167,5 +147,5 @@ function buildPacks(items, n) {
     packs.push(pk);
     for (const p of pk) { usedNames.add(p.name); usedLabels.add(p.label); }
   }
-  return { packs, gifts };
+  return { packs };
 }

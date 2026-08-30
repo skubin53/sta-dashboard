@@ -15,7 +15,6 @@ for (const [name, labels] of Object.entries(cases)) {
   out[name] = {
     packs: r.packs.map((pk) =>
       pk.map((p) => [p.name, p.label, p.pts, Math.round(p.usd * 100) / 100])),
-    gifts: r.gifts.map((g) => [g.name, g.label, g.pts, Math.round(g.usd * 100) / 100]),
   };
 }
 process.stdout.write(JSON.stringify(out));
