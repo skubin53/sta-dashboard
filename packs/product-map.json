@@ -649,5 +649,55 @@
       15,
       35.79
     ]
+  ],
+  "Beef Tallow": [
+    [
+      "Riverbend Ranch Beef Tallow",
+      6,
+      14.95
+    ]
+  ],
+  "Seasonings": [
+    [
+      "Homestead Blend",
+      4,
+      7.99
+    ],
+    [
+      "Southern Spice",
+      4,
+      7.99
+    ],
+    [
+      "Honey Cured Heat",
+      4,
+      7.99
+    ]
+  ],
+  "Baking mixes": [
+    [
+      "Simply Fit Simple Start Baking Mix: Pancakes",
+      7,
+      17.99
+    ],
+    [
+      "Simply Fit Simple Start Baking Mix: Muffins",
+      8,
+      21.99
+    ]
+  ],
+  "Popcorn": [
+    [
+      "Simply Fit Microwave Popcorn",
+      2,
+      4.49
+    ]
+  ],
+  "Electrolyte hydration": [
+    [
+      "Sustain Active Hydration",
+      6,
+      12.99
+    ]
   ]
 }

@@ -63,6 +63,19 @@ const TARGET_MAX = 37;
 
 // Shannon, 2026-08-30: "there is no Laundry Detergent. That should always be in pack 1."
 const PRIORITY_FIRST = ["Laundry detergent"];
+
+// Shannon, 2026-08-30: "The beef cuts are Riverbend Ranch, which is why we are not
+// including them. I want them on the list so they know we do offer that in our food
+// aisles. But we just won't report on them."
+//
+// The checklist already says this in data: the whole Beef group is {"unscored": true},
+// every cut is 0 points, and the group carries the note "Riverbend Ranch is a separate
+// subscription with no product points." A 0 point item can never help reach 35.
+//
+// Excluded BY GROUP, so a new cut added to the checklist needs no code change. Beef
+// Tallow, Sticks and Jerky are NOT in this group. They are ordinary Food & Drinks
+// products with real points and they stay in the packages.
+const NEVER_IN_PACK_GROUPS = ["Beef"];
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:

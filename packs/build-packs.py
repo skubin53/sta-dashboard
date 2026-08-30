@@ -58,6 +58,27 @@ TARGET = TARGET_MIN          # kept: other tools import this name
 # it up. Anything added here gets the same treatment.
 PRIORITY_FIRST = ["Laundry detergent"]
 
+# Shannon, 2026-08-30: "The beef cuts are Riverbend Ranch, which is why we are not
+# including them. I want them on the list so they know we do offer that in our food
+# aisles. But we just won't report on them."
+#
+# The checklist already says the same thing in data: the whole Beef group is
+# {"unscored": true}, every cut is 0 points, and the group carries the note "Riverbend
+# Ranch is a separate subscription with no product points." A 0 point item can never help
+# reach 35, and it is a separate subscription, so it cannot go in a package at all.
+#
+# Excluded BY GROUP, not by listing the thirteen cuts. Add a new cut to the checklist and
+# it is handled with no code change. Beef Tallow, Sticks and Jerky are NOT in this group,
+# they are ordinary Food & Drinks products with real points, and they stay.
+NEVER_IN_PACK_GROUPS = {"Beef"}
+
+
+def in_pack_scope(item):
+    """False for anything the packages must ignore. Not a gap, a deliberate exclusion."""
+    if isinstance(item, dict) and item.get("group") in NEVER_IN_PACK_GROUPS:
+        return False
+    return True
+
 # NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
 #
 # It used to name magnesium and coffee as gifts. Shannon tested the live system on her own
@@ -144,6 +165,8 @@ def candidates(items, pmap):
     out = []
     seen = set()
     for it in items:
+        if not in_pack_scope(it):
+            continue
         lab = it.get("label") if isinstance(it, dict) else str(it)
         for prod in pmap.get(lab, []):
             key = (lab, prod[0])
@@ -288,7 +311,8 @@ def main():
     print("  %s" % who)
     print("  ticked %d items, %d of them have products mapped\n" % (len(items), len(covered)))
     unmapped = sorted({(i.get("label") if isinstance(i, dict) else i) for i in items
-                       if (i.get("label") if isinstance(i, dict) else i) not in pmap})
+                       if in_pack_scope(i)
+                       and (i.get("label") if isinstance(i, dict) else i) not in pmap})
     if unmapped:
         print("  no product mapped yet for: %s\n" % ", ".join(unmapped[:12]))
 

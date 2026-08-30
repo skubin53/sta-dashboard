@@ -63,6 +63,19 @@ const TARGET_MAX = 37;
 
 // Shannon, 2026-08-30: "there is no Laundry Detergent. That should always be in pack 1."
 const PRIORITY_FIRST = ["Laundry detergent"];
+
+// Shannon, 2026-08-30: "The beef cuts are Riverbend Ranch, which is why we are not
+// including them. I want them on the list so they know we do offer that in our food
+// aisles. But we just won't report on them."
+//
+// The checklist already says this in data: the whole Beef group is {"unscored": true},
+// every cut is 0 points, and the group carries the note "Riverbend Ranch is a separate
+// subscription with no product points." A 0 point item can never help reach 35.
+//
+// Excluded BY GROUP, so a new cut added to the checklist needs no code change. Beef
+// Tallow, Sticks and Jerky are NOT in this group. They are ordinary Food & Drinks
+// products with real points and they stay in the packages.
+const NEVER_IN_PACK_GROUPS = ["Beef"];
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, as SHE rewrote it 2026-08-30 after sending it to Chad by hand:
@@ -181,6 +194,11 @@ const PRODUCT_MAP = {
   "Nut & Fruit Clusters": [["Simply Fit Nut & Fruit Clusters", 4, 8.99]],
   "Protein Bars": [["Proflex Pro Protein Bars", 7, 15.89], ["Access Exercise Bars", 8, 16.99], ["Attain with CraveBlocker Bars", 5, 11.49]],
   "Protein Shakes": [["Proflex Protein Shake", 11, 26.59], ["Access Exercise Shake: Chocolate Slam", 9, 19.99], ["Proflex Pro Whey Protein Shake", 15, 35.79]],
+  "Beef Tallow": [["Riverbend Ranch Beef Tallow", 6, 14.95]],
+  "Seasonings": [["Homestead Blend", 4, 7.99], ["Southern Spice", 4, 7.99], ["Honey Cured Heat", 4, 7.99]],
+  "Baking mixes": [["Simply Fit Simple Start Baking Mix: Pancakes", 7, 17.99], ["Simply Fit Simple Start Baking Mix: Muffins", 8, 21.99]],
+  "Popcorn": [["Simply Fit Microwave Popcorn", 2, 4.49]],
+  "Electrolyte hydration": [["Sustain Active Hydration", 6, 12.99]],
 };
 
 // NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
@@ -226,8 +244,11 @@ function candidates(items) {
   if (!Array.isArray(items)) return out;
   for (const it of items) {
     let lab;
-    if (it && typeof it === "object") lab = it.label;
-    else lab = it;
+    if (it && typeof it === "object") {
+      // deliberately out of scope, not a gap. See NEVER_IN_PACK_GROUPS.
+      if (NEVER_IN_PACK_GROUPS.indexOf(it.group) >= 0) continue;
+      lab = it.label;
+    } else lab = it;
     if (typeof lab !== "string") continue;
     const prods = Object.prototype.hasOwnProperty.call(PRODUCT_MAP, lab)
       ? PRODUCT_MAP[lab] : null;
@@ -999,12 +1020,25 @@ export default {
     const count = Number(data.count) || 0;
     const items = Array.isArray(data.items) ? data.items : [];
 
+    // Shannon, 2026-08-30: ask where they already shop, before the checklist.
+    // Comes off a public form, so it is clamped hard: at most 12 entries, 40 characters
+    // each, and the free text capped at 120. It is never scored and never touches a
+    // package. It exists so she walks into the call already knowing where their money
+    // goes now.
+    const stores = (Array.isArray(data.stores) ? data.stores : [])
+      .filter(function (x) { return typeof x === "string" && x.trim(); })
+      .slice(0, 12)
+      .map(function (x) { return x.trim().slice(0, 40); });
+    const storesOther = String(data.storesOther || "").trim().slice(0, 120);
+
     const rec = {
       at: new Date().toISOString(),
       contact_id: contactId || null,
       score,
       count,
       items,
+      stores,
+      storesOther,
       origin,
       saved: false,
       outcome: "pending",

@@ -145,12 +145,25 @@ export default {
     const count = Number(data.count) || 0;
     const items = Array.isArray(data.items) ? data.items : [];
 
+    // Shannon, 2026-08-30: ask where they already shop, before the checklist.
+    // Comes off a public form, so it is clamped hard: at most 12 entries, 40 characters
+    // each, and the free text capped at 120. It is never scored and never touches a
+    // package. It exists so she walks into the call already knowing where their money
+    // goes now.
+    const stores = (Array.isArray(data.stores) ? data.stores : [])
+      .filter(function (x) { return typeof x === "string" && x.trim(); })
+      .slice(0, 12)
+      .map(function (x) { return x.trim().slice(0, 40); });
+    const storesOther = String(data.storesOther || "").trim().slice(0, 120);
+
     const rec = {
       at: new Date().toISOString(),
       contact_id: contactId || null,
       score,
       count,
       items,
+      stores,
+      storesOther,
       origin,
       saved: false,
       outcome: "pending",

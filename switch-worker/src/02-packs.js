@@ -26,8 +26,11 @@ function candidates(items) {
   if (!Array.isArray(items)) return out;
   for (const it of items) {
     let lab;
-    if (it && typeof it === "object") lab = it.label;
-    else lab = it;
+    if (it && typeof it === "object") {
+      // deliberately out of scope, not a gap. See NEVER_IN_PACK_GROUPS.
+      if (NEVER_IN_PACK_GROUPS.indexOf(it.group) >= 0) continue;
+      lab = it.label;
+    } else lab = it;
     if (typeof lab !== "string") continue;
     const prods = Object.prototype.hasOwnProperty.call(PRODUCT_MAP, lab)
       ? PRODUCT_MAP[lab] : null;
