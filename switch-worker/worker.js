@@ -262,6 +262,12 @@ const PRODUCT_MAP = {
   "Crave Blocking Bars": [["Attain with CraveBlocker Bars", 5, 11.49]],
   "Post-Workout Drink (Creatine)": [["Vitality Elevate Pure Creatine", 5, 10.99]],
   "Pre-Workout Drink": [["Vitality Elevate Pre-Workout: Limeade", 9, 19.99]],
+  "Makeup remover": [["Sei Bella Honey & Rose Balm to Oil Makeup Eraser", 9, 20.0], ["Sei Bella Makeup Removing Cleansing Wipes", 5, 10.0]],
+  "Facial moisturizer": [["Sei Bella Charcoal & Flower Daily Mattifying Lotion", 12, 28.0], ["Sei Bella Honey & Rose Daily Soothing Lotion", 15, 32.0], ["Sei Bella Deep Marine Ageless Daily Lotion", 18, 37.0]],
+  "Wax melts or warmers": [["Revive Plug in Oil Warmer", 3, 7.29]],
+  "Vegan Crackers": [["Simply Fit Veggie Protein Crisps", 4, 11.19]],
+  "Vegan Veggie Protein Crisps": [["Simply Fit Veggie Protein Crisps", 4, 11.19]],
+  "Healthy Snacks": [["R3 Lifestyle Snack Pack", 22, 60.76]],
 };
 
 // NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
