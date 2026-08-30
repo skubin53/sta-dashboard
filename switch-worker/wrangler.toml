@@ -1,0 +1,31 @@
+name = "switch-checklist"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Deployed 2026-08-01 to https://switch-checklist.theshannonnicole.workers.dev
+#
+# ONE secret, not two. The worker only ever reads env.GHL_TOKEN; the location id is
+# not used anywhere in worker.js, so do not bother setting it.
+#
+#   npx wrangler secret put GHL_TOKEN
+#
+# Shannon set this through the dashboard instead (Worker -> Settings -> Variables
+# and secrets -> Add -> type Secret). Either route is fine.
+
+# ---------------------------------------------------------------------------------
+# KV added 2026-08-26, after Cheryl Taylor's checklist could not be found.
+#
+# It was never lost. On 19 August Shannon texted Cheryl a link carrying
+# contact_id=OAfZIEuKRE8RBQQHuJK7, which is Linda Harvey. The page worked, this Worker
+# worked, GHL accepted the note, and the score filed itself against exactly the contact
+# the link named. Finding that out took an hour of reading conversation history, because
+# this Worker kept no record of anything it had ever received.
+#
+# It does now. Every submission is written to KV before the GHL call, and the record is
+# kept whether GHL succeeds or fails. A misfiled or failed score is now a lookup.
+#
+# Same namespace the checkout worker uses. Keys here are all prefixed "switch:", so the
+# two cannot collide.
+[[kv_namespaces]]
+binding = "REPORTS"
+id = "2310ee96cc6d401f893a9cb1f5379dad"
