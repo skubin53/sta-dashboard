@@ -56,9 +56,9 @@ def one(slug):
     if not totals:
         print("    ** no totals found in the page **")
         ok = False
-    bad = [t for t, _ in totals if t != "35"]
+    bad = [t for t, _ in totals if not (35 <= int(t) <= 37)]
     if bad:
-        print("    ** package totals that are not 35: %s **" % bad)
+        print("    ** package totals outside 35 to 37: %s **" % bad)
         ok = False
     # the heading must not promise more packs than the page shows
     m = re.search(r"here are (\d+) different packs", h)
@@ -69,7 +69,7 @@ def one(slug):
         print("    ** heading uses the plural for a single pack **")
         ok = False
     if ok:
-        print("    OK: totals all 35, heading matches the number of packs")
+        print("    OK: every total is 35 to 37, heading matches the pack count")
     return ok
 
 

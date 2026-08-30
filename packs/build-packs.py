@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""build-packs.py  -  turn a Switch Checklist submission into three 35 point packages.
+"""build-packs.py  -  turn a Switch Checklist submission into three 35 to 37 point packages.
 
     python build-packs.py --demo                 build from a sample submission
     python build-packs.py --contact <id>         build from that person's real submission
@@ -16,9 +16,11 @@ The Switch Checklist worker already stores exactly what was ticked, not just a s
 So every submission already carries the input. Nothing about the checklist has to change.
 
 THE THREE RULES THAT SHAPE A PACKAGE
- 1. Every package lands on EXACTLY 35 points. Totals are computed, never estimated. On
-    2026-08-29 a hand-built package went out at 36 and was only caught by adding it up in
-    code, and that was on its way to a customer.
+ 1. Every package lands between 35 and 37 points. 35 is the qualifying number, so 36 and
+    37 qualify too. Totals are computed, never estimated. On 2026-08-29 a hand-built
+    package went out at 36 by accident and was only caught by adding it up in code, and
+    that was on its way to a customer. Being deliberately in a range is not the same as
+    not knowing the total.
  2. No product appears in more than one package. Three packages that share eight items are
     one package pretending to be three.
  3. Only things she actually ticked. A package that includes a product she never said she
@@ -27,8 +29,8 @@ THE THREE RULES THAT SHAPE A PACKAGE
 WHAT IT WILL NOT DO
  * it will not invent a product, a price or a point value. Everything comes from
    product-map.json, harvested from the live store.
- * it will not pad a package to reach 35 with something she did not ask for. If her ticks
-   cannot reach 35, it says so and builds the largest honest package instead.
+ * it will not pad a package into range with something she did not ask for. If her ticks
+   cannot reach 35, it says so and builds nothing rather than inventing a list.
 """
 import argparse
 import io
@@ -40,7 +42,21 @@ from itertools import combinations
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MAP = os.path.join(HERE, "product-map.json")
-TARGET = 35
+
+# Shannon, 2026-08-30: "I think all of these packs can be between 35 - 37 points."
+#
+# 35 is the qualifying number, so anything in 35..37 qualifies just the same. Demanding
+# EXACTLY 35 was quietly throwing away good packages: a basket landing on 36 was discarded
+# even when it was the better list. Her own example was Chad, whose laundry detergent kept
+# falling out because at 10 points it rarely fits an exact 35.
+TARGET_MIN = 35
+TARGET_MAX = 37
+TARGET = TARGET_MIN          # kept: other tools import this name
+
+# Shannon, 2026-08-30: "there is no Laundry Detergent. That should always be in pack 1."
+# If she ticked it, package 1 is built around it rather than hoping the arithmetic picks
+# it up. Anything added here gets the same treatment.
+PRIORITY_FIRST = ["Laundry detergent"]
 
 # Shannon, 2026-08-30: "magnesium is always FREE with the first order, or coffee is always
 # FREE with the first order. But only put those options if they chose those products."
@@ -95,27 +111,44 @@ def fetch_submission(contact_id):
 
 
 def candidates(items, pmap):
-    """Every product available to us, given what she ticked. Label kept for display."""
+    """Every product available to us, given what she ticked. Label kept for display.
+
+    Deduplicated on (label, product). A repeated tick adds nothing: the search already
+    refuses to use one product twice, so a duplicate only makes the inner loop do the
+    same work again. It matters because `items` arrives from a public form, and 2,850
+    junk items took 2.4 seconds, which is real CPU on a Worker. Deduplicating bounds the
+    pool at roughly 230 entries no matter how much is posted, and cannot change the
+    result: the identical candidate can never beat the incumbent, the comparison is strict.
+    """
     out = []
+    seen = set()
     for it in items:
         lab = it.get("label") if isinstance(it, dict) else str(it)
         for prod in pmap.get(lab, []):
+            key = (lab, prod[0])
+            if key in seen:
+                continue
+            seen.add(key)
             out.append({"label": lab, "name": prod[0], "pts": prod[1], "usd": prod[2]})
     return out
 
 
-def pick_package(pool, used_names, used_labels):
-    """Find a set of products hitting EXACTLY 35 points, with as MANY items as possible.
+def pick_package(pool, used_names, used_labels, force=None):
+    """Find a set of products totalling 35 to 37 points, with as MANY items as possible.
 
     Rewritten 2026-08-29 after the first version produced three-item packages like
     "antioxidant + calcium + foundation", which hits 35 but reads like nothing. It was
     trying small sizes first and stopping at the first exact hit, so it always grabbed the
     biggest-point items. A woman wants to see her shopping list, not three expensive jars.
 
-    This is a knapsack with one choice per label. Exact dynamic programming over 0..35
-    points: for each label, take one of its products or none. Among the ways to reach
-    exactly 35 it prefers, in order: the most items, then the most labels she has not been
-    shown yet, then the lowest cost.
+    This is a knapsack with one choice per label. Exact dynamic programming over 0..37
+    points: for each label, take one of its products or none. Among every way to land in
+    35..37 it prefers, in order: the most items, then the most labels she has not been
+    shown yet, then the lowest cost. Cost is what separates a 35 from a 37 holding the
+    same number of items.
+
+    `force` pins one product into the package before the search starts, which is how
+    laundry detergent always ends up in package 1.
 
     A label already used in an earlier package is skipped entirely, so three packages never
     show the same category twice.
@@ -125,16 +158,30 @@ def pick_package(pool, used_names, used_labels):
         if p["name"] in used_names or p["label"] in used_labels:
             continue
         by_label.setdefault(p["label"], []).append(p)
+
+    # A forced product is placed first and its category taken off the table, so the rest
+    # of the package is built around it instead of competing with it.
+    if force is not None:
+        if force["name"] in used_names or force["label"] in used_labels:
+            return None
+        by_label.pop(force["label"], None)
+        start = (1, 1, -force["usd"], [force])
+        start_pts = force["pts"]
+    else:
+        start = (0, 0, 0.0, [])
+        start_pts = 0
+    if start_pts > TARGET_MAX:
+        return None
     labels = sorted(by_label)
 
     # state: points -> (items, freshLabels, -cost, picks)
-    best = {0: (0, 0, 0.0, [])}
+    best = {start_pts: start}
     for lab in labels:
         nxt = dict(best)
         for pts, (cnt, fresh, negcost, picks) in best.items():
             for prod in by_label[lab]:
                 np = pts + prod["pts"]
-                if np > TARGET:
+                if np > TARGET_MAX:
                     continue
                 # One product can serve two categories: Tough & Tender Wipes is both the
                 # all-purpose cleaner and the cleaning wipes. Without this, a man who
@@ -149,8 +196,13 @@ def pick_package(pool, used_names, used_labels):
                 if cur is None or cand[:3] > cur[:3]:
                     nxt[np] = cand
         best = nxt
-    hit = best.get(TARGET)
-    return hit[3] if hit else None
+    # Any total in 35..37 qualifies, so take the best of the three rather than insisting
+    # on 35. Same preference as before: most items, then most fresh categories, then
+    # cheapest. Cost is what separates a 35 from a 37 when both hold the same count.
+    hits = [best[p] for p in range(TARGET_MIN, TARGET_MAX + 1) if p in best]
+    if not hits:
+        return None
+    return max(hits, key=lambda h: h[:3])[3]
 
 
 def gifts_for(items):
@@ -167,8 +219,22 @@ def build(items, pmap, n=3):
     gift_labels = {g["label"] for g in gifts}
     pool = [p for p in pool if p["label"] not in gift_labels]
     packs, used_names, used_labels = [], set(), set()
-    for _ in range(n):
-        pk = pick_package(pool, used_names, used_labels)
+    for i in range(n):
+        pk = None
+        if i == 0:
+            # Package 1 is built AROUND the priority products when she ticked them,
+            # instead of leaving it to the arithmetic. Laundry detergent is 10 points and
+            # kept losing to cheaper combinations, which is exactly how Chad ended up with
+            # no detergent in a list where he had asked for it.
+            for lab in PRIORITY_FIRST:
+                options = [p for p in pool if p["label"] == lab]
+                got = [pick_package(pool, used_names, used_labels, force=o) for o in options]
+                got = [g for g in got if g]
+                if got:
+                    pk = max(got, key=lambda g: (len(g), -sum(x["usd"] for x in g)))
+                    break
+        if pk is None:
+            pk = pick_package(pool, used_names, used_labels)
         if not pk:
             break
         packs.append(pk)
@@ -224,7 +290,7 @@ def main():
     for n, pk in enumerate(packs, 1):
         pts = sum(p["pts"] for p in pk)
         usd = round(sum(p["usd"] for p in pk), 2)
-        flag = "" if pts == TARGET else "   ** NOT 35 **"
+        flag = "" if TARGET_MIN <= pts <= TARGET_MAX else "   ** OUT OF RANGE **"
         print("  PACKAGE %d   %d items | %d points | $%.2f%s" % (n, len(pk), pts, usd, flag))
         for p in pk:
             print("     %-52s %2d pts  $%6.2f   (%s)" % (p["name"][:52], p["pts"], p["usd"], p["label"]))

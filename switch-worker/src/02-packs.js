@@ -14,8 +14,15 @@
  * Maps also mean a label like "__proto__" coming off a public form is just a string.
  */
 
+// Deduplicated on (label, product). A repeated tick adds nothing: the search already
+// refuses to use one product twice, so a duplicate only makes the inner loop redo the
+// same work. `items` comes off a public form, and 2,850 junk items cost 2.4 seconds of
+// Worker CPU. This bounds the pool at ~230 entries however much is posted, and cannot
+// change the result, because an identical candidate never beats the incumbent under a
+// strict comparison.
 function candidates(items) {
   const out = [];
+  const seen = new Set();
   if (!Array.isArray(items)) return out;
   for (const it of items) {
     let lab;
@@ -26,6 +33,9 @@ function candidates(items) {
       ? PRODUCT_MAP[lab] : null;
     if (!Array.isArray(prods)) continue;
     for (const p of prods) {
+      const key = lab + "\u0000" + p[0];
+      if (seen.has(key)) continue;
+      seen.add(key);
       out.push({ label: lab, name: p[0], pts: p[1], usd: p[2] });
     }
   }
@@ -39,25 +49,37 @@ function better(a, b) {
   return a.negcost > b.negcost;
 }
 
-function pickPackage(pool, usedNames, usedLabels) {
+function pickPackage(pool, usedNames, usedLabels, force) {
   const byLabel = new Map();
   for (const p of pool) {
     if (usedNames.has(p.name) || usedLabels.has(p.label)) continue;
     if (!byLabel.has(p.label)) byLabel.set(p.label, []);
     byLabel.get(p.label).push(p);
   }
+  // A forced product is placed first and its category taken off the table, so the rest
+  // of the package is built around it instead of competing with it.
+  let startPts = 0;
+  let start = { cnt: 0, fresh: 0, negcost: 0.0, picks: [] };
+  if (force) {
+    if (usedNames.has(force.name) || usedLabels.has(force.label)) return null;
+    byLabel.delete(force.label);
+    start = { cnt: 1, fresh: 1, negcost: -force.usd, picks: [force] };
+    startPts = force.pts;
+  }
+  if (startPts > TARGET_MAX) return null;
+
   // Python: labels = sorted(by_label). Codepoint order, stated explicitly.
   const labels = Array.from(byLabel.keys()).sort((x, y) => (x < y ? -1 : x > y ? 1 : 0));
 
   let best = new Map();
-  best.set(0, { cnt: 0, fresh: 0, negcost: 0.0, picks: [] });
+  best.set(startPts, start);
 
   for (const lab of labels) {
     const nxt = new Map(best);
     for (const [pts, st] of best) {
       for (const prod of byLabel.get(lab)) {
         const np = pts + prod.pts;
-        if (np > TARGET) continue;
+        if (np > TARGET_MAX) continue;
         // One product can serve two categories: Tough & Tender Wipes is both the
         // all-purpose cleaner and the cleaning wipes. Without this, ticking both puts
         // the same jar in one package twice on two different lines. usedLabels only
@@ -77,8 +99,14 @@ function pickPackage(pool, usedNames, usedLabels) {
     }
     best = nxt;
   }
-  const hit = best.get(TARGET);
-  return hit ? hit.picks : null;
+  // Any total in 35..37 qualifies, so take the best of the three rather than insisting
+  // on 35. Same preference: most items, then most fresh categories, then cheapest.
+  let win = null;
+  for (let p = TARGET_MIN; p <= TARGET_MAX; p++) {
+    const h = best.get(p);
+    if (h && (win === null || better(h, win))) win = h;
+  }
+  return win ? win.picks : null;
 }
 
 function giftsFor(items) {
@@ -109,7 +137,32 @@ function buildPacks(items, n) {
   const usedNames = new Set();
   const usedLabels = new Set();
   for (let i = 0; i < n; i++) {
-    const pk = pickPackage(pool, usedNames, usedLabels);
+    let pk = null;
+    if (i === 0) {
+      // Package 1 is built AROUND the priority products when she ticked them, instead of
+      // leaving it to the arithmetic. Laundry detergent is 10 points and kept losing to
+      // cheaper combinations, which is how Chad ended up with no detergent in a list
+      // where he had asked for it.
+      for (const lab of PRIORITY_FIRST) {
+        const options = pool.filter((p) => p.label === lab);
+        let win = null, winKey = null;
+        for (const o of options) {
+          const g = pickPackage(pool, usedNames, usedLabels, o);
+          if (!g || !g.length) continue;
+          let cost = 0;
+          for (const x of g) cost += x.usd;
+          // Python max(key=(len, -cost)) keeps the FIRST maximal item, so only a
+          // strictly better candidate is allowed to replace the incumbent.
+          const key = [g.length, -cost];
+          if (winKey === null || key[0] > winKey[0] ||
+              (key[0] === winKey[0] && key[1] > winKey[1])) {
+            win = g; winKey = key;
+          }
+        }
+        if (win) { pk = win; break; }
+      }
+    }
+    if (pk === null) pk = pickPackage(pool, usedNames, usedLabels);
     if (!pk || !pk.length) break;
     packs.push(pk);
     for (const p of pk) { usedNames.add(p.name); usedLabels.add(p.label); }

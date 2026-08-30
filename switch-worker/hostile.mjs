@@ -77,7 +77,7 @@ for (const [name, input] of CASES) {
   if (res && res.packs) {
     for (let i = 0; i < res.packs.length; i++) {
       const t = res.packs[i].reduce((a, b) => a + b.pts, 0);
-      if (t !== 35) badTotal += " pack" + (i + 1) + "=" + t + "pts";
+      if (t < 35 || t > 37) badTotal += " pack" + (i + 1) + "=" + t + "pts";
     }
   }
 

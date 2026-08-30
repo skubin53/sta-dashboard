@@ -183,15 +183,24 @@ async function stepRow(env, row) {
 
     const built = buildPacks(row.items);
     if (!built.packs.length) {
-      await block(env, row, ["nothing she ticked can make a 35 point package"]);
+      await block(env, row, ["nothing she ticked can make a package in the 35 to 37 point range"]);
       return "blocked:no-packs";
     }
     for (const pk of built.packs) {
       let t = 0;
       for (const p of pk) t += p.pts;
-      if (t !== TARGET) {
-        await block(env, row, ["built a package worth " + t + " points, not " + TARGET]);
+      // 35 to 37, not exactly 35. This check is the last thing standing between a wrong
+      // package and a customer, so it moved the same day the target became a range; left
+      // at "=== 35" it would have blocked every send instead of catching a bad one.
+      if (t < TARGET_MIN || t > TARGET_MAX) {
+        await block(env, row, ["built a package worth " + t + " points, outside " +
+                               TARGET_MIN + " to " + TARGET_MAX]);
         return "blocked:bad-total";
+      }
+      const names = new Set(pk.map(function (x) { return x.name; }));
+      if (names.size !== pk.length) {
+        await block(env, row, ["built a package with the same product twice"]);
+        return "blocked:duplicate-product";
       }
     }
 

@@ -54,7 +54,15 @@ const ALLOWED = [
 // before, so the existing tooling that calls /log keeps working.
 function readKey(env) { return String((env && env.LOG_KEY) || ""); }
 const PACK_HOST = "https://packs.ismyhometoxic.com";
-const TARGET = 35;
+// Shannon, 2026-08-30: "I think all of these packs can be between 35 - 37 points."
+// 35 is the qualifying number, so 36 and 37 qualify just the same. Insisting on exactly
+// 35 was throwing away better lists: her example was Chad, whose laundry detergent kept
+// falling out because at 10 points it rarely fits an exact 35.
+const TARGET_MIN = 35;
+const TARGET_MAX = 37;
+
+// Shannon, 2026-08-30: "there is no Laundry Detergent. That should always be in pack 1."
+const PRIORITY_FIRST = ["Laundry detergent"];
 const LOG_TTL = 60 * 60 * 24 * 730;
 
 // Shannon's message, 2026-08-30, verbatim. Her copy is not mine to improve; the only

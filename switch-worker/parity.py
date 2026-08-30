@@ -143,10 +143,10 @@ def main():
         for src, res in (("py", run_py(labels)), ("js", js[name])):
             for n, pk in enumerate(res["packs"], 1):
                 t = sum(x[2] for x in pk)
-                if t != 35:
+                if not (35 <= t <= 37):
                     off.append("%s %s pack%d = %d" % (name, src, n, t))
     print("\n  %d passed, %d failed" % (ok, bad))
-    print("  packages not equal to 35 points: %s" % (", ".join(off) if off else "none"))
+    print("  packages outside 35 to 37 points: %s" % (", ".join(off) if off else "none"))
     if bad or off:
         raise SystemExit(1)
 
