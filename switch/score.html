@@ -23,6 +23,11 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 .cta p{color:#e0eaf4;margin:0 0 18px}
 .cta a{display:inline-block;background:var(--orange);color:var(--navy);padding:16px 34px;
        border-radius:9px;font-weight:800;text-decoration:none;font-size:1.05em}
+.promise{border-color:var(--green);background:#f4faf6}
+.promise p{margin:0 0 10px;font-size:1.08em}
+.promise p:last-child{margin-bottom:0}
+.promise strong{font-weight:800}
+.promise a{color:var(--green);font-weight:800}
 .note{color:var(--muted);font-size:.85em;text-align:center}
 @media(max-width:600px){ul.p{column-count:1}.score{font-size:4em}.q{font-size:2em}.ys{font-size:1.7em}}
 </style></head><body>
@@ -46,6 +51,12 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 <h2>What this actually means</h2>
 <p>Every one of these is something your family already buys. Nobody is asking you to add anything to your life or spend more than you spend today. You are being asked to buy the same things from a brand that leaves the junk out.</p>
 <p><strong>Same shopping. Different shelf.</strong></p>
+</div>
+<div class="card promise">
+<p>And we promise to never sell you anything toxic or harmful.</p>
+<p>Everything here is <strong>MORE AFFORDABLE</strong> than Walmart.</p>
+<p>We give you FREE things every time you shop.</p>
+<p><a href="https://docs.google.com/document/d/1sMSpq6LLVlpiDD5ZQVo33knB7x_4-mO1SVrOeCrWJkQ/preview" target="_blank" rel="noopener">Check out this price comparison</a></p>
 </div>
 <div class="cta">
 <p>Let's walk through your list together and find the easiest place to start.</p>
@@ -72,7 +83,7 @@ var cid=r.contact||new URLSearchParams(location.search).get('contact_id')||'';
 var note=document.getElementById('saved');
 if(cid && WEBHOOK){
   fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({contact_id:cid,score:score,count:r.count,items:picked})})
+    body:JSON.stringify({contact_id:cid,score:score,count:r.count,items:picked,stores:r.stores||[],storesOther:r.storesOther||''})})
   .then(function(x){return x.json();}).then(function(j){note.textContent=j&&j.saved?'Saved to your file.':'';})
   .catch(function(){note.textContent='';});
 }
