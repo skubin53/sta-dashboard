@@ -268,6 +268,8 @@ const PRODUCT_MAP = {
   "Vegan Crackers": [["Simply Fit Veggie Protein Crisps", 4, 11.19]],
   "Vegan Veggie Protein Crisps": [["Simply Fit Veggie Protein Crisps", 4, 11.19]],
   "Healthy Snacks": [["R3 Lifestyle Snack Pack", 22, 60.76]],
+  "Fat Burner": [["NutraTherm Stimulant-Free Fat Burner", 16, 31.29]],
+  "Perfume": [["Sei Bella White Floral & Vanilla", 26, 56.0], ["Sei Bella Pink Iris & Sandalwood", 26, 56.0], ["Sei Bella Jasmine & Cedarwood", 26, 56.0]],
 };
 
 // NO FREE-PRODUCT LOGIC LIVES HERE ANY MORE.
