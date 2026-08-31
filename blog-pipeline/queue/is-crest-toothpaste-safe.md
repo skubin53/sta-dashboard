@@ -8,7 +8,7 @@ category: Personal Care
 meta_description: Crest carried plastic beads until 2016. A court filing dated July 2026 says the gum line still holds a harsh detergent. Here are the receipts.
 cover: https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v1.webp
 vault_checked: [Switch-to-America, AEO-Content-Strategist, North-Star]
-status: ready
+status: blocked-images
 ---
 
 <style>
@@ -53,7 +53,7 @@ status: ready
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You have brushed your teeth more than twenty thousand times. Nobody ever asked you what was in the tube.</p>
-<p><strong><a href="https://truthinadvertising.org/wp-content/uploads/2026/07/Oliver-v-P-and-G-complaint.pdf">On 2 July 2026 two people sued Procter and Gamble over Crest.</a></strong> The filing says the Crest Pro-Health gum tubes carry "a harsh detergent and known irritant."</p>
+<p><strong><a href="https://courtlistener.com/docket/73577377/oliver-v-the-procter-gamble-co/">On 2 July 2026 two people sued Procter and Gamble over Crest.</a></strong> The filing says the Crest Pro-Health gum tubes carry "a harsh detergent and known irritant."</p>
 <p>That is a claim, not a ruling. But it is not the first time.</p>
 </div>
 
@@ -82,13 +82,13 @@ status: ready
 
 <p>She had been pulling blue specks out of her patients' gums for months. Not off the surface. Down in the channel where the gum meets the tooth.</p>
 
-<p>So she took a tube home. She mixed a pea sized blob with water and strained out what would not dissolve.</p>
+<p>So she went and got the tube out of her own daughter's drawer. She mixed a pea sized blob with water and strained out what would not dissolve.</p>
 
 <p>Then she soaked the specks in nail polish remover. Then in alcohol. Overnight.</p>
 
 <p>Nothing happened. They were polyethylene. The plastic in a grocery bag.</p>
 
-<p>She went looking for a reason. <a href="https://www.dentalbuzz.com/2014/03/04/crest-imbeds-plastic-in-our-gums/">Crest's own website gave one, and she quoted it: "Polyethylene plastic is in your toothpaste for decorative purposes only."</a></p>
+<p>She went looking for a reason. <a href="https://www.dentalbuzz.com/2014/03/04/crest-imbeds-plastic-in-our-gums/">Crest's own website gave one, and it said the plastic was there for color. Her summary of it: decorative purposes only.</a></p>
 
 <p><strong>Color.</strong> That was the whole reason.</p>
 
@@ -141,7 +141,7 @@ status: ready
 <tr><td>Beads pulled from Crest</td><td>Gone by March 2016</td><td>Procter and Gamble, September 2014</td><td>The company chose it. No court made it</td></tr>
 <tr><td>Toothpaste written into a federal law</td><td>Plastic beads banned in rinse off products</td><td>Public Law 114-114, 28 December 2015</td><td>It covers beads only, nothing else in the tube</td></tr>
 <tr><td>Lawsuit over the gum line</td><td>A detergent in a gum treatment</td><td>Filed in California, 2 July 2026</td><td>A filing is a claim. No judge has ruled</td></tr>
-<tr><td>Benzene found in company sprays</td><td>Two recalls, four weeks apart</td><td>Procter and Gamble, November and December 2021</td><td>Different aisle. Not toothpaste</td></tr>
+<tr><td>Benzene found in company sprays</td><td>Two recalls, three weeks apart</td><td>Procter and Gamble, November and December 2021</td><td>Different aisle. Not toothpaste</td></tr>
 </tbody>
 </table>
 
@@ -159,7 +159,7 @@ status: ready
 
 <p>Look at what else they were doing. On 23 November 2021 they pulled Old Spice and Secret sprays off the shelves. <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-specific-old-spice-and-secret-aerosol-spray-antiperspirants-and-old-spice">Their own recall notice says why: benzene. "Benzene is classified as a human carcinogen."</a></p>
 
-<p>Four weeks later, on 17 December, <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">they recalled their dry shampoo sprays for the same thing.</a> Pantene. Herbal Essences. Aussie.</p>
+<p>Three weeks later, on 17 December, <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">they recalled their dry shampoo sprays for the same thing.</a> Pantene. Herbal Essences. Aussie.</p>
 
 <p>Different aisle. Same company. Same year.</p>
 
@@ -185,9 +185,9 @@ status: ready
 
 <p>Because of who keeps finding it.</p>
 
-<p>A hygienist found the plastic. Lawyers filed the suit. A lab found the benzene.</p>
+<p>A hygienist found the plastic. Lawyers filed the suit.</p>
 
-<p><strong>Not once did the company find it first and come and tell you.</strong></p>
+<p><strong>Both times it took somebody outside the company.</strong></p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-belonging-v1.webp" alt="A boy in striped pajamas rinsing at the sink while a smaller child brushes standing on a wooden step stool, their dad watching from the doorway" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -239,12 +239,12 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://www.dentalbuzz.com/2014/03/04/crest-imbeds-plastic-in-our-gums/">Trish Walraven, dental hygienist, DentalBuzz, 4 March 2014</a>. She reports "these blue particles flush out of patients' gums for several months now," and quotes Crest's own site: "Polyethylene plastic is in your toothpaste for decorative purposes only." She also states her own limit: "I am not saying that polyethylene is causing gum problems." What it means: the beads went in for looks.</li>
-<li><a href="https://www.foodsafetynews.com/2014/09/crests-parent-company-says-microbeads-in-toothpaste-will-be-removed/">Food Safety News, 17 September 2014</a>. Procter and Gamble said the beads would go from affected Crest products within six months and be "completely gone by March 2016." What it means: the fix followed the photographs.</li>
+<li><a href="https://www.dentalbuzz.com/2014/03/04/crest-imbeds-plastic-in-our-gums/">Trish Walraven, dental hygienist, DentalBuzz, 4 March 2014</a>. She reports "these blue particles flush out of patients' gums for several months now," and summarises Crest's own site as putting the plastic there for color, decorative purposes only. She also states her own limit: "I am not saying that polyethylene is causing gum problems." What it means: the beads went in for looks.</li>
+<li><a href="https://www.foodsafetynews.com/2014/09/crests-parent-company-says-microbeads-in-toothpaste-will-be-removed/">Food Safety News, 19 September 2014</a>. Procter and Gamble said the beads would go from affected Crest products within six months and be "completely gone by March 2016." What it means: the fix followed the photographs.</li>
 <li><a href="https://www.govinfo.gov/content/pkg/PLAW-114publ114/html/PLAW-114publ114.htm">Microbead-Free Waters Act of 2015, Public Law 114-114, signed 28 December 2015</a>. The text bans "a rinse-off cosmetic that contains intentionally-added plastic microbeads" and adds that "'rinse-off cosmetic' includes toothpaste." What it means: a law had to name your toothpaste out loud.</li>
-<li><a href="https://truthinadvertising.org/wp-content/uploads/2026/07/Oliver-v-P-and-G-complaint.pdf">Oliver and Testone v. The Procter &amp; Gamble Co., filed 2 July 2026, Southern District of California</a>. The complaint alleges the Crest Pro-Health gum products hold sodium lauryl sulfate, "a harsh detergent and known irritant that, at the levels present in the Products, can damage gum and mouth tissue, inhibit wound healing, trigger inflammation." These are allegations. Nothing is decided. What it means: a judge is looking at it now.</li>
+<li><a href="https://courtlistener.com/docket/73577377/oliver-v-the-procter-gamble-co/">Oliver and Testone v. The Procter &amp; Gamble Co., filed 2 July 2026, Southern District of California</a>. The complaint alleges the Crest Pro-Health gum products hold sodium lauryl sulfate, "a harsh detergent and known irritant that, at the levels present in the Products, can damage gum and mouth tissue, inhibit wound healing, trigger inflammation." These are allegations. Nothing is decided. What it means: a judge is looking at it now.</li>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-specific-old-spice-and-secret-aerosol-spray-antiperspirants-and-old-spice">Procter and Gamble recall announcement, 23 November 2021</a>. Old Spice and Secret aerosol antiperspirants, recalled "due to the presence of benzene detected." The notice states: "Benzene is classified as a human carcinogen." What it means: it was in the cans before anyone told you.</li>
-<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">Procter and Gamble recall announcement, 17 December 2021</a>. Dry shampoo and dry conditioner sprays under Pantene, Herbal Essences, Aussie and other names, pulled for benzene four weeks later. What it means: one batch is an accident. Two lines in a month is a supply chain.</li>
+<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">Procter and Gamble recall announcement, 17 December 2021</a>. Dry shampoo and dry conditioner sprays under Pantene, Herbal Essences, Aussie and other names, pulled for benzene three weeks later. What it means: one batch is an accident. Two lines in a month is a supply chain.</li>
 </ul>
 </div>
 

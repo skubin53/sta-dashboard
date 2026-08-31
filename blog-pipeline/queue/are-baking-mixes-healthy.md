@@ -1,11 +1,12 @@
 ---
 day: 16
-date: 2026-08-29
+date: 2026-08-31
 title: Are Pancake and Baking Mixes Actually Healthy? What Is In the Box (2026)
 slug: are-baking-mixes-healthy
 keyword: are baking mixes healthy
 category: Food
 meta_description: Texas listed bleached flour and bromated flour among 44 ingredients needing a warning from 2027. Neither has to appear on the front of a mix box today.
+vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 status: ready
 ---
 
@@ -46,7 +47,7 @@ status: ready
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 29, 2026<br><span style="font-size:.92em;">Published August 29, 2026 &middot; Last updated August 29, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 31, 2026<br><span style="font-size:.92em;">Published August 31, 2026 &middot; Last updated August 31, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -313,8 +314,8 @@ of our health and our finances.</p>
    "headline": "Are Pancake and Baking Mixes Actually Healthy? What Is In the Box (2026)",
    "description": "Texas listed bleached flour and bromated flour among 44 ingredients needing a warning from 2027. Neither has to appear on the front of a mix box today.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arebakingmi-hero-v1.webp",
-   "datePublished": "2026-08-29",
-   "dateModified": "2026-08-29",
+   "datePublished": "2026-08-31",
+   "dateModified": "2026-08-31",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-baking-mixes-healthy"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
