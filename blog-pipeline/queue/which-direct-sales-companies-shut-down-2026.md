@@ -1,12 +1,12 @@
 ---
 day: 13
-date: 2026-08-28
+date: 2026-08-30
 title: Which Direct Sales Companies Shut Down in 2026? And How to Vet the Next One (2026)
 slug: which-direct-sales-companies-shut-down-2026
 keyword: direct sales companies shut down 2026
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/directsales-hero-v1.webp
-meta_description: Seven direct sales companies closed, cut their pay plan or changed hands since 2025. The sourced list, plus six questions to ask the next one.
+meta_description: Six direct sales companies closed, cut their pay plan or are changing hands since October 2024. The sourced list, plus six questions to ask the next one.
 status: ready
 vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-23-years, sources/closures/2025-01-25-dsn-epicure-announced-that-it-had-ceased-operations, sources/closures/2025-01-27-dsn-tupperware-to-withdraw-from-europe, entities/icps/capped-corporate, concepts/Builder-Fit-Quiz]
 ---
@@ -47,12 +47,12 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 28, 2026<br><span style="font-size:.92em;">Published August 28, 2026 &middot; Last updated August 28, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; August 30, 2026<br><span style="font-size:.92em;">Published August 30, 2026 &middot; Last updated August 30, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You built it. You found the customers. Then one morning the pay was gone.</p>
-<p>Since January 2025, seven names you know have closed, stopped paying, cut the pay plan or been sold. Two of those were this spring. Every line below has a source you can open.</p>
+<p>Since October 2024, six names you know have closed, stopped paying, cut the pay plan or are being sold. Two were this spring. Every line below has a source you can open.</p>
 <p>None of it was your fault. You did the work. What you never had was a way to keep it. Somebody else held the switch.</p>
 <p>So here is the useful half. Six questions to ask the next one, before you give it two years.</p>
 </div>
@@ -61,7 +61,7 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 <h2 id="what-this-guide-answers">What this guide answers</h2>
 <ul>
 <li><a href="#who-closed">Which companies closed or changed</a></li>
-<li><a href="#no-warning">Why nobody got a warning</a></li>
+<li><a href="#no-warning">Why the closures had no warning</a></li>
 <li><a href="#the-money">How much was ever real money</a></li>
 <li><a href="#checklist">The six questions to ask next time</a></li>
 <li><a href="#is-this-a-pitch">Isn't this just another pitch</a></li>
@@ -70,9 +70,9 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 </ul>
 </div>
 
-<h2 id="who-closed">Which direct sales companies shut down or changed in 2026?</h2>
+<h2 id="who-closed">Which direct sales companies shut down or changed their pay plan since 2024?</h2>
 
-<p class="quick-answer">Quick answer: seven since the start of 2025, and not one gave notice.</p>
+<p class="quick-answer">Quick answer: six since late 2024. Two of them stopped taking orders the same day.</p>
 
 <p>Here is the list. Open the links yourself.</p>
 
@@ -85,10 +85,10 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <table class="sta-table">
 <tr><th>Company</th><th>What happened</th><th>When</th><th>Source</th></tr>
-<tr><td>Sipology</td><td>Closed. Told sellers it could not pay commissions owed</td><td>Apr 2026</td><td><a href="https://www.directsellingnews.com/2026/04/22/sipology-shuts-down-direct-selling-operations/">DSN</a></td></tr>
+<tr><td>Sipology</td><td>Appears to have ended its distributor operations. Told sellers it could not pay commissions owed</td><td>Apr 2026</td><td><a href="https://www.directsellingnews.com/2026/04/22/sipology-shuts-down-direct-selling-operations/">DSN</a></td></tr>
 <tr><td>Forever Living</td><td>Ended its US recruiting side. Bonus programs frozen or cut</td><td>Apr 2026</td><td><a href="https://www.directsellingnews.com/2026/04/02/forever-living-pivots-us-based-business/">DSN</a></td></tr>
 <tr><td>Forever Living</td><td>Settled FTC charges over its earnings claims</td><td>Apr 2026</td><td><a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-order-prohibit-forever-living-its-operators-deceiving-consumers-about-potential-earnings">FTC</a></td></tr>
-<tr><td>Avon North America</td><td>Sold again to an investment firm. No vote for the field</td><td>Aug 2026</td><td><a href="https://www.directsellingnews.com/2026/08/24/regent-to-acquire-avon-north-america/">DSN</a></td></tr>
+<tr><td>Avon North America</td><td>Being sold to an investment firm, deal announced. No vote for the field</td><td>Aug 2026</td><td><a href="https://www.directsellingnews.com/2026/08/24/regent-to-acquire-avon-north-america/">DSN</a></td></tr>
 <tr><td>Modere</td><td>Closed after 23 years</td><td>Apr 2025</td><td><a href="https://www.directsellingnews.com/2025/04/11/modere-announces-closure-after-23-years/">DSN</a></td></tr>
 <tr><td>Epicure</td><td>Ceased operations at once, 32 years in</td><td>Jan 2025</td><td><a href="https://www.directsellingnews.com/2025/01/25/epicure-announced-that-it-had-ceased-operations/">DSN</a></td></tr>
 <tr><td>BODi</td><td>Dropped its tiered pay plan for a single level program</td><td>Oct 2024</td><td><a href="https://www.directsellingnews.com/2024/10/01/bodi-to-transition-from-multi-level-marketing-to-single-level-affiliate-model/">DSN</a></td></tr>
@@ -98,17 +98,17 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <p>And so the old advice does not hold. A long track record is not the shield. It never was.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/directsales-villain-v1.webp" alt="An empty living room set up for a meeting, chairs pulled into rows and unopened product boxes stacked on the sideboard" loading="eager" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/directsales-villain-v1.webp" alt="An empty living room after a meeting, chairs pulled up around the table, white product bottles and a few small cartons left on the sideboard" loading="eager" style="width:100%;height:auto;border-radius:10px;">
 
-<h2 id="no-warning">Why did nobody get a warning?</h2>
+<h2 id="no-warning">Why did the closures come with no warning?</h2>
 
-<p class="quick-answer">Quick answer: the news goes out the day it is already done.</p>
+<p class="quick-answer">Quick answer: when a company closes, the news goes out the day it is done.</p>
 
-<p>Read the Sipology letter and you can feel it. The founder called it one of the hardest messages they had ever written. Then this line. "Given the company's financial position, we are unable to process commission payments."</p>
+<p>Read the Sipology letter and you can feel it. The founder wrote that there were no words for it. Then this line. "Given the company's financial position, we are unable to process commission payments."</p>
 
 <p>Ordering stopped that same day. No new orders. No replies to questions.</p>
 
-<p>Modere did the same in April 2025. A warm note on the website, after 23 years. Epicure went in January 2025. A letter, and it closed at once.</p>
+<p>Modere announced it was closing in April 2025. A warm note on the website, after 23 years. Epicure went in January 2025. A letter, and it closed at once.</p>
 
 <p>These are not cruel messages. They are kind. And the kindness is the problem. A kind note on the morning it happens is still a note on the morning it happens.</p>
 
@@ -118,7 +118,7 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <p class="quick-answer">Quick answer: at one company, for most of the field, none.</p>
 
-<p>This part is on the public record. In April 2026 the Federal Trade Commission filed a complaint against Forever Living, its chief executive and its president. It went to federal court in Arizona.</p>
+<p>In April 2026 the Federal Trade Commission filed a complaint against Forever Living, its chief executive and its president. It went to federal court in Arizona.</p>
 
 <p>It alleged the company pulled people in with earnings claims it could not back up. Here is what it says the company's own data showed.</p>
 
@@ -150,11 +150,11 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <h3>How long it has traded</h3>
 
-<p>Ask the year it started. Then ask what it did in 2008 and in 2020. Age alone is not enough. This list proves it. A company that came through two bad years has shown you something.</p>
+<p>Ask the year it started. Then ask what it did in 2008 and in 2020. Age alone is not enough. A company that came through two bad years has shown you something.</p>
 
 <h3>Whether the pay has changed before</h3>
 
-<p>Ask it straight. Have you ever changed the pay plan, and when. Forever Living froze or cut bonus programs on its way out. BODi swapped its whole plan in five weeks. One that has done it will do it again.</p>
+<p>Ask it straight. Have you ever changed the pay plan, and when. Forever Living froze or cut bonus programs on its way out. BODi swapped its whole plan with a month's notice. One that has done it will do it again.</p>
 
 <h3>Whether the money survives if you stop</h3>
 
@@ -243,15 +243,15 @@ our finances.</p>
 <div class="sta-proof">
 <h3>Where to check me</h3>
 <ul>
-<li><a href="https://www.directsellingnews.com/2026/04/22/sipology-shuts-down-direct-selling-operations/">Sipology closed, 22 April 2026</a>. The commission line is the founder's own.</li>
+<li><a href="https://www.directsellingnews.com/2026/04/22/sipology-shuts-down-direct-selling-operations/">Sipology appears to have ended distributor operations, 22 April 2026</a>. The commission line is the founder's own.</li>
 <li><a href="https://www.directsellingnews.com/2026/04/02/forever-living-pivots-us-based-business/">Forever Living ended its US recruiting side</a>, announced 2 April 2026.</li>
 <li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-order-prohibit-forever-living-its-operators-deceiving-consumers-about-potential-earnings">The Federal Trade Commission order against Forever Living</a>, April 2026. Every figure above is from that complaint, and they are allegations the company settled.</li>
-<li><a href="https://www.directsellingnews.com/2026/08/24/regent-to-acquire-avon-north-america/">Avon North America sold again</a>, August 2026.</li>
+<li><a href="https://www.directsellingnews.com/2026/08/24/regent-to-acquire-avon-north-america/">Avon North America being sold again, announced</a>, August 2026.</li>
 <li><a href="https://www.directsellingnews.com/2025/04/11/modere-announces-closure-after-23-years/">Modere closed after 23 years</a>, April 2025.</li>
 <li><a href="https://www.directsellingnews.com/2025/01/25/epicure-announced-that-it-had-ceased-operations/">Epicure ceased operations</a>, January 2025.</li>
 <li><a href="https://www.directsellingnews.com/2024/10/01/bodi-to-transition-from-multi-level-marketing-to-single-level-affiliate-model/">BODi swapped its tiered pay plan for a single level program</a>, October 2024.</li>
 </ul>
-<p class="micro">Seven in twenty months. Not one gave the field time to plan. That is the pattern, not you.</p>
+<p class="micro">Six in twenty two months. Two of them stopped taking orders the same day. That is the pattern, not you.</p>
 </div>
 
 <h2 id="faq">Questions women are asking me about this</h2>
@@ -260,10 +260,10 @@ our finances.</p>
 <p>No. Some companies are, and the weak ones go first. What is dying is the version where you carry the stock and the company holds the customer. Every name on that list is a structure story.</p>
 
 <p><strong>Will I get the commissions I am owed?</strong></p>
-<p>I do not know, and anybody who says they do is guessing. Write down the figure and the dates. Keep every message. Then ask somebody qualified in your own state. You earned it.</p>
+<p>I do not know, and anybody who says they do is guessing. Write down the figure and the dates, and keep every message. Then ask somebody qualified in your state. You earned it.</p>
 
 <p><strong>How old should a company be before I trust it?</strong></p>
-<p>Older helps. It is not enough on its own. Epicure was 32. Modere was 23. Avon is 140 and has changed owner twice in ten years. The six questions say what happens to you.</p>
+<p>Older helps, but not on its own. Epicure was 32, Modere 23, and Avon is 140 and has changed owner twice in ten years. The six questions say what happens to you.</p>
 
 <p><strong>What if I never want to recruit again?</strong></p>
 <p>Then don't. It is a fair answer and a common one. Ask question five and mean it. If the pay dies the day you stop, that is a job with no sick pay.</p>
@@ -283,7 +283,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> Same structure, a different company.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> Same structure, a different company.</li>
 <li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work?</a> Question five, answered in full.</li>
 <li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">The real extra income options for women in their 50s</a></li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>
@@ -303,10 +303,10 @@ our finances.</p>
   {
    "@type": "Article",
    "headline": "Which Direct Sales Companies Shut Down in 2026? And How to Vet the Next One (2026)",
-   "description": "Seven direct sales companies closed, cut their pay plan or changed hands since January 2025. The sourced list, and six questions to ask the next one.",
+   "description": "Six direct sales companies closed, cut their pay plan or are changing hands since October 2024. The sourced list, plus six questions to ask the next one.",
    "image": "https://scan.ismyhometoxic.com/blog-images/directsales-hero-v1.webp",
-   "datePublished": "2026-08-28",
-   "dateModified": "2026-08-28",
+   "datePublished": "2026-08-30",
+   "dateModified": "2026-08-30",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/which-direct-sales-companies-shut-down-2026"},
    "author": {"@id": "https://theshannonnicole.com/post/which-direct-sales-companies-shut-down-2026#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
@@ -317,7 +317,7 @@ our finances.</p>
    "name": "Shannon Nicole",
    "jobTitle": "Founder",
    "worksFor": {"@id": "https://switchtoamerica.com#org"},
-   "url": "https://switchtoamerica.com"
+   "url": "https://join.switchtoamerica.com/post/about-shannon-nicole"
   },
   {
    "@type": "Organization",

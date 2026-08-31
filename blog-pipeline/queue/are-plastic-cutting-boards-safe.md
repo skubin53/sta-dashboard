@@ -1,10 +1,10 @@
 ---
 day: 18
-date: 2026-08-31
+date: 2026-08-30
 title: Are Plastic Cutting Boards Safe? What Comes Off With the Carrots (2026)
 slug: are-plastic-cutting-boards-safe
 keyword: are plastic cutting boards safe
-category: Cleaning
+category: Kitchen
 cover: https://scan.ismyhometoxic.com/blog-images/areplasticc-hero-v1.webp
 meta_description: Every knife stroke shaves a little plastic off the board. A 2023 count and a 2025 mouse study say what lands in dinner, and what to chop on instead.
 vault_checked: [BLOG-RUNBOOK, voice-profile, competitor-intelligence-clean-home, North-Star]
@@ -48,7 +48,7 @@ status: ready
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 31, 2026<br><span style="font-size:.92em;">Published August 31, 2026 &middot; Last updated August 31, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 30, 2026<br><span style="font-size:.92em;">Published August 30, 2026 &middot; Last updated August 30, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -94,7 +94,7 @@ status: ready
 
 <p>Fifty grams is under two ounces. Of plastic. In your food.</p>
 
-<p>Most of the pieces were smaller than a grain of salt.</p>
+<p>Most of the pieces were far too small to see.</p>
 
 <p><a href="https://time.com/7336434/plastic-cutting-board-material-microplastics-alternatives/">Time said it plainer in November 2025. One knife stroke can release 100 to 300 bits.</a></p>
 
@@ -122,7 +122,7 @@ status: ready
 
 <p>By weight it shed 5 to 60 percent more than polyethylene. By count, 14 to 71 percent more.</p>
 
-<p>And so the tougher board is not the safer board.</p>
+<p>The tougher board is not the safer board.</p>
 
 <p>You cannot tell which one is on your counter by looking at it.</p>
 
@@ -146,7 +146,7 @@ status: ready
 
 <p>The polyethylene group had a shift in their gut bugs.</p>
 
-<p>The wood group had the lowest inflammation of the three.</p>
+<p>The wood group was the one they measured the others against.</p>
 
 <p>The wood food had no plastic in it at all. The team looked and found none.</p>
 
@@ -161,7 +161,7 @@ status: ready
 <tr><td>Bits off a polypropylene board</td><td>79.4 million a year</td><td>Environmental Science &amp; Technology, May 2023</td><td>Same study, same carrots</td></tr>
 <tr><td>Weight over a year</td><td>7.4 to 50.7 grams</td><td>Environmental Science &amp; Technology, May 2023</td><td>Not all of it stays in a body</td></tr>
 <tr><td>Per knife stroke</td><td>100 to 300 bits</td><td>Time, November 2025</td><td>About half of that stays on the board</td></tr>
-<tr><td>Mice fed food chopped on plastic</td><td>Inflammation up at 12 weeks</td><td>Environmental Health Perspectives, April 2025</td><td>Mice, not people, and every meal for 12 weeks</td></tr>
+<tr><td>Mice fed food chopped on polypropylene</td><td>Inflammation up at 12 weeks</td><td>Environmental Health Perspectives, April 2025</td><td>Mice, not people. The polyethylene group showed no clear inflammation</td></tr>
 <tr><td>Plastic put on mouse cells in a dish</td><td>No change in 72 hours</td><td>Environmental Science &amp; Technology, May 2023</td><td>Cuts against my case, and it stays in</td></tr>
 </tbody>
 </table>
@@ -180,21 +180,19 @@ status: ready
 
 <p><strong>Four.</strong> <a href="https://www.ndsu.edu/news/ndsu-microplastics-study-featured-time-magazine">The university says it plainly. There is no conclusive evidence yet showing harm from cutting board microplastics in people.</a></p>
 
+<p><strong>Five.</strong> The same 2025 team went looking for that plastic inside the mice. They did not find it in the liver, the gut or the colon.</p>
+
 <p>So why does this still sit wrong with me?</p>
 
 <p>Because of the machine they counted with.</p>
 
-<p>It could only see bits bigger than 20 micrometers. Syeed Iskander, who led the work, told Time the smaller ones were there too.</p>
+<p>It could only see bits bigger than 20 micrometers. North Dakota State says the smaller ones were there too.</p>
 
 <p>Every number up there is a floor. Not a ceiling.</p>
 
-<p>His own words on all of it: "There's a lot of uncertainty."</p>
+<p>Syeed Iskander, the engineer who ran the count, told Time: "There's a lot of uncertainty."</p>
 
-<p>And so I am not waiting for certainty about my own dinner.</p>
-
-<p>And you are not the only one who went looking.</p>
-
-<p>Women my age ask me about this board most weeks.</p>
+<p>I am not waiting for certainty about my own dinner.</p>
 
 <p>So no. You are not paranoid. You are early.</p>
 
@@ -222,15 +220,11 @@ status: ready
 
 <p>Not next month. Tonight, on your way past the bin.</p>
 
-<p>Here is the part nobody says out loud.</p>
+<p>You were never really choosing between two boards. You were choosing who to believe.</p>
 
-<p>There is nothing on a cutting board to compare. Nothing to weigh up.</p>
+<p>The board is the one thing I cannot hand you off my own shelf. Buy it once, in wood, and be done with it. Everything else your knife touches, I do buy from one place.</p>
 
-<p>So the only question left is who made it, and whether they would tell you what went in it.</p>
-
-<p>And so the fix is not a smarter shopper. It is a better supplier.</p>
-
-<p>That is why my family buys through a private membership store instead. We are the manufacturer. No middleman, no markup. One name on it, and a person who picks up the phone.</p>
+<p>It is a private membership store. We are the manufacturer. No middleman, no markup. One name on it, and a person who picks up the phone.</p>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -263,8 +257,8 @@ of our health and our finances.</p>
 <h3>The receipts</h3>
 <ul>
 <li><a href="https://pubs.acs.org/doi/10.1021/acs.est.3c00924">Yadav, Khan, Quadir, Rusch, Mondal, Orr, Xu and Iskander, "Cutting Boards: An Overlooked Source of Microplastics in Human Food?", <em>Environmental Science &amp; Technology</em> 57(22), 23 May 2023</a>. Estimated yearly exposure of 7.4 to 50.7 grams from a polyethylene board and 49.5 grams from a polypropylene board, or 14.5 to 71.9 million and 79.4 million particles. <a href="https://portal.findresearcher.sdu.dk/en/publications/cutting-boards-an-overlooked-source-of-microplastics-in-human-foo/">The abstract is mirrored by the University of Southern Denmark</a>, home of co-author Elvis Genbo Xu.</li>
-<li><a href="https://www.sciencedaily.com/releases/2023/06/230601155739.htm">The American Chemical Society news release on that paper, 1 June 2023</a>. It carries the finding that cuts against this post. The polyethylene bits and the wood bits "didn't appear to significantly change mouse cells' viability in lab tests." It also states that wooden boards "sloughed off 4 to 22 times more microparticles than plastic ones."</li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11980920/">Gan, Chen, Yao, Lin, Juhasz, Zhou and Li, "Simulated Microplastic Release from Cutting Boards and Evaluation of Intestinal Inflammation and Gut Microbiota in Mice", <em>Environmental Health Perspectives</em> 133(4), 9 April 2025</a>. Mice ate food chopped on polypropylene, polyethylene and willow wood boards for 4 and 12 weeks. The plastic board groups showed inflammation and gut changes the wood group did not.</li>
+<li><a href="https://www.sciencedaily.com/releases/2023/06/230601155739.htm">The American Chemical Society news release on that paper, 4 June 2023</a>. It carries the finding that cuts against this post. The polyethylene bits and the wood bits "didn't appear to significantly change mouse cells' viability in lab tests." It also states that wooden boards "sloughed off 4 to 22 times more microparticles than plastic ones."</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11980920/">Gan, Chen, Yao, Lin, Juhasz, Zhou and Li, "Simulated Microplastic Release from Cutting Boards and Evaluation of Intestinal Inflammation and Gut Microbiota in Mice", <em>Environmental Health Perspectives</em> 133(3-4), 047004, 9 April 2025</a>. Mice ate food chopped on polypropylene, polyethylene and willow wood boards for 4 and 12 weeks. The plastic board groups showed inflammation and gut changes the wood group did not.</li>
 <li><a href="https://www.ndsu.edu/news/ndsu-microplastics-study-featured-time-magazine">North Dakota State University, 1 December 2025</a>. The counting equipment "could detect only larger microplastics (greater than 20 micrometer)", so exposure "could be higher than measured". Also states there is "no conclusive evidence yet showing harm from cutting-board microplastics in humans."</li>
 <li><a href="https://www.classaction.org/news/ziploc-lawsuit-claims-microwave-safe-storage-freezer-bags-containers-leach-microplastics-into-food">Cheslow v. S.C. Johnson &amp; Son, Inc., case 3:25-cv-03655, filed 25 April 2025 in the Northern District of California</a>. The complaint alleges that Ziploc bags and containers made of polyethylene and polypropylene shed microplastics into food, unwarned. Allegations only. Undecided.</li>
 </ul>
@@ -296,7 +290,7 @@ of our health and our finances.</p>
 
 <p>Not the whole kitchen. Just the board she uses every day.</p>
 
-<p>That is enough. It was enough for me.</p>
+<p>That is enough.</p>
 
 <p>And so the next swap gets easier. Then the one after that.</p>
 
@@ -325,8 +319,8 @@ of our health and our finances.</p>
    "headline": "Are Plastic Cutting Boards Safe? What Comes Off With the Carrots (2026)",
    "description": "Every knife stroke shaves a little plastic off the board. A 2023 count and a 2025 mouse study say what lands in dinner, and what to chop on instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/areplasticc-hero-v1.webp",
-   "datePublished": "2026-08-31",
-   "dateModified": "2026-08-31",
+   "datePublished": "2026-08-30",
+   "dateModified": "2026-08-30",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-plastic-cutting-boards-safe"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
