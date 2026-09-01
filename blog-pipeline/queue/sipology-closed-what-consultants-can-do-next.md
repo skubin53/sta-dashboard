@@ -243,7 +243,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> Same structure, different company.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> Same structure, different company.</li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a> For the part that is not about money.</li>
 <li><a href="https://theshannonnicole.com/blog/">More for women building something</a></li>
 </ul>

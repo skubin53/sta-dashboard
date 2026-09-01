@@ -257,7 +257,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> Same pattern, a bigger platform.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> Same pattern, a bigger platform.</li>
 <li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work?</a> The plain mechanics, including what it does not do.</li>
 <li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">The real extra income options for women in their 50s</a>. All of them, compared honestly.</li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a> For the part that is not about money.</li>

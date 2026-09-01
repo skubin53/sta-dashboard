@@ -1,6 +1,6 @@
 ---
 day: 12
-date: 2026-08-27
+date: 2026-09-01
 title: Is Forever Living Shutting Down? What US Distributors Should Do Next (2026)
 slug: is-forever-living-shutting-down
 keyword: is forever living shutting down us distributors
@@ -47,7 +47,7 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 27, 2026<br><span style="font-size:.92em;">Published August 27, 2026 &middot; Last updated August 27, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 1, 2026<br><span style="font-size:.92em;">Published September 1, 2026 &middot; Last updated September 1, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -262,7 +262,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> Same structure, different company.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> Same structure, different company.</li>
 <li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work?</a> The honest version, including what it does not do.</li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a> For the part that is not about money.</li>
 <li><a href="https://theshannonnicole.com/blog/">More for women building something</a></li>
@@ -281,10 +281,10 @@ our finances.</p>
   {
    "@type": "Article",
    "headline": "Is Forever Living Shutting Down? What US Distributors Should Do Next (2026)",
-   "description": "Forever Living ended US sponsorship and recruiting on May 1, 2026 and froze four bonus programs. What the court filing says, and what to do next.",
+   "description": "Forever Living ended US sponsorship on May 1, 2026 and froze four bonus programs. What the court filing says, and what to do next.",
    "image": "https://scan.ismyhometoxic.com/blog-images/foreverlivi-hero-v1.webp",
-   "datePublished": "2026-08-27",
-   "dateModified": "2026-08-27",
+   "datePublished": "2026-09-01",
+   "dateModified": "2026-09-01",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/is-forever-living-shutting-down"},
    "author": {"@id": "https://theshannonnicole.com/post/is-forever-living-shutting-down#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
