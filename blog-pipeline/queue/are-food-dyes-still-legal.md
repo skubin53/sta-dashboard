@@ -53,7 +53,7 @@ status: ready
 <h2 id="the-short-answer">The short answer</h2>
 <p>Yes. Today, in 2026, they are still legal.</p>
 <p><strong><a href="https://www.fda.gov/industry/color-additives/fdc-red-no-3">Red No. 3 was pulled on 15 January 2025. The makers were then handed two years: "Manufacturers who use FD&amp;C Red No. 3 in food and ingested drugs will have until January 15, 2027 or January 18, 2028, respectively, to reformulate their products."</a></strong></p>
-<p>Red 40 and Yellow 5 were not touched at all. They are still in your food.</p>
+<p>Red 40 and Yellow 5 were not in that order. They are still legal, and still in your food.</p>
 </div>
 
 <div class="sta-toc">
@@ -103,11 +103,11 @@ status: ready
 
 <p class="quick-answer">Quick answer: they took it out of lipstick in 1990 and left it in your food.</p>
 
-<p>Go back to 1990. A company wanted Red 3 in makeup.</p>
+<p>Go back to 1990. A company wanted Red 3 kept in makeup for good.</p>
 
 <p>The answer was no. Here is the reason, on the record.</p>
 
-<p><a href="https://www.fda.gov/industry/color-additives/fdc-red-no-3">"Due to the existence of data demonstrating that the use of FD&amp;C Red No. 3 caused cancer in rats, the FDA denied the petition."</a></p>
+<p><a href="https://www.fda.gov/industry/color-additives/fdc-red-no-3">"Due to the existence of data demonstrating that the use of FD&amp;C Red No. 3 caused cancer in rats, the FDA denied the petition based on the Delaney Clause."</a></p>
 
 <p>So in 1990 it came out of the lipstick. It stayed in your food for thirty five more years.</p>
 
@@ -131,11 +131,13 @@ status: ready
 
 <p>Two things happened in 2025. Neither one was a rule.</p>
 
-<p><strong>June 2025. General Mills.</strong> The Texas Attorney General opened an investigation.</p>
+<p><strong>June 2025. General Mills.</strong> The Texas Attorney General already had them under investigation.</p>
 
 <p><a href="https://www.texasattorneygeneral.gov/news/releases/general-mills-agrees-remove-toxic-artificial-dyes-its-products-following-investigation-and-legal">His office wrote this about the promise before it: "The company previously pledged to remove these harmful dyes from its products in 2015. However, it only briefly removed them before again reselling cereals containing artificial colorings."</a></p>
 
 <p>Read that again. They promised in 2015. They took it out. Then they put it back.</p>
+
+<p>And in 2025 they promised again. They still have not signed anything.</p>
 
 <p>Nobody sent you a letter about that.</p>
 
@@ -158,10 +160,10 @@ status: ready
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Red 3 pulled from food</td><td>Rat cancer data, under a 1960 law</td><td>Federal order, 15 January 2025</td><td>Nobody has run that study on women</td></tr>
+<tr><td>Red 3 pulled from food</td><td>Rat cancer data, under a 1960 law</td><td>Federal order, 15 January 2025</td><td>Human studies showed no such effect</td></tr>
 <tr><td>Two year run off</td><td>Still legal to make until Jan 2027</td><td>The order's own text</td><td>Boxes made before then can be sold after</td></tr>
 <tr><td>Out of makeup in 1990</td><td>Same dye left in food for 35 more years</td><td>The 1990 denial, on the record</td><td>Makeup and food sit under separate rules</td></tr>
-<tr><td>General Mills agreed to remove dyes</td><td>A 2015 pledge was reversed once already</td><td>Texas Attorney General, 18 June 2025</td><td>An agreement is not a court ruling</td></tr>
+<tr><td>General Mills vowed to remove dyes</td><td>A 2015 pledge was reversed once already</td><td>Texas Attorney General, 18 June 2025</td><td>A promise again, nothing signed</td></tr>
 <tr><td>Kellogg's signed a binding agreement</td><td>Dyes were removed abroad, not here</td><td>Texas Attorney General, 13 August 2025</td><td>The deadline is the end of 2027</td></tr>
 </tbody>
 </table>
@@ -247,7 +249,7 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://www.fda.gov/industry/color-additives/fdc-red-no-3">The Red No. 3 file, the order and its history</a>. "On January 15, 2025, the FDA issued an order to revoke these authorizations." Makers have "until January 15, 2027 or January 18, 2028, respectively, to reformulate." Product "manufactured before the effective date" may still be sold after it. The same page records 1990: "Due to the existence of data demonstrating that the use of FD&amp;C Red No. 3 caused cancer in rats, the FDA denied the petition."</li>
+<li><a href="https://www.fda.gov/industry/color-additives/fdc-red-no-3">The Red No. 3 file, the order and its history</a>. "On January 15, 2025, the FDA issued an order to revoke these authorizations." Makers have "until January 15, 2027 or January 18, 2028, respectively, to reformulate their products." Product "manufactured before the effective date" may still be sold after it. The same page records 1990: "Due to the existence of data demonstrating that the use of FD&amp;C Red No. 3 caused cancer in rats, the FDA denied the petition based on the Delaney Clause."</li>
 <li><a href="https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs">The update dated 15 January 2025</a>. The order was made "as a matter of law, based on the Delaney Clause." The same page calls claims of risk to people "not supported by the available scientific information." Both lines are theirs. I have printed the second one so you can weigh it yourself.</li>
 <li><a href="https://www.texasattorneygeneral.gov/news/releases/general-mills-agrees-remove-toxic-artificial-dyes-its-products-following-investigation-and-legal">Texas Attorney General, 18 June 2025</a>. On General Mills: "The company previously pledged to remove these harmful dyes from its products in 2015. However, it only briefly removed them before again reselling cereals containing artificial colorings." These are the state's allegations, not findings of a court.</li>
 <li><a href="https://www.texasattorneygeneral.gov/news/releases/attorney-general-paxton-secures-historic-legal-agreement-kelloggs-remove-toxic-artificial-dyes-its">Texas Attorney General, 13 August 2025</a>. Kellogg's signed an Assurance of Voluntary Compliance to remove artificial colorings from its cereals by the end of 2027. The office says its investigation began "after Kellogg's claimed it would remove petroleum-based food colorings in the United States, but did not do so."</li>
