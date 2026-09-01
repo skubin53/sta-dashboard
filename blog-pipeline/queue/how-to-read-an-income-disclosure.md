@@ -30,7 +30,7 @@ td{padding:10px 12px;border-bottom:1px solid #e3e0d8;vertical-align:top;}
 .shannons-advice{background:#0B2545;color:#eaf1f8;border-radius:12px;padding:30px 32px;margin:34px 0;}
 .shannons-advice h3{color:#f5d888;margin:0 0 4px;font-size:1.3em;}
 .shannons-advice p{line-height:1.7;margin:0 0 14px;}
-.advice-photo{float:right;width:104px;border-radius:50%;margin:0 0 14px 20px;}
+.advice-photo{float:right;width:104px;height:104px;object-fit:cover;border-radius:50%;margin:0 0 14px 20px;}
 .advice-tag{display:block;color:#BFD2E6;font-size:.85em;margin-bottom:16px;}
 .sta-proof{border:2px solid #e3e0d8;border-radius:12px;padding:22px 26px;margin:30px 0;}
 .sta-proof h3{margin:0 0 12px;color:#0B2545;font-size:1.1em;}
@@ -39,7 +39,7 @@ td{padding:10px 12px;border-bottom:1px solid #e3e0d8;vertical-align:top;}
 .sta-cta{background:#FBF7F0;border:2px solid #f5d888;border-radius:12px;padding:26px 30px;margin:32px 0;text-align:center;}
 .sta-cta h3{margin:0 0 8px;color:#0B2545;}
 .sta-cta a{display:inline-block;background:#0B2545;color:#fff;padding:14px 30px;border-radius:8px;font-weight:700;text-decoration:none;margin-top:6px;}
-.sta-cta .micro{display:block;color:#5A6B80;font-size:.85em;margin-top:12px;}
+.sta-cta .micro,.sta-proof .micro{display:block;color:#5A6B80;font-size:.85em;margin-top:12px;}
 .sta-keep{border-top:2px solid #e3e0d8;padding-top:20px;margin-top:34px;}
 .sta-keep h3{color:#0B2545;font-size:1.05em;margin:0 0 10px;}
 .sta-keep ul{margin:0;padding-left:20px;}
@@ -57,8 +57,8 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 
 <div class="answer-capsule">
 <h2>The short answer</h2>
-<p>It comes in the post, or as a link nobody clicks. One page of numbers. You are meant to glance at it and feel better.</p>
-<p>In September 2024, staff at the Federal Trade Commission sat down and read <a href="https://www.ftc.gov/reports/multi-level-marketing-income-disclosure-statements">seventy of these statements</a>. They found the page is built so you cannot find yourself on it.</p>
+<p>It comes in the mail, or as a link nobody clicks. One page of numbers. You are meant to glance at it and feel better.</p>
+<p>In a report published in September 2024, staff at the Federal Trade Commission read <a href="https://www.ftc.gov/reports/multi-level-marketing-income-disclosure-statements">seventy of these statements</a>. They found the page is built so you cannot find yourself on it.</p>
 <p>Not one of the seventy counted what it costs you to take part.</p>
 </div>
 
@@ -71,7 +71,7 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 <li><a href="#average">Whether the average means anything</a></li>
 <li><a href="#missing">What is missing from every one</a></li>
 <li><a href="#fair">What a fair one looks like</a></li>
-<li><a href="#monday">What I would do with the next one</a></li>
+<li><a href="#next-one">What I would do with the next one</a></li>
 <li><a href="#faq">Questions women are asking me</a></li>
 </ol>
 </div>
@@ -82,16 +82,14 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 
 <p>You were handed one. Or a link to one. It sat on the pile with the flyers.</p>
 
-<p>Mine sat there a week. I moved it twice to get at the car keys.</p>
-
 <p>Nobody opens it, and the company knows nobody opens it.</p>
 
 <p>That is normal. It is a page of numbers with no story on it. You had a day to get through.</p>
 
-<p>But that page is the only place the company says out loud what happened to everybody else. Everybody who did what you are about to do.</p>
+<p>But that page is the only place the company says out loud what happened to everybody else. Everybody who did what you did.</p>
 
 <figure>
-<img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-villain-v1.webp" alt="A plain white envelope lying face down on a kitchen table, half under a flyer and a rubber band, a biro with the lid off and folded reading glasses beside it" loading="lazy">
+<img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-villain-v1.webp" alt="A plain white envelope lying face down on a kitchen table on top of a flyer and a rubber band, a ballpoint pen with the cap off and reading glasses open beside it" loading="lazy">
 </figure>
 
 <p>So let me teach you to read it in about ten minutes.</p>
@@ -123,9 +121,9 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 
 <p>The agency copied one real meaning out of one real page.</p>
 
-<p>Active meant three things. You had signed up. You had brought in one person. And you had a cheque in the window.</p>
+<p>Active meant three things. You had signed up. You had brought in one person. And you had been paid at least once, inside the window they counted.</p>
 
-<p>So you signed up. You worked hard. You never got a cheque.</p>
+<p>So you signed up. You worked hard. You never got paid.</p>
 
 <p>You were not active. You were not counted. You were not on the page at all.</p>
 
@@ -143,14 +141,14 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 
 <p>Fifty-nine of the seventy report averages. Only twenty-one give you a middle number.</p>
 
-<p>Look at one real page they pulled apart. Over eighty per cent sat in the bottom rank. Their average was five hundred and twenty-eight dollars a year.</p>
+<p>Look at one real page they pulled apart. Over eighty percent of the people on it sat in the bottom rank. Their average was five hundred and twenty-eight dollars a year.</p>
 
-<p>Then the small print. Fifty-two per cent of people "did not earn a commission," and the table only counted the ones who did.</p>
+<p>Then the small print. Fifty-two percent of people "did not earn a commission," and the table only counted the ones who did.</p>
 
-<p>So the bottom half made nothing. The next group averaged five hundred and twenty-eight. The headline never says that.</p>
+<p>So the bottom half made nothing and never appeared on the table at all. That eighty percent was eighty percent of the ones who did get paid. The five hundred and twenty-eight dollars is the average of that smaller group. The headline never says that.</p>
 
 <figure>
-<img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-turning-point-v1.webp" alt="A woman in a teal jumper setting the envelope down flat on the table and taking her hand off it, turning to look out of the window" loading="lazy">
+<img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-turning-point-v1.webp" alt="A woman in a teal sweater standing over the page lying flat on the table, one hand resting on the back of the chair, turning to look out of the window" loading="lazy">
 </figure>
 
 <h2 id="missing">What is missing from every one of them?</h2>
@@ -161,7 +159,7 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 
 <p>None. Not one.</p>
 
-<p>Your starter kit. Your monthly order. The samples. The event ticket, the hotel, the petrol.</p>
+<p>Your starter kit. Your monthly order. The samples. The event ticket, the hotel, the gas.</p>
 
 <p>So the number on the page is not what anybody took home. It is what came in before all that went out.</p>
 
@@ -175,30 +173,31 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 
 <p>Two more numbers, from cases the Federal Trade Commission has already brought.</p>
 
-<p>Take <a href="https://www.ftc.gov/news-events/news/press-releases/2019/10/multi-level-marketer-advocare-will-pay-150-million-settle-ftc-charges-it-operated-illegal-pyramid">one 2019 case</a>. The agency said that in 2016, "72.3 percent of distributors did not earn any compensation."</p>
+<p>Take <a href="https://www.ftc.gov/news-events/news/press-releases/2019/10/multi-level-marketer-advocare-will-pay-150-million-settle-ftc-charges-it-operated-illegal-pyramid">a 2019 case against AdvoCare</a>. The agency alleged that in 2016, "72.3 percent of distributors did not earn any compensation from AdvoCare."</p>
 
-<p>Another 18 per cent made between one cent and $250. Another 6 per cent made between $250 and $1,000.</p>
+<p>Another 18 percent, it said, made between one cent and $250. Another 6 percent made between $250 and $1,000.</p>
 
-<p>So more than nine in ten made under a thousand dollars that year.</p>
+<p>So more than nine in ten made a thousand dollars or less that year. The company settled. Those are allegations, not findings after a trial.</p>
 
-<p>Then <a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-order-prohibit-forever-living-its-operators-deceiving-consumers-about-potential-earnings">an April 2026 order</a>. The agency alleged that at one company, "at least 77% of FBOs who purchased, sold or recruited during the year did not receive any compensation."</p>
+<p>Then <a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-order-prohibit-forever-living-its-operators-deceiving-consumers-about-potential-earnings">an April 2026 order</a>. The agency alleged that at Forever Living, "at least 77% of FBOs who purchased, sold or recruited during the year did not receive any compensation."</p>
 
-<p>It said that held for five years running. Those are allegations the company resolved. Not findings after a trial.</p>
+<p>It said that held for five years running. That case was resolved by agreement too, so nothing there was ever tested in front of a judge.</p>
 
 <h2 id="fair">What does a fair one look like?</h2>
 
 <p class="quick-answer">Quick answer: some of the seventy did it properly. That is the point. It can be done.</p>
 
-<p>I am not telling you every page is a trick. Eleven of the seventy showed everybody. No one left out, no small print.</p>
+<p>I am not telling you every page is a trick. Eleven of the seventy showed everybody. No one left out.</p>
 
-<p>Twenty-one gave a middle number somewhere on the page. Twenty-seven said plainly how many people got nothing at all.</p>
+<p>Twenty-one gave a middle number. Seventeen printed the number of people who got nothing right there on the page. Ten went further and made it impossible to miss, as its own row in the table or in bold.</p>
 
 <p>That is what a fair one looks like. It tells you the worst of it in the same size type as the best of it.</p>
 
-<p>And that is why the four questions work. A company doing it properly has the answers ready. It is almost glad you asked.</p>
+<p>Which is why I stopped reading these pages for the numbers and started reading them with four questions instead. A company doing it properly has the answers ready. It is almost glad you asked.</p>
 
 <p>The other kind goes quiet, or sends you a longer page.</p>
-<h2 id="monday">What would I do with the next one I was handed?</h2>
+
+<h2 id="next-one">What would I do with the next one I was handed?</h2>
 
 <p class="quick-answer">Quick answer: four questions, in this order, before I looked at a single number.</p>
 
@@ -215,7 +214,7 @@ By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon 
 <p>And you are allowed to ask them twice if the first answer was a speech.</p>
 
 <figure>
-<img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-belonging-v1.webp" alt="Two women walking an aisle in a garden centre glasshouse with a trolley of ferns between them, mid-conversation among banks of plants and stacked terracotta pots" loading="lazy">
+<img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-belonging-v1.webp" alt="Two women walking an aisle in a garden center greenhouse with a cart of ferns between them, mid-conversation among banks of plants and stacked terracotta pots" loading="lazy">
 </figure>
 
 <p>You are not being difficult. You are reading the page the way it should be read.</p>
@@ -256,10 +255,17 @@ our finances.</p>
 <li><a href="https://www.ftc.gov/reports/multi-level-marketing-income-disclosure-statements">Federal Trade Commission staff report on income disclosure statements</a>, September 2024. The seventy statements, the exclusions, the expenses line.</li>
 <li><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/mlm-ids-report.pdf">The report itself, as published</a>. The hundred-people example is in section seven.</li>
 <li><a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">The agency's own guidance for companies writing these pages</a>, question 24.</li>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2019/10/multi-level-marketer-advocare-will-pay-150-million-settle-ftc-charges-it-operated-illegal-pyramid">The 2019 settlement</a> with the 72.3 per cent figure.</li>
+<li><a href="https://www.ftc.gov/news-events/news/press-releases/2019/10/multi-level-marketer-advocare-will-pay-150-million-settle-ftc-charges-it-operated-illegal-pyramid">The 2019 settlement</a> with the 72.3 percent figure.</li>
 <li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-order-prohibit-forever-living-its-operators-deceiving-consumers-about-potential-earnings">The April 2026 order</a>, where the statement itself was the problem.</li>
 </ul>
 <p class="micro">Every link goes to the agency, not to me. Open them.</p>
+</div>
+
+<div class="sta-cta">
+<h3>Twenty minutes, on video, no slides</h3>
+<p>Bring the statement you were sent. We will read it together and I will show you where to look first.</p>
+<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
+<span class="micro">You can always say no, and there is no follow up if you do.</span>
 </div>
 
 <h2 id="faq">Questions women are asking me about this</h2>
@@ -274,7 +280,7 @@ our finances.</p>
 <p>Yes. In the agency's own example the average was a hundred dollars and the middle number was nothing. Same hundred people.</p>
 
 <p><strong>Does any of this mean I was bad at it?</strong></p>
-<p>No. Read the seventy-two per cent again. You were in the biggest group on the page, and the page was built not to show it.</p>
+<p>No. Read the seventy-two percent again. You were in the biggest group of all, and the page was built not to show it.</p>
 
 <figure>
 <img src="https://scan.ismyhometoxic.com/blog-images/howtoreadan-freedom-v1.webp" alt="A woman repotting a leggy houseplant on newspaper spread across her kitchen table, hands in the compost and soil spilled everywhere, laughing in full afternoon sun" loading="lazy">
@@ -289,7 +295,7 @@ our finances.</p>
 <ul>
 <li><a href="https://theshannonnicole.com/post/which-direct-sales-companies-shut-down-2026">Which direct sales companies shut down in 2026, and how to vet the next one</a></li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>
-<li><a href="https://theshannonnicole.com/post/cookie-vs-customer">A cookie is not a customer</a></li>
+<li><a href="https://theshannonnicole.com/post/cookie-vs-customer">Cookie or Customer: What Did the Affiliate Repricing Teach Every Creator?</a></li>
 <li><a href="https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50">Am I being pushed out of my job at 50?</a></li>
 </ul>
 </div>
@@ -325,23 +331,13 @@ our finances.</p>
     {"@type": "ListItem", "position": 3, "name": "How Do You Read an Income Disclosure Statement?"}]},
   {"@type": "FAQPage",
    "mainEntity": [
-    {"@type": "Question", "name": "Is every income disclosure statement dishonest?",
-     "acceptedAnswer": {"@type": "Answer", "text": "No. Some are careful and some are clear. The point is that you cannot tell by glancing at one. Four questions, about who is missing, what active means, whether it is a median or an average, and whether it counts expenses, will tell you which kind you are holding."}},
-    {"@type": "Question", "name": "What if the company has no income disclosure statement at all?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Then you have your answer sooner. Ask for one in writing. What comes back, and how quickly, tells you a great deal about how the company treats a fair question."}},
-    {"@type": "Question", "name": "Is a median really that different from an average?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Yes. In the Federal Trade Commission's own example, ninety-nine people make nothing and one makes ten thousand dollars. The average is one hundred dollars each. The median is zero. Same hundred people."}},
-    {"@type": "Question", "name": "Does this mean I was bad at it?",
-     "acceptedAnswer": {"@type": "Answer", "text": "No. In one 2019 case the Federal Trade Commission said 72.3 percent of distributors did not earn any compensation in 2016. You were in the biggest group on the page, and most of these pages are built so that group does not appear."}}
+    {"@type": "Question", "name": "Is every one of these pages dishonest?", "acceptedAnswer": {"@type": "Answer", "text": "No. Some are careful and some are clear. The point is that you cannot tell by glancing. Four questions and you will know which one you are holding."}},
+    {"@type": "Question", "name": "What if there is no statement at all?", "acceptedAnswer": {"@type": "Answer", "text": "Then you have your answer sooner. Ask for one in writing. What comes back, and how fast, tells you a great deal."}},
+    {"@type": "Question", "name": "Is a middle number really that different from an average?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. In the agency's own example the average was a hundred dollars and the middle number was nothing. Same hundred people."}},
+    {"@type": "Question", "name": "Does any of this mean I was bad at it?", "acceptedAnswer": {"@type": "Answer", "text": "No. Read the seventy-two percent again. You were in the biggest group of all, and the page was built not to show it."}}
    ]
   }
  ]
 }
 </script>
 
-<div class="sta-cta">
-<h3>Twenty minutes, on video, no slides</h3>
-<p>Bring the statement you were sent. We will read it together and I will show you where to look first.</p>
-<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
-<span class="micro">You can always say no, and there is no follow up if you do.</span>
-</div>

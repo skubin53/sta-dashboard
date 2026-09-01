@@ -1,8 +1,9 @@
 ---
 day: 15
-date: 2026-08-28
+date: 2026-08-31
 title: Are Food Dyes Still Legal in American Food? What Is In the Snack Cupboard (2026)
 slug: are-food-dyes-still-legal
+vault_checked: [BLOG-RUNBOOK, VOICE-GUIDE, voice-profile]
 keyword: are food dyes still legal
 category: Food
 meta_description: Red No. 3 was pulled in January 2025. The makers got until 2027. Red 40 and Yellow 5 were never touched. What is still legal in 2026.
@@ -46,7 +47,7 @@ status: ready
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 28, 2026<br><span style="font-size:.92em;">Published August 28, 2026 &middot; Last updated August 28, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 31, 2026<br><span style="font-size:.92em;">Published August 31, 2026 &middot; Last updated August 31, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -308,8 +309,8 @@ of our health and our finances.</p>
    "headline": "Are Food Dyes Still Legal in American Food? What Is In the Snack Cupboard (2026)",
    "description": "Red No. 3 was pulled in January 2025. The makers got until 2027. Red 40 and Yellow 5 were never touched. What is still legal in 2026.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arefooddyes-hero-v1.webp",
-   "datePublished": "2026-08-28",
-   "dateModified": "2026-08-28",
+   "datePublished": "2026-08-31",
+   "dateModified": "2026-08-31",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-food-dyes-still-legal"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
