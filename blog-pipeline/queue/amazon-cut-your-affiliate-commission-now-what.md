@@ -74,6 +74,13 @@ vault_checked: [Affiliate-Footprint-Targeting, MLM-Vetting-Filter, Builder-Targe
 </ol>
 </div>
 
+<div class="sta-cta">
+<h3>Twenty minutes, and you decide nothing on the call</h3>
+<p>I will show you how the money actually moves, on Zoom, in twenty minutes. Bring the questions you would ask an accountant. It is free because I would rather you see the arithmetic than take my word for it. No slides, no pitch.</p>
+<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
+<span class="micro">You can always say no.</span>
+</div>
+
 <h2 id="what-did-amazon-change">What did Amazon actually change?</h2>
 
 <p class="quick-answer">Quick answer: four rules at once, all on one day, in one memo.</p>
@@ -93,13 +100,6 @@ vault_checked: [Affiliate-Footprint-Targeting, MLM-Vetting-Filter, Builder-Targe
 <p>And your page now has to carry "commentary, analysis or transformation."</p>
 
 <p>Four changes, one Tuesday, and nobody asked you.</p>
-
-<div class="sta-cta">
-<h3>Twenty minutes, and you decide nothing on the call</h3>
-<p>I will show you how the money actually moves, on Zoom, in twenty minutes. Bring the questions you would ask an accountant. It is free because I would rather you see the arithmetic than take my word for it. No slides, no pitch.</p>
-<a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the 20 minute call</a>
-<span class="micro">You can always say no.</span>
-</div>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/amazoncutyo-hero-v1.webp" alt="A woman in her fifties at a kitchen table late at night with a laptop open" loading="eager" style="width:100%;height:auto;border-radius:10px;">
@@ -271,9 +271,9 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Keep reading</h3>
 <ul>
-<li><a href="https://join.switchtoamerica.com/post/how-referral-model-actually-works">How does a referral model actually work? An honest answer</a></li>
-<li><a href="https://join.switchtoamerica.com/post/extra-income-for-women-in-their-50s">Extra income for women in their 50s, without the hype</a></li>
-<li><a href="https://join.switchtoamerica.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>
+<li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work? An honest answer</a></li>
+<li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">Extra income for women in their 50s, without the hype</a></li>
+<li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>
 <li><a href="https://join.switchtoamerica.com/post/about-shannon-nicole">About Shannon Nicole, and why she started this</a></li>
 </ul>
 </div>
