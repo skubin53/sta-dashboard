@@ -101,10 +101,6 @@ vault_checked: [Affiliate-Footprint-Targeting, MLM-Vetting-Filter, Builder-Targe
 
 <p>Four changes, one Tuesday, and nobody asked you.</p>
 
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/amazoncutyo-hero-v1.webp" alt="A woman in her fifties at a kitchen table late at night with a laptop open" loading="eager" style="width:100%;height:auto;border-radius:10px;">
-</figure>
-
 <h2 id="why-did-my-pay-drop">Why did my pay drop when my traffic did not?</h2>
 
 <p class="quick-answer">Quick answer: you were paid on a moment, and somebody else owns the moment.</p>
