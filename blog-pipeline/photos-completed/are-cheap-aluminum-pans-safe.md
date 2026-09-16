@@ -1,6 +1,6 @@
 ---
 date: 2026-09-06
-post_title: "Are Cheap Aluminum Pans Safe? The Lead Recall That Hit More Than 30 States (2026)"
+post_title: "Are Cheap Aluminum Pans Safe? The Lead the FDA Found in a Recalled Batch (2026)"
 slug: are-cheap-aluminum-pans-safe
 status: done
 cameron_processed: false
