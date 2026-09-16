@@ -261,7 +261,7 @@ our finances.</p>
   {
    "@type": "Article",
    "headline": "Sipology Closed. What Can Its Consultants Do Next? (2026)",
-   "description": "Sipology ended its selling side in April 2026 and consultants were told commissions could not be paid. What actually happened, and what to ask of whatever comes next.",
+   "description": "Sipology ended its selling side in April 2026 and consultants were told commissions could not be paid. Here is what to do next.",
    "image": "https://scan.ismyhometoxic.com/blog-images/sipologyclo-hero-v1.webp",
    "datePublished": "2026-08-26",
    "dateModified": "2026-08-26",
