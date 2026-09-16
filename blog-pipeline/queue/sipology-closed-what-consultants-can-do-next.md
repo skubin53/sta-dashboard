@@ -91,9 +91,6 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <p>One caveat. There was no formal public statement, and the effect on the making and retail side was not clear. I am telling you what was reported. No more.</p>
 
-
-<img src="https://scan.ismyhometoxic.com/blog-images/sipologyclo-hero-v1.webp" alt="A woman in her fifties at her kitchen island unpacking small tea tins from a box" loading="eager" style="width:100%;height:auto;border-radius:10px;">
-
 <h2 id="why-commissions-stopped">Why did the pay stop when your customers did not?</h2>
 
 <p class="quick-answer">Quick answer: the customers were never filed under your name.</p>
