@@ -1184,7 +1184,7 @@ export default {
         '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
         '<meta name="viewport" content="width=device-width,initial-scale=1">' +
         '<meta name="robots" content="noindex,nofollow">' +
-        '<meta property="og:title" content="What&#39;s New at Switch to America">' +
+        '<meta property="og:title" content="What&#39;s New at Melaleuca">' +
         '<meta property="og:description" content="A quick look at what is new.">' +
         '<title>Switch to America</title>' +
         '<noscript><meta http-equiv="refresh" content="0;url=' + dest + '"></noscript>' +
