@@ -19,6 +19,8 @@ function json(body, status, origin) {
 }
 
 const ID_OK = /^[A-Za-z0-9]{15,30}$/;
+// esc() (HTML escape) is defined in 03-page.js and in module scope here after the build
+// concatenates the files. The /wnewgen page uses it on names, phones and the search box.
 
 async function logSubmission(env, rec) {
   if (!env || !env.REPORTS) return null;
@@ -57,6 +59,143 @@ export default {
 
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: cors(origin) });
+    }
+
+    // ----------------------------------------------- What's New click tracker
+    // Shannon texts packs.ismyhometoxic.com/wnew?c=<contactId> from her own phone. When a
+    // person OPENS it she wants a text naming who clicked and the contact tagged, so she
+    // follows up within minutes.
+    //
+    // WHY A JAVASCRIPT PAGE AND NOT A 302. iMessage and most texting apps FETCH a link to
+    // build the little preview card the instant a text is sent, on the sender's phone and
+    // the receiver's, before anyone taps. A plain redirect would fire on that preview and
+    // tell Shannon someone clicked when nobody has. Preview fetchers do not run JavaScript,
+    // so the record is fired from JS: a real person in a real browser triggers it, a
+    // preview never does. This path must sit ABOVE the packs-slug handler, which would
+    // otherwise swallow /wnew as a page name.
+    if (request.method === "GET" && url.pathname === "/wnew") {
+      const dest = "https://switchtoamerica.com/whatisnew";
+      const raw = String(url.searchParams.get("c") || url.searchParams.get("contact_id") || "").trim();
+      const cid = ID_OK.test(raw) ? raw : "";
+      const page =
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
+        '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<meta name="robots" content="noindex,nofollow">' +
+        '<meta property="og:title" content="What&#39;s New at Switch to America">' +
+        '<meta property="og:description" content="A quick look at what is new.">' +
+        '<title>Switch to America</title>' +
+        '<noscript><meta http-equiv="refresh" content="0;url=' + dest + '"></noscript>' +
+        '</head><body style="margin:0;background:#0B2545;color:#fff;' +
+        'font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif">' +
+        '<div style="max-width:600px;margin:0 auto;padding:80px 24px;text-align:center">' +
+        '<p style="color:#BFD2E6;font-size:1.1em">Taking you there...</p>' +
+        '<p><a href="' + dest + '" style="color:#fff">Continue</a></p></div>' +
+        '<script>(function(){var d=' + JSON.stringify(dest) + ',c=' + JSON.stringify(cid) + ';' +
+        'try{if(c){var u="/wnew-hit?c="+encodeURIComponent(c);' +
+        'if(!navigator.sendBeacon||!navigator.sendBeacon(u)){' +
+        'fetch(u,{method:"POST",keepalive:true});}}}catch(e){}' +
+        'location.replace(d);})();</script></body></html>';
+      return new Response(page, {
+        status: 200,
+        headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store",
+                   "X-Robots-Tag": "noindex, nofollow" },
+      });
+    }
+
+    // The click record itself, fired by /wnew's JavaScript beacon (a POST). POST ONLY, on
+    // purpose: a zero-JS URL security scanner that reads the /wnew-hit URL out of the page
+    // body and GETs it would otherwise log a false open and text Shannon. The real client
+    // never issues a GET here, so nothing legitimate is lost. A stray GET falls through to
+    // a harmless 404 below.
+    if (url.pathname === "/wnew-hit" && request.method === "POST") {
+      const raw = String(url.searchParams.get("c") || url.searchParams.get("contact_id") || "").trim();
+      if (ID_OK.test(raw)) {
+        try { await recordWhatsNewClick(env, raw); }
+        catch (e) { /* a tracking miss must never error the beacon */ }
+      }
+      return new Response(null, { status: 204, headers: cors(origin) });
+    }
+
+    // Who has opened What's New, newest first. Guarded by the same ?k= as the other logs.
+    if (request.method === "GET" && url.pathname === "/wnewlog") {
+      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      if (!env.REPORTS) return json({ error: "no KV bound" }, 500, origin);
+      const rows = [];
+      for (const pfx of ["wnewhit:", "wnewdry:"]) {
+        const list = await env.REPORTS.list({ prefix: pfx, limit: 500 });
+        for (const k of list.keys) {
+          const v = await env.REPORTS.get(k.name, "json");
+          if (v) rows.push({ kind: pfx.replace(":", ""), ...v });
+        }
+      }
+      rows.sort((a, b) => String(b.at || "").localeCompare(String(a.at || "")));
+      return json({ mode: String(env.WNEW_MODE || "off"), count: rows.length,
+                    rows: rows.slice(0, 200) }, 200, origin);
+    }
+
+    // ----------------------------------------------- What's New link generator
+    // Shannon's own bookmarked tool. She opens packs.ismyhometoxic.com/wnewgen?k=<key> on
+    // her phone, types a name or number, and gets that person's tracked link to copy into a
+    // text. Guarded by the same ?k= as the logs, because it searches her CRM; the key lives
+    // in her private bookmark, never in a public page. Read only: it never writes anything.
+    if (request.method === "GET" && url.pathname === "/wnewgen") {
+      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      const k = readKey(env);
+      const q = String(url.searchParams.get("q") || "").trim().slice(0, 60);
+      let results = "";
+      if (q) {
+        let contacts = [];
+        try {
+          const r = await ghl(env, "POST", "/contacts/search",
+            { locationId: String(env.GHL_LOCATION || ""), page: 1, pageLimit: 15, query: q });
+          if (r.ok && r.data && Array.isArray(r.data.contacts)) contacts = r.data.contacts;
+        } catch (e) {}
+        if (!contacts.length) {
+          results = '<p class="none">No matches for "' + esc(q) + '". Try a first name, last name, or phone.</p>';
+        } else {
+          results = contacts.map(function (c) {
+            const nm = ((c.firstName || "") + " " + (c.lastName || "")).trim() || "(no name)";
+            const link = "https://packs.ismyhometoxic.com/wnew?c=" + c.id;
+            return '<div class="card"><div class="nm">' + esc(nm) +
+              (c.phone ? ' <span class="ph">' + esc(c.phone) + '</span>' : '') + '</div>' +
+              '<div class="lk">' + esc(link) + '</div>' +
+              '<button class="cp" data-l="' + esc(link) + '">Copy link</button></div>';
+          }).join("");
+        }
+      }
+      const page =
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">' +
+        '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<meta name="robots" content="noindex,nofollow"><title>What&#39;s New links</title>' +
+        '<style>' +
+        'body{margin:0;background:#0B2545;color:#fff;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif}' +
+        '.wrap{max-width:640px;margin:0 auto;padding:24px 16px}' +
+        'h1{font-size:1.2em;margin:0 0 4px}.sub{color:#BFD2E6;margin:0 0 16px;font-size:.9em}' +
+        'form{display:flex;gap:8px;margin-bottom:20px}' +
+        'input{flex:1;padding:12px;border:0;border-radius:8px;font-size:16px}' +
+        'form button{padding:12px 16px;border:0;border-radius:8px;background:#F4A300;color:#0B2545;font-weight:700;font-size:16px}' +
+        '.card{background:#12345f;border-radius:10px;padding:14px;margin-bottom:12px}' +
+        '.nm{font-weight:700;margin-bottom:6px}.ph{color:#BFD2E6;font-weight:400;font-size:.9em}' +
+        '.lk{color:#BFD2E6;font-size:.82em;word-break:break-all;margin-bottom:10px}' +
+        '.cp{padding:10px 14px;border:0;border-radius:8px;background:#fff;color:#0B2545;font-weight:700}' +
+        '.none{color:#BFD2E6}' +
+        '</style></head><body><div class="wrap">' +
+        '<h1>What&#39;s New links</h1>' +
+        '<p class="sub">Find a person, copy their link, paste it into your text. When they open it you get a text and they are tagged.</p>' +
+        '<form method="GET" action="/wnewgen">' +
+        '<input type="hidden" name="k" value="' + esc(k) + '">' +
+        '<input name="q" value="' + esc(q) + '" placeholder="Name or phone" autocomplete="off" autofocus>' +
+        '<button type="submit">Find</button></form>' +
+        results +
+        '<script>document.addEventListener("click",function(e){var b=e.target.closest(".cp");if(!b)return;' +
+        'var l=b.getAttribute("data-l");if(navigator.clipboard){navigator.clipboard.writeText(l).then(function(){' +
+        'b.textContent="Copied";setTimeout(function(){b.textContent="Copy link";},1500);});}});</script>' +
+        '</div></body></html>';
+      return new Response(page, {
+        status: 200,
+        headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store",
+                   "X-Robots-Tag": "noindex, nofollow" },
+      });
     }
 
     // ---------------------------------------------------------------- the log

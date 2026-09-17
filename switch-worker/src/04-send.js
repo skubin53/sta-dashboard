@@ -321,3 +321,106 @@ async function processQueue(env) {
   }
   return { handled: out.length, results: out };
 }
+
+/* ------------------------------------------------- the What's New click tracker
+ *
+ * Shannon texts a per-person What's New link from her own phone and wants to know the
+ * moment someone opens it, so she can follow up within minutes. One open records here:
+ *   - the contact is TAGGED "clicked what's new", so it shows on their record and she can
+ *     pull a list of everyone who has looked.
+ *   - a text goes to HER cell naming who it was and their number, so she taps and replies
+ *     from her own phone.
+ *
+ * This is a smaller promise than the packs send and it protects a different person. The
+ * text goes to Shannon, never to a lead, so the DND and stop-tag guards that shield a
+ * customer do not apply: a woman who tagged herself "not interested" and then opens What's
+ * New is the most worth knowing about, not the least. What still holds:
+ *   - WNEW_MODE gates it. "live" tags and texts, "dryrun" writes the record and sends
+ *     nothing, "off" does nothing at all. Deployed "dryrun" first, exactly like SEND_MODE.
+ *   - ONE text per person per window. Someone who opens the page, hits back and opens it
+ *     again is one follow-up, not two buzzes on Shannon's phone. The tag is still set every
+ *     time, which is free because adding a tag a contact already has changes nothing.
+ *   - fired only from /wnew's JavaScript, so an iMessage link preview never reaches it.
+ *
+ * THIS ENDPOINT IS PUBLIC AND UNAUTHENTICATED, exactly like the checklist POST, so it is
+ * hardened the same way: a stranger poking it must never be able to hammer GHL, buzz
+ * Shannon, or write to a real record.
+ *   - A GLOBAL hourly ceiling caps everything below, so a flood of made-up ids cannot turn
+ *     into a flood of GHL calls or texts. It fails CLOSED: if the counter cannot be read,
+ *     nothing runs. Real traffic is a tiny fraction of the cap.
+ *   - The contact must RESOLVE in GHL (an id-filtered search that returns that exact id).
+ *     A poked-in id that is not a real contact gets no tag, no text and no lasting log.
+ */
+const WNEW_TAG = "clicked what's new";
+const WNEW_THROTTLE = 60 * 15;   // seconds between texts to Shannon about the same person
+const WNEW_HOURLY_CAP = 300;     // global ceiling on processed opens per clock hour
+
+async function recordWhatsNewClick(env, contactId) {
+  if (!env || !env.REPORTS) return;
+  const mode = String(env.WNEW_MODE || "off").toLowerCase();
+  if (mode === "off") return;                    // off is off: not even a KV write
+
+  const now = new Date().toISOString();
+
+  // Global flood guard: one counter per clock hour. Read it first; if it cannot be read,
+  // fail CLOSED, because a KV problem must never open a public endpoint up to hammering
+  // GHL or buzzing Shannon. Over the ceiling, shed the hit before it can touch anything.
+  const hourKey = "wnewhour:" + now.slice(0, 13);   // yyyy-mm-ddTHH
+  let hourN;
+  try { hourN = await env.REPORTS.get(hourKey); } catch (e) { return; }
+  const count = Number(hourN) || 0;
+  if (count >= WNEW_HOURLY_CAP) return;
+  try { await env.REPORTS.put(hourKey, String(count + 1), { expirationTtl: 7200 }); } catch (e) {}
+
+  // The contact must be a real one. A made-up id returns null here, or an id that is not
+  // this exact contact, and either way nothing further happens. This is what stops a
+  // stranger with a guessed id from writing a tag or firing a text.
+  const contact = await lookupContact(env, contactId);
+  if (!contact || contact.id !== contactId) return;
+
+  const name = ((contact.firstName || "") + " " + (contact.lastName || "")).trim();
+  const phone = contact.phone || "";
+
+  // Per-person throttle for the TEXT only. The tag and the log still happen every open.
+  const seenKey = "wnewseen:" + contactId;
+  let recent = null;
+  try { recent = await env.REPORTS.get(seenKey); } catch (e) {}
+  const throttled = !!recent;
+  try { await env.REPORTS.put(seenKey, now, { expirationTtl: WNEW_THROTTLE }); } catch (e) {}
+
+  // The record of a real open, kept for the /wnewlog.
+  try {
+    await env.REPORTS.put("wnewhit:" + contactId + ":" + now,
+      JSON.stringify({ contact_id: contactId, at: now, name: name || null, mode }),
+      { expirationTtl: LOG_TTL });
+  } catch (e) {}
+
+  if (mode !== "live") {
+    try {
+      await env.REPORTS.put("wnewdry:" + contactId + ":" + now,
+        JSON.stringify({ contact_id: contactId, at: now, name: name || null,
+                         phone: phone || null, throttled, would_tag: WNEW_TAG }),
+        { expirationTtl: LOG_TTL });
+    } catch (e) {}
+    return;
+  }
+
+  // Tag the resolved contact. Idempotent, so it runs even when the text is throttled.
+  try {
+    await ghl(env, "POST", "/contacts/" + contactId + "/tags", { tags: [WNEW_TAG] });
+  } catch (e) {}
+
+  if (throttled) return;
+
+  // Text Shannon. Her cell is the only number on ALERT_CONTACT_ID, so this lands on her
+  // phone; the lead's own number rides along so she taps it and replies from her cell.
+  const alertId = String(env.ALERT_CONTACT_ID || "").trim();
+  if (!alertId) return;
+  const lines = ["New What's New click", name || "Someone (no name on file)"];
+  if (phone) lines.push(phone);
+  lines.push("Follow up now.");
+  try {
+    await ghl(env, "POST", "/conversations/messages",
+              { type: "SMS", contactId: alertId, message: lines.join("\n") }, "2021-04-15");
+  } catch (e) {}
+}
