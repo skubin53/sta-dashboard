@@ -1071,12 +1071,26 @@ async function recordWhatsNewClick(env, contactId) {
 
   if (throttled) return;
 
-  // Text Shannon. Her cell is the only number on ALERT_CONTACT_ID, so this lands on her
-  // phone; the lead's own number rides along so she taps it and replies from her cell.
-  const alertId = String(env.ALERT_CONTACT_ID || "").trim();
+  // Text Shannon. She moves her cell between contacts, so find whichever contact holds
+  // ALERT_PHONE right now rather than pin an id that goes stale. GHL blocks duplicate
+  // phones, so at most one contact has it; the endsWith check guards against a fuzzy query
+  // matching a name or email that merely contains the digits.
+  const want = String(env.ALERT_PHONE || "").replace(/\D/g, "").slice(-10);
+  if (want.length < 10) return;
+  let alertId = "";
+  try {
+    const rs = await ghl(env, "POST", "/contacts/search",
+      { locationId: String(env.GHL_LOCATION || ""), page: 1, pageLimit: 5, query: want });
+    const cs = (rs.ok && rs.data && Array.isArray(rs.data.contacts)) ? rs.data.contacts : [];
+    const hit = cs.find(function (c) {
+      return String(c.phone || "").replace(/\D/g, "").endsWith(want);
+    });
+    if (hit && hit.id) alertId = hit.id;
+  } catch (e) {}
   if (!alertId) return;
+
   const lines = ["New What's New click", name || "Someone (no name on file)"];
-  if (phone) lines.push(phone);
+  if (phone) lines.push(phone);          // the lead's number, so she taps and replies
   lines.push("Follow up now.");
   try {
     await ghl(env, "POST", "/conversations/messages",
