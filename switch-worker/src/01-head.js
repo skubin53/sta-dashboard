@@ -54,6 +54,9 @@ const ALLOWED = [
 // before, so the existing tooling that calls /log keeps working.
 function readKey(env) { return String((env && env.LOG_KEY) || ""); }
 const PACK_HOST = "https://packs.ismyhometoxic.com";
+// The What's New links Shannon texts use this cleaner, on-brand host (same worker, added
+// as a second Workers custom domain 2026-09-17). The tracked link is WNEW_HOST + /wnew?c=.
+const WNEW_HOST = "https://whatisnew.ismyhometoxic.com";
 // Shannon, 2026-08-30: "I think all of these packs can be between 35 - 37 points."
 // 35 is the qualifying number, so 36 and 37 qualify just the same. Insisting on exactly
 // 35 was throwing away better lists: her example was Chad, whose laundry detergent kept

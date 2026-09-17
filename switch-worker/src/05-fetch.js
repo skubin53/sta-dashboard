@@ -155,7 +155,7 @@ export default {
         } else {
           results = contacts.map(function (c) {
             const nm = ((c.firstName || "") + " " + (c.lastName || "")).trim() || "(no name)";
-            const link = "https://packs.ismyhometoxic.com/wnew?c=" + c.id;
+            const link = WNEW_HOST + "/wnew?c=" + c.id;
             return '<div class="card"><div class="nm">' + esc(nm) +
               (c.phone ? ' <span class="ph">' + esc(c.phone) + '</span>' : '') + '</div>' +
               '<div class="lk">' + esc(link) + '</div>' +
@@ -181,7 +181,7 @@ export default {
         '.none{color:#BFD2E6}' +
         '</style></head><body><div class="wrap">' +
         '<h1>What&#39;s New links</h1>' +
-        '<p class="sub">Find a person, copy their link, paste it into your text. When they open it you get a text and they are tagged.</p>' +
+        '<p class="sub"><b>This page is just for you. Do not text this page.</b> Search a person, tap Copy link, and text THAT link. When they open it you get a text and they are tagged.</p>' +
         '<form method="GET" action="/wnewgen">' +
         '<input type="hidden" name="k" value="' + esc(k) + '">' +
         '<input name="q" value="' + esc(q) + '" placeholder="Name or phone" autocomplete="off" autofocus>' +
