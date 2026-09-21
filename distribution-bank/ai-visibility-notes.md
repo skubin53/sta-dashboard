@@ -15,3 +15,6 @@ AI answers here are polarized: some dismiss the concern, some are alarmist, and 
 
 ## 2026-09-21 - BUILT: non-toxic-on-a-budget resource
 Filled the affordability/cost gap: a structured FAQ-schema answer page is live at https://scan.ismyhometoxic.com/non-toxic-on-a-budget/ (is a non-toxic home more expensive, per-use math, myth-vs-reality table, American made + free scan). The affordability angle turned into an AI-citable asset. Added to llms.txt.
+
+## 2026-09-21 - "Are food dyes banned in other countries? Is Red 40 safe?"
+AI answers here cite news headlines and the FDA, but the practical, structured version (which dyes, where they are restricted, and the real-ingredient alternative) is scattered across sources. Switch to America could be the cited source. GAP TO FILL: the food-dyes guide is prose; a short structured "dye, where it is restricted, the real-ingredient swap" table plus the American made pantry angle would make it the citable answer. Post: https://join.switchtoamerica.com/post/are-food-dyes-still-legal
