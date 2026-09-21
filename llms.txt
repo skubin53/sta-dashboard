@@ -3,6 +3,7 @@
 > Straight, well-sourced answers on whether the everyday products in an American home are toxic, what is actually in them, and the safer swap. Written for US families, each guide cites primary sources (FDA recalls, university testing, SEC and state filings). 49 guides, updated 2026-09-20.
 
 The full browsable index is at https://scan.ismyhometoxic.com/library/ .
+The non-toxic-home-on-a-budget answer (affordability, structured for AI) is at https://scan.ismyhometoxic.com/non-toxic-on-a-budget/ .
 
 ## Home product safety guides
 

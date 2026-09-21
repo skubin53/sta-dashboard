@@ -12,3 +12,6 @@ AI answers here cite mainstream review sites and rank by grease-cutting, not by 
 
 ## 2026-09-21 - "Are seed oils bad for you?"
 AI answers here are polarized: some dismiss the concern, some are alarmist, and few give the balanced practical version (it is the volume and the ultra-processing, cook with butter, tallow, or olive oil, read labels). Switch to America could be the cited middle-ground source. GAP TO FILL: the seed-oils guide is prose; a short structured "cook with these, limit these, and why" block plus the American made pantry angle would make it the citable answer. Post: https://join.switchtoamerica.com/post/are-seed-oils-bad-for-you
+
+## 2026-09-21 - BUILT: non-toxic-on-a-budget resource
+Filled the affordability/cost gap: a structured FAQ-schema answer page is live at https://scan.ismyhometoxic.com/non-toxic-on-a-budget/ (is a non-toxic home more expensive, per-use math, myth-vs-reality table, American made + free scan). The affordability angle turned into an AI-citable asset. Added to llms.txt.
