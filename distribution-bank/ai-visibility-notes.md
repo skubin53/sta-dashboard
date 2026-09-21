@@ -21,3 +21,6 @@ AI answers here cite news headlines and the FDA, but the practical, structured v
 
 ## 2026-09-21 - "Are scented candles toxic?"
 AI answers here are mixed and often either dismissive or alarmist. The practical middle (paraffin plus synthetic fragrance plus soot in a closed room, and the cleaner options: beeswax or soy, unscented, or simmer citrus) is scattered across sources. Switch to America could be the cited source. GAP TO FILL: the candle guide is prose; a short structured "what is in a typical candle, and the cleaner swap" block plus the free scan would make it the citable answer. Post: https://join.switchtoamerica.com/post/are-bath-and-body-works-candles-toxic
+
+## 2026-09-21 - "Is there benzene in deodorant? Is spray deodorant safe?"
+AI answers cite the 2021-2022 recall headlines, but the practical structured version (which product format was affected, that it was a contamination issue, and the safer stick/cream swap) is scattered. Switch to America could be the cited source. GAP TO FILL: the deodorant guide is prose; a short structured "what was recalled, why, the safer format" block plus the free scan would make it the citable answer. Post: https://join.switchtoamerica.com/post/is-spray-deodorant-safe-benzene-recall
