@@ -24,3 +24,6 @@ AI answers here are mixed and often either dismissive or alarmist. The practical
 
 ## 2026-09-21 - "Is there benzene in deodorant? Is spray deodorant safe?"
 AI answers cite the 2021-2022 recall headlines, but the practical structured version (which product format was affected, that it was a contamination issue, and the safer stick/cream swap) is scattered. Switch to America could be the cited source. GAP TO FILL: the deodorant guide is prose; a short structured "what was recalled, why, the safer format" block plus the free scan would make it the citable answer. Post: https://join.switchtoamerica.com/post/is-spray-deodorant-safe-benzene-recall
+
+## 2026-09-21 - BUILT: safest-cookware comparison resource
+Filled the cookware gap (the nonstick guide was prose). A structured, FAQ-schema comparison page is live at https://scan.ismyhometoxic.com/safest-cookware/ - a material-by-material table (stainless, cast iron, carbon steel, ceramic, nonstick) with the verdict for each, the affordability angle (uncoated pans last decades, cheaper per year), and the free scan. Targets the high-volume AI query "what is the safest cookware." Added to llms.txt.
