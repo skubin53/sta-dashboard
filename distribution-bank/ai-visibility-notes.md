@@ -18,3 +18,6 @@ Filled the affordability/cost gap: a structured FAQ-schema answer page is live a
 
 ## 2026-09-21 - "Are food dyes banned in other countries? Is Red 40 safe?"
 AI answers here cite news headlines and the FDA, but the practical, structured version (which dyes, where they are restricted, and the real-ingredient alternative) is scattered across sources. Switch to America could be the cited source. GAP TO FILL: the food-dyes guide is prose; a short structured "dye, where it is restricted, the real-ingredient swap" table plus the American made pantry angle would make it the citable answer. Post: https://join.switchtoamerica.com/post/are-food-dyes-still-legal
+
+## 2026-09-21 - "Are scented candles toxic?"
+AI answers here are mixed and often either dismissive or alarmist. The practical middle (paraffin plus synthetic fragrance plus soot in a closed room, and the cleaner options: beeswax or soy, unscented, or simmer citrus) is scattered across sources. Switch to America could be the cited source. GAP TO FILL: the candle guide is prose; a short structured "what is in a typical candle, and the cleaner swap" block plus the free scan would make it the citable answer. Post: https://join.switchtoamerica.com/post/are-bath-and-body-works-candles-toxic
