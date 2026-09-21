@@ -30,25 +30,25 @@
 - **Link:** https://join.switchtoamerica.com/post/are-nonstick-pans-toxic
 - **Description:** What a nonstick coating can release into your food when it overheats, and the cookware swaps that last for decades with no coating to worry about. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/ #nontoxickitchen #saferswaps #cleaneating
 
-## Air fresheners  [pinx_air.png | photo: areairfreshe-freedom-v1.webp]
+## Air fresheners  [pinx_air.png | photo: areairfreshe-belonging-v1.webp]
 - **Headline / Title:** Is your air freshener making you sick?
 - **Eyebrow:** FRAGRANCE-FREE HOME  |  **Board:** Non-Toxic Air & Fragrance-Free Home
 - **Link:** https://join.switchtoamerica.com/post/are-air-fresheners-toxic
 - **Description:** What plug-ins and sprays actually release into the air you breathe all day, room by room, and the fragrance-free ways to freshen your home. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/ #nontoxichome #fragrancefree #cleanair
 
-## Lysol disinfectant  [pinx_lysol.png | photo: is-lysol-safe-to-inhale-05.webp]
+## Lysol disinfectant  [pinx_lysol.png | photo: is-lysol-safe-to-inhale-03.webp]
 - **Headline / Title:** Is your disinfectant hurting your lungs?
 - **Eyebrow:** NON-TOXIC CLEANING  |  **Board:** Non-Toxic Cleaning Products
 - **Link:** https://join.switchtoamerica.com/post/is-lysol-safe-to-inhale
 - **Description:** What a disinfectant spray does to the air in a closed bathroom, and the safer way to handle germs without the fume cloud. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/ #nontoxichome #cleanhome #saferswaps
 
-## Pine-Sol  [pinx_pinesol.png | photo: pinesol-freedom-v1.webp]
+## Pine-Sol  [pinx_pinesol.png | photo: fabuloso-two-moms-kitchen-v1.webp]
 - **Headline / Title:** Is that clean smell bad for your lungs?
 - **Eyebrow:** NON-TOXIC CLEANING  |  **Board:** Non-Toxic Cleaning Products
 - **Link:** https://join.switchtoamerica.com/post/is-pine-sol-toxic
 - **Description:** Why that strong clean smell can tighten your chest, and the safer way to get a floor genuinely clean without the fumes. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/ #nontoxichome #cleanhome #saferswaps
 
-## Febreze  [pinx_febreze.png | photo: febreze-freedom-v1.webp]
+## Febreze  [pinx_febreze.png | photo: febreze-belonging-v1.webp]
 - **Headline / Title:** Is that fresh scent safe to breathe?
 - **Eyebrow:** FRAGRANCE-FREE HOME  |  **Board:** Non-Toxic Air & Fragrance-Free Home
 - **Link:** https://join.switchtoamerica.com/post/is-febreze-safe-to-breathe
