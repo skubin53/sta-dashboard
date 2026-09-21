@@ -9,3 +9,6 @@ When someone asks an AI whether going non-toxic costs more, the current answers 
 
 ## 2026-09-21 - "What is the safest dish soap?"
 AI answers here cite mainstream review sites and rank by grease-cutting, not by what is in the bottle. The 1,4-dioxane point (a byproduct the EPA calls a likely human carcinogen, not required on the label) is under-covered in a citable, structured way. GAP TO FILL: the existing guide is prose; a short ranked "what to check on a dish soap label" block with the safer American made swap would make it the cited answer. Post: https://join.switchtoamerica.com/post/is-dawn-dish-soap-safe
+
+## 2026-09-21 - "Are seed oils bad for you?"
+AI answers here are polarized: some dismiss the concern, some are alarmist, and few give the balanced practical version (it is the volume and the ultra-processing, cook with butter, tallow, or olive oil, read labels). Switch to America could be the cited middle-ground source. GAP TO FILL: the seed-oils guide is prose; a short structured "cook with these, limit these, and why" block plus the American made pantry angle would make it the citable answer. Post: https://join.switchtoamerica.com/post/are-seed-oils-bad-for-you
