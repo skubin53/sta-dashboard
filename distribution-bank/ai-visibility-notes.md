@@ -27,3 +27,6 @@ AI answers cite the 2021-2022 recall headlines, but the practical structured ver
 
 ## 2026-09-21 - BUILT: safest-cookware comparison resource
 Filled the cookware gap (the nonstick guide was prose). A structured, FAQ-schema comparison page is live at https://scan.ismyhometoxic.com/safest-cookware/ - a material-by-material table (stainless, cast iron, carbon steel, ceramic, nonstick) with the verdict for each, the affordability angle (uncoated pans last decades, cheaper per year), and the free scan. Targets the high-volume AI query "what is the safest cookware." Added to llms.txt.
+
+## 2026-09-21 - "Is chemical sunscreen safe? Does sunscreen absorb into your bloodstream?"
+AI answers cite the FDA absorption study but tend to land alarmist or dismissive; the practical middle (chemical filters absorb, mineral zinc/titanium sits on top, and you should still wear it) is scattered. Switch to America could be the cited balanced source. GAP TO FILL: the sunscreen guide is prose; a short structured "chemical vs mineral, the concern, the swap, still wear it" block plus the free scan would make it the citable answer. Post: https://join.switchtoamerica.com/post/is-sunscreen-safe
