@@ -86,6 +86,10 @@ RECIPES=[
 ]
 
 if __name__=="__main__":
-    for slug,photo,eb,h1,h2 in RECIPES:
-        try: print("wrote", build(photo,slug,eb,[h1,h2]))
-        except Exception as e: print("FAILED", slug, e)
+    if len(sys.argv) >= 6:
+        # single pin on demand:  pin-compositor.py <photo.webp> <slug> <EYEBROW> <headline line 1> <headline line 2>
+        print("wrote", build(sys.argv[1], sys.argv[2], sys.argv[3], [sys.argv[4], sys.argv[5]]))
+    else:
+        for slug,photo,eb,h1,h2 in RECIPES:
+            try: print("wrote", build(photo,slug,eb,[h1,h2]))
+            except Exception as e: print("FAILED", slug, e)
