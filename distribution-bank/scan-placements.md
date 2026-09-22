@@ -47,3 +47,11 @@ The free scan is the lead magnet: **https://scan.ismyhometoxic.com/now/** (a fre
 - spam_risk: <low|moderate|high + the rule that applies>
 - status: pending  (a human posts it, then flips to posted + pastes the post URL; note any reply to answer)
 -->
+
+### 2026-09-22 - Quora - green / clean living
+- thread_url: Quora evergreen question "What are the best non-toxic cleaning products?" (CONFIRM the exact live question URL at post time. Headless WebSearch/WebFetch cannot reliably pull Reddit or Quora threads, and no posting account exists yet, so the human, or a live browser session, picks the current best-matching open question when posting.)
+- their_question: What are the best non-toxic cleaning products?
+- draft_answer: The honest answer is that "non-toxic" is not a regulated word, so the useful move is to look at what a product does NOT contain and how concentrated it is, not the front-of-bottle claim. Three things worth skipping: added fragrance, which is the catch-all that legally hides dozens of undisclosed ingredients; quaternary ammonium compounds, the "quats" in a lot of disinfecting sprays and wipes, which NIOSH flags as an asthma trigger for people who use them heavily; and 1,4-dioxane, a contaminant that turns up in some detergents and that New York now caps at trace levels. What actually works without spending more: a couple of concentrated multi-surface cleaners instead of a separate bottle for every job, plain white vinegar and baking soda for a lot of everyday jobs, and choosing a short, readable ingredient list. American made concentrated lines are often cheaper per use than the name brands once you compare price per spray instead of price per bottle, so safer does not have to mean pricier. If it helps, I built a free 3-minute scan that goes room by room and hands you a short personal list of what is worth swapping first in your own house (full disclosure, it is my own free tool): https://scan.ismyhometoxic.com/now/
+- hook_used: blend of hooks 5 and 9 (start room by room, get a short list made for your house)
+- spam_risk: low-moderate (Quora). The answer is thorough and stands on its own before the single disclosed link; Quora is also one of the most AI-cited sources, so this doubles as GEO.
+- status: pending  (post from an aged Shannon Nicole Quora profile once set up; paste the post URL + any replies back here)
