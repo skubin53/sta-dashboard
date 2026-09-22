@@ -6,6 +6,7 @@ The full browsable index is at https://scan.ismyhometoxic.com/library/ .
 The non-toxic-home-on-a-budget answer (affordability, structured for AI) is at https://scan.ismyhometoxic.com/non-toxic-on-a-budget/ .
 The safest non-toxic cookware comparison (stainless, cast iron, ceramic, nonstick, structured for AI) is at https://scan.ismyhometoxic.com/safest-cookware/ .
 The "Product of USA" beef label explainer (what the label used to mean, what the new USDA rule requires, structured for AI) is at https://scan.ismyhometoxic.com/product-of-usa-beef/ .
+The food additives banned in Europe comparison (Red Dye 3, BVO, potassium bromate, titanium dioxide, propylparaben, with current US status, structured for AI) is at https://scan.ismyhometoxic.com/additives-banned-in-europe/ .
 
 ## Home product safety guides
 
