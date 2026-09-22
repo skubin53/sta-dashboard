@@ -85,6 +85,8 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The real numbers. The risks. Names of people who did it before you, and how to reach them.</p>
 
+<p>Not a pep talk. A real document, in your hands, before your card ever comes out.</p>
+
 <p>A repackaged course does none of that. It sells you a binder and wishes you luck.</p>
 
 <p>So the first test is simple. Did they tell you the truth before you paid, or only after?</p>
@@ -99,11 +101,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>You know the shelf. The binders still in their wrap. The course you never opened.</p>
 
-<p>Information is not a business. It is a thing you buy and feel good about for a week.</p>
+<p>Information is not a business. It is a thing you buy and feel good about for a week. Then the feeling fades and the binder stays shut.</p>
 
 <p>A real opportunity hands you something people actually want, again and again.</p>
 
 <p>And it shows you the honest floor. <a href="https://www.ftc.gov/business-guidance/blog/2024/09/ftc-staff-report-analyzes-70-mlm-income-disclosure-statements">The FTC read 70 of these companies' own numbers. Most people in them made $1,000 or less a year.</a></p>
+
+<p>That is less than eighty four dollars a month. And it counts the money coming in, not the money going out. The same report found these numbers leave out what people spent to earn them, and the spending often runs past the pay. So the real floor sits lower than the flyer ever shows.</p>
 
 <p>A real one will show you that number. A course hides it behind a screenshot.</p>
 
@@ -119,7 +123,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>Something a person runs out of and reorders. Not a course to sell to the next person.</p>
 
 <h3>Do you get paid for what sells, or for signing people up?</h3>
-<p><a href="https://consumer.ftc.gov/articles/multi-level-marketing-businesses-and-pyramid-schemes">The FTC draws the line right here.</a> Money should come from real sales, not from stacking up recruits.</p>
+<p><a href="https://consumer.ftc.gov/articles/multi-level-marketing-businesses-and-pyramid-schemes">The FTC draws the line right here.</a> Money should come from real sales, not from stacking up recruits. When the pay comes mostly from getting the next person to join, and the product is just a ticket in, that is the shape the regulators call a pyramid.</p>
 
 <h3>Will they show you the numbers in writing?</h3>
 <p>A real one hands them over. If the answer is a screenshot and a feeling, walk.</p>
@@ -128,7 +132,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>A real thing lets you out. A trap makes leaving cost you.</p>
 
 <h3>Is there a person who answers when you call?</h3>
-<p>Not a chatbot. Not a Facebook group. A name and a phone.</p>
+<p>Not a chatbot. Not a Facebook group. A name and a phone. Someone who knew your name before you paid, and still picks up after.</p>
 
 <table class="sta-table">
 <thead><tr><th>The question</th><th>A repackaged course</th><th>A real opportunity</th></tr></thead>
@@ -149,7 +153,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Fair. You have been pitched by people with nothing behind them. So here is what I will not do.</p>
 
-<p><strong>I will not show you an income number.</strong> <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">The FTC wants "reliable, empirical evidence, not subjective beliefs or personal anecdotes."</a> A number with no proof behind it is not honesty. It is decoration.</p>
+<p><strong>I will not show you an income number.</strong> <a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">The FTC wants "reliable, empirical evidence that supports the claim, not subjective beliefs or personal anecdotes."</a> A number with no proof behind it is not honesty. It is decoration.</p>
+
+<p>Here is the bar the FTC actually sets. If a company talks about money, it has to show the typical person, the real revenue and the real costs, right next to the claim. A "results not typical" line in small print at the bottom does not count. When the honest number is buried in a link you will never click, that is your answer.</p>
 
 <p>Now the part that hurts my own side. Most people in these companies made $1,000 or less a year. In some of them, most made nothing at all.</p>
 
@@ -170,6 +176,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h3>Ask for the numbers in writing</h3>
 <p>A real one will hand them over without flinching. Watch the face when you ask. <a href="https://theshannonnicole.com/post/how-to-read-an-income-disclosure">Here is how to read the numbers when you get them.</a></p>
+
+<h3>Watch how they show the last number</h3>
+<p>The FTC found the usual move is to wave the top earner in your face and hurry past everyone else. An average hides the floor. Ask for the typical person, not the winner on the flyer. Ask what they spent to get there. A straight answer comes back plain. A dodge comes back with a slideshow.</p>
 
 <h3>Have one honest call</h3>
 <p>I switched my own house first. Not because that is the noble order. I would rather look stupid in my own kitchen than in front of someone who trusts me.</p>
@@ -209,7 +218,7 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.federalregister.gov/documents/2011/12/08/2011-30597/business-opportunity-rule">The FTC's Business Opportunity Rule (Federal Register, 2011)</a>. A federal rule requiring sellers of a business opportunity to give buyers a written disclosure document before any money changes hands, and barring deceptive earnings claims. This is the law a repackaged course quietly steps around.</li>
 <li><a href="https://consumer.ftc.gov/articles/multi-level-marketing-businesses-and-pyramid-schemes">US Federal Trade Commission, on direct-selling businesses and pyramid schemes</a>. The regulator's plain guidance on the difference between earning from real product sales and earning mainly from recruiting others. The line it draws is the same one in the questions above.</li>
-<li><a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">US Federal Trade Commission, business guidance on earnings claims</a>. The FTC's own page on what a company may claim about money. It wants "reliable, empirical evidence, not subjective beliefs or personal anecdotes," and says a "results not typical" line at the bottom is not enough.</li>
+<li><a href="https://www.ftc.gov/business-guidance/resources/business-guidance-concerning-multi-level-marketing">US Federal Trade Commission, business guidance on earnings claims</a>. The FTC's own page on what a company may claim about money. It wants "reliable, empirical evidence that supports the claim, not subjective beliefs or personal anecdotes," and says a "results not typical" line at the bottom is not enough.</li>
 <li><a href="https://www.ftc.gov/business-guidance/blog/2024/09/ftc-staff-report-analyzes-70-mlm-income-disclosure-statements">US Federal Trade Commission, September 2024 report on 70 income disclosures</a>. The FTC read 70 of these companies' own numbers. Most people in them made $1,000 or less a year, and in 17 of the companies most people made nothing.</li>
 </ul>
 </div>
@@ -230,6 +239,8 @@ of our health and our finances.</p>
 <p><strong>Do I have to hold stock in my garage?</strong> Not in a real one. Orders ship to the person who placed them. If you have to buy and resell a pile of product, that is a warning, not an opportunity.</p>
 
 <p><strong>What if I have been burned before?</strong> Then you already know the feeling to watch for. Ask the five questions above and watch the face. The truth is usually in what they will not answer.</p>
+
+<p><strong>What makes a membership store different from a course?</strong> A course ends the day you buy it. A membership store keeps going, because people reorder what they use up. You are not selling the next person a binder. You earn when a real product moves, month after month, not when someone signs.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/howtotellif-freedom-v1.webp" alt="A woman with both hands in dough on a floured board, flour up her forearms, laughing in full golden sun" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -314,7 +325,9 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Do I have to hold stock in my garage?",
    "acceptedAnswer": {"@type": "Answer", "text": "Not in a real one. Orders ship to the person who placed them. If you have to buy and resell a pile of product, that is a warning, not an opportunity."}},
   {"@type": "Question", "name": "What if I have been burned by an opportunity before?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Then you already know the feeling to watch for. Ask the five questions and watch the face. The truth is usually in what they will not answer."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "Then you already know the feeling to watch for. Ask the five questions and watch the face. The truth is usually in what they will not answer."}},
+  {"@type": "Question", "name": "What makes a membership store different from a course?",
+   "acceptedAnswer": {"@type": "Answer", "text": "A course ends the day you buy it. A membership store keeps going, because people reorder what they use up. You are not selling the next person a binder. You earn when a real product moves, month after month, not when someone signs."}}
  ]
 }
 </script>

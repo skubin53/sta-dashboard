@@ -6,7 +6,7 @@ slug: are-store-brand-eye-drops-safe
 keyword: eye drops recall 2026
 category: Bathroom
 cover: https://scan.ismyhometoxic.com/blog-images/arestorebra-hero-v1.webp
-meta_description: In March 2026 one company recalled 3,111,072 bottles of store brand eye drops sold under the Walgreens, CVS and Kroger names. Here is what the FDA reports say.
+meta_description: In March 2026 one company recalled 3,111,072 bottles of store brand eye drops sold as Walgreens, CVS and Kroger. Here is what the FDA filings show.
 status: ready
 vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 ---
@@ -89,7 +89,7 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 
 <p>This was not the first time.</p>
 
-<p><a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">The FDA put the sterility problem in writing on August 3, 2023.</a> That year the company recalled 397,430 bottles. Less than three years later it recalled 3,111,072, nearly eight times as many.</p>
+<p><a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">The FDA put the sterility problem in writing on August 3, 2023.</a> That year the same company pulled two eye drop recalls, more than 738,000 bottles between them. Less than three years later it pulled eight at once, 3,111,072 bottles. More than four times as many.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arestorebra-villain-v1.webp" alt="A small plain unbranded dropper bottle standing beside its open carton on the edge of a white bathroom basin, nobody in the room" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -107,7 +107,7 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 
 <p>Everything else you buy has skin in the way. A drop does not. It sits right on the surface of your eye, which is why the sterility of the bottle is everything.</p>
 
-<p>And this is the company the FDA had already warned. <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">The 2023 letter said its clean-room setup was "inadequately designed to prevent contamination of its ophthalmic drug products."</a> Ophthalmic means eye. That was the FDA's own word for it.</p>
+<p>And this is the company the FDA had already warned. <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">The 2023 letter said the company's aseptic processing was "inadequately designed to prevent contamination of" its "ophthalmic drug products."</a> Ophthalmic means eye. That was the FDA's own word for it.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arestorebra-turning-point-v1.webp" alt="A woman in her fifties setting the little dropper bottle down on the vanity and turning to the window, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -149,7 +149,7 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 
 <p>So why does it still sit wrong with me?</p>
 
-<p>Because of what a drop is, and because this same company was told in writing in 2023 and it happened again, eight times bigger. The FDA already had the whole pattern on paper, years before these bottles ever reached your purse.</p>
+<p>Because of what a drop is, and because this same company was told in writing in 2023 and it happened again, over four times bigger. The FDA already had the whole pattern on paper, years before these bottles ever reached your purse.</p>
 
 <h2 id="what-do-i-do">So what do I actually do about it?</h2>
 
@@ -198,8 +198,8 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://api.fda.gov/drug/enforcement.json?search=recalling_firm%3A%22K.C.+Pharmaceuticals%22+AND+recall_initiation_date%3A%5B20260101+TO+20261231%5D&amp;limit=10">US Food and Drug Administration, drug enforcement reports D-0409-2026 through D-0416-2026</a>. K.C. Pharmaceuticals, Inc., of Pomona, California, started eight separate Class II recalls on March 3, 2026, all for the same stated reason, "Lack of Assurance of Sterility." The FDA lists every one as distributed nationwide and still ongoing as of April 8, 2026. The eight products are Dry Eye Relief (1,023,096 bottles), Artificial Tears (589,848), the Original Formula (378,144), Redness Lubricant (315,144), Advanced Relief (303,216), Ultra Lubricating (245,184), Eye Drops AC (182,424) and Soothing Tears (74,016), which add up to 3,111,072 bottles. The labels named in the filings include Walgreens, CVS Health, Kroger, Rite Aid, Publix, Meijer, H-E-B, Harris Teeter, DG Health, TopCare, Good Sense, Leader, Good Neighbor Pharmacy, Foster and Thrive and GeriCare. Equate from Walmart is not on the 2026 list. It appears instead in the same company's earlier recall, D-0898-2023, of 397,430 bottles of Dry Eye Relief started June 13, 2023. Plain translation: one factory, one problem, more than three million bottles sold under names you already trust.</li>
-<li><a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">US Food and Drug Administration, warning letter to K.C. Pharmaceuticals, Inc., dated August 3, 2023</a>. Written after inspections in January and February 2023, the first violation it lists is that the company failed to set up and follow proper written steps to keep germs out of drops that are supposed to be sterile (21 CFR 211.113(b)). The letter states the company's aseptic processing was "inadequately designed to prevent contamination of its ophthalmic drug products." Plain translation: the FDA told this company in a formal letter that its clean-room setup could not keep the eye drops clean, almost three years before the 2026 recalls.</li>
+<li><a href="https://api.fda.gov/drug/enforcement.json?search=recalling_firm%3A%22K.C.+Pharmaceuticals%22+AND+recall_initiation_date%3A%5B20260101+TO+20261231%5D&amp;limit=10">US Food and Drug Administration, drug enforcement reports D-0409-2026 through D-0416-2026</a>. K.C. Pharmaceuticals, Inc., of Pomona, California, started eight separate Class II recalls on March 3, 2026, all for the same stated reason, "Lack of Assurance of Sterility." The FDA lists every one as distributed nationwide and still ongoing as of April 8, 2026. The eight products are Dry Eye Relief (1,023,096 bottles), Artificial Tears (589,848), the Original Formula (378,144), Redness Lubricant (315,144), Advanced Relief (303,216), Ultra Lubricating (245,184), Eye Drops AC (182,424) and Soothing Tears (74,016), which add up to 3,111,072 bottles. The labels named in the filings include Walgreens, CVS Health, Kroger, Rite Aid, Publix, Meijer, H-E-B, Harris Teeter, DG Health, TopCare, Good Sense, Leader, Good Neighbor Pharmacy, Foster and Thrive and GeriCare. Equate from Walmart is not on the 2026 list. It appears instead in <a href="https://api.fda.gov/drug/enforcement.json?search=recalling_firm%3A%22K.C.+Pharmaceuticals%22+AND+recall_initiation_date%3A%5B20230101+TO+20231231%5D&amp;limit=10">the same company's two recalls of June 13, 2023</a>, D-0898-2023 covering 397,430 bottles of Dry Eye Relief, the one carrying the Equate label, and D-0897-2023 covering 341,568 more, 738,998 bottles between them. Plain translation: one factory, one problem, more than three million bottles sold under names you already trust.</li>
+<li><a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">US Food and Drug Administration, warning letter to K.C. Pharmaceuticals, Inc., dated August 3, 2023</a>. Written after inspections in January and February 2023, the first violation it lists is that the company failed to set up and follow proper written steps to keep germs out of drops that are supposed to be sterile (<a href="https://www.ecfr.gov/current/title-21/section-211.113">21 CFR 211.113(b)</a>). The letter states the company's aseptic processing was "inadequately designed to prevent contamination of" its "ophthalmic drug products." Plain translation: the FDA told this company in a formal letter that its clean-room setup could not keep the eye drops clean, almost three years before the 2026 recalls.</li>
 </ul>
 </div>
 
@@ -236,7 +236,7 @@ of our health and our finances.</p>
 <div class="sta-keep">
 <h3>Keep reading</h3>
 <ul>
-<li><a href="https://join.switchtoamerica.com/post/are-makeup-remover-wipes-safe">Are makeup remover wipes safe? What Kenvue found in a Neutrogena lot</a></li>
+<li><a href="https://join.switchtoamerica.com/post/are-baby-wipes-safe">Are baby wipes safe? What Target pulled off the shelf in June</a></li>
 <li><a href="https://join.switchtoamerica.com/post/is-sunscreen-safe">Is sunscreen safe? What the benzene recalls found</a></li>
 <li><a href="https://join.switchtoamerica.com/post/is-fabuloso-safe">Is Fabuloso safe? What was growing inside 4.9 million bottles</a></li>
 <li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>
@@ -255,7 +255,7 @@ of our health and our finances.</p>
   {
    "@type": "Article",
    "headline": "Are Store Brand Eye Drops Safe? What Got Pulled From Walgreens, CVS and Kroger (2026)",
-   "description": "In March 2026 one company recalled 3,111,072 bottles of store brand eye drops sold under the Walgreens, CVS and Kroger names. Here is what the FDA reports say.",
+   "description": "In March 2026 one company recalled 3,111,072 bottles of store brand eye drops sold as Walgreens, CVS and Kroger. Here is what the FDA filings show.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arestorebra-hero-v1.webp",
    "datePublished": "2026-09-22",
    "dateModified": "2026-09-22",
