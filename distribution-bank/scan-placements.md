@@ -1,0 +1,49 @@
+# Scan-Link Placement Bank
+
+The free scan is the lead magnet: **https://scan.ismyhometoxic.com/now/** (a free 3-minute room-by-room home scan that returns a personal swap list and captures name + phone). Every genuinely helpful answer we leave in the right community is a free prospect, and because ChatGPT and Bing quote Reddit and Quora heavily, the same answer can also get us cited in AI answers. This is where the GEO cron drafts **2 new value-first placements a day**. A HUMAN posts them (auto-posting to Reddit/Quora/Facebook gets the account banned). The bank compounds: keep every entry, mark it posted or pending, and note any reply so a human can answer.
+
+## The rules (value-first, never spam)
+- **Answer the actual question first.** Give a real, usable answer (a specific swap, a real tip) that stands on its own even if they never click. The link is a P.S., never the point.
+- **One link, disclosed, only where allowed.** Exactly one link per post. Say plainly it is our free tool ("full disclosure, this is my own free scan"). Only where the sub/group rules permit it, or on their promo day.
+- **Never copy-paste the same wording across threads.** Identical text is the #1 spam-filter trigger. Every placement is written fresh for that specific question.
+- **90/10.** At least 9 pure-value contributions for every 1 that carries a link. The posting account must be aged with real history and karma.
+- **No hard-sell, no claims.** No "LIMITED TIME", no all-caps, no "CLICK NOW", and never state health or product results to people. Frame as curiosity and self-discovery.
+- **Match the avatar:** women 40-60 who want a less-toxic home. Skip frugal/dollar-store and trauma/mental-health communities, skip anything baby/toddler, US only. Never write "Melaleuca" or "the wellness company". American Made, no percentage. No em dashes.
+
+## Curiosity hooks (rotate; end with the single link)
+1. Most homes have 12 to 20 everyday products that are easy to swap. This free 3-minute scan tells you which ones are in yours.
+2. I ran a room-by-room scan of my own house and was surprised what turned up under the kitchen sink. There is a free 3-minute version here if you want to check yours.
+3. If you have ever stood in the cleaning aisle wondering which labels to trust, this free scan gives you a personal swap list in about 3 minutes.
+4. You can find out what is worth swapping in your home in the time it takes to fold a load of laundry. Free, 3 minutes, room by room.
+5. Not sure where to even start going non-toxic? This free scan walks you room by room and hands you a short list made for your house.
+6. Curious what is in your laundry room and bathroom cabinets? This free 3-minute scan gives you a personal list of easy swaps.
+7. American made swaps exist for almost everything you already buy. Take the free 3-minute scan and get a list built for your home.
+8. You do not need to throw everything out. This free scan finds the few swaps that actually matter for your home in about 3 minutes.
+9. Ever wonder what is really under your sink? The free 3-minute scan checks your home room by room and tells you what to swap first.
+10. One quick scan, one short list, no guessing. See which everyday products in your home are the easy first swaps. Free, about 3 minutes.
+
+## Venue rotation (rank + spam risk; rotate so we never hit the same one twice in a row)
+- **Quora** questions ("best non-toxic cleaning products", "how do I make my home less toxic", "American made brands you trust") - high-intent, evergreen, and one of the most AI-cited sources. Risk: low-moderate, answer must be thorough before the link.
+- **Reddit r/CleaningTips, r/homemaking, r/HomeImprovement, r/DIY** - constant "what do you use for X" threads. Risk: moderate, needs karma + a real answer, one disclosed link.
+- **Reddit r/homestead, r/selfsufficient, r/homesteading** - patriot / homesteading angle, American made resonates. Risk: moderate.
+- **Nextdoor** "looking for a recommendation" threads from a real personal account - Risk: moderate, max 2 free business posts/month.
+- **Substack Notes + comments** on non-toxic / clean-living / menopause newsletters - top 2026 discovery engine. Risk: low-moderate, must reply to comments.
+- **Medium** articles you author on non-toxic swaps, soft CTA at the end - ranks in Google + pulled into AI answers. Risk: low on your own posts.
+- **Homesteading Today / SufficientSelf / Country Homesteading forums** - signature link often allowed. Risk: low-moderate, participate first.
+- **Houzz** advice threads (home + cleaning) - homeowners, skews female 35+. Risk: moderate.
+- **Quora Spaces** on green/clean/natural living - Risk: low-moderate.
+- **Blog comments** on established non-toxic-living blogs (link in the name/website field, body stays clean) - Risk: low-moderate.
+- **YouTube comments** under non-toxic-home videos - Risk: moderate, links sometimes auto-filtered, lead with value.
+- **HIGH RISK / listen-mostly:** r/Menopause, r/Perimenopause, r/AskWomenOver40, r/SkincareAddiction, r/30PlusSkinCare - dead-center avatar but strict no-promo. Build trust, link only when a thread is specifically on-topic and rules allow.
+- **BLOCKED for now:** Facebook groups (clean-living / crunchy-over-40) - concentrated avatar, but her Meta accounts are shut, so on hold until an account is restored or a VA uses their own.
+
+## Placements
+<!-- The GEO cron appends 2 entries per day below, newest at the bottom. Format per entry:
+### YYYY-MM-DD - <platform> - <community/space>
+- thread_url: <exact URL of the real open question, not a front page>
+- their_question: <what the person actually asked>
+- draft_answer: <a genuinely helpful, thread-specific answer, ending with ONE hook + https://scan.ismyhometoxic.com/now/>
+- hook_used: <which hook number/wording>
+- spam_risk: <low|moderate|high + the rule that applies>
+- status: pending  (a human posts it, then flips to posted + pastes the post URL; note any reply to answer)
+-->
