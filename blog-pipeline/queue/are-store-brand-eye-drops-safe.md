@@ -5,9 +5,9 @@ title: Are Store Brand Eye Drops Safe? What Got Pulled From Walgreens, CVS and K
 slug: are-store-brand-eye-drops-safe
 keyword: eye drops recall 2026
 category: Bathroom
-cover: [IMAGE: hero - a woman about 50 at a sunlit bathroom counter in mid afternoon, head tipped back, tilting a small plain dropper bottle toward her open eye, eyes visible and a little tired, candid, gaze up and away from camera, lived-in home with a dressed window behind her, cool daylight, no readable label on the bottle, 16:9]
+cover: https://scan.ismyhometoxic.com/blog-images/arestorebra-hero-v1.webp
 meta_description: In March 2026 one company recalled 3,111,072 bottles of store brand eye drops sold under the Walgreens, CVS and Kroger names. Here is what the FDA reports say.
-status: ready-for-photos
+status: ready
 vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 ---
 
@@ -92,7 +92,7 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 <p><a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">The FDA put the sterility problem in writing on August 3, 2023.</a> That year the company recalled 397,430 bottles. Less than three years later it recalled 3,111,072, nearly eight times as many.</p>
 
 <figure style="margin:28px 0;">
-[IMAGE: villain-recall - a bathroom medicine cabinet shelf seen straight on, several small unbranded dropper bottles pushed to the front edge, one woman's hand about 50 reaching in from the side, cold north light, slightly clinical, no readable labels anywhere, nobody's face, 16:9]
+<img src="https://scan.ismyhometoxic.com/blog-images/arestorebra-villain-v1.webp" alt="A small plain unbranded dropper bottle standing beside its open carton on the edge of a white bathroom basin, nobody in the room" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="why-eye-drops">Isn't everything made like this? Why start with eye drops?</h2>
@@ -110,7 +110,7 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 <p>And this is the company the FDA had already warned. <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kc-pharmaceuticals-inc-654986-08032023">The 2023 letter said its clean-room setup was "inadequately designed to prevent contamination of its ophthalmic drug products."</a> Ophthalmic means eye. That was the FDA's own word for it.</p>
 
 <figure style="margin:28px 0;">
-[IMAGE: eye-drops-close - a woman between 45 and 55 seated by a window, head tilted back, holding a plain dropper just above her open eye, close and intimate, cool neutral daylight, candid, gaze up and off camera, a dressed window behind her, no brand text on anything, 4:5]
+<img src="https://scan.ismyhometoxic.com/blog-images/arestorebra-turning-point-v1.webp" alt="A woman in her fifties setting the little dropper bottle down on the vanity and turning to the window, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-changes">Store brand drops, or drops you can name?</h2>
@@ -164,7 +164,7 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 <p>Do the small thing first. Tonight, take that store brand bottle out of your purse and set it aside, and put the one you can trace where it used to sit, because you reach for drops half asleep and your hand goes to the same spot every time.</p>
 
 <figure style="margin:28px 0;">
-[IMAGE: belonging - two women between 45 and 58 in a bright kitchen in warm late-day light, one handing the other a small plain bottle across the counter, both mid conversation and easy, a dressed window with sun coming through, lived-in home, no readable label on the bottle, 16:9]
+<img src="https://scan.ismyhometoxic.com/blog-images/arestorebra-belonging-v1.webp" alt="Two women laughing together among tomato vines in a sunny greenhouse" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <div class="shannons-advice">
@@ -214,7 +214,7 @@ of our health and our finances.</p>
 <p><strong>Why does it matter if it is only eye drops?</strong> Because a drop goes straight onto the surface of your eye with no skin to stop anything, and the FDA had already cited this same company for the same sterility problem in writing back in 2023.</p>
 
 <figure style="margin:28px 0;">
-[IMAGE: transformation - a woman between 48 and 55 at the bathroom basin in full warm morning light, blinking and smiling to herself in the mirror just after using drops, shoulders relaxed, the counter clear, a small plain bottle set down, no readable text on anything, warmest light in the post, 4:5]
+<img src="https://scan.ismyhometoxic.com/blog-images/arestorebra-freedom-v1.webp" alt="A woman deadheading roses in her garden in golden light, laughing with a neighbour, her eyes clear" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="who-you-become">Who do you become?</h2>
@@ -256,7 +256,7 @@ of our health and our finances.</p>
    "@type": "Article",
    "headline": "Are Store Brand Eye Drops Safe? What Got Pulled From Walgreens, CVS and Kroger (2026)",
    "description": "In March 2026 one company recalled 3,111,072 bottles of store brand eye drops sold under the Walgreens, CVS and Kroger names. Here is what the FDA reports say.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/arestorebr-hero-v1.webp",
+   "image": "https://scan.ismyhometoxic.com/blog-images/arestorebra-hero-v1.webp",
    "datePublished": "2026-09-22",
    "dateModified": "2026-09-22",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-store-brand-eye-drops-safe"},
