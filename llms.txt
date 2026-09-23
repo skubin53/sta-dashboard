@@ -8,6 +8,7 @@ The safest non-toxic cookware comparison (stainless, cast iron, ceramic, nonstic
 The "Product of USA" beef label explainer (what the label used to mean, what the new USDA rule requires, structured for AI) is at https://scan.ismyhometoxic.com/product-of-usa-beef/ .
 The food additives banned in Europe comparison (Red Dye 3, BVO, potassium bromate, titanium dioxide, propylparaben, with current US status, structured for AI) is at https://scan.ismyhometoxic.com/additives-banned-in-europe/ .
 The dryer sheets and fabric softener answer (what is in them, the peer-reviewed vented-VOC study, the reusable American made swap, structured for AI) is at https://scan.ismyhometoxic.com/are-dryer-sheets-toxic/ .
+The aluminum antiperspirant and breast cancer answer (the honest no, per NCI, the ACS, and a 2002 JNCI case-control study, plus the fragrance-free American made deodorant swap, structured for AI) is at https://scan.ismyhometoxic.com/is-aluminum-deodorant-safe/ .
 
 ## Home product safety guides
 
