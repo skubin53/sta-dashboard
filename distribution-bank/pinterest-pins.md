@@ -65,3 +65,20 @@
 - **Eyebrow:** CLEAN BEAUTY  |  **Board:** Clean Beauty & Safe Personal Care
 - **Link:** https://join.switchtoamerica.com/post/is-sunscreen-safe
 - **Description:** FDA testing found some sunscreen chemicals absorb into the bloodstream. Here is what I found, and the safer sun protection swap for the whole family. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/ #cleanbeauty #nontoxic #saferswaps
+
+## PUBLISHED 2026-09-23 (manual catch-up, calendar Day 2 rotation) - 2 pins live
+Filled the gap where the initial batch composed but never published these. Live pins on the profile before this run were only 7 (dawn, fabuloso, lysol, pinesol, tide, dryer, scan promo); nonstick, air, febreze, sunscreen were never posted. Published the next 2 not-live in calendar order. Created 2 new keyword boards that did not exist yet (only Non-Toxic Cleaning Products + Non-Toxic Laundry existed). Descriptions rewritten with NO hashtags per current rule.
+
+### Nonstick pan  [pinx_nonstick.png | photo: arenonstick-freedom-v1.webp]
+- **Title:** Is your nonstick pan toxic?
+- **Board:** Non-Toxic Cookware & Kitchen Swaps  (CREATED this run, public)
+- **Link:** https://join.switchtoamerica.com/post/are-nonstick-pans-toxic
+- **Description:** Is your nonstick pan toxic? Here is what a scratched nonstick coating can release into your food when it overheats, and why so many women 40 and over are moving to safer cookware. I walk through the honest facts on Teflon and PFAS, when to retire an old pan, and the uncoated American made swaps like stainless steel and cast iron that last for decades with no coating to worry about. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+### Air fresheners  [pinx_air.png | photo: areairfreshe-belonging-v1.webp]
+- **Title:** Is your air freshener making you sick?
+- **Board:** Non-Toxic Air & Fragrance-Free Home  (CREATED this run, public)
+- **Link:** https://join.switchtoamerica.com/post/are-air-fresheners-toxic
+- **Description:** Is your air freshener making you sick? Plug-ins, sprays, and gels can release synthetic fragrance chemicals into the air you breathe all day, and for a lot of women 40 and over that shows up as headaches or a scratchy throat at home. Here is what is really in that mystery scent, why fragrance-free matters, and the simple American made ways to freshen a room without the chemical cloud. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+NOTE for next runs: still NOT live and next in rotation = febreze (Non-Toxic Air & Fragrance-Free Home) + sunscreen (needs a Clean Beauty & Safe Personal Care board created). One stale leftover draft ("...hurting your lungs?", a Lysol duplicate) sits unpublished and will auto-expire; do not publish it. Pinterest AI-generated-person disclosure box left UNCHECKED to match the account's existing 7 pins - flag to Shannon as a policy decision.
