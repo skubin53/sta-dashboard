@@ -82,3 +82,36 @@ Filled the gap where the initial batch composed but never published these. Live 
 - **Description:** Is your air freshener making you sick? Plug-ins, sprays, and gels can release synthetic fragrance chemicals into the air you breathe all day, and for a lot of women 40 and over that shows up as headaches or a scratchy throat at home. Here is what is really in that mystery scent, why fragrance-free matters, and the simple American made ways to freshen a room without the chemical cloud. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
 
 NOTE for next runs: still NOT live and next in rotation = febreze (Non-Toxic Air & Fragrance-Free Home) + sunscreen (needs a Clean Beauty & Safe Personal Care board created). One stale leftover draft ("...hurting your lungs?", a Lysol duplicate) sits unpublished and will auto-expire; do not publish it. Pinterest AI-generated-person disclosure box left UNCHECKED to match the account's existing 7 pins - flag to Shannon as a policy decision.
+
+## PUBLISHED 2026-09-24 (noon run) - 1 pin live, 2nd DEFERRED (extension flaky)
+Published 1 of the intended 2. The Chrome extension (ca040473) disconnected 3 times in a row specifically on file_upload for the 2nd pin, and a fresh tab would not hydrate the uploader, so per the disconnect rule I stopped cleanly after 1 pin rather than hammer it. 10 STA pins live now.
+
+### Febreze  [pinx_febreze.png | photo: febreze-belonging-v1.webp]  -> LIVE
+- Title: Is that fresh scent safe to breathe?
+- Board: Non-Toxic Air & Fragrance-Free Home (existing)
+- Link: https://join.switchtoamerica.com/post/is-febreze-safe-to-breathe
+- Description: Is that fresh scent safe to breathe? A plug-in or fabric spray adds synthetic fragrance to the air in a closed room, and that one word "fragrance" can legally hide dozens of undisclosed ingredients. For many women 40 and over it shows up as headaches or a tight chest at home. Here is what is really in that fresh-linen mist and the simple American made ways to freshen a room without it. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+### DEFERRED to the 7:11pm run: Sunscreen (pinx_sunscreen.png already composed + verified, ready to upload)
+- Title: Is your sunscreen in your blood?
+- Board to CREATE: Clean Beauty & Safe Personal Care (does not exist yet)
+- Link: https://join.switchtoamerica.com/post/is-sunscreen-safe
+- Description: Is your sunscreen in your blood? FDA studies found several common chemical sunscreen ingredients absorb through the skin into the bloodstream after normal use. That is not proof of harm, but it is a fair reason many women 40 and over are moving to mineral sunscreen. Here is what the testing actually showed and the safer American made swap for the whole family. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+## GROWTH TASK 2026-09-24 (a) keyword research - Clean Beauty over 50 (done browser-free; extension was flaky)
+Long-tail Pinterest title/keyword ideas for the Clean Beauty & Safe Personal Care board (women 40-60; always our own swap, NEVER name a competitor brand):
+- clean beauty for women over 50
+- non-toxic skincare for menopausal skin
+- mineral sunscreen without oxybenzone
+- is oxybenzone in sunscreen safe
+- fragrance-free skincare for sensitive mature skin
+- safer sunscreen for the whole family
+- non-toxic makeup for women over 50
+- what to look for in a clean sunscreen
+- American made clean beauty over 50
+- chemical vs mineral sunscreen which is safer
+- hormone-disrupting ingredients in personal care
+- non-toxic anti-aging skincare that is affordable
+- clean beauty swaps for perimenopause
+- fragrance-free deodorant for sensitive skin
+- safer self care products for women 40 and over
