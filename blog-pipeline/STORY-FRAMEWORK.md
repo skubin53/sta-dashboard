@@ -41,7 +41,7 @@ You walk her from one felt state to the next, one section at a time.
 
 **Proof section = the receipt.** Real lawsuits, recalls, fines. Category-matched, hyperlinked, attributed as allegation, never as settled fact. Turns an invisible threat into something she can point at. Carries the authority so Shannon's voice never has to cite anyone.
 
-**Shannon's Advice box (dark) = meeting the guide.** Empathy first, but TRUE to Shannon. She never bought this stuff, so never write a fake "I used to buy it, then I stopped" story. Her empathy: she figured it out young, on her own, with no one to guide her, and she knows how rigged it is against a busy mom. Her authority: 34 years off the grocery stores, sourcing from local farms. Then the one swap she would make. She points at the path, she does not walk it for the reader. No agencies in her voice, that flips her from trusted mom to institution and breaks the "not alone" feeling.
+**Shannon's Advice box (dark) = meeting the guide.** Empathy first, but TRUE to Shannon. She never bought this stuff, so never write a fake "I used to buy it, then I stopped" story. Her empathy: she figured it out young, on her own, with no one to guide her, and she knows how rigged it is against a busy mom. Her authority: 7 years off the grocery stores, sourcing from local farms. Then the one swap she would make. She points at the path, she does not walk it for the reader. No agencies in her voice, that flips her from trusted mom to institution and breaks the "not alone" feeling.
 
 **FAQ = clear the rest, then plant the higher steps.** Knock out the leftover safety worries. Then use two or three answers to plant "you are not the crazy one," "you will be the one who caught it," and "this is who you become."
 

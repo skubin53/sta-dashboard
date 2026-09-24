@@ -299,7 +299,7 @@ of our health and our finances.</p>
 
 <div class="sta-author">
 <h3>About Shannon Nicole</h3>
-<p>Shannon Nicole is the founder of Switch to America. She has kept a non-toxic home for 34 years and spent the last 15 as a health and nutrition coach working with women. <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">More about Shannon and why she started this</a>.</p>
+<p>Shannon Nicole is the founder of Switch to America. She has spent 7 years helping women switch to a toxin-free home, and personally mentors the women building it with her. <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">More about Shannon and why she started this</a>.</p>
 </div>
 
 <script type="application/ld+json">
@@ -322,7 +322,7 @@ of our health and our finances.</p>
    "@id": "https://switchtoamerica.com/#shannon",
    "name": "Shannon Nicole",
    "jobTitle": "Founder, Switch to America",
-   "description": "Founder of Switch to America. 34 years keeping a non-toxic home and 15 years as a health and nutrition coach working with women.",
+   "description": "Founder of Switch to America. 7 years helping women switch to a toxin-free home, and a personal mentor to the women building it.",
    "url": "https://join.switchtoamerica.com/post/about-shannon-nicole",
    "image": "https://scan.ismyhometoxic.com/now/shannon-photo.jpg"
   },

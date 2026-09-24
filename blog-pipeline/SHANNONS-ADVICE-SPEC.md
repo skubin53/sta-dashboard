@@ -108,7 +108,7 @@ If it reads like the rest of the post, it has failed.
 No conversion story. Not "I used to buy it and then I read something." Not "I put the jar
 down." Not "years ago, before I knew better."
 
-Shannon has kept a whole-food, non-toxic home for 34+ years. Her food comes from local farms
+Shannon has kept a whole-food, non-toxic home for 7 years. Her food comes from local farms
 and her own garden, not store shelves. A conversion arc is factually false about her life,
 and every reader who has followed her for a month can feel it.
 
@@ -120,7 +120,7 @@ tell me."** That is the emotional bridge. Use that one.
 She is not a researcher and she does not pretend to be. She does not say "a 2024 paper
 found" or "the subcommittee reported." That is what the article body is for.
 
-She trusts her gut and 34 years of watching, and she is openly skeptical of institutions:
+She trusts her gut and 7 years of watching, and she is openly skeptical of institutions:
 
 > "The FDA can allow it all it wants. I still would not touch it."
 

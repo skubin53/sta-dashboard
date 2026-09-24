@@ -63,7 +63,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       with a FEELING, not a chemical name. One villain, one receipt. Four steps up.
       **Never end on fear.** Close on who the reader BECOMES. (`STORY-FRAMEWORK.md`)
 - [ ] **0.2 NEVER invent a conversion story for Shannon.** She has been a whole-food,
-      non-toxic mom for 34+ years and **has never bought this stuff**, not even when
+      non-toxic mom for 7 years and **has never bought this stuff**, not even when
       her own kids were babies. Any "I used to buy it, then I read a study and
       stopped" / "I put the jar down" arc is FALSE to her life and reads as AI. Her
       empathy is that she figured it out young with nobody to guide her.
@@ -287,7 +287,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 - [ ] **B10** Author byline resolves to a REAL author page returning 200.
       *(`/about` and `/author/shannon-nicole` both 404. Our Person schema points at a
       person with no page. Every competitor beating us has a named author with a photo
-      and a bio. Shannon's 34 years is the moat and it is currently invisible.)*
+      and a bio. Shannon's 7 years is the moat and it is currently invisible.)*
 
 ## GATE C — IMAGES
 
@@ -479,5 +479,5 @@ outrank a template farm on **"is [specific brand] toxic"**. Target brand+product
 queries, not medical questions.
 
 **Our unfair advantage, currently invisible:** bettergoods.org is written by a nameless
-"Better Goods Team". Shannon is a real woman who has lived this for 34 years. That is
+"Better Goods Team". Shannon is a real woman who has lived this for 7 years. That is
 the moat, and it is worth nothing until the author page exists (B10).
