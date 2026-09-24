@@ -213,7 +213,7 @@ new supply chain, built on family values, trust and affordability.</p>
 the lawsuits and the fines. Also, inside my Switch Circle private community, we talk about real solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they
-never wanted. I have spent the last 15 years helping women get off prescription medications.
+never wanted. I have spent over 20 years helping women get off prescription medications.
 I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking into their

@@ -29,7 +29,7 @@ Scorecard. Also, inside my Switch Circle private community, we talk
 about real solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions they
-never wanted. I have spent the last 15 years helping women get off prescription medications.
+never wanted. I have spent over 20 years helping women get off prescription medications.
 I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking into their
@@ -62,7 +62,7 @@ of fact, and then it needs either a frame or a receipt.** Keep this paragraph ge
 stays what it is: how she talks about the industry.
 
 **The prescriptions line is Shannon's and she has confirmed it three times.**
-*"I have spent the last 15 years helping women get off prescription medications."* It ships
+*"I have spent over 20 years helping women get off prescription medications."* It ships
 exactly as she wrote it. Anyone editing this file later should know that is deliberate and
 must not quietly soften it.
 

@@ -203,7 +203,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       solutions.</p>
 
       <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
-      they never wanted. I have spent the last 15 years helping women get off prescription
+      they never wanted. I have spent over 20 years helping women get off prescription
       medications. I help families reclaim their health.</p>
 
       <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
@@ -216,7 +216,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
 
 - [ ] **A9a** **Two sentences in that box may not be reworded.** They repeat on every
       post, so an edit here repeats everywhere.
-      - *"I have spent the last 15 years helping women get off prescription medications."*
+      - *"I have spent over 20 years helping women get off prescription medications."*
         Shannon's own line, confirmed three times. The subject stays **Shannon and her
         fifteen years**, never a command to the reader. **The not-a-doctor disclaimer is
         BANNED** (Shannon 2026-08-11: "NEVER say this ever again. EVER."). Never add one.
