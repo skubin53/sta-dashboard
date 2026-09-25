@@ -1,13 +1,13 @@
 ---
 day: 16
-date: 2026-08-31
+date: 2026-09-25
 title: Did LTK Just Change What Creators Get Paid? (2026)
 slug: ltk-creator-payout-change
 keyword: ltk creator payout change commission
 category: Builders
-cover: [IMAGE: ltkpayout-hero-v1]
+cover: https://scan.ismyhometoxic.com/blog-images/ltkcreatorp-hero-v1.webp
 meta_description: LTK does not set your rate. Each brand does, and most cookie windows run 7 to 30 days. What moved in 2026, and what it teaches you.
-status: needs photos
+status: ready
 vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-Target-Segments, MLM-Vetting-Filter, North-Star]
 ---
 
@@ -47,12 +47,12 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; August 31, 2026<br><span style="font-size:.92em;">Published August 31, 2026 &middot; Last updated August 31, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 25, 2026<br><span style="font-size:.92em;">Published September 25, 2026 &middot; Last updated September 25, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>Your pay moved and nobody asked you first.</p>
-<p>Here is the short version. LTK does not set your rate. Each brand does. That is LTK's own line: <strong><a href="https://onbrand.shopltk.com/en-au/how-commission-links-cookies-work">"Each LTK brand partner selects their own commission rate."</a></strong></p>
+<p>Your pay can move, and nobody has to ask you first.</p>
+<p>Here is the short version. LTK does not set your rate. Each brand does. That is LTK's own line: <strong><a href="https://onbrand.shopltk.com/en-au/how-commission-links-cookies-work">"Each LTK brand partner selects their own commission rate upon partnering with LTK."</a></strong></p>
 <p>And the clock is short. LTK puts most cookie windows at 7 to 30 days. Seven to fourteen on average.</p>
 <p>A link rents you a stranger for a week. A customer who reorders stays.</p>
 <p>That is the whole post. The rest is the proof.</p>
@@ -76,7 +76,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>You post a room. She taps the link. A cookie lands on her phone. If she orders, you get paid once. Then it is gone.</p>
 
-<p>LTK rewrote its legal documents this spring. <a href="https://company.shopltk.com/privacy">Its privacy statement carries a March 18, 2026 date.</a></p>
+<p>LTK updated its paperwork this spring. <a href="https://company.shopltk.com/privacy">Its privacy statement says last updated March 18, 2026.</a></p>
 
 <p>So I went looking for a rate cut. A number, on a page, with a date on it. I did not find one.</p>
 
@@ -89,17 +89,19 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>What I found instead was worse. It has been sitting there the whole time.</p>
 
-<p><a href="https://onbrand.shopltk.com/en-au/how-commission-links-cookies-work">LTK does not decide what you get paid.</a> Each brand does. It can pick a different rate for each kind of product.</p>
+<p><a href="https://onbrand.shopltk.com/en-au/how-commission-links-cookies-work">LTK does not decide what you get paid.</a> Each brand does. Some brands even pay a different rate depending on the product category.</p>
 
 <p>Then the window. LTK says most cookie windows run 7 to 30 days. Seven to fourteen on average.</p>
 
-<p>Then the part that stings. You lose credit if she taps somebody else's link first. Another creator. A coupon site. Anybody.</p>
+<p>Then the part that stings. Your link loses credit if she taps another creator's link first. Or another affiliate's. Or uses a one-time promo code. That is LTK's own page, not mine.</p>
 
 <p>And on Instagram there is no cookie window at all. She has to buy right then, inside that browser, without leaving it.</p>
 
 <p>None of that is about your work. All of it is about your money.</p>
 
-[IMAGE: ltkpayout-villain-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/ltkcreatorp-villain-v1.webp" alt="Five plain taped boxes of returns shoved against the skirting just inside a front door, tape and scissors on the floorboards, shoes in a heap" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="without-you">Why can your rate move without you?</h2>
 
@@ -113,13 +115,13 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>That is not a partnership. That is a notice board.</p>
 
-<p>And so the reel you filmed in March gets paid on June's rules. Your March is gone. You cannot go back and earn it again.</p>
+<p>And so the reel you filmed in March can get paid on June's rules. Your March is gone. You cannot go back and earn it again.</p>
 
 <p>You did the hard half. You built the trust. Somebody else kept the customer.</p>
 
 <h2 id="link-or-customer">What is the difference between a link and a customer?</h2>
 
-<p class="quick-answer">Quick answer: one pays you once. One pays you every time she runs out.</p>
+<p class="quick-answer">Quick answer: one is a single sale. The other is a customer who can keep reordering.</p>
 
 <h3>The click</h3>
 
@@ -131,26 +133,28 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <h3>The reorder</h3>
 
-<p>This is the one I care about. She runs out of laundry soap. She orders more. You stay credited. You did the work once and it keeps counting.</p>
+<p>This is the one I care about. She runs out of laundry soap. She orders more. If she does, you stay credited. You did the work once and it can keep counting.</p>
 
 <table class="sta-table">
 <tr><th>&nbsp;</th><th>The link</th><th>The customer</th></tr>
 <tr><td>What you get paid on</td><td>The one sale</td><td>Whatever she reorders</td></tr>
 <tr><td>How long it lasts</td><td>7 to 14 days on average</td><td>For as long as she reorders</td></tr>
 <tr><td>Who sets the rate</td><td>The brand, whenever it likes</td><td>A relationship you keep</td></tr>
-<tr><td>If she taps a coupon site first</td><td>You get nothing</td><td>Nothing changes</td></tr>
+<tr><td>If she taps another affiliate link first</td><td>You get nothing</td><td>Nothing changes</td></tr>
 <tr><td>Next month</td><td>Back to zero</td><td>She is still there</td></tr>
 </table>
 
 <p>Nobody hands you that table on day one. I am handing it to you now. It costs you nothing. Take it to a company that is not mine.</p>
 
-[IMAGE: ltkpayout-turning-point-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/ltkcreatorp-turning-point-v1.webp" alt="A woman at her open bedroom wardrobe holding one mustard jumper, her hand flat on the door, turned toward the window and settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="is-this-a-pitch">Isn't this just another pitch?</h2>
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>LTK is not a monster. <a href="https://onbrand.shopltk.com/en/latest-news/ltk-creators-get-new-customization-to-ltk-dm-weekly-commission-payouts">In 2024 it moved creator commission to weekly payouts.</a> That is faster than a lot of the field. I will say so plainly.</p>
+<p>LTK is not a monster. <a href="https://onbrand.shopltk.com/en/latest-news/ltk-creators-get-new-customization-to-ltk-dm-weekly-commission-payouts">In August 2024 it announced weekly commission payouts for creators.</a> That is faster than a lot of the field. I will say so plainly.</p>
 
 <p>The problem is not that they are careless. It is that the rules are theirs, and they can move on a Tuesday.</p>
 
@@ -164,7 +168,9 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>I will not hand you a number to expect either. Nobody honest can.</p>
 
-[IMAGE: ltkpayout-belonging-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/ltkcreatorp-belonging-v1.webp" alt="Two women laughing together on the front steps of a modern house" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="monday">What would I do first on Monday?</h2>
 
@@ -222,7 +228,7 @@ our finances.</p>
 <ul>
 <li><a href="https://onbrand.shopltk.com/en-au/how-commission-links-cookies-work">LTK's own page on how commission, links and cookies work</a>. The brand picks the rate. Windows run 7 to 30 days. Instagram has none. That is your pay, described by the people paying it.</li>
 <li><a href="https://company.shopltk.com/ltk-terms-of-service">The LTK terms of service</a>. The change-it-any-time line is quoted above, from this page. It means the deal you read is not the deal you keep.</li>
-<li><a href="https://company.shopltk.com/privacy">The LTK privacy statement</a>, carrying a March 18, 2026 date. Proof the legal paperwork was rewritten this year, whatever you were told about it.</li>
+<li><a href="https://company.shopltk.com/privacy">The LTK privacy statement</a>, last updated March 18, 2026. Proof the paperwork does change, and has this year.</li>
 <li><a href="https://company.shopltk.com/ltk-referral-terms-conditions">The LTK new user referral terms</a>. LTK can change the referral fee amounts at any time on notice. Same pattern, applied straight to cash.</li>
 <li><a href="https://onbrand.shopltk.com/en/latest-news/ltk-creators-get-new-customization-to-ltk-dm-weekly-commission-payouts">LTK's own announcement of weekly creator payouts, August 2024</a>. The receipt against my own argument. They pay fast. They still hold the rules.</li>
 </ul>
@@ -246,11 +252,13 @@ our finances.</p>
 <p><strong>What if I never want to sell anything again?</strong></p>
 <p>Then don't. That is a fair answer. Keep being the one they text about what is safe to use. Let that be enough.</p>
 
-[IMAGE: ltkpayout-freedom-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/ltkcreatorp-freedom-v1.webp" alt="A woman curled sideways in the corner of a teal sofa by a sunlit window, laughing, with mustard cushions, plants and framed photos around her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <p>Here is what I want for you, whether or not we ever speak.</p>
 
-<p>You spent years becoming the one other women ask. That took real work and it was never paid for properly. A quiet edit to a terms page cannot take it off you.</p>
+<p>You spent years becoming the one other women ask. That took real work and it was never paid for properly. No change to somebody else's terms page can take it off you.</p>
 
 <p>You become the one who owns the relationship, not the click.</p>
 
@@ -278,9 +286,9 @@ our finances.</p>
    "@type": "Article",
    "headline": "Did LTK Just Change What Creators Get Paid? (2026)",
    "description": "LTK does not set your rate. Each brand does, and most cookie windows run 7 to 30 days. What moved in 2026, and what it teaches you.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/ltkpayout-hero-v1.webp",
-   "datePublished": "2026-08-31",
-   "dateModified": "2026-08-31",
+   "image": "https://scan.ismyhometoxic.com/blog-images/ltkcreatorp-hero-v1.webp",
+   "datePublished": "2026-09-25",
+   "dateModified": "2026-09-25",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/ltk-creator-payout-change"},
    "author": {"@id": "https://theshannonnicole.com/post/ltk-creator-payout-change#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
@@ -321,7 +329,7 @@ our finances.</p>
   {"@type": "Question", "name": "How long does an LTK link pay a creator for?",
    "acceptedAnswer": {"@type": "Answer", "text": "LTK says cookie windows fall between 7 and 30 days, and run 7 to 14 days on average, depending on the retailer. On Instagram there is no cookie window at all, so the shopper has to buy inside the Instagram browser without leaving it."}},
   {"@type": "Question", "name": "Do I have to quit LTK to build something else?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. Nothing has to be deleted. A referral model sits beside affiliate work rather than replacing it, and most creators keep posting exactly what they were already posting."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No. Nothing has to be deleted. A referral model sits beside affiliate work rather than replacing it, and you can keep posting exactly what you were already posting."}},
   {"@type": "Question", "name": "What if my following is small?",
    "acceptedAnswer": {"@type": "Answer", "text": "A link needs volume because it pays once. A reorder does not. Thirty customers who buy their own household products every month are worth more than thirty thousand who scroll past a link."}},
   {"@type": "Question", "name": "What if I never want to sell anything again?",
