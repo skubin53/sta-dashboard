@@ -8,9 +8,9 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-crest-toothpaste-safe",
-     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
-     "cat": "Personal Care",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -40,16 +40,16 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
-     "why": "already written",
-     "perish": -2,
+     "slug": "are-plastic-bags-actually-recyclable",
+     "title": "Are Plastic Bags Actually Recyclable? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -72,8 +72,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "are-plastic-bags-actually-recyclable",
-     "title": "Are Plastic Bags Actually Recyclable? (2026)",
+     "slug": "can-you-exercise-your-way-out-of-bad-sleep",
+     "title": "Can You Exercise Your Way Out of Bad Sleep? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -104,15 +104,15 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "can-you-exercise-your-way-out-of-bad-sleep",
-     "title": "Can You Exercise Your Way Out of Bad Sleep? (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -136,8 +136,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "slug": "does-laminate-flooring-off-gas-formaldehyde",
+     "title": "Does Laminate Flooring Give Off Formaldehyde? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -168,8 +168,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "does-laminate-flooring-off-gas-formaldehyde",
-     "title": "Does Laminate Flooring Give Off Formaldehyde? (2026)",
+     "slug": "does-prevagen-actually-work",
+     "title": "Does Prevagen Actually Work? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -200,8 +200,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "does-prevagen-actually-work",
-     "title": "Does Prevagen Actually Work? (2026)",
+     "slug": "does-woolite-revive-colors",
+     "title": "Does Woolite Really Revive Your Colors? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -232,8 +232,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "does-woolite-revive-colors",
-     "title": "Does Woolite Really Revive Your Colors? (2026)",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is A Keratin Treatment Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -300,8 +300,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is A Keratin Treatment Safe? (2026)",
+     "slug": "is-angry-orange-stain-remover-safe",
+     "title": "Is Angry Orange Stain Remover Safe? What Was Growing in 1.5 Million Bottles (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -332,8 +332,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-angry-orange-stain-remover-safe",
-     "title": "Is Angry Orange Stain Remover Safe? What Was Growing in 1.5 Million Bottles (2026)",
+     "slug": "is-antibacterial-hand-soap-safe",
+     "title": "Is Antibacterial Hand Soap Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -364,8 +364,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-antibacterial-hand-soap-safe",
-     "title": "Is Antibacterial Hand Soap Safe? (2026)",
+     "slug": "is-antiperspirant-safe",
+     "title": "Is Antiperspirant Safe? What Aluminum Is Doing Under Your Arms (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -432,8 +432,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-antiperspirant-safe",
-     "title": "Is Antiperspirant Safe? What Aluminum Is Doing Under Your Arms (2026)",
+     "slug": "is-johnsons-baby-shampoo-safe",
+     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -464,8 +464,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-johnsons-baby-shampoo-safe",
-     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating In It (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -496,8 +496,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating In It (2026)",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -564,8 +564,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -596,8 +596,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -609,8 +609,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -628,8 +628,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -641,8 +641,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -677,8 +677,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -696,8 +696,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -709,8 +709,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -728,8 +728,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -741,8 +741,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-tap-water-safe-to-drink",
-     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "slug": "red-dye-40-mars-broken-promise",
+     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -760,8 +760,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "red-dye-40-mars-broken-promise",
-     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
+     "slug": "what-keeps-your-memory-sharp-after-70",
+     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -773,8 +773,8 @@
      "track": "shopper"
     },
     {
-     "slug": "what-keeps-your-memory-sharp-after-70",
-     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
+     "slug": "why-do-you-stop-feeling-thirsty",
+     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -809,25 +809,6 @@
      "track": "shopper"
     },
     {
-     "slug": "why-do-you-stop-feeling-thirsty",
-     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-20",
-   "weekday": "Tue",
-   "slots": [
-    {
      "slug": "is-your-dehumidifier-a-fire-risk",
      "title": "Is Your Dehumidifier a Fire Risk? (2026)",
      "cat": "Home air",
@@ -839,7 +820,13 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "weekday": "Tue",
+   "slots": [
     {
      "slug": "is-your-magnesium-what-the-label-says",
      "title": "Is Your Magnesium Really What the Label Says? (2026)",
@@ -852,13 +839,7 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-21",
-   "weekday": "Wed",
-   "slots": [
+    },
     {
      "slug": "why-did-clorox-pay-a-14-million-fine",
      "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
@@ -871,7 +852,13 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "weekday": "Wed",
+   "slots": [
     {
      "slug": "window-air-conditioner-mold-recall",
      "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
@@ -884,13 +871,7 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-22",
-   "weekday": "Thu",
-   "slots": [
+    },
     {
      "slug": "why-was-the-laundress-recalled-twice",
      "title": "Why Was The Laundress Recalled Twice? (2026)",
@@ -905,6 +886,11 @@
      "track": "shopper"
     }
    ]
+  },
+  {
+   "date": "2026-10-22",
+   "weekday": "Thu",
+   "slots": []
   },
   {
    "date": "2026-10-23",
@@ -1046,8 +1032,13 @@
    "slots": []
   }
  ],
- "shortfall": 32,
+ "shortfall": 33,
  "blocked": [
+  {
+   "slug": "is-crest-toothpaste-safe",
+   "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+   "why": "written, but a photo reshoot is open, so it must not publish yet"
+  },
   {
    "slug": "why-did-eggs-cost-so-much",
    "title": "Why Did Eggs Cost So Much? (2026)",
