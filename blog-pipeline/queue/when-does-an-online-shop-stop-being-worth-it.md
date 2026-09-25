@@ -1,13 +1,13 @@
 ---
 day: 17
-date: 2026-09-01
+date: 2026-09-26
 title: Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026)
 slug: when-does-an-online-shop-stop-being-worth-it
 keyword: etsy ebay seller fees 2026 when to quit
 category: Builders
-cover: [IMAGE: shopworth-hero-v1]
+cover: https://scan.ismyhometoxic.com/blog-images/whendoesano-hero-v1.webp
 meta_description: Etsy's own filing says it keeps 25.9 cents of every dollar sold there. Here is what a $30 sale really leaves you, and when a shop stops paying.
-status: needs photos
+status: ready
 vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-Target-Segments, MLM-Vetting-Filter, North-Star]
 ---
 
@@ -47,12 +47,12 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 1, 2026<br><span style="font-size:.92em;">Published September 1, 2026 &middot; Last updated September 1, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 26, 2026<br><span style="font-size:.92em;">Published September 26, 2026 &middot; Last updated September 26, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You are packing more orders than last year for the same money. Your shop is not the problem.</p>
-<p><strong><a href="https://investors.etsy.com/sec-filings/all-sec-filings/content/0001370637-26-000079/q226shareholderletter.htm">Etsy told its shareholders it kept 25.9 cents of every dollar sold there in the second quarter of 2026.</a></strong> A year before, it kept 24.6 cents.</p>
+<p><strong><a href="https://investors.etsy.com/sec-filings/all-sec-filings/content/0001370637-26-000079/q226shareholderletter.htm">Etsy told its shareholders it kept 25.9 cents of every dollar sold there in the second quarter of 2026.</a></strong> A year before, it kept 25.4 cents.</p>
 <p>A shop stops being worth it on the day the fee costs more than the traffic. And you still cannot reach the buyer again.</p>
 </div>
 
@@ -99,7 +99,9 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>You keep $22.20. Etsy took 26 cents of your dollar, and your thread and postage are not paid for yet.</p>
 
-[IMAGE: shopworth-villain-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whendoesano-villain-v1.webp" alt="The end of a craft bench late at night under one clamped work lamp, taped parcels stacked in a crooked column, the stool pushed back and the finished mugs still waiting on the shelf" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <p>eBay is one fee instead of three. <a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822">In most categories it is 13.6% of the sale, plus $0.40 on any order over $10.</a> On $30 that is $4.48, and you keep $25.52.</p>
 
@@ -111,13 +113,13 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p class="quick-answer">Quick answer: the headline rates barely moved. The ads did.</p>
 
-<p>Etsy raised its sale fee once, from 5% to 6.5%, on April 11, 2022. <a href="https://www.npr.org/2022/04/11/1091123928/etsy-strike-2022">Thousands of shops shut for a week over it.</a> It went in anyway.</p>
+<p>Etsy last raised its sale fee on April 11, 2022, from 5% to 6.5%. <a href="https://www.npr.org/2022/04/11/1091123928/etsy-strike-2022">Thousands of shops shut for a week over it.</a> It went in anyway.</p>
 
 <p>On a $30 sale that raise cost 45 cents. So that is not what you are feeling.</p>
 
 <p>What you are feeling is the take rate. That is Etsy's own word for its cut of every dollar sold there.</p>
 
-<p>In its letter to shareholders, Etsy put that at 25.9% for the second quarter of 2026. The year before it was 24.6%.</p>
+<p>In its letter to shareholders, Etsy put that at 25.9% for the second quarter of 2026. The year before it was 25.4%.</p>
 
 <p>Etsy names the cause in the same breath. The rise was "primarily driven by Etsy Ads", and Offsite Ads added more.</p>
 
@@ -129,7 +131,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p class="quick-answer">Quick answer: buyers. Millions of them, and you never had to go find one.</p>
 
-<p>Etsy told shareholders it had about 87 million active buyers last year. You did not build that.</p>
+<p>Etsy told shareholders it had about 87 million active buyers in the twelve months to June. You did not build that.</p>
 
 <p>eBay hands you 250 listings a month for nothing, then charges $0.35 each after that.</p>
 
@@ -139,7 +141,9 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>That traffic is worth paying for. The question is what it is worth to you.</p>
 
-[IMAGE: shopworth-turning-point-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whendoesano-turning-point-v1.webp" alt="A woman in a mustard jumper and canvas apron setting a glazed mug down on her workbench and turning toward the daylight in the window, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <table class="sta-table">
 <tr><th>One $30 sale</th><th>Etsy</th><th>eBay</th></tr>
@@ -169,7 +173,9 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>And so you can sell there nine years and still open every Monday at zero. That is not a fee problem. It is an ownership problem, and no fee cut fixes it.</p>
 
-[IMAGE: shopworth-belonging-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whendoesano-belonging-v1.webp" alt="Two women in the front seats of a parked car, half turned to each other mid-conversation, sun coming through the windscreen" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <p>Now the part that cuts against me, because you deserve it straight.</p>
 
@@ -187,7 +193,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Open your last ten orders. Total the fees. Divide by the sales. Write that number where you pack.</p>
 
-<p>Most sellers guess low, because the fees land in three pieces on three days. On paper it stops being a feeling in your stomach.</p>
+<p>It is easy to guess low, because the fees come off in pieces. On paper it stops being a feeling in your stomach.</p>
 
 <h3>Find the buyers you already have</h3>
 
@@ -203,7 +209,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Take those five to every offer put in front of you. If somebody dodges one, that is your answer.</p>
 
-<p>Here are mine, since you should ask me the same five. Switch to America is a private membership store. We are the maker, so no middleman and no markup. No monthly requirement.</p>
+<p>Ask me the same five, and I will answer every one on the call. Switch to America is a private membership store. We are the maker, so no middleman and no markup. No monthly requirement.</p>
 
 <p>You pay what a brand new customer pays. Anybody who discounts you on day one is buying you, not building with you.</p>
 
@@ -243,7 +249,7 @@ our finances.</p>
 <li><a href="https://help.etsy.com/hc/en-us/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy">Etsy's own fee and tax page</a>. The $0.20 listing fee, the four month expiry, the 6.5% sale fee and the 15% or 12% ad fee.</li>
 <li><a href="https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy">Etsy's payment processing table</a>. United States, 3% plus $0.25, on top of the 6.5%.</li>
 <li><a href="https://help.etsy.com/hc/en-us/articles/360000338367-How-Etsy-s-Offsite-Ads-Work">Etsy on how Offsite Ads work</a>. The $10,000 threshold, the lifetime line and the $100 cap, quoted word for word.</li>
-<li><a href="https://investors.etsy.com/sec-filings/all-sec-filings/content/0001370637-26-000079/q226shareholderletter.htm">Etsy's second quarter 2026 shareholder letter, filed 5 August 2026</a>. Take rate 25.9%, up from 24.6%, and about 87 million active buyers.</li>
+<li><a href="https://investors.etsy.com/sec-filings/all-sec-filings/content/0001370637-26-000079/q226shareholderletter.htm">Etsy's second quarter 2026 shareholder letter, filed 5 August 2026</a>. Take rate 25.9%, up from 25.4% for the Etsy marketplace alone, and about 87 million active buyers.</li>
 <li><a href="https://www.ebay.com/help/selling/fees-credits-invoices/selling-fees?id=4822">eBay's selling fees page</a>. 13.6%, the $0.30 and $0.40 order fees, sales tax inside the fee base, and the charge for sharing contact details.</li>
 <li><a href="https://www.ebay.com/sellercenter/resources/seller-updates/2025-january/final-value-fee">eBay's notice of the 14 February 2025 fee change</a>. Most categories, up to 0.35 percentage points.</li>
 <li><a href="https://www.npr.org/2022/04/11/1091123928/etsy-strike-2022">NPR, 11 April 2022, on the Etsy seller strike</a>. The receipt for the 5% to 6.5% raise.</li>
@@ -256,10 +262,10 @@ our finances.</p>
 <p>Only if your shop has never made $10,000 in any 365 day stretch. Etsy's page says that once you cross it, you are in for the lifetime of your shop.</p>
 
 <p><strong>Is eBay cheaper than Etsy?</strong></p>
-<p>On a plain $30 sale, yes, by about a dollar. On a sale an Etsy ad brought in, by three. But eBay charges 13.6% on sales tax too.</p>
+<p>Not on a plain $30 sale. Etsy leaves you about a dollar more there. On a sale an Etsy ad brought in, eBay leaves you about three more. And eBay charges 13.6% on sales tax too.</p>
 
 <p><strong>Should I raise my prices to cover it?</strong></p>
-<p>You can, and most sellers already have. Both fees are a percentage, so a higher price hands them more too.</p>
+<p>You can. Both fees are a percentage, so a higher price hands them more too.</p>
 
 <p><strong>Do I have to close my shop to try something else?</strong></p>
 <p>No. Nothing has to be deleted or announced. This sits beside that work, not on top of it.</p>
@@ -267,7 +273,9 @@ our finances.</p>
 <p><strong>What if I only have thirty regular buyers?</strong></p>
 <p>You are further ahead than you think. A listing needs a crowd, because it pays once. Thirty buyers who reorder do not.</p>
 
-[IMAGE: shopworth-freedom-v1]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whendoesano-freedom-v1.webp" alt="The same woman at her sunlit craft bench, laughing, both hands in wet clay shaping a bowl, with bright glaze tests drying beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <p>Here is what I want for you, whether or not we ever speak.</p>
 
@@ -299,9 +307,9 @@ our finances.</p>
    "@type": "Article",
    "headline": "Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026)",
    "description": "Etsy's own filing says it keeps 25.9 cents of every dollar sold there. Here is what a $30 sale really leaves you, and when a shop stops paying.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/shopworth-hero-v1.webp",
-   "datePublished": "2026-09-01",
-   "dateModified": "2026-09-01",
+   "image": "https://scan.ismyhometoxic.com/blog-images/whendoesano-hero-v1.webp",
+   "datePublished": "2026-09-26",
+   "dateModified": "2026-09-26",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/when-does-an-online-shop-stop-being-worth-it"},
    "author": {"@id": "https://theshannonnicole.com/post/when-does-an-online-shop-stop-being-worth-it#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
@@ -340,13 +348,13 @@ our finances.</p>
   {"@type": "Question", "name": "Can I opt out of Etsy Offsite Ads?",
    "acceptedAnswer": {"@type": "Answer", "text": "Only if the shop has never made $10,000 USD in any consecutive 365 day period. Etsy's own help page states that once a shop crosses that threshold it is automatically enrolled in Offsite Ads and required to participate for the lifetime of the shop."}},
   {"@type": "Question", "name": "Is eBay cheaper than Etsy for a $30 sale?",
-   "acceptedAnswer": {"@type": "Answer", "text": "On a plain $30 sale eBay is cheaper by about a dollar: 13.6% plus a $0.40 order fee, against Etsy's 6.5% transaction fee, 3% plus $0.25 processing and a $0.20 listing fee. On a sale attributed to an Etsy Offsite Ad the gap widens to about three dollars. eBay charges its fee on sales tax as well, so the gap narrows on larger orders."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Not on a plain $30 sale. Etsy's 6.5% transaction fee, 3% plus $0.25 processing and $0.20 listing fee come to $3.30. eBay's 13.6% plus a $0.40 order fee comes to $4.48. So Etsy leaves the seller about a dollar more. On a sale attributed to an Etsy Offsite Ad, the 15% ad fee brings Etsy to $7.80, and eBay leaves the seller about three dollars more. eBay also charges its 13.6% on the sales tax the buyer pays."}},
   {"@type": "Question", "name": "Should I raise prices to cover marketplace fees?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Most sellers already have. Both marketplaces charge a percentage of the total order, so a higher price also hands the platform a larger fee. Raising the price recovers only part of what the fee takes."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "You can. Both marketplaces charge a percentage of the total order, so a higher price also hands the platform a larger fee."}},
   {"@type": "Question", "name": "Do I have to close my shop to try something else?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. A referral model sits beside an existing shop rather than replacing it. Nothing has to be deleted, closed or announced, and most sellers keep listing exactly what they were listing."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No. Nothing has to be deleted or announced. This sits beside that work, not on top of it."}},
   {"@type": "Question", "name": "What if I only have thirty regular buyers?",
-   "acceptedAnswer": {"@type": "Answer", "text": "A marketplace listing needs volume because it pays once. Thirty buyers who reorder on their own do not. A small group of repeat customers is worth more than a large audience that never returns."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "You are further ahead than you think. A listing needs a crowd, because it pays once. Thirty buyers who reorder do not."}}
  ]
 }
 </script>
