@@ -8,7 +8,7 @@ category: Personal Care
 meta_description: Crest carried plastic beads until 2016. A court filing dated July 2026 says the gum line still holds a harsh detergent. Here are the receipts.
 cover: https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v1.webp
 vault_checked: [Switch-to-America, AEO-Content-Strategist, North-Star]
-status: ready
+status: blocked-images
 ---
 
 <style>
