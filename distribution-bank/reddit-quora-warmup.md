@@ -28,3 +28,17 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   Two things keep it in perspective. It is not on the level of a gas stove or a smoking pan, and in a well-aired room the particles settle back down fairly quickly. In a small closed room with the candle going for hours, they climb a lot higher and hang around a lot longer.
 
   So it is not a reason to panic, it is a reason to be a little deliberate. Crack a window, do not burn them for hours in a shut bedroom, and keep the wick trimmed short so the flame does not smoke. If you love the ambiance, an unscented candle plus a pot of simmered citrus peel or a little vanilla gets you the cozy without spraying a mystery fragrance mix into the air you breathe all evening.
+
+- **2026-09-25 3:39pm (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Are-there-any-good-plug-in-air-fresheners-that-arent-bad-for-your-health . Their question: "Are there any good plug-in air fresheners that aren't bad for your health?" On-avatar (women 40-60 running the house). Stat verified: UW News 2008, https://www.washington.edu/news/2008/07/24/toxic-chemicals-found-in-common-laundry-products-air-fresheners/ (for our records only, the comment stays LINK-FREE). No brand named. LINK-FREE draft answer:
+
+  The design is the problem more than the brand. A plug-in works by gently heating a scented oil so it evaporates into the room all day and all night, which makes it the one air freshener you never actually switch off.
+
+  When a University of Washington researcher tested a common plug-in back in 2008, it gave off more than 20 different volatile compounds, and seven of them are regulated as toxic or hazardous under federal law. The label listed none of them. The safety sheet just said "mixture of perfume oils." That is the real catch: the word fragrance lets the maker keep the recipe private, so you cannot read the box and pick a clean one.
+
+  If you want a nice-smelling house without the round-the-clock dose, these work better:
+  - Find the source first. The trash can, the drain, a damp towel, the litter box. Most rooms that seem to need a plug-in are covering something.
+  - Open a window for ten minutes a day, even in winter. Fresh air dilutes everything.
+  - Leave an open box or bowl of baking soda in the closet or bathroom. It soaks up odor instead of adding to it.
+  - If you want scent, make it something you turn on and off yourself, like a cinnamon stick and a few cloves in a small pot of water for an hour.
+
+  On and off is the whole difference. Something you enjoy for an hour is far easier on the air you breathe than something plugged in around the clock.
