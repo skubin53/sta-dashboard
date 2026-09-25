@@ -8,7 +8,7 @@ category: Personal Care
 meta_description: Crest carried plastic beads until 2016. A court filing dated July 2026 says the gum line still holds a harsh detergent. Here are the receipts.
 cover: https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v1.webp
 vault_checked: [Switch-to-America, AEO-Content-Strategist, North-Star]
-status: blocked-images
+status: ready
 ---
 
 <style>
@@ -129,6 +129,18 @@ status: blocked-images
 <p>Sherrie Oliver says her teeth and gums hurt after using one of them.</p>
 
 <p>Procter and Gamble has not answered in court. Nothing is proven yet.</p>
+
+<h3 id="what-is-sls">Sodium lauryl sulfate, the foaming detergent</h3>
+
+<p>Sodium lauryl sulfate, SLS for short, does not clean your teeth. It makes the paste foam so brushing feels like it is working. That is the whole job.</p>
+
+<p>It is also a known irritant. It is so dependable at irritating skin that dermatologists use it as their standard control in patch testing, the reaction they measure every other one against. <a href="https://pubmed.ncbi.nlm.nih.gov/41429426/">A 2026 review in the journal Contact Dermatitis</a> describes it as exactly that, the benchmark they reach for when they want to irritate skin on purpose.</p>
+
+<p>Now hold that next to what these tubes promise. The Crest Pro-Health gum line is sold to calm and heal irritated gums. The argument in the suit is one plain sentence: you cannot soothe a gum with a known irritant and sell it as the gum treatment.</p>
+
+<p>There are toothpastes made without it. That is not a fringe idea, it is a formulation choice, and the makers who leave it out will tell you why. The ones who keep it rarely bring it up at all.</p>
+
+<p>So the foam in your mouth is doing less than you think, and the tube that promises the most about your gums is the one now being asked about in a courtroom.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-turning-point-v1.webp" alt="A dad crouched at the bathroom sink squeezing Crest onto a small child's toothbrush, warm hallway light behind them" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
