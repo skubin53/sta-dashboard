@@ -115,3 +115,38 @@ Long-tail Pinterest title/keyword ideas for the Clean Beauty & Safe Personal Car
 - clean beauty swaps for perimenopause
 - fragrance-free deodorant for sensitive skin
 - safer self care products for women 40 and over
+
+## PUBLISHED 2026-09-24 (7pm run) - 2 pins live (sunscreen catch-up + clorox)
+Cleared the sunscreen pin deferred from the noon run, plus the next in rotation. 12 STA pins live now. Chrome was steady this run (file_upload worked first try, unlike noon).
+
+### Sunscreen  [pinx_sunscreen.png | photo: issunscreen-freedom-v1.webp]  -> LIVE
+- Title: Is your sunscreen in your blood?
+- Board: Clean Beauty & Safe Personal Care (CREATED this run, public)
+- Link: https://join.switchtoamerica.com/post/is-sunscreen-safe
+- Description: Is your sunscreen in your blood? FDA studies found that several common chemical sunscreen ingredients absorb through the skin into the bloodstream after normal use. That is not proof of harm, but it is a fair reason many women 40 and over are moving to mineral sunscreen. Here is what the testing actually showed, and the safer American made swap for the whole family. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+### Clorox / bleach  [pinx_clorox.png | photo: clorox-freedom-v1.webp]  -> LIVE
+- Title: What is that bleach smell doing to you?
+- Board: Non-Toxic Cleaning Products (existing)
+- Link: https://join.switchtoamerica.com/post/is-clorox-spray-toxic
+- Description: What is that bleach smell doing to you? That sharp clean smell in a closed bathroom is chlorine coming off the bleach, and breathed in a small space it can tighten your chest and sting your eyes and lungs, especially if you have asthma. Here is what bleach fumes actually do, why you never mix it with other cleaners, and the fragrance-free American made way to disinfect and whiten without the harsh cloud. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+BOARDS now: Non-Toxic Cleaning Products, Non-Toxic Laundry, Non-Toxic Cookware & Kitchen Swaps, Non-Toxic Air & Fragrance-Free Home, Clean Beauty & Safe Personal Care. NEXT not-live in rotation: are-cheap-aluminum-pans-safe (Cookware) + are-plastic-cutting-boards-safe (Cookware), then Day 7+ topics.
+
+## GROWTH TASK 2026-09-24 (7pm) (a) keyword research - non-toxic cleaning (feeds the Cleaning board + clorox/lysol/pinesol/dawn/fabuloso pin titles)
+Long-tail Pinterest title/keyword ideas (women 40-60; our own swap, never a competitor brand):
+- non-toxic cleaning products that actually work
+- is bleach safe to use at home
+- what breathing bleach fumes does to your lungs
+- fragrance-free cleaning for sensitive lungs
+- safest way to disinfect without bleach
+- non-toxic bathroom cleaner that works
+- how to clean the house without harsh chemicals
+- American made cleaning products
+- what household cleaners you should never mix
+- non-toxic cleaning routine for the whole house
+- chemical-free cleaning for asthma and allergies
+- affordable non-toxic cleaning swaps
+- safer disinfectant spray for the kitchen
+- clean home without the chemical smell
+- non-toxic floor cleaner for homes with kids
