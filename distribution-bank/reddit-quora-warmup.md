@@ -58,3 +58,16 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   One thing to skip: spraying something scented to cover it. Then you are breathing the foam smell and a fragrance on top of it.
 
   Next time you shop, look for foam that carries a low-emissions certification, or natural latex or wool, and it is an easier first week.
+
+- **2026-09-26 1:39am (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Why-do-I-get-a-headache-when-cleaning-my-room . Their question: "Why do I get a headache when cleaning my room?" On-avatar (women 40-60 who do the cleaning). No numbers, no brand, no medical claim. LINK-FREE draft answer:
+
+  It is usually the products, not the cleaning. Most sprays, wipes and polishes let off a mix of vapors while you use them, and the scented ones add a perfume blend on top. In a small room with the door shut, you are breathing all of it at close range for half an hour. For a lot of people that is exactly when the headache starts.
+
+  A few things to try next time:
+  - Crack a window or run a fan before you start, not once your head already hurts.
+  - Spray onto the cloth instead of into the air. Less of it ends up floating around your face.
+  - Switch to fragrance-free versions of whatever you use most. Scent is the part most people react to, and it does nothing for how clean the room gets.
+  - For everyday dust and grime, warm water with a little plain soap and a microfiber cloth handles most of it. Save the strong stuff for the jobs that really need it.
+  - Take a break outside halfway through if it is a big clean.
+
+  If you get a headache every single time, even with the window open, that is worth mentioning to your doctor. But for most people, fresh air and dropping the scented products makes a real difference within a week or two.
