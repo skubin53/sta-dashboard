@@ -161,3 +161,27 @@ Calendar Day 6/7 rotation. Published the next not-live pin (aluminum pans). The 
 Every copy-bank description still carried 3 hashtags from before the no-hashtag rule; removed them from all descriptions so future pins pull clean, rule-compliant copy (keyword in first 100 chars, 300-500 chars, no hashtags, scan link at end). Browser-free, since the browser was throttling. Rotated off keyword-research (done the last 2 runs).
 
 NEXT run: publish cutting-boards (deferred) + next in rotation (Day 7 hexclad), and confirm aluminum shows on the Created feed.
+
+## PUBLISHED 2026-09-25 (7pm run) - 2 pins live (cutting-board catch-up + hexclad)
+Aluminum pans (noon) CONFIRMED on the Created feed (first tile). Builder hydrated via the profile Create -> Pin path (direct /pin-creation-tool/ loaded blank cold again). Both pins: "Your Pin has been published!" toast + "Publish Complete" in drafts + form reset. 15 STA pins live now (was 13). Cookware board shows 4 pins.
+
+PHOTO SWAPS before publishing (pin rules): the noon-composed cutting-board pin used areplasticc-freedom (a woman with a SMALL CHILD, off the women 40-60 / no-child rule) and the first hexclad compose (hexclad-freedom) had NO person in frame. Both recomposed on the -belonging photos and re-read before upload.
+
+### Cutting boards  [pinx_cuttingboard.png | photo: areplasticc-belonging-v1.webp]  -> LIVE
+- Title: What comes off your plastic cutting board?
+- Board: Non-Toxic Cookware & Kitchen Swaps
+- Link: https://join.switchtoamerica.com/post/are-plastic-cutting-boards-safe
+- Description: What comes off your plastic cutting board? Every time your knife cuts into a plastic board, tiny plastic bits can scrape off into the food you are chopping. Researchers have measured it, and it adds up over a year of home cooking. See what they found, how to tell when a board is worn out, and the simple swap to wood or bamboo, plus affordable American made kitchen swaps. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+### HexClad  [pinx_hexclad.png | photo: hexclad-belonging-v1.webp]  -> LIVE
+- Title: Is HexClad really non-toxic? What the lawsuit said
+- Board: Non-Toxic Cookware & Kitchen Swaps
+- Link: https://join.switchtoamerica.com/post/is-hexclad-non-toxic
+- Description: Is HexClad really non-toxic? HexClad paid $2.5 million to settle a class action claiming its non-toxic label was false advertising, and agreed to stop calling pans with a PTFE coating non-toxic or PFAS free. The pan is fine at a gentle simmer. The trouble starts when it gets hot and empty. See what the lawsuit said, what PTFE is, and the swap to cast iron or stainless steel, plus affordable American made kitchen swaps. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+  (facts taken from the live post's own quick answer: $2.5M settlement, Cliburn v. One Source to Market, LA County Superior Court 23STCV28390)
+
+## GROWTH TASK 2026-09-25 (7pm) (c) board description refresh - Non-Toxic Cookware & Kitchen Swaps
+Board had NO description. Set (verified persisted after reload): "Non-toxic cookware and safer kitchen swaps for the woman who cooks for the people she loves. What is really in nonstick pans, cheap aluminum pots and plastic cutting boards, and the simple swaps to cast iron, stainless steel and wood. American made kitchen swaps that cost less than you think, plus a free room-by-room home scan." Keywords: non-toxic cookware, safer kitchen swaps, nonstick pans, cast iron, stainless steel. Rotation next: (c) another board (Cleaning or Air), or (f) alt text.
+
+NEXT run (Day 8): can-you-microwave-ziploc-bags (Cookware) + are-scentsy-wax-melts-toxic (Air). Check each composed photo has a WOMAN in frame and NO small child (the cutting-board freedom photo had one).
+
