@@ -330,7 +330,6 @@
 @media (max-width:600px){.stw .stw-gap{height:44px}}
 
 /* ===== Look Us Up: the concerns section (text-thread design, 2026-09-26) ===== */
-/* ===== Look Us Up: the concerns section (a kind conversation) ===== */
 .stw .stw-cn{position:relative;isolation:isolate;background:linear-gradient(180deg,#FFF5E4 0%,#FFFAF2 55%,#FFFFFF 100%)}
 .stw .stw-cn::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(520px 320px at 92% 8%,rgba(255,182,39,.22),rgba(255,182,39,0) 70%)}
 .stw .stw-cn .stw-h2{margin-bottom:28px}
@@ -429,6 +428,34 @@
   .stw .stw-cn-chips{margin-right:0}
 }
 
+/* deeper thread (2026-09-26 v3): follow-up questions, check lists, a big number */
+.stw .stw-cn-b a{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:3px}
+.stw .stw-cn-fu{margin-top:22px}
+.stw .stw-cn-q2{font-size:18px;padding:11px 16px 12px}
+.stw .stw-cn-yes{list-style:none;display:flex;flex-direction:column;gap:8px;padding:13px 18px 13px 14px}
+.stw .stw-cn-yes li{display:flex;align-items:flex-start;gap:10px;font-size:18px;line-height:1.3}
+.stw .stw-cn-yes svg{flex:none;width:22px;height:22px;margin-top:0;padding:4px;border-radius:50%;background:var(--green);fill:none;stroke:#fff;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+.stw .stw-cn-stat{display:flex;align-items:center;gap:14px;padding:12px 20px 12px 16px}
+.stw .stw-cn-stat b{font:800 38px/1 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.stw .stw-cn-stat span{font:700 15px/1.25 "Source Sans 3",Arial,sans-serif;color:var(--slate);max-width:210px;flex:1 1 130px}
+.stw .stw-cn-stat{flex-wrap:wrap;row-gap:4px}
+/* the thread is long now: her photo keeps its size and rides along beside the talk */
+@media (min-width:861px){
+  .stw{overflow:clip}
+  .stw .stw-cn-card{overflow:clip;background:linear-gradient(90deg,#FBF4E8 0,#FBF4E8 320px,#fff 320px)}
+  .stw .stw-cn-me{align-self:start;position:sticky;top:18px;height:600px;min-height:0;border-radius:0 0 26px 0}
+}
+@media (min-width:861px) and (max-width:980px){
+  .stw .stw-cn-card{background:linear-gradient(90deg,#FBF4E8 0,#FBF4E8 290px,#fff 290px)}
+}
+@media (max-width:520px){
+  .stw .stw-cn-q2{font-size:17px;padding:10px 14px 11px}
+  .stw .stw-cn-yes li{font-size:17px}
+  .stw .stw-cn-stat b{font-size:32px}
+  .stw .stw-cn-stat span{font-size:14px}
+  .stw .stw-cn-fu{margin-top:18px}
+}
+
 /* ===== Look Us Up: See it for yourself, with pictures ===== */
 .stw .stw-px .stw-eyebrow{margin-bottom:6px}
 .stw .stw-px-lead{position:relative;margin:4px 0 0;border-radius:22px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(0,0,0,.7)}
@@ -516,31 +543,34 @@
             <h3 class="stw-cn-q">It is a brand I have never heard of.</h3>
           </div>
         </div>
-
         <div class="stw-cn-row stw-cn-her">
           <div class="stw-cn-bs">
-            <p class="stw-cn-b stw-cn-lead">That is on purpose.</p>
-            <ul class="stw-cn-b stw-cn-nos">
-              <li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 11v9h15v-9"/><path d="M3 8 5 4h14l2 4"/><path d="M3 8a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M10 20v-5h4v5"/></svg></span>It is not at Target.</li>
-              <li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="m3.5 7.5 8.5 4.5 8.5-4.5"/><path d="M12 12v9"/><path d="m7.8 5.3 8.4 4.5"/></svg></span>It is not on Amazon.</li>
-              <li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5h18"/><path d="M3 20h18"/><path d="M4.5 12.5V20"/><path d="M19.5 12.5V20"/><path d="M6.5 12.5V9h3v3.5"/><path d="M11 12.5V6.5h2.5v6"/><path d="M15.5 12.5V9.5h2.5v3"/></svg></span>No store shelf to pay for.</li>
-              <li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.8"/><path d="M4.8 20.5a7.2 7.2 0 0 1 14.4 0"/></svg></span>No middleman taking a cut.</li>
-            </ul>
-            <p class="stw-cn-b">So the money goes into what is in the bottle.</p>
-            <figure class="stw-cn-pic">
-              <img src="https://scan.ismyhometoxic.com/whatisnew/img/s1-skincare.webp" width="400" height="400" loading="lazy" alt="Sei Bella skin care">
-              <img src="https://scan.ismyhometoxic.com/whatisnew/img/s1-peak-women.webp" width="400" height="400" loading="lazy" alt="Peak Performance for women">
-              <img src="https://scan.ismyhometoxic.com/whatisnew/img/s1-collagen-blue.webp" width="400" height="400" loading="lazy" alt="Collagen Boost">
-            </figure>
-            <p class="stw-cn-b stw-cn-last">That is also how they can give you <b>over $100 in free product</b> in your first five months.</p>
+            <p class="stw-cn-b stw-cn-lead">Never heard of Melaleuca? <b>That is on purpose.</b></p>
+            <p class="stw-cn-b stw-cn-stat"><b>$10.2 billion</b><span>Spent on ads in one year by the company that makes Tide.</span></p>
+            <p class="stw-cn-b">Ads are why you know the name Tide.</p>
+            <p class="stw-cn-b">Melaleuca grows by <b>word of mouth.</b> You heard about Melaleuca from me.</p>
+            <ul class="stw-cn-b stw-cn-nos"><li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 11v9h15v-9"/><path d="M3 8 5 4h14l2 4"/><path d="M3 8a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M10 20v-5h4v5"/></svg></span>Not at Target.</li><li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12.5h18"/><path d="M3 20h18"/><path d="M4.5 12.5V20"/><path d="M19.5 12.5V20"/><path d="M6.5 12.5V9h3v3.5"/><path d="M11 12.5V6.5h2.5v6"/><path d="M15.5 12.5V9.5h2.5v3"/></svg></span>No store shelf to pay for.</li><li><span class="stw-cn-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.8"/><path d="M4.8 20.5a7.2 7.2 0 0 1 14.4 0"/></svg></span>No middleman taking a cut.</li></ul>
+            <p class="stw-cn-b">It comes straight from Melaleuca's factory to your door.</p>
+            <p class="stw-cn-b">Big brands spend on ads. Melaleuca says it spends on <b>what is in the bottle</b> instead.</p>
+            <figure class="stw-cn-pic"><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-melapower.webp" width="400" height="400" loading="lazy" alt=""><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-lemonbrite.webp" width="400" height="400" loading="lazy" alt=""><img src="https://scan.ismyhometoxic.com/whatisnew/img/s1-skincare.webp" width="400" height="400" loading="lazy" alt=""></figure>
+            <p class="stw-cn-b">Think Melaleuca costs more? The two carts below <a href="#stw-math">show the math</a>.</p>
           </div>
           <span class="stw-cn-av"><img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" width="853" height="1280" loading="lazy" alt=""></span>
         </div>
-        <ul class="stw-cn-chips" aria-label="In short">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Not on Amazon, on purpose</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>No middleman</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>$100+ free product</li>
-        </ul>
+        <div class="stw-cn-row stw-cn-you stw-cn-fu">
+          <div class="stw-cn-bs">
+            <p class="stw-cn-q stw-cn-q2">Okay. But is Melaleuca legit?</p>
+          </div>
+        </div>
+        <div class="stw-cn-row stw-cn-her">
+          <div class="stw-cn-bs">
+            <p class="stw-cn-b stw-cn-stat"><b>1985</b><span>The year Melaleuca opened. Over 40 years ago.</span></p>
+            <p class="stw-cn-b">The Better Business Bureau gives Melaleuca an <b>A+.</b></p>
+            <p class="stw-cn-b stw-cn-last">Look us up. <b>I want you to.</b></p>
+          </div>
+          <span class="stw-cn-av"><img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" width="853" height="1280" loading="lazy" alt=""></span>
+        </div>
+        <ul class="stw-cn-chips" aria-label="In short"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Not in stores, on purpose</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Open since 1985</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>BBB A+</li></ul>
 
         <div class="stw-cn-row stw-cn-you stw-cn-next">
           <div class="stw-cn-bs">
@@ -548,22 +578,50 @@
             <h3 class="stw-cn-q">Trusting a company outside the Big Box is scary.</h3>
           </div>
         </div>
-
         <div class="stw-cn-row stw-cn-her">
           <div class="stw-cn-bs">
-            <p class="stw-cn-b">It should feel big. Your family touches these things every day.</p>
-            <p class="stw-cn-b stw-cn-lead">So do not trust me. Try it.</p>
-            <p class="stw-cn-b">If you do not love it, you get <b>100% of your money back.</b></p>
-            <p class="stw-cn-b">You do not even have to send the used product back.</p>
-            <p class="stw-cn-b stw-cn-last">The only thing you risk is finding out <b>I was right.</b></p>
+            <p class="stw-cn-b stw-cn-lead">Being careful is smart.</p>
+            <p class="stw-cn-b">You're not being asked to leap. You're being invited to take a step.</p>
+            <p class="stw-cn-b">Start with a box of everyday things. <b>Try it.</b></p>
+            <p class="stw-cn-b">My family shops at Melaleuca. My sisters, my brother, my mom, my daughter, my niece, my closest friends.</p>
+            <p class="stw-cn-b">I wouldn't put my name on something I didn't trust with <b>the people I love most.</b></p>
           </div>
           <span class="stw-cn-av"><img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" width="853" height="1280" loading="lazy" alt=""></span>
         </div>
-        <ul class="stw-cn-chips" aria-label="In short">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Try it</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>100% money back</li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Keep the used product</li>
-        </ul>
+        <div class="stw-cn-row stw-cn-you stw-cn-fu">
+          <div class="stw-cn-bs">
+            <p class="stw-cn-q stw-cn-q2">Will I have to sell stuff to my friends?</p>
+          </div>
+        </div>
+        <div class="stw-cn-row stw-cn-her">
+          <div class="stw-cn-bs">
+            <p class="stw-cn-b stw-cn-lead">No. You never sell anything.</p>
+            <p class="stw-cn-b">Melaleuca does not even let shoppers sell the products.</p>
+            <p class="stw-cn-b">You never have to sign anyone up.</p>
+            <p class="stw-cn-b stw-cn-last">You are just bringing your shopping over here. <b>Nothing else changes.</b></p>
+          </div>
+          <span class="stw-cn-av"><img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" width="853" height="1280" loading="lazy" alt=""></span>
+        </div>
+        <ul class="stw-cn-chips" aria-label="In short"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Try one box</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>You never sell</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Never sign anyone up</li></ul>
+
+        <div class="stw-cn-row stw-cn-you stw-cn-next">
+          <div class="stw-cn-bs">
+            <span class="stw-cn-who">You</span>
+            <h3 class="stw-cn-q">What is the catch?</h3>
+          </div>
+        </div>
+        <div class="stw-cn-row stw-cn-her">
+          <div class="stw-cn-bs">
+            <p class="stw-cn-b">Some reviews say people felt stuck. That is a fair worry.</p>
+            <p class="stw-cn-b stw-cn-lead">You are not locked into anything.</p>
+            <p class="stw-cn-b">Need a break? We can pause your account.</p>
+            <p class="stw-cn-b">Want to stop? You can cancel any time, for any reason.</p>
+            <p class="stw-cn-b">Any problem at all? Please text me.</p>
+            <p class="stw-cn-b stw-cn-last">We'll call customer service together and <b>we'll make it right.</b></p>
+          </div>
+          <span class="stw-cn-av"><img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" width="853" height="1280" loading="lazy" alt=""></span>
+        </div>
+        <ul class="stw-cn-chips" aria-label="In short"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Not locked in</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Cancel any time</li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Text Shannon</li></ul>
 
       </div>
     </div>
@@ -579,7 +637,7 @@
 
     <figure class="stw-px-lead">
       <img src="https://scan.ismyhometoxic.com/lookusup/img/relief-lead-truck.webp" width="800" height="500" alt="Volunteers in Melaleuca shirts unloading boxes of supplies from the back of a truck after Hurricane Helene">
-      <figcaption><span class="stw-px-lede">When a disaster hits a town, they show up.</span></figcaption>
+      <figcaption><span class="stw-px-lede">When a disaster hits a town, Melaleuca shows up.</span></figcaption>
     </figure>
     <p class="stw-px-body">Floods. Hurricanes. They send trucks, fast. Generators. Non-toxic cleaning supplies. Wellness boxes. Thousands of pounds of Riverbend Ranch beef. Right to the families, and to the first responders. It is all public. It is not an ad.</p>
 
