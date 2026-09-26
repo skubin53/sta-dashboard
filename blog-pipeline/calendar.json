@@ -8,9 +8,9 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "are-plastic-bags-actually-recyclable",
+     "title": "Are Plastic Bags Actually Recyclable? What the Bag Makers Could Not Prove (2026)",
+     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -40,16 +40,48 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "are-plastic-bags-actually-recyclable",
-     "title": "Are Plastic Bags Actually Recyclable? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "can-you-exercise-your-way-out-of-bad-sleep",
+     "title": "Can You Exercise Your Way Out of Bad Sleep? What a Study of 323,910 Adults Found (2026)",
+     "cat": "Health",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-a-franchise-worth-it-at-50",
+     "title": "Club Pilates Buyers Were Told Six Months. Is a Franchise Worth It at 50? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-27",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "does-laminate-flooring-off-gas-formaldehyde",
+     "title": "Does Laminate Flooring Give Off Formaldehyde? What Lumber Liquidators Knew (2026)",
+     "cat": "Home air",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -68,40 +100,40 @@
    ]
   },
   {
-   "date": "2026-09-27",
-   "weekday": "Sun",
+   "date": "2026-09-28",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "can-you-exercise-your-way-out-of-bad-sleep",
-     "title": "Can You Exercise Your Way Out of Bad Sleep? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
      "slug": "severance-at-52-what-next",
      "title": "I Got a Severance Package at 52. What Do I Do With It? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-09-28",
-   "weekday": "Mon",
+   "date": "2026-09-29",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "should-you-give-a-child-cough-syrup",
@@ -120,45 +152,13 @@
      "slug": "audience-but-no-product",
      "title": "I Have an Audience and No Product. What Now? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-09-29",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "does-laminate-flooring-off-gas-formaldehyde",
-     "title": "Does Laminate Flooring Give Off Formaldehyde? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-a-franchise-worth-it-at-50",
-     "title": "Is a Franchise Worth It at 50? The Numbers Nobody Puts in the Brochure (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]

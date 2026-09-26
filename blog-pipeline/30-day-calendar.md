@@ -20,16 +20,16 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-09-25 | Fri | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
+| 2026-09-25 | Fri | 1 | shopper | villain | Are Plastic Bags Actually Recyclable? What the Bag Makers Could Not Prove (2026) | ready |
 | 2026-09-25 | Fri | 2 | builder | villain | Can You Build Something Without Posting Your Face? (2026) | ready |
-| 2026-09-26 | Sat | 1 | shopper | villain | Are Plastic Bags Actually Recyclable? (2026) | ready |
-| 2026-09-26 | Sat | 2 | builder | villain | Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026) | ready |
-| 2026-09-27 | Sun | 1 | shopper | villain | Can You Exercise Your Way Out of Bad Sleep? (2026) | ready |
-| 2026-09-27 | Sun | 2 | builder | villain | I Got a Severance Package at 52. What Do I Do With It? (2026) | ready |
-| 2026-09-28 | Mon | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
-| 2026-09-28 | Mon | 2 | builder | villain | I Have an Audience and No Product. What Now? (2026) | ready |
-| 2026-09-29 | Tue | 1 | shopper | villain | Does Laminate Flooring Give Off Formaldehyde? (2026) | ready |
-| 2026-09-29 | Tue | 2 | builder | villain | Is a Franchise Worth It at 50? The Numbers Nobody Puts in the Brochure (2026) | ready |
+| 2026-09-26 | Sat | 1 | shopper | villain | Can You Exercise Your Way Out of Bad Sleep? What a Study of 323,910 Adults Found (2026) | ready |
+| 2026-09-26 | Sat | 2 | builder | villain | Club Pilates Buyers Were Told Six Months. Is a Franchise Worth It at 50? (2026) | ready |
+| 2026-09-27 | Sun | 1 | shopper | villain | Does Laminate Flooring Give Off Formaldehyde? What Lumber Liquidators Knew (2026) | ready |
+| 2026-09-27 | Sun | 2 | builder | villain | Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026) | ready |
+| 2026-09-28 | Mon | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
+| 2026-09-28 | Mon | 2 | builder | villain | I Got a Severance Package at 52. What Do I Do With It? (2026) | ready |
+| 2026-09-29 | Tue | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
+| 2026-09-29 | Tue | 2 | builder | villain | I Have an Audience and No Product. What Now? (2026) | ready |
 | 2026-09-30 | Wed | 1 | shopper | villain | Does Prevagen Actually Work? (2026) | ready |
 | 2026-09-30 | Wed | 2 | builder | villain | My Commissions Dropped and My Broker Says It Is the Market (2026) | ready |
 | 2026-10-01 | Thu | 1 | shopper | villain | Does Woolite Really Revive Your Colors? (2026) | ready |
