@@ -1,11 +1,11 @@
 {
- "start": "2026-09-25",
+ "start": "2026-09-26",
  "days": 45,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-09-25",
-   "weekday": "Fri",
+   "date": "2026-09-26",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "are-plastic-bags-actually-recyclable",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-09-26",
-   "weekday": "Sat",
+   "date": "2026-09-27",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "can-you-exercise-your-way-out-of-bad-sleep",
@@ -68,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-09-27",
-   "weekday": "Sun",
+   "date": "2026-09-28",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "does-laminate-flooring-off-gas-formaldehyde",
@@ -100,13 +100,13 @@
    ]
   },
   {
-   "date": "2026-09-28",
-   "weekday": "Mon",
+   "date": "2026-09-29",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "does-prevagen-actually-work",
+     "title": "Does Prevagen Actually Work? What a Jury Found About Its 8 Memory Claims (2026)",
+     "cat": "Supplements",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -132,20 +132,20 @@
    ]
   },
   {
-   "date": "2026-09-29",
-   "weekday": "Tue",
+   "date": "2026-09-30",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "does-woolite-revive-colors",
+     "title": "Does Woolite Really Revive Your Colors? What the Color Renew Lawsuit Said (2026)",
+     "cat": "Laundry",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
-     "written": false,
+     "pix": true,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -164,65 +164,33 @@
    ]
   },
   {
-   "date": "2026-09-30",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "does-prevagen-actually-work",
-     "title": "Does Prevagen Actually Work? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "commissions-dropped-real-estate",
-     "title": "My Commissions Dropped and My Broker Says It Is the Market (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-10-01",
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "does-woolite-revive-colors",
-     "title": "Does Woolite Really Revive Your Colors? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
-     "slug": "recurring-vs-residual-income",
-     "title": "Recurring vs Residual: They Are Not the Same Thing (2026)",
+     "slug": "commissions-dropped-real-estate",
+     "title": "My Commissions Dropped and My Broker Blames the Market. What Did NAR Change? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -230,6 +198,38 @@
   {
    "date": "2026-10-02",
    "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "recurring-vs-residual-income",
+     "title": "Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-03",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -260,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-10-03",
-   "weekday": "Sat",
+   "date": "2026-10-04",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "what-does-lavender-do-to-blood-pressure",
@@ -296,8 +296,8 @@
    ]
   },
   {
-   "date": "2026-10-04",
-   "weekday": "Sun",
+   "date": "2026-10-05",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-angry-orange-stain-remover-safe",
@@ -328,8 +328,8 @@
    ]
   },
   {
-   "date": "2026-10-05",
-   "weekday": "Mon",
+   "date": "2026-10-06",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-antibacterial-hand-soap-safe",
@@ -360,8 +360,8 @@
    ]
   },
   {
-   "date": "2026-10-06",
-   "weekday": "Tue",
+   "date": "2026-10-07",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -392,8 +392,8 @@
    ]
   },
   {
-   "date": "2026-10-07",
-   "weekday": "Wed",
+   "date": "2026-10-08",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-ultra-processed-food-its-own-risk",
@@ -428,8 +428,8 @@
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
+   "date": "2026-10-09",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -460,8 +460,8 @@
    ]
   },
   {
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -492,8 +492,8 @@
    ]
   },
   {
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -524,8 +524,8 @@
    ]
   },
   {
-   "date": "2026-10-11",
-   "weekday": "Sun",
+   "date": "2026-10-12",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "short-workouts-or-long-ones",
@@ -560,8 +560,8 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "weekday": "Mon",
+   "date": "2026-10-13",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -592,8 +592,8 @@
    ]
   },
   {
-   "date": "2026-10-13",
-   "weekday": "Tue",
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -624,8 +624,8 @@
    ]
   },
   {
-   "date": "2026-10-14",
-   "weekday": "Wed",
+   "date": "2026-10-15",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-redken-shampoo-safe",
@@ -656,8 +656,8 @@
    ]
   },
   {
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "date": "2026-10-16",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "what-is-astaxanthin",
@@ -692,8 +692,8 @@
    ]
   },
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-17",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-the-pink-stuff-safe",
@@ -724,8 +724,8 @@
    ]
   },
   {
-   "date": "2026-10-17",
-   "weekday": "Sat",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-tap-water-safe-to-drink",
@@ -756,8 +756,8 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-19",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "what-keeps-your-memory-sharp-after-70",
@@ -788,8 +788,8 @@
    ]
   },
   {
-   "date": "2026-10-19",
-   "weekday": "Mon",
+   "date": "2026-10-20",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-your-skin-a-barrier-or-an-ecosystem",
@@ -824,8 +824,8 @@
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-your-magnesium-what-the-label-says",
@@ -856,8 +856,8 @@
    ]
   },
   {
-   "date": "2026-10-21",
-   "weekday": "Wed",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "window-air-conditioner-mold-recall",
@@ -888,13 +888,13 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": []
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "should-you-check-the-air-before-you-go-out",
@@ -916,11 +916,6 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
-   "slots": []
-  },
-  {
    "date": "2026-10-25",
    "weekday": "Sun",
    "slots": []
@@ -928,6 +923,11 @@
   {
    "date": "2026-10-26",
    "weekday": "Mon",
+   "slots": []
+  },
+  {
+   "date": "2026-10-27",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "why-does-everyone-feel-behind-on-money-at-50",
@@ -949,11 +949,6 @@
    ]
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
-   "slots": []
-  },
-  {
    "date": "2026-10-28",
    "weekday": "Wed",
    "slots": []
@@ -961,6 +956,11 @@
   {
    "date": "2026-10-29",
    "weekday": "Thu",
+   "slots": []
+  },
+  {
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "why-cant-i-read-a-whole-page-anymore",
@@ -980,11 +980,6 @@
      "track": "shopper"
     }
    ]
-  },
-  {
-   "date": "2026-10-30",
-   "weekday": "Fri",
-   "slots": []
   },
   {
    "date": "2026-10-31",
@@ -1029,6 +1024,11 @@
   {
    "date": "2026-11-08",
    "weekday": "Sun",
+   "slots": []
+  },
+  {
+   "date": "2026-11-09",
+   "weekday": "Mon",
    "slots": []
   }
  ],
