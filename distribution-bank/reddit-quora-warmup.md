@@ -86,3 +86,45 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   - If you keep one nonstick for eggs, keep it on low to medium heat, never preheat it empty, and use wood or silicone tools.
 
   It is one of the few kitchen upgrades you buy once and never again.
+
+- **2026-09-26 3:39pm (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Given-the-choice-would-you-store-all-of-your-food-leftovers-in-glass-instead-of-plastic-Do-you-limit-heating-food-to-non-plastic-containers-or-is-this-too-much-effort . Their question: "Given the choice, would you store all of your food / leftovers in glass instead of plastic? Do you limit heating food to non-plastic containers or is this too much effort?" On-avatar (women 40-60 who run the kitchen; pairs with the kitchen-plastics AI notes). Stat checked: Hussain et al., Environ Sci Technol 2023 (https://pubmed.ncbi.nlm.nih.gov/37343248/), worded as "more than anything else they tested", not "far more" (the paper gives no size for the gap). For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
+
+  Yes, I keep almost everything in glass now, and it is much less effort than it sounds.
+
+  Here is what made it click for me. Heat is the big one. A 2023 University of Nebraska study found that microwaving plastic food containers released more tiny plastic particles than anything else they tested, including keeping food in them in the fridge or on the counter. So if you only change one habit, change that one.
+
+  What I do:
+
+  1. Never heat food in plastic. Move leftovers to a glass dish or a plate first. Cover with a paper towel, not plastic wrap.
+
+  2. Let hot food cool before it goes into any plastic you still own.
+
+  3. Retire the tired ones. Cloudy, scratched, warped or stained containers are done.
+
+  4. Keep plastic out of the dishwasher. The heat wears it down.
+
+  5. Swap as you go. You do not need to toss everything in one weekend. When a plastic piece cracks, replace it with glass. Empty jars from pasta sauce and pickles are perfect for soups and dressings.
+
+  6. Freeze in glass, but leave room at the top so it can expand.
+
+  Is it too much effort? Honestly, it adds about ten seconds. And there is a quiet peace in opening the fridge and seeing real food in clear glass.
+
+  I have been helping women clean up their kitchens for seven years, and the microwave habit is always the first one I ask them to change.
+
+- **2026-09-26 3:39pm (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Why-should-I-avoid-fragrance-in-my-lotion . Their question: "Why should I avoid fragrance in my lotion?" On-avatar (women 40-60 buying lotion and body wash for the house; first personal-care warm-up). Sources checked: Safe Cosmetics (fragrance = trade secret), Cleveland Clinic newsroom 2025 (dermatologist: fragrance is an irritant, pulls moisture), Curology (unscented vs fragrance-free). For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
+
+  This comes up all the time with the women I help, so here's the simple version.
+
+  That one word on the label, "fragrance" (or "parfum"), can stand for a whole blend of ingredients. Companies are allowed to keep that blend a trade secret. So you can read every line on the bottle and still not know what's in the scent.
+
+  And lotion isn't something you rinse off. It sits on your skin all day, and you breathe that scent all day too. Dermatologists call fragrance a skin irritant, and say it can pull moisture out of your skin. That's a funny thing to find in a product you bought for dry skin.
+
+  Here's what I tell women:
+
+  1. Look for "fragrance-free," not "unscented." Unscented can still have fragrance added to cover up the smell of other ingredients. Fragrance-free means no scent was added.
+  2. Flip the bottle over. The front is marketing. The ingredient list on the back is the truth.
+  3. Check the whole shower lineup. Body wash, shampoo, and conditioner often carry fragrance too.
+  4. Change one product at a time. Start with the one that covers the most skin, usually body lotion. Give it a couple of weeks and notice how your skin feels.
+  5. If you love a scent, pick one product for it. Don't layer scented soap, lotion, and hair spray every single day.
+
+  It takes a little getting used to. Then you stop missing it. Clean skin smells pretty good on its own.
