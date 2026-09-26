@@ -185,3 +185,38 @@ Board had NO description. Set (verified persisted after reload): "Non-toxic cook
 
 NEXT run (Day 8): can-you-microwave-ziploc-bags (Cookware) + are-scentsy-wax-melts-toxic (Air). Check each composed photo has a WOMAN in frame and NO small child (the cutting-board freedom photo had one).
 
+## 2026-09-26 (noon run) - 0 pins published: Chrome window minimized, builder cannot render. Both pins COMPOSED and ready for 7pm
+Shannon's Chrome window was minimized (innerWidth 0, tab hidden): the profile body never rendered (no Create button) and /pin-creation-tool/ never reached document_idle. Not a throttle and not a disconnect (both browsers connected). Stopped cleanly, nothing half-uploaded.
+
+Ready for the 7pm run (read and approved: woman 40-60 in frame, no child, no competitor label, legible headline):
+### Ziploc  [pinx_ziploc.png | photo: ziploc-belonging-v1.png (two women with a glass container)]
+- Title: Should you microwave plastic bags? Ziploc safety
+- Board: Non-Toxic Cookware & Kitchen Swaps
+- Link: https://join.switchtoamerica.com/post/can-you-microwave-ziploc-bags
+- Description (443): Should you microwave plastic bags? A microwave safe label on a zipper bag means it will not melt or burst. It says nothing about what moves from the plastic into your food as it heats. See what the maker's own guidance actually covers, why heat speeds up chemical transfer, and the simple glass container swap for reheating, plus affordable American made kitchen swaps. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Candles  [pinx_candles.png | photo: arebathandbo-belonging-v1.webp (two women laughing on a sofa)]
+- Title: Are your candles poisoning your air? Scented candle safety
+- Board: Non-Toxic Air & Fragrance-Free Home
+- Link: https://join.switchtoamerica.com/post/are-bath-and-body-works-candles-toxic
+- Description (457): Are your candles poisoning your air? A scented candle is a small open flame in a closed room. It burns oxygen, gives off combustion gases, and releases whatever the fragrance oil turns into at flame temperature, and the wax itself changes what ends up in the air. See what the research says and keep the cozy without the smoke, with fragrance-free American made swaps that cost less. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+SKIPPED: are-scentsy-wax-melts-toxic (Day 8). Every photo in its set is either a baby/toddler or has no person, so no compliant pin can be made. A photo REQUEST went to Photo Claude (photo-requests/RESHOOT-scentsy-pin-audience.md). The ziploc -freedom photo is also a toddler; use -belonging.
+
+## GROWTH TASK 2026-09-26 (noon) (a) keyword research - American made / patriot angle
+Pinterest autocomplete could not be read (window minimized; the typeahead API 403s to scripts), so these come from web search demand, not Pinterest's own box. Re-check against Pinterest autocomplete on a later run. Our own swap only, never a competitor brand in a title:
+- American made cleaning products
+- made in USA household products
+- non-toxic products made in America
+- American made laundry detergent
+- made in USA non-toxic cleaners
+- American made kitchen essentials
+- buy American home swaps
+- American made products for the home
+- made in USA personal care products
+- American made gifts for mom
+- non-toxic home swaps made in the USA
+- support American made brands
+- American made pantry staples
+- made in America beef
+- patriotic home essentials
+
