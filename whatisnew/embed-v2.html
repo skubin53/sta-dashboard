@@ -50,6 +50,8 @@
 .stw .stw-strip ul{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
 .stw .stw-strip li{padding:18px 14px;text-align:center;font:600 15px/1.25 "Source Sans 3",Arial,sans-serif;border-left:1px solid rgba(255,255,255,.28)}
 .stw .stw-strip li:first-child{border-left:0}
+.stw .stw-strip a{color:#fff!important;text-decoration:none!important;display:block}
+.stw .stw-strip a b{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px;text-decoration-color:rgba(255,255,255,.55)}
 .stw .stw-strip b{display:block;font:800 34px/1 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.02em;margin-bottom:4px}
 
 /* sections */
@@ -77,7 +79,8 @@
 .stw .stw-s2{background:var(--ink);color:#fff;position:relative}
 .stw .stw-s2 .stw-num{background:var(--gold);color:var(--ink)}
 .stw .stw-s2 .stw-h2{color:#fff}
-.stw .stw-s2-body{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:start}
+.stw .stw-s2-body{display:grid;grid-template-columns:1fr;gap:34px;max-width:860px}
+.stw .stw-proofs{grid-template-columns:1fr 1fr}
 .stw .stw-lede{font:700 24px/1.3 "Bricolage Grotesque",Arial,sans-serif;color:var(--gold);margin-bottom:12px}
 .stw .stw-s2 p{color:#DDE5F3}
 .stw .stw-s2 .stw-eyebrow{color:#FF8A95}
@@ -137,6 +140,7 @@
 .stw .stw-save-amt small{display:block;font:800 15px/1 "Source Sans 3",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
 .stw .stw-save p{font-size:20px;line-height:1.35;position:relative}
 .stw .stw-save p b{font-weight:800}
+.stw .stw-save-amt .stw-dot{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .stw .stw-lemon{margin-top:20px;display:grid;grid-template-columns:88px 1fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px}
 .stw .stw-lemon img{width:88px;height:88px;object-fit:contain}
 .stw .stw-lemon p{font-size:17px}
@@ -191,6 +195,7 @@
   .stw .stw-sec{padding:52px 0}
   .stw .stw-tiles{grid-template-columns:1fr 1fr}
   .stw .stw-s2-body{grid-template-columns:1fr;gap:28px}
+  .stw .stw-proofs{grid-template-columns:1fr}
   .stw .stw-carts{grid-template-columns:1fr}
   .stw .stw-why-card{grid-template-columns:1fr}
   .stw{padding-bottom:78px}
@@ -242,7 +247,7 @@
 
 <div class="stw-strip"><ul>
   <li><b>575+</b>products</li>
-  <li><b>30%</b>less, on one shop</li>
+  <li><a href="#stw-math"><b>30%</b>less, on one shop</a></li>
   <li><b>100%</b>money-back guarantee</li>
 </ul></div>
 
@@ -252,7 +257,7 @@
     <ul class="stw-tiles">
       <li class="stw-tile big"><span class="n">575+</span>We now have over 575 products.</li>
       <li class="stw-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18l-2 9H5z"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>More snacks, more <b>beef</b>, baking mixes, tallow, and spices.</li>
-      <li class="stw-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.6 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg><a href="https://peakperformancepack.com/">The best vitamins on the market.</a></li>
+      <li class="stw-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.6 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg><a href="https://peakperformancepack.com/" target="_blank" rel="noopener">The best vitamins on the market.</a></li>
       <li class="stw-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Supplements tested for heavy metals, and the best collagen, creatine, magnesium, protein, and daily vitality for women and men.</li>
       <li class="stw-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg>A full baby line, including wipes.</li>
       <li class="stw-tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>Improved makeup and hair care.</li>
@@ -274,10 +279,10 @@
         <p class="stw-proof-h">See it for yourself.</p>
         <p>Tap any one and go read it, comments and all.</p>
         <div class="stw-proofs">
-          <a class="stw-proof" href="https://www.linkedin.com/feed/update/urn:li:activity:7356816978545659905/"><span class="k">1</span><span><span class="t">When floods hit Texas and New Mexico</span><span class="s">LinkedIn</span></span><span class="a">→</span></a>
-          <a class="stw-proof" href="https://www.melaleucanews.com/delivering-supplies-for-hurricane-ian-victims/"><span class="k">2</span><span><span class="t">Delivering supplies for Hurricane Ian victims</span><span class="s">melaleucanews.com</span></span><span class="a">→</span></a>
-          <a class="stw-proof" href="https://www.youtube.com/watch?v=lIyftRMM3J8"><span class="k">3</span><span><span class="t">Watch the relief operation for yourself</span><span class="s">YouTube</span></span><span class="a">→</span></a>
-          <a class="stw-proof" href="https://www.facebook.com/melaleuca/posts/895347619543541"><span class="k">4</span><span><span class="t">Read what people said in the comments</span><span class="s">Facebook · 1,091 reactions</span></span><span class="a">→</span></a>
+          <a class="stw-proof" href="https://www.linkedin.com/feed/update/urn:li:activity:7356816978545659905/" target="_blank" rel="noopener"><span class="k">1</span><span><span class="t">When floods hit Texas and New Mexico</span><span class="s">LinkedIn</span></span><span class="a">→</span></a>
+          <a class="stw-proof" href="https://www.melaleucanews.com/delivering-supplies-for-hurricane-ian-victims/" target="_blank" rel="noopener"><span class="k">2</span><span><span class="t">Delivering supplies for Hurricane Ian victims</span><span class="s">melaleucanews.com</span></span><span class="a">→</span></a>
+          <a class="stw-proof" href="https://www.youtube.com/watch?v=lIyftRMM3J8" target="_blank" rel="noopener"><span class="k">3</span><span><span class="t">Watch the relief operation for yourself</span><span class="s">YouTube</span></span><span class="a">→</span></a>
+          <a class="stw-proof" href="https://www.facebook.com/melaleuca/posts/895347619543541" target="_blank" rel="noopener"><span class="k">4</span><span><span class="t">Read what people said in the comments</span><span class="s">Facebook · 1,091 reactions</span></span><span class="a">→</span></a>
         </div>
       </div>
     </div>
@@ -290,7 +295,7 @@
         <li>Students discover the power of good citizenship</li>
         <li>Comfort and hope delivered to families in crisis</li>
       </ul>
-      <a class="stw-more" href="https://melaleuca.org/updates">See every week at melaleuca.org →</a>
+      <a class="stw-more" href="https://melaleuca.org/updates" target="_blank" rel="noopener">See every week at melaleuca.org →</a>
     </div>
   </div>
 </section>
@@ -329,7 +334,7 @@
           <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-seventh.webp" width="58" height="58" loading="lazy" alt="Seventh Generation fabric softener sheets"><span><span class="nm">Seventh Generation</span><span class="dt">1.25 boxes at $6.97</span></span><span class="pr">$8.71</span></li>
           <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-cascade.webp" width="58" height="58" loading="lazy" alt="Cascade Platinum dishwasher pacs"><span><span class="nm">Cascade Platinum</span><span class="dt">0.6 of a 50 ct at $27.26</span></span><span class="pr">$16.36</span></li>
           <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-windex.webp" width="58" height="58" loading="lazy" alt="Windex Original glass cleaner"><span><span class="nm">Windex</span><span class="dt">4.2 bottles at $3.48</span></span><span class="pr">$14.53</span></li>
-          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-chomps.webp" width="58" height="58" loading="lazy" alt="Chomps Original Beef Sticks"><span><span class="nm">Chomps Beef Sticks</span><span class="dt">6 sticks at $2.29, <a href="https://www.fsis.usda.gov/recalls-alerts/idaho-smokehouse-partners-recalls-ready-eat-beef-stick-products-due-possible-foreign">recalled 2025 for metal</a></span></span><span class="pr">$13.74</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-chomps.webp" width="58" height="58" loading="lazy" alt="Chomps Original Beef Sticks"><span><span class="nm">Chomps Beef Sticks</span><span class="dt">6 sticks at $2.29, <a href="https://www.fsis.usda.gov/recalls-alerts/idaho-smokehouse-partners-recalls-ready-eat-beef-stick-products-due-possible-foreign" target="_blank" rel="noopener">recalled 2025 for metal</a></span></span><span class="pr">$13.74</span></li>
           <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-tylenol.webp" width="58" height="58" loading="lazy" alt="Tylenol Extra Strength"><span><span class="nm">Tylenol Extra Strength</span><span class="dt">100 caplets, 500 mg</span></span><span class="pr">$10.97</span></li>
           <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-cerave.webp" width="58" height="58" loading="lazy" alt="CeraVe Acne Foaming Cleanser"><span><span class="nm">CeraVe Acne Cleanser</span><span class="dt">150 mL, 5 fl oz</span></span><span class="pr">$14.97</span></li>
         </ul>
@@ -338,8 +343,8 @@
     </div>
 
     <div class="stw-save">
-      <div class="stw-save-amt"><small>You save</small>$31.92</div>
-      <p><b>You save $31.92. That is 30% less, on one shop.</b><br>And that is nearly $400 a year, before the 2 for 1 deals at the checkout.</p>
+      <div class="stw-save-amt"><small>You save</small>$31.92<span class="stw-dot">.</span></div>
+      <p><b>That is 30% less, on one shop.</b><br>And that is nearly $400 a year, before the 2 for 1 deals at the checkout.</p>
     </div>
 
     <div class="stw-lemon">
@@ -357,7 +362,7 @@
     </div>
     <figure class="stw-review">
       <img src="https://scan.ismyhometoxic.com/whatisnew/img/review-gene.webp" width="620" height="620" loading="lazy" alt="Customer review from Gene: reluctantly tried the store, loved the products and the prices, now a lifelong customer">
-      <a href="https://customertestimonials.info/">Read more of our customer stories →</a>
+      <a href="https://customertestimonials.info/" target="_blank" rel="noopener">Read more of our customer stories →</a>
     </figure>
   </div>
 </section>
