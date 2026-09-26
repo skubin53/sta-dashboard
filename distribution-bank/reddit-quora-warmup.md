@@ -71,3 +71,18 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   - Take a break outside halfway through if it is a big clean.
 
   If you get a headache every single time, even with the window open, that is worth mentioning to your doctor. But for most people, fresh air and dropping the scented products makes a real difference within a week or two.
+
+- **2026-09-26 9:39am (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/When-a-pan-with-a-non-stick-surface-develops-a-few-nicks-and-scratches-that-cut-through-the-finish-should-the-pan-be-discarded-and-why-or-why-not . Their question: "When a pan with a non-stick surface develops a few nicks and scratches that cut through the finish, should the pan be discarded, and why or why not?" On-avatar (women 40-60 who cook daily; pairs with the live nonstick and HexClad posts and today's cookware pins). No numbers, no brand. LINK-FREE draft answer:
+
+  Once the scratches go through the finish, I would retire it, and not because one flake will hurt you. Here is the honest reasoning.
+
+  The flakes themselves mostly pass straight through you. The bigger issue is what a scratched pan tells you about how it has been used. Coatings wear fastest when the pan is heated hot and empty, used with metal utensils, or scrubbed hard, and a coating that is breaking down in one spot is breaking down in others too. Food starts sticking, you turn the heat up to compensate, and high heat on an empty or nearly empty nonstick pan is exactly when these coatings can start to give off fumes.
+
+  So the scratch is the pan saying it is near the end of its life. It was always going to be a replaceable pan.
+
+  What I would do:
+  - Retire it for anything you cook hot, like searing or stir-frying.
+  - For the replacement, think about cast iron or stainless steel for the high-heat jobs. Both last decades, take metal utensils, and have no coating to wear off. Cast iron gets more nonstick the more you use it.
+  - If you keep one nonstick for eggs, keep it on low to medium heat, never preheat it empty, and use wood or silicone tools.
+
+  It is one of the few kitchen upgrades you buy once and never again.
