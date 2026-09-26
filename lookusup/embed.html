@@ -495,6 +495,20 @@
   .stw .stw-px-tap{font-size:20px;margin-top:28px}
 }
 @media (prefers-reduced-motion:reduce){.stw .stw-px-card{transition:none}}
+
+/* first screen: tell people there is more below */
+.stw .stw-down{display:inline-flex;align-items:center;gap:14px;margin-top:24px;color:#fff!important;text-decoration:none!important;font:700 19px/1.25 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.01em;max-width:430px}
+.stw .stw-down-ic{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--gold);color:var(--ink);animation:stw-nudge 1.8s ease-in-out infinite}
+.stw .stw-down-ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.stw .stw-down-t{text-decoration:underline;text-decoration-color:rgba(255,182,39,.8);text-decoration-thickness:2px;text-underline-offset:5px}
+@media (hover:hover){.stw .stw-down:hover .stw-down-t{text-decoration-color:var(--gold)}}
+@keyframes stw-nudge{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@media (max-width:860px){
+  .stw .stw-down{margin-top:14px;gap:11px;font-size:16px;max-width:none}
+  .stw .stw-down-ic{width:36px;height:36px}
+  .stw .stw-down-ic svg{width:20px;height:20px}
+}
+@media (prefers-reduced-motion:reduce){.stw .stw-down-ic{animation:none}}
 </style>
 <div class="stw">
 
@@ -506,6 +520,7 @@
     <div class="stw-hero-copy">
       <p class="stw-kicker"><i></i>Switch to America</p>
       <h1 class="stw-h1">Go Ahead. <span>Look Us Up.</span></h1>
+      <a class="stw-down" href="#stw-concerns"><span class="stw-down-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5v14"/><path d="m6 12.5 6 6 6-6"/></svg></span><span class="stw-down-t">Scroll down to see the questions everybody asks.</span></a>
     </div>
     <aside class="stw-scan" aria-label="Free home scan">
       <div class="stw-scan-badge">FREE</div>
@@ -612,7 +627,6 @@
         </div>
         <div class="stw-cn-row stw-cn-her">
           <div class="stw-cn-bs">
-            <p class="stw-cn-b">Some reviews say people felt stuck. That is a fair worry.</p>
             <p class="stw-cn-b stw-cn-lead">You are not locked into anything.</p>
             <p class="stw-cn-b">Need a break? We can pause your account.</p>
             <p class="stw-cn-b">Want to stop? You can cancel any time, for any reason.</p>
