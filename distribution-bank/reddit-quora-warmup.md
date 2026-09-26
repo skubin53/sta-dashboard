@@ -42,3 +42,19 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   - If you want scent, make it something you turn on and off yourself, like a cinnamon stick and a few cloves in a small pot of water for an hour.
 
   On and off is the whole difference. Something you enjoy for an hour is far easier on the air you breathe than something plugged in around the clock.
+
+- **2026-09-25 9:39pm (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/How-long-does-it-take-for-a-memory-foam-or-latex-mattress-to-off-gas-When-is-it-safe-to-sleep-on-a-new-bed . Their question: "How long does it take for a memory foam or latex mattress to off-gas? When is it safe to sleep on a new bed?" On-avatar (women 40-60, bedroom; pairs with the queued mattress AI note). No numbers claimed, no brand named. LINK-FREE draft answer:
+
+  Most of that smell is the foam airing out, and it fades over the first few days. How long it takes depends on how long the mattress sat squashed in its box and how warm and stuffy the room is. Some are faint by the next morning. Some take a week or two to clear completely.
+
+  What speeds it up:
+  - If you have the choice, unwrap it somewhere you can air out, not the bedroom you plan to sleep in tonight. Lay it flat with nothing on it.
+  - Get air moving across it. A cross breeze or a fan aimed over the top does more than anything you could spray.
+  - Warmth helps. A warm room with air moving clears much faster than a cold, closed one.
+  - Wait a day or two before the fitted sheet and the mattress protector go on. Wrapping it up early seals the smell in.
+
+  When is it fine to sleep on? When the smell is faint in the room with the door shut. If it still hits you when you walk in, give it another night and keep the air moving. If strong smells give you headaches or a scratchy throat, wait longer rather than pushing through.
+
+  One thing to skip: spraying something scented to cover it. Then you are breathing the foam smell and a fragrance on top of it.
+
+  Next time you shop, look for foam that carries a low-emissions certification, or natural latex or wool, and it is an easier first week.
