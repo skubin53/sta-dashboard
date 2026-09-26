@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-09-27
+date: 2026-09-26
 title: Are Plastic Bags Actually Recyclable? What the Bag Makers Could Not Prove (2026)
 slug: are-plastic-bags-actually-recyclable
 keyword: are plastic bags actually recyclable
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 27, 2026<br><span style="font-size:.92em;">Published September 27, 2026 &middot; Last updated September 27, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 26, 2026<br><span style="font-size:.92em;">Published September 26, 2026 &middot; Last updated September 26, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -285,8 +285,8 @@ of our health and our finances.</p>
    "headline": "Are Plastic Bags Actually Recyclable? What the Bag Makers Could Not Prove (2026)",
    "description": "California says three bag makers could not prove their bags get recycled. They agreed to pay $3.35 million. What it means for you.",
    "image": "https://scan.ismyhometoxic.com/blog-images/areplasticb-hero-v1.webp",
-   "datePublished": "2026-09-27",
-   "dateModified": "2026-09-27",
+   "datePublished": "2026-09-26",
+   "dateModified": "2026-09-26",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-plastic-bags-actually-recyclable"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
