@@ -239,7 +239,7 @@
 /* the wall */
 .stw .stw-s1-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .stw .stw-s1-card{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;container-type:inline-size;box-shadow:0 1px 0 rgba(11,31,68,.05),0 16px 32px -18px rgba(11,31,68,.32);transition:transform .2s ease}
-.stw .stw-s1-card.k-supp{grid-column:1 / -1;flex-direction:row;align-items:stretch}
+.stw .stw-s1-card.wide{grid-column:1 / -1;flex-direction:row;align-items:stretch}
 @media (hover:hover){.stw .stw-s1-card:hover{transform:translateY(-4px)}}
 
 /* photo shelf: products stand on a pale shelf, soft contact shadow */
@@ -262,9 +262,9 @@
 .stw .stw-s1-pic .i-makeup{aspect-ratio:378/301;height:86%}
 
 /* supplements: the long line gets a wide card, photo left, words right */
-.stw .stw-s1-card.k-supp .stw-s1-pic{flex:0 0 50%;height:180px;height:min(250px,30cqi)}
-.stw .stw-s1-card.k-supp .stw-s1-txt{justify-content:center;padding:24px 40px 26px 34px;border-left:1px solid var(--line)}
-.stw .stw-s1-card.k-supp .stw-s1-line{font-size:25px;line-height:1.22}
+.stw .stw-s1-card.wide .stw-s1-pic{flex:0 0 50%;height:180px;height:min(250px,30cqi)}
+.stw .stw-s1-card.wide .stw-s1-txt{justify-content:center;padding:24px 40px 26px 34px;border-left:1px solid var(--line)}
+.stw .stw-s1-card.wide .stw-s1-line{font-size:25px;line-height:1.22}
 
 /* the one link: the whole card taps through */
 .stw .stw-s1-card.k-vit{border:2px solid var(--gold)}
@@ -288,28 +288,17 @@
   .stw .stw-s1-grid{gap:14px}
   .stw .stw-s1-big{gap:26px;padding:26px 30px 30px}
   .stw .stw-s1-line{font-size:20px}
-  .stw .stw-s1-card.k-supp .stw-s1-txt{padding:20px 24px 22px}
-  .stw .stw-s1-card.k-supp .stw-s1-line{font-size:21px}
+  .stw .stw-s1-card.wide .stw-s1-txt{padding:20px 24px 22px}
+  .stw .stw-s1-card.wide .stw-s1-line{font-size:21px}
 }
 @media (max-width:700px){
-  .stw .stw-s1-card.k-supp{flex-direction:column}
-  .stw .stw-s1-card.k-supp .stw-s1-pic{flex:none;height:190px;height:min(240px,52cqi);padding:14px 16px 8px}
-  .stw .stw-s1-card.k-supp .stw-s1-txt{border-left:0;padding:16px 20px 20px}
+  .stw .stw-s1-card.wide{flex-direction:column}
+  .stw .stw-s1-card.wide .stw-s1-pic{flex:none;height:190px;height:min(240px,52cqi);padding:14px 16px 8px}
+  .stw .stw-s1-card.wide .stw-s1-txt{border-left:0;padding:16px 20px 20px}
 }
 @media (max-width:600px){
   .stw .stw-s1-go{top:auto;bottom:12px;right:12px;width:36px;height:36px;box-shadow:0 3px 0 var(--gold-dk)}
   .stw .stw-s1-go svg{width:17px;height:17px}
-  /* small tiles: one hero product on the shelf, the second as an inset chip */
-  .stw .stw-s1-card:not(.k-supp) .stw-s1-pic{height:160px;height:96cqi;padding:10px 10px 7px;justify-content:flex-start}
-  .stw .stw-s1-card:not(.k-supp) .stw-s1-pic img.a{height:80%}
-  .stw .stw-s1-card:not(.k-supp) .stw-s1-pic img.b{position:absolute;top:8px;right:8px;z-index:3;height:auto;width:36%;aspect-ratio:1/1;object-fit:contain;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:3px;mix-blend-mode:normal;box-shadow:0 8px 16px -8px rgba(11,31,68,.45)}
-  .stw .stw-s1-card.k-vit .stw-s1-pic,.stw .stw-s1-card.k-baby .stw-s1-pic,.stw .stw-s1-card.k-beauty .stw-s1-pic{justify-content:flex-end}
-  .stw .stw-s1-card.k-vit .stw-s1-pic img.b,.stw .stw-s1-card.k-baby .stw-s1-pic img.b,.stw .stw-s1-card.k-beauty .stw-s1-pic img.b{right:auto;left:8px}
-  .stw .stw-s1-card.k-vit .stw-s1-pic img.a{height:78%}
-  .stw .stw-s1-card.k-vit .stw-s1-pic img.b{width:33%}
-  .stw .stw-s1-card.k-baby .stw-s1-pic img.a{height:auto;width:94%}
-  .stw .stw-s1-card.k-baby .stw-s1-pic img.b,.stw .stw-s1-card.k-beauty .stw-s1-pic img.b{aspect-ratio:4/3;width:54%}
-  .stw .stw-s1-card.k-beauty .stw-s1-pic img.a{height:94%}
 }
 @media (max-width:520px){
   .stw .stw-s1 .stw-head{margin-bottom:18px}
@@ -324,12 +313,30 @@
   .stw .stw-s1-line{font-size:19px;line-height:1.25}
   .stw .stw-s1-pic::after{height:16px}
   .stw .stw-s1-pic::before{bottom:4px;height:14px}
-  .stw .stw-s1-card.k-supp .stw-s1-txt{padding:13px 16px 16px}
-  .stw .stw-s1-card.k-supp .stw-s1-line{font-size:20px;line-height:1.26}
+  .stw .stw-s1-card.wide .stw-s1-txt{padding:13px 16px 16px}
+  .stw .stw-s1-card.wide .stw-s1-line{font-size:20px;line-height:1.26}
 }
 @media (prefers-reduced-motion:reduce){
   .stw .stw-s1-card,.stw .stw-s1-pic img,.stw .stw-s1-go{transition:none}
   .stw .stw-s1-card:hover,.stw .stw-s1-card:hover .stw-s1-pic img,.stw .stw-s1-card.k-vit:hover .stw-s1-go{transform:none}
+}
+
+/* 2026-09-26 v2: pantry and supplements run wide; three-product cards show clean squares */
+.stw .stw-s1-card.wide .stw-s1-pic{flex:0 0 56%}
+.stw .stw-s1-pic.three{gap:8px;align-items:flex-end}
+.stw .stw-s1-card .stw-s1-pic.three img{height:auto;width:31%;flex:0 1 31%;aspect-ratio:1/1;object-fit:contain}
+.stw .stw-s1-pic .i-kids{aspect-ratio:231/378;height:90%}
+.stw .stw-s1-pic.one .i-mens{aspect-ratio:378/316;height:94%}
+@media (max-width:600px){
+  /* phones: every card full width, products side by side as clean squares */
+  .stw .stw-s1-grid{grid-template-columns:1fr}
+  .stw .stw-s1-card.wide{flex-direction:column}
+  .stw .stw-s1-card .stw-s1-pic,.stw .stw-s1-card.wide .stw-s1-pic{flex:none;height:auto;padding:12px 12px 14px;gap:6px;align-items:flex-end;justify-content:center}
+  .stw .stw-s1-card .stw-s1-pic img{position:relative;top:auto;left:auto;right:auto;height:auto;width:46%;flex:0 1 46%;aspect-ratio:1/1;object-fit:contain;background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;mix-blend-mode:multiply}
+  .stw .stw-s1-card .stw-s1-pic.three img{width:32%;flex-basis:32%}
+  .stw .stw-s1-card .stw-s1-pic.one img{width:66%;flex-basis:66%}
+  .stw .stw-s1-go{top:12px;bottom:auto}
+  .stw .stw-s1-card.wide .stw-s1-txt{border-left:0}
 }
 </style>
 <div class="stw">
@@ -372,10 +379,11 @@
     </div>
 
     <ul class="stw-s1-grid">
-      <li class="stw-s1-card k-pantry">
-        <div class="stw-s1-pic">
-          <img class="a i-jerky" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-beef-jerky.webp" width="400" height="400" loading="lazy" decoding="async" alt="Riverbend Ranch Beef Jerky, Original, 3.25 ounce bag">
-          <img class="b i-tallow" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-beef-tallow.webp" width="400" height="400" loading="lazy" decoding="async" alt="Riverbend Ranch Premium Beef Tallow, 14 ounce tub">
+      <li class="stw-s1-card k-pantry wide">
+        <div class="stw-s1-pic three">
+          <img class="a" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-beef-jerky.webp" width="400" height="400" loading="lazy" decoding="async" alt="Riverbend Ranch Beef Jerky, Original, 3.25 ounce bag">
+          <img class="b" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-baking-mix.webp" width="400" height="400" loading="lazy" decoding="async" alt="Simply Fit Simple Start Baking Mixes: Double Chocolate Brownies, Pancakes, and Lemon Blueberry Muffins">
+          <img class="c" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-beef-tallow.webp" width="400" height="400" loading="lazy" decoding="async" alt="Riverbend Ranch Premium Beef Tallow, 14 ounce tub">
         </div>
         <div class="stw-s1-txt">
           <span class="stw-s1-tag">Pantry</span>
@@ -385,7 +393,7 @@
       <li class="stw-s1-card k-vit">
         <div class="stw-s1-pic">
           <img class="a i-peak" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-peak-women.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality for Life Peak Performance Nutrition Pack for women, box with a Florify probiotic bottle">
-          <img class="b i-peak" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-peak-men.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality for Life Peak Performance Nutrition Pack for men, box with a Florify probiotic bottle">
+          <img class="b i-kids" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-kids-vitc.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality for Kids Activate Immune Complex for Kids, 30 orange flavored smart chews">
         </div>
         <div class="stw-s1-txt">
           <span class="stw-s1-tag">Vitamins</span>
@@ -393,10 +401,20 @@
         </div>
         <span class="stw-s1-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
       </li>
-      <li class="stw-s1-card k-supp">
-        <div class="stw-s1-pic">
-          <img class="a i-collagen" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-collagen.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality for Life Collagen Boost with Astaxanthin, 12.7 ounce tub">
-          <img class="b i-creatine" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-creatine.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality Elevate Daily Pure Creatine monohydrate, 6.17 ounce tub">
+      <li class="stw-s1-card k-men">
+        <div class="stw-s1-pic one">
+          <img class="a i-mens" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-mens.webp" width="400" height="400" loading="lazy" decoding="async" alt="Alloy men's line: hair and body wash, body moisturizer, glycerin bar, antiperspirant, shave gel, face wash, facial tonic, serum and moisturizer">
+        </div>
+        <div class="stw-s1-txt">
+          <span class="stw-s1-tag">Men</span>
+          <p class="stw-s1-line">A full men's line for face and body.</p>
+        </div>
+      </li>
+      <li class="stw-s1-card k-supp wide">
+        <div class="stw-s1-pic three">
+          <img class="a" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-collagen-blue.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality for Life Collagen Boost with Ceramides, unflavored, blue label tub">
+          <img class="b" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-magnesium.webp" width="400" height="400" loading="lazy" decoding="async" alt="Melaleuca Magnesium, berry, 60 serving powder tub">
+          <img class="c" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-creatine.webp" width="400" height="400" loading="lazy" decoding="async" alt="Vitality Elevate Daily Pure Creatine monohydrate, 6.17 ounce tub">
         </div>
         <div class="stw-s1-txt">
           <span class="stw-s1-tag">Supplements</span>
@@ -414,9 +432,10 @@
         </div>
       </li>
       <li class="stw-s1-card k-beauty">
-        <div class="stw-s1-pic">
-          <img class="a i-hair" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-haircare.webp" width="400" height="400" loading="lazy" decoding="async" alt="Sei Bella Salon argan oil and coconut shampoo and conditioner">
-          <img class="b i-makeup" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-makeup.webp" width="400" height="400" loading="lazy" decoding="async" alt="Sei Bella makeup set: eyeshadow palette, blush, pressed powder, lipstick, mascara, and liners">
+        <div class="stw-s1-pic three">
+          <img class="a" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-makeup.webp" width="400" height="400" loading="lazy" decoding="async" alt="Sei Bella makeup set: eyeshadow palette, blush, pressed powder, lipstick, mascara, and liners">
+          <img class="b" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-skincare.webp" width="400" height="400" loading="lazy" decoding="async" alt="Sei Bella Basic Collection skin care: micellar cleansing water, daily cleanser, moisturizer and serum">
+          <img class="c" src="https://scan.ismyhometoxic.com/whatisnew/img/s1-haircare.webp" width="400" height="400" loading="lazy" decoding="async" alt="Sei Bella Salon argan oil and coconut shampoo and conditioner">
         </div>
         <div class="stw-s1-txt">
           <span class="stw-s1-tag">Beauty</span>
