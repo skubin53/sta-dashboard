@@ -345,6 +345,46 @@
 .stw .stw-cn-pills a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
 @media (max-width:760px){.stw .stw-cn-list{grid-template-columns:1fr;gap:30px}}
 @media (max-width:520px){.stw .stw-cn-q{font-size:21px}.stw .stw-cn-card{padding:28px 18px 18px}}
+
+/* ===== Look Us Up: See it for yourself, with pictures ===== */
+.stw .stw-px .stw-eyebrow{margin-bottom:6px}
+.stw .stw-px-lead{position:relative;margin:4px 0 0;border-radius:22px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(0,0,0,.7)}
+.stw .stw-px-lead img{width:100%;aspect-ratio:16/8;object-fit:cover;object-position:50% 40%}
+.stw .stw-px-lead::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,31,68,.92) 0%,rgba(11,31,68,.35) 38%,rgba(11,31,68,0) 62%)}
+.stw .stw-px-lead figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px 26px}
+.stw .stw-px-lede{display:block;font:800 clamp(26px,3.4vw,40px)/1.08 "Bricolage Grotesque",Arial,sans-serif;color:#fff;letter-spacing:-.02em;text-wrap:balance}
+.stw .stw-px-body{margin:18px 0 0;font-size:19px;line-height:1.6;color:#DDE5F3;max-width:820px}
+.stw .stw-px-tap{margin:34px 0 14px;font:800 22px/1.2 "Bricolage Grotesque",Arial,sans-serif;color:var(--gold)!important}
+.stw .stw-px-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stw .stw-px-card{display:flex;flex-direction:column;background:#132B5C;border:1px solid rgba(255,255,255,.14);border-radius:18px;overflow:hidden;color:#fff!important;text-decoration:none!important;transition:transform .2s ease}
+@media (hover:hover){.stw a.stw-px-card:hover{transform:translateY(-3px)}}
+.stw .stw-px-card .ph{position:relative;display:block}
+.stw .stw-px-card .ph img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.stw .stw-px-card .src{position:absolute;left:10px;top:10px;background:rgba(11,31,68,.88);color:#fff;font:700 12px/1 "Source Sans 3",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:999px}
+.stw .stw-px-card .bd{flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:12px;padding:14px 16px 16px}
+.stw .stw-px-card .t{font:800 18px/1.25 "Bricolage Grotesque",Arial,sans-serif;color:#fff}
+.stw .stw-px-card .go{display:inline-flex;align-items:center;gap:6px;color:var(--gold)!important;text-decoration:none!important;font:800 15px/1 "Bricolage Grotesque",Arial,sans-serif}
+.stw .stw-px-card .go svg{width:16px;height:16px}
+.stw .stw-px-card .btns{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.stw .stw-px-card .go.vid{background:var(--red);color:#fff!important;padding:9px 12px;border-radius:999px}
+.stw .stw-px-card .go.vid .pl svg{width:14px;height:14px}
+.stw .stw-px-weekly{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 14px}
+.stw .stw-px-weekly figure{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden}
+.stw .stw-px-weekly img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.stw .stw-px-weekly figcaption{padding:10px 12px 12px;font-size:15px;line-height:1.35;color:#E9EEF8}
+@media (max-width:860px){
+  .stw .stw-px-cards{grid-template-columns:1fr}
+  .stw .stw-px-weekly{grid-template-columns:1fr}
+  .stw .stw-px-weekly figure{display:grid;grid-template-columns:120px 1fr;align-items:center}
+  .stw .stw-px-weekly img{height:100%;aspect-ratio:auto;min-height:78px}
+}
+@media (max-width:520px){
+  .stw .stw-px-lead img{aspect-ratio:4/3}
+  .stw .stw-px-lead figcaption{padding:16px 16px}
+  .stw .stw-px-body{font-size:17px}
+  .stw .stw-px-tap{font-size:20px;margin-top:28px}
+}
+@media (prefers-reduced-motion:reduce){.stw .stw-px-card{transition:none}}
 </style>
 <div class="stw">
 
@@ -399,35 +439,46 @@
 
 <div class="stw-gap" aria-hidden="true"></div>
 
-<section class="stw-sec stw-s2" id="stw-proof">
+<section class="stw-sec stw-s2 stw-px" id="stw-proof">
   <div class="wrap">
     <p class="stw-eyebrow">Do not take my word for it</p>
     <div class="stw-head"><span class="stw-num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:30px;height:30px"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><h2 class="stw-h2">See it for yourself.</h2></div>
-    <div class="stw-s2-body">
-      <div>
-        <p class="stw-lede">When a disaster hits a town, they show up.</p>
-        <p>Floods. Hurricanes. They send trucks, fast. Generators. Non-toxic cleaning supplies. Wellness boxes. Thousands of pounds of Riverbend Ranch beef. Right to the families, and to the first responders. It is all public. It is not an ad.</p>
+
+    <figure class="stw-px-lead">
+      <img src="https://scan.ismyhometoxic.com/lookusup/img/relief-lead-truck.webp" width="800" height="500" alt="Volunteers in Melaleuca shirts unloading boxes of supplies from the back of a truck after Hurricane Helene">
+      <figcaption><span class="stw-px-lede">When a disaster hits a town, they show up.</span></figcaption>
+    </figure>
+    <p class="stw-px-body">Floods. Hurricanes. They send trucks, fast. Generators. Non-toxic cleaning supplies. Wellness boxes. Thousands of pounds of Riverbend Ranch beef. Right to the families, and to the first responders. It is all public. It is not an ad.</p>
+
+    <p class="stw-px-tap">Tap a post below. Read the comments, too.</p>
+    <div class="stw-px-cards">
+      <a class="stw-px-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7356816978545659905/" target="_blank" rel="noopener">
+        <span class="ph"><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-texas-floods.webp" width="800" height="500" loading="lazy" alt="Two volunteers covered in mud holding hot meals beside a fire engine and pallets of bottled water after the Texas floods"><span class="src">LinkedIn</span></span>
+        <span class="bd"><span class="t">When floods hit Texas and New Mexico</span><span class="go">Read it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <div class="stw-px-card">
+        <span class="ph"><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-ian-jet.webp" width="800" height="500" loading="lazy" alt="A plane on the runway surrounded by boxed generators, crates and gas cans for Hurricane Ian victims"><span class="src">Hurricane Ian</span></span>
+        <span class="bd bd2"><span class="t">Delivering supplies for Hurricane Ian victims</span>
+          <span class="btns"><a class="go" href="https://www.melaleucanews.com/delivering-supplies-for-hurricane-ian-victims/" target="_blank" rel="noopener">Read it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="go vid" href="https://www.youtube.com/watch?v=lIyftRMM3J8" target="_blank" rel="noopener"><span class="pl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>Watch the video</a></span></span>
       </div>
-      <div>
-        <p>Tap a post below. Read the comments, too.</p>
-        <div class="stw-proofs">
-          <a class="stw-proof" href="https://www.linkedin.com/feed/update/urn:li:activity:7356816978545659905/" target="_blank" rel="noopener"><span class="k">1</span><span><span class="t">When floods hit Texas and New Mexico</span><span class="s">LinkedIn</span></span><span class="a">&#8594;</span></a>
-          <a class="stw-proof" href="https://www.melaleucanews.com/delivering-supplies-for-hurricane-ian-victims/" target="_blank" rel="noopener"><span class="k">2</span><span><span class="t">Delivering supplies for Hurricane Ian victims</span><span class="s">melaleucanews.com</span></span><span class="a">&#8594;</span></a>
-          <a class="stw-proof" href="https://www.youtube.com/watch?v=lIyftRMM3J8" target="_blank" rel="noopener"><span class="k">3</span><span><span class="t">Watch the relief operation for yourself</span><span class="s">YouTube</span></span><span class="a">&#8594;</span></a>
-          <a class="stw-proof" href="https://www.facebook.com/melaleuca/posts/895347619543541" target="_blank" rel="noopener"><span class="k">4</span><span><span class="t">Read what people said in the comments</span><span class="s">Facebook &#183; 1,091 reactions</span></span><span class="a">&#8594;</span></a>
-        </div>
-      </div>
+      <a class="stw-px-card" href="https://www.facebook.com/melaleuca/posts/895347619543541" target="_blank" rel="noopener">
+        <span class="ph"><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-washington-floods.webp" width="800" height="500" loading="lazy" alt="Melaleuca staff packing boxes of Riverbend Ranch beef sticks under Washington Flood Relief signs"><span class="src">Facebook &#183; 1,091 reactions</span></span>
+        <span class="bd"><span class="t">Read what people said in the comments</span><span class="go">Read it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
     </div>
+
     <div class="stw-weeks">
       <h3>And the ordinary weeks in between</h3>
+      <div class="stw-px-weekly">
+        <figure><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-weekly-tech.webp" width="800" height="500" loading="lazy" alt="A teen and a mentor in red Melaleuca IT boot camp shirts working at a computer"><figcaption>Preparing the next generation for careers in technology</figcaption></figure>
+        <figure><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-weekly-grillers.webp" width="800" height="500" loading="lazy" alt="A young girl in a red apron giving a thumbs up at a Riverbend Ranch grilling event"><figcaption>Riverbend Ranch fires up the next generation of grillers</figcaption></figure>
+        <figure><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-weekly-guard.webp" width="800" height="500" loading="lazy" alt="National Guard soldiers in dress uniform wearing medals at the Appreciation Ball"><figcaption>Honoring National Guard soldiers at the Appreciation Ball</figcaption></figure>
+      </div>
       <ul class="stw-pills">
-        <li>Preparing the next generation for careers in technology</li>
-        <li>Riverbend Ranch fires up the next generation of grillers</li>
-        <li>Honoring National Guard soldiers at the Appreciation Ball</li>
         <li>Students discover the power of good citizenship</li>
         <li>Comfort and hope delivered to families in crisis</li>
       </ul>
-      <a class="stw-more" href="https://melaleuca.org/updates" target="_blank" rel="noopener">See every week at melaleuca.org →</a>
+      <a class="stw-more" href="https://melaleuca.org/updates" target="_blank" rel="noopener">See every week at melaleuca.org &#8594;</a>
     </div>
   </div>
 </section>
