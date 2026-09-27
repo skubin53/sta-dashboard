@@ -48,6 +48,25 @@ along with the next republish of that post for any other reason.
 
 ## Closed
 
+### 2026-09-27, invented "12,000 families" line and two invented quotes - CLOSED
+Shannon: "remove the 12,000 line." Four live shopper posts carried it (Dawn, Pine-Sol,
+Ziploc, waterproof mascara), and Ziploc and Pine-Sol also quoted "Jennifer M., Ontario" and
+"Melissa R., Ontario", with no source for either. Removed from all four live posts and from
+the repo copies (which said 20,000). A scan of every live post on both blogs found no other
+invented count or quote.
+**New safe tool:** `sta-tools/blog-live-edit.py <slug> <edits.json> [--live]`. It reads
+the EXACT live body (`GET /blogs/posts/<id>?locationId=` returns rawHTML, schema and
+style included), applies each exact edit once, refuses if the JSON-LD, style, FAQ or CTA
+counts move, tags the scan links with utm, then does the proven swap (POST new, retire old
+to DRAFT on a throwaway slug, PUT the clean slug, one post on the slug, 200 twice, removed
+text gone). All four verified live: 200, schema intact, canonical tag now present.
+New post ids: mascara 6ab9572df25685b27b9118c3, Pine-Sol 6ab95761ec41da637e40c522,
+Ziploc 6ab9578aec41da637e40c70a, Dawn 6ab957beec41da637e40c99b.
+Do NOT use the GHL visual editor on these posts: it drops the style and JSON-LD from its
+copy and would save them away. This tool can also clear the open items above (shopper
+blog only for now).
+
+
 ### 2026-08-27, both posts published today shipped with unfixed bodies - CLOSED
 Republished the same day via blog-republish.py, POST-new then retire-old, and verified
 on the SERVED page rather than on a status code. Baby wipes now carries the Fresh Cucumber
