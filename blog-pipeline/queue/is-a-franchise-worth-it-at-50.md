@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-09-29
+date: 2026-09-27
 title: Club Pilates Buyers Were Told Six Months. Is a Franchise Worth It at 50? (2026)
 slug: is-a-franchise-worth-it-at-50
 keyword: is a franchise worth it
@@ -47,7 +47,7 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 29, 2026<br><span style="font-size:.92em;">Published September 29, 2026 &middot; Last updated September 29, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 27, 2026<br><span style="font-size:.92em;">Published September 27, 2026 &middot; Last updated September 27, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -286,8 +286,8 @@ our finances.</p>
    "headline": "Club Pilates Buyers Were Told Six Months. Is a Franchise Worth It at 50? (2026)",
    "description": "Club Pilates and Pure Barre buyers were told six months to open. The FTC says it usually took over a year. Get these two numbers before you sign.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isafranchis-hero-v1.webp",
-   "datePublished": "2026-09-29",
-   "dateModified": "2026-09-29",
+   "datePublished": "2026-09-27",
+   "dateModified": "2026-09-27",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/is-a-franchise-worth-it-at-50"},
    "author": {"@id": "https://theshannonnicole.com/post/is-a-franchise-worth-it-at-50#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
