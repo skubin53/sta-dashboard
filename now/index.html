@@ -3055,6 +3055,26 @@ function staLeadEvent(d) {
     });
   } catch (e) {}
 }
+// Where this visitor came from (2026-09-27). Read ONCE, on arrival, before any in-page
+// navigation, and kept for the session so every capture carries the same first touch.
+// The worker turns it into a src- tag and a note on her contact, so Shannon can see which
+// channel produced each lead. Plain strings only; the worker re-checks everything.
+window.__staAttr = (function () {
+  var k = 'sta_attr_v1', a = null;
+  try { a = JSON.parse(sessionStorage.getItem(k) || 'null'); } catch (e) { a = null; }
+  if (a && a.landing) return a;
+  a = {};
+  try {
+    var q = new URLSearchParams(location.search);
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (n) {
+      var v = q.get(n); if (v) a[n] = String(v).slice(0, 120);
+    });
+    if (document.referrer) a.referrer = String(document.referrer).slice(0, 200);
+    a.landing = String(location.pathname + location.search).slice(0, 200);
+    try { sessionStorage.setItem(k, JSON.stringify(a)); } catch (e) {}
+  } catch (e) {}
+  return a;
+})();
 // One shim instead of editing four call sites: anything posted to LEADAPI counts as a
 // lead, and the body it was posted with is exactly the data the event needs.
 (function () {
@@ -3063,6 +3083,13 @@ function staLeadEvent(d) {
     try {
       if (String(u) === LEADAPI && o && o.body) {
         var b = JSON.parse(o.body);
+        // Every lead capture carries where she came from. A new options object, so the
+        // caller's own is never mutated; if anything here fails the original request goes.
+        if (!b.attr && window.__staAttr) {
+          b.attr = window.__staAttr;
+          o = Object.assign({}, o, { body: JSON.stringify(b) });
+          arguments[1] = o;
+        }
         var cf = b.customFields || {};
         staLeadEvent({
           email: b.email, phone: b.phone,
