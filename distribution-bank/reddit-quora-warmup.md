@@ -1,25 +1,44 @@
 
 
-- **2026-09-27 1:39am (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Is-it-necessary-to-wash-new-clothes-before-wearing-them-Do-they-have-any-residue-from-being-stored-in-warehouses-or-shipping-containers . Their question: "Is it necessary to wash new clothes before wearing them? Do they have any residue from being stored in warehouses or shipping containers?" On-avatar (women 40-60 who shop for the family's clothes). Sources for our records only: none, no numbers used. The answer stays LINK-FREE. No brand. LINK-FREE draft answer:
+- **2026-09-27 9:39am (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Does-hand-soap-have-to-be-antibacterial . Their question: "Does hand soap have to be antibacterial?" On-avatar (women 40-60 who buy the soap for every sink; pairs with the live do-i-need-antibacterial-soap page). Sources checked: CDC handwashing and hand sanitizer pages, Minnesota Department of Health (plain soap recommended at home). For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
 
-  Yes. I wash everything new before it touches my skin, and I have for years.
+  No, it does not. Plain soap is all your family needs at home.
 
-  Think about the trip that shirt took. It was made in a factory, folded, boxed, and often shipped across the world in a container. Then it sat in a warehouse. Then it hung on a rack where other shoppers tried it on.
+  Soap does not have to kill germs to work. It loosens the oils and grime that germs cling to, and running water carries them down the drain. The scrubbing and rinsing do the real job.
 
-  A lot of new clothing also gets a finish before it ever leaves the factory. Sizing makes fabric look crisp on the shelf. Wrinkle resistant finishes keep it smooth in the box. That stiff feel and faint chemical smell when you open the package? That is what you are noticing.
+  Antibacterial soap just adds a germ killing chemical on top. For everyday use in a home, there is no good evidence it keeps anyone healthier than plain soap. So it is one more chemical on your sink that is not pulling its weight.
 
-  Here is what I do:
+  Not sure what you have? Flip the bottle over. If you see a "Drug Facts" box with an "Active ingredient" listed, it is an antibacterial product. Plain soap will not have that box.
 
-  Wash it before the first wear. Every time, even if it looks perfect.
+  What actually makes the difference:
 
-  Wash darks and brights alone the first time. Extra dye often comes out in that first wash.
+  1. Wet your hands, then lather the backs, between your fingers, and under your nails.
+  2. Scrub for at least 20 seconds. Humming "Happy Birthday" twice gets you there.
+  3. Rinse well under running water.
+  4. Dry on a clean towel. Change the kitchen hand towel often.
 
-  Use a simple, fragrance free detergent. You are trying to take something off, not add a new layer on.
+  What about hand sanitizer? Keep it in your purse and car for when there is no sink. Pick one with at least 60% alcohol and rub until your hands are fully dry. At home, though, soap and water wins. Sanitizer does not work well on greasy or dirty hands, and it does not take care of every kind of germ.
 
-  Add a splash of white vinegar to the rinse if it still smells like the store.
+  At my house, every sink gets a plain, fragrance free soap. That is it. Simple, and it works.
 
-  Still smells after one wash? Wash it again. Some pieces need a few rounds, especially anything labeled wrinkle free or no iron.
+- **2026-09-27 9:39am (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/How-do-I-get-rid-of-dust-mites-in-my-bed . Their question: "How do I get rid of dust mites in my bed?" On-avatar (women 40-60 who do the bedding; pairs with the new mattress off-gassing page). Source checked: ACAAI dust allergy page (weekly hot wash, humidity under 50 percent, mite-proof covers, HEPA vacuum). For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
 
-  Dry it outside on a line when you can. Fresh air and sun do a lot of the work.
+  Dust mites feed on the skin we shed every night, so the bed is their favorite spot. You can't get rid of every last one. But you can make your bed a place they hate. Here's what I tell my friends.
 
-  Bonus: your new clothes will feel softer, too.
+  1. Wash sheets and pillowcases every week in the hottest water the fabric allows. Dry on high heat. Heat does the real work.
+
+  2. Wash the mattress protector and blankets every couple of weeks. Wash or tumble your pillows on high heat every few months.
+
+  3. Zip the mattress and pillows into tightly woven covers. Mites can't get through them, and they wash easily.
+
+  4. Keep the bedroom dry. Mites need moisture. Aim for humidity under 50 percent. A little humidity gauge tells you where you stand.
+
+  5. Air the bed out. Pull the covers back in the morning while you have coffee. A warm, damp bed is exactly what mites love.
+
+  6. Vacuum the mattress slowly each time you change the sheets. Use a vacuum with a HEPA filter so the dust stays in the bag.
+
+  7. Cut the clutter on the bed. Decorative pillows and throws collect dust and almost never get washed. Keep a few and wash them often.
+
+  8. Skip the mite sprays and powders. You would be breathing whatever is in them all night, every night. Heat, dry air and a steady wash day do the job without that.
+
+  A weekly hot wash and a dry room do most of the work.
