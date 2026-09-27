@@ -231,3 +231,20 @@ Builder quirk: after picking a different board, the description box came back EM
 Board had NO description. Set (verified persisted after reload, still Public): "Fragrance-free home and non-toxic air ideas for the woman who wants her house to smell fresh without the headache. What is really in scented candles, plug-in air fresheners and room sprays, and the simple swaps that clean the air instead of covering it up. American made swaps that cost less than you think, plus a free room-by-room home scan." Keywords: fragrance-free home, non-toxic air, scented candles, plug-in air fresheners, room sprays. Rotation next: (f) alt text, then (c) Cleaning or Laundry board.
 
 NEXT run: Day 9 toothpaste (is-colgate-toothpaste-safe, Clean Beauty) + Day 10 dandruff shampoo (is-head-and-shoulders-safe, Clean Beauty). Scentsy still waits on its reshoot. Check each photo: woman 40-60 in frame, no child, no competitor label.
+
+## 2026-09-27 (noon run) - 0 pins published: no usable browser. Both pins COMPOSED and ready for 7pm
+Chrome's window was minimized (innerWidth 0), so the pin builder cannot render there. Edge could not be selected: another session kept the extension on Chrome, and even straight after select_browser(Edge) the tab context came back as Chrome's group. Stopped cleanly, nothing half-uploaded. The re-point growth task (g) also needs the browser, so it waits too.
+
+From today every pin links to THE FREE SCAN, not the blog post (Shannon 2026-09-27).
+Ready for the 7pm run (read and approved: woman 40-60 in frame, no child, no readable competitor label, legible headline):
+### Toothpaste  [pinx_colgate.png | photo: iscolgatetoo-turning-point-v1.webp (woman at a bathroom vanity)]
+- NOTE: the -freedom and -belonging photos in this set both show small children, so they break the pin rule. Only the turning-point frame works.
+- Title: Is your toothpaste actually safe? Colgate warning label
+- Board: Clean Beauty & Safe Personal Care
+- Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-colgate-toothpaste-safe
+- Description: Is your toothpaste actually safe? Federal law makes the big toothpaste brands print a Poison Control warning right on the tube, and a 2024 National Toxicology Program report linked higher fluoride exposure to lower IQ. See what both actually say, what is in the tube you use twice a day, and the simple swap to a cleaner toothpaste, plus affordable American made personal care swaps. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Dandruff shampoo  [pinx_headshoulders.png | photo: isheadandsh-freedom-v1.webp (woman laughing outdoors)]
+- Title: What is in your dandruff shampoo? Head and Shoulders
+- Board: Clean Beauty & Safe Personal Care
+- Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-head-and-shoulders-safe
+- Description: What is in your dandruff shampoo? Zinc pyrithione, the anti-dandruff ingredient in many popular shampoos, was banned in EU cosmetics on March 1, 2022 for reproductive toxicity. It is still legal here, in the same shampoo, from the same company. See why the rules differ, what to look for instead, and the simple swap to a cleaner shampoo, plus affordable American made hair care. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
