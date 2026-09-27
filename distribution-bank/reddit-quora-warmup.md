@@ -5,6 +5,7 @@ Personal "Shannon Nicole" accounts on Quora + Reddit (created 2026-09-24, brand-
 RULES: genuine, helpful, LINK-FREE comments only during warming (no product/brand mention, no scan link). Human-paced: ~1-2/day per platform max, spaced out, NEVER bursts. Quora first (more new-account tolerant); Reddit only once there is some history (many subs gate new accounts). WARMING WINDOW through ~2026-10-15, then start the scan-link placements. Stop immediately at any removal/shadowban signal. The GEO cron DRAFTS candidates; posting is done carefully in live sessions, not by an unattended cron.
 
 ## Posted
+- **2026-09-27 (Quora)** - Q: "Does hand soap have to be antibacterial?" (8 answers before ours). Link-free, 7 paragraphs. Live: https://www.quora.com/Does-hand-soap-have-to-be-antibacterial/answer/Shannon-Nicole-281 . Posted in a live session at Shannon's go-ahead, via Chrome (signed in); text inserted with execCommand because the hidden window ignores keystrokes.
 - **2026-09-24 (Quora)** - Q: "Are scented laundry detergent and dryer sheets bad for you?" (was UNANSWERED). Genuine link-free answer (fragrance loophole, softening-film/quat coating + towel absorbency, the wool-dryer-ball + fragrance-free swap, asthma/eczema note). Live: https://www.quora.com/Are-scented-laundry-detergent-and-dryer-sheets-bad-for-you/answer/Shannon-Nicole-281 . First warm-up action on the account.
 
 ## Warm-up drafts (pending - Shannon or Cameron to post, paced)
@@ -193,7 +194,7 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
 
   Bonus: your new clothes will feel softer, too.
 
-- **2026-09-27 9:39am (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/Does-hand-soap-have-to-be-antibacterial . Their question: "Does hand soap have to be antibacterial?" On-avatar (women 40-60 who buy the soap for every sink; pairs with the live do-i-need-antibacterial-soap page). Sources checked: CDC handwashing and hand sanitizer pages, Minnesota Department of Health (plain soap recommended at home). For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
+- **2026-09-27 9:39am (POSTED 2026-09-27 11:12am, live: https://www.quora.com/Does-hand-soap-have-to-be-antibacterial/answer/Shannon-Nicole-281 ; Shannon: "go ahead and do that now")** - Quora thread: https://www.quora.com/Does-hand-soap-have-to-be-antibacterial . Their question: "Does hand soap have to be antibacterial?" On-avatar (women 40-60 who buy the soap for every sink; pairs with the live do-i-need-antibacterial-soap page). Sources checked: CDC handwashing and hand sanitizer pages, Minnesota Department of Health (plain soap recommended at home). For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
 
   No, it does not. Plain soap is all your family needs at home.
 
