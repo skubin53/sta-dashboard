@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-09-28
+date: 2026-09-27
 title: Can You Exercise Your Way Out of Bad Sleep? What a Study of 323,910 Adults Found (2026)
 slug: can-you-exercise-your-way-out-of-bad-sleep
 keyword: does exercise make up for lack of sleep
@@ -48,7 +48,7 @@ vault_checked: [sleep-versus-exercise, the-gentle-register, VOICE-GUIDE, BLOG-RU
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 28, 2026<br><span style="font-size:.92em;">Published September 28, 2026 &middot; Last updated September 28, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 27, 2026<br><span style="font-size:.92em;">Published September 27, 2026 &middot; Last updated September 27, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -286,8 +286,8 @@ of our health and our finances.</p>
    "headline": "Can You Exercise Your Way Out of Bad Sleep? What a Study of 323,910 Adults Found (2026)",
    "description": "Walking helps, but it cannot cover for bad sleep. In a 13-year study of 323,910 adults, poor sleep raised depression risk at every activity level.",
    "image": "https://scan.ismyhometoxic.com/blog-images/canyouexerc-hero-v1.webp",
-   "datePublished": "2026-09-28",
-   "dateModified": "2026-09-28",
+   "datePublished": "2026-09-27",
+   "dateModified": "2026-09-27",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/can-you-exercise-your-way-out-of-bad-sleep"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
