@@ -236,3 +236,23 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   8. Skip the mite sprays and powders. You would be breathing whatever is in them all night, every night. Heat, dry air and a steady wash day do the job without that.
 
   A weekly hot wash and a dry room do most of the work.
+
+- **2026-09-27 3:39pm (draft, pending)** - Quora, REAL thread (from search; Quora blocks fetch, so check it is still open before posting): https://www.quora.com/What-are-some-natural-ways-to-clean-an-oven-with-minimal-odor . Their question: "What are some natural ways to clean an oven with minimal odor?" On-avatar (women 40-60 who clean the oven). No numbers, no brand, no mixing of chemicals. First line changed from an invented personal story to a plain statement. LINK-FREE draft answer:
+
+  Spray oven cleaners leave a smell that can hang in the kitchen for days. You do not need them. Here is a way that works with almost no odor.
+
+  Start with a cold oven. Pull out the racks and brush out the loose crumbs.
+
+  Mix baking soda with a little water until it looks like thick frosting. Spread it all over the inside with a spatula or your gloved hand. Stay off the heating element. Go heavy on the brown, greasy spots.
+
+  Close the door and leave it overnight. That is the real secret. Time does the scrubbing for you.
+
+  In the morning, wipe it out with a damp cloth. Use a plastic scraper on anything stubborn. Then mist the inside with plain white vinegar. It fizzes a little and lifts the last white film. Wipe once more with warm water.
+
+  For the racks, lay an old towel in the bathtub, add hot water, a good squirt of dish soap and a scoop of baking soda. Let them soak overnight too. They scrub clean the next day.
+
+  For the inside of the glass door, use the same paste. A razor scraper held flat takes off the baked spots.
+
+  The vinegar smell is gone within the hour. No chemical cloud, no opening every window in the house.
+
+  One last tip. Set a sheet pan on the lower rack when you bake anything that might bubble over. The easiest oven to clean is the one that never got dirty.
