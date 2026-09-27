@@ -220,3 +220,14 @@ Pinterest autocomplete could not be read (window minimized; the typeahead API 40
 - made in America beef
 - patriotic home essentials
 
+
+## PUBLISHED 2026-09-26 (7pm run) - 2 pins live (ziploc + candles), on EDGE
+Chrome's window was minimized again (innerWidth 0, renderer froze on JS). Pinterest is ALSO signed in on Edge (deviceId 47366f65, own profile, Edit profile shown, window 1528 wide), so both pins went out from Edge. Both confirmed as the top 2 tiles of the Created feed. The session kept flipping back to Chrome between calls: re-run select_browser(Edge) right before every call or batch.
+Builder quirk: after picking a different board, the description box came back EMPTY (typing landed before the board change was lost). Always re-read title/description/link/board by JS right before Publish. Publish signal again = form resets; "Pin drafts (1)" is an older draft (25 days to expiry), not a failed pin.
+### Ziploc  [pinx_ziploc.png]  -> LIVE (Non-Toxic Cookware & Kitchen Swaps, can-you-microwave-ziploc-bags, desc 443)
+### Candles  [pinx_candles.png]  -> LIVE (Non-Toxic Air & Fragrance-Free Home, are-bath-and-body-works-candles-toxic, desc 457)
+
+## GROWTH TASK 2026-09-26 (7pm) (c) board description refresh - Non-Toxic Air & Fragrance-Free Home
+Board had NO description. Set (verified persisted after reload, still Public): "Fragrance-free home and non-toxic air ideas for the woman who wants her house to smell fresh without the headache. What is really in scented candles, plug-in air fresheners and room sprays, and the simple swaps that clean the air instead of covering it up. American made swaps that cost less than you think, plus a free room-by-room home scan." Keywords: fragrance-free home, non-toxic air, scented candles, plug-in air fresheners, room sprays. Rotation next: (f) alt text, then (c) Cleaning or Laundry board.
+
+NEXT run: Day 9 toothpaste (is-colgate-toothpaste-safe, Clean Beauty) + Day 10 dandruff shampoo (is-head-and-shoulders-safe, Clean Beauty). Scentsy still waits on its reshoot. Check each photo: woman 40-60 in frame, no child, no competitor label.
