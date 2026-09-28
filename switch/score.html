@@ -65,7 +65,10 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 <p class="note" id="saved"></p>
 </div>
 <script>
-var WEBHOOK='https://switch-checklist.theshannonnicole.workers.dev/';  // Cloudflare Worker, deployed 2026-08-01
+// Same Cloudflare Worker at two addresses. Her own domain goes first: some phones and
+// security filters block *.workers.dev, and on 2026-09-28 Marilyn Morange's score never
+// reached the worker at all. The workers.dev address is only the fallback now.
+var WEBHOOKS=['https://packs.ismyhometoxic.com/','https://switch-checklist.theshannonnicole.workers.dev/'];
 var QUALIFY=35;           // 35 points is roughly $100 after tax and shipping
 var r={};try{r=JSON.parse(sessionStorage.getItem('switchResult')||'{}')}catch(e){}
 var score=r.score||0;
@@ -81,10 +84,15 @@ if(beef.length){document.getElementById('beefWrap').style.display='';fill(docume
 if(!picked.length){document.getElementById('picked').innerHTML='<li style="list-style:none">Nothing was selected.</li>';}
 var cid=r.contact||new URLSearchParams(location.search).get('contact_id')||'';
 var note=document.getElementById('saved');
-if(cid && WEBHOOK){
-  fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},
-    body:JSON.stringify({contact_id:cid,score:score,count:r.count,items:picked,stores:r.stores||[],storesOther:r.storesOther||''})})
-  .then(function(x){return x.json();}).then(function(j){note.textContent=j&&j.saved?'Saved to your file.':'';})
-  .catch(function(){note.textContent='';});
+// text/plain keeps it a simple request (no preflight to fail), keepalive lets it finish
+// if she leaves the page to text Shannon her score. Tried once per address, in order.
+if(cid){
+  var payload=JSON.stringify({contact_id:cid,score:score,count:r.count,items:picked,stores:r.stores||[],storesOther:r.storesOther||''});
+  (function send(i){
+    if(i>=WEBHOOKS.length){note.textContent='';return;}
+    fetch(WEBHOOKS[i],{method:'POST',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:payload,keepalive:true})
+    .then(function(x){return x.json();}).then(function(j){note.textContent=j&&j.saved?'Saved to your file.':'';})
+    .catch(function(){send(i+1);});
+  })(0);
 }
 </script></body></html>
