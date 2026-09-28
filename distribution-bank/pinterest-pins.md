@@ -248,3 +248,15 @@ Ready for the 7pm run (read and approved: woman 40-60 in frame, no child, no rea
 - Board: Clean Beauty & Safe Personal Care
 - Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-head-and-shoulders-safe
 - Description: What is in your dandruff shampoo? Zinc pyrithione, the anti-dandruff ingredient in many popular shampoos, was banned in EU cosmetics on March 1, 2022 for reproductive toxicity. It is still legal here, in the same shampoo, from the same company. See why the rules differ, what to look for instead, and the simple swap to a cleaner shampoo, plus affordable American made hair care. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+## PUBLISHED 2026-09-27 (7pm run) - 2 pins live, both linking straight to the FREE SCAN (Edge)
+Chrome's Pinterest tab was hidden (builder never drew), so both went out from Edge (47366f65), re-selecting Edge before each step. Both confirmed as the top 2 tiles of the Created feed.
+### Toothpaste  [pinx_colgate.png | photo: iscolgatetoo-turning-point-v1.webp]  -> LIVE, pin 474848354483689610
+- Board: Clean Beauty & Safe Personal Care | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-colgate-toothpaste-safe | desc 457
+### Dandruff shampoo  [pinx_headshoulders.png | photo: isheadandsh-freedom-v1.webp]  -> LIVE, pin 474848354483689626
+- Board: Clean Beauty & Safe Personal Care | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-head-and-shoulders-safe | desc 453
+
+## GROWTH TASK 2026-09-27 (7pm) (g) re-point older pins - DEFERRED to Wednesday
+The Created feed only loaded the 2 newest tiles in the background window (older pins lazy-load on scroll), and Shannon is near her weekly usage limit, so the re-pointing was not forced tonight. It is still the growth task for every run until the 17 older pins link to the scan. Crons are paused Mon 9/28 and Tue 9/29.
+
+NEXT run (Wednesday noon): Day 10 deodorant (is-spray-deodorant-safe-benzene-recall, Clean Beauty) + Day 11 talc in makeup (is-talc-in-makeup-safe, Clean Beauty). Both link to the free scan with utm. Check each photo: woman 40-60, no child.
