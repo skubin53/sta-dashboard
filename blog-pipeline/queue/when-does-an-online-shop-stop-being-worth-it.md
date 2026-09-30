@@ -1,6 +1,6 @@
 ---
 day: 17
-date: 2026-09-26
+date: 2026-09-30
 title: Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026)
 slug: when-does-an-online-shop-stop-being-worth-it
 keyword: etsy ebay seller fees 2026 when to quit
@@ -47,7 +47,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 26, 2026<br><span style="font-size:.92em;">Published September 26, 2026 &middot; Last updated September 26, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 30, 2026<br><span style="font-size:.92em;">Published September 30, 2026 &middot; Last updated September 30, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -308,8 +308,8 @@ our finances.</p>
    "headline": "Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026)",
    "description": "Etsy's own filing says it keeps 25.9 cents of every dollar sold there. Here is what a $30 sale really leaves you, and when a shop stops paying.",
    "image": "https://scan.ismyhometoxic.com/blog-images/whendoesano-hero-v1.webp",
-   "datePublished": "2026-09-26",
-   "dateModified": "2026-09-26",
+   "datePublished": "2026-09-30",
+   "dateModified": "2026-09-30",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/when-does-an-online-shop-stop-being-worth-it"},
    "author": {"@id": "https://theshannonnicole.com/post/when-does-an-online-shop-stop-being-worth-it#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
