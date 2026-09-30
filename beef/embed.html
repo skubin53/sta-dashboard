@@ -158,11 +158,14 @@
 }
 @media(max-width:600px){
   .stw{font-size:17px}
-  .stw .stw-hero{min-height:640px}
-  .stw .stw-hero-img img{object-position:70% 30%}
-  .stw .stw-hero::before{background:linear-gradient(0deg,rgba(20,10,8,.95) 0%,rgba(20,10,8,.82) 45%,rgba(20,10,8,.2) 78%,rgba(20,10,8,0) 100%)}
+  .stw .stw-hero{display:block;min-height:0;background:#2A1C16}
+  .stw .stw-hero::before{display:none}
+  .stw .stw-hero-img{position:relative;inset:auto;height:270px;z-index:0}
+  .stw .stw-hero-img img{object-position:22% 62%}
+  .stw .stw-hero-img::after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(0deg,#2A1C16 0%,rgba(42,28,22,0) 100%)}
+  .stw .stw-hero-in{z-index:1}
   .stw .stw-hero-in{padding:30px 16px 32px}
-  .stw .stw-badge{width:92px;top:-96px;right:14px}
+  .stw .stw-badge{width:84px;top:-70px;right:14px}
   .stw .stw-hero-sub{font-size:18px}
   .stw .stw-hero-cta .stw-btn,.stw .stw-hero-cta .stw-btn-ghost{width:100%}
   .stw .stw-wrap{padding:0 16px}
