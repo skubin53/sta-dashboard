@@ -98,7 +98,7 @@ vault_checked: [BLOG-RUNBOOK, VOICE-GUIDE, voice-profile, competitor-intelligenc
 
 <p>There is a bigger worry too. <a href="https://wwwn.cdc.gov/TSP/ToxFAQs/ToxFAQsDetails.aspx?faqid=219&amp;toxid=39">In 2011 the US health department named it a known cause of cancer in people.</a></p>
 
-<p><a href="https://www.epa.gov/formaldehyde/facts-about-formaldehyde">Most homes have a little in the air.</a> One chain's floors were tested and failed, and it knew.</p>
+<p><a href="https://www.epa.gov/formaldehyde/questions-and-answers-regarding-laminate-flooring">Most homes have a little in the air.</a> One chain's floors were tested and failed, and it knew.</p>
 
 <h2 id="what-they-knew">What did Lumber Liquidators know?</h2>
 
