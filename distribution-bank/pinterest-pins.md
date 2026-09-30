@@ -260,3 +260,23 @@ Chrome's Pinterest tab was hidden (builder never drew), so both went out from Ed
 The Created feed only loaded the 2 newest tiles in the background window (older pins lazy-load on scroll), and Shannon is near her weekly usage limit, so the re-pointing was not forced tonight. It is still the growth task for every run until the 17 older pins link to the scan. Crons are paused Mon 9/28 and Tue 9/29.
 
 NEXT run (Wednesday noon): Day 10 deodorant (is-spray-deodorant-safe-benzene-recall, Clean Beauty) + Day 11 talc in makeup (is-talc-in-makeup-safe, Clean Beauty). Both link to the free scan with utm. Check each photo: woman 40-60, no child.
+
+## PUBLISHED 2026-09-30 (noon run, ran 12:33) - 2 pins live, both linking to the FREE SCAN (Edge)
+
+### Deodorant  [pinx_deodorant.png | photo: deodorant-freedom-v1.webp (woman dressing by a window)]  -> LIVE, pin 474848354483708794
+- Title: Is there benzene in your deodorant? What the spray recall found
+- Board: Clean Beauty & Safe Personal Care | Link: scan /now/ utm_campaign=is-spray-deodorant-safe-benzene-recall | desc 488, no hashtags
+
+### Talc in makeup  [pinx_talc.png | photo: istalcinmak-freedom-v1.webp (woman laughing outdoors)]  -> LIVE, pin 474848354483708800
+- Title: Is there talc in your makeup? What the asbestos tests found
+- Board: Clean Beauty & Safe Personal Care | Link: scan /now/ utm_campaign=is-talc-in-makeup-safe | desc 482, no hashtags
+
+## Re-pointed to the scan
+
+Growth task (g). Each pin's link now = https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=<slug>; verified by reloading the pin page (scan link present, blog link gone).
+- 2026-09-30: is-fabuloso-safe (474848354483642471), is-dawn-dish-soap-safe (474848354483647268), is-lysol-safe-to-inhale (474848354483648055), is-pine-sol-toxic (474848354483648065), are-dryer-sheets-toxic (474848354483648458)
+- STILL ON THE BLOG (11): is-tide-laundry-detergent-toxic 474848354483648462, are-nonstick-pans-toxic 474848354483663456, are-air-fresheners-toxic 474848354483663467, is-febreze-safe-to-breathe 474848354483667422, is-clorox-spray-toxic 474848354483669392, is-sunscreen-safe 474848354483669439, are-cheap-aluminum-pans-safe 474848354483673849, are-plastic-cutting-boards-safe 474848354483676108, is-hexclad-non-toxic 474848354483676126, can-you-microwave-ziploc-bags 474848354483682614, are-bath-and-body-works-candles-toxic 474848354483682673
+- HOW (what works): form_input on the Edit Pin link field does NOT reach React, Save then saves the OLD link. Set it with the native value setter + input/change events, wait ~3s (Pinterest runs /v3/storypins/checklink/), click Save, then a "Heads up! ... engagement metrics ... will be lost" confirm appears: click its Save. Verify by reloading the pin page. The list of pins + links comes from /resource/UserActivityPinsResource/get/ (options username + field_set_key grid_item + page_size 25, context {}) because the Created grid does not lazy-load in a background window.
+- Note: the 5 re-pointed pins still carry old hashtags in their descriptions (pre-9/25 copy); fixing that is growth task (b) for a later run.
+
+NEXT run (7pm): Day 11 mascara (is-waterproof-mascara-safe-pfas) + Day 12 lipstick (is-your-lipstick-safe), both Clean Beauty, both to the free scan. Growth (g): re-point the next 5 (tide, nonstick, air fresheners, febreze, clorox).
