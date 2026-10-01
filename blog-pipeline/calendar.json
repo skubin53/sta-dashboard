@@ -1,75 +1,11 @@
 {
- "start": "2026-09-27",
+ "start": "2026-10-01",
  "days": 45,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-09-27",
-   "weekday": "Sun",
-   "slots": [
-    {
-     "slug": "can-you-exercise-your-way-out-of-bad-sleep",
-     "title": "Can You Exercise Your Way Out of Bad Sleep? What a Study of 323,910 Adults Found (2026)",
-     "cat": "Health",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-a-franchise-worth-it-at-50",
-     "title": "Club Pilates Buyers Were Told Six Months. Is a Franchise Worth It at 50? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-09-28",
-   "weekday": "Mon",
-   "slots": [
-    {
-     "slug": "does-laminate-flooring-off-gas-formaldehyde",
-     "title": "Does Laminate Flooring Give Off Formaldehyde? What Lumber Liquidators Knew (2026)",
-     "cat": "Home air",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "when-does-an-online-shop-stop-being-worth-it",
-     "title": "Etsy and eBay Keep Raising Fees. When Does a Shop Stop Being Worth It? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-09-29",
-   "weekday": "Tue",
+   "date": "2026-10-01",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "does-prevagen-actually-work",
@@ -100,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-09-30",
-   "weekday": "Wed",
+   "date": "2026-10-02",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "does-woolite-revive-colors",
@@ -132,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-01",
-   "weekday": "Thu",
+   "date": "2026-10-03",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-angry-orange-stain-remover-safe",
@@ -164,13 +100,13 @@
    ]
   },
   {
-   "date": "2026-10-02",
-   "weekday": "Fri",
+   "date": "2026-10-04",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
-     "cat": "Beauty",
+     "slug": "is-antibacterial-hand-soap-safe",
+     "title": "Is Antibacterial Hand Soap Safe? Dial's Germ Killer Still Has No Safety Ruling (2026)",
+     "cat": "Bathroom",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -196,13 +132,13 @@
    ]
   },
   {
-   "date": "2026-10-03",
-   "weekday": "Sat",
+   "date": "2026-10-05",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-antiperspirant-safe",
+     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -228,20 +164,52 @@
    ]
   },
   {
-   "date": "2026-10-04",
-   "weekday": "Sun",
+   "date": "2026-10-06",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
-     "written": false,
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "what-happens-if-you-quit",
+     "title": "What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -260,87 +228,19 @@
    ]
   },
   {
-   "date": "2026-10-05",
-   "weekday": "Mon",
+   "date": "2026-10-08",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "what-does-lavender-do-to-blood-pressure",
-     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "lavender oil blood pressure",
-     "felt": "Her blood pressure is up, she has been handed a tablet and told to cut salt, and nobody has offered her a single other thing to try alongside it.",
-     "register": "gentle",
-     "study": "Complementary Therapies in Medicine, December 2025. Yi-Ren Wang and colleagues, National Chung Cheng University. Randomised and placebo controlled.",
-     "area": "physical",
-     "takeaway": "Fifteen minutes a day moved four things at once in a properly controlled trial. That is worth knowing about.",
-     "track_want": "shopper",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
      "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "what-happens-if-you-quit",
-     "title": "What Happens to Your Customers If You Quit? (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-06",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "is-antibacterial-hand-soap-safe",
-     "title": "Is Antibacterial Hand Soap Safe? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "income-if-you-stop-for-90-days",
-     "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-07",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "is-antiperspirant-safe",
-     "title": "Is Antiperspirant Safe? What Aluminum Is Doing Under Your Arms (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -360,19 +260,23 @@
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
+   "date": "2026-10-09",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-johnsons-baby-shampoo-safe",
-     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
+     "slug": "what-does-lavender-do-to-blood-pressure",
+     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "cat": "Health",
+     "why": "",
+     "perish": 9,
+     "keyword": "lavender oil blood pressure",
+     "felt": "Her blood pressure is up, she has been handed a tablet and told to cut salt, and nobody has offered her a single other thing to try alongside it.",
+     "register": "gentle",
+     "study": "Complementary Therapies in Medicine, December 2025. Yi-Ren Wang and colleagues, National Chung Cheng University. Randomised and placebo controlled.",
+     "area": "physical",
+     "takeaway": "Fifteen minutes a day moved four things at once in a properly controlled trial. That is worth knowing about.",
+     "track_want": "shopper",
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -392,23 +296,19 @@
    ]
   },
   {
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
-     "cat": "Food",
-     "why": "",
-     "perish": 9,
-     "keyword": "ultra processed food heart risk",
-     "felt": "She has counted calories, cut fat, cut sugar and cut salt across thirty years of being told each one was the answer. She has never been told the manufacturing itself might be the thing.",
-     "register": "gentle",
-     "study": "European Heart Journal, May 2026. Luigina Guasti and colleagues, University of Insubria. A European Society of Cardiology clinical consensus statement.",
-     "area": "physical",
-     "takeaway": "It is not only what these foods contain. It is what being manufactured does to them, and that is now treated as a risk in its own right.",
-     "track_want": "shopper",
-     "pix": false,
+     "slug": "is-johnsons-baby-shampoo-safe",
+     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -428,8 +328,8 @@
    ]
   },
   {
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -460,8 +360,8 @@
    ]
   },
   {
-   "date": "2026-10-11",
-   "weekday": "Sun",
+   "date": "2026-10-12",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -492,19 +392,23 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "weekday": "Mon",
+   "date": "2026-10-13",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "cat": "Food",
+     "why": "",
+     "perish": 9,
+     "keyword": "ultra processed food heart risk",
+     "felt": "She has counted calories, cut fat, cut sugar and cut salt across thirty years of being told each one was the answer. She has never been told the manufacturing itself might be the thing.",
+     "register": "gentle",
+     "study": "European Heart Journal, May 2026. Luigina Guasti and colleagues, University of Insubria. A European Society of Cardiology clinical consensus statement.",
+     "area": "physical",
+     "takeaway": "It is not only what these foods contain. It is what being manufactured does to them, and that is now treated as a risk in its own right.",
+     "track_want": "shopper",
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -524,23 +428,19 @@
    ]
   },
   {
-   "date": "2026-10-13",
-   "weekday": "Tue",
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "short-workouts-or-long-ones",
-     "title": "Short Hard Workouts or Long Easy Ones: Which Does More for Your Heart? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "hiit vs steady cardio over 50",
-     "felt": "She does not have an hour. She has been told an hour is what it takes, so she does nothing at all, and she feels bad about that on top of everything else.",
-     "register": "gentle",
-     "study": "Journal of Cardiovascular Nursing, March 2026. Yu-Hsuan Chang PhD and colleagues, National Tainan Junior College of Nursing.",
-     "area": "physical",
-     "takeaway": "The short version is not a lesser version. And whichever one you pick, the gains only last as long as you keep doing it.",
-     "track_want": "shopper",
-     "pix": false,
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -560,8 +460,8 @@
    ]
   },
   {
-   "date": "2026-10-14",
-   "weekday": "Wed",
+   "date": "2026-10-15",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -592,8 +492,8 @@
    ]
   },
   {
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "date": "2026-10-16",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-redken-shampoo-safe",
@@ -624,25 +524,29 @@
    ]
   },
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-17",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
+     "slug": "short-workouts-or-long-ones",
+     "title": "Short Hard Workouts or Long Easy Ones: Which Does More for Your Heart? (2026)",
+     "cat": "Health",
+     "why": "",
+     "perish": 9,
+     "keyword": "hiit vs steady cardio over 50",
+     "felt": "She does not have an hour. She has been told an hour is what it takes, so she does nothing at all, and she feels bad about that on top of everything else.",
+     "register": "gentle",
+     "study": "Journal of Cardiovascular Nursing, March 2026. Yu-Hsuan Chang PhD and colleagues, National Tainan Junior College of Nursing.",
+     "area": "physical",
+     "takeaway": "The short version is not a lesser version. And whichever one you pick, the gains only last as long as you keep doing it.",
+     "track_want": "shopper",
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -656,23 +560,19 @@
    ]
   },
   {
-   "date": "2026-10-17",
-   "weekday": "Sat",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "what-is-astaxanthin",
-     "title": "What Is Astaxanthin, and Why Do Fifteen Trials Point the Same Way? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "what is astaxanthin",
-     "felt": "She keeps seeing the word on labels and has no idea whether it is a real thing or a marketing word somebody made up.",
-     "register": "gentle",
-     "study": "International Journal of Molecular Sciences, January 2026. Giuseppina Malcangi and colleagues, University of Bari Aldo Moro. A systematic review of 15 randomised controlled trials.",
-     "area": "physical",
-     "takeaway": "Fifteen separate trials landing in the same place is a real signal. What it changes on a blood test is clear. What it changes in a life is still being worked out.",
-     "track_want": "shopper",
-     "pix": false,
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -692,8 +592,8 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-19",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-tap-water-safe-to-drink",
@@ -724,8 +624,8 @@
    ]
   },
   {
-   "date": "2026-10-19",
-   "weekday": "Mon",
+   "date": "2026-10-20",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "what-keeps-your-memory-sharp-after-70",
@@ -756,9 +656,26 @@
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
+    {
+     "slug": "what-is-astaxanthin",
+     "title": "What Is Astaxanthin, and Why Do Fifteen Trials Point the Same Way? (2026)",
+     "cat": "Health",
+     "why": "",
+     "perish": 9,
+     "keyword": "what is astaxanthin",
+     "felt": "She keeps seeing the word on labels and has no idea whether it is a real thing or a marketing word somebody made up.",
+     "register": "gentle",
+     "study": "International Journal of Molecular Sciences, January 2026. Giuseppina Malcangi and colleagues, University of Bari Aldo Moro. A systematic review of 15 randomised controlled trials.",
+     "area": "physical",
+     "takeaway": "Fifteen separate trials landing in the same place is a real signal. What it changes on a blood test is clear. What it changes in a life is still being worked out.",
+     "track_want": "shopper",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
     {
      "slug": "is-your-dehumidifier-a-fire-risk",
      "title": "Is Your Dehumidifier a Fire Risk? (2026)",
@@ -771,7 +688,13 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "weekday": "Thu",
+   "slots": [
     {
      "slug": "is-your-magnesium-what-the-label-says",
      "title": "Is Your Magnesium Really What the Label Says? (2026)",
@@ -781,29 +704,6 @@
      "keyword": "magnesium glycinate lawsuit label",
      "felt": "She started taking magnesium for the 3 a.m. wake-ups, the leg cramps that jerk her out of sleep, and the low hum of anxiety her doctor waved off as just her age. She takes it faithfully every night. It is not working, and she has spent a year assuming the problem is her body.",
      "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-21",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "is-your-skin-a-barrier-or-an-ecosystem",
-     "title": "Is Your Skin a Barrier or an Ecosystem? (2026)",
-     "cat": "Beauty",
-     "why": "",
-     "perish": 9,
-     "keyword": "skin microbiome explained",
-     "felt": "Her skin has changed and nothing she used to use works any more. She has been buying stronger and stronger products and getting worse results.",
-     "register": "gentle",
-     "study": "Cosmetics, February 2026. Joie Chia and colleagues, University of Sunderland.",
-     "area": "physical",
-     "takeaway": "If skin is a population rather than a surface, then stripping it harder is the opposite of caring for it.",
-     "track_want": "shopper",
      "pix": false,
      "written": false,
      "track": "shopper"
@@ -824,8 +724,8 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "window-air-conditioner-mold-recall",
@@ -856,11 +756,6 @@
    ]
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
-   "slots": []
-  },
-  {
    "date": "2026-10-24",
    "weekday": "Sat",
    "slots": []
@@ -868,6 +763,44 @@
   {
    "date": "2026-10-25",
    "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-your-skin-a-barrier-or-an-ecosystem",
+     "title": "Is Your Skin a Barrier or an Ecosystem? (2026)",
+     "cat": "Beauty",
+     "why": "",
+     "perish": 9,
+     "keyword": "skin microbiome explained",
+     "felt": "Her skin has changed and nothing she used to use works any more. She has been buying stronger and stronger products and getting worse results.",
+     "register": "gentle",
+     "study": "Cosmetics, February 2026. Joie Chia and colleagues, University of Sunderland.",
+     "area": "physical",
+     "takeaway": "If skin is a population rather than a surface, then stripping it harder is the opposite of caring for it.",
+     "track_want": "shopper",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "weekday": "Mon",
+   "slots": []
+  },
+  {
+   "date": "2026-10-27",
+   "weekday": "Tue",
+   "slots": []
+  },
+  {
+   "date": "2026-10-28",
+   "weekday": "Wed",
+   "slots": []
+  },
+  {
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "should-you-check-the-air-before-you-go-out",
@@ -889,18 +822,18 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": []
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
+   "date": "2026-10-31",
+   "weekday": "Sat",
    "slots": []
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-11-01",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "why-does-everyone-feel-behind-on-money-at-50",
@@ -922,18 +855,18 @@
    ]
   },
   {
-   "date": "2026-10-29",
-   "weekday": "Thu",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": []
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-11-03",
+   "weekday": "Tue",
    "slots": []
   },
   {
-   "date": "2026-10-31",
-   "weekday": "Sat",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "why-cant-i-read-a-whole-page-anymore",
@@ -953,26 +886,6 @@
      "track": "shopper"
     }
    ]
-  },
-  {
-   "date": "2026-11-01",
-   "weekday": "Sun",
-   "slots": []
-  },
-  {
-   "date": "2026-11-02",
-   "weekday": "Mon",
-   "slots": []
-  },
-  {
-   "date": "2026-11-03",
-   "weekday": "Tue",
-   "slots": []
-  },
-  {
-   "date": "2026-11-04",
-   "weekday": "Wed",
-   "slots": []
   },
   {
    "date": "2026-11-05",
@@ -1003,10 +916,35 @@
    "date": "2026-11-10",
    "weekday": "Tue",
    "slots": []
+  },
+  {
+   "date": "2026-11-11",
+   "weekday": "Wed",
+   "slots": []
+  },
+  {
+   "date": "2026-11-12",
+   "weekday": "Thu",
+   "slots": []
+  },
+  {
+   "date": "2026-11-13",
+   "weekday": "Fri",
+   "slots": []
+  },
+  {
+   "date": "2026-11-14",
+   "weekday": "Sat",
+   "slots": []
   }
  ],
- "shortfall": 35,
+ "shortfall": 40,
  "blocked": [
+  {
+   "slug": "income-if-you-stop-for-90-days",
+   "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
+   "why": "written, but a photo reshoot is open, so it must not publish yet"
+  },
   {
    "slug": "is-crest-toothpaste-safe",
    "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
