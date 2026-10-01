@@ -27,3 +27,29 @@ where the beef came from matters more than one word on a label.
 **Pipeline note, same day.** 30 of the 42 cards can be texted once Shannon approves wording.
 Monty Camp asked for "a link to the website" on 2025-07-05 and never got one; the order link
 is exactly what he asked for.
+
+## 2026-10-01 - Holiday beef gifts: start the gift push in October, before they sell out
+
+**The idea.** Sell Riverbend gift bundles for Thanksgiving and Christmas, starting now. A beef
+gift is an easy yes for women 40 to 60 shopping for parents, grown kids, a husband who has
+everything, or clients (realtors and small business owners giving closing or year-end gifts).
+
+**Why it should work (Riverbend's own FAQ, Black Label site /riverbendranch/faqs, read 2026-10-01).**
+- Gift bundles are separate from the subscription: "You can order as many gift bundles as you
+  would like while supplies last." The subscription is capped at one bundle a month, so gifts
+  are the one way a single buyer can order several at once.
+- "The Riverbend Ranch Black Label Beef gift bundles will sell out fast." Asking early is the
+  honest reason to ask now, not a made-up deadline.
+- The recipient gets a confirmation email with the order contents and a message from the giver,
+  and the giver needs the recipient's email. That is the whole checkout ask to explain.
+
+**What to do (each step needs Shannon's go-ahead).**
+1. Add a short "Give it as a gift" section to the new beef page (preview at scan.ismyhometoxic.com/beef/)
+   with the order button on her eatbeefwithshan link. Check first that the gift path is reachable
+   from her referral link.
+2. One gift text to the 30 textable Beef LP Follow ups leads in early November, once she approves wording.
+3. One Pinterest pin and one blog angle: "a gift from an American ranch" for the holidays.
+
+**Check before anything goes public.** Gift bundle names, prices and cutoff dates are behind the
+sign-in, so confirm them in her account first. Never promise delivery by a date Riverbend has not
+published.
