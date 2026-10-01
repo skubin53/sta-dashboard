@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-09-27
+date: 2026-10-01
 title: I Got a Severance Package at 52. What Do I Do With It? (2026)
 slug: severance-at-52-what-next
 keyword: severance package at 50 what to do
@@ -47,7 +47,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 27, 2026<br><span style="font-size:.92em;">Published September 27, 2026 &middot; Last updated September 27, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 1, 2026<br><span style="font-size:.92em;">Published October 1, 2026 &middot; Last updated October 1, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -267,8 +267,8 @@ our finances.</p>
    "headline": "I Got a Severance Package at 52. What Do I Do With It? (2026)",
    "description": "Past 40, the law gives you 21 to 45 days to decide and 7 to take it back. What IBM put in one 52 year old's severance packet, and what to do first.",
    "image": "https://scan.ismyhometoxic.com/blog-images/severanceat-hero-v1.webp",
-   "datePublished": "2026-09-27",
-   "dateModified": "2026-09-27",
+   "datePublished": "2026-10-01",
+   "dateModified": "2026-10-01",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/severance-at-52-what-next"},
    "author": {"@id": "https://theshannonnicole.com/post/severance-at-52-what-next#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
