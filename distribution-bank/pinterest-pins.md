@@ -298,3 +298,21 @@ PUBLISH TRAP (new 9/30 7pm): after filling the fields, Publish went DISABLED wit
 ## GROWTH TASK 2026-09-30 (7pm) (g) re-pointed 5 more older pins (see "## Re-pointed to the scan"); 6 left
 
 NEXT run (Thu noon): Day 12 baby powder (does-baby-powder-cause-cancer, Clean Beauty) + Day 13 is baby wipes (are-baby-wipes-safe, has an OPEN RESHOOT and baby photos: skip it) so take seed oils (are-seed-oils-bad-for-you, Food). Check each photo: woman 40-60, no child. Growth (g): re-point the last 6 (sunscreen, aluminum, cutting boards, hexclad, ziploc, candles), then rotate back to (a)-(f).
+
+## 2026-10-01 (noon run, ran 12:33) - 0 pins published: Edge tab throttled, then its renderer froze
+
+The Edge tab was hidden (document.visibilityState "hidden"), so file_upload kept timing out waiting for the page to settle, the extension briefly dropped, and finally Runtime.evaluate timed out (renderer frozen). Stopped cleanly per the throttle rule; nothing was published, nothing double-posted.
+
+COMPOSED and ready in the scratchpad for 7pm (recompose from blog-images if the scratchpad is gone):
+### Seed oils  [pinx_seedoils.png | photo: areseedoils-belonging-v1.webp (two women cooking at a stove)]
+- Title: Are seed oils bad for you? What a lab finds when they are heated
+- Board: Non-Toxic Food & Clean Pantry | Link: scan /now/ utm_campaign=are-seed-oils-bad-for-you
+- Desc: Are seed oils bad for you? Here is the honest version: what a lab measures when these cooking oils are heated, what food fraud investigators keep finding in the bottle, and the one traditional fat, beef tallow from a farm you can name, that answers both. Real food for women who cook every night, American made and more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Avocado oil  [pinx_avocado.png | photo: avocado-belonging-v1.webp (a farmer handing a woman a jar at his truck)]
+- Title: Is your avocado oil fake? What UC Davis found in 54 products
+- Board: Non-Toxic Food & Clean Pantry | Link: scan /now/ utm_campaign=is-avocado-oil-fake
+- Desc: Is your avocado oil fake? In July 2026, UC Davis reported that 89 percent of 54 processed foods labeled with avocado oil contained other oils. Here is what was actually in the bottle and the chips, why the label cannot tell you, and the one swap that ends the guessing: a fat from a farm you can name. American made and more affordable. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+
+SKIPPED: does-baby-powder-cause-cancer (Day 12). Belonging and freedom both show a baby; turning point shows a branded Johnson's bottle with hands only. No compliant pin can be made (same as Scentsy). Avocado oil (Day 14) took its place.
+
+Growth (g): the sunscreen re-point (474848354483669439) was started when the renderer froze. UNKNOWN whether it saved: the 7pm run must reload that pin and check before anything else. Still on the blog: sunscreen (maybe), aluminum, cutting boards, hexclad, ziploc, candles.
