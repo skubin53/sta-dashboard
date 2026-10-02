@@ -7,7 +7,7 @@ keyword: i have an audience but no product
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/audiencebut-hero-v1.webp
 meta_description: Your followers live on Meta's land, and its terms let it close your account at its discretion. How to keep your people and what to hand them.
-status: ready
+status: published
 vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-Target-Segments, MLM-Vetting-Filter, North-Star]
 ---
 
