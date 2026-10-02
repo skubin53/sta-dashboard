@@ -316,3 +316,9 @@ COMPOSED and ready in the scratchpad for 7pm (recompose from blog-images if the 
 SKIPPED: does-baby-powder-cause-cancer (Day 12). Belonging and freedom both show a baby; turning point shows a branded Johnson's bottle with hands only. No compliant pin can be made (same as Scentsy). Avocado oil (Day 14) took its place.
 
 Growth (g): the sunscreen re-point (474848354483669439) was started when the renderer froze. UNKNOWN whether it saved: the 7pm run must reload that pin and check before anything else. Still on the blog: sunscreen (maybe), aluminum, cutting boards, hexclad, ziploc, candles.
+
+## 2026-10-01 (7pm run, ran 7:41) - 0 pins: the Edge window is minimized (screenshot "0 width", page renders blank)
+
+Checked first: the sunscreen re-point from noon did NOT save (pin 474848354483669439 still links to the blog, no dialog left open), so nothing is half-done. Then the creation tool loaded with an empty body and no file input: Pinterest does not render in a minimized window. Chrome was not used because it is the LinkedIn session's browser. Stopped cleanly.
+
+NEXT run (Fri noon): first confirm the Edge window is not minimized (a screenshot that does not say "0 width"). Then publish the two pins composed this morning (seed oils, avocado oil; copy and photos in the noon entry above) and re-point 5 of the last 6 (sunscreen, aluminum, cutting boards, hexclad, ziploc, candles).
