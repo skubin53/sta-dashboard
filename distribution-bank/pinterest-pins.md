@@ -322,3 +322,8 @@ Growth (g): the sunscreen re-point (474848354483669439) was started when the ren
 Checked first: the sunscreen re-point from noon did NOT save (pin 474848354483669439 still links to the blog, no dialog left open), so nothing is half-done. Then the creation tool loaded with an empty body and no file input: Pinterest does not render in a minimized window. Chrome was not used because it is the LinkedIn session's browser. Stopped cleanly.
 
 NEXT run (Fri noon): first confirm the Edge window is not minimized (a screenshot that does not say "0 width"). Then publish the two pins composed this morning (seed oils, avocado oil; copy and photos in the noon entry above) and re-point 5 of the last 6 (sunscreen, aluminum, cutting boards, hexclad, ziploc, candles).
+
+## 2026-10-02 (12:11pm run, ran 12:41, first CHROME-only run) - 0 pins: the Chrome tab was hidden
+
+Chrome (ca040473) connected; this session's own tab group opened the creation tool, but the tab reported document.visibilityState "hidden", hasFocus false, width 1536 (so not minimized: covered by another window or a background tab), and Pinterest rendered an empty body with no file input. Re-checked after 10 seconds: same. Stopped cleanly per the Chrome-only rule; no Edge fallback, LinkedIn tabs untouched. Seed oils + avocado still composed and waiting. 6 re-points still to do.
+To work, the Chrome tab titled "Pinterest" has to be the one showing on screen at about 12:11pm.
