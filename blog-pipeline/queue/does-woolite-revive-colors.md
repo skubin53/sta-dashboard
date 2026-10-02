@@ -216,20 +216,6 @@ of our health and our finances.</p>
 </ul>
 </div>
 
-<h2 id="faq">What else do people ask?</h2>
-
-<p><strong>Was I part of the Woolite settlement?</strong></p>
-<p>Only if you bought a bottle with those words in the covered years. You also had to live in California, New York or Massachusetts. Claims closed December 19, 2023.</p>
-
-<p><strong>Was this lawsuit about Woolite being unsafe?</strong></p>
-<p>No. It was about color, not safety. The buyers said it did not bring color back, and Reckitt said it did.</p>
-
-<p><strong>Does Reckitt still make Woolite?</strong></p>
-<p>Not on its own. <a href="https://www.reckitt.com/media-landing/press-releases/2025/reckitt-completes-divestment-of-essential-home/">Reckitt sold its Essential Home business to the investment firm Advent on December 31, 2025. It kept a 30% stake.</a> <a href="https://www.adventinternational.com/news/advent-to-acquire-majority-stake-in-reckitts-essential-home-portfolio/">Advent lists Woolite among that business's brands.</a></p>
-
-<p><strong>Will a different soap bring my faded clothes back?</strong></p>
-<p>Do not count on it. Dye that washed out is gone. Cold water, inside-out washing and less dryer time slow the fading from here.</p>
-
 <h2 id="who-do-you-become">Who do you become?</h2>
 
 <p>You become the one who knows what her good clothes get washed in, and who made it.</p>
@@ -250,6 +236,20 @@ of our health and our finances.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 <p style="margin:12px 0 0;font-size:.85em;">You do not have to throw anything out.</p>
 </div>
+
+<h2 id="faq">What else do people ask?</h2>
+
+<p><strong>Was I part of the Woolite settlement?</strong></p>
+<p>Only if you bought a bottle with those words in the covered years. You also had to live in California, New York or Massachusetts. Claims closed December 19, 2023.</p>
+
+<p><strong>Was this lawsuit about Woolite being unsafe?</strong></p>
+<p>No. It was about color, not safety. The buyers said it did not bring color back, and Reckitt said it did.</p>
+
+<p><strong>Does Reckitt still make Woolite?</strong></p>
+<p>Not on its own. <a href="https://www.reckitt.com/media-landing/press-releases/2025/reckitt-completes-divestment-of-essential-home/">Reckitt sold its Essential Home business to the investment firm Advent on December 31, 2025. It kept a 30% stake.</a> <a href="https://www.adventinternational.com/news/advent-to-acquire-majority-stake-in-reckitts-essential-home-portfolio/">Advent lists Woolite among that business's brands.</a></p>
+
+<p><strong>Will a different soap bring my faded clothes back?</strong></p>
+<p>Do not count on it. Dye that washed out is gone. Cold water, inside-out washing and less dryer time slow the fading from here.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
