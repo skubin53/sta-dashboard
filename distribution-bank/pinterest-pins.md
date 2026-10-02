@@ -327,3 +327,7 @@ NEXT run (Fri noon): first confirm the Edge window is not minimized (a screensho
 
 Chrome (ca040473) connected; this session's own tab group opened the creation tool, but the tab reported document.visibilityState "hidden", hasFocus false, width 1536 (so not minimized: covered by another window or a background tab), and Pinterest rendered an empty body with no file input. Re-checked after 10 seconds: same. Stopped cleanly per the Chrome-only rule; no Edge fallback, LinkedIn tabs untouched. Seed oils + avocado still composed and waiting. 6 re-points still to do.
 To work, the Chrome tab titled "Pinterest" has to be the one showing on screen at about 12:11pm.
+
+## 2026-10-02 (2:25pm retry after Shannon's computer restart) - 0 pins: Chrome tab still hidden
+
+The extension opens this session's tabs in their OWN Chrome window (tabs_context createIfEmpty makes a new window and tab group). That window sits behind her main Chrome window, so the tab reports visibilityState "hidden" and Pinterest renders a blank page, even with Chrome itself at the front. For the noon run to work, the Claude Chrome window (the one with the "Pinterest" tab) has to be the window on top. Pins still waiting: seed oils, avocado oil; 6 re-points.
