@@ -53,3 +53,23 @@ everything, or clients (realtors and small business owners giving closing or yea
 **Check before anything goes public.** Gift bundle names, prices and cutoff dates are behind the
 sign-in, so confirm them in her account first. Never promise delivery by a date Riverbend has not
 published.
+
+## 2026-10-02 - A first taste for current shoppers: tallow and jerky ride on the regular order
+
+**The idea.** Before asking anyone to start a beef subscription, give your current shoppers a
+no-commitment first taste. Riverbend Ranch Beef Tallow and Beef Jerky Original sit in the regular
+store with product points, so a shopper adds them to the order she already places. When she likes
+them, the Black Label beef subscription is the natural next step.
+
+**Why it should work (verified in the live logged-in store on 2026-08-31, memory sta-riverbend-ranch-scope).**
+- Riverbend Ranch Beef Tallow (60278) is $14.95 and 6 points; Beef Jerky Original (60252) is $8.95
+  and 3 points. Both have a plain Add To Cart in Healthy Foods and Drinks. No second subscription.
+- The Black Label beef cuts are a separate subscription, so the big ask comes second, after a taste.
+- Current shoppers already trust Shannon and already have the account. No cold outreach, no new signup.
+
+**What to do (each step needs Shannon's go-ahead).**
+1. One short text to current shoppers this month: "add a jar of tallow or a bag of jerky to your
+   order and taste the ranch," with her wording.
+2. In the follow-up, the eatbeefwithshan link for anyone who liked it.
+3. Never call it "Melaleuca" in any public copy; prices change, so re-check them in her account
+   before anything goes out.
