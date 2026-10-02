@@ -71,5 +71,5 @@ them, the Black Label beef subscription is the natural next step.
 1. One short text to current shoppers this month: "add a jar of tallow or a bag of jerky to your
    order and taste the ranch," with her wording.
 2. In the follow-up, the eatbeefwithshan link for anyone who liked it.
-3. Never call it "Melaleuca" in any public copy; prices change, so re-check them in her account
-   before anything goes out.
+3. Never name the parent company in any public copy; prices change, so re-check them in her
+   account before anything goes out.
