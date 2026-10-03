@@ -73,3 +73,36 @@ them, the Black Label beef subscription is the natural next step.
 2. In the follow-up, the eatbeefwithshan link for anyone who liked it.
 3. Never name the parent company in any public copy; prices change, so re-check them in her
    account before anything goes out.
+
+## 2026-10-03 - "Should we buy a quarter cow?" The monthly box answer for empty nesters
+
+**The idea.** Fall is when families price out a quarter or half cow for the freezer. Write one honest
+answer for the woman 40 to 60 whose kids have moved out: a quarter cow is a lot of beef and a lot of
+freezer, and a monthly box fits the kitchen freezer she already has. Use it as a blog post (empty nest
+angle), a Pinterest pin and an AI-search answer page, all pointing to the beef page and her order link
+https://RiverbendRanchSteaks.com/eatbeefwithshan .
+
+**Why it should work (university extension sources, read 2026-10-03).**
+- University of Nebraska-Lincoln BeefWatch ("How Many Pounds of Meat Can We Expect From A Beef Animal?",
+  https://beef.unl.edu/beefwatch/2020/how-many-pounds-meat-can-we-expect-beef-animal/): a 1,400 pound steer
+  gives an 880 pound carcass and about 570 pounds of boneless trimmed beef. "A quarter of beef takes an
+  approximately 4.5 cu. ft. of chest freezer or a 5.5 cu. ft. upright freezer."
+- Iowa State University Extension, Wayne County (https://www.extension.iastate.edu/wayne/beef-and-pork-whole-animal-buying-guide):
+  "many freezer compartments in a refrigerator are about 4-5 cubic feet." So a quarter fills the whole
+  kitchen freezer, or needs a second freezer.
+- South Dakota State University Extension (https://extension.sdstate.edu/guide-purchasing-freezer-beef-pork-and-lamb):
+  "one cubic foot per 35-40 pounds of packaged meat", and frozen quality slips faster for ground products
+  ("three-to-four months") than steaks, chops or roasts ("12 months"). A two-person house can struggle to
+  eat a quarter's ground beef while it is at its best.
+- Her beef page lists the Riverbend bundles at about 8 to 12 pounds each. By the SDSU rule of thumb that
+  is well under half a cubic foot a month: no chest freezer, nothing to finish before it loses quality.
+
+**What to do (each step needs Shannon's go-ahead).**
+1. A blog post or answer page: "Quarter cow or monthly beef box? What fits a two-person house", with a
+   simple table (pounds, freezer space, how long it keeps at best quality), all from the three sources above.
+2. One Pinterest pin on the same question, linking the beef page.
+3. Re-check Riverbend's current bundle weights in her account before quoting them; never name the parent
+   company; no price comparison unless both prices are verified the same day.
+
+**Check before anything goes public.** The UNL figures are for one 1,400 pound steer; say "about" and
+name the source. Do not claim the box is cheaper per pound without verified prices for both.
