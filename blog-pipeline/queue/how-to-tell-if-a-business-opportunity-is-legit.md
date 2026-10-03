@@ -7,7 +7,7 @@ keyword: how to tell if a business opportunity is legit
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/howtotellif-hero-v1.webp
 meta_description: A real opportunity tells you the truth in writing before you pay. A repackaged course just takes your money. Here is how to tell them apart.
-status: ready
+status: published
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 ---
 
