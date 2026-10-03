@@ -7,7 +7,7 @@ keyword: is switch to america an mlm
 category: Builders
 cover: https://scan.ismyhometoxic.com/now/shannon-photo.jpg
 meta_description: No. Switch to America is not an MLM. No inventory, nothing to sell to friends, no buy-in. Here is how it works, checked against the FTC.
-status: ready
+status: published
 vault_checked: [Switch-to-America, MLM-Vetting-Filter, North-Star]
 note: "Written 2026-10-03 at Shannon's request after a prospect's Google search said Switch to America is an MLM. Facts: FTC consumer MLM page (definition + warning signs + pyramid quote, verified verbatim 2026-10-03) and FTC business guidance; Forbes Best Brands for Value 2026 #2 behind Costco (unlinked: the coverage names the partner company). Founder's Sept 2026 broadcast (partner does not consider itself MLM, left the DSA) is internal and NOT cited. Partner company NOT named per her rule; no income figures. 'MLM' kept only where the searched question needs it."
 ---
