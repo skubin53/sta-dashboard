@@ -39,6 +39,11 @@ Work these in this order. All seven are marked `requested` since late August.
 Builder sets carry the FTC rule: nothing that suggests money or income (no cash, cards, charts,
 dashboards, cars, suitcases, beaches). Woman 40 to 60.
 
+**Added 2026-10-02 night.** Set 8 (blog traffic) was delivered on 2026-10-02, but its freedom frame
+is dunes and the sea, which the set bans. One frame: `RESHOOT-why-did-my-blog-traffic-drop-2026.md`.
+Do it next, before set 2, because it is the only builder set with photos and one frame is quick.
+For the freedom frame on every builder set: a street, a park path or her own garden, never a beach.
+
 ## 3. Reshoots that block posts already written
 
 | Order | Request file | What is needed |
