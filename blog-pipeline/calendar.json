@@ -1,43 +1,11 @@
 {
- "start": "2026-10-02",
+ "start": "2026-10-04",
  "days": 45,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-02",
-   "weekday": "Fri",
-   "slots": [
-    {
-     "slug": "does-woolite-revive-colors",
-     "title": "Does Woolite Really Revive Your Colors? What the Color Renew Lawsuit Said (2026)",
-     "cat": "Laundry",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "audience-but-no-product",
-     "title": "I Have an Audience and No Product. What Now? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-03",
-   "weekday": "Sat",
+   "date": "2026-10-04",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-angry-orange-stain-remover-safe",
@@ -68,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-04",
-   "weekday": "Sun",
+   "date": "2026-10-05",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-antibacterial-hand-soap-safe",
@@ -100,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-05",
-   "weekday": "Mon",
+   "date": "2026-10-06",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -132,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-06",
-   "weekday": "Tue",
+   "date": "2026-10-07",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -164,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-07",
-   "weekday": "Wed",
+   "date": "2026-10-08",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -196,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
+   "date": "2026-10-09",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -228,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -248,45 +216,9 @@
      "slug": "why-did-my-blog-traffic-drop-2026",
      "title": "Why Did My Blog Traffic Drop in 2026? And What to Build Instead",
      "cat": "Builders",
-     "why": "The largest population of newly desperate audience owners in 2026, and nobody in her category is speaking to them. These are people with lis",
-     "perish": 1,
-     "keyword": "why did my blog traffic drop 2026",
-     "felt": "",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-10",
-   "weekday": "Sat",
-   "slots": [
-    {
-     "slug": "what-does-lavender-do-to-blood-pressure",
-     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "lavender oil blood pressure",
-     "felt": "Her blood pressure is up, she has been handed a tablet and told to cut salt, and nobody has offered her a single other thing to try alongside it.",
-     "register": "gentle",
-     "study": "Complementary Therapies in Medicine, December 2025. Yi-Ren Wang and colleagues, National Chung Cheng University. Randomised and placebo controlled.",
-     "area": "physical",
-     "takeaway": "Fifteen minutes a day moved four things at once in a properly controlled trial. That is worth knowing about.",
-     "track_want": "shopper",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45? (2026)",
-     "cat": "Builders",
-     "why": "This is the exact avatar in her own words, made searchable. A capped high earner has money, discipline, a professional network, and a very s",
-     "perish": 1,
-     "keyword": "why did my salary stop increasing",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": false,
@@ -313,6 +245,42 @@
      "track": "shopper"
     },
     {
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45? (2026)",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "cat": "Food",
+     "why": "",
+     "perish": 9,
+     "keyword": "ultra processed food heart risk",
+     "felt": "She has counted calories, cut fat, cut sugar and cut salt across thirty years of being told each one was the answer. She has never been told the manufacturing itself might be the thing.",
+     "register": "gentle",
+     "study": "European Heart Journal, May 2026. Luigina Guasti and colleagues, University of Insubria. A European Society of Cardiology clinical consensus statement.",
+     "area": "physical",
+     "takeaway": "It is not only what these foods contain. It is what being manufactured does to them, and that is now treated as a risk in its own right.",
+     "track_want": "shopper",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
      "slug": "why-did-my-company-just-close",
      "title": "Why Did the Company I Built With Just Close? (2026)",
      "cat": "Builders",
@@ -328,8 +296,8 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "weekday": "Mon",
+   "date": "2026-10-13",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -360,8 +328,8 @@
    ]
   },
   {
-   "date": "2026-10-13",
-   "weekday": "Tue",
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -392,23 +360,19 @@
    ]
   },
   {
-   "date": "2026-10-14",
-   "weekday": "Wed",
+   "date": "2026-10-15",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
-     "cat": "Food",
-     "why": "",
-     "perish": 9,
-     "keyword": "ultra processed food heart risk",
-     "felt": "She has counted calories, cut fat, cut sugar and cut salt across thirty years of being told each one was the answer. She has never been told the manufacturing itself might be the thing.",
-     "register": "gentle",
-     "study": "European Heart Journal, May 2026. Luigina Guasti and colleagues, University of Insubria. A European Society of Cardiology clinical consensus statement.",
-     "area": "physical",
-     "takeaway": "It is not only what these foods contain. It is what being manufactured does to them, and that is now treated as a risk in its own right.",
-     "track_want": "shopper",
-     "pix": false,
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -428,19 +392,23 @@
    ]
   },
   {
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "date": "2026-10-16",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
+     "slug": "short-workouts-or-long-ones",
+     "title": "Short Hard Workouts or Long Easy Ones: Which Does More for Your Heart? (2026)",
+     "cat": "Health",
+     "why": "",
+     "perish": 9,
+     "keyword": "hiit vs steady cardio over 50",
+     "felt": "She does not have an hour. She has been told an hour is what it takes, so she does nothing at all, and she feels bad about that on top of everything else.",
+     "register": "gentle",
+     "study": "Journal of Cardiovascular Nursing, March 2026. Yu-Hsuan Chang PhD and colleagues, National Tainan Junior College of Nursing.",
+     "area": "physical",
+     "takeaway": "The short version is not a lesser version. And whichever one you pick, the gains only last as long as you keep doing it.",
+     "track_want": "shopper",
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -460,8 +428,8 @@
    ]
   },
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-17",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-roundup-safe-to-use-around-your-house",
@@ -492,8 +460,8 @@
    ]
   },
   {
-   "date": "2026-10-17",
-   "weekday": "Sat",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-the-pink-stuff-safe",
@@ -524,21 +492,53 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-19",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "short-workouts-or-long-ones",
-     "title": "Short Hard Workouts or Long Easy Ones: Which Does More for Your Heart? (2026)",
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "what-is-astaxanthin",
+     "title": "What Is Astaxanthin, and Why Do Fifteen Trials Point the Same Way? (2026)",
      "cat": "Health",
      "why": "",
      "perish": 9,
-     "keyword": "hiit vs steady cardio over 50",
-     "felt": "She does not have an hour. She has been told an hour is what it takes, so she does nothing at all, and she feels bad about that on top of everything else.",
+     "keyword": "what is astaxanthin",
+     "felt": "She keeps seeing the word on labels and has no idea whether it is a real thing or a marketing word somebody made up.",
      "register": "gentle",
-     "study": "Journal of Cardiovascular Nursing, March 2026. Yu-Hsuan Chang PhD and colleagues, National Tainan Junior College of Nursing.",
+     "study": "International Journal of Molecular Sciences, January 2026. Giuseppina Malcangi and colleagues, University of Bari Aldo Moro. A systematic review of 15 randomised controlled trials.",
      "area": "physical",
-     "takeaway": "The short version is not a lesser version. And whichever one you pick, the gains only last as long as you keep doing it.",
+     "takeaway": "Fifteen separate trials landing in the same place is a real signal. What it changes on a blood test is clear. What it changes in a life is still being worked out.",
      "track_want": "shopper",
      "pix": false,
      "written": false,
@@ -560,8 +560,8 @@
    ]
   },
   {
-   "date": "2026-10-19",
-   "weekday": "Mon",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "red-dye-40-mars-broken-promise",
@@ -577,6 +577,25 @@
      "track": "shopper"
     },
     {
+     "slug": "what-does-lavender-do-to-blood-pressure",
+     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "weekday": "Thu",
+   "slots": [
+    {
      "slug": "what-keeps-your-memory-sharp-after-70",
      "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
      "cat": "Cleaning",
@@ -588,12 +607,25 @@
      "pix": true,
      "written": false,
      "track": "shopper"
+    },
+    {
+     "slug": "why-did-clorox-pay-a-14-million-fine",
+     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
     }
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "why-do-you-stop-feeling-thirsty",
@@ -605,74 +637,6 @@
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-your-dehumidifier-a-fire-risk",
-     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
-     "cat": "Home air",
-     "why": "Gree, and specifically the two California executives of its U.S. importer, Gree USA. By September 2012 they had reports and test results showing the dehumidifiers were defective and could catch fire. They kept selling them and said nothing to the safety commission for at least six months. Federal law says report immediately.",
-     "perish": 1,
-     "keyword": "dehumidifier fire recall",
-     "felt": "She runs a dehumidifier in the basement or the bedroom all night, every night, because the damp makes her joints ache and sets off her sinuses, and because she is trying to keep mold out of a house she has lived in for twenty years. It hums under the floor while she sleeps and she has never once thought about it.",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-21",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "is-your-magnesium-what-the-label-says",
-     "title": "Is Your Magnesium Really What the Label Says? (2026)",
-     "cat": "Supplements",
-     "why": "eSupplements, LLC, doing business as Nutricost, which sold Magnesium Glycinate printed \"420 MG per serving\" on the front of the bottle when, plaintiffs allege, the capsules held far less than that. Not a contaminant. Not an ingredient debate. The number on the front of the bottle.",
-     "perish": 1,
-     "keyword": "magnesium glycinate lawsuit label",
-     "felt": "She started taking magnesium for the 3 a.m. wake-ups, the leg cramps that jerk her out of sleep, and the low hum of anxiety her doctor waved off as just her age. She takes it faithfully every night. It is not working, and she has spent a year assuming the problem is her body.",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "why-did-clorox-pay-a-14-million-fine",
-     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
-     "cat": "Cleaning",
-     "why": "The Clorox Company. CPSC charged it with knowingly failing to report a hazard it was legally required to report immediately. Its own microbiologists wrote the problem down in early 2019. Consumers did not hear about it until October 2022.",
-     "perish": 1,
-     "keyword": "clorox fine pine sol",
-     "felt": "That smell is the one her mother used. It is the smell that meant the floors were done and the house was safe and she had held it together for another week. She bought it on trust, not on research.",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-22",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "what-is-astaxanthin",
-     "title": "What Is Astaxanthin, and Why Do Fifteen Trials Point the Same Way? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "what is astaxanthin",
-     "felt": "She keeps seeing the word on labels and has no idea whether it is a real thing or a marketing word somebody made up.",
-     "register": "gentle",
-     "study": "International Journal of Molecular Sciences, January 2026. Giuseppina Malcangi and colleagues, University of Bari Aldo Moro. A systematic review of 15 randomised controlled trials.",
-     "area": "physical",
-     "takeaway": "Fifteen separate trials landing in the same place is a real signal. What it changes on a blood test is clear. What it changes in a life is still being worked out.",
-     "track_want": "shopper",
-     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -692,37 +656,8 @@
    ]
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
-   "slots": [
-    {
-     "slug": "why-was-the-laundress-recalled-twice",
-     "title": "Why Was The Laundress Recalled Twice? (2026)",
-     "cat": "Laundry",
-     "why": "Conopco Inc., doing business as Unilever, maker of The Laundress. The brand was built on being the careful, gentle, premium choice and sold through Target, Nordstrom, Saks Fifth Avenue and Bloomingdale's, and it had to recall the same product line twice inside four months.",
-     "perish": 1,
-     "keyword": "the laundress recall",
-     "felt": "She paid four times the drugstore price for the pretty glass bottle because her skin got reactive somewhere around 48 and she decided the good sheets and her own body were worth the upgrade. She bought careful. Careful is what she thought she was paying for.",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
    "date": "2026-10-24",
    "weekday": "Sat",
-   "slots": []
-  },
-  {
-   "date": "2026-10-25",
-   "weekday": "Sun",
-   "slots": []
-  },
-  {
-   "date": "2026-10-26",
-   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-your-skin-a-barrier-or-an-ecosystem",
@@ -740,8 +675,31 @@
      "pix": false,
      "written": false,
      "track": "shopper"
+    },
+    {
+     "slug": "why-was-the-laundress-recalled-twice",
+     "title": "Why Was The Laundress Recalled Twice? (2026)",
+     "cat": "Laundry",
+     "why": "Conopco Inc., doing business as Unilever, maker of The Laundress. The brand was built on being the careful, gentle, premium choice and sold through Target, Nordstrom, Saks Fifth Avenue and Bloomingdale's, and it had to recall the same product line twice inside four months.",
+     "perish": 1,
+     "keyword": "the laundress recall",
+     "felt": "She paid four times the drugstore price for the pretty glass bottle because her skin got reactive somewhere around 48 and she decided the good sheets and her own body were worth the upgrade. She bought careful. Careful is what she thought she was paying for.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
     }
    ]
+  },
+  {
+   "date": "2026-10-25",
+   "weekday": "Sun",
+   "slots": []
+  },
+  {
+   "date": "2026-10-26",
+   "weekday": "Mon",
+   "slots": []
   },
   {
    "date": "2026-10-27",
@@ -751,16 +709,6 @@
   {
    "date": "2026-10-28",
    "weekday": "Wed",
-   "slots": []
-  },
-  {
-   "date": "2026-10-29",
-   "weekday": "Thu",
-   "slots": []
-  },
-  {
-   "date": "2026-10-30",
-   "weekday": "Fri",
    "slots": [
     {
      "slug": "should-you-check-the-air-before-you-go-out",
@@ -782,6 +730,16 @@
    ]
   },
   {
+   "date": "2026-10-29",
+   "weekday": "Thu",
+   "slots": []
+  },
+  {
+   "date": "2026-10-30",
+   "weekday": "Fri",
+   "slots": []
+  },
+  {
    "date": "2026-10-31",
    "weekday": "Sat",
    "slots": []
@@ -789,11 +747,6 @@
   {
    "date": "2026-11-01",
    "weekday": "Sun",
-   "slots": []
-  },
-  {
-   "date": "2026-11-02",
-   "weekday": "Mon",
    "slots": [
     {
      "slug": "why-does-everyone-feel-behind-on-money-at-50",
@@ -815,6 +768,11 @@
    ]
   },
   {
+   "date": "2026-11-02",
+   "weekday": "Mon",
+   "slots": []
+  },
+  {
    "date": "2026-11-03",
    "weekday": "Tue",
    "slots": []
@@ -822,11 +780,6 @@
   {
    "date": "2026-11-04",
    "weekday": "Wed",
-   "slots": []
-  },
-  {
-   "date": "2026-11-05",
-   "weekday": "Thu",
    "slots": [
     {
      "slug": "why-cant-i-read-a-whole-page-anymore",
@@ -846,6 +799,11 @@
      "track": "shopper"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "weekday": "Thu",
+   "slots": []
   },
   {
    "date": "2026-11-06",
@@ -896,9 +854,19 @@
    "date": "2026-11-15",
    "weekday": "Sun",
    "slots": []
+  },
+  {
+   "date": "2026-11-16",
+   "weekday": "Mon",
+   "slots": []
+  },
+  {
+   "date": "2026-11-17",
+   "weekday": "Tue",
+   "slots": []
   }
  ],
- "shortfall": 43,
+ "shortfall": 45,
  "blocked": [
   {
    "slug": "income-if-you-stop-for-90-days",
