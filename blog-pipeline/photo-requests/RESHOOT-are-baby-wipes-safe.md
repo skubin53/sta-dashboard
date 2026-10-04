@@ -5,7 +5,7 @@ slug: are-baby-wipes-safe
 track: shopper
 queue_file: blog-pipeline/queue/are-baby-wipes-safe.md
 beats: 3
-status: RESHOOT NEEDED, post is LIVE with the wrong brand on it
+status: complete
 priority: high
 replaces: photos-completed/2026-08-26.md (arebabywipe set)
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. Continuity: same woman, same home, across the set. Nano Banana Pro at 4K."
