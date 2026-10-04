@@ -5,9 +5,10 @@ title: Why Did Eggs Cost So Much? (2026)
 slug: why-did-eggs-cost-so-much
 keyword: why are eggs so expensive
 category: Food
-cover: [IMAGE: hero - a woman in her fifties at a supermarket refrigerated egg case, an open carton in one hand as she checks the eggs, reading glasses pushed up on her head, gaze down on the carton not the camera, cart handle in her other hand, soft slightly flat cool store light, faint unease, worn everyday coat, candid documentary photo, natural skin texture with pores and fine lines, dressed background, shallow depth, no readable labels or branding, 16:9]
+cover: https://scan.ismyhometoxic.com/blog-images/whydideggsc-hero-v1.webp
 meta_description: In June 2026 the Justice Department accused the largest egg producer, Cal-Maine Foods, of helping push up the daily price that sets what your store pays for eggs. Here is what the complaint says.
-status: ready-for-photos
+status: needs-review
+review_note: "2026-10-04: Photo Claude delivered the 5-frame set 10/3; photos placed (hero = cover, villain, turning point, belonging, freedom; the receipt slot had no photo and was removed). Written 9/22 before current standards: fails 6 gates (reading grade 6.6, 14.4 words per sentence, meta 195 chars, 2 internal links, 2 citations, vault names) + voice V1. Needs a rewrite pass through write-photo-ready-posts.js (photos: why-did-eggs-cost-so-much) before it can publish."
 vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 ---
 
@@ -86,7 +87,9 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 
 <p>The complaint says Cal-Maine, with two producers named Versova and Hickman's Egg Ranch, agreed to push up a daily price quotation, the number your store and nearby restaurants use to price billions of eggs a year.</p>
 
-[IMAGE: villain - a plain brown egg carton with the label turned away, sitting on a worn butcher-block kitchen counter beside a curled grocery receipt with no legible text, hard single window light from the left, long shadow, cool white balance, desaturated clinical filmic grade, shallow depth of field, subtle grain, no readable brand or wording, documentary photo, natural surfaces, 16:9]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-villain-v1.webp" alt="A grey carton of brown eggs alone on a butcher-block kitchen counter in cold, flat early light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="was-it-bird-flu">Wasn't it just the bird flu?</h2>
 
@@ -122,8 +125,6 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 </tbody>
 </table>
 
-[IMAGE: receipt - top-down flat-lay of a woman's hand holding a pen beside her reading glasses and a phone showing a government press-release page (text not legible, no readable brand or logo), a printed page and a coffee ring on plain wood, flat cool newspaper-gray light, the most sober un-pretty frame in the post, documentary photo, 3:2]
-
 <h2 id="the-other-side">The case against my own story</h2>
 
 <p class="quick-answer">Quick answer: these are only proposed settlements with no admission of wrongdoing, and the shortage underneath was real.</p>
@@ -136,7 +137,9 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 
 <p>The claim was never that the shortage was fake, only that the bidding made a real one cost you more, and I am not going to stretch it past that.</p>
 
-[IMAGE: turning - a woman in her mid-fifties leaning on her kitchen counter with a hand to her chin, thinking not panicking, a look of dawning clarity, warmer window light returning to her skin, dressed window with curtains behind her, medium shot with shallow depth, candid gaze off camera, natural skin texture, 3:2]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-turning-point-v1.webp" alt="A woman in her fifties with short curly gray hair setting a closed egg carton down and looking out of her kitchen window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="what-do-i-buy">What can I buy instead of grocery store eggs?</h2>
 
@@ -152,7 +155,9 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 
 <p>Farm eggs will not save you money every single week, and they will not fix the store. What they give you is a person you know and a price that is honest.</p>
 
-[IMAGE: community - two or three different women aged 40 to 60 (varied ethnicity, body and hair) at a small farm tailgate stand buying plain unbranded cartons of eggs from the farmer, mid-conversation and half-laughing, hands on the cartons, warm golden late-morning light, layered depth, candid gaze off camera, natural skin texture, no readable labels, 3:2]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-belonging-v1.webp" alt="Two women in a backyard by a small chicken coop, one handing the other a wicker basket of fresh brown eggs, laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -207,7 +212,9 @@ of our health and our finances.</p>
 
 <p><strong>What if there is no farm near me?</strong> There is almost always one closer than you think. Ask at a farmers market, a feed store, or a church bulletin board.</p>
 
-[IMAGE: transformation - a woman in her fifties in her own sunny lived-in kitchen cracking a fresh farm egg with a deep orange yolk into a white bowl, a few brown and blue-green eggs in a dish nearby, a dog padding through the background, warmest golden wraparound window light, rich natural saturation, candid, the emotional peak of the post, natural skin texture, 16:9]
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-freedom-v1.webp" alt="A woman laughing in warm morning sun over a pan of scrambled eggs, a wicker basket of eggs beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
