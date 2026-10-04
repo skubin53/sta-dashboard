@@ -157,7 +157,7 @@ vault_checked: [burned-out, Builder-Target-Segments, MLM-Vetting-Filter, North-S
 
 <p>And the fee did not fall off a cliff. <a href="https://www.redfin.com/news/commissions-q3-2025/">In December 2025, Redfin said the average buyer's agent fee</a> was at "roughly the same level" as early 2024. So if your checks shrank, count your closings and look hard at your split.</p>
 
-<p>Now me. Switch to America makes the laundry soap and shampoo you run out of. No middlemen and no markup. There is no monthly requirement, and nothing to hit to stay active.</p>
+<p>Now me. Switch to America makes the laundry soap and shampoo you run out of. No middlemen and no markup.</p>
 
 <p>You pay what a brand new shopper pays. Not a penny less.</p>
 

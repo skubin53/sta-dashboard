@@ -169,7 +169,7 @@ vault_checked: [North-Star, MLM-Vetting-Filter, Compliance-Watchdog, burned-out,
 
 <p>That is fair. So run all five on me first, out loud, on the call.</p>
 
-<p>Switch to America is the maker. No middlemen and no markup. There are no minimums and no maximums on what you buy.</p>
+<p>Switch to America sells straight from the maker. No middlemen and no markup.</p>
 
 <p>And you decide nothing on the call. Take the week. If I push, you have your answer.</p>
 

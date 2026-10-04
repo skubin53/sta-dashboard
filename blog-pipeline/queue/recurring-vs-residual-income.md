@@ -172,7 +172,7 @@ vault_checked: [Recurring-Income-Offer, North-Star, Builder-Target-Segments, MLM
 
 <p>A monthly charge you are glad to pay is fine. The FTC's case was about the way in and the way out.</p>
 
-<p>When I say residual, I mean the reorder. Switch to America is the maker. No middlemen and no markup. I would rather lose a customer than trap one.</p>
+<p>When I say residual, I mean the reorder. Switch to America sells straight from the maker, no middlemen, no markup. I would rather lose a customer than trap one.</p>
 
 <p>And you do not have to work this out alone.</p>
 

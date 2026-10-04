@@ -174,7 +174,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Reorders are not magic either. A customer can stop any month she likes, and she should be free to.</p>
 
-<p>My own business is Switch to America. It is the maker, with no middlemen and no markup.</p>
+<p>My own business is Switch to America. It sells straight from the maker, with no middlemen and no markup.</p>
 
 <p>I will not give you a number to expect. Anybody who does is guessing, or selling.</p>
 
