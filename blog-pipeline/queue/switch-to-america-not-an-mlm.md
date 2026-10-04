@@ -9,7 +9,7 @@ cover: https://scan.ismyhometoxic.com/blog-images/arefooddyes-freedom-v1.webp
 meta_description: No. Switch to America is not an MLM. It is a store you shop from home. Nothing to sell, no inventory, cancel any time. Here is how it works.
 status: published
 vault_checked: [Switch-to-America, MLM-Vetting-Filter, North-Star]
-note: "Shopper-side answer page. v2 LIVE 2026-10-04 (ghl 6ac27a1df4216a082fbc6b5c) at Shannon's request: duplicate cover photo removed from the body, her photo in Who is behind it, detailed product range (her number: over 575 products), Walmart $713.2B / about $1.36M a minute (SEC), the 11-company wheel with Oct 2026 ownership, J&J talc + sunscreen receipts, recall table, comparison rows from her handbook page (partner unnamed). Verified by a 4-lens + re-verify pass: no row may deny the monthly order; FTC guidance does NOT use a where-the-money-comes-from test. Built by scratchpad build_mlm_sta_v3.py; published with live_edit_sta2.py."
+note: "Shopper-side answer page. v2 LIVE 2026-10-04 (now ghl 6ac280eff4216a082fbcbf06 after v4: maker -> manufacturer, extra scan box before What happens when you shop) at Shannon's request: duplicate cover photo removed from the body, her photo in Who is behind it, detailed product range (her number: over 575 products), Walmart $713.2B / about $1.36M a minute (SEC), the 11-company wheel with Oct 2026 ownership, J&J talc + sunscreen receipts, recall table, comparison rows from her handbook page (partner unnamed). Verified by a 4-lens + re-verify pass: no row may deny the monthly order; FTC guidance does NOT use a where-the-money-comes-from test. Built by scratchpad build_mlm_sta_v3.py; published with live_edit_sta2.py."
 ---
 <style>
 .sta-byline{font-size:.9em;color:#5A6B80;border-bottom:1px solid #e3e0d8;padding-bottom:12px;margin-bottom:22px;}
@@ -105,6 +105,12 @@ note: "Shopper-side answer page. v2 LIVE 2026-10-04 (ghl 6ac27a1df4216a082fbc6b5
 
 <p>So think of it as a store. Not a sales job.</p>
 
+<div class="sta-cta">
+<h3>See which of these to swap first</h3>
+<p>The free 3-minute home scan goes room by room and shows you where to start. No calls.</p>
+<a href="https://scan.ismyhometoxic.com/now/?utm_source=blog&utm_medium=shopper&utm_campaign=switch-to-america-not-an-mlm">Take the free home scan</a>
+</div>
+
 <h2 id="how-it-works">What happens when you shop?</h2>
 
 <p class="quick-answer">Quick answer: you pick what your home uses, and it ships to you.</p>
@@ -128,13 +134,13 @@ note: "Shopper-side answer page. v2 LIVE 2026-10-04 (ghl 6ac27a1df4216a082fbc6b5
 <div style="overflow-x:auto;"><table class="sta-table">
 <thead><tr><th>What people worry about with an MLM</th><th>Shopping with Switch to America</th></tr></thead>
 <tbody>
-<tr><td>Sell products to family and friends</td><td><strong>No. Shoppers never sell anything. Reselling is not allowed. Everyone buys straight from the maker and the ranch.</strong></td></tr>
+<tr><td>Sell products to family and friends</td><td><strong>No. Shoppers never sell anything. Reselling is not allowed. Everyone buys straight from the manufacturer and the ranch.</strong></td></tr>
 <tr><td>Load up on inventory</td><td><strong>No. There is no inventory. Nothing to stock, store or resell.</strong></td></tr>
-<tr><td>Prices above what stores charge</td><td><strong>Fair prices for what you get. Forbes ranked the maker number 2 in America for value.</strong></td></tr>
+<tr><td>Prices above what stores charge</td><td><strong>Fair prices for what you get. Forbes ranked the manufacturer number 2 in America for value.</strong></td></tr>
 <tr><td>Pay a buy-in</td><td><strong>No buy-in. Shoppers have a small membership.</strong></td></tr>
 <tr><td>Get locked in</td><td><strong>No. Pause or cancel any time. 100% money-back guarantee.</strong></td></tr>
-<tr><td>People quit fast</td><td><strong>The opposite. The maker reports that 96 out of 100 shoppers who order one month order again the next.</strong></td></tr>
-<tr><td>Hide what people really earn</td><td><strong>No. The maker publishes what its business leaders earn every year: the high, the low and the average.</strong></td></tr>
+<tr><td>People quit fast</td><td><strong>The opposite. The manufacturer reports that 96 out of 100 shoppers who order one month order again the next.</strong></td></tr>
+<tr><td>Hide what people really earn</td><td><strong>No. The manufacturer publishes what its business leaders earn every year: the high, the low and the average.</strong></td></tr>
 <tr><td>Big promises about money</td><td><strong>None. You are here for better products at fair prices.</strong></td></tr>
 </tbody>
 </table></div>
@@ -212,7 +218,7 @@ note: "Shopper-side answer page. v2 LIVE 2026-10-04 (ghl 6ac27a1df4216a082fbc6b5
 <li>In 2021, J&amp;J recalled five Neutrogena and Aveeno spray sunscreens after its own tests found low levels of benzene in some samples. Benzene is known to cause cancer. <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/johnson-johnson-consumer-inc-issues-voluntary-recall-specific-neutrogenar-and-aveenor-aerosol">The recall notice</a>.</li>
 </ul>
 
-<p>J&amp;J's old baby and drugstore brands now belong to <a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-final-results-of-exchange-offer-and-finalizes-separation-of-kenvue-inc">Kenvue</a>, which split off from J&amp;J in 2023. Kimberly-Clark, the maker of Huggies and Kleenex, has <a href="https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm">agreed to buy Kenvue</a>.</p>
+<p>J&amp;J's old baby and drugstore brands now belong to <a href="https://www.jnj.com/media-center/press-releases/johnson-johnson-announces-final-results-of-exchange-offer-and-finalizes-separation-of-kenvue-inc">Kenvue</a>, which split off from J&amp;J in 2023. Kimberly-Clark, the manufacturer of Huggies and Kleenex, has <a href="https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm">agreed to buy Kenvue</a>.</p>
 
 <h3>The rest of the wheel</h3>
 
