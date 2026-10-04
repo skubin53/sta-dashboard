@@ -2,7 +2,7 @@
 date: 2026-10-03
 post_title: Is Switch to America an MLM? No. Here Is How It Really Works (2026)
 slug: is-switch-to-america-an-mlm
-ghl_post_id: 6ac19c8ec584b054aacc9ca3
+ghl_post_id: 6ac282b2e63c5b11a92379a0
 live_url: https://theshannonnicole.com/post/is-switch-to-america-an-mlm
 published_at: 2026-10-03T12:00:00.000Z
 word_count: 1063
