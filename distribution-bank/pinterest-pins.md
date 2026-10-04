@@ -335,3 +335,8 @@ The extension opens this session's tabs in their OWN Chrome window (tabs_context
 ## 2026-10-03 (12:11pm run, ran 12:41) - 0 pins: the Claude Chrome window is MINIMIZED
 
 Chrome (ca040473) connected. The creation-tool tab first froze (JS timed out after 45s); after a reload to the profile it reported visibilityState "hidden", innerWidth 0, innerHeight 0 and an empty body = the window is minimized, not just covered. Tried resize_window(1600x900) once: it does NOT restore a minimized window (still 0x0, hidden). Stopped cleanly per the Chrome-only rule; no Edge fallback, LinkedIn tabs untouched. Growth task (g) also needs the browser, so none this run. Third day in a row with 0 pins (10/1 Edge minimized, 10/2 Chrome covered, 10/3 Chrome minimized). Still waiting: seed oils + avocado oil pins (composed), 6 re-points. Note for the avocado pin: its title says "54 products"; the 2026 study tested 54 FOODS made with avocado oil (live post corrected 10/3), so publish it as "What UC Davis found in 54 avocado oil foods".
+
+## 2026-10-04 (12:11pm run, ran 1:16pm) - 0 pins: the Chrome tab was hidden again
+
+Chrome (ca040473) connected. The creation tool opened in this session's own tab, but it reported visibilityState "hidden", hasFocus false, width 1536 (not minimized; another tab in front: Shannon was working in the GoDaddy tab at the time), file inputs 0, empty body. Stopped cleanly; did not pull focus away from her GoDaddy work. Nothing half-done.
+Carried to the next run, unchanged: seed oils (are-seed-oils-bad-for-you) + avocado oil (is-avocado-oil-fake), copy and photos in the 2026-10-01 noon entry. Growth (g): re-point the last 6 older pins (check sunscreen first).
