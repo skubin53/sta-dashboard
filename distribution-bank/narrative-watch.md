@@ -36,3 +36,19 @@ Feedback is sent only where an answer states something false, from Shannon's own
 - Scam checkers on switchtoamerica.com: Scam Detector 50.5/100 (algorithmic: thin metadata, hidden WHOIS), ScamDoc "Average", ScamAdviser "Very Likely Safe".
 - Self-inflicted: switchtoamerica.com "No subscriptions. No monthly commitments." vs the real monthly minimum + backup order; income language on financial-freedom. and beat-inflation. subdomains.
 - Robots: no AI or search crawler is blocked on any of our hosts.
+
+## 2026-10-04 (day 2, 2:10am MT)
+
+| Engine | Search | Says MLM? | What it leans on | Our pages showing? | Feedback |
+|---|---|---|---|---|---|
+| Google AI Overview | Is Switch to America an MLM | NO now: "No, Switch to America is officially described by its promoters as a direct-buying consumer club rather than a traditional multi-level marketing (MLM) company, though outside critics ... debate its similarities" | how-it-works list (no inventory, no selling to friends) | yes (our truth page is in the page) | sent by mistake: the detector flagged the word "MLM" before the "No" was read. One "Incorrect" on a mostly right answer. Detector fixed: read first, judge, then send. |
+| Google AI Overview | Switch to America MLM | yes, and it varies by load: "also known as AmeriSwitch or Switchaway ... functions as a multi-level marketing (MLM) or referral-based network marketing structure"; another load: "also promoted as Switchaway ... heavily criticized as a multi-level marketing (MLM) structure or front" | Wikipedia, Reddit; alias mix-up | yes | sent (alias + MLM correction, link to shopper truth page) |
+| Google AI Overview | Is Switch to America a scam | "(also known as Switch Away or AmeriSwitch) is not an outright illegal scam, but it operates as a marketing front and subscription-based shopping club" for the partner | Trustpilot (ameriswitch.com) | no | sent (alias correction) |
+| Google AI Overview | Switch to America [partner name] | describes the partner company's membership: monthly product points, backup order | partner's own site | no | none (true) |
+| Google AI Overview | What is Switch to America | no: "a consumer movement and shopping club alternative ... non-toxic, American-made products from family-owned manufacturers" | | no | none (accurate) |
+| Google AI Overview | Switch to America reviews | not addressed; but FALSE alias: "(also operating as AmeriSwitch or Switch Away via ameriswitch.com) has an average TrustScore of 4.5" | Trustpilot ameriswitch.com | no | sent (those reviews are not ours) |
+| Bing / DuckDuckGo (curl) | Is Switch to America an MLM | not read: both returned no results to curl today (bot wall) | | | |
+
+**Main false claim today: the ALIAS.** Google now says "No" to the MLM question itself, but on 3 of 6 searches it says Switch to America is "also known as" Switch Away / Switchaway / AmeriSwitch and pins their Trustpilot reviews and "front" line on us.
+**New truth page (step c):** https://join.switchtoamerica.com/post/is-switch-to-america-the-same-as-ameriswitch (ghl 6ac20bed5a6d74e66181a610). Answer first ("No"), names the other sites in plain text (never linked), lists our 3 addresses, says ameriswitch.com reviews are not ours, MLM recap with the FTC quote, 3 family photos, free scan button, no Zoom, FAQ schema. Added to llms.txt.
+**Submitted:** Google Search Console "Indexing requested" (was "URL is not on Google"); Bing Webmaster "URL submitted Succesfully"; Brave "Success. Thank you for your submission."
