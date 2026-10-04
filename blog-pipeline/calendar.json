@@ -300,16 +300,16 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
-     "written": false,
+     "pix": true,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -332,15 +332,15 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -364,8 +364,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -413,8 +413,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -432,8 +432,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -445,8 +445,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -464,8 +464,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -477,8 +477,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -496,8 +496,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-your-dehumidifier-a-fire-risk",
-     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -509,8 +509,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-your-magnesium-what-the-label-says",
-     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -545,8 +545,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-tap-water-safe-to-drink",
-     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -564,8 +564,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "red-dye-40-mars-broken-promise",
-     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -577,8 +577,8 @@
      "track": "shopper"
     },
     {
-     "slug": "what-does-lavender-do-to-blood-pressure",
-     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "slug": "red-dye-40-mars-broken-promise",
+     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -596,8 +596,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "what-keeps-your-memory-sharp-after-70",
-     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
+     "slug": "what-does-lavender-do-to-blood-pressure",
+     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -609,8 +609,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-clorox-pay-a-14-million-fine",
-     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
+     "slug": "what-keeps-your-memory-sharp-after-70",
+     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -628,8 +628,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-do-you-stop-feeling-thirsty",
-     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
+     "slug": "why-did-clorox-pay-a-14-million-fine",
+     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -641,15 +641,15 @@
      "track": "shopper"
     },
     {
-     "slug": "window-air-conditioner-mold-recall",
-     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
-     "cat": "Home air",
-     "why": "GD Midea Air-Conditioning Equipment Co. Ltd. of China. It built one unit and sold it under ten different names, so a woman who deliberately avoided the Chinese brand still bought the same machine: Midea, Frigidaire, Danby, Insignia, Keystone, Mr. Cool, Perfect Aire, Comfort Aire, Sea Breeze and LBG Products. CPSC found the design let water pool inside instead of draining, which is what grew the mold.",
-     "perish": 1,
-     "keyword": "window air conditioner mold",
-     "felt": "Every summer she wakes with a sore throat, a stuffy head and that heavy tired that coffee does not fix, and every summer she calls it allergies or getting older. The unit blowing on her while she sleeps has been in that bedroom window since 2020.",
+     "slug": "why-do-you-stop-feeling-thirsty",
+     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
      "register": "villain",
-     "pix": false,
+     "pix": true,
      "written": false,
      "track": "shopper"
     }
@@ -677,6 +677,25 @@
      "track": "shopper"
     },
     {
+     "slug": "window-air-conditioner-mold-recall",
+     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
+     "cat": "Home air",
+     "why": "GD Midea Air-Conditioning Equipment Co. Ltd. of China. It built one unit and sold it under ten different names, so a woman who deliberately avoided the Chinese brand still bought the same machine: Midea, Frigidaire, Danby, Insignia, Keystone, Mr. Cool, Perfect Aire, Comfort Aire, Sea Breeze and LBG Products. CPSC found the design let water pool inside instead of draining, which is what grew the mold.",
+     "perish": 1,
+     "keyword": "window air conditioner mold",
+     "felt": "Every summer she wakes with a sore throat, a stuffy head and that heavy tired that coffee does not fix, and every summer she calls it allergies or getting older. The unit blowing on her while she sleeps has been in that bedroom window since 2020.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "weekday": "Sun",
+   "slots": [
+    {
      "slug": "why-was-the-laundress-recalled-twice",
      "title": "Why Was The Laundress Recalled Twice? (2026)",
      "cat": "Laundry",
@@ -690,11 +709,6 @@
      "track": "shopper"
     }
    ]
-  },
-  {
-   "date": "2026-10-25",
-   "weekday": "Sun",
-   "slots": []
   },
   {
    "date": "2026-10-26",
@@ -866,7 +880,7 @@
    "slots": []
   }
  ],
- "shortfall": 45,
+ "shortfall": 44,
  "blocked": [
   {
    "slug": "income-if-you-stop-for-90-days",
@@ -882,11 +896,6 @@
    "slug": "is-johnsons-baby-shampoo-safe",
    "title": "Is Johnson's Baby Shampoo Safe? What Is in the Yellow Bottle (2026)",
    "why": "written, but a photo reshoot is open, so it must not publish yet"
-  },
-  {
-   "slug": "why-did-eggs-cost-so-much",
-   "title": "Why Did Eggs Cost So Much? (2026)",
-   "why": "written but 6 photographs are still missing from the file, so the publisher will refuse it"
   }
  ],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
