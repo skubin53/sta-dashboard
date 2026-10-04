@@ -5,7 +5,7 @@ slug: how-much-protein-after-50
 track: shopper
 queue_file: blog-pipeline/queue/how-much-protein-after-50.md
 beats: 5
-status: open
+status: complete
 priority: "HIGH. Shannon asked for this post on 2026-10-04 (\"Yes, write the protein after 50 post\"). It is fully written and gated; these five photos are the only thing it is waiting on."
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. NEVER a label-reading or ingredient-panel shot and never anyone inspecting fine print. NO readable text anywhere in frame (packs, sticky note, signs). Continuity: same woman, same clothes, same hands across the five beats. Temperature ramp runs coldest at the villain beat to warmest at the last beat. Nano Banana Pro at 4K."
 written_by: "Claude (requests only; Photo Claude renders, grades and records)"
