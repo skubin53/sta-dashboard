@@ -340,3 +340,22 @@ Chrome (ca040473) connected. The creation-tool tab first froze (JS timed out aft
 
 Chrome (ca040473) connected. The creation tool opened in this session's own tab, but it reported visibilityState "hidden", hasFocus false, width 1536 (not minimized; another tab in front: Shannon was working in the GoDaddy tab at the time), file inputs 0, empty body. Stopped cleanly; did not pull focus away from her GoDaddy work. Nothing half-done.
 Carried to the next run, unchanged: seed oils (are-seed-oils-bad-for-you) + avocado oil (is-avocado-oil-fake), copy and photos in the 2026-10-01 noon entry. Growth (g): re-point the last 6 older pins (check sunscreen first).
+
+## PUBLISHED 2026-10-04 (12:11 run, done 2:40pm once Shannon brought the Claude Chrome window to the front) - 2 pins live, both to the FREE SCAN (Chrome)
+
+### Seed oils  [pinx_seedoils.png | photo: areseedoils-belonging-v1.webp (two women cooking at a stove)]  -> LIVE, pin 474848354483736897
+- Title: Are seed oils bad for you? What a lab finds when they are heated
+- Board: Non-Toxic Food & Clean Pantry (NEW board, created this run, public) | Link: scan /now/ utm_campaign=are-seed-oils-bad-for-you | desc 420, no hashtags
+
+### Avocado oil  [pinx_avocado.png | photo: avocado-belonging-v1.webp (a farmer handing a woman a jar at his truck)]  -> LIVE, pin 474848354483736907
+- Title: Is your avocado oil fake? What UC Davis found in 54 avocado oil foods  (title corrected: the 2026 study tested foods, not bottles)
+- Board: Non-Toxic Food & Clean Pantry | Link: scan /now/ utm_campaign=is-avocado-oil-fake | desc 410, no hashtags
+
+HOW (Chrome, 10/4): the Claude tab group lives in its OWN Chrome window. If that window is behind her main one, the tab is "hidden" and Pinterest renders nothing. Once she brought it to the front it worked first time. The board picker had no Pantry board, so "Create board" in the dropdown (name set by native setter, Secret off).
+
+## GROWTH TASK 2026-10-04 (g) re-pointed 5 more older pins to the scan (verified by reloading each pin page)
+- is-sunscreen-safe 474848354483669439, are-cheap-aluminum-pans-safe 474848354483673849, are-plastic-cutting-boards-safe 474848354483676108, is-hexclad-non-toxic 474848354483676126, can-you-microwave-ziploc-bags 474848354483682614
+- Recipe that worked: REAL click on the MAIN pin's "More actions" (use find, the first visible one can belong to a related pin), then JS: click "Edit Pin", native-set WebsiteField + input/change, wait 3.5s, click Save, click Save again in the "Heads up!" dialog.
+- 1 older pin still links to the blog (the are-b... candles pin). Next run: re-point it, then rotate growth tasks (a) to (f); (b) first, to strip the old hashtags from the 10 re-pointed 9/30 pins.
+
+NEXT run: Day 14 food dyes (are-food-dyes-still-legal) + the next calendar pin after the Day 13 baby-wipes skip.
