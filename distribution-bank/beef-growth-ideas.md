@@ -106,3 +106,17 @@ https://RiverbendRanchSteaks.com/eatbeefwithshan .
 
 **Check before anything goes public.** The UNL figures are for one 1,400 pound steer; say "about" and
 name the source. Do not claim the box is cheaper per pound without verified prices for both.
+
+## 2026-10-04 - Protein after 50: a beef answer page for women and the parents they care for
+
+**The idea.** Women 40 to 60 are often cooking for a parent in their 70s too. Protein needs go UP with age, and most people do not know it. One sourced answer page, "How much protein do you need after 50?", ends on a simple habit: a real protein food at every meal, with Shannon's beef page as the easy way to keep good beef in the freezer.
+
+**Sourced facts.**
+- The adult RDA is 0.8 grams of protein per kilogram of body weight, or 0.36 grams per pound (Harvard Health, https://www.health.harvard.edu/blog/how-much-protein-do-you-need-every-day-201506188096).
+- The PROT-AGE Study Group (J Am Med Dir Assoc, 2013) recommends people over 65 get at least 1.0 to 1.2 grams per kilogram a day, more if active or ill. People with severe kidney disease are the exception (https://pubmed.ncbi.nlm.nih.gov/23867520/).
+
+**Why it works.** It is a real question her readers type, it helps the reader before it sells anything, and beef is the plain answer at dinner. It also gives the monthly box a reason beyond price.
+
+**Next step (her OK).** One answer page or blog post plus one pin, linking her beef page (https://RiverbendRanchSteaks.com/eatbeefwithshan).
+
+**Check first.** No promise that beef builds muscle or prevents falls. PROT-AGE is for people over 65, so say so. Note the kidney disease exception. Re-check a per-serving protein number in USDA FoodData Central before using one (its API was rate-limited today).
