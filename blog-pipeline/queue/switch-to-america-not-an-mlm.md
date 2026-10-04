@@ -7,7 +7,7 @@ keyword: is switch to america an mlm
 category: Home
 cover: https://scan.ismyhometoxic.com/blog-images/arefooddyes-freedom-v1.webp
 meta_description: No. Switch to America is not an MLM. It is a store you shop from home. Nothing to sell, no inventory, cancel any time. Here is how it works.
-status: ready
+status: published
 vault_checked: [Switch-to-America, MLM-Vetting-Filter, North-Star]
 note: "Shopper-side answer page, 2026-10-03, at Shannon's request (switchtoamerica.com version of theshannonnicole.com/post/is-switch-to-america-an-mlm). Family photos reused from live posts (food dyes, ground beef, baking mixes, cutting boards, nonstick), chosen from their published alt text. Partner company not named; no income figures; cancel any time + 100% money-back guarantee are her approved lines."
 ---
