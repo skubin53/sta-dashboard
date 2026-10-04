@@ -16,6 +16,12 @@ each publish day. On 2026-10-02 there were only 6 builder posts ready, which run
 12 days, and **no builder topic had photos**. So builder sets come right after the one fix that is
 live on the site today. The last delivery was 2026-09-25.
 
+## 0. ADDED 2026-10-04: the post Shannon asked for today
+
+| Order | Request file | What | Why |
+|---|---|---|---|
+| 0 | `how-much-protein-after-50.md` | 5 frames: her stove, the meat case, the counter pause, the rancher at the fence, Sunday dinner with her mom | Shannon asked for this post on 2026-10-04. It is written and gated; these photos are all it waits on. Do it right after the live wrong-brand fix (row 1). |
+
 ## 1. The live post with the wrong brand (fix first)
 
 | Order | Request file | What | Why |
