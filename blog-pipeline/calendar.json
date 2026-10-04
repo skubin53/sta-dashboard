@@ -168,6 +168,38 @@
    "weekday": "Fri",
    "slots": [
     {
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-10",
+   "weekday": "Sat",
+   "slots": [
+    {
      "slug": "is-keratin-treatment-safe",
      "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
      "cat": "Beauty",
@@ -196,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -222,38 +254,6 @@
      "felt": "",
      "register": "villain",
      "pix": false,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-11",
-   "weekday": "Sun",
-   "slots": [
-    {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45? (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
      "written": false,
      "track": "builder"
     }
@@ -300,15 +300,15 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
      "track": "shopper"
     },

@@ -30,15 +30,15 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-10-07 | Wed | 2 | builder | villain | What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026) | ready |
 | 2026-10-08 | Thu | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
 | 2026-10-08 | Thu | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
-| 2026-10-09 | Fri | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
-| 2026-10-09 | Fri | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
-| 2026-10-10 | Sat | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
-| 2026-10-10 | Sat | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | NEEDED |
-| 2026-10-11 | Sun | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
-| 2026-10-11 | Sun | 2 | builder | villain | Why Did My Salary Stop Going Up at 45? (2026) | ready |
+| 2026-10-09 | Fri | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
+| 2026-10-09 | Fri | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
+| 2026-10-10 | Sat | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
+| 2026-10-10 | Sat | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
+| 2026-10-11 | Sun | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
+| 2026-10-11 | Sun | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | NEEDED |
 | 2026-10-12 | Mon | 1 | shopper | gentle | Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026) | NEEDED |
 | 2026-10-12 | Mon | 2 | builder | villain | Why Did the Company I Built With Just Close? (2026) | NEEDED |
-| 2026-10-13 | Tue | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
+| 2026-10-13 | Tue | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
 | 2026-10-13 | Tue | 2 | builder | villain | Why Do Women-Owned Businesses Stay Small? (2026) | NEEDED |
 | 2026-10-14 | Wed | 1 | shopper | villain | Is It Safe to Buy Skincare on Amazon? (2026) | ready |
 | 2026-10-14 | Wed | 2 | builder | villain | Why Does My Business Own Me? (2026) | NEEDED |
