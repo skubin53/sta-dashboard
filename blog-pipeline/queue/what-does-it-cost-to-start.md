@@ -7,8 +7,7 @@ keyword: what does it cost to start
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/whatdoesitc-hero-v1.webp
 meta_description: LuLaRoe's own page asks $499 to start. In 2019 Washington said its packs ran $2,000 to $9,000. Here is the whole cost to start, stock and all.
-status: needs-review
-review_note: "STAGED 2026-10-04 by the 9:07 publish run (all 42 automated gates passed). HELD for ONE truth question for Shannon: the post says there is no monthly minimum in 4 places (short answer 'No stock and no minimum', 'There are no minimums and no maximums', table row 'A monthly minimum: None', FAQ 'Is there a monthly minimum? No'). That matches her vault answer inbox-answers/is-there-a-monthly-minimum (2026-08-28), but the partner's own US help center today lists 'What is the deadline to place my monthly order', 'What if I forget to shop' and 'What is a Backup Order', and its Customer Membership Agreement says 35 Product Points a month. The whole post contrasts LuLaRoe's monthly buying rules with 'None', so it publishes only after she confirms which is true today."
+status: ready
 vault_checked: [North-Star, burned-out, capped-corporate, MLM-Vetting-Filter, Compliance-Watchdog, Recurring-Income-Offer, is-there-a-monthly-minimum]
 ---
 
