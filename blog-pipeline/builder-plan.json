@@ -52,16 +52,6 @@
    "priority": 5
   },
   {
-   "title": "Why Is My Coaching Business Stuck at the Same Revenue Every Year? (2026)",
-   "slug": "why-is-my-coaching-business-stuck",
-   "keyword": "why is my coaching business not growing",
-   "hook": "Fully booked, exhausted, and flat. She raised her rates, ran the launch, showed up on every live, and the year-end number looks like last year's number. She is starting to suspect that the only way up is to work hours she does not have.",
-   "angle": "Her revenue is capped by her calendar, and every hour she sells she has to sell again next month. She is not selling a business, she is the product, and the product does not scale. The unlock is adding one revenue line that is not indexed to her hours, on top of the coaching, not instead of it.",
-   "proof": "The 2025 ICF Global Coaching Study, conducted by PricewaterhouseCoopers with over 10,000 participants across 127 countries, counts 122,974 coach practitioners worldwide, up 15 percent since 2023 and up from roughly 71,000 in 2019, a 54 percent increase in six years, against total industry revenue of $5.34 billion. Chartbeat and Pew data on collapsing organic reach (see the traffic post) show the acquisition channel she relies on is getting more expensive at the same time.",
-   "why_it_recruits": "Coaches are the fastest-converting audience owner there is: they already have trust with a group of women who buy on their recommendation, which is exactly the mechanic that turns into a shopper base fast. Their pain is specific, urgent, and almost never named this bluntly.",
-   "priority": 6
-  },
-  {
    "title": "Is Forever Living Shutting Down? What US Distributors Should Do Next (2026)",
    "slug": "forever-living-ended-us-enrollment-what-next",
    "keyword": "is forever living shutting down",
@@ -298,7 +288,146 @@
    "why_it_recruits": "Intercepts her at or just after an income-structure break, which is the highest intent moment.",
    "priority": 3,
    "added": "2026-08-24, to fill the daily builder slot"
+  },
+  {
+   "title": "Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026)",
+   "slug": "will-social-security-get-a-raise-in-2027",
+   "keyword": "social security cola 2027",
+   "hook": "Your raise gets set on October 14 by a formula. Then Medicare takes part of it back. Nobody asks you about either one.",
+   "angle": "Explain the COLA in plain words: it comes from September inflation data, released Oct 14. Forecasts are about 3.5% to 3.7%, and the post gets the real number the morning of the 14th. The projected Part B premium rise takes part of it back. The turn: a check whose size somebody else decides, compared with building something you own. Make no income promises.",
+   "proof": "COLA method and date: the BLS CPI schedule says September 2026 CPI is released Oct 14, 2026 at 8:30 AM (https://www.bls.gov/schedule/news_release/cpi.htm). CNBC confirms the 2027 COLA is announced Oct 14 and is based on third-quarter CPI-W compared with the prior year's third quarter (https://www.cnbc.com/select/social-security-cola-2027/). Use our own BLS math instead of advocacy forecasts: CPI-W (series CWUR0000SA0, https://api.bls.gov/publicAPI/v2/timeseries/data/CWUR0000SA0) averaged 327.79 for July and August 2026 against 316.83 for July and August 2025, about +3.5%. If a forecast is quoted at all, attribute it only to 'independent analyst Mary Johnson, 3.7%' as reported by CNBC. Part B: Newsweek, July 28, 2026, citing the 2026 Medicare Trustees Report: $202.90 in 2026, projected about $209.50 in 2027; CMS sets the final figure around November (https://www.newsweek.com/medicare-update-new-estimate-of-how-much-premiums-will-increase-12256344).",
+   "why_it_recruits": "Women 45 to 60 are watching their mothers live on one fixed check and seeing their own future in it. The post makes 'a raise I don't control' real and points to the 20-minute Zoom as the next step, with no income promise.",
+   "priority": 1,
+   "demand_evidence": "Autocomplete 10/4/2026: 'will social security get a raise in 2027' -> will social security get a raise in 2027 calculator, will social security get a pay increase in 2027, will social security get a raise in january 2027, will social security benefits get a raise in 2027. 'how much will social security increase in 2027' -> how much will my social security increase in 2027, how much will social security checks increase in 2027, how much is social security cola in 2027. Researcher run: 'social security cola 2027' -> update today, increase, predictions, estimate date; 'medicare part b premium 2027' -> chart, estimate, irmaa chart.",
+   "why_now": "Peak search is Wed Oct 14, 2026, 10 days away. Write it now for 10/13 or 10/14 and swap in the real number that morning; the Saturday writing cron will not do the swap itself. The Part B number is a Trustees projection, and CMS sets the final one around November.",
+   "perish": -3,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "I Got Laid Off at 55. Now What? (2026)",
+   "slug": "laid-off-at-55-now-what",
+   "keyword": "laid off at 55 now what",
+   "hook": "At 55, the average job search runs about 35 weeks. Most women plan for three months.",
+   "angle": "Give her the real timeline first, using BLS weeks-unemployed by age. Then the one rule most people don't know: the rule of 55, using the IRS's exact wording. Then the plan: cover the long gap and start something of your own alongside the search, not instead of it. This is different from severance-at-52-what-next (what to do with the money) and am-i-being-pushed-out-of-my-job-at-50 (before the layoff). No income promises.",
+   "proof": "BLS Table A-36, September 2026, not seasonally adjusted (https://www.bls.gov/web/empsit/cpseea36.htm). Women 55 to 64 who were unemployed had been out of work for a mean of 26.5 weeks (median 10.4). Women 45 to 54: mean 28.1, median 17.1. All people 55 to 64: mean 34.9, median 11.9. All ages: mean 25.4, median 12.1. Wording: 'time out of work so far', not 'job search length'. BLS Employment Situation, Oct 2, 2026: long-term unemployed essentially unchanged at 1.9 million (https://www.bls.gov/news.release/empsit.nr0.htm). Rule of 55, exact IRS wording: 'the employee separates from service during or after the year the employee reaches age 55' (https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions). It applies to employer plans like a 401(k), not IRAs (IRS Topic 558: https://www.irs.gov/taxtopics/tc558). Drop 'Q4 layoff notices are rising'.",
+   "why_it_recruits": "She is exactly the builder avatar: experienced, suddenly with time, and scared of a long gap. The post shows that the search itself takes most of a year and gives her a reason to build something that doesn't depend on a hiring manager.",
+   "priority": 1,
+   "demand_evidence": "Autocomplete 10/4/2026: 'laid off at 55' -> laid off at 55 now what, laid off at 55 401k, laid off at 55 reddit, laid off at 55 years old, laid off after 55 years old, what to do when laid off at 55, what to do when laid off at 50. Researcher run: 'laid off at 50' -> laid off at 50 what to do, laid off at 50 now what, laid off in 50s; 'can't find a job at 55' -> is it hard to find a job at 55.",
+   "why_now": "The September BLS data came out Oct 2, 2026. It pairs with the AI layoffs post, and Q4 layoff notices are rising.",
+   "perish": -3,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)",
+   "slug": "is-ai-taking-jobs",
+   "keyword": "ai layoffs 2026",
+   "hook": "This year AI became the number one reason companies give for cutting jobs, behind about one cut in five.",
+   "angle": "Lay out the numbers plainly: 573,195 announced cuts so far, with AI the top stated reason. Add one named example (Amazon's Washington WARN filing) and a weak September jobs report. Then the counterpoint, merged in from the rehiring research: a third of hiring managers who cut for AI later rehired. Experience and judgment still count. The turn: build customers who know you, not a role a spreadsheet can delete. No income promises.",
+   "proof": "Retitle: 'Is AI Taking Jobs Away From People Like Me? What This Year's Layoff Numbers Show (2026)'. Challenger, Gray & Christmas, Oct 1, 2026: 573,195 cuts through September. AI was cited in 120,136, about 21%, the leading reason year to date. In September alone AI was fifth (3,961 cuts, about 9%), and September cuts of 43,281 were the lowest for the month since 2022 (https://www.challengergray.com/blog/job-cuts-fall-in-september-hiring-plans-up-3-over-2025-on-weak-early-seasonal-hiring/). KOMO News, Aug 31, 2026: Washington WARN notice for 121 permanent Amazon layoffs in Seattle, Bellevue and Sumner starting Oct 1, 2026. The notice did not say which departments or give a reason (https://komonews.com/news/local/amazon-to-permanently-lay-off-121-workers-in-seattle-bellevue-amid-ongoing-ai-push-artificial-intelligence-agi-employment-jobs-unemployed-models-reorganization-seattle-washington-jeff-bezos-customer-shopping-prime-economy). BLS, Oct 2, 2026: +29,000 jobs, 4.2% unemployment (https://www.bls.gov/news.release/empsit.nr0.htm). CNBC, July 1, 2026: '32% of U.S. hiring managers said they eliminated a role primarily due to AI and later rehired for the same or a similar position', according to Robert Half data sent to CNBC (https://www.cnbc.com/2026/07/01/employers-who-laid-off-workers-for-ai-are-reversing-their-decisions.html).",
+   "why_it_recruits": "Women 45 to 60 in office, admin, customer service and middle management jobs feel AI coming for their desk. The post respects their experience and shows the one thing AI can't take: relationships with real customers.",
+   "priority": 1,
+   "demand_evidence": "Autocomplete 10/4/2026: 'is ai taking jobs' -> is ai taking jobs away, is ai taking jobs away from people, is ai taking jobs from people, is ai taking jobs in accounting. 'will ai take my job' -> will ai take my job calculator, will ai take my job reddit. 'are companies rehiring' -> are companies rehiring after ai layoffs. Researcher run: 'ai layoffs' -> ai layoffs 2026, ai layoffs tracker, ai layoffs amazon, ai layoffs backfiring, ai layoffs rehiring, ai layoffs regret; 'layoffs october 2026' -> amazon, verizon, salesforce, oracle, optum, centene, cigna layoffs october 2026.",
+   "why_now": "The Challenger report (Oct 1) and BLS jobs report (Oct 2) came out this week, and October layoff searches are named by company. Publish in the first open builder slot after 10/14.",
+   "perish": -2.5,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "Why Are Health Insurance Premiums Going Up So Much? What 2027 Open Enrollment Brings (2026)",
+   "slug": "why-are-health-insurance-premiums-going-up",
+   "keyword": "health insurance premiums increase 2027",
+   "hook": "Marketplace insurers asked for a median 15% increase for 2027. Health insurance is the number one thing that keeps women in a job they've outgrown.",
+   "angle": "Explain what is changing for 2027 and why: the enhanced tax credits ended at the end of 2025, insurers filed double-digit increases, and employers are shifting costs too. Then speak to the woman thinking about leaving a job or going out on her own: plan for this number before open enrollment. Never claim that a business replaces insurance, and make no income promises.",
+   "proof": "CNBC, Oct 2, 2026 (https://www.cnbc.com/2026/10/02/health-insurance-premiums-2027-inflation-aca-obamacare.html): per KFF, ACA marketplace insurers PROPOSED a median 15% premium increase for 2027 across 276 insurers; if finalized it would be the second double-digit year in a row. Marsh estimates employer health costs will rise 8.2% per worker in 2027, the most since 2003, and 59% of employers plan cost-cutting changes such as higher deductibles. Enhanced premium tax credits expired at the end of 2025, so enrollees above 400% of the poverty line (about $64,000 for one person, $132,000 for a family of four) pay the full premium. Remove the unsourced 'number one thing that keeps women in a job' claim from the hook.",
+   "why_it_recruits": "Fear of losing coverage is the biggest reason she won't build something of her own. Naming it honestly builds trust, and it opens the Zoom conversation about how others her age plan around it.",
+   "priority": 1,
+   "demand_evidence": "Autocomplete 10/4/2026: 'why are health insurance premiums going up' -> why are health insurance premiums going up in 2026, why are health insurance premiums going up so much, why are health insurance premiums going up so much in 2026, why are health insurance premiums going up next year, why are health insurance premiums going up so much this year. Researcher run: 'health insurance premiums 2027' -> health insurance costs 2027, health insurance premiums increase 2027, will health insurance premiums increase in 2027; 'open enrollment 2027' -> dates, aca, deadline, marketplace; 'obamacare 2027' -> obamacare premiums 2027, obamacare subsidies 2027.",
+   "why_now": "The CNBC article is dated Oct 2, 2026, and ACA and employer open enrollment run November into December. Publish by 10/28, before enrollment opens.",
+   "perish": -1,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "Is Social Security Going to Run Out in 2032? What the Trustees Actually Said (2026)",
+   "slug": "is-social-security-going-to-run-out",
+   "keyword": "is social security going to run out in 2032",
+   "hook": "If you're 55 today, the retirement fund is projected to run short when you're about 61.",
+   "angle": "Replace the scary headline with the real one. The fund doesn't hit zero: about 78% of retirement benefits could still be paid after late 2032. Explain the dates without politics, and attribute the earlier date to the SSA chief actuary as CNBC reported it. The turn: don't let one check be the whole plan. No income promises.",
+   "proof": "CNBC, June 9, 2026 (https://www.cnbc.com/2026/06/09/social-security-trustees-report-depletion-dates.html): the 2026 Trustees Report projects the retirement (OASI) trust fund will be depleted in late 2032, three months earlier than the 2025 report projected, after which 78% of retirement benefits would be payable. The OASI and disability funds combined last until Q3 2034, with 83% payable, unchanged. CNBC reports the earlier date follows the 2025 tax law, which SSA's chief actuary said in an August letter would have 'material effects' on the trust funds through income taxation of benefits.",
+   "why_it_recruits": "For women 50 to 60, this is the quiet math behind 'I need something of my own'. The post turns a fear into a plan and points to the Zoom.",
+   "priority": 2,
+   "demand_evidence": "Autocomplete 10/4/2026: 'is social security going to run out' -> is social security going to run out of money, is social security going to run out in 2032, is social security going to run out in 2030, is social security going to run out soon, is social security going to run out in 2033, is social security going to run out in 5 years, is social security going to run out in 6 years, is social security going to run out in 2034. Researcher run: 'social security trust fund' -> run out, depletion date, insolvency; 'will social security' -> will social security run out in 2032, will social security be cut.",
+   "why_now": "Interest rises with the Oct 14 COLA news and the midterm-election cycle. Run it a week or more after the COLA post (late October), not back to back.",
+   "perish": 0,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "Is 50 Too Old to Get Hired? What One Company Paid for Calling an Applicant 'Too Old' (2026)",
+   "slug": "is-50-too-old-to-get-hired",
+   "keyword": "is 50 too old to get hired",
+   "hook": "A company wrote 'too old' in an email about a 62-year-old applicant. It cost them $495,000.",
+   "angle": "Age bias in hiring is real and sometimes written down. Give her the law in plain words (the ADEA protects 40+), two 2026 EEOC settlements, and how to spot it. Then the part no law fixes: the gatekeeper. Building something where no one screens your age is the way around it. Make no income promises. Quote only the 'too old' part of the HCL case.",
+   "proof": "Retitle: 'Is 50 Too Old to Get Hired? What One Company Paid to Settle a Too Old Lawsuit (2026)'. Hook: 'The EEOC says a company's email called a 62-year-old applicant too old. The company paid $495,000 to settle.' EEOC, April 3, 2026: HCL America agreed to pay $495,000 to settle an EEOC age and national origin discrimination lawsuit. According to the suit, in July 2021 HCL rejected a qualified 62-year-old sales director applicant, stating in an email to the hiring team that he was 'too old'; a younger candidate was hired. The consent decree was approved April 2, 2026 (https://www.eeoc.gov/newsroom/hcl-america-pay-495000-eeoc-age-and-national-origin-discrimination-lawsuit). EEOC, July 8, 2026: DC Water will pay nearly $217,000 to settle an EEOC lawsuit alleging it fired an experienced older HR employee in Sept 2023 and replaced him with a substantially younger, less qualified candidate. The ADEA protects workers 40 and older (https://www.eeoc.gov/newsroom/dc-water-pay-217000-settle-eeoc-age-discrimination-lawsuit).",
+   "why_it_recruits": "Many women 50+ have quietly stopped applying because they sense this. Proof that it's real, and not their fault, opens the door to 'build your own thing'.",
+   "priority": 2,
+   "demand_evidence": "Autocomplete 10/4/2026: 'is 50 too old to get hired' -> is 50 too old to get hired, is 50 too old to get a job, is 50 too old to get a new job, is it harder to get a job after 50, is 55 too old to get a job. Researcher run: 'too old to get hired' -> am i too old to get hired, too old to get hired too young to retire; 'age discrimination in hiring' -> proving age discrimination in hiring, is age discrimination in hiring illegal.",
+   "why_now": "Both EEOC settlements are from 2026 (April and July). It pairs with the laid-off-at-55 and AI layoff posts during Q4 job-search season.",
+   "perish": 0,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "I Need to Make Extra Money for Christmas. What Are My Real Options? (2026)",
+   "slug": "extra-money-for-christmas",
+   "keyword": "how to make extra money for christmas",
+   "hook": "So far only two big retailers have announced holiday hiring this year: Spirit Halloween and Michaels.",
+   "angle": "Be honest about the season: early seasonal hiring is weak and those jobs end in January. Walk through the real options and their trade-offs, then the difference between a December job and something whose customers are still yours in February. Never 'make $X by Christmas', and no income promises of any kind.",
+   "proof": "Hook: 'As of October 1, a job-cut tracking firm had counted just two retailers announcing seasonal hiring this year: Spirit Halloween and Michaels.' Re-check before publishing and update if Amazon, Target or UPS have announced. Challenger, Gray & Christmas, Oct 1, 2026: Spirit Halloween and Michaels are the only retailers to announce hiring plans this year, a combined 62,000 seasonal hires, compared with 100,800 announced by last September (https://www.challengergray.com/blog/job-cuts-fall-in-september-hiring-plans-up-3-over-2025-on-weak-early-seasonal-hiring/). Challenger, Sept 23, 2026: forecasts 450,000 Q4 retail hires, below 461,500 in Q4 2025, the smallest since 2008. Spirit Halloween is hiring 52,000 for 1,575 U.S. and Canada stores, Michaels 10,000+, and Amazon, Target, Bath & Body Works and Kohl's had not disclosed 2026 numbers (https://www.challengergray.com/blog/2026-holiday-hiring-outlook-after-lowest-season-since-2008-will-retailers-stock-up-on-workers/). Keep Amazon's 2026 number out until Amazon announces it.",
+   "why_it_recruits": "Women who want income search this phrase every October, and it is the most open-handed money question of the year. A post that respects her and doesn't hype pulls her toward a Zoom.",
+   "priority": 2,
+   "demand_evidence": "Autocomplete 10/4/2026: 'how to make extra money for christmas' -> how to make extra money for christmas online, how to make extra money before christmas, how to earn extra money before christmas, easy ways to make extra money for christmas, i need to make extra money for christmas, best way to make extra money for christmas. Researcher run: 'holiday side hustle' -> holiday side hustle ideas, holiday side hustles from home; 'christmas jobs' -> christmas jobs 2026, christmas jobs 2026 near me; 'seasonal jobs 2026' -> seasonal jobs 2026 usa.",
+   "why_now": "Holiday-money searches start in October and peak in November. The data is dated Oct 1, 2026. Publish late October or early November.",
+   "perish": -1,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "Are Work From Home Jobs for Women Over 50 Real? How to Spot the Fake Ones (2026)",
+   "slug": "work-from-home-jobs-for-women-over-50",
+   "keyword": "work from home jobs for women over 50",
+   "hook": "The FTC says scammers are hunting for the same side gigs you are.",
+   "angle": "Teach her to check any offer using the FTC's own warning signs: big money for little effort, pressure to decide fast, and pay up front. Cover the fake-recruiter text and the 'task' scam. Then show what a real opportunity looks like next to a fake one, and link how-to-tell-if-a-business-opportunity-is-legit. Make no income promises. Label the nearly 300% figure as 2024-versus-2023 data.",
+   "proof": "Hook: 'The FTC warns that scammers advertise fake side gigs, and they target people looking for extra cash.' FTC consumer alert, Feb 24, 2026 (https://consumer.ftc.gov/consumer-alerts/2026/02/how-avoid-side-hustle-scam) lists the warning signs: big money for little effort, pressure to decide immediately, and payment demanded up front. FTC alert, Apr 30, 2026, on fake recruiter texts for 'online assessor' and 'remote position' jobs that ask you to reply YES (https://consumer.ftc.gov/consumer-alerts/2026/04/job-offer-text-probably-scam). FTC, Protecting Older Consumers 2024-2025, Dec 1, 2025: task scams helped drive older adults' (60+) reported job-scam losses up nearly 300% in 2024 compared with 2023 (https://www.ftc.gov/system/files/ftc_gov/pdf/P144400-OlderAdultsReportDec2025.pdf).",
+   "why_it_recruits": "This is the biggest search phrase for the avatar. She has been burned or is afraid of being burned, and a protective post makes Shannon the trusted, safe voice.",
+   "priority": 2,
+   "demand_evidence": "Autocomplete 10/4/2026: 'work from home jobs for women over 50' -> work from home jobs for women over 50 no experience, best work from home jobs for women over 50, work from home jobs for over 50, work from home jobs for people over 50, work from home jobs for 50 year olds. Researcher run: 'work from home jobs hiring now' -> no experience, equipment provided; 'how to make money from home' -> how to make money from home as a woman; 'jobs for women over 50' -> that pay well, with no experience, with no degree.",
+   "why_now": "Searches rise in the holiday-money season (October to December), and scam texts spike with it. Run it at least a week apart from the Christmas money post.",
+   "perish": 0.5,
+   "added": "2026-10-04 October search-demand research"
+  },
+  {
+   "title": "Is DoorDash Worth It as a Side Hustle? What New York Just Made It Pay Back (2026)",
+   "slug": "is-doordash-worth-it-as-a-side-hustle",
+   "keyword": "is doordash worth it as a side hustle",
+   "hook": "New York City says DoorDash shorted more than 260,000 delivery workers. The bill: $131.5 million.",
+   "angle": "Gig apps decide your pay, which hours count and when you get paid. NYC found unpaid work, late pay, and trip and on-call time left out of minimum-pay hours. Compare that with owning customers who know you; this ties to cookie-vs-customer, ltk-creator-payout-change and the Amazon affiliate post. No per-hour pay figures and no income claims.",
+   "proof": "NYC Mayor's Office and DCWP, Sept 22, 2026 (https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-wins-record--131-5-million-from-doordash-for-deliv): a $131.5 million enforcement settlement with DoorDash under NYC's Delivery Worker Laws, with relief for more than 260,000 workers. DCWP found DoorDash failed to pay thousands for completed work, paid thousands more late, and excluded trip and on-call time from minimum-pay hours. Payment emails go out in late October 2026. DoorDash statement, Sept 22, 2026: 'Simply put, we screwed up... some Dashers were underpaid or paid late.' The deal includes $12.3M for underpaid or late pay and over $83M to resolve 'a disagreement over how to calculate pay' for time online between deliveries, plus $16.7M in fines (https://about.doordash.com/en-us/news/dcwp).",
+   "why_it_recruits": "Women 45 to 60 who already drive for an app have proven they will work for extra income. Showing them who controls their pay sets up the 'own your customers' conversation.",
+   "priority": 3,
+   "demand_evidence": "Autocomplete 10/4/2026: 'is doordash worth it' -> is doordash worth it as a side hustle, is doordash worth it with gas prices, is doordash worth it in 2026, is doordash worth it as a side job, is doordash worth it after gas, is doordash worth it after taxes. 'doordash settlement' -> doordash settlement claim, doordash settlement claim form, doordash settlement 2026, doordash settlement payout date, doordash settlement check.",
+   "why_now": "Announced Sept 22, 2026. Researchers report payout notices starting late October, which should cause a second search spike; confirm that date before relying on it. The settlement is NYC-specific; the post's question is national.",
+   "perish": 1,
+   "added": "2026-10-04 October search-demand research"
   }
  ],
- "_note": "Builder blog track, researched 2026-08-23 after Shannon said 'there should be blog posts for builders, not just shoppers'. Every proof point was web-verified by the research agent. Re-verify any receipt before it goes in a post. blog-desk.py reads this file to render the builder plan on the dashboard."
+ "_note": "Builder blog track, researched 2026-08-23 after Shannon said 'there should be blog posts for builders, not just shoppers'. Every proof point was web-verified by the research agent. Re-verify any receipt before it goes in a post. blog-desk.py reads this file to render the builder plan on the dashboard.",
+ "retired": [
+  {
+   "title": "Why Is My Coaching Business Stuck at the Same Revenue Every Year? (2026)",
+   "slug": "why-is-my-coaching-business-stuck",
+   "keyword": "why is my coaching business not growing",
+   "hook": "Fully booked, exhausted, and flat. She raised her rates, ran the launch, showed up on every live, and the year-end number looks like last year's number. She is starting to suspect that the only way up is to work hours she does not have.",
+   "angle": "Her revenue is capped by her calendar, and every hour she sells she has to sell again next month. She is not selling a business, she is the product, and the product does not scale. The unlock is adding one revenue line that is not indexed to her hours, on top of the coaching, not instead of it.",
+   "proof": "The 2025 ICF Global Coaching Study, conducted by PricewaterhouseCoopers with over 10,000 participants across 127 countries, counts 122,974 coach practitioners worldwide, up 15 percent since 2023 and up from roughly 71,000 in 2019, a 54 percent increase in six years, against total industry revenue of $5.34 billion. Chartbeat and Pew data on collapsing organic reach (see the traffic post) show the acquisition channel she relies on is getting more expensive at the same time.",
+   "why_it_recruits": "Coaches are the fastest-converting audience owner there is: they already have trust with a group of women who buy on their recommendation, which is exactly the mechanic that turns into a shopper base fast. Their pain is specific, urgent, and almost never named this bluntly.",
+   "priority": 6,
+   "retired": "2026-10-04 Shannon: idea-only topics (not written, no photos) removed so the October search topics take their place"
+  }
+ ]
 }

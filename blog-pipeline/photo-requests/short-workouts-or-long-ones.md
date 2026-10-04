@@ -5,7 +5,8 @@ slug: short-workouts-or-long-ones
 track: shopper
 queue_file: blog-pipeline/queue/short-workouts-or-long-ones.md
 beats: 5
-status: requested
+status: withdrawn
+withdrawn: "2026-10-04 by Shannon's calendar reset: topic removed before any photos were shot. Do not shoot. Reversible: set status back to requested if she brings it back."
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. NO branded product anywhere in this set and no legible text in any frame. This is the GENTLE register: there is no villain in this post and nothing in the pictures should look worrying, clinical or sad. No medical settings, no pill bottles, no charts, no thermometers, no hospital anything. Continuity: same woman, same clothes across the five beats. NO cold-to-warm ramp on this set. Every frame is warm, naturally lit and unhurried, and the only movement is from ordinary to easy. Nano Banana Pro at 4K."
 register: gentle
 generated_by: "sta-tools/build-calendar.py, 2026-08-23"

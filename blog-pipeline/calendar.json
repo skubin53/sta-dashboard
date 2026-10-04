@@ -8,16 +8,112 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-angry-orange-stain-remover-safe",
-     "title": "Is Angry Orange Stain Remover Safe? Why 1.5 Million Bottles Were Recalled (2026)",
-     "cat": "Cleaning",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
+     "slug": "are-frozen-blueberries-safe",
+     "title": "Are Frozen Blueberries Safe to Eat Right Now? What Walmart and Trader Joe's Pulled (2026)",
+     "cat": "Food",
+     "why": "Frutas y Hortalizas del Sur S.A. of San Carlos, Chile, the supplier behind Walmart's Great Value organic berries and a Trader Joe's berry blend. Its berries were recalled three times in three months for E. coli O145.",
+     "perish": -3,
+     "keyword": "are frozen blueberries safe to eat right now",
+     "felt": "I put frozen berries in my smoothie every morning because they're supposed to be the healthy choice. And I paid extra for organic.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "laid-off-at-55-now-what",
+     "title": "I Got Laid Off at 55. Now What? (2026)",
+     "cat": "Builders",
+     "why": "She is exactly the builder avatar: experienced, suddenly with time, and scared of a long gap. The post shows that the search itself takes mo",
+     "perish": -3,
+     "keyword": "laid off at 55 now what",
      "felt": "",
      "register": "villain",
-     "pix": true,
-     "written": true,
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-halloween-candy-safe-to-eat",
+     "title": "Is Halloween Candy Safe to Eat? What Florida Found in Snickers, Skittles and Twizzlers (2026)",
+     "cat": "Food",
+     "why": "The big candy makers: The Hershey Company (Jolly Rancher, Twizzlers, Kit Kat), Mars (Snickers, Skittles, 3 Musketeers), Ferrara (Nerds Gummy Clusters, Laffy Taffy), Mondelez (Sour Patch Kids) and Tootsie Roll Industries. A state lab found arsenic in their bags, and none of them pulled a single one.",
+     "perish": -3,
+     "keyword": "is halloween candy safe to eat",
+     "felt": "I just bought the big bags for trick-or-treaters and the grandkids. Did I hand them arsenic with a smile?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "will-social-security-get-a-raise-in-2027",
+     "title": "Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026)",
+     "cat": "Builders",
+     "why": "Women 45 to 60 are watching their mothers live on one fixed check and seeing their own future in it. The post makes 'a raise I don't control",
+     "perish": -3,
+     "keyword": "social security cola 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "which-cinnamon-brands-have-lead",
+     "title": "Which Cinnamon Brands Have Lead? The Recall List Just Grew Again (2026)",
+     "cat": "Food",
+     "why": "Galil Foods of Hauppauge, NY (Lior Gourmet Spices Ground Cinnamon), the newest name on the list, plus the earlier names: Colonna Brothers (Marcum at Save-A-Lot, Supreme Tradition at Dollar Tree), SWAD, HAETAE, Roshni, DEVI, BaiLiFeng and El Chilar. They sold ground cinnamon carrying elevated lead.",
+     "perish": -3,
+     "keyword": "which cinnamon brands have lead",
+     "felt": "I put cinnamon in my oatmeal and coffee every single day, and pie season is starting. Is the jar in my cupboard one of them?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-ai-taking-jobs",
+     "title": "Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)",
+     "cat": "Builders",
+     "why": "Women 45 to 60 in office, admin, customer service and middle management jobs feel AI coming for their desk. The post respects their experien",
+     "perish": -2.5,
+     "keyword": "ai layoffs 2026",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-zicam-safe",
+     "title": "Is Zicam Safe? Why Church & Dwight Pulled Its Nasal Swabs Again (2026)",
+     "cat": "Personal Care",
+     "why": "Church & Dwight Co., Inc., owner of Zicam. Its nasal swabs were pulled for fungal contamination in 2025 and pulled again in 2026 after an inspection of the contract manufacturer.",
+     "perish": -2.5,
+     "keyword": "zicam recall 2026",
+     "felt": "I feel a cold coming on and I always reach for Zicam first. Is the thing I'm putting up my nose making me sicker?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -36,13 +132,13 @@
    ]
   },
   {
-   "date": "2026-10-05",
-   "weekday": "Mon",
+   "date": "2026-10-08",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-antibacterial-hand-soap-safe",
-     "title": "Is Antibacterial Hand Soap Safe? Dial's Germ Killer Still Has No Safety Ruling (2026)",
-     "cat": "Bathroom",
+     "slug": "is-angry-orange-stain-remover-safe",
+     "title": "Is Angry Orange Stain Remover Safe? Why 1.5 Million Bottles Were Recalled (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -68,13 +164,13 @@
    ]
   },
   {
-   "date": "2026-10-06",
-   "weekday": "Tue",
+   "date": "2026-10-09",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-antiperspirant-safe",
-     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
-     "cat": "Personal Care",
+     "slug": "is-antibacterial-hand-soap-safe",
+     "title": "Is Antibacterial Hand Soap Safe? Dial's Germ Killer Still Has No Safety Ruling (2026)",
+     "cat": "Bathroom",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -100,13 +196,13 @@
    ]
   },
   {
-   "date": "2026-10-07",
-   "weekday": "Wed",
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
+     "slug": "is-antiperspirant-safe",
+     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -132,13 +228,13 @@
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
-     "cat": "Cleaning",
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -164,13 +260,13 @@
    ]
   },
   {
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "date": "2026-10-12",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -196,13 +292,77 @@
    ]
   },
   {
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "date": "2026-10-13",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "extra-money-for-christmas",
+     "title": "I Need to Make Extra Money for Christmas. What Are My Real Options? (2026)",
+     "cat": "Builders",
+     "why": "Women who want income search this phrase every October, and it is the most open-handed money question of the year. A post that respects her ",
+     "perish": -1,
+     "keyword": "how to make extra money for christmas",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
      "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
      "cat": "Beauty",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-are-health-insurance-premiums-going-up",
+     "title": "Why Are Health Insurance Premiums Going Up So Much? What 2027 Open Enrollment Brings (2026)",
+     "cat": "Builders",
+     "why": "Fear of losing coverage is the biggest reason she won't build something of her own. Naming it honestly builds trust, and it opens the Zoom c",
+     "perish": -1,
+     "keyword": "health insurance premiums increase 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-15",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -228,13 +388,13 @@
    ]
   },
   {
-   "date": "2026-10-11",
-   "weekday": "Sun",
+   "date": "2026-10-16",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -260,22 +420,18 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "weekday": "Mon",
+   "date": "2026-10-17",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
-     "cat": "Food",
-     "why": "",
-     "perish": 9,
-     "keyword": "ultra processed food heart risk",
-     "felt": "She has counted calories, cut fat, cut sugar and cut salt across thirty years of being told each one was the answer. She has never been told the manufacturing itself might be the thing.",
-     "register": "gentle",
-     "study": "European Heart Journal, May 2026. Luigina Guasti and colleagues, University of Insubria. A European Society of Cardiology clinical consensus statement.",
-     "area": "physical",
-     "takeaway": "It is not only what these foods contain. It is what being manufactured does to them, and that is now treated as a risk in its own right.",
-     "track_want": "shopper",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
      "pix": false,
      "written": false,
      "track": "shopper"
@@ -296,20 +452,20 @@
    ]
   },
   {
-   "date": "2026-10-13",
-   "weekday": "Tue",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+     "cat": "Supplements",
+     "why": "I-Health, Inc. and DSM Nutritional Products, Inc., the companies behind Estroven. A 2026 lawsuit says they sold menopause relief they could not deliver and made drug-level claims for a supplement.",
+     "perish": -1,
+     "keyword": "is estroven safe",
+     "felt": "I'm not sleeping, I'm hot all night and I'm cranky with everyone. I grabbed the box that promised relief. Was I paying for nothing, or worse?",
      "register": "villain",
-     "pix": true,
-     "written": true,
+     "pix": false,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -328,40 +484,8 @@
    ]
   },
   {
-   "date": "2026-10-14",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "why-is-my-coaching-business-stuck",
-     "title": "Why Is My Coaching Business Stuck at the Same Revenue Every Year? (2026)",
-     "cat": "Builders",
-     "why": "Coaches are the fastest-converting audience owner there is: they already have trust with a group of women who buy on their recommendation, w",
-     "perish": 1,
-     "keyword": "why is my coaching business not growing",
-     "felt": "",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "date": "2026-10-19",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -377,6 +501,25 @@
      "track": "shopper"
     },
     {
+     "slug": "is-50-too-old-to-get-hired",
+     "title": "Is 50 Too Old to Get Hired? What One Company Paid for Calling an Applicant 'Too Old' (2026)",
+     "cat": "Builders",
+     "why": "Many women 50+ have quietly stopped applying because they sense this. Proof that it's real, and not their fault, opens the door to 'build yo",
+     "perish": 0,
+     "keyword": "is 50 too old to get hired",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "weekday": "Tue",
+   "slots": [
+    {
      "slug": "is-krud-kutter-non-toxic",
      "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
@@ -388,30 +531,26 @@
      "pix": true,
      "written": false,
      "track": "shopper"
+    },
+    {
+     "slug": "is-social-security-going-to-run-out",
+     "title": "Is Social Security Going to Run Out in 2032? What the Trustees Actually Said (2026)",
+     "cat": "Builders",
+     "why": "For women 50 to 60, this is the quiet math behind 'I need something of my own'. The post turns a fear into a plan and points to the Zoom.",
+     "perish": 0,
+     "keyword": "is social security going to run out in 2032",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
-    {
-     "slug": "short-workouts-or-long-ones",
-     "title": "Short Hard Workouts or Long Easy Ones: Which Does More for Your Heart? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "hiit vs steady cardio over 50",
-     "felt": "She does not have an hour. She has been told an hour is what it takes, so she does nothing at all, and she feels bad about that on top of everything else.",
-     "register": "gentle",
-     "study": "Journal of Cardiovascular Nursing, March 2026. Yu-Hsuan Chang PhD and colleagues, National Tainan Junior College of Nursing.",
-     "area": "physical",
-     "takeaway": "The short version is not a lesser version. And whichever one you pick, the gains only last as long as you keep doing it.",
-     "track_want": "shopper",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
     {
      "slug": "is-redken-shampoo-safe",
      "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
@@ -424,12 +563,25 @@
      "pix": true,
      "written": false,
      "track": "shopper"
+    },
+    {
+     "slug": "work-from-home-jobs-for-women-over-50",
+     "title": "Are Work From Home Jobs for Women Over 50 Real? How to Spot the Fake Ones (2026)",
+     "cat": "Builders",
+     "why": "This is the biggest search phrase for the avatar. She has been burned or is afraid of being burned, and a protective post makes Shannon the ",
+     "perish": 0.5,
+     "keyword": "work from home jobs for women over 50",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-10-17",
-   "weekday": "Sat",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-roundup-safe-to-use-around-your-house",
@@ -445,8 +597,40 @@
      "track": "shopper"
     },
     {
+     "slug": "is-doordash-worth-it-as-a-side-hustle",
+     "title": "Is DoorDash Worth It as a Side Hustle? What New York Just Made It Pay Back (2026)",
+     "cat": "Builders",
+     "why": "Women 45 to 60 who already drive for an app have proven they will work for extra income. Showing them who controls their pay sets up the 'ow",
+     "perish": 1,
+     "keyword": "is doordash worth it as a side hustle",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-23",
+   "weekday": "Fri",
+   "slots": [
+    {
      "slug": "is-suave-shampoo-safe",
      "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -460,12 +644,12 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -492,8 +676,8 @@
    ]
   },
   {
-   "date": "2026-10-19",
-   "weekday": "Mon",
+   "date": "2026-10-25",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-your-dehumidifier-a-fire-risk",
@@ -524,26 +708,9 @@
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
-    {
-     "slug": "what-is-astaxanthin",
-     "title": "What Is Astaxanthin, and Why Do Fifteen Trials Point the Same Way? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "what is astaxanthin",
-     "felt": "She keeps seeing the word on labels and has no idea whether it is a real thing or a marketing word somebody made up.",
-     "register": "gentle",
-     "study": "International Journal of Molecular Sciences, January 2026. Giuseppina Malcangi and colleagues, University of Bari Aldo Moro. A systematic review of 15 randomised controlled trials.",
-     "area": "physical",
-     "takeaway": "Fifteen separate trials landing in the same place is a real signal. What it changes on a blood test is clear. What it changes in a life is still being worked out.",
-     "track_want": "shopper",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
     {
      "slug": "is-tap-water-safe-to-drink",
      "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
@@ -556,13 +723,7 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-21",
-   "weekday": "Wed",
-   "slots": [
+    },
     {
      "slug": "red-dye-40-mars-broken-promise",
      "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
@@ -575,7 +736,13 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "weekday": "Tue",
+   "slots": [
     {
      "slug": "what-does-lavender-do-to-blood-pressure",
      "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
@@ -588,13 +755,7 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-22",
-   "weekday": "Thu",
-   "slots": [
+    },
     {
      "slug": "what-keeps-your-memory-sharp-after-70",
      "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
@@ -607,7 +768,13 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "weekday": "Wed",
+   "slots": [
     {
      "slug": "why-did-clorox-pay-a-14-million-fine",
      "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
@@ -620,13 +787,7 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-23",
-   "weekday": "Fri",
-   "slots": [
+    },
     {
      "slug": "why-do-you-stop-feeling-thirsty",
      "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
@@ -639,7 +800,13 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "weekday": "Thu",
+   "slots": [
     {
      "slug": "window-air-conditioner-mold-recall",
      "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
@@ -650,29 +817,6 @@
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-24",
-   "weekday": "Sat",
-   "slots": [
-    {
-     "slug": "is-your-skin-a-barrier-or-an-ecosystem",
-     "title": "Is Your Skin a Barrier or an Ecosystem? (2026)",
-     "cat": "Beauty",
-     "why": "",
-     "perish": 9,
-     "keyword": "skin microbiome explained",
-     "felt": "Her skin has changed and nothing she used to use works any more. She has been buying stronger and stronger products and getting worse results.",
-     "register": "gentle",
-     "study": "Cosmetics, February 2026. Joie Chia and colleagues, University of Sunderland.",
-     "area": "physical",
-     "takeaway": "If skin is a population rather than a surface, then stripping it harder is the opposite of caring for it.",
-     "track_want": "shopper",
-     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -692,37 +836,31 @@
    ]
   },
   {
-   "date": "2026-10-25",
-   "weekday": "Sun",
-   "slots": []
-  },
-  {
-   "date": "2026-10-26",
-   "weekday": "Mon",
-   "slots": []
-  },
-  {
-   "date": "2026-10-27",
-   "weekday": "Tue",
-   "slots": []
-  },
-  {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "should-you-check-the-air-before-you-go-out",
-     "title": "Should You Check the Air Before You Go Out Walking? (2026)",
+     "slug": "are-electric-blankets-safe",
+     "title": "Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026)",
      "cat": "Home",
-     "why": "",
-     "perish": 9,
-     "keyword": "air quality index when to stay inside",
-     "felt": "She walks most days because it is the one thing she does for herself, and it has never occurred to her that some days it costs more than it gives.",
-     "register": "gentle",
-     "study": "State of the Air 2026, April 2026. American Lung Association.",
-     "area": "environmental",
-     "takeaway": "A few seconds checking the forecast can spare your lungs an unnecessary hit on the days it is worst.",
-     "track_want": "shopper",
+     "why": "JKMAX, which sold about 195,000 heated blankets and heating pads on Amazon whose heating wires could overheat. The company had 577 reports of smoking, melting or burning, including 53 burn injuries.",
+     "perish": 0,
+     "keyword": "are electric blankets safe",
+     "felt": "I'm always cold at night and the heated blanket is the only way I sleep. I leave it on all night, and so does my mother.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "are-plug-in-carbon-monoxide-detectors-reliable",
+     "title": "Are Plug-In Carbon Monoxide Detectors Reliable? The One You Should Unplug Today (2026)",
+     "cat": "Air",
+     "why": "Shenzhen Kanghua Shengshi Industrial Co., LTD (doing business as KH Alert), maker of the KH158 4-in-1 plug-in natural gas and carbon monoxide detector sold online, including on Amazon. Its detectors failed to alarm during real leaks, and it refused to recall them.",
+     "perish": 0,
+     "keyword": "carbon monoxide detector recall",
+     "felt": "The furnace just kicked on and the gas fireplace is going. The little plug-in alarm is the only thing between us and the air we can't smell.",
+     "register": "villain",
      "pix": false,
      "written": false,
      "track": "shopper"
@@ -730,70 +868,146 @@
    ]
   },
   {
-   "date": "2026-10-29",
-   "weekday": "Thu",
-   "slots": []
-  },
-  {
-   "date": "2026-10-30",
-   "weekday": "Fri",
-   "slots": []
-  },
-  {
    "date": "2026-10-31",
    "weekday": "Sat",
-   "slots": []
+   "slots": [
+    {
+     "slug": "does-hair-relaxer-cause-cancer",
+     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
+     "cat": "Beauty",
+     "why": "L'Oréal USA Inc., the first defendant set for trial in the federal hair relaxer litigation (Revlon and others are also defendants). Thousands of women allege relaxers they used for years are linked to ovarian, endometrial and uterine cancer.",
+     "perish": 0,
+     "keyword": "hair relaxer lawsuit update 2026",
+     "felt": "I relaxed my hair every six weeks for thirty years. Now I keep hearing the word cancer next to it and nobody will give me a straight answer.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why It Keeps Getting Pulled (2026)",
+     "cat": "Personal Care",
+     "why": "Prestige Consumer Healthcare (Prestige Brands Holdings and Medtech Products Inc.), maker of Clear Eyes. Its drops were recalled again in 2026 because the maker could not assure they were sterile.",
+     "perish": 0,
+     "keyword": "is clear eyes safe to use everyday",
+     "felt": "The heat is on and my eyes are dry and red all day. I put these drops in three times a day. Am I putting germs straight into my eyes?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
   },
   {
    "date": "2026-11-01",
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "why-does-everyone-feel-behind-on-money-at-50",
-     "title": "Why Does Everyone Feel Behind on Money at 50? (2026)",
-     "cat": "Builders",
-     "why": "",
-     "perish": 9,
-     "keyword": "gen x retirement savings behind",
-     "felt": "She thinks she is the only one who did not work it out, and the shame of that is what stops her asking anybody anything.",
-     "register": "gentle",
-     "study": "The 2026 TIAA Institute-GFLEC Personal Finance Index, May 2026. Paul J. Yakoboski and colleagues at the TIAA Institute and Stanford's Global Financial Literacy Excellence Center. Plus the PwC 2026 Employee Financial Wellness Survey, April 2026.",
-     "area": "financial",
-     "takeaway": "More than half the country got the same questions wrong. Feeling behind is not a private failure, and it is not something to be quiet about.",
-     "track_want": "builder",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "cat": "Personal Care",
+     "why": "Unilever (Conopco Inc. d/b/a Unilever Home & Personal Care USA). Six women say its TRESemmé shampoo and conditioner contained DMDM hydantoin, a formaldehyde releaser, and that their hair thinned and fell out.",
+     "perish": 0,
+     "keyword": "tresemme lawsuit hair loss",
+     "felt": "My part is getting wider and there's more hair in the drain every week. I've used TRESemmé for twenty years. Did my shampoo do this?",
+     "register": "villain",
      "pix": false,
      "written": false,
-     "track": "builder"
+     "track": "shopper"
+    },
+    {
+     "slug": "why-is-beef-so-expensive",
+     "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
+     "cat": "Food",
+     "why": "The Big Four meatpackers, JBS, Cargill, Tyson Foods and National Beef, which the DOJ says handle more than 85% of U.S. beef processing and which are under a DOJ antitrust investigation over beef prices. The probe now also covers eight big grocers.",
+     "perish": 0,
+     "keyword": "why is beef so expensive right now",
+     "felt": "I picked up a roast, saw the price and put it back. Where is all that money going, because it sure isn't going to the rancher.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
     }
    ]
   },
   {
    "date": "2026-11-02",
    "weekday": "Mon",
-   "slots": []
+   "slots": [
+    {
+     "slug": "is-gotham-steel-safe",
+     "title": "Is Gotham Steel Safe to Cook With? What the 'Non-Toxic' Settlement Says (2026)",
+     "cat": "Kitchen",
+     "why": "E. Mishan & Sons, Inc., parent of Gotham Steel, Granite Stone and Bell & Howell cookware. It sold pans as 'Healthy, Non-Toxic' and 'Toxin Free', and buyers say the pans held metals and forever chemicals the box never mentioned.",
+     "perish": 0.5,
+     "keyword": "is gotham steel safe to cook with",
+     "felt": "I threw out my old Teflon to be safe and bought the one that said non-toxic right on the box. Did I just pay to get fooled twice?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-was-argentina-beef-recalled",
+     "title": "Why Was Argentina Beef Recalled? What Skipped Inspection Means for Your Meat (2026)",
+     "cat": "Food",
+     "why": "Corte Argentino USA LLC of Aventura, FL, which brought in beef from Frigorifico Gorina SAIC in Argentina without U.S. import reinspection. Second villain: Star Meat Delivery Inc. of Lucama, NC, whose meat FSIS says carried a false USDA mark of inspection.",
+     "perish": 0.5,
+     "keyword": "argentina beef recall why",
+     "felt": "I trust the USDA stamp. If meat can skip inspection or carry a stamp that isn't real, what am I actually feeding my family?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
   },
   {
    "date": "2026-11-03",
    "weekday": "Tue",
-   "slots": []
+   "slots": [
+    {
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "cat": "Food",
+     "why": "Ghirardelli Chocolate Company, which recalled its Premium Hot Cocoa Mix and nine other mixes at the most serious recall level over possible Salmonella in the milk powder.",
+     "perish": 1,
+     "keyword": "ghirardelli hot cocoa mix recall",
+     "felt": "A mug of cocoa is my one cozy treat on a cold night. I buy the good brand so I don't have to worry about it.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-lilash-safe",
+     "title": "Is LiLash Safe? What a New Lawsuit Says Is Hiding in the Serum (2026)",
+     "cat": "Beauty",
+     "why": "Cosmetic Alchemy LLC, maker of LiLash and LiBrow. A lawsuit says it sold $90 to $150 'natural' serums containing a drug-class ingredient it did not disclose.",
+     "perish": 1,
+     "keyword": "is lilash safe",
+     "felt": "My lashes got thin after 50, so I paid over $100 for a serum everyone raves about. Now my eyes are dry and itchy. Is it the serum?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
   },
   {
    "date": "2026-11-04",
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "why-cant-i-read-a-whole-page-anymore",
-     "title": "Why Can You Not Read a Whole Page Anymore? (2026)",
-     "cat": "Health",
-     "why": "",
-     "perish": 9,
-     "keyword": "short form video attention span",
-     "felt": "She used to read books. Now she picks one up and gets to the end of a page having taken in none of it, and she has decided that is her age.",
-     "register": "gentle",
-     "study": "European Child and Adolescent Psychiatry, June 2026. Marlene Ebster and colleagues, University of Bayreuth. A systematic review of 42 studies covering more than 46,000 young people.",
-     "area": "mental",
-     "takeaway": "It is not your age and it is not your memory. It is a habit that was designed, and a designed habit can be undone.",
-     "track_want": "shopper",
+     "slug": "is-stove-top-stuffing-bad-for-you",
+     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
+     "cat": "Food",
+     "why": "Kraft Heinz, which preserves Stove Top stuffing with BHA and BHT. BHA is the preservative federal regulators reopened for a safety reassessment in February 2026.",
+     "perish": 1,
+     "keyword": "is stove top stuffing bad for you",
+     "felt": "Stove Top has been on my Thanksgiving table since I was a girl. I never once read the box.",
+     "register": "villain",
      "pix": false,
      "written": false,
      "track": "shopper"
@@ -866,7 +1080,7 @@
    "slots": []
   }
  ],
- "shortfall": 45,
+ "shortfall": 27,
  "blocked": [
   {
    "slug": "how-much-protein-after-50",

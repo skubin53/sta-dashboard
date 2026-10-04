@@ -1,4 +1,5 @@
 ---
+replaced_by: PRIORITY-ORDER-2026-10-04.md (read that one first)
 date: 2026-10-02
 type: priority-order
 replaces: PRIORITY-ORDER-2026-08-14.md (that order is finished)
