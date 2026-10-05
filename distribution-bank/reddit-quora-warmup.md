@@ -257,3 +257,36 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   The vinegar smell is gone within the hour. No chemical cloud, no opening every window in the house.
 
   One last tip. Set a sheet pan on the lower rack when you bake anything that might bubble over. The easiest oven to clean is the one that never got dirty.
+
+- **2026-10-05 (draft, pending)** - Quora, REAL thread (found in the search index; Quora returns 403 and a bot check to curl and WebFetch, so the asker, date and open status could not be seen; Reddit was unreachable too, 403 to curl and blocked in search; check it is still open before posting): https://www.quora.com/What-healthy-foods-should-women-eat-after-the-age-of-50 . Their question: "What healthy foods should women eat after the age of 50?" On-avatar (women 50+ who cook for the house; first food answer in the warm-up). The search snippet shows existing answers already list berries, greens, fish, nuts and beans, so ours leads with protein at every meal, short ingredient lists and cooking at home. Source checked: NIA healthy meal planning tips for older adults (protein through the day to maintain muscle; water through the day), https://www.nia.nih.gov/health/healthy-eating-nutrition-and-diet/healthy-meal-planning-tips-older-adults . For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her 20 years. LINK-FREE draft answer:
+
+  After 20 years as a health coach, this is the short list I give women over 50. Nothing fancy. Just real food, most days.
+
+  1. Protein at every meal, not only dinner. Eggs, fish, chicken, beef, beans, lentils, plain yogurt. Getting enough through the day helps you keep your muscle as you age.
+  2. Plenty of color. Leafy greens, berries, and whatever vegetables look good this week.
+  3. Simple fats your grandmother would know. Butter, olive oil, avocados, nuts.
+  4. Short ingredient lists. If a package lists words you cannot say out loud, put it back.
+  5. More meals made at home. When you cook, you decide how much salt and sugar goes in.
+  6. Water through the day. Keep a glass where you can see it.
+
+  You do not need a strict diet. Add more real food, and the boxed stuff starts to fall away on its own.
+
+  status: pending (human to post)
+
+- **2026-10-05 (draft, pending)** - Quora, REAL thread (found in the search index; Quora returns 403 and a bot check to curl and WebFetch, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/Which-is-better-for-aging-skin-moisturizers-lotions-toners-or-creams-for-women-50 . Their question: "Which is better for aging skin; moisturizers, lotions, toners or creams? (for women 50+)" On-avatar (women 50+ buying face and body care). A different angle from the 2026-09-26 lotion-fragrance draft (texture, toner, routine), no wording reused. Sources checked: AAD dermatologists' dry skin tips (creams and ointments add more moisture than lotions; apply on damp skin; warm water; skip alcohol and fragrance products on dry skin), https://www.aad.org/public/everyday-care/skin-care-basics/dry/dermatologists-tips-relieve-dry-skin ; AAD dry skin causes ("By your 40s, the amount of sebum your body makes drops dramatically"), https://www.aad.org/public/diseases/a-z/dry-skin-causes . For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
+
+  For most women over 50, a cream is the better pick. Here is the simple version.
+
+  "Moisturizer" is the umbrella word. Lotions and creams are both moisturizers. A lotion is lighter and sinks in fast. A cream is thicker and richer, so it holds moisture in longer. Dermatologists say creams add more moisture than lotions. That matters, because our skin makes a lot less of its own oil by our 40s.
+
+  A toner is optional. If you use one, avoid any that sting or smell like rubbing alcohol. Alcohol dries skin out.
+
+  What I tell women:
+  1. Wash with something gentle, in warm water, not hot.
+  2. Put your cream on while your skin is still a little damp. It locks the water in.
+  3. Choose products with no added fragrance.
+  4. Wear a mineral sunscreen on your face every day.
+
+  Two or three good products you use every day beat a full shelf.
+
+  status: pending (human to post)
