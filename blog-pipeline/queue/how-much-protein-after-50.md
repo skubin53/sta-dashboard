@@ -8,7 +8,7 @@ category: Kitchen
 cover: https://scan.ismyhometoxic.com/blog-images/howmuchprot-hero-v1.webp
 meta_description: The US protein minimum is 0.8 grams per kilogram. The 2026 US guidelines and aging experts advise more. Here it is in pounds, and where beef comes from.
 status: ready
-note: Photos pending: request filed for Photo Claude (howmuchprot-hero-v1, howmuchprot-villain-v1, howmuchprot-turning-point-v1, howmuchprot-belonging-v1, howmuchprot-freedom-v1).
+note: Photo Claude delivered all 5 frames 2026-10-04 3:55pm; hero is the cover only, 4 body frames placed inline 2026-10-05 with alt text from the photo request.
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 ---
 
@@ -51,7 +51,6 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 4, 2026<br><span style="font-size:.92em;">Published October 4, 2026 &middot; Last updated October 4, 2026</span></p>
 
-[IMAGE: howmuchprot-hero-v1]
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -119,7 +118,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>For everyone else at your table, the next question is where that protein comes from.</p>
 
-[IMAGE: howmuchprot-villain-v1]
+<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-villain-v1.webp" alt="Rows of plastic-wrapped ground beef trays in a supermarket meat case under flat store lighting, a woman's hand resting on one pack" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="where-beef-comes-from">Where does most store beef come from?</h2>
 
@@ -153,7 +152,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Not one row tells you who raised the animal on your plate.</p>
 
-[IMAGE: howmuchprot-turning-point-v1]
+<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-turning-point-v1.webp" alt="A woman in her fifties at her kitchen counter, a store tray of beef set beside her, looking out of the window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="the-other-side">The case against my own story</h2>
 
@@ -169,7 +168,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Because four companies buy most of the cattle. And there is no one to call and ask how your dad's dinner was raised.</p>
 
-[IMAGE: howmuchprot-belonging-v1]
+<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-belonging-v1.webp" alt="A woman talking with a rancher at a wooden fence line, cattle grazing on open pasture behind them in late afternoon light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="what-do-i-do">What do I do instead?</h2>
 
@@ -253,7 +252,7 @@ of our health and our finances.</p>
 
 <p>That is the whole change. It took one evening.</p>
 
-[IMAGE: howmuchprot-freedom-v1]
+<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-freedom-v1.webp" alt="A woman setting a simple beef dinner in front of her mother at a warm kitchen table on an autumn evening, both smiling" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
