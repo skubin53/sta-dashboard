@@ -180,7 +180,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>What changes is how long she counts for you while you are in, and whether you are the one she calls.</p>
 
-<p>Switch to America is the maker. No middlemen and no markup.</p>
+<p>Switch to America sells straight from the manufacturer. No middlemen and no markup.</p>
 
 <p>You pay what a brand new shopper pays. Not a penny less. I have no special rate and I would not offer you one.</p>
 

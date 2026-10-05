@@ -160,7 +160,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>I will not pretend reorder income is a magic word either. A company built on reorders can close too. Any of them can.</p>
 
-<p>Here is what I can tell you about here. Switch to America is the maker. No middlemen and no markup. There is no monthly requirement, and nothing to hit to stay active.</p>
+<p>Here is what I can tell you about here. Switch to America sells straight from the manufacturer. No middlemen and no markup. No minimums, no maximums.</p>
 
 <p>You pay what a brand new shopper pays. Not a penny less. I have no special rate and I would not offer you one. Anybody who discounts you on day one is buying you, not building with you.</p>
 

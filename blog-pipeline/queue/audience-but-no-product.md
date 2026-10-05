@@ -169,7 +169,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>I will not pretend what I do is safe from everything either. A company built on reorders can close too. Any of them can.</p>
 
-<p>What I can tell you is how it works here. Switch to America is the maker. No middlemen, no markup. I will not hand you a number to expect. Nobody honest can.</p>
+<p>What I can tell you is how it works here. Switch to America sells straight from the manufacturer. No middlemen, no markup. I will not hand you a number to expect. Nobody honest can.</p>
 
 <p>You are not the only one who worries about losing a page. The Oversight Board says it has had "innumerable complaints" since 2020. They came from users who lost access to their accounts.</p>
 
