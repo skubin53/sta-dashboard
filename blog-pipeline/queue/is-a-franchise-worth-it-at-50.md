@@ -177,7 +177,7 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 
 <p class="quick-answer">Quick answer: customers of your own. No studio to build and no landlord waiting on you.</p>
 
-<p>Here is what I do instead. Switch to America is a private membership store. We are the maker, so there is no middleman and no markup.</p>
+<p>Here is what I do instead. Switch to America is a private membership store. We are the manufacturer, so there is no middleman and no markup.</p>
 
 <p>There is no lease and no monthly requirement.</p>
 

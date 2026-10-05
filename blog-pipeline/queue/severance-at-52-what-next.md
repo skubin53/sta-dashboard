@@ -152,7 +152,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p>You did not have to work at IBM for this to matter. I picked it because its paper is in a court file you can open tonight.</p>
 
-<p>Now me. Switch to America makes what it sells. No middlemen and no markup. There is no monthly requirement, and nothing to hit to stay active.</p>
+<p>Now me. We are the manufacturer. No middlemen and no markup. There is no monthly requirement, and nothing to hit to stay active.</p>
 
 <p>I am not after your severance. You pay what a brand new shopper pays, not a penny less.</p>
 

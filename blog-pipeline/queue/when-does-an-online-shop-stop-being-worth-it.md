@@ -209,7 +209,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>Take those five to every offer put in front of you. If somebody dodges one, that is your answer.</p>
 
-<p>Ask me the same five, and I will answer every one on the call. Switch to America is a private membership store. We are the maker, so no middleman and no markup. No monthly requirement.</p>
+<p>Ask me the same five, and I will answer every one on the call. Switch to America is a private membership store. We are the manufacturer, so no middleman and no markup. No monthly requirement.</p>
 
 <p>You pay what a brand new customer pays. Anybody who discounts you on day one is buying you, not building with you.</p>
 

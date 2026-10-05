@@ -3,7 +3,8 @@ date: is-dawn-dish-soap-safe
 post_title: Is Dawn Dish Soap Safe?
 slug: is-dawn-dish-soap-safe
 blog: Switch to America (Hulr7aT2G6a5AdONSXQx)
-ghl_post_id: UNKNOWN
+ghl_post_id: 6ac3ac0dd975854ae2916de1
+previous_ghl_post_id: UNKNOWN  # live copy 6ab957beec41da637e40c99b retired 2026-10-05 as DRAFT is-dawn-dish-soap-safe-retired-20261005 (Shannon 10/5: keep "We are the manufacturer", fix maker / made by us / own brand)
 live_url: https://join.switchtoamerica.com/post/is-dawn-dish-soap-safe
 published_at: 2026-07 (exact date not recorded)
 status: live

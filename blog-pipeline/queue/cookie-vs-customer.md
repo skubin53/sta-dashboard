@@ -153,7 +153,7 @@ vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-T
 
 <p>What matters is whether real women reorder because they actually want the stuff. If they do not, the pretty word residual means nothing.</p>
 
-<p>Here is what I can tell you about here. We are the maker. No middleman and no markup. There is no monthly requirement, and nothing to hit to stay active.</p>
+<p>Here is what I can tell you about here. We are the manufacturer. No middleman and no markup. There is no monthly requirement, and nothing to hit to stay active.</p>
 
 <p>You pay what a brand new customer pays. Not a penny less. I do not have a special rate and I would not offer you one. Anybody who discounts you on day one is buying you, not building with you.</p>
 

@@ -158,7 +158,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 
 <p>What I do takes work. If you stop for 90 days, nobody new finds you. A customer can stop, too. Any of them can.</p>
 
-<p>Switch to America is a private membership store. We are the maker, so there is no middleman and no markup.</p>
+<p>Switch to America is a private membership store. We are the manufacturer, so there is no middleman and no markup.</p>
 
 <p>I will not hand you a number to expect. Nobody honest can. The FTC's first charge was about income claims. It says Publishing.com could not back them up.</p>
 

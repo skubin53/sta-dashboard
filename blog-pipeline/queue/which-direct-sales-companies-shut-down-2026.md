@@ -188,7 +188,7 @@ vault_checked: [sources/closures/2025-04-11-dsn-modere-announces-closure-after-2
 
 <p>What I will do is answer the six first, unasked.</p>
 
-<p>We are the manufacturer. Over five hundred products, made by us. No middlemen and no markup.</p>
+<p>We are the manufacturer. Over five hundred products. No middlemen and no markup.</p>
 
 <p>There is no monthly minimum. No month where you order things you do not need. No stock in your spare room.</p>
 
