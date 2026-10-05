@@ -359,3 +359,18 @@ HOW (Chrome, 10/4): the Claude tab group lives in its OWN Chrome window. If that
 - 1 older pin still links to the blog (the are-b... candles pin). Next run: re-point it, then rotate growth tasks (a) to (f); (b) first, to strip the old hashtags from the 10 re-pointed 9/30 pins.
 
 NEXT run: Day 14 food dyes (are-food-dyes-still-legal) + the next calendar pin after the Day 13 baby-wipes skip.
+
+## 2026-10-05 (12:11pm run, ran 12:41) - 0 pins so far: the Claude Chrome tab was hidden, then froze
+
+Chrome (ca040473) connected. The creation tool opened in this session's own tab group but reported visibilityState "hidden", hasFocus false, width 1536, empty body (the Claude window is behind her main Chrome window). The extension then dropped for a moment and, after reselecting Chrome, the tab's renderer timed out (45s). Stopped cleanly; no Edge fallback.
+
+READY TO PUBLISH (composed and checked: a real person, no other brand's label, legible headline):
+### Food dyes  [pinx_fooddyes.png | photo: arefooddyes-belonging-v1.webp (women talking at a kitchen table)]
+- Title: Are food dyes still legal? Red 3 was pulled, Red 40 is still in snacks
+- Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-food-dyes-still-legal
+- Description (420): Are food dyes still legal in American food? Red No. 3 was pulled in January 2025, but food makers have until 2027 to take it out, and Red 40 and Yellow 5 were never touched. Here is how to spot synthetic food dyes in the snack cupboard and swap to snacks colored with real food instead. American made can also mean more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Canned food BPA  [pinx_cannedbpa.png | photo: arecannedfo-belonging-v1.webp (two women filling glass jars)]
+- Title: Are canned foods lined with BPA? What coats the inside of the can
+- Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-canned-foods-lined-with-bpa
+- Description (473): Are canned foods lined with BPA? Most food cans have a thin plastic lining you never see. BPA came out of baby bottles in 2012, but the can lining was left alone, and the most common swap, BPS, is now on a California warning list too. Here is what coats the inside of the tin and how to stock a safer pantry with glass jars and fresh food. American made can also mean more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+Growth (g) still owed: re-point the last older pin (candles 474848354483682673) to the scan; then rotate (a) to (f), (b) first.
