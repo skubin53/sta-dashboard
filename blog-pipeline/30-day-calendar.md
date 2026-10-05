@@ -20,22 +20,22 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-10-05 | Mon | 1 | shopper | villain | Is Halloween Candy Safe to Eat? What Florida Found in Snickers, Skittles and Twizzlers (2026) | ready |
+| 2026-10-05 | Mon | 1 | shopper | villain | Are Frozen Blueberries Safe to Eat Right Now? What Walmart and Trader Joe's Pulled (2026) | ready |
 | 2026-10-05 | Mon | 2 | builder | villain | I Got Laid Off at 55. Now What? (2026) | NEEDED |
-| 2026-10-06 | Tue | 1 | shopper | villain | Which Cinnamon Brands Have Lead? The Recall List Just Grew Again (2026) | ready |
-| 2026-10-06 | Tue | 2 | builder | villain | Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026) | NEEDED |
-| 2026-10-07 | Wed | 1 | shopper | villain | Is Zicam Safe? Why Church & Dwight Pulled Its Nasal Swabs Again (2026) | NEEDED |
-| 2026-10-07 | Wed | 2 | builder | villain | My Commissions Dropped and My Broker Blames the Market. What Did NAR Change? (2026) | ready |
-| 2026-10-08 | Thu | 1 | shopper | villain | Are Frozen Blueberries Safe to Eat Right Now? What Walmart and Trader Joe's Pulled (2026) | ready |
-| 2026-10-08 | Thu | 2 | builder | villain | Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026) | ready |
+| 2026-10-06 | Tue | 1 | shopper | villain | Is Halloween Candy Safe to Eat? What Florida Found in Snickers, Skittles and Twizzlers (2026) | ready |
+| 2026-10-06 | Tue | 2 | builder | villain | Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026) | ready |
+| 2026-10-07 | Wed | 1 | shopper | villain | Which Cinnamon Brands Have Lead? The Recall List Just Grew Again (2026) | ready |
+| 2026-10-07 | Wed | 2 | builder | villain | Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026) | NEEDED |
+| 2026-10-08 | Thu | 1 | shopper | villain | Is Zicam Safe? Why Church & Dwight Pulled Its Nasal Swabs Again (2026) | NEEDED |
+| 2026-10-08 | Thu | 2 | builder | villain | My Commissions Dropped and My Broker Blames the Market. What Did NAR Change? (2026) | ready |
 | 2026-10-09 | Fri | 1 | shopper | villain | How Much Protein Do You Need After 50? (2026) | ready |
-| 2026-10-09 | Fri | 2 | builder | villain | What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026) | ready |
+| 2026-10-09 | Fri | 2 | builder | villain | Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026) | ready |
 | 2026-10-10 | Sat | 1 | shopper | villain | Is Angry Orange Stain Remover Safe? Why 1.5 Million Bottles Were Recalled (2026) | ready |
-| 2026-10-10 | Sat | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
+| 2026-10-10 | Sat | 2 | builder | villain | What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026) | ready |
 | 2026-10-11 | Sun | 1 | shopper | villain | Is Antibacterial Hand Soap Safe? Dial's Germ Killer Still Has No Safety Ruling (2026) | ready |
-| 2026-10-11 | Sun | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
+| 2026-10-11 | Sun | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
 | 2026-10-12 | Mon | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
-| 2026-10-12 | Mon | 2 | builder | villain | Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026) | ready |
+| 2026-10-12 | Mon | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
 | 2026-10-13 | Tue | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
 | 2026-10-13 | Tue | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
 | 2026-10-14 | Wed | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |

@@ -8,16 +8,16 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-halloween-candy-safe-to-eat",
-     "title": "Is Halloween Candy Safe to Eat? What Florida Found in Snickers, Skittles and Twizzlers (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "slug": "are-frozen-blueberries-safe",
+     "title": "Are Frozen Blueberries Safe to Eat Right Now? What Walmart and Trader Joe's Pulled (2026)",
+     "cat": "Food",
+     "why": "already written",
      "perish": -3,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -38,6 +38,38 @@
   {
    "date": "2026-10-06",
    "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-halloween-candy-safe-to-eat",
+     "title": "Is Halloween Candy Safe to Eat? What Florida Found in Snickers, Skittles and Twizzlers (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -3,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "will-social-security-get-a-raise-in-2027",
+     "title": "Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -3,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "which-cinnamon-brands-have-lead",
@@ -68,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-07",
-   "weekday": "Wed",
+   "date": "2026-10-08",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-zicam-safe",
@@ -100,38 +132,6 @@
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "are-frozen-blueberries-safe",
-     "title": "Are Frozen Blueberries Safe to Eat Right Now? What Walmart and Trader Joe's Pulled (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "recurring-vs-residual-income",
-     "title": "Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-10-09",
    "weekday": "Fri",
    "slots": [
@@ -149,8 +149,8 @@
      "track": "shopper"
     },
     {
-     "slug": "what-happens-if-you-quit",
-     "title": "What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026)",
+     "slug": "recurring-vs-residual-income",
+     "title": "Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -181,8 +181,8 @@
      "track": "shopper"
     },
     {
-     "slug": "questions-before-joining-anything",
-     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
+     "slug": "what-happens-if-you-quit",
+     "title": "What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -213,8 +213,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
+     "slug": "questions-before-joining-anything",
+     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -245,8 +245,8 @@
      "track": "shopper"
     },
     {
-     "slug": "will-social-security-get-a-raise-in-2027",
-     "title": "Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026)",
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
