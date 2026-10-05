@@ -276,7 +276,7 @@ our finances.</p>
 <h3>Worth reading next</h3>
 <ul>
 <li><a href="https://theshannonnicole.com/post/ltk-creator-payout-change">Did LTK just change what creators get paid?</a></li>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a></li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a></li>
 <li><a href="https://theshannonnicole.com/post/cookie-vs-customer">Cookie or customer?</a></li>
 <li><a href="https://theshannonnicole.com/post/how-to-tell-if-a-business-opportunity-is-legit">How do you tell a real business from a repackaged course?</a></li>
 <li><a href="https://theshannonnicole.com/blog/">More for women building something</a></li>

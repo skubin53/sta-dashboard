@@ -35,7 +35,7 @@ along with the next republish of that post for any other reason.
   `Free: the Is My Home Toxic cheat sheet`, a shopper lead magnet about products under the
   sink, on a page talking to a woman weighing an income decision. Same fault as gate D8c,
   which already bans the home scan on builder posts.
-  - `theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366`
+  - `theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366` (CLOSED 2026-10-05: duplicate taken down at Shannon's request, set to DRAFT, address 301s to the clean slug via GHL redirect 1iohHoAAohCKdmsqfVs3)
   - `theshannonnicole.com/post/is-45-too-late-to-start-something-new`
   - `theshannonnicole.com/post/how-referral-model-actually-works`
   - `theshannonnicole.com/post/extra-income-for-women-in-their-50s`

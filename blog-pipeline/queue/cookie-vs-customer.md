@@ -253,7 +253,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> The April change on its own.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> The April change on its own.</li>
 <li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work? An honest answer</a></li>
 <li><a href="https://theshannonnicole.com/post/extra-income-for-women-in-their-50s">Extra income for women in their 50s, without the hype</a></li>
 <li><a href="https://theshannonnicole.com/post/is-45-too-late-to-start-something-new">Is 45 too late to start something new?</a></li>

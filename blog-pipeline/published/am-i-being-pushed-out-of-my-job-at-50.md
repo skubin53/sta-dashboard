@@ -52,7 +52,7 @@ Three passes, each point taken separately, per Shannon 2026-08-26.
 
 **There are two live copies of the Amazon affiliate post.**
 `/post/amazon-cut-your-affiliate-commission-now-what` and
-`/post/amazon-cut-your-affiliate-commission-now-what-5366` both return 200 and are within
+`/post/amazon-cut-your-affiliate-commission-now-what` both return 200 and are within
 ten bytes of the same size. GHL silently suffixes a duplicate slug instead of refusing it,
 so a second publish never errors. Two copies of one post compete with each other in search.
 Deleting a live post is hers to decide, so nothing was touched.

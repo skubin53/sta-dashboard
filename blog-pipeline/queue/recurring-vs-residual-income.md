@@ -264,7 +264,7 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what-5366">Amazon cut your affiliate commission. Now what?</a> Same company, other side of the counter.</li>
+<li><a href="https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what">Amazon cut your affiliate commission. Now what?</a> Same company, other side of the counter.</li>
 <li><a href="https://theshannonnicole.com/post/cookie-vs-customer">Cookie or customer?</a> What a link pays for, and what it does not.</li>
 <li><a href="https://theshannonnicole.com/post/how-referral-model-actually-works">How does a referral model actually work?</a> The plain mechanics.</li>
 <li><a href="https://theshannonnicole.com/post/how-to-read-an-income-disclosure">How do you read an income disclosure statement?</a> The page to ask for first.</li>
