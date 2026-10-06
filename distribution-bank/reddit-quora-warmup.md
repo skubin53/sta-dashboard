@@ -290,3 +290,36 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   Two or three good products you use every day beat a full shelf.
 
   status: pending (human to post)
+
+- **2026-10-06 (draft, pending)** - Quora, REAL thread (confirmed in the search index only; Quora returns 403 to curl and WebFetch, and Reddit is blocked in search and 403 to curl, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/What-is-the-best-way-to-wash-fruit-Vegetables-to-remove-germs-and-pesticides-etc-Is-there-any-evidence-Some-say-use-vinegar-but-which-Some-say-add-salt-to-water-and-some-say-use-baking-soda-Can-you-use-all-3 . Their question: "What is the best way to wash fruit & Vegetables to remove germs and pesticides etc? Is there any evidence? Some say use vinegar but which? Some say add salt to water and some say use baking soda. Can you use all 3 together?" On-avatar (women 40-60 who buy and prep the produce; first produce-washing answer in the warm-up). Sources checked: FDA consumer update "7 Tips for Cleaning Fruits, Vegetables" (06/15/2021: rub under plain running water, no need for soap or a produce wash, brush firm produce, dry with a clean cloth), https://www.fda.gov/consumers/consumer-updates/7-tips-cleaning-fruits-vegetables ; Yang et al., J Agric Food Chem 2017 (UMass, Gala apples: a 1 percent baking soda soak beat tap water and a bleach wash, 12 and 15 minutes to clear surface thiabendazole and phosmet, some thiabendazole had moved into the peel), via ScienceDaily https://www.sciencedaily.com/releases/2017/10/171025090237.htm . Salt left unaddressed (nothing verified). For our records only, the answer stays LINK-FREE. No brand, no numbers beyond the study's soak time. LINK-FREE draft answer:
+
+  Good question, because this gets made much harder than it is. Here is what I tell the women I coach.
+
+  Pick one method, not all three. Vinegar and baking soda cancel each other out. You get fizz, not a cleaner apple.
+
+  For everyday dirt and germs, plain running water and your hands do the job. Rub each piece under the tap. Scrub firm things like potatoes, carrots and melons with a clean brush. Skip the soap. It is not made to be eaten.
+
+  For pesticides, baking soda has the best evidence I have seen. A university study on apples found a baking soda soak took off more surface pesticide than tap water did. It took a long soak, about 12 to 15 minutes. Some had already moved into the peel, where no wash could reach it.
+
+  So soak in baking soda water, rinse well, and dry with a clean towel. Peel when it makes sense.
+
+  status: pending (human to post)
+
+- **2026-10-06 (draft, pending)** - Quora, REAL thread (confirmed in the search index only; Quora returns 403 to curl and WebFetch, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/I-am-switching-to-a-natural-deodorant-and-I-still-have-bad-odour-It-s-been-about-3-weeks-now-How-long-does-it-take-Does-the-odour-really-go-away . Their question: "I am switching to a natural deodorant and I still have bad odour. It's been about 3 weeks now. How long does it take? Does the odour really go away?" On-avatar (women 40-60 making the deodorant swap; first deodorant answer in the warm-up, no aluminum or cancer talk). Sources checked: Cleveland Clinic body odor page (sweat itself does not smell, skin bacteria cause the odor; deodorant masks odor, antiperspirant reduces sweat; loose cotton clothing), https://my.clevelandclinic.org/health/symptoms/17865-body-odor ; Cleveland Clinic "Armpit Detox: Does It Really Work?" (2022: no proven reason to detox; switching shifts underarm bacteria and can make odor stronger at first; no set timeline; wash with a gentle cleanser to remove residual product), https://health.clevelandclinic.org/armpit-detox ; Cleveland Clinic antiperspirant vs deodorant (2024: perfumes or dyes can irritate; watch for rash with baking soda), https://health.clevelandclinic.org/antiperspirant-vs-deodorant . For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her 20 years. LINK-FREE draft answer:
+
+  Hang in there. Three weeks in is a hard spot, and it usually gets better.
+
+  Sweat itself does not smell. The odor comes from the bacteria on your skin mixing with it. When you stop an antiperspirant, that mix of bacteria shifts, and the smell can be stronger for a while. Nobody can give you an exact number of weeks. Every body is different.
+
+  After 20 years of coaching women, this is what I see help:
+
+  1. Wash your underarms every day with a gentle soap to clear off old product.
+  2. Dry completely before you put deodorant on.
+  3. Carry it with you and put more on at midday.
+  4. Wear loose cotton so your skin can breathe.
+
+  If you get a red, itchy rash, try one without baking soda or fragrance. Some skin does not like them.
+
+  One more thing. Deodorant handles smell, not wetness. Feeling a little damp is normal now.
+
+  status: pending (human to post)
