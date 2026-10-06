@@ -386,3 +386,32 @@ Growth (g) still owed: re-point the last older pin (candles 474848354483682673) 
 **Re-point job COMPLETE: all 17 older pins now link to the free scan.** From the next run, rotate growth tasks (a) to (f), starting with (b): strip the old hashtags from the 10 pins re-pointed on 9/30 and SEO-rewrite their descriptions.
 
 NEXT run: Day 15 baking mix (are-baking-mixes-healthy) + Day 16 flour (florida-general-mills-potassium-bromate-subpoena); Day 15 canned BPA is done.
+
+## 2026-10-06 (12:11pm run) - ready, waiting for the Claude Chrome window to be in front
+
+Flour (Day 16, florida-general-mills-potassium-bromate-subpoena) SKIPPED for now: none of its 4 July photos passes (03 = King Arthur and Gold Medal bags being compared, 04 = Skippy/Barilla/Kettle labels, 01 = a woman reading a flour bag label, 02 = no person). Needs a human, no-label photo before it can be pinned. Took the next calendar pin instead.
+
+### Baking mix  [pinx_bakingmix.png | photo: arebakingmi-belonging-v1.webp (two women laughing at a floury counter)]
+- Title: Are baking mixes healthy? What is really in the pancake mix box
+- Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-baking-mixes-healthy
+- Description (497): Are baking mixes healthy? The front of a pancake mix box sells you a feeling, but the flour inside is not one thing. Texas listed bleached flour and bromated flour among 44 ingredients that need a warning label from 2027, and neither has to show on the front today. Here is what is in the mix and a simple swap that starts with flour from a farm or mill you know. American made can also mean more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Ultra-processed food lawsuit  [pinx_upf2.png | photo: ultraproces-freedom-v1.webp (a woman laughing over breakfast; the belonging photo was skipped, two toddlers in frame)]
+- Title: Are ultra-processed foods on trial? Why the lawsuit was thrown out
+- Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=ultra-processed-food-lawsuit
+- Description (495): Are ultra-processed foods on trial? Eleven food companies were sued over ultra-processed food, and the case was thrown out twice. The judge's reason is the part worth reading: the court never weighed the science, it ruled the complaint did not tie one product to the harm. Here is what the ruling means for your pantry and how to cook more meals from real food. American made can also mean more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+Growth (b) planned: strip old hashtags and SEO-rewrite 3 to 5 of the pins re-pointed on 9/30.
+
+## PUBLISHED 2026-10-06 (12:11 run, done after Shannon brought Chrome to the front) - 2 pins live, both to the FREE SCAN
+
+- Baking mix -> LIVE, pin 474848354483751697 | "Are baking mixes healthy? What is really in the pancake mix box" | Non-Toxic Food & Clean Pantry | utm_campaign=are-baking-mixes-healthy | desc 497
+- Ultra-processed food lawsuit -> LIVE, pin 474848354483751706 | "Are ultra-processed foods on trial? Why the lawsuit was thrown out" | same board | utm_campaign=ultra-processed-food-lawsuit | desc 495
+- Flour (florida-general-mills-potassium-bromate-subpoena) still needs a human, no-label photo before it can be pinned.
+
+## GROWTH TASK 2026-10-06 (b) SEO-rewrote 3 old pin descriptions (hashtags gone, keyword first, 300-500 chars, scan line at the end); verified on reload
+- is-fabuloso-safe 474848354483642471 (471): "Is Fabuloso safe? In February 2023, Colgate-Palmolive recalled about 4.9 million bottles..."
+- is-dawn-dish-soap-safe 474848354483647268 (474): "Is Dawn dish soap safe for everyday dishes? The concern ... 1,4-dioxane ... methylisothiazolinone..."
+- is-lysol-safe-to-inhale 474848354483648055 (456): "Is Lysol safe to inhale? The worry is not a hidden poison in the can..."
+- How: Edit Pin -> real click in the Description box -> ctrl+a, Delete, type -> re-read by JS -> Save (no "Heads up" when the link is unchanged).
+- Still to do under (b): the other 7 pins re-pointed on 9/30 (is-pine-sol-toxic 474848354483648065 next). Note: two old pin TITLES read as fear hooks ("Is your dish soap causing cancer?", "Is your disinfectant hurting your lungs?"); worth a gentler keyword title on a later (b) pass.
+
+NEXT run: Day 17 ground beef (is-store-bought-ground-beef-real-beef) + Product of USA beef (product-of-usa-beef-label-meaning).
