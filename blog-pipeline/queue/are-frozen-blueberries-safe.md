@@ -54,7 +54,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>Most bags are fine. A few lots are recalled, and they can still be in your freezer.</p>
+<p>A few lots are recalled. They can still be in your freezer.</p>
 <p><strong><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic">On October 2, 2026, a berry supplier in Chile widened its recall for possible E. coli O145. Its name is Frutas y Hortalizas del Sur. The recall now covers Great Value organic berries at Walmart in 30 states. It also covers one Trader Joe's organic berry blend.</a></strong></p>
 <p>The recalled bags have best-by dates in 2028. So check yours tonight.</p>
 </div>
@@ -152,19 +152,19 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h2 id="the-other-side">The case against my own story</h2>
 
-<p class="quick-answer">Quick answer: the outbreak is over and no deaths were reported.</p>
+<p class="quick-answer">Quick answer: the outbreak is over, and the CDC counted no deaths.</p>
 
 <p><strong>One.</strong> <a href="https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o145h28-frozen-blueberries-july-2026">The CDC declared the outbreak over on September 21, 2026. It counted 17 sick in Florida and Georgia, 6 in the hospital, and no deaths reported.</a></p>
 
-<p><strong>Two.</strong> <a href="https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o145h28-frozen-blueberries-july-2026">Every sample federal investigators pulled tested negative, the outbreak report says. One sample Publix tested did match the outbreak germ.</a></p>
-
-<p><strong>Three.</strong> Only the listed lot codes are recalled. If your code is not there, your bag is not in this.</p>
+<p><strong>Two.</strong> Only the listed lot codes are recalled. If your code is not listed, your bag is not in this.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
 <p>Because the list kept growing. The newest lots went on it October 2, eleven days after the outbreak was declared over.</p>
 
 <p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic">The supplier calls that "a precautionary measure following traceback information."</a> None of its three notices says how the germ got in.</p>
+
+<p><a href="https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o145h28-frozen-blueberries-july-2026">The outbreak report, updated October 5, says the new lots came from "an onsite foreign inspection."</a> It says the firm "did not provide all records" investigators asked for.</p>
 
 <p>In July, its frozen blueberries also went on a federal import alert. <a href="https://www.accessdata.fda.gov/cms_ia/importalert_1128.html">The alert is for produce that "appears to have been prepared, packed or held under insanitary conditions."</a> That is its title, not a court ruling.</p>
 
@@ -224,29 +224,11 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recalls-include-additional-lots-great-value-frozen-organic">Frutas y Hortalizas del Sur S.A., recall expansion, October 2, 2026</a>. Adds five Great Value organic lots sold at Walmart in 30 states and Puerto Rico. Adds one Trader Joe's lot sold in 26 states and DC. Reason: "potential contamination with Escherichia coli O145:H28." Plain translation: the list was still growing in October.</li>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-initiates-recall-frozen-greenwise-organic-iqf-blueberries-due">Frutas y Hortalizas del Sur S.A., first recall, July 3, 2026</a>. GreenWise Organic IQF Blueberries, lot 60401, sold at Publix in 8 states, after "12 confirmed cases" of illness. <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/frutas-y-hortalizas-del-sur-sa-expands-recall-include-one-lot-great-value-frozen-organic-triple">On September 2 it added one Great Value Triple Berry lot</a>. Plain translation: one supplier sat behind more than one store brand.</li>
-<li><a href="https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o145h28-frozen-blueberries-july-2026">Outbreak investigation, frozen blueberries, updated September 21, 2026</a>. 17 sick in Florida and Georgia, 6 hospitalized, 0 deaths. "Eleven of 13 (85%) cases interviewed reported eating frozen blueberries." Plain translation: most of the sick people asked said they ate frozen blueberries.</li>
+<li><a href="https://www.fda.gov/food/outbreaks-foodborne-illness/outbreak-investigation-e-coli-o145h28-frozen-blueberries-july-2026">Outbreak investigation, frozen blueberries, updated October 5, 2026</a>. 17 sick in Florida and Georgia, 6 hospitalized, 0 deaths. "Eleven of 13 (85%) cases interviewed reported eating frozen blueberries." Plain translation: most of the sick people asked said they ate frozen blueberries.</li>
 <li><a href="https://www.accessdata.fda.gov/cms_ia/importalert_1128.html">Import Alert 99-35, federal import list</a>. Lists the supplier from July 27, 2026, for E. coli in frozen blueberries. The alert is for produce that "appears to have been prepared, packed or held under insanitary conditions." That is the alert's wording, not a court finding. Plain translation: its berries can now be held at the border.</li>
 <li><a href="https://www.ams.usda.gov/sites/default/files/media/NOP%20Labeling%20Preamble.pdf">USDA National Organic Program, labeling rule preamble</a>. "The seal does not convey a message of food safety or more nutritional value." Plain translation: organic tells you how a berry was grown, not that it was checked for germs.</li>
 </ul>
 </div>
-
-<div class="sta-cta">
-<h3>You checked one bag. Now check the rest of the house.</h3>
-<p>That bag came through a chain you never got to see. The free scan looks at the rest of your house in about three minutes. It is free because your own shelves tell you more than I can. It asks for your first name and cell, and texts your score once. A paid report is offered after. Skip it if you like.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
-<p style="margin:12px 0 0;font-size:.85em;">Nothing to buy to see your score.</p>
-</div>
-
-<h2 id="faq">What else do people ask?</h2>
-
-<p><strong>Are frozen blueberries safe to eat right now?</strong></p>
-<p>Most bags are. Only the recalled lots are the problem. If your lot code is on the list, throw the bag out.</p>
-
-<p><strong>Can I cook or rinse a recalled bag and still use it?</strong></p>
-<p>Do not try. The notice says not to eat the recalled lots at all.</p>
-
-<p><strong>I already ate some. What should I watch for?</strong></p>
-<p>Bad stomach cramps, diarrhea that may be bloody, and vomiting. They can start a few days to nine days after. If that is you, get medical care that day.</p>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
@@ -263,6 +245,24 @@ of our health and our finances.</p>
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arefrozenbl-freedom-v1.webp" alt="A woman in her fifties laughing as she rinses fresh blueberries in a colander at a farmhouse kitchen sink in golden morning light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
+
+<div class="sta-cta">
+<h3>You checked one bag. Now check the rest of the house.</h3>
+<p>That bag came through a chain you never got to see. The free scan looks at the rest of your house in about three minutes. It is free because your own shelves tell you more than I can. It asks for your first name and cell, and texts your score once. A paid report is offered after. Skip it if you like.</p>
+<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+<p style="margin:12px 0 0;font-size:.85em;">Nothing to buy to see your score.</p>
+</div>
+
+<h2 id="faq">What else do people ask?</h2>
+
+<p><strong>Are frozen blueberries safe to eat right now?</strong></p>
+<p>Check the lot code first. If it is on the recall list, throw the bag out. Next time, buy from a farm near you.</p>
+
+<p><strong>Can I cook or rinse a recalled bag and still use it?</strong></p>
+<p>Do not try. The notice says not to eat the recalled lots at all.</p>
+
+<p><strong>I already ate some. What should I watch for?</strong></p>
+<p>Bad stomach cramps, diarrhea that may be bloody, and vomiting. They can start a few days to nine days after. If that is you, get medical care that day.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
@@ -354,7 +354,7 @@ of our health and our finances.</p>
    "name": "Are frozen blueberries safe to eat right now?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Most bags are. Only the recalled lots are the problem. If your lot code is on the list, throw the bag out."
+    "text": "Check the lot code first. If it is on the recall list, throw the bag out. Next time, buy from a farm near you."
    }
   },
   {
