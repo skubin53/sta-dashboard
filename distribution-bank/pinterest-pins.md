@@ -276,7 +276,7 @@ NEXT run (Wednesday noon): Day 10 deodorant (is-spray-deodorant-safe-benzene-rec
 Growth task (g). Each pin's link now = https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=<slug>; verified by reloading the pin page (scan link present, blog link gone).
 - 2026-09-30: is-fabuloso-safe (474848354483642471), is-dawn-dish-soap-safe (474848354483647268), is-lysol-safe-to-inhale (474848354483648055), is-pine-sol-toxic (474848354483648065), are-dryer-sheets-toxic (474848354483648458)
 - 2026-09-30 (7pm): is-tide-laundry-detergent-toxic (474848354483648462), are-nonstick-pans-toxic (474848354483663456), are-air-fresheners-toxic (474848354483663467), is-febreze-safe-to-breathe (474848354483667422), is-clorox-spray-toxic (474848354483669392)
-- STILL ON THE BLOG (6): is-sunscreen-safe 474848354483669439, are-cheap-aluminum-pans-safe 474848354483673849, are-plastic-cutting-boards-safe 474848354483676108, is-hexclad-non-toxic 474848354483676126, can-you-microwave-ziploc-bags 474848354483682614, are-bath-and-body-works-candles-toxic 474848354483682673
+- (10/5: ALL 17 DONE, see below) STILL ON THE BLOG (6): is-sunscreen-safe 474848354483669439, are-cheap-aluminum-pans-safe 474848354483673849, are-plastic-cutting-boards-safe 474848354483676108, is-hexclad-non-toxic 474848354483676126, can-you-microwave-ziploc-bags 474848354483682614, are-bath-and-body-works-candles-toxic 474848354483682673
 - HOW (what works): form_input on the Edit Pin link field does NOT reach React, Save then saves the OLD link. Set it with the native value setter + input/change events, wait ~3s (Pinterest runs /v3/storypins/checklink/), click Save, then a "Heads up! ... engagement metrics ... will be lost" confirm appears: click its Save. Verify by reloading the pin page. The list of pins + links comes from /resource/UserActivityPinsResource/get/ (options username + field_set_key grid_item + page_size 25, context {}) because the Created grid does not lazy-load in a background window.
 - Note: the 5 re-pointed pins still carry old hashtags in their descriptions (pre-9/25 copy); fixing that is growth task (b) for a later run.
 
@@ -374,3 +374,15 @@ READY TO PUBLISH (composed and checked: a real person, no other brand's label, l
 - Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-canned-foods-lined-with-bpa
 - Description (473): Are canned foods lined with BPA? Most food cans have a thin plastic lining you never see. BPA came out of baby bottles in 2012, but the can lining was left alone, and the most common swap, BPS, is now on a California warning list too. Here is what coats the inside of the tin and how to stock a safer pantry with glass jars and fresh food. American made can also mean more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
 Growth (g) still owed: re-point the last older pin (candles 474848354483682673) to the scan; then rotate (a) to (f), (b) first.
+
+## PUBLISHED 2026-10-05 (12:11 run, done ~1:50pm once Shannon brought Chrome to the front) - 2 pins live, both to the FREE SCAN (Chrome)
+
+- Food dyes -> LIVE, pin 474848354483746704 | "Are food dyes still legal? Red 3 was pulled, Red 40 is still in snacks" | Non-Toxic Food & Clean Pantry | scan /now/ utm_campaign=are-food-dyes-still-legal | desc 420, no hashtags (copy in the 12:41 entry above)
+- Canned food BPA -> LIVE, pin 474848354483746709 | "Are canned foods lined with BPA? What coats the inside of the can" | Non-Toxic Food & Clean Pantry | scan /now/ utm_campaign=are-canned-foods-lined-with-bpa | desc 473, no hashtags
+- How: after she brought the window forward the old tab was blank (path "blank"); a reload of /pin-creation-tool/ rendered at once. file_upload -> form_input title + link -> click + type description -> re-read all by JS -> Publish; both confirmed on _created.
+
+## GROWTH TASK 2026-10-05 (g) LAST older pin re-pointed: candles 474848354483682673 -> scan /now/ utm_campaign=are-bath-and-body-works-candles-toxic (verified on reload)
+
+**Re-point job COMPLETE: all 17 older pins now link to the free scan.** From the next run, rotate growth tasks (a) to (f), starting with (b): strip the old hashtags from the 10 pins re-pointed on 9/30 and SEO-rewrite their descriptions.
+
+NEXT run: Day 15 baking mix (are-baking-mixes-healthy) + Day 16 flour (florida-general-mills-potassium-bromate-subpoena); Day 15 canned BPA is done.
