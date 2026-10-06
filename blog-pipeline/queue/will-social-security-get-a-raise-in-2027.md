@@ -100,9 +100,9 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <h2 id="how-big">How big will the 2027 raise be?</h2>
 
-<p class="quick-answer">Quick answer: about 3.5 percent so far, and September decides the rest.</p>
+<p class="quick-answer">Quick answer: about 3.4 to 3.5 percent so far, and September decides the rest.</p>
 
-<p>Two of the three months are already in. I did the math myself from the government's own price series.</p>
+<p>Two of the three months are already in. Here is the math, from the government's own price series.</p>
 
 <p><a href="https://data.bls.gov/timeseries/CWUR0000SA0">The index the formula uses</a> averaged 327.79 across July and August this year. The same two months last year averaged 316.83. That is about 3.5 percent higher.</p>
 
@@ -234,6 +234,13 @@ our finances.</p>
 <p class="micro">The 2027 number is not out as I write this. On October 14 it will show on the first link.</p>
 </div>
 
+<div class="sta-cta">
+<h3>Twenty minutes, on video, no slides</h3>
+<p>You ask, I answer, including the awkward ones. If it is not for you I would rather find out on the call.</p>
+<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
+<span class="micro">You can always say no, and there is no follow up if you do.</span>
+</div>
+
 <h2 id="faq">What else are women asking me about this?</h2>
 
 <p><strong>When will I know my exact amount for 2027?</strong></p>
@@ -327,9 +334,3 @@ our finances.</p>
 }
 </script>
 
-<div class="sta-cta">
-<h3>Twenty minutes, on video, no slides</h3>
-<p>You ask, I answer, including the awkward ones. If it is not for you I would rather find out on the call.</p>
-<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
-<span class="micro">You can always say no, and there is no follow up if you do.</span>
-</div>
