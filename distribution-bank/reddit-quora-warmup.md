@@ -323,3 +323,36 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   One more thing. Deodorant handles smell, not wetness. Feeling a little damp is normal now.
 
   status: pending (human to post)
+
+- **2026-10-07 (draft, pending)** - Quora, REAL thread (confirmed in the search index only; Quora returns 403 to curl and WebFetch on 2026-10-07, and WebSearch refuses reddit.com, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/Menopause-seems-to-have-left-a-deep-impact-on-my-hair-texture-Will-oiling-be-of-any-use-to-tame-my-dry-coarse-rebellious-hair-How-to-do-it-the-right-way . Their question: "Menopause seems to have left a deep impact on my hair texture. Will oiling be of any use to tame my dry, coarse, rebellious hair? How to do it the right way?" On-avatar (the asker names menopause, so a woman in the 40 to 60 window; first hair answer in the warm-up, no hair loss or hormone treatment talk). Sources checked: Breastcancer.org "Hair Changes During Menopause" (reviewed by Kristin Rojas, MD and Jessica Firdman Moore, MD: lower estrogen means less sebum, hair drier and rough), https://www.breastcancer.org/treatment-side-effects/menopause/hair-changes ; Rele and Mohile, J Cosmet Sci 2003 (lab study by the R&D department of Marico Industries Ltd., Mumbai: of mineral, sunflower and coconut oil, only coconut oil reduced protein loss as a pre-wash and post-wash product and penetrated the hair shaft), PubMed 12715094 read through the NCBI E-utilities API, https://pubmed.ncbi.nlm.nih.gov/12715094/ ; AAD "Tips for healthy hair" (shampoo the scalp not the full length, conditioner after every wash and full length for dry hair, wrap in a towel or T-shirt instead of rubbing, low or medium heat), https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips . For our records only, the answer stays LINK-FREE. No brand, no numbers. LINK-FREE draft answer:
+
+  Yes, oil can help. You are not imagining the change, either. As estrogen drops, your scalp makes less of its own oil, so hair often turns drier and rougher.
+
+  Here is how I would do it:
+
+  1. Start with plain coconut oil. In a lab test of three oils, it was the only one that soaked into the hair strand and cut protein loss.
+  2. Oil before you wash. Warm a small amount in your hands and work it through the middle and ends, not the roots. Let it sit a while, then shampoo.
+  3. Put shampoo on your scalp, not the whole length of your hair.
+  4. Condition every time, all the way to the ends.
+  5. Wrap your hair in a towel or an old T-shirt. Do not rub.
+  6. Turn the heat tools down, or skip them.
+
+  Between washes, a single drop smoothed over the frizz can help.
+
+  status: pending (human to post)
+
+- **2026-10-07 (draft, pending)** - Quora, REAL thread (confirmed in the search index only; Quora returns 403 to curl and WebFetch on 2026-10-07, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/I-ve-started-using-vinegar-and-water-to-clean-my-hardwood-floors-but-it-seems-to-be-leaving-a-film-What-am-I-doing-wrong . Their question: "I've started using vinegar and water to clean my hardwood floors but it seems to be leaving a film. What am I doing wrong?" On-avatar (women 40 to 60 who clean the floors and are already trying the natural route; first floor-care answer in the warm-up). Sources checked: National Wood Flooring Association consumer site, "How to Clean and Take Care of Your Wood Floors" (vinegar and water listed as a mistake: acidic, can damage the floor and finish over time, can leave a sticky residue that attracts dirt; dry clean before damp cleaning or grit scratches; damp mop not soaking wet; pH-balanced wood floor cleaner; avoid bleach and ammonia), https://woodfloors.org/how-to-clean-and-take-care-of-your-wood-floors-essential-tips-for-homeowners/ ; NWFA "Maintenance" (sweep, dust mop or vacuum on the bare floor setting; spills with a dry or slightly damp cloth; no wet mops or steam mops; use a cleaner made for the finish, which a flooring professional can recommend), https://woodfloors.org/maintenance/ . Both returned 200 to curl. For our records only, the answer stays LINK-FREE. No brand, no numbers. LINK-FREE draft answer:
+
+  You are not doing anything wrong. It is the vinegar. The wood flooring industry's own trade group says not to clean wood floors with vinegar and water. Vinegar is an acid, so over time it can damage the finish. It can also leave a sticky film that grabs more dirt. That may be the film you see.
+
+  A better routine:
+
+  1. Dry clean first. Sweep, dust mop, or vacuum on the bare floor setting. Mopping over grit can scratch.
+  2. Mop damp, never wet. Wring it until it barely feels wet. Standing water is hard on wood.
+  3. Use a gentle, pH balanced cleaner made for your floor's finish, with no added fragrance.
+  4. Swap in a clean mop pad once yours looks gray.
+  5. Wipe spills right away with a soft, dry cloth.
+
+  Put the steam mop away, too. If you do not know your finish, a flooring pro can tell you which cleaner fits it.
+
+  status: pending (human to post)
