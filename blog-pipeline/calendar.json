@@ -1,15 +1,15 @@
 {
- "start": "2026-10-05",
+ "start": "2026-10-07",
  "days": 45,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-05",
-   "weekday": "Mon",
+   "date": "2026-10-07",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "are-frozen-blueberries-safe",
-     "title": "Are Frozen Blueberries Safe to Eat Right Now? What Walmart and Trader Joe's Pulled (2026)",
+     "slug": "is-halloween-candy-safe-to-eat",
+     "title": "Is Halloween Candy Safe to Eat? What Florida Found in Twizzlers, Jolly Rancher and Kit Kat (2026)",
      "cat": "Food",
      "why": "already written",
      "perish": -3,
@@ -24,38 +24,6 @@
      "slug": "laid-off-at-55-now-what",
      "title": "I Got Laid Off at 55. Now What? (2026)",
      "cat": "Builders",
-     "why": "She is exactly the builder avatar: experienced, suddenly with time, and scared of a long gap. The post shows that the search itself takes mo",
-     "perish": -3,
-     "keyword": "laid off at 55 now what",
-     "felt": "",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-06",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "is-halloween-candy-safe-to-eat",
-     "title": "Is Halloween Candy Safe to Eat? What Florida Found in Snickers, Skittles and Twizzlers (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "will-social-security-get-a-raise-in-2027",
-     "title": "Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026)",
-     "cat": "Builders",
      "why": "already written",
      "perish": -3,
      "keyword": "",
@@ -68,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-07",
-   "weekday": "Wed",
+   "date": "2026-10-08",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "which-cinnamon-brands-have-lead",
@@ -88,31 +56,31 @@
      "slug": "is-ai-taking-jobs",
      "title": "Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)",
      "cat": "Builders",
-     "why": "Women 45 to 60 in office, admin, customer service and middle management jobs feel AI coming for their desk. The post respects their experien",
+     "why": "photos already done",
      "perish": -2.5,
-     "keyword": "ai layoffs 2026",
+     "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
+     "pix": true,
      "written": false,
      "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
+   "date": "2026-10-09",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-zicam-safe",
      "title": "Is Zicam Safe? Why Church & Dwight Pulled Its Nasal Swabs Again (2026)",
-     "cat": "Personal Care",
-     "why": "Church & Dwight Co., Inc., owner of Zicam. Its nasal swabs were pulled for fungal contamination in 2025 and pulled again in 2026 after an inspection of the contract manufacturer.",
+     "cat": "Cleaning",
+     "why": "photos already done",
      "perish": -2.5,
-     "keyword": "zicam recall 2026",
-     "felt": "I feel a cold coming on and I always reach for Zicam first. Is the thing I'm putting up my nose making me sicker?",
+     "keyword": "",
+     "felt": "",
      "register": "villain",
-     "pix": false,
+     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -132,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "how-much-protein-after-50",
@@ -164,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-angry-orange-stain-remover-safe",
@@ -196,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-10-11",
-   "weekday": "Sun",
+   "date": "2026-10-12",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-antibacterial-hand-soap-safe",
@@ -228,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "weekday": "Mon",
+   "date": "2026-10-13",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -260,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-10-13",
-   "weekday": "Tue",
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -292,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-10-14",
-   "weekday": "Wed",
+   "date": "2026-10-15",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -312,20 +280,20 @@
      "slug": "extra-money-for-christmas",
      "title": "I Need to Make Extra Money for Christmas. What Are My Real Options? (2026)",
      "cat": "Builders",
-     "why": "Women who want income search this phrase every October, and it is the most open-handed money question of the year. A post that respects her ",
+     "why": "photos already done",
      "perish": -1,
-     "keyword": "how to make extra money for christmas",
+     "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
+     "pix": true,
      "written": false,
      "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "date": "2026-10-16",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -344,20 +312,20 @@
      "slug": "why-are-health-insurance-premiums-going-up",
      "title": "Why Are Health Insurance Premiums Going Up So Much? What 2027 Open Enrollment Brings (2026)",
      "cat": "Builders",
-     "why": "Fear of losing coverage is the biggest reason she won't build something of her own. Naming it honestly builds trust, and it opens the Zoom c",
+     "why": "photos already done",
      "perish": -1,
-     "keyword": "health insurance premiums increase 2027",
+     "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
+     "pix": true,
      "written": false,
      "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-17",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -388,8 +356,8 @@
    ]
   },
   {
-   "date": "2026-10-17",
-   "weekday": "Sat",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -420,8 +388,8 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-19",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "why-did-eggs-cost-so-much",
@@ -452,8 +420,8 @@
    ]
   },
   {
-   "date": "2026-10-19",
-   "weekday": "Mon",
+   "date": "2026-10-20",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "should-you-give-a-child-cough-syrup",
@@ -484,8 +452,8 @@
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -516,8 +484,8 @@
    ]
   },
   {
-   "date": "2026-10-21",
-   "weekday": "Wed",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -548,8 +516,8 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-krud-kutter-non-toxic",
@@ -580,8 +548,8 @@
    ]
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-redken-shampoo-safe",
@@ -612,8 +580,8 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-25",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-roundup-safe-to-use-around-your-house",
@@ -644,8 +612,8 @@
    ]
   },
   {
-   "date": "2026-10-25",
-   "weekday": "Sun",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-the-pink-stuff-safe",
@@ -676,8 +644,8 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-27",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-vaseline-safe-for-babies",
@@ -708,8 +676,8 @@
    ]
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-your-magnesium-what-the-label-says",
@@ -740,8 +708,8 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "red-dye-40-mars-broken-promise",
@@ -772,8 +740,8 @@
    ]
   },
   {
-   "date": "2026-10-29",
-   "weekday": "Thu",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "what-keeps-your-memory-sharp-after-70",
@@ -804,8 +772,8 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-10-31",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "why-do-you-stop-feeling-thirsty",
@@ -836,8 +804,8 @@
    ]
   },
   {
-   "date": "2026-10-31",
-   "weekday": "Sat",
+   "date": "2026-11-01",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "why-was-the-laundress-recalled-twice",
@@ -868,8 +836,8 @@
    ]
   },
   {
-   "date": "2026-11-01",
-   "weekday": "Sun",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "are-plug-in-carbon-monoxide-detectors-reliable",
@@ -900,8 +868,8 @@
    ]
   },
   {
-   "date": "2026-11-02",
-   "weekday": "Mon",
+   "date": "2026-11-03",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -932,8 +900,8 @@
    ]
   },
   {
-   "date": "2026-11-03",
-   "weekday": "Tue",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "why-is-beef-so-expensive",
@@ -964,8 +932,8 @@
    ]
   },
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "why-was-argentina-beef-recalled",
@@ -996,8 +964,8 @@
    ]
   },
   {
-   "date": "2026-11-05",
-   "weekday": "Thu",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-lilash-safe",
@@ -1026,11 +994,6 @@
      "track": "shopper"
     }
    ]
-  },
-  {
-   "date": "2026-11-06",
-   "weekday": "Fri",
-   "slots": []
   },
   {
    "date": "2026-11-07",
@@ -1091,9 +1054,19 @@
    "date": "2026-11-18",
    "weekday": "Wed",
    "slots": []
+  },
+  {
+   "date": "2026-11-19",
+   "weekday": "Thu",
+   "slots": []
+  },
+  {
+   "date": "2026-11-20",
+   "weekday": "Fri",
+   "slots": []
   }
  ],
- "shortfall": 26,
+ "shortfall": 28,
  "blocked": [
   {
    "slug": "income-if-you-stop-for-90-days",
