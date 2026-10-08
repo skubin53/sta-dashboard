@@ -415,3 +415,24 @@ Growth (b) planned: strip old hashtags and SEO-rewrite 3 to 5 of the pins re-poi
 - Still to do under (b): the other 7 pins re-pointed on 9/30 (is-pine-sol-toxic 474848354483648065 next). Note: two old pin TITLES read as fear hooks ("Is your dish soap causing cancer?", "Is your disinfectant hurting your lungs?"); worth a gentler keyword title on a later (b) pass.
 
 NEXT run: Day 17 ground beef (is-store-bought-ground-beef-real-beef) + Product of USA beef (product-of-usa-beef-label-meaning).
+
+## 2026-10-07 (12:11pm run, fired 7:21pm after the month-start Melaleuca run) - 2 pins COMPOSED, waiting for the Claude Chrome window to be in front
+Chrome tab visibilityState "hidden" (window covered), so nothing was uploaded (Pinterest renders blank when hidden). Ready to publish:
+### Ground beef  [pinx_groundbeef.png | photo: isstoreboug-belonging-v1.webp (two women unpacking groceries at a kitchen table)]
+- Title: Is store-bought ground beef real beef? What is in the package
+- Board: Non-Toxic Food & Clean Pantry | Link: scan /now/ utm_campaign=is-store-bought-ground-beef-real-beef
+- Desc (463): Is store-bought ground beef real beef? Yes. Mechanically separated beef has been banned as food since 2004. What is legal: hormone implants in most conventional cattle and ammonia in processing. In fiscal 2025, USDA found E. coli in 35 of 12,106 ground beef samples. Know what is in the package, then choose beef from a ranch you can name, American made and more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Product of USA beef  [pinx_productofusa.png | photo: productofus-belonging-v1.webp (two women laughing over a cooler of wrapped meat at a farm stand)]
+- Title: Does Product of USA mean American beef? What changed in 2026
+- Board: Non-Toxic Food & Clean Pantry | Link: scan /now/ utm_campaign=product-of-usa-beef-label-meaning
+- Desc (496): Does Product of USA mean American beef? It does now. Before January 1, 2026, beef only processed here could carry the Product of USA label, even if the animal was born, raised and slaughtered abroad. A USDA survey found only 16 percent of shoppers understood that. Beef has carried no origin label since Congress repealed it in 2015. Choose beef from a ranch you can name, American made and more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+Growth task for this run (rotation after (b)): (c) refresh ONE board description, to do once Chrome is in front.
+
+## PUBLISHED 2026-10-08 (the 10/7 pins, done once Shannon brought Chrome to the front after the builder logins) - 2 pins live, both to the FREE SCAN
+- Ground beef -> LIVE, pin 474848354483764195 | "Is store-bought ground beef real beef? What is in the package" | Non-Toxic Food & Clean Pantry | utm_campaign=is-store-bought-ground-beef-real-beef | desc 463
+- Product of USA beef -> LIVE, pin 474848354483764200 | "Does Product of USA mean American beef? What changed in 2026" | same board | utm_campaign=product-of-usa-beef-label-meaning | desc 496
+
+## GROWTH TASK 2026-10-08 (c) board description refresh - Non-Toxic Food & Clean Pantry (it had NO description)
+"Non-toxic food swaps and clean pantry ideas for women who cook for the people they love. Plain answers on food dyes, seed oils, canned food BPA, what is really in ground beef and what Product of USA means on beef, plus simple swaps like beef from a ranch you can name. American made, more affordable than you think, and a free home scan to see where to start." (359 chars; verified on reload). How: board page, More Board options, Edit info and settings, click the description box, type, Done.
+
+NEXT run: Day 18 "What is happening to American beef?" (what-is-happening-to-our-beef-industry) + "Who actually owns your vitamins?" (who-owns-your-vitamins). Growth: (d) one fresh pin variant of a top post, or (a) keyword research.
