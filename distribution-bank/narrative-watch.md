@@ -100,3 +100,19 @@ Feedback is sent only where an answer states something false, from Shannon's own
 | Trustpilot watch | 3 domains | all 404 | | | none |
 
 **Read:** the direct MLM answer softened from "Yes" to "opinions differ", but the AmeriSwitch alias has now spread to a fourth search (the partner-name search). The alias is the whole problem. Shannon's options waiting since 10/6: two FAQ answers on the two MLM pages (same as Switch Away? / a front?) and the hidden business-identity markup (needs her logo, start year, official accounts).
+
+## 2026-10-08 (day 6, 2:15am MT)
+
+| Engine | Search | Says MLM? | What it leans on | Our pages showing? | Feedback |
+|---|---|---|---|---|---|
+| Google AI Overview | Is Switch to America an MLM | NO (best yet): "Switch to America states that it is not a multi-level marketing (MLM) company, but rather a membership shopping club where people buy everyday items from home without selling products or keeping inventory ... Members can cancel their membership at any time." Adds a general line that critics scrutinize referral models (true, not about us specifically) | our not-an-MLM truth page (quoted by title) | YES: join not-an-mlm #1, theshannonnicole truth page #2, join home #4; FTC MLM page #8 | none (not false) |
+| Google AI Overview | Switch to America MLM | YES-ish (worse): "a marketing phrase used by independent distributors, frequently tied to consumer-direct or multi-level marketing (MLM) structures like [partner]", then generic MLM risk lines | Wikipedia (generic), Reddit antiMLM switchaway thread | YES: both truth pages #1 and #2, join home #3 | sent: not an MLM, to the join not-an-mlm page; thanks confirmed |
+| Google AI Overview | Is Switch to America a scam | not a scam, but FALSE alias: "Switch to America (often tied to Ameriswitch / Switch Away) ... aggressive, high-pressure marketing and a gated membership model" | Trustpilot ameriswitch.com, Reddit | YES: join not-an-mlm page (5th) | sent: not Ameriswitch / Switch Away, those tactics are theirs, to the AmeriSwitch page; thanks confirmed |
+| Google AI Overview | Switch to America [partner name] | describes the partner (Preferred Members, monthly minimum, safer products); the 10/7 "also known as AmeriSwitch" alias is GONE | partner site, Instagram | no | none (true statements about the partner) |
+| Google AI Overview | What is Switch to America | no: "a consumer movement and marketing network that encourages shoppers to replace everyday household and consumable products with American-made, family-owned alternatives" | | YES: join home #1, switchtoamerica.com #3 | none (accurate) |
+| Google AI Overview | Switch to America reviews | answers "AmeriSwitch (also known as Switch Away or ameriswitch.com) ... 4.6 out of 5 ... over 275 reviews" for our name | Trustpilot ameriswitch.com | no | sent: those are another company's reviews, to the AmeriSwitch page; thanks confirmed |
+| Bing (Chrome tab, cc=us) | Is Switch to America an MLM | no AI answer box | | switchtoamerica.com #1; truth pages NOT in top 8 (Trustpilot Switch Away, switch2usa, an MLM list site, switchtoamerica.com/tos, Reddit antiMLM, scam-detector, Facebook) | n/a |
+| Trustpilot watch (WebFetch) | switchtoamerica.com, join.switchtoamerica.com, theshannonnicole.com | all 404 (no page) | | | none |
+
+**Read:** the direct question ("Is Switch to America an MLM") now gets the right answer, built on our own truth page, for the first time. The short query ("Switch to America MLM") turned MLM-ish, and the alias still drives the scam and reviews answers. The partner-name alias from 10/7 is gone. Bing still does not show the truth pages (no Bing AI box; Bing check now runs in a Chrome tab, which works).
+**No new false claim** (MLM, alias and reviews are all answered by existing pages), so no new truth page today.

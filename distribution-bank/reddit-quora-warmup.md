@@ -356,3 +356,34 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   Put the steam mop away, too. If you do not know your finish, a flooring pro can tell you which cleaner fits it.
 
   status: pending (human to post)
+
+- **2026-10-08 (draft, pending)** - Quora, REAL thread (confirmed in the search index only; Quora returns 403 to curl and WebFetch on 2026-10-08, and WebSearch refuses reddit.com, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/Are-there-any-natural-remedies-for-night-sweats-and-menopause . Their question: "Are there any natural remedies for night sweats and menopause?" On-avatar (the asker names menopause, so a woman in the 40 to 60 window; first sleep and bedroom-comfort answer in the warm-up). The answer stays on bedroom, bedding, laundry and evening habits only: no herbs, no supplements, no hormone or medication talk. Sources checked: Cleveland Clinic "Night Sweats" (last updated 04/28/2026: cup of cold water by the bed; loose, lightweight cotton or linen pajamas; bedroom fan, open windows or air conditioning; lightweight layered bedding you can remove; avoid foods and drinks that make you sweat like spicy foods and caffeine; alcohol listed as a trigger for sweating in your sleep; see a provider if night sweats disrupt your sleep), https://my.clevelandclinic.org/health/diseases/16562-night-sweats ; MedlinePlus "Menopause" (review date 7/3/2025: avoid caffeine, alcohol and spicy foods; slow, deep breathing whenever a hot flash begins; dress lightly and in layers), https://medlineplus.gov/ency/article/000894.htm ; Central Washington University sustainable laundry tips (fabric softeners put a coating on the fibers that can limit absorption), https://www.cwu.edu/about/sustainability/resources/sustainable-laundry-tips.php . All three returned 200 to curl. The NIA hot flashes page returned a 405 bot check, so it was not used. For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her 20 years. LINK-FREE draft answer:
+
+  Yes, and the bedroom is the place to start. I have been a health coach for over 20 years, and these are simple habits you can try tonight.
+
+  1. Keep the room cool. Run a fan, open a window, or turn the air down.
+  2. Wear loose cotton or linen pajamas.
+  3. Trade one heavy comforter for light layers you can push off in the night.
+  4. Keep a cup of cold water by the bed.
+  5. Go easy on caffeine, alcohol and spicy food, most of all in the evening. They can make you sweat more.
+  6. Wash your sheets and pajamas without fabric softener or dryer sheets. Softener coats the fibers, so the fabric can soak up less.
+  7. When you feel one coming on, take slow, deep breaths.
+
+  If night sweats wake you up most nights, tell your doctor. Good sleep is worth asking about.
+
+  status: pending (human to post)
+
+- **2026-10-08 (draft, pending)** - Quora, REAL thread (confirmed in the search index only; Quora returns 403 to curl and WebFetch on 2026-10-08, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/I-have-long-grey-hair-We-have-well-water-My-hair-is-turning-orange-What-can-I-do . Their question: "I have long grey hair. We have well water. My hair is turning orange. What can I do?" On-avatar (long gray hair suggests a woman 40 to 60, but the asker cannot be seen, so check the profile before posting; first water and gray-hair answer in the warm-up, a different topic from the 2026-10-07 menopause hair-oil draft). Sources checked: Penn State Extension "Iron and Manganese in Private Water Systems" (updated May 29, 2025: iron "can also cause an orange or brown stain in sinks and in the laundry"; test to find the level of each metal; the fix depends on the results, with softeners and oxidizing filters among the options), https://extension.psu.edu/iron-and-manganese-in-private-water-systems , read with WebFetch (curl got no answer); CDC "Guidelines for Testing Well Water" (July 1, 2024: test at least once a year, and test when you notice a change in taste, color or smell), https://www.cdc.gov/drinking-water/safety/guidelines-for-testing-well-water.html , 403 to curl, read with WebFetch; D'Souza and Rathi, "Shampoo and Conditioners: What a Dermatologist Should Know?", Indian J Dermatol 2015 (shampoos use chelating agents to bind hard-water minerals), https://pmc.ncbi.nlm.nih.gov/articles/PMC4458934/ , read with WebFetch. The claim that iron tints gray hair orange is only on water-filter and salon sites, so the answer does not state it as fact; it names iron as the likely cause and points to the test. For our records only, the answer stays LINK-FREE. No brand, no numbers. LINK-FREE draft answer:
+
+  That orange is frustrating, and with well water there is a likely cause. Iron is the first thing I would check. It can leave orange or brown stains in sinks and laundry.
+
+  Here is the order I would go in:
+
+  1. Get the water tested. Ask the lab for iron and manganese. That tells you which fix will work.
+  2. Fix it at the source. Based on your results, a water treatment pro can match a softener or an iron filter to your well. That helps your hair, laundry and sinks at once.
+  3. Until then, do your last rinse with a jug of distilled water, so the final water on your hair has no iron in it.
+  4. Every week or two, wash with a clarifying shampoo made for hard water or mineral buildup. Condition after.
+
+  Fix the water first. Then you stop fighting the same stain every wash.
+
+  status: pending (human to post)
