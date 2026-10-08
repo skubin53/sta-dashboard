@@ -82,11 +82,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>You want the kids at the door to light up. No shame in that. Hershey is the one who decides what goes in the bag.</p>
 
-<p><a href="https://www.flgov.com/eog/news/press/2026/florida-releases-candy-testing-results-under-healthy-florida-first-initiative">In January 2026, the Florida Department of Health released tests on 46 candies from 10 companies.</a> Its release says, "Arsenic was detected in 28 of the products tested."</p>
+<p><a href="https://www.flgov.com/eog/news/press/2026/florida-releases-candy-testing-results-under-healthy-florida-first-initiative">In January 2026, Florida released its health department's tests on 46 candies from 10 companies.</a> Its release says, "Arsenic was detected in 28 of the products tested."</p>
 
 <p><a href="https://exposingfoodtoxins.com/candy/">The state posted every result on one page.</a> Ten of the candies were Hershey's. The state says it found arsenic in seven of those ten.</p>
 
-<p>The top Hershey number was Jolly Rancher Sour Apple, at 540 parts per billion. Twizzlers Watermelon came in at 510, and Twizzlers Strawberry at 500. Kit Kat was 230.</p>
+<p>Its top Hershey number was Jolly Rancher Sour Apple, at 540 parts per billion. Twizzlers Watermelon came in at 510, and Twizzlers Strawberry at 500. Kit Kat was 230.</p>
 
 <h3 id="arsenic">Arsenic, the metal Florida says it found</h3>
 
@@ -95,7 +95,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>That is a hard thing to read next to a Kit Kat. Nothing on Hershey's bag tells you what the state's test found. Florida went one step further and did the math.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/ishalloween-villain-v1.webp" alt="An orange candy bowl and a big red bag of chocolate wafer bars sitting alone on a dark kitchen island in cold, flat light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/ishalloween-villain-v1.webp" alt="An orange candy bowl and a big red bag of chocolate wafer bars sitting alone on a green kitchen island in cold, flat light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="how-much">How much is too much, by the state's math?</h2>
@@ -128,13 +128,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h3 id="mineral-oil">Mineral oil, the reason Britain pulled Jolly Rancher</h3>
 
-<p>This one is not about arsenic. <a href="https://www.nationalworld.com/business/jolly-rancher-sweets-recalled-across-uk-over-cancer-risk-linked-to-mineral-oil-food-safety-agency-warns-5173074">On June 11, 2025, Britain's Food Standards Agency put out a food alert on Jolly Rancher.</a> It covered the hard candy, every flavor.</p>
+<p>This one is not about arsenic. <a href="https://www.nationalworld.com/business/jolly-rancher-sweets-recalled-across-uk-over-cancer-risk-linked-to-mineral-oil-food-safety-agency-warns-5173074">On June 11, 2025, Britain's Food Standards Agency put out a food alert on Jolly Rancher.</a> It covered the hard candy and three other kinds. In January 2026, it added two more.</p>
 
-<p><a href="https://www.devonsomersettradingstandards.gov.uk/food-alert-jolly-rancher-products-manufactured-by-the-hershey-company/">The alert says the candy holds mineral oil, "making them unsafe to eat."</a> The agency says that oil can damage DNA and raise the risk of cancer.</p>
+<p><a href="https://www.devonsomersettradingstandards.gov.uk/food-alert-jolly-rancher-products-manufactured-by-the-hershey-company/">The alert says the candy holds mineral oil, "making them unsafe to eat."</a> The agency says that oil can damage DNA and may raise the risk of cancer.</p>
 
 <p>The agency was fair about it. It said the risk to anyone who already ate some was low. The worry was eating it often, over a long time.</p>
 
-<p>Hershey had already stopped shipping it to Britain in 2024, <a href="https://www.foodsafetynews.com/2025/06/fsa-issues-warnings-for-jolly-ranchers-and-dubai-chocolate/">the agency says</a>. Other sellers kept bringing it in. Florida tested the Jolly Ranchers sold here for metals like arsenic. The candy makers have an answer for that.</p>
+<p>Hershey had already pulled it from British shelves in 2024, <a href="https://www.foodsafetynews.com/2025/06/fsa-issues-warnings-for-jolly-ranchers-and-dubai-chocolate/">the agency says</a>. Other sellers kept bringing it in. Florida tested the Jolly Ranchers sold here for metals like arsenic. The candy makers have an answer for that.</p>
 
 <h2 id="the-other-side">Isn't Florida's test just a scare?</h2>
 
@@ -148,7 +148,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>That is a real point, and I am not going to pretend otherwise.</p>
 
-<p>The state's own table helps Hershey, too. It found no arsenic in three of the ten.</p>
+<p>The state's own table helps Hershey, too. It did not find arsenic in three of the ten.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -211,7 +211,7 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.flgov.com/eog/news/press/2026/florida-releases-candy-testing-results-under-healthy-florida-first-initiative">State of Florida news release, January 26, 2026</a>. The state says its Department of Health tested 46 candies from 10 companies and found arsenic in 28. What it means: by the state's account, more than half the candy it tested had arsenic in it.</li>
 <li><a href="https://exposingfoodtoxins.com/candy/">Florida's candy results page</a>. The state lists Jolly Rancher Sour Apple at 540 parts per billion, Twizzlers Strawberry at 500 and Kit Kat at 230. It puts a child's yearly limit at four pieces of Twizzlers Strawberry. What it means: the state names the bag, not just the company.</li>
-<li><a href="https://www.devonsomersettradingstandards.gov.uk/food-alert-jolly-rancher-products-manufactured-by-the-hershey-company/">UK Food Standards Agency alert, posted by Heart of the South West Trading Standards</a>. Jolly Rancher Hard Candy, all flavors, holds mineral oil, "making them unsafe to eat." Hershey removed it from the UK market. What it means: one country has already pulled Hershey's Jolly Rancher off its shelves.</li>
+<li><a href="https://www.devonsomersettradingstandards.gov.uk/food-alert-jolly-rancher-products-manufactured-by-the-hershey-company/">UK Food Standards Agency alert, January 2026, via Heart of the South West Trading Standards</a>. The agency says six Jolly Rancher candies hold mineral oil, "making them unsafe to eat." Hershey removed them from the UK market. What it means: one country has already pulled Hershey's Jolly Rancher off its shelves.</li>
 <li><a href="https://www.nationalworld.com/business/jolly-rancher-sweets-recalled-across-uk-over-cancer-risk-linked-to-mineral-oil-food-safety-agency-warns-5173074">NationalWorld, June 11, 2025</a>. The agency told shoppers, "Don't buy them." What it means: the warning went straight to shoppers, not just to stores.</li>
 <li><a href="https://www.confectioneryproduction.com/news/56723/nca-offers-key-analysis-refuting-state-of-florida-claims-of-arsenic-in-candy/">Confectionery Production, February 21, 2026</a>. The National Confectioners Association says Florida used a soil and water test that inflated results by as much as 3,800%. What it means: the candy makers dispute the numbers, and nobody has settled it.</li>
 </ul>
