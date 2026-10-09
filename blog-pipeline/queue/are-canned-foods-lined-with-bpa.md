@@ -137,7 +137,7 @@ status: ready
 
 <p>The common stand in is BPS. One letter different.</p>
 
-<p>California wrote this down in October 2023. <a href="https://oehha.ca.gov/sites/default/files/media/downloads/crnr/bpsfemalehid100623.pdf">Its state health office found BPS "is in protective coatings inside some food cans."</a></p>
+<p>California wrote this down in October 2023. <a href="https://oehha.ca.gov/sites/default/files/media/downloads/crnr/bpsfemalehid100623.pdf">Its environmental health office found BPS "is in protective coatings inside some food cans."</a></p>
 
 <p>The report gives the reason. "Manufacturers have been gradually replacing BPA with BPS."</p>
 
@@ -156,7 +156,7 @@ status: ready
 <tr><td>The can lining rule stayed</td><td>Cans were never in that change</td><td>Federal record, current page</td><td>Nobody has ruled the lining harmful either</td></tr>
 <tr><td>The rules date from the 1960s</td><td>The first sign off is over 60 years old</td><td>Federal record, its own background page</td><td>Old rules are not automatically wrong rules</td></tr>
 <tr><td>BPS added to a state list</td><td>Three times in two years</td><td>California, Dec 2023, Jan 2025, Dec 2025</td><td>A state listing is a warning rule, not a ban</td></tr>
-<tr><td>BPS is in some can coatings</td><td>The label word changed, the coating stayed</td><td>California state report, October 2023</td><td>One 13 year study found no rising trend in food</td></tr>
+<tr><td>BPS is in some can coatings</td><td>The label word changed, the coating stayed</td><td>California state report, October 2023</td><td>One 13 year study found no trend in food</td></tr>
 </tbody>
 </table>
 
