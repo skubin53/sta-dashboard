@@ -387,3 +387,35 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   Fix the water first. Then you stop fighting the same stain every wash.
 
   status: pending (human to post)
+
+- **2026-10-09 (draft, pending)** - Quora, REAL thread (confirmed in the search index only, via WebSearch limited to quora.com; Quora returns 403 to curl and WebFetch on 2026-10-09, and WebSearch refuses reddit.com, so the asker, date and open status could not be seen; check it is still open before posting): https://www.quora.com/As-a-woman-over-50-how-do-I-start-body-building . Their question: "As a woman over 50 how do I start body building?" On-avatar (the asker says she is a woman over 50; first strength and movement answer in the warm-up, a different topic from the 2026-10-05 healthy-foods-after-50 draft, and no food or protein advice repeated). Source checked: CDC "Adult Activity: An Overview" (last updated Dec. 20, 2023: muscle-strengthening activities on "2 or more days a week" that work "all major muscle groups (legs, hips, back, abdomen, chest, shoulders, and arms)"), https://www.cdc.gov/physical-activity-basics/guidelines/adults.html , 403 to curl, read with WebFetch. For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her 20 years and the CDC's two days. LINK-FREE draft answer:
+
+  Good for you. Your 50s are a smart time to start, not a late one. In more than 20 years as a health coach, I have seen the women who stick with it start smaller than they think they should.
+
+  1. Begin with your own body weight. Stand up from a chair and sit back down. Do push ups against the wall.
+  2. Learn each move slowly before you add weight.
+  3. When the moves feel easy, pick up light dumbbells or a band. Go up a little at a time.
+  4. The CDC's guideline for adults is two days a week that work your legs, hips, back, belly, chest, shoulders and arms. Start there.
+  5. Rest a day between strength days.
+  6. Write down what you lift. Watching it climb keeps you going.
+
+  Have an old injury? Book one session with a trainer to check your form.
+
+  status: pending (human to post)
+
+- **2026-10-09 (draft, pending)** - Quora, REAL thread (confirmed in the search index only, via WebSearch limited to quora.com; Quora returns 403 to curl and WebFetch on 2026-10-09, so the asker, date and open status could not be seen; check the asker's profile and that it is still open before posting): https://www.quora.com/Whats-the-best-way-to-get-rid-of-the-musty-smell-from-ones-washing-machine-Freshly-washed-clothes-have-a-mustiness-that-fabric-softener-doesnt-touch . Their question: "What's the best way to get rid of the musty smell from one's washing machine? Freshly washed clothes have a mustiness that fabric softener doesn't touch." On-avatar (women 40 to 60 who run the household wash and reach for softener to cover a smell; first washing machine answer in the warm-up, a different topic from the 2026-09-24 posted detergent and dryer sheet answer and the 2026-09-27 new-clothes draft). Sources checked: Consumer Reports "How to Minimize Mold in Your Washing Machine" (updated September 7, 2025: residue "feeds mold"; skip the fabric softener, which may leave residue; use HE detergent and not too much; move clean laundry out as soon as the cycle ends; wipe and dry the door and gasket; leave the door open; clean the detergent drawer; run a tub-clean cycle, frequency per the brand; a drain hose pushed too far into the drain pipe can siphon foul-smelling water back into the washer), https://www.consumerreports.org/appliances/washing-machines/how-to-minimize-mold-in-your-washing-machine-a6065828553/ , 200 to curl; Iowa State University Extension AnswerLine "Time for a new washer?" (leave the washer door ajar after every use so it dries; run a cleaning cycle occasionally; use the correct amount of detergent so buildup is not an issue), https://blogs.extension.iastate.edu/answerline/2015/12/10/time-for-a-new-washing-machine/ , 200 to curl. Both sources also suggest bleach or a bleach cleaner for the cleaning cycle; the answer leaves that out and points to the machine's own cycle and manual. For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her seven years. LINK-FREE draft answer:
+
+  That smell is usually coming from the washer, not your clothes. Leftover soap, softener and lint sit damp inside the machine, and mildew feeds on that film. More softener only adds to it.
+
+  I have kept a toxin-free home for seven years. Here is the fix without harsh sprays:
+
+  1. Stop the softener and use a little less detergent.
+  2. On a front loader, pull back the rubber door seal. Wipe out the gunk and any lost socks, then dry it.
+  3. Pull out the detergent drawer, rinse it and let it dry.
+  4. Run the tub clean cycle. Your manual says how often.
+  5. Move clothes out as soon as the wash ends.
+  6. Leave the door and drawer open between loads so it all dries.
+
+  Still musty? Check the drain hose. Pushed too far down the drain pipe, it can pull smelly water back in.
+
+  status: pending (human to post)
