@@ -436,3 +436,15 @@ Growth task for this run (rotation after (b)): (c) refresh ONE board description
 "Non-toxic food swaps and clean pantry ideas for women who cook for the people they love. Plain answers on food dyes, seed oils, canned food BPA, what is really in ground beef and what Product of USA means on beef, plus simple swaps like beef from a ranch you can name. American made, more affordable than you think, and a free home scan to see where to start." (359 chars; verified on reload). How: board page, More Board options, Edit info and settings, click the description box, type, Done.
 
 NEXT run: Day 18 "What is happening to American beef?" (what-is-happening-to-our-beef-industry) + "Who actually owns your vitamins?" (who-owns-your-vitamins). Growth: (d) one fresh pin variant of a top post, or (a) keyword research.
+
+## 2026-10-09 (12:11pm run, ran 12:41pm) - 2 pins COMPOSED, waiting for the Claude Chrome window to be in front
+Chrome tab visibilityState "hidden" (window covered), so nothing was uploaded (Pinterest renders blank when hidden). Ready to publish:
+### Beef industry  [pinx_beefindustry.png | photo: whatishappe-freedom-v1.webp (a woman and a teen laying out steaks at a kitchen counter)]
+- Title: What is happening to American beef? Lab-grown meat, plant closures
+- Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=what-is-happening-to-our-beef-industry
+- Desc (487): What is happening to American beef? Three things at once. On August 1, 2026, lab-grown meat went on sale in a US grocery store for the first time, while Tyson closes one of the largest beef plants in the country and the cattle herd sits at a 75-year low. Seven states have banned lab-grown meat. Here is what changed and how to buy beef from a ranch you can name, American made and more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+### Vitamins  [pinx_vitamins.png | photo: whoownsyour-freedom-v1.webp (a woman laughing as she cracks an egg; the belonging photo cropped her half out of frame)]
+- Title: Who actually owns your vitamins? The $3.8 billion Thorne deal
+- Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=who-owns-your-vitamins
+- Desc (499): Who actually owns your vitamins? On August 4, 2026, Procter & Gamble announced it is buying the supplement brand Thorne for $3.8 billion. The same company makes Tide, Febreze and Crest. None of that is illegal, but it is worth knowing before your next vitamin order. Here is who owns the bottle, what gets checked before it is sold, and how to pick supplements you can trace, American made and more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
+Growth task for this run: (a) keyword research (Pinterest search suggestions for one angle). Pinterest refuses its suggestion endpoint without a logged-in browser (403), so it waits for Chrome too.
