@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scan.ismyhometoxic.com/sitemap.xml
+Sitemap: https://scan.ismyhometoxic.com/blog-sitemap.xml
