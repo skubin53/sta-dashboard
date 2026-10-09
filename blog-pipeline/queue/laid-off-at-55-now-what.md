@@ -89,7 +89,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 </div>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/laidoffat55-villain-v1.webp" alt="An empty kitchen late at night with the curtains drawn, one under-cabinet light on, a closed laptop on the island and the stools pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/laidoffat55-villain-v1.webp" alt="An empty kitchen late at night with only the light under the stove hood on and a closed laptop on the island" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <p>You rewrote the resume three times. One job said you were too experienced. One email came at two in the morning to say they went another way.</p>
@@ -121,7 +121,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 <p>Nobody has proven anything yet. And your money still has to last while the search runs.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/laidoffat55-turning-point-v1.webp" alt="A woman with shoulder-length auburn hair in a plum sweater closing her laptop at a sage green kitchen island and looking out of the window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/laidoffat55-turning-point-v1.webp" alt="A woman with shoulder-length auburn hair in a plum sweater closing her laptop at a terracotta kitchen island and looking out toward the yard" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="your-401k">Can you use your 401(k) at 55 without the extra tax?</h2>
@@ -139,7 +139,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 <table class="sta-table">
 <tr><th>What you hear</th><th>What the record shows</th><th>Where it says so</th></tr>
 <tr><td>Most searches end in a few weeks</td><td>For women 55 to 64, one in five out past six months</td><td>Bureau of Labor Statistics, September 2026</td></tr>
-<tr><td>A person reads every application</td><td>Nearly 22% of US job openings in May 2023 ran through Workday</td><td>Workday's court answer, July 2026</td></tr>
+<tr><td>A person reads every application</td><td>By Workday's own count, nearly 22% of US job openings in May 2023 ran through its software</td><td>Workday's court answer, July 2026</td></tr>
 <tr><td>The software turns away older applicants</td><td>A claim. Workday denies it, and no court has decided it</td><td>The same answer</td></tr>
 <tr><td>Your 401(k) is locked until 59 and a half</td><td>Not if the job ended in the year you turn 55 or later. An IRA does not get this</td><td>IRS</td></tr>
 </table>
@@ -150,7 +150,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>No court has found that Workday did anything wrong. It denies shutting out applicants over 40. It told the court that employers may "enable, disable, use, or ignore its many features."</p>
+<p>No court has found that Workday did anything wrong. It denies shutting out applicants over 40. It <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.408645/gov.uscourts.cand.408645.128.0.pdf">told the court</a> that employers may "enable, disable, use, or ignore its many features."</p>
 
 <p>The numbers cut both ways. Half had been out about ten weeks or less. You may be back at a desk by spring.</p>
 
@@ -210,7 +210,7 @@ I help families reclaim their health.</p>
 stores. We are linking arms and together taking our control back. Control of our health and
 our finances.</p>
 
-<p>Start by clicking the link below and booking the twenty minutes.</p>
+<p>Start by booking the twenty minutes.</p>
 </div>
 
 <div class="sta-proof">
@@ -251,7 +251,7 @@ our finances.</p>
 <p>Plan for the long end. In September, one in five women 55 to 64 who were out of work had been out over six months.</p>
 
 <p><strong>Should I take money out of my 401(k) now?</strong></p>
-<p>Not before one phone call. The age 55 rule covers <a href="https://www.irs.gov/taxtopics/tc558">the plan at the job that ended</a>, if it ended in the year you turn 55 or after. You still owe income tax.</p>
+<p>Not before one phone call. The age 55 rule covers <a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions">the plan at the job that ended</a>, if it ended in the year you turn 55 or after. You still owe income tax.</p>
 
 <p><strong>If I never hear back, is that age bias?</strong></p>
 <p>Not by itself. The Workday case is a claim, not a ruling, and Workday denies it. What is settled is federal law: from 40 on, you are protected from age bias in hiring and layoffs at employers with 20 or more workers.</p>
