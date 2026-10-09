@@ -1,15 +1,15 @@
 {
- "start": "2026-10-07",
+ "start": "2026-10-09",
  "days": 45,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-07",
-   "weekday": "Wed",
+   "date": "2026-10-09",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-halloween-candy-safe-to-eat",
-     "title": "Is Halloween Candy Safe to Eat? What Florida Found in Twizzlers, Jolly Rancher and Kit Kat (2026)",
+     "slug": "which-cinnamon-brands-have-lead",
+     "title": "Which Cinnamon Brands Have Lead? The Recall List Just Grew Again (2026)",
      "cat": "Food",
      "why": "already written",
      "perish": -3,
@@ -21,11 +21,11 @@
      "track": "shopper"
     },
     {
-     "slug": "laid-off-at-55-now-what",
-     "title": "I Got Laid Off at 55. Now What? (2026)",
+     "slug": "is-ai-taking-jobs",
+     "title": "Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)",
      "cat": "Builders",
      "why": "already written",
-     "perish": -3,
+     "perish": -2.5,
      "keyword": "",
      "felt": "",
      "register": "villain",
@@ -36,40 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-08",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "which-cinnamon-brands-have-lead",
-     "title": "Which Cinnamon Brands Have Lead? The Recall List Just Grew Again (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-ai-taking-jobs",
-     "title": "Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -2.5,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-09",
-   "weekday": "Fri",
+   "date": "2026-10-10",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-zicam-safe",
@@ -100,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-10",
-   "weekday": "Sat",
+   "date": "2026-10-11",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "how-much-protein-after-50",
@@ -132,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-11",
-   "weekday": "Sun",
+   "date": "2026-10-12",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-angry-orange-stain-remover-safe",
@@ -164,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-12",
-   "weekday": "Mon",
+   "date": "2026-10-13",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-antibacterial-hand-soap-safe",
@@ -196,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-10-13",
-   "weekday": "Tue",
+   "date": "2026-10-14",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -228,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-10-14",
-   "weekday": "Wed",
+   "date": "2026-10-15",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -260,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-10-15",
-   "weekday": "Thu",
+   "date": "2026-10-16",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -292,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-17",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -324,8 +292,8 @@
    ]
   },
   {
-   "date": "2026-10-17",
-   "weekday": "Sat",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -356,8 +324,8 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-19",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -388,8 +356,8 @@
    ]
   },
   {
-   "date": "2026-10-19",
-   "weekday": "Mon",
+   "date": "2026-10-20",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "why-did-eggs-cost-so-much",
@@ -420,8 +388,8 @@
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "should-you-give-a-child-cough-syrup",
@@ -452,19 +420,19 @@
    ]
   },
   {
-   "date": "2026-10-21",
-   "weekday": "Wed",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
-     "cat": "Supplements",
-     "why": "I-Health, Inc. and DSM Nutritional Products, Inc., the companies behind Estroven. A 2026 lawsuit says they sold menopause relief they could not deliver and made drug-level claims for a supplement.",
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why It Keeps Getting Pulled (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
      "perish": -1,
-     "keyword": "is estroven safe",
-     "felt": "I'm not sleeping, I'm hot all night and I'm cranky with everyone. I grabbed the box that promised relief. Was I paying for nothing, or worse?",
+     "keyword": "",
+     "felt": "",
      "register": "villain",
-     "pix": false,
+     "pix": true,
      "written": false,
      "track": "shopper"
     },
@@ -484,12 +452,12 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -516,12 +484,12 @@
    ]
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -548,12 +516,12 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-25",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -580,12 +548,12 @@
    ]
   },
   {
-   "date": "2026-10-25",
-   "weekday": "Sun",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -597,8 +565,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -612,8 +580,40 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-27",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-the-pink-stuff-safe",
@@ -644,8 +644,8 @@
    ]
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-vaseline-safe-for-babies",
@@ -676,8 +676,8 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-your-magnesium-what-the-label-says",
@@ -708,8 +708,8 @@
    ]
   },
   {
-   "date": "2026-10-29",
-   "weekday": "Thu",
+   "date": "2026-10-31",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "red-dye-40-mars-broken-promise",
@@ -740,8 +740,8 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-11-01",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "what-keeps-your-memory-sharp-after-70",
@@ -772,8 +772,8 @@
    ]
   },
   {
-   "date": "2026-10-31",
-   "weekday": "Sat",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "why-do-you-stop-feeling-thirsty",
@@ -804,9 +804,22 @@
    ]
   },
   {
-   "date": "2026-11-01",
-   "weekday": "Sun",
+   "date": "2026-11-03",
+   "weekday": "Tue",
    "slots": [
+    {
+     "slug": "why-is-beef-so-expensive",
+     "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
     {
      "slug": "why-was-the-laundress-recalled-twice",
      "title": "Why Was The Laundress Recalled Twice? (2026)",
@@ -819,7 +832,13 @@
      "pix": true,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "weekday": "Wed",
+   "slots": [
     {
      "slug": "are-electric-blankets-safe",
      "title": "Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026)",
@@ -832,13 +851,7 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-02",
-   "weekday": "Mon",
-   "slots": [
+    },
     {
      "slug": "are-plug-in-carbon-monoxide-detectors-reliable",
      "title": "Are Plug-In Carbon Monoxide Detectors Reliable? The One You Should Unplug Today (2026)",
@@ -851,7 +864,13 @@
      "pix": false,
      "written": false,
      "track": "shopper"
-    },
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "weekday": "Thu",
+   "slots": [
     {
      "slug": "does-hair-relaxer-cause-cancer",
      "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
@@ -860,57 +879,6 @@
      "perish": 0,
      "keyword": "hair relaxer lawsuit update 2026",
      "felt": "I relaxed my hair every six weeks for thirty years. Now I keep hearing the word cancer next to it and nobody will give me a straight answer.",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-03",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "is-clear-eyes-safe",
-     "title": "Is Clear Eyes Safe to Use Every Day? Why It Keeps Getting Pulled (2026)",
-     "cat": "Personal Care",
-     "why": "Prestige Consumer Healthcare (Prestige Brands Holdings and Medtech Products Inc.), maker of Clear Eyes. Its drops were recalled again in 2026 because the maker could not assure they were sterile.",
-     "perish": 0,
-     "keyword": "is clear eyes safe to use everyday",
-     "felt": "The heat is on and my eyes are dry and red all day. I put these drops in three times a day. Am I putting germs straight into my eyes?",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-tresemme-safe",
-     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
-     "cat": "Personal Care",
-     "why": "Unilever (Conopco Inc. d/b/a Unilever Home & Personal Care USA). Six women say its TRESemmé shampoo and conditioner contained DMDM hydantoin, a formaldehyde releaser, and that their hair thinned and fell out.",
-     "perish": 0,
-     "keyword": "tresemme lawsuit hair loss",
-     "felt": "My part is getting wider and there's more hair in the drain every week. I've used TRESemmé for twenty years. Did my shampoo do this?",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-04",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "why-is-beef-so-expensive",
-     "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
-     "cat": "Food",
-     "why": "The Big Four meatpackers, JBS, Cargill, Tyson Foods and National Beef, which the DOJ says handle more than 85% of U.S. beef processing and which are under a DOJ antitrust investigation over beef prices. The probe now also covers eight big grocers.",
-     "perish": 0,
-     "keyword": "why is beef so expensive right now",
-     "felt": "I picked up a roast, saw the price and put it back. Where is all that money going, because it sure isn't going to the rancher.",
      "register": "villain",
      "pix": false,
      "written": false,
@@ -932,8 +900,8 @@
    ]
   },
   {
-   "date": "2026-11-05",
-   "weekday": "Thu",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "why-was-argentina-beef-recalled",
@@ -964,8 +932,8 @@
    ]
   },
   {
-   "date": "2026-11-06",
-   "weekday": "Fri",
+   "date": "2026-11-07",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-lilash-safe",
@@ -994,11 +962,6 @@
      "track": "shopper"
     }
    ]
-  },
-  {
-   "date": "2026-11-07",
-   "weekday": "Sat",
-   "slots": []
   },
   {
    "date": "2026-11-08",
@@ -1064,9 +1027,19 @@
    "date": "2026-11-20",
    "weekday": "Fri",
    "slots": []
+  },
+  {
+   "date": "2026-11-21",
+   "weekday": "Sat",
+   "slots": []
+  },
+  {
+   "date": "2026-11-22",
+   "weekday": "Sun",
+   "slots": []
   }
  ],
- "shortfall": 28,
+ "shortfall": 30,
  "blocked": [
   {
    "slug": "income-if-you-stop-for-90-days",
