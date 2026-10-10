@@ -419,3 +419,33 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   Still musty? Check the drain hose. Pushed too far down the drain pipe, it can pull smelly water back in.
 
   status: pending (human to post)
+
+- **2026-10-10 (draft, pending)** - Quora, REAL thread (confirmed in the search index only, via WebSearch limited to quora.com; Quora returns 403 to curl and WebFetch on 2026-10-10, and Reddit was not tried since WebSearch refuses reddit.com, so the asker, date and open status could not be seen; check the asker's profile and that it is still open before posting): https://www.quora.com/When-using-a-humidifier-in-your-home-is-it-normal-for-dust-everywhere-to-seem-to-be-thicker-whiter-and-more-abundant . Their question: "When using a humidifier in your home, is it normal for dust everywhere to seem to be thicker, whiter and more abundant?" On-avatar (women 40 to 60 who dust the house and run a humidifier once the heat comes on; first humidifier and indoor air answer in the warm-up, a different topic from the 2026-09-26 bathroom mold draft and the 2026-09-27 dust mite answer, no wording reused). Source checked: EPA "Use and Care of Home Humidifiers" (ultrasonic and impeller "cool mist" units disperse minerals and microorganisms from the tank; some consumers are bothered by a "white dust"; use bottled water labeled "distilled"; spring, artesian or mineral water has not been treated to remove minerals; empty, wipe dry and refill portable units daily; clean every third day and remove scale, which "can be a breeding ground for microorganisms"; do not humidify above 50 percent, since higher humidity may encourage dust mites and molds; steam vaporizer and evaporative units are not expected to disperse substantial amounts of minerals), https://www.epa.gov/indoor-air-quality-iaq/use-and-care-home-humidifiers , 200 to curl -4 on 2026-10-10. The scented-drops line is Shannon's own advice, not an EPA claim. For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her seven years and the EPA's 50 percent and every third day. LINK-FREE draft answer:
+
+  Yes, that is common, and it is not ordinary dust. A cool mist humidifier sends tiny drops of tap water into the room. When they dry, the minerals in the water stay behind as a fine white film. The EPA calls it white dust.
+
+  My home has been toxin-free for seven years, and this is the humidifier routine I suggest:
+
+  1. Fill it with water labeled distilled. Spring and mineral water still carry minerals.
+  2. Empty the tank, wipe it dry and refill it every day.
+  3. Scrub off any crusty buildup every third day. Germs like to grow in it.
+  4. Keep the room below 50 percent humidity. A humidity reader from the hardware store shows the number. Damp air invites mold and dust mites.
+  5. Skip scented drops in the tank. You would breathe them all night.
+
+  Still seeing white dust? A warm mist or evaporative model puts out far less.
+
+  status: pending (human to post)
+
+- **2026-10-10 (draft, pending)** - Quora, REAL thread (confirmed in the search index only, via WebSearch; Quora returns 403 to curl and WebFetch on 2026-10-10, so the asker, date and open status could not be seen; a two adult household that cooks the same meals suggests an empty nester, but check the asker's profile and that it is still open before posting): https://www.quora.com/My-household-consists-of-2-adults-I-tend-to-cook-the-same-things-over-and-over-Does-anyone-have-any-quick-and-easy-recipes-for-2-I-could-use-a-change-and-need-lots-of-suggestions . Their question: "My household consists of 2 adults. I tend to cook the same things over and over. Does anyone have any quick and easy recipes for 2? I could use a change, and need lots of suggestions." On-avatar (women 40 to 60 cooking for two once the kids are grown; first everyday cooking answer in the warm-up, a different topic from the 2026-10-05 healthy-foods-after-50 draft, no food list or protein advice repeated, and no money angle). Sources: none needed, no facts, studies or numbers used beyond her 20 years. For our records only, the answer stays LINK-FREE. No brand. LINK-FREE draft answer:
+
+  Cooking for two gets stuck in a rut fast. As a health coach for over 20 years, my favorite fix is to learn a few easy formulas, not hunt for new recipes. Change one thing and it tastes like a new meal.
+
+  1. Sheet pan supper. Chicken thighs or salmon and any vegetables you have, tossed in olive oil and salt. Roast until golden. A new spice makes it a new night.
+  2. Skillet eggs. Soften onions, peppers and greens in butter, crack eggs on top and cover until set.
+  3. Steak salad. Sear a steak in a hot cast iron pan and slice it thin over greens.
+  4. Homemade taco night. Season the beef yourself with cumin, chili powder and garlic instead of a packet.
+  5. Cook once, eat twice. Roast a whole chicken, then make soup with the rest later in the week.
+
+  Try two this week. Dinner stops feeling like a rerun.
+
+  status: pending (human to post)
