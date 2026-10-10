@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 10, 2026<br><span style="font-size:.92em;">Published October 10, 2026 &middot; Last updated October 10, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 10, 2026<br><span style="font-size:.92em;">Published October 10, 2026 &middot; Last updated October 10, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -88,10 +88,10 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>That is almost ten months of jars going out to stores. Now Galil says it has added "enhanced testing."</p>
 
-<p>By Galil's own notice, Maryland's lab caught it. Galil did not.</p>
+<p>By Galil's own notice, it was Maryland's lab that caught it.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/whichcinnam-villain-v1.webp" alt="A clear plastic spice jar with a black cap and a small dish of ground cinnamon alone on a white kitchen island in cold, flat light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whichcinnam-villain-v1.webp" alt="A clear Lior cinnamon jar with a black cap and a small dish of ground cinnamon alone on a white kitchen island in cold, flat light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="the-full-list">Which other cinnamon brands are on the lead list?</h2>
@@ -137,7 +137,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Lior Gourmet Spices Ground Cinnamon, lot GAP11304</td><td>2.18 parts per million of lead, by Maryland's test</td><td>Maryland Department of Health, September 2026</td><td>Galil recalled one lot, not every jar it sold</td></tr>
+<tr><td>Lior Gourmet Spices Ground Cinnamon, lot GAP11304</td><td>2.18 parts per million of lead, by Maryland's test</td><td>Maryland Department of Health sample, federal alert of September 28, 2026</td><td>Galil recalled one lot, not every jar it sold</td></tr>
 <tr><td>Marcum and Supreme Tradition ground cinnamon</td><td>Recalled in March 2024, then again in July 2024</td><td>Colonna Brothers recall notice, July 30, 2024</td><td>Colonna says it broke no federal law on lead in spice</td></tr>
 <tr><td>El Servidor ground cinnamon</td><td>20 parts per million, the top number on any of the three alerts</td><td>Federal alert, July 25, 2024</td><td>One sample, from one New York store</td></tr>
 </tbody>
@@ -145,13 +145,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h2 id="the-other-side">Aren't these just small brands and tiny amounts?</h2>
 
-<p class="quick-answer">Quick answer: mostly, yes. The amounts are far below the 2023 applesauce recall. I would still throw the jar out.</p>
+<p class="quick-answer">Quick answer: small brands, yes, and far below the 2023 applesauce recall. The alerts still call these elevated levels of lead.</p>
 
 <p>Here is the part you are probably thinking. Most of these are small labels, and the amounts are tiny.</p>
 
 <p>That is fair, and I am not going to pretend otherwise.</p>
 
-<p><a href="https://www.fda.gov/food/alerts-advisories-safety-information/fda-alert-concerning-certain-cinnamon-products-due-presence-elevated-levels-lead">The first alert compares these jars to the 2023 cinnamon applesauce recall.</a> That cinnamon held 2,270 to 5,110 parts per million. These jars run from 2.03 to 20.</p>
+<p><a href="https://www.fda.gov/food/alerts-advisories-safety-information/fda-alert-concerning-certain-cinnamon-products-due-presence-elevated-levels-lead">All three alerts compare these jars to the 2023 cinnamon applesauce recall.</a> That cinnamon held 2,270 to 5,110 parts per million. These jars run from 2.03 to 20.</p>
 
 <p>Galil says no illnesses have been reported.</p>
 
@@ -237,7 +237,7 @@ of our health and our finances.</p>
 <p>You bought those sticks from someone who told you where they grew. It took one Saturday at the market.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/whichcinnam-freedom-v1.webp" alt="A woman in warm golden light grating a whole cinnamon stick over a baked apple pie in her kitchen" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whichcinnam-freedom-v1.webp" alt="A woman in warm golden light grating a whole cinnamon stick beside a baked apple pie in her kitchen" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <div class="sta-cta">
