@@ -448,3 +448,33 @@ Chrome tab visibilityState "hidden" (window covered), so nothing was uploaded (P
 - Board: Non-Toxic Food & Clean Pantry | Link: https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=who-owns-your-vitamins
 - Desc (499): Who actually owns your vitamins? On August 4, 2026, Procter & Gamble announced it is buying the supplement brand Thorne for $3.8 billion. The same company makes Tide, Febreze and Crest. None of that is illegal, but it is worth knowing before your next vitamin order. Here is who owns the bottle, what gets checked before it is sold, and how to pick supplements you can trace, American made and more affordable than you think. Free 3-minute room-by-room home scan: https://scan.ismyhometoxic.com/now/
 Growth task for this run: (a) keyword research (Pinterest search suggestions for one angle). Pinterest refuses its suggestion endpoint without a logged-in browser (403), so it waits for Chrome too.
+
+## PUBLISHED 2026-10-10 (the 10/9 pins, done once Shannon brought Chrome to the front) - 2 pins live, both to the FREE SCAN
+- Beef industry -> LIVE, pin 474848354483778464 | "What is happening to American beef? Lab-grown meat, plant closures" | Non-Toxic Food & Clean Pantry | utm_campaign=what-is-happening-to-our-beef-industry | desc 487
+- Vitamins -> LIVE, pin 474848354483778474 | "Who actually owns your vitamins? The $3.8 billion Thorne deal" | same board | utm_campaign=who-owns-your-vitamins | desc 499
+- Verified on the profile's Created tab (both newest). Note: the profile and search pages only render after a screenshot when the window reports "hidden"; the pin creation tool rendered fine.
+
+## GROWTH TASK 2026-10-10 (a) keyword research - homesteading angle (Pinterest search refinement chips, read live in Chrome)
+Searched: homestead kitchen, homesteading, homestead pantry, grass fed beef. (The old typeahead endpoint now answers "Invalid Resource Request", and the profile page's search box only searches our own pins, so the chips on the main search page are the source.)
+Long-tail phrases for future pin titles (women 40-60; our own swap, never a rival brand; no budget or frugal angle):
+1. homestead pantry staples list (fits: baking mix, canned food BPA, food dyes)
+2. homestead pantry checklist
+3. seasonal homestead pantry staples
+4. homestead pantry essentials
+5. homestead pantry dry mixes (fits: are-baking-mixes-healthy, a from-scratch mix angle)
+6. homestead kitchen essentials (fits: cookware, cutting boards, aluminum pans)
+7. homestead kitchen pantry ideas
+8. homestead kitchen recipes
+9. homesteading for beginners
+10. homesteading skills to learn
+11. self sufficient homestead
+12. apartment homesteading / urban homesteading (the woman who wants the life without the acres)
+13. grass fed beef recipes (fits: ground beef, Product of USA, beef industry posts; Riverbend beef)
+14. grass fed ground beef recipes
+15. grass fed beef tallow benefits (fits: seed oils post; tallow is the hero there)
+16. grass fed beef roast crock pot
+17. grass fed beef liver recipe
+18. grass fed beef jerky (fits: Riverbend beef sticks)
+Title pattern that works in these results: a number or a promise plus the keyword ("Stock your pantry for a whole year", "27 homesteading skills to learn"). Keep our question-hook style, but lead with the keyword.
+
+NEXT run: Day 19 "Are flushable wipes really flushable?" (are-flushable-wipes-actually-flushable, Non-Toxic Baby & Family Safety) + "Is your dish soap causing cancer?" (is-dawn-dish-soap-safe; consider the gentler keyword title "Is Dawn dish soap safe?" noted on 10/6). Growth: (d) one fresh pin variant of a top post, or (b) the remaining 7 description rewrites.
