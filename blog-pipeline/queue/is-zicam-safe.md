@@ -53,7 +53,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You feel the first scratch in your throat. You reach for the orange Zicam box before you put the kettle on.</p>
-<p><strong><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0790-2026%22">On August 10, 2026, Church &amp; Dwight recalled 318,600 cartons of Zicam nasal swabs.</a></strong> An inspection of the plant that makes them found germ test results outside the limit. It is the second time in 14 months the swabs were pulled.</p>
+<p><strong><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0790-2026%22">On August 10, 2026, Church &amp; Dwight recalled 318,600 cartons of Zicam nasal swabs.</a></strong> A federal inspection of the plant that makes them found germ test results outside the limit. It is the second time in 14 months the swabs were pulled.</p>
 <p>If you have Zicam swabs in your cabinet, throw them out. The swap is a mug, a lemon and a jar of farm honey.</p>
 </div>
 
@@ -87,7 +87,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>In 2025 the first notice was a press release. In 2026 it was a letter, so this one was easy to miss.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iszicamsafe-villain-v1.webp" alt="An orange box of cold remedy nasal swabs alone on a kitchen island beside a used swab and a crumpled tissue, bright daylight from the windows behind" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iszicamsafe-villain-v1.webp" alt="An orange Zicam box of cold remedy nasal swabs alone on a kitchen island beside a used swab and a crumpled tissue, soft grey daylight from the windows behind" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="the-2025-recall">Wasn't Zicam already recalled in 2025?</h2>
@@ -104,7 +104,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h3 id="the-molds">Aspergillus and Penicillium: which molds did Church &amp; Dwight flag?</h3>
 
-<p><a href="https://www.churchdwightrecall.com/">Church &amp; Dwight's recall page names four molds it flagged in some swabs.</a> Three are Aspergillus and Penicillium types. The fourth is Exophiala. The page says the results are "not yet conclusive."</p>
+<p><a href="https://www.churchdwightrecall.com/">Church &amp; Dwight's recall page names four fungi it flagged in some swabs.</a> Three are Aspergillus and Penicillium types. The fourth is Exophiala. The page says the results are "not yet conclusive."</p>
 
 <p>Mold on a shower curtain is one thing. Mold on a swab in your nose is another.</p>
 
@@ -127,7 +127,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Zicam medicated nasal swabs, three lots</td><td>Germ tests "out of limit"</td><td>Federal recall record D-0790-2026, August 10, 2026</td><td>Class II, a step down from 2025</td></tr>
+<tr><td>Zicam medicated nasal swabs, three lots</td><td>Germ tests "out of limit"</td><td>Federal recall record D-0790-2026, August 10, 2026</td><td>Not Class I, the most serious kind</td></tr>
 <tr><td>Zicam Cold Remedy Nasal Swabs, all lots</td><td>Mold in the cotton tips</td><td>Church &amp; Dwight notice, June 6, 2025</td><td>No serious harm reported, the company said</td></tr>
 <tr><td>Zicam elderberry fruit drops, 21,912 bottles</td><td>Elderberry left off the label</td><td>Federal recall record D-0095-2026, October 1, 2025</td><td>A label mix-up, not a germ problem</td></tr>
 <tr><td>Zicam zinc nasal gel and swabs</td><td>About 130 reports of lost smell</td><td>Federal warning letter to Matrixx, June 16, 2009</td><td>Today's swab is sold as zinc-free</td></tr>
@@ -151,7 +151,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>You trusted that box to be clean. You do not owe it a third chance.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iszicamsafe-turning-point-v1.webp" alt="A woman in a cardigan looking out of tall kitchen windows, a closed box of nasal swabs set down on the island beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iszicamsafe-turning-point-v1.webp" alt="A woman in a cardigan smiling toward tall kitchen windows, a closed Zicam box of nasal swabs standing on the island in front of her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-instead">What can you use instead when a cold starts?</h2>
@@ -205,8 +205,8 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0790-2026%22">Federal drug recall record D-0790-2026</a>. Church &amp; Dwight began a Class II recall of Zicam Cold Remedy Medicated Nasal Swabs on August 10, 2026. That is 318,600 cartons in lots UN52882, UN53431 and UN60411, for "out of limit results for microbiological testing." What it means: the swab came off the shelf a second time.</li>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/church-dwight-co-inc-issues-voluntary-nationwide-recall-zicamr-cold-remedy-nasal-swabs-zicamr-nasal">Church &amp; Dwight recall notice, June 6, 2025</a>. Every lot of Zicam Cold Remedy Nasal Swabs, for "fungi in cotton swab components." It warns of "serious and life-threatening blood infections" in an inflamed nose. It said no serious harm had been reported. What it means: the warning describes the nose you have during a cold.</li>
-<li><a href="https://www.churchdwightrecall.com/">Church &amp; Dwight recall page, updated July 22, 2025</a>. It names four molds flagged in some swabs and calls the findings "not yet conclusive." What it means: the company was still working out how far it went.</li>
-<li><a href="https://api.fda.gov/drug/enforcement.json?search=recalling_firm:%22Church%22+AND+product_description:Zicam&limit=10">Federal recall records for Zicam since June 2025</a>. The swabs in June 2025 (3,374,918 cartons, Class I), elderberry fruit drops in October 2025 (21,912 bottles, label mix-up), and the swabs again in August 2026. What it means: three Zicam recalls in 14 months.</li>
+<li><a href="https://www.churchdwightrecall.com/">Church &amp; Dwight recall page, updated July 22, 2025</a>. It names four fungi flagged in some swabs and calls the findings "not yet conclusive." What it means: the company was still working out how far it went.</li>
+<li><a href="https://api.fda.gov/drug/enforcement.json?search=recalling_firm:%22Church%22+AND+product_description:Zicam&limit=10">Federal recall records for Zicam since June 2025</a>. The swabs in June 2025 (3,374,918 cartons, Class I, plus 13,632 AllClear cartons), elderberry drops in October 2025 (21,912 bottles, label mix-up), and the swabs again in August 2026. What it means: three recalls in 14 months.</li>
 <li><a href="https://www.nbcnews.com/health/health-news/nasal-spray-can-cause-loss-smell-fda-warns-flna1c9451113">The Associated Press on NBC News, June 16, 2009</a>. Regulators told shoppers to stop using Zicam's zinc nasal gel and swabs and sent Matrixx Initiatives a warning letter. Health officials said they asked Matrixx for more than 800 lost-smell complaints it had on file. Matrixx defended the product. What it means: by health officials' account, the company held more complaints than the government did.</li>
 </ul>
 </div>
@@ -237,10 +237,10 @@ of our health and our finances.</p>
 <p>Lots UN52882, UN53431 and UN60411 of Zicam Cold Remedy Medicated Nasal Swabs, UPC 732216301205. They carry expiration dates from April 30 to August 31, 2028.</p>
 
 <p><strong>Is Zicam safe now?</strong></p>
-<p>I would throw out any Zicam swabs, recalled lot or not. They have been pulled twice in 14 months. For your next cold, make the mug of lemon, ginger and farm honey.</p>
+<p>Throw out any Zicam swabs, recalled lot or not. They have been pulled twice in 14 months. For your next cold, make the mug of lemon, ginger and farm honey.</p>
 
 <p><strong>Why do Zicam swabs keep getting recalled?</strong></p>
-<p>Both recalls came down to mold or germs. In 2025 the company pointed to fungi in the cotton tips. In 2026, germ tests at the outside plant came back out of limit.</p>
+<p>Both recalls came down to mold or germs. In 2025 the company pointed to fungi in the cotton tips. In 2026, federal inspectors found germ tests out of limit at the outside plant.</p>
 
 <p><strong>I have used Zicam for years and I feel fine. Why switch?</strong></p>
 <p>That counts for something. But Church &amp; Dwight's own 2025 notice put the risk in an inflamed nose. That is the nose you have when you reach for it. You get to be the one who cleared the cabinet.</p>
@@ -310,9 +310,9 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Which Zicam lots are recalled in 2026?",
    "acceptedAnswer": {"@type": "Answer", "text": "Lots UN52882, UN53431 and UN60411 of Zicam Cold Remedy Medicated Nasal Swabs, UPC 732216301205. They carry expiration dates from April 30 to August 31, 2028."}},
   {"@type": "Question", "name": "Is Zicam safe now?",
-   "acceptedAnswer": {"@type": "Answer", "text": "I would throw out any Zicam swabs, recalled lot or not. They have been pulled twice in 14 months. For your next cold, make the mug of lemon, ginger and farm honey."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Throw out any Zicam swabs, recalled lot or not. They have been pulled twice in 14 months. For your next cold, make the mug of lemon, ginger and farm honey."}},
   {"@type": "Question", "name": "Why do Zicam swabs keep getting recalled?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Both recalls came down to mold or germs. In 2025 the company pointed to fungi in the cotton tips. In 2026, germ tests at the outside plant came back out of limit."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Both recalls came down to mold or germs. In 2025 the company pointed to fungi in the cotton tips. In 2026, federal inspectors found germ tests out of limit at the outside plant."}},
   {"@type": "Question", "name": "I have used Zicam for years and I feel fine. Why switch?",
    "acceptedAnswer": {"@type": "Answer", "text": "That counts for something. But Church & Dwight's own 2025 notice put the risk in an inflamed nose. That is the nose you have when you reach for it. You get to be the one who cleared the cabinet."}}
  ]
