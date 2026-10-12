@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-10
+date: 2026-10-12
 title: Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)
 slug: is-ai-taking-jobs
 keyword: ai layoffs 2026
@@ -47,7 +47,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 10, 2026<br><span style="font-size:.92em;">Published October 10, 2026 &middot; Last updated October 10, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 12, 2026<br><span style="font-size:.92em;">Published October 12, 2026 &middot; Last updated October 12, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -89,11 +89,11 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p>The government count was quiet too. In September, employers added 29,000 jobs and unemployment sat at 4.2%. <a href="https://www.bls.gov/news.release/archives/empsit_10022026.htm">The Bureau of Labor Statistics</a> said both "changed little."</p>
 
-<p>And jobs like yours? In March, <a href="https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men">the International Labour Organization</a> looked at jobs held mostly by women. In the countries it studied, they are almost twice as likely as men's jobs to be exposed to AI. It named secretaries, receptionists, payroll clerks and accounting assistants.</p>
+<p>And jobs like yours? In March, <a href="https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men">the International Labour Organization</a> looked at jobs held mostly by women. In the countries it studied, they are almost twice as likely as jobs held mostly by men to be exposed to generative AI. It named secretaries, receptionists, payroll clerks and accounting assistants.</p>
 
 <p>Exposed means AI can do part of the work. It does not mean the job is gone.</p>
 
-<p>The new tool your boss keeps bringing up, the training video you watched twice, the reorg email at five on a Friday, the young hire who asks you how the old system worked, that feeling that the job is learning from you so it can do without you.</p>
+<p>The new tool your boss keeps bringing up. The training video you watched twice. The reorg email at five on a Friday. The young hire who asks how the old system worked. That feeling the job is learning from you so it can do without you.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/isaitakingj-villain-v1.webp" alt="A home office late at night with deep blue walls, the curtains drawn, one brass lamp on, a closed laptop on an oak desk and a coral chair pushed back, nobody there" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -146,7 +146,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 <tr><td>AI is behind most layoffs</td><td>AI was named in about 1 in 5 cuts this year, and came fifth in September</td><td>Challenger, Gray &amp; Christmas, October 2026</td></tr>
 <tr><td>Amazon cut 14,000 jobs because of AI</td><td>Its CEO said that cut was "not even really AI driven, not right now"</td><td>CNN, October 2025</td></tr>
 <tr><td>Once AI takes a role, it is gone</td><td>32% of US hiring managers said they cut a role mainly because of AI, then hired for the same or a similar one</td><td>Robert Half data, CNBC, July 2026</td></tr>
-<tr><td>Office jobs are the safe ones</td><td>Jobs held mostly by women are almost twice as likely as men's to be exposed to AI</td><td>International Labour Organization, March 2026</td></tr>
+<tr><td>Office jobs are the safe ones</td><td>Female-dominated jobs are almost twice as likely as male-dominated ones to be exposed to generative AI</td><td>International Labour Organization, March 2026</td></tr>
 </table>
 
 <p>Nobody hands you that table at work. Keep it, then ask me the fair question.</p>
@@ -228,7 +228,7 @@ our finances.</p>
 <li><a href="https://komonews.com/news/local/amazon-to-permanently-lay-off-121-workers-in-seattle-bellevue-amid-ongoing-ai-push-artificial-intelligence-agi-employment-jobs-unemployed-models-reorganization-seattle-washington-jeff-bezos-customer-shopping-prime-economy">KOMO News, August 31, 2026</a>. A Washington filing for 121 permanent Amazon layoffs from October 1. Plain translation: the cuts kept coming.</li>
 <li><a href="https://www.cnbc.com/2026/07/01/employers-who-laid-off-workers-for-ai-are-reversing-their-decisions.html">CNBC, July 1, 2026</a>. Robert Half data: 32% of US hiring managers said they cut a role mainly because of AI and later rehired for the same or a similar one. Plain translation: experience still counts.</li>
 <li><a href="https://www.bls.gov/news.release/archives/empsit_10022026.htm">Bureau of Labor Statistics, October 2, 2026</a>. September: 29,000 jobs added, unemployment 4.2%. Plain translation: a slow market, not a crash.</li>
-<li><a href="https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men">International Labour Organization, March 5, 2026</a>. Jobs held mostly by women are almost twice as likely as men's to be exposed to AI. Plain translation: the risk sits near desks like yours.</li>
+<li><a href="https://www.ilo.org/resource/news/new-ilo-data-confirm-women-face-higher-workplace-risks-generative-ai-men">International Labour Organization, March 5, 2026</a>. Female-dominated jobs are almost twice as likely as male-dominated ones to be exposed to generative AI. Plain translation: the risk sits near desks like yours.</li>
 </ul>
 </div>
 
@@ -241,7 +241,7 @@ our finances.</p>
 <p>A memo can still move your job. It cannot reach the people who trust you. You become the one with something of your own.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isaitakingj-freedom-v1.webp" alt="A woman in a mustard shirt walking a garden path under red maple trees in golden light, her hands free" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isaitakingj-freedom-v1.webp" alt="A woman in a navy coat and mustard shirt walking a garden path under red maple trees in golden light, her hands free" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <div class="sta-cta">
@@ -260,7 +260,7 @@ our finances.</p>
 <p>Some are. In Robert Half data sent to CNBC, 32% of US hiring managers said they cut a role mainly because of AI. Later, they hired for the same job, or one like it.</p>
 
 <p><strong>Is a big company like Amazon safer?</strong></p>
-<p>Size did not stop the cuts. Amazon announced about 14,000 corporate roles in October 2025 and about 16,000 more in January 2026. Its October memo said the company was performing well.</p>
+<p>Size did not stop the cuts. Amazon cut about 14,000 corporate roles in October 2025 and about 16,000 more in January 2026. Its October memo said the company was performing well.</p>
 
 <p><strong>Do I have to quit my job to start something?</strong></p>
 <p>No. Keep the paycheck. What you build sits beside it, not on top of it.</p>
@@ -290,8 +290,8 @@ our finances.</p>
    "headline": "Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)",
    "description": "AI was named in about 1 in 5 announced US job cuts this year. Amazon told its own staff in writing. Here is what no memo can take from you.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isaitakingj-hero-v1.webp",
-   "datePublished": "2026-10-10",
-   "dateModified": "2026-10-10",
+   "datePublished": "2026-10-12",
+   "dateModified": "2026-10-12",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/is-ai-taking-jobs"},
    "author": {"@id": "https://theshannonnicole.com/post/is-ai-taking-jobs#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
@@ -332,7 +332,7 @@ our finances.</p>
   {"@type": "Question", "name": "Are companies rehiring after AI layoffs?",
    "acceptedAnswer": {"@type": "Answer", "text": "Some are. In Robert Half data sent to CNBC, 32% of US hiring managers said they cut a role mainly because of AI. Later, they hired for the same job, or one like it."}},
   {"@type": "Question", "name": "Is a big company like Amazon safer?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Size did not stop the cuts. Amazon announced about 14,000 corporate roles in October 2025 and about 16,000 more in January 2026. Its October memo said the company was performing well."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Size did not stop the cuts. Amazon cut about 14,000 corporate roles in October 2025 and about 16,000 more in January 2026. Its October memo said the company was performing well."}},
   {"@type": "Question", "name": "Do I have to quit my job to start something?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. Keep the paycheck. What you build sits beside it, not on top of it."}}
  ]
