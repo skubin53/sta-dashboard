@@ -6,7 +6,7 @@ slug: is-crest-toothpaste-safe
 keyword: is crest toothpaste safe
 category: Personal Care
 meta_description: Crest carried plastic beads until 2016. A court filing dated July 2026 says the gum line still holds a harsh detergent. Here are the receipts.
-cover: https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v1.webp
+cover: https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v2.webp
 vault_checked: [Switch-to-America, AEO-Content-Strategist, North-Star]
 status: blocked-images
 ---
@@ -143,7 +143,7 @@ status: blocked-images
 <p>So the foam in your mouth is doing less than you think, and the tube that promises the most about your gums is the one now being asked about in a courtroom.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-turning-point-v1.webp" alt="A dad crouched at the bathroom sink squeezing Crest onto a small child's toothbrush, warm hallway light behind them" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-turning-point-v2.webp" alt="A woman of about 50 sets a red tube of Crest down on her bathroom vanity and looks off toward the window with a settled half smile" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <table class="sta-table">
@@ -202,7 +202,7 @@ status: blocked-images
 <p><strong>Both times it took somebody outside the company.</strong></p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-belonging-v1.webp" alt="A boy in striped pajamas rinsing at the sink while a smaller child brushes standing on a wooden step stool, their dad watching from the doorway" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-belonging-v2.webp" alt="Three women in their forties and fifties laughing together at a kitchen island with a loaf of bread and a bowl of clementines" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-do-i-use">What do I keep in the bathroom instead?</h2>
@@ -277,7 +277,7 @@ of our health and our finances.</p>
 <p><strong>Is the whole ingredient list printed on the tube?</strong> Often not. The hygienist who found the beads in 2014 noted the full list was on the box, not the tube. Throw the box out and it is gone.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-freedom-v1.webp" alt="A dad reading a picture book on the bed at bedtime, a boy and a younger child in pajamas leaning against him under a warm lamp" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-freedom-v2.webp" alt="The same woman curled up in an armchair by a sunny curtained window, reading a book and smiling in warm golden light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
@@ -314,7 +314,7 @@ of our health and our finances.</p>
    "@type": "Article",
    "headline": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
    "description": "Crest carried plastic beads until 2016. A court filing dated July 2026 says the gum line still holds a harsh detergent. Here are the receipts.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v1.webp",
+   "image": "https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v2.webp",
    "datePublished": "2026-08-29",
    "dateModified": "2026-08-29",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-crest-toothpaste-safe"},

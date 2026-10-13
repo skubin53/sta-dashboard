@@ -2,7 +2,8 @@
 type: reshoot
 slug: is-crest-toothpaste-safe
 raised: 2026-08-31
-status: open
+status: done
+closed: 2026-10-13
 blocks: publication
 ---
 
@@ -44,3 +45,6 @@ the other way. Does that approval survive the correction? The post cannot ship u
 is answered, because the frame in question is the last thing a reader sees.
 
 The post itself is written and its text faults are fixed. It is waiting only on pictures.
+
+## Closed 2026-10-13
+Hero, turning point, belonging and freedom reshot as iscresttoot-*-v2.webp on one woman of about 50, no men or children; villain v1 kept. photos-completed/2026-08-30.md updated, queue post image URLs and alt text swapped. The old freedom frame was replaced because the correction bans it; Shannon can still ask for it back.
