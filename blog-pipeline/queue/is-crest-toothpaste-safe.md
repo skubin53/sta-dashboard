@@ -8,7 +8,7 @@ category: Personal Care
 meta_description: Crest carried plastic beads until 2016. A court filing dated July 2026 says the gum line still holds a harsh detergent. Here are the receipts.
 cover: https://scan.ismyhometoxic.com/blog-images/iscresttoot-hero-v2.webp
 vault_checked: [Switch-to-America, AEO-Content-Strategist, North-Star]
-status: blocked-images
+status: ready
 ---
 
 <style>
@@ -53,7 +53,7 @@ status: blocked-images
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You have brushed your teeth more than twenty thousand times. Nobody ever asked you what was in the tube.</p>
-<p><strong><a href="https://courtlistener.com/docket/73577377/oliver-v-the-procter-gamble-co/">On 2 July 2026 two people sued Procter and Gamble over Crest.</a></strong> The filing says the Crest Pro-Health gum tubes carry "a harsh detergent and known irritant."</p>
+<p><strong><a href="https://storage.courtlistener.com/recap/gov.uscourts.casd.861808/gov.uscourts.casd.861808.1.0.pdf">On 2 July 2026 two people sued Procter and Gamble over Crest.</a></strong> The filing says the Crest Pro-Health gum tubes carry "a harsh detergent and known irritant."</p>
 <p>That is a claim, not a ruling. But it is not the first time.</p>
 </div>
 
@@ -80,7 +80,7 @@ status: blocked-images
 
 <p>In March 2014 a dental hygienist named Trish Walraven wrote a short post.</p>
 
-<p>She had been pulling blue specks out of her patients' gums for months. Not off the surface. Down in the channel where the gum meets the tooth.</p>
+<p>She had been finding blue specks in her patients' gums for months. Not on the surface. Down in the channel where the gum meets the tooth.</p>
 
 <p>So she went and got the tube out of her own daughter's drawer. She mixed a pea sized blob with water and strained out what would not dissolve.</p>
 
@@ -92,12 +92,12 @@ status: blocked-images
 
 <p><strong>Color.</strong> That was the whole reason.</p>
 
-<p>Then she listed the Crest tubes it was in. 3D White. Pro-Health. Sensitivity.</p>
+<p>Then she listed the Crest tubes it was in. One was Pro-Health For Life, sold for ages 50 and up.</p>
 
 <p>Hygienists across the country started saying the same thing.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-villain-v1.webp" alt="A red tube of Crest toothpaste standing on a bathroom counter beside a toothbrush loaded with paste, cups of family toothbrushes at one end and a dark window behind" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-villain-v1.webp" alt="A red tube of Crest toothpaste standing alone on a beige marble bathroom vanity in cold light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <p>Six months later Procter and Gamble gave in. <a href="https://www.foodsafetynews.com/2014/09/crests-parent-company-says-microbeads-in-toothpaste-will-be-removed/">It said the beads would be gone from Crest by March 2016.</a></p>
@@ -128,22 +128,18 @@ status: blocked-images
 
 <p>Sherrie Oliver says her teeth and gums hurt after using one of them.</p>
 
-<p>Procter and Gamble has not answered in court. Nothing is proven yet.</p>
+<p>Procter and Gamble has asked the judge to throw the case out. Nothing is proven yet.</p>
 
 <h3 id="what-is-sls">Sodium lauryl sulfate, the foaming detergent</h3>
 
-<p>Sodium lauryl sulfate, SLS for short, does not clean your teeth. It makes the paste foam so brushing feels like it is working. That is the whole job.</p>
+<p><a href="https://storage.courtlistener.com/recap/gov.uscourts.casd.861808/gov.uscourts.casd.861808.1.0.pdf">The filing says more about it.</a> It says this detergent can cause canker sores and allergic reactions, even in small amounts.</p>
 
-<p>It is also a known irritant. It is so dependable at irritating skin that dermatologists use it as their standard control in patch testing, the reaction they measure every other one against. <a href="https://pubmed.ncbi.nlm.nih.gov/41429426/">A 2026 review in the journal Contact Dermatitis</a> describes it as exactly that, the benchmark they reach for when they want to irritate skin on purpose.</p>
+<p>Now hold that next to the promise. The suit calls it a known irritant. And the tube is sold to help your gums.</p>
 
-<p>Now hold that next to what these tubes promise. The Crest Pro-Health gum line is sold to calm and heal irritated gums. The argument in the suit is one plain sentence: you cannot soothe a gum with a known irritant and sell it as the gum treatment.</p>
-
-<p>There are toothpastes made without it. That is not a fringe idea, it is a formulation choice, and the makers who leave it out will tell you why. The ones who keep it rarely bring it up at all.</p>
-
-<p>So the foam in your mouth is doing less than you think, and the tube that promises the most about your gums is the one now being asked about in a courtroom.</p>
+<p>That tube, the one that promises the most for your gums, is the one now in court.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-turning-point-v2.webp" alt="A woman of about 50 sets a red tube of Crest down on her bathroom vanity and looks off toward the window with a settled half smile" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-turning-point-v2.webp" alt="A woman of about 50 sets a red tube of Crest down on her bathroom vanity and looks off toward the window, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <table class="sta-table">
@@ -152,8 +148,8 @@ status: blocked-images
 <tr><td>Plastic beads found in gums</td><td>Specks stuck in the gum channel</td><td>Trish Walraven, dental hygienist, March 2014</td><td>She said herself she had no proof they caused gum disease</td></tr>
 <tr><td>Beads pulled from Crest</td><td>Gone by March 2016</td><td>Procter and Gamble, September 2014</td><td>The company chose it. No court made it</td></tr>
 <tr><td>Toothpaste written into a federal law</td><td>Plastic beads banned in rinse off products</td><td>Public Law 114-114, 28 December 2015</td><td>It covers beads only, nothing else in the tube</td></tr>
-<tr><td>Lawsuit over the gum line</td><td>A detergent in a gum treatment</td><td>Filed in California, 2 July 2026</td><td>A filing is a claim. No judge has ruled</td></tr>
-<tr><td>Benzene found in company sprays</td><td>Two recalls, three weeks apart</td><td>Procter and Gamble, November and December 2021</td><td>Different aisle. Not toothpaste</td></tr>
+<tr><td>Lawsuit over the gum line</td><td>A detergent in a gum treatment</td><td>Filed in California, 2 July 2026</td><td>A filing is a claim. No judge has ruled on the claims</td></tr>
+<tr><td>Benzene found in company sprays</td><td>Two recalls, 24 days apart</td><td>Procter and Gamble, November and December 2021</td><td>Different aisle. Not toothpaste</td></tr>
 </tbody>
 </table>
 
@@ -167,17 +163,13 @@ status: blocked-images
 
 <p>This is the company that put plastic in your mouth and called it color.</p>
 
-<p>It took a hygienist and an act of Congress to get it out.</p>
+<p>It took a hygienist to get it out. Then a law kept it out.</p>
 
 <p>Look at what else they were doing. On 23 November 2021 they pulled Old Spice and Secret sprays off the shelves. <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-specific-old-spice-and-secret-aerosol-spray-antiperspirants-and-old-spice">Their own recall notice says why: benzene. "Benzene is classified as a human carcinogen."</a></p>
 
-<p>Three weeks later, on 17 December, <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">they recalled their dry shampoo sprays for the same thing.</a> Pantene. Herbal Essences. Aussie.</p>
+<p>24 days later, on 17 December, <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">they recalled their dry shampoo sprays for the same thing.</a> Pantene. Herbal Essences. Aussie.</p>
 
 <p>Different aisle. Same company. Same year.</p>
-
-<p>You cannot redo the whole bathroom tonight. So pick the thing with the most hours on it.</p>
-
-<p>Two minutes, twice a day, for the rest of your life. Here that is the tube.</p>
 
 <h2 id="the-other-side">The case against my own story</h2>
 
@@ -202,24 +194,24 @@ status: blocked-images
 <p><strong>Both times it took somebody outside the company.</strong></p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-belonging-v2.webp" alt="Three women in their forties and fifties laughing together at a kitchen island with a loaf of bread and a bowl of clementines" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-belonging-v2.webp" alt="Three women in their forties and fifties laughing together at a kitchen island with bread and clementines" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-do-i-use">What do I keep in the bathroom instead?</h2>
 
 <p class="quick-answer">Quick answer: one tube, from people who answer the phone.</p>
 
-<p>I am not asking you to empty the cabinet tonight. Do the cheap thing. Change the one item that goes in your mouth twice a day.</p>
+<p>I am not asking you to empty the cabinet tonight. Change the one item that goes in your mouth twice a day.</p>
 
 <p>It is the smallest swap in the house, and the one with the most hours on it.</p>
 
-<p>The box will not help you either. Walraven said so in 2014 and it is still true. Throw the box away and the tube tells you almost nothing.</p>
+<p>In 2014 Walraven found the ingredients were not even on the tube. Only on the box you throw away.</p>
 
-<p>So the only question left is who made it, and whether they would tell you.</p>
+<p>So the real question is who made it, and whether they would tell you.</p>
 
 <p>That is why my family buys through a private membership store instead. We are the manufacturer. No middlemen, no markup. One name on it, and a person who picks up the phone.</p>
 
-<p>Do the small thing tonight. Go and look at the tube by your sink.</p>
+<p>Do the small thing tonight. Start with the tube by your sink.</p>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -239,7 +231,8 @@ Toxic Scorecard. Also, inside my Switch Circle private community, we talk about 
 solutions.</p>
 
 <p>Women come to me exhausted, in pain, stressed out, and on a list of prescriptions
-they never wanted. I have spent over 20 years helping women get off prescription medications. I help families reclaim their health.</p>
+they never wanted. I have spent over 20 years helping women get off prescription
+medications. I help families reclaim their health.</p>
 
 <p>We cannot stop them. I have stopped expecting to. However, we can stop walking
 into their stores. We are linking arms and together taking our control back. Control
@@ -251,34 +244,14 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://www.dentalbuzz.com/2014/03/04/crest-imbeds-plastic-in-our-gums/">Trish Walraven, dental hygienist, DentalBuzz, 4 March 2014</a>. She reports "these blue particles flush out of patients' gums for several months now," and summarises Crest's own site as putting the plastic there for color, decorative purposes only. She also states her own limit: "I am not saying that polyethylene is causing gum problems." What it means: the beads went in for looks.</li>
-<li><a href="https://www.foodsafetynews.com/2014/09/crests-parent-company-says-microbeads-in-toothpaste-will-be-removed/">Food Safety News, 19 September 2014</a>. Procter and Gamble said the beads would go from affected Crest products within six months and be "completely gone by March 2016." What it means: the fix followed the photographs.</li>
+<li><a href="https://www.dentalbuzz.com/2014/03/04/crest-imbeds-plastic-in-our-gums/">Trish Walraven, dental hygienist, DentalBuzz, 4 March 2014</a>. She reports "these blue particles flush out of patients' gums for several months now." She says Crest's own site listed it for color. Her words: "decorative purposes only." What it means: the beads went in for looks.</li>
+<li><a href="https://www.foodsafetynews.com/2014/09/crests-parent-company-says-microbeads-in-toothpaste-will-be-removed/">Food Safety News, 19 September 2014</a>. Procter and Gamble said the beads would be "completely gone by March 2016." What it means: the fix followed a hygienist's post.</li>
 <li><a href="https://www.govinfo.gov/content/pkg/PLAW-114publ114/html/PLAW-114publ114.htm">Microbead-Free Waters Act of 2015, Public Law 114-114, signed 28 December 2015</a>. The text bans "a rinse-off cosmetic that contains intentionally-added plastic microbeads" and adds that "'rinse-off cosmetic' includes toothpaste." What it means: a law had to name your toothpaste out loud.</li>
-<li><a href="https://courtlistener.com/docket/73577377/oliver-v-the-procter-gamble-co/">Oliver and Testone v. The Procter &amp; Gamble Co., filed 2 July 2026, Southern District of California</a>. The complaint alleges the Crest Pro-Health gum products hold sodium lauryl sulfate, "a harsh detergent and known irritant that, at the levels present in the Products, can damage gum and mouth tissue, inhibit wound healing, trigger inflammation." These are allegations. Nothing is decided. What it means: a judge is looking at it now.</li>
+<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.casd.861808/gov.uscourts.casd.861808.1.0.pdf">Oliver and Testone v. The Procter &amp; Gamble Co., filed 2 July 2026, Southern District of California</a>. The complaint calls the sodium lauryl sulfate in the Crest Pro-Health gum products "a harsh detergent and known irritant." These are allegations. Nothing is proven. What it means: a judge is looking at it now.</li>
 <li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-specific-old-spice-and-secret-aerosol-spray-antiperspirants-and-old-spice">Procter and Gamble recall announcement, 23 November 2021</a>. Old Spice and Secret aerosol antiperspirants, recalled "due to the presence of benzene detected." The notice states: "Benzene is classified as a human carcinogen." What it means: it was in the cans before anyone told you.</li>
-<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">Procter and Gamble recall announcement, 17 December 2021</a>. Dry shampoo and dry conditioner sprays under Pantene, Herbal Essences, Aussie and other names, pulled for benzene three weeks later. What it means: one batch is an accident. Two lines in a month is a supply chain.</li>
+<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/pg-issues-voluntary-recall-aerosol-dry-conditioner-spray-products-and-aerosol-dry-shampoo-spray">Procter and Gamble recall announcement, 17 December 2021</a>. Dry shampoo and dry conditioner sprays under Pantene, Herbal Essences, Aussie and other names, pulled for benzene 24 days later. What it means: two benzene recalls from one company in under a month.</li>
 </ul>
 </div>
-
-<div class="sta-cta">
-<h3>Three minutes, room by room</h3>
-<p>The free scan tells you what to change first and what to use instead. It is the smallest first step there is.</p>
-<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
-</div>
-
-<h2 id="faq">What else do people ask?</h2>
-
-<p><strong>Does Crest still have plastic beads in it?</strong> No. Procter and Gamble said they were out by March 2016. A federal law then banned plastic beads in rinse off products, and it names toothpaste. This part is closed.</p>
-
-<p><strong>What is sodium lauryl sulfate doing in toothpaste?</strong> It is a detergent. It makes the foam. The July 2026 filing calls it "a harsh detergent and known irritant" at the levels used in the Crest gum tubes.</p>
-
-<p><strong>Has a court found Crest unsafe?</strong> No. The case was filed on 2 July 2026 and that is all it is. Every line in it is an allegation until a judge or a jury says otherwise.</p>
-
-<p><strong>Is the whole ingredient list printed on the tube?</strong> Often not. The hygienist who found the beads in 2014 noted the full list was on the box, not the tube. Throw the box out and it is gone.</p>
-
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-freedom-v2.webp" alt="The same woman curled up in an armchair by a sunny curtained window, reading a book and smiling in warm golden light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
@@ -289,6 +262,26 @@ of our health and our finances.</p>
 <p>Two minutes tonight, and then it is handled for years.</p>
 
 <p>You stop waiting for a company to tell you first.</p>
+
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/iscresttoot-freedom-v2.webp" alt="The same woman curled up in an armchair by a sunny curtained window, with a book, smiling in warm golden light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
+
+<div class="sta-cta">
+<h3>Three minutes, room by room</h3>
+<p>The free scan tells you what to change first and what to use instead. It is the smallest first step there is.</p>
+<a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
+</div>
+
+<h2 id="faq">What else do people ask?</h2>
+
+<p><strong>Does Crest still have plastic beads in it?</strong> No. Procter and Gamble said they would be out by March 2016. A federal law then banned plastic beads in rinse off products, and it names toothpaste. This part is closed.</p>
+
+<p><strong>What is sodium lauryl sulfate doing in toothpaste?</strong> It is a detergent. It makes the foam. The July 2026 filing calls it "a harsh detergent and known irritant" at the levels used in the Crest gum tubes.</p>
+
+<p><strong>Has a court found Crest unsafe?</strong> No. The case was filed on 2 July 2026. Every line in it is an allegation until a judge or a jury says otherwise.</p>
+
+<p><strong>Is the whole ingredient list printed on the tube?</strong> Not always. The hygienist who found the beads in 2014 said the list was on the box, not the tube. Throw the box out and it is gone.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
@@ -354,13 +347,13 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Does Crest still have plastic beads in it?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. Procter and Gamble said the beads were out of Crest by March 2016. The Microbead-Free Waters Act of 2015 then banned intentionally added plastic microbeads in rinse-off cosmetics, and the law states that the term rinse-off cosmetic includes toothpaste."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No. Procter and Gamble said they would be out by March 2016. A federal law then banned plastic beads in rinse off products, and it names toothpaste. This part is closed."}},
   {"@type": "Question", "name": "What is sodium lauryl sulfate doing in toothpaste?",
-   "acceptedAnswer": {"@type": "Answer", "text": "It is a detergent that makes toothpaste foam. A class action filed on 2 July 2026 in the Southern District of California calls it a harsh detergent and known irritant at the levels used in Crest Pro-Health gum products. That is an allegation and has not been decided."}},
-  {"@type": "Question", "name": "Has a court found Crest toothpaste unsafe?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. The case brought by Sherrie Oliver and Michael Testone was filed on 2 July 2026 and is pending. Every claim in it is an allegation until a judge or a jury decides otherwise."}},
-  {"@type": "Question", "name": "Is the whole ingredient list printed on the toothpaste tube?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Often not. The dental hygienist who documented the plastic beads in 2014 noted that the full ingredient list appeared on the carton rather than on the tube itself."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "It is a detergent. It makes the foam. The July 2026 filing calls it \"a harsh detergent and known irritant\" at the levels used in the Crest gum tubes."}},
+  {"@type": "Question", "name": "Has a court found Crest unsafe?",
+   "acceptedAnswer": {"@type": "Answer", "text": "No. The case was filed on 2 July 2026. Every line in it is an allegation until a judge or a jury says otherwise."}},
+  {"@type": "Question", "name": "Is the whole ingredient list printed on the tube?",
+   "acceptedAnswer": {"@type": "Answer", "text": "Not always. The hygienist who found the beads in 2014 said the list was on the box, not the tube. Throw the box out and it is gone."}}
  ]
 }
 </script>

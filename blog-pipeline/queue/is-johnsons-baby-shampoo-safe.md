@@ -52,7 +52,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>You bought the yellow bottle for your own hair. It was the gentle one.</p>
+<p>You bought the yellow bottle for your own hair and makeup brushes. It was the gentle one.</p>
 <p>Gentle is a promise about your eyes. It is not a promise about the rest of the bottle. <strong><a href="https://www.govinfo.gov/content/pkg/USCOURTS-njd-2_09-cv-03317/pdf/USCOURTS-njd-2_09-cv-03317-0.pdf">A lawsuit said lab tests found formaldehyde in it. In 2010, a federal court let only claims about a banned chemical go on.</a></strong></p>
 <p>Johnson &amp; Johnson changed the formula after that. The smell is still one word on the list: Fragrance.</p>
 </div>
@@ -167,7 +167,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The court did not side with the buyers on everything. <a href="https://www.govinfo.gov/content/pkg/USCOURTS-njd-2_09-cv-03317/pdf/USCOURTS-njd-2_09-cv-03317-0.pdf">It threw out the formaldehyde and 1,4-dioxane claims.</a> Neither was banned in cosmetics, so it called any harm too "remote" to sue over.</p>
 
-<p>New York now caps 1,4-dioxane in shampoo at 1 part per million. <a href="https://dec.ny.gov/environmental-protection/help-for-businesses/household-personal-cosmetic-dioxane-limits">Makers who could not meet it asked the state for waivers.</a> No Johnson's baby product is on that list.</p>
+<p>New York now caps 1,4-dioxane in shampoo at 1 part per million. <a href="https://dec.ny.gov/environmental-protection/help-for-businesses/household-personal-cosmetic-dioxane-limits">Companies that could not meet it asked the state for waivers.</a> No Johnson's baby product is on that list.</p>
 
 <p>And I could not find one public test of today's bottle. I am not going to pretend there is one.</p>
 
@@ -179,13 +179,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h2 id="what-do-i-use">What do I use instead?</h2>
 
-<p class="quick-answer">Quick answer: get rid of the yellow bottle. Use a cleaner shampoo from a maker who answers for it.</p>
+<p class="quick-answer">Quick answer: get rid of the yellow bottle. Use a cleaner shampoo from a manufacturer who answers for it.</p>
 
 <p>You are not the first to ask what is in this bottle. Two buyers asked a court. Reporters asked J&amp;J, and in the end J&amp;J changed it.</p>
 
 <p>So get rid of the yellow bottle.</p>
 
-<p>Use a cleaner shampoo instead. Buy it from a maker that makes it start to finish and answers for every drop.</p>
+<p>Use a cleaner shampoo instead. Buy it from a manufacturer that makes it start to finish and answers for every drop.</p>
 
 <p>I will not send you to the store to squint at tiny print. The thing you most want to know is the one thing the bottle never lists.</p>
 
@@ -239,11 +239,11 @@ of our health and our finances.</p>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
-<p>It is a Sunday night in November. You towel your hair dry by the warm lamp. The towel smells like clean hair and nothing else.</p>
+<p>It is a sunny Saturday afternoon. You wash your makeup brushes at the sink and laugh. The bottle beside you is plain white.</p>
 
-<p>You do not wonder about the bottle by the tub, because you know who made it.</p>
+<p>You do not wonder what is in it, because you know who made it.</p>
 
-<p>Finally, you are the one who asks. You ask before it ever touches your head.</p>
+<p>Finally, you are the one who asks. You ask before it ever touches your face.</p>
 
 <div class="sta-cta">
 <h3>Start with the bottle in your shower</h3>

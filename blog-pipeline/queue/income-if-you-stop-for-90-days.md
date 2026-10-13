@@ -53,7 +53,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 <h2 id="the-short-answer">The short answer</h2>
 <p>For most work, the money stops the day you stop.</p>
 <p>A job can hold your seat. Federal law gives you up to 12 weeks if you qualify, and that leave is unpaid. If you are sick for 90 days, Social Security disability will not cover it.</p>
-<p>So ads for "passive income" land hard. <strong><a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers">Publishing.com ran them, the FTC says. In July 2026 the FTC made a $1.5 million order against it final.</a></strong> The FTC alleged most buyers never made the income its ads promised. The company did not admit or deny it.</p>
+<p>So ads for "passive income" land hard. <strong><a href="https://search.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers">Publishing.com ran them, the FTC says. In July 2026 the FTC made a $1.5 million order against it final.</a></strong> The FTC alleged most buyers never made the income its ads promised. The company did not admit or deny it.</p>
 <p>Try the 90 day test instead. Stop on paper. What is still yours when you come back?</p>
 </div>
 
@@ -78,7 +78,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 
 <p class="quick-answer">Quick answer: it stops. Federal law can hold a job for 12 weeks, and that leave is unpaid.</p>
 
-<p>Start with a job. <a href="https://www.ecfr.gov/current/title-29/section-825.100">The federal family leave rule gives you up to 12 workweeks a year</a>, if you qualify. It covers caring for a sick parent, or yourself. It calls that time "job-protected, unpaid leave."</p>
+<p>Start with a job. <a href="https://www.law.cornell.edu/cfr/text/29/825.100">The federal family leave rule gives you up to 12 workweeks a year</a>, if you qualify. It covers caring for a sick parent, or yourself. It calls that time "job-protected, unpaid leave."</p>
 
 <p>So your desk waits. Your paycheck does not, unless you saved up paid leave first.</p>
 
@@ -89,7 +89,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 <span class="micro">You can always say no.</span>
 </div>
 
-<p>Say it is your own body that stops you. <a href="https://www.ecfr.gov/current/title-20/section-404.315">Social Security's rules say you must be disabled for "5 full consecutive months"</a> before disability benefits start, in most cases. And <a href="https://www.ecfr.gov/current/title-20/section-404.1505">the illness must be expected to last a year, or end in death</a>. Ninety days does not count.</p>
+<p>Say it is your own body that stops you. <a href="https://www.law.cornell.edu/cfr/text/20/404.315">Social Security's rules say you must be disabled for "5 full consecutive months"</a> before disability benefits start, in most cases. And <a href="https://www.law.cornell.edu/cfr/text/20/404.1505">the illness must be expected to last a year, or end in death</a>. Ninety days does not count.</p>
 
 <p>If you run your own thing, you know this one already. You are the business. The phone rings and nobody picks up.</p>
 
@@ -105,7 +105,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 
 <p>Publishing.com sold courses on writing e-books and audiobooks to sell on Amazon and other sites. Since 2018, the FTC says, thousands bought them.</p>
 
-<p>The pitch often started with a free video, the FTC says. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2423055c4836publishingcomfinalcomplaint.pdf">The FTC's complaint quotes one from May 2024:</a> "One upload away from, say, leaving your 9 to 5 job forever."</p>
+<p>The pitch often started with a free video, the FTC says. <a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2423055c4836publishingcomfinalcomplaint.pdf">The FTC's complaint quotes one from May 2024:</a> "One upload away from, say, leaving your 9 to 5 job forever."</p>
 
 <p>Hear that from the hospital parking lot. It sells you the thing you are scared you do not have.</p>
 
@@ -160,7 +160,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 
 <p>Switch to America is a private membership store. We are the manufacturer, so there is no middleman and no markup.</p>
 
-<p>I will not hand you a number to expect. Nobody honest can. The FTC's first charge was about income claims. It says Publishing.com could not back them up.</p>
+<p>I will not hand you a number to expect. Nobody honest can. The FTC's first charge was about income claims. It says they were false or not backed up.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/incomeifyou-belonging-v1.webp" alt="Two women in their fifties walking between rows of vines on a sunny hillside, both laughing, hands loose at their sides" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -216,12 +216,12 @@ our finances.</p>
 <div class="sta-proof">
 <h3>Where to check me</h3>
 <ul>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers">The FTC's announcement of the final order, July 2, 2026</a>. $1.5 million, and Publishing.com must back up any income claim from now on. Ask any seller for that same proof.</li>
-<li><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2423055c4836publishingcomfinalcomplaint.pdf">The FTC's complaint, issued July 1, 2026</a>. The 9 to 5 video, the $1,995 course, the $9,800 add-on and the 25,000 word refund rule. These are allegations. Get any refund rule in writing before you pay.</li>
-<li><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2423055c4836publishingcomfinalorder.pdf">The final order</a>. Publishing.com neither admitted nor denied the charges and agreed to pay $1,500,000. It ended in a payment, not a court ruling, so every charge stays an allegation.</li>
-<li><a href="https://www.ecfr.gov/current/title-29/section-825.100">The federal family leave rule</a>. Up to 12 workweeks of "job-protected, unpaid leave." Your seat can wait, so plan the money side yourself.</li>
-<li><a href="https://www.ecfr.gov/current/title-20/section-404.315">The Social Security disability rule</a>. "5 full consecutive months" before benefits, in most cases.</li>
-<li><a href="https://www.ecfr.gov/current/title-20/section-404.1505">Social Security's definition of disability</a>. "Not less than 12 months," or expected to end in death.</li>
+<li><a href="https://search.ftc.gov/news-events/news/press-releases/2026/07/ftc-approves-final-order-against-publishingcom-settling-allegations-it-misled-consumers">The FTC's announcement of the final order, July 2, 2026</a>. $1.5 million, and Publishing.com must back up any income claim from now on. Ask any seller for that same proof.</li>
+<li><a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2423055c4836publishingcomfinalcomplaint.pdf">The FTC's complaint, issued July 1, 2026</a>. The 9 to 5 video, the $1,995 course, the $9,800 add-on and the 25,000 word refund rule. These are allegations. Get any refund rule in writing before you pay.</li>
+<li><a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2423055c4836publishingcomfinalorder.pdf">The final order</a>. Publishing.com neither admitted nor denied the charges and agreed to pay $1,500,000. It ended in a payment, not a court ruling, so every charge stays an allegation.</li>
+<li><a href="https://www.law.cornell.edu/cfr/text/29/825.100">The federal family leave rule</a>. Up to 12 workweeks of "job-protected, unpaid leave." Your seat can wait, so plan the money side yourself.</li>
+<li><a href="https://www.law.cornell.edu/cfr/text/20/404.315">The Social Security disability rule</a>. "5 full consecutive months" before benefits, in most cases.</li>
+<li><a href="https://www.law.cornell.edu/cfr/text/20/404.1505">Social Security's definition of disability</a>. "Not less than 12 months," or expected to end in death.</li>
 </ul>
 <p class="micro">Every figure above comes from these six documents.</p>
 </div>
@@ -246,7 +246,7 @@ our finances.</p>
 
 <p>Here is what I want for you, whether or not we ever speak.</p>
 
-<p>You know what the next 90 days would cost, because you wrote it down. If your mother ever needs you for a season, you can sit with her upstairs. The math is done, on the pad in your kitchen drawer.</p>
+<p>You know what the next 90 days would cost, because you wrote it down. If your mother ever needs you for a season, you can sit right beside her. The math is done, on the pad in your kitchen drawer.</p>
 
 <p>You become the one who knows what is still yours when you step away.</p>
 
