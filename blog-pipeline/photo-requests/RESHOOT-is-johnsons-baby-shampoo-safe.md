@@ -2,7 +2,8 @@
 type: reshoot
 slug: is-johnsons-baby-shampoo-safe
 raised: 2026-10-02
-status: open
+status: done
+closed: 2026-10-13
 blocks: publication
 ---
 
@@ -22,3 +23,6 @@ records only; nobody opened or graded an image.
 ## To close
 Deliver the frames the 2026-08-26 correction lists, update photos-completed, swap the image URLs in
 `blog-pipeline/queue/is-johnsons-baby-shampoo-safe.md`, then set this file to `status: done`.
+
+## Closed 2026-10-13
+Whole set reshot as isjohnsonsb-*-v2.webp: one woman of about 52 in her own American bathroom, a two women kitchen frame, no babies, toddlers or men. photos-completed/2026-08-21.md updated, queue post image URLs and alt text swapped to v2.

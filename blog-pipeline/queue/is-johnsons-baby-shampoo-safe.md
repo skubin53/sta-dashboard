@@ -5,7 +5,7 @@ title: Is Johnson's Baby Shampoo Safe? What Is in the Yellow Bottle (2026)
 slug: is-johnsons-baby-shampoo-safe
 keyword: is johnson's baby shampoo safe
 category: Personal Care
-cover: https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-hero-v1.webp
+cover: https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-hero-v2.webp
 meta_description: A lawsuit said lab tests found formaldehyde in Johnson's Baby Shampoo. J&J changed the formula later. Here is what is in the yellow bottle now.
 status: ready
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
@@ -98,7 +98,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p><a href="https://ntp.niehs.nih.gov/sites/default/files/ntp/roc/content/profiles/formaldehyde.pdf">A US cancer report lists formaldehyde as "known to be a human carcinogen."</a> That means a known cause of cancer in people.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-villain-v1.webp" alt="A yellow shampoo bottle alone on the edge of a bathtub, water beaded on it, in an empty bathroom under flat cool overhead light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-villain-v2.webp" alt="The yellow baby shampoo bottle alone on the edge of a white bathtub at night, water beaded on it, under flat cold overhead light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="why-the-us-bottle">Why did the US bottle keep it?</h2>
@@ -152,7 +152,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </table>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-turning-point-v1.webp" alt="An adult with a mustard towel on one shoulder holds the yellow bottle low by the knee beside a small child in a deep teal towel, with a settled half smile and eyes looking across the room" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-turning-point-v2.webp" alt="A woman in a teal top sets the yellow bottle down on her bathroom vanity and looks off toward the window with a settled half smile" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="the-other-side">What does the company say back?</h2>
@@ -174,7 +174,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>What I can show you is the order things happened in. The lawsuit and the news stories came first. The new formula came after.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-belonging-v1.webp" alt="Two women sitting on a kitchen floor listening to each other, two small children and everyday mess between them, mugs up on the counter" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-belonging-v2.webp" alt="Two women talking at a kitchen island, one telling a story while the other listens and smiles" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-do-i-use">What do I use instead?</h2>
@@ -234,7 +234,7 @@ of our health and our finances.</p>
 </div>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-freedom-v1.webp" alt="An adult towel drying a small child's hair on a bed, both laughing, teal and mustard bedding in warm lamplight" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-freedom-v2.webp" alt="A woman laughing as she washes her makeup brushes at a sunny bathroom sink, a plain white pump bottle beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
@@ -289,7 +289,7 @@ of our health and our finances.</p>
    "@type": "Article",
    "headline": "Is Johnson's Baby Shampoo Safe? What Is in the Yellow Bottle (2026)",
    "description": "A lawsuit said lab tests found formaldehyde in Johnson's Baby Shampoo. J&J changed the formula later. Here is what is in the yellow bottle now.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-hero-v1.webp",
+   "image": "https://scan.ismyhometoxic.com/blog-images/isjohnsonsb-hero-v2.webp",
    "datePublished": "2026-10-10",
    "dateModified": "2026-10-10",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-johnsons-baby-shampoo-safe"},
