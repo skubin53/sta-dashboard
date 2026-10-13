@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-04
+date: 2026-10-12
 title: How Much Protein Do You Need After 50? (2026)
 slug: how-much-protein-after-50
 keyword: how much protein do you need after 50
@@ -49,13 +49,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 4, 2026<br><span style="font-size:.92em;">Published October 4, 2026 &middot; Last updated October 4, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 12, 2026<br><span style="font-size:.92em;">Published October 12, 2026 &middot; Last updated October 12, 2026</span></p>
 
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You stand at the stove and wonder if you eat enough protein. And if you cook for your mom or dad, you wonder about them too.</p>
-<p><strong><a href="https://www.health.harvard.edu/blog/how-much-protein-do-you-need-every-day-201506188096">The US minimum, called the RDA, is 0.8 grams of protein per kilogram. At 150 pounds, that is about 54 grams a day.</a></strong> <a href="https://cdn.realfood.gov/DGA.pdf">The new US Dietary Guidelines, from January 2026, aim for 1.2 to 1.6 grams per kilogram. That is about 82 to 109 grams.</a> <a href="https://doi.org/10.1016/j.jamda.2013.05.021">A group of experts on aging looked at people over 65. They say at least 1.0 to 1.2.</a> That is about 68 to 82 grams.</p>
+<p><strong><a href="https://www.health.harvard.edu/blog/how-much-protein-do-you-need-every-day-201506188096">The US minimum, called the RDA, is 0.8 grams of protein per kilogram. At 150 pounds, that is about 54 grams a day.</a></strong> <a href="https://cdn.realfood.gov/DGA.pdf">The new US Dietary Guidelines, from January 2026, aim for 1.2 to 1.6 grams per kilogram. That is about 82 to 109 grams.</a> <a href="https://doi.org/10.1016/j.jamda.2013.05.021">A group of experts on aging looked at people over 65. They say at least 1.0 to 1.2 grams per kilogram.</a> That is about 68 to 82 grams.</p>
 <p>So the minimum is low, and the newer advice is higher. And the beef on your plate? Just four companies buy most of the young cattle it comes from.</p>
 </div>
 
@@ -108,7 +108,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>At 1.0 gram per kilogram, she lands at about 68 grams a day. At 1.2, it is about 82 grams.</p>
 
-<p>That is about 14 to 28 grams more than the RDA, and at or under the new US goal. It is a study group's guideline, not a prescription for her.</p>
+<p>That is about 14 to 28 grams more than the RDA, and at or under the new US goal.</p>
 
 <h3>Who should not eat more protein?</h3>
 
@@ -118,7 +118,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>For everyone else at your table, the next question is where that protein comes from.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-villain-v1.webp" alt="Rows of plastic-wrapped ground beef trays in a supermarket meat case under flat store lighting, a woman's hand resting on one pack" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-villain-v1.webp" alt="A woman in a denim shirt at a supermarket meat case, her hand resting on one of the plastic-wrapped ground beef trays under flat store lighting" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <h2 id="where-beef-comes-from">Where does most store beef come from?</h2>
 
@@ -222,7 +222,7 @@ of our health and our finances.</p>
 <li><a href="https://www.ers.usda.gov/amber-waves/2024/january/concentration-in-u-s-meatpacking-industry-and-how-it-affects-competition-and-cattle-prices">USDA Economic Research Service, January 2024</a>. The four largest firms handle 85 percent of all steer and heifer purchases.</li>
 <li><a href="https://www.thecattlesite.com/news/tyson-cargill-to-pay-87-5m-in-beef-price-fixing-case">Tyson and Cargill consumer settlement, October 2025</a>. Tyson agreed to pay $55 million and Cargill $32.5 million to shoppers who accused them of holding back supply to raise beef prices. <a href="https://www.meatpoultry.com/articles/33588-judge-approves-tyson-cargill-beef-price-fixing-settlements">A federal judge in Minnesota gave final approval on May 27, 2026.</a> The companies denied any wrongdoing.</li>
 <li><a href="https://www.thebeefsite.com/news/jbs-to-pay-83-5-million-in-latest-beef-price-fixing-settlement">JBS settlement with ranchers and other plaintiffs, filed January 31, 2025</a>. JBS agreed to pay $83.5 million to settle claims that it worked with other packers to curb beef supply and lift prices. JBS denied wrongdoing.</li>
-<li><a href="https://www.nbcnews.com/business/consumer/trump-doj-meatpacker-investigation-price-fixing-beef-prices-rcna242671">NBC News, November 7, 2025</a>. The Justice Department said its investigation of the biggest meatpackers was "underway." <a href="https://www.justice.gov/opa/video/acting-attorney-blanche-announces-antitrust-investigations-meatpacking-operations">In May 2026, the department announced antitrust investigations into meatpacking.</a> The industry has denied claims of collusion, and an investigation is not a finding of guilt.</li>
+<li><a href="https://www.nbcnews.com/business/consumer/trump-doj-meatpacker-investigation-price-fixing-beef-prices-rcna242671">NBC News, November 7, 2025</a>. Attorney General Pam Bondi said a Justice Department investigation of the biggest meatpackers was "underway." <a href="https://www.justice.gov/opa/video/acting-attorney-blanche-announces-antitrust-investigations-meatpacking-operations">In May 2026, the department announced antitrust investigations into meatpacking.</a> The industry has denied claims of collusion, and an investigation is not a finding of guilt.</li>
 </ul>
 </div>
 
@@ -234,7 +234,7 @@ of our health and our finances.</p>
 
 <h2 id="faq">What else do people ask?</h2>
 
-<p><strong>Is the higher number for me or for my mom?</strong> PROT-AGE wrote its number for people over 65, so that one is for your mom. The 2026 US guidelines set 1.2 to 1.6 grams per kilogram for all adults. That is about 0.54 to 0.73 grams per pound. The US minimum stays at 0.8 grams per kilogram, about 0.36 per pound.</p>
+<p><strong>Is the higher number for me or for my mom?</strong> PROT-AGE wrote its number for people over 65, so that one is for your mom. The 2026 US guidelines aim for 1.2 to 1.6 grams per kilogram, adjusted to your calorie needs. That is about 0.54 to 0.73 grams per pound. The US minimum stays at 0.8 grams per kilogram, about 0.36 per pound.</p>
 
 <p><strong>Can my dad eat more protein if he has kidney disease?</strong> Not without his kidney doctor. PROT-AGE says people with severe kidney disease who are not on dialysis may need to limit protein.</p>
 
@@ -252,7 +252,7 @@ of our health and our finances.</p>
 
 <p>That is the whole change. It took one evening.</p>
 
-<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-freedom-v1.webp" alt="A woman setting a simple beef dinner in front of her mother at a warm kitchen table on an autumn evening, both smiling" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/howmuchprot-freedom-v1.webp" alt="A woman setting a simple beef dinner in front of her mother at a warm kitchen island, both smiling" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
@@ -278,8 +278,8 @@ of our health and our finances.</p>
    "headline": "How Much Protein Do You Need After 50? (2026)",
    "description": "The US protein minimum is 0.8 grams per kilogram. The 2026 US guidelines and aging experts advise more. Here it is in pounds, and where beef comes from.",
    "image": "https://scan.ismyhometoxic.com/blog-images/howmuchprot-hero-v1.webp",
-   "datePublished": "2026-10-04",
-   "dateModified": "2026-10-04",
+   "datePublished": "2026-10-12",
+   "dateModified": "2026-10-12",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/how-much-protein-after-50"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
@@ -317,7 +317,7 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Is the higher number for me or for my mom?",
-   "acceptedAnswer": {"@type": "Answer", "text": "PROT-AGE wrote its number for people over 65, so that one is for your mom. The 2026 US guidelines set 1.2 to 1.6 grams per kilogram for all adults. That is about 0.54 to 0.73 grams per pound. The US minimum stays at 0.8 grams per kilogram, about 0.36 per pound."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "PROT-AGE wrote its number for people over 65, so that one is for your mom. The 2026 US guidelines aim for 1.2 to 1.6 grams per kilogram, adjusted to your calorie needs. That is about 0.54 to 0.73 grams per pound. The US minimum stays at 0.8 grams per kilogram, about 0.36 per pound."}},
   {"@type": "Question", "name": "Can my dad eat more protein if he has kidney disease?",
    "acceptedAnswer": {"@type": "Answer", "text": "Not without his kidney doctor. PROT-AGE says people with severe kidney disease who are not on dialysis may need to limit protein."}},
   {"@type": "Question", "name": "Is store beef unsafe to eat?",
