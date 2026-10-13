@@ -7,7 +7,8 @@ keyword: what happens if i quit
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/whathappens-hero-v1.webp
 meta_description: Amazon's own contract says the shoppers you send are its customers, not yours. What happens the day you quit, and what you still keep.
-status: needs-review
+status: retired
+retired_note: "Shannon 2026-10-13: What happens if you quit - not a good blog post to write. It's confusing to the simple mind."
 review_note: "Shannon to decide: the post says publicly that if a builder cancels, the customer account stays with the company (source: internal note on reassignment, not a public document); three live builder posts (Sipology, Forever Living) say the customer record is yours to export. Also: the 2011 Wayback citation hit a 429 rate limit at gate time (re-curl before publish)."
 vault_checked: [Affiliate-Footprint-Targeting, Recurring-Income-Offer, Builder-Target-Segments, North-Star]
 ---
