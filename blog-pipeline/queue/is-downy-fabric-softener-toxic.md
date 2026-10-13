@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, downy]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 12, 2026<br><span style="font-size:.92em;">Published October 12, 2026 &middot; Last updated October 12, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 12, 2026<br><span style="font-size:.92em;">Published October 12, 2026 &middot; Last updated October 12, 2026</span></p>
 
 <p>You pull a warm towel out of the dryer and hold it to your face. That April Fresh smell is made to stay put.</p>
 

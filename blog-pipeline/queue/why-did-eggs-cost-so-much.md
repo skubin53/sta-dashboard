@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>

@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 16, 2026<br><span style="font-size:.92em;">Published September 16, 2026 &middot; Last updated September 16, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; September 16, 2026<br><span style="font-size:.92em;">Published September 16, 2026 &middot; Last updated September 16, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>

@@ -47,7 +47,7 @@ vault_checked: [North-Star, burned-out, capped-corporate, Compliance-Watchdog, R
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 6, 2026<br><span style="font-size:.92em;">Published October 6, 2026 &middot; Last updated October 6, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 6, 2026<br><span style="font-size:.92em;">Published October 6, 2026 &middot; Last updated October 6, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -296,7 +296,7 @@ our finances.</p>
    "worksFor": {
     "@id": "https://switchtoamerica.com#org"
    },
-   "url": "https://switchtoamerica.com"
+   "url": "https://theshannonnicole.com"
   },
   {
    "@type": "Organization",

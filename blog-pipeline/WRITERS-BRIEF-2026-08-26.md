@@ -165,7 +165,7 @@ They live in the Shannon's Advice box and repeat on every post, so an edit here 
 everywhere. `CHECKLIST` gate **A9a** locks the first two and `SHANNONS-ADVICE-SPEC.md` says
 Shannon confirmed them and they **must not be quietly softened.**
 
-1. *"I have spent the last 15 years helping women get off prescription medications."*
+1. *"I have spent over 20 years helping women get off prescription medications."*
    Confirmed three times. It is **not** the never-stop-a-medicine rule: that rule is about telling
    THE READER to come off a prescription, and this is Shannon, first person, describing her own
    work. **The not-a-doctor disclaimer is BANNED** alongside it. Never add one.

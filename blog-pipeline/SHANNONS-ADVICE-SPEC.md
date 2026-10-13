@@ -70,7 +70,7 @@ must not quietly soften it.
 EVER."* No disclaimer, no softer version of one, nowhere in any Switch to America copy.
 
 What the line must never become is an instruction to the reader. It is a statement about
-Shannon's own work over fifteen years. Keep the subject as Shannon. Never write a sentence
+Shannon's own work over 20 years. Keep the subject as Shannon. Never write a sentence
 telling a reader to stop taking something, and never give a dose. That is the only line, and
 it gets crossed by writing a command, not by dropping a disclaimer.
 
@@ -251,7 +251,7 @@ word for word.
 From the lab-grown beef post, 2026-08-09:
 
 > I am not going to soften this. Growing meat in a steel tank and selling it to families is
-> one of the grossest things I have watched happen in thirty-four years of paying attention
+> one of the grossest things I have watched happen in all my years of paying attention
 > to food, **and it is going to harm people. I will put my name on that.**
 >
 > [Seven states have banned it](url). It went on a shelf in California on August 1 anyway

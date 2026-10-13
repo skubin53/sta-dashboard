@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 5, 2026<br><span style="font-size:.92em;">Published October 5, 2026 &middot; Last updated October 5, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 5, 2026<br><span style="font-size:.92em;">Published October 5, 2026 &middot; Last updated October 5, 2026</span></p>
 
 <p>The dog had an accident on the carpet again. You got down on your knees with the windows shut. You sprayed it with your face a foot from the wet spot.</p>
 

@@ -218,7 +218,7 @@ Gates run in order: **0 (voice) -> A (content) -> B (technical) -> C (images) ->
       post, so an edit here repeats everywhere.
       - *"I have spent over 20 years helping women get off prescription medications."*
         Shannon's own line, confirmed three times. The subject stays **Shannon and her
-        fifteen years**, never a command to the reader. **The not-a-doctor disclaimer is
+        over 20 years**, never a command to the reader. **The not-a-doctor disclaimer is
         BANNED** (Shannon 2026-08-11: "NEVER say this ever again. EVER."). Never add one.
       - *"They are poison centers meant to do you and your family harm."* Shannon removed
         the "in my opinion" frame on 2026-08-11 and **that was deliberate, do not put it
