@@ -241,7 +241,7 @@ our finances.</p>
 <p>Some will and some will not. Nobody honest can promise you either way. What you can check today is whether they are yours on paper, or the platform's.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/incomeifyou-freedom-v1.webp" alt="The same woman barefoot at the edge of the sea at golden hour, shoes in one hand, hair loose, laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/incomeifyou-freedom-v2.webp" alt="The same woman laughing with her mother on the back porch steps of her home at golden hour, tomato plants and a lemon tree in the garden behind them" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <p>Here is what I want for you, whether or not we ever speak.</p>

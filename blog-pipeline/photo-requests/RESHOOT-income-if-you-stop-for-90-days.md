@@ -2,7 +2,8 @@
 type: reshoot
 slug: income-if-you-stop-for-90-days
 raised: 2026-10-01
-status: open
+status: done
+closed: 2026-10-13
 blocks: publication
 frames: 1
 replaces: incomeifyou-freedom-v1 (photos-completed/income-if-you-stop-for-90-days.md)
@@ -39,3 +40,6 @@ Update photos-completed/income-if-you-stop-for-90-days.md with the v2 frame, and
 `blog-pipeline/queue/income-if-you-stop-for-90-days.md` must swap
 `incomeifyou-freedom-v1.webp` for `incomeifyou-freedom-v2.webp` (src and alt) before it can
 publish. Close this file (status: done) only when both are done.
+
+## Closed 2026-10-13
+incomeifyou-freedom-v2 delivered: her and her mother laughing on the back porch steps at golden hour, no water. photos-completed updated and the queue post src and alt swapped to v2.
