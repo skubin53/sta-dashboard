@@ -1,15 +1,14 @@
 ---
 day: new
-date: 2026-09-22
-title: Why Did Eggs Cost So Much? (2026)
+date: 2026-11-02
+title: Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)
 slug: why-did-eggs-cost-so-much
 keyword: why are eggs so expensive
 category: Food
 cover: https://scan.ismyhometoxic.com/blog-images/whydideggsc-hero-v1.webp
-meta_description: In June 2026 the Justice Department accused the largest egg producer, Cal-Maine Foods, of helping push up the daily price that sets what your store pays for eggs. Here is what the complaint says.
-status: needs-review
-review_note: "2026-10-04: Photo Claude delivered the 5-frame set 10/3; photos placed (hero = cover, villain, turning point, belonging, freedom; the receipt slot had no photo and was removed). Written 9/22 before current standards: fails 6 gates (reading grade 6.6, 14.4 words per sentence, meta 195 chars, 2 internal links, 2 citations, vault names) + voice V1. Needs a rewrite pass through write-photo-ready-posts.js (photos: why-did-eggs-cost-so-much) before it can publish."
-vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
+meta_description: Eggs hit $6.23 a dozen in 2025. The Justice Department says Cal-Maine and two others pushed the price up. None admitted it. Where to buy instead.
+status: ready
+vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 ---
 
 <style>
@@ -49,115 +48,132 @@ vault_checked: [BLOG-RUNBOOK, COPYWRITING-CANON, STORY-FRAMEWORK]
 </style>
 
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 22, 2026<br><span style="font-size:.92em;">Published September 22, 2026 &middot; Last updated September 22, 2026</span></p>
-
-<p>You stood at the egg case, did math you never used to do, and put the carton back on the shelf.</p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>You were not imagining it, and it was not only the bird flu.</p>
-<p><strong><a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">In June 2026 the Justice Department accused the largest egg producer in the country, Cal-Maine Foods, of working with two other producers to push up the daily price that sets what your store pays for eggs.</a></strong></p>
-<p>A real shortage was already making eggs cost more. What the complaint says three producers did was stack more on top of that, on purpose.</p>
+<p>Eggs were the cheap dinner. Then, in March 2025, a dozen cost $6.23 on average.</p>
+<p><strong><a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">In June 2026, the Justice Department sued Cal-Maine, the biggest egg company in America, and two others.</a></strong> It says they worked together to push up the daily egg price your store pays. All three settled. None of them admitted it.</p>
+<p>The bird flu was real. By the government's account, these three made it cost you more.</p>
 </div>
 
 <div class="sta-toc">
 <h2 id="what-this-guide-answers">What this guide answers</h2>
 <ol>
-<li><a href="#why-so-expensive">Why did eggs cost so much in 2026?</a></li>
-<li><a href="#was-it-bird-flu">Wasn't it just the bird flu?</a></li>
-<li><a href="#how-bids-move-price">How does a bid on a screen change my price?</a></li>
-<li><a href="#the-other-side">The case against my own story</a></li>
-<li><a href="#what-do-i-buy">What can I buy instead of grocery store eggs?</a></li>
+<li><a href="#who-pushed">Who pushed up the price of your eggs?</a></li>
+<li><a href="#how-it-worked">What are they accused of doing?</a></li>
+<li><a href="#bird-flu">Wasn't it just the bird flu?</a></li>
+<li><a href="#the-other-side">Didn't Cal-Maine deny all of it?</a></li>
+<li><a href="#what-instead">Where do you get eggs you can trust?</a></li>
 </ol>
 </div>
 
 <div class="sta-cta">
-<h3>What else in your kitchen is not what you were told?</h3>
-<p>I hand out this scan free because I would rather you check your own shelves than take my word for any of this. It takes 60 seconds, no credit card and no phone call, and it hands you back the short list of what to deal with first.</p>
+<h3>Eggs are one carton. What about the rest of your kitchen?</h3>
+<p>The free 3 minute scan goes room by room and tells you what to swap first. You give a first name and a cell, and your score comes by one text. Nobody calls. It is free because I would rather you see your own shelves than take my word for it.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
-<h2 id="why-so-expensive">Why did eggs cost so much in 2026?</h2>
+<h2 id="who-pushed">Who pushed up the price of your eggs?</h2>
 
-<p class="quick-answer">Quick answer: the country's biggest egg producer is accused of rigging the daily number that sets the price, on top of a real shortage.</p>
+<p class="quick-answer">Quick answer: the Justice Department says Cal-Maine, Versova and Hickman's did, from June 2022 to March 2025.</p>
 
-<p>You already knew eggs got expensive. What you did not get told is that the price may not have been honest.</p>
+<p>You stood at the egg case longer than you meant to. Carton in your hand. Doing math you never used to do.</p>
 
-<p>On June 29, 2026, the United States and 17 state attorneys general took Cal-Maine Foods to federal court in the Northern District of Iowa. <a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">The Justice Department announced it the next day.</a></p>
+<p>You want a cheap, easy dinner on the nights your knees hurt. Nothing wrong with wanting that. The problem is what three egg companies are accused of doing to the price.</p>
 
-<p>The complaint says Cal-Maine, with two producers named Versova and Hickman's Egg Ranch, agreed to push up a daily price quotation, the number your store and nearby restaurants use to price billions of eggs a year.</p>
+<p><a href="https://www.justice.gov/atr/media/1450281/dl">On June 29, 2026, the United States and 17 states sued them in federal court in Iowa.</a></p>
+
+<p><a href="https://www.calmainefoods.com/about-us">Cal-Maine calls itself "the largest egg company in the United States."</a> Its brands include Farmhouse Eggs.</p>
+
+<p>By the complaint's account, the price you paid did not come only from the bird flu. Part of it, the complaint says, came from a plan.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-villain-v1.webp" alt="A grey carton of brown eggs alone on a butcher-block kitchen counter in cold, flat early light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-villain-v1.webp" alt="A gray carton of brown eggs alone on a butcher-block kitchen counter in cold, flat early light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
-<h2 id="was-it-bird-flu">Wasn't it just the bird flu?</h2>
+<h2 id="how-it-worked">What are they accused of doing?</h2>
 
-<p class="quick-answer">Quick answer: the bird flu was real, and the accusation is that the pricing squeezed you on top of it.</p>
+<p class="quick-answer">Quick answer: the complaint says they made it look like lots of buyers wanted eggs. They did it right before the daily price list came out.</p>
 
-<p>You thought it was the bird flu. So did I. It was real, and it pushed a price up all by itself.</p>
+<p>A company called Urner Barry puts out a daily egg price list. <a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">The Justice Department says billions of eggs a year are sold at prices based on it.</a></p>
 
-<p>But the Justice Department is not saying the shortage was invented. It is saying <a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">three producers allegedly used a real shortage as cover to push the price higher than the shortage alone would have.</a></p>
+<p>The complaint says when that list goes up, stores pay more for eggs. And then, it says, so do you.</p>
 
-<p>That is the part that got to me. You were already paying more for a real reason, and the claim is you paid more still.</p>
+<p>Big egg companies buy eggs too, not just sell them. The list goes up when lots of buyers seem to want eggs. The complaint says these three faked that.</p>
 
-<h2 id="how-bids-move-price">How does a bid on a screen change my price?</h2>
+<p>It says they put in piles of offers to buy eggs, called bids. Those bids went in during the hours before the list came out. Some were unlikely to ever become a real sale.</p>
 
-<p class="quick-answer">Quick answer: the store price follows a daily quotation, and the complaint says the producers crowded that quote with bids to drag it up.</p>
+<p>It quotes their own emails and texts. In December 2022, Hickman's CEO wrote to the others: "Please consider posting strong bids, early and often." That day, it says, the list went up in every region.</p>
 
-<p>Your store does not haggle over every egg. It leans on a daily price quotation put out by a company called Urner Barry, the going rate for eggs that day.</p>
+<p>In December 2024, Cal-Maine's former CEO texted Hickman's CEO three words: "Let it rip." After that, the complaint says, they put in more bids each day.</p>
 
-<p>The complaint says the producers agreed to crowd that daily rate with bids. In the filing's own words, they agreed <a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">"to submit a large number of bids in the hours leading up to publication of the quotations,"</a> and to submit bids "unlikely to lead to executed trades."</p>
+<p>So where does the bird flu fit in?</p>
 
-<p>Plain version. They allegedly stuffed the auction with offers they never meant to honor, right before the number was set, so it came out high. Your store paid that number, and you paid the store.</p>
+<h2 id="bird-flu">Wasn't it just the bird flu?</h2>
 
-<p>The Justice Department adds that the quotations "dropped significantly from their peak" after the producers learned of the investigation and were told to preserve their documents in March 2025.</p>
+<p class="quick-answer">Quick answer: the bird flu was real. The complaint says the bidding pushed the price up on top of it.</p>
 
-<p>So what do you do about it? You take your egg money to someone who sets the price to your face. The difference is easy to see side by side.</p>
+<p>You heard it was the bird flu. That part was true.</p>
+
+<p><a href="https://www.congress.gov/crs_external_products/R/PDF/R48518/R48518.1.pdf">A report for Congress says bird flu hit almost 169 million US birds.</a> That was from 2022 to April 2025. Egg-laying hens were 75% of that loss.</p>
+
+<p><a href="https://data.bls.gov/timeseries/APU0000708111">In March 2025, a dozen large eggs cost a record $6.23 on average.</a> By August 2026, it was $2.27.</p>
+
+<p>The complaint says the daily list peaked in February 2025. Then, in March 2025, the companies learned of the investigation. After that, it says, the list "dropped significantly."</p>
+
+<p>So how much of your $6 dozen was the bird flu, and how much was the bidding? No court has ruled on that. Here is what is in writing.</p>
 
 <table class="sta-table">
-<thead><tr><th>The grocery store egg</th><th>The concern</th><th>Named authority and date</th><th>An egg from a local farm you know</th></tr></thead>
+<thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Priced off a daily outside quotation</td><td>Three producers are accused of agreeing to inflate it</td><td>US Department of Justice, June 30, 2026</td><td>The farmer sets the price to your face</td></tr>
-<tr><td>Bids allegedly crowded in before the number published</td><td>Meant to drag the quote up, not to trade</td><td>US DOJ complaint, June 2026</td><td>No auction and no quote, just a dozen and a handshake</td></tr>
-<tr><td>Sold through a chain you cannot see</td><td>Producers allegedly bid to fake steady demand</td><td>US DOJ complaint, June 2026</td><td>You can watch the hens that laid them</td></tr>
-<tr><td>Settlements proposed, no admission</td><td>Money paid, wrongdoing denied</td><td>Cal-Maine SEC filing, June 2026</td><td>Nothing to settle, because nothing was hidden</td></tr>
+<tr><td>A dozen large eggs averages $6.23</td><td>A record, paid at the register</td><td>Bureau of Labor Statistics, March 2025</td><td>That it was all the bidding. Bird flu cut the hen count too</td></tr>
+<tr><td>Cal-Maine, Versova and Hickman's sued</td><td>Bids to push up the daily price list, June 2022 to March 2025, the complaint says</td><td>Justice Department and 17 states, June 29, 2026</td><td>An accusation, not a ruling</td></tr>
+<tr><td>Cal-Maine agrees to pay $1.5 million and give 30 million eggs</td><td>The money goes to 17 states, the eggs to food banks</td><td>Cal-Maine's signed deal, June 29, 2026</td><td>Not an admission. Cal-Maine says it did nothing wrong</td></tr>
 </tbody>
 </table>
 
-<h2 id="the-other-side">The case against my own story</h2>
+<p>None of that money comes back to your kitchen.</p>
 
-<p class="quick-answer">Quick answer: these are only proposed settlements with no admission of wrongdoing, and the shortage underneath was real.</p>
+<h2 id="the-other-side">Didn't Cal-Maine deny all of it?</h2>
 
-<p><strong>One.</strong> These are proposed settlements, not final rulings. A judge has not entered them yet, and by law a 60-day public comment period has to run first.</p>
+<p class="quick-answer">Quick answer: yes. Cal-Maine calls the claims "baseless," and no court has ruled.</p>
 
-<p><strong>Two.</strong> Nobody admitted liability. Cal-Maine settled and denied doing anything wrong. I will say that plainly.</p>
+<p>I know what you are thinking. They settled, but they never said they did it.</p>
 
-<p><strong>Three.</strong> The bird flu really did wipe out hens by the millions, and a genuine shortage was happening the whole time this was alleged to be going on.</p>
+<p>That is true, and I will not pretend otherwise.</p>
 
-<p>The claim was never that the shortage was fake, only that the bidding made a real one cost you more, and I am not going to stretch it past that.</p>
+<p><a href="https://www.cnbc.com/2026/06/30/egg-producers-settle-price-inflation-probe-for-3point3-million.html">Cal-Maine denied any wrongdoing, CNBC reported.</a> It pointed to bird flu, Covid, weather and inflation.</p>
 
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-turning-point-v1.webp" alt="A woman in her fifties with short curly gray hair setting a closed egg carton down and looking out of her kitchen window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
+<p><a href="https://www.federalregister.gov/documents/2026/08/07/2026-16112/united-states-et-al-v-cal-maine-foods-inc-et-al-proposed-final-judgment-and-competitive-impact">The deals themselves say they are not an admission by anyone.</a> A federal judge in Iowa decides whether to sign them.</p>
 
-<h2 id="what-do-i-buy">What can I buy instead of grocery store eggs?</h2>
+<p>Here is why I still would not buy their eggs.</p>
 
-<p class="quick-answer">Quick answer: find a local farm and buy your eggs from the person who keeps the hens.</p>
-
-<p>You do not need a national producer and a daily price quote. You need a person with hens and a name you can call.</p>
-
-<p>Find one small farm near you, a roadside stand or the neighbor two streets over with a backyard coop, and ask the farmer how the hens live and what they eat. That relationship is how you know your eggs are good, not a word stamped on the carton.</p>
-
-<p>The quiet surprise is the cost. When you cut out the middle, eggs from someone down the road often run cheaper than the carton whose price a federal complaint says was inflated on purpose, and you can see exactly where they came from.</p>
-
-<p>It is the same reason my family buys the rest of what we use through a private membership store instead of the big chains. We are the manufacturer. No middleman, no markup, and a person who picks up the phone.</p>
-
-<p>Farm eggs will not save you money every single week, and they will not fix the store. What they give you is a person you know and a price that is honest.</p>
+<p>The complaint says many stores paid a price tied to one list. Three companies are accused of pushing it up for almost three years. You do not have to wait for a judge to choose who sets the price of your eggs.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-belonging-v1.webp" alt="Two women in a backyard by a small chicken coop, one handing the other a wicker basket of fresh brown eggs, laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-turning-point-v1.webp" alt="A woman with short curly gray hair and round glasses setting a closed egg carton down and looking out her kitchen window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
+
+<h2 id="what-instead">Where do you get eggs you can trust?</h2>
+
+<p class="quick-answer">Quick answer: from a farm near you, where you can meet the farmer and see the hens.</p>
+
+<p>Find a local farm and get to know the farmer. Look for the egg sign at the end of a driveway, or ask at your farmers market.</p>
+
+<p>Ask how the hens live and what they eat. Ask what a dozen costs, and why.</p>
+
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-belonging-v1.webp" alt="Two women in a backyard by a small chicken coop, one handing the other a wicker basket of fresh brown eggs, both laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
+
+<p>The farmer tells you that price to your face. There is no daily list behind it.</p>
+
+<p>I will not promise you farm eggs cost less. Some cost more. What you get is a price from a person you can look in the eye.</p>
+
+<p>For the rest of your house, I point you to Switch to America. It is a private membership store. We are the manufacturer. No middlemen, no markup.</p>
+
+<p>Do one thing this week. Find one farm near you that sells eggs.</p>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -190,48 +206,57 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">US Department of Justice, Office of Public Affairs, press release 26-719, June 30, 2026</a>. The United States and 17 state attorneys general sued Cal-Maine Foods, Versova and Hickman's Egg Ranch on June 29, 2026 in the U.S. District Court for the Northern District of Iowa, Western Division, Case No. 5:26-cv-04060. The complaint alleges the producers conspired to inflate the daily Urner Barry price quotations that set what stores and restaurants pay for billions of eggs a year, by agreeing "to submit a large number of bids in the hours leading up to publication of the quotations" and to submit bids "unlikely to lead to executed trades." <em>What it means: the number your store used to price your eggs is the number a federal complaint says was pushed up on purpose.</em></li>
-<li>Cal-Maine Foods' own filing with the U.S. Securities and Exchange Commission, June 2026, and <a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">the Justice Department's announcement of the settlement</a>. Cal-Maine agreed to pay $1.5 million to the state plaintiffs, donate 30 million eggs, and adopt antitrust compliance and reporting measures, while denying wrongdoing. <em>What it means: the money and the eggs are real and agreed, and so is the denial, because no court has found anyone guilty.</em></li>
-<li>Proposed settlements filed the same day across all three producers, per <a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">the Justice Department</a> and Cal-Maine's filing. Versova agreed to pay $800,000 and donate 20 million eggs, and Hickman's Egg Ranch agreed to pay $1 million and donate 3.25 million eggs, for a combined $3.3 million and 53.25 million eggs. <em>What it means: three producers chose to settle rather than fight, and a judge still has to approve it after a 60-day public comment period.</em></li>
+<li><a href="https://www.justice.gov/atr/media/1450281/dl">Complaint, Case No. 5:26-cv-04060, Northern District of Iowa, filed June 29, 2026</a>. It says the three companies agreed, from June 2022 to March 2025, to submit bids "designed to artificially inflate" the daily egg price list. What it means: the price many stores paid was tied to a list the complaint says was pushed up.</li>
+<li><a href="https://www.justice.gov/opa/pr/justice-department-requires-egg-producers-end-coordinated-benchmark-manipulation">Justice Department press release 26-719, June 30, 2026</a>. It says they agreed to "submit bids that were unlikely to lead to executed trades." What it means: by the government's account, some offers to buy were unlikely to ever become a real sale.</li>
+<li><a href="https://www.justice.gov/atr/media/1450291/dl">Cal-Maine Stipulation and Order, filed June 29, 2026</a>. Cal-Maine agrees to pay $1,500,000 to the states and give 30 million eggs to food banks. "This payment is not a penalty." What it means: none of it comes back to you.</li>
+<li><a href="https://www.cnbc.com/2026/06/30/egg-producers-settle-price-inflation-probe-for-3point3-million.html">CNBC, June 30, 2026</a>. Versova agreed to pay $800,000 and Hickman's $1 million. Cal-Maine and Versova denied wrongdoing. What it means: they paid to settle, and none said it did anything wrong.</li>
+<li><a href="https://www.federalregister.gov/documents/2026/08/07/2026-16112/united-states-et-al-v-cal-maine-foods-inc-et-al-proposed-final-judgment-and-competitive-impact">Federal Register notice, August 7, 2026</a>. The proposed deals, posted for 60 days of public comment. What it means: a judge has the last word.</li>
+<li><a href="https://data.bls.gov/timeseries/APU0000708111">Bureau of Labor Statistics, average price of a dozen large eggs</a>. $6.23 in March 2025, $2.27 in August 2026. What it means: you were not imagining it.</li>
+<li><a href="https://www.congress.gov/crs_external_products/R/PDF/R48518/R48518.1.pdf">Congressional Research Service report R48518, April 29, 2025</a>. Bird flu hit 168.62 million US birds by April 2025. Egg-laying hens were 75% of the loss. What it means: the shortage was real, and the complaint is about what came on top of it.</li>
 </ul>
 </div>
 
+<h2 id="who-do-you-become">Who do you become?</h2>
+
+<p>You become the one who knows who sets the price of your eggs.</p>
+
+<p>It is a Saturday morning, and the sun is on the counter. You scramble four eggs in the pan, slowly, because nothing is rushing you.</p>
+
+<p>The wicker basket from the farm sits by the stove. There is no carton to do math over.</p>
+
+<p>You know whose hens laid them. It took one drive and one conversation.</p>
+
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-freedom-v1.webp" alt="A woman laughing in warm morning sun over a pan of scrambled eggs, a wicker basket beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
+
 <div class="sta-cta">
-<h3>Sixty seconds, room by room</h3>
-<p>No cost and no call, because the point is for you to see your own house, not to sell you mine. You walk away with the one thing to handle first.</p>
+<h3>Three minutes, room by room</h3>
+<p>You just sorted out your eggs. The free scan does the rest of the house and tells you what to swap first. It asks for a first name and a cell, then texts your score once. Nobody calls. It costs nothing because your own shelves will tell you more than I can.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
 <h2 id="faq">What else do people ask?</h2>
 
-<p><strong>So were the eggs actually rigged, or was it the bird flu?</strong> Both, according to the case. The bird flu was real, and the complaint says the pricing pushed you higher on top of it. Nobody has admitted to that yet.</p>
+<p><strong>Why are eggs so expensive?</strong></p>
+<p>They cost less now, and you were not imagining the peak. A dozen averaged $6.23 in March 2025 and $2.27 in August 2026. Bird flu cut the number of hens. The Justice Department says three egg companies pushed the price up on top of that, and none of them admitted it.</p>
 
-<p><strong>Did Cal-Maine admit it?</strong> No. Cal-Maine settled with the states and denied doing anything wrong, and these are proposed settlements a judge still has to approve.</p>
+<p><strong>Did Cal-Maine admit it rigged egg prices?</strong></p>
+<p>No. Cal-Maine settled and denied any wrongdoing. The deal says it is not an admission, and a federal judge in Iowa has the final say.</p>
 
-<p><strong>Are farm eggs really safer or cheaper?</strong> Safer is not what I am promising you. What you get is knowing the person who keeps the hens and a price set to your face instead of a daily quote a court is now reviewing. Cheaper usually follows.</p>
+<p><strong>Will I get money back from the egg settlement?</strong></p>
+<p>Not from this deal. Together, the three companies agreed to pay $3.3 million. It goes to the 17 states. They also agreed to give about 53 million eggs. Those go to food banks and nonprofits in those states.</p>
 
-<p><strong>What if there is no farm near me?</strong> There is almost always one closer than you think. Ask at a farmers market, a feed store, or a church bulletin board.</p>
-
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/whydideggsc-freedom-v1.webp" alt="A woman laughing in warm morning sun over a pan of scrambled eggs, a wicker basket of eggs beside her" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
-
-<h2 id="who-do-you-become">Who do you become?</h2>
-
-<p>You become the woman who cracks an egg with an orange yolk into the pan and knows the name of the person whose hens laid it.</p>
-
-<p>You drive past the case that used to make you do math, and you do not slow down.</p>
-
-<p>Your Saturday has a stop on it now. A short drive, and a carton still warm on the seat beside you.</p>
-
-<p>That is the whole change. It started with one carton you put back.</p>
+<p><strong>What if there is no farm near me?</strong></p>
+<p>Start at your nearest farmers market and ask who sells eggs. If nobody there sells eggs, ask the farmers who does. A few questions, and you have a farmer.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
 <ul>
-<li><a href="https://join.switchtoamerica.com/blog">More from the Switch to America blog</a></li>
-<li><a href="https://join.switchtoamerica.com/post/is-fabuloso-safe">Is Fabuloso safe? What was growing inside 4.9 million bottles</a></li>
-<li><a href="https://join.switchtoamerica.com/post/about-shannon-nicole">About Shannon and why she started this</a></li>
+<li><a href="https://join.switchtoamerica.com/post/how-much-protein-after-50">How much protein do you need after 50?</a></li>
+<li><a href="https://join.switchtoamerica.com/post/product-of-usa-beef-label-meaning">Does "Product of USA" on beef mean American beef?</a></li>
+<li><a href="https://join.switchtoamerica.com/post/which-cinnamon-brands-have-lead">Which cinnamon brands have lead? The recall list just grew</a></li>
+<li><a href="https://join.switchtoamerica.com/post/are-frozen-blueberries-safe">Are frozen blueberries safe to eat right now?</a></li>
 <li><a href="https://sta-checkout.theshannonnicole.workers.dev/cheatsheet"><strong>Free: the Is My Home Toxic cheat sheet</strong></a> 40 products, 6 rooms.</li>
 </ul>
 </div>
@@ -247,14 +272,21 @@ of our health and our finances.</p>
  "@graph": [
   {
    "@type": "Article",
-   "headline": "Why Did Eggs Cost So Much? (2026)",
-   "description": "In June 2026 the Justice Department accused the largest egg producer, Cal-Maine Foods, of helping push up the daily price that sets what your store pays for eggs. Here is what the complaint says.",
-   "image": "https://scan.ismyhometoxic.com/blog-images/whydideggs-hero-v1.webp",
-   "datePublished": "2026-09-22",
-   "dateModified": "2026-09-22",
-   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/why-did-eggs-cost-so-much"},
-   "author": {"@id": "https://switchtoamerica.com/#shannon"},
-   "publisher": {"@id": "https://switchtoamerica.com/#org"}
+   "headline": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+   "description": "Eggs hit $6.23 a dozen in 2025. The Justice Department says Cal-Maine and two others pushed the price up. None admitted it. Where to buy instead.",
+   "image": "https://scan.ismyhometoxic.com/blog-images/whydideggsc-hero-v1.webp",
+   "datePublished": "2026-11-02",
+   "dateModified": "2026-11-02",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://join.switchtoamerica.com/post/why-did-eggs-cost-so-much"
+   },
+   "author": {
+    "@id": "https://switchtoamerica.com/#shannon"
+   },
+   "publisher": {
+    "@id": "https://switchtoamerica.com/#org"
+   }
   },
   {
    "@type": "Person",
@@ -274,9 +306,24 @@ of our health and our finances.</p>
   {
    "@type": "BreadcrumbList",
    "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://join.switchtoamerica.com"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://join.switchtoamerica.com/blog"},
-    {"@type": "ListItem", "position": 3, "name": "Why Did Eggs Cost So Much?", "item": "https://join.switchtoamerica.com/post/why-did-eggs-cost-so-much"}
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://join.switchtoamerica.com"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://join.switchtoamerica.com/blog"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Why Did Eggs Cost So Much?",
+     "item": "https://join.switchtoamerica.com/post/why-did-eggs-cost-so-much"
+    }
    ]
   }
  ]
@@ -288,14 +335,38 @@ of our health and our finances.</p>
  "@context": "https://schema.org",
  "@type": "FAQPage",
  "mainEntity": [
-  {"@type": "Question", "name": "Were the eggs actually rigged, or was it the bird flu?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Both, according to the case filed in June 2026. The bird flu was real and killed laying hens by the millions. The Justice Department complaint alleges that three producers also coordinated bidding to inflate the daily egg price quotation on top of that real shortage. Nobody has admitted to it, and the settlements are proposed, not final."}},
-  {"@type": "Question", "name": "Did Cal-Maine Foods admit to price manipulation?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. According to its own filing, Cal-Maine agreed to pay $1.5 million to the state plaintiffs, donate 30 million eggs and adopt antitrust compliance measures, while denying wrongdoing. These are proposed settlements that a federal judge still has to approve after a 60-day public comment period."}},
-  {"@type": "Question", "name": "Are eggs from a local farm safer or cheaper than store eggs?",
-   "acceptedAnswer": {"@type": "Answer", "text": "The point of a local farm is knowing. You meet the person who keeps the hens, you can see how they live, and the price is set directly instead of by a daily outside quotation. When you cut out the middle, eggs from a nearby farm often cost less than the store carton."}},
-  {"@type": "Question", "name": "What if there is no farm near me?",
-   "acceptedAnswer": {"@type": "Answer", "text": "There is usually one closer than you expect. Ask at a farmers market, a feed store, or a community bulletin board, and one conversation tends to lead to the next."}}
+  {
+   "@type": "Question",
+   "name": "Why are eggs so expensive?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "They cost less now, and you were not imagining the peak. A dozen averaged $6.23 in March 2025 and $2.27 in August 2026. Bird flu cut the number of hens. The Justice Department says three egg companies pushed the price up on top of that, and none of them admitted it."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Did Cal-Maine admit it rigged egg prices?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Cal-Maine settled and denied any wrongdoing. The deal says it is not an admission, and a federal judge in Iowa has the final say."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Will I get money back from the egg settlement?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not from this deal. Together, the three companies agreed to pay $3.3 million. It goes to the 17 states. They also agreed to give about 53 million eggs. Those go to food banks and nonprofits in those states."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What if there is no farm near me?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Start at your nearest farmers market and ask who sells eggs. If nobody there sells eggs, ask the farmers who does. A few questions, and you have a farmer."
+   }
+  }
  ]
 }
 </script>
