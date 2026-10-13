@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-16
+date: 2026-10-12
 title: I Need to Make Extra Money for Christmas. What Are My Real Options? (2026)
 slug: extra-money-for-christmas
 keyword: how to make extra money for christmas
@@ -47,14 +47,14 @@ vault_checked: [capped-corporate, burned-out, North-Star, Recurring-Income-Offer
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 16, 2026<br><span style="font-size:.92em;">Published October 16, 2026 &middot; Last updated October 16, 2026</span></p>
+<p class="sta-byline">By <a href="https://switchtoamerica.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 12, 2026<br><span style="font-size:.92em;">Published October 12, 2026 &middot; Last updated October 12, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You want money in hand by the 20th. Every ad on your phone says it is easy.</p>
-<p>Here is the short version. Your real options are a seasonal job, driving for an app, or selling what you own. Each one is a few weeks of work. None leaves you with customers of your own.</p>
-<p>And the jobs are thin. By October 1, only two stores had given hiring numbers, says Challenger, Gray &amp; Christmas: <strong>Spirit Halloween and Michaels.</strong></p>
-<p>Driving for an app needs a hard look too. In February, Walmart agreed to <strong>a $100 million judgment</strong>. The FTC and 11 states sued over its Spark Driver app. They say it showed drivers pay they did not always get. Walmart admitted nothing.</p>
+<p>Your real options are a seasonal job, driving for an app, or selling what you own. Each one is a few weeks of work. None leaves you with customers of your own.</p>
+<p>And the jobs are thin. By October 1, only two stores had given hiring numbers, says <a href="https://www.challengergray.com/blog/job-cuts-fall-in-september-hiring-plans-up-3-over-2025-on-weak-early-seasonal-hiring/">Challenger, Gray &amp; Christmas</a>: <strong>Spirit Halloween and Michaels.</strong></p>
+<p>Driving for an app needs a hard look too. In February, Walmart agreed to <strong>a $100 million judgment</strong>. <a href="https://search.ftc.gov/system/files/ftc_gov/pdf/WalmartSparkDriverComplaint.pdf">The FTC and 11 states sued</a> over its Spark Driver app. They say it showed drivers pay they did not always get. Walmart did not admit the charges.</p>
 <p>A seasonal job ends with the season. The friends who trust you are still there in February.</p>
 </div>
 
@@ -76,7 +76,7 @@ vault_checked: [capped-corporate, burned-out, North-Star, Recurring-Income-Offer
 
 <p>It is eleven at night. The kitchen is dark except the one light over the island. You have added up December twice.</p>
 
-<p>The plane tickets, the gift list taped inside the pantry door, the bigger grocery run for the 24th, the tires you put on the card in September, that feeling that December is spending you instead of the other way around.</p>
+<p>The plane tickets. The gift list taped inside the pantry door. The bigger grocery run for the 24th. The tires you put on the card in September. December is spending you, not the other way around.</p>
 
 <p>So you look at who is hiring. Challenger, Gray &amp; Christmas tracks what employers announce. By October 1, it counted only two stores that had given hiring numbers. Spirit Halloween and Michaels, about 62,000 jobs between them.</p>
 
@@ -117,7 +117,7 @@ vault_checked: [capped-corporate, burned-out, North-Star, Recurring-Income-Offer
 
 <p>And it quotes a Spark manager on the tip splitting. The system, the manager said, was "working as designed."</p>
 
-<p>Walmart agreed to a $100 million judgment to settle. <a href="https://search.ftc.gov/system/files/ftc_gov/pdf/WalmartSparkDriver-Order.pdf">The order</a> says Walmart "neither admits nor denies" the charges.</p>
+<p>Walmart agreed to a $100 million judgment to settle. <a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2323055walmartsparkdriverenteredorder.pdf">The order</a> says Walmart "neither admits nor denies" the charges.</p>
 
 <p>None of that is about how hard a driver works. It is about who sets the number. You can ask about it before you start.</p>
 
@@ -129,7 +129,7 @@ vault_checked: [capped-corporate, burned-out, North-Star, Recurring-Income-Offer
 
 <p>Apply this week, not in December. Before you say yes, ask if the job ever stays on after the holidays.</p>
 
-<p>It can. Michaels said nearly half of last year's seasonal store roles became regular jobs, Challenger reported.</p>
+<p>It can. Michaels said nearly half of last year's seasonal store roles became regular jobs, <a href="https://www.challengergray.com/blog/2026-holiday-hiring-outlook-after-lowest-season-since-2008-will-retailers-stock-up-on-workers/">Challenger reported</a>.</p>
 
 <h3>Driving for an app</h3>
 
@@ -149,7 +149,7 @@ vault_checked: [capped-corporate, burned-out, North-Star, Recurring-Income-Offer
 <tr><th>What you hear</th><th>What the record shows</th><th>Where it says so</th></tr>
 <tr><td>Stores are hiring for Christmas</td><td>By October 1, two retailers had given hiring numbers, about 62,000 jobs. Last September the count was 100,800.</td><td>Challenger, Gray &amp; Christmas, October 2026</td></tr>
 <tr><td>The offer shows what you will be paid</td><td>The complaint says Spark showed drivers tips and base pay they did not always get</td><td>FTC and 11 states v. Walmart, February 2026</td></tr>
-<tr><td>A $100 million settlement proves it</td><td>Walmart neither admitted nor denied the charges, and agreed to a $100 million judgment</td><td>Settlement order, February 2026</td></tr>
+<tr><td>A $100 million settlement proves it</td><td>Walmart neither admitted nor denied the charges, and agreed to a $100 million judgment</td><td>Court order, March 2026</td></tr>
 </table>
 
 <p>Nobody hands you that table in a job ad. So you close the laptop and look out at the yard. December is one question. February is the other.</p>
@@ -185,7 +185,7 @@ vault_checked: [capped-corporate, burned-out, North-Star, Recurring-Income-Offer
 <p>The friend you walk the tree rows with every December. She asks what you would do before she does it.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/extramoneyf-belonging-v1.webp" alt="Two women in their fifties talking between rows of fir trees at a cut your own Christmas tree farm, hands in their coat pockets" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/extramoneyf-belonging-v1.webp" alt="Two women talking between rows of fir trees at a cut your own Christmas tree farm, hands in their coat pockets" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <p>Nobody is asking you to sell to them. Just notice who already trusts you. In February, they are still there.</p>
@@ -226,7 +226,7 @@ our finances.</p>
 <li><a href="https://www.challengergray.com/blog/2026-holiday-hiring-outlook-after-lowest-season-since-2008-will-retailers-stock-up-on-workers/">Challenger holiday outlook, September 23, 2026</a>. A forecast of 450,000 retail jobs this quarter, below last year's 461,500, the smallest since 2008. Plain translation: a thin season.</li>
 <li><a href="https://qz.com/ups-seasonal-hiring-holiday-100000-workers-100726">Quartz, October 7, 2026</a>. UPS plans 100,000 seasonal hires, down from 110,000 in 2025. Plain translation: shippers are hiring less too.</li>
 <li><a href="https://search.ftc.gov/system/files/ftc_gov/pdf/WalmartSparkDriverComplaint.pdf">FTC and 11 states v. Walmart, complaint, February 26, 2026</a>, Case 3:26-cv-01655, Northern District of California. It alleges Spark showed drivers tips and base pay they did not get, and charged shoppers for tips drivers never got. Allegations only. Plain translation: the number on the offer is the seller's number.</li>
-<li><a href="https://search.ftc.gov/system/files/ftc_gov/pdf/WalmartSparkDriver-Order.pdf">The settlement order</a>. A $100 million judgment, no cutting an offer after a driver accepts it, with some exceptions, and Walmart "neither admits nor denies" the allegations. Plain translation: Walmart agreed to a judgment and new rules, and admitted nothing.</li>
+<li><a href="https://search.ftc.gov/system/files/ftc_gov/pdf/2323055walmartsparkdriverenteredorder.pdf">Court order, entered March 3, 2026</a>. A $100 million judgment, no cutting an offer after a driver accepts it, with some exceptions, and Walmart "neither admits nor denies" the allegations. Plain translation: Walmart agreed to a judgment and new rules without admitting the charges.</li>
 <li><a href="https://commerce.utah.gov/2026/02/26/ftc-and-states-reach-100-million-multistate-with-walmart-for-deceiving-drivers-and-customers-over-delivery/">Utah Division of Consumer Protection, February 26, 2026</a>. Of the $100 million, $89 million is set aside to pay people back, and $11 million goes to the states. Plain translation: most of it is meant to go back.</li>
 </ul>
 </div>
@@ -288,8 +288,8 @@ our finances.</p>
    "headline": "I Need to Make Extra Money for Christmas. What Are My Real Options? (2026)",
    "description": "By October 1, Challenger counted two retailers with hiring numbers. Walmart agreed to a $100 million judgment over FTC charges about Spark driver pay.",
    "image": "https://scan.ismyhometoxic.com/blog-images/extramoneyf-hero-v1.webp",
-   "datePublished": "2026-10-16",
-   "dateModified": "2026-10-16",
+   "datePublished": "2026-10-12",
+   "dateModified": "2026-10-12",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/extra-money-for-christmas"},
    "author": {"@id": "https://theshannonnicole.com/post/extra-money-for-christmas#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
