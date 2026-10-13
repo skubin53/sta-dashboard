@@ -85,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "what-happens-if-you-quit",
-     "title": "What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026)",
+     "slug": "questions-before-joining-anything",
+     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -104,40 +104,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "questions-before-joining-anything",
-     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-22",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "is-clear-eyes-safe",
-     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
+     "slug": "is-johnsons-baby-shampoo-safe",
+     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
      "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
@@ -164,13 +132,13 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
-     "cat": "Cleaning",
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -196,13 +164,13 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -228,13 +196,13 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
-     "cat": "Beauty",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -260,13 +228,13 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -292,13 +260,13 @@
    ]
   },
   {
-   "date": "2026-11-02",
-   "weekday": "Mon",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? (2026)",
-     "cat": "Food",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -324,20 +292,20 @@
    ]
   },
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
-     "written": false,
+     "pix": true,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -356,20 +324,20 @@
    ]
   },
   {
-   "date": "2026-11-06",
-   "weekday": "Fri",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -388,19 +356,19 @@
    ]
   },
   {
-   "date": "2026-11-08",
-   "weekday": "Sun",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
      "track": "shopper"
     },
@@ -420,12 +388,12 @@
    ]
   },
   {
-   "date": "2026-11-10",
-   "weekday": "Tue",
+   "date": "2026-11-08",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -452,12 +420,12 @@
    ]
   },
   {
-   "date": "2026-11-12",
-   "weekday": "Thu",
+   "date": "2026-11-10",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -484,12 +452,12 @@
    ]
   },
   {
-   "date": "2026-11-14",
-   "weekday": "Sat",
+   "date": "2026-11-12",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -516,12 +484,12 @@
    ]
   },
   {
-   "date": "2026-11-16",
-   "weekday": "Mon",
+   "date": "2026-11-14",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -548,12 +516,12 @@
    ]
   },
   {
-   "date": "2026-11-18",
-   "weekday": "Wed",
+   "date": "2026-11-16",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-tresemme-safe",
-     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -580,12 +548,12 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-18",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -612,12 +580,12 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -644,12 +612,12 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-22",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -676,12 +644,12 @@
    ]
   },
   {
-   "date": "2026-11-26",
-   "weekday": "Thu",
+   "date": "2026-11-24",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-your-dehumidifier-a-fire-risk",
-     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -706,6 +674,38 @@
      "track": "builder"
     }
    ]
+  },
+  {
+   "date": "2026-11-26",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "starting-over-at-50-after-divorce",
+     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
+     "cat": "Builders",
+     "why": "A woman rebuilding at 50+ is motivated, decisive and ready to try something new. The post earns her trust without pity and shows a path that",
+     "perish": 1,
+     "keyword": "starting over at 50 with no money",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
   }
  ],
  "shortfall": 0,
@@ -718,11 +718,6 @@
   {
    "slug": "is-crest-toothpaste-safe",
    "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
-   "why": "written, but a photo reshoot is open, so it must not publish yet"
-  },
-  {
-   "slug": "is-johnsons-baby-shampoo-safe",
-   "title": "Is Johnson's Baby Shampoo Safe? What Is in the Yellow Bottle (2026)",
    "why": "written, but a photo reshoot is open, so it must not publish yet"
   }
  ],
