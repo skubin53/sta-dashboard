@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-10-12 | 2 posts every publish day (even dates) | starts 2026-10-13 | 45 days
+Switch to America | rebuilt 2026-10-13 | 2 posts every publish day (even dates) | starts 2026-10-13 | 45 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -28,19 +28,19 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-10-18 | Sun | 2 | builder | villain | What Happens to Your Customers If You Quit Amazon's Affiliate Program? (2026) | ready |
 | 2026-10-20 | Tue | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
 | 2026-10-20 | Tue | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
-| 2026-10-22 | Thu | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
-| 2026-10-22 | Thu | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
-| 2026-10-24 | Sat | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
-| 2026-10-24 | Sat | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
-| 2026-10-26 | Mon | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
-| 2026-10-26 | Mon | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much? What 2027 Open Enrollment Brings (2026) | ready |
-| 2026-10-28 | Wed | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
+| 2026-10-22 | Thu | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026) | ready |
+| 2026-10-22 | Thu | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026) | ready |
+| 2026-10-24 | Sat | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
+| 2026-10-24 | Sat | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
+| 2026-10-26 | Mon | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
+| 2026-10-26 | Mon | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
+| 2026-10-28 | Wed | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
 | 2026-10-28 | Wed | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | NEEDED |
-| 2026-10-30 | Fri | 1 | shopper | villain | Why Did Eggs Cost So Much? (2026) | ready |
+| 2026-10-30 | Fri | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
 | 2026-10-30 | Fri | 2 | builder | villain | Why Did the Company I Built With Just Close? (2026) | ready |
-| 2026-11-02 | Mon | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
+| 2026-11-02 | Mon | 1 | shopper | villain | Why Did Eggs Cost So Much? (2026) | ready |
 | 2026-11-02 | Mon | 2 | builder | villain | Why Do Women-Owned Businesses Stay Small? (2026) | ready |
-| 2026-11-04 | Wed | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why It Keeps Getting Pulled (2026) | ready |
+| 2026-11-04 | Wed | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
 | 2026-11-04 | Wed | 2 | builder | villain | Why Does My Business Own Me? (2026) | ready |
 | 2026-11-06 | Fri | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
 | 2026-11-06 | Fri | 2 | builder | villain | Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026) | NEEDED |
