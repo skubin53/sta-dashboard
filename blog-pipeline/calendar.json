@@ -85,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "questions-before-joining-anything",
-     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
+     "slug": "income-if-you-stop-for-90-days",
+     "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -117,8 +117,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-are-health-insurance-premiums-going-up",
-     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
+     "slug": "questions-before-joining-anything",
+     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -149,8 +149,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
+     "slug": "why-are-health-insurance-premiums-going-up",
+     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -181,8 +181,8 @@
      "track": "shopper"
     },
     {
-     "slug": "tiktok-shop-commission-changes",
-     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -198,6 +198,38 @@
   {
    "date": "2026-10-26",
    "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-crest-toothpaste-safe",
+     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+     "cat": "Personal Care",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "tiktok-shop-commission-changes",
+     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -228,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -260,8 +292,8 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -292,8 +324,8 @@
    ]
   },
   {
-   "date": "2026-11-02",
-   "weekday": "Mon",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -324,8 +356,8 @@
    ]
   },
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "why-did-eggs-cost-so-much",
@@ -356,8 +388,8 @@
    ]
   },
   {
-   "date": "2026-11-06",
-   "weekday": "Fri",
+   "date": "2026-11-08",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "should-you-give-a-child-cough-syrup",
@@ -388,8 +420,8 @@
    ]
   },
   {
-   "date": "2026-11-08",
-   "weekday": "Sun",
+   "date": "2026-11-10",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -420,8 +452,8 @@
    ]
   },
   {
-   "date": "2026-11-10",
-   "weekday": "Tue",
+   "date": "2026-11-12",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -452,8 +484,8 @@
    ]
   },
   {
-   "date": "2026-11-12",
-   "weekday": "Thu",
+   "date": "2026-11-14",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-krud-kutter-non-toxic",
@@ -484,8 +516,8 @@
    ]
   },
   {
-   "date": "2026-11-14",
-   "weekday": "Sat",
+   "date": "2026-11-16",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-redken-shampoo-safe",
@@ -516,8 +548,8 @@
    ]
   },
   {
-   "date": "2026-11-16",
-   "weekday": "Mon",
+   "date": "2026-11-18",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-roundup-safe-to-use-around-your-house",
@@ -548,8 +580,8 @@
    ]
   },
   {
-   "date": "2026-11-18",
-   "weekday": "Wed",
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-suave-shampoo-safe",
@@ -580,8 +612,8 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-22",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-tresemme-safe",
@@ -612,8 +644,8 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-24",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-the-pink-stuff-safe",
@@ -644,8 +676,8 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-26",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-ultra-processed-food-its-own-risk",
@@ -674,52 +706,9 @@
      "track": "builder"
     }
    ]
-  },
-  {
-   "date": "2026-11-26",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "starting-over-at-50-after-divorce",
-     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
-     "cat": "Builders",
-     "why": "A woman rebuilding at 50+ is motivated, decisive and ready to try something new. The post earns her trust without pity and shows a path that",
-     "perish": 1,
-     "keyword": "starting over at 50 with no money",
-     "felt": "",
-     "register": "villain",
-     "pix": false,
-     "written": false,
-     "track": "builder"
-    }
-   ]
   }
  ],
  "shortfall": 0,
- "blocked": [
-  {
-   "slug": "income-if-you-stop-for-90-days",
-   "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
-   "why": "written, but a photo reshoot is open, so it must not publish yet"
-  },
-  {
-   "slug": "is-crest-toothpaste-safe",
-   "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
-   "why": "written, but a photo reshoot is open, so it must not publish yet"
-  }
- ],
+ "blocked": [],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
 }
