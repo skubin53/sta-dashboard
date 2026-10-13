@@ -86,38 +86,39 @@
 - **Is your nonstick pan toxic?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://join.switchtoamerica.com/post/are-nonstick-pans-toxic
 - **Is your air freshener making you sick?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://join.switchtoamerica.com/post/are-air-fresheners-toxic
 
+## 2026-10-13 REWRITE (posts and pins audit, finding P1; Shannon "Yes fix everything"): Days 22 to 30 used to re-pin posts that already have pins. They now pin the live posts that have NO pin yet, seasonal first. Every pin links to the free scan with utm. Check each photo first: a woman 40 to 60, no child, no product label.
+
 ## Day 22 - Tue Oct 13
-- **Is your disinfectant hurting your lungs?**  |  board: Non-Toxic Cleaning Products  |  https://join.switchtoamerica.com/post/is-lysol-safe-to-inhale
-- **Is that clean smell bad for your lungs?**  |  board: Non-Toxic Cleaning Products  |  https://join.switchtoamerica.com/post/is-pine-sol-toxic
+- **Which cinnamon brands have lead?**  |  board: Non-Toxic Food & Clean Pantry  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=which-cinnamon-brands-have-lead | photo: whichcinnam-belonging-v1 (two women at a market stand)
+- **Is Halloween candy safe to eat this year?**  |  board: Non-Toxic Food & Clean Pantry  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-halloween-candy-safe-to-eat | photo: ishalloween-belonging-v1 (two women at a pumpkin stand; NOT the freedom/turning-point frames with the red candy bag)
 
 ## Day 23 - Wed Oct 14
-- **Is that fresh scent safe to breathe?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://join.switchtoamerica.com/post/is-febreze-safe-to-breathe
-- **Is your laundry soap harming your skin?**  |  board: Non-Toxic Laundry  |  https://join.switchtoamerica.com/post/is-tide-laundry-detergent-toxic
+- **How much protein do you need after 50?**  |  board: Healthy Aging Over 50 (create)  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=how-much-protein-after-50
+- **Are frozen blueberries safe right now?**  |  board: Non-Toxic Food & Clean Pantry  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-frozen-blueberries-safe
 
 ## Day 24 - Thu Oct 15
-- **Is your sunscreen in your blood?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-sunscreen-safe
-- **What is that bleach smell doing to you?**  |  board: Non-Toxic Cleaning Products  |  https://join.switchtoamerica.com/post/is-clorox-spray-toxic
+- **Is Zicam safe to use?**  |  board: Healthy Aging Over 50 (create)  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-zicam-safe
+- **Are flushable wipes really flushable?**  |  board: Non-Toxic Cleaning Products  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-flushable-wipes-actually-flushable | photo: adults only in this set
 
 ## Day 25 - Fri Oct 16
-- **Is there lead in your cheap pans?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://join.switchtoamerica.com/post/are-cheap-aluminum-pans-safe
-- **What comes off your cutting board?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://join.switchtoamerica.com/post/are-plastic-cutting-boards-safe
+- **Is there potassium bromate in your flour?**  |  board: Non-Toxic Food & Clean Pantry  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=florida-general-mills-potassium-bromate-subpoena | photo: needs a person photo with no label
+- **Are store brand eye drops safe?**  |  board: Clean Beauty & Safe Personal Care  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-store-brand-eye-drops-safe | photo: only after the 10/13 live fix (Equate recall) is published
 
 ## Day 26 - Sat Oct 17
-- **Is your fancy pan really non-toxic?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://join.switchtoamerica.com/post/is-hexclad-non-toxic
-- **Should you microwave plastic bags?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://join.switchtoamerica.com/post/can-you-microwave-ziploc-bags
+- **Does Prevagen actually work?**  |  board: Healthy Aging Over 50 (create)  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=does-prevagen-actually-work
+- **Is your laminate floor off-gassing?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=does-laminate-flooring-off-gas-formaldehyde
 
 ## Day 27 - Sun Oct 18
-- **What are wax melts putting in your air?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://join.switchtoamerica.com/post/are-scentsy-wax-melts-toxic
-- **Are your candles poisoning your air?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://join.switchtoamerica.com/post/are-bath-and-body-works-candles-toxic
+- **Are Amazon supplements real?**  |  board: Healthy Aging Over 50 (create)  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-amazon-supplements-real | photo: before Black Friday
+- **Are makeup remover wipes safe?**  |  board: Clean Beauty & Safe Personal Care  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-makeup-remover-wipes-safe
 
 ## Day 28 - Mon Oct 19
-- **Is your toothpaste actually safe?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-colgate-toothpaste-safe
-- **What is in your dandruff shampoo?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-head-and-shoulders-safe
+- **Does Woolite really revive colors?**  |  board: Non-Toxic Laundry  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=does-woolite-revive-colors
+- **Can exercise fix bad sleep?**  |  board: Healthy Aging Over 50 (create)  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=can-you-exercise-your-way-out-of-bad-sleep
 
 ## Day 29 - Tue Oct 20
-- **Is there benzene in your deodorant?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-spray-deodorant-safe-benzene-recall
-- **Is there talc in your makeup?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-talc-in-makeup-safe
+- **Are plastic bags actually recyclable?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-plastic-bags-actually-recyclable
+- **Are K-Cups really recyclable?**  |  board: Non-Toxic Cookware & Kitchen Swaps  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-k-cups-really-recyclable
 
 ## Day 30 - Wed Oct 21
-- **What makes your mascara waterproof?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-waterproof-mascara-safe-pfas
-- **What is really in your lipstick?**  |  board: Clean Beauty & Safe Personal Care  |  https://join.switchtoamerica.com/post/is-your-lipstick-safe
+- **What are wax melts putting in your air?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-scentsy-wax-melts-toxic | photo: ONLY after RESHOOT-scentsy-pin-audience closes
