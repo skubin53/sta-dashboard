@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-09-30
+date: 2026-10-14
 title: My Commissions Dropped and My Broker Blames the Market. What Did NAR Change? (2026)
 slug: commissions-dropped-real-estate
 keyword: real estate commission income dropped
@@ -47,7 +47,7 @@ vault_checked: [burned-out, Builder-Target-Segments, MLM-Vetting-Filter, North-S
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; September 30, 2026<br><span style="font-size:.92em;">Published September 30, 2026 &middot; Last updated September 30, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 14, 2026<br><span style="font-size:.92em;">Published October 14, 2026 &middot; Last updated October 14, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -76,7 +76,7 @@ vault_checked: [burned-out, Builder-Target-Segments, MLM-Vetting-Filter, North-S
 
 <p>You kick your heels off under the stool at nine at night. The bowl on the island is full of keys to other people's houses. Two buyers signed with you. Neither one has closed.</p>
 
-<p>The gas for the showings, the open house nobody came to, the buyer who went quiet after six tours, the check that came in smaller than last spring's, that feeling that the business is running you instead of the other way around.</p>
+<p>The gas for the showings. The open house nobody came to. The buyer who went quiet after six tours. The check that came in smaller than last spring's. And that feeling that the business is running you, instead of the other way around.</p>
 
 <p>And so you asked your broker what happened. Your broker said it is the market.</p>
 
@@ -144,20 +144,20 @@ vault_checked: [burned-out, Builder-Target-Segments, MLM-Vetting-Filter, North-S
 <p>Every row on that table was decided by NAR or by a court. Not one of them was decided by you.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/commissions-turning-point-v1.webp" alt="A woman in her fifties in a navy blazer and striped top dropping a ring of keys into a wooden bowl and looking out of the garden doors, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/commissions-turning-point-v1.webp" alt="A woman in her fifties in a navy blazer and striped top dropping a ring of keys into a wooden bowl on the kitchen island, her laptop open beside it, settled" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="is-this-a-pitch">Isn't this just another pitch?</h2>
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>NAR is not the whole story, and it denies the jury got it right.</p>
+<p>NAR is not the whole story, and it fought the jury's verdict.</p>
 
 <p>The deal also protected you. <a href="https://www.prnewswire.com/news-releases/national-association-of-realtors-reaches-agreement-to-resolve-nationwide-claims-brought-by-home-sellers-302090431.html">It released more than one million members</a> from these home sellers' claims. That most likely includes you.</p>
 
 <p>And the fee did not fall off a cliff. <a href="https://www.redfin.com/news/commissions-q3-2025/">In December 2025, Redfin said the average buyer's agent fee</a> was at "roughly the same level" as early 2024. So if your checks shrank, count your closings and look hard at your split.</p>
 
-<p>Now me. Switch to America makes the laundry soap and shampoo you run out of. No middlemen and no markup.</p>
+<p>Now me. Switch to America is the manufacturer of the laundry soap and shampoo you run out of. No middlemen and no markup.</p>
 
 <p>You pay what a brand new shopper pays. Not a penny less.</p>
 
@@ -229,6 +229,27 @@ our finances.</p>
 <p class="micro">The jury's finding is a verdict NAR fought and then settled. NAR denies any wrongdoing.</p>
 </div>
 
+<h2 id="who-you-become">Who do you become?</h2>
+
+<p>Here is what I want for you, whether or not we ever speak.</p>
+
+<p>It is a Sunday afternoon in October. Your phone is face down on the kitchen counter. You are out on your bike on a lane with hedges on both sides, and you are laughing at nothing much.</p>
+
+<p>The list of names is on the fridge. You know which half was the market and which half was NAR. You stopped waiting on somebody else's rule.</p>
+
+<p>You become the one who keeps her people, whatever the rules say next.</p>
+
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/commissions-freedom-v1.webp" alt="A woman riding a sage green bicycle with a wicker basket down a lane lined with hedges in golden late afternoon light, laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
+
+<div class="sta-cta">
+<h3>Twenty minutes, on video, no slides</h3>
+<p>Your broker gave you one sentence about the market. Give me twenty minutes and ask me anything about my business. If it is not for you, I would rather find out on the call.</p>
+<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
+<span class="micro">You can always say no, and there is no follow up if you do.</span>
+</div>
+
 <h2 id="faq">What else are women asking me about this?</h2>
 
 <p><strong>Did the NAR settlement cut my commission?</strong></p>
@@ -239,18 +260,6 @@ our finances.</p>
 
 <p><strong>Do I have to give up real estate to do this?</strong></p>
 <p>No. Nobody is asking you to hang up your license. Keep your clients and keep showing houses. This sits beside that work, not on top of it.</p>
-
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/commissions-freedom-v1.webp" alt="A woman riding a sage green bicycle with a wicker basket down a lane lined with hedges in golden evening light, laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
-
-<p>Here is what I want for you, whether or not we ever speak.</p>
-
-<p>It is a Sunday afternoon in October. Your phone is face down on the kitchen counter. You are out on your bike on a lane with hedges on both sides, and you are laughing at nothing much.</p>
-
-<p>The list of names is on the fridge. You know which half was the market and which half was NAR. You stopped waiting on somebody else's rule.</p>
-
-<p>You become the one who keeps her people, whatever the rules say next.</p>
 
 <div class="sta-keep">
 <h3>Worth reading next</h3>
@@ -277,8 +286,8 @@ our finances.</p>
    "headline": "My Commissions Dropped and My Broker Blames the Market. What Did NAR Change? (2026)",
    "description": "Home sales sit at a 30-year low, so your broker is half right. The other half is how you get paid, which NAR rewrote in 2024. What to do first.",
    "image": "https://scan.ismyhometoxic.com/blog-images/commissions-hero-v1.webp",
-   "datePublished": "2026-09-30",
-   "dateModified": "2026-09-30",
+   "datePublished": "2026-10-14",
+   "dateModified": "2026-10-14",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/commissions-dropped-real-estate"},
    "author": {"@id": "https://theshannonnicole.com/post/commissions-dropped-real-estate#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
@@ -323,10 +332,3 @@ our finances.</p>
  ]
 }
 </script>
-
-<div class="sta-cta">
-<h3>Twenty minutes, on video, no slides</h3>
-<p>Your broker gave you one sentence about the market. Give me twenty minutes and ask me anything about my business. If it is not for you, I would rather find out on the call.</p>
-<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
-<span class="micro">You can always say no, and there is no follow up if you do.</span>
-</div>
