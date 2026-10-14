@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-05
+date: 2026-10-14
 title: Is Angry Orange Stain Remover Safe? Why 1.5 Million Bottles Were Recalled (2026)
 slug: is-angry-orange-stain-remover-safe
 keyword: angry orange recall
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 5, 2026<br><span style="font-size:.92em;">Published October 5, 2026 &middot; Last updated October 5, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 14, 2026<br><span style="font-size:.92em;">Published October 14, 2026 &middot; Last updated October 14, 2026</span></p>
 
 <p>The dog had an accident on the carpet again. You got down on your knees with the windows shut. You sprayed it with your face a foot from the wet spot.</p>
 
@@ -89,7 +89,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>So who is Thrasio? A company in Boston. <a href="https://www.thrasio.com/for-sellers/case-studies/angry-orange">By its own case study, it bought Angry Orange in November 2018. Then it added "a ready-to-use spray for stain removal."</a></p>
 
-<p><a href="https://recalls-rappels.canada.ca/en/alert-recall/angry-orange-stain-removers-recalled-due-risk-exposure-bacteria">Canada's recall notice names a different company as the maker, Chempace Corp.</a></p>
+<p><a href="https://recalls-rappels.canada.ca/en/alert-recall/angry-orange-stain-removers-recalled-due-risk-exposure-bacteria">Canada's recall notice names a different company as the manufacturer, Chempace Corp.</a></p>
 
 <p>So the company behind the name bought the brand, and another company filled the bottle. Remember that when you buy the next one.</p>
 
@@ -109,9 +109,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>It says the risk is for people with weak immune systems, external medical devices or lung problems. For them, it warns of serious infection.</p>
 
-<h3>The germ the recall names</h3>
+<h3>What is Pseudomonas aeruginosa?</h3>
 
-<p><a href="https://www.cdc.gov/pseudomonas-aeruginosa/about/index.html">The CDC says this family of germs lives in "soil and water." It says the infections "typically occur in healthcare settings," and they can be hard to treat.</a></p>
+<p><a href="https://www.cdc.gov/pseudomonas-aeruginosa/about/index.html">The CDC says this group of germs lives in "soil and water." It says the infections "typically occur in healthcare settings," and they can be hard to treat.</a></p>
 
 <p>Then there is the line I cannot get past, in the part about throwing it away.</p>
 
@@ -125,7 +125,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h2 id="every-bottle">Isn't every cleaner under my sink a risk now?</h2>
 
-<p class="quick-answer">Quick answer: you cannot test them all, and so start with the one you spray closest to your face.</p>
+<p class="quick-answer">Quick answer: you cannot test them all, so start with the one you spray closest to your face.</p>
 
 <p>You are right. You cannot send every bottle in your house to a lab.</p>
 
@@ -175,10 +175,10 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>If you walk dogs with a friend, tell her about the recall. She may have the same bottle at home.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isangryoran-belonging-v1.webp" alt="Two women in their fifties sitting on the open tailgate of a car at a park, their dogs on the grass beside them, one of them laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isangryoran-belonging-v1.webp" alt="Two women in their fifties sitting on the open tailgate of a car at a park, their dogs on the grass beside them, both of them laughing" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
-<p>Then the spray. Pick one sold by the company that makes it, so the name on the front is the maker.</p>
+<p>Then the spray. Pick one sold by the company that makes it, so the name on the front is the manufacturer.</p>
 
 <p>That is why I send you to Switch to America, a private membership store. We are the manufacturer. No middlemen, no markup.</p>
 
@@ -220,24 +220,10 @@ of our health and our finances.</p>
 <li><a href="https://www.cpsc.gov/Recalls/2026/Thrasio-Recalls-Angry-Orange-Enzyme-Stain-Removers-Due-to-Risk-of-Exposure-to-Bacteria">US Consumer Product Safety Commission, recall 26-201, January 22, 2026</a>. Thrasio, LLC, of Boston recalled "About 1,500,000" Angry Orange Enzyme Stain Removers, plus about 43,700 in Canada. They "can contain bacteria, including Pseudomonas aeruginosa," and sold "from March 2019 through December 2025." Injuries: "None reported." Plain translation: this was the bottle on the shelf at the stores you already shop.</li>
 <li><a href="https://recalls-rappels.canada.ca/en/alert-recall/angry-orange-stain-removers-recalled-due-risk-exposure-bacteria">Health Canada, recall RA-81456, January 22, 2026</a>. It names Thrasio, LLC as the distributor and Chempace Corp., of Toledo, Ohio, as the manufacturer. It says the company "has not received any reports of incidents or illness." Plain translation: the name on the front did not make what was inside.</li>
 <li><a href="https://www.classaction.org/media/thrasio-complaint.pdf">Class action complaint, Makar v. Thrasio, LLC, case 2:26-cv-01176, US District Court, Central District of California, filed February 4, 2026</a>. The buyer alleges Thrasio "failed to adequately design, manufacture, test, inspect, and monitor the production process," and let products stay "on shelves and in consumer homes for months before a recall was announced." <a href="https://www.courtlistener.com/docket/72235094/vivian-makar-v-thrasio-llc/">The docket shows the case open in September 2026.</a> Plain translation: a buyer says the checking was not done, and no court has said who is right.</li>
-<li><a href="https://web.archive.org/web/20260122164825/https://angryorange.com/pages/about-us">Angry Orange About Us page, archived January 22, 2026</a>. On recall day it said the "cold-pressed formula is chemical-free" and "our products are safe to use around your home." Both lines are gone from the live page. Plain translation: the promise and the recall were out on the same day.</li>
+<li><a href="https://web.archive.org/web/20260122164825/https://angryorange.com/pages/about-us">Angry Orange About Us page, archived January 22, 2026</a>. On recall day it said the "cold-pressed formula is chemical-free" and "our products are safe to use around your home." Both lines are gone. The live page now says "Pet-safe." Plain translation: the promise and the recall were out on the same day.</li>
 <li><a href="https://www.thrasio.com/for-sellers/case-studies/angry-orange">Thrasio, Angry Orange case study</a>. Thrasio says it acquired Angry Orange in November 2018, then "expanded the product line to include a ready-to-use spray for stain removal." Plain translation: the stain spray came after the brand was bought.</li>
 </ul>
 </div>
-
-<h2 id="faq">What else do people ask?</h2>
-
-<p><strong>Is the Angry Orange Pet Odor Eliminator recalled too?</strong></p>
-<p>No. The company's recall page says its Pet Odor Eliminator is "NOT impacted." Only the Enzyme Stain Remover was recalled.</p>
-
-<p><strong>How do I get my money back?</strong></p>
-<p>Write "recalled" and your initials on the bottle in marker. Email a photo of it to productrecall@angryorange.com. Then throw it out in its bottle. Do not empty it first.</p>
-
-<p><strong>I used it for years. Should I be scared?</strong></p>
-<p>Not by the notice's account. It lists no injuries. It points the risk at weak immune systems, external medical devices and lung problems.</p>
-
-<p><strong>Is the Angry Orange lawsuit over?</strong></p>
-<p>No. Makar v. Thrasio was filed February 4, 2026, in federal court. The docket shows it still open in September 2026. Nothing in it is proven.</p>
 
 <h2 id="who-do-you-become">Who do you become?</h2>
 
@@ -245,7 +231,7 @@ of our health and our finances.</p>
 
 <p>It is a Saturday morning in October. The dog has an accident on the carpet again.</p>
 
-<p>You blot it with the old towel and open the window. Then you spray a bottle whose maker you know.</p>
+<p>You blot it with the old towel and open the window. Then you spray a bottle whose manufacturer you know.</p>
 
 <p>You sit down on the carpet with your back against the couch. You are not holding your breath. The dog climbs into your lap and you laugh.</p>
 
@@ -261,6 +247,20 @@ of our health and our finances.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 <p style="margin:12px 0 0;font-size:.85em;">Nothing to buy to see your score.</p>
 </div>
+
+<h2 id="faq">What else do people ask?</h2>
+
+<p><strong>Is the Angry Orange Pet Odor Eliminator recalled too?</strong></p>
+<p>No. The company's recall page says its Pet Odor Eliminator is "NOT impacted." Only the Enzyme Stain Remover was recalled.</p>
+
+<p><strong>How do I get my money back?</strong></p>
+<p>Write "recalled" and your initials on the bottle in marker. Email a photo of it to productrecall@angryorange.com. Then throw it out in its bottle. Do not empty it first.</p>
+
+<p><strong>I used it for years. Should I be scared?</strong></p>
+<p>Stop using it tonight. The notice lists no injuries. It points the risk at weak immune systems, external medical devices and lung problems.</p>
+
+<p><strong>Is the Angry Orange lawsuit over?</strong></p>
+<p>No. Makar v. Thrasio was filed February 4, 2026, in federal court. The docket shows it still open in September 2026. Nothing in it is proven.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
@@ -286,8 +286,8 @@ of our health and our finances.</p>
    "headline": "Is Angry Orange Stain Remover Safe? Why 1.5 Million Bottles Were Recalled (2026)",
    "description": "Thrasio recalled about 1.5 million Angry Orange stain removers in January 2026. The notice says they can contain bacteria. Here is what to do.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isangryoran-hero-v1.webp",
-   "datePublished": "2026-10-05",
-   "dateModified": "2026-10-05",
+   "datePublished": "2026-10-14",
+   "dateModified": "2026-10-14",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-angry-orange-stain-remover-safe"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
@@ -329,7 +329,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "How do I get my money back?",
    "acceptedAnswer": {"@type": "Answer", "text": "Write \"recalled\" and your initials on the bottle in marker. Email a photo of it to productrecall@angryorange.com. Then throw it out in its bottle. Do not empty it first."}},
   {"@type": "Question", "name": "I used it for years. Should I be scared?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Not by the notice's account. It lists no injuries. It points the risk at weak immune systems, external medical devices and lung problems."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Stop using it tonight. The notice lists no injuries. It points the risk at weak immune systems, external medical devices and lung problems."}},
   {"@type": "Question", "name": "Is the Angry Orange lawsuit over?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. Makar v. Thrasio was filed February 4, 2026, in federal court. The docket shows it still open in September 2026. Nothing in it is proven."}}
  ]
