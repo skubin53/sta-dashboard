@@ -3,7 +3,7 @@ date: 2026-10-06
 post_title: "Will Social Security Get a Raise in 2027? What the October 14 Number Really Means (2026)"
 slug: will-social-security-get-a-raise-in-2027
 blog: The Shannon Nicole (YjBySnIppiSfkeKxjiaO)
-ghl_post_id: 6acec137d1d68d7a64687442
+ghl_post_id: 6acfad27f1abf2da71f0d984
 live_url: https://theshannonnicole.com/post/will-social-security-get-a-raise-in-2027
 published_at: 2026-10-06T14:58:00-06:00
 images: 5 body plus cover
