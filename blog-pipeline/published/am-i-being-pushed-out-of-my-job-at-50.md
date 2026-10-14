@@ -3,7 +3,7 @@ date: 2026-08-26
 post_title: Am I Being Pushed Out of My Job at 50? (2026)
 slug: am-i-being-pushed-out-of-my-job-at-50
 blog: The Shannon Nicole (YjBySnIppiSfkeKxjiaO)
-ghl_post_id: 6a8f439aea3d1b55e91fee3c
+ghl_post_id: 6acec4253de96d5d721d5d5b
 live_url: https://theshannonnicole.com/post/am-i-being-pushed-out-of-my-job-at-50
 published_at: 2026-08-26T19:35:00+00:00
 images: 4 body plus cover, every one verified 200 on the live page

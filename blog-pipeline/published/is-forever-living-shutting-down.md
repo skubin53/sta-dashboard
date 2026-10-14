@@ -3,7 +3,7 @@ date: is-forever-living-shutting-down
 post_title: Is Forever Living Shutting Down? What US Distributors Should Do Next (2026)
 slug: is-forever-living-shutting-down
 blog: The Shannon Nicole (YjBySnIppiSfkeKxjiaO)
-ghl_post_id: 6a96fb13eb0c458daae453ca
+ghl_post_id: 6acec3d7f1abf2da71e3fda4
 live_url: https://theshannonnicole.com/post/is-forever-living-shutting-down
 published_at: 2026-09-01T16:20:33+00:00
 images: 5 body plus cover

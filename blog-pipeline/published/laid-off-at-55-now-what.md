@@ -2,7 +2,7 @@
 date: 2026-10-08
 post_title: I Got Laid Off at 55. Now What? (2026)
 slug: laid-off-at-55-now-what
-ghl_post_id: 6ac844c81d5c30aff2323295
+ghl_post_id: 6acec10fd39a991681bc3928
 live_url: https://theshannonnicole.com/post/laid-off-at-55-now-what
 published_at: 2026-10-08T12:00:00.000Z
 word_count: 2433

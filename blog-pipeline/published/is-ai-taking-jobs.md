@@ -2,7 +2,7 @@
 date: 2026-10-12
 post_title: Is AI Taking Jobs Away From People Like Me? What September's Layoff Numbers Show (2026)
 slug: is-ai-taking-jobs
-ghl_post_id: 6acd5cba058b076d9a189133
+ghl_post_id: 6acec0e8d39a991681bc36de
 live_url: https://theshannonnicole.com/post/is-ai-taking-jobs
 published_at: 2026-10-12T12:00:00.000Z
 word_count: 2428

@@ -3,7 +3,7 @@ date: amazon-cut-your-affiliate-commission-now-what
 post_title: Amazon Cut Your Affiliate Commission. Now What? (2026)
 slug: amazon-cut-your-affiliate-commission-now-what
 blog: The Shannon Nicole (YjBySnIppiSfkeKxjiaO)
-ghl_post_id: 6aaab50d6c8c844bce85dc32
+ghl_post_id: 6acec3893bed21a4ed480aa3
 live_url: https://theshannonnicole.com/post/amazon-cut-your-affiliate-commission-now-what
 published_at: 2026-09-16T15:27:07+00:00
 images: 5 body plus cover

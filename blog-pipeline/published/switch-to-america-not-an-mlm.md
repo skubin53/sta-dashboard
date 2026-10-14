@@ -2,7 +2,7 @@
 date: 2026-10-03
 post_title: Is Switch to America an MLM? No. It Is a Better Way to Shop (2026)
 slug: switch-to-america-not-an-mlm
-ghl_post_id: 6ac280eff4216a082fbcbf06
+ghl_post_id: 6aceb9d03bed21a4ed477f62
 live_url: https://join.switchtoamerica.com/post/switch-to-america-not-an-mlm
 published_at: 2026-10-03T12:00:00.000Z
 word_count: 1980

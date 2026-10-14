@@ -2,7 +2,7 @@
 date: 2026-10-04
 post_title: LuLaRoe Asks $499 Up Front. What Does It Actually Cost to Start? (2026)
 slug: what-does-it-cost-to-start
-ghl_post_id: 6ac27df8d975854ae282bf5d
+ghl_post_id: 6acec29a8971378ddaf561d8
 live_url: https://theshannonnicole.com/post/what-does-it-cost-to-start
 published_at: 2026-10-04
 word_count: 1995

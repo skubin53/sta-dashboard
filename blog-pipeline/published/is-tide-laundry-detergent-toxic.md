@@ -3,7 +3,7 @@ date: is-tide-laundry-detergent-toxic
 post_title: Is Tide Laundry Detergent Toxic?
 slug: is-tide-laundry-detergent-toxic
 blog: Switch to America (Hulr7aT2G6a5AdONSXQx)
-ghl_post_id: UNKNOWN
+ghl_post_id: 6acebfc6d39a991681bc274c
 live_url: https://join.switchtoamerica.com/post/is-tide-laundry-detergent-toxic
 published_at: 2026-07 (exact date not recorded)
 status: live

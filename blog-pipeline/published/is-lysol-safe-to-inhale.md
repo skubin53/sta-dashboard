@@ -3,7 +3,7 @@ date: is-lysol-safe-to-inhale
 post_title: Is Lysol Safe to Inhale?
 slug: is-lysol-safe-to-inhale
 blog: Switch to America (Hulr7aT2G6a5AdONSXQx)
-ghl_post_id: UNKNOWN
+ghl_post_id: 6acec06c3de96d5d721d30f8
 live_url: https://join.switchtoamerica.com/post/is-lysol-safe-to-inhale
 published_at: 2026-07 (exact date not recorded)
 status: live

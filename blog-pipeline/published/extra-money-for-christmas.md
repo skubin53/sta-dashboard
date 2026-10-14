@@ -2,7 +2,7 @@
 date: 2026-10-12
 post_title: I Need to Make Extra Money for Christmas. What Are My Real Options? (2026)
 slug: extra-money-for-christmas
-ghl_post_id: 6acd77f92120a8041231c7ea
+ghl_post_id: 6acec0c03de96d5d721d354f
 live_url: https://theshannonnicole.com/post/extra-money-for-christmas
 published_at: 2026-10-12T12:00:00.000Z
 word_count: 2427
