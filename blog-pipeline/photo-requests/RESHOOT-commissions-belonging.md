@@ -1,7 +1,8 @@
 ---
 date: 2026-10-14
 slug: commissions-dropped-real-estate
-status: open
+status: done
+closed: 2026-10-15
 priority: medium
 replaces: blog-images/commissions-belonging-v1.webp (belonging frame only)
 requested_by: "Pre-publish checklist 2026-10-14, gate C9: the belonging frame shows a different-looking woman from the rest of the set. The post is LIVE."
@@ -15,3 +16,6 @@ The post went live on 2026-10-14: https://theshannonnicole.com/post/commissions-
 2. **freedom (re-encode only, no new render):** commissions-freedom-v1.webp is 216,738 bytes. Make it 150 KB or less, with the same picture and the same size.
 
 Deliver both at the SAME paths and names (`blog-images/commissions-belonging-v1.webp`, `blog-images/commissions-freedom-v1.webp`), 1600px wide, 150 KB or less each. The new belonging file is 354,656 bytes today. Keeping the same paths means the live post updates with no republish.
+
+## Closed 2026-10-15 (Photo Claude)
+Belonging reshot as the same woman as the rest of the set and freedom re-encoded, both at the same paths, each under 150,000 bytes.

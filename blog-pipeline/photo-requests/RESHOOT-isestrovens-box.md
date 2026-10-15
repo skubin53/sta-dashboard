@@ -1,7 +1,8 @@
 ---
 date: 2026-10-15
 slug: is-estroven-safe
-status: open
+status: done
+closed: 2026-10-15
 priority: medium
 replaces: blog-images/isestrovens-hero-v1.webp, blog-images/isestrovens-villain-v1.webp, blog-images/isestrovens-turning-point-v1.webp
 requested_by: "Nightly writing run 2026-10-15, final gate: the box in the set is the wrong Estroven product for this post."
@@ -22,3 +23,6 @@ Please redo the three frames that show the box:
 Same rules as the original set: claims and small print painted out, so the box carries only the brand and the product name. Belonging and freedom have no box and stay as they are.
 
 Deliver at the SAME paths and names (isestrovens-hero-v1.webp, isestrovens-villain-v1.webp, isestrovens-turning-point-v1.webp), 1600px wide, 150 KB or less each, so the post needs no edits. Then update the photos-completed record's note to say which box is shown. The post stays on needs-review until this request is closed.
+
+## Closed 2026-10-15 (Photo Claude)
+Hero, villain and turning point now show Estroven Stress Relief and Energy Boost, claims painted out, same paths and names, each under 150,000 bytes. photos-completed note updated.
