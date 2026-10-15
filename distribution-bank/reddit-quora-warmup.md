@@ -449,3 +449,36 @@ RULES: genuine, helpful, LINK-FREE comments only during warming (no product/bran
   Try two this week. Dinner stops feeling like a rerun.
 
   status: pending (human to post)
+
+- **2026-10-15 (draft, pending)** - Quora, REAL thread (confirmed in the search index only, via WebSearch limited to quora.com; Quora returns 403 to curl -4 and to WebFetch on 2026-10-15, and Reddit was not tried since WebSearch refuses reddit.com, so the asker's profile, date and open status could not be seen; the asker gives her own age, 50, but check the profile and that it is still open before posting): https://www.quora.com/How-did-it-feel-stopping-years-of-dying-your-hair-and-just-letting-it-go-grey-Did-you-feel-older-Did-you-regret-it-Did-you-have-it-cut-into-a-different-style-At-50-yrs-old-I-am-fighting-a-losing-battle-with-grey . Their question: "How did it feel stopping years of dying your hair and just letting it go grey? Did you feel older? Did you regret it? Did you have it cut into a different style? At 50 yrs old I am fighting a losing battle with grey hairs." On-avatar (the asker says she is 50; first gray grow-out and hair color answer in the warm-up, a different topic from the 2026-10-07 menopause hair-oil draft and the 2026-10-08 well-water orange gray hair draft, no wording reused). The answer does not claim Shannon went gray herself; it gives no personal story beyond her 20 years. Sources checked: AAD "10 hair care habits that can damage your hair" (lists "Coloring, perming, or relaxing your hair" as a habit that can damage hair; stretch the time between touch-ups), https://www.aad.org/public/everyday-care/hair-scalp-care/hair/habits-that-damage-hair , 200 to curl -4; AAD "Coloring and perming tips for healthier-looking hair" ("Lightening your hair more than three shades requires higher volumes of peroxide, which causes more hair damage"; "The sun can make your hair weak, dry, rough, faded and brittle"; wear a wide-brimmed hat), https://www.aad.org/public/everyday-care/hair-scalp-care/hair/coloring-perming-tips , 200 to curl -4. No claim that gray hair is coarser (no dermatology page found that says so), so the conditioner line is conditional. For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her 20 years and the AAD's three shades. LINK-FREE draft answer:
+
+  At 50, you get to choose how this goes.
+
+  Dermatologists list hair coloring among the habits that can damage hair. So every touch-up you skip gives your hair a rest.
+
+  What makes the grow-out easier:
+
+  1. Think about a shorter cut. It is the fastest way past the line where the old color meets the gray.
+  2. Want to keep your length? Ask your stylist to soften that line gently. Lightening more than three shades takes stronger peroxide, which does more damage.
+  3. If the gray feels drier, be generous with conditioner.
+  4. Wear a wide-brimmed hat in strong sun. Sun can leave hair dry, rough and faded.
+
+  Will you feel older? After 20 years as a health coach, my view is that dull, dry hair ages a woman more than the color does. Shiny gray with a fresh cut looks bright. And if you miss your color, you can always go back.
+
+  status: pending (human to post)
+
+- **2026-10-15 (draft, pending)** - Quora, REAL thread (confirmed in the search index only, via WebSearch limited to quora.com; Quora returns 403 to curl -4 and to WebFetch on 2026-10-15, so the asker, date and open status could not be seen; check the asker's profile and that it is still open before posting): https://www.quora.com/How-do-you-remove-yellow-stains-from-white-clothing-without-bleach-or-other-harsh-chemicals . Their question: "How do you remove yellow stains from white clothing without bleach or other harsh chemicals?" On-avatar (women 40 to 60 who run the household wash and want the whites back without chlorine bleach; first yellowed whites answer in the warm-up, a different topic from the 2026-09-24 posted detergent and dryer sheet answer, the 2026-09-27 new-clothes draft and the 2026-10-09 musty washer draft, no wording reused). Sources checked: Kansas State University Research and Extension "Laundering Guide" MF-1014 (rub collars and cuffs with liquid detergent; presoak "30 minutes to overnight"; "Too much fabric softener will cause the clothes to appear yellow or dingy and feel greasy"; oxygen bleaches "help maintain whiteness if used on a regular basis" and "are most effective in hot water"; "some fluorescent brighteners used on white fabrics are yellowed by prolonged sunlight exposure," so bring whites in "as soon as they are dry"; revised 1991, so it is old guidance), https://www.pratt.k-state.edu/docs/facs/laundering-guide.pdf , 200 to curl -4; Texas A&M AgriLife Extension "Laundry on your own" L5200 ("When you use too little detergent, clothes become grayed or yellowed, and stains and oils aren't removed"; oxygen bleach "is most effective in brightening colors and whites when used regularly"), https://agrilifeextension.tamu.edu/wp-content/uploads/2025/04/Laundry-on-Your-Own.pdf , 200 to curl -4 on the second try. Both guides also cover chlorine bleach; the answer leaves it out. For our records only, the answer stays LINK-FREE. No brand, no numbers beyond her seven years. LINK-FREE draft answer:
+
+  Yes, you can. Yellow on whites often means something built up in the fabric, like body oil or softener. The fix is getting it out, not covering it up.
+
+  This is the routine I suggest, after seven years of running a toxin-free home:
+
+  1. Soak overnight in the hottest water the fabric can take, with a scoop of oxygen whitener. It is often sold as oxygen bleach, but it has no chlorine. Then wash as usual.
+  2. Measure your detergent. University laundry guides say too little leaves oils behind, and that turns whites yellow.
+  3. Skip fabric softener. Too much makes whites look yellow and dingy.
+  4. Rub collars and underarms with a little liquid detergent before each wash.
+  5. Line dry them, but bring them in once dry. Hours in strong sun can yellow some whites too.
+
+  And pick a fragrance-free wash. Whites do not need perfume to look clean.
+
+  status: pending (human to post)
