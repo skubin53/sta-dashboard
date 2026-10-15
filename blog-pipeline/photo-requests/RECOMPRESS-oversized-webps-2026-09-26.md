@@ -1,7 +1,7 @@
 ---
 type: recompress
 raised: 2026-09-26
-status: open
+status: done
 blocks: nothing (posts can publish; this is page speed)
 ---
 
@@ -83,3 +83,6 @@ Sizes are from the repo copy in `blog-images/` on 2026-09-26, largest first:
 - `howmanyhour-villain-v1.webp` 152 KB (post: how-many-hours-does-this-take)
 - `howmuchshou-hero-v1.webp` 151 KB (post: how-much-should-a-50-year-old-woman-have-saved)
 - `howmuchshou-freedom-v1.webp` 151 KB (post: how-much-should-a-50-year-old-woman-have-saved)
+
+## Closed 2026-10-15 (Photo Claude)
+Re-encoded in place, same file names and pixel sizes. Every WebP in blog-images is now 150,000 bytes or less (206 files touched in one pass, quality stepped down from 84 until each fit; the 11 grassiest frames also got a 0.5 to 0.8 px blur first). Pictures unchanged.

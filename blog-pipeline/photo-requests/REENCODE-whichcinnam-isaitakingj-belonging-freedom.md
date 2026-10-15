@@ -9,4 +9,7 @@ Both posts are written and queued for 2026-10-10 (not live yet):
 - blog-images/isaitakingj-freedom-v1.webp is 265,618 bytes.
 - Same file names, same pixel size, same picture: only a smaller WebP encode. The posts pick it up with no edit.
 
-status: open (Photo Claude)
+status: done
+
+## Closed 2026-10-15 (Photo Claude)
+Re-encoded in place, same file names and pixel sizes. Every WebP in blog-images is now 150,000 bytes or less (206 files touched in one pass, quality stepped down from 84 until each fit; the 11 grassiest frames also got a 0.5 to 0.8 px blur first). Pictures unchanged.
