@@ -1,40 +1,8 @@
 {
- "start": "2026-10-13",
+ "start": "2026-10-15",
  "days": 45,
  "per_day": 2,
  "calendar": [
-  {
-   "date": "2026-10-14",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "is-angry-orange-stain-remover-safe",
-     "title": "Is Angry Orange Stain Remover Safe? Why 1.5 Million Bottles Were Recalled (2026)",
-     "cat": "Cleaning",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "commissions-dropped-real-estate",
-     "title": "My Commissions Dropped and My Broker Blames the Market. What Did NAR Change? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
   {
    "date": "2026-10-16",
    "weekday": "Fri",
@@ -213,8 +181,8 @@
      "track": "shopper"
     },
     {
-     "slug": "tiktok-shop-commission-changes",
-     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
+     "slug": "why-did-my-company-just-close",
+     "title": "Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -245,16 +213,16 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-blog-traffic-drop-2026",
-     "title": "Why Did My Blog Traffic Drop in 2026? And What to Build Instead",
+     "slug": "tiktok-shop-commission-changes",
+     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": false,
-     "written": false,
+     "pix": true,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -277,15 +245,15 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-company-just-close",
-     "title": "Why Did the Company I Built With Just Close? (2026)",
+     "slug": "why-did-my-blog-traffic-drop-2026",
+     "title": "Why Did My Blog Traffic Drop in 2026? And What to Build Instead",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
      "track": "builder"
     }
@@ -424,8 +392,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -456,8 +424,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -488,8 +456,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -520,8 +488,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -552,8 +520,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -584,8 +552,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -616,8 +584,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-tresemme-safe",
-     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -648,8 +616,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -680,8 +648,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -706,9 +674,47 @@
      "track": "builder"
     }
    ]
+  },
+  {
+   "date": "2026-11-28",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "starting-over-at-50-after-divorce",
+     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
+     "cat": "Builders",
+     "why": "A woman rebuilding at 50+ is motivated, decisive and ready to try something new. The post earns her trust without pity and shows a path that",
+     "perish": 1,
+     "keyword": "starting over at 50 with no money",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
   }
  ],
  "shortfall": 0,
- "blocked": [],
+ "blocked": [
+  {
+   "slug": "is-estroven-safe",
+   "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+   "why": "written, but a photo reshoot is open, so it must not publish yet"
+  }
+ ],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
 }
