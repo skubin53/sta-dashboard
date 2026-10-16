@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-01
+date: 2026-10-16
 title: Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026)
 slug: recurring-vs-residual-income
 keyword: recurring vs residual income
@@ -47,12 +47,12 @@ vault_checked: [Recurring-Income-Offer, North-Star, Builder-Target-Segments, MLM
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 1, 2026<br><span style="font-size:.92em;">Published October 1, 2026 &middot; Last updated October 1, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 16, 2026<br><span style="font-size:.92em;">Published October 16, 2026 &middot; Last updated October 16, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>They are not the same thing. Recurring is a charge that repeats until somebody cancels. Residual is a payment each time finished work gets used again.</p>
-<p>Amazon Prime is a recurring charge. <strong><a href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon">In September 2025, Amazon agreed to pay $2.5 billion to settle FTC charges over Prime.</a></strong> The FTC alleged Amazon made it hard to cancel on purpose. Amazon did not admit it.</p>
+<p>Amazon Prime is a recurring charge. <strong><a href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon">In September 2025, Amazon agreed to a $2.5 billion settlement of FTC charges over Prime.</a></strong> The FTC alleged Amazon made it hard to cancel on purpose. Amazon did not admit it.</p>
 <p>So when somebody offers you recurring income, ask one thing. Who has to keep the customer from leaving?</p>
 </div>
 
@@ -112,13 +112,13 @@ vault_checked: [Recurring-Income-Offer, North-Star, Builder-Target-Segments, MLM
 
 <p><a href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon">In 2025 the FTC quoted Amazon's own papers</a>: "subscription driving is a bit of a shady world."</p>
 
-<p>Amazon settled in September 2025. The FTC says that meant a $1 billion penalty and $1.5 billion in refunds, for about 35 million people. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/Amazon-ROSCA-Order-Filed_0.pdf">The settlement order says Amazon does not admit or deny the charges.</a></p>
+<p>Amazon settled in September 2025. The FTC says that meant a $1 billion penalty and up to $1.5 billion in refunds, for about 35 million people. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/Amazon-ROSCA-Order-Filed_0.pdf">The settlement order says Amazon does not admit or deny the charges.</a></p>
 
 <p>The deal even bans one button by name, the FTC says. Amazon can no longer show one that reads "No, I don't want Free Shipping."</p>
 
 <p><a href="https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement">On September 17, 2026, the FTC said refunds would widen.</a> Refunds go out to millions more members from October 1, 2026, with no claim needed.</p>
 
-<p>The charge only repeats if she stays. And so, by the FTC's account, the effort went into hiding the door. Your business is far smaller. It still needs her to stay.</p>
+<p>The charge only repeats if she stays. By the FTC's account, the effort went into hiding the door. Your business is far smaller. It still needs her to stay.</p>
 
 <h2 id="every-month">What does recurring income ask of you every month?</h2>
 
@@ -172,7 +172,7 @@ vault_checked: [Recurring-Income-Offer, North-Star, Builder-Target-Segments, MLM
 
 <p>A monthly charge you are glad to pay is fine. The FTC's case was about the way in and the way out.</p>
 
-<p>When I say residual, I mean the reorder. Switch to America sells straight from the maker, no middlemen, no markup. I would rather lose a customer than trap one.</p>
+<p>When I say residual, I mean the reorder. Switch to America is the manufacturer, no middlemen, no markup. I would rather lose a customer than trap one.</p>
 
 <p>And you do not have to work this out alone.</p>
 
@@ -231,13 +231,30 @@ our finances.</p>
 <h3>Where to check me</h3>
 <ul>
 <li><a href="https://www.ftc.gov/news-events/news/press-releases/2023/06/ftc-takes-action-against-amazon-enrolling-consumers-amazon-prime-without-consent-sabotaging-their">The FTC's June 21, 2023 announcement of its Prime lawsuit</a>. It charges that the cancel path was built to stop people, and cites the "Iliad" reports. These are allegations. The way out is where a subscription keeps its money.</li>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon">The FTC's September 25, 2025 settlement announcement</a>. A $1 billion penalty and $1.5 billion in refunds, for about 35 million people, by the FTC's count. That is what one repeating charge was worth fighting over.</li>
+<li><a href="https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon">The FTC's September 25, 2025 settlement announcement</a>. A $1 billion penalty and up to $1.5 billion in refunds, for about 35 million people, by the FTC's count. That is what one repeating charge was worth fighting over.</li>
 <li><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/Amazon-ROSCA-Order-Filed_0.pdf">The agreed order, Case 2:23-cv-00932, federal court in Seattle</a>. The defendants "neither admit nor deny" the charges. It does record one court ruling: Amazon took billing details before showing all the terms.</li>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement">The FTC's September 17, 2026 update</a>. Over $845 million refunded so far, and more automatic payments from October 1, 2026.</li>
-<li><a href="https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_22_4186/IP_22_4186_EN.pdf">The European Commission, July 1, 2022</a>. Amazon agreed to a two-click Prime cancel in the EU. So two clicks was possible in 2022.</li>
+<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/09/ftc-announces-additional-payments-consumers-stemming-ftcs-amazon-prime-settlement">The FTC's September 17, 2026 update</a>. Over $845 million refunded by September 2026, and more automatic payments from October 1, 2026.</li>
+<li><a href="https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_22_4186/IP_22_4186_EN.pdf">The European Commission, July 1, 2022</a>. Amazon agreed to a two-click Prime cancel in the EU. Two clicks was possible in 2022.</li>
 <li><a href="https://www.aboutamazon.com/news/company-news/amazon-response-on-ftc-agreement">Amazon's own statement on the settlement</a>. It says it "always followed the law." Read their side too.</li>
 <li><a href="https://dictionary.cambridge.org/us/dictionary/english/residual">The Cambridge dictionary entry for residual</a>. Both money meanings, side by side.</li>
 </ul>
+</div>
+
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/recurringvs-freedom-v1.webp" alt="A woman barefoot on a garden swing seat in golden evening light, a paperback face down on her knee, laughing with a neighbor over the fence" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
+
+<p>Here is what I want for you, whether or not we ever speak.</p>
+
+<p>The next offer will land in your inbox at eleven at night. You will read it at the dining table. You will ask which one they mean, and who keeps the customer from leaving.</p>
+
+<p>You become the one who builds on what people choose again, not on what they forget to cancel.</p>
+
+<div class="sta-cta">
+<h3>Twenty minutes, on video, no slides</h3>
+<p>You do not have to decide anything. Ask me the three questions above, about my business, and hear the answers yourself. If it is not for you I would rather find out on the call.</p>
+<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
+<span class="micro">You can always say no, and there is no follow up if you do.</span>
 </div>
 
 <h2 id="faq">What else do you want to know?</h2>
@@ -250,16 +267,6 @@ our finances.</p>
 
 <p><strong>Am I owed a Prime refund?</strong></p>
 <p>Maybe. <a href="https://www.ftc.gov/enforcement/refunds/amazon-refunds">The FTC says</a> it covers US members who signed up through certain Amazon pages, or tried to cancel online and could not, from June 23, 2019 to June 23, 2025. You also had to use 20 or fewer Prime benefits in a year. No claim is needed, and payments run through April 2027.</p>
-
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/recurringvs-freedom-v1.webp" alt="A woman barefoot on a garden swing seat in golden evening light, a paperback face down on her knee, laughing with a neighbor over the fence" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
-
-<p>Here is what I want for you, whether or not we ever speak.</p>
-
-<p>The next offer will land in your inbox at eleven at night. You will read it at the dining table. You will ask which one they mean, and who keeps the customer from leaving.</p>
-
-<p>You become the one who builds on what people choose again, not on what they forget to cancel.</p>
 
 <div class="sta-keep">
 <h3>Worth reading next</h3>
@@ -286,8 +293,8 @@ our finances.</p>
    "headline": "Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026)",
    "description": "Recurring is a charge someone can cancel. The FTC alleged Amazon built the Prime cancel path to stop people. Here is how residual differs.",
    "image": "https://scan.ismyhometoxic.com/blog-images/recurringvs-hero-v1.webp",
-   "datePublished": "2026-10-01",
-   "dateModified": "2026-10-01",
+   "datePublished": "2026-10-16",
+   "dateModified": "2026-10-16",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://theshannonnicole.com/post/recurring-vs-residual-income"
@@ -374,10 +381,3 @@ our finances.</p>
  ]
 }
 </script>
-
-<div class="sta-cta">
-<h3>Twenty minutes, on video, no slides</h3>
-<p>You do not have to decide anything. Ask me the three questions above, about my business, and hear the answers yourself. If it is not for you I would rather find out on the call.</p>
-<p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
-<span class="micro">You can always say no, and there is no follow up if you do.</span>
-</div>
