@@ -7,7 +7,7 @@ keyword: is estroven safe
 category: Supplements
 cover: https://scan.ismyhometoxic.com/blog-images/isestrovens-hero-v1.webp
 meta_description: A July 2026 lawsuit says Estroven's box makes drug-style menopause promises. What the complaint claims, what the box says, and the swap.
-status: needs-review
+status: ready
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 ---
 
