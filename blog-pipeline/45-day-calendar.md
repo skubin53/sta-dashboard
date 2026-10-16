@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-10-15 | 2 posts every publish day (even dates) | starts 2026-10-15 | 45 days
+Switch to America | rebuilt 2026-10-15 | 2 posts every publish day (even dates) | starts 2026-10-16 | 45 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -34,33 +34,33 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-10-26 | Mon | 2 | builder | villain | Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026) | ready |
 | 2026-10-28 | Wed | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
 | 2026-10-28 | Wed | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
-| 2026-10-30 | Fri | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
-| 2026-10-30 | Fri | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | NEEDED |
-| 2026-11-02 | Mon | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
-| 2026-11-02 | Mon | 2 | builder | villain | Why Do Women-Owned Businesses Stay Small? (2026) | ready |
-| 2026-11-04 | Wed | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
-| 2026-11-04 | Wed | 2 | builder | villain | Why Does My Business Own Me? (2026) | ready |
-| 2026-11-06 | Fri | 1 | shopper | villain | Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026) | ready |
-| 2026-11-06 | Fri | 2 | builder | villain | Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026) | NEEDED |
-| 2026-11-08 | Sun | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
-| 2026-11-08 | Sun | 2 | builder | villain | Is 50 Too Old to Get Hired? What One Company Paid for Calling an Applicant 'Too Old' (2026) | NEEDED |
-| 2026-11-10 | Tue | 1 | shopper | villain | Is It Safe to Buy Skincare on Amazon? (2026) | ready |
-| 2026-11-10 | Tue | 2 | builder | villain | Is Social Security Going to Run Out in 2032? What the Trustees Actually Said (2026) | NEEDED |
-| 2026-11-12 | Thu | 1 | shopper | villain | Is Krud Kutter Really Non-Toxic? (2026) | ready |
-| 2026-11-12 | Thu | 2 | builder | villain | Why Do I Never Hear Back From Job Applications? What New York's Ghost Job Bill Would Make Employers Say (2026) | NEEDED |
-| 2026-11-14 | Sat | 1 | shopper | villain | Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026) | ready |
-| 2026-11-14 | Sat | 2 | builder | villain | Are Work From Home Jobs for Women Over 50 Real? How to Spot the Fake Ones (2026) | NEEDED |
-| 2026-11-16 | Mon | 1 | shopper | villain | Is Roundup Safe to Use Around Your House? (2026) | ready |
-| 2026-11-16 | Mon | 2 | builder | villain | Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026) | NEEDED |
-| 2026-11-18 | Wed | 1 | shopper | villain | Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026) | ready |
-| 2026-11-18 | Wed | 2 | builder | villain | Does Rodan + Fields Selling on Amazon Hurt Its Consultants? (2026) | NEEDED |
-| 2026-11-20 | Fri | 1 | shopper | villain | Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026) | ready |
-| 2026-11-20 | Fri | 2 | builder | villain | Can You Really Run a Franchise in 15 Hours a Week? What the FTC Said About Premier Martial Arts (2026) | NEEDED |
-| 2026-11-22 | Sun | 1 | shopper | villain | Is The Pink Stuff Safe? (2026) | ready |
-| 2026-11-22 | Sun | 2 | builder | villain | Did It Works Go Out of Business? What the Zinzino Merger Means for Distributors (2026) | NEEDED |
-| 2026-11-24 | Tue | 1 | shopper | villain | Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026) | ready |
-| 2026-11-24 | Tue | 2 | builder | villain | Is DoorDash Worth It as a Side Hustle? What New York Just Made It Pay Back (2026) | NEEDED |
-| 2026-11-26 | Thu | 1 | shopper | villain | Is Vaseline Safe? What Petroleum Jelly Actually Is (2026) | ready |
-| 2026-11-26 | Thu | 2 | builder | villain | Is Menopause Pushing Women Out of Their Jobs? What the Mayo Clinic Counted (2026) | NEEDED |
-| 2026-11-28 | Sat | 1 | shopper | villain | Is Your Dehumidifier a Fire Risk? (2026) | ready |
-| 2026-11-28 | Sat | 2 | builder | villain | Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026) | NEEDED |
+| 2026-10-30 | Fri | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
+| 2026-10-30 | Fri | 2 | builder | villain | Are Work From Home Jobs for Women Over 50 Real? How to Spot the Fake Ones (2026) | ready |
+| 2026-11-02 | Mon | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
+| 2026-11-02 | Mon | 2 | builder | villain | Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026) | ready |
+| 2026-11-04 | Wed | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
+| 2026-11-04 | Wed | 2 | builder | villain | Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026) | ready |
+| 2026-11-06 | Fri | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
+| 2026-11-06 | Fri | 2 | builder | villain | Can You Really Run a Franchise in 15 Hours a Week? What the FTC Said About Premier Martial Arts (2026) | ready |
+| 2026-11-08 | Sun | 1 | shopper | villain | Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026) | ready |
+| 2026-11-08 | Sun | 2 | builder | villain | Did It Works Go Out of Business? What the Zinzino Merger Means for Distributors (2026) | ready |
+| 2026-11-10 | Tue | 1 | shopper | villain | Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026) | ready |
+| 2026-11-10 | Tue | 2 | builder | villain | Does Rodan + Fields Selling on Amazon Hurt Its Consultants? (2026) | ready |
+| 2026-11-12 | Thu | 1 | shopper | villain | Are Plug-In Carbon Monoxide Detectors Reliable? The One You Should Unplug Today (2026) | ready |
+| 2026-11-12 | Thu | 2 | builder | villain | Is 50 Too Old to Get Hired? What One Company Paid for Calling an Applicant 'Too Old' (2026) | ready |
+| 2026-11-14 | Sat | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | NEEDED |
+| 2026-11-14 | Sat | 2 | builder | villain | Is DoorDash Worth It as a Side Hustle? What New York Just Made It Pay Back (2026) | ready |
+| 2026-11-16 | Mon | 1 | shopper | villain | Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026) | ready |
+| 2026-11-16 | Mon | 2 | builder | villain | Is Menopause Pushing Women Out of Their Jobs? What the Mayo Clinic Counted (2026) | ready |
+| 2026-11-18 | Wed | 1 | shopper | villain | Is Gotham Steel Safe to Cook With? What the 'Non-Toxic' Settlement Says (2026) | ready |
+| 2026-11-18 | Wed | 2 | builder | villain | Is Social Security Going to Run Out in 2032? What the Trustees Actually Said (2026) | ready |
+| 2026-11-20 | Fri | 1 | shopper | villain | Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026) | ready |
+| 2026-11-20 | Fri | 2 | builder | villain | Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026) | ready |
+| 2026-11-22 | Sun | 1 | shopper | villain | Is It Safe to Buy Skincare on Amazon? (2026) | ready |
+| 2026-11-22 | Sun | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | NEEDED |
+| 2026-11-24 | Tue | 1 | shopper | villain | Is Krud Kutter Really Non-Toxic? (2026) | ready |
+| 2026-11-24 | Tue | 2 | builder | villain | Why Do I Never Hear Back From Job Applications? What New York's Ghost Job Bill Would Make Employers Say (2026) | ready |
+| 2026-11-26 | Thu | 1 | shopper | villain | Is LiLash Safe? What a New Lawsuit Says Is Hiding in the Serum (2026) | ready |
+| 2026-11-26 | Thu | 2 | builder | villain | Why Do Women-Owned Businesses Stay Small? (2026) | ready |
+| 2026-11-28 | Sat | 1 | shopper | villain | Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026) | ready |
+| 2026-11-28 | Sat | 2 | builder | villain | Why Does My Business Own Me? (2026) | ready |
