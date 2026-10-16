@@ -105,7 +105,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, skin-microbiome]
 <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6581159/">The same review names Henkel among the companies trading letters with regulators about it since 2015.</a></p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isantibacte-villain-v1.webp" alt="A white Dial Antibacterial soap pump standing alone on the edge of a white bathroom sink beside a brass faucet and a folded terracotta towel, against grey stone tile in flat cold light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isantibacte-villain-v1.webp" alt="A white antibacterial soap pump standing alone on the edge of a white bathroom sink beside a brass faucet and a folded terracotta towel, against grey stone tile in flat cold light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="does-it-work-better">Does antibacterial soap work better than plain soap?</h2>
