@@ -3,7 +3,8 @@ type: re-render
 slug: how-to-read-an-income-disclosure
 image: howtoreadan-belonging-v1
 raised: 2026-08-31
-status: open
+status: done
+closed: 2026-10-17
 ---
 
 # Re-render needed: howtoreadan-belonging-v1
@@ -28,3 +29,6 @@ women. A shallower background, or the trolley against a plainer bank rather than
 receding, would cut the encoded detail without changing what the frame says. The point of
 the shot is the two women mid-conversation with nothing being sold, and that survives a
 simpler background.
+
+## Closed 2026-10-17 (Photo Claude)
+Closed without a re-render: the 2026-10-15 re-encode pass brought howtoreadan-belonging-v1.webp to 145,688 bytes at 1600px (quality 48 after a 0.5 px softening), inside gate C3, and the picture reads the same.
