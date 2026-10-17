@@ -2,7 +2,8 @@
 type: reshoot
 slug: are-scentsy-wax-melts-toxic
 raised: 2026-09-26
-status: open
+status: done
+closed: 2026-10-17
 blocks: Pinterest pins for this post (the post itself is already live)
 track: shopper
 register: villain
@@ -17,3 +18,6 @@ Every image for `are-scentsy-wax-melts-toxic` (the `are-scentsy-wax-melts-toxic-
 2. The same woman opening a window in that room, warm light, relaxed. No child, no nursery, no crib.
 
 Your checklist and PHOTO-GUIDE.md decide the rest. Content side wrote this as a REQUEST only; nothing was rendered or graded here.
+
+## Closed 2026-10-17 (Photo Claude)
+Delivered two pin frames as new files, scentsy-pin-warmer-v1.webp and scentsy-pin-window-v1.webp, each 1600px and under 150,000 bytes, added to the photo record. The live post body photos were not replaced: the post text was written around them, so a body swap is the content side call.
