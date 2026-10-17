@@ -1,16 +1,16 @@
 {
- "start": "2026-10-16",
+ "start": "2026-10-17",
  "days": 45,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-16",
-   "weekday": "Fri",
+   "date": "2026-10-18",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-antibacterial-hand-soap-safe",
-     "title": "Is Antibacterial Hand Soap Safe? Dial's Germ Killer Still Has No Safety Ruling (2026)",
-     "cat": "Bathroom",
+     "slug": "are-electric-blankets-safe",
+     "title": "Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026)",
+     "cat": "Home",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -21,8 +21,8 @@
      "track": "shopper"
     },
     {
-     "slug": "recurring-vs-residual-income",
-     "title": "Recurring vs Residual Income: What Did the Amazon Prime Case Show? (2026)",
+     "slug": "work-from-home-jobs-for-women-over-50",
+     "title": "Are Work From Home Jobs for Women Over 50 Real, and How Do You Spot the Fake Ones? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-18",
-   "weekday": "Sun",
+   "date": "2026-10-20",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -68,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-20",
-   "weekday": "Tue",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -100,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -132,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -164,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -196,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -228,45 +228,13 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-estroven-safe",
      "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
      "cat": "Supplements",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "work-from-home-jobs-for-women-over-50",
-     "title": "Are Work From Home Jobs for Women Over 50 Real? How to Spot the Fake Ones (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-02",
-   "weekday": "Mon",
-   "slots": [
-    {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -296,9 +264,9 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
-     "cat": "Beauty",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -328,9 +296,9 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -360,9 +328,9 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -392,16 +360,16 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "are-electric-blankets-safe",
-     "title": "Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -702,6 +670,38 @@
      "felt": "",
      "register": "villain",
      "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "can-i-collect-my-ex-husbands-social-security",
+     "title": "Can I Collect My Ex-Husband's Social Security? What the 10-Year Rule Means for You (2026)",
+     "cat": "Builders",
+     "why": "A huge evergreen search from exactly the woman who just lost a household income. It leads to the same conclusion as the divorce post: build ",
+     "perish": 1.5,
+     "keyword": "can i collect my ex husband's social security",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
      "written": false,
      "track": "builder"
     }
