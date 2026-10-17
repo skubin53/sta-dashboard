@@ -4,7 +4,8 @@ slug: should-you-give-a-child-cough-syrup
 post_title: "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)"
 photos_record: blog-pipeline/photos-completed/2026-08-14.md
 raised: 2026-09-25
-status: open
+status: done
+closed: 2026-10-17
 blocks: publication
 track: shopper
 register: villain
@@ -75,3 +76,6 @@ children's one.
 
 Written by the content side (Cameron) as a REQUEST only. Nothing was rendered, viewed or
 graded here.
+
+## Closed 2026-10-17 (Photo Claude)
+Delivered shouldyougi-hero-v2, turning-point-v2, belonging-v2 and freedom-v2 (one woman about 55, no child, adult syrup in a plain amber bottle). Villain v1 kept. photos-completed/2026-08-14.md updated.
