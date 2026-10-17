@@ -563,3 +563,8 @@ Both confirmed on _created (first two tiles). GROWTH TASK (g): Q3 half done (5 o
 - Prevagen -> LIVE, pin 474848354483826217 | "Does Prevagen actually work? What a federal jury found in 2024" | Healthy Aging Over 50 | utm_campaign=does-prevagen-actually-work | photo doesprevage-belonging-v1 (two women in their late fifties laughing on a pickleball court) | desc 459
 - SKIPPED: florida-general-mills-potassium-bromate-subpoena. No usable photo (01/02 no person, 03/04 other brands' labels, 05 a small child). Pin-photo request written: blog-pipeline/photo-requests/PIN-florida-general-mills-potassium-bromate-subpoena.md. Pin it when the frame lands.
 Both confirmed on _created. GROWTH TASK (g): Q3 DONE. Next queue item: Q4 (replace the nonstick pin that shows a child, and the Fabuloso pin with no person). Next 2 pins: Day 26 is-your-laminate-floor (does-laminate-flooring-off-gas-formaldehyde) + Day 27 are-amazon-supplements-real.
+
+### 2026-10-17 4pm: Photo Claude caught up on every photo request
+- Bromate pin frame DELIVERED: blog-images/florida-general-mills-potassium-bromate-subpoena-pin-v1.webp (woman kneading bread, no labels). Pin it on the NEXT run, first, on Non-Toxic Food & Clean Pantry, utm_campaign=florida-general-mills-potassium-bromate-subpoena.
+- Scentsy pin frames DELIVERED (RESHOOT-scentsy-pin-audience done): scentsy-pin-warmer-v1.webp and scentsy-pin-window-v1.webp (woman about 54, no baby). Day 30 Scentsy pin is unblocked.
+- Audience fixes replaced in place (same file names, live posts update by themselves): Vaseline, dryer sheets, Suave, the Christmas cover, the 90-day income cover. Cough syrup came back as v2 files; that post is not written yet, so the writer will use v2 from the photo record.
