@@ -5,7 +5,8 @@ slug: extra-money-for-christmas
 track: builder
 queue_file: blog-pipeline/queue/extra-money-for-christmas.md
 beats: 1
-status: open
+status: done
+closed: 2026-10-17
 priority: high
 replaces: blog-images/extramoneyf-hero-v1.webp (the COVER only)
 style: "Same set rules as photos-completed/extra-money-for-christmas.md: REAL-LIFE standard, documentary realism, all 15 checks in PHOTO-CLAUDE-RULES.md, check 15 big real family kitchen. Continuity: the SAME woman and the SAME kitchen as the body frames."
@@ -45,3 +46,6 @@ The four body frames are FINE and must not be touched:
   **150 KB or less** (the set's other images are already in a re-encode request). Same path means
   the live post and its share card update with no republish.
 - Requests only from this side: Photo Claude renders, checks and writes photos-completed.
+
+## Closed 2026-10-17 (Photo Claude)
+Cover re-made at the same path with the body frames woman, under 150,000 bytes. The live post and share card pick it up with no republish.
