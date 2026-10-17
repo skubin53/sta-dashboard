@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>You're Booked | Shop With Nicole</title>
+<meta name="description" content="You're in. Your $100 store credit is on its way. Pick a time and Shannon from Switch to America will show you the store.">
+<!-- DRAFT thank-you page for Nicole Perez (Patriotic Housewife). Built 2026-10-17 from the join.switchtoamerica.com/booking-page-5472 code. Not live. See NOTES.md.
+     Left out on purpose (draft safety): the 3-question Shopping Audit overlay (it posts to Shannon's live GHL webhook), the "Watch Shannon's story" video, and form_embed.js (nothing to embed yet). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --navy:#0A1B3D; --navy2:#152C63; --red:#E01E37; --red2:#FF2D55;
+    --gold:#FFC21E; --gold2:#FF9E1B; --cream:#FFF7EC; --white:#fff; --ink:#0A1B3D;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Montserrat',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink);background:var(--navy);overflow-x:hidden}
+  img,iframe,video{max-width:100%;display:block}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+
+  /* ---------- TOP FLAG BAR ---------- */
+  .flagbar{height:8px;background:repeating-linear-gradient(90deg,var(--red) 0,var(--red) 40px,var(--white) 40px,var(--white) 80px,var(--navy) 80px,var(--navy) 120px)}
+  .brandbar{background:var(--navy);text-align:center;padding:14px 10px;border-bottom:2px solid rgba(255,194,30,.25)}
+  .brandbar span{color:var(--gold);font-weight:900;letter-spacing:4px;font-size:.85rem;text-transform:uppercase}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;background:
+      radial-gradient(1200px 500px at 50% -10%,rgba(255,45,85,.45),transparent 60%),
+      radial-gradient(900px 500px at 90% 20%,rgba(255,194,30,.25),transparent 55%),
+      linear-gradient(160deg,var(--navy) 0%,var(--navy2) 60%,#0c1330 100%);
+    padding:54px 0 30px;text-align:center;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.10) 1.4px,transparent 1.4px);
+    background-size:26px 26px;opacity:.5;pointer-events:none}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,194,30,.5);color:var(--gold);font-weight:800;font-size:.78rem;
+    letter-spacing:2px;text-transform:uppercase;padding:9px 18px;border-radius:50px;position:relative;z-index:2}
+  .hero h1{font-family:'DM Serif Display',serif;color:var(--white);position:relative;z-index:2;
+    font-size:clamp(2.4rem,7.5vw,4.2rem);line-height:1.04;margin:18px 0 6px;text-shadow:0 6px 30px rgba(0,0,0,.4)}
+  .hero h1 .fire{background:linear-gradient(90deg,var(--gold) 0%,var(--gold2) 50%,var(--red2) 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-style:italic}
+  .hero p.sub{color:rgba(255,255,255,.9);font-size:clamp(1.05rem,2.6vw,1.3rem);font-weight:500;
+    max-width:560px;margin:8px auto 0;position:relative;z-index:2;line-height:1.5}
+  .pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px auto 4px;position:relative;z-index:2}
+  .pill{background:rgba(255,255,255,.95);color:var(--navy);font-weight:800;font-size:.85rem;
+    padding:9px 16px;border-radius:50px;display:inline-flex;align-items:center;gap:7px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+  .pill b{color:var(--red)}
+  .downarrow{font-size:2rem;color:var(--gold);position:relative;z-index:2;margin-top:14px;animation:bob 1.6s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+
+  /* ---------- SECTION TITLES ---------- */
+  .band{padding:54px 0}
+  .band.navy{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff}
+  .band.cream{background:var(--cream)}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:900;letter-spacing:2.5px;
+    text-transform:uppercase;font-size:.78rem;color:var(--red);margin-bottom:10px}
+  .band.navy .eyebrow{color:var(--gold)}
+  .stitle{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5.5vw,3.1rem);line-height:1.05;text-align:center}
+  .band.navy .stitle{color:#fff}
+  .stitle .hl{color:var(--red)}
+  .band.navy .stitle .hl{color:var(--gold)}
+  .ssub{text-align:center;font-weight:500;font-size:1.05rem;max-width:540px;margin:12px auto 0;opacity:.9;line-height:1.5}
+  .center{text-align:center}
+
+  /* ---------- CALENDAR ---------- */
+  .calwrap{margin:26px auto 0;background:#fff;border-radius:18px;overflow:hidden;
+    box-shadow:0 24px 60px rgba(0,0,0,.4);border-top:8px solid var(--gold)}
+  .cal-ph{min-height:720px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+    text-align:center;padding:30px 20px;margin:14px;border:3px dashed var(--red);border-radius:12px;background:var(--cream);color:var(--navy)}
+  .cal-ph .t{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,4.5vw,2rem);line-height:1.15}
+  .cal-ph .s{font-weight:600;font-size:.95rem;color:#65728B;max-width:420px;line-height:1.45}
+
+  /* ---------- STEPS ---------- */
+  .steps{margin:34px auto 0;display:grid;gap:16px}
+  .step{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);padding:18px 20px;border-radius:14px}
+  .step .num{flex:0 0 auto;width:46px;height:46px;border-radius:50%;
+    background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font-weight:900;font-size:1.2rem;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(224,30,55,.45)}
+  .step h4{font-size:1.1rem;font-weight:800;margin-bottom:3px}
+  .band.navy .step h4{color:#fff}
+  .step p{font-size:.95rem;opacity:.85;line-height:1.45}
+
+  /* ---------- BIG CTA ---------- */
+  .cta{background:linear-gradient(120deg,var(--red) 0%,var(--red2) 60%,var(--gold2) 130%);text-align:center;padding:60px 0}
+  .cta h2{font-family:'DM Serif Display',serif;color:#fff;font-size:clamp(2rem,6vw,3.2rem);line-height:1.05}
+  .cta p{color:rgba(255,255,255,.95);font-weight:600;margin:12px auto 22px;max-width:480px;font-size:1.1rem}
+  .btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);
+    font-weight:900;font-size:1.15rem;letter-spacing:.5px;padding:18px 40px;border-radius:50px;text-decoration:none;
+    box-shadow:0 14px 36px rgba(0,0,0,.3);transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-3px);box-shadow:0 20px 46px rgba(0,0,0,.4)}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--navy);color:rgba(255,255,255,.6);text-align:center;padding:26px 16px;font-size:.85rem}
+  footer a{color:var(--gold);text-decoration:none;font-weight:700}
+  @media(max-width:600px){.cal-ph{min-height:760px}}
+</style>
+</head>
+<body>
+
+<div class="flagbar"></div>
+<div class="brandbar"><span>&#9733; Switch to America &#9733;</span></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">&#10003; You're booked</span>
+    <h1>You're <span class="fire">all set.</span></h1>
+    <p class="sub">Shannon from Switch to America will call you at the time you picked. Watch for a text and an email with the details.</p>
+    
+  </div>
+</section>
+
+<!-- ===== WHAT HAPPENS NEXT ===== -->
+<section class="band navy">
+  <div class="wrap">
+    <span class="eyebrow" style="display:flex;justify-content:center">&#10022; What happens next</span>
+    <h2 class="stitle">Here's exactly what to expect</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><h4>&#128233; Check your email and text</h4><p>Your booking details are on the way. Need a different time? Use the link in that message.</p></div></div>
+      <div class="step"><div class="num">2</div><div><h4>&#128722; Your 15-minute store tour</h4><p>Shannon from Switch to America shows you around the store. Quick, friendly, zero pressure.</p></div></div>
+      <div class="step"><div class="num">3</div><div><h4>&#9989; You decide what to switch</h4><p>No upsells. We just guide you to the products that make sense for your family.</p></div></div>
+      <div class="step"><div class="num">4</div><div><h4>&#127482;&#127480; Enjoy safer, American-made essentials</h4><p>Everyday products that fit your values. Welcome to the family.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &#169; 2026 <a href="https://switchtoamerica.com">SwitchToAmerica.com</a>. All Rights Reserved
+</footer>
+
+</body>
+</html>
