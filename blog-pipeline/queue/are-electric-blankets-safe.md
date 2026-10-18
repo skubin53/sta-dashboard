@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-10
+date: 2026-10-18
 title: Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026)
 slug: are-electric-blankets-safe
 keyword: are electric blankets safe
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 10, 2026<br><span style="font-size:.92em;">Published November 10, 2026 &middot; Last updated November 10, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 18, 2026<br><span style="font-size:.92em;">Published October 18, 2026 &middot; Last updated October 18, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -138,7 +138,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Then you wait. The page says customer service is "currently very busy" and will answer "within 2 weeks." A label comes. You ship it all back, and then the refund comes.</p>
 
-<p>One click to buy it. Scissors, a marker, photos and two weeks to send it back.</p>
+<p>One click to buy it. Scissors, a marker, photos and two weeks for a reply.</p>
 
 <p>The record on JKMAX, in order. Start with the last column.</p>
 
@@ -161,7 +161,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>So why would I still tell you to unplug it?</p>
 
-<p>Because the JKMAX blankets were the newer kind, sold from 2022 to 2026. That same burn center says never to use warming bedding on anyone "insensitive to heat."</p>
+<p>Because the JKMAX blankets were new, sold from 2022 to 2026. That same burn center says never to use warming bedding on anyone "insensitive to heat."</p>
 
 <p>You are far from the only one who trusted it. About 195,000 of them went out. If your mother sleeps under one too, check hers the same night.</p>
 
@@ -173,7 +173,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: a plain wool blanket on top, with no wire inside and no plug.</p>
 
-<p>Unplug the JKMAX tonight and cut the cord the way the recall page asks.</p>
+<p>Unplug the JKMAX tonight and cut the cord the way <a href="https://jkmaxrecall.com/recall">the recall page asks</a>.</p>
 
 <p>Then put a heavy blanket on the bed, plain wool or thick cotton. It holds your own heat. Nothing in it can overheat, because nothing in it plugs in.</p>
 
@@ -214,9 +214,8 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.cpsc.gov/Recalls/2026/JKMAX-Recalls-Heated-Blankets-and-Heating-Pads-Due-to-Fire-and-Burn-Hazards">US Consumer Product Safety Commission, recall 26-778, September 17, 2026</a>. JKMAX recalled about 195,000 heated blankets and pads sold on Amazon because the heating wire can overheat. The notice says JKMax is aware of 577 reports of smoking, melting or burning, including 53 burn injuries. What it means: if yours says JKMAX, it is on a federal recall.</li>
 <li><a href="https://jkmaxrecall.com/recall">JKMAX recall page, 2026</a>. The company apologizes, then asks you to cut the cord, mark the remote, send photos and wait up to two weeks for a reply. What it means: the refund is real, and it is work.</li>
-<li><a href="https://www.fox32chicago.com/news/heated-blankets-recall-injuries-amazon">FOX 32 Chicago, September 18, 2026</a>. Covered the recall of 195,000 heated blankets sold on Amazon, from the CPSC notice. What it means: you are not the only one checking tonight.</li>
 <li><a href="https://healthcare.utah.edu/the-scope/health-library/all/2018/11/heating-pads-can-cause-second-degree-burns">University of Utah Health Burn Center, 2018</a>. Nurse manager Brad Wiggins names falling asleep on a heating pad as a burn risk. What it means: time under the heat matters, not only how hot it gets.</li>
-<li><a href="https://health.ucdavis.edu/burncenter/newsletter/2018/0218BurnNet.pdf">UC Davis burn center newsletter, February 2018</a>. Tells a burn survivor to use the low setting. For all warming bedding: turn it off when not in use, and never use it on anyone insensitive to heat. What it means: even the burn center that says keep yours gives you ten rules.</li>
+<li><a href="https://health.ucdavis.edu/burncenter/newsletter/2018/0218BurnNet.pdf">UC Davis burn center newsletter, February 2018</a>. Tells a burn survivor to use the low setting. For all warming bedding: turn it off when not in use, and never use it on anyone insensitive to heat. What it means: even the burn center that says do not trash yours yet gives you ten rules.</li>
 </ul>
 </div>
 
@@ -278,8 +277,8 @@ of our health and our finances.</p>
    "headline": "Are Electric Blankets Safe to Use All Night? What JKMAX Just Recalled (2026)",
    "description": "JKMAX recalled about 195,000 heated blankets and pads sold on Amazon. The recall notice cites 577 reports of smoking, melting or burning.",
    "image": "https://scan.ismyhometoxic.com/blog-images/areelectric-hero-v1.webp",
-   "datePublished": "2026-11-10",
-   "dateModified": "2026-11-10",
+   "datePublished": "2026-10-18",
+   "dateModified": "2026-10-18",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-electric-blankets-safe"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
