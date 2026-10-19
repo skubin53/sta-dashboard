@@ -585,6 +585,36 @@
    "demand_evidence": "Autocomplete 10/12/2026: 'younique curated' -> curated younique website | curated younique login | curated younique products | younique is now curated. 'younique' -> younique products | younique ventures.",
    "status": "verified 2026-10-12",
    "added": "2026-10-12 buyer conversation sweep (Shannon: \"Let's get into the convos of our ideal buyers.\")"
+  },
+  {
+   "title": "Avon Sold to Regent: What the Deal Means for Avon Representatives (2026)",
+   "slug": "avon-sold-to-regent",
+   "keyword": "avon sold to regent",
+   "hook": "She has sold Avon for years. The company has changed hands again, and nobody asked the representatives.",
+   "angle": "Structure argument: the brand changed owners again (LG H&H bought Avon North America in 2019; Regent agreed to buy it in Aug 2026 after buying Avon International from Natura in Jan 2026) and the representative never had a vote. Own the customer relationship, not a spot in a plan someone else can sell. Never knock Avon products. No income promise. Use 'sold again' in the H1 or first line.",
+   "proof": "Direct Selling News, Aug 24, 2026: https://www.directsellingnews.com/2026/08/24/regent-to-acquire-avon-north-america/ . Regent agreed to buy Avon North America from LG H&H; closing was expected Sep 1. Regent says it creates 'a more connected opportunity for the Representatives and Ambassadors'. Lisa Siders is the incoming CEO. CLOSING IS NOT VERIFIED as of 10/19: confirm it or write 'agreed to buy'. Verify the Jan 2026 Avon International purchase from Natura before using it.",
+   "why_it_recruits": "Avon reps are the classic woman 45 to 65 in direct sales, and a change of owner is when they look at what else is out there.",
+   "priority": 1,
+   "perish": 2,
+   "demand_evidence": "Autocomplete 10/19/2026: 'avon sold' -> avon sold to regent | avon sold again | avon sold by natura | avon international sold. 'avon regent' -> avon regent sale | regent avon north america | regent avon acquisition. 'is avon going out of business' has many variants.",
+   "status": "verified 2026-10-19",
+   "why_now": "Deal announced Aug 24, 2026.",
+   "added": "2026-10-19 stronger-topics research (Shannon: \"Let's try and make the topics stronger. MUCH stronger.\" then \"yes do both\")"
+  },
+  {
+   "title": "Why Did Optavia Change Its Name to Trilivy? What Medifast's Own Numbers Say About Coaches (2026)",
+   "slug": "why-did-optavia-change-its-name-trilivy",
+   "keyword": "why did optavia change its name",
+   "hook": "She became an OPTAVIA coach to help people the way she was helped. Now the brand has a new name and the coach count has nearly halved.",
+   "angle": "Answer the name question with the company's own stated reason, then the structure: Medifast's own Q2 2026 numbers. Attack the coach structure, never shakes or meal plans (her store sells shakes). No GLP-1 health claims of our own (a CFO quote is a company statement). No doctor voice. No income promise. Use the 'trilogy' misspelling naturally in the body.",
+   "proof": "Medifast Q2 2026 earnings call, Aug 3, 2026 (8-K Item 2.02 filed Aug 3, 2026; Motley Fool transcript posted Aug 10: https://www.fool.com/earnings/call-transcripts/2026/08/10/medifast-med-q2-2026-earnings-call-transcript/ ). About 11,700 active earning coaches, down 48.7% from 22,800 ('nearly halved'); revenue $76.4M, down 27.6%. Trilivy succeeds OPTAVIA as the main consumer brand. An enhanced coach comp plan launched Aug 1, 2026. The CFO expects the coach count to keep declining in the short term. Refresh after the Q3 call in early November.",
+   "why_it_recruits": "OPTAVIA coaches are women helping others with health, the coach count is falling by the company's own numbers, and they are searching for what changed.",
+   "priority": 1,
+   "perish": 2,
+   "demand_evidence": "Autocomplete 10/19/2026: 'why did optavia change its name' -> ...to trilogy | ...to tivoli | ...again | has optavia changed its name | optavia previous name. 'optavia new name' -> optavia new name 2026 | optavia new name change.",
+   "status": "verified 2026-10-19",
+   "why_now": "Q2 call Aug 3, 2026; Q3 call early November is the refresh.",
+   "added": "2026-10-19 stronger-topics research (Shannon: \"Let's try and make the topics stronger. MUCH stronger.\" then \"yes do both\")"
   }
  ],
  "_note": "Builder blog track, researched 2026-08-23 after Shannon said 'there should be blog posts for builders, not just shoppers'. Every proof point was web-verified by the research agent. Re-verify any receipt before it goes in a post. blog-desk.py reads this file to render the builder plan on the dashboard.",
