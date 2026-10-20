@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-12
+date: 2026-10-19
 title: Are Plug-In Carbon Monoxide Detectors Reliable? Why You Should Unplug the KH158 Today (2026)
 slug: are-plug-in-carbon-monoxide-detectors-reliable
 keyword: carbon monoxide detector recall
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 12, 2026<br><span style="font-size:.92em;">Published November 12, 2026 &middot; Last updated November 12, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 19, 2026<br><span style="font-size:.92em;">Published October 19, 2026 &middot; Last updated October 19, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -291,8 +291,8 @@ of our health and our finances.</p>
    "headline": "Are Plug-In Carbon Monoxide Detectors Reliable? Why You Should Unplug the KH158 Today (2026)",
    "description": "The CPSC says the KH158 plug-in gas and carbon monoxide detector can fail to alarm, and there is no recall. How to check yours and what to use instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arepluginca-hero-v1.webp",
-   "datePublished": "2026-11-12",
-   "dateModified": "2026-11-12",
+   "datePublished": "2026-10-19",
+   "dateModified": "2026-10-19",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-plug-in-carbon-monoxide-detectors-reliable"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}

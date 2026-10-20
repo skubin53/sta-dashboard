@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-02
+date: 2026-10-19
 title: Can I Collect My Ex-Husband's Social Security? What the 10-Year Rule Means for You (2026)
 slug: can-i-collect-my-ex-husbands-social-security
 keyword: can i collect my ex husband's social security
@@ -47,7 +47,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 19, 2026<br><span style="font-size:.92em;">Published October 19, 2026 &middot; Last updated October 19, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -297,8 +297,8 @@ our finances.</p>
    "headline": "Can I Collect My Ex-Husband's Social Security? What the 10-Year Rule Means for You (2026)",
    "description": "Yes, if you were married 10 years, are single, and are 62 or older. While he lives, it tops out at half his full amount. The rules, and what stays yours.",
    "image": "https://scan.ismyhometoxic.com/blog-images/canicollect-hero-v1.webp",
-   "datePublished": "2026-11-02",
-   "dateModified": "2026-11-02",
+   "datePublished": "2026-10-19",
+   "dateModified": "2026-10-19",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://theshannonnicole.com/post/can-i-collect-my-ex-husbands-social-security"
