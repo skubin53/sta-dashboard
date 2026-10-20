@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-21
+date: 2026-10-20
 title: Rodan and Fields Business Model Change: What Do Amazon and 400 Ulta Stores Mean for Consultants? (2026)
 slug: rodan-and-fields-on-amazon-what-about-consultants
 keyword: rodan and fields business model change
@@ -47,7 +47,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 21, 2026<br><span style="font-size:.92em;">Published October 21, 2026 &middot; Last updated October 21, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 20, 2026<br><span style="font-size:.92em;">Published October 20, 2026 &middot; Last updated October 20, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -291,8 +291,8 @@ our finances.</p>
    "headline": "Rodan and Fields Business Model Change: What Do Amazon and 400 Ulta Stores Mean for Consultants? (2026)",
    "description": "Rodan and Fields now sells on Amazon and is growing to 400 Ulta stores. Its own rule book bars consultants from Amazon. What that means for you.",
    "image": "https://scan.ismyhometoxic.com/blog-images/rodanandfie-hero-v1.webp",
-   "datePublished": "2026-10-21",
-   "dateModified": "2026-10-21",
+   "datePublished": "2026-10-20",
+   "dateModified": "2026-10-20",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/rodan-and-fields-on-amazon-what-about-consultants"},
    "author": {"@id": "https://theshannonnicole.com/post/rodan-and-fields-on-amazon-what-about-consultants#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
