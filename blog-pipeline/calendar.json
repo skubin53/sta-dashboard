@@ -1,43 +1,11 @@
 {
- "start": "2026-10-19",
- "days": 45,
+ "start": "2026-10-20",
+ "days": 30,
  "per_day": 2,
  "calendar": [
   {
    "date": "2026-10-20",
    "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "are-plug-in-carbon-monoxide-detectors-reliable",
-     "title": "Are Plug-In Carbon Monoxide Detectors Reliable? Why You Should Unplug the KH158 Today (2026)",
-     "cat": "Home air",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "can-i-collect-my-ex-husbands-social-security",
-     "title": "Can I Collect My Ex-Husband's Social Security? What the 10-Year Rule Means for You (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-22",
-   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -68,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-21",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -100,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -132,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -164,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -196,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-11-02",
-   "weekday": "Mon",
+   "date": "2026-10-25",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -228,13 +196,45 @@
    ]
   },
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-estroven-safe",
      "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
      "cat": "Supplements",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "avon-sold-to-regent",
+     "title": "Avon Sold to Regent: What the Deal Means for Avon Representatives (2026)",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -260,13 +260,13 @@
    ]
   },
   {
-   "date": "2026-11-06",
-   "weekday": "Fri",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -292,13 +292,13 @@
    ]
   },
   {
-   "date": "2026-11-08",
-   "weekday": "Sun",
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
-     "cat": "Beauty",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -324,13 +324,13 @@
    ]
   },
   {
-   "date": "2026-11-10",
-   "weekday": "Tue",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -356,20 +356,20 @@
    ]
   },
   {
-   "date": "2026-11-12",
-   "weekday": "Thu",
+   "date": "2026-10-31",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -2,
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -388,12 +388,12 @@
    ]
   },
   {
-   "date": "2026-11-14",
-   "weekday": "Sat",
+   "date": "2026-11-01",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "slug": "does-hair-relaxer-cause-cancer",
+     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -420,12 +420,12 @@
    ]
   },
   {
-   "date": "2026-11-16",
+   "date": "2026-11-02",
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "does-hair-relaxer-cause-cancer",
-     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
+     "slug": "dove-body-wash-lawsuit",
+     "title": "Dove Body Wash Lawsuit 2026: The 'Hypoallergenic' and 'Collagen' Labels Now in Court",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -452,8 +452,8 @@
    ]
   },
   {
-   "date": "2026-11-18",
-   "weekday": "Wed",
+   "date": "2026-11-03",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-gotham-steel-safe",
@@ -484,8 +484,8 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-hot-cocoa-bad-for-you",
@@ -516,8 +516,8 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -548,12 +548,44 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-krud-kutter-non-toxic",
      "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "health-insurance-after-a-layoff",
+     "title": "What Happens to My Health Insurance If I Get Laid Off? What COBRA Really Costs (2026)",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "is-lilash-safe",
+     "title": "Is LiLash Safe? What a New Lawsuit Says Is Hiding in the Serum (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -580,12 +612,44 @@
    ]
   },
   {
-   "date": "2026-11-26",
-   "weekday": "Thu",
+   "date": "2026-11-08",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-lilash-safe",
-     "title": "Is LiLash Safe? What a New Lawsuit Says Is Hiding in the Serum (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-did-optavia-change-its-name-trilivy",
+     "title": "Why Did Optavia Change Its Name to Trilivy? What Medifast's Own Numbers Say About Coaches (2026)",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -612,12 +676,12 @@
    ]
   },
   {
-   "date": "2026-11-28",
-   "weekday": "Sat",
+   "date": "2026-11-10",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-stove-top-stuffing-bad-for-you",
+     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -644,12 +708,12 @@
    ]
   },
   {
-   "date": "2026-11-30",
-   "weekday": "Mon",
+   "date": "2026-11-11",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -676,12 +740,12 @@
    ]
   },
   {
-   "date": "2026-12-02",
-   "weekday": "Wed",
+   "date": "2026-11-12",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-stove-top-stuffing-bad-for-you",
-     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -693,17 +757,209 @@
      "track": "shopper"
     },
     {
-     "slug": "health-insurance-after-a-layoff",
-     "title": "What Happens to My Health Insurance If I Get Laid Off? What COBRA Really Costs (2026)",
+     "slug": "youtube-monetization-changes-2027",
+     "title": "Why Can't I Get Monetized on YouTube? What YouTube's 2027 Rules Change for New Creators (2026)",
      "cat": "Builders",
-     "why": "A woman 50 to 64 who just saw what her coverage really costs feels the risk of depending on one employer more sharply than at any other mome",
+     "why": "Small creators with a real, engaged audience (comments, not just views) are the people Shannon wants most: proven content habits and a follo",
      "perish": 1.5,
-     "keyword": "health insurance after layoff",
+     "keyword": "youtube monetization 2027",
      "felt": "",
      "register": "villain",
      "pix": false,
      "written": false,
      "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-13",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "quit-my-job-to-care-for-mom-social-security",
+     "title": "I Quit My Job to Care for Mom. What Happens to My Social Security? (2026)",
+     "cat": "Builders",
+     "why": "She is home, available, and freshly aware her own retirement just took a hit. The structure argument lands because her old job could not ben",
+     "perish": 2,
+     "keyword": "quit my job to care for elderly parent",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-14",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "younique-is-now-curated-what-changed",
+     "title": "Is Younique Now Curated? What Ended When the Pay Plan Did (2026)",
+     "cat": "Builders",
+     "why": "Younique presenters are social sellers whose plan just ended, and they are actively looking for what is next. Can run as a cluster with the ",
+     "perish": 2,
+     "keyword": "younique is now curated",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "levoit-air-purifier-settlement",
+     "title": "Levoit Settlement Claim: Was Your 'True HEPA' Air Purifier Really HEPA? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "red-dye-40-mars-broken-promise",
+     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-18",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "native-deodorant-lawsuit-2026",
+     "title": "Native Deodorant Lawsuit 2026: Is 'Unscented' Native Really Unscented?",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "what-does-lavender-do-to-blood-pressure",
+     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
     }
    ]
   }
