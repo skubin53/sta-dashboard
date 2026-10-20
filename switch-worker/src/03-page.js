@@ -128,7 +128,8 @@ function renderPage(rec, packs) {
   return '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n' +
     '<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
     '<meta name="robots" content="noindex, nofollow">\n' +
-    "<title>Your Three Packs</title>\n<style>\n" + PAGE_CSS + "\n</style>\n</head>\n<body>\n" +
+    "<title>" + (packs.length === 1 ? "Your Pack" : "Your " + packs.length + " Packs") +
+    "</title>\n<style>\n" + PAGE_CSS + "\n</style>\n</head>\n<body>\n" +
     '<header><div class="wrap">\n <h1>' + esc(headline(first, packs.length)) +
     "</h1>\n <p>Built from your Switch Checklist, " + esc(prettyDate(rec.at)) + "</p>\n" +
     (sub ? ' <div class="meta">' + sub + "</div>\n" : "") +

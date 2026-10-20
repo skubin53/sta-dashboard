@@ -609,7 +609,8 @@ function renderPage(rec, packs) {
   return '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n' +
     '<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
     '<meta name="robots" content="noindex, nofollow">\n' +
-    "<title>Your Three Packs</title>\n<style>\n" + PAGE_CSS + "\n</style>\n</head>\n<body>\n" +
+    "<title>" + (packs.length === 1 ? "Your Pack" : "Your " + packs.length + " Packs") +
+    "</title>\n<style>\n" + PAGE_CSS + "\n</style>\n</head>\n<body>\n" +
     '<header><div class="wrap">\n <h1>' + esc(headline(first, packs.length)) +
     "</h1>\n <p>Built from your Switch Checklist, " + esc(prettyDate(rec.at)) + "</p>\n" +
     (sub ? ' <div class="meta">' + sub + "</div>\n" : "") +
@@ -777,34 +778,97 @@ async function allocateSlug(env, contactId, firstName) {
   return base + "-" + contactId.slice(0, 6).toLowerCase();
 }
 
+// Key of the one-text-per-person lock. See the send step in stepRow.
+const SEND_LOCK = "packlock:";
+
 async function readRow(env, contactId) {
   return await env.REPORTS.get("packsend:" + contactId, "json");
 }
 
 async function writeRow(env, row) {
+  // The state rides on the key's metadata too, so processQueue can skip finished rows
+  // from the list() alone instead of spending a KV read on each one every 5 minutes.
   await env.REPORTS.put("packsend:" + row.contact_id, JSON.stringify(row),
-                        { expirationTtl: LOG_TTL });
+                        { expirationTtl: LOG_TTL, metadata: { state: row.state } });
 }
 
 /**
  * Called from the public POST. Writes a row and nothing else. Never sends.
  * Keyed on the contact id, so replaying the POST a thousand times makes one row.
+ *
+ * Returns what it did, so the score page can tell the truth (2026-10-20, tour mode: the
+ * page used to say "watch your phone" even when no text could ever come):
+ *   "queued"       a text will go out (new row, or a newer list replaced an unsent one)
+ *   "pending"      a text is already on its way from an earlier list (built, not sent)
+ *   "sent-before"  this contact already got her packs text; one text per person, ever
+ *   "no-packs"     nothing she ticked can fill a 35 to 37 point package, so no row
+ *   "empty" / "no-kv"
+ *
+ * THE REPLAY LOCK STILL HOLDS FOR ANYTHING THAT CAN TEXT. A row that is "ready",
+ * "sending" or "sent" is never touched, so at most one text per contact. Only two kinds
+ * of row may be replaced, and neither has sent anything:
+ *   - "queued": not built yet. She went back from her score, added what she forgot and
+ *     submitted again within the few minutes before the cron built it. The longer list
+ *     should win; before this, it was silently ignored.
+ *   - "blocked" BEFORE the send step (no packs, DND, a stop tag, dry run...). A new list
+ *     goes back through every one of the same guards, so a contact who said "not
+ *     interested" is blocked again before anything is built. A row blocked AT the send
+ *     step (send_started set) is locked like a sent one.
  */
 async function queuePackSend(env, sub) {
-  if (!env || !env.REPORTS) return;
-  if (!sub.contact_id || !Array.isArray(sub.items) || !sub.items.length) return;
+  if (!env || !env.REPORTS) return "no-kv";
+  if (!sub.contact_id || !Array.isArray(sub.items) || !sub.items.length) return "empty";
+  // The send lock lives in its own key that only the cron's send step writes (below, in
+  // stepRow). A stale KV read of the row can never undo it.
+  if (await env.REPORTS.get(SEND_LOCK + sub.contact_id)) return "sent-before";
   const existing = await readRow(env, sub.contact_id);
-  if (existing) return;                       // the replay lock
+  let history = [];
+  let items = sub.items.slice(0, 300);
+  if (existing) {
+    // send_started means the send step was reached. A row GHL "refused" may still have
+    // gone out, so it is treated exactly like sent: fail closed, never a second text.
+    // would_have_sent is a dry-run row from August, which may have been texted by hand.
+    if (existing.state === "sent" || existing.send_started || existing.would_have_sent) {
+      return "sent-before";
+    }
+    if (existing.state !== "queued" && existing.state !== "blocked") return "pending";
+    if (existing.state === "queued" && Array.isArray(existing.items)) {
+      // Same visit, she went back and added what she forgot. A resubmission can only ADD:
+      // a shorter second list (a phone that reloaded the checklist empty) never wipes the
+      // full one.
+      const seen = new Set();
+      const merged = [];
+      for (const it of existing.items.concat(items)) {
+        const k = it && typeof it === "object" ? String(it.group) + "|" + String(it.label) : String(it);
+        if (seen.has(k)) continue;
+        seen.add(k);
+        merged.push(it);
+      }
+      items = merged.slice(0, 300);
+    }
+  }
+  // Same builder the cron uses. A list that cannot fill one package would only be
+  // blocked by the cron later; say so now and write NO row, so the slot stays free for
+  // the fuller list she may still submit.
+  if (!buildPacks(items).packs.length) {
+    return existing && existing.state === "queued" ? "pending" : "no-packs";
+  }
+  if (existing) {
+    history = (existing.history || []).slice(-12);
+    history.push({ at: sub.at, what: "replaced (" + existing.state + ") by a newer list" });
+  }
+  history.push({ at: sub.at, what: "queued from checklist submission" });
   await writeRow(env, {
     contact_id: sub.contact_id,
     at: sub.at,
     score: sub.score,
     count: sub.count,
-    items: sub.items,
+    items,
     state: "queued",
     attempts: 0,
-    history: [{ at: sub.at, what: "queued from checklist submission" }],
+    history,
   });
+  return "queued";
 }
 
 function note(row, what) {
@@ -931,6 +995,17 @@ async function stepRow(env, row) {
       return "dryrun";
     }
 
+    // The one-text-per-person lock, in a key the public POST never writes (2026-10-20).
+    // The POST may replace a queued row, and a KV read can be up to a minute stale, so a
+    // row alone could in theory be overwritten back to "queued" after a send. This key
+    // cannot be: once it exists, nobody is texted packs again.
+    if (await env.REPORTS.get(SEND_LOCK + row.contact_id)) {
+      await block(env, row, ["already texted once (send lock)"]);
+      return "blocked:send-lock";
+    }
+    await env.REPORTS.put(SEND_LOCK + row.contact_id, new Date().toISOString(),
+                          { expirationTtl: LOG_TTL });
+
     // Write the lock BEFORE the send. If the worker dies mid-call the row reads
     // "sending", which is never retried, because a missed text beats a second one.
     row.state = "sending";
@@ -970,16 +1045,29 @@ async function stepRow(env, row) {
 async function processQueue(env) {
   if (!env || !env.REPORTS) return { error: "no KV" };
   const out = [];
-  const list = await env.REPORTS.list({ prefix: "packsend:", limit: 200 });
-  for (const k of list.keys) {
-    const row = await env.REPORTS.get(k.name, "json");
-    if (!row) continue;
-    if (row.state === "sent" || row.state === "blocked" || row.state === "sending") continue;
-    try {
-      out.push(row.contact_id + "=" + (await stepRow(env, row)));
-    } catch (e) {
-      out.push(row.contact_id + "=threw:" + String((e && e.message) || e).slice(0, 80));
+  // Every page of keys, not just the first. Finished rows stay under this prefix for two
+  // years and keys come back sorted by contact id, so a single list() of 200 would one
+  // day stop reaching new women whose ids sort late, with no error anywhere (found
+  // 2026-10-20 at 17 rows, before it bit). Ten pages is 10,000 rows of headroom.
+  let cursor;
+  for (let page = 0; page < 10; page++) {
+    const list = await env.REPORTS.list({ prefix: "packsend:", limit: 1000, cursor });
+    for (const k of list.keys) {
+      // Rows written since 2026-10-20 carry their state as metadata. Older rows have
+      // none and are read as before.
+      const ms = k.metadata && k.metadata.state;
+      if (ms === "sent" || ms === "blocked" || ms === "sending") continue;
+      const row = await env.REPORTS.get(k.name, "json");
+      if (!row) continue;
+      if (row.state === "sent" || row.state === "blocked" || row.state === "sending") continue;
+      try {
+        out.push(row.contact_id + "=" + (await stepRow(env, row)));
+      } catch (e) {
+        out.push(row.contact_id + "=threw:" + String((e && e.message) || e).slice(0, 80));
+      }
     }
+    if (list.list_complete || !list.cursor) break;
+    cursor = list.cursor;
   }
   return { handled: out.length, results: out };
 }
@@ -1385,7 +1473,8 @@ export default {
     const contactId = String(data.contact_id || "").trim();
     const score = Number(data.score) || 0;
     const count = Number(data.count) || 0;
-    const items = Array.isArray(data.items) ? data.items : [];
+    // The checklist has about 165 boxes. Anything longer is junk off a public form.
+    const items = (Array.isArray(data.items) ? data.items : []).slice(0, 300);
 
     // Shannon, 2026-08-30: ask where they already shop, before the checklist.
     // Comes off a public form, so it is clamped hard: at most 12 entries, 40 characters
@@ -1414,17 +1503,24 @@ export default {
 
     if (!ID_OK.test(contactId)) {
       await markLog(env, logKey, { outcome: "no valid contact id" });
-      return json({ ok: false, saved: false, reason: "no valid contact id" }, 200, origin);
+      return json({ ok: false, saved: false, reason: "no valid contact id", packs: "no-id" },
+                  200, origin);
     }
 
     // Queue the packs page and the text. Writes one row and returns. Sends nothing.
-    // Wrapped so that a queue problem can never cost her the score note below.
-    try {
-      await queuePackSend(env, rec);
-    } catch (e) { /* the note is the job that must not fail */ }
+    // Runs AFTER the note is filed (2026-10-20): the package search costs real CPU, and
+    // the note is the job that must not fail. Wrapped so a queue problem never throws.
+    // `packs` goes back in every answer below, so the score page only says "watch your
+    // phone" when a text is really coming ("queued" or "pending").
+    let packs = "error";
+    const queue = async () => {
+      try { packs = await queuePackSend(env, rec); } catch (e) { /* never costs the note */ }
+    };
 
-    const byGroup = {};
+    // A null item or a group named "__proto__" used to throw here, before the note.
+    const byGroup = Object.create(null);
     for (const it of items) {
+      if (!it || typeof it !== "object") continue;
       const g = String(it.group || "Other").slice(0, 60);
       const l = String(it.label || "").slice(0, 80);
       if (!l) continue;
@@ -1450,12 +1546,20 @@ export default {
       });
       if (r0.ok) {
         const j0 = await r0.json();
+        // Only the SAME list is a duplicate (a refresh, or the back button re-running the
+        // score page). A different list the same day is her going back to add what she
+        // forgot, and that one must be filed, or the note shows the short list forever.
+        // Changed 2026-10-20; before, any checklist note that day blocked the next one.
+        // Compared with tags and all whitespace removed, in case GHL stores the note
+        // with <br> or different line breaks than were sent.
+        const norm = (t) => String(t || "").replace(/<[^>]*>/g, "").replace(/\s+/g, "");
         const already = ((j0 && j0.notes) || []).some((x) =>
-          String(x.body || "").toUpperCase().indexOf("SWITCH CHECKLIST") >= 0 &&
+          norm(x.body) === norm(body) &&
           String(x.dateAdded || "").slice(0, 10) === stamp);
         if (already) {
-          await markLog(env, logKey, { outcome: "duplicate, already filed today" });
-          return json({ ok: true, saved: true, duplicate: true }, 200, origin);
+          await queue();
+          await markLog(env, logKey, { outcome: "duplicate, already filed today", packs });
+          return json({ ok: true, saved: true, duplicate: true, packs }, 200, origin);
         }
       }
     } catch (e) { /* if the check fails, go ahead and file it. */ }
@@ -1473,24 +1577,28 @@ export default {
         body: JSON.stringify({ body }),
       });
     } catch (e) {
-      await markLog(env, logKey, { outcome: "fetch threw: " + String(e && e.message || e) });
-      return json({ ok: false, saved: false, reason: "network" }, 200, origin);
+      await queue();
+      await markLog(env, logKey, { outcome: "fetch threw: " + String(e && e.message || e), packs });
+      return json({ ok: false, saved: false, reason: "network", packs }, 200, origin);
     }
 
     if (!res.ok) {
       const detail = await res.text();
       console.log("GHL note failed", res.status, detail.slice(0, 300));
+      await queue();
       await markLog(env, logKey, {
         outcome: "GHL " + res.status,
         detail: detail.slice(0, 300),
+        packs,
       });
-      return json({ ok: false, saved: false, status: res.status }, 200, origin);
+      return json({ ok: false, saved: false, status: res.status, packs }, 200, origin);
     }
 
     const out = await res.json();
     const noteId = (out && out.note && out.note.id) || null;
-    await markLog(env, logKey, { saved: true, outcome: "saved", note_id: noteId });
-    return json({ ok: true, saved: true, noteId }, 200, origin);
+    await queue();
+    await markLog(env, logKey, { saved: true, outcome: "saved", note_id: noteId, packs });
+    return json({ ok: true, saved: true, noteId, packs }, 200, origin);
   },
 
   // Every 5 minutes. A few minutes after she finishes the list she gets the text, which

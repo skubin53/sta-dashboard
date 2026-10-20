@@ -29,6 +29,15 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 .promise strong{font-weight:800}
 .promise a{color:var(--green);font-weight:800}
 .note{color:var(--muted);font-size:.85em;text-align:center}
+.tour{border-color:var(--green);background:#f0f8f2}
+.tour h2{color:var(--green);font-size:1.4em}
+.tour p{margin:0;font-size:1.1em}
+.tour a{color:var(--green);font-weight:800}
+.tour button{background:#fff;color:var(--green);border:2px solid var(--green);border-radius:9px;
+  padding:12px 18px;font-size:1em;font-weight:800;font-family:inherit;cursor:pointer}
+.tour button:disabled{opacity:.6;cursor:default}
+ul.steps{margin:0;padding:0 0 0 22px}
+ul.steps li{padding:5px 0}
 @media(max-width:600px){ul.p{column-count:1}.score{font-size:4em}.q{font-size:2em}.ys{font-size:1.7em}}
 </style></head><body>
 <header>
@@ -39,6 +48,21 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 <p class="tagline">Exceptional Products, Reasonable Prices!</p>
 </header>
 <div class="wrap">
+<div class="card tour" id="tourNext" style="display:none">
+<h2 id="tourHead">Saving your list...</h2>
+<p id="tourBody">One moment.</p>
+</div>
+<div class="card" id="tourSteps" style="display:none">
+<h2>What happens next</h2>
+<ul class="steps">
+<li>You get an email to set up your account. Tap the green button.</li>
+<li>Pick a password that's easy to remember.</li>
+<li>Membership is $19 a year. It's charged after your first order.</li>
+<li>Your first order is 35 points or more, about $100 after tax and shipping.</li>
+<li>Grab your $20 in FREE products before you check out.</li>
+<li>Your box ships straight to your door.</li>
+</ul>
+</div>
 <div class="card">
 <h2>What you told me you buy</h2>
 <ul class="p" id="picked"></ul>
@@ -84,15 +108,59 @@ if(beef.length){document.getElementById('beefWrap').style.display='';fill(docume
 if(!picked.length){document.getElementById('picked').innerHTML='<li style="list-style:none">Nothing was selected.</li>';}
 var cid=r.contact||new URLSearchParams(location.search).get('contact_id')||'';
 var note=document.getElementById('saved');
+var TOUR=new URLSearchParams(location.search).get('tour')==='1';
+function tourSay(h,b){document.getElementById('tourHead').textContent=h;document.getElementById('tourBody').textContent=b;}
+// What the lead is told depends on what the worker actually did (its `packs` answer,
+// added 2026-10-20). "queued" or "pending" means a text really is coming. Anything else,
+// including no answer at all, means it is not, so nobody is told to watch her phone.
+var TOGETHER="Once your account is set up, we'll pick your first box together.";
+function tourAfter(j){
+  if(!TOUR) return;
+  var p=j&&j.packs;
+  if(p==='queued'||p==='pending'||(j&&j.saved&&p===undefined)){
+    tourSay('Watch your phone',"In the next 10 minutes I'll text you options built from your list, with prices. Pick the one you like best.");
+  } else {
+    tourSay('Thank you!',TOGETHER);
+  }
+}
 // text/plain keeps it a simple request (no preflight to fail), keepalive lets it finish
 // if she leaves the page to text Shannon her score. Tried once per address, in order.
-if(cid){
+function save(){
+  if(!cid){tourAfter(null);return;}
   var payload=JSON.stringify({contact_id:cid,score:score,count:r.count,items:picked,stores:r.stores||[],storesOther:r.storesOther||''});
   (function send(i){
-    if(i>=WEBHOOKS.length){note.textContent='';return;}
-    fetch(WEBHOOKS[i],{method:'POST',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:payload,keepalive:true})
-    .then(function(x){return x.json();}).then(function(j){note.textContent=j&&j.saved?'Saved to your file.':'';})
-    .catch(function(){send(i+1);});
+    if(i>=WEBHOOKS.length){note.textContent='';tourAfter(null);return;}
+    // 8 seconds per address, so a hanging connection falls through to the next address
+    // and the tour card never sits on "Saving your list..." during a live call.
+    var ctl=window.AbortController?new AbortController():null;
+    var tm=ctl?setTimeout(function(){ctl.abort();},8000):0;
+    fetch(WEBHOOKS[i],{method:'POST',headers:{'Content-Type':'text/plain;charset=UTF-8'},body:payload,keepalive:true,signal:ctl?ctl.signal:undefined})
+    .then(function(x){clearTimeout(tm);return x.json();}).then(function(j){note.textContent=j&&j.saved?(TOUR?'Your list is saved.':'Saved to your file.'):'';tourAfter(j);})
+    .catch(function(){clearTimeout(tm);send(i+1);});
   })(0);
+}
+// Tour mode (2026-10-20): she is on a live call with whoever texted her the tour link
+// (scan.ismyhometoxic.com/tour/), so the booking button makes no sense, and the price
+// card's comparison doc names the store before the caller does. Both hide in tour mode.
+// UNDER 35 IN TOUR MODE IS NOT SAVED ON LOAD: a list that short can almost never fill a
+// package, and the CRM note would show the short list. She either goes back and adds
+// what she forgot, or taps "That's everything".
+if(TOUR){
+  var cta=document.querySelector('.cta'); if(cta) cta.style.display='none';
+  var pr=document.querySelector('.promise'); if(pr) pr.style.display='none';
+  document.getElementById('tourNext').style.display='';
+  document.getElementById('tourSteps').style.display='';
+}
+if(TOUR && cid && score<QUALIFY){
+  document.getElementById('tourHead').textContent='Did we miss anything?';
+  document.getElementById('tourBody').innerHTML='Most families forget a few things, like toothpaste, laundry soap or vitamins. '+
+    '<a href="javascript:history.back()">Go back and add them</a>, then check your score again.'+
+    '<br><br><button type="button" id="saveAnyway">That\'s everything, save my list</button>';
+  document.getElementById('saveAnyway').addEventListener('click',function(){
+    tourSay('Saving your list...','One moment.');
+    save();
+  });
+} else {
+  save();
 }
 </script></body></html>

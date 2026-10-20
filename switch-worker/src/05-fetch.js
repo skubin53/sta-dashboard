@@ -282,7 +282,8 @@ export default {
     const contactId = String(data.contact_id || "").trim();
     const score = Number(data.score) || 0;
     const count = Number(data.count) || 0;
-    const items = Array.isArray(data.items) ? data.items : [];
+    // The checklist has about 165 boxes. Anything longer is junk off a public form.
+    const items = (Array.isArray(data.items) ? data.items : []).slice(0, 300);
 
     // Shannon, 2026-08-30: ask where they already shop, before the checklist.
     // Comes off a public form, so it is clamped hard: at most 12 entries, 40 characters
@@ -311,17 +312,24 @@ export default {
 
     if (!ID_OK.test(contactId)) {
       await markLog(env, logKey, { outcome: "no valid contact id" });
-      return json({ ok: false, saved: false, reason: "no valid contact id" }, 200, origin);
+      return json({ ok: false, saved: false, reason: "no valid contact id", packs: "no-id" },
+                  200, origin);
     }
 
     // Queue the packs page and the text. Writes one row and returns. Sends nothing.
-    // Wrapped so that a queue problem can never cost her the score note below.
-    try {
-      await queuePackSend(env, rec);
-    } catch (e) { /* the note is the job that must not fail */ }
+    // Runs AFTER the note is filed (2026-10-20): the package search costs real CPU, and
+    // the note is the job that must not fail. Wrapped so a queue problem never throws.
+    // `packs` goes back in every answer below, so the score page only says "watch your
+    // phone" when a text is really coming ("queued" or "pending").
+    let packs = "error";
+    const queue = async () => {
+      try { packs = await queuePackSend(env, rec); } catch (e) { /* never costs the note */ }
+    };
 
-    const byGroup = {};
+    // A null item or a group named "__proto__" used to throw here, before the note.
+    const byGroup = Object.create(null);
     for (const it of items) {
+      if (!it || typeof it !== "object") continue;
       const g = String(it.group || "Other").slice(0, 60);
       const l = String(it.label || "").slice(0, 80);
       if (!l) continue;
@@ -347,12 +355,20 @@ export default {
       });
       if (r0.ok) {
         const j0 = await r0.json();
+        // Only the SAME list is a duplicate (a refresh, or the back button re-running the
+        // score page). A different list the same day is her going back to add what she
+        // forgot, and that one must be filed, or the note shows the short list forever.
+        // Changed 2026-10-20; before, any checklist note that day blocked the next one.
+        // Compared with tags and all whitespace removed, in case GHL stores the note
+        // with <br> or different line breaks than were sent.
+        const norm = (t) => String(t || "").replace(/<[^>]*>/g, "").replace(/\s+/g, "");
         const already = ((j0 && j0.notes) || []).some((x) =>
-          String(x.body || "").toUpperCase().indexOf("SWITCH CHECKLIST") >= 0 &&
+          norm(x.body) === norm(body) &&
           String(x.dateAdded || "").slice(0, 10) === stamp);
         if (already) {
-          await markLog(env, logKey, { outcome: "duplicate, already filed today" });
-          return json({ ok: true, saved: true, duplicate: true }, 200, origin);
+          await queue();
+          await markLog(env, logKey, { outcome: "duplicate, already filed today", packs });
+          return json({ ok: true, saved: true, duplicate: true, packs }, 200, origin);
         }
       }
     } catch (e) { /* if the check fails, go ahead and file it. */ }
@@ -370,24 +386,28 @@ export default {
         body: JSON.stringify({ body }),
       });
     } catch (e) {
-      await markLog(env, logKey, { outcome: "fetch threw: " + String(e && e.message || e) });
-      return json({ ok: false, saved: false, reason: "network" }, 200, origin);
+      await queue();
+      await markLog(env, logKey, { outcome: "fetch threw: " + String(e && e.message || e), packs });
+      return json({ ok: false, saved: false, reason: "network", packs }, 200, origin);
     }
 
     if (!res.ok) {
       const detail = await res.text();
       console.log("GHL note failed", res.status, detail.slice(0, 300));
+      await queue();
       await markLog(env, logKey, {
         outcome: "GHL " + res.status,
         detail: detail.slice(0, 300),
+        packs,
       });
-      return json({ ok: false, saved: false, status: res.status }, 200, origin);
+      return json({ ok: false, saved: false, status: res.status, packs }, 200, origin);
     }
 
     const out = await res.json();
     const noteId = (out && out.note && out.note.id) || null;
-    await markLog(env, logKey, { saved: true, outcome: "saved", note_id: noteId });
-    return json({ ok: true, saved: true, noteId }, 200, origin);
+    await queue();
+    await markLog(env, logKey, { saved: true, outcome: "saved", note_id: noteId, packs });
+    return json({ ok: true, saved: true, noteId, packs }, 200, origin);
   },
 
   // Every 5 minutes. A few minutes after she finishes the list she gets the text, which

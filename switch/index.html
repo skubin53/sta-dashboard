@@ -72,6 +72,9 @@ SHOPS.forEach(function(name,si){
   l.appendChild(i); l.appendChild(t); sg.appendChild(l);
 });
 var CID=new URLSearchParams(location.search).get('contact_id')||'';
+// tour=1 means she came from the live-call tour page (scan.ismyhometoxic.com/tour/):
+// score.html then swaps the booking button for 'watch your phone' (2026-10-20).
+var TOUR=new URLSearchParams(location.search).get('tour')==='1';
 var w=document.getElementById('wrap');
 GROUPS.forEach(function(g,gi){
   var h=document.createElement('h2'); h.className='g'; h.textContent=g.group; w.appendChild(h);
@@ -111,7 +114,32 @@ document.getElementById('go').addEventListener('click',function(){
   });
   var other=(document.getElementById('shopother').value||'').trim().slice(0,120);
   sessionStorage.setItem('switchResult',JSON.stringify({score:score,count:picked.length,picked:picked,stores:stores,storesOther:other,contact:CID}));
-  location.href='score.html'+(CID?('?contact_id='+encodeURIComponent(CID)):'');
+  var q=[];if(CID)q.push('contact_id='+encodeURIComponent(CID));if(TOUR)q.push('tour=1');
+  location.href='score.html'+(q.length?'?'+q.join('&'):'');
 });
 tally();
+// Back from score.html (2026-10-20). Some phones restore the ticked boxes without firing
+// 'change' (the tally reads 0, the button stays grey, rows are not green); some reload the
+// page empty. So on every show, resync the highlights and the tally from the real boxes,
+// and in tour mode refill an empty list from what she just submitted (same contact only).
+window.addEventListener('pageshow',function(){
+  if(TOUR && !document.querySelector('#wrap input:checked')){
+    var r={};try{r=JSON.parse(sessionStorage.getItem('switchResult')||'{}')}catch(e){}
+    if((r.contact||'')===CID && r.picked && r.picked.length){
+      var want={};r.picked.forEach(function(p){want[p.group+'|'+p.label]=1;});
+      document.querySelectorAll('#wrap input[type=checkbox]').forEach(function(b){
+        var g=GROUPS[b.dataset.g],it=g.items[b.dataset.i];
+        if(want[g.group+'|'+it.label]) b.checked=true;
+      });
+      var st={};(r.stores||[]).forEach(function(x){st[x]=1;});
+      document.querySelectorAll('#shopgrid input').forEach(function(b){if(st[b.getAttribute('data-shop')]) b.checked=true;});
+      var so=document.getElementById('shopother');
+      if(r.storesOther && !so.value) so.value=r.storesOther;
+    }
+  }
+  document.querySelectorAll('#wrap input[type=checkbox], #shopgrid input').forEach(function(b){
+    var l=b.closest('label'); if(l) l.classList.toggle('sel',b.checked);
+  });
+  tally();
+});
 </script></body></html>
