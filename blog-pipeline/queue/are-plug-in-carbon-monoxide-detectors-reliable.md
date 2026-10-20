@@ -82,7 +82,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>You stood at the counter longer than you meant to, waiting for its green light.</p>
 
-<p>No shame in trusting it. It sold on Amazon for two years, under 18 names.</p>
+<p>No shame in trusting it. It sold online for two years, under 18 names.</p>
 
 <p>You wanted a warning before the air turned on you. That is a fair thing to want. The trouble, the CPSC says, is what the company sold you.</p>
 
@@ -121,7 +121,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>It sold on Amazon, eBay, AliExpress, microcenter.com and snapklik.com from June 2024 through July 2026.</p>
 
-<p>If yours matches, unplug it today. The CPSC takes defect reports at SaferProducts.gov.</p>
+<p>If yours matches, unplug it today.</p>
 
 <p>Then put a working alarm up the same day.</p>
 
@@ -139,19 +139,19 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters">A power outage is the reason the CPSC gives in its January 2025 winter notice.</a> It also names "furnaces and fireplaces" as "a potential source of CO."</p>
 
-<p><a href="https://www.epa.gov/indoor-air-quality-iaq/carbon-monoxides-impact-indoor-air-quality">The EPA lists gas stoves as a source too.</a> It warns of "flu-like symptoms that clear up after leaving home." That is a headache at home that lifts once you step outside.</p>
+<p><a href="https://www.epa.gov/indoor-air-quality-iaq/carbon-monoxides-impact-indoor-air-quality">The EPA lists gas stoves as a source too.</a> It warns of "flu-like symptoms that clear up after leaving home." That is feeling sick at home and better once you leave.</p>
 
 <p>And your nose cannot warn you. <a href="https://www.cdc.gov/carbon-monoxide/about/index.html">The CDC calls carbon monoxide "an odorless, colorless gas that kills without warning."</a> It says more than 400 Americans die from it by accident each year, not counting fires.</p>
 
 <p>And so the battery is the whole point. An alarm that keeps going in a blackout is the one that can wake you.</p>
 
-<h3 id="ul-2034">Does any rule make a seller test it?</h3>
+<h3 id="ul-2034">Does any federal rule make a seller meet UL 2034?</h3>
 
 <p>The CPSC's warning says to "only buy carbon monoxide detectors that meet the UL 2034 safety standard."</p>
 
-<p><a href="https://www.cpsc.gov/Regulations-Laws--Standards/Voluntary-Standards/Carbon-Monoxide-CO-Alarms">But the CPSC files UL 2034 under voluntary standards.</a> On that page, the line for federal rules says "N/A." So no federal rule makes the seller meet it.</p>
+<p><a href="https://www.cpsc.gov/Regulations-Laws--Standards/Voluntary-Standards/Carbon-Monoxide-CO-Alarms">But the CPSC files UL 2034 under voluntary standards.</a> On that page, the line for rulemaking and regulations says "N/A." So no federal rule makes the seller meet it.</p>
 
-<p>Here is the record on the KH158. Start with the last column.</p>
+<p>Here is the record. Start with the last column.</p>
 
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
@@ -166,13 +166,15 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: two fair points, and neither one covers a KH158.</p>
 
-<p><strong>First,</strong> the notice counts 91 reports against 376,974 sold. It lists no deaths and no injuries. That is the number, and it is a small one.</p>
+<p><strong>First,</strong> the notice counts 91 reports against 376,974 sold. It lists no deaths and no injuries. That is a small share.</p>
+
+<p>But in April 2026, <a href="https://advocacy.consumerreports.org/press_release/faulty-carbon-monoxide-detectors-sold-on-amazon-linked-to-four-hospitalizations-including-two-children-consumer-reports-calls-for-immediate-action">Consumer Reports said it found four people hospitalized, two of them children.</a> They were in SaferProducts.gov reports on the Hembisen KH-158, one of the 18 names. Hembisen told Consumer Reports it disputes the reports.</p>
 
 <p><strong>Second,</strong> a plug-in with a battery backup keeps going in a blackout.</p>
 
 <p>So why would I still tell you to unplug it today?</p>
 
-<p>Because the CPSC said "immediately," and because you would never know it stayed quiet. Your nose gets nothing to go on.</p>
+<p>Because you would never know it stayed quiet. Your nose gets nothing to go on. Not one more night.</p>
 
 <p>You are far from the only one who trusted it. If your mother or your neighbor bought one too, check hers the same day.</p>
 
@@ -225,9 +227,9 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-4-in-1-Plug-In-Natural-Gas-and-Carbon-Monoxide-Detectors-Immediately-Due-to-Failure-to-Alert-Consumers-to-Deadly-Carbon-Monoxide">US Consumer Product Safety Commission, warning 26-706, August 20, 2026</a>. Tells you to stop using the KH158, 376,974 sold under 18 names. It cites 91 reports of them failing to alarm during leaks. It says the company has not agreed to a recall. What it means: the agency says take it down, and the notice offers no refund.</li>
+<li><a href="https://www.cpsc.gov/Warnings/2026/CPSC-Warns-Consumers-to-Stop-Using-4-in-1-Plug-In-Natural-Gas-and-Carbon-Monoxide-Detectors-Immediately-Due-to-Failure-to-Alert-Consumers-to-Deadly-Carbon-Monoxide">US Consumer Product Safety Commission, warning 26-706, August 20, 2026</a>. Tells you to stop using the KH158, 376,974 sold under 18 names. It cites 91 reports of them failing to alarm during leaks. What it means: take it down, and the notice offers no refund.</li>
 <li><a href="https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters">US Consumer Product Safety Commission, winter safety notice, January 22, 2025</a>. Says alarms should be battery operated or have battery backup in case of a power outage. What it means: a plug-in with no battery can go dark the night you need it.</li>
-<li><a href="https://www.cpsc.gov/Regulations-Laws--Standards/Voluntary-Standards/Carbon-Monoxide-CO-Alarms">US Consumer Product Safety Commission, voluntary standards page for carbon monoxide alarms</a>. Lists UL 2034 as voluntary, with "N/A" on the line for federal rules. What it means: no federal rule makes the seller meet it.</li>
+<li><a href="https://www.cpsc.gov/Regulations-Laws--Standards/Voluntary-Standards/Carbon-Monoxide-CO-Alarms">US Consumer Product Safety Commission, voluntary standards page for carbon monoxide alarms</a>. Lists UL 2034 as voluntary, with "N/A" on the line for rulemaking and regulations. What it means: no federal rule makes the seller meet it.</li>
 <li><a href="https://www.cdc.gov/carbon-monoxide/about/index.html">CDC, Carbon Monoxide Poisoning Basics, January 12, 2026</a>. Calls carbon monoxide odorless and colorless. Counts more than 400 accidental American deaths a year not linked to fires. What it means: your nose cannot back up a quiet alarm.</li>
 <li><a href="https://www.epa.gov/indoor-air-quality-iaq/carbon-monoxides-impact-indoor-air-quality">US EPA, Carbon Monoxide's Impact on Indoor Air Quality</a>. Lists gas stoves, furnaces and fireplaces among the sources. What it means: your own gas range is on that list.</li>
 </ul>
@@ -249,7 +251,7 @@ of our health and our finances.</p>
 
 <div class="sta-cta">
 <h3>Three minutes, room by room</h3>
-<p>The detector was one thing on one wall. The free scan does not test your air. It checks the products in every room and tells you what to swap first. A first name and a cell, one text with your score, and nobody calls. You see your own house for yourself, not on my say-so.</p>
+<p>The detector was one thing on one wall. The free scan does not test your air. It checks the products in every room and tells you what to swap first. A first name and a cell, one text with your score, and nobody calls.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
@@ -262,7 +264,7 @@ of our health and our finances.</p>
 <p>Match the brand on your box or your order to the 18 names above. Then look for a SELF-TEST button with green, yellow and red lights to its left.</p>
 
 <p><strong>Can I get my money back?</strong></p>
-<p>The notice offers no refund, because the company has not agreed to a recall. Stop using it anyway. The CPSC takes defect reports at SaferProducts.gov.</p>
+<p>The notice offers no refund, because the company has not agreed to a recall. If you bought it on Amazon, Consumer Reports says to return it and ask for a refund. Stop using it either way. The CPSC takes defect reports at SaferProducts.gov.</p>
 
 <p><strong>It has been plugged in for two years and never went off. Why change now?</strong></p>
 <p>Never going off is also what a quiet alarm looks like. The CDC says carbon monoxide "kills without warning." You get to be the one who checked.</p>
@@ -334,7 +336,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "My detector came from Amazon. Is it on the warning?",
    "acceptedAnswer": {"@type": "Answer", "text": "Match the brand on your box or your order to the 18 names above. Then look for a SELF-TEST button with green, yellow and red lights to its left."}},
   {"@type": "Question", "name": "Can I get my money back?",
-   "acceptedAnswer": {"@type": "Answer", "text": "The notice offers no refund, because the company has not agreed to a recall. Stop using it anyway. The CPSC takes defect reports at SaferProducts.gov."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "The notice offers no refund, because the company has not agreed to a recall. If you bought it on Amazon, Consumer Reports says to return it and ask for a refund. Stop using it either way. The CPSC takes defect reports at SaferProducts.gov."}},
   {"@type": "Question", "name": "It has been plugged in for two years and never went off. Why change now?",
    "acceptedAnswer": {"@type": "Answer", "text": "Never going off is also what a quiet alarm looks like. The CDC says carbon monoxide \"kills without warning.\" You get to be the one who checked."}}
  ]
