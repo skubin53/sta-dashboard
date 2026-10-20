@@ -94,6 +94,7 @@
 
 /* bundles */
 .stw .stw-bundles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.stw .stw-bundles.stw-two{grid-template-columns:repeat(2,1fr);max-width:780px;margin-left:auto;margin-right:auto}
 .stw .stw-bun{background:var(--paper);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
 .stw .stw-bun img{width:100%;aspect-ratio:1/1;object-fit:cover}
 .stw .stw-bun-b{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
@@ -166,6 +167,7 @@
 @media(max-width:900px){
   .stw .stw-proof ul{grid-template-columns:1fr 1fr}
   .stw .stw-facts,.stw .stw-bundles,.stw .stw-more,.stw .stw-how{grid-template-columns:1fr}
+  .stw .stw-bundles.stw-two{grid-template-columns:1fr}
   .stw .stw-trail{grid-template-columns:1fr 1fr}
   .stw .stw-ranch,.stw .stw-formgrid{grid-template-columns:1fr;gap:26px}
 }
@@ -284,7 +286,7 @@
     <p class="stw-kick">Pick your box</p>
     <h2 class="stw-h2">Bundles that fill the freezer</h2>
     <p class="stw-lead">Every bundle is a mix of steaks and everyday beef, so dinner is easy all month.</p>
-    <div class="stw-bundles">
+    <div class="stw-bundles stw-two">
       <div class="stw-bun">
         <img src="https://scan.ismyhometoxic.com/beef/img/b-ribeye.webp" alt="Grilled ribeye steaks in a cast iron pan" width="606" height="606" loading="lazy">
         <div class="stw-bun-b">
@@ -294,28 +296,22 @@
         </div>
       </div>
       <div class="stw-bun">
-        <img src="https://scan.ismyhometoxic.com/beef/img/b-essentials.webp" alt="A sliced roast with meatballs and fresh vegetables" width="606" height="606" loading="lazy">
+        <img src="https://scan.ismyhometoxic.com/beef/img/s-flavor.webp" alt="A thick cooked steak topped with herbs and mushrooms" width="606" height="606" loading="lazy">
         <div class="stw-bun-b">
-          <div class="stw-bun-top"><h3>Essentials</h3><span class="stw-lbs">about 12 lbs</span></div>
-          <ul><li>1 round or chuck roast, about 2 lbs</li><li>4 lbs ground beef</li><li>4 lbs diced steak</li><li>2 lbs steak strips</li></ul>
-          <a class="stw-btn" href="https://RiverbendRanchSteaks.com/eatbeefwithshan" target="_blank" rel="noopener">Order Essentials</a>
-        </div>
-      </div>
-      <div class="stw-bun">
-        <img src="https://scan.ismyhometoxic.com/beef/img/b-filet.webp" alt="Two grilled filet steaks on a wood board" width="606" height="606" loading="lazy">
-        <div class="stw-bun-b">
-          <div class="stw-bun-top"><h3>Filet and Sirloin+</h3><span class="stw-lbs">about 8 lbs</span></div>
-          <ul><li>2 filet mignon, about half a pound each</li><li>2 sirloin steaks, about half a pound each</li><li>3 lbs ground beef</li><li>2 lbs steak strips</li><li>1 lb diced steak</li></ul>
-          <a class="stw-btn" href="https://RiverbendRanchSteaks.com/eatbeefwithshan" target="_blank" rel="noopener">Order Filet and Sirloin+</a>
+          <div class="stw-bun-top"><h3>Griller's Delight</h3><span class="stw-lbs">about 10 lbs</span></div>
+          <ul><li>5 lbs ground beef, in 1 lb packs</li><li>3 lbs sirloin steak tips</li><li>2 packs of franks</li></ul>
+          <a class="stw-btn" href="https://RiverbendRanchSteaks.com/eatbeefwithshan" target="_blank" rel="noopener">Order Griller's Delight</a>
         </div>
       </div>
     </div>
     <div class="stw-more">
       <div class="stw-mini"><h3>Ground Beef <span class="stw-lbs">10 lbs</span></h3><p>Ten 1 lb packs. Burgers, tacos, chili and meatloaf, all month.</p></div>
       <div class="stw-mini"><h3>New York Strip+ <span class="stw-lbs">about 9 lbs</span></h3><p>4 New York strips, about 0.8 lb each, plus ground beef, steak strips and diced steak.</p></div>
+      <div class="stw-mini"><h3>Essentials <span class="stw-lbs">about 12 lbs</span></h3><p>A roast, ground beef, diced steak and steak strips for everyday dinners.</p></div>
+      <div class="stw-mini"><h3>Filet and Sirloin+ <span class="stw-lbs">about 8 lbs</span></h3><p>2 filet mignon and 2 sirloin steaks, plus ground beef, steak strips and diced steak.</p></div>
       <div class="stw-mini"><h3>Smokers <span class="stw-lbs">about 15 lbs</span></h3><p>Brisket, tri-tip, short rib, flank steak and 12 quarter pound patties. Made for the grill and the smoker.</p></div>
     </div>
-    <p class="stw-note">See every bundle and today's price on the order page.</p>
+    <p class="stw-note">Some boxes sell out. See which ones are open this month, and today's price, on the order page.</p>
   </div>
 </section>
 
