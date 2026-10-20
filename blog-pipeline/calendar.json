@@ -8,6 +8,38 @@
    "weekday": "Tue",
    "slots": [
     {
+     "slug": "is-gotham-steel-safe",
+     "title": "Gotham Steel Class Action Lawsuit Update: Is It Really Non-Toxic? (2026)",
+     "cat": "Kitchen",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "rodan-and-fields-on-amazon-what-about-consultants",
+     "title": "Rodan and Fields Business Model Change: What Do Amazon and 400 Ulta Stores Mean for Consultants? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "weekday": "Wed",
+   "slots": [
+    {
      "slug": "is-antiperspirant-safe",
      "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
      "cat": "Personal Care",
@@ -36,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-21",
-   "weekday": "Wed",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -68,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -100,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -132,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-25",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -164,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-10-25",
-   "weekday": "Sun",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -196,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-27",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -228,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -260,12 +292,12 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "slug": "is-lilash-safe",
+     "title": "Is LiLash Safe? What a New Lawsuit Says About the Prostaglandin in the Serum (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -292,13 +324,13 @@
    ]
   },
   {
-   "date": "2026-10-29",
-   "weekday": "Thu",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -324,13 +356,13 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-10-31",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "levoit-air-purifier-settlement",
+     "title": "Levoit Settlement Claim: Was Your 'True HEPA' Air Purifier Really HEPA? (2026)",
+     "cat": "Home air",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -356,52 +388,20 @@
    ]
   },
   {
-   "date": "2026-10-31",
-   "weekday": "Sat",
-   "slots": [
-    {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "rodan-and-fields-on-amazon-what-about-consultants",
-     "title": "Does Rodan + Fields Selling on Amazon Hurt Its Consultants? (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-11-01",
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "does-hair-relaxer-cause-cancer",
-     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -424,16 +424,16 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "dove-body-wash-lawsuit",
-     "title": "Dove Body Wash Lawsuit 2026: The 'Hypoallergenic' and 'Collagen' Labels Now in Court",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -456,8 +456,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-gotham-steel-safe",
-     "title": "Is Gotham Steel Safe to Cook With? What the 'Non-Toxic' Settlement Says (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -488,8 +488,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-hot-cocoa-bad-for-you",
-     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "slug": "does-hair-relaxer-cause-cancer",
+     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -520,8 +520,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "dove-body-wash-lawsuit",
+     "title": "Dove Body Wash Lawsuit 2026: The 'Hypoallergenic' and 'Collagen' Labels Now in Court",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -552,8 +552,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -584,8 +584,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-lilash-safe",
-     "title": "Is LiLash Safe? What a New Lawsuit Says Is Hiding in the Serum (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -616,8 +616,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -648,8 +648,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -680,8 +680,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-stove-top-stuffing-bad-for-you",
-     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -712,8 +712,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-stove-top-stuffing-bad-for-you",
+     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -744,8 +744,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-tresemme-safe",
-     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -776,8 +776,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -808,8 +808,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -840,8 +840,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -853,8 +853,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-your-dehumidifier-a-fire-risk",
-     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -872,8 +872,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-your-magnesium-what-the-label-says",
-     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -885,8 +885,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-tap-water-safe-to-drink",
-     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -904,8 +904,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "levoit-air-purifier-settlement",
-     "title": "Levoit Settlement Claim: Was Your 'True HEPA' Air Purifier Really HEPA? (2026)",
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
