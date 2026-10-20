@@ -100,7 +100,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <h2 id="how-much">How much would you actually get?</h2>
 
-<p class="quick-answer">Quick answer: at most half of his full amount, and only if you wait until 67. At 62 it is about a third.</p>
+<p class="quick-answer">Quick answer: at most half of his full amount, and only at your full retirement age. At 62 it is about a third.</p>
 
 <p>Here is the math.</p>
 
@@ -124,7 +124,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <p>That is you, and nobody asked you. And so what is left on his record is one choice: when to start.</p>
 
-<p>There is one place the old choice still lives. Social Security's own watchdog checked it this year.</p>
+<p>There is one place the old choice still lives. Social Security's own watchdog reported on it this year.</p>
 
 <h2 id="if-he-dies">What happens if he dies first?</h2>
 
@@ -134,7 +134,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <p>The 2015 law skipped this one. The staff manual says deemed filing "does not apply to survivor benefits." So you could take his check first, then switch to your own at 70 if yours is bigger.</p>
 
-<p>In March 2026, Social Security's own Inspector General checked how the agency pays widows and widowers. <a href="https://oig.ssa.gov/~assets/uploads/032409.pdf">It estimated</a> the agency underpaid <strong>8,618 of them about $50.4 million</strong>. It says staff got the math wrong when the spouse died before 62.</p>
+<p>In March 2026, Social Security's own Inspector General reported on how the agency pays widows and widowers. <a href="https://oig.ssa.gov/~assets/uploads/032409.pdf">It estimated</a> the agency underpaid <strong>8,618 of them about $50.4 million</strong>. It says staff got the math wrong when the spouse died before 62.</p>
 
 <p>It also pulled 50 files where both checks started the same month. In 37, nobody wrote down whether the choice to wait was explained. The report says that does not mean nobody explained it.</p>
 
@@ -163,11 +163,11 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>Social Security is not a monster. If he dies, it can pay you all of his amount. Your claim does not shrink his new family's checks. And the agency agreed to every fix in that audit.</p>
+<p>Social Security is not a monster. If he dies, it can pay you all of his amount. Your claim does not shrink his new family's checks. And <a href="https://oig.ssa.gov/~assets/uploads/032409.pdf">the agency agreed</a> to every fix in that audit.</p>
 
 <p>So claim every bit you are owed. It is a floor, and you did not get to pick its height.</p>
 
-<p>Switch to America is a private membership store. It sells straight from the manufacturer. No middlemen and no markup. No minimums, no maximums.</p>
+<p>Switch to America is a private membership store. We are the manufacturer. No middlemen and no markup. No minimums, no maximums.</p>
 
 <p>You pay what a brand new shopper pays. Not a penny less. And there is no list of ten people you know. I do not teach that.</p>
 
@@ -187,7 +187,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <h3>Ask for both numbers</h3>
 
-<p>Call Social Security. Ask for an estimate on his record and on yours. If yours is bigger than half of his, you are done in one call.</p>
+<p>Call Social Security. <a href="https://www.ssa.gov/family/amount">Ask for an estimate</a> on his record and on yours. If yours is bigger than half of his, you are done in one call.</p>
 
 <h3>Write down what is in your own name</h3>
 
