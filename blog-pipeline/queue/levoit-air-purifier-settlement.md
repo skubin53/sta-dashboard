@@ -92,7 +92,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h3 id="h13">H13, the grade on the box</h3>
 
-<p>The filter was sold as "H13 True HEPA," the lawsuit says. It says H13 means 99.95% at the hardest size. In the lab's test, an E grade is not HEPA at all.</p>
+<p>The filter was sold as "H13 True HEPA," the lawsuit says. It says H13 means 99.95% at the hardest size. And it says an E grade is not HEPA at all.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/levoitairpu-villain-v1.webp" alt="A white round air purifier standing alone beside a sofa in a quiet living room, in flat cold light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -108,13 +108,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>One catch. <a href="https://lapsettlement.com/download/a294b149-f178-4f10-ae5c-4941ce59b2a2">The court's order leaves out anyone who bought straight from Levoit's website or app.</a> It says those buyers are bound by an arbitration agreement and a class-action waiver.</p>
 
-<p><a href="https://lapsettlement.com/download/a294b149-f178-4f10-ae5c-4941ce59b2a2">A state court in Brooklyn, New York, gave early approval in an order filed August 21, 2026.</a> <a href="https://lapsettlement.com/">The settlement caps what goes to shoppers at $15 million. After final approval, a valid claim gets a $10 digital payment.</a> It can shrink if too many claims come in.</p>
+<p><a href="https://lapsettlement.com/download/a294b149-f178-4f10-ae5c-4941ce59b2a2">A state court in Brooklyn, New York, gave early approval in an order filed August 21, 2026.</a> <a href="https://lapsettlement.com/">The settlement caps what goes to shoppers at $15 million. After final approval and any appeals, a valid claim gets a $10 digital payment.</a> It can shrink if too many claims come in.</p>
 
 <h2 id="why-it-changed">When did HEPA come off the Levoit pages?</h2>
 
-<p class="quick-answer">Quick answer: the lawsuit says Vesync took HEPA off its Core 300 page in July 2023. The first suit came four weeks later.</p>
+<p class="quick-answer">Quick answer: the lawsuit says Vesync took HEPA off its Core 300 series page in July 2023. The first suit came four weeks later.</p>
 
-<p><a href="https://lapsettlement.com/download/a235f156-c1bc-48bf-8017-1bde5d7b3e50">The lawsuit says Vesync swapped out its old Core 300 page on July 23, 2023.</a> It says the new page "omits any and all reference to HEPA filtration."</p>
+<p><a href="https://lapsettlement.com/download/a235f156-c1bc-48bf-8017-1bde5d7b3e50">The lawsuit says Vesync swapped out its old Core 300 series page on July 23, 2023.</a> It says the new page "omits any and all reference to HEPA filtration."</p>
 
 <p><a href="https://lapsettlement.com/download/a235f158-3ea4-43bd-95ce-291ec1d8b610">The settlement says the first of these suits was filed on or about August 20, 2023.</a> It was a federal case in Northern California.</p>
 
@@ -127,7 +127,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <tbody>
 <tr><td>The box said "at least 99.97%"</td><td>A HEPA promise, the lawsuit says</td><td>Amended complaint, Kings County, May 2026</td><td>Not a ruling that the box was false</td></tr>
 <tr><td>Shoppers' lab graded the Core filter E11</td><td>98.701% at the hardest size, by the lawsuit's account</td><td>Amended complaint, Kings County, May 2026</td><td>Not a test any judge has checked</td></tr>
-<tr><td>HEPA dropped from the Core 300 page</td><td>July 23, 2023, the lawsuit says</td><td>Amended complaint, Kings County, May 2026</td><td>Not an admission by Vesync</td></tr>
+<tr><td>HEPA dropped from the Core 300 series page</td><td>July 23, 2023, the lawsuit says</td><td>Amended complaint, Kings County, May 2026</td><td>Not an admission by Vesync</td></tr>
 <tr><td>Up to $15 million for claims, early approval</td><td>Claims close November 3, 2026</td><td>Kings County Supreme Court, August 21, 2026</td><td>Vesync denies all wrongdoing</td></tr>
 </tbody>
 </table>
@@ -140,7 +140,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><strong>Two.</strong> The shoppers' lawyers picked the lab. No judge has checked its numbers.</p>
 
-<p><strong>Three.</strong> Even by those numbers, the filter caught more than 98% at the hardest size. Your Levoit still pulled dust out of the air, and I am not going to pretend it didn't.</p>
+<p><strong>Three.</strong> Even in the test that graded it E11, the filter caught 98.701% at the hardest size. Your Levoit still pulled dust out of the air, and I am not going to pretend it didn't.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -166,7 +166,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The jar candle on the coffee table is next. <a href="https://join.switchtoamerica.com/post/are-bath-and-body-works-candles-toxic">Here is what burns off it into the room.</a></p>
 
-<p>When you clean, use a plain spray with no added fragrance. For the rest of the house, I point you to Switch to America. It is a private membership store. We are the manufacturer. No middlemen, no markup.</p>
+<p>For the sprays you clean with, and the rest of the house, I point you to Switch to America. It is a private membership store. We are the manufacturer. No middlemen, no markup.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/levoitairpu-belonging-v1.webp" alt="Two women sitting together on a sofa mid-conversation, sharing a plain amber spray bottle from a plain box" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -206,7 +206,7 @@ of our health and our finances.</p>
 <h3>The receipts</h3>
 <ul>
 <li><a href="https://lapsettlement.com/download/a235f156-c1bc-48bf-8017-1bde5d7b3e50">Amended complaint, Sen et al. v. Vesync (US) Corp., Kings County Supreme Court, Index No. 510627/2026, filed May 5, 2026</a>. The shoppers allege the filters were sold as HEPA and H13 "when in fact they were not." The complaint says their lawyers' lab graded the Core filter E11. What it means: the number on your box is the thing in dispute.</li>
-<li><a href="https://lapsettlement.com/download/a235f158-3ea4-43bd-95ce-291ec1d8b610">Settlement Agreement and Release, signed April 22, 2026</a>. Up to $15 million for shoppers, and Vesync "expressly denies any and all liability or wrongdoing." What it means: this is a settlement, not a verdict.</li>
+<li><a href="https://lapsettlement.com/download/a235f158-3ea4-43bd-95ce-291ec1d8b610">Settlement Agreement and Release, fully signed April 22, 2026</a>. Up to $15 million for shoppers, and Vesync "expressly denies any and all liability or wrongdoing." What it means: this is a settlement, not a verdict.</li>
 <li><a href="https://lapsettlement.com/download/a294b149-f178-4f10-ae5c-4941ce59b2a2">Order granting preliminary approval, Hon. Katherine A. Levine, filed August 21, 2026</a>. It leaves out buyers from Levoit's own site or app and names the earlier suits, including Chen v. Vesync in federal court in California. What it means: where you bought it decides whether you are in.</li>
 <li><a href="https://lapsettlement.com/">Official settlement notice, LAPsettlement.com</a>. Claims, opt-outs and objections are due November 3, 2026, and the fairness hearing is set for February 17, 2027. What it means: the date to file is real, and it is close.</li>
 <li><a href="https://www.epa.gov/indoor-air-quality-iaq/what-hepa-filter">US EPA, "What is a HEPA filter?"</a> At least 99.97% of particles 0.3 microns in size. What it means: that is the line the Levoit box promised.</li>
