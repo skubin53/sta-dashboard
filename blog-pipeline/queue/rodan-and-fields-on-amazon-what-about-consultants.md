@@ -52,7 +52,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>It means Rodan and Fields now sells on Amazon, where its own rule book bars you from selling.</p>
-<p>Here is the short version. Since August 2026, it has sold on Amazon's Premium Beauty store. At Ulta, it is growing from 150 to 400 stores. <strong><a href="https://www.prnewswire.com/news-releases/rodan--fields-broadens-access-to-dermatologist-developed-skincare-through-major-omnichannel-expansion-302869326.html">It said so itself on September 8, 2026.</a></strong></p>
+<p>Here is the short version. Since August 2026, Glossy reports, it has sold on Amazon's Premium Beauty store. At Ulta, it is growing from 150 to 400 stores. <strong><a href="https://www.prnewswire.com/news-releases/rodan--fields-broadens-access-to-dermatologist-developed-skincare-through-major-omnichannel-expansion-302869326.html">It said so itself on September 8, 2026.</a></strong></p>
 <p>The rule book on its website still calls selling on Amazon "strictly prohibited." And around the first 150 Ulta stores, the CEO told Glossy, affiliate sales remained flat.</p>
 <p>Rodan and Fields picked the new places to sell. You did not get a vote. Checked October 20, 2026.</p>
 </div>
@@ -72,13 +72,13 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <h2 id="what-changed">What did Rodan and Fields change, and when?</h2>
 
-<p class="quick-answer">Quick answer: two big changes, two years apart, and you voted on neither.</p>
+<p class="quick-answer">Quick answer: first how you get paid, then where it sells. You voted on neither.</p>
 
 <p>It is late. One lamp is on in your office. The laptop is shut, and the glass of water has gone warm.</p>
 
 <p>Your best customer texted you a link this morning. Same serum you sell her. On Amazon, with a smiley face.</p>
 
-<p>The samples on the shelf, the reorder you set up for her in June, the thank-you card you wrote her, the coffee you bought her, that feeling that you built her trust and the company carried it to Amazon.</p>
+<p>You set up her reorder in June. You wrote her a thank-you card and bought her coffee. You built her trust, and the company carried it to Amazon.</p>
 
 <p>On September 1, 2024, Rodan and Fields stopped taking new consultants, <a href="https://www.rodanandfields.com/en-us/assets/us/policies-procedures-v22-090125-us.pdf">its own rule book says</a>. It also stopped paying you on sales by the people you signed up, <a href="https://fashionunited.com/news/business/rodan-fields-announces-new-business-model/2024071660949">FashionUnited reported</a>.</p>
 
@@ -111,9 +111,9 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <h2 id="take-sales">Will Ulta and Amazon take your sales?</h2>
 
-<p class="quick-answer">Quick answer: the CEO says no. His own report from the first 150 Ulta stores was flat.</p>
+<p class="quick-answer">Quick answer: the CEO says no. He said affiliate sales around the first 150 Ulta stores stayed flat.</p>
 
-<p>The CEO is Dimitri Haloulos. <a href="https://www.glossy.co/beauty/beauty-briefing-a-year-after-launching-at-ulta-rodan-fields-is-expanding-again-this-time-to-amazon/">Glossy wrote</a> that he "insists" the new stores will not "cannibalize," or eat into, the affiliate side. He also said, "Many consultants' businesses actually grew."</p>
+<p>The CEO is Dimitri Haloulos. <a href="https://www.glossy.co/beauty/beauty-briefing-a-year-after-launching-at-ulta-rodan-fields-is-expanding-again-this-time-to-amazon/">Glossy wrote</a> that he "insists" the new places to sell will not "cannibalize," or eat into, the affiliate side. He also said, "Many consultants' businesses actually grew."</p>
 
 <p>He gave no number. But around the first 150 Ulta stores, he said, overall affiliate sales remained flat.</p>
 
@@ -131,7 +131,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>And Rodan and Fields can move that line. It keeps the right to change what counts as your sale.</p>
 
-<p>Then your customers. The rule book says "all Customer Data" belongs to the company. In its words, it "is the property of Rodan + Fields."</p>
+<p>Then your customers. The rule book counts "all Customer Data" as company confidential information. In its words, all of it "is the property of Rodan + Fields."</p>
 
 <p>You built the trust. On paper, the company owns the list.</p>
 
@@ -169,14 +169,14 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <p>Still a consultant? Read section 6r of your rule book before you post about another business. It limits what you may post on the pages you use for Rodan and Fields. I would rather you stay in good standing.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/rodanandfie-belonging-v1.webp" alt="Two women in white wicker chairs on a screened back porch, one talking and the other listening, with a plate of peaches and sliced cantaloupe between them" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/rodanandfie-belonging-v1.webp" alt="Two women in white wicker chairs on a screened back porch, one talking and the other listening, with peaches and sliced cantaloupe" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="monday">What would I do first on Monday?</h2>
 
 <p class="quick-answer">Quick answer: read three parts of your own rule book, then ask one question in writing.</p>
 
-<h3>Find three sections tonight</h3>
+<h3>Find three sections first</h3>
 
 <p>Section 11h, on Amazon. Section 6r, on what you may post. And the word list at the back, under Commissionable Sales. Those are the sales you get paid on. Mark each one with a pencil.</p>
 
@@ -237,7 +237,7 @@ our finances.</p>
 
 <p>It is a Saturday in late October. You are walking under the live oaks, and the light has gone gold. Your phone is at home on the counter. You walk slowly, because you know which part of your work is yours, and you have it in writing.</p>
 
-<p>No new store can move that, and no rule book update can either.</p>
+<p>You asked the hard questions first, and you kept the answers.</p>
 
 <p>You become the one who decides where your work counts, whatever store opens next.</p>
 
