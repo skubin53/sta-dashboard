@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-21
+date: 2026-10-20
 title: Levoit Settlement Claim: Was Your 'True HEPA' Air Purifier Really HEPA? (2026)
 slug: levoit-air-purifier-settlement
 keyword: levoit settlement claim
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 21, 2026<br><span style="font-size:.92em;">Published October 21, 2026 &middot; Last updated October 21, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 20, 2026<br><span style="font-size:.92em;">Published October 20, 2026 &middot; Last updated October 20, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -268,8 +268,8 @@ of our health and our finances.</p>
    "headline": "Levoit Settlement Claim: Was Your 'True HEPA' Air Purifier Really HEPA? (2026)",
    "description": "Levoit HEPA settlement claims close Nov 3, 2026. The suit alleges Core and EverestAir filters were not true HEPA. Vesync denies it. Who can file.",
    "image": "https://scan.ismyhometoxic.com/blog-images/levoitairpu-hero-v1.webp",
-   "datePublished": "2026-10-21",
-   "dateModified": "2026-10-21",
+   "datePublished": "2026-10-20",
+   "dateModified": "2026-10-20",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/levoit-air-purifier-settlement"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
