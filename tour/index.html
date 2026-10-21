@@ -76,6 +76,22 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 .newsrow img{display:block;width:100%;height:auto}
 .newsrow figcaption{padding:10px 12px;font-size:.85em;font-weight:700;line-height:1.35}
 .newsrow:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.choice{background:#8a95a5 url(/tour/img/choice-building.webp) center/cover no-repeat;border-radius:14px;padding:22px 18px;display:grid;gap:12px;margin:0 0 22px}
+.choice-red{background:rgba(207,53,58,.93);color:#fff;padding:20px 18px;text-align:center}
+.choice-red p{margin:0}
+.choice-red .q1{font-size:1.35em;font-weight:300;line-height:1.1}
+.choice-red .q2{font-size:1.75em;font-weight:300;line-height:1.15}
+.choice-red .q3{margin-top:10px;font-size:.88em;line-height:1.4;color:#fff}
+.choice-list{list-style:none;margin:0;padding:16px 18px;background:rgba(255,255,255,.9);display:grid;gap:8px}
+.choice-list li{font-weight:600;color:#333}
+.choice-list li:before{content:"\2713";font-weight:800;margin-right:10px;color:#333}
+.choice-list .red{color:#BD333A}
+.proof{position:relative;text-align:center;background:#fff url(/tour/img/quote-marks.png) center 40px/220px auto no-repeat;padding:6px 0 4px;margin:0 0 22px}
+.proof .never{color:#BD333A;font-weight:800;font-size:1.02em;line-height:1.45;margin:0 0 18px}
+.awards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:420px;margin:0 auto}
+.awards img{width:100%;height:auto;display:block}
+.awards-label{font-weight:800;margin:12px 0 0}
+@media(min-width:700px){.choice{grid-template-columns:1fr 1fr;align-items:center;padding:36px}.awards{grid-template-columns:repeat(4,1fr);max-width:none}}
 @media(min-width:700px){.cards.three{grid-template-columns:repeat(3,1fr)}h1{font-size:2.5em}h2{font-size:2.1em}.soldgrid{grid-template-columns:repeat(4,1fr)}.newsrow figure{flex-basis:260px}}
 @media(max-width:420px){body{font-size:18px}h1{font-size:1.8em}h2{font-size:1.6em}}
 </style></head><body>
@@ -137,15 +153,30 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 <div class="wrap">
 <p class="eye go">The switch</p>
 <h2>So we found one store our family could trust.</h2>
-<img class="photo" src="/blog-images/dawn-clean-kitchen-morning-v1.webp" alt="A woman smiling with her coffee in a calm, clean kitchen" width="1600" height="893">
-<ul class="checks">
-<li>They make most of their own products, in their own American factories.</li>
-<li>Made without the harsh chemicals we were trying to get away from.</li>
-<li>Member prices that compete with Target, Walmart and Amazon.</li>
-<li>Shipped straight to your door.</li>
-<li>Real people answer the phone.</li>
-<li>In business since 1985.</li>
+<div class="choice">
+<div class="choice-red">
+<p class="q1">Do you have</p>
+<p class="q2">A CHOICE?</p>
+<p class="q3">We searched North America and only found ONE manufacturer that met our criteria.</p>
+</div>
+<ul class="choice-list">
+<li>Great Products</li>
+<li>Family Owned</li>
+<li class="red">Great Pricing</li>
+<li><span class="red">American</span> Made</li>
+<li>Great Customer Service</li>
 </ul>
+</div>
+<div class="proof">
+<p class="never">In their 40-year history they haven't paid out a single dime in any type of product liability claim!</p>
+<div class="awards">
+<img src="/tour/img/award-1.webp" alt="Forbes America's Best Midsize Employers, 3 year champion" width="400" height="400" loading="lazy">
+<img src="/tour/img/award-2.webp" alt="USA Today America's Most Trusted Brands 2025" width="400" height="400" loading="lazy">
+<img src="/tour/img/award-3.webp" alt="USA Today America's Best Stores 2025" width="400" height="400" loading="lazy">
+<img src="/tour/img/award-4.webp" alt="Forbes The Best Employers for Women" width="400" height="400" loading="lazy">
+</div>
+<p class="awards-label">Recent Awards</p>
+</div>
 <div class="offer">
 <span class="big">New members get <em>$100 in FREE products</em> over their first 5 months.</span>
 <p>When you shop about $100 a month, after tax and shipping.</p>
