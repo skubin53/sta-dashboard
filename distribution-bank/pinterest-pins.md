@@ -585,3 +585,7 @@ Next 2 pins: Day 28 does-woolite-revive-colors (Non-Toxic Laundry) + can-you-exe
 ## 2026-10-20 (12:11 run, ran 12:45) - NOT PUBLISHED, Chrome not on screen
 Chrome ca040473 tab reported innerWidth 0 / outerWidth 0 twice, 5 s apart (window not showing), so Pinterest cannot render. Stopped cleanly per the rule, no Edge fallback. Both pin images are composed and checked (human, no competitor label, headline legible) in the session scratchpad pins1020: does-woolite-revive-colors (photo doeswoolite-freedom-v1, woman in her 50s laughing at the clothesline, NON-TOXIC LAUNDRY, "Does Woolite really / revive faded colors?") and can-you-exercise-your-way-out-of-bad-sleep (photo canyouexerc-together-v1, two women walking a country lane, HEALTHY AGING OVER 50, "Can exercise fix / your bad sleep?"). No growth task (all need the browser).
 Next 2 pins: still Day 28 does-woolite-revive-colors (Non-Toxic Laundry) + can-you-exercise-your-way-out-of-bad-sleep (Healthy Aging Over 50).
+
+## 2026-10-21 (12:11 run) - NOT PUBLISHED, Chrome not on screen again
+Chrome ca040473 tab reported innerWidth 0 after a fresh Pinterest load (the window is not showing), so Pinterest cannot render. Stopped cleanly, no Edge fallback. The two Day 28 pin images composed 10/20 still wait (Woolite colors, exercise and sleep). No growth task (needs the browser).
+Next 2 pins: still Day 28 does-woolite-revive-colors (Non-Toxic Laundry) + can-you-exercise-your-way-out-of-bad-sleep (Healthy Aging Over 50).
