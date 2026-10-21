@@ -122,8 +122,13 @@ tally();
 // 'change' (the tally reads 0, the button stays grey, rows are not green); some reload the
 // page empty. So on every show, resync the highlights and the tally from the real boxes,
 // and in tour mode refill an empty list from what she just submitted (same contact only).
-window.addEventListener('pageshow',function(){
-  if(TOUR && !document.querySelector('#wrap input:checked')){
+window.addEventListener('pageshow',function(e){
+  // ONLY when she came BACK to this page (Back button). On a fresh visit the saved list in
+  // sessionStorage is an older run, and refilling from it made the counter show items she
+  // never clicked (Shannon 2026-10-21: "they don't match with ... Items Checked").
+  var nav=(window.performance&&performance.getEntriesByType&&performance.getEntriesByType('navigation')[0])||{};
+  var back=!!(e&&e.persisted)||nav.type==='back_forward';
+  if(TOUR && back && !document.querySelector('#wrap input:checked')){
     var r={};try{r=JSON.parse(sessionStorage.getItem('switchResult')||'{}')}catch(e){}
     if((r.contact||'')===CID && r.picked && r.picked.length){
       var want={};r.picked.forEach(function(p){want[p.group+'|'+p.label]=1;});
