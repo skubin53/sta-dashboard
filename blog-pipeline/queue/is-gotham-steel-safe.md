@@ -88,7 +88,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, nonstick-pans-teflon-p
 
 <p>You wanted a pan that puts nothing into your food. That is fair. The trouble, the suit says, is what E. Mishan &amp; Sons, Inc. sold you to get it.</p>
 
-<p><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/settlement-agreement.pdf">The case, number CVRI2505343, was filed September 8, 2025, in Riverside County, California.</a> It covers Gotham Steel, Granite Stone and Bell &amp; Howell pans with stainless steel parts.</p>
+<p><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/settlement-agreement.pdf">The case, number CVRI2505343, was filed September 8, 2025, in Riverside County, California.</a> It covers Gotham Steel, Granite Stone and Bell &amp; Howell cookware with stainless steel parts.</p>
 
 <p>The suit lists the words it says sold them, like "Non-toxic," "Safe," "Toxin Free" and "PFOA Free." <a href="https://www.stainless-steelcookwaresettlement.com/">It alleges that was "despite the undisclosed presence of chromium, iron, nickel, lead, cadmium, PFOA, PFAS, PTFE, or PFOS."</a></p>
 
@@ -110,7 +110,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, nonstick-pans-teflon-p
 
 <p><a href="https://oag.ca.gov/system/files/attachments/press-docs/AB1200%20Enforcement%20Advisory%20%281%29.pdf">A California law says pan labels must list certain added chemicals, starting January 1, 2024.</a></p>
 
-<h3 id="the-new-label">What will the new Gotham Steel label say?</h3>
+<h3 id="the-new-label">Iron, chromium and nickel on the new label</h3>
 
 <p><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/settlement-agreement.pdf">In the deal, E. Mishan agreed to print "This product contains: iron, chromium, and nickel" on labels and product pages.</a> It would start within 180 days of a final deal and last up to three years.</p>
 
@@ -130,9 +130,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, nonstick-pans-teflon-p
 
 <p><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/long-form-notice.pdf">The court notice</a> covers buyers in California or Colorado from September 8, 2021, to July 6, 2026.</p>
 
-<p>A valid claim pays $6.00 a pan, up to two per home.</p>
+<p>A valid claim pays $6.00 per pan, pot or set, up to two per home.</p>
 
 <p>Nothing is paid unless the judge gives final approval and any appeals end. The notice says the November 2 hearing "may be moved."</p>
+
+<p><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/gotham_pans_final_approval_motion_and_supporting_declarations_1791911865.pdf">An October 9, 2026, court filing counts 38,433 valid claims and no objections.</a></p>
 
 <p>If you bought yours anywhere else, no check is coming.</p>
 
@@ -152,7 +154,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, nonstick-pans-teflon-p
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
 <tr><td>Class action filed</td><td>Alleged hidden metals and chemicals in pans sold as "Toxin Free"</td><td>Riverside County court, September 8, 2025</td><td>The company denies it, and no court has ruled</td></tr>
-<tr><td>Settlement, not final</td><td>$6.00 a pan, two per home, two states only</td><td>Final hearing, November 2, 2026</td><td>No payment unless the judge approves it</td></tr>
+<tr><td>Settlement, not final</td><td>$6.00 an item, two per home, two states only</td><td>Final hearing, November 2, 2026</td><td>No payment unless the judge approves it</td></tr>
 <tr><td>New label promised</td><td>"This product contains: iron, chromium, and nickel"</td><td>Settlement agreement, filed May 28, 2026</td><td>Those metals are in most stainless steel</td></tr>
 <tr><td>Granitestone pan recall</td><td>A metal cap can eject when hot</td><td>CPSC recall 26-377, April 2, 2026</td><td>An impact and burn hazard, not a chemical one</td></tr>
 </tbody>
@@ -180,7 +182,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, nonstick-pans-teflon-p
 
 <h2 id="what-instead">What do I cook in instead?</h2>
 
-<p class="quick-answer">Quick answer: a plain cast iron skillet made in America, with no coating at all.</p>
+<p class="quick-answer">Quick answer: a plain cast iron skillet made in America, with no nonstick coating.</p>
 
 <p>Cast iron has no coating to wear thin. The pan is iron, all the way through, and the name says so.</p>
 
@@ -227,7 +229,7 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.stainless-steelcookwaresettlement.com/">Settlement website, Fouse and Miller v. E. Mishan &amp; Sons, Inc., case CVRI2505343</a>. Alleges pans sold as "Non-toxic" held metals and chemicals not disclosed. No injury alleged, and the company denies it. What it means: the word you paid for is the case.</li>
 <li><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/settlement-agreement.pdf">Settlement agreement, filed May 28, 2026, section III.B</a>. The new label: "This product contains: iron, chromium, and nickel." What it means: it reaches the box only after final approval.</li>
-<li><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/long-form-notice.pdf">Court approved notice</a>. $6.00 a pan, two per home, California and Colorado only, deadline September 25, 2026. What it means: most buyers get no check.</li>
+<li><a href="https://www.stainless-steelcookwaresettlement.com/assets/uploads/long-form-notice.pdf">Court approved notice</a>. $6.00 an item, two per home, California and Colorado only, deadline September 25, 2026. What it means: most buyers get no check.</li>
 <li><a href="https://www.cpsc.gov/Recalls/2026/E-Mishan-Recalls-Granitestone-Diamond-Pro-Blue-Stainless-Saute-Pans-Due-to-Impact-and-Burn-Hazards">US Consumer Product Safety Commission, recall 26-377, April 2, 2026</a>. About 740,000 Granitestone Diamond Pro Blue saut&eacute; pans, at least 98 incidents. What it means: look for that name by your stove.</li>
 <li><a href="https://www.gothamsteel.com/">Gotham Steel home page</a> and <a href="https://www.gothamsteel.com/pages/california-ab-1200">its AB 1200 page</a>, as of October 20, 2026. What it means: "Non-Toxic" up top, five metals on a page linked in the footer.</li>
 <li><a href="https://oag.ca.gov/system/files/attachments/press-docs/AB1200%20Enforcement%20Advisory%20%281%29.pdf">California Department of Justice letter on AB 1200, October 17, 2023</a>. What it means: since 2024, California wants certain added chemicals on the pan label.</li>
