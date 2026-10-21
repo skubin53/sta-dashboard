@@ -82,7 +82,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>It Works was paid $30 million in Zinzino shares, <a href="https://www.prnewswire.com/news-releases/zinzino-ab-publ-zinzino-announces-merger-of-it-works-into-the-zinzino-family-of-businesses-for-increased-distribution-power-in-north-america-and-europe-302670283.html">the release says</a>.</p>
 
-<p>Zinzino also expects the deal to add over $60 million in sales in 2026. That number is Zinzino's own, not a result.</p>
+<p>In January, Zinzino said the deal would add over $60 million in sales in 2026. By May, <a href="https://mb.cision.com/Public/10976/4351838/8e3610accc640224.pdf">its own report</a> said over $45 million. Both numbers are Zinzino's own, not results.</p>
 
 <div class="sta-cta">
 <h3>Twenty minutes, and you decide nothing on the call</h3>
@@ -109,7 +109,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>So the one your customers love may stay, or it may not. Ask about it by name. Get the answer in writing.</p>
 
-<p>And the products were not the biggest thing Zinzino paid for.</p>
+<p>And the products were not the only thing Zinzino paid for.</p>
 
 <h2 id="what-bought">What did Zinzino actually pay for?</h2>
 
