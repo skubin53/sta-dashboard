@@ -58,7 +58,25 @@ a.go:active{transform:translateY(3px);box-shadow:0 3px 0 #c77700}
 a.go:focus-visible{outline:4px solid var(--ink);outline-offset:4px}
 .cta p{margin:16px 0 0;color:var(--muted);font-size:.95em}
 footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;font-size:.85em;font-weight:700;letter-spacing:.08em}
-@media(min-width:700px){.cards.three{grid-template-columns:repeat(3,1fr)}h1{font-size:2.5em}h2{font-size:2.1em}}
+.wheel{margin:0 0 22px;background:#fff;border:2px solid var(--line);border-radius:14px;padding:12px}
+.wheel img{display:block;width:100%;height:auto}
+.wheel figcaption{text-align:center;font-weight:800;margin-top:8px}
+.lede{margin:0 0 16px}
+.soldgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 18px}
+.sold1{background:#fff;border:2px solid var(--line);border-radius:14px;padding:14px 10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.sold1 img{max-width:100%;height:auto;max-height:110px;object-fit:contain}
+.sold1 img:first-child,.sold1 .arr+img{height:96px;width:100%;max-height:96px}
+.sold1 .to{color:#2f6db5;font-weight:800;font-size:.85em;margin-top:4px}
+.sold1 .arr{width:44px;max-height:none}
+.sold1 small{color:var(--muted);font-size:.78em;font-variant-numeric:tabular-nums}
+.swipe{margin:-6px 0 10px;color:var(--muted);font-size:.85em;font-weight:700}
+.swipe:after{content:" \2192"}
+.newsrow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;-webkit-overflow-scrolling:touch}
+.newsrow figure{flex:0 0 78%;max-width:300px;margin:0;scroll-snap-align:start;background:#fff;border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.newsrow img{display:block;width:100%;height:auto}
+.newsrow figcaption{padding:10px 12px;font-size:.85em;font-weight:700;line-height:1.35}
+.newsrow:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+@media(min-width:700px){.cards.three{grid-template-columns:repeat(3,1fr)}h1{font-size:2.5em}h2{font-size:2.1em}.soldgrid{grid-template-columns:repeat(4,1fr)}.newsrow figure{flex-basis:260px}}
 @media(max-width:420px){body{font-size:18px}h1{font-size:1.8em}h2{font-size:1.6em}}
 </style></head><body>
 <div class="top">Switch to America</div>
@@ -67,7 +85,10 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 <div class="wrap">
 <p class="eye">The problem</p>
 <h1>A few giant companies own most of the brands on the shelf.</h1>
-<img class="photo" src="/blog-images/isstoreboug-hero-v1.webp" alt="A woman shopping in a big box store aisle" width="1600" height="893">
+<figure class="wheel">
+<img src="/tour/img/wheel.webp" alt="A wheel of hundreds of household brand logos, grouped by the handful of giant companies that own them, such as Procter and Gamble, Unilever, PepsiCo, Kraft Heinz, Mars and Johnson and Johnson" width="739" height="686">
+<figcaption>Hundreds of brands. A handful of owners.</figcaption>
+</figure>
 <div class="cards three">
 <div class="card"><b>Family businesses keep closing.</b><span>When a Walmart opened in Chicago in 2006, more than 1 in 4 nearby stores that sold the same kinds of things closed within about two years.</span><small>Loyola University Chicago and University of Illinois Chicago study</small></div>
 <div class="card"><b>So many brands. So few owners.</b><span>Every aisle looks like a hundred choices. Most of those brands belong to a handful of giant companies.</span></div>
@@ -81,18 +102,27 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 <div class="wrap">
 <p class="eye">Who owns your brands</p>
 <h2>The "healthier" brands we trusted were bought by the giants.</h2>
-<ul class="sold">
-<li><b>Seventh Generation</b><span>Sold to <strong>Unilever</strong> in 2016</span></li>
-<li><b>Tom's of Maine</b><span>Sold to <strong>Colgate-Palmolive</strong> in 2006</span></li>
-<li><b>Burt's Bees</b><span>Sold to <strong>Clorox</strong> in 2007</span></li>
-<li><b>Method</b><span>Sold to <strong>S.C. Johnson</strong> in 2017</span></li>
-<li><b>Whole Foods</b><span>Sold to <strong>Amazon</strong> in 2017</span></li>
-</ul>
+<p class="lede">Here are a few brands many of us buy, thinking we are supporting family-owned, healthier choices.</p>
+<div class="soldgrid">
+<div class="sold1"><img src="/tour/img/seventh-generation.png" alt="Seventh Generation dish soap and laundry detergent" width="179" height="158"><span class="to">Sold to</span><img class="arr" src="/tour/img/arrow.png" alt="" width="70" height="36"><img src="/tour/img/unilever.png" alt="Unilever logo" width="130" height="142"><small>2016</small></div>
+<div class="sold1"><img src="/tour/img/mrs-meyers.png" alt="Mrs. Meyer's Clean Day hand soap and cleaners" width="180" height="137"><span class="to">Sold to</span><img class="arr" src="/tour/img/arrow.png" alt="" width="70" height="36"><img src="/tour/img/sc-johnson.png" alt="S.C. Johnson logo" width="180" height="59"><small>2008</small></div>
+<div class="sold1"><img src="/tour/img/toms.png" alt="Tom's of Maine toothpaste" width="180" height="120"><span class="to">Sold to</span><img class="arr" src="/tour/img/arrow.png" alt="" width="70" height="36"><img src="/tour/img/colgate-palmolive.png" alt="Colgate-Palmolive logo" width="130" height="115"><small>2006</small></div>
+<div class="sold1"><img src="/tour/img/burts-bees.webp" alt="Burt's Bees logo" width="136" height="136"><span class="to">Sold to</span><img class="arr" src="/tour/img/arrow.png" alt="" width="70" height="36"><img src="/tour/img/clorox.webp" alt="Clorox logo" width="160" height="94"><small>2007</small></div>
+</div>
+<p class="lede">Even Whole Foods is owned by Amazon now.</p>
 <h3>And the big names keep ending up in the news.</h3>
-<div class="cards news">
-<div class="card"><b>Johnson &amp; Johnson</b><span>Stopped selling its talc baby powder in the U.S. in 2020, after thousands of lawsuits saying it caused cancer.</span></div>
-<div class="card"><b>Procter &amp; Gamble</b><span>Recalled some Old Spice and Secret spray deodorants in 2021 after testing found benzene, a chemical linked to cancer.</span></div>
-<div class="card"><b>S.C. Johnson</b><span>Settled lawsuits over the "Greenlist" logo on Windex. Shoppers said it looked like an outside green group had approved it. The logo was S.C. Johnson's own.</span></div>
+<p class="swipe">Swipe to see all 10</p>
+<div class="newsrow" tabindex="0" aria-label="News stories about lawsuits and recalls">
+<figure><img src="/tour/img/news-01.webp" alt="Headline: Johnson and Johnson to pay 100 million dollars in baby powder settlement" width="300" height="300" loading="lazy"><figcaption>J&amp;J agrees to pay $100 million over baby powder. 2020</figcaption></figure>
+<figure><img src="/tour/img/news-02.webp" alt="Headline: Johnson and Johnson recalls baby powder over asbestos worry" width="300" height="300" loading="lazy"><figcaption>J&amp;J recalls baby powder over asbestos. 2019</figcaption></figure>
+<figure><img src="/tour/img/news-03.webp" alt="Headline: Johnson and Johnson subsidiary seeks bankruptcy protection to handle talc product claims" width="300" height="300" loading="lazy"><figcaption>A J&amp;J company files bankruptcy over talc claims. 2021</figcaption></figure>
+<figure><img src="/tour/img/news-04.webp" alt="Headline: J and J can't use bankruptcy to end cancer suits over baby powder, court says" width="300" height="300" loading="lazy"><figcaption>Court: J&amp;J can't use bankruptcy to end the suits. 2023</figcaption></figure>
+<figure><img src="/tour/img/news-05.webp" alt="Headline: Lawsuits mount against Procter and Gamble over cancer-causing chemical in Old Spice, Secret sprays" width="300" height="300" loading="lazy"><figcaption>P&amp;G sued over benzene in Old Spice and Secret sprays. 2021</figcaption></figure>
+<figure><img src="/tour/img/news-06.webp" alt="Headline: Procter and Gamble recalls 32 dry shampoo and conditioner products over benzene concern" width="300" height="300" loading="lazy"><figcaption>P&amp;G recalls 32 dry shampoos and conditioners. 2021</figcaption></figure>
+<figure><img src="/tour/img/news-07.webp" alt="Headline: Aveeno and Neutrogena spray sunscreens recalled due to low levels of benzene, a carcinogen" width="300" height="300" loading="lazy"><figcaption>Aveeno and Neutrogena sunscreens recalled over benzene. 2021</figcaption></figure>
+<figure><img src="/tour/img/news-08.webp" alt="Headline: S.C. Johnson settles Greenlist lawsuits, company will drop label from Windex" width="300" height="300" loading="lazy"><figcaption>S.C. Johnson settles over the "Greenlist" logo on Windex.</figcaption></figure>
+<figure><img src="/tour/img/news-09.webp" alt="Headline: Burt's Bees faces class action suit over natural pet shampoo claims" width="300" height="300" loading="lazy"><figcaption>Burt's Bees sued over its "natural" pet shampoo. 2021</figcaption></figure>
+<figure><img src="/tour/img/news-10.webp" alt="Headline: Lawsuit over Tom's of Maine's use of natural" width="300" height="300" loading="lazy"><figcaption>Tom's of Maine sued over the word "natural." 2020</figcaption></figure>
 </div>
 <div class="callout">
 <p>Europe bans more than 1,300 ingredients from personal care products. The U.S. bans or limits just 11.</p>
