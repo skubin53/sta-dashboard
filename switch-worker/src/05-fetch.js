@@ -61,6 +61,36 @@ export default {
       return new Response(null, { status: 204, headers: cors(origin) });
     }
 
+    // ----------------------------------------------- Send Tour Link button (2026-10-21)
+    // GET is the little window her bookmark opens; it POSTs back here from the same host,
+    // so no CORS is involved. Above the packs-slug handler, which would take /tourtext as
+    // a page name. Everything that decides whether a text goes out is in 04-tour.js.
+    if (url.pathname === "/tourtext") {
+      if (request.method === "GET") {
+        return new Response(TOUR_WINDOW, {
+          status: 200,
+          headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store",
+                     "X-Robots-Tag": "noindex, nofollow", "Referrer-Policy": "no-referrer" },
+        });
+      }
+      if (request.method === "POST") {
+        let body = {};
+        try {
+          const t = await request.text();
+          if (t.length < 2000) body = JSON.parse(t) || {};
+        } catch (e) {}
+        let res;
+        try { res = await sendTourLink(env, body); }
+        catch (e) { res = { ok: false, why: ["Something broke on the server, so nothing was sent."] }; }
+        const st = res.status || 200;
+        delete res.status;
+        return new Response(JSON.stringify(res), {
+          status: st, headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
+        });
+      }
+      return new Response("no", { status: 405 });
+    }
+
     // ----------------------------------------------- What's New click tracker
     // Shannon texts packs.ismyhometoxic.com/wnew?c=<contactId> from her own phone. When a
     // person OPENS it she wants a text naming who clicked and the contact tagged, so she
