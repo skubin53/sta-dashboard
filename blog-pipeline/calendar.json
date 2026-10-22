@@ -1,16 +1,16 @@
 {
- "start": "2026-10-21",
+ "start": "2026-10-22",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-21",
-   "weekday": "Wed",
+   "date": "2026-10-22",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-gotham-steel-safe",
-     "title": "Gotham Steel Class Action Lawsuit Update: Is It Really Non-Toxic? (2026)",
-     "cat": "Kitchen",
+     "slug": "dove-body-wash-lawsuit",
+     "title": "Dove Body Wash Lawsuit: Are the 'Hypoallergenic' and 'Collagen' Labels True? (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -21,8 +21,8 @@
      "track": "shopper"
     },
     {
-     "slug": "it-works-zinzino-merger-what-now",
-     "title": "What Happened to It Works, and What Does the Zinzino Sale Mean for Distributors? (2026)",
+     "slug": "avon-sold-to-regent",
+     "title": "Avon Sold to Regent: What Does the Deal Mean for Avon Representatives? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-22",
-   "weekday": "Thu",
+   "date": "2026-10-23",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -68,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-23",
-   "weekday": "Fri",
+   "date": "2026-10-24",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -100,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-10-24",
-   "weekday": "Sat",
+   "date": "2026-10-25",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -132,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-10-25",
-   "weekday": "Sun",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -164,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-27",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -196,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -228,45 +228,13 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-estroven-safe",
      "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
      "cat": "Supplements",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "avon-sold-to-regent",
-     "title": "Avon Sold to Regent: What the Deal Means for Avon Representatives (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-29",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -296,9 +264,9 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-lilash-safe",
-     "title": "Is LiLash Safe? What a New Lawsuit Says About the Prostaglandin in the Serum (2026)",
-     "cat": "Beauty",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -328,8 +296,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "slug": "is-lilash-safe",
+     "title": "Is LiLash Safe? What a New Lawsuit Says About the Prostaglandin in the Serum (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -360,8 +328,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "native-deodorant-lawsuit-2026",
-     "title": "Native Deodorant Lawsuit: Is 'Unscented' Native Really Unscented? (2026)",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -392,9 +360,9 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "native-deodorant-lawsuit-2026",
+     "title": "Native Deodorant Lawsuit: Is 'Unscented' Native Really Unscented? (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -424,9 +392,9 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -456,16 +424,16 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -488,8 +456,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "does-hair-relaxer-cause-cancer",
-     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -520,8 +488,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "dove-body-wash-lawsuit",
-     "title": "Dove Body Wash Lawsuit 2026: The 'Hypoallergenic' and 'Collagen' Labels Now in Court",
+     "slug": "does-hair-relaxer-cause-cancer",
+     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -951,6 +919,38 @@
     {
      "slug": "why-did-clorox-pay-a-14-million-fine",
      "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "why-do-you-stop-feeling-thirsty",
+     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "window-air-conditioner-mold-recall",
+     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
