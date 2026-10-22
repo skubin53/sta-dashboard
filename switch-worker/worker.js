@@ -1231,6 +1231,7 @@ async function recordWhatsNewClick(env, contactId) {
 const TOUR_GAP = 60;               // seconds before the same contact can be texted again
 const TOUR_HOURLY_CAP = 60;        // live texts per clock hour, all contacts together
 const TOUR_TRY_CAP = 120;          // key-valid presses per clock hour, whatever the outcome
+const TOUR_DAY_CAP = 3;            // live tour texts to ONE lead per day (Mountain date)
 const TOUR_PAGE = "https://scan.ismyhometoxic.com/tour/?contact_id=";
 const HONORIFICS = ["dr", "mr", "mrs", "ms", "miss", "mx"];
 
@@ -1271,16 +1272,49 @@ function mountainTime(iso) {
   } catch (e) { return iso.slice(0, 16).replace("T", " ") + " UTC"; }
 }
 
+function mountainDate(iso) {
+  try {
+    return new Date(iso).toLocaleDateString("en-CA", { timeZone: "America/Edmonton" });   // yyyy-mm-dd
+  } catch (e) { return String(iso).slice(0, 10); }
+}
+
 async function bump(env, key, n) {
   try { await env.REPORTS.put(key, String(n + 1), { expirationTtl: 7200 }); } catch (e) {}
+}
+
+// The SEND TOUR LINK note on each lead (Shannon 2026-10-22: "How will Kristen & other
+// builders do that? ... It needs to be simple. A button that is already on each lead.")
+// Its link carries a signature for THAT contact only: HMAC-SHA256 of "tour:<id>" under the
+// TOUR_SIGN secret. Anyone who sees the note can text that one lead their own tour link,
+// at most TOUR_DAY_CAP times a day, and nothing else. TOUR_SIGN must never be rotated
+// casually: every note already pinned on a lead stops working when it changes.
+async function tourSig(env, cid) {
+  const secret = String((env && env.TOUR_SIGN) || "");
+  if (!secret || !ID_OK.test(String(cid || ""))) return "";
+  const enc = new TextEncoder();
+  const k = await crypto.subtle.importKey("raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const mac = new Uint8Array(await crypto.subtle.sign("HMAC", k, enc.encode("tour:" + cid)));
+  let b = "";
+  for (let i = 0; i < 16; i++) b += String.fromCharCode(mac[i]);
+  return btoa(b).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+async function tourNoteLink(env, cid) {
+  const sig = await tourSig(env, cid);
+  return sig ? PACK_HOST + "/tourtext?c=" + cid + "#s=" + sig : "";
 }
 
 async function sendTourLink(env, body) {
   const mode = String(env.TOUR_MODE || "off").toLowerCase();
   const key = String(env.TOUR_KEY || "");
-  if (!key || String(body.k || "") !== key) return { ok: false, status: 403, why: ["This button's key is wrong. Ask for a new button."] };
-  if (mode === "off") return { ok: false, why: ["The tour link button is switched off."] };
   const cid = String(body.c || "").trim();
+  let authed = !!key && String(body.k || "") === key;
+  if (!authed && body.s && ID_OK.test(cid)) {
+    const sig = await tourSig(env, cid);
+    authed = !!sig && String(body.s) === sig;
+  }
+  if (!authed) return { ok: false, status: 403, why: ["This link or button is not valid. Ask Shannon for a new one."] };
+  if (mode === "off") return { ok: false, why: ["The tour link button is switched off."] };
   if (!ID_OK.test(cid)) return { ok: false, why: ["Open the lead's contact page in GHL first, then click the button."] };
   if (!env.REPORTS) return { ok: false, why: ["The worker has no storage, so nothing was sent."] };
   const link = TOUR_PAGE + cid;
@@ -1311,6 +1345,15 @@ async function sendTourLink(env, body) {
   try { await env.REPORTS.put(lockKey, now, { expirationTtl: TOUR_GAP }); }
   catch (e) { return { ok: false, link, why: ["Storage could not be written, so nothing was sent. Try again in a minute."] }; }
   async function unlock() { try { await env.REPORTS.delete(lockKey); } catch (e) {} }
+
+  const dayKey = "tourday:" + cid + ":" + mountainDate(now);
+  let today;
+  try { today = Number(await env.REPORTS.get(dayKey)) || 0; }
+  catch (e) { await unlock(); return { ok: false, link, why: ["Storage could not be read, so nothing was sent. Try again in a minute."] }; }
+  if (today >= TOUR_DAY_CAP) {
+    await unlock();
+    return { ok: false, link, why: ["The tour link already went to this person " + today + " times today, so nothing was sent. Copy the link below if they still need it."] };
+  }
 
   // Same DND-aware id search as the packs send (see the trap note at the top of
   // 04-send.js), read here so "GHL did not answer" and "no such contact" are told apart.
@@ -1350,6 +1393,7 @@ async function sendTourLink(env, body) {
   }
 
   await bump(env, "tourhour:" + hour, n);
+  try { await env.REPORTS.put(dayKey, String(today + 1), { expirationTtl: 60 * 60 * 36 }); } catch (e) {}
   const payload = { type: "SMS", contactId: cid, message };
   if (from) payload.fromNumber = from;
   const rec = { contact_id: cid, at: now, name, to, from };
@@ -1406,10 +1450,10 @@ const TOUR_WINDOW =
   'function h(s){return String(s==null?"":s).replace(/[&<>"]/g,function(x){return{"&":"&amp;","<":"&lt;",">":"&gt;","\\"":"&quot;"}[x];});}' +
   'function copyBox(l){if(!l)return"";return"<p>Their link:</p><p class=msg>"+h(l)+"</p><button id=cp>Copy link</button>";}' +
   'function wire(l){var b=document.getElementById("cp");if(b&&l)b.onclick=function(){if(navigator.clipboard)navigator.clipboard.writeText(l).then(function(){b.textContent="Copied";});};}' +
-  'function go(){var m=location.hash.match(/k=([^&]+)/);if(!m||busy)return;var k=decodeURIComponent(m[1]);busy=true;' +
+  'function go(){var m=location.hash.match(/(k|s)=([^&]+)/);if(!m||busy)return;var a={c:c};a[m[1]]=decodeURIComponent(m[2]);busy=true;' +
   'try{history.replaceState(null,"",location.pathname+location.search);}catch(e){}' +
   'w.className="w";w.innerHTML="<h1>Sending the tour link...</h1><p>One moment.</p>";' +
-  'fetch("/tourtext",{method:"POST",headers:{"Content-Type":"text/plain;charset=UTF-8"},body:JSON.stringify({c:c,k:k})})' +
+  'fetch("/tourtext",{method:"POST",headers:{"Content-Type":"text/plain;charset=UTF-8"},body:JSON.stringify(a)})' +
   '.then(function(r){return r.json();}).then(function(j){busy=false;' +
   'var who=h(j.name||"")+(j.to?" (ending "+h(j.to)+")":"");' +
   'if(j.ok&&j.dry){w.className="w ok";w.innerHTML="<h1>TEST ONLY, nothing sent</h1><p>It would text "+who+":</p><p class=msg>"+h(j.message)+"</p>"+CLOSE;return;}' +
@@ -1418,6 +1462,129 @@ const TOUR_WINDOW =
   '}).catch(function(){busy=false;w.className="w no";w.innerHTML="<h1>Not sent</h1><p>The button could not reach the server. Check the internet and click it again.</p>"+CLOSE;});}' +
   'window.addEventListener("hashchange",go);go();' +
   '})();</script></body></html>';
+
+/* ------------------------------------------- SEND TOUR LINK notes on the leads
+ *
+ * Every NEW contact, and everyone booked on a tour calendar, gets one pinned note with a
+ * SEND TOUR LINK link (their own signed link, see tourSig). Pinned notes sit at the top of
+ * the Notes panel in GHL, on the web and in the phone app, so Kristen and every builder
+ * just open the lead and click it. Runs from its own cron (TOUR_NOTE_CRON), so it never
+ * shares a subrequest budget with the packs queue.
+ *
+ *   - TOUR_NOTES gates it: "live" writes notes, "dryrun" logs who would get one, "off" nothing.
+ *   - one note per contact, ever: KV tournote:<id> remembers it.
+ *   - skipped: builder prospects (tag boostyourincome: their call is the Zoom, not a tour)
+ *     and anyone the packs send would refuse to text (DND, stop tags, no phone). Those are
+ *     re-checked after a week, in case it changes.
+ *   - new contacts are read in date order from a cursor, so a busy hour is finished on the
+ *     next run instead of skipped; at most TOUR_NOTES_PER_RUN notes are written per run.
+ */
+const TOUR_NOTE_CRON = "3-59/10 * * * *";
+const TOUR_NOTES_PER_RUN = 12;
+const TOUR_NOTE_SKIP_TAGS = ["boostyourincome"];
+const TOUR_CALENDARS = [
+  "1cSkufApIXXOrrDSlsfn", "7qPj2dFr91uOtgbhKc3O", "8KyVN97V9STkCZ8fv8tm", "DhQIAxElvFEm9JvanpS2",
+  "MFE31N22BzC6yUkKhjfk", "Uu9A7T3weNNMrqGDXhSh", "VcaBdXq7kJAAb3q9lwVu", "Y8AxPZdBot07yyAMM0yQ",
+  "bfmvjAoI4FxLd2cOyn9c", "tS0J4P5TcSyAxL79gcR5", "tutfx6nixvxzqsdolstb", "wz7NpKeOERbYhUsmEfff",
+  "xRWH8ROP4UOsxNCyyxGf",
+];   // the shopper tour calendars; the 5 builder Zoom calendars are left out on purpose
+const TOUR_NOTES_BACK_DAYS = 45;   // first run reaches back this far for new contacts
+
+function tourNoteHtml(link, contact) {
+  const who = greetName(contact && contact.firstName) || "them";
+  return '<p><a href="' + link + '" target="_blank"><strong>SEND TOUR LINK</strong></a></p>' +
+         "<p>Click it once you are on the call with " + esc(who) + ". It texts " + esc(who) +
+         " the tour link from 866-567-0832, and the checklist answers save here.</p>";
+}
+
+async function tourNoteFor(env, contact, mode) {
+  const cid = contact.id;
+  const tags = (Array.isArray(contact.tags) ? contact.tags : []).map(function (t) { return String(t).toLowerCase().trim(); });
+  if (TOUR_NOTE_SKIP_TAGS.some(function (t) { return tags.indexOf(t) >= 0; })) {
+    await env.REPORTS.put("tournote:" + cid, "skip:builder", { expirationTtl: LOG_TTL });
+    return "skip:builder";
+  }
+  const why = mustNotText(contact);
+  if (why.length) {
+    await env.REPORTS.put("tournote:" + cid, "skip:" + why[0].slice(0, 60), { expirationTtl: 60 * 60 * 24 * 7 });
+    return "skip:dnd";
+  }
+  const link = await tourNoteLink(env, cid);
+  if (!link) return "no-sign-key";
+  if (mode !== "live") {
+    await env.REPORTS.put("tournotedry:" + cid, JSON.stringify({ at: new Date().toISOString(),
+      name: ((contact.firstName || "") + " " + (contact.lastName || "")).trim() }), { expirationTtl: 60 * 60 * 24 * 7 });
+    return "dry";
+  }
+  const r = await ghl(env, "POST", "/contacts/" + cid + "/notes", { body: tourNoteHtml(link, contact), pinned: true });
+  if (!r.ok) return "note-failed:" + r.status;
+  await env.REPORTS.put("tournote:" + cid, String((r.data && r.data.note && r.data.note.id) || "ok"), { expirationTtl: LOG_TTL });
+  return "noted";
+}
+
+async function ensureTourNotes(env) {
+  const mode = String((env && env.TOUR_NOTES) || "off").toLowerCase();
+  if (mode === "off" || !env.REPORTS || !String(env.TOUR_SIGN || "")) return { skipped: mode };
+  const loc = String(env.GHL_LOCATION || "").trim();
+  if (!loc) return { skipped: "no location" };
+  const now = Date.now();
+  const out = [];
+  let made = 0;
+  const seen = {};
+
+  // 1) new contacts, oldest first, from the cursor
+  const curKey = mode === "live" ? "tournotes:since" : "tournotes:since:dry";
+  let since = await env.REPORTS.get(curKey);
+  if (!since) since = new Date(now - TOUR_NOTES_BACK_DAYS * 86400000).toISOString();
+  const sr = await ghl(env, "POST", "/contacts/search", { locationId: loc, page: 1, pageLimit: 50,
+    filters: [{ field: "dateAdded", operator: "range", value: { gte: since } }],
+    sort: [{ field: "dateAdded", direction: "asc" }] });
+  let cursor = since;
+  if (sr.ok && sr.data && Array.isArray(sr.data.contacts)) {
+    for (const c of sr.data.contacts) {
+      if (!c || !ID_OK.test(String(c.id || ""))) continue;
+      if (made >= TOUR_NOTES_PER_RUN) break;               // the cursor stops here; next run resumes
+      seen[c.id] = 1;
+      if (!(await env.REPORTS.get("tournote:" + c.id))) {
+        const res = await tourNoteFor(env, c, mode);
+        out.push(c.id + "=" + res);
+        if (res === "noted" || res === "dry") made++;
+      }
+      if (c.dateAdded && c.dateAdded > cursor) cursor = c.dateAdded;
+    }
+  }
+  if (cursor !== since) await env.REPORTS.put(curKey, cursor);
+
+  // 2) everyone booked on a tour calendar (yesterday to 30 days out), every half hour
+  const calKey = mode === "live" ? "tournotes:cal" : "tournotes:cal:dry";
+  const lastCal = Number(await env.REPORTS.get(calKey)) || 0;
+  if (made < TOUR_NOTES_PER_RUN && now - lastCal > 30 * 60000) {
+    const ids = [];
+    for (const cal of TOUR_CALENDARS) {
+      const r = await ghl(env, "GET", "/calendars/events?locationId=" + loc + "&calendarId=" + cal +
+        "&startTime=" + (now - 86400000) + "&endTime=" + (now + 30 * 86400000), undefined, "2021-04-15");
+      if (!r.ok || !r.data || !Array.isArray(r.data.events)) continue;
+      for (const e of r.data.events) {
+        const st = String(e.appointmentStatus || "").toLowerCase();
+        if (!e.contactId || e.deleted || st === "cancelled" || st === "invalid") continue;
+        if (!seen[e.contactId] && ids.indexOf(e.contactId) < 0) ids.push(e.contactId);
+      }
+    }
+    let finished = true;
+    for (const cid of ids) {
+      if (!ID_OK.test(cid)) continue;
+      if (await env.REPORTS.get("tournote:" + cid)) continue;
+      if (made >= TOUR_NOTES_PER_RUN) { finished = false; break; }
+      const c = await lookupContact(env, cid);
+      if (!c) continue;
+      const res = await tourNoteFor(env, c, mode);
+      out.push(cid + "=" + res);
+      if (res === "noted" || res === "dry") made++;
+    }
+    if (finished) await env.REPORTS.put(calKey, String(now));
+  }
+  return { mode, made, results: out };
+}
 
 
 /* ------------------------------------------------------------------- requests */
@@ -1686,6 +1853,13 @@ export default {
                     rows }, 200, origin);
     }
 
+    // Run the SEND TOUR LINK notes pass by hand (same code as its cron). LOG_KEY guarded.
+    if (request.method === "GET" && url.pathname === "/tournoterun") {
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      const r = await ensureTourNotes(env);
+      return json(r, 200, origin);
+    }
+
     // Run the queue by hand. Same code the cron runs, no shortcuts, same guards.
     if (request.method === "GET" && url.pathname === "/packrun") {
       if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
@@ -1864,6 +2038,9 @@ export default {
   // Every 5 minutes. A few minutes after she finishes the list she gets the text, which
   // reads more like Shannon actually looked at it than an instant reply would.
   async scheduled(event, env, ctx) {
+    // Two crons (2026-10-22): the packs queue every 5 minutes, and the SEND TOUR LINK notes
+    // on their own schedule so neither eats the other's subrequest budget.
+    if (event && event.cron === TOUR_NOTE_CRON) { ctx.waitUntil(ensureTourNotes(env)); return; }
     ctx.waitUntil(processQueue(env));
   },
 };

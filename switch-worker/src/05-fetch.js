@@ -265,6 +265,13 @@ export default {
                     rows }, 200, origin);
     }
 
+    // Run the SEND TOUR LINK notes pass by hand (same code as its cron). LOG_KEY guarded.
+    if (request.method === "GET" && url.pathname === "/tournoterun") {
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      const r = await ensureTourNotes(env);
+      return json(r, 200, origin);
+    }
+
     // Run the queue by hand. Same code the cron runs, no shortcuts, same guards.
     if (request.method === "GET" && url.pathname === "/packrun") {
       if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
@@ -443,6 +450,9 @@ export default {
   // Every 5 minutes. A few minutes after she finishes the list she gets the text, which
   // reads more like Shannon actually looked at it than an instant reply would.
   async scheduled(event, env, ctx) {
+    // Two crons (2026-10-22): the packs queue every 5 minutes, and the SEND TOUR LINK notes
+    // on their own schedule so neither eats the other's subrequest budget.
+    if (event && event.cron === TOUR_NOTE_CRON) { ctx.waitUntil(ensureTourNotes(env)); return; }
     ctx.waitUntil(processQueue(env));
   },
 };
