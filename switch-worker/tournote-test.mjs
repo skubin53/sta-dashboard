@@ -27,13 +27,16 @@ const notes = {};          // id -> [{body, pinned}]
 const sms = [];
 const events = {};         // calendarId -> [event]
 let searchCalls = 0;
+const failNote = new Set();
 const ok = (d) => new Response(JSON.stringify(d), { status: 200, headers: { "Content-Type": "application/json" } });
 globalThis.fetch = async (url, init = {}) => {
   const u = new URL(url); const m = (init.method || "GET").toUpperCase();
   const body = init.body ? JSON.parse(init.body) : null;
   let r;
   if ((r = u.pathname.match(/^\/contacts\/([^/]+)\/notes$/)) && m === "POST") {
-    const id = r[1]; notes[id] = notes[id] || [];
+    const id = r[1];
+    if (failNote.has(id)) return new Response("{}", { status: 429 });
+    notes[id] = notes[id] || [];
     notes[id].push({ body: body.body, pinned: body.pinned }); return ok({ note: { id: "n" + id.slice(0, 4) + notes[id].length } });
   }
   if (u.pathname === "/contacts/search" && m === "POST") {
@@ -120,6 +123,21 @@ r = await notesRun();
 const both = Object.keys(notes).filter((k) => k.startsWith("n")).length;
 check("busy run stops at 12 and the next run finishes the rest", firstBatch === 12 && both === 15, { firstBatch, both });
 
+// review fixes 2026-10-22: a failed note POST is retried next run; no-phone leads still get a note
+contacts[id("nop")] = { id: id("nop"), firstName: "Nop", phone: "", tags: [], dateAdded: iso(5) };
+contacts[id("flk")] = { id: id("flk"), firstName: "Flk", phone: "+12085559000", tags: [], dateAdded: iso(4) };
+failNote.add(id("flk"));
+r = await notesRun();
+check("no-phone lead still gets the note (the click explains)", (notes[id("nop")] || []).length === 1, r);
+check("429 on a note POST -> no note yet, no marker", !notes[id("flk")] && !kv.m.has("tournote:" + id("flk")), r);
+failNote.delete(id("flk"));
+r = await notesRun();
+check("...and the next run retries that lead", (notes[id("flk")] || []).length === 1, r);
+await kv.put("tournotes:lock", "x");
+r = await notesRun();
+check("a run while another is going does nothing", r.skipped === "another run is going", r);
+await kv.delete("tournotes:lock");
+
 // ---------------------------------------------------------------- the note link sends
 const sig = sigFrom(annNote);
 let n0 = sms.length;
@@ -140,6 +158,9 @@ check("a rotated TOUR_SIGN breaks old links (fails closed)", r.status === 403 &&
 r = await press(id("ann"), { k: "K".repeat(40) });
 check("Shannon's bookmark key still works (inside the 60 s lock -> refused, not 403)", r.status === 200 && !r.ok && /less than a minute/.test((r.why || []).join(" ")), r);
 
+const deeSig = await (async () => { const { createHmac } = await import("node:crypto"); return createHmac("sha256", env.TOUR_SIGN).update("tour:" + id("dee")).digest().subarray(0, 16).toString("base64url"); })();
+r = await press(id("dee"), { s: deeSig });
+check("note link on an opted-out lead: generic reason, first name only, no phone digits", !r.ok && /cannot get texts/.test((r.why || []).join(" ")) && !/STOP|DND/.test((r.why || []).join(" ")) && !r.to && r.name === "Dee", r);
 // daily cap: clear the 60 s lock between presses to reach the cap
 const calSig = sigFrom((notes[id("cal")] || [{}])[0].body);
 for (let i = 0; i < 3; i++) { await kv.delete("tourlock:" + id("cal")); await press(id("cal"), { s: calSig }); }
@@ -151,7 +172,7 @@ check("4th tour text to one lead in a day is refused, with the link to copy", !r
 // ---------------------------------------------------------------- cron routing
 const before = searchCalls;
 ctx.pending = [];
-await worker.scheduled({ cron: "3-59/10 * * * *" }, env, ctx);
+await worker.scheduled({ cron: "1-59/5 * * * *" }, env, ctx);
 await Promise.all(ctx.pending);
 check("the tour-notes cron runs the notes pass", searchCalls > before);
 ctx.pending = [];

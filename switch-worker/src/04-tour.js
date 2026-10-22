@@ -41,6 +41,7 @@ const TOUR_GAP = 60;               // seconds before the same contact can be tex
 const TOUR_HOURLY_CAP = 60;        // live texts per clock hour, all contacts together
 const TOUR_TRY_CAP = 120;          // key-valid presses per clock hour, whatever the outcome
 const TOUR_DAY_CAP = 3;            // live tour texts to ONE lead per day (Mountain date)
+const TOUR_SIG_TRY_CAP = 10;       // presses of ONE lead's note link per hour
 const TOUR_PAGE = "https://scan.ismyhometoxic.com/tour/?contact_id=";
 const HONORIFICS = ["dr", "mr", "mrs", "ms", "miss", "mx"];
 
@@ -117,51 +118,69 @@ async function sendTourLink(env, body) {
   const mode = String(env.TOUR_MODE || "off").toLowerCase();
   const key = String(env.TOUR_KEY || "");
   const cid = String(body.c || "").trim();
-  let authed = !!key && String(body.k || "") === key;
-  if (!authed && body.s && ID_OK.test(cid)) {
+  const viaKey = !!key && String(body.k || "") === key;       // Shannon's own bookmark
+  let viaSig = false;                                          // the pinned note on a lead
+  if (!viaKey && body.s && ID_OK.test(cid)) {
     const sig = await tourSig(env, cid);
-    authed = !!sig && String(body.s) === sig;
+    viaSig = !!sig && String(body.s) === sig;
   }
-  if (!authed) return { ok: false, status: 403, why: ["This link or button is not valid. Ask Shannon for a new one."] };
+  if (!viaKey && !viaSig) return { ok: false, status: 403, why: ["This link or button is not valid. Ask Shannon for a new one."] };
   if (mode === "off") return { ok: false, why: ["The tour link button is switched off."] };
   if (!ID_OK.test(cid)) return { ok: false, why: ["Open the lead's contact page in GHL first, then click the button."] };
   if (!env.REPORTS) return { ok: false, why: ["The worker has no storage, so nothing was sent."] };
   const link = TOUR_PAGE + cid;
   const now = new Date().toISOString();
   const hour = now.slice(0, 13);
+  const KVDOWN = { ok: false, link, why: ["Storage could not be read, so nothing was sent. Try again in a minute."] };
 
-  // Every key-valid press counts here, sent or not, so even a leaked key cannot turn this
-  // into an unlimited contact lookup. Then the ceiling on live texts. Unreadable = refuse.
+  // A single lead's note link can be switched off without touching anyone else's.
+  try { if (await env.REPORTS.get("tourrevoke:" + cid)) return { ok: false, why: ["The tour link button for this lead is switched off."] }; }
+  catch (e) { return KVDOWN; }
+
+  // Budgets (2026-10-22 review). Shannon's bookmark shares one hourly budget. A note link
+  // gets its OWN small budget per lead, so one copied link can never use up everyone
+  // else's. Presses refused by the 60 s lock are not counted. Unreadable = refuse.
+  const tryKey = viaKey ? "tourtry:" + hour : "tourtry:" + cid + ":" + hour;
+  const tryCap = viaKey ? TOUR_TRY_CAP : TOUR_SIG_TRY_CAP;
   let tries, n;
   try {
-    tries = Number(await env.REPORTS.get("tourtry:" + hour)) || 0;
+    tries = Number(await env.REPORTS.get(tryKey)) || 0;
     n = Number(await env.REPORTS.get("tourhour:" + hour)) || 0;
-  } catch (e) {
-    return { ok: false, link, why: ["Storage could not be read, so nothing was sent. Try again in a minute."] };
-  }
-  if (tries >= TOUR_TRY_CAP) return { ok: false, why: ["Too many presses this hour. Nothing was sent."] };
-  await bump(env, "tourtry:" + hour, tries);
+  } catch (e) { return KVDOWN; }
+  if (tries >= tryCap) return { ok: false, link, why: ["Too many presses this hour, so nothing was sent. Copy the link below if they still need it."] };
   if (n >= TOUR_HOURLY_CAP) return { ok: false, link, why: ["More than " + TOUR_HOURLY_CAP + " tour links this hour. Nothing was sent."] };
 
-  // The per-person lock goes on FIRST, before the GHL lookup, so two quick presses cannot
-  // both get through while the lookup is in flight. It is lifted again on every path that
-  // ends without a live send, so a blocked or test press never says "already went".
+  // The per-person lock goes on BEFORE the GHL lookup. KV has no compare-and-set, so the
+  // lock carries a random nonce and is read back after a short pause: of several presses
+  // racing in the same data center, only the one whose nonce survived goes on.
   const lockKey = "tourlock:" + cid;
   let recent;
-  try { recent = await env.REPORTS.get(lockKey); }
-  catch (e) { return { ok: false, link, why: ["Storage could not be read, so nothing was sent. Try again in a minute."] }; }
-  if (recent) return { ok: false, why: ["The link already went to this person less than a minute ago."], at: recent };
-  try { await env.REPORTS.put(lockKey, now, { expirationTtl: TOUR_GAP }); }
-  catch (e) { return { ok: false, link, why: ["Storage could not be written, so nothing was sent. Try again in a minute."] }; }
-  async function unlock() { try { await env.REPORTS.delete(lockKey); } catch (e) {} }
+  try { recent = await env.REPORTS.get(lockKey); } catch (e) { return KVDOWN; }
+  if (recent) return { ok: false, why: ["The link already went to this person less than a minute ago."], at: String(recent).split("|")[1] || "" };
+  const nonce = (crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2)) + "|" + now;
+  try { await env.REPORTS.put(lockKey, nonce, { expirationTtl: TOUR_GAP }); }
+  catch (e) { return KVDOWN; }
+  await new Promise(function (r) { setTimeout(r, 150); });
+  let back = null;
+  try { back = await env.REPORTS.get(lockKey); } catch (e) {}
+  if (back && back !== nonce) return { ok: false, why: ["This link is already being sent. Look for it in the conversation in a moment."] };
+  await bump(env, tryKey, tries);
 
+  // The day count is RESERVED here, next to the lock and before the GHL calls, and given
+  // back on every path that ends without a text.
   const dayKey = "tourday:" + cid + ":" + mountainDate(now);
   let today;
   try { today = Number(await env.REPORTS.get(dayKey)) || 0; }
-  catch (e) { await unlock(); return { ok: false, link, why: ["Storage could not be read, so nothing was sent. Try again in a minute."] }; }
+  catch (e) { try { await env.REPORTS.delete(lockKey); } catch (e2) {} return KVDOWN; }
   if (today >= TOUR_DAY_CAP) {
-    await unlock();
+    try { await env.REPORTS.delete(lockKey); } catch (e) {}
     return { ok: false, link, why: ["The tour link already went to this person " + today + " times today, so nothing was sent. Copy the link below if they still need it."] };
+  }
+  try { await env.REPORTS.put(dayKey, String(today + 1), { expirationTtl: 60 * 60 * 36 }); }
+  catch (e) { try { await env.REPORTS.delete(lockKey); } catch (e2) {} return KVDOWN; }
+  async function release() {
+    try { await env.REPORTS.delete(lockKey); } catch (e) {}
+    try { await env.REPORTS.put(dayKey, String(today), { expirationTtl: 60 * 60 * 36 }); } catch (e) {}
   }
 
   // Same DND-aware id search as the packs send (see the trap note at the top of
@@ -175,42 +194,49 @@ async function sendTourLink(env, body) {
     } catch (e) { sr = null; }
   }
   if (!sr || !sr.ok) {
-    await unlock();
+    await release();
     return { ok: false, link, why: ["GHL did not answer" + (sr ? " (HTTP " + sr.status + ")" : "") + ". Nothing was sent. Try again in a minute."] };
   }
   const contact = Array.isArray(sr.data && sr.data.contacts) ? sr.data.contacts[0] : null;
   if (!contact || contact.id !== cid) {
-    await unlock();
+    await release();
     return { ok: false, why: ["This contact is not in your GHL account, so nothing was sent."] };
   }
-  const name = ((contact.firstName || "") + " " + (contact.lastName || "")).trim() || "(no name on file)";
-  const to = lastFour(contact.phone);
+  // A note link shows only the first name and no phone digits or opt-out detail: it can
+  // be copied out of GHL, and whoever holds it should learn nothing about the lead.
+  const name = viaKey
+    ? (((contact.firstName || "") + " " + (contact.lastName || "")).trim() || "(no name on file)")
+    : (greetName(contact.firstName) || "this lead");
+  const to = viaKey ? lastFour(contact.phone) : "";
   const why = mustNotText(contact);
-  if (why.length) { await unlock(); return { ok: false, name, to, why }; }
+  if (why.length) {
+    await release();
+    return viaKey ? { ok: false, name, to, why }
+      : { ok: false, name, link, why: ["This person cannot get texts from us (they opted out, or there is no cell number on file). You can copy the link below and email it instead."] };
+  }
 
   const message = tourMessage(contact);
   const from = String(env.TOUR_FROM || "").trim();
 
   if (mode !== "live") {
-    await unlock();
+    await release();
     try {
       await env.REPORTS.put("tourdry:" + cid + ":" + now,
-        JSON.stringify({ contact_id: cid, at: now, name, to, from, message }),
+        JSON.stringify({ contact_id: cid, at: now, via: viaKey ? "key" : "note", to: lastFour(contact.phone), from, message }),
         { expirationTtl: 60 * 60 * 24 * 30 });
     } catch (e) {}
     return { ok: true, dry: true, name, to, from, message };
   }
 
   await bump(env, "tourhour:" + hour, n);
-  try { await env.REPORTS.put(dayKey, String(today + 1), { expirationTtl: 60 * 60 * 36 }); } catch (e) {}
   const payload = { type: "SMS", contactId: cid, message };
   if (from) payload.fromNumber = from;
-  const rec = { contact_id: cid, at: now, name, to, from };
+  const rec = { contact_id: cid, at: now, via: viaKey ? "key" : "note", to: lastFour(contact.phone), from };
   let r;
   try {
     r = await ghl(env, "POST", "/conversations/messages", payload, "2021-04-15");
   } catch (e) {
-    rec.error = "threw: " + String((e && e.message) || e).slice(0, 200);
+    rec.error = "threw: " + String((e && e.message) || e).slice(0, 200);     // lock + day count kept: it may have gone
     try { await env.REPORTS.put("tourtext:" + cid + ":" + now, JSON.stringify(rec), { expirationTtl: LOG_TTL }); } catch (e2) {}
     return { ok: false, name, to, link, why: ["The text may or may not have gone out. Ask them if it came in before clicking again."] };
   }
@@ -218,19 +244,19 @@ async function sendTourLink(env, body) {
   rec.ok = r.ok; rec.status = r.status; rec.msg_status = st || null;
   rec.message_id = (r.data && (r.data.messageId || r.data.msgId)) || null;
   if (!r.ok || st === "failed" || st === "undelivered") {
-    await unlock();       // nothing went out, so a retry (or a fixed number) must not be refused
+    await release();       // nothing went out, so a retry (or a fixed number) must not be refused
     rec.error = JSON.stringify(r.data).slice(0, 300);
     try { await env.REPORTS.put("tourtext:" + cid + ":" + now, JSON.stringify(rec), { expirationTtl: LOG_TTL }); } catch (e) {}
     const msg = (r.data && (r.data.message || r.data.error)) || "";
     return { ok: false, name, to, link, why: ["GHL refused the text" + (r.ok ? "" : " (HTTP " + r.status + ")") +
-             (msg ? ": " + String(msg).slice(0, 160) : "") + ". Copy the link below and email it to them instead."] };
+             (msg && viaKey ? ": " + String(msg).slice(0, 160) : "") + ". Copy the link below and email it to them instead."] };
   }
   try { await env.REPORTS.put("tourtext:" + cid + ":" + now, JSON.stringify(rec), { expirationTtl: LOG_TTL }); } catch (e) {}
 
   // A trace on the record, so whoever opens the contact sees the link went out.
   try {
     await ghl(env, "POST", "/contacts/" + cid + "/notes", {
-      body: "TOUR LINK TEXTED " + mountainTime(now) + "\n" + link + "\nSent with the Send Tour Link button.",
+      body: "TOUR LINK TEXTED " + mountainTime(now) + "\n" + link + "\nSent with the Send Tour Link " + (viaKey ? "button." : "note."),
     });
   } catch (e) {}
   return { ok: true, name, to, from, at: now };
@@ -277,18 +303,22 @@ const TOUR_WINDOW =
  * Every NEW contact, and everyone booked on a tour calendar, gets one pinned note with a
  * SEND TOUR LINK link (their own signed link, see tourSig). Pinned notes sit at the top of
  * the Notes panel in GHL, on the web and in the phone app, so Kristen and every builder
- * just open the lead and click it. Runs from its own cron (TOUR_NOTE_CRON), so it never
- * shares a subrequest budget with the packs queue.
+ * just open the lead and click it. Runs from its own cron (TOUR_NOTE_CRON, every 5 minutes),
+ * so it never shares a subrequest budget with the packs queue.
  *
  *   - TOUR_NOTES gates it: "live" writes notes, "dryrun" logs who would get one, "off" nothing.
  *   - one note per contact, ever: KV tournote:<id> remembers it.
  *   - skipped: builder prospects (tag boostyourincome: their call is the Zoom, not a tour)
- *     and anyone the packs send would refuse to text (DND, stop tags, no phone). Those are
- *     re-checked after a week, in case it changes.
+ *     and anyone who opted out (DND, stop tags). A lead with NO PHONE still gets the note:
+ *     the click re-checks everything and says "no cell number on file", and the button is
+ *     already there if a number is added later (2026-10-22 review).
+ *   - a failed note POST (429, 5xx) stops the run BEFORE the cursor passes that lead, so
+ *     the next run retries it; a "pending" marker goes on before each POST and a run lock
+ *     keeps a manual /tournoterun from overlapping the cron, so a lead never gets two notes.
  *   - new contacts are read in date order from a cursor, so a busy hour is finished on the
  *     next run instead of skipped; at most TOUR_NOTES_PER_RUN notes are written per run.
  */
-const TOUR_NOTE_CRON = "3-59/10 * * * *";
+const TOUR_NOTE_CRON = "1-59/5 * * * *";     // every 5 minutes, one minute after the packs cron
 const TOUR_NOTES_PER_RUN = 12;
 const TOUR_NOTE_SKIP_TAGS = ["boostyourincome"];
 const TOUR_CALENDARS = [
@@ -310,12 +340,12 @@ async function tourNoteFor(env, contact, mode) {
   const cid = contact.id;
   const tags = (Array.isArray(contact.tags) ? contact.tags : []).map(function (t) { return String(t).toLowerCase().trim(); });
   if (TOUR_NOTE_SKIP_TAGS.some(function (t) { return tags.indexOf(t) >= 0; })) {
-    await env.REPORTS.put("tournote:" + cid, "skip:builder", { expirationTtl: LOG_TTL });
+    if (mode === "live") await env.REPORTS.put("tournote:" + cid, "skip:builder", { expirationTtl: LOG_TTL });
     return "skip:builder";
   }
-  const why = mustNotText(contact);
+  const why = mustNotText(contact).filter(function (w) { return w.indexOf("no phone") < 0; });
   if (why.length) {
-    await env.REPORTS.put("tournote:" + cid, "skip:" + why[0].slice(0, 60), { expirationTtl: 60 * 60 * 24 * 7 });
+    if (mode === "live") await env.REPORTS.put("tournote:" + cid, "skip:" + why[0].slice(0, 60), { expirationTtl: 60 * 60 * 24 * 7 });
     return "skip:dnd";
   }
   const link = await tourNoteLink(env, cid);
@@ -325,10 +355,27 @@ async function tourNoteFor(env, contact, mode) {
       name: ((contact.firstName || "") + " " + (contact.lastName || "")).trim() }), { expirationTtl: 60 * 60 * 24 * 7 });
     return "dry";
   }
-  const r = await ghl(env, "POST", "/contacts/" + cid + "/notes", { body: tourNoteHtml(link, contact), pinned: true });
-  if (!r.ok) return "note-failed:" + r.status;
-  await env.REPORTS.put("tournote:" + cid, String((r.data && r.data.note && r.data.note.id) || "ok"), { expirationTtl: LOG_TTL });
+  // "pending" BEFORE the POST: an overlapping run sees it and skips. No marker, no POST.
+  try { await env.REPORTS.put("tournote:" + cid, "pending", { expirationTtl: 3600 }); }
+  catch (e) { return "kv-failed"; }
+  let r;
+  try { r = await ghl(env, "POST", "/contacts/" + cid + "/notes", { body: tourNoteHtml(link, contact), pinned: true }); }
+  catch (e) { r = { ok: false, status: 0 }; }
+  if (!r.ok) {
+    try { await env.REPORTS.delete("tournote:" + cid); } catch (e) {}
+    return "note-failed:" + r.status;
+  }
+  try {
+    await env.REPORTS.put("tournote:" + cid, String((r.data && r.data.note && r.data.note.id) || "ok"), { expirationTtl: LOG_TTL });
+  } catch (e) {}     // the "pending" marker still blocks a repeat for an hour
   return "noted";
+}
+
+function retryable(res) {
+  const m = /^note-failed:(\d+)$/.exec(res || "");
+  if (!m) return res === "kv-failed";
+  const st = Number(m[1]);
+  return st === 0 || st === 429 || st >= 500;
 }
 
 async function ensureTourNotes(env) {
@@ -336,59 +383,85 @@ async function ensureTourNotes(env) {
   if (mode === "off" || !env.REPORTS || !String(env.TOUR_SIGN || "")) return { skipped: mode };
   const loc = String(env.GHL_LOCATION || "").trim();
   if (!loc) return { skipped: "no location" };
+
+  // One run at a time (a manual /tournoterun must not overlap the cron).
+  const lockKey = "tournotes:lock";
+  if (await env.REPORTS.get(lockKey)) return { skipped: "another run is going" };
+  await env.REPORTS.put(lockKey, new Date().toISOString(), { expirationTtl: 120 });
+  try {
+    return await tourNotesPass(env, mode, loc);
+  } finally {
+    try { await env.REPORTS.delete(lockKey); } catch (e) {}
+  }
+}
+
+async function tourNotesPass(env, mode, loc) {
   const now = Date.now();
   const out = [];
   let made = 0;
+  let stopped = false;
   const seen = {};
 
-  // 1) new contacts, oldest first, from the cursor
+  // 1) new contacts, oldest first, from the cursor. The search starts an hour BEFORE the
+  // cursor, because GHL's search index can show a contact late or out of order; the
+  // tournote: markers make the re-read free of duplicates.
   const curKey = mode === "live" ? "tournotes:since" : "tournotes:since:dry";
   let since = await env.REPORTS.get(curKey);
   if (!since) since = new Date(now - TOUR_NOTES_BACK_DAYS * 86400000).toISOString();
+  const from = new Date(Date.parse(since) - 60 * 60000).toISOString();
   const sr = await ghl(env, "POST", "/contacts/search", { locationId: loc, page: 1, pageLimit: 50,
-    filters: [{ field: "dateAdded", operator: "range", value: { gte: since } }],
+    filters: [{ field: "dateAdded", operator: "range", value: { gte: from } }],
     sort: [{ field: "dateAdded", direction: "asc" }] });
   let cursor = since;
-  if (sr.ok && sr.data && Array.isArray(sr.data.contacts)) {
-    for (const c of sr.data.contacts) {
-      if (!c || !ID_OK.test(String(c.id || ""))) continue;
-      if (made >= TOUR_NOTES_PER_RUN) break;               // the cursor stops here; next run resumes
-      seen[c.id] = 1;
-      if (!(await env.REPORTS.get("tournote:" + c.id))) {
-        const res = await tourNoteFor(env, c, mode);
-        out.push(c.id + "=" + res);
-        if (res === "noted" || res === "dry") made++;
+  try {
+    if (sr.ok && sr.data && Array.isArray(sr.data.contacts)) {
+      for (const c of sr.data.contacts) {
+        if (!c || !ID_OK.test(String(c.id || ""))) continue;
+        if (made >= TOUR_NOTES_PER_RUN) break;             // the cursor stops here; next run resumes
+        seen[c.id] = 1;
+        if (!(await env.REPORTS.get("tournote:" + c.id))) {
+          const res = await tourNoteFor(env, c, mode);
+          out.push(c.id + "=" + res);
+          if (res === "noted" || res === "dry") made++;
+          if (retryable(res)) { stopped = true; break; }  // GHL or KV hiccup: retry this lead next run
+          if (/^note-failed:/.test(res)) {
+            await env.REPORTS.put("tournote:" + c.id, "fail:" + res.split(":")[1], { expirationTtl: 86400 });
+          }
+        }
+        if (c.dateAdded && c.dateAdded > cursor) cursor = c.dateAdded;
       }
-      if (c.dateAdded && c.dateAdded > cursor) cursor = c.dateAdded;
     }
+  } finally {
+    if (cursor > since) await env.REPORTS.put(curKey, cursor);
   }
-  if (cursor !== since) await env.REPORTS.put(curKey, cursor);
 
   // 2) everyone booked on a tour calendar (yesterday to 30 days out), every half hour
   const calKey = mode === "live" ? "tournotes:cal" : "tournotes:cal:dry";
   const lastCal = Number(await env.REPORTS.get(calKey)) || 0;
-  if (made < TOUR_NOTES_PER_RUN && now - lastCal > 30 * 60000) {
+  if (!stopped && made < TOUR_NOTES_PER_RUN && now - lastCal > 30 * 60000) {
     const ids = [];
+    let calOk = true;
     for (const cal of TOUR_CALENDARS) {
       const r = await ghl(env, "GET", "/calendars/events?locationId=" + loc + "&calendarId=" + cal +
         "&startTime=" + (now - 86400000) + "&endTime=" + (now + 30 * 86400000), undefined, "2021-04-15");
-      if (!r.ok || !r.data || !Array.isArray(r.data.events)) continue;
+      if (!r.ok || !r.data || !Array.isArray(r.data.events)) { calOk = false; continue; }
       for (const e of r.data.events) {
         const st = String(e.appointmentStatus || "").toLowerCase();
         if (!e.contactId || e.deleted || st === "cancelled" || st === "invalid") continue;
         if (!seen[e.contactId] && ids.indexOf(e.contactId) < 0) ids.push(e.contactId);
       }
     }
-    let finished = true;
+    let finished = calOk;
     for (const cid of ids) {
       if (!ID_OK.test(cid)) continue;
       if (await env.REPORTS.get("tournote:" + cid)) continue;
       if (made >= TOUR_NOTES_PER_RUN) { finished = false; break; }
       const c = await lookupContact(env, cid);
-      if (!c) continue;
+      if (!c) { finished = false; continue; }
       const res = await tourNoteFor(env, c, mode);
       out.push(cid + "=" + res);
       if (res === "noted" || res === "dry") made++;
+      if (retryable(res)) { finished = false; break; }
     }
     if (finished) await env.REPORTS.put(calKey, String(now));
   }

@@ -148,7 +148,7 @@ export default {
 
     // Who has opened What's New, newest first. Guarded by the same ?k= as the other logs.
     if (request.method === "GET" && url.pathname === "/wnewlog") {
-      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
       if (!env.REPORTS) return json({ error: "no KV bound" }, 500, origin);
       const rows = [];
       for (const pfx of ["wnewhit:", "wnewdry:"]) {
@@ -169,7 +169,7 @@ export default {
     // text. Guarded by the same ?k= as the logs, because it searches her CRM; the key lives
     // in her private bookmark, never in a public page. Read only: it never writes anything.
     if (request.method === "GET" && url.pathname === "/wnewgen") {
-      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
       const k = readKey(env);
       const q = String(url.searchParams.get("q") || "").trim().slice(0, 60);
       let results = "";
@@ -230,7 +230,7 @@ export default {
 
     // ---------------------------------------------------------------- the log
     if (request.method === "GET" && url.pathname === "/log") {
-      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
       if (!env.REPORTS) return json({ error: "no KV bound" }, 500, origin);
       const want = (url.searchParams.get("contact") || "").trim();
       const list = await env.REPORTS.list({ prefix: "switch:", limit: 1000 });
@@ -249,7 +249,7 @@ export default {
     // Every row, what state it is in, and for a blocked row exactly why. This is how
     // Shannon or I answer "did she get her text" without guessing.
     if (request.method === "GET" && url.pathname === "/packlog") {
-      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
       if (!env.REPORTS) return json({ error: "no KV bound" }, 500, origin);
       const list = await env.REPORTS.list({ prefix: "packsend:", limit: 500 });
       const rows = [];
@@ -274,7 +274,7 @@ export default {
 
     // Run the queue by hand. Same code the cron runs, no shortcuts, same guards.
     if (request.method === "GET" && url.pathname === "/packrun") {
-      if (url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
+      if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
       const r = await processQueue(env);
       return json({ mode: String(env.SEND_MODE || "off"), ...r }, 200, origin);
     }
