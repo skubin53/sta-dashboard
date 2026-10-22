@@ -122,3 +122,7 @@
 
 ## Day 30 - Wed Oct 21
 - **What are wax melts putting in your air?**  |  board: Non-Toxic Air & Fragrance-Free Home  |  https://scan.ismyhometoxic.com/now/?utm_source=pinterest&utm_medium=pin&utm_campaign=are-scentsy-wax-melts-toxic | photo: ONLY after RESHOOT-scentsy-pin-audience closes
+
+## Beef answer pages (added 10/22, not on a day yet; the daily Pinterest run picks the day, 2-a-day cap)
+- **Where did your ground beef come from?**  |  board: Non-Toxic Food & Clean Pantry  |  https://scan.ismyhometoxic.com/product-of-usa-beef/?utm_source=pinterest&utm_medium=pin&utm_campaign=imported-ground-beef | photo: blog-images/productofus-freedom-v1.webp (alt: "A family kitchen with beef from a known local source being prepared for dinner") | note: beef link approved by Shannon 10/22. Pin text: you have a right to know where your beef came from; never say imported beef is unsafe; no prices; no store tips.
+- **Is there mRNA in your beef?**  |  board: Non-Toxic Food & Clean Pantry  |  https://scan.ismyhometoxic.com/is-there-mrna-in-beef/?utm_source=pinterest&utm_medium=pin&utm_campaign=is-there-mrna-in-beef | photo: blog-images/howmuchprot-belonging-v1.webp (alt: "A woman talking with a rancher at a wooden fence line, cattle grazing on open pasture behind them in late afternoon light") | note: beef link approved by Shannon 10/22. Pin text: beef groups say no mRNA vaccine is licensed for US beef cattle, and Riverbend puts its no mRNA promise in writing; never say store beef has mRNA; never "unvaccinated"; no health claims.
