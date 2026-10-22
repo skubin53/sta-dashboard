@@ -5,7 +5,7 @@ slug: is-my-medicare-advantage-plan-going-away
 track: builder
 queue_file: blog-pipeline/queue/is-my-medicare-advantage-plan-going-away.md
 beats: 5
-status: requested
+status: done
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. There is NO product in this set and nothing branded should appear. No legible text anywhere in any frame. Continuity: same woman, same clothes, same room across the five beats. Temperature ramp runs coldest at the villain beat to warmest at the last. Nano Banana Pro at 4K."
 register: villain
 generated_by: "sta-tools/build-calendar.py, 2026-08-23"
@@ -48,3 +48,6 @@ This is a BUILDER post. She is a woman of 45 to 58 who runs something or leads s
 - brief: Her outside in late afternoon light, walking, coffee in hand or hands free, phone nowhere in frame. Unhurried. Nothing that says work and nothing that says money.
 - must NOT show: nothing suggesting money, earnings or income anywhere in any frame. No cash, cheques, wallets, bank or payment apps, charts, graphs, dashboards, calculators, new cars, suitcases or beaches. No legible text of any kind. The copy carries no income figure and a photo implying income IS an earnings claim. Also check bystanders for clothing logos.
 - temperature: warmest point of the ramp
+
+## Closed (Photo Claude)
+2026-10-22: all 5 frames delivered, see photos-completed/is-my-medicare-advantage-plan-going-away.md.
