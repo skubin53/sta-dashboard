@@ -39,6 +39,140 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 ul.steps{margin:0;padding:0 0 0 22px}
 ul.steps li{padding:5px 0}
 @media(max-width:600px){ul.p{column-count:1}.score{font-size:4em}.q{font-size:2em}.ys{font-size:1.7em}}
+</style>
+<style>
+/* What's New sections 2 and 3, copied from whatisnew/embed.html for tour mode (2026-10-21) */
+.stw{--ink:#0B1F44;--ink2:#132B5C;--red:#D62839;--red-dk:#A8182A;--gold:#FFB627;--gold-dk:#E89B00;--paper:#FFFFFF;--mist:#F3F6FC;--line:#DCE3F0;--slate:#4A5570;--green:#0B7A4B;--green-bg:#E8F6EF;--red-bg:#FDECEE;
+  font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:18px;-webkit-text-size-adjust:100%;text-align:left;margin:0;padding:0;overflow:hidden;border-radius:0}
+.stw *,.stw *::before,.stw *::after{box-sizing:border-box}
+.stw h1,.stw h2,.stw h3,.stw p,.stw ul,.stw li,.stw figure{margin:0;padding:0}
+.stw ul{list-style:none}
+.stw img{display:block;max-width:100%;height:auto;border:0}
+.stw a{color:inherit}
+.stw .d{font-family:"Bricolage Grotesque","Source Sans 3",Arial,sans-serif;letter-spacing:-.01em}
+.stw .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.stw .stw-btn:focus-visible,.stw a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.stw .stw-sec{padding:72px 0}
+.stw .stw-head{display:flex;align-items:center;gap:18px;margin-bottom:26px}
+.stw .stw-h2{font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:800;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.stw .stw-eyebrow{font:700 13px/1.2 "Source Sans 3",Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.stw .stw-s2{background:var(--ink);color:#fff;position:relative}
+.stw .stw-s2 .stw-h2{color:#fff}
+.stw .stw-s2 p:not(.stw-lede):not(.stw-eyebrow):not(.stw-proof-h){color:#DDE5F3}
+.stw .stw-s2 .stw-eyebrow{color:#FF8A95}
+.stw .stw-weeks{margin-top:44px;border-top:1px solid rgba(255,255,255,.18);padding-top:28px}
+.stw .stw-weeks h3{font:800 22px/1.2 "Bricolage Grotesque",Arial,sans-serif;color:#fff;margin-bottom:14px}
+.stw .stw-pills{display:flex;flex-wrap:wrap;gap:10px}
+.stw .stw-pills li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:9px 16px;font-size:16px;color:#E9EEF8}
+.stw .stw-more{display:inline-block;margin-top:18px;font-weight:700;color:var(--gold)!important;text-decoration:none!important;border-bottom:2px solid var(--gold)}
+.stw .stw-band{position:relative;min-height:380px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
+.stw .stw-band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 40%;z-index:-2}
+.stw .stw-band::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(11,31,68,.92) 0%,rgba(11,31,68,.55) 45%,rgba(11,31,68,0) 80%)}
+.stw .stw-band .wrap{width:100%;padding-top:40px;padding-bottom:40px}
+.stw .stw-band .stw-eyebrow{color:var(--gold)}
+.stw .stw-band-h{font:800 clamp(34px,5vw,58px)/1 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.025em;text-wrap:balance}
+.stw .stw-band p:not(.stw-eyebrow){font-size:20px;margin-top:10px;color:#EEF2FA;max-width:560px}
+.stw .stw-s3{background:linear-gradient(180deg,#F3F6FC 0%,#FFFFFF 60%)}
+.stw .stw-intro{font-size:19px;max-width:760px;color:var(--slate);margin-bottom:28px}
+.stw .stw-carts{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.stw .stw-cart{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(11,31,68,.1);border:2px solid var(--line)}
+.stw .stw-cart.good{border-color:var(--green)}
+.stw .stw-cart.bad{border-color:#E7B3B9}
+.stw .stw-cart-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 18px;color:#fff}
+.stw .stw-cart.good .stw-cart-head{background:var(--green)}
+.stw .stw-cart.bad .stw-cart-head{background:var(--red)}
+.stw .stw-cart-head h3{font:800 22px/1.1 "Bricolage Grotesque",Arial,sans-serif}
+.stw .stw-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(0,0,0,.22);border-radius:999px;padding:6px 11px;font:700 13px/1.1 "Source Sans 3",Arial,sans-serif;white-space:nowrap}
+.stw .stw-tag i{width:8px;height:8px;border-radius:50%;background:#fff;display:block}
+.stw .stw-rows li{display:grid;grid-template-columns:58px 1fr auto;gap:12px;align-items:center;padding:12px 16px;border-top:1px solid #EEF1F7}
+.stw .stw-rows li:first-child{border-top:0}
+.stw .stw-rows img{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:10px}
+.stw .stw-rows .nm{font-weight:700;font-size:16px;line-height:1.25;display:block}
+.stw .stw-rows .dt{font-size:14px;color:var(--slate);line-height:1.3;display:block;margin-top:2px}
+.stw .stw-rows .dt a{color:var(--red-dk);font-weight:700}
+.stw .stw-rows .pr{font:800 18px/1 "Bricolage Grotesque",Arial,sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stw .stw-total{display:flex;justify-content:space-between;align-items:baseline;padding:16px 18px;border-top:2px solid var(--line)}
+.stw .stw-total span{font:700 14px/1 "Source Sans 3",Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+.stw .stw-total b{font:800 34px/1 "Bricolage Grotesque",Arial,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stw .stw-cart.good .stw-total{background:var(--green-bg)}
+.stw .stw-cart.good .stw-total b{color:var(--green)}
+.stw .stw-cart.bad .stw-total{background:var(--red-bg)}
+.stw .stw-cart.bad .stw-total b{color:var(--red-dk)}
+.stw .stw-save{margin-top:26px;position:relative;overflow:hidden;background:var(--gold);color:var(--ink);border-radius:24px;padding:30px 28px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;box-shadow:0 18px 40px rgba(232,155,0,.35)}
+.stw .stw-save::after{content:"";pointer-events:none;z-index:0;position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.45),rgba(255,255,255,0) 70%)}
+.stw .stw-save-amt{font:800 clamp(52px,8vw,92px)/.9 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stw .stw-save-amt small{display:block;font:700 15px/1 "Source Sans 3",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.stw .stw-save p{font-size:20px;line-height:1.35;position:relative;z-index:1}
+.stw .stw-save-amt{position:relative;z-index:1}
+.stw .stw-save p b{font-weight:800}
+.stw .stw-save-amt .stw-dot{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.stw .stw-lemon{margin-top:20px;display:grid;grid-template-columns:88px 1fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.stw .stw-lemon img{width:88px;height:88px;object-fit:contain}
+.stw .stw-lemon p{font-size:17px}
+.stw .stw-lemon .sm{font-size:15px;color:var(--slate);margin-top:4px}
+.stw .stw-gap{height:64px;background:#fff}
+@media (max-width:600px){.stw .stw-gap{height:44px}}
+.stw .stw-px .stw-eyebrow{margin-bottom:6px}
+.stw .stw-px-lead{position:relative;margin:4px 0 0;border-radius:22px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(0,0,0,.7)}
+.stw .stw-px-lead img{width:100%;aspect-ratio:16/8;object-fit:cover;object-position:50% 40%}
+.stw .stw-px-lead::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,31,68,.92) 0%,rgba(11,31,68,.35) 38%,rgba(11,31,68,0) 62%)}
+.stw .stw-px-lead figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:22px 26px}
+.stw .stw-px-lede{display:block;font:800 clamp(26px,3.4vw,40px)/1.08 "Bricolage Grotesque",Arial,sans-serif;color:#fff;letter-spacing:-.02em;text-wrap:balance}
+.stw .stw-px-body{margin:18px 0 0;font-size:19px;line-height:1.6;color:#DDE5F3;max-width:820px}
+.stw .stw-px-tap{margin:34px 0 14px;font:800 22px/1.2 "Bricolage Grotesque",Arial,sans-serif;color:var(--gold)!important}
+.stw .stw-px-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stw .stw-px-card{display:flex;flex-direction:column;background:#132B5C;border:1px solid rgba(255,255,255,.14);border-radius:18px;overflow:hidden;color:#fff!important;text-decoration:none!important;transition:transform .2s ease}
+@media (hover:hover){.stw a.stw-px-card:hover{transform:translateY(-3px)}}
+.stw .stw-px-card .ph{position:relative;display:block}
+.stw .stw-px-card .ph img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.stw .stw-px-card .src{position:absolute;left:10px;top:10px;background:rgba(11,31,68,.88);color:#fff;font:700 12px/1 "Source Sans 3",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:999px}
+.stw .stw-px-card .bd{flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:12px;padding:14px 16px 16px}
+.stw .stw-px-card .t{font:800 18px/1.25 "Bricolage Grotesque",Arial,sans-serif;color:#fff}
+.stw .stw-px-card .go{display:inline-flex;align-items:center;gap:6px;color:var(--gold)!important;text-decoration:none!important;font:800 15px/1 "Bricolage Grotesque",Arial,sans-serif}
+.stw .stw-px-card .go svg{width:16px;height:16px}
+.stw .stw-px-card .btns{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.stw .stw-px-card .go.vid{background:var(--red);color:#fff!important;padding:9px 12px;border-radius:999px}
+.stw .stw-px-card .go.vid .pl svg{width:14px;height:14px}
+.stw .stw-px-weekly{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:4px 0 14px}
+.stw .stw-px-weekly figure{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden}
+.stw .stw-px-weekly img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.stw .stw-px-weekly figcaption{padding:10px 12px 12px;font-size:15px;line-height:1.35;color:#E9EEF8}
+@media (prefers-reduced-motion:reduce){.stw .stw-px-card{transition:none}}
+.stw .stw-px-tap span{display:block;margin-top:6px;font:600 18px/1.35 "Source Sans 3",Arial,sans-serif;color:#DDE5F3}
+@media (max-width:520px){.stw .stw-px-tap span{font-size:17px}}
+@media (max-width:860px){
+  .stw .stw-px-cards{grid-template-columns:1fr}
+  .stw .stw-px-weekly{grid-template-columns:1fr}
+  .stw .stw-px-weekly figure{display:grid;grid-template-columns:120px 1fr;align-items:center}
+  .stw .stw-px-weekly img{height:100%;aspect-ratio:auto;min-height:78px}
+}
+@media (max-width:520px){
+  .stw .stw-px-lead img{aspect-ratio:4/3}
+  .stw .stw-px-lead figcaption{padding:16px 16px}
+  .stw .stw-px-body{font-size:17px}
+  .stw .stw-px-tap{font-size:20px;margin-top:28px}
+}
+@media (max-width:860px){
+  .stw .stw-sec{padding:52px 0}
+  .stw .stw-carts{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .stw{font-size:17px}
+  .stw .wrap{padding:0 16px}
+  .stw .stw-head{gap:14px}
+  .stw .stw-save{grid-template-columns:1fr;gap:10px;padding:24px 20px;text-align:left}
+  .stw .stw-rows li{grid-template-columns:50px 1fr auto;padding:11px 12px;gap:10px}
+  .stw .stw-rows img{width:50px;height:50px}
+  .stw .stw-cart-head{flex-wrap:wrap}
+  .stw .stw-lemon{grid-template-columns:70px 1fr}
+  .stw .stw-lemon img{width:70px;height:70px}
+}
+/* tour copy only (Shannon 2026-10-21): "You save $31.92 - in RED" */
+.stw .stw-save{background:#fff;color:var(--ink);border:3px solid var(--red);box-shadow:0 18px 40px rgba(214,40,57,.2)}
+.stw .stw-save::after{display:none}
+.stw .stw-save-amt{color:var(--red)}
+/* the lead page sits right under the checklist results */
+#tourMore{margin-top:10px}
 </style></head><body>
 <header>
 <p class="q" id="qual">You're Qualified!</p>
@@ -51,17 +185,6 @@ ul.steps li{padding:5px 0}
 <div class="card tour" id="tourNext" style="display:none">
 <h2 id="tourHead">Saving your list...</h2>
 <p id="tourBody">One moment.</p>
-</div>
-<div class="card" id="tourSteps" style="display:none">
-<h2>What happens next</h2>
-<ul class="steps">
-<li>You get an email to set up your account. Tap the green button.</li>
-<li>Pick a password that's easy to remember.</li>
-<li>Membership is $19 a year. It's charged after your first order.</li>
-<li>Your first order is 35 points or more, about $100 after tax and shipping.</li>
-<li>Grab your $20 in FREE products before you check out.</li>
-<li>Your box ships straight to your door.</li>
-</ul>
 </div>
 <div class="card">
 <h2>What you told me you buy</h2>
@@ -87,6 +210,122 @@ ul.steps li{padding:5px 0}
 <a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book My 10 Minutes</a>
 </div>
 <p class="note" id="saved"></p>
+</div>
+<!-- After the checklist, tour mode only (Shannon 2026-10-21): the two What's New sections,
+     copied from whatisnew/embed.html by sta-tools/tour-script/port_whatisnew.py.
+     They sit in a <template>, which the browser never renders or downloads. Only tour mode
+     copies them into #tourMore, so a normal visit to this page fetches none of their photos. -->
+<div class="stw" id="tourMore" style="display:none"></div>
+<template id="tourMoreTpl">
+<section class="stw-sec stw-s2 stw-px" id="stw-proof">
+  <div class="wrap">
+    <p class="stw-eyebrow">Do not take my word for it</p>
+    <div class="stw-head"><h2 class="stw-h2">What does Melaleuca do for the community?</h2></div>
+
+    <figure class="stw-px-lead">
+      <img src="https://scan.ismyhometoxic.com/lookusup/img/relief-lead-truck.webp" width="800" height="500" alt="Volunteers in Melaleuca shirts unloading boxes of supplies from the back of a truck after Hurricane Helene">
+      <figcaption><span class="stw-px-lede">When a disaster hits a town, Melaleuca shows up.</span></figcaption>
+    </figure>
+    <p class="stw-px-body">Floods. Hurricanes. They send trucks, fast. Generators. Non-toxic cleaning supplies. Wellness boxes. Thousands of pounds of Riverbend Ranch beef. Right to the families, and to the first responders. It is all public. It is not an ad.</p>
+
+    <p class="stw-px-tap">See it for yourself.<span>Tap a post below. Read the comments, too.</span></p>
+    <div class="stw-px-cards">
+      <a class="stw-px-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7356816978545659905/" target="_blank" rel="noopener">
+        <span class="ph"><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-texas-floods.webp" width="800" height="500" loading="lazy" alt="Two volunteers covered in mud holding hot meals beside a fire engine and pallets of bottled water after the Texas floods"><span class="src">LinkedIn</span></span>
+        <span class="bd"><span class="t">When floods hit Texas and New Mexico</span><span class="go">Read it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <div class="stw-px-card">
+        <span class="ph"><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-ian-jet.webp" width="800" height="500" loading="lazy" alt="A plane on the runway surrounded by boxed generators, crates and gas cans for Hurricane Ian victims"><span class="src">Hurricane Ian</span></span>
+        <span class="bd bd2"><span class="t">Delivering supplies for Hurricane Ian victims</span>
+          <span class="btns"><a class="go" href="https://www.melaleucanews.com/delivering-supplies-for-hurricane-ian-victims/" target="_blank" rel="noopener">Read it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="go vid" href="https://www.youtube.com/watch?v=lIyftRMM3J8" target="_blank" rel="noopener"><span class="pl"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>Watch the video</a></span></span>
+      </div>
+      <a class="stw-px-card" href="https://www.facebook.com/melaleuca/posts/895347619543541" target="_blank" rel="noopener">
+        <span class="ph"><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-washington-floods.webp" width="800" height="500" loading="lazy" alt="Melaleuca staff packing boxes of Riverbend Ranch beef sticks under Washington Flood Relief signs"><span class="src">Facebook &#183; 1,091 reactions</span></span>
+        <span class="bd"><span class="t">Read what people said in the comments</span><span class="go">Read it <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+    </div>
+
+    <div class="stw-weeks">
+      <h3>And the ordinary weeks in between</h3>
+      <div class="stw-px-weekly">
+        <figure><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-weekly-tech.webp" width="800" height="500" loading="lazy" alt="A teen and a mentor in red Melaleuca IT boot camp shirts working at a computer"><figcaption>Preparing the next generation for careers in technology</figcaption></figure>
+        <figure><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-weekly-grillers.webp" width="800" height="500" loading="lazy" alt="A young girl in a red apron giving a thumbs up at a Riverbend Ranch grilling event"><figcaption>Riverbend Ranch fires up the next generation of grillers</figcaption></figure>
+        <figure><img src="https://scan.ismyhometoxic.com/lookusup/img/relief-weekly-guard.webp" width="800" height="500" loading="lazy" alt="National Guard soldiers in dress uniform wearing medals at the Appreciation Ball"><figcaption>Honoring National Guard soldiers at the Appreciation Ball</figcaption></figure>
+      </div>
+      <ul class="stw-pills">
+        <li>Students discover the power of good citizenship</li>
+        <li>Comfort and hope delivered to families in crisis</li>
+      </ul>
+      <a class="stw-more" href="https://melaleuca.org/updates" target="_blank" rel="noopener">See every week at melaleuca.org &#8594;</a>
+    </div>
+  </div>
+</section>
+<div class="stw-gap" aria-hidden="true"></div>
+<section class="stw-band">
+  <img src="https://scan.ismyhometoxic.com/whatisnew/img/dog-carts.webp" width="1600" height="586" loading="lazy" alt="A golden dog carrying a pink ball, ears up, happy">
+  <div class="wrap">
+    <p class="stw-eyebrow">And the part everybody really wants to know</p>
+    <h2 class="stw-band-h">Two carts. One grocery run.</h2>
+    <p>The exact same items, brand for brand. Only the total changes.</p>
+  </div>
+</section>
+<section class="stw-sec stw-s3" id="stw-math">
+  <div class="wrap">
+    <div class="stw-head"><h2 class="stw-h2">It costs less. Here is the math.</h2></div>
+    <p class="stw-intro">A big jug looks cheap until you count what is in it. So this is not bottle against bottle. Both carts buy the same items, and the multiplier is printed on every line so you can check it.</p>
+    <div class="stw-carts">
+      <div class="stw-cart good">
+        <div class="stw-cart-head"><h3>Melaleuca Cart</h3><span class="stw-tag"><i></i>non-toxic</span></div>
+        <ul class="stw-rows">
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-melapower.webp" width="58" height="58" loading="lazy" alt="MelaPower 9x laundry detergent"><span><span class="nm">MelaPower 9x</span><span class="dt">one 32 oz bottle, 96 loads</span></span><span class="pr">$19.49</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-melasoft.webp" width="58" height="58" loading="lazy" alt="MelaSoft dryer sheets"><span><span class="nm">MelaSoft Sheets</span><span class="dt">one box, 100 sheets</span></span><span class="pr">$6.49</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-diamondbrite.webp" width="58" height="58" loading="lazy" alt="Diamond Brite dishwasher packs"><span><span class="nm">Diamond Brite Packs</span><span class="dt">one tub, 30 washes</span></span><span class="pr">$9.49</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-clearpower.webp" width="58" height="58" loading="lazy" alt="Clear Power 12x glass cleaner concentrate"><span><span class="nm">Clear Power 12x</span><span class="dt">one bottle, makes 96 oz</span></span><span class="pr">$6.99</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-beefstick.webp" width="58" height="58" loading="lazy" alt="Riverbend Ranch Beef Sticks"><span><span class="nm">Beef Sticks</span><span class="dt">6 sticks, 1.15 oz each, made in America</span></span><span class="pr">$10.75</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-counteract.webp" width="58" height="58" loading="lazy" alt="CounterAct Pain acetaminophen"><span><span class="nm">CounterAct Pain</span><span class="dt">100 caplets, 500 mg, 2 boxes</span></span><span class="pr">$9.18</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-seibella.webp" width="58" height="58" loading="lazy" alt="Sei Bella Refining Foam Cleanser"><span><span class="nm">Seibella Acne Foam Cleanser</span><span class="dt">180 mL, 6 fl oz</span></span><span class="pr">$12.50</span></li>
+        </ul>
+        <div class="stw-total"><span>Total</span><b>$74.89</b></div>
+      </div>
+      <div class="stw-cart bad">
+        <div class="stw-cart-head"><h3>Black Rock Cart</h3><span class="stw-tag"><i></i>cancer causing ingredients</span></div>
+        <ul class="stw-rows">
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-tide.webp" width="58" height="58" loading="lazy" alt="Tide Original laundry detergent"><span><span class="nm">Tide Original</span><span class="dt">1.5 jugs at $18.35</span></span><span class="pr">$27.53</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-seventh.webp" width="58" height="58" loading="lazy" alt="Seventh Generation fabric softener sheets"><span><span class="nm">Seventh Generation</span><span class="dt">1.25 boxes at $6.97</span></span><span class="pr">$8.71</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-cascade.webp" width="58" height="58" loading="lazy" alt="Cascade Platinum dishwasher pacs"><span><span class="nm">Cascade Platinum</span><span class="dt">0.6 of a 50 ct at $27.26</span></span><span class="pr">$16.36</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-windex.webp" width="58" height="58" loading="lazy" alt="Windex Original glass cleaner"><span><span class="nm">Windex</span><span class="dt">4.2 bottles at $3.48</span></span><span class="pr">$14.53</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-chomps.webp" width="58" height="58" loading="lazy" alt="Chomps Original Beef Sticks"><span><span class="nm">Chomps Beef Sticks</span><span class="dt">6 sticks at $2.29, <a href="https://www.fsis.usda.gov/recalls-alerts/idaho-smokehouse-partners-recalls-ready-eat-beef-stick-products-due-possible-foreign" target="_blank" rel="noopener">recalled 2025 for metal</a></span></span><span class="pr">$13.74</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-tylenol.webp" width="58" height="58" loading="lazy" alt="Tylenol Extra Strength"><span><span class="nm">Tylenol Extra Strength</span><span class="dt">100 caplets, 500 mg</span></span><span class="pr">$10.97</span></li>
+          <li><img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-cerave.webp" width="58" height="58" loading="lazy" alt="CeraVe Acne Foaming Cleanser"><span><span class="nm">CeraVe Acne Cleanser</span><span class="dt">150 mL, 5 fl oz</span></span><span class="pr">$14.97</span></li>
+        </ul>
+        <div class="stw-total"><span>Total</span><b>$106.81</b></div>
+      </div>
+    </div>
+
+    <div class="stw-save">
+      <div class="stw-save-amt"><small>You save</small>$31.92<span class="stw-dot">.</span></div>
+      <p><b>That is 30% less, on one shop.</b><br>And that is nearly $400 a year, before the 2 for 1 deals at the checkout.</p>
+    </div>
+
+    <div class="stw-lemon">
+      <img src="https://scan.ismyhometoxic.com/whatisnew/img/pr-lemonbrite.webp" width="88" height="88" loading="lazy" alt="Lemon Brite dish liquid">
+      <div><p><b>Lemon Brite Dish Liquid, $4.39.</b> Over 500 dishes a bottle, under a penny a dish.</p><p class="sm">It is not in the totals above because no big box brand publishes a dish count to compare it against.</p></div>
+    </div>
+  </div>
+</section>
+</template>
+<div class="wrap" id="tourEnd" style="display:none">
+<div class="card" id="tourSteps" style="display:none">
+<h2>What happens next</h2>
+<ul class="steps">
+<li>You get an email to set up your account. Tap the green button.</li>
+<li>Pick a password that's easy to remember.</li>
+<li>Membership is $19 a year. It's charged after your first order.</li>
+<li>Your first order is 35 points or more, about $100 after tax and shipping.</li>
+<li>Grab your $20 in FREE products before you check out.</li>
+<li>Your box ships straight to your door.</li>
+</ul>
+</div>
 </div>
 <script>
 // Same Cloudflare Worker at two addresses. Her own domain goes first: some phones and
@@ -150,6 +389,16 @@ if(TOUR){
   var pr=document.querySelector('.promise'); if(pr) pr.style.display='none';
   document.getElementById('tourNext').style.display='';
   document.getElementById('tourSteps').style.display='';
+  // After the checklist: the two What's New sections, then "What happens next" (2026-10-21).
+  // Their fonts load in tour mode only, so the normal score page stays as fast as before.
+  var fl=document.createElement('link');fl.rel='stylesheet';
+  fl.href='https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap';
+  document.head.appendChild(fl);
+  document.querySelector('.wrap').style.paddingBottom='18px';
+  var more=document.getElementById('tourMore');
+  more.appendChild(document.getElementById('tourMoreTpl').content.cloneNode(true));
+  more.style.display='';
+  document.getElementById('tourEnd').style.display='';
 }
 if(TOUR && cid && score<QUALIFY){
   document.getElementById('tourHead').textContent='Did we miss anything?';
