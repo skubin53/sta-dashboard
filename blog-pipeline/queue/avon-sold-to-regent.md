@@ -80,11 +80,11 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>Avon in the US was split from the rest of Avon in 2016. An investment fund called Cerberus took control of it.</p>
 
-<p>Then LG, a Korean company, bought it in 2019. <a href="https://www.koreaherald.com/article/10850497">It paid $125 million, the Korea Herald reports.</a></p>
+<p><a href="https://view.asiae.co.kr/en/article/2026082616190075114">Then LG, a Korean company, bought it from Cerberus in 2019, The Asia Business Daily notes.</a> <a href="https://www.koreaherald.com/article/10850497">It paid $125 million, the Korea Herald reports.</a></p>
 
 <p>On August 24, 2026, LG signed to sell it to Regent. <a href="https://www.avonworldwide.com/news/Avon-International-and-Avon-North-America-reunite-for-the-first-time-in-a-decade">Avon's own news page</a> called the deal "a more connected opportunity for employees, Representatives and Ambassadors."</p>
 
-<p>That is you. The plan was about you, and it was signed before anyone told you.</p>
+<p>That is you. The plan was about you, and it was signed without asking you.</p>
 
 <div class="sta-cta">
 <h3>Twenty minutes, and you decide nothing on the call</h3>
@@ -113,7 +113,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p class="quick-answer">Quick answer: sellers like you made three out of four sales last year. You got no vote on the sale.</p>
 
-<p><a href="https://view.asiae.co.kr/en/article/2026082616190075114">The Asia Business Daily, a Korean paper, ran the numbers.</a> By its count, 75.9% of Avon's sales in the US and Canada last year came through its sellers. That is you.</p>
+<p><a href="https://view.asiae.co.kr/en/article/2026082616190075114">The Asia Business Daily, a Korean paper, ran the numbers.</a> By its account, 75.9% of Avon's sales last year came through its sellers. That is you.</p>
 
 <p>LG paid $125 million in 2019. By The Asia Business Daily's account, LG agreed to sell for $6 million. The paper says LG would hand over Avon Canada's shares for $1. LG said the exact price would be set at closing.</p>
 
@@ -123,7 +123,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <tr><th>When</th><th>What happened</th><th>Who says so</th></tr>
 <tr><td>2016</td><td>Avon's US business split from the rest of Avon</td><td>Regent's lawyers, Miller Thomson</td></tr>
 <tr><td>2019</td><td>LG bought it for $125 million</td><td>The Korea Herald</td></tr>
-<tr><td>December 31, 2025</td><td>Regent closed on Avon in Europe, Asia and Africa</td><td>Natura's own filing</td></tr>
+<tr><td>December 31, 2025</td><td>Regent closed on Avon International</td><td>Natura's own filing</td></tr>
 <tr><td>August 24, 2026</td><td>LG signed to sell the US business to Regent</td><td>Avon's own news page</td></tr>
 <tr><td>September 1, 2026</td><td>Regent closed the deal</td><td>Regent's lawyers, Miller Thomson</td></tr>
 </table>
@@ -162,7 +162,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>Now me. Switch to America could change its rules too. Any company can.</p>
 
-<p>Switch to America sells straight from the manufacturer. No middlemen and no markup. No minimums, no maximums. You pay what a brand new shopper pays.</p>
+<p>Switch to America is a private membership store. We are the manufacturer. No middlemen and no markup. No minimums, no maximums. You pay what a brand new shopper pays.</p>
 
 <p>Avon's rules also say this. You may not recruit Avon's sellers or customers into another direct sales business. That holds while you sell Avon, and for one year after. I would keep that rule to the letter.</p>
 
