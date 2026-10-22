@@ -37,3 +37,9 @@ note: "GENTLE REGISTER SET (hero, context, detail, together, ease), warm through
 - placement: final image before the closing scan CTA
 - completed: 2026-09-22T19:02:00
 
+### whatkeepsyo-pin-v1
+- status: done
+- image_url: https://scan.ismyhometoxic.com/blog-images/whatkeepsyo-pin-v1.webp
+- placement: PINTEREST only (not placed in the post)
+- completed: 2026-10-22T15:20:00
+- note: Pin frame for PIN-what-keeps-your-memory-sharp-after-70. A woman of about 55 in a teal sweater, the clear subject, laughs with her mother of about 78 as they work a landscape jigsaw puzzle at a wooden kitchen table in warm afternoon light. Jigsaw used instead of a crossword so no letters show; a pile of mail on the counter blurred. No medicine, no brands.
