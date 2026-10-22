@@ -13,4 +13,4 @@ The Pinterest pin for this post needs a real woman of 40 to 60 and no product la
 
 Please make ONE frame: A woman of about 48 to 58 in her own big, real American kitchen, setting out a plain glass bowl of colorful homemade fruit snacks or cut fruit for the family, relaxed and smiling. No child in the frame. No candy wrapper, no brand, no readable label anywhere.
 
-Vertical-friendly composition (the pin crops to 2:3), the REAL-LIFE standard, 1600px webp under 150,000 bytes, named red-pin-v1.webp, added to the post's photo record. Your checklist and PHOTO-GUIDE.md decide the rest. Content side wrote this as a REQUEST only; nothing was rendered or graded here.
+Vertical-friendly composition (the pin crops to 2:3), the REAL-LIFE standard, 1600px webp under 150,000 bytes, named reddye40mar-pin-v1.webp, added to the post's photo record. Your checklist and PHOTO-GUIDE.md decide the rest. Content side wrote this as a REQUEST only; nothing was rendered or graded here.
