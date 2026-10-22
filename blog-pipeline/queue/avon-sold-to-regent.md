@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-28
+date: 2026-10-22
 title: Avon Sold to Regent: What Does the Deal Mean for Avon Representatives? (2026)
 slug: avon-sold-to-regent
 keyword: avon sold to regent
@@ -47,7 +47,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 28, 2026<br><span style="font-size:.92em;">Published October 28, 2026 &middot; Last updated October 28, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 22, 2026<br><span style="font-size:.92em;">Published October 22, 2026 &middot; Last updated October 22, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -295,8 +295,8 @@ our finances.</p>
    "headline": "Avon Sold to Regent: What Does the Deal Mean for Avon Representatives? (2026)",
    "description": "Avon was sold again. Regent closed its deal for Avon's US business on September 1, 2026. What Avon's own rule book says can change for you.",
    "image": "https://scan.ismyhometoxic.com/blog-images/avonsoldtor-hero-v1.webp",
-   "datePublished": "2026-10-28",
-   "dateModified": "2026-10-28",
+   "datePublished": "2026-10-22",
+   "dateModified": "2026-10-22",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/avon-sold-to-regent"},
    "author": {"@id": "https://theshannonnicole.com/post/avon-sold-to-regent#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
