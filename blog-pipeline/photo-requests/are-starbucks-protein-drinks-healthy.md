@@ -5,7 +5,7 @@ slug: are-starbucks-protein-drinks-healthy
 track: shopper
 queue_file: blog-pipeline/queue/are-starbucks-protein-drinks-healthy.md
 beats: 5
-status: requested
+status: done
 style: "REAL-LIFE standard (Shannon-approved 2026-07-31 on the baby powder set). Ordinary varied everyday clothing, honest lived-in clutter, natural true-to-life color. NOT candy-bright, NOT sad-beige. Distinct real-looking people, five fingers per hand, visible pores, documentary realism. SHOW the real recognizable branded product where the beat calls for it, correct container shape and FRONT branding. NEVER a label-reading or ingredient-panel shot and never anyone inspecting fine print. Continuity: same person, same clothes, same hands across the five beats, and ONE room per set unless the brief says otherwise. Temperature ramp runs coldest at the villain beat to warmest at the last beat. Nano Banana Pro at 4K."
 register: villain
 generated_by: "sta-tools/build-calendar.py, 2026-08-23"
@@ -50,3 +50,6 @@ LOOK THE REAL PRODUCT UP IN A BROWSER BEFORE PROMPTING. Do not guess the packagi
 - brief: The same woman, warmest and brightest frame of the set, doing the ordinary thing she was doing at the start with none of the worry. Natural light.
 - must NOT show: any ingredient panel, back label, or a person reading/inspecting fine print. No skulls, hazmat, warning signs, cartoon fumes or green glow. No gibberish text anywhere in frame. No baby, crib, nursery, high chair or toddler: the reader is a woman 40 to 60.
 - temperature: warmest point of the ramp
+
+## Closed (Photo Claude)
+2026-10-22: all 5 frames delivered, see photos-completed/are-starbucks-protein-drinks-healthy.md.
