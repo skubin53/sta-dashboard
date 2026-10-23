@@ -1,12 +1,12 @@
 ---
 day: new
-date: 2026-10-22
+date: 2026-10-23
 title: Native Deodorant Lawsuit: Is 'Unscented' Native Really Unscented? (2026)
 slug: native-deodorant-lawsuit-2026
 keyword: native deodorant lawsuit 2026
 category: Beauty
 cover: https://scan.ismyhometoxic.com/blog-images/nativedeodo-hero-v1.webp
-meta_description: A 2026 lawsuit alleged Native Unscented has a scent in it, ginger root extract, and costs more an ounce. Dropped Oct 2, no payout. What to buy instead.
+meta_description: A 2026 lawsuit alleged Native Unscented has a scent, ginger root extract, and costs more an ounce. Dropped Oct 2, no shopper payout. What to buy instead.
 status: ready
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 ---
@@ -48,12 +48,12 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 22, 2026<br><span style="font-size:.92em;">Published October 22, 2026 &middot; Last updated October 22, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 23, 2026<br><span style="font-size:.92em;">Published October 23, 2026 &middot; Last updated October 23, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You picked the stick that says Unscented, because scent gives you a headache.</p>
-<p><strong><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.670442/gov.uscourts.nysd.670442.1.0.pdf">A shopper sued on August 12, 2026. She alleged Native Unscented has a scent ingredient in it, ginger root extract.</a></strong> It says the unscented stick cost $5.28 an ounce, and a scented Native $4.35. The case was dropped on October 2, 2026, with no ruling and no payout.</p>
+<p><strong><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.670442/gov.uscourts.nysd.670442.1.0.pdf">A shopper sued on August 12, 2026. She alleged Native Unscented has a scent ingredient in it, ginger root extract.</a></strong> Her complaint says the unscented stick cost $5.28 an ounce, and a scented Native $4.35. The case was dropped on October 2, 2026, with no ruling and no payout for shoppers.</p>
 <p>The scented stick has a scent. The unscented stick has one too, the lawsuit says, and it cost you more. Next time, get a cleaner stick from a company that stands behind its word.</p>
 </div>
 
@@ -98,7 +98,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <h3 id="ginger-root">Zingiber officinale, the ginger on the list</h3>
 
-<p>The case is about a word, and a price. The front says Unscented, and ginger is in the stick.</p>
+<p>The case is about a word, and a price. The front says Unscented, and the complaint says ginger is in the stick.</p>
 
 <p>The complaint also says shoppers had "no reason to know." It says "average consumers may not know" this extract gives off a scent.</p>
 
@@ -112,9 +112,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.courtlistener.com/docket/74642895/chiaravalloti-v-procter-gamble-company/">On October 2, 2026, the shopper's lawyers filed a notice of voluntary dismissal, the court record shows.</a> That is her side dropping the case.</p>
 
-<p>The record does not say why. It shows no ruling on the label and no class settlement. So there is no claim form to fill out.</p>
+<p>The record does not say why. It shows no ruling on the label and no class settlement. So there is no claim form.</p>
 
 <p>The suit only ever asked to cover New York shoppers.</p>
+
+<p><a href="https://www.courtlistener.com/docket/74912980/chiaravalloti-v-the-procter-gamble-company/">The same day, a new federal case with the same name was opened in California, the court record shows.</a> Its papers are not public yet.</p>
 
 <p>A dropped case is not a cleared label, though. The word is still the question.</p>
 
@@ -130,7 +132,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <tr><td>Ginger root extract in the Unscented stick</td><td>A scent ingredient, the complaint alleges</td><td>S.D.N.Y. complaint, August 12, 2026</td><td>Not a claim that ginger hurt anyone</td></tr>
 <tr><td>$5.28 an ounce against $4.35</td><td>You paid more for the word, by the complaint's math</td><td>Same complaint, August 12, 2026</td><td>Not a ruling, the case was dropped October 2, 2026</td></tr>
 <tr><td>"Simple ingredients" and "Born in the USA"</td><td>Not supported, NAD said</td><td>NAD Case 7277, June 27, 2024</td><td>P&amp;G disagreed in part, and agreed to comply</td></tr>
-<tr><td>Native deodorant "absorbs" wetness</td><td>No reasonable basis, the panel found</td><td>NARB panel, December 16, 2019</td><td>Not a finding of wrongdoing, the panel says</td></tr>
+<tr><td>Native deodorant "absorbs" wetness</td><td>No reasonable basis, the panel found</td><td>NARB panel, December 16, 2019</td><td>Not a finding of wrongdoing, NARB's notice says</td></tr>
 </tbody>
 </table>
 
@@ -152,7 +154,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The same decision asked P&amp;G to drop "Born in the USA." NAD said P&amp;G "did not provide any evidence" its products were made in the USA. P&amp;G said it "respectfully disagrees" with parts of it, and agreed to comply.</p>
 
-<p><a href="https://bbbprograms.org/media/newsroom/decisions/narb-recommends-native-cosmetics-discontinue-moisture-absorption-and-underarm-wetness-protection-cla">In December 2019, a review panel looked at a Native wetness claim.</a> P&amp;G had owned Native for two years. The panel found Native "failed to provide a reasonable basis" for saying its deodorant absorbs wetness. Native agreed to drop it.</p>
+<p><a href="https://bbbprograms.org/media/newsroom/decisions/narb-recommends-native-cosmetics-discontinue-moisture-absorption-and-underarm-wetness-protection-cla">In December 2019, a review panel looked at two Native wetness claims.</a> P&amp;G had owned Native for two years. The panel found Native "failed to provide a reasonable basis" for saying its deodorant absorbs wetness and protects against it. Native agreed to drop both.</p>
 
 <p>And so the fix is a different company to buy from.</p>
 
@@ -162,7 +164,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>You do not have to redo your whole bathroom shelf tonight. Start with the stick on your dresser, because it is on your skin every single morning.</p>
 
-<p>Toss the Native stick. Just do not buy it again.</p>
+<p>No need to toss the Native stick. Just do not buy it again.</p>
 
 <p>I am not going to tell you to study the back of the next stick. By the complaint's account, the ginger was in the fine print while the front said Unscented.</p>
 
@@ -269,10 +271,10 @@ of our health and our finances.</p>
   {
    "@type": "Article",
    "headline": "Native Deodorant Lawsuit: Is 'Unscented' Native Really Unscented? (2026)",
-   "description": "A 2026 lawsuit alleged Native Unscented has a scent in it, ginger root extract, and costs more an ounce. Dropped Oct 2, no payout. What to buy instead.",
+   "description": "A 2026 lawsuit alleged Native Unscented has a scent, ginger root extract, and costs more an ounce. Dropped Oct 2, no shopper payout. What to buy instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/nativedeodo-hero-v1.webp",
-   "datePublished": "2026-10-22",
-   "dateModified": "2026-10-22",
+   "datePublished": "2026-10-23",
+   "dateModified": "2026-10-23",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/native-deodorant-lawsuit-2026"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
