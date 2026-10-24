@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-25
+date: 2026-10-24
 title: What Happened to Trunori? Why It Closed and What Promoters Can Do Now (2026)
 slug: what-happened-to-trunori
 keyword: what happened to trunori
@@ -47,7 +47,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 25, 2026<br><span style="font-size:.92em;">Published October 25, 2026 &middot; Last updated October 25, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 24, 2026<br><span style="font-size:.92em;">Published October 24, 2026 &middot; Last updated October 24, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -89,7 +89,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <span class="micro">You can always say no.</span>
 </div>
 
-<p>Trunori sold supplements like ProPara, TruBody Protein and Protone. It opened in late 2025.</p>
+<p>Trunori sold supplements like <a href="https://behindmlm.com/mlm-reviews/trunori-review-top-le-vel-earners-go-solo-with-supplements/">ProPara, TruBody Protein and Protone</a>. It opened in late 2025.</p>
 
 <p>Type trunori.com into your browser today. There is no store on it anymore. Checked October 2026.</p>
 
@@ -105,7 +105,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>The notice <a href="https://behindmlm.com/companies/trunori-collapses-manufacturing-partners-blamed/">does not name that partner</a>. It does not say what went wrong between them either.</p>
 
-<p>Trunori's own website named two co-founders, Chris and Danielle Collins.</p>
+<p><a href="https://behindmlm.com/mlm-reviews/trunori-review-top-le-vel-earners-go-solo-with-supplements/">Trunori's own website named two co-founders</a>, Chris and Danielle Collins.</p>
 
 <p>So, by the founders' account, the name on the bottle and the hand on the shipping were not the same. They said it plainly: "we cannot guarantee that an order placed will actually be fulfilled."</p>
 
@@ -146,7 +146,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>Switch to America could close too. Any company can. I will not pretend otherwise.</p>
 
-<p>Here is my answer to question one. Switch to America sells straight from the manufacturer. No middlemen and no markup. No minimums, no maximums. Ask me the other two on the call. If I dodge one, that is your answer.</p>
+<p>Here is my answer to question one. We are the manufacturer. No middlemen and no markup. No minimums, no maximums. Ask me the other two on the call. If I dodge one, that is your answer.</p>
 
 <p>You pay what a brand new shopper pays. I will not hand you a number to expect. Nobody honest can.</p>
 
@@ -160,7 +160,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>Federal <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435">rules for online and mail orders</a> back her up. Once a seller tells her it will not ship, the order counts as canceled. The seller owes her a "prompt refund."</p>
 
-<p>If she paid by credit card and nothing shows up, <a href="https://www.law.cornell.edu/uscode/text/15/1666">federal law</a> counts goods "not delivered" as a billing error. Her letter has to reach the card company within 60 days. The clock starts when the bill with the charge was sent. So do not wait long.</p>
+<p>If she paid by credit card and nothing shows up, <a href="https://www.law.cornell.edu/uscode/text/15/1666">federal law</a> counts goods "not delivered" as a billing error. Her letter has to reach the card company within 60 days. The clock starts when the first bill showing the charge was sent. So do not wait long.</p>
 
 <p>She will remember that you called.</p>
 
@@ -217,6 +217,7 @@ our finances.</p>
 <h3>Where to check me</h3>
 <ul>
 <li><a href="https://behindmlm.com/companies/trunori-collapses-manufacturing-partners-blamed/">A watchdog site's report, September 28, 2026, on Trunori shutting down</a>. The founders' notice, quoted: the manufacturing co-founder line, the refund line and "We did not see this coming." The reason for the closing, in the founders' own words, and the one promise to your customers in what was published.</li>
+<li><a href="https://behindmlm.com/mlm-reviews/trunori-review-top-le-vel-earners-go-solo-with-supplements/">The same watchdog site's review, May 28, 2026</a>. The co-founders on Trunori's website, the products and the $9.95 monthly promoter fee.</li>
 <li><a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435">The FTC's mail order rule, 16 CFR Part 435</a>. Section 435.2(c) covers a seller that has "indicated its decision not to ship." What the rule says a seller owes your customer once it says it will not ship.</li>
 <li><a href="https://www.law.cornell.edu/uscode/text/15/1666">15 U.S.C. 1666, on fixing credit card billing errors</a>. Goods "not delivered" count as a billing error, with a 60 day window to write. A clock your customer should know about today.</li>
 <li><a href="https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-B/section-1026.13">Regulation Z, 12 CFR 1026.13</a>. The rule card companies follow on billing errors: a charge for goods "not delivered to the consumer" as agreed is a billing error, and the letter must arrive "no later than 60 days" after the first statement that shows it. The rule your customer's card company has to follow.</li>
@@ -251,7 +252,7 @@ our finances.</p>
 <p>Yes. On September 28, 2026, the founders told promoters it was shutting down. Today trunori.com has no store on it.</p>
 
 <p><strong>Will my customers get their money back?</strong></p>
-<p>The founders wrote that all open orders "will be refunded in full." If your customer paid by credit card and the refund has not shown up, federal law treats goods not delivered as a billing error. Her letter has to reach the card company within 60 days. The clock starts when the bill with the charge was sent.</p>
+<p>The founders wrote that all open orders "will be refunded in full." If your customer paid by credit card and the refund has not shown up, federal law treats goods not delivered as a billing error. Her letter has to reach the card company within 60 days. The clock starts when the first bill showing the charge was sent.</p>
 
 <p><strong>Who was the manufacturing co-founder?</strong></p>
 <p>The notice does not name that person, and I will not guess. What matters for you is the setup, not the name. By the founders' account, a partner, not the name on the bottle, could stop the shipping.</p>
@@ -287,8 +288,8 @@ our finances.</p>
    "headline": "What Happened to Trunori? Why It Closed and What Promoters Can Do Now (2026)",
    "description": "Trunori closed in September 2026. The founders say their manufacturing co-founder stopped the orders. What promoters can do now, and what to ask next.",
    "image": "https://scan.ismyhometoxic.com/blog-images/whathappene-hero-v1.webp",
-   "datePublished": "2026-10-25",
-   "dateModified": "2026-10-25",
+   "datePublished": "2026-10-24",
+   "dateModified": "2026-10-24",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/what-happened-to-trunori"},
    "author": {"@id": "https://theshannonnicole.com/post/what-happened-to-trunori#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
@@ -327,7 +328,7 @@ our finances.</p>
   {"@type": "Question", "name": "Is Trunori really closed?",
    "acceptedAnswer": {"@type": "Answer", "text": "Yes. On September 28, 2026, the founders told promoters it was shutting down. Today trunori.com has no store on it."}},
   {"@type": "Question", "name": "Will my customers get their money back?",
-   "acceptedAnswer": {"@type": "Answer", "text": "The founders wrote that all open orders \"will be refunded in full.\" If your customer paid by credit card and the refund has not shown up, federal law treats goods not delivered as a billing error. Her letter has to reach the card company within 60 days. The clock starts when the bill with the charge was sent."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "The founders wrote that all open orders \"will be refunded in full.\" If your customer paid by credit card and the refund has not shown up, federal law treats goods not delivered as a billing error. Her letter has to reach the card company within 60 days. The clock starts when the first bill showing the charge was sent."}},
   {"@type": "Question", "name": "Who was the manufacturing co-founder?",
    "acceptedAnswer": {"@type": "Answer", "text": "The notice does not name that person, and I will not guess. What matters for you is the setup, not the name. By the founders' account, a partner, not the name on the bottle, could stop the shipping."}},
   {"@type": "Question", "name": "Did I do something wrong?",
