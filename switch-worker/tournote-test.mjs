@@ -10,6 +10,7 @@
 //   - the notes pass: one pinned note per new contact, with that contact's own signed link
 //   - builder prospects (boostyourincome) and DND / stop-tagged contacts get no note
 //   - booked tour-calendar contacts get a note; cancelled bookings and builder calendars do not
+//   - (10/24) a builder's new tour calendar is read from GHL's list; booked + builder tag -> note
 //   - TOUR_NOTES off writes nothing; dryrun writes no note; a busy run resumes from its cursor
 //   - the cron string routes to the notes pass, the 5-minute cron still runs the packs queue
 import worker from "file:///C:/Users/skubi/sta-tools/cf-worker/worker.js";
@@ -28,6 +29,16 @@ const sms = [];
 const events = {};         // calendarId -> [event]
 let searchCalls = 0;
 const failNote = new Set();
+let calListFail = false;
+// GHL's calendar list: a known tour calendar, a builder's NEW tour calendar (switchwith...), the
+// builder Zoom calendar, an inactive tour-looking one, and a personal calendar that is NOT a tour.
+const calendarList = [
+  { id: "Y8AxPZdBot07yyAMM0yQ", name: "Switch to America - Nicole Perez", widgetSlug: "patriotichousewife", isActive: true },
+  { id: "7Q9QMySWZZkHQnPfIohP", name: "Cheryl Colidron", widgetSlug: "switchwithcherylc", isActive: true },
+  { id: "w6s75rMfU2Gfg8OAVMv9", name: "Build it once. Get paid every month. Forever.", widgetSlug: "boostyourincome", isActive: true },
+  { id: "OFFoffOFFoffOFFoff12", name: "Switch to America - Old", widgetSlug: "switchwithold", isActive: false },
+  { id: "PERSpersPERSpers1234", name: "Ron's Personal Calendar", widgetSlug: "ron-personal", isActive: true },
+];
 const ok = (d) => new Response(JSON.stringify(d), { status: 200, headers: { "Content-Type": "application/json" } });
 globalThis.fetch = async (url, init = {}) => {
   const u = new URL(url); const m = (init.method || "GET").toUpperCase();
@@ -48,6 +59,10 @@ globalThis.fetch = async (url, init = {}) => {
     const list = Object.values(contacts).filter((c) => c.dateAdded && c.dateAdded >= gte)
       .sort((a, b) => a.dateAdded.localeCompare(b.dateAdded)).slice(0, body.pageLimit || 20);
     return ok({ contacts: list, total: list.length });
+  }
+  if (u.pathname === "/calendars/" && m === "GET") {
+    if (calListFail) return new Response("{}", { status: 500 });
+    return ok({ calendars: calendarList });
   }
   if (u.pathname === "/calendars/events" && m === "GET") {
     return ok({ events: events[u.searchParams.get("calendarId")] || [] });
@@ -111,6 +126,48 @@ check("cancelled booking -> no note", !notes[id("can")]);
 check("builder Zoom calendar -> no note", !notes[id("biz")]);
 r = await notesRun();
 check("second run writes no duplicate notes", (notes[id("ann")] || []).length === 1 && (notes[id("cal")] || []).length === 1, r);
+
+// 2026-10-24 (Cheryl Coldiron): a builder's NEW tour calendar is watched with no code change,
+// and a lead booked on a tour calendar gets the note even with the builder tag.
+contacts[id("che")] = { id: id("che"), firstName: "Cheryl", phone: "+12085550009", tags: ["boostyourincome", "booked", "nicoleperez"], dateAdded: iso(20) };
+events["7Q9QMySWZZkHQnPfIohP"] = [{ contactId: id("che"), appointmentStatus: "confirmed" }];
+contacts[id("off")] = { id: id("off"), firstName: "Off", phone: "+12085550010", tags: [], dateAdded: iso(60 * 24 * 200) };
+events["OFFoffOFFoffOFFoff12"] = [{ contactId: id("off"), appointmentStatus: "confirmed" }];
+contacts[id("ron")] = { id: id("ron"), firstName: "Ron", phone: "+12085550012", tags: ["boostyourincome"], dateAdded: iso(60 * 24 * 200) };
+events["PERSpersPERSpers1234"] = [{ contactId: id("ron"), appointmentStatus: "confirmed" }];
+// the review's safety cases: booked + builder tag + DND; skip:builder marker, now not interested;
+// a brand-new non-builder lead booked in the same run; Shannon's hand-noted test contact
+contacts[id("bdn")] = { id: id("bdn"), firstName: "Bdn", phone: "+12085550013", tags: ["boostyourincome"], dateAdded: iso(60 * 24 * 200), dndSettings: { SMS: { status: "permanent", message: "STOP" } } };
+contacts[id("bni")] = { id: id("bni"), firstName: "Bni", phone: "+12085550014", tags: ["boostyourincome", "not interested"], dateAdded: iso(60 * 24 * 200) };
+await kv.put("tournote:" + id("bni"), "skip:builder");
+contacts[id("fre")] = { id: id("fre"), firstName: "Fre", phone: "+12085550015", tags: [], dateAdded: iso(15) };
+contacts["kDtIN9rIIMOHLvJukrqt"] = { id: "kDtIN9rIIMOHLvJukrqt", firstName: "Shannon", phone: "+12085550016", tags: ["boostyourincome"], dateAdded: iso(60 * 24 * 200) };
+events["7Q9QMySWZZkHQnPfIohP"].push({ contactId: id("bdn"), appointmentStatus: "confirmed" }, { contactId: id("bni"), appointmentStatus: "confirmed" },
+  { contactId: id("fre"), appointmentStatus: "confirmed" }, { contactId: "kDtIN9rIIMOHLvJukrqt", appointmentStatus: "confirmed" });
+await kv.delete("tournotes:cal");
+r = await notesRun();
+check("booked on a NEW builder tour calendar -> note, even with the builder tag", (notes[id("che")] || []).length === 1, r);
+check("...her note links her own contact id", cidFrom((notes[id("che")] || [{}])[0].body) === id("che"));
+check("...the run says it read GHL's list and names the calendar it will not watch", r.cals && /^ghl:/.test(r.cals.src) && r.cals.unknown.indexOf("PERSpersPERSpers1234") >= 0 && r.cals.unknown.indexOf("w6s75rMfU2Gfg8OAVMv9") < 0, r.cals);
+check("...a personal calendar is not watched (builder prospect booked there: no note)", !notes[id("ron")], notes[id("ron")]);
+check("...a builder prospect who is NOT booked still gets none", !notes[id("bob")], notes[id("bob")]);
+check("...the builder Zoom calendar still gives none", !notes[id("biz")], notes[id("biz")]);
+check("...an inactive calendar is not read", !notes[id("off")], notes[id("off")]);
+check("booked + builder tag + texted STOP -> no note", !notes[id("bdn")] && /^skip:/.test(kv.m.get("tournote:" + id("bdn")) || ""), kv.m.get("tournote:" + id("bdn")));
+check("skip:builder marker, now 'not interested', booked -> no note", !notes[id("bni")], notes[id("bni")]);
+check("brand-new lead who books in the same run -> exactly ONE note", (notes[id("fre")] || []).length === 1, notes[id("fre")]);
+check("Shannon's hand-noted test contact -> no second note", !notes["kDtIN9rIIMOHLvJukrqt"], notes["kDtIN9rIIMOHLvJukrqt"]);
+check("the run stays inside the GHL call budget", r.calls <= 45, r.calls);
+await kv.delete("tournotes:cal");
+r = await notesRun();
+check("...and nobody gets a second note on the next calendar pass", (notes[id("che")] || []).length === 1 && (notes[id("fre")] || []).length === 1, r);
+calListFail = true;
+contacts[id("kno")] = { id: id("kno"), firstName: "Kno", phone: "+12085550011", tags: [], dateAdded: iso(60 * 24 * 200) };
+events["Y8AxPZdBot07yyAMM0yQ"].push({ contactId: id("kno"), appointmentStatus: "confirmed" });
+await kv.delete("tournotes:cal");
+r = await notesRun();
+check("calendar list down -> the known tour calendars are still read, and the run says fallback", (notes[id("kno")] || []).length === 1 && r.cals && /^fallback/.test(r.cals.src), r);
+calListFail = false;
 
 // cursor: 15 brand new contacts, cap 12 per run, the rest come next run
 for (let i = 0; i < 15; i++) {

@@ -309,6 +309,8 @@ const TOUR_WINDOW =
  *   - TOUR_NOTES gates it: "live" writes notes, "dryrun" logs who would get one, "off" nothing.
  *   - one note per contact, ever: KV tournote:<id> remembers it.
  *   - skipped: builder prospects (tag boostyourincome: their call is the Zoom, not a tour)
+ *     UNLESS they are booked on a tour calendar (2026-10-24: Cheryl Coldiron, a new builder,
+ *     booked a test tour on her own calendar and had no note because of the tag),
  *     and anyone who opted out (DND, stop tags). A lead with NO PHONE still gets the note:
  *     the click re-checks everything and says "no cell number on file", and the button is
  *     already there if a number is added later (2026-10-22 review).
@@ -326,8 +328,45 @@ const TOUR_CALENDARS = [
   "MFE31N22BzC6yUkKhjfk", "Uu9A7T3weNNMrqGDXhSh", "VcaBdXq7kJAAb3q9lwVu", "Y8AxPZdBot07yyAMM0yQ",
   "bfmvjAoI4FxLd2cOyn9c", "tS0J4P5TcSyAxL79gcR5", "tutfx6nixvxzqsdolstb", "wz7NpKeOERbYhUsmEfff",
   "xRWH8ROP4UOsxNCyyxGf",
-];   // the shopper tour calendars; the 5 builder Zoom calendars are left out on purpose
-const TOUR_NOTES_BACK_DAYS = 45;   // first run reaches back this far for new contacts
+];   // the shopper tour calendars as of 2026-10-22, always read
+// The builder Zoom calendars: never tour calendars, whatever their name.
+const BUILDER_CALENDARS = [
+  "IGc4rvMiw0uLnEiTVwXn",   // Transform Your Followers into Profits (abundance2024)
+  "Nb6ikeRaNF3yhq3rszcf",   // Matt Droguett's personal calendar
+  "S4JC3Favkc6G515mnJzR",   // Break Free From The Illusion
+  "uUgKSALZ0sDM0CpsSG9t",   // Proof of Income (shannon-15min-builder)
+  "w6s75rMfU2Gfg8OAVMv9",   // Build it once. Get paid every month. Forever. (boostyourincome)
+];
+// A builder's NEW tour calendar is picked up from GHL's calendar list the day it is made, with
+// no code change, when its booking link starts "switchwith" (switchwithkristen, switchwithcherylc)
+// or its name starts "Switch to America". Any OTHER new calendar is not watched; it is listed in
+// the run result ("unknown") so a person decides (2026-10-24: Cheryl Coldiron's calendar was
+// missing from the fixed list, and a review found personal and outside-funnel calendars in GHL).
+function looksLikeTourCalendar(c) {
+  const slug = String(c.widgetSlug || c.slug || "").toLowerCase();
+  const name = String(c.name || "").toLowerCase().trim();
+  return slug.indexOf("switchwith") === 0 || name.indexOf("switch to america") === 0;
+}
+// Contacts that carry a SEND TOUR LINK note made by hand (Shannon's own test contact).
+const TOUR_NOTE_MANUAL = ["kDtIN9rIIMOHLvJukrqt"];
+const TOUR_NOTE_CALL_BUDGET = 45;   // GHL calls per run, under the Workers limit of 50 subrequests
+const TOUR_NOTES_BACK_DAYS = 45;    // first run reaches back this far for new contacts
+
+async function tourCalendarIds(env, loc) {
+  const ids = TOUR_CALENDARS.slice();
+  const unknown = [];
+  let r = null;
+  try { r = await ghl(env, "GET", "/calendars/?locationId=" + loc, undefined, "2021-04-15"); } catch (e) { r = null; }
+  const list = r && r.ok && r.data && Array.isArray(r.data.calendars) ? r.data.calendars : null;
+  if (!list) return { ids, src: "fallback:" + (r ? r.status : "threw"), unknown };
+  for (const c of list) {
+    if (!c || !ID_OK.test(String(c.id || "")) || c.isActive === false) continue;
+    if (ids.indexOf(c.id) >= 0 || BUILDER_CALENDARS.indexOf(c.id) >= 0) continue;
+    if (looksLikeTourCalendar(c)) ids.push(c.id);
+    else unknown.push(c.id);
+  }
+  return { ids, src: "ghl:" + list.length, unknown };
+}
 
 function tourNoteHtml(link, contact) {
   const who = greetName(contact && contact.firstName) || "them";
@@ -336,10 +375,10 @@ function tourNoteHtml(link, contact) {
          " the tour link from 866-567-0832, and the checklist answers save here.</p>";
 }
 
-async function tourNoteFor(env, contact, mode) {
+async function tourNoteFor(env, contact, mode, booked) {
   const cid = contact.id;
   const tags = (Array.isArray(contact.tags) ? contact.tags : []).map(function (t) { return String(t).toLowerCase().trim(); });
-  if (TOUR_NOTE_SKIP_TAGS.some(function (t) { return tags.indexOf(t) >= 0; })) {
+  if (!booked && TOUR_NOTE_SKIP_TAGS.some(function (t) { return tags.indexOf(t) >= 0; })) {
     if (mode === "live") await env.REPORTS.put("tournote:" + cid, "skip:builder", { expirationTtl: LOG_TTL });
     return "skip:builder";
   }
@@ -400,7 +439,10 @@ async function tourNotesPass(env, mode, loc) {
   const out = [];
   let made = 0;
   let stopped = false;
-  const seen = {};
+  let calls = 0;                 // GHL calls this run, kept under TOUR_NOTE_CALL_BUDGET
+  const handled = {};            // ids pass 1 decided THIS run (except skip:builder): pass 2 leaves
+                                 // them alone without trusting a KV read of a key just written
+  const posted = function (res) { return res === "noted" || /^note-failed:/.test(res); };
 
   // 1) new contacts, oldest first, from the cursor. The search starts an hour BEFORE the
   // cursor, because GHL's search index can show a contact late or out of order; the
@@ -409,6 +451,7 @@ async function tourNotesPass(env, mode, loc) {
   let since = await env.REPORTS.get(curKey);
   if (!since) since = new Date(now - TOUR_NOTES_BACK_DAYS * 86400000).toISOString();
   const from = new Date(Date.parse(since) - 60 * 60000).toISOString();
+  calls++;
   const sr = await ghl(env, "POST", "/contacts/search", { locationId: loc, page: 1, pageLimit: 50,
     filters: [{ field: "dateAdded", operator: "range", value: { gte: from } }],
     sort: [{ field: "dateAdded", direction: "asc" }] });
@@ -418,10 +461,11 @@ async function tourNotesPass(env, mode, loc) {
       for (const c of sr.data.contacts) {
         if (!c || !ID_OK.test(String(c.id || ""))) continue;
         if (made >= TOUR_NOTES_PER_RUN) break;             // the cursor stops here; next run resumes
-        seen[c.id] = 1;
         if (!(await env.REPORTS.get("tournote:" + c.id))) {
           const res = await tourNoteFor(env, c, mode);
           out.push(c.id + "=" + res);
+          if (posted(res)) calls++;
+          if (res !== "skip:builder") handled[c.id] = 1;
           if (res === "noted" || res === "dry") made++;
           if (retryable(res)) { stopped = true; break; }  // GHL or KV hiccup: retry this lead next run
           if (/^note-failed:/.test(res)) {
@@ -435,35 +479,53 @@ async function tourNotesPass(env, mode, loc) {
     if (cursor > since) await env.REPORTS.put(curKey, cursor);
   }
 
-  // 2) everyone booked on a tour calendar (yesterday to 30 days out), every half hour
+  // 2) everyone booked on a tour calendar (yesterday to 30 days out), every half hour.
+  // Booked on a tour calendar = the note goes on even with the builder tag (10/24).
   const calKey = mode === "live" ? "tournotes:cal" : "tournotes:cal:dry";
   const lastCal = Number(await env.REPORTS.get(calKey)) || 0;
+  let calInfo = null;
   if (!stopped && made < TOUR_NOTES_PER_RUN && now - lastCal > 30 * 60000) {
     const ids = [];
     let calOk = true;
-    for (const cal of TOUR_CALENDARS) {
-      const r = await ghl(env, "GET", "/calendars/events?locationId=" + loc + "&calendarId=" + cal +
-        "&startTime=" + (now - 86400000) + "&endTime=" + (now + 30 * 86400000), undefined, "2021-04-15");
-      if (!r.ok || !r.data || !Array.isArray(r.data.events)) { calOk = false; continue; }
+    calls++;
+    const cals = await tourCalendarIds(env, loc);
+    calInfo = { src: cals.src, watched: cals.ids.length, unknown: cals.unknown };
+    for (const cal of cals.ids) {
+      if (calls >= TOUR_NOTE_CALL_BUDGET) { calOk = false; break; }
+      calls++;
+      let r = null;
+      try {
+        r = await ghl(env, "GET", "/calendars/events?locationId=" + loc + "&calendarId=" + cal +
+          "&startTime=" + (now - 86400000) + "&endTime=" + (now + 30 * 86400000), undefined, "2021-04-15");
+      } catch (e) { r = null; }
+      if (!r || !r.ok || !r.data || !Array.isArray(r.data.events)) { calOk = false; continue; }
       for (const e of r.data.events) {
         const st = String(e.appointmentStatus || "").toLowerCase();
         if (!e.contactId || e.deleted || st === "cancelled" || st === "invalid") continue;
-        if (!seen[e.contactId] && ids.indexOf(e.contactId) < 0) ids.push(e.contactId);
+        if (ids.indexOf(e.contactId) < 0) ids.push(e.contactId);
       }
     }
     let finished = calOk;
     for (const cid of ids) {
-      if (!ID_OK.test(cid)) continue;
-      if (await env.REPORTS.get("tournote:" + cid)) continue;
-      if (made >= TOUR_NOTES_PER_RUN) { finished = false; break; }
-      const c = await lookupContact(env, cid);
+      if (!ID_OK.test(cid) || handled[cid] || TOUR_NOTE_MANUAL.indexOf(cid) >= 0) continue;
+      // a "skip:builder" marker does not block a booked lead; every other marker does
+      const mark = await env.REPORTS.get("tournote:" + cid);
+      if (mark && mark !== "skip:builder") continue;
+      if (made >= TOUR_NOTES_PER_RUN || calls + 2 > TOUR_NOTE_CALL_BUDGET) { finished = false; break; }
+      calls++;
+      let c = null;
+      try { c = await lookupContact(env, cid); } catch (e) { c = null; }
       if (!c) { finished = false; continue; }
-      const res = await tourNoteFor(env, c, mode);
+      const res = await tourNoteFor(env, c, mode, true);
       out.push(cid + "=" + res);
+      if (posted(res)) calls++;
       if (res === "noted" || res === "dry") made++;
       if (retryable(res)) { finished = false; break; }
+      if (/^note-failed:/.test(res)) {
+        await env.REPORTS.put("tournote:" + cid, "fail:" + res.split(":")[1], { expirationTtl: 86400 });
+      }
     }
     if (finished) await env.REPORTS.put(calKey, String(now));
   }
-  return { mode, made, results: out };
+  return { mode, made, calls, cals: calInfo, results: out };
 }
