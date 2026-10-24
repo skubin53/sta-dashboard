@@ -89,7 +89,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <span class="micro">You can always say no.</span>
 </div>
 
-<p>Trunori sold supplements like <a href="https://behindmlm.com/mlm-reviews/trunori-review-top-le-vel-earners-go-solo-with-supplements/">ProPara, TruBody Protein and Protone</a>. It opened in late 2025.</p>
+<p>Trunori sold supplements like ProPara, TruBody Protein and Protone. It opened in late 2025.</p>
 
 <p>Type trunori.com into your browser today. There is no store on it anymore. Checked October 2026.</p>
 
@@ -104,8 +104,6 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <p>Read the notice slowly. Nothing in the published notice blames the product, and nothing blames you. It points at one person, on the side that made the product.</p>
 
 <p>The notice <a href="https://behindmlm.com/companies/trunori-collapses-manufacturing-partners-blamed/">does not name that partner</a>. It does not say what went wrong between them either.</p>
-
-<p><a href="https://behindmlm.com/mlm-reviews/trunori-review-top-le-vel-earners-go-solo-with-supplements/">Trunori's own website named two co-founders</a>, Chris and Danielle Collins.</p>
 
 <p>So, by the founders' account, the name on the bottle and the hand on the shipping were not the same. They said it plainly: "we cannot guarantee that an order placed will actually be fulfilled."</p>
 
@@ -217,7 +215,6 @@ our finances.</p>
 <h3>Where to check me</h3>
 <ul>
 <li><a href="https://behindmlm.com/companies/trunori-collapses-manufacturing-partners-blamed/">A watchdog site's report, September 28, 2026, on Trunori shutting down</a>. The founders' notice, quoted: the manufacturing co-founder line, the refund line and "We did not see this coming." The reason for the closing, in the founders' own words, and the one promise to your customers in what was published.</li>
-<li><a href="https://behindmlm.com/mlm-reviews/trunori-review-top-le-vel-earners-go-solo-with-supplements/">The same watchdog site's review, May 28, 2026</a>. The co-founders on Trunori's website, the products and the $9.95 monthly promoter fee.</li>
 <li><a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435">The FTC's mail order rule, 16 CFR Part 435</a>. Section 435.2(c) covers a seller that has "indicated its decision not to ship." What the rule says a seller owes your customer once it says it will not ship.</li>
 <li><a href="https://www.law.cornell.edu/uscode/text/15/1666">15 U.S.C. 1666, on fixing credit card billing errors</a>. Goods "not delivered" count as a billing error, with a 60 day window to write. A clock your customer should know about today.</li>
 <li><a href="https://www.ecfr.gov/current/title-12/chapter-X/part-1026/subpart-B/section-1026.13">Regulation Z, 12 CFR 1026.13</a>. The rule card companies follow on billing errors: a charge for goods "not delivered to the consumer" as agreed is a billing error, and the letter must arrive "no later than 60 days" after the first statement that shows it. The rule your customer's card company has to follow.</li>
