@@ -275,7 +275,11 @@ export default {
     // Run the queue by hand. Same code the cron runs, no shortcuts, same guards.
     if (request.method === "GET" && url.pathname === "/packrun") {
       if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
-      const r = await processQueue(env);
+      // waitUntil (10/24): this run can text women now, so a caller who hangs up must not
+      // cut it off between "sending" and the text.
+      const p = processQueue(env);
+      if (ctx && ctx.waitUntil) ctx.waitUntil(p);
+      const r = await p;
       return json({ mode: String(env.SEND_MODE || "off"), ...r }, 200, origin);
     }
 
@@ -447,8 +451,8 @@ export default {
     return json({ ok: true, saved: true, noteId, packs }, 200, origin);
   },
 
-  // Every 5 minutes. A few minutes after she finishes the list she gets the text, which
-  // reads more like Shannon actually looked at it than an instant reply would.
+  // Every 5 minutes. Within 5 minutes after she finishes the list she gets the text (built and
+  // sent in the same run since 2026-10-24; it used to take two runs, up to 10 minutes).
   async scheduled(event, env, ctx) {
     // Two crons (2026-10-22): the packs queue every 5 minutes, and the SEND TOUR LINK notes
     // on their own schedule so neither eats the other's subrequest budget.

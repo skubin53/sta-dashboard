@@ -152,6 +152,16 @@ async function writeRow(env, row) {
  *     interested" is blocked again before anything is built. A row blocked AT the send
  *     step (send_started set) is locked like a sent one.
  */
+// The same row key written twice inside a second makes KV answer 429. The text has already
+// gone when this is called, so try again after the second has passed instead of losing the
+// "sent" record (and the note on her contact) to a timing quirk.
+async function writeRowSoon(env, row) {
+  for (let i = 0; i < 3; i++) {
+    try { await writeRow(env, row); return; }
+    catch (e) { if (i === 2) throw e; await new Promise(function (r) { setTimeout(r, 1100); }); }
+  }
+}
+
 async function queuePackSend(env, sub) {
   if (!env || !env.REPORTS) return "no-kv";
   if (!sub.contact_id || !Array.isArray(sub.items) || !sub.items.length) return "empty";
@@ -220,13 +230,19 @@ async function block(env, row, reasons) {
   await writeRow(env, row);
 }
 
-/** One row, one step. Returns a short string describing what happened. */
-async function stepRow(env, row) {
+/** One row, one step. Returns a short string describing what happened.
+ *  budget (optional) = { left: n } GHL calls this run may still make (10/24): a build needs 1,
+ *  a send needs 3 (re-check, text, note). Short of that the row waits for the next run, and
+ *  waiting costs no attempt. A send never starts unless all 3 calls fit, so the run can never
+ *  hit the Workers subrequest limit between the send lock and the text. */
+async function stepRow(env, row, budget) {
   const mode = String(env.SEND_MODE || "off").toLowerCase();
 
   if (row.state === "sent" || row.state === "blocked" || row.state === "sending") {
     return "skip:" + row.state;
   }
+  if (budget && budget.left < (row.state === "ready" ? 3 : 1)) return "deferred:budget";
+  const spend = function () { if (budget) budget.left--; };
   row.attempts = (row.attempts || 0) + 1;
   if (row.attempts > 24) {
     await block(env, row, ["gave up after " + (row.attempts - 1) + " attempts"]);
@@ -235,6 +251,7 @@ async function stepRow(env, row) {
 
   // ---- build the page ----
   if (row.state === "queued") {
+    spend();
     const contact = await lookupContact(env, row.contact_id);
     if (!contact) {
       note(row, "could not read contact, will retry");
@@ -312,6 +329,7 @@ async function stepRow(env, row) {
     }
 
     // Check again, right now. She may have replied "no thanks" since the page was built.
+    spend();
     const contact = await lookupContact(env, row.contact_id);
     if (!contact) {
       note(row, "could not re-read contact before sending, will retry");
@@ -340,16 +358,19 @@ async function stepRow(env, row) {
       await block(env, row, ["already texted once (send lock)"]);
       return "blocked:send-lock";
     }
-    await env.REPORTS.put(SEND_LOCK + row.contact_id, new Date().toISOString(),
-                          { expirationTtl: LOG_TTL });
 
-    // Write the lock BEFORE the send. If the worker dies mid-call the row reads
-    // "sending", which is never retried, because a missed text beats a second one.
+    // "sending" first, then the lock, then the text (order changed 10/24). If the row write
+    // fails (KV refuses a second write to one key within a second), nothing is locked and
+    // the row is still "ready", so the next run tries again. Once "sending" is written the
+    // row is never retried, because a missed text beats a second one.
     row.state = "sending";
     row.send_started = new Date().toISOString();
     note(row, "sending now");
     await writeRow(env, row);
+    await env.REPORTS.put(SEND_LOCK + row.contact_id, new Date().toISOString(),
+                          { expirationTtl: LOG_TTL });
 
+    spend();
     const r = await ghl(env, "POST", "/conversations/messages",
                         { type: "SMS", contactId: row.contact_id, message },
                         "2021-04-15");
@@ -358,16 +379,17 @@ async function stepRow(env, row) {
       row.blocked_because = ["GHL refused the text, HTTP " + r.status];
       row.send_error = JSON.stringify(r.data).slice(0, 300);
       note(row, "send FAILED " + r.status);
-      await writeRow(env, row);
+      await writeRowSoon(env, row);
       return "send-failed";
     }
     row.state = "sent";
     row.sent_at = new Date().toISOString();
     row.message_id = (r.data && (r.data.messageId || r.data.msgId)) || null;
     note(row, "TEXT SENT to " + (contact.phone || "?"));
-    await writeRow(env, row);
+    await writeRowSoon(env, row);
 
     // Leave a trace on the contact so Shannon sees it in the record, not just in KV.
+    spend();
     await ghl(env, "POST", "/contacts/" + row.contact_id + "/notes", {
       body: "THREE PACKS TEXT SENT " + row.sent_at.slice(0, 10) + "\n" +
             "Her packs page: " + row.url + "\n" +
@@ -379,9 +401,36 @@ async function stepRow(env, row) {
   return "skip:" + row.state;
 }
 
+// A row whose page was just built is SENT IN THE SAME RUN (2026-10-24, Shannon: the text
+// took up to 10 minutes, one run to build and the next to send). Two passes, never one
+// chained call (review 10/24): pass 1 steps every row and builds every new page; then a
+// 1.1 s pause (KV refuses a second write to the same key inside a second); then pass 2 sends
+// the rows built in pass 1. Sending only after EVERY build of the run is done keeps the page
+// gate meaningful: if two women's names made the same slug, the later build has already
+// overwritten the page and the gate refuses the wrong send, exactly as before.
+// Capped per run, and every GHL call counts against one budget kept under the Workers
+// limit of 50 subrequests; whatever does not fit goes out on the next run.
+const SEND_SAME_RUN_CAP = 8;
+const PACK_CALL_BUDGET = 45;
+const PACK_RUN_LOCK = "packrun:lock";
+
 async function processQueue(env) {
   if (!env || !env.REPORTS) return { error: "no KV" };
+  // One run at a time: a hand-run /packrun must not overlap the cron (best effort, KV has
+  // no compare-and-set; the per-woman send lock is still the real guard).
+  if (await env.REPORTS.get(PACK_RUN_LOCK)) return { skipped: "another run is going" };
+  await env.REPORTS.put(PACK_RUN_LOCK, new Date().toISOString(), { expirationTtl: 120 });
+  try {
+    return await processQueuePasses(env);
+  } finally {
+    try { await env.REPORTS.delete(PACK_RUN_LOCK); } catch (e) {}
+  }
+}
+
+async function processQueuePasses(env) {
   const out = [];
+  const budget = { left: PACK_CALL_BUDGET };
+  const built = [];
   // Every page of keys, not just the first. Finished rows stay under this prefix for two
   // years and keys come back sorted by contact id, so a single list() of 200 would one
   // day stop reaching new women whose ids sort late, with no error anywhere (found
@@ -397,16 +446,28 @@ async function processQueue(env) {
       const row = await env.REPORTS.get(k.name, "json");
       if (!row) continue;
       if (row.state === "sent" || row.state === "blocked" || row.state === "sending") continue;
+      let res = "";
       try {
-        out.push(row.contact_id + "=" + (await stepRow(env, row)));
+        res = await stepRow(env, row, budget);
+        if (res === "built" && built.length < SEND_SAME_RUN_CAP) built.push({ row, idx: out.length });
+        out.push(row.contact_id + "=" + res);
       } catch (e) {
-        out.push(row.contact_id + "=threw:" + String((e && e.message) || e).slice(0, 80));
+        out.push(row.contact_id + "=" + (res ? res + "+" : "") + "threw:" + String((e && e.message) || e).slice(0, 80));
       }
     }
     if (list.list_complete || !list.cursor) break;
     cursor = list.cursor;
   }
-  return { handled: out.length, results: out };
+  if (built.length) {
+    await new Promise(function (r) { setTimeout(r, 1100); });
+    for (const b of built) {
+      let res = "";
+      try { res = await stepRow(env, b.row, budget); }
+      catch (e) { res = "threw:" + String((e && e.message) || e).slice(0, 80); }
+      out[b.idx] += "+" + res;
+    }
+  }
+  return { handled: out.length, calls: PACK_CALL_BUDGET - budget.left, results: out };
 }
 
 /* ------------------------------------------------- the What's New click tracker

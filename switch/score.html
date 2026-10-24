@@ -357,7 +357,7 @@ function tourAfter(j){
   if(!TOUR) return;
   var p=j&&j.packs;
   if(p==='queued'||p==='pending'||(j&&j.saved&&p===undefined)){
-    tourSay('Watch your phone',"In the next 10 minutes I'll text you options built from your list, with prices. Pick the one you like best.");
+    tourSay('Watch your phone',"In the next few minutes I'll text you options built from your list, with prices. Pick the one you like best.");
   } else {
     tourSay('Thank you!',TOGETHER);
   }

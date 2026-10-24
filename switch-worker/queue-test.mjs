@@ -10,12 +10,20 @@
 //   - a stop-tagged contact is blocked again after a resubmit
 //   - only an identical list counts as a duplicate note
 //   - the cron reaches rows past the first page of keys, and skips finished ones by metadata
+//   - (10/24) one run builds AND sends (was two runs, up to 10 min); capped at 8 a run
 import worker from "file:///C:/Users/skubi/sta-tools/cf-worker/worker.js";
 
 class KV {
   constructor() { this.m = new Map(); this.reads = 0; }
   async get(k, t) { this.reads++; const v = this.m.get(k); if (v === undefined) return null; return t === "json" ? JSON.parse(v.v) : v.v; }
-  async put(k, v, o) { this.m.set(k, { v: String(v), meta: (o && o.metadata) || null }); }
+  async put(k, v, o) {
+    // rate: real Cloudflare KV answers 429 to a second write of one key inside a second
+    const now = Date.now(); this.last = this.last || new Map();
+    if (this.rate && this.last.has(k) && now - this.last.get(k) < 1000) throw new Error("KV PUT failed: 429 Too Many Requests");
+    if (this.failOnce && this.failOnce(k, String(v))) { this.failOnce = null; throw new Error("KV PUT failed: 429 Too Many Requests"); }
+    this.last.set(k, now);
+    this.m.set(k, { v: String(v), meta: (o && o.metadata) || null });
+  }
   async delete(k) { this.m.delete(k); }
   async list({ prefix = "", limit = 1000, cursor }) {
     const keys = [...this.m.keys()].filter((k) => k.startsWith(prefix)).sort();
@@ -87,11 +95,15 @@ r = await post(A, MORE, 140);
 check("longer list while unsent -> replaces row", r.packs === "queued" && (await row(A)).items.length === MORE.length, r);
 check("different list same day -> second note filed", notes[A].length === 2, notes[A].length);
 await tick();
-check("first tick builds the page (ready), no text yet", (await row(A)).state === "ready" && sms.length === 0, (await row(A)).state);
-r = await post(A, FULL, 120);
-check("submit while ready -> pending, row untouched", r.packs === "pending" && (await row(A)).items.length === MORE.length, r);
-await tick();
-check("second tick sends exactly one text", (await row(A)).state === "sent" && sms.length === 1, { st: (await row(A)).state, n: sms.length });
+check("ONE tick builds the page AND sends exactly one text (10/24: was two ticks, up to 10 min)", (await row(A)).state === "sent" && sms.length === 1 && /packs\.ismyhometoxic\.com/.test(sms[0].message), { st: (await row(A)).state, n: sms.length });
+check("...after a page check: the text's link is a page stored for her", !!(await kv.get("packpage:" + (await row(A)).slug, "json")), (await row(A)).slug);
+// a row already "ready" (built on an earlier run) is not replaced by a new list
+const K = "KkkkkkkkkkkkkkkkkkkkK"; person(K);
+await post(K, FULL, 120);
+const kr = await row(K); kr.state = "ready";
+await kv.put("packsend:" + K, JSON.stringify(kr), { metadata: { state: "ready" } });
+r = await post(K, MORE, 140);
+check("submit while ready -> pending, row untouched", r.packs === "pending" && (await row(K)).items.length === FULL.length, r);
 r = await post(A, MORE, 140);
 check("after sent -> sent-before, no new row", r.packs === "sent-before" && (await row(A)).state === "sent", r);
 await tick(); await tick();
@@ -137,10 +149,8 @@ for (let i = 0; i < 5; i++) {   // old rows written before metadata existed
 const Z = "ZzzzzzzzzzzzzzzzzzzZ"; person(Z);
 await post(Z, FULL, 120);
 const before = kv.reads; await tick();
-check("row past the first 1000 keys is reached", (await row(Z)).state === "ready", (await row(Z)).state);
+check("row past the first 1000 keys is reached and sent in that run", (await row(Z)).state === "sent", (await row(Z)).state);
 check("finished rows skipped without reads (metadata)", kv.reads - before < 100, kv.reads - before);
-await tick();
-check("and it sends", (await row(Z)).state === "sent", (await row(Z)).state);
 
 // 11: round-2 fixes (2026-10-20, from the adversarial review)
 // a stale read that writes "queued" back over a sent row must never text twice
@@ -175,6 +185,65 @@ const reqJ = new Request("https://packs.ismyhometoxic.com/", { method: "POST",
   body: JSON.stringify({ contact_id: J, score: 120, count: 3, items: [null, { group: "__proto__", label: "Shampoo" }].concat(FULL.map((l) => ({ group: "T", label: l }))) }) });
 r = await (await worker.fetch(reqJ, env, { waitUntil() {} })).json();
 check("null item and __proto__ group -> note still filed", r.saved === true && (notes[J] || []).length === 1, r);
+
+// 12: the same-run send is capped at 8 rows a run; the rest go out on the next run (10/24)
+const many = [];
+for (let i = 0; i < 11; i++) { const id = "M" + String(i).padStart(19, "0"); person(id); many.push(id); await post(id, FULL, 120); }
+const n0 = sms.length;
+await tick();
+const sentNow = sms.length - n0;
+const waiting = many.filter((id) => !sms.some((s) => s.contactId === id)).length;
+check("a busy run texts at most 8 (built + sent); the rest are built and wait", sentNow === 8 && waiting >= 3, { sentNow, waiting });
+await tick();
+const sentAll = many.filter((id) => sms.some((s) => s.contactId === id)).length;
+check("...the other 3 go out on the next run, each exactly once", sentAll === 11 && many.every((id) => sms.filter((s) => s.contactId === id).length === 1), sentAll);
+// a stop tag added between building and sending still blocks the same-run send
+const S = "SsssssssssssssssssssS"; person(S);
+await post(S, FULL, 120);
+let looked = 0;
+const realFetch = globalThis.fetch;
+globalThis.fetch = async (url, init) => {
+  const u = new URL(url);
+  if (u.pathname === "/contacts/search" && JSON.parse(init.body).filters[0].value === S && ++looked === 2) {
+    contacts[S].tags = ["not interested"];
+  }
+  return realFetch(url, init);
+};
+await tick();
+globalThis.fetch = realFetch;
+check("opted out between build and send in the same run -> blocked, no text", (await row(S)).state === "blocked" && !sms.some((s) => s.contactId === S), (await row(S)).state);
+
+// 13: real KV refuses a second write to one key inside a second (review 10/24). The run builds,
+// pauses, then sends, so the text still goes out, the row says "sent" and her note is filed.
+kv.rate = true;
+const R = "RrrrrrrrrrrrrrrrrrrrR"; person(R);
+await post(R, FULL, 120);
+await new Promise((res) => setTimeout(res, 1100));
+const nR = sms.length;
+await tick();
+check("with KV's one-write-a-second limit: one run builds, sends once, records sent, files the note",
+  (await row(R)).state === "sent" && sms.length === nR + 1 && (notes[R] || []).some((n) => /THREE PACKS TEXT SENT/.test(n.body)),
+  { st: (await row(R)).state, n: sms.length - nR });
+kv.rate = false;
+// a refused "sending" write leaves NO lock and no text; the next run sends her once
+const Y = "YyyyyyyyyyyyyyyyyyyyY"; person(Y);
+await post(Y, FULL, 120);
+kv.failOnce = (k, v) => k === "packsend:" + Y && v.indexOf('"state":"sending"') >= 0;
+const nY = sms.length;
+await tick();
+check("'sending' write refused -> no text, no send lock, row still ready",
+  sms.length === nY && !(await kv.get("packlock:" + Y)) && (await row(Y)).state === "ready", { st: (await row(Y)).state, lock: await kv.get("packlock:" + Y) });
+await tick();
+check("...and the next run texts her exactly once", (await row(Y)).state === "sent" && sms.filter((s) => s.contactId === Y).length === 1, (await row(Y)).state);
+// a run while another holds the run lock does nothing
+await kv.put("packrun:lock", "x");
+const Q = "QqqqqqqqqqqqqqqqqqqqQ"; person(Q);
+await post(Q, FULL, 120);
+await tick();
+check("a run while another is going does nothing", (await row(Q)).state === "queued", (await row(Q)).state);
+await kv.delete("packrun:lock");
+await tick();
+check("...the next run sends it", (await row(Q)).state === "sent", (await row(Q)).state);
 
 console.log(fails ? "\n  " + fails + " FAILED" : "\n  all passed, " + sms.length + " texts total");
 process.exit(fails ? 1 : 0);
