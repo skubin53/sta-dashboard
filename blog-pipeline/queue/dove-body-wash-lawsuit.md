@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-06
+date: 2026-10-24
 title: Dove Body Wash Lawsuit: Are the 'Hypoallergenic' and 'Collagen' Labels True? (2026)
 slug: dove-body-wash-lawsuit
 keyword: dove body wash lawsuit
@@ -48,11 +48,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 6, 2026<br><span style="font-size:.92em;">Published November 6, 2026 &middot; Last updated November 6, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 24, 2026<br><span style="font-size:.92em;">Published October 24, 2026 &middot; Last updated October 24, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>Your skin got drier, so you picked the Dove that says hypoallergenic. Or the firming one that says collagen.</p>
+<p>Your skin got drier. So you picked the Dove that says hypoallergenic. Or the firming one that says collagen.</p>
 <p><strong><a href="https://storage.courtlistener.com/recap/gov.uscourts.nynd.155279/gov.uscourts.nynd.155279.1.0.pdf">A shopper sued Unilever on July 31, 2026. She alleges the firming wash says "with Collagen" on the front, and the back says only "Vegetable Collagen."</a></strong> A New Jersey suit says Dove Sensitive is not the hypoallergenic wash it claims. In June 2026, a judge let that one go on.</p>
 <p>Nothing is proven yet. But the word on the front is in court, and you paid for that word.</p>
 </div>
@@ -92,7 +92,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>By its account, the bottle "does not contain collagen at all."</p>
 
-<p>The shopper says she paid more for the collagen claim. <a href="https://storage.courtlistener.com/recap/gov.uscourts.nynd.155279/gov.uscourts.nynd.155279.1.0.pdf">The complaint says her lawyers wrote to Unilever in August 2025.</a> It says the label "remains unchanged." And so, almost a year later, she sued.</p>
+<p>The shopper says she paid more for the collagen claim. <a href="https://storage.courtlistener.com/recap/gov.uscourts.nynd.155279/gov.uscourts.nynd.155279.1.0.pdf">The complaint says her lawyers wrote to Unilever in August 2025.</a> It says the label "remains unchanged."</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/dovebodywas-villain-v1.webp" alt="A body wash pump bottle standing alone on a bathroom vanity in flat, cool light" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -106,9 +106,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.469769/gov.uscourts.cand.469769.1.0_1.pdf">Three California shoppers sued on May 8, 2026.</a> They say a lab found d-Limonene in the wash. The complaint calls it "one of the 26 recognized fragrance allergens."</p>
 
-<p>The suit takes aim at the word on the front.</p>
-
-<p><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.469769/gov.uscourts.cand.469769.12.0.pdf">On June 30, 2026, they dropped the case.</a> No judge ruled, and there is no settlement for shoppers.</p>
+<p><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.469769/gov.uscourts.cand.469769.12.0.pdf">On June 30, 2026, they dropped the case.</a> No judge ruled, and there is no class settlement for shoppers.</p>
 
 <h3 id="the-word">Hypoallergenic, a word the company gets to define</h3>
 
@@ -120,32 +118,32 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.53.0.pdf">On June 30, 2026, Judge Evelyn Padin turned down most of Unilever's request.</a> She wrote that the shoppers "plausibly plead that the Product is not 'hypoallergenic' as labeled."</p>
 
-<p>That means their story could be true, so the case goes on. It is not a finding that the label is false.</p>
+<p>That means their story could be true. So the case goes on. It is not a finding that the label is false.</p>
 
-<p><a href="https://www.courtlistener.com/docket/70342253/novick-v-unilever-united-states-inc/">On July 30, 2026, eight shoppers filed a new complaint.</a> It adds Dove Sensitive Skin bar soap. The case is still open.</p>
+<p><a href="https://www.courtlistener.com/docket/70342253/novick-v-unilever-united-states-inc/">On July 30, 2026, eight shoppers filed a new complaint.</a> It adds Dove Sensitive Skin bar soap and a Vaseline baby jelly. Six of the eight bought Dove. The case is still open. A new request to throw it out was filed October 23, 2026.</p>
 
-<p>Here is where each suit stands, and what each one does not prove.</p>
+<p>Here is where each suit stands.</p>
 
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
 <tr><td>"Collagen" on the front, "Vegetable Collagen" on the list</td><td>No real collagen, the complaint alleges</td><td>Federal court, New York, July 31, 2026</td><td>No judge has ruled</td></tr>
 <tr><td>d-Limonene in a hypoallergenic wash, the shoppers' lab says</td><td>A fragrance allergen inside, the complaint alleges</td><td>Federal court, California, May 8, 2026</td><td>Dropped June 30, 2026, no ruling</td></tr>
-<tr><td>"Hypoallergenic" on Dove Sensitive Skin</td><td>The claims can go forward, a judge ruled</td><td>Judge Evelyn Padin, New Jersey, June 30, 2026</td><td>Not a finding the label is false</td></tr>
+<tr><td>"Hypoallergenic" on Dove Sensitive Skin</td><td>Most claims can go forward, a judge ruled</td><td>Judge Evelyn Padin, New Jersey, June 30, 2026</td><td>Not a finding the label is false</td></tr>
 </tbody>
 </table>
 
 <h2 id="the-other-side">Is there a case for Unilever?</h2>
 
-<p class="quick-answer">Quick answer: yes, a fair one. No court has found either label false, and Unilever won on this same wash in 2023.</p>
+<p class="quick-answer">Quick answer: yes, a fair one. No court has found either label false. And Unilever won on this same wash in 2023.</p>
 
-<p>I know what you are thinking. You have used Dove for years, and it never gave you a rash. That is not nothing.</p>
+<p>I know what you are thinking. You have used Dove for years. It never gave you a rash. That is not nothing.</p>
 
 <p><strong>One.</strong> A complaint is one side's story.</p>
 
-<p><strong>Two.</strong> <a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.53.0.pdf">In 2023, a New York court threw out a suit over this same wash.</a> The New Jersey judge noted it. Those shoppers did not show the ingredients "actually cause allergic reactions."</p>
+<p><strong>Two.</strong> <a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.53.0.pdf">In 2023, a New York court threw out a suit over this same wash.</a> The New Jersey judge noted it. That suit did not show the ingredients "actually cause allergic reactions."</p>
 
-<p><strong>Three.</strong> <a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.53.0.pdf">Unilever told the New Jersey court that 87% of 39,349 ratings gave the wash five stars.</a> And the judge threw out one fraud claim. Nothing in the complaint plausibly showed Unilever knew the label was false, she wrote.</p>
+<p><strong>Three.</strong> <a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.53.0.pdf">Unilever told the New Jersey court that 87% of 39,349 ratings gave the wash five stars.</a> And the judge threw out one fraud claim, for now. Nothing in the complaint plausibly showed Unilever knew the label was false, she wrote.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -161,7 +159,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: a cleaner body wash, from a company that stands behind its words.</p>
 
-<p>You do not have to redo your whole bathroom tonight. Start with the bottle in your shower, because it touches your skin every day. If it is the Dove, swap it now.</p>
+<p>You do not have to redo your whole bathroom tonight. Start with the bottle in your shower. It touches your skin every day. If it is the Dove, swap it now.</p>
 
 <p>I am not going to tell you to study the back of the next bottle. The judge wrote that a shopper "should not be expected to," quoting an older case.</p>
 
@@ -204,11 +202,11 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nynd.155279/gov.uscourts.nynd.155279.1.0.pdf">Class action complaint, Fitzgerald v. Unilever United States, Inc., US District Court, N.D. New York, No. 1:26-cv-01488, filed July 31, 2026</a>. Lillian Fitzgerald alleges the front of Dove Vitality Renewal Firming Body Wash says "4% RESTORING SERUM WITH COLLAGEN," while the list shows only "Vegetable Collagen." It says her lawyers wrote Unilever on August 6, 2025, and the label "remains unchanged." <a href="https://www.courtlistener.com/docket/73715708/fitzgerald-v-unilever-united-states-inc/">The docket</a> shows no ruling as of October 22, 2026. What it means: you may have paid for a word, by the complaint's account.</li>
+<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nynd.155279/gov.uscourts.nynd.155279.1.0.pdf">Class action complaint, Fitzgerald v. Unilever United States, Inc., US District Court, N.D. New York, No. 1:26-cv-01488, filed July 31, 2026</a>. Lillian Fitzgerald alleges the front of Dove Vitality Renewal Firming Body Wash says "4% RESTORING SERUM WITH COLLAGEN," while the list shows only "Vegetable Collagen." It says her lawyers wrote Unilever on August 6, 2025, and the label "remains unchanged." <a href="https://www.courtlistener.com/docket/73715708/fitzgerald-v-unilever-united-states-inc/">The docket</a> shows no ruling as of October 24, 2026. What it means: you may have paid for a word, by the complaint's account.</li>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.469769/gov.uscourts.cand.469769.1.0_1.pdf">Class action complaint, Mills v. Conopco, Inc., US District Court, N.D. California, No. 4:26-cv-04286, filed May 8, 2026</a>. Three shoppers allege a lab found d-Limonene in Dove Sensitive Hypoallergenic Body Wash. It calls Conopco "a wholly owned subsidiary of Unilever." What it means: the word hypoallergenic was the whole fight.</li>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.469769/gov.uscourts.cand.469769.12.0.pdf">Notice of voluntary dismissal, same case, June 30, 2026</a>. "The Dismissal is without prejudice." What it means: no ruling, no class settlement, and they can sue again.</li>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.53.0.pdf">Opinion, Novick v. Unilever United States, Inc., US District Court, D. New Jersey, No. 2:25-cv-04804, June 30, 2026</a>. Judge Evelyn Padin found the shoppers "plausibly plead that the Product is not 'hypoallergenic' as labeled," and threw out the common-law fraud claim for now. What it means: the case goes on, and Unilever won part of round one.</li>
-<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.59.0.pdf">Amended complaint, same New Jersey case, filed July 30, 2026</a>. Eight shoppers add Conopco, Inc. and Dove Sensitive Skin bar soap. One alleges she "experienced itchy skin when she used Dove Sensitive Skin Body Wash." What it means: <a href="https://www.courtlistener.com/docket/70342253/novick-v-unilever-united-states-inc/">the docket</a> shows it still open, and nothing is proven.</li>
+<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.njd.569668/gov.uscourts.njd.569668.59.0.pdf">Amended complaint, same New Jersey case, filed July 30, 2026</a>. Eight shoppers add Conopco, Inc., Dove Sensitive Skin bar soap and a Vaseline baby jelly. One alleges she "experienced itchy skin when she used Dove Sensitive Skin Body Wash." What it means: <a href="https://www.courtlistener.com/docket/70342253/novick-v-unilever-united-states-inc/">the docket</a> shows it still open, and nothing is proven.</li>
 </ul>
 </div>
 
@@ -241,7 +239,7 @@ of our health and our finances.</p>
 <p>Mostly these suits are about the words and the price. But in the amended New Jersey complaint, one shopper alleges itchy skin. She says it came while she used Dove Sensitive Skin Body Wash, and eased when she stopped. Another says the bar soap gave her a rash. Nothing is proven.</p>
 
 <p><strong>Is Dove body wash toxic?</strong></p>
-<p>That is not what these suits claim. They say the front promises what the bottle does not hold. And you paid for the promise.</p>
+<p>The New Jersey suit says Dove Sensitive has "toxic ingredients." Nothing is proven yet. And you paid for the promise.</p>
 
 <p><strong>Did Unilever admit anything?</strong></p>
 <p>No. Unilever asked the court to throw out the New Jersey case. It won part of that fight. Every word of each complaint is an allegation.</p>
@@ -270,8 +268,8 @@ of our health and our finances.</p>
    "headline": "Dove Body Wash Lawsuit: Are the 'Hypoallergenic' and 'Collagen' Labels True? (2026)",
    "description": "Two suits allege Dove body wash labels mislead on 'Collagen' and 'hypoallergenic'. A judge let one go on in June 2026. Where they stand, what to use.",
    "image": "https://scan.ismyhometoxic.com/blog-images/dovebodywas-hero-v1.webp",
-   "datePublished": "2026-11-06",
-   "dateModified": "2026-11-06",
+   "datePublished": "2026-10-24",
+   "dateModified": "2026-10-24",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/dove-body-wash-lawsuit"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
@@ -313,7 +311,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Did the lawsuit say Dove body wash hurt anyone?",
    "acceptedAnswer": {"@type": "Answer", "text": "Mostly these suits are about the words and the price. But in the amended New Jersey complaint, one shopper alleges itchy skin. She says it came while she used Dove Sensitive Skin Body Wash, and eased when she stopped. Another says the bar soap gave her a rash. Nothing is proven."}},
   {"@type": "Question", "name": "Is Dove body wash toxic?",
-   "acceptedAnswer": {"@type": "Answer", "text": "That is not what these suits claim. They say the front promises what the bottle does not hold. And you paid for the promise."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "The New Jersey suit says Dove Sensitive has \"toxic ingredients.\" Nothing is proven yet. And you paid for the promise."}},
   {"@type": "Question", "name": "Did Unilever admit anything?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. Unilever asked the court to throw out the New Jersey case. It won part of that fight. Every word of each complaint is an allegation."}}
  ]
