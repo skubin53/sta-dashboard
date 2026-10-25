@@ -53,7 +53,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You keep a pack of Al Fresco chicken sausage in the freezer for fast weeknight dinners. Yes, 11 flavors of it are on the recall list.</p>
-<p><strong><a href="https://content.govdelivery.com/accounts/USFSIS/bulletins/42f8d37">On October 17, 2026, Kayem Foods recalled about 1,584,361 pounds of ready-to-eat meat and poultry. The USDA says it "may have experienced temperature abuse" in a warehouse cooler.</a></strong> Kayem's own list names 18 Al Fresco items.</p>
+<p><strong><a href="https://content.govdelivery.com/accounts/USFSIS/bulletins/42f8d37">On October 17, 2026, the USDA said Kayem Foods is recalling about 1,584,361 pounds of ready-to-eat meat and poultry that "may have experienced temperature abuse" in a warehouse cooler.</a></strong> Kayem's own list names 18 Al Fresco items.</p>
 <p>No one is confirmed sick. Match the UPC on your pack tonight. If it is listed, throw it out.</p>
 </div>
 
@@ -121,7 +121,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The dates run long. The USDA says the meat was made from about March 31 to October 7, 2026.</p>
 
-<p><a href="https://www.foodsafetynews.com/2026/10/more-than-1-5-million-pounds-of-hot-dogs-bacon-sausage-turkey-breasts-and-more-meat-products-of-various-brands-recalled/">Food Safety News reported that some of it has a long shelf life.</a> The USDA is worried some may still be in your fridge or freezer.</p>
+<p><a href="https://www.foodsafetynews.com/2026/10/more-than-1-5-million-pounds-of-hot-dogs-bacon-sausage-turkey-breasts-and-more-meat-products-of-various-brands-recalled/">Food Safety News reported that some of it has a long shelf life.</a> It says the USDA is worried some may be in your fridge or freezer.</p>
 
 <p>The front still says all natural. The brand's website says "ALL NATURAL. NONE OF THE NASTIES." No pack in your freezer says how cold that warehouse was.</p>
 
