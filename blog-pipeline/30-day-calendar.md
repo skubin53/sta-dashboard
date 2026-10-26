@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-10-25 | 2 posts every publish day (even dates) | starts 2026-10-25 | 30 days
+Switch to America | rebuilt 2026-10-26 | 2 posts every publish day (even dates) | starts 2026-10-26 | 30 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -20,36 +20,34 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-10-25 | Sun | 1 | shopper | villain | Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026) | ready |
-| 2026-10-25 | Sun | 2 | builder | villain | Is Full Retirement Age Changing in November? What the 1983 Schedule Really Does Next (2026) | ready |
-| 2026-10-26 | Mon | 1 | shopper | villain | Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026) | ready |
-| 2026-10-26 | Mon | 2 | builder | villain | Is My Medicare Advantage Plan Going Away? Which Insurers Are Leaving Counties for 2027 (2026) | ready |
-| 2026-10-27 | Tue | 1 | shopper | villain | Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026) | ready |
-| 2026-10-27 | Tue | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
-| 2026-10-28 | Wed | 1 | shopper | villain | Is Al Fresco Chicken Sausage Recalled? What Is on the Kayem Recall List (2026) | ready |
-| 2026-10-28 | Wed | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
+| 2026-10-26 | Mon | 1 | shopper | villain | Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026) | ready |
+| 2026-10-26 | Mon | 2 | builder | villain | Is Full Retirement Age Changing in November? What the 1983 Schedule Really Does Next (2026) | ready |
+| 2026-10-27 | Tue | 1 | shopper | villain | Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026) | ready |
+| 2026-10-27 | Tue | 2 | builder | villain | Is My Medicare Advantage Plan Going Away? Which Insurers Are Leaving Counties for 2027 (2026) | ready |
+| 2026-10-28 | Wed | 1 | shopper | villain | Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026) | ready |
+| 2026-10-28 | Wed | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
 | 2026-10-29 | Thu | 1 | shopper | villain | Is Tylenol Being Recalled? What Amazon's Acetaminophen Recall Actually Covers (2026) | ready |
-| 2026-10-29 | Thu | 2 | builder | villain | Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026) | ready |
+| 2026-10-29 | Thu | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
 | 2026-10-30 | Fri | 1 | shopper | villain | Was Gas-X Recalled? Which Lots Had Machine Coolant Leak Into Them (2026) | ready |
-| 2026-10-30 | Fri | 2 | builder | villain | Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026) | ready |
+| 2026-10-30 | Fri | 2 | builder | villain | Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026) | ready |
 | 2026-10-31 | Sat | 1 | shopper | villain | Why Is Turkey So Expensive This Year? What Butterball Agreed to Pay $34 Million to Settle (2026) | ready |
-| 2026-10-31 | Sat | 2 | builder | villain | Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026) | ready |
+| 2026-10-31 | Sat | 2 | builder | villain | Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026) | ready |
 | 2026-11-01 | Sun | 1 | shopper | villain | Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026) | ready |
-| 2026-11-01 | Sun | 2 | builder | villain | Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026) | ready |
+| 2026-11-01 | Sun | 2 | builder | villain | Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026) | ready |
 | 2026-11-02 | Mon | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
-| 2026-11-02 | Mon | 2 | builder | villain | Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026) | ready |
+| 2026-11-02 | Mon | 2 | builder | villain | Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026) | ready |
 | 2026-11-03 | Tue | 1 | shopper | villain | Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026) | ready |
-| 2026-11-03 | Tue | 2 | builder | villain | What Happens to Your Income If You Stop Working for 90 Days? (2026) | ready |
+| 2026-11-03 | Tue | 2 | builder | villain | Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026) | ready |
 | 2026-11-04 | Wed | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
-| 2026-11-04 | Wed | 2 | builder | villain | What Is the Saver's Match in 2027? Who Gets Up to $1,000, and Does Side Business Income Count? (2026) | ready |
+| 2026-11-04 | Wed | 2 | builder | villain | What Happens to Your Income If You Stop Working for 90 Days? (2026) | ready |
 | 2026-11-05 | Thu | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026) | ready |
-| 2026-11-05 | Thu | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
+| 2026-11-05 | Thu | 2 | builder | villain | What Is the Saver's Match in 2027? Who Gets Up to $1,000, and Does Side Business Income Count? (2026) | ready |
 | 2026-11-06 | Fri | 1 | shopper | villain | Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026) | ready |
-| 2026-11-06 | Fri | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026) | ready |
+| 2026-11-06 | Fri | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
 | 2026-11-07 | Sat | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
-| 2026-11-07 | Sat | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
+| 2026-11-07 | Sat | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026) | ready |
 | 2026-11-08 | Sun | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
-| 2026-11-08 | Sun | 2 | builder | villain | Why Did Optavia Change Its Name to Trilivy? What Medifast's Own Numbers Say About Coaches (2026) | ready |
+| 2026-11-08 | Sun | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
 | 2026-11-09 | Mon | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
 | 2026-11-09 | Mon | 2 | builder | villain | Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026) | ready |
 | 2026-11-10 | Tue | 1 | shopper | villain | Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026) | ready |
@@ -80,3 +78,5 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-11-22 | Sun | 2 | builder | villain | Why Can't I Get Monetized on YouTube? What YouTube's 2027 Rules Change for New Creators (2026) | ready |
 | 2026-11-23 | Mon | 1 | shopper | villain | Is Roundup Safe to Use Around Your House? (2026) | ready |
 | 2026-11-23 | Mon | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | ready |
+| 2026-11-24 | Tue | 1 | shopper | villain | Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026) | ready |
+| 2026-11-24 | Tue | 2 | builder | villain | Why Do I Never Hear Back From Job Applications? What New York's Ghost Job Bill Would Make Employers Say (2026) | ready |

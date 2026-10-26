@@ -1,11 +1,11 @@
 {
- "start": "2026-10-25",
+ "start": "2026-10-26",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-25",
-   "weekday": "Sun",
+   "date": "2026-10-26",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "are-panty-liners-safe-to-wear-daily",
@@ -24,20 +24,20 @@
      "slug": "is-full-retirement-age-changing-in-november",
      "title": "Is Full Retirement Age Changing in November? What the 1983 Schedule Really Does Next (2026)",
      "cat": "Builders",
-     "why": "photos already done",
+     "why": "already written",
      "perish": -3,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-10-26",
-   "weekday": "Mon",
+   "date": "2026-10-27",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "are-rechargeable-hand-warmers-safe",
@@ -68,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-10-27",
-   "weekday": "Tue",
+   "date": "2026-10-28",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "are-starbucks-protein-drinks-healthy",
@@ -100,38 +100,6 @@
    ]
   },
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "kayem-recall-list-2026",
-     "title": "Is Al Fresco Chicken Sausage Recalled? What Is on the Kayem Recall List (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "do-medicaid-work-requirements-apply-to-caregivers",
-     "title": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-10-29",
    "weekday": "Thu",
    "slots": [
@@ -149,8 +117,8 @@
      "track": "shopper"
     },
     {
-     "slug": "does-self-employment-count-for-medicaid-work-requirements",
-     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
+     "slug": "do-medicaid-work-requirements-apply-to-caregivers",
+     "title": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -181,8 +149,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-amare-global-legit",
-     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
+     "slug": "does-self-employment-count-for-medicaid-work-requirements",
+     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -202,19 +170,19 @@
     {
      "slug": "why-is-turkey-so-expensive-this-year",
      "title": "Why Is Turkey So Expensive This Year? What Butterball Agreed to Pay $34 Million to Settle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "cat": "Food",
+     "why": "already written",
      "perish": -3,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
-     "slug": "is-mary-kay-going-affiliate",
-     "title": "Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)",
+     "slug": "is-amare-global-legit",
+     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -245,8 +213,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-nu-skin-still-in-business",
-     "title": "Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026)",
+     "slug": "is-mary-kay-going-affiliate",
+     "title": "Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -277,8 +245,8 @@
      "track": "shopper"
     },
     {
-     "slug": "should-i-take-the-buyout",
-     "title": "Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)",
+     "slug": "is-nu-skin-still-in-business",
+     "title": "Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -309,6 +277,38 @@
      "track": "shopper"
     },
     {
+     "slug": "should-i-take-the-buyout",
+     "title": "Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
      "slug": "income-if-you-stop-for-90-days",
      "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
      "cat": "Builders",
@@ -324,13 +324,13 @@
    ]
   },
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -356,38 +356,6 @@
    ]
   },
   {
-   "date": "2026-11-05",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "is-clear-eyes-safe",
-     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
-     "cat": "Personal Care",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "questions-before-joining-anything",
-     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-11-06",
    "weekday": "Fri",
    "slots": [
@@ -405,8 +373,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-are-health-insurance-premiums-going-up",
-     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
+     "slug": "questions-before-joining-anything",
+     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -437,8 +405,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
+     "slug": "why-are-health-insurance-premiums-going-up",
+     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -469,8 +437,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-optavia-change-its-name-trilivy",
-     "title": "Why Did Optavia Change Its Name to Trilivy? What Medifast's Own Numbers Say About Coaches (2026)",
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -951,6 +919,38 @@
     {
      "slug": "why-did-my-blog-traffic-drop-2026",
      "title": "Why Did My Blog Traffic Drop in 2026? And What to Build Instead",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-stove-top-stuffing-bad-for-you",
+     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-do-i-never-hear-back-from-job-applications",
+     "title": "Why Do I Never Hear Back From Job Applications? What New York's Ghost Job Bill Would Make Employers Say (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -1,
