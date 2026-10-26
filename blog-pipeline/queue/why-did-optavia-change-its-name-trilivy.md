@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-26
+date: 2026-10-25
 title: Why Did Optavia Change Its Name to Trilivy? What Medifast's Own Numbers Say About Coaches (2026)
 slug: why-did-optavia-change-its-name-trilivy
 keyword: why did optavia change its name
@@ -47,12 +47,12 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 26, 2026<br><span style="font-size:.92em;">Published October 26, 2026 &middot; Last updated October 26, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 25, 2026<br><span style="font-size:.92em;">Published October 25, 2026 &middot; Last updated October 25, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You built your coaching on the OPTAVIA name. On July 17, 2026, Medifast changed it to Trilivy.</p>
-<p>Here is the short version. Medifast says OPTAVIA was known mostly for one thing, weight loss. <strong><a href="https://s204.q4cdn.com/637190801/files/doc_news/Medifast-Enters-a-New-Era-Introducing-Trilivy-a-Science-Backed-Metabolic-Health-System-2026.pdf">Its release calls Trilivy "an evolution of the company's vision."</a></strong></p>
+<p>Here is the short version. Medifast says OPTAVIA was known mostly for one thing, weight loss. <strong><a href="https://s204.q4cdn.com/637190801/files/doc_news/Medifast-Enters-a-New-Era-Introducing-Trilivy-a-Science-Backed-Metabolic-Health-System-2026.pdf">Its release calls the change "an evolution of the company's vision."</a></strong></p>
 <p>Its own numbers say more. By the end of June 2026 it counted about 11,700 active earning coaches. That is down 48.7% in a year, and it expects fewer still.</p>
 <p>That is the whole post. The rest is the proof, and what to do on Monday.</p>
 </div>
@@ -77,7 +77,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>It is past ten. One lamp is still on in your home office. The laptop is shut and the chair is pushed back.</p>
 
-<p>You know the list. The client who texted to ask if her order still comes, the old flyers in the closet, the new logo for your page, the fee you have not paid, and that feeling that the name was running your business instead of the other way around.</p>
+<p>You know the list. The client who texted to ask if her order still comes. The old flyers in the closet. The new logo for your page. The fee you have not paid. And that feeling that the name was running your business instead of the other way around.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/whydidoptav-villain-v1.webp" alt="An empty home office at night with one lamp on, a closed laptop, a half glass of water and the desk chair pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -141,7 +141,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p><a href="https://s204.q4cdn.com/637190801/files/doc_financials/2026/q2/MEDQ22026EarningsRelease.pdf">The CEO saw "signs of a turnaround."</a> By its count, revenue per coach is up 41.0% from a year ago. It says it is on track to make a profit again in the fourth quarter.</p>
 
-<p>I will give them that. A company can be doing fine.</p>
+<p>I will give them that. It lost $3.1 million that quarter and kept going.</p>
 
 <p>Now read how the CFO, James Maloney, put it. <a href="https://www.fool.com/earnings/call-transcripts/2026/08/10/medifast-med-q2-2026-earnings-call-transcript/">He said the company is building "a new coach leadership structure, which includes deprioritizing less productive coaches."</a></p>
 
@@ -299,8 +299,8 @@ our finances.</p>
    "headline": "Why Did Optavia Change Its Name to Trilivy? What Medifast's Own Numbers Say About Coaches (2026)",
    "description": "OPTAVIA became Trilivy on July 17, 2026. Medifast's own count: about 11,700 active earning coaches, down 48.7% in a year. What to ask next.",
    "image": "https://scan.ismyhometoxic.com/blog-images/whydidoptav-hero-v1.webp",
-   "datePublished": "2026-10-26",
-   "dateModified": "2026-10-26",
+   "datePublished": "2026-10-25",
+   "dateModified": "2026-10-25",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/why-did-optavia-change-its-name-trilivy"},
    "author": {"@id": "https://theshannonnicole.com/post/why-did-optavia-change-its-name-trilivy#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
