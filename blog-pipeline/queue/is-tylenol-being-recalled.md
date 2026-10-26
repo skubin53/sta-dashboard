@@ -84,7 +84,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: no new Tylenol-brand recall this fall. The last two were in late 2025. One was a single lot, and the other was one distributor's stock.</p>
 
-<p>Recall records checked October 24, 2026.</p>
+<p>Recall records checked October 26, 2026.</p>
 
 <p>You want to know before you hand your husband something for his fever tonight. That is fair.</p>
 
@@ -92,7 +92,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0277-2026%22">In December 2025, Gold Star Distribution pulled the small Tylenol packs it had shipped.</a> The record cites "rodent exposure/activity" where it stored them. That was one warehouse, not Kenvue's plant.</p>
 
-<p>So the bottle in the news is not Tylenol at all. It is acetaminophen, the medicine inside Tylenol, with Amazon's name on the front.</p>
+<h3 id="acetaminophen">What is acetaminophen?</h3>
+
+<p>It is the medicine inside Tylenol. The bottle in the news is not Tylenol at all. It is acetaminophen with Amazon's name on the front.</p>
 
 <h2 id="which-bottles">Which Amazon bottles are on the recall?</h2>
 
@@ -134,7 +136,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Amazon told Fox Business the pills came from Aurohealth. <a href="https://www.aurobindo.com/our-business">Aurobindo's own website lists AuroHealth as one of its US companies.</a></p>
 
-<p>And so the name on your bottle tells you who sold it. It does not tell you who made it.</p>
+<p>So the name on your bottle tells you who sold it. It does not tell you who made it.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/istylenolbe-turning-point-v1.webp" alt="A woman in her fifties setting a bottle of pain reliever down and looking out the kitchen window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -263,7 +265,7 @@ of our health and our finances.</p>
 <p>Set the bottle aside and contact Amazon customer service. The recall does not say what changed the color of the pills.</p>
 
 <p><strong>Is the 500 count Amazon bottle on the list too?</strong></p>
-<p>Five lots of it are, by Fox Business's count, plus one lot of the 200 count. Match your lot number, not the size. You caught this one, and you will catch the next one too.</p>
+<p>Five lots of it are, by Fox Business's count, plus one lot each of the 200 and 1,000 count. Match your lot number, not the size. You caught this one, and you will catch the next one too.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
@@ -333,7 +335,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "What if I already took pills from a recalled bottle?",
    "acceptedAnswer": {"@type": "Answer", "text": "Set the bottle aside and contact Amazon customer service. The recall does not say what changed the color of the pills."}},
   {"@type": "Question", "name": "Is the 500 count Amazon bottle on the list too?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Five lots of it are, by Fox Business's count, plus one lot of the 200 count. Match your lot number, not the size. You caught this one, and you will catch the next one too."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "Five lots of it are, by Fox Business's count, plus one lot each of the 200 and 1,000 count. Match your lot number, not the size. You caught this one, and you will catch the next one too."}}
  ]
 }
 </script>
