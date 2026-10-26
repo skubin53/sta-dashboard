@@ -102,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h2>Your next steps</h2>
 <ol class="steps">
 <li><b>Show up.</b><span>Someone is setting this time aside just for you. Please be there, too. If life happens, just reply to our text and we will find a new time together.</span></li>
-<li><b>Put it on your calendar.</b><span>Tap the calendar button above, or set a reminder on your phone so you don't miss it.</span></li>
+<li><b>Put it on your calendar.</b><span id="calStep">Add it from our text or email, or set a reminder on your phone so you don't miss it.</span></li>
 <li><b>Be near a screen.</b><span>During the call we will text you a link so you can follow along. A computer or tablet is best. Your phone works too.</span></li>
 <li><b>Watch for our text.</b><span>We will text you to confirm, and again before we talk. Save the number so you know it's us.</span></li>
 </ol>
@@ -149,7 +149,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var opts = {weekday: "long", month: "long", day: "numeric", hour: "numeric", minute: "2-digit"};
     try { if (tz) opts.timeZone = tz; document.getElementById("whenText").textContent = start.toLocaleString("en-US", opts); }
     catch (e) { delete opts.timeZone; document.getElementById("whenText").textContent = start.toLocaleString("en-US", opts); }
-    document.getElementById("whenZone").textContent = tz ? "Time shown in " + tz.replace(/_/g, " ") : "Time shown in your time zone";
+    var zones = {"America/New_York": "Eastern Time", "America/Detroit": "Eastern Time", "America/Chicago": "Central Time", "America/Denver": "Mountain Time", "America/Boise": "Mountain Time", "America/Phoenix": "Arizona Time", "America/Los_Angeles": "Pacific Time", "America/Anchorage": "Alaska Time", "Pacific/Honolulu": "Hawaii Time"};
+    document.getElementById("whenZone").textContent = tz ? "Time shown in " + (zones[tz] || tz.replace(/_/g, " ")) : "Time shown in your time zone";
     document.getElementById("when").hidden = false;
     document.getElementById("whenNone").hidden = true;
 
@@ -165,6 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "END:VEVENT", "END:VCALENDAR"].join("\r\n");
     document.getElementById("ical").href = "data:text/calendar;charset=utf-8," + encodeURIComponent(ics);
     document.getElementById("cal").hidden = false;
+    document.getElementById("calStep").textContent = "Tap a calendar button above, or set a reminder on your phone so you don't miss it.";
   }
 
   // The video, once there is one.
