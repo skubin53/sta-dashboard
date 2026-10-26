@@ -92,7 +92,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="alt" id="videoBox" hidden>
 <div class="wrap">
-<h2>A quick hello before we talk</h2>
+<h2>Watch this before we talk</h2>
+<p>It is about 7 minutes. Grab a coffee and press play.</p>
 <div class="video" id="videoFrame"></div>
 </div>
 </section>
@@ -127,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function(){
   // A video can be added later: put a YouTube, Vimeo or .mp4 link here.
-  var VIDEO = "";
+  var VIDEO = "https://assets.cdn.filesafe.space/pkNKuHS8wz0aQmZKEXHr/media/693100390b0f9d68df7bc5e0.mov";
 
   var q = new URLSearchParams(location.search);
   function get(){ for (var i = 0; i < arguments.length; i++) { var v = q.get(arguments[i]); if (v) return v.trim(); } return ""; }
@@ -176,11 +177,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if (yt || vm) {
       el = document.createElement("iframe");
       el.src = yt ? "https://www.youtube-nocookie.com/embed/" + yt[1] + "?rel=0" : "https://player.vimeo.com/video/" + vm[1];
-      el.title = "A quick hello before we talk";
+      el.title = "Watch this before we talk";
       el.setAttribute("allow", "fullscreen; picture-in-picture");
     } else {
+      // An iPhone .mov is H.264 inside an MP4-type file: typed as mp4 so every browser tries it,
+      // and "#t=0.5" makes phones show a frame instead of a black box before play.
       el = document.createElement("video");
-      el.src = VIDEO; el.controls = true; el.playsInline = true; el.preload = "metadata";
+      el.controls = true; el.playsInline = true; el.preload = "metadata";
+      var src = document.createElement("source");
+      src.src = VIDEO + "#t=0.5"; src.type = "video/mp4";
+      el.appendChild(src);
     }
     box.appendChild(el);
     document.getElementById("videoBox").hidden = false;
