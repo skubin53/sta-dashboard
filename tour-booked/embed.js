@@ -104,6 +104,18 @@
       '<p class="foot">Copyright ' + new Date().getFullYear() + ' - SwitchToAmerica.com</p>' +
     '</div>';
 
+  // On the GHL page: GHL's section, row and column add top padding (a white strip above the
+  // flag header). Clear it so the header sits at the very top, as on the original.
+  var up = root.parentElement, hops = 0;
+  while (up && up !== document.body && hops++ < 10) {
+    if (/\bc-(section|row|column|wrapper|custom-code)\b|\binner\b/.test(String(up.className || ""))) {
+      up.style.setProperty("padding-top", "0", "important");
+      up.style.setProperty("margin-top", "0", "important");
+    }
+    up = up.parentElement;
+  }
+  if (!document.title) document.title = "Tour Booked";
+
   // ---- calendar buttons ------------------------------------------------------------------
   // 1) GHL's own links, when this runs on a GHL page and GHL filled in the fields.
   // 2) Otherwise built from a start time in the address (?start_time=...&timezone=...).
