@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-27
+date: 2026-10-26
 title: Is Full Retirement Age Changing in November? What the 1983 Schedule Really Does Next (2026)
 slug: is-full-retirement-age-changing-in-november
 keyword: is full retirement age changing in november
@@ -47,7 +47,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 27, 2026<br><span style="font-size:.92em;">Published October 27, 2026 &middot; Last updated October 27, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 26, 2026<br><span style="font-size:.92em;">Published October 26, 2026 &middot; Last updated October 26, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -291,8 +291,8 @@ our finances.</p>
    "headline": "Is Full Retirement Age Changing in November? What the 1983 Schedule Really Does Next (2026)",
    "description": "No. Born on January 2, 1960 or later, yours is 67, set by a 1983 law. The new name Congress passed, and who can move the line again.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isfullretir-hero-v1.webp",
-   "datePublished": "2026-10-27",
-   "dateModified": "2026-10-27",
+   "datePublished": "2026-10-26",
+   "dateModified": "2026-10-26",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/is-full-retirement-age-changing-in-november"},
    "author": {"@id": "https://theshannonnicole.com/post/is-full-retirement-age-changing-in-november#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
