@@ -100,7 +100,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <h2 id="your-month">When does your full age actually arrive?</h2>
 
-<p class="quick-answer">Quick answer: in the month you reach 67, if you were born on January 2, 1960 or later. Born in 1959, it is 66 and 10 months.</p>
+<p class="quick-answer">Quick answer: in the month you reach 67, if you were born on January 2, 1960 or later. Born in 1959 after January 1, it is 66 and 10 months.</p>
 
 <p>Say you were born in March 1966. Add 67 years. Your month is March 2033.</p>
 
