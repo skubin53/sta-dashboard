@@ -99,15 +99,15 @@ vault_checked: [money-at-fifty, capped-corporate, Builder-Target-Segments, Recur
 
 <h2 id="who-decided">Who decided her county was not worth it?</h2>
 
-<p class="quick-answer">Quick answer: the insurer did. UnitedHealth Group is leaving 228 counties, and its own report shows fewer seniors and a bigger margin.</p>
+<p class="quick-answer">Quick answer: the insurer did. KFF counts UnitedHealth Group leaving 228 counties, and the company's own report shows fewer seniors and a bigger margin.</p>
 
 <p>These plans are sold one county at a time. Each year, the insurers pick where to sell.</p>
 
-<p>KFF lists the reasons. The last one is <a href="https://www.kff.org/medicare/medicare-advantage-plan-availability-varies-widely-by-county-for-2027/">"the insurers' assessment of profitability."</a> In plain words, is the county worth it to them?</p>
+<p>KFF lists the likely factors. The last one is <a href="https://www.kff.org/medicare/medicare-advantage-plan-availability-varies-widely-by-county-for-2027/">"the insurers' assessment of profitability."</a> In plain words, is the county worth it to them?</p>
 
 <p>UnitedHealth Group is one of the two biggest sellers of these plans. For 2027, KFF counts it leaving 228 counties and moving into 9. It sold in nearly 80% of counties in 2026. Next year it is about 70%.</p>
 
-<p>Now look at its own words. <a href="https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2026/unh-reports-third-quarter-2026-results.pdf">Its third quarter report</a> came out on October 13, 2026. It says the seniors in its plans "contracted by 935,000 since year-end 2025." That means 935,000 fewer.</p>
+<p>Now look at its own words. <a href="https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2026/unh-reports-third-quarter-2026-results.pdf">Its third quarter report</a> came out on October 13, 2026. It says the seniors it serves through Medicare Advantage "have contracted by 935,000 since year-end 2025." That means 935,000 fewer.</p>
 
 <p>The same report says its insurance side kept 3.3 cents of each dollar, up from 2.1 cents a year before. Its reasons include "benefit changes and pricing discipline."</p>
 
@@ -122,9 +122,10 @@ vault_checked: [money-at-fifty, capped-corporate, Builder-Target-Segments, Recur
 <tr><td>UnitedHealth Group</td><td>228</td><td>9</td></tr>
 <tr><td>CVS Health</td><td>186</td><td>63</td></tr>
 <tr><td>Blue Cross Blue Shield of Michigan</td><td>177</td><td>1</td></tr>
+<tr><td>Group 1001 (Clear Spring Health)</td><td>138, all of them</td><td>none</td></tr>
+<tr><td>Molina Healthcare</td><td>75, all of them</td><td>none, though Molina still offers special needs plans in many counties</td></tr>
 <tr><td>Elevance Health</td><td>66</td><td>10</td></tr>
 <tr><td>Humana</td><td>62</td><td>4</td></tr>
-<tr><td>Group 1001 (Clear Spring Health) and Molina Healthcare</td><td>every county, for these plans</td><td>none, though Molina still offers special needs plans in many counties</td></tr>
 </table>
 
 <p>KFF counted only plans with drug coverage that anyone can buy. Nobody mails your mom that table. Keep this one by the phone.</p>
@@ -179,7 +180,7 @@ vault_checked: [money-at-fifty, capped-corporate, Builder-Target-Segments, Recur
 
 <p>I would rather you knew who writes the rules before the next letter comes.</p>
 
-<p>Here is what I can tell you about here. Switch to America sells straight from the manufacturer. No middlemen and no markup.</p>
+<p>Here is what I can tell you about us. Switch to America sells straight from the manufacturer. No middlemen and no markup.</p>
 
 <p>I will not hand you a number to expect. Nobody honest can. And the twenty minutes are about you, not about her plan.</p>
 
@@ -224,7 +225,7 @@ our finances.</p>
 <li><a href="https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/change-in-plan-availability">Medicare.gov, Plan Non-Renewal Notice</a>. It comes in October, from the plan. This is the letter that means look for a new plan.</li>
 <li><a href="https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/upcoming-plan-changes">Medicare.gov, Plan Annual Notice of Change</a>. The gentler letter. It comes in September and lists what changes in January.</li>
 <li><a href="https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan">Medicare.gov, the enrollment dates</a>. Open enrollment runs October 15 to December 7. The free SHIP counselors are named here too.</li>
-<li><a href="https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods">Medicare.gov, Special Enrollment Periods</a>. December 8 to the last day of February, when a plan's contract isn't renewed. The backstop, in Medicare's own words.</li>
+<li><a href="https://www.medicare.gov/basics/get-started-with-medicare/get-more-coverage/joining-a-plan/special-enrollment-periods">Medicare.gov, Special Enrollment Periods</a>. December 8 to the last day of February, when a plan's contract isn't renewed. The backstop, on Medicare's own site.</li>
 </ul>
 <p class="micro">KFF counts only Medicare Advantage plans with drug coverage open to anyone. Other counts you see in the news may use other rules, so they may not match.</p>
 </div>
