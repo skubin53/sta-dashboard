@@ -15,6 +15,12 @@ along with the next republish of that post for any other reason.
 
 ## Open
 
+### 2026-10-27, cookie-vs-customer + ltk-creator-payout-change (builder), typo "about here"
+- **Found:** 2026-10-27 by the checklist check on is-my-medicare-advantage-plan-going-away, which carried the same line (fixed there before it published).
+- **What is wrong live:** both pages on theshannonnicole.com read "Here is what I can tell you about here." in the Switch to America paragraph.
+- **Fixed in repo to:** "Here is what I can tell you about us." in both queue files.
+- **Live fix:** a one-word edit in the GoHighLevel Code Editor for each post (not worth a republish).
+
 ### 2026-07-26, Ziploc post, dead FDA citation
 - **Found:** 2026-08-24, first full audit of every outbound receipt across all published posts.
 - **What is wrong live:** the sentence about "microwave safe" having no regulated meaning links
