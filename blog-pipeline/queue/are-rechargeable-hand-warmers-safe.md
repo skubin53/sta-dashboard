@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-26
+date: 2026-10-27
 title: Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026)
 slug: are-rechargeable-hand-warmers-safe
 keyword: are rechargeable hand warmers safe
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 26, 2026<br><span style="font-size:.92em;">Published October 26, 2026 &middot; Last updated October 26, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 27, 2026<br><span style="font-size:.92em;">Published October 27, 2026 &middot; Last updated October 27, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -88,7 +88,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.cpsc.gov/Recalls/2027/Kobayashi-Recalls-Rechargeable-Hand-Warmers-Due-to-Risk-of-Serious-Injury-from-Fire-and-Burn-Hazards">The US Consumer Product Safety Commission posted recall 27-011 on October 1, 2026.</a> It covers about 77,000 of these warmers. They sold in stores and on Amazon from July 2025 through August 2026, for $30 to $40.</p>
 
-<p>The notice tells you to stop using it right away. Kobayashi owes you "a full refund."</p>
+<p>The notice tells you to stop using it right away. Then contact Kobayashi for "a full refund."</p>
 
 <h3 id="the-battery">The lithium-ion battery in your pocket</h3>
 
@@ -108,7 +108,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://hothands.com/recall-notice-rechargeable">It points to the OCOOPA recall first.</a> Then it says its own warmers "share the identical lithium-ion battery and electrical components."</p>
 
-<p><a href="https://www.cpsc.gov/Recalls/2026/OCOOPA-Direct-Recalls-1-5-Million-Rechargeable-Hand-Warmers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards-One-Death-Reported-Imported-by-Shenzhen-Street-Cat-Technology">OCOOPA's recall lists 350 burn injuries and the death of an 83-year-old in San José, California, in February 2026.</a></p>
+<p><a href="https://www.cpsc.gov/Recalls/2026/OCOOPA-Direct-Recalls-1-5-Million-Rechargeable-Hand-Warmers-Due-to-Risk-of-Serious-Injury-or-Death-from-Fire-and-Burn-Hazards-One-Death-Reported-Imported-by-Shenzhen-Street-Cat-Technology">OCOOPA's recall lists 350 burn injuries and the death of an 83-year-old in California in February 2026.</a></p>
 
 <p>Those are OCOOPA's numbers. HotHands reports none.</p>
 
@@ -250,7 +250,7 @@ of our health and our finances.</p>
 <p>Not model H163650. The recall says to stop using it now and ask Kobayashi for a full refund. No one has reported a burn. But HotHands says its battery matches the one in OCOOPA's warmers.</p>
 
 <p><strong>How do I know if my rechargeable hand warmer is recalled?</strong></p>
-<p>Turn it over. HotHands model H163650 is printed on the bottom. If yours says OCOOPA on top, look on the bottom for UT3053, UT3056, ZLS-118, ZLS-118S, ZLS-118D, H01 or H01(PD). All seven are recalled. If it says Gobi Heat, look for UT3053.</p>
+<p>Turn it over. HotHands model H163650 is printed on the bottom. If yours says OCOOPA on top, look on the bottom for UT3053, UT3056, ZLS-118, ZLS-118S, ZLS-118D, H01 or H01(PD). For Gobi Heat, look for UT3053.</p>
 
 <p><strong>Are the air-activated HotHands packs recalled too?</strong></p>
 <p>No. HotHands says this recall does not involve them. That tells you what was recalled, and nothing more. For cold hands this winter, plain wool gloves have nothing inside to recall.</p>
@@ -282,8 +282,8 @@ of our health and our finances.</p>
    "headline": "Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026)",
    "description": "HotHands recalled about 77,000 rechargeable hand warmers. Its notice says they use the same battery as OCOOPA's, recalled after 350 reported burns.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arerecharge-hero-v1.webp",
-   "datePublished": "2026-10-26",
-   "dateModified": "2026-10-26",
+   "datePublished": "2026-10-27",
+   "dateModified": "2026-10-27",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-rechargeable-hand-warmers-safe"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
@@ -323,7 +323,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Are HotHands rechargeable hand warmers safe to use right now?",
    "acceptedAnswer": {"@type": "Answer", "text": "Not model H163650. The recall says to stop using it now and ask Kobayashi for a full refund. No one has reported a burn. But HotHands says its battery matches the one in OCOOPA's warmers."}},
   {"@type": "Question", "name": "How do I know if my rechargeable hand warmer is recalled?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Turn it over. HotHands model H163650 is printed on the bottom. If yours says OCOOPA on top, look on the bottom for UT3053, UT3056, ZLS-118, ZLS-118S, ZLS-118D, H01 or H01(PD). All seven are recalled. If it says Gobi Heat, look for UT3053."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Turn it over. HotHands model H163650 is printed on the bottom. If yours says OCOOPA on top, look on the bottom for UT3053, UT3056, ZLS-118, ZLS-118S, ZLS-118D, H01 or H01(PD). For Gobi Heat, look for UT3053."}},
   {"@type": "Question", "name": "Are the air-activated HotHands packs recalled too?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. HotHands says this recall does not involve them. That tells you what was recalled, and nothing more. For cold hands this winter, plain wool gloves have nothing inside to recall."}},
   {"@type": "Question", "name": "Can I just throw my old one in the trash?",
