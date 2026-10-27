@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-10-26 | 2 posts every publish day (even dates) | starts 2026-10-26 | 30 days
+Switch to America | rebuilt 2026-10-27 | 2 posts every publish day (even dates) | starts 2026-10-27 | 30 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -20,13 +20,11 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-10-26 | Mon | 1 | shopper | villain | Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026) | ready |
-| 2026-10-26 | Mon | 2 | builder | villain | Is Full Retirement Age Changing in November? What the 1983 Schedule Really Does Next (2026) | ready |
-| 2026-10-27 | Tue | 1 | shopper | villain | Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026) | ready |
+| 2026-10-27 | Tue | 1 | shopper | villain | Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026) | ready |
 | 2026-10-27 | Tue | 2 | builder | villain | Is My Medicare Advantage Plan Going Away? Which Insurers Are Leaving Counties for 2027 (2026) | ready |
-| 2026-10-28 | Wed | 1 | shopper | villain | Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026) | ready |
+| 2026-10-28 | Wed | 1 | shopper | villain | Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026) | ready |
 | 2026-10-28 | Wed | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
-| 2026-10-29 | Thu | 1 | shopper | villain | Is Tylenol Being Recalled? What Amazon's Acetaminophen Recall Actually Covers (2026) | ready |
+| 2026-10-29 | Thu | 1 | shopper | villain | Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026) | ready |
 | 2026-10-29 | Thu | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
 | 2026-10-30 | Fri | 1 | shopper | villain | Was Gas-X Recalled? Which Lots Had Machine Coolant Leak Into Them (2026) | ready |
 | 2026-10-30 | Fri | 2 | builder | villain | Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026) | ready |
@@ -80,3 +78,5 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-11-23 | Mon | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | ready |
 | 2026-11-24 | Tue | 1 | shopper | villain | Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026) | ready |
 | 2026-11-24 | Tue | 2 | builder | villain | Why Do I Never Hear Back From Job Applications? What New York's Ghost Job Bill Would Make Employers Say (2026) | ready |
+| 2026-11-25 | Wed | 1 | shopper | villain | Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026) | ready |
+| 2026-11-25 | Wed | 2 | builder | villain | Why Do Women-Owned Businesses Stay Small? (2026) | ready |
