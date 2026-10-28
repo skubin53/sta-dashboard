@@ -1,48 +1,16 @@
 {
- "start": "2026-10-27",
+ "start": "2026-10-28",
  "days": 30,
  "per_day": 2,
  "calendar": [
-  {
-   "date": "2026-10-27",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "are-panty-liners-safe-to-wear-daily",
-     "title": "Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026)",
-     "cat": "Health",
-     "why": "already written",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-my-medicare-advantage-plan-going-away",
-     "title": "Is My Medicare Advantage Plan Going Away? Which Insurers Are Leaving Counties for 2027 (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
   {
    "date": "2026-10-28",
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "are-rechargeable-hand-warmers-safe",
-     "title": "Are Rechargeable Hand Warmers Safe? Why HotHands Just Recalled 77,000 of Them (2026)",
-     "cat": "Home",
+     "slug": "are-panty-liners-safe-to-wear-daily",
+     "title": "Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -3,
      "keyword": "",
@@ -74,14 +42,14 @@
     {
      "slug": "are-starbucks-protein-drinks-healthy",
      "title": "Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "cat": "Food",
+     "why": "already written",
      "perish": -3,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -216,13 +184,13 @@
      "slug": "is-nu-skin-still-in-business",
      "title": "Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026)",
      "cat": "Builders",
-     "why": "photos already done",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -951,6 +919,38 @@
     {
      "slug": "why-do-women-owned-businesses-stay-small",
      "title": "Why Do Women-Owned Businesses Stay Small? (2026)",
+     "cat": "Builders",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-does-my-business-own-me",
+     "title": "Why Does My Business Own Me? (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -1,
