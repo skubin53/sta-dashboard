@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-02
+date: 2026-10-28
 title: Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026)
 slug: is-nu-skin-still-in-business
 keyword: is nu skin still in business
@@ -47,7 +47,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 28, 2026<br><span style="font-size:.92em;">Published October 28, 2026 &middot; Last updated October 28, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -299,8 +299,8 @@ our finances.</p>
    "headline": "Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026)",
    "description": "Yes, Nu Skin is still in business. Its own August report shows 9% fewer Sales Leaders and 14% fewer Customers. What that means for you.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isnuskinsti-hero-v1.webp",
-   "datePublished": "2026-11-02",
-   "dateModified": "2026-11-02",
+   "datePublished": "2026-10-28",
+   "dateModified": "2026-10-28",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/is-nu-skin-still-in-business"},
    "author": {"@id": "https://theshannonnicole.com/post/is-nu-skin-still-in-business#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
