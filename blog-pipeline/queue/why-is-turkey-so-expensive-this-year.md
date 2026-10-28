@@ -240,7 +240,7 @@ of our health and our finances.</p>
 <h2 id="faq">What else do people ask?</h2>
 
 <p><strong>Why is turkey so expensive this year?</strong></p>
-<p>USDA expects the wholesale price of a frozen hen turkey to average 175.5 cents a pound in 2026, up from 135.8 cents in 2025. Bird flu hit 13 commercial turkey flocks in August and September. USDA also points to strong demand as fall buying picks up.</p>
+<p>USDA expects the wholesale price of a frozen hen turkey to average 175.5 cents a pound in 2026, up from 135.8 cents in 2025. Bird flu hit 13 commercial turkey flocks in August and September, but USDA still expects more turkey. It points to strong demand.</p>
 
 <p><strong>Did Butterball admit it fixed turkey prices?</strong></p>
 <p>No. It denies the claims, and the deal says it is not an admission. The court has not decided whether Butterball did anything wrong.</p>
@@ -314,7 +314,7 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Why is turkey so expensive this year?",
-   "acceptedAnswer": {"@type": "Answer", "text": "USDA expects the wholesale price of a frozen hen turkey to average 175.5 cents a pound in 2026, up from 135.8 cents in 2025. Bird flu hit 13 commercial turkey flocks in August and September. USDA also points to strong demand as fall buying picks up."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "USDA expects the wholesale price of a frozen hen turkey to average 175.5 cents a pound in 2026, up from 135.8 cents in 2025. Bird flu hit 13 commercial turkey flocks in August and September, but USDA still expects more turkey. It points to strong demand."}},
   {"@type": "Question", "name": "Did Butterball admit it fixed turkey prices?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. It denies the claims, and the deal says it is not an admission. The court has not decided whether Butterball did anything wrong."}},
   {"@type": "Question", "name": "Can I get money from the Butterball turkey settlement?",
