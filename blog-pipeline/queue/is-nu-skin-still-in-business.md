@@ -53,7 +53,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <h2 id="the-short-answer">The short answer</h2>
 <p>Yes, Nu Skin is still in business. It is getting smaller around you, and nobody asked you first.</p>
 <p>Here is the short version. <strong><a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126032025/ef20079831_ex99-1.htm">In its own August 10 report, Nu Skin counted 26,998 Sales Leaders, 9% fewer than a year before.</a></strong> Customers fell 14%. Paid Affiliates fell 8%.</p>
-<p>One week later, about 5% of its staff around the world were laid off. A company spokesman confirmed it to the Daily Herald.</p>
+<p>One week later, about 5% of its staff around the world were laid off. A company spokesman confirmed it to <a href="https://www.heraldextra.com/news/2026/aug/18/nu-skin-lays-off-employees-tyson-foods-closes-eagle-mountain-beef-facility/">the Daily Herald</a>.</p>
 <p>Your customers still know you.</p>
 <p>Numbers checked October 28, 2026.</p>
 </div>
@@ -84,7 +84,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <img src="https://scan.ismyhometoxic.com/blog-images/isnuskinsti-villain-v1.webp" alt="An empty walnut cabinet kitchen at night with one lamp on, a closed laptop, a half glass of water and the seat pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
-<p>In that August 10 report, the CEO, Ryan Napierski, said Nu Skin is <a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126032025/ef20079831_ex99-1.htm">"re-aligning our organizational resources."</a> The goal, in his words, is "long-term value for our shareholders."</p>
+<p>In that August 10 report, the CEO, Ryan Napierski, said, <a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126032025/ef20079831_ex99-1.htm">"we are re-aligning our organizational resources."</a> The goal, in his words, is "long-term value for our shareholders."</p>
 
 <p>Shareholders are the people who own its stock. You were not in that sentence.</p>
 
@@ -128,7 +128,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p><a href="https://www.ksl.com/article/50822989/provo-based-nu-skin-laying-off-5-of-its-us-workforce">In December 2023 it was about 5% of its US staff.</a> A spokesman told KSL the cut was to "manage costs and align the business to drive future growth."</p>
 
-<p><a href="https://www.heraldextra.com/business/local-business/2024/nov/12/nu-skin-initiates-another-round-of-employee-layoffs-amid-lessened-financial-earnings">In November 2024 there was another round.</a> The company would not say how many.</p>
+<p><a href="https://www.heraldextra.com/business/local-business/2024/nov/12/nu-skin-initiates-another-round-of-employee-layoffs-amid-lessened-financial-earnings">In November 2024 there was another round.</a> The company did not say how many.</p>
 
 <p>Align in 2023. Re-align in 2026. Same word, and both times the staff got smaller.</p>
 
@@ -156,7 +156,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p><a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126032055/ef20075180_10q.htm">It is getting ready to open India in full, in the first half of 2027.</a> That is a real company with real plans, and I will not pretend otherwise.</p>
 
-<p>None of this is about the products either. If you love them, keep loving them.</p>
+<p>None of this is about the products either.</p>
 
 <p>Now me. Switch to America could change its rules too. Any company can.</p>
 
@@ -233,7 +233,7 @@ our finances.</p>
 <li><a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126032025/ef20079831_ex99-1.htm">Nu Skin's second quarter 2026 results, August 10, 2026</a>. 26,998 Sales Leaders, down 9%. 120,291 Paid Affiliates, down 8%. 660,037 Customers, down 14%. Sales of $320.1 million, down 17.1%, and the "re-aligning" line. The shrinking, in the company's own count.</li>
 <li><a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036125029613/ef20053399_ex99-1.htm">Nu Skin's second quarter 2025 results, August 7, 2025</a>. 38,592 Sales Leaders in those months of 2024, and 29,593 in 2025. Two years of the same count, side by side.</li>
 <li><a href="https://www.heraldextra.com/news/2026/aug/18/nu-skin-lays-off-employees-tyson-foods-closes-eagle-mountain-beef-facility/">The Daily Herald, by Jacob Nielson, August 18, 2026</a>. About 5% of Nu Skin's global workforce laid off that Monday, confirmed by a spokesman. The cut came one week after the report.</li>
-<li><a href="https://www.ksl.com/article/50822989/provo-based-nu-skin-laying-off-5-of-its-us-workforce">KSL, by Logan Stefanich, December 18, 2023</a>. About 5% of US staff laid off, to "manage costs and align the business." The same word, three years earlier.</li>
+<li><a href="https://www.ksl.com/article/50822989/provo-based-nu-skin-laying-off-5-of-its-us-workforce">KSL, by Logan Stefanich, December 18, 2023</a>. About 5% of US staff laid off, to "manage costs and align the business." The same word, in 2023.</li>
 <li><a href="https://www.heraldextra.com/business/local-business/2024/nov/12/nu-skin-initiates-another-round-of-employee-layoffs-amid-lessened-financial-earnings">The Daily Herald, by Curtis Booker, November 12, 2024</a>. Another round, number not given, and "a revised business model" starting in North America. The model changed where you build.</li>
 <li><a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126005130/ef20060638_10k.htm">Nu Skin's 2025 annual report, Form 10-K, filed February 13, 2026</a>. The sales force brings in "virtually all of our revenue," and past pay plan changes "negatively impacted our business." It needs you. It still writes the plan.</li>
 <li><a href="https://www.sec.gov/Archives/edgar/data/1021561/000114036126032055/ef20075180_10q.htm">Nu Skin's quarterly report, Form 10-Q, filed August 10, 2026</a>. A $78.9 million loss on paper for its manufacturing arm, and India's full opening expected in the first half of 2027. The losses and the plans, filed side by side.</li>
