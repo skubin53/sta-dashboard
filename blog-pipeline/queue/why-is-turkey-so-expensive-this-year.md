@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-31
+date: 2026-10-28
 title: Why Is Turkey So Expensive This Year? What Butterball Agreed to Pay $34 Million to Settle (2026)
 slug: why-is-turkey-so-expensive-this-year
 keyword: why is turkey so expensive this year
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 31, 2026<br><span style="font-size:.92em;">Published October 31, 2026 &middot; Last updated October 31, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 28, 2026<br><span style="font-size:.92em;">Published October 28, 2026 &middot; Last updated October 28, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -145,7 +145,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.turkeylitigation.com/assets/docs/AgriStats/Exhibit%201%20-%20Revised%209-4-26%20Long%20Form%20Notice%20-%20Final%2009042026.pdf">The court's own notice says it "has not decided whether" Butterball "did anything wrong."</a> And this deal will not take a cent off your bird this year. It covers 2010 to 2016.</p>
 
-<p>If you bought your turkey at a store, you are not in it. The money goes to businesses that bought straight from the companies. Their claims were due October 30, 2026.</p>
+<p>If you bought your turkey at a store, you are not in it. The money goes to businesses that bought straight from the companies. Their claims are due October 30, 2026.</p>
 
 <p>It is not over, either. A second group of buyers was still suing in October. <a href="https://www.courtlistener.com/docket/16610105/1987/in-re-turkey-antitrust-litigation/">On October 19, 2026, the court ordered them and Butterball into "significant and earnest settlement negotiations."</a></p>
 
@@ -246,7 +246,7 @@ of our health and our finances.</p>
 <p>No. It denies the claims, and the deal says it is not an admission. The court has not decided whether Butterball did anything wrong.</p>
 
 <p><strong>Can I get money from the Butterball turkey settlement?</strong></p>
-<p>Not for a turkey you bought at a store. The money goes to businesses that bought turkey straight from the companies from 2010 to 2016. Their claims were due October 30, 2026.</p>
+<p>Not for a turkey you bought at a store. The money goes to businesses that bought turkey straight from the companies from 2010 to 2016. Their claims are due October 30, 2026.</p>
 
 <p><strong>What if there is no turkey farm near me?</strong></p>
 <p>Ask at your nearest farmers market who raises turkeys. If nobody there does, ask the farmers who they know. A few questions, and you have a farmer.</p>
@@ -275,8 +275,8 @@ of our health and our finances.</p>
    "headline": "Why Is Turkey So Expensive This Year? What Butterball Agreed to Pay $34 Million to Settle (2026)",
    "description": "Butterball agreed to pay $34 million to settle claims it helped fix turkey prices. It denies it. Why your bird costs more, and who to buy from.",
    "image": "https://scan.ismyhometoxic.com/blog-images/whyisturkey-hero-v1.webp",
-   "datePublished": "2026-10-31",
-   "dateModified": "2026-10-31",
+   "datePublished": "2026-10-28",
+   "dateModified": "2026-10-28",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/why-is-turkey-so-expensive-this-year"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
@@ -318,7 +318,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Did Butterball admit it fixed turkey prices?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. It denies the claims, and the deal says it is not an admission. The court has not decided whether Butterball did anything wrong."}},
   {"@type": "Question", "name": "Can I get money from the Butterball turkey settlement?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Not for a turkey you bought at a store. The money goes to businesses that bought turkey straight from the companies from 2010 to 2016. Their claims were due October 30, 2026."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Not for a turkey you bought at a store. The money goes to businesses that bought turkey straight from the companies from 2010 to 2016. Their claims are due October 30, 2026."}},
   {"@type": "Question", "name": "What if there is no turkey farm near me?",
    "acceptedAnswer": {"@type": "Answer", "text": "Ask at your nearest farmers market who raises turkeys. If nobody there does, ask the farmers who they know. A few questions, and you have a farmer."}}
  ]
