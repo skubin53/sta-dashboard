@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-27
+date: 2026-10-29
 title: Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026)
 slug: are-panty-liners-safe-to-wear-daily
 keyword: are panty liners safe to wear daily
@@ -48,13 +48,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 27, 2026<br><span style="font-size:.92em;">Published October 27, 2026 &middot; Last updated October 27, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 29, 2026<br><span style="font-size:.92em;">Published October 29, 2026 &middot; Last updated October 29, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You wear a liner every day now. Maybe for the spotting that came with perimenopause. Maybe for the little leak when you laugh too hard.</p>
 <p><strong><a href="https://www.manufacturingdive.com/news/carefree-edgewell-essity-jj-gelsons-lawsuit-pfoa-pfas-california/833296/">On October 9, 2026, hundreds of people in Los Angeles County sued the companies behind Carefree.</a></strong> They claim a lab found PFOA, a forever chemical, in the liners. They say the liners stayed on sale after California banned PFAS added to period products.</p>
-<p>Essity owns Carefree now. It says it does not add PFAS on purpose. My answer: switch to a liner with no PFAS in any layer, from a company that tests for it.</p>
+<p>Essity owns Carefree in North America now. It says it does not add PFAS on purpose. My answer: switch to a liner with no PFAS in any layer, from a company that tests for it.</p>
 </div>
 
 <div class="sta-toc">
@@ -86,17 +86,17 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.manufacturingdive.com/news/carefree-edgewell-essity-jj-gelsons-lawsuit-pfoa-pfas-california/833296/">The suit was filed in Los Angeles County Superior Court, Manufacturing Dive reported.</a> It names Essity, Edgewell and Johnson &amp; Johnson. It also names Gelson's Markets, for selling the liners.</p>
 
-<p>Why three companies? Each one has owned Carefree. <a href="https://tools.prnewswire.com/en-us/live/20823/release/20260202EN76608">Essity bought it from Edgewell in February 2026.</a> Edgewell bought it from Johnson &amp; Johnson in 2013.</p>
+<p>Why three companies? Each one has owned Carefree. <a href="https://tools.prnewswire.com/en-us/live/20823/release/20260202EN76608">Essity bought it from Edgewell in February 2026.</a> Edgewell, then called Energizer Holdings, bought it from Johnson &amp; Johnson in 2013.</p>
 
 <p>The suit points to a 2024 lab test. It says the test found PFOA in one or more of the liner's five layers. It says the liners have been made with it ever since.</p>
 
-<p><a href="https://hoodline.com/2026/10/l-a-county-residents-sue-essity-edgewell-over-pfas-in-carefree-liners/">The people suing say they wore the liners for up to 8 to 10 hours during their cycles.</a> The suit claims cancers and thyroid, liver and hormone harm. Those are claims. None has been proven in court.</p>
+<p><a href="https://www.manufacturingdive.com/news/carefree-edgewell-essity-jj-gelsons-lawsuit-pfoa-pfas-california/833296/">The people suing say they wore the liners for up to 8 to 10 hours during their cycles.</a> The suit claims cancers and thyroid, liver and hormone harm. Those are claims. None has been proven in court.</p>
 
 <h3 id="pfoa">PFOA, the forever chemical named in the suit</h3>
 
 <p>PFOA is one of the PFAS. They are called forever chemicals because they do not break down easily.</p>
 
-<p><a href="https://www.iarc.who.int/news-events/iarc-monographs-evaluate-the-carcinogenicity-of-perfluorooctanoic-acid-pfoa-and-perfluorooctanesulfonic-acid-pfos/">In December 2023, the World Health Organization's cancer agency classed PFOA as "carcinogenic to humans."</a> That is the top of its scale. And so a liner is the last place you want it. The suit says these stayed on the shelf after California's ban.</p>
+<p><a href="https://www.iarc.who.int/news-events/iarc-monographs-evaluate-the-carcinogenicity-of-perfluorooctanoic-acid-pfoa-and-perfluorooctanesulfonic-acid-pfos/">In late 2023, the World Health Organization's cancer agency classed PFOA as "carcinogenic to humans."</a> That is the top of its scale. And so a liner is the last place you want it. The suit says these stayed on the shelf after California's ban.</p>
 
 <p style="font-size:.9em;">Full name: perfluorooctanoic acid.</p>
 
@@ -220,7 +220,7 @@ of our health and our finances.</p>
 
 <p>You do not stop at the counter and wonder. You know who stands behind it.</p>
 
-<p>It started with one box in one drawer.</p>
+<p>It started with one box on one kitchen counter.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/arepantylin-freedom-v1.webp" alt="A woman in a camel sweater heading out with her tote bag in warm sun" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -270,8 +270,8 @@ of our health and our finances.</p>
    "headline": "Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026)",
    "description": "A new lawsuit claims Carefree liners held PFOA, a forever chemical, after California's ban. Essity denies adding it. What the case says, what to wear.",
    "image": "https://scan.ismyhometoxic.com/blog-images/arepantylin-hero-v1.webp",
-   "datePublished": "2026-10-27",
-   "dateModified": "2026-10-27",
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-10-29",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/are-panty-liners-safe-to-wear-daily"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
