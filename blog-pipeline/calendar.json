@@ -1,11 +1,11 @@
 {
- "start": "2026-10-28",
+ "start": "2026-10-29",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-28",
-   "weekday": "Wed",
+   "date": "2026-10-29",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "are-panty-liners-safe-to-wear-daily",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-10-29",
-   "weekday": "Thu",
+   "date": "2026-10-30",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "are-starbucks-protein-drinks-healthy",
@@ -68,45 +68,13 @@
    ]
   },
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
-   "slots": [
-    {
-     "slug": "was-gas-x-recalled",
-     "title": "Was Gas-X Recalled? Which Lots Had Machine Coolant Leak Into Them (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "does-self-employment-count-for-medicaid-work-requirements",
-     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-10-31",
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-is-turkey-so-expensive-this-year",
-     "title": "Why Is Turkey So Expensive This Year? What Butterball Agreed to Pay $34 Million to Settle (2026)",
-     "cat": "Food",
+     "slug": "was-gas-x-recalled",
+     "title": "Was Gas-X Recalled? Which Lots May Have Machine Coolant in Them (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -3,
      "keyword": "",
@@ -117,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-amare-global-legit",
-     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
+     "slug": "does-self-employment-count-for-medicaid-work-requirements",
+     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -149,8 +117,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-mary-kay-going-affiliate",
-     "title": "Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)",
+     "slug": "is-amare-global-legit",
+     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -181,8 +149,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-nu-skin-still-in-business",
-     "title": "Is Nu Skin Still in Business? What the August Layoffs and Its Own Numbers Say About Affiliates (2026)",
+     "slug": "is-mary-kay-going-affiliate",
+     "title": "Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -960,6 +928,38 @@
      "pix": true,
      "written": false,
      "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
     }
    ]
   }
