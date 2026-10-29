@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-01
+date: 2026-10-29
 title: Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)
 slug: is-mary-kay-going-affiliate
 keyword: is mary kay going affiliate
@@ -47,7 +47,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 1, 2026<br><span style="font-size:.92em;">Published November 1, 2026 &middot; Last updated November 1, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; October 29, 2026<br><span style="font-size:.92em;">Published October 29, 2026 &middot; Last updated October 29, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -300,8 +300,8 @@ our finances.</p>
    "headline": "Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)",
    "description": "Mary Kay has not announced an affiliate model. Its agreement, revised July 1, 2026, sends disputes to private arbitration. Here is what it says.",
    "image": "https://scan.ismyhometoxic.com/blog-images/ismarykaygo-hero-v1.webp",
-   "datePublished": "2026-11-01",
-   "dateModified": "2026-11-01",
+   "datePublished": "2026-10-29",
+   "dateModified": "2026-10-29",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/is-mary-kay-going-affiliate"},
    "author": {"@id": "https://theshannonnicole.com/post/is-mary-kay-going-affiliate#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
