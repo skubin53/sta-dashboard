@@ -1,40 +1,8 @@
 {
- "start": "2026-10-29",
+ "start": "2026-10-30",
  "days": 30,
  "per_day": 2,
  "calendar": [
-  {
-   "date": "2026-10-29",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "are-panty-liners-safe-to-wear-daily",
-     "title": "Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026)",
-     "cat": "Health",
-     "why": "already written",
-     "perish": -3,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "do-i-have-to-report-side-income-under-2000",
-     "title": "Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
   {
    "date": "2026-10-30",
    "weekday": "Fri",
@@ -53,8 +21,8 @@
      "track": "shopper"
     },
     {
-     "slug": "do-medicaid-work-requirements-apply-to-caregivers",
-     "title": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
+     "slug": "do-i-have-to-report-side-income-under-2000",
+     "title": "Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -85,8 +53,8 @@
      "track": "shopper"
     },
     {
-     "slug": "does-self-employment-count-for-medicaid-work-requirements",
-     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
+     "slug": "do-medicaid-work-requirements-apply-to-caregivers",
+     "title": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -2,
@@ -117,16 +85,16 @@
      "track": "shopper"
     },
     {
-     "slug": "is-amare-global-legit",
-     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
+     "slug": "does-self-employment-count-for-medicaid-work-requirements",
+     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
      "cat": "Builders",
-     "why": "photos already done",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -149,16 +117,16 @@
      "track": "shopper"
     },
     {
-     "slug": "is-mary-kay-going-affiliate",
-     "title": "Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026)",
+     "slug": "is-amare-global-legit",
+     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
      "cat": "Builders",
-     "why": "already written",
+     "why": "photos already done",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
      "track": "builder"
     }
    ]
@@ -426,14 +394,14 @@
     {
      "slug": "is-liquid-iv-sugar-free-really-sugar-free",
      "title": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "cat": "Food",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -951,6 +919,38 @@
     {
      "slug": "is-ultra-processed-food-its-own-risk",
      "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,

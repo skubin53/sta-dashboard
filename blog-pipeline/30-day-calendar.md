@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-10-29 | 2 posts every publish day (even dates) | starts 2026-10-29 | 30 days
+Switch to America | rebuilt 2026-10-30 | 2 posts every publish day (even dates) | starts 2026-10-30 | 30 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -20,16 +20,14 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-10-29 | Thu | 1 | shopper | villain | Are Panty Liners Safe to Wear Every Day? What the New Carefree PFAS Lawsuit Claims (2026) | ready |
-| 2026-10-29 | Thu | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
 | 2026-10-30 | Fri | 1 | shopper | villain | Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026) | ready |
-| 2026-10-30 | Fri | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
+| 2026-10-30 | Fri | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
 | 2026-10-31 | Sat | 1 | shopper | villain | Was Gas-X Recalled? Which Lots May Have Machine Coolant in Them (2026) | ready |
-| 2026-10-31 | Sat | 2 | builder | villain | Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026) | ready |
+| 2026-10-31 | Sat | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
 | 2026-11-01 | Sun | 1 | shopper | villain | Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026) | ready |
-| 2026-11-01 | Sun | 2 | builder | villain | Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026) | ready |
+| 2026-11-01 | Sun | 2 | builder | villain | Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026) | ready |
 | 2026-11-02 | Mon | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
-| 2026-11-02 | Mon | 2 | builder | villain | Is Mary Kay Going Affiliate? What the New Consultant Agreement Actually Says (2026) | ready |
+| 2026-11-02 | Mon | 2 | builder | villain | Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026) | ready |
 | 2026-11-03 | Tue | 1 | shopper | villain | Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026) | ready |
 | 2026-11-03 | Tue | 2 | builder | villain | Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026) | ready |
 | 2026-11-04 | Wed | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
@@ -80,3 +78,5 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-11-26 | Thu | 2 | builder | villain | Why Does My Business Own Me? (2026) | ready |
 | 2026-11-27 | Fri | 1 | shopper | villain | Is The Pink Stuff Safe? (2026) | ready |
 | 2026-11-27 | Fri | 2 | shopper | villain | Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026) | ready |
+| 2026-11-28 | Sat | 1 | shopper | villain | Is Vaseline Safe? What Petroleum Jelly Actually Is (2026) | ready |
+| 2026-11-28 | Sat | 2 | shopper | villain | Is Your Dehumidifier a Fire Risk? (2026) | ready |
