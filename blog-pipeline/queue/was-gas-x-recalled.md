@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-30
+date: 2026-10-31
 title: Was Gas-X Recalled? Which Lots May Have Machine Coolant in Them (2026)
 slug: was-gas-x-recalled
 keyword: gas x recall 2026 lot number
@@ -48,12 +48,12 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 30, 2026<br><span style="font-size:.92em;">Published October 30, 2026 &middot; Last updated October 30, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 31, 2026<br><span style="font-size:.92em;">Published October 31, 2026 &middot; Last updated October 31, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>The pie plate is soaking in the sink. You reach for the green box in the cabinet, and you stop. Was this one recalled?</p>
-<p><strong>Yes, Gas-X was recalled twice in 2026. Pull any box marked lot TL8K, YH9X, YH9Y or X78N.</strong> <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haleon-issues-voluntary-nationwide-recall-gas-x-extra-strength-softgels-125mg-120-ct-and-72-ct">Haleon recalled those four lots in June.</a> A packaging machine leaked, and they may hold a "diluted propylene glycol-based coolant." Haleon says it has had no reports of anyone getting sick.</p>
+<p><strong>Yes, Gas-X was recalled twice in 2026. Pull any box marked lot TL8K, YH9X, YH9Y or X78N.</strong> <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haleon-issues-voluntary-nationwide-recall-gas-x-extra-strength-softgels-125mg-120-ct-and-72-ct">Haleon recalled those four lots in June.</a> Haleon says a packaging machine leaked, and they may hold a "diluted propylene glycol-based coolant." Its June notice says it had no reports of anyone getting sick.</p>
 <p>In May Haleon pulled lots KB5Y, MP4B and SS4F. That box did not fully list what was inside.</p>
 </div>
 
@@ -86,11 +86,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The 120 count box has lots TL8K, YH9X and YH9Y. The 72 count box has lot X78N. All four say November 30, 2028.</p>
 
-<p>Haleon says they shipped from April 13 to May 14, 2026. <a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0595-2026%22">The federal recall record, D-0595-2026, counts 35,883 cartons</a> sent out nationwide.</p>
+<p>Haleon says they shipped from April 13 to May 14, 2026. <a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0595-2026%22">The federal recall record, D-0595-2026, counts 35,883 boxes</a> sent out nationwide.</p>
 
 <h3 id="the-coolant">The propylene glycol-based coolant</h3>
 
-<p>A machine leaked while the softgels were being packed. Haleon's notice calls it "a diluted propylene glycol-based coolant."</p>
+<p>Haleon says a machine leaked while the softgels were being packed. Haleon's notice calls it "a diluted propylene glycol-based coolant."</p>
 
 <p>The notice lists what that could do to you: nausea, vomiting, belly pain and diarrhea.</p>
 
@@ -155,7 +155,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: two fair points. Neither one covers lots TL8K, YH9X, YH9Y or X78N.</p>
 
-<p><strong>One.</strong> Haleon says it has had no reports of anyone getting sick, and the June recall is only four lots. That is real, and I am not going to pretend it is not.</p>
+<p><strong>One.</strong> Haleon's June notice says it had no reports of anyone getting sick, and the June recall is only four lots. That is real, and I am not going to pretend it is not.</p>
 
 <p><strong>Two.</strong> <a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haleon-issues-voluntary-nationwide-recall-gas-x-extra-strength-softgels-125mg-120-ct-and-72-ct">Haleon's notice says the cause "has been identified and repaired."</a></p>
 
@@ -175,7 +175,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>For your medicine cabinet, I point you to Switch to America. It is a private membership store. We are the manufacturer. No middlemen, no markup.</p>
 
-<p>You are far from the only one with the green box. If your sister keeps one too, check hers over a pot of tea.</p>
+<p>You are far from the only one with the green box. If a friend keeps one too, check hers over a pot of tea.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/wasgasxreca-belonging-v1.webp" alt="A woman with silver hair in a burgundy sweater in her oak kitchen while a friend pours ginger tea from a glass teapot into glass cups" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -212,8 +212,8 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haleon-issues-voluntary-nationwide-recall-gas-x-extra-strength-softgels-125mg-120-ct-and-72-ct">Haleon recall notice, June 4, 2026</a>. Haleon recalled Gas-X Extra Strength Softgels 125 mg, lots TL8K, YH9X and YH9Y (120 count) and X78N (72 count), all expiring November 30, 2028. The reason is potential contamination with a diluted propylene glycol-based coolant from a machine leak during packaging. Haleon says it has had no reports of adverse events. What it means: if your box carries one of those lots, Haleon takes it back.</li>
-<li><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0595-2026%22">Federal recall record D-0595-2026, Class I, reported June 17, 2026</a>. It counts 35,883 cartons, distributed nationwide. What it means: the leak got the most serious recall class.</li>
+<li><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/haleon-issues-voluntary-nationwide-recall-gas-x-extra-strength-softgels-125mg-120-ct-and-72-ct">Haleon recall notice, June 4, 2026</a>. Haleon recalled Gas-X Extra Strength Softgels 125 mg, lots TL8K, YH9X and YH9Y (120 count) and X78N (72 count), all expiring November 30, 2028. The reason is potential contamination with a diluted propylene glycol-based coolant from a machine leak during packaging. Haleon said it had no reports of adverse events. What it means: if your box carries one of those lots, Haleon takes it back.</li>
+<li><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0595-2026%22">Federal recall record D-0595-2026, Class I, reported June 17, 2026</a>. It counts 35,883 boxes, distributed nationwide. What it means: the leak got the most serious recall class.</li>
 <li><a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0542-2026%22">Federal recall record D-0542-2026, Class II, started May 11, 2026</a>. Lots KB5Y, MP4B and SS4F of the 120 count box, 285,330 blister cards, for incomplete inactive ingredient information on the carton. What it means: the same box was recalled for its label 24 days earlier.</li>
 <li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-7/subpart-A/section-7.3">21 CFR 7.3, the federal recall classes</a>. Class I means a "reasonable probability" of serious harm. Class II covers harm that is short-term or reversible, or where serious harm is remote. What it means: the leak sits one class above the label.</li>
 <li><a href="https://www.nbcnews.com/news/us-news/robitussin-cough-syrups-recalled-due-microbial-contamination-rcna135617">NBC News, January 25, 2024</a>. Haleon recalled eight lots of Robitussin Honey CF Max Day and Nighttime for microbial contamination. The federal records, <a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0316-2024%22">D-0316-2024</a> and <a href="https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-0317-2024%22">D-0317-2024</a>, rank both Class I. What it means: this is not the first time something got into a Haleon medicine.</li>
@@ -279,8 +279,8 @@ of our health and our finances.</p>
    "headline": "Was Gas-X Recalled? Which Lots May Have Machine Coolant in Them (2026)",
    "description": "Yes, twice in 2026. Gas-X lots TL8K, YH9X, YH9Y and X78N may hold a machine coolant. KB5Y, MP4B and SS4F had an incomplete label. How to check yours.",
    "image": "https://scan.ismyhometoxic.com/blog-images/wasgasxreca-hero-v1.webp",
-   "datePublished": "2026-10-30",
-   "dateModified": "2026-10-30",
+   "datePublished": "2026-10-31",
+   "dateModified": "2026-10-31",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/was-gas-x-recalled"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
