@@ -55,7 +55,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 <p>Here is the short version. The federal rule counts self-employment <strong><a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals">"due to starting a business, owning a business, or as an independent contractor."</a></strong></p>
 <p>There is a second door. A month also counts if your income for it is at least $580. It is counted the way Medicaid already counts your household income.</p>
 <p>A boss can cut your hours. Hours you own and write down are yours to show.</p>
-<p>That is the whole post. The rest is the proof. Checked October 30, 2026.</p>
+<p>That is the whole post. The rest is the proof. Checked October 31, 2026.</p>
 </div>
 
 <div class="sta-toc">
@@ -78,7 +78,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <p>You typed your first thought into your phone. My business is just me. Does that count?</p>
 
-<p>It does. The federal Medicaid agency, CMS, published the rule on June 3, 2026. <a href="https://www.govinfo.gov/content/pkg/FR-2026-06-03/pdf/2026-11094.pdf">Page 33354 says</a> you do not need to be "an employee of a company or organization" to meet it. Self-employment, it says, meets "the definition of work."</p>
+<p>It does. The federal Medicaid agency, CMS, published the rule on June 3, 2026. <a href="https://www.govinfo.gov/content/pkg/FR-2026-06-03/pdf/2026-11094.pdf">Page 33354 says</a> you do not need to be "an employee of a company or organization" to count as working. Self-employment, it says, meets "the definition of work."</p>
 
 <p><a href="https://www.ecfr.gov/current/title-42/section-435.552">Its list of what counts as work</a> even names unpaid work. Your hours count, not only the hours that got paid.</p>
 
@@ -107,11 +107,9 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <p>For a January 1 start, the first letters go out in July, August or September 2026. So yours may already be on your counter.</p>
 
-<p>Already on Medicaid? Your first check comes at your first renewal after your state starts. From 2027, most renewals under this rule come every six months.</p>
+<p>Already on Medicaid? Your first check comes at your first renewal after your state starts. From 2027, most renewals come every six months.</p>
 
 <p>Each time, the state checks one or more months. Your state picks how many, and it can check more often.</p>
-
-<p>The two doors, side by side.</p>
 
 <table class="sta-table">
 <tr><th>&nbsp;</th><th>Door one: hours</th><th>Door two: income</th></tr>
@@ -130,7 +128,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <p>Then the rule admits the gap: "not all types of work can be verified using currently available financial data sources."</p>
 
-<p>A paycheck leaves a trail. Your kitchen table does not.</p>
+<p>A paycheck leaves a trail. Your home office does not.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/doesselfemp-villain-v1.webp" alt="An empty home office with a navy wall late at night, one lamp on, the laptop closed, a half glass of water beside it and the chair pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -162,7 +160,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <p>This post will not keep your coverage. Nothing I do touches Medicaid, and your state decides your case.</p>
 
-<p>Here is what I can tell you about us. Switch to America sells straight from the manufacturer. No middlemen and no markup.</p>
+<p>Here is what I can tell you about us. We are the manufacturer. No middlemen and no markup.</p>
 
 <p>I will not hand you a number to expect. And I will not promise that working with me meets the income test. Nobody honest can.</p>
 
@@ -229,7 +227,7 @@ our finances.</p>
 <li><a href="https://www.bls.gov/news.release/archives/empsit_10022026.htm">Bureau of Labor Statistics, The Employment Situation, September 2026</a>, released October 2, 2026. 4.5 million working part time who wanted full-time work. Hours someone else controls can move.</li>
 <li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep">IRS, What kind of records should I keep</a>. A plain system is fine if it clearly shows income and expenses.</li>
 </ul>
-<p class="micro">This is the federal rule in plain words. Your state Medicaid office has the final word.</p>
+<p class="micro">Your state Medicaid office has the final word.</p>
 </div>
 
 <figure style="margin:28px 0;">
@@ -263,7 +261,7 @@ our finances.</p>
 <p>Not by default. Your first check comes at your first renewal after your state starts. From 2027, most renewals come every six months. Your state can check more often, so keep your record every month.</p>
 
 <p><strong>Is anyone excused from the rule?</strong></p>
-<p>Yes. The rule excuses a parent or caretaker of a child 13 or younger, and people who are medically frail, among others. Your state decides who fits, so ask yours.</p>
+<p>Yes. The rule excuses a parent or caretaker of a child 13 or younger, and people who are medically frail, among others. On October 29, 2026, <a href="https://beckers-cs-assets.s3.us-east-1.amazonaws.com/cs/lawsuits/massachusetts-v-oz-medicaid-work-requirements-memorandum-and-order-2026-10-29.pdf">a federal judge</a> struck the rule's extra test for who counts as medically frail. Your state decides who fits, so ask yours.</p>
 
 <div class="sta-keep">
 <h3>Worth reading next</h3>
@@ -379,7 +377,7 @@ our finances.</p>
    "name": "Is anyone excused from the rule?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Yes. The rule excuses a parent or caretaker of a child 13 or younger, and people who are medically frail, among others. Your state decides who fits, so ask yours."
+    "text": "Yes. The rule excuses a parent or caretaker of a child 13 or younger, and people who are medically frail, among others. On October 29, 2026, a federal judge struck the rule's extra test for who counts as medically frail. Your state decides who fits, so ask yours."
    }
   }
  ]
