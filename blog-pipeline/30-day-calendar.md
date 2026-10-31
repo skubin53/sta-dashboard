@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-10-30 | 2 posts every publish day (even dates) | starts 2026-10-30 | 30 days
+Switch to America | rebuilt 2026-10-31 | 2 posts every publish day (even dates) | starts 2026-10-31 | 30 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -20,31 +20,29 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-10-30 | Fri | 1 | shopper | villain | Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026) | ready |
-| 2026-10-30 | Fri | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
-| 2026-10-31 | Sat | 1 | shopper | villain | Was Gas-X Recalled? Which Lots May Have Machine Coolant in Them (2026) | ready |
-| 2026-10-31 | Sat | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
-| 2026-11-01 | Sun | 1 | shopper | villain | Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026) | ready |
-| 2026-11-01 | Sun | 2 | builder | villain | Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026) | ready |
-| 2026-11-02 | Mon | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
+| 2026-10-31 | Sat | 1 | shopper | villain | Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026) | ready |
+| 2026-10-31 | Sat | 2 | builder | villain | Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026) | ready |
+| 2026-11-01 | Sun | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
+| 2026-11-01 | Sun | 2 | builder | villain | Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026) | ready |
+| 2026-11-02 | Mon | 1 | shopper | villain | Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026) | ready |
 | 2026-11-02 | Mon | 2 | builder | villain | Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026) | ready |
-| 2026-11-03 | Tue | 1 | shopper | villain | Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026) | ready |
+| 2026-11-03 | Tue | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
 | 2026-11-03 | Tue | 2 | builder | villain | Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026) | ready |
-| 2026-11-04 | Wed | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
+| 2026-11-04 | Wed | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026) | ready |
 | 2026-11-04 | Wed | 2 | builder | villain | What Happens to Your Income If You Stop Working for 90 Days? (2026) | ready |
-| 2026-11-05 | Thu | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026) | ready |
+| 2026-11-05 | Thu | 1 | shopper | villain | Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026) | ready |
 | 2026-11-05 | Thu | 2 | builder | villain | What Is the Saver's Match in 2027? Who Gets Up to $1,000, and Does Side Business Income Count? (2026) | ready |
-| 2026-11-06 | Fri | 1 | shopper | villain | Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026) | ready |
+| 2026-11-06 | Fri | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
 | 2026-11-06 | Fri | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
-| 2026-11-07 | Sat | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
+| 2026-11-07 | Sat | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
 | 2026-11-07 | Sat | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026) | ready |
-| 2026-11-08 | Sun | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
+| 2026-11-08 | Sun | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
 | 2026-11-08 | Sun | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
-| 2026-11-09 | Mon | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
+| 2026-11-09 | Mon | 1 | shopper | villain | Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026) | ready |
 | 2026-11-09 | Mon | 2 | builder | villain | Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026) | ready |
-| 2026-11-10 | Tue | 1 | shopper | villain | Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026) | ready |
+| 2026-11-10 | Tue | 1 | shopper | villain | Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026) | ready |
 | 2026-11-10 | Tue | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
-| 2026-11-11 | Wed | 1 | shopper | villain | Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026) | ready |
+| 2026-11-11 | Wed | 1 | shopper | villain | Is Stove Top Stuffing Bad for You? The BHA and BHT in the Box Are Under Federal Review (2026) | ready |
 | 2026-11-11 | Wed | 2 | builder | villain | Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026) | ready |
 | 2026-11-12 | Thu | 1 | shopper | villain | Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled About Benzene in Its Acne Wash (2026) | ready |
 | 2026-11-12 | Thu | 2 | builder | villain | Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026) | ready |
@@ -70,13 +68,15 @@ specified in blog-pipeline/gentle-topics.json.
 | 2026-11-22 | Sun | 2 | builder | villain | Why Can't I Get Monetized on YouTube? What YouTube's 2027 Rules Change for New Creators (2026) | ready |
 | 2026-11-23 | Mon | 1 | shopper | villain | Is Roundup Safe to Use Around Your House? (2026) | ready |
 | 2026-11-23 | Mon | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | ready |
-| 2026-11-24 | Tue | 1 | shopper | villain | Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026) | ready |
+| 2026-11-24 | Tue | 1 | shopper | villain | Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026) | ready |
 | 2026-11-24 | Tue | 2 | builder | villain | Why Do I Never Hear Back From Job Applications? What New York's Ghost Job Bill Would Make Employers Say (2026) | ready |
-| 2026-11-25 | Wed | 1 | shopper | villain | Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026) | ready |
+| 2026-11-25 | Wed | 1 | shopper | villain | Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026) | ready |
 | 2026-11-25 | Wed | 2 | builder | villain | Why Do Women-Owned Businesses Stay Small? (2026) | ready |
-| 2026-11-26 | Thu | 1 | shopper | villain | Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026) | ready |
+| 2026-11-26 | Thu | 1 | shopper | villain | Is The Pink Stuff Safe? (2026) | ready |
 | 2026-11-26 | Thu | 2 | builder | villain | Why Does My Business Own Me? (2026) | ready |
-| 2026-11-27 | Fri | 1 | shopper | villain | Is The Pink Stuff Safe? (2026) | ready |
-| 2026-11-27 | Fri | 2 | shopper | villain | Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026) | ready |
-| 2026-11-28 | Sat | 1 | shopper | villain | Is Vaseline Safe? What Petroleum Jelly Actually Is (2026) | ready |
-| 2026-11-28 | Sat | 2 | shopper | villain | Is Your Dehumidifier a Fire Risk? (2026) | ready |
+| 2026-11-27 | Fri | 1 | shopper | villain | Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026) | ready |
+| 2026-11-27 | Fri | 2 | shopper | villain | Is Vaseline Safe? What Petroleum Jelly Actually Is (2026) | ready |
+| 2026-11-28 | Sat | 1 | shopper | villain | Is Your Dehumidifier a Fire Risk? (2026) | ready |
+| 2026-11-28 | Sat | 2 | shopper | villain | Is Your Magnesium Really What the Label Says? (2026) | ready |
+| 2026-11-29 | Sun | 1 | shopper | villain | Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026) | ready |
+| 2026-11-29 | Sun | 2 | shopper | villain | Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026) | ready |

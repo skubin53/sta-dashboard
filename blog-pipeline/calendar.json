@@ -1,23 +1,23 @@
 {
- "start": "2026-10-30",
+ "start": "2026-10-31",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-30",
-   "weekday": "Fri",
+   "date": "2026-10-31",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "are-starbucks-protein-drinks-healthy",
-     "title": "Are Starbucks Protein Drinks Healthy? Why the 'Sugar-Free' Protein Lattes Are Now in Court (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -3,
+     "slug": "are-driscolls-strawberries-safe-to-eat",
+     "title": "Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -36,15 +36,15 @@
    ]
   },
   {
-   "date": "2026-10-31",
-   "weekday": "Sat",
+   "date": "2026-11-01",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "was-gas-x-recalled",
-     "title": "Was Gas-X Recalled? Which Lots May Have Machine Coolant in Them (2026)",
-     "cat": "Health",
+     "slug": "is-antiperspirant-safe",
+     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
+     "cat": "Personal Care",
      "why": "already written",
-     "perish": -3,
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
@@ -68,44 +68,12 @@
    ]
   },
   {
-   "date": "2026-11-01",
-   "weekday": "Sun",
-   "slots": [
-    {
-     "slug": "are-driscolls-strawberries-safe-to-eat",
-     "title": "Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "does-self-employment-count-for-medicaid-work-requirements",
-     "title": "Does Self-Employment Count for Medicaid Work Requirements? What the 2026 CMS Rule Says About a Business You Own (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-11-02",
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-antiperspirant-safe",
-     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
+     "slug": "is-johnsons-baby-shampoo-safe",
+     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
      "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
@@ -120,13 +88,13 @@
      "slug": "is-amare-global-legit",
      "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
      "cat": "Builders",
-     "why": "photos already done",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -136,9 +104,9 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-johnsons-baby-shampoo-safe",
-     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
-     "cat": "Personal Care",
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -168,9 +136,9 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -200,8 +168,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-clear-eyes-safe",
-     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
+     "slug": "is-crest-toothpaste-safe",
+     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
      "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
@@ -232,9 +200,9 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-crest-toothpaste-safe",
-     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
-     "cat": "Personal Care",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -264,9 +232,9 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
-     "cat": "Cleaning",
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+     "cat": "Supplements",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -296,9 +264,9 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
-     "cat": "Supplements",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -328,16 +296,16 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
-     "why": "already written",
+     "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
+     "title": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -360,16 +328,16 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
-     "title": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "slug": "is-liquid-iv-sugar-free-really-sugar-free",
+     "title": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
+     "cat": "Food",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -392,8 +360,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-liquid-iv-sugar-free-really-sugar-free",
-     "title": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
+     "slug": "is-stove-top-stuffing-bad-for-you",
+     "title": "Is Stove Top Stuffing Bad for You? The BHA and BHT in the Box Are Under Federal Review (2026)",
      "cat": "Food",
      "why": "already written",
      "perish": -2,
@@ -808,8 +776,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-stove-top-stuffing-bad-for-you",
-     "title": "Is Stove Top Stuffing Bad for You? The Preservative Now Under Safety Review (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -840,8 +808,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -872,8 +840,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-tresemme-safe",
-     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -904,8 +872,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -917,8 +885,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -936,8 +904,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -949,8 +917,40 @@
      "track": "shopper"
     },
     {
-     "slug": "is-your-dehumidifier-a-fire-risk",
-     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "red-dye-40-mars-broken-promise",
+     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
