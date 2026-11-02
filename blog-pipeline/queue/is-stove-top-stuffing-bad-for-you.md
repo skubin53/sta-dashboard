@@ -53,7 +53,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>It is Thanksgiving morning and the turkey is in. You tear open the red box over the pot, the way your mom did.</p>
-<p><strong><a href="https://www.kraftheinz.com/stove-top/products/00043000285558-stuffing-mix-for-turkey">Kraft Heinz's own page for its turkey mix ends the ingredients this way: "WITH BHA, BHT, AND ROSEMARY EXTRACT AS PRESERVATIVES."</a></strong> In February, federal food regulators asked for safety data on BHA. In May, they asked for it on BHT.</p>
+<p><strong><a href="https://www.kraftheinz.com/stove-top/products/00043000285558-stuffing-mix-for-turkey">Kraft Heinz's own page for its Stove Top turkey mix ends the ingredients this way: "WITH BHA, BHT, AND ROSEMARY EXTRACT AS PRESERVATIVES."</a></strong> In February, federal food regulators asked for safety data on BHA. In May, they asked for it on BHT.</p>
 <p>Nothing is ruled yet. And both are still in the box while the question stays open.</p>
 </div>
 
@@ -70,7 +70,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <div class="sta-cta">
 <h3>Which room in your house should you start with?</h3>
-<p>The free scan takes about 3 minutes, room by room. You give a first name and a cell, and your report comes in one text. Nobody calls. It is free because your own kitchen is better proof than my word.</p>
+<p>The free scan takes about 3 minutes, room by room. You give a first name and a cell, and your score comes by one text. Nobody calls. It is free because your own kitchen is better proof than my word.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
@@ -80,11 +80,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>You brine the turkey. You peel the potatoes. You get the good plates down. You make the stuffing from the box because the oven is full and one burner is free.</p>
 
-<p>You stand at that burner longer than you mean to, stirring crumbs into hot butter. The kitchen smells like every November you remember.</p>
+<p>You stand at that burner longer than you mean to, stirring crumbs into hot water and butter. The kitchen smells like every November you remember.</p>
 
 <p>You want it fast, and you want it to taste like home. That is a fair thing to want. The problem is what Kraft Heinz adds so the oil in that mix stays fresh.</p>
 
-<p><a href="https://www.kraftheinz.com/stove-top/products/00043000285558-stuffing-mix-for-turkey">Kraft Heinz lists enriched wheat flour first and high fructose corn syrup second.</a> There is soybean oil in it too. Then, at the very end, come BHA and BHT.</p>
+<p><a href="https://www.kraftheinz.com/stove-top/products/00043000285558-stuffing-mix-for-turkey">Kraft Heinz lists enriched wheat flour first and high fructose corn syrup second.</a> There is soybean oil in it too. Then, at the very end, come BHA and BHT, with rosemary extract.</p>
 
 <h3 id="bha">Why is BHA on a cancer report?</h3>
 
@@ -223,17 +223,17 @@ of our health and our finances.</p>
 
 <div class="sta-cta">
 <h3>Start with the cupboard the box came from</h3>
-<p>You just read about one box. The free scan goes through the rest of your house and names what to swap first. A first name, a cell, one text with your report, and nobody calls. It is free so you can see it for yourself.</p>
+<p>You just read about one box. The free scan goes through the rest of your house and names what to swap first. A first name, a cell, one text with your score, and nobody calls. The score is free so you can see it for yourself. The full report after is $7, and you can skip it.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
 <h2 id="faq">What else do people ask?</h2>
 
 <p><strong>Are BHA and BHT banned?</strong></p>
-<p>No. Both are legal in food sold here today. The reviews are looking at whether that should change, and nothing has been ruled yet.</p>
+<p>Not in stores. Both are legal in food sold here today. The federal reviews are looking at whether that should change, and nothing has been ruled yet. <a href="https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00314F.htm">Texas law does bar BHA from free and reduced-price school meals. That began with the 2026-2027 school year.</a></p>
 
 <p><strong>What is in Stove Top stuffing?</strong></p>
-<p>Kraft Heinz lists enriched wheat flour first and high fructose corn syrup second. BHA and BHT close the list, as preservatives. Stuffing from your own bread, celery, onion and sage has none of them.</p>
+<p>Kraft Heinz lists enriched wheat flour first and high fructose corn syrup second. BHA and BHT sit at the end of the list, as preservatives. Stuffing from your own bread, celery, onion and sage has none of them.</p>
 
 <p><strong>Why does boxed stuffing need preservatives?</strong></p>
 <p>The mix has oil in it, and it waits in a box. The federal notices say BHA and BHT keep fats and oils from spoiling. Stuffing you bake on Thursday is gone by Thursday night.</p>
@@ -304,9 +304,9 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Are BHA and BHT banned?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. Both are legal in food sold here today. The reviews are looking at whether that should change, and nothing has been ruled yet."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Not in stores. Both are legal in food sold here today. The federal reviews are looking at whether that should change, and nothing has been ruled yet. Texas law does bar BHA from free and reduced-price school meals. That began with the 2026-2027 school year."}},
   {"@type": "Question", "name": "What is in Stove Top stuffing?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Kraft Heinz lists enriched wheat flour first and high fructose corn syrup second. BHA and BHT close the list, as preservatives. Stuffing from your own bread, celery, onion and sage has none of them."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "Kraft Heinz lists enriched wheat flour first and high fructose corn syrup second. BHA and BHT sit at the end of the list, as preservatives. Stuffing from your own bread, celery, onion and sage has none of them."}},
   {"@type": "Question", "name": "Why does boxed stuffing need preservatives?",
    "acceptedAnswer": {"@type": "Answer", "text": "The mix has oil in it, and it waits in a box. The federal notices say BHA and BHT keep fats and oils from spoiling. Stuffing you bake on Thursday is gone by Thursday night."}},
   {"@type": "Question", "name": "Am I overreacting about one box of stuffing?",
