@@ -1,11 +1,11 @@
 {
- "start": "2026-10-31",
+ "start": "2026-11-02",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-10-31",
-   "weekday": "Sat",
+   "date": "2026-11-02",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "are-driscolls-strawberries-safe-to-eat",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-11-01",
-   "weekday": "Sun",
+   "date": "2026-11-03",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -68,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-11-02",
-   "weekday": "Mon",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -85,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-amare-global-legit",
-     "title": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
+     "slug": "should-i-take-the-buyout",
+     "title": "Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -100,45 +100,13 @@
    ]
   },
   {
-   "date": "2026-11-03",
-   "weekday": "Tue",
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
      "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
      "cat": "Kitchen",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "should-i-take-the-buyout",
-     "title": "Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-04",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "is-clear-eyes-safe",
-     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
-     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -164,12 +132,12 @@
    ]
   },
   {
-   "date": "2026-11-05",
-   "weekday": "Thu",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-crest-toothpaste-safe",
-     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
      "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
@@ -196,13 +164,13 @@
    ]
   },
   {
-   "date": "2026-11-06",
-   "weekday": "Fri",
+   "date": "2026-11-07",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
-     "cat": "Cleaning",
+     "slug": "is-crest-toothpaste-safe",
+     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -228,13 +196,13 @@
    ]
   },
   {
-   "date": "2026-11-07",
-   "weekday": "Sat",
+   "date": "2026-11-08",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
-     "cat": "Supplements",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -260,13 +228,13 @@
    ]
   },
   {
-   "date": "2026-11-08",
-   "weekday": "Sun",
+   "date": "2026-11-09",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+     "cat": "Supplements",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -292,20 +260,20 @@
    ]
   },
   {
-   "date": "2026-11-09",
-   "weekday": "Mon",
+   "date": "2026-11-10",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
-     "title": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -324,20 +292,20 @@
    ]
   },
   {
-   "date": "2026-11-10",
-   "weekday": "Tue",
+   "date": "2026-11-11",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-liquid-iv-sugar-free-really-sugar-free",
-     "title": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
-     "cat": "Food",
-     "why": "already written",
+     "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
+     "title": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fires (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -356,12 +324,12 @@
    ]
   },
   {
-   "date": "2026-11-11",
-   "weekday": "Wed",
+   "date": "2026-11-12",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-stove-top-stuffing-bad-for-you",
-     "title": "Is Stove Top Stuffing Bad for You? The BHA and BHT in the Box Are Under Federal Review (2026)",
+     "slug": "is-liquid-iv-sugar-free-really-sugar-free",
+     "title": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
      "cat": "Food",
      "why": "already written",
      "perish": -2,
@@ -388,20 +356,20 @@
    ]
   },
   {
-   "date": "2026-11-12",
-   "weekday": "Thu",
+   "date": "2026-11-13",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-there-a-cerave-lawsuit-payout",
-     "title": "Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled About Benzene in Its Acne Wash (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "title": "Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled on the Acne Wash Benzene Case (2026)",
+     "cat": "Beauty",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -420,8 +388,8 @@
    ]
   },
   {
-   "date": "2026-11-13",
-   "weekday": "Fri",
+   "date": "2026-11-14",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-bettergoods-healthy",
@@ -452,8 +420,8 @@
    ]
   },
   {
-   "date": "2026-11-14",
-   "weekday": "Sat",
+   "date": "2026-11-15",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -484,8 +452,8 @@
    ]
   },
   {
-   "date": "2026-11-15",
-   "weekday": "Sun",
+   "date": "2026-11-16",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -516,8 +484,8 @@
    ]
   },
   {
-   "date": "2026-11-16",
-   "weekday": "Mon",
+   "date": "2026-11-17",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "why-did-eggs-cost-so-much",
@@ -548,8 +516,8 @@
    ]
   },
   {
-   "date": "2026-11-17",
-   "weekday": "Tue",
+   "date": "2026-11-18",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "should-you-give-a-child-cough-syrup",
@@ -580,8 +548,8 @@
    ]
   },
   {
-   "date": "2026-11-18",
-   "weekday": "Wed",
+   "date": "2026-11-19",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "does-hair-relaxer-cause-cancer",
@@ -612,8 +580,8 @@
    ]
   },
   {
-   "date": "2026-11-19",
-   "weekday": "Thu",
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-hot-cocoa-bad-for-you",
@@ -644,8 +612,8 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-21",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -676,8 +644,8 @@
    ]
   },
   {
-   "date": "2026-11-21",
-   "weekday": "Sat",
+   "date": "2026-11-22",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-krud-kutter-non-toxic",
@@ -708,8 +676,8 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-23",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-redken-shampoo-safe",
@@ -740,8 +708,8 @@
    ]
   },
   {
-   "date": "2026-11-23",
-   "weekday": "Mon",
+   "date": "2026-11-24",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-roundup-safe-to-use-around-your-house",
@@ -772,8 +740,8 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-25",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-suave-shampoo-safe",
@@ -804,8 +772,8 @@
    ]
   },
   {
-   "date": "2026-11-25",
-   "weekday": "Wed",
+   "date": "2026-11-26",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-tresemme-safe",
@@ -836,8 +804,8 @@
    ]
   },
   {
-   "date": "2026-11-26",
-   "weekday": "Thu",
+   "date": "2026-11-27",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-the-pink-stuff-safe",
@@ -868,8 +836,8 @@
    ]
   },
   {
-   "date": "2026-11-27",
-   "weekday": "Fri",
+   "date": "2026-11-28",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-ultra-processed-food-its-own-risk",
@@ -900,8 +868,8 @@
    ]
   },
   {
-   "date": "2026-11-28",
-   "weekday": "Sat",
+   "date": "2026-11-29",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-your-dehumidifier-a-fire-risk",
@@ -932,8 +900,8 @@
    ]
   },
   {
-   "date": "2026-11-29",
-   "weekday": "Sun",
+   "date": "2026-11-30",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-tap-water-safe-to-drink",
@@ -951,6 +919,38 @@
     {
      "slug": "red-dye-40-mars-broken-promise",
      "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "what-does-lavender-do-to-blood-pressure",
+     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "what-keeps-your-memory-sharp-after-70",
+     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
