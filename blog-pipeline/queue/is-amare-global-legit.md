@@ -6,7 +6,7 @@ slug: is-amare-global-legit
 keyword: amare global lawsuit update
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/isamareglob-hero-v1.webp
-meta_description: The FTC sued Amare on June 2, 2026, and alleges recruits were misled about income. No ruling, no settlement. Three questions to ask any company.
+meta_description: The FTC sued Amare on June 2, 2026, and alleges recruits were misled about income. No ruling or settlement listed. Three questions to ask any company.
 status: ready
 vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-Filter, Recurring-Income-Offer, North-Star, burned-out, Compliance-Watchdog]
 ---
@@ -53,9 +53,9 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <h2 id="the-short-answer">The short answer</h2>
 <p>Yes, there is an Amare lawsuit. It covers the income pitch, and it is not over.</p>
 <p><strong><a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-amare-global-holdings-misrepresenting-health-benefits-its-dietary-supplements-children">On June 2, 2026, the FTC sued Amare Global "for misleading its seller recruits about their potential earnings as 'brand partners.'"</a></strong></p>
-<p>That is the FTC's side. Nothing has been proven in court. There is no settlement and no claim form.</p>
+<p>That is the FTC's side. I found no court finding, no settlement and no claim form.</p>
 <p>Amare is a real company. Whether its pitch was honest is now a court's call.</p>
-<p>Case page checked October 31, 2026. It still says Pending.</p>
+<p>Case page checked November 1, 2026. It still says Pending.</p>
 </div>
 
 <div class="sta-toc">
@@ -73,11 +73,11 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <h2 id="lawsuit">Is there an Amare lawsuit, and is it over?</h2>
 
-<p class="quick-answer">Quick answer: yes, filed June 2, 2026. No, it is still pending, with no ruling and no settlement.</p>
+<p class="quick-answer">Quick answer: yes, filed June 2, 2026. No, the FTC still lists it as Pending, with no ruling or settlement shown.</p>
 
 <p>It is after ten. One lamp is on over the green island. Your laptop sits under it, and your chair is pushed back. The glass of water you poured at dinner is still half full.</p>
 
-<p>You know the list. The order you place every month so you stay active. The post that said anyone can do this. The friend who asked you this week if it is real. The words you typed into the search bar, amare global lawsuit update. And that feeling that the pitch was running you instead of the other way around.</p>
+<p>You know the list. The order you place every month so you can get paid. The post that said anyone can do this. The friend who asked you this week if it is real. The words you typed into the search bar, amare global lawsuit update. And that feeling that the pitch was running you instead of the other way around.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/isamareglob-villain-v1.webp" alt="An empty kitchen with a green island at night, one lamp on, a closed laptop, a half glass of water and the chair pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -98,9 +98,9 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>The suit also covers health claims, including on products Amare marketed for children.</p>
 
-<p>On June 12, the FTC asked a federal court to act. <a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims">It wants Amare, Talbott, Hintze and former CEO Hiep Tran held in contempt.</a> The FTC says they broke a 2005 order against Talbott. That is a request. The case page shows no ruling on it.</p>
+<p>On June 12, the FTC announced it had asked a federal court to act. <a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims">It wants Amare, Talbott, Hintze and former CEO Hiep Tran held in contempt.</a> The FTC says they broke a 2005 order against Talbott. That is a request, filed in that older case. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2523140amareglobalcontemptmotion.pdf">The motion listed a hearing for July 13, 2026.</a> I found no ruling on it as of November 1, 2026.</p>
 
-<p>And Amare's side? <a href="https://www.nutraingredients.com/Article/2026/06/04/ftc-sues-amare-over-mental-health-supplement-claims/">NutraIngredients reported on June 4</a> that Amare "had not issued a public response to the complaint at press time." No public response turned up as of October 31, 2026.</p>
+<p>And Amare's side? <a href="https://www.nutraingredients.com/Article/2026/06/04/ftc-sues-amare-over-mental-health-supplement-claims/">NutraIngredients reported on June 4</a> that Amare "had not issued a public response to the complaint at press time." No public statement from Amare turned up as of November 1, 2026.</p>
 
 <h2 id="told">What does the FTC say brand partners were told?</h2>
 
@@ -112,7 +112,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/Amare-Complaint.pdf">The complaint</a> says recruits were told they could "supplement or replace their current income." And that was "even if they do not have a large social media following."</p>
 
-<p>That line was not aimed at a star. It was aimed at you, with a phone and a kitchen table.</p>
+<p>By the FTC's account, that line was not aimed at a star. It was aimed at you, with a phone and a kitchen table.</p>
 
 <h3>What the FTC says most partners made</h3>
 
@@ -126,25 +126,27 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>So if you had no following, you heard anyone can. By the FTC's account, some with a crowd got a floor under them.</p>
 
-<p>No shame in believing it. The pitch was built to be believed.</p>
+<p>No shame in believing it. A pitch is built to be believed.</p>
 
 <h3>How old the numbers were</h3>
 
 <p>From May 2024 to April 2026, the FTC says, Amare's website showed an income disclosure. Its numbers covered May 2021 to April 2022.</p>
 
-<p>And so, by the FTC's account, you could open it in 2026 and read numbers four years old.</p>
+<p>And so, by the FTC's account, you could open it as late as April 2026 and read numbers four years old.</p>
+
+<p><a href="https://amarecdn.azureedge.net/webassets/resources/OtherInformation/Amare_IncomeDisclosureStatement.pdf">Amare has since posted a 2025 statement, marked July 2026.</a> It says "73.6% of the Active Brand Partners represented here had no gross earnings in 2025."</p>
 
 <h2 id="cost">What did it cost to qualify for pay at Amare?</h2>
 
-<p class="quick-answer">Quick answer: a yearly fee, the FTC says. To qualify for pay, it says, more than $100 in orders a month.</p>
+<p class="quick-answer">Quick answer: two fees, by Amare's own statement. To qualify for pay, the FTC says, generally more than $100 in orders a month.</p>
 
-<p>New brand partners pay Amare a yearly fee, the FTC says. It is typically $69, unless waived in a promo.</p>
+<p>New brand partners pay Amare a yearly fee, the FTC says. It is typically $69, unless waived in a promo. Amare's 2025 statement lists $69.95 to enroll, often waived with a qualifying first order, and $69.95 a year.</p>
 
 <p>To be eligible for pay in a month, the complaint says, you need at least 100 in "personal volume," or PV. That comes from your orders and your own customers' orders. The FTC says that generally takes more than $100.</p>
 
 <p>The FTC says those orders often include your own. In May 2024, it says, Amare listed Happy Juice at $149.95. That was on a Subscribe and Save plan that renews by itself.</p>
 
-<p>And so the order that keeps you counted can come out of your own pocket. Every month.</p>
+<p>And so the order you need to get paid can come out of your own pocket. Every month.</p>
 
 <p>Here is the gap, side by side. Every cell is the FTC's allegation, not a court finding.</p>
 
@@ -155,13 +157,11 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 <tr><td>Can it replace your income?</td><td>You can "supplement or replace" it</td><td>Partners are "not likely" to earn "supplemental, significant, or substantial income"</td></tr>
 </table>
 
-<p>And by the FTC's account, the posts usually left out any warning like that right column.</p>
-
 <h2 id="is-this-a-pitch">Isn't this just another pitch?</h2>
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>Amare has not lost in court. A complaint is one side's story. The FTC still has to prove every line of it.</p>
+<p>I found no ruling against Amare in either case. A complaint is one side's story. The FTC still has to prove every line of it.</p>
 
 <p>None of this is a knock on supplements either. The FTC named certain claims, and those claims are its fight to win.</p>
 
@@ -187,7 +187,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <h3>What does it cost to stay active?</h3>
 
-<p>Add up the yearly fee and the monthly order it takes to qualify. Write that number on paper first. Here is <a href="https://theshannonnicole.com/post/what-does-it-cost-to-start">how to add up the cost</a>.</p>
+<p>Add up the fees and the monthly order it takes to qualify. Write that number on paper first. Here is <a href="https://theshannonnicole.com/post/what-does-it-cost-to-start">how to add up the cost</a>.</p>
 
 <h3>Who owns the customer?</h3>
 
@@ -231,13 +231,14 @@ our finances.</p>
 <div class="sta-proof">
 <h3>Where to check me</h3>
 <ul>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-amare-global-holdings-misrepresenting-health-benefits-its-dietary-supplements-children">The FTC's press release, June 2, 2026</a>. The FTC sued Amare Global Holdings, plus Chung, Talbott and Hintze. Who is accused, in the FTC's own words.</li>
-<li><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/Amare-Complaint.pdf">The FTC's complaint, Case No. 2:26-cv-05900, Central District of California, filed June 2, 2026</a>. The "supplement or replace" line, the 86%, the guaranteed minimums, the fee and the 100 PV all come from here. The pitch and the paperwork, in one filing.</li>
-<li><a href="https://www.ftc.gov/legal-library/browse/cases-proceedings/2523140-amare-global-holdings-ftc-v">The FTC's case page</a>. Status Pending, last updated June 12, 2026. No settlement, ruling or claim form listed. So any settlement you hear about is not on the FTC's own page.</li>
-<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims">The FTC's contempt motion release, June 12, 2026</a>. It asks the court to hold Amare, Talbott, Hintze and Hiep Tran in contempt of a 2005 order. A request, not a ruling.</li>
+<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-amare-global-holdings-misrepresenting-health-benefits-its-dietary-supplements-children">The FTC's press release, June 2, 2026</a>. Who is accused, in the FTC's own words.</li>
+<li><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/Amare-Complaint.pdf">The FTC's complaint, Case No. 2:26-cv-05900, Central District of California, filed June 2, 2026</a>. The "supplement or replace" line, the 86%, the guaranteed minimums, the fee and the 100 PV all come from here.</li>
+<li><a href="https://www.ftc.gov/legal-library/browse/cases-proceedings/2523140-amare-global-holdings-ftc-v">The FTC's case page</a>. Status Pending, last updated June 12, 2026. No settlement, ruling or claim form listed.</li>
+<li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims">The FTC's contempt motion release, June 12, 2026</a>. A request, not a ruling. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2523140amareglobalcontemptmotion.pdf">The motion, Case No. CV-04-8190</a>, lists the July 13 hearing.</li>
 <li><a href="https://www.nutraingredients.com/Article/2026/06/04/ftc-sues-amare-over-mental-health-supplement-claims/">NutraIngredients, by Cassandra Stern, June 4, 2026</a>. Amare had not issued a public response at press time.</li>
+<li><a href="https://amarecdn.azureedge.net/webassets/resources/OtherInformation/Amare_IncomeDisclosureStatement.pdf">Amare's 2025 Gross Income Disclosure Statement, Rev. v1, July 2026</a>. The 73.6% and the $69.95 fees come from here.</li>
 </ul>
-<p class="micro">No ruling, settlement or public response from Amare turned up as of October 31, 2026. Everything above is the FTC's allegation until a court says otherwise.</p>
+<p class="micro">The FTC's page and the news show no ruling, settlement or public statement from Amare as of November 1, 2026. The FTC's claims stay allegations until a court says otherwise.</p>
 </div>
 
 <h2 id="who-you-become">Who do you become?</h2>
@@ -254,21 +255,21 @@ our finances.</p>
 
 <div class="sta-cta">
 <h3>Twenty minutes, on video, no slides</h3>
-<p>Bring the three questions from this page. Ask me every one, starting with who owns the customer. If it is not for you, I would rather find out on the call.</p>
+<p>Bring the three questions from this page. Ask me every one. If it is not for you, I would rather find out on the call.</p>
 <p><a href="https://link.switchtoamerica.com/widget/bookings/boostyourincome">Book the twenty minutes</a></p>
-<span class="micro">You can always say no, and there is no follow up if you do.</span>
+<span class="micro">You can always say no.</span>
 </div>
 
 <h2 id="faq">What else are women asking me about this?</h2>
 
 <p><strong>Is there an Amare Global lawsuit settlement?</strong></p>
-<p>No. The FTC's case page lists the case as Pending, last updated June 12, 2026. It shows no settlement, no ruling and no claim form. Checked October 31, 2026.</p>
+<p>None listed. The FTC's case page says Pending, last updated June 12, 2026. It shows no settlement, no ruling and no claim form. Checked November 1, 2026.</p>
 
 <p><strong>What does the FTC say Amare told brand partners?</strong></p>
 <p>That anyone could make at least a set amount every month, even without a big following. The FTC says 86% of people made far less, before expenses. Those are allegations, not findings.</p>
 
 <p><strong>Did Amare respond to the FTC?</strong></p>
-<p>No public response turned up as of October 31, 2026. On June 4, NutraIngredients reported that Amare had not responded at press time.</p>
+<p>No public statement from Amare turned up as of November 1, 2026. Any court filing would sit on the docket, not the FTC's page.</p>
 
 <p><strong>Do I have to quit Amare to talk to you?</strong></p>
 <p>No. A call is just a call. Read what your Amare agreement says about other businesses first. Asking questions is not disloyal.</p>
@@ -276,10 +277,10 @@ our finances.</p>
 <div class="sta-keep">
 <h3>Worth reading next</h3>
 <ul>
-<li><a href="https://theshannonnicole.com/post/how-to-read-an-income-disclosure">How do you read an income disclosure statement?</a> The one page to ask for first.</li>
-<li><a href="https://theshannonnicole.com/post/what-does-it-cost-to-start">What does it actually cost to start?</a> Add it up before you sign.</li>
-<li><a href="https://theshannonnicole.com/post/how-to-tell-if-a-business-opportunity-is-legit">How do you tell a real business from a repackaged course?</a> More questions worth asking.</li>
-<li><a href="https://theshannonnicole.com/post/is-nu-skin-still-in-business">Is Nu Skin still in business?</a> Same questions, another company.</li>
+<li><a href="https://theshannonnicole.com/post/how-to-read-an-income-disclosure">How do you read an income disclosure statement?</a></li>
+<li><a href="https://theshannonnicole.com/post/what-does-it-cost-to-start">What does it actually cost to start?</a></li>
+<li><a href="https://theshannonnicole.com/post/how-to-tell-if-a-business-opportunity-is-legit">How do you tell a real business from a repackaged course?</a></li>
+<li><a href="https://theshannonnicole.com/post/is-nu-skin-still-in-business">Is Nu Skin still in business?</a></li>
 <li><a href="https://theshannonnicole.com/blog/">More for women building something</a></li>
 </ul>
 </div>
@@ -296,7 +297,7 @@ our finances.</p>
   {
    "@type": "Article",
    "headline": "Is Amare Global Legit? The FTC Lawsuit Update and What Brand Partners Were Told (2026)",
-   "description": "The FTC sued Amare on June 2, 2026, and alleges recruits were misled about income. No ruling, no settlement. Three questions to ask any company.",
+   "description": "The FTC sued Amare on June 2, 2026, and alleges recruits were misled about income. No ruling or settlement listed. Three questions to ask any company.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isamareglob-hero-v1.webp",
    "datePublished": "2026-11-01",
    "dateModified": "2026-11-01",
@@ -336,11 +337,11 @@ our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Is there an Amare Global lawsuit settlement?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. The FTC's case page lists the case as Pending, last updated June 12, 2026. It shows no settlement, no ruling and no claim form. Checked October 31, 2026."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "None listed. The FTC's case page says Pending, last updated June 12, 2026. It shows no settlement, no ruling and no claim form. Checked November 1, 2026."}},
   {"@type": "Question", "name": "What does the FTC say Amare told brand partners?",
    "acceptedAnswer": {"@type": "Answer", "text": "That anyone could make at least a set amount every month, even without a big following. The FTC says 86% of people made far less, before expenses. Those are allegations, not findings."}},
   {"@type": "Question", "name": "Did Amare respond to the FTC?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No public response turned up as of October 31, 2026. On June 4, NutraIngredients reported that Amare had not responded at press time."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No public statement from Amare turned up as of November 1, 2026. Any court filing would sit on the docket, not the FTC's page."}},
   {"@type": "Question", "name": "Do I have to quit Amare to talk to you?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. A call is just a call. Read what your Amare agreement says about other businesses first. Asking questions is not disloyal."}}
  ]
