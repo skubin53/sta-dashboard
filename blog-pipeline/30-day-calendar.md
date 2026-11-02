@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-11-01 | 2 posts every publish day (even dates) | starts 2026-11-02 | 30 days
+Switch to America | rebuilt 2026-11-02 | 2 posts every publish day (even dates) | starts 2026-11-02 | 30 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
