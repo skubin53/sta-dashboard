@@ -65,8 +65,8 @@ def build(photo, slug, eyebrow, head):
     dy=y+16; d.rectangle([W/2-70,dy,W/2+70,dy+6],fill=GOLD)
     pw,ph=560,110; px=(W-pw)/2; py=1200
     d.rounded_rectangle([px,py,px+pw,py+ph],radius=55,fill=GOLD)
-    fc=font(ARIALBD,44); bb=d.textbbox((0,0),"See the safer swap",font=fc)
-    d.text(((W-(bb[2]-bb[0]))/2-bb[0],py+(ph-(bb[3]-bb[1]))/2-bb[1]),"See the safer swap",font=fc,fill=NAVY)
+    CTA=os.environ.get("PIN_CTA","See the safer swap"); fc=font(ARIALBD,44); bb=d.textbbox((0,0),CTA,font=fc)
+    d.text(((W-(bb[2]-bb[0]))/2-bb[0],py+(ph-(bb[3]-bb[1]))/2-bb[1]),CTA,font=fc,fill=NAVY)
     center(d,"SWITCH TO AMERICA",font(ARIALBD,27),1380,WHITE,spacing=4,shadow=(0,0,0))
     center(d,"scan.ismyhometoxic.com",font(ARIAL,25),1422,CREAM,shadow=(0,0,0))
     out=os.path.join(OUT,"pinx_%s.png"%slug); base.convert("RGB").save(out,"PNG"); return out
