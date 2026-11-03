@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-11
+date: 2026-11-03
 title: Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)
 slug: is-liquid-iv-sugar-free-really-sugar-free
 keyword: liquid iv lawsuit
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 11, 2026<br><span style="font-size:.92em;">Published November 11, 2026 &middot; Last updated November 11, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 3, 2026<br><span style="font-size:.92em;">Published November 3, 2026 &middot; Last updated November 3, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -123,7 +123,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><strong>Two.</strong> The 0 on the panel matches the 2020 guidance.</p>
 
-<p><strong>Three.</strong> <a href="https://www.courtlistener.com/docket/74638230/ulrich-v-the-liv-group-inc/">No judge has ruled against the company. As of October 13, 2026, the court file shows no ruling on the claims.</a></p>
+<p><strong>Three.</strong> <a href="https://www.courtlistener.com/docket/74638230/ulrich-v-the-liv-group-inc/">No judge has ruled against the company. As of November 3, 2026, the court file shows no ruling on the claims.</a></p>
 
 <p>And this suit does not say allulose hurt anyone. I am not saying that either.</p>
 
@@ -131,7 +131,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Because the front says Sugar-Free, and by the suit's account the first ingredient is a sugar. The front is what you paid for.</p>
 
-<p><a href="https://www.insurancejournal.com/news/national/2026/07/28/879370.htm">A suit over Chobani Zero Sugar yogurt is further along. On July 27, 2026, a federal appeals court in Chicago let it go forward.</a> That yogurt has 4 grams of allulose. Judge Thomas Kirsch wrote that the court did "not find that allegation implausible."</p>
+<p><a href="https://www.insurancejournal.com/news/national/2026/07/28/879370.htm">A suit over Chobani Zero Sugar yogurt is further along. On July 27, 2026, a federal appeals court in Chicago let it go forward.</a> That yogurt had 4 grams of allulose a serving, Reuters reported. Judge Thomas Kirsch wrote that the court did "not find that allegation implausible."</p>
 
 <p>The court did not say who wins. It said the shoppers can try to prove it.</p>
 
@@ -204,7 +204,7 @@ of our health and our finances.</p>
 <h3>The receipts</h3>
 <ul>
 <li><a href="https://www.classaction.org/media/liquid-iv-complaint.pdf">Ulrich et al. v. The LIV Group, Inc., US District Court, Northern District of California, No. 3:26-cv-08349, complaint filed August 12, 2026</a>. It alleges 4 or 5 grams of allulose a serving, listed first, under a 0g Total Sugars panel. What it means: by the complaint's account, you paid for a word. Nothing is proven.</li>
-<li><a href="https://www.courtlistener.com/docket/74638230/ulrich-v-the-liv-group-inc/">The docket for that case, CourtListener</a>. The company was served August 19, 2026 and asked for more time to answer. No ruling on the claims as of October 13, 2026. What it means: nothing is decided yet.</li>
+<li><a href="https://www.courtlistener.com/docket/74638230/ulrich-v-the-liv-group-inc/">The docket for that case, CourtListener</a>. The company was served August 19, 2026 and asked for more time to answer. No ruling on the claims as of November 3, 2026. What it means: nothing is decided yet.</li>
 <li><a href="https://www.insurancejournal.com/news/national/2026/07/28/879370.htm">Reuters, via Insurance Journal, July 28, 2026</a>. The 7th Circuit revived a sugar free suit over Chobani Zero Sugar yogurt. Chobani says its panel "accurately shows" 0g total sugar. What it means: a court will hear it. No winner yet.</li>
 <li><a href="https://www.law.cornell.edu/cfr/text/21/101.60">21 CFR 101.60(c)(1), the federal sugar free rule, Cornell Law School copy</a>. Sugar free means "less than 0.5 g of sugars" per serving. What it means: the word has a legal line, and it is half a gram.</li>
 <li><a href="https://www.fda.gov/food/hfp-constituent-updates/fda-seeks-input-nutrition-labeling-certain-sugars-and-issues-final-guidance-allulose">Federal labeling guidance on allulose, October 16, 2020</a>. Regulators will not enforce counting allulose in Total or Added Sugars, pending a rule. What it means: that is where the zero comes from.</li>
@@ -234,7 +234,7 @@ of our health and our finances.</p>
 <h2 id="faq">What else do people ask?</h2>
 
 <p><strong>Is there a Liquid I.V. settlement I can claim?</strong></p>
-<p>No. The suit was filed August 12, 2026. No class has been certified and nothing is settled.</p>
+<p>No. This suit was filed August 12, 2026. No class has been certified and nothing is settled.</p>
 
 <p><strong>Is Liquid I.V. Sugar-Free really sugar free?</strong></p>
 <p>Not by the lawsuit's count. The complaint says each serving has 4 or 5 grams of allulose, a sugar. The panel shows 0 grams because 2020 guidance lets companies leave allulose out. No court has ruled.</p>
@@ -269,8 +269,8 @@ of our health and our finances.</p>
    "headline": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
    "description": "A suit says Liquid I.V. Sugar-Free sticks list allulose first, 4 or 5 grams, while the panel says 0g sugar. Nothing is proven. What to drink instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isliquidivs-hero-v1.webp",
-   "datePublished": "2026-11-11",
-   "dateModified": "2026-11-11",
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-liquid-iv-sugar-free-really-sugar-free"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
@@ -308,7 +308,7 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Is there a Liquid I.V. settlement I can claim?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No. The suit was filed August 12, 2026. No class has been certified and nothing is settled."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No. This suit was filed August 12, 2026. No class has been certified and nothing is settled."}},
   {"@type": "Question", "name": "Is Liquid I.V. Sugar-Free really sugar free?",
    "acceptedAnswer": {"@type": "Answer", "text": "Not by the lawsuit's count. The complaint says each serving has 4 or 5 grams of allulose, a sugar. The panel shows 0 grams because 2020 guidance lets companies leave allulose out. No court has ruled."}},
   {"@type": "Question", "name": "Is allulose bad for you?",
