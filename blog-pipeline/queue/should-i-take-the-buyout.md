@@ -1,12 +1,12 @@
 ---
 day: new
-date: 2026-11-02
+date: 2026-11-03
 title: Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)
 slug: should-i-take-the-buyout
 keyword: should i take a buyout offer
 category: Builders
 cover: https://scan.ismyhometoxic.com/blog-images/shoulditake-hero-v1.webp
-meta_description: Bloomberg said layoffs could follow Centene's buyout. Microsoft's came with a formula. Six questions to answer before you sign.
+meta_description: Bloomberg said layoffs could follow Centene's buyout. Microsoft's spring offer came with a formula. Six questions to answer before you sign.
 status: ready
 vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Star, money-at-fifty, Builder-Fit-Quiz]
 ---
@@ -47,13 +47,13 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 3, 2026<br><span style="font-size:.92em;">Published November 3, 2026 &middot; Last updated November 3, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>The email says voluntary. The date at the bottom does not feel voluntary.</p>
 <p>I will not tell you yes or no. I cannot see your paper, and nobody honest answers without it.</p>
-<p><strong><a href="https://news.bloombergtax.com/insurance/centene-offers-most-staff-buyouts-after-obamacare-member-losses">Bloomberg News reported</a> Centene's 2026 offer "isn't guaranteed or automatic," and that layoffs could follow.</strong> <a href="https://abc17news.com/money/cnn-business-consumer/2026/04/24/microsoft-to-offer-voluntary-retirement-to-thousands-of-us-employees-for-the-first-time/">Microsoft drew its line at 70</a>, your age plus your years there. So get five answers in writing before you sign.</p>
+<p><strong><a href="https://news.bloombergtax.com/insurance/centene-offers-most-staff-buyouts-after-obamacare-member-losses">Bloomberg News reported</a> Centene's 2026 offer "isn't guaranteed or automatic," and that layoffs could follow.</strong> <a href="https://abc17news.com/money/cnn-business-consumer/2026/04/24/microsoft-to-offer-voluntary-retirement-to-thousands-of-us-employees-for-the-first-time/">Microsoft's spring offer drew its line at 70</a>, your age plus your years there. So get five answers in writing before you sign.</p>
 <p>A buyout is a company deciding how big your job is. The bridge you build yourself to Medicare is the part no memo can shrink.</p>
 </div>
 
@@ -89,9 +89,11 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p>Chief executive Sarah London gave the reason <a href="https://www.hcamag.com/us/specialization/transformation/insurance-giant-moves-to-shrink-workforce-with-broad-buyouts-report/578974">in a staff message</a> Bloomberg News viewed. "When our membership shifts, we need to shift our organization accordingly."</p>
 
-<p>In April, <a href="https://abc17news.com/money/cnn-business-consumer/2026/04/24/microsoft-to-offer-voluntary-retirement-to-thousands-of-us-employees-for-the-first-time/">CNN reported</a> a one-time Microsoft retirement program for about 7% of its US workforce. Senior directors and below qualified if their "age and years of service total 70 or higher." Microsoft planned to tell them May 7.</p>
+<p>In April, <a href="https://abc17news.com/money/cnn-business-consumer/2026/04/24/microsoft-to-offer-voluntary-retirement-to-thousands-of-us-employees-for-the-first-time/">CNN reported</a> a one-time Microsoft retirement program for about 7% of its US workforce. Senior directors and below qualified if their "age and years of service total 70 or higher."</p>
 
 <p>Say you are 56 with 14 years in. That is 70. You never asked for that number, and it found you anyway.</p>
+
+<p>On October 26, <a href="https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/">Microsoft posted a second offer</a> for job level 70 and below on some teams. Same number, new meaning.</p>
 
 <p>Centene's <a href="https://www.sec.gov/Archives/edgar/data/0001071739/000107173926000194/a20261027ex991pressrelease.htm">October 27 earnings release</a> showed 53,900 employees, down from 59,800 a quarter earlier. <a href="https://www.healthcaredive.com/news/centene-progresses-profit-recovery-cuts-workforce-by-6k/872816/">Healthcare Dive reported</a> a spokesperson tied the drop to layoffs and the June program, among other exits. Centene declined to say how many took the buyout, so neither will I.</p>
 
@@ -113,8 +115,6 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p class="quick-answer">Quick answer: the pay, your coverage, your 401(k), what a no means and your real deadline. Each needs a name and a date.</p>
 
-<p>Email each one, so the answer comes back in writing.</p>
-
 <h3>What does the pay really come to?</h3>
 
 <p>Ask the amount and the dates. <a href="https://www.irs.gov/publications/p525">The IRS says</a>, "You must include in income amounts you receive as severance pay." And so the number in the letter is not the number in your account.</p>
@@ -133,7 +133,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <h3>Is that date to apply, or to sign?</h3>
 
-<p>Are you 40 or over? Does the paper ask you not to sue over your age? Then the EEOC says a group program owes you "at least 45 days to consider the waiver." You get seven more days to take your signature back. The paper must also tell you in writing to see a lawyer. <a href="https://theshannonnicole.com/post/severance-at-52-what-next">Severance after you sign is here.</a></p>
+<p>Are you 40 or over? Does the paper ask you not to sue over your age? Then the EEOC says a group program owes you "at least 45 days to consider the waiver." You get seven more days to take your signature back. The paper must also tell you in writing to see a lawyer. <a href="https://theshannonnicole.com/post/severance-at-52-what-next">What you are owed is here.</a></p>
 
 <p>"If you are being rushed, ask for more time," the EEOC says. "Put your request in writing."</p>
 
@@ -150,7 +150,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p class="quick-answer">Quick answer: at 56, nine years. COBRA usually covers 18 months of it.</p>
 
-<p>Here is the math. <a href="https://www.medicare.gov/basics/get-started-with-medicare">Medicare is for people "65 or older,"</a> nine years out.</p>
+<p><a href="https://www.medicare.gov/basics/get-started-with-medicare">Medicare is for people "65 or older,"</a> nine years out.</p>
 
 <p><a href="https://www.ecfr.gov/current/title-20/section-404.409">The federal rule</a> lets you take Social Security, reduced, "at age 62." <a href="https://theshannonnicole.com/post/is-full-retirement-age-changing-in-november">Born on January 2, 1960 or later, your full age is 67.</a> That is six years to a first check and eleven to a full one.</p>
 
@@ -168,7 +168,7 @@ vault_checked: [capped-corporate, burned-out, Builder-Target-Segments, North-Sta
 
 <p>Centene is not a monster, and neither is Microsoft. Centene's spokesperson <a href="https://www.fiercehealthcare.com/payers/centene-offering-staff-buyouts-navigates-murky-aca-waters">told Fierce Healthcare</a> the program was "to support employees who may be considering a transition." For you, it may be exactly that.</p>
 
-<p>Now me. Switch to America is a private membership store that sells straight from the manufacturer. No middlemen and no markup. You pay what a brand new shopper pays, not a penny less.</p>
+<p>Now me. Switch to America is a private membership store. We are the manufacturer. No middlemen and no markup. You pay what a brand new shopper pays, not a penny less.</p>
 
 <p>What you build with me is not a paycheck, and it is not health insurance. If you need either one, go get it first.</p>
 
@@ -281,10 +281,10 @@ our finances.</p>
   {
    "@type": "Article",
    "headline": "Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)",
-   "description": "Bloomberg said layoffs could follow Centene's buyout. Microsoft's came with a formula. Six questions to answer before you sign.",
+   "description": "Bloomberg said layoffs could follow Centene's buyout. Microsoft's spring offer came with a formula. Six questions to answer before you sign.",
    "image": "https://scan.ismyhometoxic.com/blog-images/shoulditake-hero-v1.webp",
-   "datePublished": "2026-11-02",
-   "dateModified": "2026-11-02",
+   "datePublished": "2026-11-03",
+   "dateModified": "2026-11-03",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/should-i-take-the-buyout"},
    "author": {"@id": "https://theshannonnicole.com/post/should-i-take-the-buyout#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
