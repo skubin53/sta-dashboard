@@ -92,7 +92,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/boticelli-foods-recalls-bettergoods-pistachio-nut-butter-because-possible-health-risk">Walmart learned of the test on July 17, 2026.</a> <a href="https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1273-2026%22">The record says the recall started that same day.</a> The notice for shoppers went up August 3, 17 days later.</p>
 
-<p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible">On September 15, Gias Foods pulled two lots of frozen bettergoods Lemon Alfredo Fettuccine.</a> It is the 22 ounce yellow bag, UPC 194346442706, lots L6079C and L6080C.</p>
+<p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible">On September 15, Gias Foods announced a recall of two lots of frozen bettergoods Lemon Alfredo Fettuccine.</a> It is the 22 ounce yellow bag, UPC 194346442706, lots L6079C and L6080C.</p>
 
 <p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible-0">On October 1, Gias pulled all lot codes.</a> <a href="https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-0014-2027%22">The recall record names a third lot, L6081A.</a></p>
 
@@ -100,9 +100,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/gias-foods-inc-recalls-bettergoods-authentic-italian-lemon-alfredo-fettuccine-because-possible">Gias says state tests in Washington and Florida showed the pasta may contain Listeria.</a></p>
 
-<p>Gias says Listeria can cause "serious and sometimes fatal infections" in frail or elderly people.</p>
+<p>Gias says Listeria can cause "serious and sometimes fatal infections" in young children and frail or elderly people.</p>
 
-<p><a href="https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1396-2026%22">The recall record ranks the pasta Class I</a>, and the jar too. <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-7/subpart-A/section-7.3">Under federal rules, Class I is the most serious of three.</a></p>
+<p><a href="https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1396-2026%22">The recall record ranks the pasta Class I</a>, and <a href="https://api.fda.gov/food/enforcement.json?search=recall_number:%22H-1273-2026%22">the jar too.</a> <a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-7/subpart-A/section-7.3">Under federal rules, Class I is the most serious of three.</a></p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/isbettergoo-villain-v1.webp" alt="A small jar of pistachio nut butter standing alone in a white kitchen in cold, flat light, with nobody in the frame" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -124,13 +124,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The same list held Great Value waffles. TreeHouse said all of it came from one plant.</p>
 
-<p>And so better is a word on the box. In 2024, the better waffles and the everyday waffles came out of one plant.</p>
+<p>And so better is a word on the box. The better waffles and the everyday waffles came out of one plant.</p>
 
 <h2 id="check-yours">How do I check my jar or bag?</h2>
 
 <p class="quick-answer">Quick answer: match the UPC and the lot code. If they match, do not eat it, and get your money back.</p>
 
-<p>Find the lot code printed on the jar. The recalled one reads LB028ACP04, with an expiration date of January 28, 2027. The UPC, the number under the barcode, is 194346207961.</p>
+<p>Find the lot code on the jar. The recalled one reads LB028ACP04, with an expiration date of January 28, 2027. The UPC, the number under the barcode, is 194346207961.</p>
 
 <p>The pasta is simpler. Each 22 ounce bag with UPC 194346442706 is pulled, no matter the lot.</p>
 
@@ -169,7 +169,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Do the small thing tonight. Match the jar and the bag. If they match, make the return.</p>
 
-<p>Then think about the next jar. This one came from a factory in Italy by way of a firm in New York, and you never saw a single step of it.</p>
+<p>Then think about the next jar. This one came from a factory in Italy by way of a firm in New York, and you never saw a step of it.</p>
 
 <p>Nut butter is nuts, ground until they turn smooth. Get the nuts from a farmer you know. Grind them in your own kitchen, and you know each step.</p>
 
