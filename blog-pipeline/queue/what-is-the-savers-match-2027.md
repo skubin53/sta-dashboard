@@ -52,10 +52,10 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>Yes. Profit from a side business counts as pay from work. That pay lets you put money in an IRA. What you put in is what gets matched.</p>
-<p>Here is the short version. If your income fits, the government adds <strong><a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">"a maximum 50% match on the first $2,000"</a></strong> you save in 2027. The most is $1,000 per person, paid into your account, not your pocket. And no account has to take it.</p>
+<p>If your income fits, the government adds <strong><a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">"a maximum 50% match on the first $2,000"</a></strong> you save in 2027. The most is $1,000 per person, paid into your account, not your pocket. And no account has to take it.</p>
 <p>For a business you own, the IRS says <strong><a href="https://www.irs.gov/publications/p590a">"compensation is the net earnings from your trade or business."</a></strong> Your profit, not your sales.</p>
 <p>A boss decides if you get a plan at work. Pay from work you own lets you save in an IRA yourself.</p>
-<p>That is the whole post. The rest is the proof. Checked November 2, 2026.</p>
+<p>That is the whole post. The rest is the proof. Checked November 4, 2026.</p>
 </div>
 
 <div class="sta-toc">
@@ -79,7 +79,7 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 
 <p>You typed one question into your phone. Does the money from my little business count?</p>
 
-<p>It can. <a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">The IRS laid out the coming rules on August 7, 2026.</a> <a href="https://www.irs.gov/retirement-plans/savers-match">You claim it on Form 8880-A</a> with your 2027 tax return.</p>
+<p>It can. <a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">The IRS laid out the coming rules on August 7, 2026.</a> <a href="https://www.irs.gov/credits-deductions/savers-match">You claim it on Form 8880-A</a> with your 2027 tax return.</p>
 
 <p>This button books twenty minutes on video with me. It is about building something in your own name, not your taxes.</p>
 
@@ -90,7 +90,7 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 <span class="micro">You can always say no.</span>
 </div>
 
-<p>The match replaces the old Saver's Credit, which could never be more than the tax you owed. The match is paid <a href="https://www.irs.gov/pub/irs-drop/n-26-48.pdf">"even if the individual has no income tax liability."</a></p>
+<p>For retirement accounts, the match replaces the old Saver's Credit, which could never be more than the tax you owed. The match is paid <a href="https://www.irs.gov/pub/irs-drop/n-26-48.pdf">"even if the individual has no income tax liability."</a></p>
 
 <p>You must be 18 by the end of the year. You cannot be a full-time student, or claimed as someone's dependent. You must also be a US resident for tax purposes.</p>
 
@@ -100,13 +100,13 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 
 <p class="quick-answer">Quick answer: single, the full match stops at $20,500. All of it is gone at $35,500. Married filing jointly, it is $41,000 and $71,000.</p>
 
-<p>Your income decides how much you get. <a href="https://www.irs.gov/retirement-plans/savers-match">The IRS has posted the 2027 lines.</a> Past the first line the match shrinks. At the last it is gone.</p>
+<p>Your income decides how much you get. <a href="https://www.irs.gov/credits-deductions/savers-match">The IRS has posted the 2027 lines.</a> Past the first line the match shrinks. At the last it is gone.</p>
 
 <table class="sta-table">
 <tr><th>Your filing status</th><th>Full match</th><th>Smaller match</th><th>No match</th></tr>
 <tr><td>Single, or married filing separately</td><td>Up to $20,500</td><td>$20,501 to $35,499</td><td>$35,500 and up</td></tr>
 <tr><td>Head of household</td><td>Up to $30,750</td><td>$30,751 to $53,249</td><td>$53,250 and up</td></tr>
-<tr><td>Married filing jointly</td><td>Up to $41,000</td><td>$41,001 to $70,999</td><td>$71,000 and up</td></tr>
+<tr><td>Married filing jointly, or qualifying surviving spouse</td><td>Up to $41,000</td><td>$41,001 to $70,999</td><td>$71,000 and up</td></tr>
 </table>
 
 <p>The income is the adjusted gross income on your return. Add back what you put in pre-tax, like a 401(k) or a deductible IRA. Business profit goes on that return <a href="https://www.irs.gov/forms-pubs/about-schedule-c-form-1040">through Schedule C</a>, so it counts here too. A busier year can lift you past a line.</p>
@@ -119,7 +119,7 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 
 <p>A paycheck counts. So does a business you own. For the self-employed, "compensation is the net earnings from your trade or business."</p>
 
-<p>That is what is left after costs, less part of your self-employment tax. Pension or annuity income, rent, interest and dividends do not count.</p>
+<p>That is your profit, less part of your self-employment tax and any retirement plan deduction for yourself. Pension or annuity income, rent, interest and dividends do not count.</p>
 
 <p>And you cannot put in more than your taxable pay for the year. A business with no profit gives you no pay to put in.</p>
 
@@ -131,7 +131,7 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 
 <p><a href="https://www.irs.gov/pub/irs-drop/n-26-48.pdf">Page 22 of Notice 2026-48</a> lists where Treasury can pay it directly. A plan at work, like a 401(k), but not its Roth part. Or "an individual retirement plan that is not a Roth IRA."</p>
 
-<p>The headline says up to $1,000. Page 34 says this: "Neither retirement plans nor IRAs are required to accept Saver's Match contributions directly from the Treasury Department."</p>
+<p>The IRS says up to $1,000. Page 34 says this: "Neither retirement plans nor IRAs are required to accept Saver's Match contributions directly from the Treasury Department."</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/whatisthesa-villain-v1.webp" alt="An empty white and gray kitchen late at night, one lamp on, a laptop closed on the island, a half glass of water beside it and the seat pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -139,15 +139,15 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 
 <p>So the match is only as good as the account that agrees to take it. Treasury and the IRS only "encourage" plans and IRAs to consider it.</p>
 
-<p>Treasury will launch a website, <a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">TrumpIRA.gov, on January 1, 2027</a>. The notice expects it to list IRAs that accept the match.</p>
+<p>Treasury will launch a website, <a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">TrumpIRA.gov, on January 1, 2027</a>. The notice expects it to list IRA companies that accept the match.</p>
 
-<p>You would open that traditional IRA before you file. Form 8880-A would ask for its tracking number.</p>
+<p>You would open that traditional IRA before you file. Form 8880-A would ask for the IRA company's tracking number.</p>
 
 <h2 id="no-plan">What if you stepped away from a paycheck to care for a parent?</h2>
 
 <p class="quick-answer">Quick answer: then you may have no plan at work and no pay to put in. Pay from work you own can change the second part.</p>
 
-<p>A plan at work is not a given. In March 2026, <a href="https://www.bls.gov/news.release/archives/ebs2_09252026.htm">the Bureau of Labor Statistics</a> found retirement benefits "available to 72 percent of private industry workers." That leaves 28 in 100 with no plan offered.</p>
+<p>A plan at work is not a given. In March 2026, retirement benefits were "available to 72 percent of private industry workers," says <a href="https://www.bls.gov/news.release/archives/ebs2_09252026.htm">the Bureau of Labor Statistics</a>. That leaves 28 in 100 with no plan offered.</p>
 
 <p>And caregiving lands right in your years. In 2023 and 2024, people <a href="https://www.bls.gov/news.release/archives/elcare_09252025.htm">ages 55 to 64 and 45 to 54</a> "were the most likely to provide eldercare." Of the 38.2 million doing it, 55 percent were women.</p>
 
@@ -159,9 +159,9 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 <img src="https://scan.ismyhometoxic.com/blog-images/whatisthesa-turning-point-v1.webp" alt="A woman with curly dark hair in a cobalt sweater closing her laptop with one hand and looking out the kitchen window" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
-<p>The notice says TrumpIRA.gov will focus on "independent contractors, self-employed individuals, and other workers" with no plan at work. Work you own is right there in that list.</p>
+<p><a href="https://www.irs.gov/pub/irs-drop/n-26-48.pdf">The executive order behind TrumpIRA.gov</a> calls for "a particular focus on independent contractors, self-employed individuals, and other workers" with no plan at work. Work you own is right there in that list.</p>
 
-<p>I know what you are thinking. A job with a 401(k) is simpler. If yours offers one, those savings count too. And on a joint return, only one of you needs pay from work.</p>
+<p>I know what you are thinking. A job with a 401(k) is simpler. If yours offers one, those savings count too.</p>
 
 <p>But a plan at work lasts as long as the job does. Pay from work you own lets you put money in on your own. That is the door.</p>
 
@@ -187,7 +187,7 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Builder-Target-Seg
 
 <h3>Mark your deadline.</h3>
 
-<p>Money you put in an IRA by your 2027 tax deadline, without extensions, can count for 2027. Tell your IRA company which year.</p>
+<p>Money you put in an IRA <a href="https://www.irs.gov/publications/p590a">by your 2027 tax deadline, without extensions</a>, can count for 2027. Tell your IRA company which year.</p>
 
 <p>Your own return decides your number.</p>
 
@@ -223,8 +223,8 @@ our finances.</p>
 <div class="sta-proof">
 <h3>Where to check me</h3>
 <ul>
-<li><a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">IRS news release IR-2026-89, August 7, 2026</a>. Half of the first $2,000, capped at $1,000, paid from 2028. The headline numbers, in the IRS's words.</li>
-<li><a href="https://www.irs.gov/retirement-plans/savers-match">IRS, Saver's Match page</a>, last reviewed October 22, 2026. Who qualifies and the 2027 income table. Find your line.</li>
+<li><a href="https://www.irs.gov/newsroom/treasury-irs-begin-implementing-executive-order-14403-by-announcing-intent-to-issue-proposed-regulations-on-savers-match-which-will-benefit-millions-of-low-and-moderate-income-taxpayers">IRS news release IR-2026-89, August 7, 2026</a>. Half of the first $2,000, capped at $1,000, paid from 2028. Straight from the IRS.</li>
+<li><a href="https://www.irs.gov/credits-deductions/savers-match">IRS, Saver's Match page</a>, last reviewed October 22, 2026. Who qualifies and the 2027 income table. Find your line.</li>
 <li><a href="https://www.irs.gov/pub/irs-drop/n-26-48.pdf">IRS Notice 2026-48</a>. Page 22, no direct deposit into a Roth IRA. Page 34, no plan or IRA has to take the match. The catch is in writing.</li>
 <li><a href="https://www.irs.gov/publications/p590a">IRS Publication 590-A (2025)</a>. Business profit is the pay that opens an IRA. Your own work is the key.</li>
 <li><a href="https://www.bls.gov/news.release/archives/ebs2_09252026.htm">Bureau of Labor Statistics, Employee Benefits, March 2026</a>. Retirement benefits available to 72 percent of private industry workers. A plan at work is not a given.</li>
