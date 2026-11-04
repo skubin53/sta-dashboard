@@ -1,43 +1,43 @@
 {
- "start": "2026-11-03",
+ "start": "2026-11-04",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-11-03",
-   "weekday": "Tue",
+   "date": "2026-11-04",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "are-driscolls-strawberries-safe-to-eat",
      "title": "Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "cat": "Food",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
      "slug": "do-i-have-to-report-side-income-under-2000",
-     "title": "Do I Have to Report Side Income Under $2,000? What the IRS's New 1099 Rules Change (2026)",
+     "title": "Do I Have to Report Side Income Under $2,000? What Did the IRS's New 1099 Rules Change? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
+     "why": "already written",
      "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -68,45 +68,13 @@
    ]
   },
   {
-   "date": "2026-11-05",
-   "weekday": "Thu",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
      "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
      "cat": "Personal Care",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "should-i-take-the-buyout",
-     "title": "Should I Take the Buyout Offer? What Centene's and Microsoft's 2026 Offers Teach a Worker Over 50 (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-06",
-   "weekday": "Fri",
-   "slots": [
-    {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -136,9 +104,9 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-clear-eyes-safe",
-     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
-     "cat": "Personal Care",
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -168,8 +136,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-crest-toothpaste-safe",
-     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+     "slug": "is-clear-eyes-safe",
+     "title": "Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026)",
      "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
@@ -200,9 +168,9 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
-     "cat": "Cleaning",
+     "slug": "is-crest-toothpaste-safe",
+     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -232,9 +200,9 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
-     "cat": "Supplements",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -264,9 +232,9 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
-     "cat": "Food",
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+     "cat": "Supplements",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -296,9 +264,9 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
-     "title": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fire Reports (2026)",
-     "cat": "Home",
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -328,9 +296,9 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-liquid-iv-sugar-free-really-sugar-free",
-     "title": "Is Liquid I.V. Sugar Free Really Sugar Free? What the August Lawsuit Says Is in the Packet (2026)",
-     "cat": "Food",
+     "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
+     "title": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fire Reports (2026)",
+     "cat": "Home",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -951,6 +919,38 @@
     {
      "slug": "what-keeps-your-memory-sharp-after-70",
      "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "why-did-clorox-pay-a-14-million-fine",
+     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-do-you-stop-feeling-thirsty",
+     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
