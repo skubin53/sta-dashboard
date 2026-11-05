@@ -54,7 +54,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <h2 id="the-short-answer">The short answer</h2>
 <p>You rinse the Driscoll's box every week. Now your phone says it is covered in forever chemicals.</p>
 <p><strong>Here is where it stands. <a href="https://www.courtlistener.com/docket/73543306/berlinger-v-driscolls-inc/">Driscoll's is being sued, and no court has ruled.</a> There is no settlement and no claim form.</strong></p>
-<p>Six shoppers in four states say Driscoll's sold "Only the Finest Berries." They say it never told them about eight PFAS pesticides a lab found. Driscoll's called a second suit like it "without merit."</p>
+<p>Six shoppers in four states say Driscoll's sold "Only the Finest Berries." They say it never told them about eight PFAS pesticides a lab found. Driscoll's says the claims are "without merit."</p>
 <p>And the summer parasite outbreak was lettuce, not strawberries.</p>
 </div>
 
@@ -89,7 +89,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p>Six shoppers sued in federal court in San Jose on June 26, 2026. They are from New York, New Jersey, Massachusetts and Illinois. So any page offering a Driscoll's payout is offering money that does not exist yet.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/aredriscoll-villain-v1.webp" alt="A clamshell of strawberries alone on a kitchen counter in cold, flat light, with nobody in the frame" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/aredriscoll-villain-v1.webp" alt="A clamshell of strawberries alone in a kitchen in cold, flat light, with nobody in the frame" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-it-says">What does the lawsuit say is on the berries?</h2>
@@ -112,13 +112,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: Driscoll's gave no reason. Brie Reiter Smith, from the founding family, took over from Soren Bjorn "effective immediately."</p>
 
-<p><a href="https://www.foodsafetynews.com/2026/09/berry-company-ceo-steps-down-amid-pesticide-whirlwind/">Food Safety News reported the change on September 2, 2026.</a> It said the switch "comes amid a growing legal storm."</p>
+<p><a href="https://www.driscolls.com/Newsroom/brie-reiter-smith-ceo-driscolls">Driscoll's announced it on August 25, 2026.</a> <a href="https://www.foodsafetynews.com/2026/09/berry-company-ceo-steps-down-amid-pesticide-whirlwind/">Food Safety News said</a> the switch "comes amid a growing legal storm."</p>
 
 <p>Part of that storm comes from inside. The class action points to a former Driscoll's food safety manager. He filed his own suit in Ventura County.</p>
 
-<p>He alleges his bosses put the brand first. By his account, they cared more about "plausible deniability" than fixing pesticide problems. He says he was fired for refusing to go along. Those are his claims, not findings.</p>
-
-<p>So who checks the berries before they reach your kitchen? Driscoll's says it does.</p>
+<p>He alleges his bosses put the brand first. By his account, they cared more about "plausible deniability" than fixing pesticide problems. He says he was fired for refusing to go along. Those are his claims, not findings, and <a href="https://www.fruitnet.com/fruitnet/driscolls-faces-new-class-action-over-pesticide-residue-allegations/272903.article">Driscoll's disputes them</a>.</p>
 
 <h2 id="safe-to-eat">Are Driscoll's strawberries safe to eat right now?</h2>
 
@@ -128,15 +126,17 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.cdc.gov/cyclosporiasis/outbreaks/07-26/index.html">The CDC tied this summer's outbreak to iceberg lettuce from Mexico.</a> It counted 12,883 sick in 21 states. It says the outbreak "has ended," and strawberries are not on that page.</p>
 
-<p>Now the pesticides. <a href="https://www.insurancejournal.com/news/national/2026/07/21/878294.htm">Driscoll's told Insurance Journal</a> it has strict food safety programs and works to follow the rules. Meeting a rule is one thing. Telling you what is on the berry is another.</p>
+<p>Now the pesticides. <a href="https://www.insurancejournal.com/news/national/2026/07/21/878294.htm">Driscoll's told Insurance Journal</a> it has strong food safety and compliance programs. Meeting a rule is one thing. Telling you what is on the berry is another.</p>
 
-<p>Here is the whole fight in one place.</p>
+<p>Here is where the main fights stand.</p>
 
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
 <tr><td>Six shoppers sue</td><td>Eight PFAS pesticides never disclosed, they allege</td><td>Berlinger v. Driscoll's, federal court, June 26, 2026</td><td>Not a ruling, and no claim form</td></tr>
 <tr><td>A second suit, from Santa Cruz County</td><td>False advertising, it alleges</td><td>Moved to federal court by Driscoll's, July 8, 2026</td><td>Not a payout</td></tr>
+<tr><td>Three groups sue in D.C.</td><td>Misleading "in harmony with the environment" ads, they allege</td><td><a href="https://martechedge.com/news/driscolls-faces-lawsuit-over-alleged-greenwashing-of-berry-marketing">D.C. Superior Court, Aug. 14, 2026</a></td><td>Not a ruling or a payout</td></tr>
+<tr><td>A Quebec shopper seeks a class action</td><td>Hidden residues, she alleges</td><td><a href="https://www.fruitnet.com/fruitnet/driscolls-faces-new-class-action-over-pesticide-residue-allegations/272903.article">Quebec Superior Court, reported Oct. 6, 2026</a></td><td>No judge had approved it in October</td></tr>
 <tr><td>Strawberries recalled for pesticide residue</td><td>Residue over the US limit</td><td>US recall records, May 2015 and Jan. 2022</td><td>Not the eight in the new suit</td></tr>
 </tbody>
 </table>
@@ -153,9 +153,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><strong>One.</strong> <a href="https://blackdotresearch.sg/are-driscolls-strawberries-laced-with-hundreds-of-pesticides-and-confirmed-to-cause-cancer/">The fact-checkers at Black Dot Research found</a> the residues came from a test of one box. One box is not every box. I am not going to pretend it is.</p>
 
-<p><strong>Two.</strong> Posts on your feed said the brand is "directly tied to cancer." Black Dot rated that claim false. Finding a residue, it wrote, "does not establish a cancer risk."</p>
+<p><strong>Two.</strong> Posts on your feed said the brand is "directly tied to cancer." Black Dot rated the "confirmed to cause cancer" claim false. Finding a residue, it wrote, "does not establish a cancer risk."</p>
 
-<p><strong>Three.</strong> Driscoll's calls the claims "without merit," and no court has found otherwise. Nobody in either shoppers' suit claims a berry made them sick.</p>
+<p><strong>Three.</strong> <a href="https://pajaronian.com/driscolls-facing-class-action-lawsuit/">Driscoll's calls the claims "without merit,"</a> and no court has found otherwise. Nobody in either US shoppers' suit claims a berry made them sick.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -171,17 +171,17 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The next box is the real choice. The label will not help.</p>
 
-<p>Find a strawberry farm near you. Call and ask the farmer what goes on the plants, and when. A farmer can answer that, and so you know a person instead of a slogan.</p>
+<p>Find a strawberry farm near you. Call and ask the farmer what goes on the plants, and when. A farmer can answer that. Now you know a person, not a slogan.</p>
 
 <p>Start now, and you will know the farm before the first berries come in. Then go fill a green paper basket yourself.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/aredriscoll-belonging-v1.webp" alt="A friend handing a woman in a white linen shirt a plain green paper basket of strawberries in a sage green kitchen" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/aredriscoll-belonging-v1.webp" alt="A friend handing a woman in a white linen shirt a plain green paper berry basket in a sage green kitchen" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <p>I will not promise a farm berry is perfect. I promise you can ask the person who grew it.</p>
 
-<p>You are not the only one asking. Six shoppers in four states put their names on this. If your sister buys the same box, send her this.</p>
+<p>You are not the only one asking. If your sister buys the same box, send her this.</p>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -214,11 +214,11 @@ of our health and our finances.</p>
 <div class="sta-proof">
 <h3>The receipts</h3>
 <ul>
-<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.473105/gov.uscourts.cand.473105.1.0_1.pdf">Complaint, Berlinger v. Driscoll's Inc., No. 5:26-cv-06444, N.D. Cal., June 26, 2026</a>. Six shoppers allege 12 pesticide residues. The eight they call PFAS: flonicamid, fludioxonil, flupyradifurone, fluxapyroxad, indoxacarb, novaluron, tetraconazole and TFNG. These are allegations. What it means: the case is about what you were told when you paid.</li>
+<li><a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.473105/gov.uscourts.cand.473105.1.0_1.pdf">Complaint, Berlinger v. Driscoll's Inc., No. 5:26-cv-06444, N.D. Cal., June 26, 2026</a>. Six shoppers allege 12 pesticide residues. The eight they call PFAS: flonicamid, fludioxonil, flupyradifurone, fluxapyroxad, indoxacarb, novaluron, tetraconazole and TFNG. What it means: the case is about what you were told when you paid.</li>
 <li><a href="https://www.courtlistener.com/docket/73543306/berlinger-v-driscolls-inc/">The public docket</a>. Last filing shown October 22, 2026, checked November 4. No settlement, no ruling on the claims. What it means: there is nothing to claim yet.</li>
-<li><a href="https://www.courtlistener.com/docket/73591731/washington-v-driscolls-inc/">Washington v. Driscoll's, Inc., No. 3:26-cv-06961</a>. Filed in Santa Cruz County, moved to federal court by Driscoll's on July 8, 2026. <a href="https://www.insurancejournal.com/news/national/2026/07/21/878294.htm">Driscoll's told Insurance Journal</a> the claims are "without merit." What it means: two suits, one answer.</li>
+<li><a href="https://www.courtlistener.com/docket/73591731/washington-v-driscolls-inc/">Washington v. Driscoll's, Inc., No. 3:26-cv-06961</a>. Filed in Santa Cruz County, moved to federal court by Driscoll's on July 8, 2026. <a href="https://www.insurancejournal.com/news/national/2026/07/21/878294.htm">Driscoll's told Insurance Journal</a> the claims are "without merit." What it means: Driscoll's denies it.</li>
 <li><a href="https://api.fda.gov/food/enforcement.json?search=product_description:Driscoll%27s&limit=50">US recall records for Driscoll's</a>. Strawberry recalls F-2732-2015, May 19, 2015 (naled), and F-0737-2022, January 21, 2022 (etoxazole), each over the US limit, plus five blackberry and raspberry pesticide recalls, 2018 to 2022. What it means: pesticide residue on this brand is not a new question.</li>
-<li><a href="https://www.foodsafetynews.com/2026/09/berry-company-ceo-steps-down-amid-pesticide-whirlwind/">Food Safety News, September 2, 2026</a>. The CEO change and the suits. What it means: the change came in the middle of the fight. Driscoll's gave no reason.</li>
+<li><a href="https://www.driscolls.com/Newsroom/brie-reiter-smith-ceo-driscolls">Driscoll's announcement, August 25, 2026</a>, and <a href="https://www.foodsafetynews.com/2026/09/berry-company-ceo-steps-down-amid-pesticide-whirlwind/">Food Safety News, September 2, 2026</a>. What it means: the change came in the middle of the fight, with no reason given.</li>
 <li><a href="https://www.cdc.gov/cyclosporiasis/outbreaks/07-26/index.html">CDC outbreak notice, September 11, 2026</a>. Iceberg lettuce, not berries. What it means: the parasite story was never about your strawberries.</li>
 <li><a href="https://blackdotresearch.sg/are-driscolls-strawberries-laced-with-hundreds-of-pesticides-and-confirmed-to-cause-cancer/">Black Dot Research fact check, June 4, 2026</a>. "Confirmed to cause cancer," rated false. What it means: the case is about the box, not a cancer finding.</li>
 </ul>
@@ -240,23 +240,23 @@ of our health and our finances.</p>
 
 <div class="sta-cta">
 <h3>Three minutes, room by room</h3>
-<p>You came here about one box of berries. The free scan checks the rest of your house. It asks for a first name and a cell. Your score comes in one text, and nobody calls. It is free because your own house is better proof than any post. The full report after is $7, and you can skip it.</p>
+<p>You came here about one box of berries. The free scan checks the rest of your house. It asks for a first name and a cell. Your score comes in one text, and nobody calls. The full report after is $7, and you can skip it.</p>
 <a href="https://scan.ismyhometoxic.com/now/">Take the free home scan</a>
 </div>
 
 <h2 id="faq">What else do people ask?</h2>
 
 <p><strong>Can I sign up for the Driscoll's lawsuit?</strong></p>
-<p>There is nothing to collect today. No class has been certified, and no deal has been reported. A real claim form comes after a settlement or a win.</p>
+<p>There is nothing to collect today. No class has been certified, and no deal has been reported.</p>
 
 <p><strong>Do Driscoll's strawberries cause cancer?</strong></p>
-<p>No court has found that. A fact-checker rated the "directly tied to cancer" posts false, and neither shoppers' suit claims anyone got sick.</p>
+<p>No court has found that. A fact-checker rated the "confirmed to cause cancer" claim false, and neither US shoppers' suit claims anyone got sick.</p>
 
 <p><strong>Who replaced the Driscoll's CEO?</strong></p>
 <p>Brie Reiter Smith. She took over from Soren Bjorn, Food Safety News reported on September 2, 2026.</p>
 
 <p><strong>Were Driscoll's strawberries ever recalled?</strong></p>
-<p>Yes, for pesticide residue. US records show strawberry recalls in May 2015 and January 2022, each over the limit. Neither was about the eight in the new suit.</p>
+<p>Yes. US records show two strawberry recalls for pesticide residue, in May 2015 and January 2022, each over the limit. Neither was about the eight in the new suit.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
@@ -322,13 +322,13 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Can I sign up for the Driscoll's lawsuit?",
-   "acceptedAnswer": {"@type": "Answer", "text": "There is nothing to collect today. No class has been certified, and no deal has been reported. A real claim form comes after a settlement or a win."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "There is nothing to collect today. No class has been certified, and no deal has been reported."}},
   {"@type": "Question", "name": "Do Driscoll's strawberries cause cancer?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No court has found that. A fact-checker rated the \"directly tied to cancer\" posts false, and neither shoppers' suit claims anyone got sick."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No court has found that. A fact-checker rated the \"confirmed to cause cancer\" claim false, and neither US shoppers' suit claims anyone got sick."}},
   {"@type": "Question", "name": "Who replaced the Driscoll's CEO?",
    "acceptedAnswer": {"@type": "Answer", "text": "Brie Reiter Smith. She took over from Soren Bjorn, Food Safety News reported on September 2, 2026."}},
   {"@type": "Question", "name": "Were Driscoll's strawberries ever recalled?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Yes, for pesticide residue. US records show strawberry recalls in May 2015 and January 2022, each over the limit. Neither was about the eight in the new suit."}}
+   "acceptedAnswer": {"@type": "Answer", "text": "Yes. US records show two strawberry recalls for pesticide residue, in May 2015 and January 2022, each over the limit. Neither was about the eight in the new suit."}}
  ]
 }
 </script>
