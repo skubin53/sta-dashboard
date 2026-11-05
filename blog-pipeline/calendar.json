@@ -1,11 +1,11 @@
 {
- "start": "2026-11-04",
+ "start": "2026-11-05",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-11-04",
-   "weekday": "Wed",
+   "date": "2026-11-05",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "are-driscolls-strawberries-safe-to-eat",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-11-05",
-   "weekday": "Thu",
+   "date": "2026-11-06",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -68,13 +68,45 @@
    ]
   },
   {
-   "date": "2026-11-06",
-   "weekday": "Fri",
+   "date": "2026-11-07",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
      "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
      "cat": "Personal Care",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "can-you-run-a-franchise-part-time",
+     "title": "Premier Martial Arts Lawsuit Update: Can You Really Run a Franchise in 15 Hours a Week? (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -100,40 +132,8 @@
    ]
   },
   {
-   "date": "2026-11-07",
-   "weekday": "Sat",
-   "slots": [
-    {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "what-is-the-savers-match-2027",
-     "title": "What Is the Saver's Match in 2027? Who Gets Up to $1,000, and Does Side Business Income Count? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-08",
-   "weekday": "Sun",
+   "date": "2026-11-09",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -164,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-11-09",
-   "weekday": "Mon",
+   "date": "2026-11-10",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -196,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-11-10",
-   "weekday": "Tue",
+   "date": "2026-11-11",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -228,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-11-11",
-   "weekday": "Wed",
+   "date": "2026-11-12",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -260,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-11-12",
-   "weekday": "Thu",
+   "date": "2026-11-13",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -292,8 +292,8 @@
    ]
   },
   {
-   "date": "2026-11-13",
-   "weekday": "Fri",
+   "date": "2026-11-14",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-it-safe-to-leave-a-space-heater-on-overnight",
@@ -324,8 +324,8 @@
    ]
   },
   {
-   "date": "2026-11-14",
-   "weekday": "Sat",
+   "date": "2026-11-15",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-there-a-cerave-lawsuit-payout",
@@ -356,44 +356,12 @@
    ]
   },
   {
-   "date": "2026-11-15",
-   "weekday": "Sun",
-   "slots": [
-    {
-     "slug": "is-bettergoods-healthy",
-     "title": "Is Walmart's Bettergoods Brand Healthy? Three Recall Notices Since August, Caught by State Inspectors (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "can-you-run-a-franchise-part-time",
-     "title": "Can You Really Run a Franchise in 15 Hours a Week? What the FTC Said About Premier Martial Arts (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-11-16",
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is There a Redken Hair Loss Lawsuit? What Is Real and What Is Not (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -424,9 +392,9 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -456,9 +424,9 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -488,16 +456,16 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -520,8 +488,8 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "does-hair-relaxer-cause-cancer",
-     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -552,8 +520,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-hot-cocoa-bad-for-you",
-     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "slug": "does-hair-relaxer-cause-cancer",
+     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -584,8 +552,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -616,8 +584,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -648,8 +616,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is Redken Shampoo Safe? What L'Oreal Asked New York State For (2026)",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -951,6 +919,38 @@
     {
      "slug": "why-do-you-stop-feeling-thirsty",
      "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "window-air-conditioner-mold-recall",
+     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-is-beef-so-expensive",
+     "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
