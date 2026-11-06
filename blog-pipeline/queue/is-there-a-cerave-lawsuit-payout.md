@@ -90,7 +90,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, cerave]
 
 <p>The money first. A claim form comes after a settlement or a win. <a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.619298/gov.uscourts.nysd.619298.81.0.pdf">This case had neither.</a> So if a page offers you one, close it.</p>
 
-<p>The plaintiffs, the people who sued, are not finished. <a href="https://www.courtlistener.com/docket/68426980/in-re-loreal-benzoyl-peroxide-products-litigation/?order_by=desc">The court record shows they asked the judge to reconsider on September 29.</a> L'Oreal filed its answer on October 14. A win there would restart the fight. It would not mail you a check.</p>
+<p>The plaintiffs, the people who sued, are not finished. <a href="https://www.courtlistener.com/docket/68426980/in-re-loreal-benzoyl-peroxide-products-litigation/?order_by=desc">The court record shows they asked the judge to reconsider on September 29.</a> L'Oreal argued against it on October 14. A win there would restart the fight. It would not mail you a check.</p>
 
 <h2 id="why-dismissed">Why did the judge throw the case out?</h2>
 
@@ -138,7 +138,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, cerave]
 
 <p><a href="https://fortune.com/well/2025/03/10/loreal-recall-effaclar-duo-acne-treatment-cancer-linked-chemical-benzene">L'Oreal said testing found trace levels in one lot.</a> It pulled the remaining units of that formula from stores.</p>
 
-<p>Stores were told to pull it. You were not told to do anything.</p>
+<p>Stores were told to pull it. Shoppers were not asked to bring theirs back.</p>
 
 <p>CeraVe is not on that list. That tells you what was pulled, not what stayed on the shelf.</p>
 
@@ -161,15 +161,13 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, cerave]
 
 <p><strong>One.</strong> The judge found L'Oreal "complied with its federal labeling requirements." That is a real ruling.</p>
 
-<p><strong>Two.</strong> She called the recall a "one-off voluntary recall of a single lot." No plaintiff claimed to have bought that lot. The notice called the cancer risk from those products "very low."</p>
+<p><strong>Two.</strong> She called the recall a "one-off voluntary recall of a single lot." No plaintiff claimed to have bought that lot.</p>
 
 <p><strong>Three.</strong> No court has found that any CeraVe tube hurt anyone. And nothing here is a case against treating your acne.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
 <p><strong>Because the same order says L'Oreal "was permitted to add additional, accurate information" to its labels, as long as it fit the federal acne rule.</strong> It could have said more. That doesn't sound right, does it?</p>
-
-<p>And "very low" is a line in a notice. It is not a test of your tube.</p>
 
 <h2 id="what-do-i-do">What do I do with my tube?</h2>
 
@@ -187,7 +185,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, cerave]
 
 <p>I will not promise a new wash clears a single spot. And if a doctor prescribed your acne cream, I am not talking about that tube.</p>
 
-<p>You are not the crazy one for asking. Eleven people from Hawaii to New York put their names on this case. If your sister got the same set, show her this.</p>
+<p>You are not the crazy one for asking. Shoppers in nine states, Hawaii to New York, sued over this. If your sister got the same set, show her this.</p>
 
 <figure style="margin:28px 0;">
 <img src="https://scan.ismyhometoxic.com/blog-images/isthereacer-belonging-v1.webp" alt="Two women sitting on a bed sharing a plain white pump bottle" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
@@ -226,11 +224,11 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.619298/gov.uscourts.nysd.619298.80.0.pdf">Order, In re L'Oreal USA Benzoyl Peroxide Products Litigation, 24 Civ. 2735 (AT), S.D.N.Y., September 15, 2026</a>. Federal rules beat the state claims. Dismissed with prejudice, so they cannot refile. What it means: it ended on the law, and no one weighed a test of your tube.</li>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.619298/gov.uscourts.nysd.619298.81.0.pdf">Judgment, September 16, 2026</a>. Entered for L'Oreal. What it means: there is nothing to claim.</li>
-<li><a href="https://www.courtlistener.com/docket/68426980/in-re-loreal-benzoyl-peroxide-products-litigation/?order_by=desc">Public docket, newest first</a>. The last filing shown is L'Oreal's October 14, 2026 answer to the plaintiffs' September 29 motion to reconsider. What it means: it is not final yet.</li>
-<li><a href="https://www.nbcchicago.com/news/local/la-roche-posay-proactiv-products-recalled-over-levels-of-cancer-causing-ingredient/3695669/">NBC Chicago, March 12, 2025</a>. Effaclar Duo lot MYX46W was recalled at the retail level. No CeraVe product is listed. What it means: stores were told to act, and you were not.</li>
+<li><a href="https://www.courtlistener.com/docket/68426980/in-re-loreal-benzoyl-peroxide-products-litigation/?order_by=desc">Public docket, newest first</a>. The last filing shown is L'Oreal's October 14, 2026 opposition to the plaintiffs' September 29 motion to reconsider. What it means: it is not final yet.</li>
+<li><a href="https://www.nbcchicago.com/news/local/la-roche-posay-proactiv-products-recalled-over-levels-of-cancer-causing-ingredient/3695669/">NBC Chicago, March 12, 2025</a>. Effaclar Duo lot MYX46W was recalled at the retail level. No CeraVe product is listed. What it means: stores were told to pull it, and shoppers were not asked to bring theirs back.</li>
 <li><a href="https://fortune.com/well/2025/03/10/loreal-recall-effaclar-duo-acne-treatment-cancer-linked-chemical-benzene">Fortune, March 10, 2025</a>. L'Oreal's own account of that lot. What it means: this one is the company's word, not a critic's.</li>
 <li><a href="https://beautymatter.com/articles/federal-judge-tells-loreal-plaintiffs-to-take-their-ball-and-go-home">BeautyMatter, September 22</a> and <a href="https://cosmeticsbusiness.com/judge-dismisses-loreal-benzene-contamination-lawsuit">Cosmetics Business, September 21, 2026</a>. Trade reports of the ruling. BeautyMatter calls the risk question unresolved. What it means: nobody cleared your tube.</li>
-<li><a href="https://www.azag.gov/press-release/attorney-general-mayes-files-consumer-fraud-lawsuit-against-loreal-usa">State of Arizona, September 11, 2026</a>. A hair relaxer suit. These are the state's allegations, and <a href="https://www.insurancejournal.com/news/west/2026/09/14/884862.htm">L'Oreal rejects them</a>. What it means: a second case over what L'Oreal told you.</li>
+<li><a href="https://www.azag.gov/press-release/attorney-general-mayes-files-consumer-fraud-lawsuit-against-loreal-usa">State of Arizona, September 11, 2026</a>. A hair relaxer suit. These are the state's allegations, and <a href="https://www.insurancejournal.com/news/west/2026/09/14/884862.htm">L'Oreal rejects them</a>. What it means: a second case, brought by a state, claiming L'Oreal did not warn buyers.</li>
 </ul>
 </div>
 
@@ -257,8 +255,8 @@ of our health and our finances.</p>
 <p><strong>Does CeraVe cause cancer?</strong></p>
 <p>No court has found that. The plaintiffs alleged benzene, and the case ended on federal rules before anyone had to answer.</p>
 
-<p><strong>Is any other CeraVe lawsuit open?</strong></p>
-<p>Yes. <a href="https://www.courthousenews.com/wp-content/uploads/2026/07/raymundo-v-loreal-complaint.pdf">One was filed July 9, 2026 in California.</a> It is about the price of two products, not benzene. No settlement has been reported.</p>
+<p><strong>Was there another CeraVe lawsuit?</strong></p>
+<p>Yes, but it is closed. <a href="https://www.courthousenews.com/wp-content/uploads/2026/07/raymundo-v-loreal-complaint.pdf">A California woman sued on July 9, 2026</a> over the price of two CeraVe baby products. <a href="https://www.courtlistener.com/docket/73598083/raymundo-v-loreal-usa-sd-inc/">She dropped it on September 11.</a></p>
 
 <p><strong>What if an acne product hurt me?</strong></p>
 <p>You were right to ask. This case was about money, not injuries. If an acne drug hurt you, you could still sue over the injury. The judge wrote that these federal rules would not block it.</p>
@@ -327,8 +325,8 @@ of our health and our finances.</p>
  "mainEntity": [
   {"@type": "Question", "name": "Does CeraVe cause cancer?",
    "acceptedAnswer": {"@type": "Answer", "text": "No court has found that. The plaintiffs alleged benzene, and the case ended on federal rules before anyone had to answer."}},
-  {"@type": "Question", "name": "Is any other CeraVe lawsuit open?",
-   "acceptedAnswer": {"@type": "Answer", "text": "Yes. One was filed July 9, 2026 in California. It is about the price of two products, not benzene. No settlement has been reported."}},
+  {"@type": "Question", "name": "Was there another CeraVe lawsuit?",
+   "acceptedAnswer": {"@type": "Answer", "text": "Yes, but it is closed. A California woman sued on July 9, 2026 over the price of two CeraVe baby products. She dropped it on September 11."}},
   {"@type": "Question", "name": "What if an acne product hurt me?",
    "acceptedAnswer": {"@type": "Answer", "text": "You were right to ask. This case was about money, not injuries. If an acne drug hurt you, you could still sue over the injury. The judge wrote that these federal rules would not block it."}}
  ]
