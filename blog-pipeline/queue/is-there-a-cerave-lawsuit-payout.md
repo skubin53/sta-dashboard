@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-02
+date: 2026-11-06
 title: Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled on the Acne Wash Benzene Case (2026)
 slug: is-there-a-cerave-lawsuit-payout
 keyword: cerave lawsuit
@@ -48,14 +48,14 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, cerave]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 2, 2026<br><span style="font-size:.92em;">Published November 2, 2026 &middot; Last updated November 2, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 6, 2026<br><span style="font-size:.92em;">Published November 6, 2026 &middot; Last updated November 6, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p><strong>No. There is no CeraVe claim form or payout. A federal judge threw the case out on Sept 15, 2026, and not because CeraVe proved anything.</strong></p>
 <p><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.619298/gov.uscourts.nysd.619298.80.0.pdf">Her order</a> turned on federal rules. She never decided what is in the tube.</p>
 <p>So no money is on the way from this case. And L'Oreal, which owns CeraVe, never had to answer your real question.</p>
-<p>Checked November 1, 2026: the people who sued asked her to reconsider. The court record, last filing October 14, shows no ruling and no appeal.</p>
+<p>Checked November 6, 2026: the people who sued asked her to reconsider. The court record, last filing October 14, shows no ruling and no appeal.</p>
 </div>
 
 <div class="sta-toc">
@@ -134,7 +134,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE, cerave]
 
 <p class="quick-answer">Quick answer: CeraVe is not on the March 2025 recall notice. One batch of L'Oreal's La Roche-Posay Effaclar Duo is.</p>
 
-<p>The third product in this lawsuit did get pulled. <a href="https://www.fda.gov/drugs/drug-alerts-and-statements/limited-number-voluntary-recalls-initiated-after-fda-testing-acne-products-benzene-findings-show">The FDA's March 11, 2025 recall notice</a> lists Effaclar Duo lot MYX46W, "due to elevated levels of benzene."</p>
+<p>The third product in this lawsuit did get pulled. <a href="https://www.nbcchicago.com/news/local/la-roche-posay-proactiv-products-recalled-over-levels-of-cancer-causing-ingredient/3695669/">NBC Chicago reported</a> a March 2025 recall of Effaclar Duo lot MYX46W "due to elevated levels of benzene."</p>
 
 <p><a href="https://fortune.com/well/2025/03/10/loreal-recall-effaclar-duo-acne-treatment-cancer-linked-chemical-benzene">L'Oreal said testing found trace levels in one lot.</a> It pulled the remaining units of that formula from stores.</p>
 
@@ -227,7 +227,7 @@ of our health and our finances.</p>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.619298/gov.uscourts.nysd.619298.80.0.pdf">Order, In re L'Oreal USA Benzoyl Peroxide Products Litigation, 24 Civ. 2735 (AT), S.D.N.Y., September 15, 2026</a>. Federal rules beat the state claims. Dismissed with prejudice, so they cannot refile. What it means: it ended on the law, and no one weighed a test of your tube.</li>
 <li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.619298/gov.uscourts.nysd.619298.81.0.pdf">Judgment, September 16, 2026</a>. Entered for L'Oreal. What it means: there is nothing to claim.</li>
 <li><a href="https://www.courtlistener.com/docket/68426980/in-re-loreal-benzoyl-peroxide-products-litigation/?order_by=desc">Public docket, newest first</a>. The last filing shown is L'Oreal's October 14, 2026 answer to the plaintiffs' September 29 motion to reconsider. What it means: it is not final yet.</li>
-<li><a href="https://www.fda.gov/drugs/drug-alerts-and-statements/limited-number-voluntary-recalls-initiated-after-fda-testing-acne-products-benzene-findings-show">FDA recall notice, March 11, 2025</a>. Effaclar Duo lot MYX46W, at the retail level. No CeraVe product is listed. What it means: stores were told to act, and you were not.</li>
+<li><a href="https://www.nbcchicago.com/news/local/la-roche-posay-proactiv-products-recalled-over-levels-of-cancer-causing-ingredient/3695669/">NBC Chicago, March 12, 2025</a>. Effaclar Duo lot MYX46W was recalled at the retail level. No CeraVe product is listed. What it means: stores were told to act, and you were not.</li>
 <li><a href="https://fortune.com/well/2025/03/10/loreal-recall-effaclar-duo-acne-treatment-cancer-linked-chemical-benzene">Fortune, March 10, 2025</a>. L'Oreal's own account of that lot. What it means: this one is the company's word, not a critic's.</li>
 <li><a href="https://beautymatter.com/articles/federal-judge-tells-loreal-plaintiffs-to-take-their-ball-and-go-home">BeautyMatter, September 22</a> and <a href="https://cosmeticsbusiness.com/judge-dismisses-loreal-benzene-contamination-lawsuit">Cosmetics Business, September 21, 2026</a>. Trade reports of the ruling. BeautyMatter calls the risk question unresolved. What it means: nobody cleared your tube.</li>
 <li><a href="https://www.azag.gov/press-release/attorney-general-mayes-files-consumer-fraud-lawsuit-against-loreal-usa">State of Arizona, September 11, 2026</a>. A hair relaxer suit. These are the state's allegations, and <a href="https://www.insurancejournal.com/news/west/2026/09/14/884862.htm">L'Oreal rejects them</a>. What it means: a second case over what L'Oreal told you.</li>
@@ -287,8 +287,8 @@ of our health and our finances.</p>
    "headline": "Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled on the Acne Wash Benzene Case (2026)",
    "description": "No. There is no CeraVe claim form or payout. A judge threw out the benzene case on Sept 15, 2026, and never decided what is in the tube.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isthereacer-hero-v1.webp",
-   "datePublished": "2026-11-02",
-   "dateModified": "2026-11-02",
+   "datePublished": "2026-11-06",
+   "dateModified": "2026-11-06",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-there-a-cerave-lawsuit-payout"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
