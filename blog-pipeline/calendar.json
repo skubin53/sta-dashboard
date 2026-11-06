@@ -1,40 +1,8 @@
 {
- "start": "2026-11-05",
+ "start": "2026-11-06",
  "days": 30,
  "per_day": 2,
  "calendar": [
-  {
-   "date": "2026-11-05",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "are-driscolls-strawberries-safe-to-eat",
-     "title": "Are Driscoll's Strawberries Safe to Eat? Where the PFAS Pesticide Lawsuit Stands After the CEO Change (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "do-i-have-to-report-side-income-under-2000",
-     "title": "Do I Have to Report Side Income Under $2,000? What Did the IRS's New 1099 Rules Change? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
   {
    "date": "2026-11-06",
    "weekday": "Fri",
@@ -53,8 +21,8 @@
      "track": "shopper"
     },
     {
-     "slug": "do-medicaid-work-requirements-apply-to-caregivers",
-     "title": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
+     "slug": "can-i-work-and-collect-social-security-at-62",
+     "title": "Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -85,8 +53,8 @@
      "track": "shopper"
     },
     {
-     "slug": "can-you-run-a-franchise-part-time",
-     "title": "Premier Martial Arts Lawsuit Update: Can You Really Run a Franchise in 15 Hours a Week? (2026)",
+     "slug": "do-medicaid-work-requirements-apply-to-caregivers",
+     "title": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -117,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "income-if-you-stop-for-90-days",
-     "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
+     "slug": "can-you-run-a-franchise-part-time",
+     "title": "Premier Martial Arts Lawsuit Update: Can You Really Run a Franchise in 15 Hours a Week? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -149,8 +117,8 @@
      "track": "shopper"
     },
     {
-     "slug": "questions-before-joining-anything",
-     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
+     "slug": "income-if-you-stop-for-90-days",
+     "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -181,8 +149,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-are-health-insurance-premiums-going-up",
-     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
+     "slug": "questions-before-joining-anything",
+     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -213,8 +181,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
+     "slug": "why-are-health-insurance-premiums-going-up",
+     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -245,8 +213,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-company-just-close",
-     "title": "Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026)",
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -277,8 +245,8 @@
      "track": "shopper"
     },
     {
-     "slug": "tiktok-shop-commission-changes",
-     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
+     "slug": "why-did-my-company-just-close",
+     "title": "Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -309,16 +277,16 @@
      "track": "shopper"
     },
     {
-     "slug": "can-i-get-paid-to-take-care-of-my-mother",
-     "title": "Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026)",
+     "slug": "tiktok-shop-commission-changes",
+     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -328,9 +296,9 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-there-a-cerave-lawsuit-payout",
-     "title": "Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled on the Acne Wash Benzene Case (2026)",
-     "cat": "Beauty",
+     "slug": "is-krud-kutter-non-toxic",
+     "title": "Is Krud Kutter Really Non-Toxic? Why Rust-Oleum Agreed to Take the Word Off (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -341,8 +309,8 @@
      "track": "shopper"
     },
     {
-     "slug": "can-i-work-and-collect-social-security-at-62",
-     "title": "Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026)",
+     "slug": "can-i-get-paid-to-take-care-of-my-mother",
+     "title": "Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026)",
      "cat": "Builders",
      "why": "photos already done",
      "perish": -1,
@@ -360,8 +328,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-redken-shampoo-safe",
-     "title": "Is There a Redken Hair Loss Lawsuit? What Is Real and What Is Not (2026)",
+     "slug": "is-there-a-cerave-lawsuit-payout",
+     "title": "Is There a CeraVe Lawsuit Payout? What a Judge Just Ruled on the Acne Wash Benzene Case (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -392,8 +360,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "slug": "is-redken-shampoo-safe",
+     "title": "Is There a Redken Hair Loss Lawsuit? What Is Real and What Is Not (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -424,9 +392,9 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -456,9 +424,9 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -488,16 +456,16 @@
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -520,8 +488,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "does-hair-relaxer-cause-cancer",
-     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -552,8 +520,8 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-hot-cocoa-bad-for-you",
-     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "slug": "does-hair-relaxer-cause-cancer",
+     "title": "Does Hair Relaxer Cause Ovarian Cancer? Where the L'Oréal Lawsuits Stand (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -584,8 +552,8 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -616,8 +584,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? (2026)",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -951,6 +919,38 @@
     {
      "slug": "why-is-beef-so-expensive",
      "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-05",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "why-was-argentina-beef-recalled",
+     "title": "Why Was Argentina Beef Recalled? What Skipped Inspection Means for Your Meat (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-was-the-laundress-recalled-twice",
+     "title": "Why Was The Laundress Recalled Twice? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
