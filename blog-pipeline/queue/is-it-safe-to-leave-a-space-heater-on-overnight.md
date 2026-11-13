@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-11
+date: 2026-11-13
 title: Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fire Reports (2026)
 slug: is-it-safe-to-leave-a-space-heater-on-overnight
 keyword: vornado heater recall
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 11, 2026<br><span style="font-size:.92em;">Published November 11, 2026 &middot; Last updated November 11, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 13, 2026<br><span style="font-size:.92em;">Published November 13, 2026 &middot; Last updated November 13, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -289,8 +289,8 @@ of our health and our finances.</p>
    "headline": "Is It Safe to Leave a Space Heater On Overnight? What Vornado Recalled After 8 Fire Reports (2026)",
    "description": "Vornado recalled about 255,000 SRTH tower heaters after 8 reports of fire. How to check the bottom of yours, and a plain answer on overnight use.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isitsafetol-hero-v1.webp",
-   "datePublished": "2026-11-11",
-   "dateModified": "2026-11-11",
+   "datePublished": "2026-11-13",
+   "dateModified": "2026-11-13",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-it-safe-to-leave-a-space-heater-on-overnight"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
