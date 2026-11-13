@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-04
+date: 2026-11-13
 title: Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)
 slug: do-medicaid-work-requirements-apply-to-caregivers
 keyword: medicaid work requirements caregiver exemption
@@ -47,7 +47,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 4, 2026<br><span style="font-size:.92em;">Published November 4, 2026 &middot; Last updated November 4, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 13, 2026<br><span style="font-size:.92em;">Published November 13, 2026 &middot; Last updated November 13, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -293,8 +293,8 @@ our finances.</p>
    "headline": "Do Medicaid Work Requirements Apply If I Take Care of My Mother? The Caregiver Exemption in CMS's 2026 Rule (2026)",
    "description": "Caring for your mother can take you out of the Medicaid work rule. The two tests in the 2026 CMS rule, and what to keep before the 30 day letter.",
    "image": "https://scan.ismyhometoxic.com/blog-images/domedicaidw-hero-v1.webp",
-   "datePublished": "2026-11-04",
-   "dateModified": "2026-11-04",
+   "datePublished": "2026-11-13",
+   "dateModified": "2026-11-13",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/do-medicaid-work-requirements-apply-to-caregivers"},
    "author": {"@id": "https://theshannonnicole.com/post/do-medicaid-work-requirements-apply-to-caregivers#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
