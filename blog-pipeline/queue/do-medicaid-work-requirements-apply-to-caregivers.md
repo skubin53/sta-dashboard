@@ -55,7 +55,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 <p>Here is the short version. The 2026 federal Medicaid rule can exclude family caregivers of a disabled person. It says that can mean <strong><a href="https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals">"an older adult who requires assistance"</a></strong> with bathing, dressing and eating.</p>
 <p>The rule even says family caregivers "may not realize that they qualify." Its word is exclusion, not exemption. It is the same door.</p>
 <p>Your state decides if your mother fits. The danger is its 30 day letter. Call your state Medicaid office and confirm it first.</p>
-<p>That is the whole post. The rest is the proof. Checked November 3, 2026.</p>
+<p>That is the whole post. The rest is the proof. Checked November 13, 2026.</p>
 </div>
 
 <div class="sta-toc">
@@ -143,7 +143,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <p><a href="https://www.govinfo.gov/content/pkg/FR-2026-06-03/pdf/2026-11094.pdf">CMS expects this itself, on page 33460.</a> It says some people who may meet the rule will still lose coverage over paperwork. Its examples: not answering a request, or not sending enough proof.</p>
 
-<p>From January 1, 2027, another part of the law makes most people this rule covers renew every six months.</p>
+<p>From January 1, 2027, another part of the law means you will most likely renew every six months, not once a year.</p>
 
 <p>From January 1, 2028, if its records fall short, your state must ask for papers you can reasonably get.</p>
 
