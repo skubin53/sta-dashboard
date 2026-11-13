@@ -136,7 +136,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Then, still unplugged, cut the cord about 2 inches from the heater. Take one photo of the cut cord and the serial number.</p>
 
-<p>Vornado mails a $49.99 refund check. The page says it can take 3 to 4 weeks.</p>
+<p><a href="https://recalls.vornado.com/recall/srth/faq">Vornado says it mails a $49.99 refund check in about 3 to 4 weeks.</a></p>
 
 <p>Vornado says not to take it back to the store. Keep the cut heater until your refund is confirmed.</p>
 
@@ -169,7 +169,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>And so years of quiet nights do not clear your heater. An older one has had more time.</p>
 
-<p>It is not the first SRTH recall. <a href="https://www.cpsc.gov/Recalls/2023/Vornado-Air-Recalls-Portable-SRTH-Small-Room-Tower-Heaters-Due-to-Fire-Hazard">In March 2023, Vornado recalled about 1,450 of them for a wiring mistake.</a> The SRTH stayed on sale until May 2026.</p>
+<p>It is not the first SRTH recall. <a href="https://www.cpsc.gov/Recalls/2023/Vornado-Air-Recalls-Portable-SRTH-Small-Room-Tower-Heaters-Due-to-Fire-Hazard">In March 2023, Vornado recalled about 1,450 of them for a wiring mistake.</a> The SRTH stayed on sale until May 2026. <a href="https://recalls.vornado.com/recall/srth/faq">Vornado says it stopped making them in 2022.</a></p>
 
 <p>If your mom or your sister has one by her bed, call her today.</p>
 
@@ -224,7 +224,7 @@ of our health and our finances.</p>
 <ul>
 <li><a href="https://www.cpsc.gov/Recalls/2026/Vornado-Air-Recalls-SRTH-Small-Room-Tower-Heaters-Due-to-Fire-Hazard">US Consumer Product Safety Commission, recall 26-532, June 4, 2026</a>. Vornado Air recalled about 255,000 SRTH Small Room Tower Heaters, made in China and sold from August 2013 through May 2026. It lists 32 reports of overheating, including eight of fire and one of smoke inhalation. What it means: if the sticker says TYPE SRTH, yours is on a federal recall.</li>
 <li><a href="https://www.cpsc.gov/Recalls/2023/Vornado-Air-Recalls-Portable-SRTH-Small-Room-Tower-Heaters-Due-to-Fire-Hazard">US Consumer Product Safety Commission, recall 23-148, March 9, 2023</a>. About 1,450 SRTH heaters with a JUL22 date code were recalled for a factory wiring mistake that could make them overheat. No injuries were reported. What it means: the same heater was recalled before, for a different fault, and sold three more years.</li>
-<li><a href="https://recalls.vornado.com/recall/srth">Vornado, SRTH Small Tower Heater recall page</a>. Vornado recalls all units and wants a photo of the cut cord before it mails a $49.99 check. What it means: the refund steps are in the company's own words.</li>
+<li><a href="https://recalls.vornado.com/recall/srth">Vornado, SRTH Small Tower Heater recall page</a>. Vornado recalls all units and wants a photo of the cut cord before it mails a $49.99 check. What it means: Vornado wrote these refund steps.</li>
 <li><a href="https://www.vornado.com/cdn/shop/files/SRTH.pdf">Vornado, SRTH Small Room Tower Heater Owner's Guide</a>. It says "Vornado does not recommend unattended and unsupervised use of this heater," and to keep it away from the bed. What it means: its own booklet never meant it to run by your bed all night.</li>
 <li><a href="https://recalls-rappels.canada.ca/en/alert-recall/vornado-srth-small-room-tower-heater-recalled-due-fire-hazard">Health Canada, recall RA-82149, June 4, 2026</a>. The joint notice says Vornado found the fan blade can come loose "over time." What it means: years of use do not clear a heater.</li>
 <li><a href="https://www.usfa.fema.gov/prevention/home-fires/prevent-fires/heating/">US Fire Administration, Heating Fire Safety</a>. It says to turn space heaters off at bedtime. Portable heater fires were 3% of home heating fires a year from 2017 to 2019, but 41% of the fatal ones. What it means: the bedtime rule covers every space heater you own.</li>
