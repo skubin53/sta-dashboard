@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-24
+date: 2026-11-14
 title: Is There a Redken Hair Loss Lawsuit? What Is Real and What Is Not (2026)
 slug: is-redken-shampoo-safe
 keyword: is there a redken hair loss lawsuit
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 24, 2026<br><span style="font-size:.92em;">Published November 24, 2026 &middot; Last updated November 24, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 14, 2026<br><span style="font-size:.92em;">Published November 14, 2026 &middot; Last updated November 14, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -283,8 +283,8 @@ of our health and our finances.</p>
    "headline": "Is There a Redken Hair Loss Lawsuit? What Is Real and What Is Not (2026)",
    "description": "The Redken hair loss lawsuit story names no court. The real case alleged benzene in Redken dry shampoo, and L'Oreal won it in June 2025.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isredkensha-hero-v1.webp",
-   "datePublished": "2026-11-24",
-   "dateModified": "2026-11-24",
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-redken-shampoo-safe"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
