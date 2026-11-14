@@ -55,7 +55,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <p><strong>No. Not one Redken hair loss lawsuit turns up with a court or a case number behind it.</strong></p>
 <p>The real Redken case alleged benzene in a dry shampoo. <a href="https://storage.courtlistener.com/recap/gov.uscourts.ilnd.423851/gov.uscourts.ilnd.423851.33.0.pdf">A federal judge in Chicago ended the case for L'Oreal on June 23, 2025.</a> L'Oreal owns Redken.</p>
 <p>So there is no payout and no claim form. And no court ruled on what was in the can.</p>
-<p>Checked November 5, 2026: no appeal of the benzene case shows up.</p>
+<p>Checked November 14, 2026: no appeal of the benzene case shows up.</p>
 </div>
 
 <div class="sta-toc">
@@ -90,7 +90,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The pages you found say a lawsuit filed in February 2023 claims Redken's hair thinning products hold ethylene oxide. They name no court, no case number, no judge and nobody who sued.</p>
 
-<p>The same headline sits on a pile of unrelated websites, one of them a government site in Somalia. Another page, from a company that sells hair growth serums, says a 2019 case blamed Redken. It names no court either.</p>
+<p>The same headline sits on a pile of unrelated websites. Another page, from a company that sells hair growth serums, says a 2019 case blamed Redken. It names no court either.</p>
 
 <p>A real lawsuit leaves a paper trail. If someone sends you one, ask for the case number.</p>
 
@@ -120,7 +120,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>L'Oreal asked the judge to throw the case out, and he did. <a href="https://storage.courtlistener.com/recap/gov.uscourts.ilnd.423851/gov.uscourts.ilnd.423851.33.0.pdf">The judgment order</a> says the case "is dismissed without prejudice on Defendant's motion to dismiss."</p>
 
-<p>Without prejudice means she could file again, but not in federal court. No news report shows she did.</p>
+<p>Without prejudice means she could file again. No news report shows she did.</p>
 
 <p>The order also says L'Oreal "shall recover costs from plaintiff." So the shopper who sued was told to cover L'Oreal's court costs.</p>
 
@@ -136,15 +136,15 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>On November 6, 2013, he refused to approve a deal that would have paid buyers nothing.</p>
 
-<p>So by the lawsuit's account, L'Oreal sold you the word salon. It never told you what was in the bottle.</p>
+<p>So by the lawsuit's account, L'Oreal sold you the word salon.</p>
 
 <p>The Redken story, in three rows.</p>
 
 <table class="sta-table">
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
-<tr><td>Hair loss lawsuit story online</td><td>No court or case number named</td><td>No court named, checked Nov. 5, 2026</td><td>Not proof any bottle is clean</td></tr>
-<tr><td>Benzene dry shampoo case dismissed</td><td>No payout, no claim form</td><td>Judge John J. Tharp, Jr., federal court in Chicago, June 23, 2025</td><td>Not a finding about any can</td></tr>
+<tr><td>Hair loss lawsuit story online</td><td>No court or case number named</td><td>No court named, checked Nov. 14, 2026</td><td>Not proof any bottle is clean</td></tr>
+<tr><td>Benzene dry shampoo case dismissed</td><td>Alleged benzene in a dry shampoo spray</td><td>Judge John J. Tharp, Jr., federal court in Chicago, June 23, 2025</td><td>Not a finding about any can</td></tr>
 <tr><td>Salon-only label deal rejected</td><td>An alleged higher price for the salon name</td><td>Judge John D. Bates, federal court in Washington, D.C., Nov. 6, 2013</td><td>Not a finding about what was inside</td></tr>
 </tbody>
 </table>
@@ -155,7 +155,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: yes, three fair points. None of them says what was in the can.</p>
 
-<p><strong>One.</strong> The lab tested one batch of one spray. The second and third sprays read lower, 2.46 and 3.73.</p>
+<p><strong>One.</strong> The lab tested one batch of one dry shampoo, sprayed three times. The second and third sprays read lower, 2.46 and 3.73.</p>
 
 <p><strong>Two.</strong> A judge ended the case for L'Oreal. No court has found that a Redken product hurt anyone.</p>
 
@@ -250,7 +250,7 @@ of our health and our finances.</p>
 <p>No court has found that. The hair loss lawsuit story names no court and no case number. If your hair is thinning, you are right to ask what touches your scalp every day.</p>
 
 <p><strong>Does Redken cause cancer?</strong></p>
-<p>No court has found that either. The 2022 case alleged benzene in one dry shampoo, and it ended in 2025 without a ruling on what was in the can. Since 2025, hairdressers with bladder cancer have <a href="https://www.harrismartin.com/publications/27/MDL/articles/54025/lawsuit-accuses-hair-dye-makers-of-hiding-increased-bladder-cancer-risk/">sued hair dye companies</a>, Redken among them. Those are claims, not rulings.</p>
+<p>No court has found that either. The 2022 case alleged benzene in one dry shampoo, and it ended in 2025 without a ruling on what was in the can. In January 2025, a hair stylist with bladder cancer <a href="https://www.harrismartin.com/publications/27/MDL/articles/54025/lawsuit-accuses-hair-dye-makers-of-hiding-increased-bladder-cancer-risk/">sued hair dye companies</a> in Los Angeles, Redken among them. Those are claims, not rulings.</p>
 
 <p><strong>Is there a Redken settlement or claim form?</strong></p>
 <p>No. The benzene case ended with a judgment for L'Oreal on June 23, 2025. With no settlement, there is nothing to claim. If a page asks for your details to file one, close it.</p>
@@ -324,7 +324,7 @@ of our health and our finances.</p>
   {"@type": "Question", "name": "Does Redken cause hair loss?",
    "acceptedAnswer": {"@type": "Answer", "text": "No court has found that. The hair loss lawsuit story names no court and no case number. If your hair is thinning, you are right to ask what touches your scalp every day."}},
   {"@type": "Question", "name": "Does Redken cause cancer?",
-   "acceptedAnswer": {"@type": "Answer", "text": "No court has found that either. The 2022 case alleged benzene in one dry shampoo, and it ended in 2025 without a ruling on what was in the can. Since 2025, hairdressers with bladder cancer have sued hair dye companies, Redken among them. Those are claims, not rulings."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "No court has found that either. The 2022 case alleged benzene in one dry shampoo, and it ended in 2025 without a ruling on what was in the can. In January 2025, a hair stylist with bladder cancer sued hair dye companies in Los Angeles, Redken among them. Those are claims, not rulings."}},
   {"@type": "Question", "name": "Is there a Redken settlement or claim form?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. The benzene case ended with a judgment for L'Oreal on June 23, 2025. With no settlement, there is nothing to claim. If a page asks for your details to file one, close it."}},
   {"@type": "Question", "name": "Is Redken All Soft shampoo part of the lawsuit?",
