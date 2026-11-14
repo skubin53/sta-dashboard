@@ -69,6 +69,7 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 <li><a href="#is-it-safer">Isn't a franchise still safer?</a></li>
 <li><a href="#before-you-buy">What to ask before you buy</a></li>
 <li><a href="#is-this-a-pitch">Isn't this just another pitch?</a></li>
+<li><a href="#who-you-become">Who do you become?</a></li>
 <li><a href="#faq">What else women ask me</a></li>
 </ul>
 </div>
@@ -79,7 +80,7 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 
 <p>Semi-absentee means you own it and a manager runs it. You check in. You keep your day job.</p>
 
-<p>Premier Franchising Group is behind the Premier Martial Arts franchise. Franchise Fastlane sold it from 2019 to 2022. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/PFG-Complaint.pdf">The FTC's complaint quotes the video buyers were shown.</a> "Most of you will probably look at semi-absentee, which is really just 10 hours a week or so."</p>
+<p>Premier Franchising Group is behind the Premier Martial Arts franchise. Franchise Fastlane pitched it from 2019 to 2022. <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/PFG-Complaint.pdf">The FTC's complaint quotes the video buyers were shown.</a> "Most of you will probably look at semi-absentee, which is really just 10 hours a week or so."</p>
 
 <div class="sta-cta">
 <h3>Twenty minutes, and you decide nothing on the call</h3>
@@ -92,21 +93,21 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 
 <p>More than 200 people paid a fee of $49,500 or more, the complaint says. That fee only opened the door.</p>
 
-<p>By the FTC's account, Premier's own estimate to open one studio ran from $100,553 to $421,800. Some buyers took out loans or used their retirement savings.</p>
+<p>By the FTC's account, Premier's own estimate to open one studio ran from $100,553 to $421,800. Some buyers took out loans. Some used their retirement savings.</p>
 
 <figure style="margin:28px 0;"><img src="https://scan.ismyhometoxic.com/blog-images/canyourunaf-villain-v1.webp" alt="An empty kitchen late at night with the olive curtains drawn, one light on over the sink, a closed laptop and a glass of water on the wooden table and the chair pushed back" loading="lazy" style="width:100%;height:auto;border-radius:10px;"></figure>
 
 <h2 id="what-happened">What does the FTC say actually happened?</h2>
 
-<p class="quick-answer">Quick answer: no new owner had opened a studio when the pitch began, the FTC says. Some worked far more than 15 hours, it adds.</p>
+<p class="quick-answer">Quick answer: no new owner had opened a studio when the pitch began, the FTC says. Some could not run it in under 15 hours, it adds.</p>
 
-<p>The first owners were different people. Most were martial artists, the FTC says. They had built their own studios, and they ran them.</p>
+<p>The first owners were different people. They already knew martial arts well, the FTC says. They had built their own studios, and they ran them.</p>
 
 <p>From 2018 to mid-2020, no new owner had opened a studio at all, the FTC says. And so, by its account, the hours in the pitch had nobody behind them.</p>
 
 <p>The complaint says the sellers "had no evidence" a new owner could do that at a profit.</p>
 
-<p>In February 2022, one owner spelled it out for the founder, the FTC says. The pitch said 10 hours or more. The owner's "Reality" was 40 hours a week, training staff to sell. "So the realism of the situation isn't even close."</p>
+<p>In February 2022, one owner spelled it out for the founder, the FTC says. The owner had expected 10 hours or more. The "Reality" was 40 hours a week, training staff to sell. "So the realism of the situation isn't even close."</p>
 
 <p>Semi-absentee was in the FTC's Club Pilates case this March too. <a href="https://theshannonnicole.com/post/is-a-franchise-worth-it-at-50">Here is what those buyers were told.</a></p>
 
@@ -114,22 +115,22 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 
 <p class="quick-answer">Quick answer: two proposed settlements worth $1.85 million, which need a judge's signature. Some owners may get to cancel.</p>
 
-<p><a href="https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies">The FTC's October 5 announcement</a> lays it out. Franchise Fastlane agreed to pay $1.2 million. Premier Franchising Group agreed to a $3,875,424 judgment and pays $650,000 of it. The FTC says the money is for the owners.</p>
+<p><a href="https://www.ftc.gov/news-events/news/press-releases/2026/10/premier-martial-arts-franchisor-its-former-franchise-sales-organization-settle-ftc-charges-companies">The FTC's October 5 announcement</a> lays it out. Franchise Fastlane agreed to pay $1.2 million. Premier Franchising Group agreed to a $3,875,424 judgment. It pays $650,000 of it. The FTC says the money is for the owners.</p>
 
-<p>Premier's order makes it offer certain owners the right to cancel with no penalty. A Premier contract usually runs 10 years from opening, the complaint says. And 7% of sales goes to Premier each month.</p>
+<p>Premier's order makes it let some owners cancel with no penalty. A Premier contract usually runs 10 years from opening, the complaint says. And 7% of sales goes to Premier each month.</p>
 
 <p><a href="https://www.ftc.gov/system/files/ftc_gov/pdf/StipulatedOrder-FFL_0.pdf">Franchise Fastlane's order</a> bans it from misstating "the number of hours worked by Franchisees." It also covers "the semi-absentee nature of the Franchise." Franchise Fastlane "neither admits nor denies" the charges.</p>
 
 <p><a href="https://www.ftc.gov/legal-library/browse/cases-proceedings/premier-franchising-group-franchise-fastlane">The FTC's case page</a>, last updated October 13, 2026, still says pending.</p>
 
-<p>Owners sued in Knoxville in November 2022. By March 2023 there were 54 of them, <a href="https://www.franchisetimes.com/franchise_news/54-premier-martial-arts-franchisees-sue-unleashed-brands-alleging-rico-act-violations/article_38de4366-bd24-11ed-9d2c-c3a50713a974.html">Franchise Times reported</a>. Premier had already paused new deals, the FTC says. It also says Premier plans to sell again, possibly in 2026.</p>
+<p>In November 2022, 54 owners sued in Knoxville, <a href="https://www.franchisetimes.com/franchise_news/54-premier-martial-arts-franchisees-sue-unleashed-brands-alleging-rico-act-violations/article_38de4366-bd24-11ed-9d2c-c3a50713a974.html">Franchise Times reported</a>. Premier had already paused new deals, the FTC says. It also says Premier plans to sell again, possibly in 2026.</p>
 
 <p>Put the pitch beside the filing. The right side took years to come out.</p>
 
 <table class="sta-table">
 <tr><th>The question</th><th>What the pitch said</th><th>What the FTC alleges</th></tr>
 <tr><td>Hours a week</td><td>"Really just 10 hours a week or so"</td><td>Some new owners could not do it in under 15</td></tr>
-<tr><td>Experience</td><td>"Martial Arts Experience Not Required!"</td><td>Most of the first owners were martial artists</td></tr>
+<tr><td>Experience</td><td>"Martial Arts Experience Not Required!"</td><td>The first owners already knew martial arts well</td></tr>
 <tr><td>From day one</td><td>"Truly semi absentee from the beginning"</td><td>The sellers "had no evidence" a new owner could do it</td></tr>
 <tr><td>Studio size</td><td>1,200 to 1,600 square feet</td><td>The first owners' studios ran 1,100 to 7,500</td></tr>
 </table>
