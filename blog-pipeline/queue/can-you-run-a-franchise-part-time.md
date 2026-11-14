@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-15
+date: 2026-11-14
 title: Premier Martial Arts Lawsuit Update: Can You Really Run a Franchise in 15 Hours a Week? (2026)
 slug: can-you-run-a-franchise-part-time
 keyword: premier martial arts lawsuit update
@@ -47,7 +47,7 @@ vault_checked: [North-Star, capped-corporate, burned-out, Compliance-Watchdog, R
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 15, 2026<br><span style="font-size:.92em;">Published November 15, 2026 &middot; Last updated November 15, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 14, 2026<br><span style="font-size:.92em;">Published November 14, 2026 &middot; Last updated November 14, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -279,8 +279,8 @@ our finances.</p>
    "headline": "Premier Martial Arts Lawsuit Update: Can You Really Run a Franchise in 15 Hours a Week? (2026)",
    "description": "The FTC alleges Premier Martial Arts buyers were told under 15 hours a week. Where the $1.85 million case stands, and what to ask before you buy.",
    "image": "https://scan.ismyhometoxic.com/blog-images/canyourunaf-hero-v1.webp",
-   "datePublished": "2026-11-15",
-   "dateModified": "2026-11-15",
+   "datePublished": "2026-11-14",
+   "dateModified": "2026-11-14",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/can-you-run-a-franchise-part-time"},
    "author": {"@id": "https://theshannonnicole.com/post/can-you-run-a-franchise-part-time#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
