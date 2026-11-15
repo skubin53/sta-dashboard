@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-24
+date: 2026-11-15
 title: Is Krud Kutter Really Non-Toxic? Why Rust-Oleum Agreed to Take the Word Off (2026)
 slug: is-krud-kutter-non-toxic
 keyword: is krud kutter non toxic
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 24, 2026<br><span style="font-size:.92em;">Published November 24, 2026 &middot; Last updated November 24, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 15, 2026<br><span style="font-size:.92em;">Published November 15, 2026 &middot; Last updated November 15, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -283,8 +283,8 @@ of our health and our finances.</p>
    "headline": "Is Krud Kutter Really Non-Toxic? Why Rust-Oleum Agreed to Take the Word Off (2026)",
    "description": "Rust-Oleum agreed to drop Non-Toxic from Krud Kutter labels to settle a class action. It admits no wrongdoing. What the court record shows.",
    "image": "https://scan.ismyhometoxic.com/blog-images/iskrudkutte-hero-v1.webp",
-   "datePublished": "2026-11-24",
-   "dateModified": "2026-11-24",
+   "datePublished": "2026-11-15",
+   "dateModified": "2026-11-15",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-krud-kutter-non-toxic"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
