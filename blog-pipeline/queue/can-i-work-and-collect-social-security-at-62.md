@@ -116,11 +116,11 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Recurring-Income-O
 
 <p>Then you get paid too much. In Social Security's words, you <a href="https://www.ssa.gov/cola/">"may have to repay benefits received."</a></p>
 
-<p>Its notice asks for "a full and immediate refund." On bills sent since April 25, 2025, it then keeps <a href="https://secure.ssa.gov/apps10/reference.nsf/links/08282025031929PM">50 percent of each check</a>. That runs until the bill is paid. You can ask for less, or for a waiver.</p>
+<p>Its notice asks for "a full and immediate refund." On bills sent since April 25, 2025, it then keeps <a href="https://secure.ssa.gov/apps10/reference.nsf/links/08282025031929PM">up to 50 percent of each check</a> by default, until the bill is paid. You can ask for less, or for a waiver.</p>
 
 <p>The year you reach full age has <a href="https://www.ssa.gov/news/en/cola/factsheets/2027.html">its own line</a>, $65,160 for 2026 and $67,920 for 2027. Social Security keeps $1 of every $3 over. It only counts the months before you reach full age.</p>
 
-<p>Both 2027 lines came out with <a href="https://theshannonnicole.com/post/will-social-security-get-a-raise-in-2027">the 2027 raise</a>. Next comes the promise that you get it back.</p>
+<p>Both 2027 lines came out with <a href="https://theshannonnicole.com/post/will-social-security-get-a-raise-in-2027">the 2027 raise</a>.</p>
 
 <h2 id="get-it-back">Do you get the held-back money back?</h2>
 
@@ -130,9 +130,9 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Recurring-Income-O
 
 <p>In February 2024, Social Security's Office of the Inspector General published an audit of this rule, the earnings test. <a href="https://www.oversight.gov/sites/default/files/oig-reports/SSA/08-21-51049.pdf">The audit says</a> "SSA did not accurately or timely pay beneficiaries subject to the earnings test."</p>
 
-<p><a href="https://www.oversight.gov/sites/default/files/oig-reports/SSA/08-21-51049.pdf">By its estimate</a>, about 176,000 people got their raise late, about $81 million. For the late ones in its sample, the first raised check came 292 days late on average.</p>
+<p><a href="https://www.oversight.gov/sites/default/files/oig-reports/SSA/08-21-51049.pdf">By its estimate</a>, about 176,000 beneficiaries got their raise late, about $81 million. For the late ones in its sample, the first raised check came 292 days late on average.</p>
 
-<p>The audit faults the bills too. Of about 294,000 such bills in fiscal 2021, it estimates about 47,000 were figured wrong. Those bills total more than $148 million.</p>
+<p>The audit faults the bills too. Of about 294,000 such bills in fiscal 2021, it estimates about 47,000, more than $148 million, were figured wrong.</p>
 
 <p>By the audit's account, part of the cause was a system built in 1989. It added your raise in August of the year after you reached full age. Social Security agreed with all 10 of its fixes.</p>
 
@@ -201,11 +201,11 @@ vault_checked: [money-at-fifty, capped-corporate, burned-out, Recurring-Income-O
 
 <h3>Were checks held back?</h3>
 
-<p>Then ask for the raise at full age. The audit says you have the right to ask before the system adds it. Call that month. Do not wait.</p>
+<p>Then ask for the raise at full age. The audit says you have the right to ask before the system adds it. Call that month.</p>
 
 <h3>If you already filed</h3>
 
-<p>You can <a href="https://www.ssa.gov/manage-benefits/cancel-your-benefits-application">cancel "up to 12 months after your benefit approval."</a> Only once, and you pay back what you and your family got.</p>
+<p>You can <a href="https://www.ssa.gov/manage-benefits/cancel-your-benefits-application">cancel "up to 12 months after your benefit approval."</a> Only once, and you pay back what you and your family got, plus Medicare and tax money held back.</p>
 
 <h3>Ask five questions of whatever comes next</h3>
 
@@ -248,7 +248,7 @@ our finances.</p>
 <li><a href="https://www.ssa.gov/news/en/cola/factsheets/2027.html">Social Security's 2027 fact sheet</a>. Both limits, 2026 and 2027, side by side. Check the year you are in.</li>
 <li><a href="https://www.ssa.gov/pubs/EN-05-10069.pdf">How Work Affects Your Benefits, Publication 05-10069</a>. The January and February checks, withheld. That is what "reduced" looks like in your bank account.</li>
 <li><a href="https://www.oversight.gov/sites/default/files/oig-reports/SSA/08-21-51049.pdf">Inspector General audit A-08-21-51049, February 2024</a>. By its estimate, about 176,000 raises paid late and about 47,000 of 294,000 overpayments figured wrong. Oversight.gov still lists <a href="https://www.oversight.gov/reports/audit/social-security-administrations-enforcement-earnings-test">2 of its 10 fixes as open</a>.</li>
-<li><a href="https://secure.ssa.gov/apps10/reference.nsf/links/08282025031929PM">Social Security's staff instructions on overpayments</a>. 50 percent kept, on bills sent since April 25, 2025. A low guess can cost you half a check each month until it is repaid.</li>
+<li><a href="https://secure.ssa.gov/apps10/reference.nsf/links/08282025031929PM">Social Security's staff instructions on overpayments</a>. Up to 50 percent kept by default, on bills sent since April 25, 2025. A low guess can cost you up to half a check each month until it is repaid.</li>
 <li><a href="https://www.ssa.gov/benefits/retirement/planner/agereduction.html">Retirement Age and Benefit Reduction</a>. Born in 1960 or later, starting at 62 is 30 percent less. That cut does not come back at 67.</li>
 </ul>
 <p class="micro">The limits change every January. In a later year, look for that year's fact sheet.</p>
