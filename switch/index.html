@@ -24,7 +24,14 @@ label.it:hover{border-color:#b9c6d6;background:#fafbfc}
 label.it input{width:26px;height:26px;accent-color:var(--green);flex-shrink:0;margin:0;cursor:pointer}
 label.it.sel{border-color:var(--green);background:#f0f8f2;font-weight:700}
 .shopwrap{max-width:1080px;margin:0 auto;padding:0 18px}
-.shopwrap h2.g{margin-top:34px}
+.shopwrap h2.g{margin-top:26px;font-size:1.15em;border-bottom-width:3px;padding-bottom:6px}
+/* 11/16 Shannon: the shop section smaller, smaller font */
+.shopwrap p.gs{font-size:.82em;margin-bottom:10px}
+.shopwrap .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:7px}
+.shopwrap label.it{padding:9px 12px;gap:10px;font-size:.85em;border-radius:9px}
+.shopwrap label.it input{width:20px;height:20px}
+.shopwrap label.other{font-size:.85em;margin-top:10px}
+.shopwrap label.other input{padding:10px 12px;margin-top:6px;font-size:.95em}
 label.other{display:block;margin:14px 0 0;font-weight:700}
 label.other input{display:block;width:100%;margin-top:8px;padding:15px 16px;border:2px solid var(--line);
         border-radius:11px;font-size:1em;font-family:inherit;color:var(--navy);background:#fff}
@@ -49,8 +56,8 @@ button.go:disabled{background:#e3e8ee;color:#9aa5b3;cursor:not-allowed}
 <p class="tag">Every item you check is money you are taking away from the big box conglomerates.</p>
 </header>
 <div class="shopwrap">
-<h2 class="g">Before you start</h2>
-<p class="gs">Where are your favorite places to shop? Check all that apply.</p>
+<h2 class="g">Where Do You Shop?</h2>
+<p class="gs">Check all that apply.</p>
 <div class="grid" id="shopgrid"></div>
 <label class="other" for="shopother">Other
 <input type="text" id="shopother" maxlength="120" placeholder="Anywhere else you like to shop">
