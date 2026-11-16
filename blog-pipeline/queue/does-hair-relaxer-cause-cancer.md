@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-22
+date: 2026-11-16
 title: What Is the L'Oreal Arizona Lawsuit? What the State Says About Hair Relaxer and Cancer (2026)
 slug: does-hair-relaxer-cause-cancer
 keyword: l'oreal arizona lawsuit
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 22, 2026<br><span style="font-size:.92em;">Published November 22, 2026 &middot; Last updated November 22, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 16, 2026<br><span style="font-size:.92em;">Published November 16, 2026 &middot; Last updated November 16, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -278,8 +278,8 @@ of our health and our finances.</p>
    "headline": "What Is the L'Oreal Arizona Lawsuit? What the State Says About Hair Relaxer and Cancer (2026)",
    "description": "Arizona sued L'Oreal in September 2026. The state says its hair relaxers carried a cancer risk it never told you about. What the filing says.",
    "image": "https://scan.ismyhometoxic.com/blog-images/doeshairrel-hero-v1.webp",
-   "datePublished": "2026-11-22",
-   "dateModified": "2026-11-22",
+   "datePublished": "2026-11-16",
+   "dateModified": "2026-11-16",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/does-hair-relaxer-cause-cancer"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
