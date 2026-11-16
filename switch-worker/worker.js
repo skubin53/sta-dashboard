@@ -263,7 +263,7 @@ const PRODUCT_MAP = {
   "Men's Shave Gel": [["Alloy Shave Gel", 2, 5.99]],
   "Mints (Sugar-Free)": [["Exceed Mints", 1, 2.69]],
   "Crave Blocking Bars": [["Attain with CraveBlocker Bars", 5, 11.49]],
-  "Post-Workout Drink (Creatine)": [["Vitality Elevate Pure Creatine", 5, 10.99]],
+  "Creatine": [["Vitality Elevate Pure Creatine", 5, 10.99]],
   "Pre-Workout Drink": [["Vitality Elevate Pre-Workout: Limeade", 9, 19.99]],
   "Makeup remover": [["Sei Bella Honey & Rose Balm to Oil Makeup Eraser", 9, 20.0], ["Sei Bella Makeup Removing Cleansing Wipes", 5, 10.0]],
   "Facial moisturizer": [["Sei Bella Charcoal & Flower Daily Mattifying Lotion", 12, 28.0], ["Sei Bella Honey & Rose Daily Soothing Lotion", 15, 32.0], ["Sei Bella Deep Marine Ageless Daily Lotion", 18, 37.0]],
@@ -2163,6 +2163,11 @@ export default {
     const stamp = new Date().toISOString().slice(0, 10);
     let body = `SWITCH CHECKLIST  ${stamp}\n`;
     body += `Score ${score}   |   ${count} products they already buy elsewhere\n`;
+    // Shannon 2026-11-16: "Does the where do you shop section show up in the notes ... I
+    // don't think it does." It was logged but never filed on the lead. Now it is.
+    const shopList = stores.slice();
+    if (storesOther) shopList.push("Other: " + storesOther);
+    body += `\nWhere they shop\n  ${shopList.length ? shopList.join(", ") : "(none picked)"}\n`;
     for (const g of Object.keys(byGroup)) {
       body += `\n${g}\n`;
       for (const l of byGroup[g]) body += `  - ${l}\n`;
