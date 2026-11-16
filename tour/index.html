@@ -94,12 +94,27 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 @media(min-width:700px){.choice{grid-template-columns:1fr 1fr;align-items:center;padding:36px}.awards{grid-template-columns:repeat(4,1fr);max-width:none}}
 @media(min-width:700px){.cards.three{grid-template-columns:repeat(3,1fr)}h1{font-size:2.5em}h2{font-size:2.1em}.soldgrid{grid-template-columns:repeat(4,1fr)}.newsrow figure{flex-basis:260px}}
 @media(max-width:420px){body{font-size:18px}h1{font-size:1.8em}h2{font-size:1.6em}}
+/* 11/16 redesign: each section starts with a full-width numbered band so the 3 parts are easy to tell apart on a shared screen */
+section{padding:0 0 52px}
+section.s1{--sec:#14263f;background:#fff}
+section.s2{--sec:#BF3B3B;background:#f3efe6}
+section.s3{--sec:#1c7a3d;background:#fff}
+.band{background:var(--sec);color:#fff;padding:16px 0;margin:0 0 34px;box-shadow:0 4px 0 rgba(0,0,0,.12)}
+.band .wrap{display:flex;align-items:center;gap:16px}
+.band .num{flex:0 0 48px;height:48px;border-radius:50%;background:#fff;color:var(--sec);font-weight:800;font-size:1.4em;display:flex;align-items:center;justify-content:center}
+.band .lab{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:1em;line-height:1.2}
+.band .of{display:block;font-size:.72em;letter-spacing:.12em;opacity:.8;margin-top:3px}
+.more{color:var(--ink)}
+.newscard{aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:space-between;padding:18px 16px;background:#fffdf7;border-bottom:1px solid var(--line)}
+.newscard .tag{align-self:flex-start;background:var(--red);color:#fff;font-size:.68em;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 9px;border-radius:4px}
+.newscard .hl{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.08em;line-height:1.22;color:#111;margin:12px 0}
+.newscard .src{font-size:.72em;color:var(--muted);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 </style></head><body>
 <div class="top">Switch to America</div>
 
-<section id="problem">
+<section id="problem" class="s1">
+<div class="band"><div class="wrap"><span class="num">1</span><span class="lab">The problem<span class="of">Part 1 of 3</span></span></div></div>
 <div class="wrap">
-<p class="eye">The problem</p>
 <h1>A few giant companies own most of the brands on the shelf.</h1>
 <figure class="wheel">
 <img src="/tour/img/wheel.webp" alt="A wheel of hundreds of household brand logos, grouped by the handful of giant companies that own them, such as Procter and Gamble, Unilever, PepsiCo, Kraft Heinz, Mars and Johnson and Johnson" width="739" height="686">
@@ -110,13 +125,13 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 <div class="card"><b>So many brands. So few owners.</b><span>Every aisle looks like a hundred choices. Most of those brands belong to a handful of giant companies.</span></div>
 <div class="card"><b>Smaller packages. Bigger prices.</b><span>We all feel it. The giants care most about profit.</span></div>
 </div>
-<a class="more" href="#brands">Keep scrolling</a>
+<a class="more" href="#brands">Next: Who owns your brands</a>
 </div>
 </section>
 
-<section id="brands" class="alt">
+<section id="brands" class="s2">
+<div class="band"><div class="wrap"><span class="num">2</span><span class="lab">Who owns your brands<span class="of">Part 2 of 3</span></span></div></div>
 <div class="wrap">
-<p class="eye">Who owns your brands</p>
 <h2>The "healthier" brands we trusted were bought by the giants.</h2>
 <p class="lede">Here are a few brands many of us buy, thinking we are supporting family-owned, healthier choices.</p>
 <div class="soldgrid">
@@ -127,12 +142,13 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 </div>
 <p class="lede">Even Whole Foods is owned by Amazon now.</p>
 <h3>And the big names keep ending up in the news.</h3>
-<p class="swipe">Swipe to see all 10</p>
+<p class="swipe">Swipe to see all 11</p>
 <div class="newsrow" tabindex="0" aria-label="News stories about lawsuits and recalls">
-<figure><img src="/tour/img/news-01.webp" alt="Headline: Johnson and Johnson to pay 100 million dollars in baby powder settlement" width="300" height="300" loading="lazy"><figcaption>J&amp;J agrees to pay $100 million over baby powder. 2020</figcaption></figure>
 <figure><img src="/tour/img/news-02.webp" alt="Headline: Johnson and Johnson recalls baby powder over asbestos worry" width="300" height="300" loading="lazy"><figcaption>J&amp;J recalls baby powder over asbestos. 2019</figcaption></figure>
-<figure><img src="/tour/img/news-03.webp" alt="Headline: Johnson and Johnson subsidiary seeks bankruptcy protection to handle talc product claims" width="300" height="300" loading="lazy"><figcaption>A J&amp;J company files bankruptcy over talc claims. 2021</figcaption></figure>
-<figure><img src="/tour/img/news-04.webp" alt="Headline: J and J can't use bankruptcy to end cancer suits over baby powder, court says" width="300" height="300" loading="lazy"><figcaption>Court: J&amp;J can't use bankruptcy to end the suits. 2023</figcaption></figure>
+<figure><div class="newscard"><span class="tag">Recall</span><span class="hl">8 million The Laundress laundry and cleaning products recalled over bacteria</span><span class="src">CPSC &middot; Dec 2022</span></div><figcaption>The "clean" laundry brand, owned by Unilever. 2022</figcaption></figure>
+<figure><div class="newscard"><span class="tag">Recall</span><span class="hl">Unilever recalls 19 Dove, TRESemm&eacute; and Suave dry shampoos over benzene</span><span class="src">Oct 2022</span></div><figcaption>Benzene, a cancer-causing chemical, in dry shampoo. 2022</figcaption></figure>
+<figure><div class="newscard"><span class="tag">Recall</span><span class="hl">Clorox recalls 37 million bottles of Pine-Sol over bacteria</span><span class="src">CPSC &middot; Oct 2022</span></div><figcaption>37 million bottles of a cleaner most of us own. 2022</figcaption></figure>
+<figure><div class="newscard"><span class="tag">Recall</span><span class="hl">Abbott recalls Similac baby formula after infants fall ill</span><span class="src">CDC &middot; Feb 2022</span></div><figcaption>Baby formula pulled from shelves. 2022</figcaption></figure>
 <figure><img src="/tour/img/news-05.webp" alt="Headline: Lawsuits mount against Procter and Gamble over cancer-causing chemical in Old Spice, Secret sprays" width="300" height="300" loading="lazy"><figcaption>P&amp;G sued over benzene in Old Spice and Secret sprays. 2021</figcaption></figure>
 <figure><img src="/tour/img/news-06.webp" alt="Headline: Procter and Gamble recalls 32 dry shampoo and conditioner products over benzene concern" width="300" height="300" loading="lazy"><figcaption>P&amp;G recalls 32 dry shampoos and conditioners. 2021</figcaption></figure>
 <figure><img src="/tour/img/news-07.webp" alt="Headline: Aveeno and Neutrogena spray sunscreens recalled due to low levels of benzene, a carcinogen" width="300" height="300" loading="lazy"><figcaption>Aveeno and Neutrogena sunscreens recalled over benzene. 2021</figcaption></figure>
@@ -145,13 +161,13 @@ footer{background:var(--ink);color:#c9d6e4;text-align:center;padding:22px 16px;f
 <p>The giants know how to make safer products. Here, we often get the cheaper version. Profits over people.</p>
 <p>And when they pay a settlement, that money comes from what we paid for their products.</p>
 </div>
-<a class="more" href="#switch">Keep scrolling</a>
+<a class="more" href="#switch">Next: The switch</a>
 </div>
 </section>
 
-<section id="switch">
+<section id="switch" class="s3">
+<div class="band"><div class="wrap"><span class="num">3</span><span class="lab">The switch<span class="of">Part 3 of 3</span></span></div></div>
 <div class="wrap">
-<p class="eye go">The switch</p>
 <h2>So we found one store our family could trust.</h2>
 <div class="choice">
 <div class="choice-red">
