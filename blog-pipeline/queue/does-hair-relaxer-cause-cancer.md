@@ -78,7 +78,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: Arizona sued L'Oreal in September 2026. The state says it hid a cancer risk.</p>
 
-<p>The suit was filed in Maricopa County, in Arizona state court. It names L'Oreal USA, its parent company in France, and SoftSheen-Carson.</p>
+<p>The suit was filed in Maricopa County, in Arizona state court. It names three L'Oreal companies, including the parent company in France, and SoftSheen-Carson.</p>
 
 <p><a href="https://www.azag.gov/press-release/attorney-general-mayes-files-consumer-fraud-lawsuit-against-loreal-usa">Attorney General Kris Mayes announced it on September 11, 2026.</a> Her words were plain. "L'Oreal knew or should have known about the dangers," she said.</p>
 
@@ -102,7 +102,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The state says these relaxers can burn the scalp. It says the skin on your scalp soaks things in faster than your arms or hands do.</p>
 
-<p>Then it lists what it says relaxers as a group can hold. Phthalates and parabens are two. The state says they can throw off your hormones. Formaldehyde is a third. The state calls it a known or likely cause of cancer.</p>
+<p>Then it lists what it says relaxers as a group can hold.</p>
+<h3 id="phthalates-and-parabens">Phthalates and parabens</h3>
+<p>The state says they can throw off your hormones.</p>
+<h3 id="formaldehyde">Formaldehyde</h3>
+<p>The state says federal and world health agencies list it as a known or likely cause of cancer.</p>
 
 <p>The complaint says L'Oreal sold these in Arizona as far back as the 1970s. It says some were sold for young girls. That line was called Beautiful Beginnings.</p>
 
@@ -141,7 +145,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Here is the strongest case on the other side. It is fair to hear it.</p>
 
-<p><strong>One.</strong> <a href="https://www.courthousenews.com/arizona-sues-loreal-for-failing-to-disclose-cancer-risks-associated-with-hair-relaxers/">A L'Oreal spokesperson said the studies "made no finding of a causal connection."</a> That is true. The researchers said more work is needed.</p>
+<p><strong>One.</strong> <a href="https://www.kold.com/2026/09/11/unacceptable-arizona-ag-sues-loral-over-alleged-cancer-linked-hair-relaxers/">A L'Oreal spokesperson said the study "made no finding of a causal connection."</a> That is true. The researchers said more work is needed.</p>
 
 <p><strong>Two.</strong> The uterine study did not ask anyone which brand they used. So it cannot point at one box.</p>
 
@@ -215,7 +219,7 @@ of our health and our finances.</p>
 <li><a href="https://www.jpml.uscourts.gov/sites/jpml/files/Pending_MDL_Dockets_By_Actions_Pending-November-2-2026.pdf">US Judicial Panel on Multidistrict Litigation, report of November 2, 2026</a>. It lists 12,743 pending cases in MDL 3060, the federal hair relaxer case in Illinois. That is the number of injury cases over relaxers waiting in federal court.</li>
 <li><a href="https://www.aboutlawsuits.com/wp-content/uploads/2026-09-24-Docket-Entry.pdf">US District Court for the Northern District of Illinois, docket entry of September 24, 2026</a>. It shows the first trial on the calendar for September 7, 2027. Until then, every claim is still an allegation.</li>
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9949582/">Chang and others, Journal of the National Cancer Institute, 2022</a>. Frequent straightener users had about 2.5 times the uterine cancer risk. The study did not track brands.</li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8561257/">White and others, NIH ovarian cancer study, Oxford University Press, 2021</a>. Frequent relaxer use was tied to about twice the ovarian cancer risk. Any use at all, taken as a whole, was not.</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8561257/">White and others, NIH ovarian cancer study, 2021</a>. Frequent use of straighteners, relaxers or pressing products was tied to about twice the ovarian cancer risk. Any use at all, taken as a whole, was not.</li>
 </ul>
 </div>
 
