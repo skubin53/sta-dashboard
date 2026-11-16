@@ -39,6 +39,23 @@ h3.sub{margin:20px 0 8px;font-size:.95em;color:var(--muted);text-transform:upper
 ul.steps{margin:0;padding:0 0 0 22px}
 ul.steps li{padding:5px 0}
 @media(max-width:600px){ul.p{column-count:1}.score{font-size:4em}.q{font-size:2em}.ys{font-size:1.7em}}
+/* 11/16 Shannon: price comparison ON the page ("This is the deal breaker!!") */
+.pc h2{font-size:1.5em}
+.pcsub{margin:0 0 12px;color:var(--muted);font-size:.95em}
+.pcscroll{overflow-x:auto}
+.pct{width:100%;border-collapse:collapse;font-size:.95em;min-width:460px}
+.pct th,.pct td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+.pct th:first-child,.pct td:first-child{text-align:left}
+.pct thead th{background:var(--navy);color:#fff;font-size:.85em;letter-spacing:.04em}
+.pct td small{display:block;color:var(--muted);font-size:.78em;font-weight:400}
+.pct .mel{background:#eef8f1;color:var(--green);font-weight:800}
+.pct thead th.mel{background:var(--green);color:#fff}
+.pct tfoot td{font-weight:800;font-size:1.12em;border-bottom:0;border-top:3px solid var(--navy)}
+.pcsave{margin:14px 0 0;font-size:1.15em;font-weight:700;text-align:center}
+.pcsave b{color:var(--red);font-size:1.25em}
+.cta h2{color:#fff;margin:0 0 10px;font-size:1.6em}
+.cta p.ask{color:#fff;font-size:1.25em;font-weight:700;margin:0}
+.cta p.ask b{color:var(--orange)}
 </style>
 <style>
 /* What's New sections 2 and 3, copied from whatisnew/embed.html for tour mode (2026-10-21) */
@@ -186,7 +203,7 @@ ul.steps li{padding:5px 0}
 <h2 id="tourHead">Saving your list...</h2>
 <p id="tourBody">One moment.</p>
 </div>
-<div class="card">
+<div class="card" style="display:none">
 <h2>What you told me you buy</h2>
 <ul class="p" id="picked"></ul>
 <div id="beefWrap" style="display:none">
@@ -203,11 +220,20 @@ ul.steps li{padding:5px 0}
 <p>And we promise to never sell you anything toxic or harmful.</p>
 <p>Everything here is <strong>MORE AFFORDABLE</strong> than Walmart.</p>
 <p>We give you FREE things every time you shop.</p>
-<p><a href="https://docs.google.com/document/d/1sMSpq6LLVlpiDD5ZQVo33knB7x_4-mO1SVrOeCrWJkQ/preview" target="_blank" rel="noopener">Check out this price comparison</a></p>
+</div>
+<div class="card pc" id="priceCompare">
+<h2>The price comparison</h2>
+<p class="pcsub">Same amount of product, priced side by side. (2024 prices)</p>
+<div class="pcscroll"><table class="pct">
+<thead><tr><th>Item</th><th>Walmart</th><th>Target</th><th class="mel">Melaleuca</th></tr></thead>
+<tbody><tr><td><b>Tide Plant-Based Laundry Detergent</b><small>96 loads</small></td><td>$28.13</td><td>$25.98</td><td class="mel">$19.49<small>MelaPower</small></td></tr><tr><td><b>Bounce Dryer Sheets</b><small>100 sheets</small></td><td>$4.54</td><td>$4.56</td><td class="mel">$6.49<small>Dryer Sheets</small></td></tr><tr><td><b>Windex Glass Cleaner</b><small>96 oz</small></td><td>$12.51</td><td>$9.93</td><td class="mel">$6.99<small>Glass Cleaner</small></td></tr><tr><td><b>Tilex Bathroom Cleaner</b><small>96 oz</small></td><td>$16.44</td><td>$16.47</td><td class="mel">$6.99<small>Bathroom Cleaner</small></td></tr><tr><td><b>Windex Wipes</b><small>30 wipes</small></td><td>$4.32</td><td>$3.15</td><td class="mel">$4.29<small>Wipes</small></td></tr><tr><td><b>ZEP Heavy Duty Cleaner</b><small>32 gallons</small></td><td>$20.21</td><td>$20.16</td><td class="mel">$6.99<small>MelaMagic</small></td></tr><tr><td><b>Listerine Total Care</b><small>16 oz</small></td><td>$4.49</td><td>$4.49</td><td class="mel">$8.59<small>Mouthwash</small></td></tr><tr><td><b>Herbal Essences Shampoo</b><small>16.8 oz</small></td><td>$11.80</td><td>$11.82</td><td class="mel">$8.49<small>Affinia Shampoo</small></td></tr><tr><td><b>Lamisil Antifungal</b><small>0.5 oz</small></td><td>$7.88</td><td>$7.84</td><td class="mel">$8.39<small>MelaGel</small></td></tr><tr><td><b>Cascade Platinum Pods</b><small>30 packs</small></td><td>$11.04</td><td>$11.10</td><td class="mel">$9.49<small>Dishwasher Pods</small></td></tr><tr><td><b>Tylenol Extra Strength</b><small>50 caplets</small></td><td>$6.97</td><td>$6.99</td><td class="mel">$4.59<small>CounterAct Pain</small></td></tr></tbody>
+<tfoot><tr><td>Total</td><td>$128.33</td><td>$122.49</td><td class="mel">$90.79</td></tr></tfoot>
+</table></div>
+<p class="pcsave">You save <b>$37.54</b> on this list compared to Walmart.</p>
 </div>
 <div class="cta">
-<p>Let's walk through your list together and find the easiest place to start.</p>
-<a href="https://link.switchtoamerica.com/widget/bookings/maketheswtch">Book My 10 Minutes</a>
+<h2>Next Step is Easy</h2>
+<p class="ask">Let's get your account set up together.<br>Should I <b>TEXT</b> or <b>EMAIL</b> your link?</p>
 </div>
 <p class="note" id="saved"></p>
 </div>
@@ -385,8 +411,7 @@ function save(){
 // package, and the CRM note would show the short list. She either goes back and adds
 // what she forgot, or taps "That's everything".
 if(TOUR){
-  var cta=document.querySelector('.cta'); if(cta) cta.style.display='none';
-  var pr=document.querySelector('.promise'); if(pr) pr.style.display='none';
+  // 11/16 Shannon: price comparison + 'Next Step is Easy' now show in tour mode too.
   document.getElementById('tourNext').style.display='';
   document.getElementById('tourSteps').style.display='';
   // After the checklist: the two What's New sections, then "What happens next" (2026-10-21).
