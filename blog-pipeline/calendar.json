@@ -1,11 +1,11 @@
 {
- "start": "2026-11-15",
+ "start": "2026-11-16",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-11-15",
-   "weekday": "Sun",
+   "date": "2026-11-16",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-antiperspirant-safe",
@@ -36,45 +36,13 @@
    ]
   },
   {
-   "date": "2026-11-16",
-   "weekday": "Mon",
+   "date": "2026-11-17",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
      "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
      "cat": "Personal Care",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "can-i-work-and-collect-social-security-at-62",
-     "title": "Can I Work and Collect Social Security at 62? What the Earnings Limit Takes Back (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-17",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "is-bottled-water-safe",
-     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
-     "cat": "Kitchen",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -102,6 +70,38 @@
   {
    "date": "2026-11-18",
    "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-bottled-water-safe",
+     "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
+     "cat": "Kitchen",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "starting-over-at-50-after-divorce",
+     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -132,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-11-19",
-   "weekday": "Thu",
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -164,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-21",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -196,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-11-21",
-   "weekday": "Sat",
+   "date": "2026-11-22",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -228,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-23",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -260,8 +260,8 @@
    ]
   },
   {
-   "date": "2026-11-23",
-   "weekday": "Mon",
+   "date": "2026-11-24",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-it-safe-to-buy-skincare-on-amazon",
@@ -292,12 +292,12 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-25",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-krud-kutter-non-toxic",
-     "title": "Is Krud Kutter Really Non-Toxic? Why Rust-Oleum Agreed to Take the Word Off (2026)",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
      "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
@@ -324,8 +324,8 @@
    ]
   },
   {
-   "date": "2026-11-25",
-   "weekday": "Wed",
+   "date": "2026-11-26",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
@@ -356,8 +356,8 @@
    ]
   },
   {
-   "date": "2026-11-26",
-   "weekday": "Thu",
+   "date": "2026-11-27",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "does-hair-relaxer-cause-cancer",
@@ -388,8 +388,8 @@
    ]
   },
   {
-   "date": "2026-11-27",
-   "weekday": "Fri",
+   "date": "2026-11-28",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "why-am-i-tired-all-the-time",
@@ -420,8 +420,8 @@
    ]
   },
   {
-   "date": "2026-11-28",
-   "weekday": "Sat",
+   "date": "2026-11-29",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "why-did-eggs-cost-so-much",
@@ -452,44 +452,12 @@
    ]
   },
   {
-   "date": "2026-11-29",
-   "weekday": "Sun",
-   "slots": [
-    {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "starting-over-at-50-after-divorce",
-     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-11-30",
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-hot-cocoa-bad-for-you",
-     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -520,8 +488,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -956,6 +924,38 @@
      "perish": 2,
      "keyword": "is costco rotisserie chicken healthy",
      "felt": "When someone in the house is sick she grabs a Costco rotisserie chicken for soup because it is quick and she thought it was the simple, clean choice. She has never read the ingredient list on the bag.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-15",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-tampax-safe",
+     "title": "Is Tampax Safe? A Judge Just Let California Buyers Sue P&G Together Over Lead (2026)",
+     "cat": "Health",
+     "why": "Procter & Gamble (Tampax).",
+     "perish": 2,
+     "keyword": "is tampax being sued for lead",
+     "felt": "She has used Tampax since she was a teenager and never thought about it. In perimenopause her cycles got heavier and longer, so she uses more than ever, and she just saw the word lead next to the brand.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "are-kroger-eggs-safe-now",
+     "title": "Are Kroger Eggs Safe Now? What Nearly 1.6 Million Recalled Dozen Say About the Carton (2026)",
+     "cat": "Food",
+     "why": "Midwest Poultry Services, L.P. of Texas, which packed cage-free eggs sold as Kroger, Simple Truth Natural Cage Free, Brookshire's, Country Morning and Sunups.",
+     "perish": 3,
+     "keyword": "are kroger eggs safe to eat right now",
+     "felt": "She bakes for everyone in November and December, and eggs go into everything. She chose the cage-free carton because it sounded cleaner, and now she is not sure the label meant anything.",
      "register": "villain",
      "pix": false,
      "written": false,
