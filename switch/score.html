@@ -56,6 +56,12 @@ ul.steps li{padding:5px 0}
 .cta h2{color:#fff;margin:0 0 10px;font-size:1.6em}
 .cta p.ask{color:#fff;font-size:1.25em;font-weight:700;margin:0}
 .cta p.ask b{color:var(--orange)}
+/* 11/16 Shannon: dark blue promise box above the price comparisons */
+.promise2{background:var(--navy);color:#fff;border-radius:13px;padding:26px 24px;margin:26px 0;text-align:center}
+.promise2 p{margin:0 0 10px;font-size:1.15em;line-height:1.45}
+.promise2 strong{color:var(--orange);font-weight:800}
+.promise2 .pc-go{margin:16px 0 0;font-weight:800;font-size:1.3em;color:#fff}
+#tourEnd .cta{margin-top:10px}
 </style>
 <style>
 /* What's New sections 2 and 3, copied from whatisnew/embed.html for tour mode (2026-10-21) */
@@ -211,18 +217,12 @@ ul.steps li{padding:5px 0}
   <ul class="p" id="beef"></ul>
 </div>
 </div>
-<div class="card">
-<h2>What this actually means</h2>
-<p>Every one of these is something your family already buys. Nobody is asking you to add anything to your life or spend more than you spend today. You are being asked to buy the same things from a brand that leaves the junk out.</p>
-<p><strong>Same shopping. Different shelf.</strong></p>
-</div>
-<div class="card promise">
+<div class="promise2">
 <p>And we promise to never sell you anything toxic or harmful.</p>
 <p>Everything here is <strong>MORE AFFORDABLE</strong> than Walmart.</p>
-<p>We give you FREE things every time you shop.</p>
+<p class="pc-go">Check out these Price Comparisons.</p>
 </div>
 <div class="card pc" id="priceCompare">
-<h2>The price comparison</h2>
 <p class="pcsub">Same amount of product, priced side by side. (2024 prices)</p>
 <div class="pcscroll"><table class="pct">
 <thead><tr><th>Item</th><th>Walmart</th><th>Target</th><th class="mel">Melaleuca</th></tr></thead>
@@ -230,10 +230,6 @@ ul.steps li{padding:5px 0}
 <tfoot><tr><td>Total</td><td>$128.33</td><td>$122.49</td><td class="mel">$90.79</td></tr></tfoot>
 </table></div>
 <p class="pcsave">You save <b>$37.54</b> on this list compared to Walmart.</p>
-</div>
-<div class="cta">
-<h2>Next Step is Easy</h2>
-<p class="ask">Let's get your account set up together.<br>Should I <b>TEXT</b> or <b>EMAIL</b> your link?</p>
 </div>
 <p class="note" id="saved"></p>
 </div>
@@ -341,16 +337,9 @@ ul.steps li{padding:5px 0}
 </section>
 </template>
 <div class="wrap" id="tourEnd" style="display:none">
-<div class="card" id="tourSteps" style="display:none">
-<h2>What happens next</h2>
-<ul class="steps">
-<li>You get an email to set up your account. Tap the green button.</li>
-<li>Pick a password that's easy to remember.</li>
-<li>Membership is $19 a year. It's charged after your first order.</li>
-<li>Your first order is 35 points or more, about $100 after tax and shipping.</li>
-<li>Grab your $20 in FREE products before you check out.</li>
-<li>Your box ships straight to your door.</li>
-</ul>
+<div class="cta" id="tourSteps" style="display:none">
+<h2>Next Step is Easy</h2>
+<p class="ask">Let's get your account set up together.<br>Should I <b>TEXT</b> or <b>EMAIL</b> your link?</p>
 </div>
 </div>
 <script>
@@ -412,7 +401,6 @@ function save(){
 // what she forgot, or taps "That's everything".
 if(TOUR){
   // 11/16 Shannon: price comparison + 'Next Step is Easy' now show in tour mode too.
-  document.getElementById('tourNext').style.display='';
   document.getElementById('tourSteps').style.display='';
   // After the checklist: the two What's New sections, then "What happens next" (2026-10-21).
   // Their fonts load in tour mode only, so the normal score page stays as fast as before.
@@ -426,6 +414,7 @@ if(TOUR){
   document.getElementById('tourEnd').style.display='';
 }
 if(TOUR && cid && score<QUALIFY){
+  document.getElementById('tourNext').style.display='';
   document.getElementById('tourHead').textContent='Did we miss anything?';
   document.getElementById('tourBody').innerHTML='Most families forget a few things, like toothpaste, laundry soap or vitamins. '+
     '<a href="javascript:history.back()">Go back and add them</a>, then check your score again.'+
