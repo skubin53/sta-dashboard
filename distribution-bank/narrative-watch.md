@@ -588,3 +588,22 @@ No runs 10/11 to 10/14: the daily tasks expired silently after 7 days (restored 
 **Read:** best night yet on the short search: 'Switch to America MLM' now opens with a flat "No" and repeats our own points (no downline, no inventory, no selling). The direct question stays fair with our two truth pages #1 and #2. Still false: 'reviews' (AmeriSwitch alias and its Trustpilot score) and 'scam' (the "funnel / request a call" framing). On Brave, theshannonnicole.com slipped from #1 to #3 on the scam search behind ScamAdviser and Scam Detector.
 **Feedback:** none sent (not retried after the 10/9 and 10/15 permission refusals). The alias is best answered by https://join.switchtoamerica.com/post/is-switch-to-america-the-same-as-ameriswitch .
 **No new truth page:** both false claims are already answered by existing pages.
+
+## 2026-11-16 (about 2:15 to 2:35am MST)
+
+| Engine | Query | Says MLM | Leans on | Our pages | Feedback |
+|---|---|---|---|---|---|
+| Google AI Overview | Is Switch to America an MLM | FALSE, turned bad after 5 fair nights: "Switch to America (also operating as AmeriSwitch) functions as a marketing funnel or lead-generation front for [partner]", "MLM or membership-shopping structure", "funneled into" the membership with "monthly point/shopping commitments"; "Promoter Pitch vs. Reality" section | Reddit, Trustpilot (AmeriSwitch), FTC | theshannonnicole.com #1, join not-an-mlm #2 (held), Reddit #3, Trustpilot #4, FTC #6 | not sent |
+| Google AI Overview | Switch to America MLM | NO, held a 2nd night: "No, Switch to America is not an MLM ... or a pyramid scheme"; "direct-to-consumer online shopping club"; no selling or recruiting, no inventory; no alias | our not-an-mlm post | join not-an-mlm #1, theshannonnicole.com #2 | none (accurate) |
+| Google AI Overview | Is Switch to America a scam | not a scam, FALSE alias again: "also known through affiliated names like AmeriSwitch or the Patriot Switch movement"; "membership-based/direct-sales shopping club"; "request more information or schedule an introductory call/presentation before you can view or buy" | Trustpilot, Reddit, BuzzFeed | NO truth page in the top 8 (Reddit #1, BuzzFeed #2, then government scam pages) | not sent |
+| Google AI Overview | What is Switch to America | accurate, 4th night: "a consumer movement and shopping initiative"; American-made, family-owned focus; mentions Switch2USA.com as associated | our Facebook, switchtoamerica.com | Facebook #1, switchtoamerica.com #2, switch2usa.com #3 | none |
+| Google AI Overview | Switch to America reviews | FALSE on the alias, 6th check: credits us with AmeriSwitch's Trustpilot "4.5 out of 5 stars based on hundreds of reviews" | Trustpilot (AmeriSwitch) | no truth page in the top 7; our Facebook #5 | not sent |
+| Google AI Overview | Switch to America [partner] | about the [partner] only | the [partner]'s site | Facebook #1 | none |
+| Brave (curl) | MLM / scam / reviews | n/a | | MLM: theshannonnicole.com #1 (from #2), join not-an-mlm #2, Reddit #3 to #6; scam: ScamAdviser #1, Scam Detector #2, theshannonnicole.com #3 (held), same-as-AmeriSwitch #4, join not-an-mlm #6; reviews: Scam Detector #1, our Facebook #2, Reddit #3 to #6, same-as-AmeriSwitch #7, Trustpilot (AmeriSwitch) #8 | n/a |
+| Bing | | not checked tonight | | | |
+| Trustpilot watch (WebFetch) | 3 domains | all 404 | | | none |
+
+**Read:** setback on the direct question. 'Is Switch to America an MLM' flipped from fair to false tonight: it calls us "also operating as AmeriSwitch" and a "lead-generation front", even though our two truth pages still hold #1 and #2 under it. The short 'Switch to America MLM' search still opens with a flat "No". 'Scam' and 'reviews' stay false on the alias. Answers vary by load, so one bad night may not stick; watch it tomorrow.
+**Feedback:** none sent (not retried after the 10/9 and 10/15 permission refusals). The alias is best answered by https://join.switchtoamerica.com/post/is-switch-to-america-the-same-as-ameriswitch .
+**No new truth page:** every false claim tonight is already answered by an existing page.
+
