@@ -135,7 +135,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <p><a href="https://legalaidnyc.org/wp-content/uploads/2026/11/261110-caledron-final-release.pdf">On November 10, 2026</a>, a federal judge gave final approval to the $162 million settlement.</p>
 
-<p>One caregiver in the case said it plain: "We still had to show up every day because somebody depended on us."</p>
+<p>Allison Fields, one of the four caregivers who sued, said it plain: "We still had to show up every day because somebody depended on us."</p>
 
 <h3>The second case</h3>
 
@@ -177,7 +177,7 @@ vault_checked: [burned-out, capped-corporate, money-at-fifty, Builder-Target-Seg
 
 <h3>Call the Eldercare Locator</h3>
 
-<p><a href="https://eldercare.acl.gov/">The Eldercare Locator</a> is run by the federal Administration for Community Living. Call 1-800-677-1116. Ask what her state has for a family member who cares at home.</p>
+<p><a href="https://eldercare.acl.gov/">The Eldercare Locator</a> is a public service of the federal Administration for Community Living. Call 1-800-677-1116. Ask what her state has for a family member who cares at home.</p>
 
 <h3>Ask her Medicaid office one question</h3>
 
