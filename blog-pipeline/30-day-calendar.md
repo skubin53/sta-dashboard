@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-11-16 | 2 posts every publish day (even dates) | starts 2026-11-16 | 30 days
+Switch to America | rebuilt 2026-11-17 | 2 posts every publish day (even dates) | starts 2026-11-17 | 30 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -20,37 +20,35 @@ specified in blog-pipeline/gentle-topics.json.
 
 | Date | Day | Slot | Track | Register | Title | Photos |
 |---|---|---|---|---|---|---|
-| 2026-11-16 | Mon | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
-| 2026-11-16 | Mon | 2 | builder | villain | Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026) | ready |
-| 2026-11-17 | Tue | 1 | shopper | villain | Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026) | ready |
+| 2026-11-17 | Tue | 1 | shopper | villain | Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026) | ready |
 | 2026-11-17 | Tue | 2 | builder | villain | Does the Illinois Menopause Law Protect Your Job in 2027? (2026) | ready |
-| 2026-11-18 | Wed | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
-| 2026-11-18 | Wed | 2 | builder | villain | Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026) | ready |
-| 2026-11-19 | Thu | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026) | ready |
-| 2026-11-19 | Thu | 2 | builder | villain | What Happens to Your Income If You Stop Working for 90 Days? (2026) | ready |
-| 2026-11-20 | Fri | 1 | shopper | villain | Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026) | ready |
-| 2026-11-20 | Fri | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
-| 2026-11-21 | Sat | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
-| 2026-11-21 | Sat | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026) | ready |
-| 2026-11-22 | Sun | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
-| 2026-11-22 | Sun | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
-| 2026-11-23 | Mon | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
-| 2026-11-23 | Mon | 2 | builder | villain | Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026) | ready |
-| 2026-11-24 | Tue | 1 | shopper | villain | Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026) | ready |
-| 2026-11-24 | Tue | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
-| 2026-11-25 | Wed | 1 | shopper | villain | Is Roundup Safe to Use Around Your House? (2026) | ready |
-| 2026-11-25 | Wed | 2 | builder | villain | I Quit My Job to Care for Mom. What Happens to My Social Security? (2026) | ready |
-| 2026-11-26 | Thu | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
-| 2026-11-26 | Thu | 2 | builder | villain | Is 50 Too Old to Get Hired? What One Company Paid for Calling an Applicant 'Too Old' (2026) | ready |
-| 2026-11-27 | Fri | 1 | shopper | villain | What Is the L'Oreal Arizona Lawsuit? What the State Says About Hair Relaxer and Cancer (2026) | ready |
+| 2026-11-18 | Wed | 1 | shopper | villain | Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026) | ready |
+| 2026-11-18 | Wed | 2 | builder | villain | Is 50 Too Old to Get Hired? What One Company Paid to Settle a Too Old Lawsuit (2026) | ready |
+| 2026-11-19 | Thu | 1 | shopper | villain | Is Bottled Water Safe? What Is Actually Floating in Dasani (2026) | ready |
+| 2026-11-19 | Thu | 2 | builder | villain | Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026) | ready |
+| 2026-11-20 | Fri | 1 | shopper | villain | Is Clear Eyes Safe to Use Every Day? Why Prestige Keeps Pulling It (2026) | ready |
+| 2026-11-20 | Fri | 2 | builder | villain | What Happens to Your Income If You Stop Working for 90 Days? (2026) | ready |
+| 2026-11-21 | Sat | 1 | shopper | villain | Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026) | ready |
+| 2026-11-21 | Sat | 2 | builder | villain | What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026) | ready |
+| 2026-11-22 | Sun | 1 | shopper | villain | Is Downy Fabric Softener Toxic? What Coats Your Towels (2026) | ready |
+| 2026-11-22 | Sun | 2 | builder | villain | Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026) | ready |
+| 2026-11-23 | Mon | 1 | shopper | villain | Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026) | ready |
+| 2026-11-23 | Mon | 2 | builder | villain | Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026) | ready |
+| 2026-11-24 | Tue | 1 | shopper | villain | Is Gatorade Actually a Health Drink? What Is In the Bottle (2026) | ready |
+| 2026-11-24 | Tue | 2 | builder | villain | Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026) | ready |
+| 2026-11-25 | Wed | 1 | shopper | villain | Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026) | ready |
+| 2026-11-25 | Wed | 2 | builder | villain | Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026) | ready |
+| 2026-11-26 | Thu | 1 | shopper | villain | Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026) | ready |
+| 2026-11-26 | Thu | 2 | builder | villain | I Quit My Job to Care for Mom. What Happens to My Social Security? (2026) | ready |
+| 2026-11-27 | Fri | 1 | shopper | villain | Is Roundup Safe to Use Around Your House? (2026) | ready |
 | 2026-11-27 | Fri | 2 | builder | villain | Is DoorDash Worth It as a Side Hustle? What New York Just Made It Pay Back (2026) | ready |
-| 2026-11-28 | Sat | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
+| 2026-11-28 | Sat | 1 | shopper | villain | Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026) | ready |
 | 2026-11-28 | Sat | 2 | builder | villain | Is Social Security Going to Run Out in 2032? What the Trustees Actually Said (2026) | ready |
-| 2026-11-29 | Sun | 1 | shopper | villain | Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026) | ready |
+| 2026-11-29 | Sun | 1 | shopper | villain | Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026) | ready |
 | 2026-11-29 | Sun | 2 | builder | villain | Is Younique Now Curated? What Ended When the Pay Plan Did (2026) | ready |
-| 2026-11-30 | Mon | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | ready |
+| 2026-11-30 | Mon | 1 | shopper | villain | Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026) | ready |
 | 2026-11-30 | Mon | 2 | builder | villain | What Happens to My Health Insurance If I Get Laid Off? What COBRA Really Costs (2026) | ready |
-| 2026-12-01 | Tue | 1 | shopper | villain | Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026) | ready |
+| 2026-12-01 | Tue | 1 | shopper | villain | Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026) | ready |
 | 2026-12-01 | Tue | 2 | builder | villain | Why Can't I Get Monetized on YouTube? What YouTube's 2027 Rules Change for New Creators (2026) | ready |
 | 2026-12-02 | Wed | 1 | shopper | villain | Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026) | ready |
 | 2026-12-02 | Wed | 2 | builder | villain | Why Did My Blog Traffic Drop in 2026? And What to Build Instead | ready |

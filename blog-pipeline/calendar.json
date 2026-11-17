@@ -1,47 +1,15 @@
 {
- "start": "2026-11-16",
+ "start": "2026-11-17",
  "days": 30,
  "per_day": 2,
  "calendar": [
-  {
-   "date": "2026-11-16",
-   "weekday": "Mon",
-   "slots": [
-    {
-     "slug": "is-antiperspirant-safe",
-     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
-     "cat": "Personal Care",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "can-i-get-paid-to-take-care-of-my-mother",
-     "title": "Can I Get Paid to Take Care of My Mother? What Medicare Will Not Pay For (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
   {
    "date": "2026-11-17",
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-johnsons-baby-shampoo-safe",
-     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
+     "slug": "is-antiperspirant-safe",
+     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
      "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
@@ -72,6 +40,38 @@
    "weekday": "Wed",
    "slots": [
     {
+     "slug": "is-johnsons-baby-shampoo-safe",
+     "title": "Is Baby Shampoo Gentler Than Yours? What Is In the Yellow Bottle (2026)",
+     "cat": "Personal Care",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-50-too-old-to-get-hired",
+     "title": "Is 50 Too Old to Get Hired? What One Company Paid to Settle a Too Old Lawsuit (2026)",
+     "cat": "Builders",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "weekday": "Thu",
+   "slots": [
+    {
      "slug": "is-bottled-water-safe",
      "title": "Is Bottled Water Safe? What Is Actually Floating in Dasani (2026)",
      "cat": "Kitchen",
@@ -100,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-11-19",
-   "weekday": "Thu",
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -132,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-21",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -164,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-11-21",
-   "weekday": "Sat",
+   "date": "2026-11-22",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -196,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-23",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -228,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-11-23",
-   "weekday": "Mon",
+   "date": "2026-11-24",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -260,13 +260,13 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-25",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026)",
-     "cat": "Beauty",
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -292,13 +292,13 @@
    ]
   },
   {
-   "date": "2026-11-25",
-   "weekday": "Wed",
+   "date": "2026-11-26",
+   "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
-     "cat": "Cleaning",
+     "slug": "is-it-safe-to-buy-skincare-on-amazon",
+     "title": "Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -324,45 +324,13 @@
    ]
   },
   {
-   "date": "2026-11-26",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
-     "cat": "Beauty",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-50-too-old-to-get-hired",
-     "title": "Is 50 Too Old to Get Hired? What One Company Paid for Calling an Applicant 'Too Old' (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
    "date": "2026-11-27",
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "does-hair-relaxer-cause-cancer",
-     "title": "What Is the L'Oreal Arizona Lawsuit? What the State Says About Hair Relaxer and Cancer (2026)",
-     "cat": "Beauty",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -392,9 +360,9 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -424,9 +392,9 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -456,16 +424,16 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -488,8 +456,8 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-hot-cocoa-bad-for-you",
-     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -962,9 +930,14 @@
      "track": "shopper"
     }
    ]
+  },
+  {
+   "date": "2026-12-16",
+   "weekday": "Wed",
+   "slots": []
   }
  ],
- "shortfall": 0,
+ "shortfall": 2,
  "blocked": [],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
 }
