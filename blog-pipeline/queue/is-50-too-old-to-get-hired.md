@@ -108,11 +108,11 @@ vault_checked: [capped-corporate, burned-out, money-at-fifty, Builder-Target-Seg
 
 <p>No shame in asking. Now look at what the EEOC keeps finding.</p>
 
-<p><a href="https://www.eeoc.gov/reports/state-age-discrimination-and-older-workers-us-50-years-after-age-discrimination-employment">In a 2018 report</a>, the EEOC said 6 out of 10 older workers "have seen or experienced age discrimination in the workplace."</p>
+<p><a href="https://www.eeoc.gov/reports/state-age-discrimination-and-older-workers-us-50-years-after-age-discrimination-employment">In a 2018 report</a>, the EEOC cited a survey finding 6 out of 10 older workers "have seen or experienced age discrimination in the workplace."</p>
 
 <p>That report points to a study of over 40,000 job applications. Applicants 64 to 66 got turned down for interviews more often than those 49 to 51. Women, even at middle age, faced more age bias than older men.</p>
 
-<p><a href="https://www.eeoc.gov/older-women-work-intersection-age-and-sex-discrimination">In its 2020 to 2023 budget years, the EEOC got over 52,000 age discrimination complaints.</a> At least half were filed by women.</p>
+<p><a href="https://www.eeoc.gov/older-women-work-intersection-age-and-sex-discrimination">In its 2020 to 2023 budget years, the EEOC got over 52,000 age discrimination charges.</a> At least half were filed by women.</p>
 
 <p>You did not lose your touch.</p>
 
@@ -126,7 +126,7 @@ vault_checked: [capped-corporate, burned-out, money-at-fifty, Builder-Target-Seg
 
 <h3>The birth year box</h3>
 
-<p>The law does not ban an employer from asking your age. But the EEOC says that question "may deter older workers from applying." Its report also flags online forms with birth or graduation dates you cannot skip.</p>
+<p>The law does not ban an employer from asking your age. But the EEOC says that question "may deter older workers from applying." Experts told the EEOC about online forms with birth or graduation dates you cannot skip.</p>
 
 <h3>The silence</h3>
 
