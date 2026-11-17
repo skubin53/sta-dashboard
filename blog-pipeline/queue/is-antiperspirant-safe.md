@@ -156,11 +156,11 @@ vault_checked: [BLOG-RUNBOOK, VOICE-GUIDE, voice-profile]
 
 <p><strong>Two.</strong> <a href="https://www.cancer.gov/about-cancer/causes-prevention/risk/myths/antiperspirants-fact-sheet">A 2002 study it cites asked 813 women with breast cancer and 793 without.</a> It found no rise in risk from underarm products.</p>
 
-<p><strong>Three.</strong> <a href="https://doi.org/10.1016/s0278-6915(00)00118-6">A 2001 study put tagged aluminum under one arm of two adults.</a> Only 0.012 percent of it went through the skin.</p>
+<p><strong>Three.</strong> <a href="https://doi.org/10.1016/s0278-6915(00)00118-6">A small 2001 study put tagged aluminum under one arm of two adults.</a> Only 0.012 percent of it went through the skin.</p>
 
 <p>That is a real answer, and I am not going to pretend otherwise.</p>
 
-<p>The case against the aluminum is thinner. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5514401/">A 2017 study in Austria measured aluminum in breast tissue. It found more in 100 women with breast cancer than in 52 without.</a> It was small, and it relied on what each woman remembered using.</p>
+<p>The case against the aluminum is thinner. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5514401/">A 2017 study in Austria measured aluminum in breast tissue. It found more in 100 women with breast cancer than in 52 without.</a> It was small, and what each woman used came from what she remembered.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -169,7 +169,7 @@ vault_checked: [BLOG-RUNBOOK, VOICE-GUIDE, voice-profile]
 <p>If you bought it, you are far from the only one. The lawsuit puts the buyers it speaks for in the thousands.</p>
 
 <figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isantipersp-belonging-v1.webp" alt="Three women of different ages talking around a kitchen island with coffee, one of them in teal scrubs after a shift" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isantipersp-belonging-v1.webp" alt="Three women of different ages laughing around a big kitchen island with a fruit bowl, one of them in teal scrubs after a shift" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
 </figure>
 
 <h2 id="what-goes-on-instead">What goes under your arms instead?</h2>
@@ -189,6 +189,20 @@ vault_checked: [BLOG-RUNBOOK, VOICE-GUIDE, voice-profile]
 <p>Switch to America is a private membership store. We are the manufacturer. No middlemen, no markup.</p>
 
 <p>Do the small thing first. Tonight, take the stick off the counter and put a plain deodorant on your list.</p>
+
+<figure style="margin:28px 0;">
+<img src="https://scan.ismyhometoxic.com/blog-images/isantipersp-freedom-v1.webp" alt="A woman outdoors in bright summer sun with both arms up, gathering her hair off her neck, relaxed" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
+</figure>
+
+<h2 id="who-do-you-become">Who do you become?</h2>
+
+<p>You become the one who knows what goes under your own arms.</p>
+
+<p>It is a hot Saturday in July. You are out in the yard. You lift both arms to pull your hair up off your neck.</p>
+
+<p>You do not check your shirt first, because a little sweat is just sweat. You do not think about the stick at all.</p>
+
+<p>It took one swap and one morning.</p>
 
 <div class="shannons-advice">
 <img src="https://scan.ismyhometoxic.com/now/shannon-photo.jpg" alt="Shannon Nicole, founder of Switch to America" class="advice-photo">
@@ -247,20 +261,6 @@ of our health and our finances.</p>
 
 <p><strong>Will I smell if I stop using antiperspirant?</strong></p>
 <p>You will sweat, because nothing is plugging the duct. The smell is what a plain deodorant is for. Wear it for a week before you decide.</p>
-
-<figure style="margin:28px 0;">
-<img src="https://scan.ismyhometoxic.com/blog-images/isantipersp-freedom-v1.webp" alt="A woman outdoors in bright summer sun with both arms up, gathering her hair off her neck, relaxed" loading="lazy" style="width:100%;height:auto;border-radius:10px;">
-</figure>
-
-<h2 id="who-do-you-become">Who do you become?</h2>
-
-<p>You become the one who knows what goes under your own arms.</p>
-
-<p>It is a hot Saturday in July. You are out in the yard. You lift both arms to pull your hair up off your neck.</p>
-
-<p>You do not check your shirt first, because a little sweat is just sweat. You do not think about the stick at all.</p>
-
-<p>It took one swap and one morning.</p>
 
 <div class="sta-keep">
 <h3>Keep reading</h3>
