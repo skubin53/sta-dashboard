@@ -41,3 +41,4 @@ Daily task: sta-tools/workflows/cron-gsc-indexing.txt (8:47 AM). Queue: sta-tool
 - 2026-11-15 PM: builder can-i-work-and-collect-social-security-at-62 -> Google 'URL is not on Google' -> Indexing requested (2 used today); Bing URL submitted (shows Today 15:15). Queue empty.
 - 2026-11-16 09:58 (shopper publish run): requested https://join.switchtoamerica.com/post/does-hair-relaxer-cause-cancer -> Indexing requested. Leftovers: none. Bing submitted 09:59.
 - 2026-11-16 2:07 PM run: no leftovers; requested https://theshannonnicole.com/post/can-i-get-paid-to-take-care-of-my-mother (Indexing requested). Bing submitted Today at 15:01.
+- 2026-11-17 9:07 run (about 10:05 AM MST): shopper is-antiperspirant-safe -> Indexing requested; Bing submitted Today at 10:07. Queue empty before and after.
