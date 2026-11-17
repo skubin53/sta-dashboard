@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-26
+date: 2026-11-17
 title: Is 50 Too Old to Get Hired? What One Company Paid to Settle a Too Old Lawsuit (2026)
 slug: is-50-too-old-to-get-hired
 keyword: is 50 too old to get hired
@@ -47,7 +47,7 @@ vault_checked: [capped-corporate, burned-out, money-at-fifty, Builder-Target-Seg
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 26, 2026<br><span style="font-size:.92em;">Published November 26, 2026 &middot; Last updated November 26, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 17, 2026<br><span style="font-size:.92em;">Published November 17, 2026 &middot; Last updated November 17, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -299,8 +299,8 @@ our finances.</p>
    "headline": "Is 50 Too Old to Get Hired? What One Company Paid to Settle a Too Old Lawsuit (2026)",
    "description": "The EEOC says HCL America's email called a 62-year-old applicant too old. HCL agreed to pay $495,000 to settle. What the law says, and the way around it.",
    "image": "https://scan.ismyhometoxic.com/blog-images/is50toooldt-hero-v1.webp",
-   "datePublished": "2026-11-26",
-   "dateModified": "2026-11-26",
+   "datePublished": "2026-11-17",
+   "dateModified": "2026-11-17",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://theshannonnicole.com/post/is-50-too-old-to-get-hired"
