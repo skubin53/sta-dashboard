@@ -607,3 +607,20 @@ No runs 10/11 to 10/14: the daily tasks expired silently after 7 days (restored 
 **Feedback:** none sent (not retried after the 10/9 and 10/15 permission refusals). The alias is best answered by https://join.switchtoamerica.com/post/is-switch-to-america-the-same-as-ameriswitch .
 **No new truth page:** every false claim tonight is already answered by an existing page.
 
+## 2026-11-17 (about 2:10 to 2:30am MST)
+
+| Engine | Query | Says MLM | Leans on | Our pages | Feedback |
+|---|---|---|---|---|---|
+| Google AI Overview | Is Switch to America an MLM | MIXED, better than 11/16: opens "marketed as a consumer-direct shopping club rather than a traditional multi-level marketing (MLM) company"; no selling, no inventory; still FALSE alias "(also associated with AmeriSwitch)"; says the model "heavily resembles" [partner] shopping-club ecosystems | Trustpilot (AmeriSwitch) | theshannonnicole.com #1, join not-an-mlm #2 (held) | not sent |
+| Google AI Overview | Switch to America MLM | FALSE, flipped after 2 fair nights: "not officially branded as a traditional MLM ... on its surface" but "functions as a marketing front/funnel for [partner], a well-known catalog and referral-based wellness MLM" | a YouTube homestead video +3 | join not-an-mlm #1, theshannonnicole.com #2 | not sent |
+| Google AI Overview | Is Switch to America a scam | NO scam, fair this time: "membership or subscription shopping club"; home scan can lead to an intro call; "Not an MLM: proponents and the company state it is not"; no alias in the opening | Reddit, ScamAdviser | none in top 6 (Reddit #1, ScamAdviser #2) | none |
+| Google AI Overview | What is Switch to America | accurate, 5th night: movement away from big-box chains toward American-made family-owned makers | our Facebook, switchtoamerica.com | Facebook #1, switchtoamerica.com #2, switch2usa.com #3 | none |
+| Google AI Overview | Switch to America reviews | FALSE on the alias, 7th check: "often associated with AmeriSwitch", credits us with AmeriSwitch's Trustpilot 4.5 stars, 270+ reviews | Trustpilot (AmeriSwitch) | our Facebook #5 only | not sent |
+| Google AI Overview | Switch to America [partner] | about the [partner] only | the [partner]'s site | none in top 4 | none |
+| Brave (curl) | 3 queries | n/a | | blocked tonight (empty page to curl) | |
+| Bing | | not checked tonight | | | |
+| Trustpilot watch (WebFetch) | 3 domains | all 404 | | | none |
+
+**Read:** the two MLM searches swapped places. The direct question is fair again apart from the alias; the short "Switch to America MLM" search went false ("marketing front/funnel for [partner]"), leaning on a YouTube video, not on our pages, which still hold #1 and #2 under it. The alias stays the one steady false claim (MLM question + reviews).
+**Feedback:** none sent (not retried after the 10/9 and 10/15 permission refusals). Alias answer: https://join.switchtoamerica.com/post/is-switch-to-america-the-same-as-ameriswitch .
+**No new truth page:** every false claim tonight is already answered by an existing page.
