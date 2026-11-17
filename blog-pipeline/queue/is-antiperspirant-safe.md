@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-10-07
+date: 2026-11-17
 title: Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)
 slug: is-antiperspirant-safe
 keyword: is antiperspirant safe
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, VOICE-GUIDE, voice-profile]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; October 7, 2026<br><span style="font-size:.92em;">Published October 7, 2026 &middot; Last updated October 7, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 17, 2026<br><span style="font-size:.92em;">Published November 17, 2026 &middot; Last updated November 17, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -286,8 +286,8 @@ of our health and our finances.</p>
    "headline": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
    "description": "The aluminum in your stick is not proven to cause cancer. But P&G's own filing lists fragrance in unscented Secret, and a lawsuit says that word is false.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isantipersp-hero-v1.webp",
-   "datePublished": "2026-10-07",
-   "dateModified": "2026-10-07",
+   "datePublished": "2026-11-17",
+   "dateModified": "2026-11-17",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-antiperspirant-safe"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
