@@ -53,7 +53,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <h2 id="the-short-answer">The short answer</h2>
 <p>You ordered a cream for the dark spots on your cheeks. It came in a brown box from the place you order everything.</p>
 <p><strong><a href="https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-nearly-600k-settlement-amazon-resolving">California says Amazon sold face creams holding 121 to 16,000 parts per million of mercury.</a></strong> The federal limit is 1. Amazon agreed to settle in January 2025 and admitted nothing.</p>
-<p>The state says nobody at the checkout was testing that jar. It took lawsuits to get those listings blocked.</p>
+<p>The state says those listings gave no clear warning. It took lawsuits to get those listings blocked.</p>
 </div>
 
 <div class="sta-toc">
@@ -95,7 +95,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>And so the spots fade, for a while. That is why someone puts it in.</p>
 
-<p>The state says "Mercury is capable of being absorbed through skin." It can also pass from your hand to what you touch. From there, it can reach the rest of your house.</p>
+<p>The state says "Mercury is capable of being absorbed through skin." It can also pass from your hand to what you touch. The state says it can then reach kids and others in your home.</p>
 
 <p><a href="https://www.cdc.gov/mmwr/volumes/68/wr/mm6850a4.htm">In 2019 the CDC reported on a patient, 47, in Sacramento.</a> She used a cream from Mexico twice a day for seven years. It held 12,000 parts per million of mercury. That jar was not from Amazon. It shows what the number can do.</p>
 
@@ -111,7 +111,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://oag.ca.gov/system/files/attachments/press-docs/pre-filed%20copy%20executed%20amazon%20face%20creams%20proposed%20cj.pdf">The proposed deal</a> lays out the rest. Amazon must hire an outside expert on these creams. The state says it must also list approved brands with no mercury.</p>
 
-<p>Here is the math. The state gets $218,560 in penalties, $278,942 in fees and $65,000 for future checks. The whole deal adds up to $6,187,502. Of that, $4,500,000 goes to the lawyers for the first two who sued.</p>
+<p>Here is the math. The deal gives the state $218,560 in penalties, $278,942 in fees and $65,000 for future checks. The whole deal adds up to $6,187,502. Of that, $4,500,000 goes to the lawyers for the first two who sued.</p>
 
 <p>So most of the money paid for a ten-year fight.</p>
 
@@ -119,11 +119,11 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: a new lawsuit says so. In April 2026 shoppers sued Amazon over sunscreens they say carry lead.</p>
 
-<p>On April 30, 2026, two shoppers filed <a href="https://www.classaction.org/media/wolf-et-al-v-amazon-complaint.pdf">Wolf v. Amazon.com</a> in federal court in Washington state. The lawsuit alleges some sunscreens sold on Amazon carry lead and cadmium.</p>
+<p>On April 30, 2026, two shoppers filed <a href="https://www.classaction.org/media/wolf-et-al-v-amazon-complaint.pdf">Wolf v. Amazon.com</a> in federal court in Washington state. The lawsuit alleges some sunscreens sold on Amazon carry lead and cadmium. In June 2026 a third shopper joined. It now also says some sunscreens had less SPF than the label.</p>
 
 <p>It says Amazon sold them "with no warning" to children and adults. Those are claims, not rulings.</p>
 
-<p>It also says Amazon writes some of the words on the listing. It alleges Amazon "inserts its own descriptions" with Rufus, its AI helper.</p>
+<p>It also says Amazon writes some of the words on the listing. It alleges Amazon "inserts its own descriptions" with Rufus. That was an AI tool Amazon has since dropped.</p>
 
 <p><a href="https://join.switchtoamerica.com/post/is-sunscreen-safe">What goes through your skin at the beach</a> is its own story.</p>
 
@@ -133,7 +133,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <thead><tr><th>What happened</th><th>The concern</th><th>Named authority and date</th><th>What it does NOT mean</th></tr></thead>
 <tbody>
 <tr><td>Mercury face creams in California</td><td>121 to 16,000 ppm mercury, by the state's account</td><td>California Attorney General, January 30, 2025</td><td>Amazon admitted nothing</td></tr>
-<tr><td>Sunscreens</td><td>Alleged lead and cadmium, no warning</td><td>Federal court in Washington state, filed April 30, 2026</td><td>No ruling yet</td></tr>
+<tr><td>Sunscreens</td><td>Alleged lead and cadmium, no warning</td><td>Shoppers' lawsuit in federal court in Washington state, filed April 30, 2026</td><td>No ruling yet</td></tr>
 </tbody>
 </table>
 
@@ -147,7 +147,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><strong>Two.</strong> Amazon denies it sold any of them. The deal says Amazon admits nothing.</p>
 
-<p><strong>Three.</strong> By the state's account, those creams broke the law before they were ever listed. It says the people who made them broke it first.</p>
+<p><strong>Three.</strong> By the state's account, those creams were never legal to make, ship or sell in California.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -157,7 +157,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: if it is a lightening or dark spot cream from a seller you cannot reach, stop using it tonight.</p>
 
-<p>Do the small thing first. Go to your bathroom vanity and find the cream you use on your spots.</p>
+<p>Do the small thing first. Go to your dressing table or bathroom vanity and find the cream you use on your spots.</p>
 
 <p>If it came from a seller you could never call, put the lid on and seal it in a zip bag. Do not rinse it down the sink. Ask your county where to take it.</p>
 
@@ -210,6 +210,7 @@ of our health and our finances.</p>
 <li><a href="https://oag.ca.gov/system/files/attachments/press-docs/Complaint%20for%20Injunctive%20Relief%20and%20Civil%20Penalties.pdf">Complaint, People of the State of California v. Amazon.com, Inc., Alameda County Superior Court</a>. It names eight skin-lightening creams. What it means: these are claims about what reached shoppers' homes.</li>
 <li><a href="https://oag.ca.gov/system/files/attachments/press-docs/pre-filed%20copy%20executed%20amazon%20face%20creams%20proposed%20cj.pdf">Stipulation and Proposed Consent Judgment, with Larry Lee and a second private enforcer</a>. It lists payments of $6,187,502 and the filter Amazon must keep running. What it means: Amazon agreed to pay, and denies the claims.</li>
 <li><a href="https://www.classaction.org/media/wolf-et-al-v-amazon-complaint.pdf">Complaint, Wolf v. Amazon.com, Inc., No. 2:26-cv-01479, federal court in Washington state, filed April 30, 2026</a>. It alleges sunscreens sold on Amazon carry lead and cadmium with no warning. What it means: these are claims, and the case is new.</li>
+<li><a href="https://truthinadvertising.org/wp-content/uploads/2026/07/Wolf-v-Amazon-amended-complaint.pdf">Amended Complaint, Wolf v. Amazon.com, Inc., No. 2:26-cv-01479, dated June 23, 2026</a>. It adds a third shopper and claims some sunscreens had less SPF than labeled. It also notes Amazon no longer uses Rufus. What it means: these are still claims, not rulings.</li>
 <li><a href="https://www.cdc.gov/mmwr/volumes/68/wr/mm6850a4.htm">CDC, Morbidity and Mortality Weekly Report, December 2019</a>. A patient who used a mercury cream for seven years could no longer care for herself. What it means: this is what a high mercury number can do.</li>
 </ul>
 </div>
