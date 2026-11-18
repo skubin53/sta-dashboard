@@ -1,40 +1,8 @@
 {
- "start": "2026-11-17",
+ "start": "2026-11-18",
  "days": 30,
  "per_day": 2,
  "calendar": [
-  {
-   "date": "2026-11-17",
-   "weekday": "Tue",
-   "slots": [
-    {
-     "slug": "is-antiperspirant-safe",
-     "title": "Is Antiperspirant Safe? What the Aluminum in Secret Is Doing Under Your Arms (2026)",
-     "cat": "Personal Care",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-menopause-pushing-women-out-of-work",
-     "title": "Does the Illinois Menopause Law Protect Your Job in 2027? (2026)",
-     "cat": "Builders",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "builder"
-    }
-   ]
-  },
   {
    "date": "2026-11-18",
    "weekday": "Wed",
@@ -53,8 +21,8 @@
      "track": "shopper"
     },
     {
-     "slug": "is-50-too-old-to-get-hired",
-     "title": "Is 50 Too Old to Get Hired? What One Company Paid to Settle a Too Old Lawsuit (2026)",
+     "slug": "is-menopause-pushing-women-out-of-work",
+     "title": "Does the Illinois Menopause Law Protect Your Job in 2027? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -85,8 +53,8 @@
      "track": "shopper"
     },
     {
-     "slug": "starting-over-at-50-after-divorce",
-     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
+     "slug": "quit-my-job-to-care-for-mom-social-security",
+     "title": "I Quit My Job to Care for Mom. What Happens to My Social Security? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -117,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "income-if-you-stop-for-90-days",
-     "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
+     "slug": "starting-over-at-50-after-divorce",
+     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -149,8 +117,8 @@
      "track": "shopper"
     },
     {
-     "slug": "questions-before-joining-anything",
-     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
+     "slug": "income-if-you-stop-for-90-days",
+     "title": "What Happens to Your Income If You Stop Working for 90 Days? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -181,8 +149,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-are-health-insurance-premiums-going-up",
-     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
+     "slug": "questions-before-joining-anything",
+     "title": "What Questions Should I Ask Before Joining Anything? Five From the Growth Cave Case (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -213,8 +181,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-salary-stop-going-up-at-45",
-     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
+     "slug": "why-are-health-insurance-premiums-going-up",
+     "title": "Why Are Health Insurance Premiums Going Up So Much in 2027? What UnitedHealthcare Filed (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -245,8 +213,8 @@
      "track": "shopper"
     },
     {
-     "slug": "why-did-my-company-just-close",
-     "title": "Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026)",
+     "slug": "why-did-my-salary-stop-going-up-at-45",
+     "title": "Why Did My Salary Stop Going Up at 45 When My Reviews Are Great? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -277,8 +245,8 @@
      "track": "shopper"
     },
     {
-     "slug": "tiktok-shop-commission-changes",
-     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
+     "slug": "why-did-my-company-just-close",
+     "title": "Why Did the Company I Built With Just Close, and What Do Modere's Court Papers Show? (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -309,16 +277,16 @@
      "track": "shopper"
     },
     {
-     "slug": "quit-my-job-to-care-for-mom-social-security",
-     "title": "I Quit My Job to Care for Mom. What Happens to My Social Security? (2026)",
+     "slug": "tiktok-shop-commission-changes",
+     "title": "Your TikTok Shop Commission Is Only Locked for 30 Days. What Do You Build On? (2026)",
      "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "builder"
     }
    ]
@@ -360,8 +328,8 @@
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-keratin-treatment-safe",
-     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
      "cat": "Beauty",
      "why": "already written",
      "perish": -2,
@@ -392,9 +360,9 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "is-keratin-treatment-safe",
+     "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -424,9 +392,9 @@
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -456,16 +424,16 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -488,8 +456,8 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -935,9 +903,14 @@
    "date": "2026-12-16",
    "weekday": "Wed",
    "slots": []
+  },
+  {
+   "date": "2026-12-17",
+   "weekday": "Thu",
+   "slots": []
   }
  ],
- "shortfall": 2,
+ "shortfall": 4,
  "blocked": [],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
 }
