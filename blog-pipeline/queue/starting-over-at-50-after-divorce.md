@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-21
+date: 2026-11-18
 title: Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)
 slug: starting-over-at-50-after-divorce
 keyword: starting over at 50 with no money
@@ -47,7 +47,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 21, 2026<br><span style="font-size:.92em;">Published November 21, 2026 &middot; Last updated November 21, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 18, 2026<br><span style="font-size:.92em;">Published November 18, 2026 &middot; Last updated November 18, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -286,8 +286,8 @@ our finances.</p>
    "headline": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
    "description": "A divorce after 50 cut women's standard of living 45% in one study, men's 21%. What brought it back, and the hiring software the EEOC sued over.",
    "image": "https://scan.ismyhometoxic.com/blog-images/startingove-hero-v1.webp",
-   "datePublished": "2026-11-21",
-   "dateModified": "2026-11-21",
+   "datePublished": "2026-11-18",
+   "dateModified": "2026-11-18",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://theshannonnicole.com/post/starting-over-at-50-after-divorce"
