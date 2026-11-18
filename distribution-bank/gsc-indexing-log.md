@@ -43,3 +43,4 @@ Daily task: sta-tools/workflows/cron-gsc-indexing.txt (8:47 AM). Queue: sta-tool
 - 2026-11-16 2:07 PM run: no leftovers; requested https://theshannonnicole.com/post/can-i-get-paid-to-take-care-of-my-mother (Indexing requested). Bing submitted Today at 15:01.
 - 2026-11-17 9:07 run (about 10:05 AM MST): shopper is-antiperspirant-safe -> Indexing requested; Bing submitted Today at 10:07. Queue empty before and after.
 - 2026-11-17 2:07 run (about 2:55 PM MST): builder is-50-too-old-to-get-hired -> Indexing requested; Bing submitted Today at 14:54. 2 requests today.
+- 2026-11-18 9:07 run: requested is-it-safe-to-buy-skincare-on-amazon (shopper). Indexing requested. Leftovers: none.
