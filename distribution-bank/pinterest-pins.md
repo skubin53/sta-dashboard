@@ -743,3 +743,11 @@ Next 2 pins: Day 48 space heater overnight + keratin treatment (check each has a
 Both confirmed as the first two tiles on _created; AI-disclosure switches read false before each Publish.
 GROWTH TASK (c) board description: Clean Beauty & Safe Personal Care now reads "Clean beauty and safe personal care for women over 40, with plain answers on what is really in your shampoo, deodorant, makeup and skincare. We follow the lawsuits, recalls and fines so you know which products to swap, then show non-toxic personal care that is American Made and more affordable." (verified on reload).
 Next 2 pins: Day 49 Daily Harvest GRAS + turkey prices (check each has a fact base and delivered photos first; Day 40 Vaseline + cough syrup still wait for their posts). Next growth: (a), (b) or (f); board not yet refreshed: Non-Toxic Laundry.
+
+## PUBLISHED 2026-11-18 (12:11 run, ran about 12:41 to 1:15 PM) - 2 pins live (Chrome)
+- Turkey prices (Day 49) -> LIVE, pin 474848354484048949 | "Why is turkey so expensive this year? What Butterball agreed to pay" | Non-Toxic Food & Clean Pantry | FREE SCAN, utm_campaign=why-is-turkey-so-expensive-this-year | photo whyisturkey-freedom-v1 (woman about 57 carrying a roast turkey, no label)
+- TRESemme lawsuit (Day 50, pulled forward) -> LIVE, pin 474848354484048959 | "TRESemme lawsuit: why women say it hurt their hair" | Non-Toxic Hair Care | FREE SCAN, utm_campaign=is-tresemme-safe | photo istresemmes-freedom-v1 (woman towel drying her hair, laughing, no bottle)
+- SKIPPED Day 49 Daily Harvest GRAS: its core facts are an FDA ruling (no-FDA rule 2026-11-05); pin only if a non-FDA framing is written.
+Both confirmed as the first two tiles on _created; AI-disclosure switches read false before each Publish. Direct /pin-creation-tool/ load needed a second load to hydrate.
+GROWTH TASK (c) board description: Non-Toxic Laundry now reads "Non-toxic laundry swaps for women over 40 who want clean clothes without the fragrance cloud. Plain facts on laundry detergent recalls, fabric softener, dryer sheets and stain removers, plus a fragrance-free laundry routine that is American made and more affordable than you think." All boards now refreshed.
+Next 2 pins: Day 50 Roundup + Day 51 first pin (check fact base + photos first; Day 40 Vaseline + cough syrup still wait for their posts). Next growth: (a), (b) or (f).
