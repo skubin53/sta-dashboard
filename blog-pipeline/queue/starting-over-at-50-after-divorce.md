@@ -145,7 +145,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 <tr><th>&nbsp;</th><th>What the research leans on</th><th>Something in your own name</th></tr>
 <tr><td>Who holds it</td><td>A new partner, or a boss</td><td>You</td></tr>
 <tr><td>How often it showed up</td><td>22% of women found a partner in ten years</td><td>You decide when it starts</td></tr>
-<tr><td>Can a birthday close the door</td><td>In the iTutorGroup case, the EEOC alleged it did</td><td>You decide whether you start</td></tr>
+<tr><td>Can a birthday close the door</td><td>In the iTutorGroup case, the EEOC alleged it did</td><td>The door is yours to open</td></tr>
 <tr><td>If it ends</td><td>You start over again</td><td>Your name is still on it</td></tr>
 <tr><td>What it does not do</td><td>It does not wait for you</td><td>It does not promise you a number</td></tr>
 </table>
@@ -156,7 +156,7 @@ vault_checked: [money-at-fifty, Recurring-Income-Offer, Builder-Target-Segments,
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>Here is what I can tell you about Switch to America. It sells straight from the manufacturer. No middlemen and no markup. No minimums, no maximums.</p>
+<p>Here is what I can tell you about Switch to America. We are the manufacturer. No middlemen and no markup. No minimums, no maximums.</p>
 
 <p>You pay what a brand new shopper pays. Not a penny less. I have no special rate and I would not offer you one.</p>
 
@@ -221,7 +221,7 @@ our finances.</p>
 <h3>Where to check me</h3>
 <ul>
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8599059/">Lin and Brown, "The Economic Consequences of Gray Divorce for Women and Men"</a>, Bowling Green State University. Women's standard of living fell 45%, men's 21%. It came back for women mainly with a new partner. The drop is real, and so is how little of it you control.</li>
-<li><a href="https://www.gao.gov/products/gao-12-699">GAO-12-699, "Retirement Security: Women Still Face Challenges"</a>, 2012. Women's household income fell 41% on average with divorce. A second source, eight years earlier, saw the same thing.</li>
+<li><a href="https://www.gao.gov/products/gao-12-699">GAO-12-699, "Retirement Security: Women Still Face Challenges"</a>, 2012. Women's household income fell 41% on average with divorce. A second source, years earlier, saw the same thing.</li>
 <li><a href="https://www.cnbc.com/2024/03/23/why-gray-divorce-is-a-significant-financial-risk-for-women.html">CNBC, March 23, 2024</a>. Only 22% of women found a new partner within ten years, against 37% of men. The fix the research found is not one you control.</li>
 <li><a href="https://www.eeoc.gov/newsroom/itutorgroup-pay-365000-settle-eeoc-discriminatory-hiring-suit">EEOC, September 2023: iTutorGroup to pay $365,000</a>. The agency alleged its software rejected women 55 and older. Your birthday should never close a door.</li>
 <li><a href="https://clearinghouse.net/case/44258/">EEOC v. iTutorGroup, No. 1:22-cv-02565, Eastern District of New York</a>. The real birthday was rejected and the later one got an interview, the complaint says. By the agency's account, that is how a box decided before a person did.</li>
