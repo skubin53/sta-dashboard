@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-24
+date: 2026-11-18
 title: Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026)
 slug: is-it-safe-to-buy-skincare-on-amazon
 keyword: is it safe to buy skincare on amazon
@@ -47,7 +47,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 24, 2026<br><span style="font-size:.92em;">Published November 24, 2026 &middot; Last updated November 24, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 18, 2026<br><span style="font-size:.92em;">Published November 18, 2026 &middot; Last updated November 18, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -271,8 +271,8 @@ of our health and our finances.</p>
    "headline": "Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026)",
    "description": "California says Amazon sold face creams with mercury up to 16,000 times the federal limit. What the settlement made it do, and what to buy instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isitsafetob-hero-v1.webp",
-   "datePublished": "2026-11-24",
-   "dateModified": "2026-11-24",
+   "datePublished": "2026-11-18",
+   "dateModified": "2026-11-18",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://join.switchtoamerica.com/post/is-it-safe-to-buy-skincare-on-amazon"},
    "author": {"@id": "https://switchtoamerica.com/#shannon"},
    "publisher": {"@id": "https://switchtoamerica.com/#org"}
