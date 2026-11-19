@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-26
+date: 2026-11-19
 title: I Quit My Job to Care for Mom. What Happens to My Social Security? (2026)
 slug: quit-my-job-to-care-for-mom-social-security
 keyword: quit my job to care for elderly parent
@@ -47,7 +47,7 @@ vault_checked: [burned-out, money-at-fifty, Recurring-Income-Offer, Builder-Targ
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 26, 2026<br><span style="font-size:.92em;">Published November 26, 2026 &middot; Last updated November 26, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 19, 2026<br><span style="font-size:.92em;">Published November 19, 2026 &middot; Last updated November 19, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -281,8 +281,8 @@ our finances.</p>
    "headline": "I Quit My Job to Care for Mom. What Happens to My Social Security? (2026)",
    "description": "Social Security uses your top 35 years of pay. Short of 35, years home with Mom go in as zeros. What that costs, and the caregiver bill that is not law.",
    "image": "https://scan.ismyhometoxic.com/blog-images/quitmyjobto-hero-v1.webp",
-   "datePublished": "2026-11-26",
-   "dateModified": "2026-11-26",
+   "datePublished": "2026-11-19",
+   "dateModified": "2026-11-19",
    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theshannonnicole.com/post/quit-my-job-to-care-for-mom-social-security"},
    "author": {"@id": "https://theshannonnicole.com/post/quit-my-job-to-care-for-mom-social-security#author"},
    "publisher": {"@id": "https://switchtoamerica.com#org"}
