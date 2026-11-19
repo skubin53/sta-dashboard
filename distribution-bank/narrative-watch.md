@@ -642,3 +642,20 @@ No runs 10/11 to 10/14: the daily tasks expired silently after 7 days (restored 
 **Feedback:** none sent (not retried after the 10/9 and 10/15 permission refusals). Alias answer: https://join.switchtoamerica.com/post/is-switch-to-america-the-same-as-ameriswitch .
 **No new truth page:** every false claim tonight is already answered by an existing page.
 
+## 2026-11-19 (about 2:15 to 2:45am MST)
+
+| Engine | Query | Says MLM | Leans on | Our pages | Feedback |
+|---|---|---|---|---|---|
+| Google AI Overview | Is Switch to America an MLM | NO, fair: "No, Switch to America describes itself as an online shopping program rather than a multi-level marketing (MLM) company"; no inventory, no starter kit, no party selling. NO alias tonight. Names the partner only as an example of brands people compare to | our not-an-mlm page, CA DOJ MLM page, Reddit r/madeinusa | theshannonnicole.com #1, join #2 | none |
+| Google AI Overview | Switch to America MLM | NO, fair: "states that it is not an MLM"; 575 products; no reselling, no downline; FTC definition; mentions AmeriSwitch only as a "similar" club (true) | our not-an-mlm page, FTC | our page cited | none |
+| Google AI Overview | Is Switch to America a scam | no AI Overview tonight ("Can't generate an AI overview right now") | | Reddit, BBB, ScamAdviser rank | none |
+| Google AI Overview | What is Switch to America | accurate, 7th night: consumer campaign to swap big-box and imported goods for U.S.-made, family-owned, non-toxic makers | switchtoamerica.com, Facebook, switch2usa.com | switchtoamerica.com #1 | none |
+| Google AI Overview | Switch to America reviews | MIXED, better: alias claim ("operating via ameriswitch.com") is GONE after 8 checks; now calls AmeriSwitch and switch2us "closely related" clubs and quotes their Trustpilot pages | Trustpilot (switch2us), TikTok | none in top 5 | none |
+| Google AI Overview | Switch to America [partner] | about the partner only | the partner's site | none | none |
+| Brave / Bing | | not checked tonight | | | |
+| Trustpilot watch (WebFetch) | 3 domains | all 404 | | | none |
+
+**Read:** both MLM searches fair again and our pages rank #1 and #2 on the direct question. The alias claim did not show anywhere tonight; the reviews answer now says "closely related" instead of naming ameriswitch.com as our site, which is loose but not false enough to report.
+**Feedback:** none sent (nothing plainly false; not retried after the 10/9 and 10/15 permission refusals).
+**No new truth page:** no new false claim.
+
