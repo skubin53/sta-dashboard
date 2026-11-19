@@ -1,6 +1,6 @@
 {
  "start": "2026-11-19",
- "days": 30,
+ "days": 51,
  "per_day": 2,
  "calendar": [
   {
@@ -104,16 +104,522 @@
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-crest-toothpaste-safe",
-     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
-     "cat": "Personal Care",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
+     "slug": "costco-whipped-cream-recall",
+     "title": "Is the Costco Whipped Cream Recall Why Your Can Tastes Like Chemicals? (2026)",
+     "cat": "Food",
+     "why": "Kirkland Signature Real Heavy Whipped Cream (made by Alamance Foods), one batch may hold a cleaning chemical.",
+     "perish": -3,
+     "keyword": "costco whipped cream recall",
+     "felt": "I bought this for my pies. Is my can one of them?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-11-20",
+     "not_after": "2026-11-25",
+     "track": "shopper"
+    },
+    {
+     "slug": "how-much-will-americans-spend-on-christmas-2026",
+     "title": "How Much Will the Average American Spend on Christmas This Year? (2026)",
+     "cat": "Builders",
+     "why": "Prices are up, her paycheck is not, and the holiday list keeps growing.",
+     "perish": -1,
+     "keyword": "how much will the average american spend on christmas this year",
      "felt": "",
      "register": "villain",
-     "pix": true,
-     "written": true,
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-05",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-dr-squatch-natural",
+     "title": "Is Dr. Squatch Natural? The $9 Million Settlement Deadline Is Nov 27 (2026)",
+     "cat": "Beauty",
+     "why": "Dr. Squatch 'natural' soaps that a lawsuit says contain synthetic ingredients.",
+     "perish": -3,
+     "keyword": "is dr squatch natural",
+     "felt": "I buy this for my husband because it says natural. Is it?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-11-26",
+     "track": "shopper"
+    },
+    {
+     "slug": "is-tastefully-simple-going-out-of-business",
+     "title": "Is Tastefully Simple Going Out of Business? What Ambassadors Can Do Before Jan 1 (2026)",
+     "cat": "Builders",
+     "why": "She has sold Tastefully Simple for years, and her team, host rewards and parties all end Dec 31.",
+     "perish": -3,
+     "keyword": "is tastefully simple going out of business",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-10",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "are-gas-stoves-bad-for-your-health",
+     "title": "Are Gas Stoves Bad for Your Health When You Cook All Day? (2026)",
+     "cat": "Home air",
+     "why": "Gas stoves, and the appliance trade group that blocked Colorado's warning label.",
+     "perish": -1,
+     "keyword": "are gas stoves bad for your health",
+     "felt": "I am cooking for twelve all day Thursday with the windows shut.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-11-26",
+     "track": "shopper"
+    },
+    {
+     "slug": "aca-open-enrollment-2027-deadline",
+     "title": "When Is the Open Enrollment Deadline for 2027 Health Insurance? (2026)",
+     "cat": "Builders",
+     "why": "She was laid off or works for herself and must pick a 2027 Marketplace plan before coverage lapses.",
+     "perish": -3,
+     "keyword": "aca open enrollment 2027 deadline",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-10",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-jello-bad-for-you",
+     "title": "Is Jell-O Bad for You, and Is Kraft Heinz Really Taking Out the Dyes? (2026)",
+     "cat": "Food",
+     "why": "Kraft Heinz (Jell-O, Kool-Aid), still selling artificial dyes while promising to remove them.",
+     "perish": -1,
+     "keyword": "is jello bad for you",
+     "felt": "Grandma's Jell-O salad is on my table. Is it still full of dye?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-11-26",
+     "track": "shopper"
+    },
+    {
+     "slug": "purium-affiliate-model-change",
+     "title": "Is Purium Still Network Marketing? What Changed on October 31 (2026)",
+     "cat": "Builders",
+     "why": "Her Purium team and rank went away overnight when the company switched to affiliate.",
+     "perish": -1,
+     "keyword": "purium affiliate program",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-10",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-temu-safe-to-buy-from",
+     "title": "Is Temu Safe to Buy From After the Texas Settlement? (2026)",
+     "cat": "Cleaning",
+     "why": "Temu, accused of selling products that may hold lead, PFAS, phthalates and formaldehyde.",
+     "perish": -1,
+     "keyword": "is temu safe to buy from",
+     "felt": "Those prices are tempting for gifts. Am I bringing toxic stuff home?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-11-22",
+     "not_after": "2026-11-30",
+     "track": "shopper"
+    },
+    {
+     "slug": "etsy-ai-training-terms-december-2026",
+     "title": "Can Etsy Use My Listing Photos to Train AI? (2026)",
+     "cat": "Builders",
+     "why": "Her photos and descriptions are her shop, and Etsy's new terms take effect Dec 16.",
+     "perish": -3,
+     "keyword": "etsy ai policy",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-14",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "gourmia-air-fryer-recall",
+     "title": "Is Your Gourmia Air Fryer Oven on the Recall List? (2026)",
+     "cat": "Kitchen",
+     "why": "Gourmia 9-Slice Digital Air Fryer Oven GTF7530, whose door can slam shut on hands.",
+     "perish": -1,
+     "keyword": "gourmia air fryer recall",
+     "felt": "I was about to buy one as a gift. Is mine safe?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-01",
+     "track": "shopper"
+    },
+    {
+     "slug": "does-unemployment-count-as-income-for-aca",
+     "title": "Does Unemployment Count as Income for ACA Health Insurance? (2026)",
+     "cat": "Builders",
+     "why": "She is on unemployment and filling in the Marketplace income box for 2027.",
+     "perish": -1,
+     "keyword": "does unemployment count as income for aca",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-11-25",
+     "not_after": "2026-12-14",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-28",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "dreo-space-heater-recall",
+     "title": "Is My DREO Space Heater Recalled? (2026)",
+     "cat": "Home air",
+     "why": "DREO DR-HSH015 space heaters that can overheat and catch fire.",
+     "perish": -1,
+     "keyword": "dreo space heater recall",
+     "felt": "I run this heater in my bedroom every night.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-05",
+     "track": "shopper"
+    },
+    {
+     "slug": "aca-subsidy-cliff-2027",
+     "title": "What Is the ACA Subsidy Cliff for 2027? (2026)",
+     "cat": "Builders",
+     "why": "One more dollar of income could mean paying the full Marketplace premium.",
+     "perish": -1,
+     "keyword": "aca subsidy cliff 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-14",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-shein-safe-to-wear",
+     "title": "Is Shein Safe to Wear After Texas Sued Over Toxic Products? (2026)",
+     "cat": "Laundry",
+     "why": "Shein, sued by Texas over toxic chemicals in its goods.",
+     "perish": -1,
+     "keyword": "is shein safe to wear",
+     "felt": "Those cheap sweaters sit against my skin all day.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-11-24",
+     "not_after": "2026-12-05",
+     "track": "shopper"
+    },
+    {
+     "slug": "market-america-sold-shop-com",
+     "title": "Did Market America Sell Shop.com? What It Means for UnFranchise Owners (2026)",
+     "cat": "Builders",
+     "why": "She built her UnFranchise business around a SHOP.COM link, and now Shopify owns the name.",
+     "perish": -1,
+     "keyword": "market america sold shop com",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "smoke-detector-recall-2026",
+     "title": "Is Your Online Smoke and CO Alarm One That Won't Go Off? (2026)",
+     "cat": "Home air",
+     "why": "Combination smoke and CO alarms model JZA-540COM sold online under several names.",
+     "perish": -1,
+     "keyword": "smoke detector recall 2026",
+     "felt": "I bought the cheap one online. Would it even go off?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-10",
+     "track": "shopper"
+    },
+    {
+     "slug": "medicare-part-b-premium-2027",
+     "title": "How Much Is the Medicare Part B Premium for 2027? (2026)",
+     "cat": "Builders",
+     "why": "She heard about the 3.6% Social Security raise and wants to know how much Medicare takes back.",
+     "perish": -1,
+     "keyword": "medicare part b premium 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "do-stanley-cups-have-lead",
+     "title": "Do Stanley Cups Have Lead in Them? What the Judge Decided (2026)",
+     "cat": "Kitchen",
+     "why": "Stanley (Pacific Market International), which seals lead pellets into its tumbler bases.",
+     "perish": -1,
+     "keyword": "do stanley cups have lead in them",
+     "felt": "I am giving one to my daughter. Is there lead in it?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "2026-12-15",
+     "track": "shopper"
+    },
+    {
+     "slug": "is-beachbody-bodi-going-out-of-business",
+     "title": "Is Beachbody (BODi) Going Out of Business? (2026)",
+     "cat": "Builders",
+     "why": "She is a BODi coach or customer watching the numbers shrink each quarter.",
+     "perish": -1,
+     "keyword": "is beachbody going out of business",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-caraway-cookware-safe",
+     "title": "Is Caraway Cookware Safe, or Is the Lawsuit Right? (2026)",
+     "cat": "Kitchen",
+     "why": "A cookware marketing war: Groupe SEB and Meyer against Caraway's non-toxic claims.",
+     "perish": -1,
+     "keyword": "is caraway cookware safe",
+     "felt": "I paid extra for non-toxic. Who is telling the truth?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-11-27",
+     "not_after": "2026-12-15",
+     "track": "shopper"
+    },
+    {
+     "slug": "ebay-balance-payout-change",
+     "title": "Why Did eBay Change My Payout Schedule? (2026)",
+     "cat": "Builders",
+     "why": "Her eBay money stopped landing on its usual day after the Nov 4 update.",
+     "perish": -1,
+     "keyword": "ebay balance changes",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "reeses-christmas-tree-controversy",
+     "title": "What Was the Reese's Christmas Tree Controversy? (2026)",
+     "cat": "Food",
+     "why": "Hershey's decorated Reese's holiday shapes that look nothing like the package.",
+     "perish": -1,
+     "keyword": "reese's christmas tree controversy",
+     "felt": "Why does my Reese's tree look like a blob, and what is in it?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "2026-12-15",
+     "track": "shopper"
+    },
+    {
+     "slug": "how-long-to-sign-severance-agreement-over-40",
+     "title": "How Long Do I Have to Sign a Severance Agreement If I'm Over 40? (2026)",
+     "cat": "Builders",
+     "why": "HR handed her a severance packet before the holidays and said sign by Friday.",
+     "perish": -1,
+     "keyword": "how long do i have to sign a severance agreement",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-20",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-04",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "blue-diamond-smokehouse-almonds-lawsuit",
+     "title": "Are Blue Diamond Smokehouse Almonds Really Smoked? (2026)",
+     "cat": "Food",
+     "why": "Blue Diamond 'Smokehouse' almonds flavored with added hickory smoke flavor.",
+     "perish": -1,
+     "keyword": "blue diamond smokehouse almonds",
+     "felt": "I put these out every Christmas. What am I eating?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-20",
+     "track": "shopper"
+    },
+    {
+     "slug": "unemployment-with-severance-pay",
+     "title": "Can I Collect Unemployment If I Get Severance Pay? (2026)",
+     "cat": "Builders",
+     "why": "She got a lump-sum severance and does not know whether to file now or wait.",
+     "perish": -1,
+     "keyword": "can i collect unemployment if i get severance pay",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-31",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-05",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "are-scented-candles-bad-for-you",
+     "title": "Are Scented Candles Bad for You? What a New Study Measured (2026)",
+     "cat": "Home air",
+     "why": "Scented candles, incense, wax melts and diffusers.",
+     "perish": -1,
+     "keyword": "are scented candles bad for you",
+     "felt": "My house smells like Christmas all month. Am I breathing smoke?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "2026-12-20",
+     "track": "shopper"
+    },
+    {
+     "slug": "why-is-my-severance-taxed-so-high",
+     "title": "Why Is My Severance Taxed at a Higher Rate? (2026)",
+     "cat": "Builders",
+     "why": "Her severance check came in far smaller than the number in her letter.",
+     "perish": -1,
+     "keyword": "is severance taxed at a higher rate",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-31",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-06",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-lindt-chocolate-lab-grown",
+     "title": "Is Lindt Chocolate Lab-Grown, and Does It Have Lead? (2026)",
+     "cat": "Food",
+     "why": "Lindt: lab-grown cocoa rumors plus a lawsuit over lead in its dark chocolate.",
+     "perish": -1,
+     "keyword": "is lindt chocolate using lab grown cocoa",
+     "felt": "I stuff stockings with Lindt. Is it fake chocolate or full of lead?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-05",
+     "not_after": "2026-12-20",
      "track": "shopper"
     },
     {
@@ -132,20 +638,22 @@
    ]
   },
   {
-   "date": "2026-11-23",
+   "date": "2026-12-07",
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-downy-fabric-softener-toxic",
-     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
-     "cat": "Cleaning",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
+     "slug": "minute-maid-fruit-punch-lawsuit",
+     "title": "Is Minute Maid Fruit Punch Natural? The New Lawsuit Says No (2026)",
+     "cat": "Food",
+     "why": "Coca-Cola's Minute Maid Fruit Punch, labeled 100% Natural Flavors.",
+     "perish": -1,
+     "keyword": "minute maid fruit punch",
+     "felt": "I serve this at family parties thinking it is the natural one.",
      "register": "villain",
-     "pix": true,
-     "written": true,
+     "pix": false,
+     "written": false,
+     "not_before": "",
+     "not_after": "2026-12-20",
      "track": "shopper"
     },
     {
@@ -164,20 +672,22 @@
    ]
   },
   {
-   "date": "2026-11-24",
+   "date": "2026-12-08",
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-estroven-safe",
-     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
-     "cat": "Supplements",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
+     "slug": "is-perfume-toxic",
+     "title": "Is Perfume Toxic? The 26 Chemicals California Bans in 2027 (2026)",
+     "cat": "Beauty",
+     "why": "Fragrance makers using lilial, styrene, certain musks and other EU-banned chemicals.",
+     "perish": -1,
+     "keyword": "is perfume toxic",
+     "felt": "I am about to gift perfume. Is it full of banned chemicals?",
      "register": "villain",
-     "pix": true,
-     "written": true,
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "2026-12-20",
      "track": "shopper"
     },
     {
@@ -196,20 +706,22 @@
    ]
   },
   {
-   "date": "2026-11-25",
+   "date": "2026-12-09",
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-gatorade-bad-for-kids",
-     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "slug": "red-dye-3-foods-list",
+     "title": "Which Foods Have Red Dye 3 Before California's Ban Starts? (2026)",
      "cat": "Food",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
+     "why": "Red Dye No. 3 in holiday baking staples like maraschino cherries and sprinkles.",
+     "perish": -1,
+     "keyword": "red dye 3 foods list",
+     "felt": "Are the cherries and sprinkles in my Christmas baking the banned stuff?",
      "register": "villain",
-     "pix": true,
-     "written": true,
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "2026-12-20",
      "track": "shopper"
     },
     {
@@ -228,13 +740,49 @@
    ]
   },
   {
-   "date": "2026-11-26",
+   "date": "2026-12-10",
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-hot-cocoa-bad-for-you",
-     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "slug": "potassium-bromate-in-bread",
+     "title": "Is Potassium Bromate in Your Bread, and Why Is California Banning It? (2026)",
      "cat": "Food",
+     "why": "Potassium bromate, a dough conditioner in some US breads and flours.",
+     "perish": -1,
+     "keyword": "potassium bromate in bread",
+     "felt": "I buy sandwich bread every week. Is there a banned chemical in it?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-10",
+     "not_after": "2026-12-31",
+     "track": "shopper"
+    },
+    {
+     "slug": "when-will-i-get-my-social-security-increase-2027",
+     "title": "When Will I Get My Social Security Increase in January 2027? (2026)",
+     "cat": "Builders",
+     "why": "She is counting on the raise and wants the exact day it hits her account.",
+     "perish": -1,
+     "keyword": "when will i get my social security increase",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-10",
+     "not_after": "2026-12-30",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-11",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "is-crest-toothpaste-safe",
+     "title": "Is Crest Toothpaste Safe? What Is In the Tube You Use Twice a Day (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -260,12 +808,12 @@
    ]
   },
   {
-   "date": "2026-11-27",
-   "weekday": "Fri",
+   "date": "2026-12-12",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "slug": "is-downy-fabric-softener-toxic",
+     "title": "Is Downy Fabric Softener Toxic? What Coats Your Towels (2026)",
      "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
@@ -292,8 +840,180 @@
    ]
   },
   {
-   "date": "2026-11-28",
-   "weekday": "Sat",
+   "date": "2026-12-13",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-estroven-safe",
+     "title": "Is Estroven Safe? What a New Lawsuit Says About Its Menopause Claims (2026)",
+     "cat": "Supplements",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "unemployment-and-social-security-same-time",
+     "title": "Can I Collect Unemployment and Social Security at the Same Time? (2026)",
+     "cat": "Builders",
+     "why": "She was laid off at 63 and wants to know if claiming Social Security costs her unemployment.",
+     "perish": -1,
+     "keyword": "can i collect unemployment and social security at the same time",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-14",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-gatorade-bad-for-kids",
+     "title": "Is Gatorade Actually a Health Drink? What Is In the Bottle (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "start-a-business-while-on-unemployment",
+     "title": "Can I Start a Business While on Unemployment? (2026)",
+     "cat": "Builders",
+     "why": "She was laid off and wants to start something but is afraid it will cost her unemployment.",
+     "perish": -1,
+     "keyword": "can i start a business while on unemployment",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-15",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-propylparaben-bad-for-you",
+     "title": "Is Propylparaben Bad for You? California Bans It in Food Jan 1 (2026)",
+     "cat": "Beauty",
+     "why": "Propylparaben, a preservative in some baked goods, lotions and makeup.",
+     "perish": -1,
+     "keyword": "is propylparaben bad for you",
+     "felt": "I see paraben on my lotion and my snack cakes. Which should worry me?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-15",
+     "not_after": "2026-12-31",
+     "track": "shopper"
+    },
+    {
+     "slug": "december-31-ssi-payment-2026",
+     "title": "Why Is There a Second SSI Payment on December 31? (2026)",
+     "cat": "Builders",
+     "why": "She saw two SSI deposits in December and is scared she will have to pay one back.",
+     "perish": -3,
+     "keyword": "december 31 ssi payment",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-15",
+     "not_after": "2026-12-30",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-16",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-hot-cocoa-bad-for-you",
+     "title": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "usps-shipping-increase-january-2027",
+     "title": "How Much Is the USPS Shipping Increase in January 2027? (2026)",
+     "cat": "Builders",
+     "why": "She sells online from home and every shipping label is about to cost more.",
+     "perish": -1,
+     "keyword": "usps postage increase january 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-15",
+     "not_after": "2027-01-16",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-17",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "cat": "Cleaning",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "does-severance-affect-social-security",
+     "title": "Does Severance Pay Affect My Social Security? (2026)",
+     "cat": "Builders",
+     "why": "She is 62 to 66, took a package, and wants to claim without the severance counting against her.",
+     "perish": -1,
+     "keyword": "does severance affect social security",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-18",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-suave-shampoo-safe",
@@ -324,8 +1044,8 @@
    ]
   },
   {
-   "date": "2026-11-29",
-   "weekday": "Sun",
+   "date": "2026-12-19",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-tresemme-safe",
@@ -356,13 +1076,47 @@
    ]
   },
   {
-   "date": "2026-11-30",
-   "weekday": "Mon",
+   "date": "2026-12-20",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
      "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
      "cat": "Beauty",
+     "why": "already written",
+     "perish": -2,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "hsa-limits-2027-over-55",
+     "title": "What Are the HSA Contribution Limits for 2027 If I'm Over 55? (2027)",
+     "cat": "Builders",
+     "why": "She buys her own insurance now and keeps hearing an HSA is a tax break she is missing.",
+     "perish": -1,
+     "keyword": "hsa contribution limits 2027 over 55",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-21",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -388,13 +1142,13 @@
    ]
   },
   {
-   "date": "2026-12-01",
+   "date": "2026-12-22",
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -402,6 +1156,108 @@
      "register": "villain",
      "pix": true,
      "written": true,
+     "track": "shopper"
+    },
+    {
+     "slug": "401k-catch-up-limit-2027",
+     "title": "What Is the 401(k) Catch-Up Contribution Limit for 2027? (2027)",
+     "cat": "Builders",
+     "why": "She is 50 to 63, feels behind, and keeps hearing about a super catch-up.",
+     "perish": -1,
+     "keyword": "401k catch up contribution 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-23",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "rule-of-55-401k-laid-off",
+     "title": "What Is the Rule of 55 for My 401(k) If I'm Laid Off? (2026)",
+     "cat": "Builders",
+     "why": "She is 55, just lost her job, and needs to know if she can touch her 401(k) without a penalty.",
+     "perish": -1,
+     "keyword": "rule of 55",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-24",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-it-safe-to-microwave-campbells-soup",
+     "title": "Is It Safe to Microwave Campbell's Soup Cups? (2026)",
+     "cat": "Kitchen",
+     "why": "Campbell's microwavable soup cups that a lawsuit says shed microplastics.",
+     "perish": -1,
+     "keyword": "is it safe to microwave soup in a plastic container",
+     "felt": "I heat these cups at work all winter. Am I eating plastic?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "social-security-earnings-limit-2027",
+     "title": "What Is the Social Security Earnings Limit for 2027? (2027)",
+     "cat": "Builders",
+     "why": "She took Social Security early and wants to keep working or start something without her checks being cut.",
+     "perish": -1,
+     "keyword": "social security earnings limit 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-01",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-25",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "is-the-pink-stuff-safe",
+     "title": "Is The Pink Stuff Safe? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -420,20 +1276,54 @@
    ]
   },
   {
-   "date": "2026-12-02",
-   "weekday": "Wed",
+   "date": "2026-12-26",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
-     "why": "already written",
-     "perish": -2,
+     "slug": "is-ultra-processed-food-its-own-risk",
+     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "minimum-wage-increase-2027",
+     "title": "Which States Raise the Minimum Wage on January 1, 2027? (2026)",
+     "cat": "Builders",
+     "why": "She works hourly or has a part-time job on the side and her state's rate changes Jan 1.",
+     "perish": -1,
+     "keyword": "minimum wage increase 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-26",
+     "not_after": "2027-01-03",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2026-12-27",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
      "track": "shopper"
     },
     {
@@ -452,12 +1342,12 @@
    ]
   },
   {
-   "date": "2026-12-03",
-   "weekday": "Thu",
+   "date": "2026-12-28",
+   "weekday": "Mon",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -484,12 +1374,12 @@
    ]
   },
   {
-   "date": "2026-12-04",
-   "weekday": "Fri",
+   "date": "2026-12-29",
+   "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-the-pink-stuff-safe",
-     "title": "Is The Pink Stuff Safe? (2026)",
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -516,12 +1406,12 @@
    ]
   },
   {
-   "date": "2026-12-05",
-   "weekday": "Sat",
+   "date": "2026-12-30",
+   "weekday": "Wed",
    "slots": [
     {
-     "slug": "is-ultra-processed-food-its-own-risk",
-     "title": "Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026)",
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -548,72 +1438,8 @@
    ]
   },
   {
-   "date": "2026-12-06",
-   "weekday": "Sun",
-   "slots": [
-    {
-     "slug": "is-vaseline-safe-for-babies",
-     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-your-dehumidifier-a-fire-risk",
-     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-12-07",
-   "weekday": "Mon",
-   "slots": [
-    {
-     "slug": "is-your-magnesium-what-the-label-says",
-     "title": "Is Your Magnesium Really What the Label Says? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-tap-water-safe-to-drink",
-     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-12-08",
-   "weekday": "Tue",
+   "date": "2026-12-31",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "red-dye-40-mars-broken-promise",
@@ -629,261 +1455,313 @@
      "track": "shopper"
     },
     {
-     "slug": "what-does-lavender-do-to-blood-pressure",
-     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "slug": "what-cleaning-products-have-pfas",
+     "title": "What Cleaning Products Have PFAS, and Why Is Washington Banning Them? (2027)",
      "cat": "Cleaning",
-     "why": "photos already done",
+     "why": "Cleaning products made with intentionally added PFAS.",
      "perish": -1,
-     "keyword": "",
-     "felt": "",
+     "keyword": "what cleaning products have pfas",
+     "felt": "Are forever chemicals in the spray I wipe my counters with?",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
+     "not_before": "2026-12-30",
+     "not_after": "",
      "track": "shopper"
     }
    ]
   },
   {
-   "date": "2026-12-09",
-   "weekday": "Wed",
-   "slots": [
-    {
-     "slug": "what-keeps-your-memory-sharp-after-70",
-     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "why-did-clorox-pay-a-14-million-fine",
-     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-12-10",
-   "weekday": "Thu",
-   "slots": [
-    {
-     "slug": "why-do-you-stop-feeling-thirsty",
-     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "window-air-conditioner-mold-recall",
-     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    }
-   ]
-  },
-  {
-   "date": "2026-12-11",
+   "date": "2027-01-01",
    "weekday": "Fri",
    "slots": [
     {
-     "slug": "why-is-beef-so-expensive",
-     "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "slug": "does-celsius-burn-fat",
+     "title": "Does Celsius Actually Burn Body Fat, or Is That Why It's Being Sued? (2027)",
+     "cat": "Food",
+     "why": "Celsius Holdings and its 'burns body fat' claims.",
      "perish": -1,
-     "keyword": "",
-     "felt": "",
+     "keyword": "does celsius actually burn body fat",
+     "felt": "I drink one before the gym thinking it helps.",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
+     "not_before": "2027-01-01",
+     "not_after": "",
      "track": "shopper"
     },
     {
-     "slug": "why-was-argentina-beef-recalled",
-     "title": "Why Was Argentina Beef Recalled? What Skipped Inspection Means for Your Meat (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
+     "slug": "is-2027-a-good-year-to-start-a-business",
+     "title": "Is 2027 a Good Year to Start a Business? (2027)",
+     "cat": "Builders",
+     "why": "It is her New Year resolution again, and she wonders if this is finally the year.",
+     "perish": -3,
+     "keyword": "is 2027 a good year to start a business",
      "felt": "",
      "register": "villain",
-     "pix": true,
+     "pix": false,
      "written": false,
-     "track": "shopper"
+     "not_before": "2027-01-01",
+     "not_after": "2027-01-04",
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-12-12",
+   "date": "2027-01-02",
    "weekday": "Sat",
    "slots": [
     {
-     "slug": "why-was-the-laundress-recalled-twice",
-     "title": "Why Was The Laundress Recalled Twice? (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
+     "slug": "do-clothes-have-pfas",
+     "title": "Do Clothes Have PFAS, and Which States Are Banning It in 2027? (2027)",
+     "cat": "Laundry",
+     "why": "Activewear and stain- or water-resistant clothes treated with PFAS.",
      "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "shopper"
-    },
-    {
-     "slug": "is-chosen-foods-mayo-healthy",
-     "title": "Is Chosen Foods Mayo Healthy? Lawsuits Say Its '100% Avocado Oil' Label Hides Seed Oils (2026)",
-     "cat": "Food",
-     "why": "Chosen Foods LLC, which calls itself America's number one avocado oil brand, says its products are 'made without soy or canola oils' and claims to be '100% committed to 100% purity' (per the complaints).",
-     "perish": 1,
-     "keyword": "is chosen foods mayo healthy",
-     "felt": "She did everything right. She threw out the canola and switched to the avocado oil mayo because the jar promised 100% avocado oil. Now she hears the seed oils might be in it anyway.",
+     "keyword": "do clothes have pfas",
+     "felt": "I live in leggings. Are forever chemicals on my skin?",
      "register": "villain",
      "pix": false,
      "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
      "track": "shopper"
+    },
+    {
+     "slug": "4th-quarter-estimated-taxes-due-2026",
+     "title": "When Are 4th Quarter Estimated Taxes Due for 2026? (2027)",
+     "cat": "Builders",
+     "why": "Her side business made money this year, nobody withheld taxes, and January is here.",
+     "perish": -3,
+     "keyword": "when are 4th quarter estimated taxes due",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "2027-01-12",
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-12-13",
+   "date": "2027-01-03",
    "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-it-safe-to-eat-lettuce-now",
-     "title": "Is It Safe to Eat Lettuce Now? What the FDA Found at Taylor Farms' Mexico Plant (2026)",
-     "cat": "Food",
-     "why": "Taylor Farms (Taylor Farms de Mexico and Taylor Fresh Foods). Its central Mexico iceberg went into Walmart Marketside bags and into shredded lettuce for foodservice customers including Subway, Jack in the Box, Sysco and Yum! Brands. Three weeks after the lettuce recall, Taylor Fresh Foods recalled salsa, pico de gallo and guacamole made with jalapenos from an outside supplier linked to the separate Salmonella Javiana outbreak; Taylor Fresh Foods said it was not aware of illnesses linked to its own products.",
-     "perish": 1,
-     "keyword": "is it safe to eat lettuce now",
-     "felt": "She stopped buying bagged salad in July and has eaten fewer greens since. Now she stands at the produce case wondering if it is really over, and whether the bag in her cart came from the same place.",
+     "slug": "do-glp-1-supplements-work",
+     "title": "Do GLP-1 Supplements Like Lemme Actually Work? (2027)",
+     "cat": "Supplements",
+     "why": "Lemme GLP-1 Daily and 'Nature's Ozempic' pills.",
+     "perish": -1,
+     "keyword": "do glp-1 supplements work",
+     "felt": "I want the GLP-1 result without the shot. Will a pill do it?",
      "register": "villain",
      "pix": false,
      "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
      "track": "shopper"
     },
     {
-     "slug": "is-toms-of-maine-toothpaste-safe",
-     "title": "Is Tom's of Maine Toothpaste Safe? What the FDA Found in the Water It Was Made With (2026)",
-     "cat": "Bathroom",
-     "why": "Colgate-Palmolive, which owns Tom's of Maine and its Sanford, Maine plant.",
-     "perish": 1,
-     "keyword": "is tom's of maine toothpaste safe",
-     "felt": "She switched the family to Tom's years ago because it was the natural one with the folksy Maine label. She had no idea Colgate owned it, or that FDA inspectors had been inside the plant.",
+     "slug": "self-employed-health-insurance-deduction",
+     "title": "Can I Deduct My Health Insurance If I'm Self-Employed? (2027)",
+     "cat": "Builders",
+     "why": "She left a job with benefits and now pays every dollar of her premium herself.",
+     "perish": -1,
+     "keyword": "self employed health insurance deduction",
+     "felt": "",
      "register": "villain",
      "pix": false,
      "written": false,
-     "track": "shopper"
+     "not_before": "2027-01-02",
+     "not_after": "",
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-12-14",
+   "date": "2027-01-04",
    "weekday": "Mon",
    "slots": [
     {
-     "slug": "is-boars-head-safe-to-eat-now",
-     "title": "Is Boar's Head Safe to Eat Now? What USDA Inspectors Kept Writing Down (2026)",
-     "cat": "Food",
-     "why": "Boar's Head Provisions Co. Its Jarratt, Virginia plant was tied to the deadly 2024 listeria outbreak and reopened Feb 2, 2026, while inspection records obtained through FOIA describe the same kinds of sanitation problems at its other plants.",
-     "perish": 2,
-     "keyword": "is boars head safe now",
-     "felt": "She buys the good deli meat for the grandkids' lunches and the holiday tray because Boar's Head was supposed to be the quality brand. She half remembers the recall and wants to know if it is safe to go back.",
+     "slug": "is-ag1-safe",
+     "title": "Is AG1 Safe After the Lead Notice? (2027)",
+     "cat": "Supplements",
+     "why": "AG1 greens powder, named in a Prop 65 lead notice and an auto-renewal suit.",
+     "perish": -1,
+     "keyword": "is ag1 safe",
+     "felt": "I pay a lot for this every month. Is there lead in it?",
      "register": "villain",
      "pix": false,
      "written": false,
+     "not_before": "2027-01-01",
+     "not_after": "",
      "track": "shopper"
     },
     {
-     "slug": "is-costco-rotisserie-chicken-healthy",
-     "title": "Is Costco Rotisserie Chicken Healthy? Why Costco Took Down Its 'No Preservatives' Signs (2026)",
-     "cat": "Food",
-     "why": "Costco Wholesale (Kirkland Signature rotisserie chicken from its own Fremont, Nebraska poultry operation).",
-     "perish": 2,
-     "keyword": "is costco rotisserie chicken healthy",
-     "felt": "When someone in the house is sick she grabs a Costco rotisserie chicken for soup because it is quick and she thought it was the simple, clean choice. She has never read the ingredient list on the bag.",
+     "slug": "medicare-advantage-open-enrollment-january",
+     "title": "Can I Switch Medicare Advantage Plans in January? (2027)",
+     "cat": "Builders",
+     "why": "Her 2027 plan changed or her doctor left the network, and she thought she was stuck.",
+     "perish": -1,
+     "keyword": "medicare advantage open enrollment period january 1 march 31",
+     "felt": "",
      "register": "villain",
      "pix": false,
      "written": false,
-     "track": "shopper"
+     "not_before": "2027-01-01",
+     "not_after": "",
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-12-15",
+   "date": "2027-01-05",
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "is-tampax-safe",
-     "title": "Is Tampax Safe? A Judge Just Let California Buyers Sue P&G Together Over Lead (2026)",
-     "cat": "Health",
-     "why": "Procter & Gamble (Tampax).",
-     "perish": 2,
-     "keyword": "is tampax being sued for lead",
-     "felt": "She has used Tampax since she was a teenager and never thought about it. In perimenopause her cycles got heavier and longer, so she uses more than ever, and she just saw the word lead next to the brand.",
+     "slug": "creatine-gummies-women-over-50",
+     "title": "Is Creatine Good for Women Over 50, and Do Creatine Gummies Have Any in Them? (2027)",
+     "cat": "Supplements",
+     "why": "Creatine gummy brands accused of selling less creatine than the label says.",
+     "perish": -1,
+     "keyword": "is creatine good for women over 50",
+     "felt": "Everyone says creatine helps women my age. Am I paying for candy?",
      "register": "villain",
      "pix": false,
      "written": false,
+     "not_before": "2027-01-01",
+     "not_after": "",
      "track": "shopper"
     },
     {
-     "slug": "are-kroger-eggs-safe-now",
-     "title": "Are Kroger Eggs Safe Now? What Nearly 1.6 Million Recalled Dozen Say About the Carton (2026)",
-     "cat": "Food",
-     "why": "Midwest Poultry Services, L.P. of Texas, which packed cage-free eggs sold as Kroger, Simple Truth Natural Cage Free, Brookshire's, Country Morning and Sunups.",
-     "perish": 3,
-     "keyword": "are kroger eggs safe to eat right now",
-     "felt": "She bakes for everyone in November and December, and eggs go into everything. She chose the cage-free carton because it sounded cleaner, and now she is not sure the label meant anything.",
+     "slug": "1099-k-threshold-2026",
+     "title": "What Is the 1099-K Threshold for 2026? (2027)",
+     "cat": "Builders",
+     "why": "She sold on Venmo, PayPal, eBay or Etsy and wonders if a tax form is coming.",
+     "perish": -1,
+     "keyword": "1099-k threshold 2026",
+     "felt": "",
      "register": "villain",
      "pix": false,
      "written": false,
-     "track": "shopper"
+     "not_before": "2027-01-04",
+     "not_after": "",
+     "track": "builder"
     }
    ]
   },
   {
-   "date": "2026-12-16",
+   "date": "2027-01-06",
    "weekday": "Wed",
-   "slots": []
+   "slots": [
+    {
+     "slug": "is-olipop-healthy",
+     "title": "Is Olipop Healthy, or 'Basically Sugared Water' Like the Lawsuit Says? (2027)",
+     "cat": "Food",
+     "why": "Olipop's 'supports digestive health' prebiotic soda claims.",
+     "perish": -1,
+     "keyword": "is olipop healthy",
+     "felt": "I switched to this to be healthier. Is it just pricey soda?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-01",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "sep-ira-solo-401k-limit-2027",
+     "title": "What Is the SEP IRA and Solo 401(k) Contribution Limit for 2027? (2027)",
+     "cat": "Builders",
+     "why": "She lost her 401(k) match with her job and thinks retirement saving is over unless she is hired again.",
+     "perish": -1,
+     "keyword": "sep ira contribution limit 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
   },
   {
-   "date": "2026-12-17",
+   "date": "2027-01-07",
    "weekday": "Thu",
-   "slots": []
+   "slots": [
+    {
+     "slug": "is-orgain-protein-powder-safe",
+     "title": "Is Orgain Protein Powder Safe After the Lead Lawsuits? (2027)",
+     "cat": "Supplements",
+     "why": "Orgain Organic Protein Powder, which lawsuits say contains lead, cadmium and arsenic.",
+     "perish": -1,
+     "keyword": "is orgain protein powder safe",
+     "felt": "I drink a shake every morning to keep my muscle. Am I drinking lead?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-01",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "standard-deduction-2027-over-65",
+     "title": "What Is the Standard Deduction for 2027 If I'm Over 65? (2027)",
+     "cat": "Builders",
+     "why": "She is 65 and wants to know how much income is tax-free next year, including the $6,000 senior deduction.",
+     "perish": -1,
+     "keyword": "standard deduction 2027 over 65",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
   },
   {
-   "date": "2026-12-18",
+   "date": "2027-01-08",
    "weekday": "Fri",
-   "slots": []
+   "slots": [
+    {
+     "slug": "what-does-glp-1-friendly-mean",
+     "title": "What Does 'GLP-1 Friendly' Mean on Food Labels? (2027)",
+     "cat": "Food",
+     "why": "Conagra, Nestle and others putting 'GLP-1 Friendly' on processed foods.",
+     "perish": -1,
+     "keyword": "what does glp-1 friendly mean",
+     "felt": "Is a frozen dinner with a GLP-1 badge good for me?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-04",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "how-many-credits-for-social-security-2027",
+     "title": "How Many Credits Do I Need for Social Security, and What Does One Cost in 2027? (2027)",
+     "cat": "Builders",
+     "why": "She stayed home with kids or cared for a parent and is not sure she has enough credits.",
+     "perish": 1,
+     "keyword": "how many credits for social security",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
   }
  ],
- "shortfall": 6,
+ "shortfall": 0,
  "blocked": [],
+ "stale": [],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
 }
