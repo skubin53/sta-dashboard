@@ -53,20 +53,20 @@ vault_checked: [burned-out, money-at-fifty, Recurring-Income-Offer, Builder-Targ
 <h2 id="the-short-answer">The short answer</h2>
 <p>The paycheck stops the day you leave. The hit to your own retirement check comes later, quietly.</p>
 <p>Here is the short version. Social Security figures your check from your highest 35 years of pay. And in its own words, <strong><a href="https://www.ssa.gov/myaccount/assets/materials/additional-work.pdf">"Years with no earnings count as zeroes in the benefit calculation."</a></strong></p>
-<p>A bill to credit caregivers was introduced in April 2026. It is not law.</p>
+<p>Two matching bills to credit caregivers were introduced in April 2026. Neither is law.</p>
 <p>That is the whole post. The rest is the proof.</p>
 </div>
 
 <div class="sta-toc">
 <h2 id="what-this-guide-answers">What this guide answers</h2>
-<ul>
+<ol>
 <li><a href="#what-happens">What happens to your check</a></li>
 <li><a href="#every-year">Does every year at home hurt</a></li>
 <li><a href="#the-bill">The caregiver bill, and what it is not</a></li>
 <li><a href="#is-this-a-pitch">Isn't this just another pitch</a></li>
 <li><a href="#this-week">What I would do first this week</a></li>
 <li><a href="#faq">What else women are asking me</a></li>
-</ul>
+</ol>
 </div>
 
 <h2 id="what-happens">What happens to your Social Security when you quit to care for Mom?</h2>
@@ -77,7 +77,7 @@ vault_checked: [burned-out, money-at-fifty, Recurring-Income-Offer, Builder-Targ
 
 <p>What happens to me later?</p>
 
-<p>Here is the math. <a href="https://www.ssa.gov/pubs/EN-05-10070.pdf">Social Security's May 2026 booklet</a> says it uses "your highest 35 years of earnings." It lines up your best years and averages them.</p>
+<p>Here is the math. <a href="https://www.ssa.gov/pubs/EN-05-10070.pdf">Social Security's May 2026 booklet</a> says it uses "your highest 35 years of earnings." It lines up your best years and adjusts them. Its <a href="https://www.ssa.gov/myaccount/assets/materials/additional-work.pdf">earnings sheet</a> says it then averages them.</p>
 
 <p>If you have fewer than 35 paid years, the unpaid ones still sit in that line of 35. Social Security says they "count as zeroes." And so every zero pulls the average down.</p>
 
@@ -173,7 +173,7 @@ vault_checked: [burned-out, money-at-fifty, Recurring-Income-Offer, Builder-Targ
 
 <h3>If you have not left yet, ask about leave first</h3>
 
-<p>The <a href="https://www.dol.gov/agencies/whd/fmla">Labor Department's leave page</a> covers this. Eligible workers can take up to 12 workweeks in a year "to care for the employee's spouse, child, or parent who has a serious health condition." It is unpaid, but your job is held. Ask your boss before you sign anything.</p>
+<p>The <a href="https://www.dol.gov/agencies/whd/fmla">Labor Department's leave page</a> covers this. Eligible workers can take up to 12 workweeks in a 12-month period "to care for the employee's spouse, child, or parent who has a serious health condition." It is unpaid, but your job is held. Ask your boss before you sign anything.</p>
 
 <h3>Keep a notebook on her counter</h3>
 
@@ -212,7 +212,7 @@ our finances.</p>
 <h3>Where to check me</h3>
 <ul>
 <li><a href="https://www.ssa.gov/myaccount/assets/materials/additional-work.pdf">Social Security, "Additional Work Can Increase Your Future Benefits."</a> The top 35 years, the zeros, and the 10 years to qualify. That is the answer to the title.</li>
-<li><a href="https://www.ssa.gov/pubs/EN-05-10070.pdf">Social Security, "Your Retirement Benefit: How It's Determined," May 2026.</a> How your best 35 years are adjusted and averaged. It tells you the math is about years, not effort.</li>
+<li><a href="https://www.ssa.gov/pubs/EN-05-10070.pdf">Social Security, "Your Retirement Benefit: How It's Determined," May 2026.</a> How your best 35 years are adjusted to today's wages. It tells you the math is about years, not effort.</li>
 <li><a href="https://www.ssa.gov/pubs/EN-05-10022.pdf">Social Security, "If You Are Self-Employed," May 2026.</a> Covered earnings from work of your own go on your record too.</li>
 <li><a href="https://www.govinfo.gov/app/details/BILLS-119s4396is">S. 4396, introduced April 27, 2026</a>, and <a href="https://www.govinfo.gov/app/details/BILLS-119hr8490ih">H.R. 8490, introduced April 23, 2026</a>. The 80 hours and the five years are in the text. Introduced is not law.</li>
 <li><a href="https://www.dol.gov/agencies/whd/fmla">U.S. Department of Labor, Family and Medical Leave Act.</a> Up to 12 workweeks of unpaid, job-protected leave to care for a parent with a serious health condition, for eligible workers.</li>
@@ -226,7 +226,7 @@ our finances.</p>
 
 <p>Here is what I want for you, whether or not we ever speak.</p>
 
-<p>It is late on a Thursday afternoon. Mom is napping. You walk the gravel path past the gazebo, hands in your sweater pockets. And you are not doing the math in your head about the years.</p>
+<p>It is late on a Thursday afternoon. Mom is napping. You walk the gravel path past the gazebo, your hands free. And you are not doing the math in your head about the years.</p>
 
 <p>You become the daughter who kept her mother close and kept her own future in view.</p>
 
