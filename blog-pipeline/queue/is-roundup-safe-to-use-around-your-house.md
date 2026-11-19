@@ -6,7 +6,7 @@ slug: is-roundup-safe-to-use-around-your-house
 keyword: is roundup safe
 category: Cleaning
 cover: https://scan.ismyhometoxic.com/blog-images/isroundupsa-hero-v1.webp
-meta_description: In June 2026 the Supreme Court ruled Monsanto cannot be sued over Roundup's missing cancer warning. Here is what it means for the jug in your garage.
+meta_description: In June 2026 the Supreme Court ruled Monsanto cannot be sued under state law over Roundup's missing cancer warning. What it means for your garage jug.
 status: ready
 vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 ---
@@ -53,7 +53,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>You spray the driveway cracks every spring. The jug never said a word about cancer.</p>
-<p><strong><a href="https://www.supremecourt.gov/opinions/25pdf/24-1068_n7ip.pdf">On June 25, 2026, the Supreme Court ruled 7 to 2. Monsanto cannot be sued in state court for the missing cancer warning.</a></strong> The court did not decide if Roundup causes cancer. It decided who writes the label.</p>
+<p><strong><a href="https://www.supremecourt.gov/opinions/25pdf/24-1068_n7ip.pdf">On June 25, 2026, the Supreme Court ruled 7 to 2. Monsanto cannot be sued under state law for the missing cancer warning.</a></strong> The court did not decide if Roundup causes cancer. It decided who writes the label.</p>
 <p>And so the label stays the way Bayer wanted it. You do not have to wait on a label. That jug can be out of your garage tonight.</p>
 </div>
 
@@ -126,6 +126,8 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><a href="https://www.fox5atlanta.com/news/georgia-law-roundup-maker-bayer-lawsuits">By May 2025, more than 67,000 of 181,000 Roundup claims were still open, the AP reported.</a> Bayer had set aside $16 billion to settle cases.</p>
 
+<p><a href="https://thedailyrecord.com/2026/10/30/bayer-wins-st-louis-trial-roundup-cancer-claims/">By October 2026, Bayer faced around 65,000 claims, and a proposed $7.25 billion settlement was under review by a judge in St. Louis, Reuters reported.</a></p>
+
 <p>In March 2025 a Georgia jury awarded nearly $2.1 billion to a man. He alleged Roundup caused his cancer. Bayer insists glyphosate is safe.</p>
 
 <p>Bayer did not wait on the courts. The AP says it joined farm groups to push for laws in the states and in Congress. It ran billboards, TV and radio ads too.</p>
@@ -155,7 +157,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><strong>One.</strong> <a href="https://www.epa.gov/ingredients-used-pesticide-products/glyphosate">In 2017 the EPA said glyphosate is "not likely to be carcinogenic to humans."</a> That is what the EPA says. I am printing it so you have it.</p>
 
-<p><strong>Two.</strong> Home Roundup today does not use glyphosate, by the AP's account.</p>
+<p><strong>Two.</strong> By 2025, home Roundup no longer used glyphosate, the AP reported.</p>
 
 <p><strong>Three.</strong> The Supreme Court never said Roundup causes cancer. Those claims are allegations, and Bayer disputes them.</p>
 
@@ -248,7 +250,7 @@ of our health and our finances.</p>
 <h2 id="faq">What else do people ask?</h2>
 
 <p><strong>Does Roundup still have glyphosate in it?</strong></p>
-<p>The home lawn and garden Roundup does not, by the AP's account. Bayer started the switch as early as 2023. Farm Roundup still uses it, and an older jug in your garage may too.</p>
+<p>The home lawn and garden Roundup did not as of 2025, the AP reported. Bayer started the switch as early as 2023. Farm Roundup still uses it, and an older jug in your garage may too.</p>
 
 <p><strong>Did the Supreme Court say Roundup causes cancer?</strong></p>
 <p>No. It ruled only on the label. It said a state jury cannot demand a cancer warning the EPA did not require.</p>
@@ -282,7 +284,7 @@ of our health and our finances.</p>
   {
    "@type": "Article",
    "headline": "Is Roundup Safe to Use Around Your House? (2026)",
-   "description": "In June 2026 the Supreme Court ruled Monsanto cannot be sued over Roundup's missing cancer warning. Here is what it means for the jug in your garage.",
+   "description": "In June 2026 the Supreme Court ruled Monsanto cannot be sued under state law over Roundup's missing cancer warning. What it means for your garage jug.",
    "image": "https://scan.ismyhometoxic.com/blog-images/isroundupsa-hero-v1.webp",
    "datePublished": "2026-11-19",
    "dateModified": "2026-11-19",
@@ -323,7 +325,7 @@ of our health and our finances.</p>
  "@type": "FAQPage",
  "mainEntity": [
   {"@type": "Question", "name": "Does Roundup still have glyphosate in it?",
-   "acceptedAnswer": {"@type": "Answer", "text": "The home lawn and garden Roundup does not, by the AP's account. Bayer started the switch as early as 2023. Farm Roundup still uses it, and an older jug in your garage may too."}},
+   "acceptedAnswer": {"@type": "Answer", "text": "The home lawn and garden Roundup did not as of 2025, the AP reported. Bayer started the switch as early as 2023. Farm Roundup still uses it, and an older jug in your garage may too."}},
   {"@type": "Question", "name": "Did the Supreme Court say Roundup causes cancer?",
    "acceptedAnswer": {"@type": "Answer", "text": "No. It ruled only on the label. It said a state jury cannot demand a cancer warning the EPA did not require."}},
   {"@type": "Question", "name": "How do I get rid of an old jug of Roundup?",
