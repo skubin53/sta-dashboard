@@ -46,3 +46,4 @@ Daily task: sta-tools/workflows/cron-gsc-indexing.txt (8:47 AM). Queue: sta-tool
 - 2026-11-18 9:07 run: requested is-it-safe-to-buy-skincare-on-amazon (shopper). Indexing requested. Leftovers: none.
 - 2026-11-18 2:07 run: requested starting-over-at-50-after-divorce (builder). Indexing requested. Leftovers: none.
 - 2026-11-19 9:55 AM (publish run): shopper is-roundup-safe-to-use-around-your-house Indexing requested (1 request). No leftovers. Bing submitted.
+- 2026-11-19 2:07 PM run: requested quit-my-job-to-care-for-mom-social-security (builder) -> Indexing requested; no leftovers; Bing submitted (quota 99 left).
