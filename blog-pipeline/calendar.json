@@ -1,11 +1,11 @@
 {
- "start": "2026-11-18",
+ "start": "2026-11-19",
  "days": 30,
  "per_day": 2,
  "calendar": [
   {
-   "date": "2026-11-18",
-   "weekday": "Wed",
+   "date": "2026-11-19",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-johnsons-baby-shampoo-safe",
@@ -36,8 +36,8 @@
    ]
   },
   {
-   "date": "2026-11-19",
-   "weekday": "Thu",
+   "date": "2026-11-20",
+   "weekday": "Fri",
    "slots": [
     {
      "slug": "is-bottled-water-safe",
@@ -68,8 +68,8 @@
    ]
   },
   {
-   "date": "2026-11-20",
-   "weekday": "Fri",
+   "date": "2026-11-21",
+   "weekday": "Sat",
    "slots": [
     {
      "slug": "is-clear-eyes-safe",
@@ -85,8 +85,8 @@
      "track": "shopper"
     },
     {
-     "slug": "starting-over-at-50-after-divorce",
-     "title": "Starting Over at 50 With No Money After Divorce? What the Research Says Happens to Women (2026)",
+     "slug": "younique-is-now-curated-what-changed",
+     "title": "Is Younique Now Curated? What Ended When the Pay Plan Did (2026)",
      "cat": "Builders",
      "why": "already written",
      "perish": -2,
@@ -100,8 +100,8 @@
    ]
   },
   {
-   "date": "2026-11-21",
-   "weekday": "Sat",
+   "date": "2026-11-22",
+   "weekday": "Sun",
    "slots": [
     {
      "slug": "is-crest-toothpaste-safe",
@@ -132,8 +132,8 @@
    ]
   },
   {
-   "date": "2026-11-22",
-   "weekday": "Sun",
+   "date": "2026-11-23",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-downy-fabric-softener-toxic",
@@ -164,8 +164,8 @@
    ]
   },
   {
-   "date": "2026-11-23",
-   "weekday": "Mon",
+   "date": "2026-11-24",
+   "weekday": "Tue",
    "slots": [
     {
      "slug": "is-estroven-safe",
@@ -196,8 +196,8 @@
    ]
   },
   {
-   "date": "2026-11-24",
-   "weekday": "Tue",
+   "date": "2026-11-25",
+   "weekday": "Wed",
    "slots": [
     {
      "slug": "is-gatorade-bad-for-kids",
@@ -228,8 +228,8 @@
    ]
   },
   {
-   "date": "2026-11-25",
-   "weekday": "Wed",
+   "date": "2026-11-26",
+   "weekday": "Thu",
    "slots": [
     {
      "slug": "is-hot-cocoa-bad-for-you",
@@ -260,13 +260,13 @@
    ]
   },
   {
-   "date": "2026-11-26",
-   "weekday": "Thu",
+   "date": "2026-11-27",
+   "weekday": "Fri",
    "slots": [
     {
-     "slug": "is-it-safe-to-buy-skincare-on-amazon",
-     "title": "Is It Safe to Buy Skincare on Amazon? What a Mercury Cream Case Made It Do (2026)",
-     "cat": "Beauty",
+     "slug": "is-roundup-safe-to-use-around-your-house",
+     "title": "Is Roundup Safe to Use Around Your House? (2026)",
+     "cat": "Cleaning",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -292,13 +292,13 @@
    ]
   },
   {
-   "date": "2026-11-27",
-   "weekday": "Fri",
+   "date": "2026-11-28",
+   "weekday": "Sat",
    "slots": [
     {
-     "slug": "is-roundup-safe-to-use-around-your-house",
-     "title": "Is Roundup Safe to Use Around Your House? (2026)",
-     "cat": "Cleaning",
+     "slug": "is-suave-shampoo-safe",
+     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
+     "cat": "Beauty",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -324,13 +324,13 @@
    ]
   },
   {
-   "date": "2026-11-28",
-   "weekday": "Sat",
+   "date": "2026-11-29",
+   "weekday": "Sun",
    "slots": [
     {
-     "slug": "is-suave-shampoo-safe",
-     "title": "Is Suave Shampoo Safe? What Is In the Cheapest Bottle on the Shelf (2026)",
-     "cat": "Beauty",
+     "slug": "is-tresemme-safe",
+     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "cat": "Personal Care",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -356,45 +356,13 @@
    ]
   },
   {
-   "date": "2026-11-29",
-   "weekday": "Sun",
+   "date": "2026-11-30",
+   "weekday": "Mon",
    "slots": [
     {
      "slug": "is-keratin-treatment-safe",
      "title": "Is a Keratin Treatment Safe? Why Brazilian Blowout Had to Stop Saying Formaldehyde Free (2026)",
      "cat": "Beauty",
-     "why": "already written",
-     "perish": -2,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": true,
-     "track": "shopper"
-    },
-    {
-     "slug": "younique-is-now-curated-what-changed",
-     "title": "Is Younique Now Curated? What Ended When the Pay Plan Did (2026)",
-     "cat": "Builders",
-     "why": "photos already done",
-     "perish": -1,
-     "keyword": "",
-     "felt": "",
-     "register": "villain",
-     "pix": true,
-     "written": false,
-     "track": "builder"
-    }
-   ]
-  },
-  {
-   "date": "2026-11-30",
-   "weekday": "Mon",
-   "slots": [
-    {
-     "slug": "why-am-i-tired-all-the-time",
-     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
-     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -424,9 +392,9 @@
    "weekday": "Tue",
    "slots": [
     {
-     "slug": "why-did-eggs-cost-so-much",
-     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
-     "cat": "Food",
+     "slug": "why-am-i-tired-all-the-time",
+     "title": "Why Am I Tired All the Time? What Tiredness Can Mean Before Anything Else Shows Up (2026)",
+     "cat": "Health",
      "why": "already written",
      "perish": -2,
      "keyword": "",
@@ -456,16 +424,16 @@
    "weekday": "Wed",
    "slots": [
     {
-     "slug": "should-you-give-a-child-cough-syrup",
-     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
-     "cat": "Cleaning",
-     "why": "photos already done",
-     "perish": -1,
+     "slug": "why-did-eggs-cost-so-much",
+     "title": "Why Did Eggs Cost So Much? What the Biggest Egg Company Was Accused Of (2026)",
+     "cat": "Food",
+     "why": "already written",
+     "perish": -2,
      "keyword": "",
      "felt": "",
      "register": "villain",
      "pix": true,
-     "written": false,
+     "written": true,
      "track": "shopper"
     },
     {
@@ -488,8 +456,8 @@
    "weekday": "Thu",
    "slots": [
     {
-     "slug": "is-tresemme-safe",
-     "title": "Is TRESemmé Safe to Use? Why Unilever Is Being Sued Over Hair Loss (2026)",
+     "slug": "should-you-give-a-child-cough-syrup",
+     "title": "Does Cough Syrup Actually Do Anything? What Is In the Bottle (2026)",
      "cat": "Cleaning",
      "why": "photos already done",
      "perish": -1,
@@ -908,9 +876,14 @@
    "date": "2026-12-17",
    "weekday": "Thu",
    "slots": []
+  },
+  {
+   "date": "2026-12-18",
+   "weekday": "Fri",
+   "slots": []
   }
  ],
- "shortfall": 4,
+ "shortfall": 6,
  "blocked": [],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
 }
