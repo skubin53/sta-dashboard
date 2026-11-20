@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one bright white home office with bask
 - image_url: https://scan.ismyhometoxic.com/blog-images/etsyaitrain-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T11:52:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone as a side-profile walk; dishwasher badge blurred.
