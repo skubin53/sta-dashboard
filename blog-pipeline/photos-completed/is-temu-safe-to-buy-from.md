@@ -36,3 +36,6 @@ note: "Navy and white kitchen with open shelves and cafe curtains, Black woman i
 - image_url: https://scan.ismyhometoxic.com/blog-images/istemusafet-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:04:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Duplicate coffee maker removed.
