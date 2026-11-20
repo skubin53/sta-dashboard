@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-12-01
+date: 2026-11-20
 title: Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)
 slug: is-hot-cocoa-bad-for-you
 keyword: ghirardelli hot cocoa mix recall
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; December 1, 2026<br><span style="font-size:.92em;">Published December 1, 2026 &middot; Last updated December 1, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 20, 2026<br><span style="font-size:.92em;">Published November 20, 2026 &middot; Last updated November 20, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -283,8 +283,8 @@ of our health and our finances.</p>
    "headline": "Is Hot Cocoa Bad for You? Why Ghirardelli Recalled Its Mix (2026)",
    "description": "Ghirardelli recalled its hot cocoa mix and 12 other drink mixes over possible Salmonella in the milk powder. What was pulled, and what to make instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/ishotcocoab-hero-v1.webp",
-   "datePublished": "2026-12-01",
-   "dateModified": "2026-12-01",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://join.switchtoamerica.com/post/is-hot-cocoa-bad-for-you"
