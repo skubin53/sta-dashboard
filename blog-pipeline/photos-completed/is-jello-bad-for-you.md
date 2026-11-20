@@ -36,3 +36,6 @@ note: "Sage green kitchen with cafe curtains, Korean American woman in her late 
 - image_url: https://scan.ismyhometoxic.com/blog-images/isjellobadf-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T15:59:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Floating curtain panel removed.
