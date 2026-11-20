@@ -36,3 +36,6 @@ note: "White quartz and soft sage kitchen with open wood shelves and cafe curtai
 - image_url: https://scan.ismyhometoxic.com/blog-images/gourmiaairf-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:11:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Curtains added to the villain windows.
