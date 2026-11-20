@@ -36,3 +36,6 @@ note: "Charcoal and white home office, East Asian woman in a cobalt blouse at a 
 - image_url: https://scan.ismyhometoxic.com/blog-images/401kcatchup-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T14:26:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Hero now shows her working at the laptop.
