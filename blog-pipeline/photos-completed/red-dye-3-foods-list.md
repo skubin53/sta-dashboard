@@ -36,3 +36,6 @@ note: "Navy kitchen with butcher block counters and cafe curtains, brunette in h
 - image_url: https://scan.ismyhometoxic.com/blog-images/reddye3food-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:06:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Jar in her hand now shows bright red maraschino cherries.
