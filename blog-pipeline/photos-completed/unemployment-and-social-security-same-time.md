@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one big modern kitchen with a quartz i
 - image_url: https://scan.ismyhometoxic.com/blog-images/unempandsoc-freedom-v1.webp
 - placement: body, in beat order
 - completed: 2026-11-19T14:02:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Curtains added to the sink window; stove display darkened.
