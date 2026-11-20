@@ -36,3 +36,6 @@ note: "Calm bedroom with linen curtains, Latina woman in her mid fifties with lo
 - image_url: https://scan.ismyhometoxic.com/blog-images/ispropylpar-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:41:00
+
+## Recheck (Photo Claude) 2026-11-20
+Belonging redone: the friends sit at the dressing table, not on the bed.
