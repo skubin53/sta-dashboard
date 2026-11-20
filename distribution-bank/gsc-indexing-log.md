@@ -49,3 +49,4 @@ Daily task: sta-tools/workflows/cron-gsc-indexing.txt (8:47 AM). Queue: sta-tool
 - 2026-11-19 2:07 PM run: requested quit-my-job-to-care-for-mom-social-security (builder) -> Indexing requested; no leftovers; Bing submitted (quota 99 left).
 
 2026-11-20 scan property: FIRST submit of /sitemap.xml to Google (only blog-sitemap.xml had ever been submitted; Google knew 0 scan pages). Indexing requested: are-quats-in-cleaners-safe, zinc-pyrithione-banned-in-europe, do-clorox-wipes-have-bleach, dawn-dish-soap-lawsuit, are-panty-liners-tested-for-pfas (all were "URL is unknown to Google").
+2026-11-20 AM publish: shopper is-hot-cocoa-bad-for-you requested (Indexing requested). Bing submitted.
