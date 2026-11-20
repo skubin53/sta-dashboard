@@ -36,3 +36,6 @@ note: "Cream painted kitchen with a butcher block island and cafe curtains, woma
 - image_url: https://scan.ismyhometoxic.com/blog-images/reeseschris-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:36:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Gibberish line on the bag softened.
