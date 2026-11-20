@@ -36,3 +36,6 @@ note: "White shaker kitchen with cafe curtains, woman about 52 in a cranberry he
 - image_url: https://scan.ismyhometoxic.com/blog-images/costcowhipp-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T15:41:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Turning point can relabelled correctly; villain fine print softened.
