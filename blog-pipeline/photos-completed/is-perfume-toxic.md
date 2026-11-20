@@ -36,3 +36,6 @@ note: "Calm bedroom dressing table with linen curtains, Black woman in her early
 - image_url: https://scan.ismyhometoxic.com/blog-images/isperfumeto-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:02:00
+
+## Recheck (Photo Claude) 2026-11-20
+Belonging redone: the friends sit at the dressing table, not on the bed.
