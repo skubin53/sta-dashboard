@@ -36,3 +36,6 @@ note: "Pale blue kitchen with subway tile and cafe curtains, Filipina woman in h
 - image_url: https://scan.ismyhometoxic.com/blog-images/islindtchoc-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:55:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Gibberish on the tin bands softened.
