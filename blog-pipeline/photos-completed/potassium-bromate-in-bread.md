@@ -36,3 +36,6 @@ note: "White kitchen with granite counters and cafe curtains, South Asian woman 
 - image_url: https://scan.ismyhometoxic.com/blog-images/potassiumbr-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:10:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Loaf back in focus with only the bag print softened.
