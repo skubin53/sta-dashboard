@@ -39,3 +39,6 @@ note: "Bedroom with a reclaimed wood headboard and linen curtains, Latina woman 
 
 ## Recheck (Photo Claude) 2026-11-20
 Belonging redone: the two friends now stand at the dresser, not on the bed.
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Villain box fine print and stray marks softened.
