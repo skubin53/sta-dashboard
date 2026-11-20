@@ -51,7 +51,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
-<p>The pay plan you built under ended on March 31, 2026. Younique picked the date. You did not.</p>
+<p>The pay plan you built under ended on March 31, 2026. The company picked the date. You did not.</p>
 <p>So is Younique now Curated? For sellers, yes. Curated's own help page says that after March 31, <strong><a href="https://support.curatedby.you/portal/en/kb/articles/transitioning-from-younique-to-curated-7-5-2026">"commissions on Younique product sales will be earned exclusively through Curated."</a></strong></p>
 <p>And the new plan has the same kind of clock on it. Curated's creator agreement says its pay plan can change "at any time."</p>
 <p>A rank lives on their paper. A customer who knows your name lives with you.</p>
@@ -99,7 +99,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p>There was one way to carry it over, called the Legacy Program. You had to be on Curated by March 31. Miss that date, the page says, and your old structure "will not carry forward."</p>
 
-<p>Even inside it, there is a catch. Each seller has to keep up a set level of sales, three months at a time. If she slips, she stays on Curated. You stop being paid on her sales.</p>
+<p>Even inside it, there is a catch. Each seller has to keep up a set level of sales over any rolling three months. If she slips, she stays on Curated. You stop being paid on her sales.</p>
 
 <p>None of that was your choice. All of it was on their paper.</p>
 
@@ -121,7 +121,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p><a href="https://curatedby.you/-/creator-agreement">Curated's 2026 creator agreement</a> says it out loud. "The Pay Plan may be modified or amended at any time, at Curated's sole and absolute discretion."</p>
 
-<p>It says it will tell you in writing when it does. That is notice. It is not a vote.</p>
+<p>It says it will tell you in writing or electronically when it does. That is notice. It is not a vote.</p>
 
 <p><a href="https://curatedby.you/-/terms">Its terms of use, last updated June 2026</a>, go further. Curated can change them "at any time and without prior notice."</p>
 
@@ -145,7 +145,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 
 <p class="quick-answer">Quick answer: partly, and here is the part I will not dress up.</p>
 
-<p>Younique did not vanish overnight. It set its dates out in writing and offered a way to carry some of it over. <a href="https://curatedby.you/">Curated's home page</a> says you can start with "No follower minimum. No sales requirements." That is fairer than some.</p>
+<p>Younique did not vanish overnight. Its dates were set out in writing and offered a way to carry some of it over. <a href="https://curatedby.you/">Curated's home page</a> says you can start with "No follower minimum. No sales requirements." That is fairer than some.</p>
 
 <p>Now me. Switch to America could change its rules too. Any company can. If you want somebody to promise you a number, this is not for you.</p>
 
