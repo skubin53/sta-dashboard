@@ -36,3 +36,6 @@ note: "Greige kitchen with granite counters and cafe curtains, woman in her earl
 - image_url: https://scan.ismyhometoxic.com/blog-images/doglp1suppl-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T18:23:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Bottle relabelled correctly as Lemme GLP-1 Daily.
