@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one white kitchen with a butcher block
 - image_url: https://scan.ismyhometoxic.com/blog-images/isbeachbody-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:27:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Appliance displays dark and counter tidy; villain cooled to be the coldest frame.
