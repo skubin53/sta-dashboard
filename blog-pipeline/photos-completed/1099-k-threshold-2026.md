@@ -36,3 +36,6 @@ note: "Cream room with rust curtains, woman with long dark-blonde hair in a rust
 - image_url: https://scan.ismyhometoxic.com/blog-images/1099kthresh-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T15:13:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone on a residential street with no signs; turning point faces the window; belonging in a white kitchen with no mugs.
