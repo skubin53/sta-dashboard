@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one warm home office with a walnut des
 - image_url: https://scan.ismyhometoxic.com/blog-images/whyismyseve-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:46:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Belonging redone with both friends clearly in their fifties.
