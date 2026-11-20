@@ -36,3 +36,6 @@ note: "Calm white tile bathroom with a cafe-curtained window, woman in her early
 - image_url: https://scan.ismyhometoxic.com/blog-images/istomsofmai-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:24:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Gibberish side copy softened, Toms logo kept.
