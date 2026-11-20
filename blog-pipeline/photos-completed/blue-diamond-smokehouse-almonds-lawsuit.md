@@ -36,3 +36,6 @@ note: "Greige kitchen with a quartz island and cafe curtains, Mexican American w
 - image_url: https://scan.ismyhometoxic.com/blog-images/bluediamond-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:45:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Gibberish line on the can softened.
