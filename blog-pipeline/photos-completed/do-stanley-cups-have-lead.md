@@ -36,3 +36,6 @@ note: "White shaker kitchen with butcher block counters, a farmhouse sink and ca
 - image_url: https://scan.ismyhometoxic.com/blog-images/dostanleycu-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:30:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Villain redone with a physically correct counter and sink.
