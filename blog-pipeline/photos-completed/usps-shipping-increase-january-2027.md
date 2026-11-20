@@ -36,3 +36,6 @@ note: "Home office with linen curtains, woman in her mid fifties in a navy sweat
 - image_url: https://scan.ismyhometoxic.com/blog-images/uspsshippin-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T14:23:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Reading glasses on her head now match the hero.
