@@ -36,3 +36,6 @@ note: "Peach home office with linen curtains, Indian American woman in a mustard
 - image_url: https://scan.ismyhometoxic.com/blog-images/sepirasolo4-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T15:22:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone mid-stride; leftover lid logo removed from villain.
