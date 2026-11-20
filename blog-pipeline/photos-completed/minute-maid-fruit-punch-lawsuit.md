@@ -36,3 +36,6 @@ note: "Dark green kitchen with open shelves and cafe curtains, woman about 50 wi
 - image_url: https://scan.ismyhometoxic.com/blog-images/minutemaidf-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:59:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Only one coffee maker in the kitchen; pour from the spout; printed napkins softened.
