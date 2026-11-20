@@ -36,3 +36,6 @@ note: "Minimal white room with sheer curtains, woman with a platinum bob in a bl
 - image_url: https://scan.ismyhometoxic.com/blog-images/is2027agood-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T14:53:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone mid-stride in side profile.
