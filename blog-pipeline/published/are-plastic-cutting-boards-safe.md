@@ -2,7 +2,7 @@
 date: are-plastic-cutting-boards-safe
 post_title: Are Plastic Cutting Boards Safe? What Comes Off With the Carrots (2026)
 slug: are-plastic-cutting-boards-safe
-ghl_post_id: 6acebcdf3bed21a4ed47b295
+ghl_post_id: 6b006a1a098dadfce71de49e
 live_url: https://join.switchtoamerica.com/post/are-plastic-cutting-boards-safe
 published_at: 2026-08-31T04:01:33+00:00
 images: 5 body plus cover

@@ -2,7 +2,7 @@
 date: 2026-09-26
 post_title: Are Plastic Bags Actually Recyclable? What the Bag Makers Could Not Prove (2026)
 slug: are-plastic-bags-actually-recyclable
-ghl_post_id: 6acebb3ed39a991681bbe346
+ghl_post_id: 6b006e05646c7b264aa9b58c
 live_url: https://join.switchtoamerica.com/post/are-plastic-bags-actually-recyclable
 published_at: 2026-09-26T15:40:18+00:00
 images: 5 body plus cover

@@ -3,7 +3,7 @@ date: is-clorox-spray-toxic
 post_title: Is Clorox Spray Toxic?
 slug: is-clorox-spray-toxic
 blog: Switch to America (Hulr7aT2G6a5AdONSXQx)
-ghl_post_id: 6acec6f0d1d68d7a6468bb71
+ghl_post_id: 6b00686842ea72537b5804fc
 live_url: https://join.switchtoamerica.com/post/is-clorox-spray-toxic
 published_at: 2026-07 (exact date not recorded)
 status: live
