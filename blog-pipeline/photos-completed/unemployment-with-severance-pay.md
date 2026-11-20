@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one white and charcoal kitchen with op
 - image_url: https://scan.ismyhometoxic.com/blog-images/unemploymen-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:52:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Mugs removed from the shelf; curtains on every window.
