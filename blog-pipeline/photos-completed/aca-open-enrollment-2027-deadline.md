@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one sage green home office by a curtai
 - image_url: https://scan.ismyhometoxic.com/blog-images/acaopenenro-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T11:25:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Villain redone from the hero room so desk, chair and basket match.
