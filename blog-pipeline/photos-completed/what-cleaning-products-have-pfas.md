@@ -36,3 +36,6 @@ note: "Sage kitchen with a farmhouse sink and cafe curtains, woman about 50 with
 - image_url: https://scan.ismyhometoxic.com/blog-images/whatcleanin-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:55:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Turning point shows her setting a cleaner down at the open cabinet.
