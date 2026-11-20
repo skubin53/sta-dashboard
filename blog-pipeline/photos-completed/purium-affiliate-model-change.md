@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one white kitchen with walnut open she
 - image_url: https://scan.ismyhometoxic.com/blog-images/puriumaffil-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:04:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone as a side-profile walk on a town sidewalk.
