@@ -36,3 +36,6 @@ note: "Greige kitchen, woman in glasses and teal cardigan; villain at night with
 - image_url: https://scan.ismyhometoxic.com/blog-images/hsalimits20-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T14:12:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone mid-stride in side profile.
