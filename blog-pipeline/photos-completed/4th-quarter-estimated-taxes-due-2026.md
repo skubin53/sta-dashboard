@@ -36,3 +36,6 @@ note: "Deep green home office with linen curtains, brunette with a bob and glass
 - image_url: https://scan.ismyhometoxic.com/blog-images/4thquartere-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T14:58:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Curtains added to every window including the high window.
