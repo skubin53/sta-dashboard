@@ -36,3 +36,6 @@ note: "Sage kitchen with butcher block counters and cafe curtains, Black woman i
 - image_url: https://scan.ismyhometoxic.com/blog-images/isitsafetoe-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T17:19:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Gibberish small print softened, product name kept.
