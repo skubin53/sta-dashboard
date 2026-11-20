@@ -36,3 +36,6 @@ note: "Navy kitchen with cafe curtains, woman in her mid fifties with a gray pix
 - image_url: https://scan.ismyhometoxic.com/blog-images/creatinegum-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T18:05:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Turning point box relabelled correctly; hero side panel softened.
