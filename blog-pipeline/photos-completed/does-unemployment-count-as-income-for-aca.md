@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one blue gray home office with a walnu
 - image_url: https://scan.ismyhometoxic.com/blog-images/doesunemplo-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:13:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone as a side-profile walk.
