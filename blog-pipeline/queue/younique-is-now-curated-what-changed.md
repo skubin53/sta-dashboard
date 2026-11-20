@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-29
+date: 2026-11-20
 title: Is Younique Now Curated? What Ended When the Pay Plan Did (2026)
 slug: younique-is-now-curated-what-changed
 keyword: younique is now curated
@@ -47,7 +47,7 @@ vault_checked: [Competitive-Intelligence, Builder-Target-Segments, MLM-Vetting-F
 .sta-keep li{margin:7px 0;}
 </style>
 
-<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 29, 2026<br><span style="font-size:.92em;">Published November 29, 2026 &middot; Last updated November 29, 2026</span></p>
+<p class="sta-byline">By <a href="https://theshannonnicole.com">Shannon Nicole</a>, Founder, Switch to America &middot; November 20, 2026<br><span style="font-size:.92em;">Published November 20, 2026 &middot; Last updated November 20, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -273,8 +273,8 @@ our finances.</p>
    "headline": "Is Younique Now Curated? What Ended When the Pay Plan Did (2026)",
    "description": "Younique seller pay moved to Curated after March 31, 2026, and Curated says its pay plan can change at any time. What ended, and what to keep.",
    "image": "https://scan.ismyhometoxic.com/blog-images/youniqueisn-hero-v1.webp",
-   "datePublished": "2026-11-29",
-   "dateModified": "2026-11-29",
+   "datePublished": "2026-11-20",
+   "dateModified": "2026-11-20",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://theshannonnicole.com/post/younique-is-now-curated-what-changed"
