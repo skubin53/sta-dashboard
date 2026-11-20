@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one sage green farmhouse kitchen with 
 - image_url: https://scan.ismyhometoxic.com/blog-images/whenwillige-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:49:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Whole set rebuilt: new hero in her early fifties, curtains on every window, range display dark, side-profile walk with her dog.
