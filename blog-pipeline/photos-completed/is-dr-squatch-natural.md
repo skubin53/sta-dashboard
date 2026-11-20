@@ -36,3 +36,6 @@ note: "Bedroom with a reclaimed wood headboard and linen curtains, Latina woman 
 - image_url: https://scan.ismyhometoxic.com/blog-images/isdrsquatch-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T15:47:00
+
+## Recheck (Photo Claude) 2026-11-20
+Belonging redone: the two friends now stand at the dresser, not on the bed.
