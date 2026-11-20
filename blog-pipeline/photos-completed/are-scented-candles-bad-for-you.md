@@ -36,3 +36,6 @@ note: "Cozy living room with heavy linen curtains and a knit throw, woman in her
 - image_url: https://scan.ismyhometoxic.com/blog-images/arescentedc-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-19T16:48:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Smoke wisps removed; window glass crack removed.
