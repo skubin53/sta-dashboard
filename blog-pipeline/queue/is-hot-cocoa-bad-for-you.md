@@ -53,8 +53,8 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
 <p>It is cold out. You warm the milk and spoon in the good cocoa. That mug is your one treat of the night.</p>
-<p><strong><a href="https://www.ghirardelli.com/voluntary-recall-notice">Ghirardelli recalled its Premium Hot Cocoa pouch and 12 other drink mixes.</a></strong> The milk powder inside came from a supplier that recalled it over possible Salmonella.</p>
-<p>Most of it was big bags for restaurants. The company says no illness has been reported. But the good name on the front did not make the powder inside it.</p>
+<p><strong><a href="https://www.wftv.com/news/local/ghirardelli-expands-recall-powdered-beverage-mixes-over-salmonella-risk/4LQZQT7JSVFOVDDBHLD4XI6SLU/">Ghirardelli recalled its Premium Hot Cocoa pouch and 12 other drink mixes.</a></strong> The milk powder inside came from a supplier that recalled it over possible Salmonella.</p>
+<p>Most of it was big packs made for restaurants. The company says no illness has been reported. But the good name on the front did not make the powder inside it.</p>
 </div>
 
 <div class="sta-toc">
@@ -86,9 +86,9 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The hot cocoa on the list is the <strong>4/2lb Premium Hot Cocoa Pouch Bulk</strong>. That means two pound pouches, packed four to a case.</p>
 
-<p>The rest are frappe mixes and sweet ground powders. Mocha, white mocha, vanilla, frozen hot cocoa. Some come in 30 pound bags.</p>
+<p>The rest are frappe mixes and sweet ground powders. Mocha, white mocha, vanilla, frozen hot cocoa. Some weigh 30 pounds.</p>
 
-<p><a href="https://www.ghirardelli.com/voluntary-recall-notice">Ghirardelli's own notice lists every lot number and best-by date.</a> The dates run from February 2027 to January 2028.</p>
+<p><a href="https://www.wftv.com/news/local/ghirardelli-expands-recall-powdered-beverage-mixes-over-salmonella-risk/4LQZQT7JSVFOVDDBHLD4XI6SLU/">WFTV printed every lot number and best-by date from Ghirardelli's notice.</a> The dates run from February 2027 to January 2028.</p>
 
 <p>So a pouch in your pantry today could still be well inside its date.</p>
 
@@ -102,7 +102,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The front of the pouch leaves out two companies.</p>
 
-<p>Ghirardelli did not make the milk powder. <a href="https://www.ghirardelli.com/voluntary-recall-notice">Its notice says the powder came from California Dairies, Inc.</a> From there it went to a third-party manufacturer. That third company mixed it into the drinks.</p>
+<p>Ghirardelli did not make the milk powder. <a href="https://www.foodsafetynews.com/2026/04/ghirardelli-recalling-powdered-drink-mixes-because-of-salmonella/">Food Safety News reported the powder came from California Dairies, Inc.</a> From there it went to a third-party manufacturer. That third company mixed it into the drinks.</p>
 
 <p>So three companies handled that powder before your mug. You only ever saw one name.</p>
 
@@ -127,7 +127,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 <tbody>
 <tr><td>Ghirardelli recalled 13 drink mixes</td><td>Milk powder that may carry Salmonella</td><td>Ghirardelli notice, April 2026</td><td>The company says its testing found no affected mixes</td></tr>
 <tr><td>California Dairies recalled about 2.7 million pounds of powdered milk</td><td>One supplier, dozens of brands</td><td>Mid Valley Times, July 14, 2026</td><td>Salmonella was called "potential, but unproven"</td></tr>
-<tr><td>Mixes sold in large bags</td><td>Some could be bought online</td><td>Food Safety News, April 28, 2026</td><td>Most went to restaurants, not homes</td></tr>
+<tr><td>Mixes sold in large packs</td><td>Some could be bought online</td><td>Food Safety News, April 28, 2026</td><td>They were made for restaurants, not homes</td></tr>
 </tbody>
 </table>
 
@@ -135,7 +135,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p class="quick-answer">Quick answer: three fair points, and they are all true.</p>
 
-<p><strong>One.</strong> Most of these were big bags for restaurants and other big kitchens. <a href="https://www.foodsafetynews.com/2026/04/ghirardelli-recalling-powdered-drink-mixes-because-of-salmonella/">Food Safety News said they were meant for restaurants and other institutions.</a></p>
+<p><strong>One.</strong> These were big packs made for restaurants and other big kitchens. <a href="https://www.foodsafetynews.com/2026/04/ghirardelli-recalling-powdered-drink-mixes-because-of-salmonella/">Food Safety News said they were meant for restaurants and other institutions.</a></p>
 
 <p><strong>Two.</strong> Ghirardelli says no one has reported getting sick. It also says its own testing has not found any affected mixes.</p>
 
@@ -233,7 +233,7 @@ of our health and our finances.</p>
 <li><a href="https://www.ghirardelli.com/voluntary-recall-notice">Ghirardelli, Voluntary Recall Notice</a>. The company lists all 13 recalled mixes, with lot numbers and best-by dates. It says the milk powder came from California Dairies, Inc. through a third-party manufacturer. So the brand you trusted named two other companies inside its own pouch.</li>
 <li><a href="https://www.wftv.com/news/local/ghirardelli-expands-recall-powdered-beverage-mixes-over-salmonella-risk/4LQZQT7JSVFOVDDBHLD4XI6SLU/">WFTV, April 28, 2026</a>. The station reported the broadened recall and printed the full lot table. That means you can match your pouch against a second list.</li>
 <li><a href="https://midvalleytimes.com/article/news/2026/07/14/california-dairies-major-milk-powder-recall-continues/">Mid Valley Times, July 14, 2026</a>. The paper reported about 2.7 million pounds of powdered milk recalled on April 20, 2026, and the recall still going. One supplier's powder reached foods you would never link to it.</li>
-<li><a href="https://www.foodsafetynews.com/2026/04/ghirardelli-recalling-powdered-drink-mixes-because-of-salmonella/">Food Safety News, April 28, 2026</a>. The mixes were mainly for restaurants and institutions, but could be bought online. No illness had been reported. A bag meant for a restaurant could still land in your pantry.</li>
+<li><a href="https://www.foodsafetynews.com/2026/04/ghirardelli-recalling-powdered-drink-mixes-because-of-salmonella/">Food Safety News, April 28, 2026</a>. The mixes were mainly for restaurants and institutions, but could be bought online. No illness had been reported. A pack meant for a restaurant could still land in your pantry.</li>
 </ul>
 </div>
 
