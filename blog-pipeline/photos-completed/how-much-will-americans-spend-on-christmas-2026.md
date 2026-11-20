@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one December kitchen with plaid curtai
 - image_url: https://scan.ismyhometoxic.com/blog-images/howmuchwill-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T11:57:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone as a side-profile walk; belonging redone in a white modern kitchen with a friend in her fifties.
