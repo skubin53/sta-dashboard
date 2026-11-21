@@ -1,5 +1,5 @@
 # The 45 Day Blog Calendar
-Switch to America | rebuilt 2026-11-21 | 2 posts every publish day (even dates) | starts 2026-11-21 | 49 days
+Switch to America | rebuilt 2026-11-21 | 2 posts every publish day (even dates) | starts 2026-11-21 | 79 days
 
 The live version of this is the one to read: https://scan.ismyhometoxic.com/blog-desk/
 
@@ -118,3 +118,51 @@ specified in blog-pipeline/gentle-topics.json.
 | 2027-01-07 | Thu | 2 | builder | villain | What Is the SEP IRA and Solo 401(k) Contribution Limit for 2027? (2027) | ready |
 | 2027-01-08 | Fri | 1 | shopper | villain | Is Ultra Processed Food a Risk On Its Own, Separate From Calories? (2026) | ready |
 | 2027-01-08 | Fri | 2 | builder | villain | What Is the Standard Deduction for 2027 If I'm Over 65? (2027) | ready |
+| 2027-01-09 | Sat | 1 | shopper | villain | Is Vaseline Safe? What Petroleum Jelly Actually Is (2026) | ready |
+| 2027-01-09 | Sat | 2 | builder | villain | Did Shaklee Buy Isagenix? What Associates Should Ask Before the Plan Changes (2027) | NEEDED |
+| 2027-01-10 | Sun | 1 | shopper | villain | Is Your Dehumidifier a Fire Risk? (2026) | ready |
+| 2027-01-10 | Sun | 2 | builder | villain | Can You Put Amazon Affiliate Links on Instagram Now? What the New Reels Feature Really Pays (2027) | NEEDED |
+| 2027-01-11 | Mon | 1 | shopper | villain | Is Your Magnesium Really What the Label Says? (2026) | ready |
+| 2027-01-11 | Mon | 2 | builder | villain | How Much Can I Earn on SSDI in 2027? (2027) | NEEDED |
+| 2027-01-12 | Tue | 1 | shopper | villain | Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026) | ready |
+| 2027-01-12 | Tue | 2 | builder | villain | Why Do Companies Lay People Off in January? What the Latest Job Cut Numbers Show (2027) | NEEDED |
+| 2027-01-13 | Wed | 1 | shopper | villain | Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026) | ready |
+| 2027-01-13 | Wed | 2 | shopper | villain | What Cleaning Products Have PFAS, and Why Is Washington Banning Them? (2027) | ready |
+| 2027-01-14 | Thu | 1 | shopper | villain | What Does 'GLP-1 Friendly' Mean on Food Labels? (2027) | ready |
+| 2027-01-14 | Thu | 2 | builder | villain | Is Nature's Sunshine Changing Its Compensation Plan? What the 2027 Relaunch Means for Consultants (2027) | NEEDED |
+| 2027-01-15 | Fri | 1 | shopper | villain | What Does Lavender Actually Do to Blood Pressure? (2026) | ready |
+| 2027-01-15 | Fri | 2 | shopper | villain | What Is the Texas Food Warning Label, and Which Foods Will Get It? (2027) | NEEDED |
+| 2027-01-16 | Sat | 1 | shopper | villain | What Keeps a Woman's Memory Sharp After 70? (2026) | ready |
+| 2027-01-16 | Sat | 2 | builder | villain | Why Are There Two IRS Mileage Rates for 2026? What Changed on July 1 (2027) | NEEDED |
+| 2027-01-17 | Sun | 1 | shopper | villain | Which Rice Has the Most Arsenic? Consumer Reports Tested 52 (2027) | NEEDED |
+| 2027-01-17 | Sun | 2 | shopper | villain | Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026) | ready |
+| 2027-01-18 | Mon | 1 | shopper | villain | Why Do You Stop Feeling Thirsty As You Get Older? (2026) | ready |
+| 2027-01-18 | Mon | 2 | builder | villain | How Much Is Self-Employment Tax in 2027? The New Social Security Wage Base Explained (2027) | NEEDED |
+| 2027-01-19 | Tue | 1 | shopper | villain | Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026) | ready |
+| 2027-01-19 | Tue | 2 | shopper | villain | Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026) | ready |
+| 2027-01-20 | Wed | 1 | shopper | villain | Why Was Argentina Beef Recalled? What Skipped Inspection Means for Your Meat (2026) | ready |
+| 2027-01-20 | Wed | 2 | builder | villain | Is Unemployment Taxable on My 2026 Return? What the IRS Says About Form 1099-G (2027) | NEEDED |
+| 2027-01-21 | Thu | 1 | shopper | villain | Why Was The Laundress Recalled Twice? (2026) | ready |
+| 2027-01-21 | Thu | 2 | shopper | villain | Does Airborne Actually Work? The Vitamin C Lawsuit (2027) | NEEDED |
+| 2027-01-22 | Fri | 1 | shopper | villain | Does Brita Remove PFAS? What the Court Just Said (2027) | NEEDED |
+| 2027-01-22 | Fri | 2 | builder | villain | Does No Tax on Tips Work If I'm Self-Employed? What Hairstylists and Salon Owners Can Claim (2027) | NEEDED |
+| 2027-01-23 | Sat | 1 | shopper | villain | Does Oral-B Glide Floss Still Have PFAS? (2027) | NEEDED |
+| 2027-01-23 | Sat | 2 | shopper | villain | Does Waterproof Mascara Have PFAS? The 2027 Ban Explained (2027) | NEEDED |
+| 2027-01-24 | Sun | 1 | shopper | villain | Is Metamucil Safe to Take Every Day After the Lead Lawsuit? (2027) | NEEDED |
+| 2027-01-24 | Sun | 2 | builder | villain | Can I Take the Home Office Deduction for a Side Business? The Simplified Method Explained (2027) | NEEDED |
+| 2027-01-25 | Mon | 1 | shopper | villain | Is Huel Safe to Drink? The Lead Lawsuit Explained (2027) | NEEDED |
+| 2027-01-25 | Mon | 2 | shopper | villain | Is Microwave Popcorn Bad for You? The Orville Redenbacher's Naturals Lawsuit (2026) | NEEDED |
+| 2027-01-26 | Tue | 1 | shopper | villain | Is Premier Protein Safe to Drink Daily After the Lead Lawsuit? (2027) | NEEDED |
+| 2027-01-26 | Tue | 2 | builder | villain | Can I Deduct Business Startup Costs If I Had No Income Yet? (2027) | NEEDED |
+| 2027-01-27 | Wed | 1 | shopper | villain | Is Scotchgard Safe? What New York's Lawsuit Says (2027) | NEEDED |
+| 2027-01-27 | Wed | 2 | shopper | villain | Is SlimQuick Safe? The Liver Lawsuit Behind the Diet Pill (2027) | NEEDED |
+| 2027-01-28 | Thu | 1 | shopper | villain | Is Teflon Banned Now? The New 2027 Nonstick Pan Laws (2027) | NEEDED |
+| 2027-01-28 | Thu | 2 | builder | villain | Is My Direct Sales Business a Hobby or a Business to the IRS? (2027) | NEEDED |
+| 2027-01-29 | Fri | 1 | shopper | villain | Is Crystal Light Bad for You? The Dye Change Coming in 2027 (2027) | NEEDED |
+| 2027-01-30 | Sat | 1 | builder | villain | Do I Have to Pay Back My Health Insurance Subsidy If My Side Income Went Up? (2027) | NEEDED |
+| 2027-02-01 | Mon | 1 | shopper | villain | Do M&M's Still Have Red Dye 40? Valentine's Candy Check (2027) | NEEDED |
+| 2027-02-02 | Tue | 1 | builder | villain | How Do I Get My W-2 If My Company Went Out of Business? (2027) | NEEDED |
+| 2027-02-03 | Wed | 1 | shopper | villain | Is Trader Joe's Dark Chocolate Safe? The 2026 Toxin Notices (2027) | NEEDED |
+| 2027-02-04 | Thu | 1 | builder | villain | Can I Put Money in an IRA If I Don't Have a Job? The 2027 Limits for Women Over 50 (2027) | NEEDED |
+| 2027-02-05 | Fri | 1 | shopper | villain | Are Doritos Bad for You? Simply NKD vs the Original Bag (2027) | NEEDED |
+| 2027-02-06 | Sat | 1 | builder | villain | When Are Quarterly Estimated Taxes Due in 2027? The Dates for a New Side Business (2027) | NEEDED |

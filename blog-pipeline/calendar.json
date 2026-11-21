@@ -1,6 +1,6 @@
 {
  "start": "2026-11-21",
- "days": 49,
+ "days": 79,
  "per_day": 2,
  "calendar": [
   {
@@ -1690,9 +1690,881 @@
      "track": "builder"
     }
    ]
+  },
+  {
+   "date": "2027-01-09",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "is-vaseline-safe-for-babies",
+     "title": "Is Vaseline Safe? What Petroleum Jelly Actually Is (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "did-shaklee-buy-isagenix-what-associates-should-ask",
+     "title": "Did Shaklee Buy Isagenix? What Associates Should Ask Before the Plan Changes (2027)",
+     "cat": "Builders",
+     "why": "Isagenix associates have customers, habits and a team, and their rules were just rewritten by a deal they had no say in. That is the moment ",
+     "perish": 1,
+     "keyword": "is isagenix going out of business",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-09",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-10",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-your-dehumidifier-a-fire-risk",
+     "title": "Is Your Dehumidifier a Fire Risk? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "amazon-affiliate-links-on-instagram-reels",
+     "title": "Can You Put Amazon Affiliate Links on Instagram Now? What the New Reels Feature Really Pays (2027)",
+     "cat": "Builders",
+     "why": "She already has an audience that buys what she shows them. She is exactly the woman who should hear the difference between a click and a cus",
+     "perish": 1,
+     "keyword": "can i use amazon affiliate links on instagram",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-10",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-11",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-your-magnesium-what-the-label-says",
+     "title": "Is Your Magnesium Really What the Label Says? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "how-much-can-i-earn-on-ssdi-2027",
+     "title": "How Much Can I Earn on SSDI in 2027? (2027)",
+     "cat": "Builders",
+     "why": "She is on disability and wants to do a little something without losing her check.",
+     "perish": 1,
+     "keyword": "how much can i earn on ssdi in 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-12",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-tap-water-safe-to-drink",
+     "title": "Is Your Tap Water Safe to Drink? What the Pitcher Filter Does Not Catch (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-do-companies-lay-people-off-in-january",
+     "title": "Why Do Companies Lay People Off in January? What the Latest Job Cut Numbers Show (2027)",
+     "cat": "Builders",
+     "why": "A woman worried about a January layoff is searching for a plan B before she needs it. A 20-minute Zoom is a small, private step she can take",
+     "perish": 1,
+     "keyword": "why do companies lay people off in january",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-12",
+     "not_after": "2027-01-31",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-13",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "red-dye-40-mars-broken-promise",
+     "title": "Mars Promised To Take The Dye Out In 2016. Look At The Bag In Your Cupboard (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "what-cleaning-products-have-pfas",
+     "title": "What Cleaning Products Have PFAS, and Why Is Washington Banning Them? (2027)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "not_before": "2026-12-30",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-14",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "what-does-glp-1-friendly-mean",
+     "title": "What Does 'GLP-1 Friendly' Mean on Food Labels? (2027)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "not_before": "2027-01-04",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "natures-sunshine-new-compensation-plan-2027",
+     "title": "Is Nature's Sunshine Changing Its Compensation Plan? What the 2027 Relaunch Means for Consultants (2027)",
+     "cat": "Builders",
+     "why": "A consultant waiting on a new pay plan she did not ask for is weighing her options right now, months before the change lands.",
+     "perish": 1,
+     "keyword": "nature's sunshine compensation plan",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-14",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-15",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "what-does-lavender-do-to-blood-pressure",
+     "title": "What Does Lavender Actually Do to Blood Pressure? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "texas-food-warning-label",
+     "title": "What Is the Texas Food Warning Label, and Which Foods Will Get It? (2027)",
+     "cat": "Food",
+     "why": "Big food brands using any of 44 additives other countries restrict.",
+     "perish": -1,
+     "keyword": "texas food warning label",
+     "felt": "If Texas says it needs a warning, why is it in my pantry?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-29",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-16",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "what-keeps-your-memory-sharp-after-70",
+     "title": "What Keeps a Woman's Memory Sharp After 70? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-two-irs-mileage-rates-2026",
+     "title": "Why Are There Two IRS Mileage Rates for 2026? What Changed on July 1 (2027)",
+     "cat": "Builders",
+     "why": "Women who drive for a side business are already acting like owners. The post opens a talk about building a business that is worth the miles.",
+     "perish": 1,
+     "keyword": "irs mileage rate july 2026",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-16",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-17",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "which-rice-has-the-most-arsenic",
+     "title": "Which Rice Has the Most Arsenic? Consumer Reports Tested 52 (2027)",
+     "cat": "Food",
+     "why": "Big rice brands with the highest inorganic arsenic in Consumer Reports' tests.",
+     "perish": -1,
+     "keyword": "rice arsenic consumer reports",
+     "felt": "I switched to brown rice to be healthy. Did I make it worse?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-02",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "why-did-clorox-pay-a-14-million-fine",
+     "title": "Why Did Clorox Pay a $14 Million Fine? What Its Own Scientists Wrote in 2019 (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-18",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "why-do-you-stop-feeling-thirsty",
+     "title": "Why Do You Stop Feeling Thirsty As You Get Older? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "self-employment-tax-2027",
+     "title": "How Much Is Self-Employment Tax in 2027? The New Social Security Wage Base Explained (2027)",
+     "cat": "Builders",
+     "why": "She is already planning to work for herself. The question is what she builds, and that is the Zoom.",
+     "perish": 1,
+     "keyword": "self employment tax 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-18",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-19",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "window-air-conditioner-mold-recall",
+     "title": "Why Does My Window Air Conditioner Smell? The Mold Recall Nobody Told Her About (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "why-is-beef-so-expensive",
+     "title": "Why Is Beef So Expensive Right Now? Who the Justice Department Is Looking At (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-20",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "why-was-argentina-beef-recalled",
+     "title": "Why Was Argentina Beef Recalled? What Skipped Inspection Means for Your Meat (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "is-unemployment-taxable-2026-return",
+     "title": "Is Unemployment Taxable on My 2026 Return? What the IRS Says About Form 1099-G (2027)",
+     "cat": "Builders",
+     "why": "A woman who just went through a layoff knows how fast income can stop. She is ready to hear about income that does not depend on one employe",
+     "perish": 1,
+     "keyword": "is unemployment taxable",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-20",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-21",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "why-was-the-laundress-recalled-twice",
+     "title": "Why Was The Laundress Recalled Twice? (2026)",
+     "cat": "Cleaning",
+     "why": "photos already done",
+     "perish": -1,
+     "keyword": "",
+     "felt": "",
+     "register": "villain",
+     "pix": true,
+     "written": false,
+     "track": "shopper"
+    },
+    {
+     "slug": "does-airborne-work",
+     "title": "Does Airborne Actually Work? The Vitamin C Lawsuit (2027)",
+     "cat": "Supplements",
+     "why": "RB Health's Airborne gummies and tablets.",
+     "perish": 1,
+     "keyword": "does airborne work",
+     "felt": "Everyone at work is sick. Is the Airborne in my purse really protecting me?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-19",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-22",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "does-brita-remove-pfas",
+     "title": "Does Brita Remove PFAS? What the Court Just Said (2027)",
+     "cat": "Kitchen",
+     "why": "Brita pitcher filters.",
+     "perish": 1,
+     "keyword": "does brita remove pfas",
+     "felt": "I bought a filter pitcher so my water would be clean. Is it even catching the forever chemicals?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-21",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "no-tax-on-tips-self-employed",
+     "title": "Does No Tax on Tips Work If I'm Self-Employed? What Hairstylists and Salon Owners Can Claim (2027)",
+     "cat": "Builders",
+     "why": "Self-employed service women already own a client list and trust. She is the one who asks what happens to her income when her hands get tired",
+     "perish": 1,
+     "keyword": "no tax on tips self employed hairstylist",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-22",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-23",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "does-oral-b-glide-have-pfas",
+     "title": "Does Oral-B Glide Floss Still Have PFAS? (2027)",
+     "cat": "Personal Care",
+     "why": "Oral-B Glide floss (Procter & Gamble), long made with PTFE.",
+     "perish": 1,
+     "keyword": "oral b glide pfas",
+     "felt": "I have flossed with Glide for 20 years. Have I been rubbing forever chemicals on my gums?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-15",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "does-waterproof-mascara-have-pfas",
+     "title": "Does Waterproof Mascara Have PFAS? The 2027 Ban Explained (2027)",
+     "cat": "Personal Care",
+     "why": "L'Oreal and Maybelline waterproof mascaras named in the Hicks v. L'Oreal USA PFAS class action.",
+     "perish": 1,
+     "keyword": "waterproof mascara pfas",
+     "felt": "I wear waterproof mascara every day so it will not run. Is it putting forever chemicals right next to my eyes?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-17",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-24",
+   "weekday": "Sun",
+   "slots": [
+    {
+     "slug": "is-metamucil-safe",
+     "title": "Is Metamucil Safe to Take Every Day After the Lead Lawsuit? (2027)",
+     "cat": "Supplements",
+     "why": "Procter & Gamble's Metamucil psyllium fiber powders and Fiber Thins.",
+     "perish": 1,
+     "keyword": "is metamucil safe",
+     "felt": "I stir a scoop of this into my water every morning for my New Year reset. Am I drinking lead?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-09",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "home-office-deduction-side-business",
+     "title": "Can I Take the Home Office Deduction for a Side Business? The Simplified Method Explained (2027)",
+     "cat": "Builders",
+     "why": "She is already working from home on something of her own. That is a woman who wants a better thing to build.",
+     "perish": 1,
+     "keyword": "home office deduction simplified method",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-24",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-25",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "is-huel-safe",
+     "title": "Is Huel Safe to Drink? The Lead Lawsuit Explained (2027)",
+     "cat": "Supplements",
+     "why": "Huel Black Edition meal replacement protein powder.",
+     "perish": 1,
+     "keyword": "is huel safe",
+     "felt": "I swapped my lunch for a shake to lose weight this year. Is my healthy shake loaded with heavy metals?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-25",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "is-microwave-popcorn-bad-for-you",
+     "title": "Is Microwave Popcorn Bad for You? The Orville Redenbacher's Naturals Lawsuit (2026)",
+     "cat": "Food",
+     "why": "Conagra's Orville Redenbacher's Naturals microwave popcorn.",
+     "perish": 1,
+     "keyword": "is microwave popcorn bad for you",
+     "felt": "I bought the Naturals box to be safe.",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2026-12-15",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-26",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "is-premier-protein-safe",
+     "title": "Is Premier Protein Safe to Drink Daily After the Lead Lawsuit? (2027)",
+     "cat": "Supplements",
+     "why": "BellRing Brands' Premier Protein shakes and powders.",
+     "perish": 1,
+     "keyword": "is premier protein safe",
+     "felt": "I drink one every day. Is that too much lead?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-03",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "deduct-startup-costs-no-income",
+     "title": "Can I Deduct Business Startup Costs If I Had No Income Yet? (2027)",
+     "cat": "Builders",
+     "why": "She has already spent money trying to start. She is primed to compare what she bought against a simpler way to begin.",
+     "perish": 1,
+     "keyword": "can i deduct start up costs with no income",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-26",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-27",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-scotchgard-safe",
+     "title": "Is Scotchgard Safe? What New York's Lawsuit Says (2027)",
+     "cat": "Home",
+     "why": "3M's Scotchgard fabric and carpet protector sprays.",
+     "perish": 1,
+     "keyword": "is scotchgard safe",
+     "felt": "I sprayed my couch and carpets with this for years. Did I fill my living room with forever chemicals?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-23",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "is-slimquick-safe",
+     "title": "Is SlimQuick Safe? The Liver Lawsuit Behind the Diet Pill (2027)",
+     "cat": "Supplements",
+     "why": "WellNX's SlimQuick weight loss pills and drink mixes.",
+     "perish": 1,
+     "keyword": "is slimquick safe",
+     "felt": "I want to drop the holiday pounds fast. Could a diet pill made for women actually hurt my liver?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-11",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-28",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "is-teflon-banned",
+     "title": "Is Teflon Banned Now? The New 2027 Nonstick Pan Laws (2027)",
+     "cat": "Kitchen",
+     "why": "PTFE (Teflon style) nonstick pans and skillets.",
+     "perish": 1,
+     "keyword": "is teflon banned",
+     "felt": "I keep hearing states are banning nonstick pans. Is the pan I cook eggs in every morning one of them?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-10",
+     "not_after": "",
+     "track": "shopper"
+    },
+    {
+     "slug": "direct-sales-hobby-or-business-irs",
+     "title": "Is My Direct Sales Business a Hobby or a Business to the IRS? (2027)",
+     "cat": "Builders",
+     "why": "A direct seller whose tax return shows a loss is already asking if there is a better structure. She is the warmest builder prospect there is",
+     "perish": 1,
+     "keyword": "hobby vs business irs",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-28",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-29",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "is-crystal-light-bad-for-you",
+     "title": "Is Crystal Light Bad for You? The Dye Change Coming in 2027 (2027)",
+     "cat": "Food",
+     "why": "Kraft Heinz's Crystal Light drink mixes.",
+     "perish": 1,
+     "keyword": "is crystal light bad for you",
+     "felt": "I drink these packets all day to hit my water goal. What dyes am I drinking?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-29",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-30",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "pay-back-premium-tax-credit-2026-taxes",
+     "title": "Do I Have to Pay Back My Health Insurance Subsidy If My Side Income Went Up? (2027)",
+     "cat": "Builders",
+     "why": "Women buying their own health insurance already left the employer world or never had it. They want a business that is planned, not guessed.",
+     "perish": 1,
+     "keyword": "do i have to pay back premium tax credit",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-01-30",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-01-31",
+   "weekday": "Sun",
+   "slots": []
+  },
+  {
+   "date": "2027-02-01",
+   "weekday": "Mon",
+   "slots": [
+    {
+     "slug": "do-mms-have-red-dye-40",
+     "title": "Do M&M's Still Have Red Dye 40? Valentine's Candy Check (2027)",
+     "cat": "Food",
+     "why": "Mars' M&M's (original versions still made with FD&C dyes).",
+     "perish": 1,
+     "keyword": "do m&ms have red dye 40",
+     "felt": "I fill a Valentine's dish with red and pink candy every year. Which bag has the dyes in it?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-02-01",
+     "not_after": "2027-02-14",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-02-02",
+   "weekday": "Tue",
+   "slots": [
+    {
+     "slug": "w2-company-went-out-of-business",
+     "title": "How Do I Get My W-2 If My Company Went Out of Business? (2027)",
+     "cat": "Builders",
+     "why": "She just watched a company disappear with her paycheck. She is ready to hear about income that is not tied to one employer.",
+     "perish": 1,
+     "keyword": "how to get w2 from company that went out of business",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-02-02",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-02-03",
+   "weekday": "Wed",
+   "slots": [
+    {
+     "slug": "is-trader-joes-dark-chocolate-safe",
+     "title": "Is Trader Joe's Dark Chocolate Safe? The 2026 Toxin Notices (2027)",
+     "cat": "Food",
+     "why": "Trader Joe's chocolate snacks named in 2026 Prop 65 notices.",
+     "perish": 1,
+     "keyword": "is trader joe's dark chocolate safe",
+     "felt": "Dark chocolate is my one healthy treat, especially on Valentine's. Is the kind I buy safe?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-02-03",
+     "not_after": "2027-02-14",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-02-04",
+   "weekday": "Thu",
+   "slots": [
+    {
+     "slug": "can-i-contribute-to-an-ira-if-i-dont-work-2027",
+     "title": "Can I Put Money in an IRA If I Don't Have a Job? The 2027 Limits for Women Over 50 (2027)",
+     "cat": "Builders",
+     "why": "A woman thinking about her own retirement without a job is exactly who wants income she controls from home.",
+     "perish": 1,
+     "keyword": "can i contribute to an ira if i don't work",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-02-04",
+     "not_after": "",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-02-05",
+   "weekday": "Fri",
+   "slots": [
+    {
+     "slug": "are-doritos-bad-for-you",
+     "title": "Are Doritos Bad for You? Simply NKD vs the Original Bag (2027)",
+     "cat": "Food",
+     "why": "PepsiCo's original Doritos, still made with artificial dyes.",
+     "perish": 1,
+     "keyword": "are doritos bad for you",
+     "felt": "I am putting out the big game snacks. Is the orange chip bowl the worst thing on the table?",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-02-05",
+     "not_after": "",
+     "track": "shopper"
+    }
+   ]
+  },
+  {
+   "date": "2027-02-06",
+   "weekday": "Sat",
+   "slots": [
+    {
+     "slug": "quarterly-estimated-taxes-due-2027",
+     "title": "When Are Quarterly Estimated Taxes Due in 2027? The Dates for a New Side Business (2027)",
+     "cat": "Builders",
+     "why": "A woman asking about quarterly taxes is already earning on her own. She is ready to talk about what to build next.",
+     "perish": 1,
+     "keyword": "quarterly taxes due 2027",
+     "felt": "",
+     "register": "villain",
+     "pix": false,
+     "written": false,
+     "not_before": "2027-02-06",
+     "not_after": "2027-04-15",
+     "track": "builder"
+    }
+   ]
+  },
+  {
+   "date": "2027-02-07",
+   "weekday": "Sun",
+   "slots": []
   }
  ],
- "shortfall": 0,
+ "shortfall": 12,
  "blocked": [],
  "stale": [],
  "_note": "Written by sta-tools/build-calendar.py. blog-desk.py renders it."
