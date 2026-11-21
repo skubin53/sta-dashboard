@@ -1,0 +1,17 @@
+---
+date: 2026-11-21
+slug: scan-do-clorox-wipes-have-bleach
+status: requested
+priority: FIRST (Bing Copilot already quotes this page)
+type: scan-page-photo (ONE frame for a scan.ismyhometoxic.com answer page, not a blog post)
+page: https://scan.ismyhometoxic.com/do-clorox-wipes-have-bleach/
+requested_by: "Shannon 2026-11-21: YES, use the Higgsfield credits for one photo on each scan page, the 4 Copilot-cited pages first."
+---
+
+# One photo for the scan page do-clorox-wipes-have-bleach
+
+This answer page has no photo. Please make ONE clean photo for the top of the page:
+
+a hand pulling a wipe from a plain white unbranded canister on a kitchen counter, a woman of about 48 to 58 in soft focus behind.
+
+Rules: no child, no baby, no brand, logo or readable label, no doctor or lab coat. Real-life standard, natural light, crisp. Landscape 16:9, 1600px webp under 150,000 bytes, saved as blog-images/scan-do-clorox-wipes-have-bleach-v1.webp. Note the file and an alt text in a photos-completed record with slug: scan-do-clorox-wipes-have-bleach. Your checklist and PHOTO-GUIDE.md decide the rest. Content side wrote this as a REQUEST only; nothing was rendered or graded here. Content side will place it on the page.
