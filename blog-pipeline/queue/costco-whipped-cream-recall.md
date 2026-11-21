@@ -1,6 +1,6 @@
 ---
 day: new
-date: 2026-11-22
+date: 2026-11-21
 title: Is the Costco Whipped Cream Recall Why Your Can Tastes Like Chemicals? (2026)
 slug: costco-whipped-cream-recall
 keyword: costco whipped cream recall
@@ -48,7 +48,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 </style>
 
 
-<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 22, 2026<br><span style="font-size:.92em;">Published November 22, 2026 &middot; Last updated November 22, 2026</span></p>
+<p class="sta-byline">By <a href="https://join.switchtoamerica.com/post/about-shannon-nicole">Shannon Nicole</a>, Founder, Switch to America &middot; November 21, 2026<br><span style="font-size:.92em;">Published November 21, 2026 &middot; Last updated November 21, 2026</span></p>
 
 <div class="answer-capsule">
 <h2 id="the-short-answer">The short answer</h2>
@@ -300,8 +300,8 @@ of our health and our finances.</p>
    "headline": "Is the Costco Whipped Cream Recall Why Your Can Tastes Like Chemicals? (2026)",
    "description": "Alamance Foods recalled a batch of Kirkland Signature whipped cream that may hold a cleaning chemical. How to check your can, and what to whip instead.",
    "image": "https://scan.ismyhometoxic.com/blog-images/costcowhipp-hero-v1.webp",
-   "datePublished": "2026-11-22",
-   "dateModified": "2026-11-22",
+   "datePublished": "2026-11-21",
+   "dateModified": "2026-11-21",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://join.switchtoamerica.com/post/costco-whipped-cream-recall"
