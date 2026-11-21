@@ -90,7 +90,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>The best-by date is APR/02/27. The time stamps on the recalled cans run from 00:35 to 02:45.</p>
 
-<p><a href="https://www.foxbusiness.com/lifestyle/thanksgiving-staple-recalled-costco-over-possible-contamination-cleaning-chemical">Fox Business reported the cans were sold from October 11 to October 31.</a> That is the month you stock up for pies.</p>
+<p><a href="https://www.foxbusiness.com/lifestyle/thanksgiving-staple-recalled-costco-over-possible-contamination-cleaning-chemical">Fox Business reported the cans were sold from October 11 to October 31.</a> That is right before the holiday baking starts.</p>
 
 <p>The 12 states are Alabama, Florida, Georgia, Iowa, Illinois, Indiana, Missouri, Mississippi, North Carolina, South Carolina, Tennessee and Wisconsin.</p>
 
@@ -150,7 +150,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p><strong>Two.</strong> The company says no serious harm needing medical care has been reported. <a href="https://www.live5news.com/2026/11/12/whipped-cream-sold-costco-recalled-dozen-states-ahead-thanksgiving/">CNN reported the same thing.</a></p>
 
-<p><strong>Three.</strong> Costco used its buying records to send the letter to members who bought it. I will give it credit for that.</p>
+<p><strong>Three.</strong> The letter went to members who bought it, using Costco's buying records. I will give it credit for that.</p>
 
 <p>So why does it still sit wrong with me?</p>
 
@@ -172,7 +172,7 @@ vault_checked: [BLOG-RUNBOOK, voice-profile, VOICE-GUIDE]
 
 <p>Cream comes from a cow. That part is simple.</p>
 
-<p>The trouble starts when it goes into a can on a big factory line. You never see that line, or who runs it. Then one batch may hold a cleaning chemical, and you are told very little.</p>
+<p>The trouble starts when it goes into a can on a big factory line. You never see that line, or who runs it. Then the company says one batch may hold a cleaning chemical, and you are told very little.</p>
 
 <p><a href="https://agr.georgia.gov/recalls">Georgia's Department of Agriculture posted the recall on November 9, 2026, under "Contains Cleaning Solution."</a> That is not a phrase you want next to your pie.</p>
 
