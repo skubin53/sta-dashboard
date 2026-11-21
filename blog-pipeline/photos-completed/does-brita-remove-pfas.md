@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-21: 5 frames, one lived-in kitchen with butcher-bloc
 - image_url: https://scan.ismyhometoxic.com/blog-images/doesbritare-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-21T11:43:00
+
+## Recheck (Photo Claude) 2026-11-20
+Turning point swapped for its warmth-graded copy.
