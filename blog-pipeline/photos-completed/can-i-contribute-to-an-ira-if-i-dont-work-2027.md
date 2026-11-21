@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-21: 5 frames, one white kitchen with open shelves of
 - image_url: https://scan.ismyhometoxic.com/blog-images/canicontrib-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-21T11:11:00
+
+## Recheck (Photo Claude) 2026-11-20
+Turning point swapped for its warmth-graded copy so the ramp gap is 0.05.
