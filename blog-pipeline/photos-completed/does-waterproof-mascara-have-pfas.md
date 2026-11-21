@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-21: 5 frames, one bright white bathroom with a round
 - image_url: https://scan.ismyhometoxic.com/blog-images/doeswaterpr-freedom-v1.webp
 - placement: final image before the closing scan CTA
 - completed: 2026-11-21T12:36:00
+
+## Recheck (Photo Claude) 2026-11-20
+Belonging cooled slightly and freedom left ungraded so the ramp rises 0.88, 1.15, 1.26, 1.48, 1.52.
