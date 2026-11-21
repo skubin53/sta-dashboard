@@ -36,3 +36,6 @@ note: "Photo Claude 2026-11-19: 5 frames, one bright home office with blue strip
 - image_url: https://scan.ismyhometoxic.com/blog-images/ebaybalance-freedom-v1.webp
 - placement: final image before the closing CTA
 - completed: 2026-11-19T12:19:00
+
+## Recheck (Photo Claude) 2026-11-20
+Recheck: Freedom redone as a side-profile walk; turning point now closing the laptop with pen set aside (this push was missed on 11/19 and landed 11/21).
