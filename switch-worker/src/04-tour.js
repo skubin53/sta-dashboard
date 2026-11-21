@@ -417,7 +417,7 @@ function retryable(res) {
   return st === 0 || st === 429 || st >= 500;
 }
 
-async function ensureTourNotes(env) {
+async function ensureTourNotes(env, byHand) {
   const mode = String((env && env.TOUR_NOTES) || "off").toLowerCase();
   if (mode === "off" || !env.REPORTS || !String(env.TOUR_SIGN || "")) return { skipped: mode };
   const loc = String(env.GHL_LOCATION || "").trim();
@@ -426,6 +426,7 @@ async function ensureTourNotes(env) {
   // One run at a time (a manual /tournoterun must not overlap the cron).
   const lockKey = "tournotes:lock";
   if (await env.REPORTS.get(lockKey)) return { skipped: "another run is going" };
+  if (!byHand) return await tourNotesPass(env, mode, loc);   // 2026-11-21: cron skips the lock write (see processQueue)
   await env.REPORTS.put(lockKey, new Date().toISOString(), { expirationTtl: 120 });
   try {
     return await tourNotesPass(env, mode, loc);

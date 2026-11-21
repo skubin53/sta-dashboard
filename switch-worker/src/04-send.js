@@ -414,11 +414,16 @@ const SEND_SAME_RUN_CAP = 8;
 const PACK_CALL_BUDGET = 45;
 const PACK_RUN_LOCK = "packrun:lock";
 
-async function processQueue(env) {
+async function processQueue(env, byHand) {
   if (!env || !env.REPORTS) return { error: "no KV" };
+  // 2026-11-21: only a HAND run writes the lock (and the cron still honors it). The cron
+  // runs every 5 minutes and finishes long before the next one, so writing + deleting a lock
+  // on every cron run cost ~576 KV writes and ~576 deletes a day for nothing and set off
+  // Cloudflare's free-plan '50% of KV daily operations' email. The per-woman locks stay.
   // One run at a time: a hand-run /packrun must not overlap the cron (best effort, KV has
   // no compare-and-set; the per-woman send lock is still the real guard).
   if (await env.REPORTS.get(PACK_RUN_LOCK)) return { skipped: "another run is going" };
+  if (!byHand) return await processQueuePasses(env);
   await env.REPORTS.put(PACK_RUN_LOCK, new Date().toISOString(), { expirationTtl: 120 });
   try {
     return await processQueuePasses(env);
