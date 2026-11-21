@@ -268,7 +268,7 @@ export default {
     // Run the SEND TOUR LINK notes pass by hand (same code as its cron). LOG_KEY guarded.
     if (request.method === "GET" && url.pathname === "/tournoterun") {
       if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
-      const r = await ensureTourNotes(env);
+      const r = await ensureTourNotes(env, true);
       return json(r, 200, origin);
     }
 
@@ -277,7 +277,7 @@ export default {
       if (!readKey(env) || url.searchParams.get("k") !== readKey(env)) return new Response("no", { status: 403 });
       // waitUntil (10/24): this run can text women now, so a caller who hangs up must not
       // cut it off between "sending" and the text.
-      const p = processQueue(env);
+      const p = processQueue(env, true);
       if (ctx && ctx.waitUntil) ctx.waitUntil(p);
       const r = await p;
       return json({ mode: String(env.SEND_MODE || "off"), ...r }, 200, origin);
@@ -379,6 +379,11 @@ export default {
     const stamp = new Date().toISOString().slice(0, 10);
     let body = `SWITCH CHECKLIST  ${stamp}\n`;
     body += `Score ${score}   |   ${count} products they already buy elsewhere\n`;
+    // Shannon 2026-11-16: "Does the where do you shop section show up in the notes ... I
+    // don't think it does." It was logged but never filed on the lead. Now it is.
+    const shopList = stores.slice();
+    if (storesOther) shopList.push("Other: " + storesOther);
+    body += `\nWhere they shop\n  ${shopList.length ? shopList.join(", ") : "(none picked)"}\n`;
     for (const g of Object.keys(byGroup)) {
       body += `\n${g}\n`;
       for (const l of byGroup[g]) body += `  - ${l}\n`;
